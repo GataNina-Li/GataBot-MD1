@@ -1,15 +1,9 @@
-# 🧿 𝚃𝚑𝚎 𝙼𝚢𝚜𝚝𝚒𝚌 - 𝙱𝚘𝚝 🔮
-
 # BOT NO TERMINADO, AUN SE TRABAJA EN EL 
 
-#### ACTIVAR EN HEROKU
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/BrunoSobrino/TheMystic-Bot)
+# 🧿 𝚃𝚑𝚎 𝙼𝚢𝚜𝚝𝚒𝚌 - 𝙱𝚘𝚝 🔮
 
-#### HEROKU BUILDPACK
-| BuildPack | LINK |
-|--------|--------|
-| **FFMPEG** |[here](https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest) |
-| **IMAGEMAGICK** | [here](https://github.com/DuckyTeam/heroku-buildpack-imagemagick) |
+#### ACTIVAR EN HEROKU
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/BrunoSobrino/TheMystic-Bot-MD)
 
 ### INSTALACIÓN POR TERMUX
 1. Escriba los comandos mencionados a continuación dados uno por uno en Termux
@@ -20,15 +14,10 @@ $ apt install git -y
 $ apt install nodejs -y
 $ apt install ffmpeg -y
 $ apt install imagemagick -y
-$ git clone https://github.com/BrunoSobrino/TheMystic-Bot
-$ cd TheMystic-Bot
+$ git clone https://github.com/BrunoSobrino/TheMystic-Bot-MD
+$ cd TheMystic-Bot-MD
 $ npm install
 $ npm install -g npm@8.5.4
 $ npm update
 $ npm start
-```
-#### SI LA INSTALACION FALLA PRUEBA ESCRIBIENDO
-```sh
-$ pkg install yarn -y
-$ yarn install
 ```
