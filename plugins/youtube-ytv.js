@@ -22,9 +22,5 @@ if (!isLimit) await conn.sendFile(m.chat, link, title + '.mp3', `
 handler.help = ['mp4', 'v'].map(v => 'yt' + v + ` <url> <without message>`)
 handler.tags = ['downloader']
 handler.command = /^yt(v|mp4)?$/i
-handler.limit = 1
 handler.exp = 0
-
-
 export default handler
-
