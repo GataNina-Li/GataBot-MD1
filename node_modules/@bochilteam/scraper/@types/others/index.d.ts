@@ -1,0 +1,11 @@
+import wikipedia from "./wikipedia";
+import jadwalTV, { jadwalTVNow, listJadwalTV } from "./jadwal-tv";
+import kbbi from "./KBBI";
+import nameFreeFire from "./idff";
+export * from "./minecraft";
+export * from "./mediafire";
+export * from "./BMKG";
+export * from "./lyrics";
+export * from "./minecraft";
+export * from "./bioskop";
+export { wikipedia, jadwalTV, jadwalTVNow, listJadwalTV, kbbi, nameFreeFire, };

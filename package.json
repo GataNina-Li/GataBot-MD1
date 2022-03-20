@@ -1,0 +1,66 @@
+{
+    "name": "zabot",
+    "version": "7.0.0",
+    "description": "Customizable WhatsApp Bot",
+    "main": "index.js",
+    "type": "module",
+    "directories": {
+        "lib": "lib",
+        "src": "src",
+        "plugins": "plugins"
+    },
+    "scripts": {
+        "start": "node index.js",
+        "cli": "node . --optimize_for_size --max_old_space_size=460 index.js",
+        "db": "node . --autocleartmp --db 'mongodb+srv://ozan:Akhmad6825@cluster0.mflne.mongodb.net/zabotv6?retryWrites=true&w=majority'"
+    },
+    "homepage": "https://github.com/ZaBot-MD",
+    "author": {
+        "name": "ozan"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ZaBot-MD/zabotv7.git"
+    },
+    "bugs": {
+        "url": "https://github.com/ZaBot-MD/zabotv7/issues"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "@adiwajshing/baileys": "github:adiwajshing/baileys",
+        "@bochilteam/scraper": "^1.0.5",
+        "awesome-phonenumber": "^2.68.0",
+        "axios": "^0.24.0",
+        "cfonts": "^2.10.0",
+        "chalk": "^5.0.0",
+        "cheerio": "^1.0.0-rc.10",
+        "colors": "1.4.0",
+        "express": "^4.17.3",
+        "file-type": "^17.1.1",
+        "fluent-ffmpeg": "^2.1.2",
+        "formdata-node": "^4.3.2",
+        "human-readable": "^0.2.1",
+        "jsdom": "^19.0.0",
+        "lodash": "^4.17.21",
+        "lowdb": "^3.0.0",
+        "mongoose": "github:Automattic/mongoose",
+        "node-fetch": "^3.2.0",
+        "node-gtts": "^2.0.2",
+        "node-webpmux": "^3.1.1",
+        "perf_hooks": "^0.0.1",
+        "pino": "^7.8.0",
+        "pino-pretty": "^7.5.1",
+        "qrcode": "^1.5.0",
+        "qrcode-terminal": "^0.12.0",
+        "readline": "^1.3.0",
+        "similarity": "^1.2.1",
+        "socket.io": "^4.4.1",
+        "syntax-error": "^1.4.0",
+        "terminal-image": "^2.0.0",
+        "url-regex-safe": "^3.0.0",
+        "yargs": "^17.3.1"
+    },
+    "optionalDependencies": {
+        "wa-sticker-formatter": "^4.3.2"
+    }
+}

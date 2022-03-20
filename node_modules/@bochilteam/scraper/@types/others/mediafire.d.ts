@@ -1,0 +1,2 @@
+import { Mediafire } from './types';
+export declare function mediafiredl(url: string): Promise<Mediafire>;

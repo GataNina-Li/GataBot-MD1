@@ -1,0 +1,3 @@
+import { TebakGambar } from "./types";
+export declare let tebakgambarjson: TebakGambar[];
+export default function tebakgambar(): Promise<TebakGambar>;

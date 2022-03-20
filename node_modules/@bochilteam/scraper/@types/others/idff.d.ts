@@ -1,0 +1,2 @@
+import type { NameFreeFire } from './types';
+export default function nameFreeFire(id: string | number): Promise<NameFreeFire>;

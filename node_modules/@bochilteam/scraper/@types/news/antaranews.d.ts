@@ -1,0 +1,2 @@
+import type { Antaranews } from './types';
+export default function antaranews(): Promise<Antaranews[]>;

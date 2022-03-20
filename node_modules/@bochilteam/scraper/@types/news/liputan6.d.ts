@@ -1,0 +1,2 @@
+import type { Liputan6 } from './types';
+export default function liputan6(): Promise<Liputan6[]>;

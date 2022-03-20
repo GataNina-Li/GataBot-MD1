@@ -1,0 +1,2 @@
+import { AlQuran } from "./types";
+export declare function alquran(): Promise<AlQuran[]>;
