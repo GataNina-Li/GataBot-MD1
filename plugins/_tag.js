@@ -2,7 +2,7 @@ import fs from 'fs'
 let handler = m => m
 
 handler.all = async function (m) {
-let gw = '628819028385@s.whatsapp.net'
+let gw = '5219996125657@s.whatsapp.net'
     if (m.isBaileys) return
     if (m.chat.endsWith('broadcast')) return
 
