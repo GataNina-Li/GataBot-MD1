@@ -2,7 +2,7 @@ import { unlinkSync, readFileSync } from 'fs'
 import { join } from 'path'
 import { exec } from 'child_process'
 
-let handler = async (m, { conn, args, usedPrefix, command, __dirname }) => {
+let handler = async (m, { conn, args, __dirname, usedPrefix, command }) => {
     try {
         let q = m.quoted ? m.quoted : m
         let mime = ((m.quoted ? m.quoted : m.msg).mimetype || '')
@@ -27,10 +27,14 @@ let handler = async (m, { conn, args, usedPrefix, command, __dirname }) => {
                 await unlinkSync(media)
                 if (err) throw `_*Error!*_`
                 let buff = await readFileSync(filename)
-                conn.sendFile(m.chat, buff, ran, null, m, /vn/.test(args[0]), { quoted: m, mimetype: 'audio/mp4' })
-                await unlinkSync(filename)
+                conn.sendFile(m.chat, buff, ran, null, m, true, {
+                type: 'audioMessage', // paksa tanpa convert di ffmpeg
+                ptt: true // true diatas ga work, sebab dipaksa tanpa convert ;v
+                })
+                //conn.sendFile(m.chat, buff, ran, null, m, /vn/.test(args[0]), { quoted: m, mimetype: 'audio/mp4' })
+                //await unlinkSync(filename)
             })
-        } else throw `Balas vn/audio yang ingin diubah dengan caption *${usedPrefix + command}*`
+        } else throw `*[❗] Responda a una nota de voz o audio el cual desee modificar usando el comando ${usedPrefix + command}*`
     } catch (e) {
         throw e
     }
