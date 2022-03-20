@@ -12,18 +12,18 @@
     "scripts": {
         "start": "node index.js",
         "cli": "node . --optimize_for_size --max_old_space_size=460 index.js",
-        "db": "node . --autocleartmp --db 'mongodb+srv://ozan:Akhmad6825@cluster0.mflne.mongodb.net/zabotv6?retryWrites=true&w=majority'"
+        "db": "node . --autocleartmp --db 'mongodb+srv://BrunoSobrino:Akhmad6825@cluster0.mflne.mongodb.net/TheMystic-Bot?retryWrites=true&w=majority'"
     },
-    "homepage": "https://github.com/ZaBot-MD",
+    "homepage": "https://github.com/BrunoSobrino",
     "author": {
-        "name": "ozan"
+        "name": "BrunoSobrino"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/ZaBot-MD/zabotv7.git"
+        "url": "git+https://github.com/BrunoSobrino/TheMystic-Bot.git"
     },
     "bugs": {
-        "url": "https://github.com/ZaBot-MD/zabotv7/issues"
+        "url": "https://github.com/BrunoSobrino/TheMystic-Bot/issues"
     },
     "license": "MIT",
     "dependencies": {
@@ -58,9 +58,10 @@
         "syntax-error": "^1.4.0",
         "terminal-image": "^2.0.0",
         "url-regex-safe": "^3.0.0",
-        "yargs": "^17.3.1"
-    },
-    "optionalDependencies": {
+        "yargs": "^17.3.1",      
+        "qrcode-terminal": "^0.12.0",
+        "xfarr-api": "^1.0.3",
+        "hxz-api": "^1.0.1",
         "wa-sticker-formatter": "^4.3.2"
     }
 }
