@@ -23,6 +23,7 @@ let tags = {
   'owner': 'Owner',
   'advanced': 'Advanced',
   'info': 'Info',
+  'general': 'General',
 }
 const defaultMenu = {
   before: `
