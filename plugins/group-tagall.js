@@ -6,7 +6,7 @@ let handler = async(m, { isOwner, isAdmin, conn, text, participants }) => {
   let teks = `${text ? text : ''}\n┌─ 「 Tag All Member 」\n`
   for (let mem of participants) {
   teks += `│• @${mem.id.split('@')[0]}\n`}
-  teks += `└─────\n\n*TagAll by : Mars BOTz*`
+  teks += `└─────\n\n*TagAll by 𝚃𝚑𝚎𝙼𝚢𝚜𝚝𝚒𝚌-𝙱𝚘𝚝*`
   conn.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) }, )
 }
 handler.help = ['tagall <message>']
