@@ -1,14 +1,9 @@
-import { tiktokdl, tiktokdlv2 } from '@bochilteam/scraper'
-let handler = async (m, { conn, args, usedPrefix, command }) => {
-if (!args[0]) throw `Use example ${usedPrefix}${command} https://www.tiktok.com/@omagadsus/video/7025456384175017243`
-const { author: { nickname }, video, description } = await tiktokdl(args[0]).catch(async _ => await tiktokdlv2(args[0]))
-const url = video.no_watermark_hd
-conn.sendFile(m.chat, url, 'tiktok.mp4', `
-🔗 *Url:* ${url}
-🧏 *Nickname:* ${nickname}${description ? `🖹 *Description:* ${description}` : ''}
-`.trim(), m)
-}
-handler.help = ['tiktok'].map(v => v + ' <url>')
-handler.tags = ['downloader']
+import  fetch from 'node-fetch'
+let handler = async (m, { conn, args, usedPrefix, command, text }) => {
+if (!args[0]) throw `*Formato de uso: ${usedPrefix + command} https://tiktokxxxx*\n*Ejemplo:*\n*${usedPrefix + command} https://vm.tiktok.com/ZMLUb9M5j/*`
+if (!args[0].match(/tiktok/gi)) throw `*Fallo al detectar la URL de tiktok, compruebe que sea de tiktok*`
+let res = await fetch("https://api-alc.herokuapp.com/api/download/tiktok?url="+args[0]+"&apikey=ConfuMods")
+let json = await res.json()
+conn.sendFile(m.chat, json.result.sin_marca, 'error.mp4', `   *Aqui tienes el tiktok*\n_The Shadow Brokers - Bot_`, m)}
 handler.command = /^(tik(tok)?(dl)?)$/i
 export default handler
