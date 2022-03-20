@@ -1,27 +1,31 @@
-# Games-Wabot
+# 🧿 𝚃𝚑𝚎 𝙼𝚢𝚜𝚝𝚒𝚌 - 𝙱𝚘𝚝 🔮
 
-#### Deploy to Heroku
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/BochilGaming/games-wabot)
+#### ACTIVAR EN HEROKU
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/BrunoSobrino/TheMystic-Bot)
 
-#### Heroku Buildpack
+#### HEROKU BUILDPACK
 | BuildPack | LINK |
 |--------|--------|
 | **FFMPEG** |[here](https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest) |
 | **IMAGEMAGICK** | [here](https://github.com/DuckyTeam/heroku-buildpack-imagemagick) |
 
-### FOR TERMUX USER
-1. Type mentioned below given commands one by one in Termux.
+### INSTALACIÓN POR TERMUX
+1. Escriba los comandos mencionados a continuación dados uno por uno en Termux
 ```sh
-$ pkg upgrade && pkg update
-$ pkg install git -y
-$ pkg install nodejs -y
-$ pkg install ffmpeg -y
-$ pkg install imagemagick -y
-$ git clone https://github.com/BochilGaming/games-wabot -b multi-device
-$ cd games-wabot
-$ npm i 
+$ termux-setup-storage
+$ apt upgrade && apt update -y -y
+$ apt install git -y
+$ apt install nodejs -y
+$ apt install ffmpeg -y
+$ apt install imagemagick -y
+$ git clone https://github.com/BrunoSobrino/TheMystic-Bot
+$ cd TheMystic-Bot
+$ npm install
+$ npm install -g npm@8.5.4
+$ npm update
+$ npm start
 ```
-#### If npm install failed, try using yarn instead of npm
+#### SI LA INSTALACION FALLA PRUEBA ESCRIBIENDO
 ```sh
 $ pkg install yarn -y
 $ yarn install
