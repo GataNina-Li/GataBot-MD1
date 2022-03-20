@@ -7,7 +7,7 @@
 
 ### INSTALACIÓN POR TERMUX
 1. Escriba los comandos mencionados a continuación dados uno por uno en Termux
-2. Para poder escanear el codigo QR sin problema corrobore que este activado la version multi-device de WhatsApp en su WhatsApp en el apartado de WhatsApp web
+2. Para poder escanear el codigo QR sin problema corrobore que este activado la version Multi-Device de WhatsApp en su WhatsApp en el apartado de WhatsApp web
 ```sh
 $ termux-setup-storage
 $ apt upgrade && apt update -y -y
