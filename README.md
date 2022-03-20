@@ -1,5 +1,7 @@
 # 🧿 𝚃𝚑𝚎 𝙼𝚢𝚜𝚝𝚒𝚌 - 𝙱𝚘𝚝 🔮
 
+# BOT NO TERMINADO, AUN SE TRABAJA EN EL 
+
 #### ACTIVAR EN HEROKU
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/BrunoSobrino/TheMystic-Bot)
 
