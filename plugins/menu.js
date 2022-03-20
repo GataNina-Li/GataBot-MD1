@@ -148,10 +148,10 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
     const pp = await conn.profilePictureUrl(conn.user.jid, 'image').catch(_ => './src/avatar_contact.png')
-    conn.sendHydrated(m.chat, text.trim(), author, pp, 'https://github.com/ZaBot-MD/zabotv7', 'Github', owner[0][0], 'Owner', [
-      ['Donate', '/donasi'],
-      ['Speed', '/ping'],
-      ['Owner', '/owner']
+    conn.sendHydrated(m.chat, text.trim(), author, pp, 'https://github.com/BrunoSobrino/TheMystic-Bot-MD', '𝙶𝙸𝚃𝙷𝚄𝙱', owner[0][0], '𝙾𝚆𝙽𝙴𝚁', [
+      ['𝙳𝙾𝙽𝙰𝚁', '/donasi'],
+      ['𝚂𝙿𝙴𝙴𝙳', '/ping'],
+      ['𝙾𝚆𝙽𝙴𝚁', '/owner']
     ], m, { asLocation: 1 })
   } catch (e) {
     conn.reply(m.chat, 'Maaf, menu sedang error', m)
