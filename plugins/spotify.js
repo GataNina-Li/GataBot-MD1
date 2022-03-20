@@ -26,4 +26,6 @@ conn.sendFile(m.chat, thumb, '', spotifyi, m)
 conn.sendFile(m.chat, preview_mp3, 'spotify.mp3', spotifyi, m)
 }
 handler.command = /^(spotify|music)$/i
+handler.help = ['spotify']
+handler.tags = ['general']
 export default handler
