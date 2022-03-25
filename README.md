@@ -17,8 +17,8 @@
 > Tutorial 2: https://youtu.be/WOcVXLKpKr0
 > Dudas UNICAMENTE SOBRE EL HOST: wa.me/59891296100
 ```
-<p>Crea un enlace a
-<a href="https://www.mozilla.org/es-ES/">la página de inicio de Mozilla</a>.
+<p>> Pagina Oficial:
+<a href="https://boxmineworld.com"></a>.
 </p>
 
 #### ACTIVAR EN HEROKU
