@@ -19,7 +19,6 @@
 ```
 <p>> Pagina Oficial:
 <a href="https://boxmineworld.com">https://boxmineworld.com</a>.
-</p>
 <p>> Dashboard:
 <a href="https://dash.boxmineworld.com/home">https://dash.boxmineworld.com/home</a>.
 </p>
