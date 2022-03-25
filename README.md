@@ -18,15 +18,15 @@ AÑADE AL APARTADO DE BUILPACK LOS SIGUIENTES ENLACES:
 ### `—◉ 🔥 ACTIVAR EN BOXMINEWORLD 🔥`
 <img src="https://i.imgur.com/RIpBF5u.png" alt="GIF" width="300" height="100"/>
 <p>> Pagina Oficial:
-<a href="https://boxmineworld.com">https://boxmineworld.com</a>.
+<a href="https://boxmineworld.com">https://boxmineworld.com</a>
 <p>> Dashboard:
-<a href="https://dash.boxmineworld.com/home">https://dash.boxmineworld.com/home</a>.
+<a href="https://dash.boxmineworld.com/home">https://dash.boxmineworld.com/home</a>
 <p>> Panel:
-<a href="https://panel.boxmineworld.com">https://panel.boxmineworld.com</a>.
+<a href="https://panel.boxmineworld.com">https://panel.boxmineworld.com</a>
 <p>> Tutorial 1:
-<a href="https://youtu.be/ZAwBLuNmIlI">https://youtu.be/ZAwBLuNmIlI</a>.
+<a href="https://youtu.be/ZAwBLuNmIlI">https://youtu.be/ZAwBLuNmIlI</a>
 <p>> Tutorial 2:
-<a href="https://youtu.be/WOcVXLKpKr0">https://youtu.be/WOcVXLKpKr0</a>.
+<a href="https://youtu.be/WOcVXLKpKr0">https://youtu.be/WOcVXLKpKr0</a>
 <p>> Dudas UNICAMENTE SOBRE EL HOST:
-<a href="https://wa.me/59891296100">wa.me/59891296100 (Vicemi)</a>.
+<a href="https://wa.me/59891296100">wa.me/59891296100</a>(Vicemi)
 </p>
