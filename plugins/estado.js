@@ -8,7 +8,7 @@ let estado =`
 *=> Bot uso público ✔️*
 `.trim()
 
-conn.sendHydrated(m.chat, estado, 'The Shadow Borkers - Bot', picture, 'https://github.com/BrunoSobrino/ShadowBotV3', 'GitHub', null, null, [
+conn.sendHydrated(m.chat, estado, wm, picture, 'https://github.com/BrunoSobrino/ShadowBotV3', 'GitHub', null, null, [
 ['MENÚ PRINCIPAL', '/menu'],
 ['MENÚ SIMPLE', '/menusimple'],
 ['MENÚ AUDIOS', '/menu2']
