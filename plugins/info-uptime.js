@@ -1,13 +1,14 @@
 let handler = async (m, { usedPrefix, command }) => {
 let _uptime = process.uptime() * 1000
 let uptime = clockString(_uptime)
+let media = './Menu2.jpg'
 let runnya = `
 *───「 RUNTIME BOT 」───*
 
 Runtime : ${uptime}
 `
 //conn.sendButton(m.chat, runnya, wm, null, [['Menu', '.menu']], m) 
-await conn.sendButton(m.chat, runnya.trim(), wm, media, [`Back To Menu`, `${usedPrefix}menu`], m, {asLocation: true})
+conn.sendButton(m.chat, runnya.trim(), wm, media, [`Back To Menu`, `${usedPrefix}menu`], m, {asLocation: true})
 }
 handler.help = ['runtime']
 handler.tags = ['info']
