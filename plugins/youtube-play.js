@@ -13,8 +13,8 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
 ⌚ *Duración:* ${durationH}
 👁️ *Vistas:* ${viewH}
   `.trim(), author, thumbnail, '', '', null, null, [
-    ['Audio', `${usedPrefix}yta ${url} yes`],
-    ['Video', `${usedPrefix}ytv ${url} yes`]
+    ['𝐀𝐔𝐃𝐈𝐎', `${usedPrefix}yta ${url} yes`],
+    ['𝐕𝐈𝐃𝐄𝐎', `${usedPrefix}ytv ${url} yes`]
   ], m, { asLocation: 1 })
 }
 handler.help = ['play', 'play2'].map(v => v + ' <pencarian>')
