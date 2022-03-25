@@ -19,18 +19,18 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
       }
       chat.welcome = isEnable
       break
-    // case 'detect':
-    //   if (!m.isGroup) {
-    //     if (!isOwner) {
-    //       global.dfail('group', m, conn)
-    //       throw false
-    //     }
-    //   } else if (!isAdmin) {
-    //     global.dfail('admin', m, conn)
-    //     throw false
-    //   }
-    //   chat.detect = isEnable
-    //   break
+     case 'detect':
+       if (!m.isGroup) {
+         if (!isOwner) {
+           global.dfail('group', m, conn)
+           throw false
+         }
+       } else if (!isAdmin) {
+         global.dfail('admin', m, conn)
+         throw false
+       }
+       chat.detect = isEnable
+       break
     case 'delete':
       if (m.isGroup) {
         if (!(isAdmin || isOwner)) {
@@ -49,18 +49,6 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
       }
       chat.delete = !isEnable
       break
-    // case 'autodelvn':
-    //   if (m.isGroup) {
-    //     if (!(isAdmin || isOwner)) {
-    //       global.dfail('admin', m, conn)
-    //       throw false
-    //     }
-    //   }
-    //   chat.autodelvn = isEnable
-    //   break
-    // case 'document':
-    //   chat.useDocument = isEnable
-    //   break
     case 'public':
       isAll = true
       if (!isROwner) {
@@ -77,41 +65,15 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
         }
       }
       chat.antiLink = isEnable
+    case 'antilink2':
+      if (m.isGroup) {
+        if (!(isAdmin || isOwner)) {
+          global.dfail('admin', m, conn)
+          throw false
+        }
+      }
+      chat.antiLink2 = isEnable      
       break
-    // case 'toxic':
-    //   if (m.isGroup) {
-    //     if (!(isAdmin || isOwner)) {
-    //       global.dfail('admin', m, conn)
-    //       throw false
-    //     }
-    //   }
-    //   chat.antiToxic = !isEnable
-    //   break
-    // case 'antitoxic':
-    //   if (m.isGroup) {
-    //     if (!(isAdmin || isOwner)) {
-    //       global.dfail('admin', m, conn)
-    //       throw false
-    //     }
-    //   }
-    //   chat.antiToxic = isEnable
-    //   break
-    // case 'autolevelup':
-    //   isUser = true
-    //   user.autolevelup = isEnable
-    //   break
-    // case 'mycontact':
-    // case 'mycontacts':
-    // case 'whitelistcontact':
-    // case 'whitelistcontacts':
-    // case 'whitelistmycontact':
-    // case 'whitelistmycontacts':
-    //   if (!isOwner) {
-    //     global.dfail('owner', m, conn)
-    //     throw false
-    //   }
-    //   conn.callWhitelistMode = isEnable
-    //   break
     case 'restrict':
       isAll = true
       if (!isOwner) {
@@ -165,7 +127,7 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
       break
     default:
       if (!/[01]/.test(command)) return m.reply(`
-List option: welcome | delete | public | antilink | antidelete | antitoxic | autolevelup | detect | document | whitelistmycontacts | restrict | nyimak | autoread | pconly | gconly | swonly
+List option: welcome | delete | public | antilink | antilink2 | antidelete | detect | document | restrict | autoread
 Contoh:
 ${usedPrefix}enable welcome
 ${usedPrefix}disable welcome
