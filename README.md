@@ -3,7 +3,7 @@
 # 🧿 𝚃𝚑𝚎 𝙼𝚢𝚜𝚝𝚒𝚌 - 𝙱𝚘𝚝 🔮
 
 #### ACTIVAR EN BOXMINEWORLD
-<img src="https://i.imgur.com/RIpBF5u.png" alt="GIF" width="250" height="100"/>
+<img src="https://i.imgur.com/RIpBF5u.png" alt="GIF" width="300" height="100"/>
 (https://dash.boxmineworld.com/home)
 
 #### ACTIVAR EN HEROKU
