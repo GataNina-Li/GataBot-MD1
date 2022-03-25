@@ -21,6 +21,14 @@
 <a href="https://boxmineworld.com">https://boxmineworld.com</a>.
 <p>> Dashboard:
 <a href="https://dash.boxmineworld.com/home">https://dash.boxmineworld.com/home</a>.
+<p>> Panel:
+<a href="https://panel.boxmineworld.com">https://panel.boxmineworld.com</a>.
+<p>> Tutorial 1:
+<a href="https://youtu.be/ZAwBLuNmIlI">https://youtu.be/ZAwBLuNmIlI</a>.
+<p>> Tutorial 2:
+<a href="https://youtu.be/WOcVXLKpKr0">https://youtu.be/WOcVXLKpKr0</a>.
+<p>> Dudas UNICAMENTE SOBRE EL HOST:
+<a href="https://wa.me/59891296100">wa.me/59891296100 (Vicemi)</a>.
 </p>
 
 #### ACTIVAR EN HEROKU
