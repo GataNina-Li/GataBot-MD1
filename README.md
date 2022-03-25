@@ -28,5 +28,5 @@ AÑADE AL APARTADO DE BUILPACK LOS SIGUIENTES ENLACES:
 <p>> Tutorial 2:
 <a href="https://youtu.be/WOcVXLKpKr0">https://youtu.be/WOcVXLKpKr0</a>
 <p>> Dudas UNICAMENTE SOBRE EL HOST:
-<a href="https://wa.me/59891296100">wa.me/59891296100</a>(Vicemi)
+<a href="https://wa.me/59891296100">wa.me/59891296100</a> (Vicemi)
 </p>
