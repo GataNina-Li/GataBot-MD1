@@ -1,20 +1,22 @@
+import fs from "fs"
 let handler = m => m
 
 handler.all = async function (m) {
-    if (m.chat.endsWith('broadcast')) return
-    let { isBanned } = db.data.chats[m.chat]
-    let { banned } = db.data.users[m.sender]
-    let { group } = db.data.settings[this.user.jid]
+let vn = './media/bot.mp3'
+const estilo = { key: {  fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "5219992095479-1625305606@g.us" } : {}) },
+message: { 
+orderMessage: { itemCount : -999999, status: 1, surface : 1, message: 'WhatsApp Bot Oficial', orderTitle: 'Bang', thumbnail: fs.readFileSync('./Menu2.jpg'), sellerJid: '0@s.whatsapp.net'    
+}}}
+const estiloaudio = { key: {  fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "5219992095479-1625305606@g.us" } : {}) },
+message: { 
+"audioMessage": { "mimetype":"audio/ogg; codecs=opus", "seconds": "99569", "ptt": "true"   
+}}}  
 
-    if (/(ass?alam|اَلسَّلاَمُ عَلَيْكُمْ|السلام عليکم)/i.test(m.text) && !m.fromMe) {
-        m.reply(`Wa\'alaikumussalam Wr.Wb.`)
-    }
-
-    if (/^bot$/i.test(m.text)) {
-        await this.sendButton(m.chat, !(m.isGroup || m.isPrems) && group ? 'hanya grup' : isBanned ? 'chat banned' : banned ? 'user banned' : 'aktif', wm, !(m.isGroup || m.isPrems) && group ? 'donasi' : isBanned ? 'unban' : banned ? 'minta owner kalo mau di unban' : 'donasi', !(m.isGroup || m.isPrems) && group ? '.donasi' : isBanned ? '.unban' : banned ? '.owner' : '.donasi', m)
-    }
-
-    return !0
+if (/^bot$/i.test(m.text)) {
+    
+conn.sendButton(m.chat, '*Hola, como te puedo ayudar?*', '©The Shadow Borkers - Bot', [['𝙼𝙴𝙽𝚄 𝙳𝙴 𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂', `#menu`]], 'conversation', { sendEphemeral: true, quoted: estilo })
+conn.sendFile(m.chat, vn, 'bot.mp3', null, m, true, { type: 'audioMessage', ptt: true, sendEphemeral: true, quoted: estiloaudio })   
 }
-
+return !0
+}
 export default handler
