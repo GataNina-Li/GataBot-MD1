@@ -14,6 +14,7 @@
 > Dashboard: https://dash.boxmineworld.com/home
 > Panel: https://panel.boxmineworld.com
 > Contacto de apoyo para dudas SOBRE EL HOST: wa.me/59891296100 
+> Preguntar a Vicemi los planes y sobre como subir The Mystic - Bot a un servidor 
 ```
 
 #### ACTIVAR EN HEROKU
