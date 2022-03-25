@@ -8,10 +8,11 @@
 
 #### ACTIVAR EN BOXMINEWORLD
 <img src="https://i.imgur.com/RIpBF5u.png" alt="GIF" width="300" height="100"/>
+
 ```bash
-> Pagina Oficial: https://boxmineworld.com/
+> Pagina Oficial: https://boxmineworld.com
 > Dashboard: https://dash.boxmineworld.com/home
-> Panel: https://panel.boxmineworld.com/
+> Panel: https://panel.boxmineworld.com
 > Contacto de apoyo para dudas sobre el HOST: wa.me/59891296100 
 ```
 
