@@ -18,7 +18,10 @@
 > Dudas UNICAMENTE SOBRE EL HOST: wa.me/59891296100
 ```
 <p>> Pagina Oficial:
-<a href="https://boxmineworld.com"></a>.
+<a href="https://boxmineworld.com">https://boxmineworld.com</a>.
+</p>
+<p>> Dashboard:
+<a href="https://dash.boxmineworld.com/home">https://dash.boxmineworld.com/home</a>.
 </p>
 
 #### ACTIVAR EN HEROKU
