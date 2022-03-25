@@ -13,9 +13,13 @@
 > Pagina Oficial: https://boxmineworld.com
 > Dashboard: https://dash.boxmineworld.com/home
 > Panel: https://panel.boxmineworld.com
-> Contacto de apoyo para dudas SOBRE EL HOST: wa.me/59891296100 
-> Preguntar a Vicemi los planes y sobre como subir The Mystic - Bot a un servidor 
+> Tutorial 1: https://youtu.be/ZAwBLuNmIlI
+> Tutorial 2: https://youtu.be/WOcVXLKpKr0
+> Dudas UNICAMENTE SOBRE EL HOST: wa.me/59891296100
 ```
+<p>Crea un enlace a
+<a href="https://www.mozilla.org/es-ES/">la página de inicio de Mozilla</a>.
+</p>
 
 #### ACTIVAR EN HEROKU
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/BrunoSobrino/TheMystic-Bot-MD)
