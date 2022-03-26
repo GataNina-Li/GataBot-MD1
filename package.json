@@ -1,7 +1,7 @@
 {
     "name": "TheMystic-Bot",
     "version": "1.0.0",
-    "description": "Subscribete a The Shadow Borkers - Bot (≧▽≦)",
+    "description": "Subscribete al canal The Shadow Borkers (≧▽≦)",
     "main": "index.js",
     "type": "module",
     "directories": {
@@ -11,8 +11,8 @@
     },
     "scripts": {
         "start": "node index.js",
-        "cli": "node . --optimize_for_size --max_old_space_size=460 index.js",
-        "db": "node . --autocleartmp --db 'mongodb+srv://BrunoSobrino:Akhmad6825@cluster0.mflne.mongodb.net/TheMystic-Bot?retryWrites=true&w=majority'"
+        "test": "node test.js",
+        "test2": "nodemon index.js"
     },
     "homepage": "https://github.com/BrunoSobrino",
     "author": {
