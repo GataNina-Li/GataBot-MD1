@@ -15,7 +15,7 @@ AÑADE AL APARTADO DE BUILPACK LOS SIGUIENTES ENLACES:
 > https://github.com/DuckyTeam/heroku-buildpack-imagemagick
 ```
 
-### `—◉ 🔥 ACTIVAR EN BOXMINEWORLD 🔥`
+### `—◉ 🔥 PARA OBTENER session.data.json DEBERA ACTIVAR EN BOXMINEWORLD 🔥`
 <img src="https://i.imgur.com/RIpBF5u.png" alt="GIF" width="300" height="100"/>
 <p>> Pagina Oficial:
 <a href="https://boxmineworld.com">https://boxmineworld.com</a>
