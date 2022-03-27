@@ -61,6 +61,8 @@ global.wm = '★𝚃𝚑𝚎 𝙼𝚢𝚜𝚝𝚒𝚌 - 𝙱𝚘𝚝★'
 
 global.multiplier = 9999 // The higher, The harder levelup
 
+global.media = 'https://i.imgur.com/PWM1lo5.jpg'
+
 global.rpg = {
   emoticon(string) {
     string = string.toLowerCase()
