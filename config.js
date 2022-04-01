@@ -35,7 +35,7 @@ global.APIs = { // API Prefix
   hardianto: 'http://hardianto-chan.herokuapp.com',
   shadow: 'https://api.reysekha.xyz',
   apialc: 'https://api-alc.herokuapp.com'
-}
+},
 global.APIKeys = { // APIKey Here
   // 'https://website': 'apikey'
   'https://api-alc.herokuapp.com': 'ConfuMods',
@@ -60,8 +60,6 @@ global.author = '★𝚃𝚑𝚎 𝙼𝚢𝚜𝚝𝚒𝚌 - 𝙱𝚘𝚝★'
 global.wm = '★𝚃𝚑𝚎 𝙼𝚢𝚜𝚝𝚒𝚌 - 𝙱𝚘𝚝★'
 
 global.multiplier = 9999 // The higher, The harder levelup
-
-global.media = 'https://i.imgur.com/PWM1lo5.jpg'
 
 global.rpg = {
   emoticon(string) {
