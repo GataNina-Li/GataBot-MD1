@@ -28,26 +28,21 @@ let handler = async (m, { conn, text, participants, usedPrefix, command }) => {
             content: [{ tag: 'participant', attrs: { jid } }]
         }))})
   if (response[users] == 408) throw `*El numero se salio recientemente*\n*La unica manera de añadirlo es por medio del enlace del grupo. Usa ${usedPrefix}link para obtener el enlace*`
-  let pp = await conn.profilePictureUrl(m.chat).catch(_ => null)
-  let jpegThumbnail = pp ? await (await fetch(pp)).buffer() : false
-  let add = getBinaryNodeChild(response, 'add')
-  let participant = getBinaryNodeChildren(add, 'participant')
-  for (const user of participant.filter(item => item.attrs.error == 403)) {
-  //for (let user of response.participant.filter(user => Object.values(user)[0].code == 403)) {
-    let [[jid, {
-      invite_code,
-      invite_code_exp
-    }]] = Object.entries(user)
-    let teks = `*No fue posible añadir a @${jid.split('@')[0]}*\n*Enviando invitacion a su privado...*`
-    m.reply(teks, null, {
-      contextInfo: {
-        mentionedJid: conn.parseMention(teks)
-      }
-    })
-    await conn.sendGroupV4Invite(m.chat, jid, invite_code, invite_code_exp, false, 'Hey!! Hola, me presento, soy The Shadow Brokers - Bot, y soy un Bot para WhatsApp, una persona del grupo utilizo el comando para añadirte al grupo, pero no pude agregarte, asi que te mando la invitacion para que te agregues, te esperamos!!', jpegThumbnail ? {
-      jpegThumbnail
-    } : {})
-  }
+    const pp = await conn.profilePictureUrl(m.chat).catch(_ => null)
+    const jpegThumbnail = pp ? await (await fetch(pp)).buffer() : Buffer.alloc(0)
+    const add = getBinaryNodeChild(response, 'add')
+    const participant = getBinaryNodeChildren(add, 'participant')
+    for (const user of participant.filter(item => item.attrs.error == 403)) {
+        const jid = user.attrs.jid
+        const content = getBinaryNodeChild(user, 'add_request')
+        const invite_code = content.attrs.code
+        const invite_code_exp = content.attrs.expiration
+        let teks = `*No fue posible añadir a @${jid.split('@')[0]}*\n*Enviando invitacion a su privado...*`
+        m.reply(teks, null, {
+            mentions: conn.parseMention(teks)
+        })
+        await conn.sendGroupV4Invite(m.chat, jid, invite_code, invite_code_exp, await conn.getName(m.chat), 'Hey!! Hola, me presento, soy The Mystic - Bot, y soy un Bot para WhatsApp, una persona del grupo utilizo el comando para añadirte al grupo, pero no pude agregarte, asi que te mando la invitacion para que te agregues, te esperamos!!', jpegThumbnail)
+    }
 }
 handler.command = /^(agregar|añadir|\+)$/i
 handler.group = true
