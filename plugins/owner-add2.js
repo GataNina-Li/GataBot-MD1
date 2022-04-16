@@ -32,7 +32,7 @@ let handler = async (m, { conn, text, participants, usedPrefix, command }) => {
   let jpegThumbnail = pp ? await (await fetch(pp)).buffer() : false
   let add = getBinaryNodeChild(response, 'add')
   let participant = getBinaryNodeChildren(add, 'participant')
-  for (const user of participants.filter(item => item.attrs.error == 403)) {
+  for (const user of participant.filter(item => item.attrs.error == 403)) {
   //for (let user of response.participant.filter(user => Object.values(user)[0].code == 403)) {
     let [[jid, {
       invite_code,
