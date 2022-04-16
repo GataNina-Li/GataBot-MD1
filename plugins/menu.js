@@ -152,7 +152,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
       ['𝙳𝙾𝙽𝙰𝚁', '/donasi'],
       ['𝚂𝙿𝙴𝙴𝙳', '/ping'],
       ['𝙾𝚆𝙽𝙴𝚁', '/owner']
-    ], m, { asLocation: 1 })
+    ], m,)
   } catch (e) {
     conn.reply(m.chat, 'Maaf, menu sedang error', m)
     throw e
