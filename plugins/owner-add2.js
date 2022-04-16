@@ -28,7 +28,7 @@ let handler = async (m, { conn, text, participants, usedPrefix, command }) => {
             content: [{ tag: 'participant', attrs: { jid } }]
         }))})
   if (response[users] == 408) throw `*El numero se salio recientemente*\n*La unica manera de añadirlo es por medio del enlace del grupo. Usa ${usedPrefix}link para obtener el enlace*`
-  let pp = await conn.getProfilePicture(m.chat).catch(_ => false)
+  let pp = await conn.profilePictureUrl(m.chat).catch(_ => null)
   let jpegThumbnail = pp ? await (await fetch(pp)).buffer() : false
   for (let user of response.participants.filter(user => Object.values(user)[0].code == 403)) {
     let [[jid, {
