@@ -1,4 +1,8 @@
 import fetch from 'node-fetch'
+/**
+ * @type {import('@adiwajshing/baileys')}
+ */
+const { getBinaryNodeChild, getBinaryNodeChildren } = (await import('@adiwajshing/baileys')).default
 let handler = async (m, { conn, text, participants, usedPrefix, command }) => {
   if (!text) throw! `*Ingrese un numero o corrobore que el numero ingresado este escrito correctamente y en formato internacional*\n*Ejemplo:*\n\n*${usedPrefix + command + ' ' + global.owner[0]}*`
   let _participants = participants.map(user => user.jid)
@@ -11,7 +15,18 @@ let handler = async (m, { conn, text, participants, usedPrefix, command }) => {
         await conn.onWhatsApp(v + '@s.whatsapp.net')
       ])
   )).filter(v => v[1]).map(v => v[0] + '@c.us')
-  let response = await conn.groupAdd(m.chat, users)
+  let response = await conn.query({
+        tag: 'iq',
+        attrs: {
+            type: 'set',
+            xmlns: 'w:g2',
+            to: m.chat,
+        },
+        content: users.map(jid => ({
+            tag: 'add',
+            attrs: {},
+            content: [{ tag: 'participant', attrs: { jid } }]
+        }))})
   if (response[users] == 408) throw `*El numero se salio recientemente*\n*La unica manera de añadirlo es por medio del enlace del grupo. Usa ${usedPrefix}link para obtener el enlace*`
   let pp = await conn.getProfilePicture(m.chat).catch(_ => false)
   let jpegThumbnail = pp ? await (await fetch(pp)).buffer() : false
