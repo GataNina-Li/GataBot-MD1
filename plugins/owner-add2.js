@@ -28,16 +28,6 @@ let handler = async (m, { conn, text, participants, usedPrefix, command }) => {
             content: [{ tag: 'participant', attrs: { jid } }]
         }))})
   if (response[users] == 408) throw `*El numero se salio recientemente*\n*La unica manera de añadirlo es por medio del enlace del grupo. Usa ${usedPrefix}link para obtener el enlace*`
-    const _participants = participants.map(user => user.id)
-    const users = (await Promise.all(
-    text.split(',')
-    .map(v => v.replace(/[^0-9]/g, ''))
-    .filter(v => v.length > 4 && v.length < 20 && !_participants.includes(v + '@s.whatsapp.net'))
-    .map(async v => [
-    v,
-    await conn.onWhatsApp(v + '@s.whatsapp.net')
-    ])
-    )).filter(v => v[1][0]?.exists).map(v => v[0] + '@c.us')
     const pp = await conn.profilePictureUrl(m.chat).catch(_ => null)
     const jpegThumbnail = pp ? await (await fetch(pp)).buffer() : Buffer.alloc(0)
     const add = getBinaryNodeChild(response, 'add')
@@ -52,7 +42,7 @@ let handler = async (m, { conn, text, participants, usedPrefix, command }) => {
         mentions: conn.parseMention(teks)
 })
 await conn.sendGroupV4Invite(m.chat, jid, invite_code, invite_code_exp, await conn.getName(m.chat), 'Hey!! Hola, me presento, soy The Mystic - Bot, y soy un Bot para WhatsApp, una persona del grupo utilizo el comando para añadirte al grupo, pero no pude agregarte, asi que te mando la invitacion para que te agregues, te esperamos!!', jpegThumbnail)
-}}}
+}
 handler.command = /^(agregar|añadir|\+)$/i
 handler.group = true
 handler.admin = true
