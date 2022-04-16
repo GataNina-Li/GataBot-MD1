@@ -8,7 +8,7 @@ let handler = async (m, { conn, text, participants, usedPrefix, command }) => {
       .filter(v => v.length > 4 && v.length < 20 && !_participants.includes(v + '@s.whatsapp.net'))
       .map(async v => [
         v,
-        await conn.isOnWhatsApp(v + '@s.whatsapp.net')
+        await conn.onWhatsApp(v + '@s.whatsapp.net')
       ])
   )).filter(v => v[1]).map(v => v[0] + '@c.us')
   let response = await conn.groupAdd(m.chat, users)
