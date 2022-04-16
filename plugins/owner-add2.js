@@ -52,7 +52,7 @@ let handler = async (m, { conn, text, participants, usedPrefix, command }) => {
         mentions: conn.parseMention(teks)
 })
 await conn.sendGroupV4Invite(m.chat, jid, invite_code, invite_code_exp, await conn.getName(m.chat), 'Hey!! Hola, me presento, soy The Mystic - Bot, y soy un Bot para WhatsApp, una persona del grupo utilizo el comando para añadirte al grupo, pero no pude agregarte, asi que te mando la invitacion para que te agregues, te esperamos!!', jpegThumbnail)
-}}
+}}}
 handler.command = /^(agregar|añadir|\+)$/i
 handler.group = true
 handler.admin = true
