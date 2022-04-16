@@ -1,7 +1,7 @@
 {
     "name": "TheMystic-Bot",
     "version": "1.0.0",
-    "description": "Subscribete al canal The Shadow Borkers (≧▽≦)",
+    "description": "Subscribete al canal de YT The Shadow Borkers",
     "main": "index.js",
     "type": "module",
     "directories": {
@@ -11,36 +11,24 @@
     },
     "scripts": {
         "start": "node index.js",
-        "test": "node test.js",
-        "test2": "nodemon index.js"
+        "cli": "node . --optimize_for_size --max_old_space_size=460 index.js",
+        "db": "node . --autocleartmp --db 'mongodb+srv://BrunoSobrino:Akhmad6825@cluster0.mflne.mongodb.net/TheMystic-Bot?retryWrites=true&w=majority'"
     },
-    "keywords": [
-        "termux-whatsapp-bot",
-        "whatsapp-bot",
-        "whatsapp",
-        "js-whatsapp",
-        "whatsapp",
-        "Games-wabot",
-        "wabot-aq",
-        "multi-device",
-        "MD",
-        "baileys-md"
-    ],
-    "homepage": "https://github.com/BrunoSobrino/TheMystic-Bot-MD",
+    "homepage": "https://github.com/BrunoSobrino",
     "author": {
         "name": "BrunoSobrino"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/BrunoSobrino/TheMystic-Bot-MD.git"
+        "url": "git+https://github.com/BrunoSobrino/TheMystic-Bot.git"
     },
     "bugs": {
-        "url": "https://github.com/BrunoSobrino/TheMystic-Bot-MD/issues"
+        "url": "https://github.com/BrunoSobrino/TheMystic-Bot/issues"
     },
-    "license": "GPL-3.0-or-later",
+    "license": "MIT",
     "dependencies": {
         "@adiwajshing/baileys": "github:adiwajshing/baileys",
-        "@bochilteam/scraper": "^2.0.0",
+        "@bochilteam/scraper": "^1.0.5",
         "awesome-phonenumber": "^2.68.0",
         "axios": "^0.24.0",
         "cfonts": "^2.10.0",
