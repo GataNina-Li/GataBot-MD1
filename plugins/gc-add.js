@@ -35,7 +35,7 @@ try {
         const content = getBinaryNodeChild(user, 'add_request')
         const invite_code = content.attrs.code
         const invite_code_exp = content.attrs.expiration
-        let teks = `*No fue posible añadir a @${jid.split('@')[0]}*\n*Enviando invitacion a su privado...*`
+        let teks = `*error*`
         m.reply(teks, null, {
         mentions: conn.parseMention(teks)
 })}
