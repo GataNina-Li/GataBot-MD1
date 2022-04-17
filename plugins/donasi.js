@@ -1,16 +1,22 @@
 let handler =  m => m.reply(`
-╭─「 Donasi • Pulsa 」
-│ • Indosat Ooredoo [085713964963]
-│ • Telkomsel [081319944687]
-╰────
-
-╭─「 Donasi • Non Pulsa 」
-│ • https://saweria.co/BochilGaming
-│ • Gopay [085713964963]
-╰────
-`.trim()) // Tambah sendiri kalo mau
+*┏ ┅ ━━━━━━━━━━━━━ ┅ ━*
+*┇       「 DONAR 」*
+*┣ ┅ ━━━━━━━━━━━━━ ┅ ━*
+*┃ ❖ Hola persona hermosa 💙*
+*┃ 👉🏻 Aquí tienes algunos datos*
+*┃ para que puedas apoyar <3*
+*┃*
+*┃ -   CLABE: 646180192175788481* 
+*┃ -   BANCO: STP* 
+*┃ -   BENEFICIARIO: JOSE SOBRINO* 
+*┃ -   CONCEPTO: APOYO*  
+*┃➤ PayPal: https://www.paypal.me/TheShadowBrokers133*
+*┃❖ Contáctame si necesitas otros*
+*┃datos y para darte las gracias <3*
+*┃❖ wa.me/5219996125657*
+*┗ ┅ ━━━━━━━━━━━━━ ┅ ━*
+`.trim()) 
 handler.help = ['donasi']
 handler.tags = ['info']
 handler.command = /^dona(te|si)$/i
-
 export default handler
