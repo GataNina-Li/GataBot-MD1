@@ -4,7 +4,6 @@ import fetch from 'node-fetch'
  */
 const { getBinaryNodeChild, getBinaryNodeChildren } = (await import('@adiwajshing/baileys')).default
 let handler = async (m, { conn, text, participants, usedPrefix, command }) => {
-if (!text) throw! `*Ingrese un numero o corrobore que el numero ingresado este escrito correctamente y en formato internacional*\n*Ejemplo:*\n\n*${usedPrefix + command + ' ' + global.owner[0]}*`
 try {
   let _participants = participants.map(user => user.jid)
   let users = (await Promise.all(
