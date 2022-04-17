@@ -53,18 +53,17 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     let { min, xp, max } = xpRange(level, global.multiplier)
     let name = await conn.getName(m.sender)
     let d = new Date(new Date + 3600000)
-    let locale = 'id'
+    let locale = 'es'
     // d.getTimeZoneOffset()
     // Offset -420 is 18.00
     // Offset    0 is  0.00
     // Offset  420 is  7.00
     let weton = ['Pahing', 'Pon', 'Wage', 'Kliwon', 'Legi'][Math.floor(d / 84600000) % 5]
-    let week = d.toLocaleDateString(locale, { weekday: 'long', timeZone: 'Latinoamérica/México' })
+    let week = d.toLocaleDateString(locale, { weekday: 'long' })
     let date = d.toLocaleDateString(locale, {
       day: 'numeric',
       month: 'long',
-      year: 'numeric',
-      timeZone: 'Latinoamérica/México'
+      year: 'numeric'
     })
     let dateIslamic = Intl.DateTimeFormat(locale + '-TN-u-ca-islamic', {
       day: 'numeric',
@@ -74,8 +73,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     let time = d.toLocaleTimeString(locale, {
       hour: 'numeric',
       minute: 'numeric',
-      second: 'numeric',
-      timeZone: 'Latinoamérica/México'
+      second: 'numeric'
     })
     let _uptime = process.uptime() * 1000
     let _muptime
