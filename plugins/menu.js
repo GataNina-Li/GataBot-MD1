@@ -27,24 +27,21 @@ let tags = {
 }
 const defaultMenu = {
   before: `
-╭─「 %me 🤖」
-│ 👋🏻 Hai, %name!
-│
-│ 🧱 Limit : *%limit Limit*
-│ 🦸🏼‍♂️ Role : *%role*
-│ 🔼 Level : *%level (%exp / %maxexp)*
-│ 💫 Total XP : %totalexp ✨
-│ 
-│ 📅 Tanggal: *%week, %date*
-│ 🕰️ Waktu: *%time*
-│
-│ 📈 Uptime: *%uptime (%muptime)*
-│ 📊 Database: %rtotalreg of %totalreg
-╰────
-%readmore`.trimStart(),
-  header: '╭─「 %category 」',
-  body: '│ • %cmd %islimit %isPremium',
-  footer: '╰────\n',
+╭═┅〘 𝐓𝐡𝐞 𝐌𝐲𝐬𝐭𝐢𝐜 - 𝐁𝐨𝐭 〙═╮
+║ 👋🏻 𝙷𝚘𝚕𝚊 %name!
+║
+║ 🧱 𝙻𝚒𝚖𝚒𝚝𝚎: *%limit 𝚞𝚜𝚘𝚜*
+║ 
+║ 📅 𝙵𝚎𝚌𝚑𝚊: *%week, %date*
+║ 🕰️ 𝙷𝚘𝚛𝚊: *%time*
+║
+║ 📈 𝙰𝚌𝚝𝚒𝚟𝚘: *%uptime*
+║ 📊 𝚄𝚜𝚞𝚊𝚛𝚒𝚘𝚜: *%rtotalreg*
+*╰═┅ৡৢ͜͡✦═╡𝗦𝗮𝟯𝟬╞═┅ৡৢ͜͡✦═╯*
+%readmore`.trimStart(), 
+  header: '╭═〘 %category 〙═╮',
+  body: '║ %cmd %islimit %isPremium',
+  footer: '╰═┅ৡৢ═══╡🔥╞═══┅ৡৢ═╯\n',
   after: `
 *%npmname* | %version
 `,
@@ -154,7 +151,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
       ['𝙾𝚆𝙽𝙴𝚁', '/owner']
     ], m,)
   } catch (e) {
-    conn.reply(m.chat, 'Maaf, menu sedang error', m)
+    conn.reply(m.chat, 'Lo sentimos, el menú tiene un error', m)
     throw e
   }
 }
