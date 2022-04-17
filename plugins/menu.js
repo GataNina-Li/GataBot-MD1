@@ -142,12 +142,17 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
+    let vn = './media/menu.mp3'
     const pp = './Menu2.jpg'
     conn.sendHydrated(m.chat, text.trim(), '𝚃𝚑𝚎 𝙼𝚢𝚜𝚝𝚒𝚌 - 𝙱𝚘𝚝', pp, 'https://github.com/BrunoSobrino/TheMystic-Bot-MD', '𝙶𝙸𝚃𝙷𝚄𝙱', owner[0][0], '𝙾𝚆𝙽𝙴𝚁', [
       ['𝙳𝙾𝙽𝙰𝚁', '/donasi'],
       ['𝚂𝙿𝙴𝙴𝙳', '/ping'],
       ['𝙾𝚆𝙽𝙴𝚁', '/owner']
     ], m,)
+    await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, {
+    type: 'audioMessage', 
+    ptt: true 
+})
   } catch (e) {
     conn.reply(m.chat, 'Lo sentimos, el menú tiene un error', m)
     throw e
