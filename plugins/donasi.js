@@ -18,5 +18,5 @@ let handler =  m => m.reply(`
 `.trim()) 
 handler.help = ['donasi']
 handler.tags = ['info']
-handler.command = /^dona(te|si)$/i
+handler.command = /^dona(te|si)|donar$/i
 export default handler
