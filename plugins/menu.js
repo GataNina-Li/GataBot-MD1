@@ -37,11 +37,11 @@ const defaultMenu = {
 ║
 ║ 📈 𝙰𝚌𝚝𝚒𝚟𝚘: *%uptime*
 ║ 📊 𝚄𝚜𝚞𝚊𝚛𝚒𝚘𝚜: *%rtotalreg*
-*╰═┅ৡৢ͜͡✦═╡𝗦𝗮𝟯𝟬╞═┅ৡৢ͜͡✦═╯*
+╰═┅ৡৢ͜͡✦═╡🤖🤖╞═┅ৡৢ͜͡✦═╯
 %readmore`.trimStart(), 
   header: '╭═〘 %category 〙═╮',
-  body: '║ %cmd %islimit %isPremium',
-  footer: '╰═┅ৡৢ═══╡🔥╞═══┅ৡৢ═╯\n',
+  body: '╟❧ %cmd %islimit %isPremium',
+  footer: '╰════╡🔥╞════╯\n',
   after: `
 *%npmname* | %version
 `,
@@ -59,12 +59,12 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     // Offset    0 is  0.00
     // Offset  420 is  7.00
     let weton = ['Pahing', 'Pon', 'Wage', 'Kliwon', 'Legi'][Math.floor(d / 84600000) % 5]
-    let week = d.toLocaleDateString(locale, { weekday: 'long', timeZone: 'Asia/Jakarta' })
+    let week = d.toLocaleDateString(locale, { weekday: 'long', timeZone: 'México/Yucatán' })
     let date = d.toLocaleDateString(locale, {
       day: 'numeric',
       month: 'long',
       year: 'numeric',
-      timeZone: 'Asia/Jakarta'
+      timeZone: 'México/Yucatán'
     })
     let dateIslamic = Intl.DateTimeFormat(locale + '-TN-u-ca-islamic', {
       day: 'numeric',
@@ -75,7 +75,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
       hour: 'numeric',
       minute: 'numeric',
       second: 'numeric',
-      timeZone: 'Asia/Jakarta'
+      timeZone: 'México/Yucatán'
     })
     let _uptime = process.uptime() * 1000
     let _muptime
