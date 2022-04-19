@@ -35,7 +35,7 @@ const defaultMenu = {
 ║
 ║ 📈 𝚃𝙸𝙴𝙼𝙿𝙾 𝙰𝙲𝚃𝙸𝚅𝙾: *%uptime*
 ║ 📊 𝚄𝚂𝚄𝙰𝚁𝙸𝙾𝚂: *%rtotalreg*
-╰═┅ৡৢ͜͡✦═╡🤖🤖╞═┅ৡৢ͜͡✦═╯
+╰═┅ৡৢ͜͡✦═╡🤖╞═┅ৡৢ͜͡✦═╯
 %readmore`.trimStart(), 
   header: '╭═〘 %category 〙═╮',
   body: '╟❧ %cmd %islimit %isPremium',
@@ -142,7 +142,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
     let vn = './media/menu.mp3'
     const pp = './Menu2.jpg'
-    conn.sendHydrated(m.chat, text.trim(), '𝚃𝚑𝚎 𝙼𝚢𝚜𝚝𝚒𝚌 - 𝙱𝚘𝚝', pp, 'https://github.com/BrunoSobrino/TheMystic-Bot-MD', '𝙶𝙸𝚃𝙷𝚄𝙱', owner[0][0], '𝙾𝚆𝙽𝙴𝚁', [
+    conn.sendHydrated(m.chat, text.trim(), '𝚃𝚑𝚎 𝙼𝚢𝚜𝚝𝚒𝚌 - 𝙱𝚘𝚝', pp, 'https://github.com/BrunoSobrino/TheMystic-Bot-MD', '𝙶𝙸𝚃𝙷𝚄𝙱', null, null, [
       ['𝙳𝙾𝙽𝙰𝚁', '/donasi'],
       ['𝚂𝙿𝙴𝙴𝙳', '/ping'],
       ['𝙾𝚆𝙽𝙴𝚁', '/owner']
@@ -152,13 +152,13 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     ptt: true 
 })
   } catch (e) {
-    conn.reply(m.chat, 'Lo sentimos, el menú tiene un error', m)
+    conn.reply(m.chat, '*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝙻 𝙼𝙴𝙽𝚄 𝚃𝙸𝙴𝙽𝙴 𝚄𝙽 𝙴𝚁𝚁𝙾𝚁 𝚈 𝙽𝙾 𝙵𝚄𝙴 𝙿𝙾𝚂𝙸𝙱𝙻𝙴 𝙴𝙽𝚅𝙸𝙰𝚁𝙻𝙾, 𝚁𝙴𝙿𝙾𝚁𝚃𝙴𝙻𝙾 𝙰𝙻 𝙿𝚁𝙾𝙿𝙸𝙴𝚃𝙰𝚁𝙸𝙾 𝙳𝙴𝙻 𝙱𝙾𝚃*', m)
     throw e
   }
 }
 handler.help = ['menu', 'help', '?']
 handler.tags = ['main']
-handler.command = /^(menu|m|help|\?)$/i
+handler.command = /^(menu|menú|memu|memú|help|info|comandos|allmenu|2help|menu1.2|ayuda|commands|commandos|m|\?)$/i
 
 handler.exp = 3
 
