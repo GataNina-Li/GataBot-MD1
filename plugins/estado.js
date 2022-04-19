@@ -9,9 +9,7 @@ let estado =`
 `.trim()
 
 conn.sendHydrated(m.chat, estado, wm, picture, 'https://github.com/BrunoSobrino/ShadowBotV3', 'GitHub', null, null, [
-['MENÚ PRINCIPAL', '/menu'],
-['MENÚ SIMPLE', '/menusimple'],
-['MENÚ AUDIOS', '/menu2']
+['MENÚ PRINCIPAL', '/menu']
 ], m)}
 
 handler.command = /^(estado|status|estate|state|stado|stats)$/i
