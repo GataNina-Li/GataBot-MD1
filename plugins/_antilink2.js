@@ -8,7 +8,7 @@ export async function before(m, { isAdmin, isBotAdmin }) {
     let bot = global.db.data.settings[this.user.jid] || {}
     const isGroupLink = linkRegex.exec(m.text)
 
-    if (chat.antiLink && isGroupLink && !isAdmin) {
+    if (chat.antiLink2 && isGroupLink && !isAdmin) {
         if (isBotAdmin) {
             const linkThisGroup = `https://chat.whatsapp.com/${await this.groupInviteCode(m.chat)}`
             if (m.text.includes(linkThisGroup)) return !0
