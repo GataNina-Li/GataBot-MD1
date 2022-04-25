@@ -26,7 +26,7 @@ let handler = async (m, { conn, args, participants, usedPrefix, command }) => {
   })
   let leaderboard = leaderboards.filter(v => v && users.filter(user => user && user[v]).length)
   let type = (args[0] || '').toLowerCase()
-  const getPage = (item) => Math.ceil((users.filter(user => user && user[item]).length) / 25)
+  const getPage = (item) => Math.ceil((users.filter(user => user && user[item]).length) / 20)
   let wrong = `
 Use format *${usedPrefix}${command} [type] [page]*
 example *${usedPrefix}${command} money 1*
@@ -42,13 +42,15 @@ ${rpg.emoticon(v)}${v}
   let userItem = sortedItem.map(enumGetKey)
   // let len = args[0] && args[0].length > 0 ? Math.min(100, Math.max(parseInt(args[0]), 5)) : Math.min(5, sortedExp.length)
   let text = `
-• *${rpg.emoticon(type)}${type} Leaderboard page ${page} of ${getPage(type)}* •
-You: *${userItem.indexOf(m.sender) + 1}* of *${userItem.length}*
+▣› *${rpg.emoticon(type)}${type} Leaderboard* ‹▣
+*📑 Page:* ${page} of ${getPage(type)}
+*🎖️ You:* *${userItem.indexOf(m.sender) + 1}* of *${userItem.length}*
 
-${sortedItem.slice(page * 25, page * 25 + 25).map((user, i) => `${i + 1}. ${participants.some(p => areJidsSameUser(user.jid, p.id)) ? `(${conn.getName(user.jid)}) wa.me/` : '@'}${user.jid.split`@`[0]} *${user[type]} ${rpg.emoticon(type)}${type}*`).join`\n`}
+${sortedItem.slice(page * 20, page * 20 + 20).map((user, i) => '▣\n' + `│ ${i + 1}〉 ${participants.some(p => areJidsSameUser(user.jid, p.id)) ? `(${conn.getName(user.jid)}) wa.me/` : '@'}${user.jid.split`@`[0]}\n│▸ ${user[type]} ${type}${rpg.emoticon(type)}`).join`\n┗────────────·····\n\n`}
+┗────────────·····
 `.trim()
   return m.reply(text, null, {
-    mentions: [...userItem.slice(page * 25, page * 25 + 25)].filter(v => !participants.some(p => areJidsSameUser(v, p.id)))
+    mentions: [...userItem.slice(page * 20, page * 20 + 20)].filter(v => !participants.some(p => areJidsSameUser(v, p.id)))
   })
 }
 handler.help = ['leaderboard [jumlah user]', 'lb [jumlah user]']
