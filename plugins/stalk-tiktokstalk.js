@@ -4,7 +4,7 @@ let handler = async(m, { conn, text }) => {
 
   if (!text) return conn.reply(m.chat, 'Harap Masukan Username', m)
 
-    let res = await fetch(`https://api.lolhuman.xyz/api/stalktiktok/${text}?apikey=rey2k22`)
+    let res = await fetch(`https://api.lolhuman.xyz/api/stalktiktok/${text}?apikey=9b817532fadff8fc7cb86862`)
     let json = await res.json()
     if (res.status !== 200) throw await res.text()
     if (!json.status) throw json
