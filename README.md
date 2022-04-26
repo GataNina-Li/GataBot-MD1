@@ -37,7 +37,7 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 > npm start
 ```
 
-### `—◉ 🔥 ACTIVAR EN TERMUX BOXMINEHOST 🔥`
+### `—◉ 🔥 ACTIVAR EN BOXMINEHOST 🔥`
 <img src="https://i.imgur.com/RIpBF5u.png" alt="GIF" width="300" height="100"/>
 <p>> Pagina Oficial:
 <a href="https://boxmineworld.com">https://boxmineworld.com</a>
@@ -56,5 +56,5 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 ## `EDITOR Y PORPIETARIO DEL BOT` 
 [![BrunoSobrino](https://github.com/BrunoSobrino/TheMystic-Bot-MD/blob/master/Menu2.jpg?raw=truesize=100)](https://github.com/BrunoSobrino/) 
 ```bash
-`The Mystic - Bot _____ By Bruno Sobrino` 
+`The Mystic - Bot __________ By Bruno Sobrino` 
 ```
