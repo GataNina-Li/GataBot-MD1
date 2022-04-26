@@ -55,6 +55,5 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 
 ## `EDITOR Y PORPIETARIO DEL BOT` 
 [![BrunoSobrino](https://github.com/BrunoSobrino/TheMystic-Bot-MD/blob/master/Menu2.jpg?raw=truesize=100)](https://github.com/BrunoSobrino/) 
-```bash
-`The Mystic - Bot __________ By Bruno Sobrino` 
-```
+`The Mystic - Bot __________ By Bruno Sobrino`
+
