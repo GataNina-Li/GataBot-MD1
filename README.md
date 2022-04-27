@@ -32,7 +32,6 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 > npm install
 > yarn install 
 > npm install
-> npm install -g npm@8.7.0
 > npm update
 > npm start
 ```
