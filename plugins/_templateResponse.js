@@ -60,8 +60,7 @@ export async function all(m, chatUpdate) {
                 continue
             isIdMessage = true
         }
-
-    }
+}
     let messages = await generateWAMessage(m.chat, { text: isIdMessage ? id : text, mentions: m.mentionedJid }, {
         userJid: this.user.id,
         quoted: m.quoted && m.quoted.fakeObj
