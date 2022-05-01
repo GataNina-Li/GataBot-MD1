@@ -68,10 +68,10 @@ let users = global.db.data.users
 const btn = isTie ? ['𝚅𝙾𝙻𝚅𝙴𝚁 𝙰 𝙹𝚄𝙶𝙰𝚁', '/ttt'] : ['𝙳𝙰𝚁𝚂𝙴 𝙿𝙾𝚁 𝚅𝙴𝙽𝙲𝙸𝙳𝙾', 'salir']
 if ((room.game._currentTurn ^ isSurrender ? room.x : room.o) !== m.chat)
 room[room.game._currentTurn ^ isSurrender ? 'x' : 'o'] = m.chat
-if (room.x !== room.o) await this.sendButton(room.x, str, author, btn, m, {
+if (room.x !== room.o) this.sendButton(room.x, str, author, btn, m, {
 mentions: this.parseMention(str)
 })
-await this.sendButton(room.o, str, author, btn, m, {
+this.sendButton(room.o, str, author, btn, m, {
 mentions: this.parseMention(str)
 })
 if (isTie || isWin) {
