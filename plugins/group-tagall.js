@@ -12,7 +12,6 @@ let handler = async(m, { isOwner, isAdmin, conn, text, participants }) => {
 handler.help = ['tagall <message>']
 handler.tags = ['group']
 handler.command = /^(tagall)$/i
-
+handler.admin = true
 handler.group = true
-
 export default handler
