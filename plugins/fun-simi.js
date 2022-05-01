@@ -4,7 +4,7 @@ let handler = async (m, {text}) => {
   let res = await api.json()
   m.reply(res.success)
 }
-handler.command = ['simi']
+handler.command = ['simi', 'bot']
 handler.tags = ['fun']
 handler.help = ['simi']
 
