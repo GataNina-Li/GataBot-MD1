@@ -8,7 +8,7 @@ await await await conn.sendFile(m.chat, vn, 'error.mp3', null, m, true, {
 type: 'audioMessage', 
 ptt: true })
 }
-handler.help = ['mgay']
+handler.help = ['gay']
 handler.tags = ['maker']
-handler.command = /^(mgay)$/i
+handler.command = /^(gay)$/i
 export default handler
