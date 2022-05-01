@@ -1,7 +1,7 @@
 import TicTacToe from '../lib/tictactoe.js'
 
 let handler = async (m, { conn, usedPrefix, command, text }) => {
-    conn.game = conn.game ? conn.game : {}
+conn.game = conn.game ? conn.game : {}
     if (Object.values(conn.game).find(room => room.id.startsWith('tictactoe') && [room.game.playerX, room.game.playerO].includes(m.sender))) throw '*[❗𝐈𝐍𝐅𝐎❗] 𝙰𝚄𝙽 𝙴𝚂𝚃𝙰𝚂 𝙴𝙽 𝚄𝙽𝙰 𝚂𝙰𝙻𝙰 𝙳𝙴 𝙹𝚄𝙴𝙶𝙾, TERMINA LA PARTIDA O ELIMINA LA SALA*\n\n*👉🏻 𝙿𝙰𝚁𝙰 𝚂𝙰𝙻𝙸𝚁 𝙿𝚄𝙴𝙳𝙴𝚂 𝙴𝚂𝙲𝚁𝙸𝙱𝙸𝚁 "salir" 𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙸𝙴𝙽𝙳𝙾 𝙰𝙻 𝙼𝙴𝙽𝚂𝙰𝙹𝙴 𝙳𝙴𝙻 𝙸𝙽𝙸𝙲𝙸𝙾 𝙳𝙴𝙻 𝙹𝚄𝙴𝙶𝙾 𝙴𝙽𝚅𝙸𝙰𝙳𝙾 𝙿𝙾𝚁 𝙴𝙻 𝙱𝙾𝚃*\n*👉🏻 𝙿𝙰𝚁𝙰 𝙴𝙻𝙸𝙼𝙸𝙽𝙰𝚁 𝙻𝙰 𝚂𝙰𝙻𝙰 𝙴𝚂𝙲𝚁𝙸𝙱𝙴 𝙴𝙻 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 #delttt + 𝙴𝙻 𝙽𝙾𝙼𝙱𝚁𝙴 𝙳𝙴 𝙻𝙰 𝚂𝙰𝙻𝙰*'
     let room = Object.values(conn.game).find(room => room.state === 'WAITING' && (text ? room.name === text : true))
     // m.reply('[WIP Feature]')
