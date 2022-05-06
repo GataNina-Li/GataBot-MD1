@@ -183,14 +183,14 @@
       <g style="clip-path:url(#id1)">
         <image x="297" y="153" width="687" height="687" xlink:href="welcome_Images\welcome_ImgID2.png" />
       </g>
-      <text x="112" y="944" class="fil1 fnt0">Ini Ucapan Out Buat Memeber Yang Out Kalo Bisa</text>
+      <text x="112" y="944" class="fil1 fnt0">Esta es una palabra para los miembros que están fuera si puedes.</text>
       <!-- <text x="112" y="997" class="fil1 fnt0">Yang  Panjang</text> -->
       <path class="fil2" d="M297 658l183 0c22,0 40,18 40,39l0 142 -223 0 0 -181z" />
       <g style="clip-path:url(#id2)">
         <image x="316" y="704" width="179.998" height="99.9993" xlink:href="welcome_Images\welcome_ImgID3.png" />
       </g>
-      <text x="482" y="105" class="fil2 fnt1">NAMA GRUP </text>
-      <text x="109" y="1071" class="fil2 fnt2">Nama Yang Out</text>
+      <text x="482" y="105" class="fil2 fnt1">Nombre del Grupo</text>
+      <text x="109" y="1071" class="fil2 fnt2">fuera de nombre</text>
       <path class="fil0 str1" d="M148 1211l20 -19c4,-3 6,-5 10,-9 7,-9 11,-17 7,-28 -4,-10 -14,-15 -25,-13 -6,2 -9,5 -12,8 0,0 0,0 -1,-1l-1 -1c-20,-17 -42,3 -35,23 3,9 13,18 19,23l8 7c2,2 3,3 5,5 2,1 3,3 5,5z" />
       <g>
         <circle class="fil0 str2" cx="278" cy="1176" r="38" />
