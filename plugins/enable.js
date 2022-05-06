@@ -8,7 +8,6 @@ rows: [
 {title: "🥵 | 𝙼𝙾𝙳𝙾 𝙷𝙾𝚁𝙽𝚈", rowId: `${usedPrefix + command} modohorny`},
 {title: "🔗 | 𝙰𝙽𝚃𝙸𝙻𝙸𝙽𝙺", rowId: `${usedPrefix + command} antilink`},
 {title: "🔗 | 𝙰𝙽𝚃𝙸𝙻𝙸𝙽𝙺 𝟸", rowId: `${usedPrefix + command} antilink2`},
-{title: "🚫 | 𝙰𝙽𝚃𝙸𝙳𝙴𝙻𝙴𝚃𝙴", rowId: `${usedPrefix + command} antidelete`},
 {title: "🔎 | 𝙳𝙴𝚃𝙴𝙲𝚃", rowId: `${usedPrefix + command} detect`},
 {title: "❗ | 𝚁𝙴𝚂𝚃𝚁𝙸𝙲𝚃", rowId: `${usedPrefix + command} restrick`},
 {title: "☑️ | 𝙰𝚄𝚃𝙾𝚁𝙴𝙰𝙳", rowId: `${usedPrefix + command} autoread`},
