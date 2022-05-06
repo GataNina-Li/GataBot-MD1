@@ -186,7 +186,7 @@ export async function handler(chatUpdate) {
                     banned: false,
                     warn: 0,
                     level: 0,
-                    role: 'Beginner',
+                    role: 'Novato',
                     autolevelup: true,
 
                     money: 0,
@@ -490,7 +490,7 @@ export async function handler(chatUpdate) {
                 else
                     m.exp += xp
                 if (!isPrems && plugin.limit && global.db.data.users[m.sender].limit < plugin.limit * 1) {
-                    this.reply(m.chat, `*[❗𝐈𝐍𝐅𝐎 ❗] 𝚂𝚄 𝙻𝙸𝙼𝙸𝚃𝙴 𝙳𝙴 𝚄𝚂𝙾 𝙳𝙴 𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂 𝙲𝙾𝙽 𝙻𝙸𝙼𝙸𝚃𝙴 𝚂𝙴 𝙷𝙰 𝙰𝙶𝙾𝚃𝙰𝙳𝙾, 𝙿𝚄𝙴𝙳𝙴 𝙲𝙾𝙼𝙿𝚁𝙰𝚁 𝙼𝙰𝚂 𝚄𝚂𝙰𝙽𝙳𝙾 𝙴𝙻 𝙲𝙾𝙼𝙰𝙽𝙳𝙾* *${usedPrefix}buy*`, m)
+                    this.reply(m.chat, `*[❗𝐈𝐍𝐅𝐎 ❗] 𝚂𝚄𝚂 𝙳𝙸𝙰𝙼𝙰𝙽𝚃𝙴𝚂 𝚂𝙴 𝙷𝙰𝙽 𝙰𝙶𝙾𝚃𝙰𝙳𝙾, 𝙿𝚄𝙴𝙳𝙴 𝙲𝙾𝙼𝙿𝚁𝙰𝚁 𝙼𝙰𝚂 𝚄𝚂𝙰𝙽𝙳𝙾 𝙴𝙻 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 ${usedPrefix}buy <cantidad>*`, m)
                     continue // Limit habis
                 }
                 if (plugin.level > _user.level) {
@@ -550,7 +550,7 @@ export async function handler(chatUpdate) {
                         }
                     }
                     if (m.limit)
-                        m.reply(+m.limit + ' 𝐋𝐈𝐌𝐈𝐓𝐄 𝐔𝐒𝐀𝐃𝐎')
+                        m.reply(+m.limit + ' 𝐃𝐈𝐀𝐌𝐀𝐍𝐓𝐄 💎 𝐔𝐒𝐀𝐃𝐎')
                 }
                 break
             }
@@ -635,7 +635,7 @@ export async function participantsUpdate({ id, participants, action }) {
                         pp = await this.profilePictureUrl(user, 'image')
                     } catch (e) {
                     } finally {
-                        text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || 'unknow') :
+                        text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || '*𝚂𝙸𝙽 𝙳𝙴𝚂𝙲𝚁𝙸𝙿𝙲𝙸𝙾𝙽*') :
                             (chat.sBye || this.bye || conn.bye || 'Bye, @user!')).replace('@user', '@' + user.split('@')[0])
                             let apii = await this.getFile(pp)
                             this.sendButton(id, text, groupMetadata.subject, apii.data, [[(action == 'add' ? '𝙱𝙸𝙴𝙽𝚅𝙴𝙽𝙸𝙳𝙾 🔥' : '𝙰𝙳𝙸𝙾𝚂 🔥'), 'ura']], '',  { mentions: [user], asLocation: true })
@@ -644,8 +644,12 @@ export async function participantsUpdate({ id, participants, action }) {
             }
             break
         case 'promote':
+        case 'daradmin':
+        case 'darpoder':
             text = (chat.sPromote || this.spromote || conn.spromote || '@user ```is now Admin```')
         case 'demote':
+        case 'quitarpoder':
+        case 'quitaradmin':
             if (!text)
                 text = (chat.sDemote || this.sdemote || conn.sdemote || '@user ```is no longer Admin```')
             text = text.replace('@user', '@' + participants[0].split('@')[0])
@@ -691,7 +695,9 @@ export async function deleteUpdate(message) {
 ━━━━⬣  𝘼𝙉𝙏𝙄 𝘿𝙀𝙇𝙀𝙏𝙀  ⬣━━━━
 *■ Nombre:* @${participant.split`@`[0]}
 *■ Enviando el mensaje..*
-*■ Para desactivar esta función escriba el comando #disable delete*
+*■ Para desactivar esta función escriba el comando:*
+*—◉ #disable antidelete*
+*—◉ #enable delete*
 ━━━━⬣  𝘼𝙉𝙏𝙄 𝘿𝙀𝙇𝙀𝙏𝙀  ⬣━━━━
 `.trim(), msg, {
             mentions: [participant]
