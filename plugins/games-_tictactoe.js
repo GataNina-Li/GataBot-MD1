@@ -1,4 +1,4 @@
-import { format } from 'util'
+/*import { format } from 'util'
 
 let debugMode = !1
 
@@ -91,4 +91,4 @@ ${arr.slice(6).join('')}
         }
     }
     return !0
-}
+}*/
