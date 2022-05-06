@@ -6,7 +6,7 @@ let json = res.data
 let mystic = json.url
 conn.sendButton(m.chat, `_Navidad 🧑‍🎄_`, author, mystic, [['🔄 𝚂𝙸𝙶𝚄𝙸𝙴𝙽𝚃𝙴 🔄', `/${command}`]], m)
 }
-handler.help = ['itzy','kpopitzy']
+handler.help = ['navidad']
 handler.tags = ['internet']
-handler.command = /^(itzy|kpopitzy)$/i
+handler.command = /^(navidad)$/i
 export default handler
