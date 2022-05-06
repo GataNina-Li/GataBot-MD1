@@ -1,4 +1,4 @@
-import TicTacToe from '../lib/tictactoe.js'
+/*import TicTacToe from '../lib/tictactoe.js'
 
 let handler = async (m, { conn, usedPrefix, command, text }) => {
     conn.game = conn.game ? conn.game : {}
@@ -73,4 +73,4 @@ handler.help = ['tictactoe <nombre Sala>']
 handler.tags = ['game']
 handler.command = ['tictactoe', 'ttc', 'ttt', 'xo']
 
-export default handler
+export default handler*/
