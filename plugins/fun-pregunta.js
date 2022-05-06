@@ -6,7 +6,6 @@ let handler = async (m, { command, text }) => m.reply(`
 `.trim(), null, m.mentionedJid ? {
 mentions: m.mentionedJid
 } : {})
-
 handler.help = ['pregunta <texto>?']
 handler.tags = ['kerang']
 handler.command = /^pregunta|preguntas|apakah$/i
