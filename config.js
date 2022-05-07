@@ -33,7 +33,12 @@ global.APIs = { // API Prefix
   rey: 'https://server-api-rey.herokuapp.com',
   hardianto: 'http://hardianto-chan.herokuapp.com',
   shadow: 'https://api.reysekha.xyz',
-  apialc: 'https://api-alc.herokuapp.com'
+  apialc: 'https://api-alc.herokuapp.com',
+  botstyle: 'https://botstyle-api.herokuapp.com',
+  neoxr: 'https://neoxr-api.herokuapp.com',
+  ana: 'https://anabotofc.herokuapp.com/',
+  kanx: 'https://kannxapi.herokuapp.com/',
+  dhnjing: 'https://dhnjing.xyz'
 },
 global.APIKeys = { // APIKey Here
   // 'https://website': 'apikey'
@@ -49,7 +54,10 @@ global.APIKeys = { // APIKey Here
   'https://pencarikode.xyz': 'pais', 
   'https://leyscoders-api.herokuapp.com': 'MIMINGANZ', 
   'https://server-api-rey.herokuapp.com': 'apirey',
-  'https://api.lolhuman.xyz': '9b817532fadff8fc7cb86862'
+  'https://api.lolhuman.xyz': '9b817532fadff8fc7cb86862',
+  'https://botstyle-api.herokuapp.com': 'Eyar749L',
+  'https://neoxr-api.herokuapp.com': 'yntkts',
+  'https://anabotofc.herokuapp.com/': 'AnaBot'
 }
 
 // Sticker WM
