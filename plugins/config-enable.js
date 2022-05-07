@@ -12,6 +12,7 @@ rows: [
 {title: "❗ | 𝚁𝙴𝚂𝚃𝚁𝙸𝙲𝚃", rowId: `${usedPrefix + command} restrick`},
 {title: "☑️ | 𝙰𝚄𝚃𝙾𝚁𝙴𝙰𝙳", rowId: `${usedPrefix + command} autoread`},
 {title: "🔊 | 𝙰𝚄𝙳𝙸𝙾𝚂", rowId: `${usedPrefix + command} audios`},
+{title: "👾 | 𝙰𝚄𝚃𝙾𝚂𝚃𝙸𝙲𝙺𝙴𝚁", rowId: `${usedPrefix + command} autosticker`},
 ]}, ]
 let name = await conn.getName(m.sender)
 const listMessage = {
@@ -43,6 +44,8 @@ title: `╭══〘 ✯✯✯✯✯✯✯✯ 〙═╮
 ┣ ඬ⃟ℹ️ _${usedPrefix}disable *autoread*_
 ┣ ඬ⃟ℹ️ _${usedPrefix}enable *audios*_
 ┣ ඬ⃟ℹ️ _${usedPrefix}disable *audios*_
+┣ ඬ⃟ℹ️ _${usedPrefix}enable *autosticker*_
+┣ ඬ⃟ℹ️ _${usedPrefix}disable *autosticker*_
 ┗━━━━━━━━━━━━━┛
 ㅤㅤㅤㅤㅤㅤㅤㅤ
 `,
@@ -127,6 +130,14 @@ global.dfail('admin', m, conn)
 throw false
 }}
 chat.modohorny = isEnable          
+break
+case 'autosticker':
+if (m.isGroup) {
+if (!(isAdmin || isOwner)) {
+global.dfail('admin', m, conn)
+throw false
+}}
+chat.autosticker = isEnable          
 break
 case 'audios':
 if (m.isGroup) {
