@@ -11,7 +11,7 @@ rows: [
 {title: "🔎 | 𝙳𝙴𝚃𝙴𝙲𝚃", rowId: `${usedPrefix + command} detect`},
 {title: "❗ | 𝚁𝙴𝚂𝚃𝚁𝙸𝙲𝚃", rowId: `${usedPrefix + command} restrick`},
 {title: "☑️ | 𝙰𝚄𝚃𝙾𝚁𝙴𝙰𝙳", rowId: `${usedPrefix + command} autoread`},
-{title: "🔊 | 𝙰𝚄𝚃𝙾𝚁𝙴𝙰𝙳", rowId: `${usedPrefix + command} audios`},
+{title: "🔊 | 𝙰𝚄𝙳𝙸𝙾𝚂", rowId: `${usedPrefix + command} audios`},
 ]}, ]
 let name = await conn.getName(m.sender)
 const listMessage = {
