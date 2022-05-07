@@ -264,6 +264,8 @@ export async function handler(chatUpdate) {
                     chat.delete = true
                 if (!('modohorny' in chat))
                     chat.modohorny = false    
+                if (!('autosticker' in chat))
+                    chat.autosticker = false                    
                 if (!('audios' in chat))
                     chat.audios = false                            
                 if (!('antiLink' in chat))
@@ -287,6 +289,7 @@ export async function handler(chatUpdate) {
                     sDemote: '',
                     delete: false,
                     modohorny: true,
+                    autosticker: false,
                     audios: true,
                     antiLink: false,
                     antiLink2: false,
