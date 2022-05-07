@@ -9,10 +9,10 @@ let user = db.data.users[m.sender]
 if (chat.autosticker && m.isGroup) {
 let q = m
 let stiker = false
-let mime = (q.msg || q).mimetype || ''
-if (/webp/.test(mime)) return
-if (/image/.test(mime)) {
-let img = await q.download()
+let mime = (q.msg || q).mimetype || q.mediaType || ''
+if (/webp/g.test(mime)) return
+if (/image/g.test(mime)) {
+let img = await q.download?.()
 if (!img) return
 stiker = await sticker(img, false, packname, author)
 } else if (/video/.test(mime)) {
