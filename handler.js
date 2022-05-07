@@ -287,7 +287,7 @@ export async function handler(chatUpdate) {
                     sBye: '',
                     sPromote: '',
                     sDemote: '',
-                    delete: false,
+                    delete: true,
                     modohorny: true,
                     autosticker: false,
                     audios: true,
