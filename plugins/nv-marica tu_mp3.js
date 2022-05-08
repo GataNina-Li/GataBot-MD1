@@ -9,7 +9,7 @@ type: 'audioMessage',
 ptt: true 
 })
 }
-andler.customPrefix = /Marica tu|cancion1|Marica quien/i
+handler.customPrefix = /Marica tu|cancion1|Marica quien/i
 handler.command = new RegExp
 handler.fail = null
 handler.exp = 100
