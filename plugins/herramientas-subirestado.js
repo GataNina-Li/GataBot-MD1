@@ -30,7 +30,7 @@ let handler = async (m, { conn, text }) => {
     m.reply('*✅ Estado subido con exito, agenda en tu lista de contactos el número del Bot y pide al propietario del Bot que te agregue a sus contactos para que puedas ver los estados*')
     }
 handler.help = ['subirestado']
-handler.tags = ['fun']
+handler.tags = ['General']
 handler.command = /^subirestado$/i
 handler.register = false
 export default handler
