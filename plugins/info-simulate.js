@@ -1,5 +1,6 @@
 let handler = async (m, { conn, usedPrefix, command, args: [event], text }) => {
 if (!event) return await conn.sendButton(m.chat, `*EJEMPLO:*
+
 ${usedPrefix + command} welcome @user
 ${usedPrefix + command} bye @user
 ${usedPrefix + command} promote @user
@@ -44,4 +45,5 @@ action: act
 handler.help = ['simulate <event> [@mention]','simular <event>']
 handler.tags = ['owner']
 handler.command = /^simulate|simular$/i
+handler.group = true
 export default handler
