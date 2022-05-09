@@ -1,7 +1,5 @@
 # `🧿 𝚃𝚑𝚎 𝙼𝚢𝚜𝚝𝚒𝚌 - 𝙱𝚘𝚝 🔮`
 
-## NOTA: ES POSIBLE QUE EL BOT TENGA ALGUNAS FALLAS, SE IRAN SOLUCIONANDO CONFORME SE VAYAN DETECTANDO
-
 ### `—◉ 👑 DUDAS SOBRE EL BOT?, CONTACTAME 👑`
 <a href="http://wa.me/5219992095479" target="blank"><img src="https://img.shields.io/badge/BRUNO_SOBRINO-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" /></a>
 > NO BOT
@@ -14,6 +12,15 @@ AÑADE AL APARTADO DE BUILPACK LO SIGUIENTE:
 > https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git
 > https://github.com/clhuang/heroku-buildpack-webp-binaries.git
 > https://github.com/DuckyTeam/heroku-buildpack-imagemagick.git
+```
+
+### `—◉ 📝 NOTAS 📝`
+```bash
+> ES POSIBLE QUE EL BOT TENGA ALGUNAS FALLAS, SE IRAN SOLUCIONANDO CONFORME SE VAYAN DETECTANDO
+> ES RECOMENDABLE LEER TODO EL MENU Y VER EL FUNCIONAMIENTO DE CADA UNO 
+> REPORTA CUALQUIER FALLO CON EL COMANDO DE REPORTE 
+> PARA PODER ESCANEAR EL CODIGO QR DEBES SER PARTICIPANTE DE LA VERSION MULTI-DEVICE (BETA) DE WHATSAPP
+> NO MODIFIQUES NADA QUE NO SEPAS PARA QUE ES, PARA EVITAR PROBLEMAS O ERRORES
 ```
 
 ### `—◉ 👾 ACTIVAR EN TERMUX 👾`
