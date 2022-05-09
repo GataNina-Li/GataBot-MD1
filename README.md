@@ -36,6 +36,7 @@ AÑADE AL APARTADO DE BUILPACK LO SIGUIENTE:
 ### `—◉ 👾 ACTIVAR EN TERMUX 👾`
 ```bash
 ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
+> cd
 > termux-setup-storage
 > apt update 
 > pkg upgrade 
