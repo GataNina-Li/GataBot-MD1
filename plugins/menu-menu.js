@@ -320,6 +320,8 @@ _(𝑢𝑠𝑜 𝑠𝑖𝑛 𝑝𝑟𝑒𝑓𝑖𝑗𝑜)_
 ° ඬ⃟🔊 _Feliz cumpleaños_
 ° ඬ⃟🔊 _Noche de paz_
 ° ඬ⃟🔊 _Buenos dias_
+° ඬ⃟🔊 _Buenos tardes_
+° ඬ⃟🔊 _Buenos noches_
 ° ඬ⃟🔊 _Audio hentai_
 ° ඬ⃟🔊 _Chica lgante_
 ° ඬ⃟🔊 _Feliz navidad_
@@ -369,6 +371,8 @@ _(𝑢𝑠𝑜 𝑠𝑖𝑛 𝑝𝑟𝑒𝑓𝑖𝑗𝑜)_
 ° ඬ⃟💵 _${usedPrefix}levelup_
 ° ඬ⃟💵 _${usedPrefix}myns_
 ° ඬ⃟💵 _${usedPrefix}perfil_
+° ඬ⃟💵 _${usedPrefix}work_
+° ඬ⃟💵 _${usedPrefix}minar_
 ° ඬ⃟💵 _${usedPrefix}buy_
 ° ඬ⃟💵 _${usedPrefix}buyall_
 ° ඬ⃟💵 _${usedPrefix}transfer *<tipo> <cantidad> <@tag>*_
@@ -404,6 +408,8 @@ _(𝑢𝑠𝑜 𝑠𝑖𝑛 𝑝𝑟𝑒𝑓𝑖𝑗𝑜)_
 ° ඬ⃟👑 _${usedPrefix}cleartpm_
 ° ඬ⃟👑 _${usedPrefix}restart_
 ° ඬ⃟👑 _${usedPrefix}update_
+° ඬ⃟👑 _${usedPrefix}añadirdiamantes *<@tag> <cantidad>*_
+° ඬ⃟👑 _${usedPrefix}añadirxp *<@tag> <cantidad>*_
 `.trim()
 conn.sendHydrated(m.chat, str, wm, pp, 'https://github.com/BrunoSobrino/TheMystic-Bot-MD', '𝙶𝙸𝚃𝙷𝚄𝙱', null, null, [
 ['📮 𝙳𝙾𝙽𝙰𝚁 📮', '/donasi'],
