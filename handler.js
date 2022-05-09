@@ -68,7 +68,7 @@ export async function handler(chatUpdate) {
                 if (!isNumber(user.level))
                     user.level = 0
                 if (!('role' in user))
-                    user.role = 'Beginner'
+                    user.role = 'Novato'
                 if (!('autolevelup' in user))
                     user.autolevelup = true
 
