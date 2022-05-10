@@ -397,6 +397,10 @@ _(𝑢𝑠𝑜 𝑠𝑖𝑛 𝑝𝑟𝑒𝑓𝑖𝑗𝑜)_
 ° ඬ⃟👑 _${usedPrefix}disable *autoread*_
 ° ඬ⃟👑 _${usedPrefix}enable *public*_
 ° ඬ⃟👑 _${usedPrefix}disable *public*_
+° ඬ⃟👑 _${usedPrefix}enable *pconly*_
+° ඬ⃟👑 _${usedPrefix}disable *pconly*_
+° ඬ⃟👑 _${usedPrefix}enable *gconly*_
+° ඬ⃟👑 _${usedPrefix}disable *gconly*_
 ° ඬ⃟👑 _${usedPrefix}banchat2_
 ° ඬ⃟👑 _${usedPrefix}unbanchat2_
 ° ඬ⃟👑 _${usedPrefix}banuser *<@tag>*_
