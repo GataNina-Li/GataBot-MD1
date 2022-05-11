@@ -64,10 +64,8 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 <a href="https://dash.boxmineworld.com/home">https://dash.boxmineworld.com/home</a>
 <p>> Panel:
 <a href="https://panel.boxmineworld.com">https://panel.boxmineworld.com</a>
-<p>> Tutorial 1:
-<a href="https://youtu.be/ZAwBLuNmIlI">https://youtu.be/ZAwBLuNmIlI</a>
-<p>> Tutorial 2:
-<a href="https://youtu.be/WOcVXLKpKr0">https://youtu.be/WOcVXLKpKr0</a>
+<p>> Tutorial:
+<a href="https://youtu.be/eC9TfKICpcY">https://youtu.be/eC9TfKICpcY</a>
 <p>> Dudas UNICAMENTE SOBRE EL HOST:
 <a href="https://discord.gg/84qsr4v">https://discord.gg/84qsr4v</a> (Preguntar por Vicemi)
 </p>
