@@ -5,7 +5,7 @@
 > NO BOT
 
 ### `—◉ ✨ ACTIVAR EN HEROKU ✨`
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/BrunoSobrino/TheMystic-Bot-MD)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/GataNina-Li/GataBot-MD)
 ```bash
 AÑADE AL APARTADO DE BUILPACK LO SIGUIENTE, SI YA APARCEN SOLO IGNORA ESTA PARTE:
 > heroku/nodejs
@@ -15,8 +15,8 @@ AÑADE AL APARTADO DE BUILPACK LO SIGUIENTE, SI YA APARCEN SOLO IGNORA ESTA PART
 ```
 
 ### `—◉ ⚙️ AJUSTES ⚙️`
-- CLONAR EL REPOSITORIO [Aqui](https://github.com/BrunoSobrino/TheMystic-Bot-MD/fork)
-- CAMBIAR NÚMERO DEL OWNER [Aqui](https://github.com/BrunoSobrino/TheMystic-Bot-MD/blob/master/config.js)
+- CLONAR EL REPOSITORIO [Aqui](https://github.com/GataNina-Li/GataBot-MD/fork)
+- CAMBIAR NÚMERO DEL OWNER [Aqui](https://github.com/GataNina-Li/GataBot-MD/blob/master/config.js)
 
 ### `—◉ 👾 ACTIVAR EN TERMUX 👾`
 ```bash
