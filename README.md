@@ -1,4 +1,5 @@
-# ⚠️ Esta versión de GataBot no esta terminada.
+# Esta versión de GataBot no esta terminada. <img src="https://c.tenor.com/QaPEi-tcFXQAAAAC/gato-besando-a-la-camara.gif" height="32px">
+
 <p align="center">
   <a href="https://github.com/GataNina-Li"><img src="http://readme-typing-svg.herokuapp.com?color=FFFFFF&center=true&vCenter=true&multiline=false&lines=GataBot-MD;...⚠+Esta+versión+de+GataBot+no+esta+terminada;Recode+By+Ammar - Executed;Give+star+and+forks+this+Repo+:D;Follow+My+Github" alt="UwU">
 </p>
@@ -6,16 +7,18 @@
 <p align="center">
 <img src="https://i.imgur.com/WwxBm8o.jpg" alt="GataBot-MD" width="900"/>
 </p>
+
 <p align="center">
-<a href="#"><img title="GataBot-MD" src="https://img.shields.io/badge/SI TE AGRADA EL REPOSITORIO APOYAME CON UNA 🌟 ¡GRACIAS! -red?colorA=%255ff0000&colorB=%23017e40&style=for-the-badge"></a> 
-</p>
+<a href="#"><img title="GataBot-MD" src="https://img.shields.io/badge/SI TE AGRADA EL REPOSITORIO APOYAME CON UNA 🌟 ¡GRACIAS! -red?colorA=%255ff0000&colorB=%23017e40&style=for-the-badge"></a>   <img src="https://i.pinimg.com/originals/d4/3c/90/d43c902873d4db8c85974dfd0798030b.gif" height="28px">
+</p>  
+
 <p align="center">
 </p>
 <a href="#"><img title="GataBot-MD" src="https://img.shields.io/badge/ES NECESARIO QUE LEA TODO EL README-red?colorA=%255ff0000&colorB=%23971920&style=for-the-badge"></a>
 
 -----
 [![blog](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)
-](https://youtube.com/channel/UCpNU4eY7eiI0ve05CssjdbA)  <img src="https://github.com/siegrin/siegrin/blob/main/Assets/powerup.gif" height="32px">
+](https://youtube.com/channel/UCpNU4eY7eiI0ve05CssjdbA)  <img src="https://github.com/siegrin/siegrin/blob/main/Assets/powerup.gif" height="29px">
 
 <p align="hihg">   
 <a href="https://instagram.com/gata_dios" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a> <img src="https://github.com/siegrin/siegrin/blob/main/Assets/Handshake.gif" height="32px">
@@ -24,11 +27,11 @@
 > Escríbeme si tienes dudas.
 -----
 
-### 🟣 ACTIVAR EN HEROKU
-#### ☂️ PARA USUARIOS DE HEROKU
+### 🟣 ACTIVAR EN HEROKU 
+#### ☂️ PARA USUARIOS DE HEROKU 
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/GataNina-Li/GataBot-MD)
-### 👇 Añada lo siguente al Buildpack:
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/GataNina-Li/GataBot-MD) <img src="https://c.tenor.com/OIc0cAei3dwAAAAd/gato-baile.gif" height="32px">
+### Añada lo siguente al Buildpack: <img src="https://cdn-0.emojis.wiki/emoji-pics/microsoft/backhand-index-pointing-down-microsoft.png" height="32px">
 ```bash
 > heroku/nodejs
 ```
@@ -42,11 +45,11 @@
 > https://github.com/DuckyTeam/heroku-buildpack-imagemagick.git
 ```
 -----
-### `—◉ ⚙️ AJUSTES ⚙️`
+###  AJUSTE <img src="https://i.pinimg.com/originals/98/1b/e2/981be28d3ec7b85bfb797a5f9e6a01c2.png" height="32px">
 - CLONAR EL REPOSITORIO [`Aquí`](https://github.com/GataNina-Li/GataBot-MD/fork)
 - CAMBIAR NÚMERO DEL OWNER [`Aquí`](https://github.com/GataNina-Li/GataBot-MD/blob/master/config.js)
 
-### `—◉ 👾 ACTIVAR EN TERMUX 👾`
+### `—◉ 👾 ACTIVAR EN TERMUX 👾` <img src="https://c.tenor.com/HLrXIleGBToAAAAC/transparent-cat.gif" height="30px">
 ```bash
 ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 > cd
