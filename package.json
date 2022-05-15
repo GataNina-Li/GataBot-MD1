@@ -1,7 +1,7 @@
 {
-    "name": "TheMystic-Bot",
+    "name": "GataBot-MD",
     "version": "1.0.0",
-    "description": "Subscribete al canal de YT The Shadow Borkers",
+    "description": "Super Bot WhatsApp",
     "main": "index.js",
     "type": "module",
     "directories": {
@@ -14,16 +14,16 @@
         "cli": "node . --optimize_for_size --max_old_space_size=460 index.js",
         "db": "node . --autocleartmp --db 'mongodb+srv://BrunoSobrino:Akhmad6825@cluster0.mflne.mongodb.net/TheMystic-Bot?retryWrites=true&w=majority'"
     },
-    "homepage": "https://github.com/BrunoSobrino",
+    "homepage": "https://github.com/GataNina-Li",
     "author": {
-        "name": "BrunoSobrino"
+        "name": "GataNina-Li"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/BrunoSobrino/TheMystic-Bot.git"
+        "url": "git+https://github.com/GataNina-Li/GataBot-MD.git"
     },
     "bugs": {
-        "url": "https://github.com/BrunoSobrino/TheMystic-Bot/issues"
+        "url": "https://github.com/GataNina-Li/GataBot-MD/issues"
     },
     "license": "MIT",
     "dependencies": {
