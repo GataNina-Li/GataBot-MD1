@@ -70,26 +70,26 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 > npm start
 ```
 
-### `—◉ ✔️ ACTIVAR EN CASO DE DETENERSE ✔️`
+### ACTIVAR EN CASO DE DETENERSE <img src="https://i.pinimg.com/originals/0e/c9/89/0ec989dde8b5fc0deef4e5b09292b605.gif" height="30px">
 ```bash
 ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 > cd 
-> cd TheMystic-Bot-MD
+> cd GataBot-MD
 > npm start
 ```
 
-### `—◉ 👽 OBTENER OTRO CODIGO QR 👽`
+### OBTENER OTRO CODIGO QR <img src="http://4.bp.blogspot.com/-mFQY5cKLkQ0/U0kwKQn5RzI/AAAAAAAADk0/FDOXxWZ9grU/s1600/QR-code-color.png" height="30px">
 ```bash
 ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 > cd 
-> cd TheMystic-Bot-MD
+> cd GataBot-MD
 > rm -rf session.data.json
 > npm start
 ```
 
 
 
-### `—◉ 📝 NOTAS 📝`
+### NOTAS 
 ```bash
 - ES POSIBLE QUE EL BOT TENGA ALGUNAS FALLAS, SE IRAN SOLUCIONANDO CONFORME SE VAYAN DETECTANDO
 - ES RECOMENDABLE LEER TODO EL MENU Y VER EL FUNCIONAMIENTO DE CADA UNO DE LOS COMANDOS
