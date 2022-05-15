@@ -103,9 +103,3 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 - EL BOT FUNCIONA AUNQUE EL WHATSAPP NO TENGA CONEXION 
 - SE RECOMIENDA REESCANEAR EL CODIGO QR CADA 2 DIAS, PARA EVITAR PROBLEMAS O ERRORES
 ```
-
-## `EDITOR Y PORPIETARIO DEL BOT` 
-[![BrunoSobrino](https://github.com/BrunoSobrino/TheMystic-Bot-MD/blob/master/Menu2.jpg?raw=truesize=100)](https://github.com/BrunoSobrino/) 
-
-`The Mystic - Bot __________ By Bruno Sobrino`
-
