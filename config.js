@@ -4,8 +4,8 @@ import { fileURLToPath } from 'url'
 
 global.owner = [
   ['14509774891', '👑 Shadow - King 👑', true],
-  ['593968585383'],
-  ['593993684821']
+  ['56977774748'],
+  ['56954940385']
 ] // Cambia los numero que quieras
 global.mods = [] 
 global.prems = [] 
