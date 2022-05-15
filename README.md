@@ -1,22 +1,50 @@
-# `🧿 𝚃𝚑𝚎 𝙼𝚢𝚜𝚝𝚒𝚌 - 𝙱𝚘𝚝 🔮`
+# ⚠️ Esta versión de GataBot no esta terminada.
+<p align="center">
+  <a href="https://github.com/GataNina-Li"><img src="http://readme-typing-svg.herokuapp.com?color=FFFFFF&center=true&vCenter=true&multiline=false&lines=GataBot-MD;...⚠+Esta+versión+de+GataBot+no+esta+terminada;Recode+By+Ammar - Executed;Give+star+and+forks+this+Repo+:D;Follow+My+Github" alt="UwU">
+</p>
 
-### `—◉ 👑 DUDAS SOBRE EL BOT?, CONTACTAME 👑`
-<a href="http://wa.me/5219992095479" target="blank"><img src="https://img.shields.io/badge/BRUNO_SOBRINO-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" /></a>
-> NO BOT
+<p align="center">
+<img src="https://i.imgur.com/WwxBm8o.jpg" alt="GataBot-MD" width="900"/>
+</p>
+<p align="center">
+<a href="#"><img title="GataBot-MD" src="https://img.shields.io/badge/SI TE AGRADA EL REPOSITORIO APOYAME CON UNA 🌟 ¡GRACIAS! -red?colorA=%255ff0000&colorB=%23017e40&style=for-the-badge"></a> 
+</p>
+<p align="center">
+</p>
+<a href="#"><img title="GataBot-MD" src="https://img.shields.io/badge/ES NECESARIO QUE LEA TODO EL README-red?colorA=%255ff0000&colorB=%23971920&style=for-the-badge"></a>
 
-### `—◉ ✨ ACTIVAR EN HEROKU ✨`
+-----
+[![blog](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)
+](https://youtube.com/channel/UCpNU4eY7eiI0ve05CssjdbA)  <img src="https://github.com/siegrin/siegrin/blob/main/Assets/powerup.gif" height="32px">
+
+<p align="hihg">   
+<a href="https://instagram.com/gata_dios" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a> <img src="https://github.com/siegrin/siegrin/blob/main/Assets/Handshake.gif" height="32px">
+</p> 
+
+> Escríbeme si tienes dudas.
+-----
+
+### 🟣 ACTIVAR EN HEROKU
+#### ☂️ PARA USUARIOS DE HEROKU
+
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/GataNina-Li/GataBot-MD)
+### 👇 Añada lo siguente al Buildpack:
 ```bash
-AÑADE AL APARTADO DE BUILPACK LO SIGUIENTE, SI YA APARCEN SOLO IGNORA ESTA PARTE:
 > heroku/nodejs
+```
+```bash
 > https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git
+```
+```bash
 > https://github.com/clhuang/heroku-buildpack-webp-binaries.git
+```
+```bash
 > https://github.com/DuckyTeam/heroku-buildpack-imagemagick.git
 ```
-
+-----
 ### `—◉ ⚙️ AJUSTES ⚙️`
-- CLONAR EL REPOSITORIO [Aqui](https://github.com/GataNina-Li/GataBot-MD/fork)
-- CAMBIAR NÚMERO DEL OWNER [Aqui](https://github.com/GataNina-Li/GataBot-MD/blob/master/config.js)
+- CLONAR EL REPOSITORIO [`Aquí`](https://github.com/GataNina-Li/GataBot-MD/fork)
+- CAMBIAR NÚMERO DEL OWNER [`Aquí`](https://github.com/GataNina-Li/GataBot-MD/blob/master/config.js)
 
 ### `—◉ 👾 ACTIVAR EN TERMUX 👾`
 ```bash
