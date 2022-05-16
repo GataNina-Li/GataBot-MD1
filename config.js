@@ -12,8 +12,9 @@ global.owner = [
 
 global.mods = [] 
 global.prems = [] 
-global.APIs = { // API Prefix
-  // name: 'https://website'
+global.APIs = { // API Prefix.
+  
+//⊱ ━━━━━.⋅ name: 'https://website' ⋅.━━━━ ⊰
   amel: 'https://melcanz.com',
   bx: 'https://bx-hunter.herokuapp.com',
   nrtm: 'https://nurutomo.herokuapp.com',
@@ -42,8 +43,9 @@ global.APIs = { // API Prefix
   kanx: 'https://kannxapi.herokuapp.com/',
   dhnjing: 'https://dhnjing.xyz'
 },
+  
 global.APIKeys = { // APIKey Here
-  // 'https://website': 'apikey'
+  //⊱ ━━━━━.⋅ 'https://website': 'apikey' ⋅.━━━━ ⊰
   'https://api-alc.herokuapp.com': 'ConfuMods',
   'https://api.reysekha.xyz': 'apirey',
   'https://melcanz.com': 'F3bOrWzY',
@@ -62,15 +64,33 @@ global.APIKeys = { // APIKey Here
   'https://anabotofc.herokuapp.com/': 'AnaBot'
 }
 
-// Sticker WM
-global.packname = '(☞ﾟ∀ﾟ)☞'
-global.author = '★𝚃𝚑𝚎 𝙼𝚢𝚜𝚝𝚒𝚌 - 𝙱𝚘𝚝★'
 
-global.wm = '★𝚃𝚑𝚎 𝙼𝚢𝚜𝚝𝚒𝚌 - 𝙱𝚘𝚝★'
-global.igfg = '★𝚃𝚑𝚎 𝙼𝚢𝚜𝚝𝚒𝚌 - 𝙱𝚘𝚝★'
+
+//⊱ ━━━━━.⋅ Sticker WM ⋅.━━━━ ⊰
+
+global.packname = '🐈 𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿'
+global.author = '𝙂𝙖𝙩𝙖 𝘿𝙞𝙤𝙨'
+
+//━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
+
+
+//⊱ ━━━━━.⋅ Versión ⋅.━━━━ ⊰
+
+global.vs = '1.0.12'
+global.version = vs
+
+//━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
+
+
+//⊱ ━━━━━.⋅ Información | Information ⋅.━━━━ ⊰
+
+global.wm = '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 | 𝙂𝙖𝙩𝙖 𝘿𝙞𝙤𝙨'
+global.igfg = '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿'
 global.wait = '*⌛ _Cargando..._ ▬▬▬▭*'
 
-global.multiplier = 9999 // The higher, The harder levelup
+//━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
+
+global.multiplier = 9999 // Cuanto más alto, más difícil subir de nivel | The higher, The harder levelup
 
 global.rpg = {
   emoticon(string) {
