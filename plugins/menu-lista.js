@@ -25,8 +25,8 @@ rows: [
 ]}, ]
 let name = await conn.getName(m.sender)
 const listMessage = {
-text: ' ',
-footer: `╭━━━━━━〔 *${wm}* 〕━━━━━━⬣	    
+title: `╭─────────────────────❀\n│${ucapan()}\n│💖•.¸💝¸.• *${name}* •.¸💝¸.•💖\n╰─────────────────────❀`,
+description: `╭━━━━━━〔 *${wm}* 〕━━━━━━⬣
 ┃✪ *Tiempo Actual | Current Time*	    
 ┃➺ ${time}   
 ┃   ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
@@ -55,3 +55,27 @@ handler.help = ['en', 'dis'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
 handler.command = /^(esta)$/i
 export default handler
+
+function clockString(ms) {
+  let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000)
+  let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
+  let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
+  return [h, m, s].map(v => v.toString().padStart(2, 0)).join(':')
+}
+function ucapan() {
+  const time = moment.tz('America/Los_Angeles').format('HH')  //America/Los_Angeles  Asia/Jakarta   America/Toronto
+  res = "👋 *BIENVENIDO(A) | WELCOME* 👋"
+  if (time >= 4) {
+    res = "🌇 *Buenos Días | Good Morning* ⛅"
+  }
+  if (time >= 11) {
+    res = "🏙️ *Buenas Tardes | Good Afternoon* 🌤️"
+  }
+  if (time >= 15) {
+    res = "🌆 *Buenas tardes | Good Afternoon* 🌥️"
+  }
+  if (time >= 17) {
+    res = "🌃 *Buenas noches | Good Evening* 💫"
+  }
+  return res
+}
