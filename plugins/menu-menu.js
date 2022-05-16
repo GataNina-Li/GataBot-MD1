@@ -59,9 +59,6 @@ level, limit, name, weton, week, date, dateIslamic, time, totalreg, rtotalreg, r
 readmore: readMore
 }
 text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
- 
-    
-
 let str = `
 *ミ💖 𝙷𝙾𝙻𝙰 ✨${name}✨, 𝙰𝚀𝚄𝙸 𝙴𝚂𝚃𝙰 𝙴𝙻 𝙼𝙴𝙽𝚄 𝙲𝙾𝙼𝙿𝙻𝙴𝚃𝙾 𝙳𝙴 𝚃𝙷𝙴 𝙼𝚈𝚂𝚃𝙸𝙲 - 𝙱𝙾𝚃 💖彡*
 
@@ -419,11 +416,19 @@ _(𝑢𝑠𝑜 𝑠𝑖𝑛 𝑝𝑟𝑒𝑓𝑖𝑗𝑜)_
 ° ඬ⃟👑 _${usedPrefix}añadirdiamantes *<@tag> <cantidad>*_
 ° ඬ⃟👑 _${usedPrefix}añadirxp *<@tag> <cantidad>*_
 `.trim()
-conn.sendHydrated(m.chat, str, wm, pp, 'https://github.com/BrunoSobrino/TheMystic-Bot-MD', '𝙶𝙸𝚃𝙷𝚄𝙱', null, null, [
-['📮 𝙳𝙾𝙽𝙰𝚁 📮', '/donasi'],
-['🌹 𝙾𝚆𝙽𝙴𝚁 🌹', '/owner'],
-['🐾 𝙸𝙽𝙵𝙾𝙱𝙾𝚃 🐾', '/infobot']
-], m,)
+const templateButtons = [
+{index: 1, urlButton: {displayText: 'URL 1', url: `link`}},
+{index: 2, urlButton: {displayText: '𝙶𝙸𝚃𝙷𝚄𝙱', url: `https://github.com/BrunoSobrino/TheMystic-Bot-MD`}},
+{index: 3, quickReplyButton: {displayText: '📮 𝙳𝙾𝙽𝙰𝚁 📮', id: '#donasi'}},
+{index: 4, quickReplyButton: {displayText: '🌹 𝙾𝚆𝙽𝙴𝚁 🌹', id: '#owner'}},
+{index: 5, quickReplyButton: {displayText: '🐾 𝙸𝙽𝙵𝙾𝙱𝙾𝚃 🐾', id: '#infobot'}},
+]
+let tm = {
+text: '',
+footer: `${str}\n${wm}`,
+templateButtons: templateButtons
+}
+conn.sendMessage(m.chat, tm, m)
 await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, {
 type: 'audioMessage', 
 ptt: true})
@@ -431,11 +436,9 @@ ptt: true})
 conn.reply(m.chat, '*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝙻 𝙼𝙴𝙽𝚄 𝚃𝙸𝙴𝙽𝙴 𝚄𝙽 𝙴𝚁𝚁𝙾𝚁 𝚈 𝙽𝙾 𝙵𝚄𝙴 𝙿𝙾𝚂𝙸𝙱𝙻𝙴 𝙴𝙽𝚅𝙸𝙰𝚁𝙻𝙾, 𝚁𝙴𝙿𝙾𝚁𝚃𝙴𝙻𝙾 𝙰𝙻 𝙿𝚁𝙾𝙿𝙸𝙴𝚃𝙰𝚁𝙸𝙾 𝙳𝙴𝙻 𝙱𝙾𝚃*', m)
 throw e
 }}
-handler.help = ['menu', 'help', '?']
-handler.tags = ['main']
-handler.command = /^(menucompleto|menu|menú|memu|memú|help|info|comandos|allmenu|2help|menu1.2|ayuda|commands|commandos|m|\?)$/i
-handler.exp = 50
-handler.fail = null
+handler.help = ['comando']
+handler.tags = ['info']
+handler.command = /^comando/i
 export default handler
 
 const more = String.fromCharCode(8206)
