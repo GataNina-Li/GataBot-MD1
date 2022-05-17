@@ -2,12 +2,12 @@ let handler = async m => {
  let old = performance.now()
  let neww = performance.now()
  let speed = neww - old
- throw let txt = `${eg}*_COMENZANDO PRUEBA DE VELOCIDAD..._*\n*_STARTING SPEED TEST..._*`.trim()
+ let txt = `${eg}*_COMENZANDO PRUEBA DE VELOCIDAD..._*\n*_STARTING SPEED TEST..._*`.trim()
   m.reply(txt)
 
-throw m.reply('🚀')
-throw m.reply('🚀🚀')
-throw m.reply('🚀🚀🚀')
+m.reply('🚀')
+m.reply('🚀🚀')
+m.reply('🚀🚀🚀')
  
 let veloz = 
 `_aquí iria el texto_`
