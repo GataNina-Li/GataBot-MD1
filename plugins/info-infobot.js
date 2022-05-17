@@ -38,9 +38,9 @@ let info = `
 `.trim() 
 conn.reply(m.chat, info, m)
 }
-handler.help = ['infobot', 'speed']
+handler.help = ['infobot']
 handler.tags = ['info', 'tools']
-handler.command = /^(ping|speed|infobot)$/i
+handler.command = /^(infobot)$/i
 export default handler
 
 function clockString(ms) {
