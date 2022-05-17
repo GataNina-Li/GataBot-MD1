@@ -10,8 +10,8 @@ m.reply('🚀🚀')
 m.reply('🚀🚀🚀')
  
 const templateButtons = [
-{index: 1, urlButton: {displayText: 'URL 1', url: link}},
-{index: 2, urlButton: {displayText: 'URL 2', url: link}},
+{index: 1, urlButton: {displayText: 'URL 1', url: 'https://github.com/GataNina-Li/GataBot-MD'}},
+{index: 2, urlButton: {displayText: 'URL 2', url: 'https://www.instagram.com/gata_dios/'}},
 {index: 3, quickReplyButton: {displayText: 'Boton 1', id: '#comando 1'}},
 {index: 4, quickReplyButton: {displayText: 'Boton 2', id: '#comando 2'}},
 {index: 5, quickReplyButton: {displayText: 'Boton 3', id: '#comando 3'}},
