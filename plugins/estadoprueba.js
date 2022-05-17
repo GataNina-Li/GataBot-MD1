@@ -25,26 +25,11 @@ let estado =`
 │ *=> 𝚃𝙸𝙴𝙼𝙿𝙾 𝙰𝙲𝚃𝙸𝚅𝙾: ${uptime}*
 ╰───────────────
 `.trim()
-const templateButtons = [
-{index: 1, urlButton: {displayText: 'URL 1', url: `link`}},
-{index: 2, urlButton: {displayText: '𝙶𝙸𝚃𝙷𝚄𝙱', url: `https://github.com/BrunoSobrino/TheMystic-Bot-MD`}},
-{index: 3, quickReplyButton: {displayText: '📮 𝙳𝙾𝙽𝙰𝚁 📮', id: '#donasi'}},
-{index: 4, quickReplyButton: {displayText: '🌹 𝙾𝚆𝙽𝙴𝚁 🌹', id: '#owner'}},
-{index: 5, quickReplyButton: {displayText: '🐾 𝙸𝙽𝙵𝙾𝙱𝙾𝚃 🐾', id: '#infobot'}},
-]
-let tm = {
-text: '',
-footer: `${str}\n${wm}`,
-templateButtons: templateButtons
-}
-conn.sendMessage(m.chat, tm, m)
-await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, {
-type: 'audioMessage', 
-ptt: true})
-} catch (e) {
-conn.reply(m.chat, '*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝙻 𝙼𝙴𝙽𝚄 𝚃𝙸𝙴𝙽𝙴 𝚄𝙽 𝙴𝚁𝚁𝙾𝚁 𝚈 𝙽𝙾 𝙵𝚄𝙴 𝙿𝙾𝚂𝙸𝙱𝙻𝙴 𝙴𝙽𝚅𝙸𝙰𝚁𝙻𝙾, 𝚁𝙴𝙿𝙾𝚁𝚃𝙴𝙻𝙾 𝙰𝙻 𝙿𝚁𝙾𝙿𝙸𝙴𝚃𝙰𝚁𝙸𝙾 𝙳𝙴𝙻 𝙱𝙾𝚃*', m)
-throw e
-}}
+conn.sendHydrated(m.chat, estado, wm, picture, 'https://github.com/BrunoSobrino/TheMystic-Bot-MD', '𝙶𝙸𝚃𝙷𝚄𝙱', null, null, [
+['𝙼𝙴𝙽𝚄 𝙿𝚁𝙸𝙽𝙲𝙸𝙿𝙰𝙻', '/menu']
+['𝙑𝙚𝙡𝙤𝙘𝙞𝙙𝙖𝙙 | 𝙎𝙥𝙚𝙚𝙙', '/ping']
+['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪', '/menu']
+], m)}
 
 handler.help = ['estado']
 handler.tags = ['main']
