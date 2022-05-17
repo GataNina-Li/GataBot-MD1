@@ -21,8 +21,8 @@ let estado =`
 ┃𓃠 *Versión de ${gt}*
 ┃➥ ${vs}
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ღ *ESTADO*
-┃➥ ${global.opts['self'] ? '𝙋𝙍𝙄𝙑𝘼𝘿𝙊 - 𝙋𝙍𝙄𝙑𝘼𝙏𝙀' : '𝙋𝙐𝘽𝙇𝙄𝘾𝙊 - 𝙋𝙐𝘽𝙇𝙄𝘾'}
+┃ღ ${global.opts['self'] ? '𝙋𝙍𝙄𝙑𝘼𝘿𝙊 - 𝙋𝙍𝙄𝙑𝘼𝙏𝙀' : '𝙋𝙐𝘽𝙇𝙄𝘾𝙊 - 𝙋𝙐𝘽𝙇𝙄𝘾'}
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃ღ *Activo Durante | Active During* 
 ┃➥ ${uptime}
 ┃ღ *Usuario(s) | Users* 
@@ -31,8 +31,7 @@ let estado =`
 ┃➥ ${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length} 
 ┃ღ *Usuario(s) Prohibido(s) | Prohibited Urs*
 ┃➥ ${Object.entries(global.db.data.users).filter(user => user[1].banned).length} 
-╰━━━━━━━━━━━━━━━━━━⬣
-`.trim()
+╰━━━━━━━━━━━━━━━━━━⬣`.trim()
 
 conn.sendHydrated(m.chat, estado, wm, picture, 'https://github.com/GataNina-Li/GataBot-MD', '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
 ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪𝙻', '.menu']
