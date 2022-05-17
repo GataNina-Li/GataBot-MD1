@@ -2,18 +2,17 @@ let handler = async m => {
  let old = performance.now()
  let neww = performance.now()
  let speed = neww - old
- let txt = `${eg}*_COMENZANDO PRUEBA DE VELOCIDAD..._*\n*_STARTING SPEED TEST..._*`.trim()
+ throw let txt = `${eg}*_COMENZANDO PRUEBA DE VELOCIDAD..._*\n*_STARTING SPEED TEST..._*`.trim()
   m.reply(txt)
 
-m.reply('🚀')
-m.reply('🚀🚀')
-m.reply('🚀🚀🚀')
+throw m.reply('🚀')
+throw m.reply('🚀🚀')
+throw m.reply('🚀🚀🚀')
  
-
 let veloz = 
 `_aquí iria el texto_`
 
- const templateButtons = [
+ const templateButtonsReplyMessage = [
 {index: 1, urlButton: {displayText: 'URL 1', url: 'https://github.com/GataNina-Li/GataBot-MD'}},
 {index: 2, urlButton: {displayText: 'URL 2', url: 'https://www.instagram.com/gata_dios/'}},
 {index: 3, quickReplyButton: {displayText: 'Boton 1', id: '#comando 1'}},
