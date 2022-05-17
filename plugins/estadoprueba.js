@@ -22,7 +22,7 @@ let estado =`
 ┃➥ ${vs}
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃ღ *ESTADO*
-┃➥ ${global.opts['self'] ? '🔒 𝙋𝙍𝙄𝙑𝘼𝘿𝙊 - 𝙋𝙍𝙄𝙑𝘼𝙏𝙀' : '🔓 𝙋Ú𝘽𝙇𝙄𝘾𝙊 - 𝙋𝙐𝘽𝙇𝙄𝘾'}
+┃➥ ${global.opts['self'] ? '𝙋𝙍𝙄𝙑𝘼𝘿𝙊 - 𝙋𝙍𝙄𝙑𝘼𝙏𝙀' : '𝙋𝙐𝘽𝙇𝙄𝘾𝙊 - 𝙋𝙐𝘽𝙇𝙄𝘾'}
 ┃ღ *Activo Durante | Active During* 
 ┃➥ ${uptime}
 ┃ღ *Usuario(s) | Users* 
@@ -34,8 +34,8 @@ let estado =`
 ╰━━━━━━━━━━━━━━━━━━⬣
 `.trim()
 
-conn.sendHydrated(m.chat, estado, wm, picture, 'https://github.com/BrunoSobrino/TheMystic-Bot-MD', '𝙶𝙸𝚃𝙷𝚄𝙱', null, null, [
-['𝙼𝙴𝙽𝚄 𝙿𝚁𝙸𝙽𝙲𝙸𝙿𝙰𝙻', '/menu']
+conn.sendHydrated(m.chat, estado, wm, picture, 'https://github.com/GataNina-Li/GataBot-MD', ${gt}, null, null, [
+['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪𝙻', '/menu']
 ], m)}
 
 handler.help = ['estado']
