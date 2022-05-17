@@ -1,4 +1,6 @@
 let handler = async m => {
+ let old = performance.now()
+ let neww = performance.now()
  let speed = neww - old
  let txt = `${eg}*_COMENZANDO PRUEBA DE VELOCIDAD..._*\n*_STARTING SPEED TEST..._*`.trim()
   m.reply(txt)
