@@ -1,7 +1,7 @@
-let os = require('os')
-let util = require('util')
-let { performance } = require('perf_hooks')
-let { sizeFormatter } = require('human-readable')
+import os from 'os'
+import util from 'util'
+import { performance } from 'perf_hooks'
+import sizeFormatter from 'human-readable'
 let format = sizeFormatter({
   std: 'JEDEC', // 'SI' (default) | 'IEC' | 'JEDEC'
   decimalPlaces: 2,
@@ -59,4 +59,4 @@ handler.help = ['ping']
 handler.tags = ['info']
 
 handler.command = /^(ping|speed)$/i
-module.exports = handler
+export default handler
