@@ -9,7 +9,7 @@ m.reply('🚀')
 m.reply('🚀🚀')
 m.reply('🚀🚀🚀')
  
-let text = `_aquí iria el texto_`
+let velocidad = `_aquí iria el texto_`
 
 const templateButtons = [
 {index: 1, urlButton: {displayText: 'URL 1', url: link}},
@@ -20,7 +20,7 @@ const templateButtons = [
 ]
 let tm = {
 text: null,
-footer: ${text}\n${wm},
+footer: ${velocidad}\n${wm},
 templateButtons: templateButtons
 }
 conn.sendMessage(m.chat, tm, m)
