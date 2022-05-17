@@ -15,14 +15,24 @@ _muptime = await new Promise(resolve => { process.once('message', resolve)
 setTimeout(resolve, 1000) }) * 1000}
 let uptime = clockString(_uptime)
 let estado =`
-╭─[ *${gt}* ]
-│ *➤ 𝙷𝙾𝙻𝙰 ${name}*
-│
-│ *ミ🤖 𝙴𝚂𝚃𝙰𝙳𝙾 𝙳𝙴𝙻 𝙱𝙾𝚃 🤖彡*
-│ *=> 𝙱𝙾𝚃 𝙰𝙲𝚃𝙸𝚅𝙾 ✅*
-│ *=> 𝙱𝙾𝚃 𝙳𝙴 𝚄𝚂𝙾 𝙿𝚄𝙱𝙻𝙸𝙲𝙾 ✅*
-│ *=> 𝚃𝙸𝙴𝙼𝙿𝙾 𝙰𝙲𝚃𝙸𝚅𝙾: ${uptime}*
-╰───────────────
+╭━━━━[ *𝙀𝙎𝙏𝘼𝘿𝙊 | 𝙎𝙏𝘼𝙏𝙐𝙎* ]━━━━━⬣
+┃💗 *¡Hola | Hi!* ${name}
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃𓃠 *Versión de ${gt}*
+┃➥ ${vs}
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃
+┃*ミ🤖 𝙴𝚂𝚃𝙰𝙳𝙾 𝙳𝙴𝙻 𝙱𝙾𝚃 🤖彡*
+┃ *=> 𝙱𝙾𝚃 𝙰𝙲𝚃𝙸𝚅𝙾 ✅*
+┃ *=> 𝙱𝙾𝚃 𝙳𝙴 𝚄𝚂𝙾 𝙿𝚄𝙱𝙻𝙸𝙲𝙾 ✅*
+┃ *=> 𝚃𝙸𝙴𝙼𝙿𝙾 𝙰𝙲𝚃𝙸𝚅𝙾: ${uptime}*
+┃ღ *Usuario(s) | Users* 
+┃➥ ${Object.keys(global.db.data.users).length} 
+┃ღ *Chat(s) Prohibido(s) | Forbidden Chats*
+┃➥ ${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length} 
+┃ღ *Usuario(s) Prohibido(s) | Prohibited Urs*
+┃➥ ${Object.entries(global.db.data.users).filter(user => user[1].banned).length} 
+╰━━━━━━━━━━━━━━━━━━⬣
 `.trim()
 
 conn.sendHydrated(m.chat, estado, wm, picture, 'https://github.com/BrunoSobrino/TheMystic-Bot-MD', '𝙶𝙸𝚃𝙷𝚄𝙱', null, null, [
