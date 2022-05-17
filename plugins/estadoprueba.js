@@ -25,7 +25,6 @@ let estado =`
 │ *=> 𝚃𝙸𝙴𝙼𝙿𝙾 𝙰𝙲𝚃𝙸𝚅𝙾: ${uptime}*
 ╰───────────────
 `.trim()
-
 const templateButtons = [
 {index: 1, urlButton: {displayText: 'URL 1', url: `link`}},
 {index: 2, urlButton: {displayText: '𝙶𝙸𝚃𝙷𝚄𝙱', url: `https://github.com/BrunoSobrino/TheMystic-Bot-MD`}},
@@ -38,6 +37,14 @@ text: '',
 footer: `${str}\n${wm}`,
 templateButtons: templateButtons
 }
+conn.sendMessage(m.chat, tm, m)
+await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, {
+type: 'audioMessage', 
+ptt: true})
+} catch (e) {
+conn.reply(m.chat, '*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝙻 𝙼𝙴𝙽𝚄 𝚃𝙸𝙴𝙽𝙴 𝚄𝙽 𝙴𝚁𝚁𝙾𝚁 𝚈 𝙽𝙾 𝙵𝚄𝙴 𝙿𝙾𝚂𝙸𝙱𝙻𝙴 𝙴𝙽𝚅𝙸𝙰𝚁𝙻𝙾, 𝚁𝙴𝙿𝙾𝚁𝚃𝙴𝙻𝙾 𝙰𝙻 𝙿𝚁𝙾𝙿𝙸𝙴𝚃𝙰𝚁𝙸𝙾 𝙳𝙴𝙻 𝙱𝙾𝚃*', m)
+throw e
+}}
 
 handler.help = ['estado']
 handler.tags = ['main']
