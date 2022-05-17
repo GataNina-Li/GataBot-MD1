@@ -6,9 +6,9 @@ SI VAS A AÑADIR TUS DATOS O CRÉDITOS, ESTA BIEN. PERO NO QUITEN LOS QUE YA EST
 /** PLEASE BE KIND AND KINDNESS NOT TO MINIMALLY CHANGE GATABOT-MD CREDITS, 
 IF YOU ARE GOING TO ADD YOUR DATA OR CREDITS, IT'S OK. BUT DO NOT REMOVE THOSE THAT ARE ALREADY FROM GATABOT-MD, THANK YOU **/
 
-const { default: makeWASocket, BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, downloadContentFromMessage, downloadHistory, proto, getMessage, generateWAMessageContent, prepareWAMessageMedia } = import '@adiwajshing/baileys'
+import '@adiwajshing/baileys'
+import { promises } from 'fs'
 let fetch = require('node-fetch')
-let fs = require('fs')
 let handler = async (m, { command }) => {
 let _uptime = process.uptime() * 1000
 let uptime = clockString(_uptime)
