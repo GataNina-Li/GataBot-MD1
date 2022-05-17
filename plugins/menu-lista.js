@@ -64,18 +64,18 @@ function clockString(ms) {
 }
 function ucapan() {
   const time = moment.tz('America/Los_Angeles').format('HH')  //America/Los_Angeles  Asia/Jakarta   America/Toronto
-  res = "👋 *BIENVENIDO(A) | WELCOME* 👋"
+ let res = "👋 *BIENVENIDO(A) | WELCOME* 👋"
   if (time >= 4) {
-    res = "🌇 *Buenos Días | Good Morning* ⛅"
+   let res = "🌇 *Buenos Días | Good Morning* ⛅"
   }
   if (time >= 11) {
-    res = "🏙️ *Buenas Tardes | Good Afternoon* 🌤️"
+   let res = "🏙️ *Buenas Tardes | Good Afternoon* 🌤️"
   }
   if (time >= 15) {
-    res = "🌆 *Buenas tardes | Good Afternoon* 🌥️"
+   let res = "🌆 *Buenas tardes | Good Afternoon* 🌥️"
   }
   if (time >= 17) {
-    res = "🌃 *Buenas noches | Good Evening* 💫"
+   let res = "🌃 *Buenas noches | Good Evening* 💫"
   }
-  return res
+  return let res
 }
