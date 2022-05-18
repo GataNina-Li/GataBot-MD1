@@ -1,4 +1,5 @@
 import fs from 'fs'
+import fetch from 'node-fetch'
 let handler  = async (m, { conn, command, args, usedPrefix, DevMode }) => {
 let pp = './media/menus/Menu1.jpg'
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
