@@ -15,7 +15,7 @@ conn.reply(m.chat, text, m, {
 contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
 title: '𝙸𝙽𝙵𝙾𝚁𝙼𝙰𝙲𝙸𝙾𝙽 - 𝚂𝙴𝚁𝙱𝙾𝚃',
 body: 'ʙʏ ᴛʜᴇ ᴍʏsᴛᴄ ﹣ ʙᴏᴛ',         
-previewType: 1, thumbnail: fs.readFileSync("./src/avatar_contact.png"),
+previewType: 1, thumbnail: fs.readFileSync("pp"),
 sourceUrl: `https://github.com/BrunoSobrino/TheMystic-Bot-MD`}}})   
 }
 handler.command = /^(jadibot|serbot|bots|subbots|getcode)/i
