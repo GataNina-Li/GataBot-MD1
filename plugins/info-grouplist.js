@@ -1,16 +1,17 @@
 let handler = async (m, { conn }) => {
-//let txt = ''
-//for (let [jid, chat] of Object.entries(conn.chats).filter(([jid, chat]) => jid.endsWith('@g.us') && chat.isChats)) txt += `\n—◉ ${await conn.getName(jid)}\n➤ ${jid} [${chat?.metadata?.read_only ? '𝙽𝙾 𝙿𝙰𝚁𝚃𝙸𝙲𝙸𝙿𝙰𝙽𝚃𝙴' : '𝙿𝙰𝚁𝚃𝙸𝙲𝙸𝙿𝙰𝙽𝚃𝙴'}]\n\n`
-//m.reply(`*𝙻𝙸𝚂𝚃𝙰 𝙳𝙴 𝙶𝚁𝚄𝙿𝙾𝚂 𝙴𝙽 𝙻𝙾𝚂 𝚀𝚄𝙴 𝙴𝚂𝚃𝙰 𝙴𝙻 𝙱𝙾𝚃:*
-//${txt}
-//`.trim())
-  
-let group = conn.chats.all/).filter(v => v.jid.endsWith('g.us'))
 let txt = ''
-for (let v of group) txt += `${await conn.getName(v.jid)}\n${v.jid} [${v.read_only ? 'Left' : 'Joined'}]\n\n`
-m.reply( 'List Groups:\n' + txt.trim())
+for (let [jid, chat] of Object.entries(conn.chats).filter(([jid, chat]) => jid.endsWith('@g.us') && chat.isChats)) txt += `\n—◉ ${await conn.getName(jid)}\n➤ ${jid} [${chat?.metadata?.read_only ? '𝙽𝙾 𝙿𝙰𝚁𝚃𝙸𝙲𝙸𝙿𝙰𝙽𝚃𝙴' : '𝙿𝙰𝚁𝚃𝙸𝙲𝙸𝙿𝙰𝙽𝚃𝙴'}]\n\n`
+m.reply(`*${gt} ESTÁ EN ESTOS GRUPOS | IS IN THESE GROUPS*
+${txt}
+`.trim())
+
+conn.sendHydrated(m.chat, txt, wm, null, 'https://github.com/BrunoSobrino/TheMystic-Bot-MD', '𝙶𝙸𝚃𝙷𝚄𝙱', null, null, [
+['📮 𝙳𝙾𝙽𝙰𝚁 📮', '/donasi'],
+['🌹 𝙾𝚆𝙽𝙴𝚁 🌹', '/owner']
+], m,)
 }
 handler.help = ['groups', 'grouplist']
 handler.tags = ['info']
 handler.command = /^(groups|grouplist|listadegrupo|gruposlista|listagrupos)$/i
+handler.exp = 30
 export default handler
