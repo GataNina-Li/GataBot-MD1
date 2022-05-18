@@ -20,30 +20,43 @@ let speed = neww - old
 let info = `
 ╭━━━━[ ${gt} ]━━━━━⬣
 ┃
-┃➥ [🤴🏻] 𝙲𝚁𝙴𝙰𝙳𝙾𝚁:
-*𝙱𝚛𝚞𝚗𝚘 𝚂𝚘𝚋𝚛𝚒𝚗𝚘*
-┃➥ [#️⃣] 𝙽𝙾° 𝙳𝙴𝙻 𝙲𝚁𝙴𝙰𝙳𝙾𝚁:
-*+1 (772) 238-6341*
-┃➥ [🎳] 𝙿𝚁𝙴𝙵𝙸𝙹𝙾:
-*${usedPrefix}*
-┃➥ [🔐] 𝙲𝙷𝙰𝚃𝚂 𝙿𝚁𝙸𝚅𝙰𝙳𝙾𝚂:
-*${chats.length - groups.length}*
-┃➥ [🦜] 𝙲𝙷𝙰𝚃𝚂 𝙳𝙴 𝙶𝚁𝚄𝙿𝙾𝚂:
-*${groups.length}* 
-┃➥ [💡] 𝙲𝙷𝙰𝚃𝚂 𝚃𝙾𝚃𝙰𝙻𝙴𝚂:
-*${chats.length}* 
-┃➥ [🚀] 𝙰𝙲𝚃𝙸𝚅𝙸𝙳𝙰𝙳:
-*${uptime}*
-┃➥ [🎩] 𝚄𝚂𝚄𝙰𝚁𝙸𝙾𝚂:
-*${totalreg} 𝚗𝚞𝚖𝚎𝚛𝚘𝚜*
-┃➥ [👨‍🦯] 𝚅𝙴𝙻𝙾𝙲𝙸𝙳𝙰𝙳: 
-┃  *${speed}* *𝚖𝚒𝚕𝚒𝚜𝚎𝚐𝚞𝚗𝚍𝚘𝚜*
-┃➥ [☑️] 𝙰𝚄𝚃𝙾𝚁𝙴𝙰𝙳:
-${autoread ? '*𝚊𝚌𝚝𝚒𝚟𝚊𝚍𝚘*' : '*𝚍𝚎𝚜𝚊𝚌𝚝𝚒𝚟𝚊𝚍𝚘*'}
-┃➥ [❗] 𝚁𝙴𝚂𝚃𝚁𝙸𝙲𝚃:
-${restrict ? '*𝚊𝚌𝚝𝚒𝚟𝚊𝚍𝚘*' : '*𝚍𝚎𝚜𝚊𝚌𝚝𝚒𝚟𝚊𝚍𝚘*'} 
+┃➥ *CREADORA | CREATOR*
+┃ღ *𝙂𝙖𝙩𝙖 𝘿𝙞𝙤𝙨*
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃➥ *CONTACTO | CONTACT* 
+┃ღ *${ig}*
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃𓃠 *VERSIÓN ACTUAL | CURRENT VERSION*
+┃ღ ${vs}
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃➥ *PREFIJO | PREFIX*
+┃ღ *${usedPrefix}*
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃➥ *CHATS PRIVADOS | PRIVATE CHAT*
+┃ღ *${chats.length - groups.length}*
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃➥ *CHATS DE GRUPOS | GROUP CHAT*
+┃ღ *${groups.length}*
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃➥ *CHATS EN TOTAL | TOTAL CHATS*
+┃ღ *${chats.length}* 
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃➥ *ACTIVIDAD | ACTIVITY*
+┃ღ *${uptime}*
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃➥ *USUARIOS | USERS*
+┃ღ *${totalreg} 
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃➥ *VELOCIDAD | SPEED*
+┃ღ  *${speed}* *𝚖𝚒𝚕𝚒𝚜𝚎𝚐𝚞𝚗𝚍𝚘𝚜*
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃➥ *AUTOREAD*
+┃ღ ${autoread ? '*Activado | activated*' : '*Desactivado | Disabled*'}
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃➥ *RESTRICT* 
+┃ღ ${restrict ? '*Activado | activated*' : '*Desactivado | Disabled*'}
 ┃
-┃═〘 𝐓𝐡𝐞 𝐌𝐲𝐬𝐭𝐢𝐜 - 𝐁𝐨𝐭 〙 ═`.trim()
+╰━━━[ 𝙄𝙣𝙛𝙤𝙧𝙢𝙖𝙘𝙞ó𝙣 | 𝙄𝙣𝙛𝙤𝙧𝙢𝙖𝙩𝙞𝙤𝙣 ]━━⬣`.trim()
 
 conn.sendHydrated(m.chat, str, wm, pp, 'https://github.com/GataNina-Li/GataBot-MD', '𝙶𝙸𝚃𝙷𝚄𝙱', null, null, [
 ['📮 𝙳𝙾𝙽𝙰𝚁 📮', '/donasi'],
