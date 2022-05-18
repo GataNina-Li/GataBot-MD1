@@ -19,6 +19,7 @@ rows: [
 let name = await conn.getName(m.sender)
 const listMessage = {
 text: ' ',
+previewType: 1, thumbnail: fs.readFileSync("./media/menus/Menu3.jpg"),
 footer: `╭══〘 ✯✯✯✯✯✯✯✯ 〙═╮
 ║≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 ║➤ *✨𝐇𝐎𝐋𝐀, ${name}!!*
@@ -59,5 +60,5 @@ sections }
 
 handler.help = ['en', 'dis'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
-handler.command = /^((en|dis)able|(tru|fals)e|(turn)?o(n|ff)|[01])$/i
+handler.command = /^(ggg)$/i
 export default handler
