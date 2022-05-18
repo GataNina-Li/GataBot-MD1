@@ -10,14 +10,14 @@ m.reply('🚀🚀')
 m.reply('🚀🚀🚀')
  
 let veloz = 
-`_aquí iria el texto_`
+`${rg}*VELOCIDAD:* *${speed}* *Milisegundos*\n*SPEED:* *${speed}* *Milliseconds*`
 
  const templateButtonsReplyMessage = [
-{index: 1, urlButton: {displayText: 'URL 1', url: 'https://github.com/GataNina-Li/GataBot-MD'}},
-{index: 2, urlButton: {displayText: 'URL 2', url: 'https://www.instagram.com/gata_dios/'}},
-{index: 3, quickReplyButton: {displayText: 'Boton 1', id: '#comando 1'}},
-{index: 4, quickReplyButton: {displayText: 'Boton 2', id: '#comando 2'}},
-{index: 5, quickReplyButton: {displayText: 'Boton 3', id: '#comando 3'}},
+{index: 1, urlButton: {displayText: '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', url: 'https://github.com/GataNina-Li/GataBot-MD'}},
+{index: 2, urlButton: {displayText: '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢', url: 'https://www.instagram.com/gata_dios/'}},
+{index: 3, quickReplyButton: {displayText: '𝙊𝙩𝙧𝙖 𝙫𝙚𝙯 | 𝘼𝙜𝙖𝙞𝙣', id: '#ping'}},
+{index: 4, quickReplyButton: {displayText: '𝙄𝙣𝙛𝙤𝙧𝙢𝙖𝙘𝙞ó𝙣 | 𝙄𝙣𝙛𝙤𝙧𝙢𝙖𝙩𝙞𝙤𝙣', id: '#infobot'}},
+{index: 5, quickReplyButton: {displayText: '𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪', id: '#menu'}},
 ]
 let tm = {
 text: veloz,
