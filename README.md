@@ -76,6 +76,7 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 > yarn install 
 > npm install
 > npm update
+>  ls
 > npm start
 ```
 ----    
