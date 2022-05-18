@@ -14,14 +14,14 @@ let text = `
 *—◉ 𝙿𝚄𝙴𝙳𝙴 𝙿𝚁𝙾𝙱𝙰𝚁 𝙸𝙽𝚂𝚃𝙰𝙻𝙰𝚁 𝙳𝙴𝚂𝙳𝙴 𝙲𝙴𝚁𝙾 𝙴𝙻 𝙱𝙾𝚃 𝚂𝙸𝙶𝚄𝙸𝙴𝙽𝙳𝙾 𝚄𝙽𝙾 𝙳𝙴 𝙻𝙾𝚂 𝚃𝚄𝚃𝙾𝚁𝙸𝙰𝙻𝙴𝚂 𝚀𝚄𝙴 𝙷𝙰𝚈 𝙴𝙽 𝙴𝙻 𝙲𝙰𝙽𝙰𝙻 𝙳𝙴 𝚃𝙷𝙴 𝚂𝙷𝙰𝙳𝙾𝚆 𝙱𝚁𝙾𝙺𝙴𝚁𝚂*
 *◉ https://www.youtube.com/channel/UCSTDMKjbm-EmEovkygX-lCA*
 `.trim()   
-//conn.sendButton(m.chat, str, author, await(await fetch(pp)).buffer(), [['𝙼𝙴𝙽𝚄 𝙿𝚁𝙸𝙽𝙲𝙸𝙿𝙰𝙻', '/menu']], m)
-//}
-conn.reply(m.chat, text, m, {
+conn.sendButton(m.chat, text, wm, await(await fetch(pp)).buffer(), [['𝙼𝙴𝙽𝚄 𝙿𝚁𝙸𝙽𝙲𝙸𝙿𝙰𝙻', '/menu']], m)
+}
+/*conn.reply(m.chat, text, m, {
 contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
 title: '𝙸𝙽𝙵𝙾𝚁𝙼𝙰𝙲𝙸𝙾𝙽 - 𝚂𝙴𝚁𝙱𝙾𝚃',
 body: 'ʙʏ ᴛʜᴇ ᴍʏsᴛᴄ ﹣ ʙᴏᴛ',         
-previewType: 0, thumbnail: fs.readFileSync(m.fromMe),
-sourceUrl: `https://github.com/BrunoSobrino/TheMystic-Bot-MD`}}})   
-}
+previewType: 1, thumbnail: fs.readFileSync(pp),
+sourceUrl: `https://github.com/BrunoSobrino/TheMystic-Bot-MD`}}})   */
+//}
 handler.command = /^(jadibot|serbot|bots|subbots|getcode)/i
 export default handler
