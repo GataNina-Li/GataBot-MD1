@@ -52,10 +52,10 @@ let info = `
 ┃ღ  *${speed}*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃➥ *AUTOREAD*
-┃ღ ${autoread ? '*activado*' : '*desactivado*'}
+┃ღ ${autoread ? '*activado | active*' : '*desactivado | disabled*'}
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃➥ *RESTRICT* 
-┃ღ ${restrict ? '*activado*' : '*desactivado*'} 
+┃ღ ${restrict ? '*activado | active*' : '*desactivado | disabled*'} 
 ┃
 ╰━━━[ 𝙄𝙣𝙛𝙤𝙧𝙢𝙖𝙘𝙞ó𝙣 | 𝙄𝙣𝙛𝙤𝙧𝙢𝙖𝙩𝙞𝙤𝙣 ]━━⬣`.trim()
 
