@@ -35,7 +35,7 @@ sourceUrl: `${yt}`}}})
 conn.sendFile(m.chat, vn, 'bot.mp3', null, m, true, { type: 'audioMessage', ptt: true, sendEphemeral: true, quoted: estiloaudio })   
 }
 return !0
-}
+}}
 //handler.command = /^(bot)$/i  
 handler.command = ['bot','gata']
 export default handler
