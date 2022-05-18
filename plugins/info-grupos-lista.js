@@ -11,6 +11,6 @@ conn.sendHydrated(m.chat, txt, wm, null, 'https://github.com/GataNina-Li/GataBot
 }
 handler.help = ['groups', 'grouplist']
 handler.tags = ['info']
-handler.command = /^(groups|grouplist|listadegrupo|gruposlista|listagrupos|listadegrupos)$/i
+handler.command = /^(groups|grouplist|listadegrupo|gruposlista|listagrupos|listadegrupos|grupolista|listagrupo)$/i
 handler.exp = 30
 export default handler
