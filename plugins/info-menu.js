@@ -52,7 +52,7 @@ footer: `╭══〘 ✯✯✯✯✯✯✯✯ 〙═╮
 ┣ ඬ⃟ℹ️ _${usedPrefix}enable *autosticker*_
 ┣ ඬ⃟ℹ️ _${usedPrefix}disable *autosticker*_
 ┗━━━━━━━━━━━━━┛
-${author}`,
+${wm}`,
 title: null,
 buttonText: "𝐒𝐄𝐋𝐄𝐂𝐂𝐈𝐎𝐍𝐄 𝐀𝐐𝐔𝐢",
 sections }
@@ -60,5 +60,5 @@ sections }
 
 handler.help = ['en', 'dis'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
-handler.command = /^(ghgh)$/i
+handler.command = /^(mmu)$/i
 export default handler
