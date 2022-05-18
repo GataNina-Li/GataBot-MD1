@@ -5,9 +5,9 @@ let handler = async m => {
  let txt = `${eg}*_COMENZANDO PRUEBA DE VELOCIDAD..._*\n*_STARTING SPEED TEST..._*`.trim()
   m.reply(txt)
 
-m.reply('🚀')
-m.reply('🚀🚀')
-m.reply('🚀🚀🚀')
+await m.reply('🚀')
+await m.reply('🚀🚀')
+await m.reply('🚀🚀🚀')
  
 let veloz = 
 `${rg} 🚄 *VELOCIDAD:*\n *${speed}* *Milisegundos*\n\n🚄 *SPEED:*\n *${speed}* *Milliseconds*`
