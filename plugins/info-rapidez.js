@@ -21,7 +21,7 @@ let veloz =
 ]
 let tm = {
 text: veloz,
-footer: global.wm, \nrg,
+footer: global.wm,
 templateButtons: templateButtonsReplyMessage
 }
 conn.sendMessage(m.chat, tm, m)
