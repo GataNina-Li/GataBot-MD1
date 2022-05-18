@@ -29,7 +29,7 @@ sourceUrl: `${yt}`}}})
 ], m,)
     
 
-//if (/^bot)$/i //i.test(m.text)) {
+if (/^bot$/i.test(m.text)) {
     
 //conn.sendButton(m.chat, '*𝙷𝙾𝙻𝙰, ¿𝙲𝙾𝙼𝙾 𝚃𝙴 𝙿𝚄𝙴𝙳𝙾 𝙰𝚈𝚄𝙳𝙰𝚁?*', wm, [['𝙼𝙴𝙽𝚄 𝙳𝙴 𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂', `#menu`]], 'conversation', { sendEphemeral: true, quoted: estilo })
 conn.sendFile(m.chat, vn, 'bot.mp3', null, m, true, { type: 'audioMessage', ptt: true, sendEphemeral: true, quoted: estiloaudio })   
@@ -37,5 +37,4 @@ conn.sendFile(m.chat, vn, 'bot.mp3', null, m, true, { type: 'audioMessage', ptt:
 return !0
 }}
 //handler.command = /^(bot)$/i  
-handler.command = ['bot','gata']
 export default handler
