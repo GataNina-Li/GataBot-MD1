@@ -8,9 +8,10 @@ let handler = async m => {
 await m.reply('🚀')
 await m.reply('🚀🚀')
 await m.reply('🚀🚀🚀')
+await m.reply(`╰⊱✅⊱ *𝙍𝙀𝙎𝙐𝙇𝙏𝘼𝘿𝙊 | 𝙍𝙀𝙎𝙐𝙇𝙏* ⊱✅⊱╮`)
  
 let veloz = 
-`${rg} 🚄 *VELOCIDAD:*\n *${speed}* *Milisegundos*\n\n🚄 *SPEED:*\n *${speed}* *Milliseconds*`
+`🚄 *VELOCIDAD:*\n *${speed}* *Milisegundos*\n\n🚄 *SPEED:*\n *${speed}* *Milliseconds*`
 
  const templateButtonsReplyMessage = [
 {index: 1, urlButton: {displayText: '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', url: 'https://github.com/GataNina-Li/GataBot-MD'}},
@@ -35,5 +36,5 @@ conn.sendMessage(m.chat, tm, m)
 
 handler.help = ['ping']
 handler.tags = ['info']
-handler.command = /^(ping|speed|velocidad)$/i
+handler.command = /^(ping|speed|velocidad|rapidez|velocity)$/i
 export default handler
