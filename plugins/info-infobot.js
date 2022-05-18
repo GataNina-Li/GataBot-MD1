@@ -46,7 +46,7 @@ let info = `
 ┃ღ *${uptime}*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃➥ *USUARIOS | USERS*
-┃ღ *${totalreg} 
+┃ღ *${totalreg}* 
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃➥ *VELOCIDAD | SPEED*
 ┃ღ  *${speed}*
