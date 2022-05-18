@@ -22,7 +22,7 @@ let veloz =
 let tm = {
 text: veloz,
 footer: global.wm,
-templateButtons: templateButtons
+templateButtons: templateButtonsReplyMessage
 }
 conn.sendMessage(m.chat, tm, m)
 }
