@@ -6,7 +6,7 @@ wm = global.wm
 vs = global.vs
 let { exp, limit, level, role } = global.db.data.users[m.sender]
 let { min, xp, max } = xpRange(level, global.multiplier)
-let name = await conn.getName(m.sender)
+//let name = await conn.getName(m.sender)
 const sections = [
 {
 title: `𝐋𝐈𝐒𝐓𝐀 𝐃𝐄 𝐎𝐏𝐂𝐈𝐎𝐍𝐄𝐒`,
@@ -26,7 +26,7 @@ rows: [
 ]}, ]
 
 const listMessage = {
-title: `╭─────────────────────❀\n│${name()}\n│💖•.¸💝¸.• *${name}* •.¸💝¸.•💖\n╰─────────────────────❀`,
+title: `╭─────────────────────❀\n│${wm()}\n│💖•.¸💝¸.• *${wm}* •.¸💝¸.•💖\n╰─────────────────────❀`,
 description: `╭━━━━━━〔 *${wm}* 〕━━━━━━⬣
 ┃✪ *Tiempo Actual | Current Time*	    
 ┃➺ ${time}   
