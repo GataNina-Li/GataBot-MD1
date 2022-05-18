@@ -19,7 +19,6 @@ rows: [
 let name = await conn.getName(m.sender)
 const listMessage = {
 text: ' ',
-previewType: 1, thumbnail: fs.readFileSync("./media/menus/Menu3.jpg"),
 footer: `╭══〘 ✯✯✯✯✯✯✯✯ 〙═╮
 ║≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 ║➤ *✨𝐇𝐎𝐋𝐀, ${name}!!*
