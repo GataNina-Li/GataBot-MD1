@@ -19,7 +19,7 @@ body: 'Super Bot WhatsApp',
 previewType: 1, thumbnail: fs.readFileSync("./media/menus/Menu3.jpg"),
 sourceUrl: `${yt}`}}})  
   
-  let info = `*Infórmate sobre las Novedades y recuerda tener la última versión.*\n*Find out about what's new and remember to have the latest version.*
+  let info = `✨ *Infórmate sobre las Novedades y recuerda tener la última versión.*\n💫 *Find out about what's new and remember to have the latest version.*
   `.trim()
   
   await conn.sendHydrated(m.chat, info, wm, null, ig, '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢', null, null, [
