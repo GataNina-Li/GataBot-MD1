@@ -9,7 +9,7 @@ let handler  = async (m, { conn, command, args, usedPrefix, DevMode }) => {
 
 //} finally { }
 await m.reply(conn.sendButton(m.chat, '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼 | 𝙒𝘼𝙍𝙉𝙄𝙉𝙂* ⊱⚠️⊱╮', wm, null, [['🔄 𝚂𝙸𝙶𝚄𝙸𝙴𝙽𝚃𝙴 🔄', /${command}], ['☘ 𝙄𝙧 𝙖𝙡 𝙞𝙣𝙞𝙘𝙞𝙤 | 𝙂𝙤 𝙩𝙤 𝙨𝙩𝙖𝙧𝙩', /menu]], m))
-
+{
 let text = `
 *Las funciones | The functions #jadibot #bots #serbot #subbot #getcode. No estan disponibles en | Are not available in ${gt} 
 `.trim()   
