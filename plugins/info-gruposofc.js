@@ -1,7 +1,5 @@
 let media = './Menu2.jpg'
-let name = conn.getName(m.sender)
 let handler = async (m, { conn, command }) => conn.sendButton(m.chat, `
-${name}
 
 *➤ Grupos oficiales del Bot:*
 *1.-* https://chat.whatsapp.com/JlomZPEgo3bLmzjGUYPfyJ
