@@ -41,7 +41,7 @@ footer: `╭━━━━━━〔 *${wm}* 〕━━━━━━⬣
 ┃➺ ${time}   
 ┃   ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃✪ *Activa durante | Active during* 
-┃➺ ${uptime}
+┃➺ uptime
 ┃   ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃✪ *Versión de GataBot-MD*
 ┃➺ ${vs}
