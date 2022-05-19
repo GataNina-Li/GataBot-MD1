@@ -9,11 +9,14 @@ let time = d.toLocaleTimeString(locale, {
       minute: 'numeric',
       second: 'numeric'
     })
+//let _uptime = process.uptime() * 1000
+//let _muptime
+//if (process.send) {
+//process.send('uptime')
+//let uptime = clockString(_uptime)
+
 let _uptime = process.uptime() * 1000
-let _muptime
-if (process.send) {
-process.send('uptime')
-let uptime = clockString(_uptime)
+let uptime = clockString(_uptime) 
 
 wm = global.wm
 vs = global.vs
