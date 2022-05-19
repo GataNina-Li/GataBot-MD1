@@ -53,10 +53,14 @@ footer: `╭══〘 ✯✯✯✯✯✯✯✯ 〙═╮
 ┃   ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃✪ *Usuario(s) Prohibido(s) | Prohibited Users*
 ┃➺ ${Object.entries(global.db.data.users).filter(user => user[1].banned).length}
-╰━━━━━━━━━━━━━━━━━━━━━⬣`,
+╰━━━━━━━━━━━━━━━━━━━━━⬣
+${wm}`,
 title: null,
 buttonText: "𝐒𝐄𝐋𝐄𝐂𝐂𝐈𝐎𝐍𝐄 𝐀𝐐𝐔𝐢",
-sections }}
+sections }
+
+await conn.sendMessage(m.chat, listMessage)
+}
 handler.help = ['en', 'dis'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
 handler.command = /^(esta)$/i
