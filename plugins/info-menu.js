@@ -16,23 +16,27 @@ rows: [
 {title: "💬 | 𝙿𝙲𝙾𝙽𝙻𝚈", description: "𝙴𝙻 𝙱𝙾𝚃 𝚂𝙾𝙻𝙾 𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙴𝚁𝙰 𝙰 𝙻𝙾𝚂 𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂 𝚂𝙸 𝙴𝚂 𝚄𝙽 𝙲𝙷𝙰𝚃 𝙿𝚁𝙸𝚅𝙰𝙳𝙾", rowId: `${usedPrefix + command} pconly`},
 {title: "🏢 | 𝙶𝙲𝙾𝙽𝙻𝚈", description: "𝙴𝙻 𝙱𝙾𝚃 𝚂𝙾𝙻𝙾 𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙴𝚁𝙰 𝙰 𝙻𝙾𝚂 𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂 𝚂𝙸 𝙴𝚂 𝚄𝙽 𝙶𝚁𝚄𝙿𝙾", rowId: `${usedPrefix + command} gconly`},
 ]}, ]
-let name = await conn.getName(m.sender)
+//let name = await conn.getName(m.sender)
+let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
+let mentionedJid = [who]
+let username = conn.getName(who)
+
 const listMessage = {
 text: ' ',
 footer: `
-╭━━━━━━〔 *${wm}* 〕━━━━━━⬣
+╭━━━〔 *${wm}* 〕━━⬣
 ┃🌟🌟🌟🌟🌟🌟🌟🌟🌟
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃💗 *¡Hola | Hi!* ${name}
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃💗 *¡Hola | Hi!* ${username}
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃🌟🌟🌟🌟🌟🌟🌟🌟🌟
 ╰━━━━━〔 𓃠 *${vs}* 〕━━━━━⬣
 
-╭━━━━━━━━━━━━━━━━━━━━━━━━⬣
+╭━━━━━━━━━━━━━━━━━━━⬣
 ┃ *PRESIONE ESTE MENSAJE PARA IR AL MENÚ.*
 ┃ *PRESS THIS MESSAGE TO GO TO THE MENU.*
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃💫➺ _${usedPrefix}gruposgb | grupos | groupgb _
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃💫➺ _${usedPrefix}gruposgb | grupos | groupgb_
 ┃💫➺ _${usedPrefix}cuentasgatabot | cuentasgb | accounts_
 ┃💫➺ _${usedPrefix}estado | heygata | status_
 ┃💫➺ _${usedPrefix}infogata | infobot_
@@ -40,10 +44,10 @@ footer: `
 ┃💫➺ _${usedPrefix}velocidad | ping_
 ┃💫➺ _${usedPrefix}creadora | owner_
 ┃💫➺ _Bot_ 
-╰━━━━━━━━━━━━━━━━━━━━━━━━━━⬣
-${author}`,
+╰━━━━━━━━━━━━━━━━━━━⬣
+${wm}`,
 title: null,
-buttonText: "𝐒𝐄𝐋𝐄𝐂𝐂𝐈𝐎𝐍𝐄 𝐀𝐐𝐔𝐢",
+buttonText: "𝙋𝙍𝙀𝙎𝙄𝙊𝙉𝙀 𝘼𝙌𝙐Í | 𝙋𝙍𝙀𝙎𝙎 𝙃𝙀𝙍𝙀",
 sections }
 
 await conn.sendMessage(m.chat, listMessage)
