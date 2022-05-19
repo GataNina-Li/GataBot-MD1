@@ -35,7 +35,7 @@ footer: `╭══〘 ✯✯✯✯✯✯✯✯ 〙═╮
 ║≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 ╰══╡✯✯✯✯✯✯✯✯╞══╯
 ┃✪ *Tiempo Actual | Current Time*	    
-┃➺ ${time}  ${ucapan}
+┃➺ ${time}  {${ucapan()}
 ┃   ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃✪ *Activa durante | Active during* 
 ┃➺ uptime
