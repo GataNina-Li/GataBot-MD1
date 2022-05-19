@@ -56,9 +56,9 @@ ${wm}`,
 title: null,
 buttonText: "𝐒𝐄𝐋𝐄𝐂𝐂𝐈𝐎𝐍𝐄 𝐀𝐐𝐔𝐢",
 sections }
-
-conn.sendButton(m.chat, 'hdhhdh', author, null, [['🔄 𝚂𝙸𝙶𝚄𝙸𝙴𝙽𝚃𝙴 🔄', /${command}]], m)
 }
+conn.sendButton(m.chat, 'hdhhdh', wm, null, ['🔄 𝚂𝙸𝙶𝚄𝙸𝙴𝙽𝚃𝙴 🔄', /${command}], m)
+
 
 handler.help = ['en', 'dis'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
