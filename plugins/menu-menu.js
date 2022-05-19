@@ -437,7 +437,7 @@ throw e
 }}
 handler.help = ['menu', 'help', '?']
 handler.tags = ['main']
-handler.command = /^(menucompleto|menu|menú|memu|memú|help|info|comandos|allmenu|2help|menu1.2|ayuda|commands|commandos|m|\?)$/i
+handler.command = /^(menucompleto|allmenu|allm\?)$/i
 handler.exp = 50
 handler.fail = null
 export default handler
