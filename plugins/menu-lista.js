@@ -4,8 +4,6 @@ import moment from 'moment-timezone'
 let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isROwner }) => {
 let uptime = clockString(_uptime)
 let replace = {
-'%': '%',
-p: _p, uptime, 
 me: conn.getName(conn.user.jid),
 }
 wm = global.wm
