@@ -2,6 +2,7 @@ import { xpRange } from '../lib/levelling.js'
 const { levelling } = '../lib/levelling.js'
 import moment from 'moment-timezone'
 let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isROwner }) => {
+let locale = 'es'
 let d = new Date(new Date + 3600000)
 let time = d.toLocaleTimeString(locale, {
       hour: 'numeric',
