@@ -41,13 +41,13 @@ footer: `╭━━〔 *${wm}* 〕━━⬣
 ╰━━━━━━━━━━━━━━━━━━━━⬣
 ${wm}`,
 title: null,
-buttonText: "𝙋𝙍𝙀𝙎𝙄𝙊𝙉𝙀 𝘼𝙌𝙐Í | 𝙋𝙍𝙀𝙎𝙎 𝙃𝙀𝙍𝙀",
+buttonText: "𝙋𝙍𝙀𝙎𝙄𝙊𝙉𝙀 𝘼𝙌𝙐Í | 𝙋𝙍𝙀𝙎𝙎 𝙃𝙀𝙍𝙀", 
 sections }
 
 await conn.sendMessage(m.chat, listMessage)
 }
 
-handler.help = ['en', 'dis'].map(v => v + 'able <option>')
+handler.help = ['infomenu'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
 handler.command = /^(infomenu)$/i
 export default handler
