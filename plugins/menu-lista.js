@@ -42,7 +42,7 @@ footer: `╭══〘 ✯✯✯✯✯✯✯✯ 〙═╮
 ║≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 ╰══╡✯✯✯✯✯✯✯✯╞══╯
 ┃✪ *Tiempo Actual | Current Time*	    
-┃➺ ${time}  {${ucapan()}
+┃➺ ${time}  ${ucapan()}
 ┃   ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃✪ *Activa durante | Active during* 
 ┃➺ uptime
@@ -83,7 +83,7 @@ function clockString(ms) {
 
 function ucapan() {
   const time = moment.tz('America/Los_Angeles').format('HH')  //America/Los_Angeles  Asia/Jakarta   America/Toronto
-  res = "👋 *BIENVENIDO(A) | WELCOME* 👋"
+  let res = "👋 *BIENVENIDO(A) | WELCOME* 👋"
   if (time >= 4) {
     res = "🌇 *Buenos Días | Good Morning* ⛅"
   }
