@@ -32,15 +32,14 @@ footer: `
 ┃ *PRESIONE ESTE MENSAJE PARA IR AL MENÚ.*
 ┃ *PRESS THIS MESSAGE TO GO TO THE MENU.*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃💫➺  _${usedPrefix}grupos_
-┃💫➺  _${usedPrefix}cuentasgatabot_
-┃💫➺  _${usedPrefix}estado_
-┃💫➺  _${usedPrefix}infobot_
-┃💫➺  _${usedPrefix}donar_
-┃💫➺  _${usedPrefix}listagrupos_
-┃💫➺  _${usedPrefix}velocidad_
-┃💫➺  _${usedPrefix}owner_
-┃💫➺  _Bot_ (𝑢𝑠𝑜 𝑠𝑖𝑛 𝑝𝑟𝑒𝑓𝑖𝑗𝑜)
+┃💫➺ _${usedPrefix}gruposgb | grupos | groupgb _
+┃💫➺ _${usedPrefix}cuentasgatabot | cuentasgb | accounts_
+┃💫➺ _${usedPrefix}estado | heygata | status_
+┃💫➺ _${usedPrefix}infogata | infobot_
+┃💫➺ _${usedPrefix}listagrupos | grouplist_
+┃💫➺ _${usedPrefix}velocidad | ping_
+┃💫➺ _${usedPrefix}creadora | owner_
+┃💫➺ _Bot_ 
 ╰━━━━━━━━━━━━━━━━━━━━━━━━━━⬣
 ${author}`,
 title: null,
