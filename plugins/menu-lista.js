@@ -35,7 +35,7 @@ rows: [
 
 let name = await conn.getName(m.sender)
 const listMessage = {
-text: ' ',
+text: `${name} ${ucapan()}`,
 footer: `╭══〘 ✯✯✯✯✯✯✯✯ 〙═╮
 ║≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 ║➤ *✨𝐇𝐎𝐋𝐀, ${name}!!*
