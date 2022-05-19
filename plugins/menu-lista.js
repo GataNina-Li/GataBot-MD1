@@ -50,7 +50,7 @@ footer: `╭━━━━━━〔 *${wm}* 〕━━━━━━⬣
 ┃➺ ${Object.keys(global.db.data.users).length} 
 ┃   ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃✪ *Modo | Mode*
-┃➺ ${global.opts['self'] ? '*Activado ✔*' : '*Desactivado ✘*'}
+┃➺ ${global.opts['self'] ? '𝙋𝙍𝙄𝙑𝘼𝘿𝙊 - 𝙋𝙍𝙄𝙑𝘼𝙏𝙀' : '𝙋𝙐𝘽𝙇𝙄𝘾𝙊 - 𝙋𝙐𝘽𝙇𝙄𝘾'}
 ┃   ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃✪ *Chat(s) Prohibido(s) | Forbidden Chats*
 ┃➺ ${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length} 
