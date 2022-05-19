@@ -2,10 +2,7 @@ import { xpRange } from '../lib/levelling.js'
 const { levelling } = '../lib/levelling.js'
 import moment from 'moment-timezone'
 let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isROwner }) => {
-let uptime = clockString(uptime)
-let replace = {
-me: conn.getName(conn.user.jid),
-}
+
 wm = global.wm
 vs = global.vs
 let { exp, limit, level, role } = global.db.data.users[m.sender]
@@ -41,7 +38,7 @@ footer: `╭══〘 ✯✯✯✯✯✯✯✯ 〙═╮
 ┃➺ time 
 ┃   ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃✪ *Activa durante | Active during* 
-┃➺ ${uptime}
+┃➺ uptime
 ┃   ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃✪ *Versión de GataBot-MD*
 ┃➺ ${vs}
