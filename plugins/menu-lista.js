@@ -2,7 +2,7 @@ import { xpRange } from '../lib/levelling.js'
 const { levelling } = '../lib/levelling.js'
 import moment from 'moment-timezone'
 let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isROwner }) => {
-let uptime = clockString(_uptime)
+let uptime = clockString(uptime)
 let replace = {
 me: conn.getName(conn.user.jid),
 }
