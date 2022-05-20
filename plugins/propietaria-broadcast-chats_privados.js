@@ -8,7 +8,7 @@ title: '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 | 𝙂𝙖𝙩𝙖 𝘿𝙞𝙤�
 body: 'Super Bot WhatsApp', 
 sourceUrl: `https://www.instagram.com/gata_dios`, 
 thumbnail: fs.readFileSync('./media/menus/Menu3.jpg') }}})}
-m.reply(`${iig} ✅ *El mensaje fue enviado a ${chats.length} Chats Privados*\n*Es posible que no se haya enviado a todos los Grupos. Disculpe.*\n\n✅ *The message was sent to ${chats.length} Private Chats*\n*May not have been sent to all Groups. Excuse me.*`)
+m.reply(`${iig} ✅ *El mensaje fue enviado a ${chats.length} Chats Privados*\n*Es posible que no se haya enviado a todos los Chats Privados. Disculpe.*\n\n✅ *The message was sent to ${chats.length} Private Chats*\n*May not have been sent to all Private Chats. Excuse me.*`)
 }
 handler.help = ['broadcastchats', 'bcchats'].map(v => v + ' <teks>')
 handler.tags = ['owner']
