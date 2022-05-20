@@ -8,8 +8,7 @@ conn.reply('593968585383@s.whatsapp.net', '593993684821@s.whatsapp.net', m.quote
 contextInfo: {
 mentionedJid: [m.sender]
 }})
-  m.reply(`*[ ✔️ ] 𝚁𝙴𝙿𝙾𝚁𝚃𝙴 𝙴𝙽𝚅𝙸𝙰𝙳𝙾 𝙲𝙾𝙽 𝙴𝚇𝙸𝚃𝙾 𝙰𝙻 𝙲𝚁𝙴𝙰𝙳𝙾𝚁 𝙳𝙴𝙻 𝙱𝙾𝚃, 𝚂𝚄 𝚁𝙴𝙿𝙾𝚁𝚃𝙴 𝚂𝙴𝚁𝙰́ 𝙰𝚃𝙴𝙽𝙳𝙸𝙳𝙾 𝙻𝙾 𝙰𝙽𝚃𝙴𝚂 𝙿𝙾𝚂𝙸𝙱𝙻𝙴, 𝚂𝙸 𝙴𝚂 𝙵𝙰𝙻𝚂𝙾 𝙾 𝙱𝚁𝙾𝙼𝙰 𝚂𝙾𝙻𝙾 𝚂𝙴 𝙸𝙶𝙽𝙾𝚁𝙰𝚁𝙰*`)
-let str = '╰⊱💚⊱ *𝙀́𝙓𝙄𝙏𝙊 | 𝙎𝙐𝘾𝘾𝙀𝙎𝙎* ⊱💚⊱╮\n\n*El reporte ha sido enviado a mí Creadora. Tendrá una respuesta pronto. De ser Falso será Ignorado el reporte.*\n*The report has been sent to my Creator. You will have an answer soon. If false, the report will be ignored.*'
+  m.reply(`╰⊱💚⊱ *𝙀́𝙓𝙄𝙏𝙊 | 𝙎𝙐𝘾𝘾𝙀𝙎𝙎* ⊱💚⊱╮\n\n*El reporte ha sido enviado a mí Creadora. Tendrá una respuesta pronto. De ser Falso será Ignorado el reporte.*\n*The report has been sent to my Creator. You will have an answer soon. If false, the report will be ignored.*`)
 
 }
 
