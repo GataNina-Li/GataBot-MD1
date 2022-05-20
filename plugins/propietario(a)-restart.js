@@ -5,7 +5,7 @@ let handler = async (m, { conn, isROwner, text }) => {
     await m.reply('🚀🚀')
          await m.reply('🚀🚀🚀🚀')
          await m.reply('🚀🚀🚀🚀🚀🚀')
-         await m.reply('𝙍𝙚𝙞𝙣𝙞𝙘𝙞𝙖𝙧 | 𝙍𝙚𝙨𝙩𝙖𝙧𝙩')
+         await m.reply('𝙍𝙚𝙞𝙣𝙞𝙘𝙞𝙖𝙧 | 𝙍𝙚𝙨𝙩𝙖𝙧𝙩') 
     process.send('reset')
   } else throw '_eeeeeiiittsssss..._'
 }
