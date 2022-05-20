@@ -8,7 +8,7 @@ global.prems.push(`${who.split`@`[0]}`)
 conn.reply(m.chat, `${eg}@${who.split`@`[0]} 𝘼𝙃𝙊𝙍𝘼 𝙀𝙎 𝙐𝙎𝙐𝘼𝙍𝙄𝙊(𝘼) 𝙑𝙄𝙋. 𝙉𝙊 𝙑𝘼 𝙏𝙀𝙉𝙀𝙍 𝙇𝙄𝙈𝙄𝙏𝙀𝙎 𝘾𝙊𝙉 ${gt} 😼\n\n@${who.split`@`[0]} 𝙔𝙊𝙐 𝘼𝙍𝙀 𝙉𝙊𝙒 𝘼 𝙑𝙄𝙋 𝙐𝙎𝙀𝙍. 𝙒𝙄𝙇𝙇 𝙉𝙊𝙏 𝙃𝘼𝙑𝙀 𝙇𝙄𝙈𝙄𝙏𝙎 😼`, m, {
 contextInfo: {
 mentionedJid: [who]
-}})}
+}})} 
 handler.help = ['addprem <@user>']
 handler.tags = ['owner']
 handler.command = /^(add|\+)prem$/i
