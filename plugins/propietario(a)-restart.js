@@ -3,9 +3,9 @@ let handler = async (m, { conn, isROwner, text }) => {
     if (!process.send) throw 'Dont: node main.js\nDo: node index.js'
     if (global.conn.user.jid == conn.user.jid) {
     await m.reply('🚀🚀')
-          m.reply('🚀🚀🚀🚀')
-          m.reply('🚀🚀🚀🚀🚀🚀')
-          m.reply('𝙍𝙚𝙞𝙣𝙞𝙘𝙞𝙖𝙧 | 𝙍𝙚𝙨𝙩𝙖𝙧𝙩')
+         await m.reply('🚀🚀🚀🚀')
+         await m.reply('🚀🚀🚀🚀🚀🚀')
+         await m.reply('𝙍𝙚𝙞𝙣𝙞𝙘𝙞𝙖𝙧 | 𝙍𝙚𝙨𝙩𝙖𝙧𝙩')
     process.send('reset')
   } else throw '_eeeeeiiittsssss..._'
 }
