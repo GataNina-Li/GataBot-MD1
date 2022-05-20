@@ -8,7 +8,7 @@ title: '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 | 𝙂𝙖𝙩𝙖 𝘿𝙞𝙤�
 body: 'Super Bot WhatsApp', 
 sourceUrl: `https://www.instagram.com/gata_dios`, 
 thumbnail: fs.readFileSync('./media/menus/Menu3.jpg') }}})} */
-let text = `*「 𝐔𝐒𝐔𝐀𝐑𝐈𝐎𝐒 𝐏𝐑𝐄𝐌𝐈𝐔𝐌 」*`
+let text = `*「 𝐔𝐒𝐔𝐀𝐑𝐈𝐎𝐒 𝐏𝐑𝐄𝐌𝐈𝐔𝐌 」*`.trim()
 
 conn.reply(m.chat, text, + prem.map(v => '- @' + v.replace(/@.+/, '')).join`\n`, m, {
 contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
