@@ -1,3 +1,4 @@
+import fs from 'fs'
 let handler = async (m, { conn, text }) => {
 let chats = Object.entries(conn.chats).filter(([jid, chat]) => !jid.endsWith('@g.us') && chat.isChats).map(v => v[0])
 for (let id of chats) { 
