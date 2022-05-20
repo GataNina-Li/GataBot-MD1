@@ -16,4 +16,5 @@ handler.help = ['broadcastgroup', 'bcgc'].map(v => v + ' <teks>')
 handler.tags = ['owner']
 handler.command = /^(broadcast|bc)(group|grup|gc)$/i
 handler.rowner = true
+handler.owner = true
 export default handler
