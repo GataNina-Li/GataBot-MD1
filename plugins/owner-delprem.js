@@ -14,7 +14,6 @@ handler.help = ['delprem <@user>']
 handler.tags = ['owner']
 handler.command = /^(remove|-|del)prem$/i
 handler.group = true
-handler.rowner = true
 handler.admin = true
 handler.botAdmin = true
 export default handler
