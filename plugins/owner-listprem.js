@@ -22,5 +22,5 @@ conn.sendHydrated(m.chat, null, wm, null, ig, '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖�
 handler.help = ['premlist']
 handler.tags = ['owner']
 handler.command = /^(listprem|premlist)$/i
-handler.rowner = true
+
 export default handler
