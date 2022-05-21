@@ -87,8 +87,8 @@ footer: `╭━━〔 *${wm}* 〕━━⬣
 ┃✪ *NIVEL | LEVEL ➺ ${level}*
 ┃✪ *ROL ➺ ${role}*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃✪ *USUARIOS | USERS ➺ ${Object.keys(global.db.data.users).length}* 
 ┃✪ *FECHA ➺ ${week}, ${date}*
+┃✪ *USUARIOS | USERS ➺ ${Object.keys(global.db.data.users).length}* 
 ┃🌟🌟🌟🌟🌟🌟🌟🌟🌟
 ╰━━━━━━〔 𓃠 *${vs}* 〕━━━━━━⬣
 
