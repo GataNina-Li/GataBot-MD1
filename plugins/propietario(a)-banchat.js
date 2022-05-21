@@ -6,6 +6,6 @@ m.reply(`${eg}𝙀𝙎𝙏𝙀 𝘾𝙃𝘼𝙏 𝙁𝙐𝙀 𝘽𝘼𝙉𝙀�
 handler.help = ['banchat2']
 handler.tags = ['owner']
 handler.command = /^banchat2$/i
-handler.rowner = true
+handler.owner = true
 
 export default handler
