@@ -78,18 +78,16 @@ let username = conn.getName(who)
 
 
 const listMessage = {
-text: ' ',
+text: '💗 *¡Hola | Hi!* ${username}',
 footer: `╭━━〔 *${wm}* 〕━━⬣
 ┃🌟🌟🌟🌟🌟🌟🌟🌟🌟
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃💗 *¡Hola | Hi!* ${username}
-┃✪ *Usuario(s) | Users*
-┃➺ ${Object.keys(global.db.data.users).length} 
-
-*📅 𝙵𝙴𝙲𝙷𝙰: ${week}, ${date}*
-${exp}
-${level}
-${role}
+┃✪ *EXPERIENCIA | EXP ➺ ${exp}*
+┃✪ *NIVEL | LEVEL ➺ ${level}*
+┃✪ *ROL ➺ ${role}*
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃✪ *Usuario(s) | Users* ➺ ${Object.keys(global.db.data.users).length} 
+┃✪ *FECHA ➺ ${week}, ${date}*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃🌟🌟🌟🌟🌟🌟🌟🌟🌟
 ╰━━━━━━〔 𓃠 *${vs}* 〕━━━━━━⬣
