@@ -5,5 +5,5 @@ m.reply(`${eg}𝙀𝙎𝙏𝙀 𝘾𝙃𝘼𝙏 𝙁𝙐𝙀 𝘿𝙀𝙎𝘽�
 handler.help = ['unbanchat2']
 handler.tags = ['owner']
 handler.command = /^unbanchat2$/i
-handler.owner = true
+handler.rowner = true
 export default handler
