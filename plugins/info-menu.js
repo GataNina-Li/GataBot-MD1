@@ -53,7 +53,7 @@ maxexp: xp,
 totalexp: exp,
 xp4levelup: max - exp,
 
-level, limit, name, weton, week, date, dateIslamic, time, totalreg, rtotalreg, role,
+level, limit, weton, week, date, dateIslamic, time, totalreg, rtotalreg, role,
 readmore: readMore
 }
 text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
