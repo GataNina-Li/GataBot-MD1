@@ -1,4 +1,30 @@
+import moment from 'moment-timezone'
 let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isROwner }) => {
+  
+  let locale = 'es'
+let d = new Date(new Date + 3600000)
+let time = d.toLocaleTimeString(locale, {
+      hour: 'numeric',
+      minute: 'numeric',
+      second: 'numeric'
+  
+  let _uptime = process.uptime() * 1000
+let uptime = clockString(_uptime) 
+
+
+
+let { exp, limit, level, role } = global.db.data.users[m.sender]
+let { min, xp, max } = xpRange(level, global.multiplier)
+let totalreg = Object.keys(global.db.data.users).length
+let rtotalreg = Object.values(global.db.data.users).filter(user => user.registered == true).length
+exp: exp - min,
+maxexp: xp,
+totalexp: exp,
+xp4levelup: max - exp,
+//github: _package.homepage ? _package.homepage.url || _package.homepage : '[unknown github url]',
+level, limit, weton, week, date, time, totalreg, rtotalreg, role,
+readmore: readMore
+
 const sections = [
 {
 title: `𝙇𝙄𝙎𝙏𝘼 𝘿𝙀𝙎𝙋𝙇𝙀𝙂𝘼𝘽𝙇𝙀 | 𝘿𝙍𝙊𝙋-𝘿𝙊𝙒𝙉 𝙇𝙄𝙎𝙏`,
@@ -22,6 +48,13 @@ footer: `╭━━〔 *${wm}* 〕━━⬣
 ┃🌟🌟🌟🌟🌟🌟🌟🌟🌟
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃💗 *¡Hola | Hi!* ${username}
+*📅 𝙵𝙴𝙲𝙷𝙰: %week, %date
+*📈 𝚃𝙸𝙴𝙼𝙿𝙾 𝙰𝙲𝚃𝙸𝚅𝙾: ${uptime}*
+*📊 𝚄𝚂𝚄𝙰𝚁𝙸𝙾𝚂: ${rtotalreg}*
+%money
+${role}
+${level}
+
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃🌟🌟🌟🌟🌟🌟🌟🌟🌟
 ╰━━━━━━〔 𓃠 *${vs}* 〕━━━━━━⬣
@@ -51,3 +84,11 @@ handler.help = ['infomenu'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
 handler.command = /^(infomenu)$/i
 export default handler
+
+const more = String.fromCharCode(8206)
+const readMore = more.repeat(4001)
+function clockString(ms) {
+let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000)
+let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
+let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
+return [h, m, s].map(v => v.toString().padStart(2, 0)).join(':')}
