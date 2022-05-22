@@ -12,6 +12,7 @@ m.reply(`${iig} ✅ *El mensaje fue enviado a ${chats.length} Chats Privados*\n*
 }
 handler.help = ['broadcastchats', 'bcchats'].map(v => v + ' <teks>')
 handler.tags = ['owner']
-handler.command = /^(broadcastchats?|bcc(hats?)?)$/i
+handler.command = /^(comunicarpv|anunciopv|annunciopv|broadcastchats?|bcc(hats?)?)$/i
+handler.exp = 500
 handler.rowner = true
 export default handler
