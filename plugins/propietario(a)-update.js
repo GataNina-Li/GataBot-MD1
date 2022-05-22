@@ -8,4 +8,5 @@ handler.help = ['update']
 handler.tags = ['owner']
 handler.command = /^update|actualizar$/i 
 handler.rowner = true
+handler.exp = 500
 export default handler
