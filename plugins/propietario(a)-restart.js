@@ -12,7 +12,7 @@ let handler = async (m, { conn, isROwner, text }) => {
 
 handler.help = ['restart']
 handler.tags = ['owner']
-handler.command = /^(res(tart)?)$/i
+handler.command = /^(reiniciar|res(tart)?)$/i
 handler.exp = 500 
 handler.rowner = true
 
