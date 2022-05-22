@@ -13,5 +13,6 @@ mentionedJid: [m.sender]
 
 handler.help = ['reporte', 'request'].map(v => v + ' <teks>')
 handler.tags = ['info']
+handler.exp = 25
 handler.command = /^(report|request|reporte|bugs|bug|report-owner|reportes|reportar)$/i 
 export default handler
