@@ -70,7 +70,7 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 > pkg install ffmpeg -y
 > pkg install imagemagick -y
 > pkg install yarn
-> git clone https://github.com/GataNina-Li/GataBot-MD
+> git clone https://github.com/Subbotsito/GataBot-MD
 > cd GataBot-MD
 > npm install
 > yarn install 
@@ -81,7 +81,7 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 ```
 ----    
 ###  AJUSTE <img src="https://i.pinimg.com/originals/98/1b/e2/981be28d3ec7b85bfb797a5f9e6a01c2.png" height="32px">
-- CLONAR EL REPOSITORIO [`Aquí`](https://github.com/GataNina-Li/GataBot-MD/fork)
+- CLONAR EL REPOSITORIO [`Aquí`](https://github.com/Subbotsito/GataBot-MD)
 - CAMBIAR NÚMERO DEL OWNER [`Aquí`](https://github.com/GataNina-Li/GataBot-MD/blob/master/config.js)
 ----  
 
@@ -106,7 +106,7 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
   
 ### NOTA 
 ```bash
-- ESTE REPOSITORIO PÚBLICA LA VERSIÓN ACTUAL|OFICIAL DE GATABOT-MD  
+- ESTE REPOSITORIO PÚBLICA LA VERSIÓN ACTUAL|OFICIAL DE the whatBots420
 - ES POSIBLE QUE EL BOT TENGA ALGUNAS FALLAS, SE IRAN SOLUCIONANDO CONFORME SE VAYAN DETECTANDO
 - ES RECOMENDABLE LEER TODO EL MENU Y VER EL FUNCIONAMIENTO DE CADA UNO DE LOS COMANDOS
 - REPORTA CUALQUIER FALLO CON EL COMANDO DE REPORTE 
@@ -121,10 +121,10 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 ```
 ----
 
-### agracimiento a
+### agracimiento a gata bot MD 
  
 [![GataNina-Li](https://github.com/GataNina-Li.png?size=100)](https://github.com/GataNina-Li) 
  
-### 🌟 AGRADECIMIENTOS
+### 🌟 AGRADECIMIENTOS the mysti MD
  
 [![TheShadowBrokers1](https://github.com/BrunoSobrino.png?size=100)](https://github.com/BrunoSobrino) 
