@@ -72,9 +72,9 @@ let str = `
 *Número de bot:* *wa.me/17787202830*
 
 *<𝕀ℕ𝔽𝕆ℝ𝕄𝔸ℂ𝕀𝕆ℕ 𝔻𝔼𝕃 𝔹𝕆𝕋/>*
-
+__________________
 ° ඬ ⃟ 💟 _${usedPrefix}grupos_
-° ඬ ⃟ 💟 _${usedPrefix}cuentasgatabot_
+° ඬ ⃟ 💟 _${usedPrefix}cuentaswb_
 ° ඬ ⃟ 💟 _${usedPrefix}estado_
 ° ඬ ⃟ 💟 _${usedPrefix}infobot_
 ° ඬ ⃟ 💟 _${usedPrefix}donar_
@@ -82,11 +82,11 @@ let str = `
 ° ඬ ⃟ 💟 _${usedPrefix}velocidad_
 ° ඬ ⃟ 💟 _${usedPrefix}owner_
 ° ඬ ⃟ 💟 _Bot_ (𝑢𝑠𝑜 𝑠𝑖𝑛 𝑝𝑟𝑒𝑓𝑖𝑗𝑜)
-
+_________________
 *<𝕌ℕ𝔼 𝕌ℕ 𝔹𝕆𝕋 𝔸 𝕋𝕌 𝔾ℝ𝕌ℙ𝕆/>*
 
 ° ඬ⃟👽 _${usedPrefix}join *<enlace / link / url>*_
-
+__________________
 *<𝕁𝕌𝔼𝔾𝕆𝕊/>*
 
 ° ඬ⃟🎖️ _${usedPrefix}mates *<noob / easy / medium / hard / extreme /impossible /impossible2>*_
@@ -112,14 +112,14 @@ let str = `
 ° ඬ⃟🎖️ _${usedPrefix}formarpareja_
 ° ඬ⃟🎖️ _${usedPrefix}verdad_
 ° ඬ⃟🎖️ _${usedPrefix}reto_
-
+_________________
 *<𝔸ℂ𝕋𝕀𝕍𝔸ℝ 𝕆 𝔻𝔼𝕊𝔸ℂ𝕋𝕀𝕍𝔸ℝ/>*
 *Enable*
-
+_________________
 *<ℝ𝔼ℙ𝕆ℝ𝕋𝔼𝕊 𝔻𝔼 𝔽𝔸𝕃𝕃𝕆𝕊/>*
 
 ° ඬ⃟🔰 _${usedPrefix}reporte *<texto>*_
-
+_________________
 *<𝔻𝔼𝕊ℂ𝔸ℝ𝔾𝔸𝕊/>*
 
 ° ඬ⃟📥 _${usedPrefix}facebook *<enlace / link / url>*_
@@ -141,7 +141,7 @@ let str = `
 ° ඬ⃟📥 _${usedPrefix}pptiktok *<nombre de usuario>*_
 ° ඬ⃟📥 _${usedPrefix}igstalk *<nombre de usuario>*_
 ° ඬ⃟📥 _${usedPrefix}tiktokstalk *<nombre de usuario>*_
-
+__________________
 *<𝔾ℝ𝕌ℙ𝕆𝕊/>* 
 
 ° ඬ⃟💎 _${usedPrefix}add *<numero>*_
@@ -162,7 +162,7 @@ let str = `
 ° ඬ⃟💎 _${usedPrefix}setbye *<texto>*_
 ° ඬ⃟💎 _${usedPrefix}hidetag *<texto>*_
 ° ඬ⃟💎 _${usedPrefix}simular *<welcome / bye / promote / demote>*_
-
+____________________
 *<ℂ𝕆ℕ𝕍𝔼ℝ𝕋𝕀𝔻𝕆ℝ𝔼𝕊/>*
 
 ° ඬ⃟🧧 _${usedPrefix}toimg *<responde a un sticker>*_
@@ -171,7 +171,7 @@ let str = `
 ° ඬ⃟🧧 _${usedPrefix}tovideo *<responde a un audio>*_
 ° ඬ⃟🧧 _${usedPrefix}tourl *<responde a un video / imagen / audio>*_
 ° ඬ⃟🧧 _${usedPrefix}tts es *<texto>*_
-
+______________________
 *<𝔼𝔽𝔼ℂ𝕋𝕆𝕊 𝕐 𝕃𝕆𝔾𝕆𝕊/>*
 
 ° ඬ⃟🖍️ _${usedPrefix}logos *<efecto> <texto>*_
@@ -182,7 +182,7 @@ let str = `
 ° ඬ⃟🖍️ _${usedPrefix}itssostupid_
 ° ඬ⃟🖍️ _${usedPrefix}pixelar_
 ° ඬ⃟🖍️ _${usedPrefix}blur_
-
+______________________
 *<ℝ𝔸ℕ𝔻𝕆𝕄/>*
 
 ° ඬ⃟👾 _${usedPrefix}cristianoronaldo_
@@ -232,7 +232,7 @@ let str = `
 ° ඬ⃟👾 _${usedPrefix}sasuke_
 ° ඬ⃟👾 _${usedPrefix}sakura_
 ° ඬ⃟👾 _${usedPrefix}cosplay_
-
+______________________
 *<ℂ𝕆𝕄𝔸ℕ𝔻𝕆𝕊 +𝟙𝟠/>*
 *Usar bajo tu responsabilidad*
 *Nota; no sea pajero*
@@ -267,7 +267,7 @@ let str = `
 ° ඬ⃟🔞 _${usedPrefix}nsfwero_
 ° ඬ⃟🔞 _${usedPrefix}nsfwfemdom_
 ° ඬ⃟🔞 _${usedPrefix}nsfwglass_
-
+______________________
 *<𝔼𝔽𝔼ℂ𝕋𝕆𝕊 𝔻𝔼 𝔸𝕌𝔻𝕀𝕆𝕊/>*
 *- 𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙴 𝙰 𝚄𝙽 𝙰𝚄𝙳𝙸𝙾 𝙾 𝙽𝙾𝚃𝙰 𝙳𝙴 𝚅𝙾𝚉*
 
@@ -283,13 +283,13 @@ let str = `
 ° ඬ⃟🎤 _${usedPrefix}slow_
 ° ඬ⃟🎤 _${usedPrefix}smooth_
 ° ඬ⃟🎤 _${usedPrefix}tupai_
-
+______________________
 *<ℂℍ𝔸𝕋 𝔸ℕ𝕆ℕ𝕀𝕄𝕆/>*
 
 ° ඬ⃟📳 _${usedPrefix}start_
 ° ඬ⃟📳 _${usedPrefix}next_
 ° ඬ⃟📳 _${usedPrefix}leave_
-
+______________________
 *<𝔹𝕌𝕊ℂ𝔸𝔻𝕆ℝ𝔼𝕊/>*
 
 ° ඬ⃟🔍 _${usedPrefix}animeinfo *<texto>*_
@@ -297,7 +297,7 @@ let str = `
 ° ඬ⃟🔍 _${usedPrefix}letra *<texto>*_
 ° ඬ⃟🔍 _${usedPrefix}wikipedia *<texto>*_
 ° ඬ⃟🔍 _${usedPrefix}ytsearch *<texto>*_
-
+______________________
 *<𝔸𝕌𝔻𝕀𝕆𝕊/>* 
 *- 𝙴𝚂𝙲𝚁𝙸𝙱𝙴 𝙻𝙰𝚂 𝚂𝙸𝙶𝚄𝙸𝙴𝙽𝚃𝙴𝚂 𝙿𝙰𝙻𝙰𝙱𝚁𝙰𝚂 𝙾 𝙵𝚁𝙰𝚂𝙴𝚂 𝚂𝙸𝙽 𝙽𝙸𝙽𝙶𝚄𝙽 𝙿𝚁𝙴𝙵𝙸𝙹𝙾 (#, /, *, .)* 
 _(𝑢𝑠𝑜 𝑠𝑖𝑛 𝑝𝑟𝑒𝑓𝑖𝑗𝑜)_
@@ -340,7 +340,7 @@ _(𝑢𝑠𝑜 𝑠𝑖𝑛 𝑝𝑟𝑒𝑓𝑖𝑗𝑜)_
 ° ඬ⃟🔊 _UwU_
 ° ඬ⃟🔊 _:c_
 ° ඬ⃟🔊 _a_
-
+______________________
 *<ℍ𝔼ℝℝ𝔸𝕄𝕀𝔼ℕ𝕋𝔸𝕊/>*
 
 ° ඬ⃟🛠️ _${usedPrefix}afk *<motivo>*_
@@ -352,7 +352,7 @@ _(𝑢𝑠𝑜 𝑠𝑖𝑛 𝑝𝑟𝑒𝑓𝑖𝑗𝑜)_
 ° ඬ⃟🛠️ _${usedPrefix}spamwa *<numero|texto|cantidad>*_
 ° ඬ⃟🛠️ _${usedPrefix}styletext *<texto>*_
 ° ඬ⃟🛠️ _${usedPrefix}traducir *<texto>*_
-
+______________________
 *<ℝℙ𝔾 - 𝕃𝕀𝕄𝕀𝕋𝔼𝕊 - 𝔼ℂ𝕆ℕ𝕆𝕄𝕀𝔸/>*
 
 ° ඬ⃟💵 _${usedPrefix}balance_
@@ -368,7 +368,7 @@ _(𝑢𝑠𝑜 𝑠𝑖𝑛 𝑝𝑟𝑒𝑓𝑖𝑗𝑜)_
 ° ඬ⃟💵 _${usedPrefix}transfer *<tipo> <cantidad> <@tag>*_
 ° ඬ⃟💵 _${usedPrefix}verificar_
 ° ඬ⃟💵 _${usedPrefix}unreg *<numero de serie>*_
-
+______________________
 *<𝕊𝕋𝕀ℂ𝕂𝔼ℝ𝕊/>*
 
 ° ඬ⃟👽 _${usedPrefix}emojimix *<emoji 1>&<emoji 2>*_
@@ -381,7 +381,7 @@ _(𝑢𝑠𝑜 𝑠𝑖𝑛 𝑝𝑟𝑒𝑓𝑖𝑗𝑜)_
 ° ඬ⃟👽 _${usedPrefix}wm *<packname> <author>*_
 ° ඬ⃟👽 _${usedPrefix}stickermarker *<efecto> <responder a imagen>*_
 ° ඬ⃟👽 _${usedPrefix}stickerfilter *<efecto> <responder a imagen>*_
-
+______________________
 *<𝕆𝕎ℕ𝔼ℝ 𝕐 𝕄𝕆𝔻𝔼ℝ𝔸𝔻𝕆ℝ𝔼𝕊/>*
 
 ° ඬ⃟👑 _${usedPrefix}cajafuerte_
