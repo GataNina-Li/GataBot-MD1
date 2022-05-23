@@ -82,13 +82,13 @@ global.version = vs
 global.gt = 'the whatBots420'
 global.gatabot = gt
 
-global.yt = 'https://youtube.com/channel/UCpNU4eY7eiI0ve05CssjdbA'
+global.yt = 'https://youtube.com/channel/UCCQcDL1rZ4YIg7R3W0YrlhA'
 global.youtube = yt
 
 global.ig = 'https://www.instagram.com/gata_dios'
 global.gatadiosig = ig
 
-global.md = 'https://github.com/GataNina-Li/GataBot-MD'
+global.md = 'https://github.com/Subbotsito/GataBot-MD'
 global.gatabot = md
 
 global.nn = 'https://chat.whatsapp.com/Lus9S60MABnH9lF4Wf2T7k'
