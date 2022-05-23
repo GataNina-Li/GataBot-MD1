@@ -11,7 +11,7 @@ let handler  = async (m, { conn, command, args, usedPrefix, DevMode }) => {
   await m.reply(`╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼* ⊱⚠️⊱╮`)
   //conn.sendButton(m.chat, str, author, await(await fetch(pp)).buffer(), [['Menu', '/menu']], m)
 let text = `
-*Las funciones | The functions #jadibot #bots #serbot #subbot #getcode. No estan disponibles en* ${gt}`.trim()   
+*Las funciones #jadibot #bots #serbot #subbot #getcode. No estan disponibles en * ${gt} si quiere hacerte bot instenta hacerlo vos mismo instalado 👉 https://github.com/Subbotsito/GataBot-MD`.trim()   
 conn.reply(m.chat, text, m, {
 contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
 title: 'the whatBots420',
