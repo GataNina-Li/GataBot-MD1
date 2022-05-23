@@ -54,10 +54,10 @@ text: `╭─────────────────────❀\n�
 ┃✪ *Modo*
 ┃➺ ${global.opts['self'] ? '𝙋𝙍𝙄𝙑𝘼𝘿𝙊' : '𝙋𝙐𝘽𝙇𝙄𝘾𝙊 '}
 ┃   ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃✪ *Chat(s) Prohibido(s) | Forbidden Chats*
+┃✪ *Chat(s) Prohibido(s)*
 ┃➺ ${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length} 
 ┃   ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃✪ *Usuario(s) Prohibido(s) | Prohibited Users*
+┃✪ *Usuario(s) Prohibido(s)*
 ┃➺ ${Object.entries(global.db.data.users).filter(user => user[1].banned).length}
 ╰━━━━━━━━━━━━━━━━━━━━━⬣`, footer: `${wm}`, //${name} ${ucapan()}
 title: null,
