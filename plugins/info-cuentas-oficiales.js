@@ -12,8 +12,7 @@ let str = `
 ✅ *YOUTUBE*
 *${yt}*
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-*Si tienen dudas, sugerencias, o preguntas solo escriban por el grupo de WhatsApp.*\n
-*If you have doubts, suggestions or questions just write on Instagram.*
+*Si tienen dudas, sugerencias, o preguntas solo escriban por el grupo de WhatsApp.*
 `.trim()
   
 conn.sendHydrated(m.chat, str, wm, media, 'https://github.com/GataNina-Li/GataBot-MD', 'the whatBots420', null, null, [
