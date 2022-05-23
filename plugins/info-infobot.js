@@ -19,7 +19,7 @@ let old = performance.now()
 let neww = performance.now()
 let speed = neww - old
 let info = `
-╭━━━━[ ${wabot} ]━━━━━⬣
+╭━━━━[ ${gb} ]━━━━━⬣
 ┃
 ┃➥ *CREADOR*
 ┃ღ *the whatBots420*
