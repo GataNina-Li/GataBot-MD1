@@ -7,6 +7,7 @@ let caption = `
 *𝙽𝙾𝙼𝙱𝚁𝙴:* ${filename}
 *𝙿𝙴𝚂𝙾:* ${filesizeH}
 *𝚃𝙸𝙿𝙾:* ${ext}
+*No pida más de 90 mg si pesa más es imposibles de mándalos y se satura el bot*
 `.trim()
 m.reply(caption)
 conn.sendFile(m.chat, url, filename, '', m, null, { mimetype: ext, asDocument: true })
