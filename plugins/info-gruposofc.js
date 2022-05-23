@@ -36,8 +36,6 @@ let str = `
 
 *10.-* https://chat.whatsapp.com/C2WYb1hiiijCI13QSUZLM9
 
-*11.-* https://chat.whatsapp.com/GKdDtQKWP5LCgpbzucz6kt
-
 *grupo de amistades donde esta el bot*
 
 *bot princess Kiara* 
@@ -71,10 +69,8 @@ https://chat.whatsapp.com/Dq9v557KgJsLtdkK3CALzL
 *│🌷.ꦿ│𓏲⊹𝐀𝐌𝐈𝐒𝐓𝐀𝐃𝐄𝐒 𖥨⊹*
 https://chat.whatsapp.com/HTeeFKFAHsP1b0YUm5eDRm
 
-*si quiere que tu grupo aparezca aca habla con el admin ofc del bot**\n
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-*Por favor, no ingresar con números de Bots, y mantener el respeto.*\n
-*Please, do not enter with Bot numbers, and maintain respect.*
+*si quiere que tu grupo aparezca aca habla con el admin ofc del bot*
 `.trim()
   
 conn.sendHydrated(m.chat, str, wm, media, 'https://github.com/GataNina-Li/GataBot-MD', 'the whatBots420', null, null, [
