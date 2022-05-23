@@ -61,7 +61,7 @@
 ### ACTIVAR EN TERMUX  <img src="https://c.tenor.com/HLrXIleGBToAAAAC/transparent-cat.gif" height="30px">
 ```bash
 ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
-> cd
+
 > termux-setup-storage
 > apt update 
 > pkg upgrade 
