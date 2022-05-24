@@ -1,6 +1,8 @@
 /* CREDITOS A https://github.com/FG98F */
 import axios from 'axios'
 import hx from 'hxz-api' 
+import fs from 'fs'
+import fetch from 'node-fetch'
 let handler = async (m, { conn, args, usedPrefix, command, text}) => {
 if (!text) throw `*[❗𝐈𝐍𝐅𝐎❗] 𝙸𝙽𝙶𝚁𝙴𝚂𝙴 𝙴𝙻 𝙽𝙾𝙼𝙱𝚁𝙴 𝙳𝙴 𝚄𝙽 𝚄𝚂𝚄𝙰𝚁𝙸𝙾 𝙳𝙴 𝙸𝙽𝚂𝚃𝙰𝙶𝚁𝙰𝙼*\n\n*𝙴𝙹𝙴𝙼𝙿𝙻𝙾:*\n*${usedPrefix + command} luisitocomunica*`, {
 contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
