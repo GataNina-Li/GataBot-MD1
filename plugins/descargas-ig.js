@@ -8,7 +8,7 @@ const results = await instagramdl(args[0])
 .catch(async _ => await instagramdlv4(args[0]))
 for (const { url } of results) await conn.sendFile(m.chat, url, 'instagram.mp4', `✨ *ENLACE | URL:* ${url}`, m)
   
-let info = `✨ *Infórmate sobre las Novedades y recuerda tener la última versión.*
+ let info = `💖 *Infórmate sobre las Novedades y recuerda tener la última versión.*\n\n💝 *Find out about what's new and remember to have the latest version.*
   `.trim()
   
 await conn.sendHydrated(m.chat, info, wm, null, ig, '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢', null, null, [
