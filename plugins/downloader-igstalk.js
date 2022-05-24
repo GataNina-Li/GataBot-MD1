@@ -24,6 +24,7 @@ handler.tags = ['downloader']
 handler.command = /^(igstalk)$/i
 export default handler
 */
+import fetch from 'node-fetch'
 let handler = async (m, { conn, args, usedPrefix, command }) => {
   if (!args || !args[0]) throw `❰ ❗️ ❱ *Estas usando mal el comando*
 *Ejemplo:* *_${usedPrefix}${command}_* Google
