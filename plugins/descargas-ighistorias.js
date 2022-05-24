@@ -4,7 +4,7 @@ import hx from 'hxz-api'
 let handler = async (m, { conn, args, usedPrefix, command, text}) => {
 if (!text) throw `*[❗𝐈𝐍𝐅𝐎❗] 𝙸𝙽𝙶𝚁𝙴𝚂𝙴 𝙴𝙻 𝙽𝙾𝙼𝙱𝚁𝙴 𝙳𝙴 𝚄𝙽 𝚄𝚂𝚄𝙰𝚁𝙸𝙾 𝙳𝙴 𝙸𝙽𝚂𝚃𝙰𝙶𝚁𝙰𝙼*\n\n*𝙴𝙹𝙴𝙼𝙿𝙻𝙾:*\n*${usedPrefix + command} luisitocomunica*`  
 let res = await igstory(!text)
-if (!res.length) throw '❰ ⚠️ ❱ *Error, por favor vuelva a intentarlo..'
+if (!res.length) throw '❰ ⚠️ ❱ *Error, por favor vuelva a intentarlo..' 
   
 hx.igstory(text).then(async (result) => {
 for (let i of result.medias) {
