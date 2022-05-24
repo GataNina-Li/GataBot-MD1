@@ -7,7 +7,7 @@ const results = await instagramdl(args[0])
 .catch(async _ => await instagramdlv4(args[0]))
 //for (const { url } of results) await conn.sendFile(m.chat, url, 'instagram.mp4', `✨ *ENLACE | URL:* ${url}`, m)
   
-for (const { url } of results) await conn.sendHydrated(m.chat, url, 'instagram.mp4', `✨ *ENLACE | URL:* ${url}`, 'https://github.com/GataNina-Li/GataBot-MD', '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
+for (const { url } of results) await conn.sendHydrated(m.chat, url, 'instagram.mp4', `✨ *ENLACE | URL:* ${url}`, null, 'https://github.com/GataNina-Li/GataBot-MD', '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
 ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', '.menu'],
 ['𝘾𝙪𝙚𝙣𝙩𝙖𝙨 𝙊𝙛𝙞𝙘𝙞𝙖𝙡𝙚𝙨 | 𝘼𝙘𝙘𝙤𝙪𝙣𝙩𝙨 ✅', '/cuentasgb']
 ], m,)
