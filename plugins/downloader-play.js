@@ -16,7 +16,7 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
   `.trim(), author, thumbnail, '', '', null, null, [
     ['𝐀𝐔𝐃𝐈𝐎', `${usedPrefix}yta ${url} yes`],
     ['𝐕𝐈𝐃𝐄𝐎', `${usedPrefix}ytv ${url} yes`],
-    ['𝐕𝐈𝐃𝐄𝐎', `${usedPrefix}ytv720 ${url} yes`]
+    ['𝐕𝐈𝐃𝐄𝐎', `${usedPrefix}play.2 ${url} yes`]
   ], m)
 }catch(e){
 m.reply('*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝚁𝚁𝙾𝚁, 𝙿𝙾𝚁 𝙵𝙰𝚅𝙾𝚁 𝚅𝚄𝙴𝙻𝚅𝙰 𝙰 𝙸𝙽𝚃𝙴𝙽𝚃𝙰𝚁𝙻𝙾*')
