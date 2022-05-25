@@ -18,12 +18,6 @@ let spotifyi = `❒══════❬ SPOTIFY ❭══════╾❒
 ┇➠ ⚡️ *URL*: ${url}
 ┇
 ┇➠ 💥 *Dirección de URL:* ${preview_mp3}\n┇\n┗╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍❒\n\n*_⏳ Enviando música de previsualización_*\n\n🐈 𝙂𝙖𝙩𝙖 𝘿𝙞𝙤𝙨 🐈`
-
-//await conn.sendHydrated(m.chat, preview_mp3, 'spotify.mp3', spotifyi, wm, thumb, ig, '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢', null, null, [
-//['𝘼𝙪𝙙𝙞𝙤 | 2️⃣', `play.1 ${url} yes`],
-//['𝘽𝙪𝙨𝙘𝙖𝙧 | 𝙎𝙚𝙖𝙧𝙘𝙝 | 🌐', `.ytsearch ${url} yes`],
-//['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', `/menu`]
-//], m,)
   
 conn.sendFile(m.chat, thumb, '', spotifyi, m)
 conn.sendFile(m.chat, preview_mp3, 'spotify.mp3', spotifyi, m)
