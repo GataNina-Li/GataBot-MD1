@@ -4,7 +4,7 @@ if (!args || !args[0]) throw '*[❗𝐈𝐍𝐅𝐎❗] 𝙸𝙽𝚂𝙴𝚁𝚃
 try {
 let { thumbnail, video, title } = await youtubedl(args[0])
 .catch(async () => await youtubedlv2(args[0]))
-let link = await video['360p'].download()
+let link = await video['480p'].download()
 const isY = /y(es)/gi.test(args[1])
 const limitedSize = (isPrems || isOwner ? 350 : 200) * 3074
 let isLimit = limitedSize < video['480p'].fileSize
