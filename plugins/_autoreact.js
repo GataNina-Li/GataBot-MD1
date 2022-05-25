@@ -7,8 +7,8 @@ key: m.key
     	}
     })	
 }
-handler.command = /(gatadios|dios|gatabot-md|gata dios|gata - bot|gata-bot|gatabot|gata|gatabotmd|gata - bot md)/i
-//handler.command = new RegExp
+handler.customPrefix = /(gatadios|dios|gatabot-md|gata dios|gata - bot|gata-bot|gatabot|gata|gatabotmd|gata - bot md)/i
+handler.command = new RegExp
 
 export default handler
 function pickRandom(list) {
