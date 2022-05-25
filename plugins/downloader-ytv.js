@@ -9,7 +9,7 @@ const isY = /y(es)/gi.test(args[1])
 const limitedSize = (isPrems || isOwner ? 350 : 200) * 3074
 let isLimit = limitedSize < video['720p'].fileSize
 if (!isY) await conn.sendFile(m.chat, thumbnail, 'thumbnail.jpg', `
-╭━━━━━❰  ${wm}  ❱━━━━━⬣
+╭━━❰  ${wm}  ❱━━⬣
 ┃ 🤍 𝙏𝙄𝙏𝙐𝙇𝙊 | 𝙏𝙄𝙏𝙇𝙀
 ┃ ${title}
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
@@ -18,13 +18,13 @@ if (!isY) await conn.sendFile(m.chat, thumbnail, 'thumbnail.jpg', `
 ╰━━━━━━━❰ *${vs}* ❱━━━━━━⬣`.trim(), m)
   
 await conn.sendFile(m.chat, link, title + '.mp3', `
-╭━━━━━❰  ${wm}  ❱━━━━━⬣
+╭━━❰  ${wm}  ❱━━⬣
 ┃ 🤍 𝙏𝙄𝙏𝙐𝙇𝙊 | 𝙏𝙄𝙏𝙇𝙀
 ┃ ${title}
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃ 🧡 𝙋𝙀𝙎𝙊 | 𝙎𝙄𝙕𝙀
 ┃ ${video['720p'].fileSizeH}
-╰━━━━━━━❰ *${vs}* ❱━━━━━━⬣`.trim(), m, null, {
+╰━━━━━━❰ *𓃠 ${vs}* ❱━━━━━⬣`.trim(), m, null, {
   
 asDocument: 0
 })
