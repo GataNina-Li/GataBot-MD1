@@ -19,7 +19,7 @@ ${durationH}
 ${viewH}
 🔗 *𝚄𝚁𝙻:* 
 ${url}
-  `.trim(), wm, thumbnail, '', '', `𝘽𝙐𝙎𝘾𝘼𝙍 | 𝙎𝙀𝘼𝙍𝘾𝙃`, `.ytsearch ${url} yes`, [
+  `.trim(), wm, thumbnail, `𝘽𝙐𝙎𝘾𝘼𝙍 | 𝙎𝙀𝘼𝙍𝘾𝙃`, `.ytsearch ${url} yes`, null, null, [
     ['𝙑𝙄𝘿𝙀𝙊 | 1️⃣', `${usedPrefix}ytv ${url} yes`],
     ['𝙑𝙄𝘿𝙀𝙊 | 2️⃣', `${usedPrefix}play.2 ${url} yes`],
     ['𝘼𝙐𝘿𝙄𝙊 | 1️⃣', `${usedPrefix}yta ${url} yes`]
