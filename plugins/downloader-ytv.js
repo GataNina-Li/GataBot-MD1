@@ -15,7 +15,7 @@ if (!isY) await conn.sendFile(m.chat, thumbnail, 'thumbnail.jpg', `
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃ 🧡 𝙋𝙀𝙎𝙊 | 𝙎𝙄𝙕𝙀
 ┃ ${video['720p'].fileSizeH}
-╰━━━━━━━❰ *${vs}* ❱━━━━━━⬣`.trim(), m)
+╰━━━━━━❰ *𓃠 ${vs}* ❱━━━━━⬣`.trim(), m)
   
 await conn.sendFile(m.chat, link, title + '.mp3', `
 ╭━━❰  ${wm}  ❱━━⬣
