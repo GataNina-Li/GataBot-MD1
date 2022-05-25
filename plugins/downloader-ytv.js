@@ -7,14 +7,14 @@ let { thumbnail, video, title } = await youtubedl(args[0])
 let link = await video['360p'].download()
 const isY = /y(es)/gi.test(args[1])
 const limitedSize = (isPrems || isOwner ? 350 : 200) * 3074
-let isLimit = limitedSize < video['360p'].fileSize
+let isLimit = limitedSize < video['480p'].fileSize
 if (!isY) await conn.sendFile(m.chat, thumbnail, 'thumbnail.jpg', `
 *🔥 𝚃𝙸𝚃𝚄𝙻𝙾:* ${title}
-*📁 𝙿𝙴𝚂𝙾 𝙳𝙴𝙻 𝚅𝙸𝙳𝙴𝙾:* ${video['360p'].fileSizeH}
+*📁 𝙿𝙴𝚂𝙾 𝙳𝙴𝙻 𝚅𝙸𝙳𝙴𝙾:* ${video['480p'].fileSizeH}
 `.trim(), m)
 await conn.sendFile(m.chat, link, title + '.mp3', `
 *🔥 𝚃𝙸𝚃𝚄𝙻𝙾:* ${title}
-*📁 𝙿𝙴𝚂𝙾 𝙳𝙴𝙻 𝚅𝙸𝙳𝙴𝙾:* ${video['360p'].fileSizeH}
+*📁 𝙿𝙴𝚂𝙾 𝙳𝙴𝙻 𝚅𝙸𝙳𝙴𝙾:* ${video['480p'].fileSizeH}
 `.trim(), m, null, {
 asDocument: 0
 })
