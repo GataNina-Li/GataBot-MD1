@@ -1,7 +1,7 @@
 //import { youtubeSearch } from '@bochilteam/scraper'
 import fs from 'fs'
 import fetch from 'node-fetch'
-import xfar = from 'xfarr-api'
+
 
 let handler = async (m, { conn, command, text }) => {
     if (!text) throw 'Masukkan Link\n\nContoh: .ytv720 https://youtube.com/xxxxxx'
@@ -18,4 +18,4 @@ handler.tags = ['internet']
 handler.command = /^ytv720$/i
 
 
-module.exports = handler
+export default handler
