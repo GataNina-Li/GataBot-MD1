@@ -11,7 +11,7 @@ let isLimit = limitedSize < video['720p'].fileSize
 if (!isY) await conn.sendFile(m.chat, thumbnail, 'thumbnail.jpg', `
 *🔥 𝚃𝙸𝚃𝚄𝙻𝙾:* ${title}
 *📁 𝙿𝙴𝚂𝙾 𝙳𝙴𝙻 𝚅𝙸𝙳𝙴𝙾:* ${video['720p'].fileSizeH}
-`.trim(), wm, m)
+`.trim(), m)
   
 await conn.sendFile(m.chat, link, title + '.mp3', `
 *🔥 𝚃𝙸𝚃𝚄𝙻𝙾:* ${title}
