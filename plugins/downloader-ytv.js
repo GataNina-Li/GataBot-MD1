@@ -4,17 +4,17 @@ if (!args || !args[0]) throw '*[❗𝐈𝐍𝐅𝐎❗] 𝙸𝙽𝚂𝙴𝚁𝚃
 try {
 let { thumbnail, video, title } = await youtubedl(args[0])
 .catch(async () => await youtubedlv2(args[0]))
-let link = await video['480p'].download()
+let link = await video['720p'].download()
 const isY = /y(es)/gi.test(args[1])
 const limitedSize = (isPrems || isOwner ? 350 : 200) * 3074
-let isLimit = limitedSize < video['480p'].fileSize
+let isLimit = limitedSize < video['720p'].fileSize
 if (!isY) await conn.sendFile(m.chat, thumbnail, 'thumbnail.jpg', `
 *🔥 𝚃𝙸𝚃𝚄𝙻𝙾:* ${title}
-*📁 𝙿𝙴𝚂𝙾 𝙳𝙴𝙻 𝚅𝙸𝙳𝙴𝙾:* ${video['480p'].fileSizeH}
+*📁 𝙿𝙴𝚂𝙾 𝙳𝙴𝙻 𝚅𝙸𝙳𝙴𝙾:* ${video['720p'].fileSizeH}
 `.trim(), m)
 await conn.sendFile(m.chat, link, title + '.mp3', `
 *🔥 𝚃𝙸𝚃𝚄𝙻𝙾:* ${title}
-*📁 𝙿𝙴𝚂𝙾 𝙳𝙴𝙻 𝚅𝙸𝙳𝙴𝙾:* ${video['480p'].fileSizeH}
+*📁 𝙿𝙴𝚂𝙾 𝙳𝙴𝙻 𝚅𝙸𝙳𝙴𝙾:* ${video['720p'].fileSizeH}
 `.trim(), m, null, {
 asDocument: 0
 })
