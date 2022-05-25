@@ -7,18 +7,22 @@ if (!res.ok) throw await res.text()
 let json = await res.json()
 if(!json.data[0]) throw json
 let { title, artists, album, thumb, url, preview_mp3 } = json.data[0]
-let spotifyi = `❒══════❬ SPOTIFY ❭══════╾❒
-┇
-┇➠ 🌸 *Titulo:* ${title}
-┇
-┇➠ 🗣 *Artista:* ${artists}
-┇
-┇➠ 🎆 *Album:* ${album}
-┇
-┇➠ ⚡️ *URL*: ${url}
-┇
-┇➠ 💥 *Dirección de URL:* ${preview_mp3}\n┇\n┗╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍❒\n\n*_⏳ Enviando música de previsualización_*\n\n🐈 𝙂𝙖𝙩𝙖 𝘿𝙞𝙤𝙨 🐈`
-  
+let spotifyi = `❒═════❬ 𝐒𝐏𝐎𝐓𝐈𝐅𝐘 ❭═════╾❒
+┬
+├‣✨ *𝚃𝙸𝚃𝚄𝙻𝙾:* ${title}
+┴
+┬
+├‣🗣️ *𝙰𝚁𝚃𝙸𝚂𝚃𝙰:* ${artists}
+┴
+┬
+├‣🎆 *𝙰𝙻𝙱𝚄𝙼:* ${album}
+┴
+┬
+├‣🌐 *𝚄𝚁𝙻*: ${url}
+┴
+┬
+├‣💚 *𝚄𝚁𝙻 𝙳𝙸𝚁𝙴𝙲𝚃𝙾:* ${preview_mp3}\n┴\n\n*_- 𝙴𝚗𝚟𝚒𝚊𝚗𝚍𝚘 𝚖𝚞𝚜𝚒𝚌𝚊 𝚍𝚎 𝚙𝚛𝚎𝚟𝚒𝚜𝚞𝚊𝚕𝚒𝚣𝚊𝚌𝚒𝚘𝚗_*\n\n_﹫ᴛʜᴇ ᴍʏsᴛɪᴄ ﹣ ʙᴏᴛ_`
+
 conn.sendFile(m.chat, thumb, '', spotifyi, m)
 conn.sendFile(m.chat, preview_mp3, 'spotify.mp3', spotifyi, m)
 } catch (e) {
