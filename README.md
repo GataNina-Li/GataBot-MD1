@@ -15,7 +15,7 @@
 
 <p align="center">
 </p>
-<a href="#"><img title="GataBot-MD" src="https://img.shields.io/badge/ES NECESARIO QUE LEA TODO EL README-red?colorA=%F77F48FF&colorB=%F77F48FF&style=for-the-badge"></a>
+<a href="#"><img title="the whatbots420" src="https://img.shields.io/badge/ES NECESARIO QUE LEA TODO EL README-red?colorA=%F77F48FF&colorB=%F77F48FF&style=for-the-badge"></a>
     
 <p align="higt">   
 <a href="https://github.com/GataNina-Li/GataBot-MD/network/members"><img title="Forks" src="https://img.shields.io/github/forks/GataNina-Li/GataBot-MD?label=Forks&color=blue&style=flat-square"></a>
@@ -29,10 +29,10 @@
 <a href="https://github.com/GataNina-Li"><img src="http://readme-typing-svg.herokuapp.com?font=mono&size=14&duration=3000&color=ABF7BB&center=verdadero&vCenter=verdadero&lines=Solo+escr%C3%ADba+si+tiene+dudas." height="40px"
 </p>
   
-[![blog](https://img.shields.io/badge/Grupo-GataBot-25D366?style=for-the-badge&logo=whatsapp&logoColor=white 
+[![blog](https://img.shields.io/badge/Grupo-the whatbots420-25D366?style=for-the-badge&logo=whatsapp&logoColor=white 
 )](https://chat.whatsapp.com/Lus9S60MABnH9lF4Wf2T7k)  <a href="https://chat.whatsapp.com/Lus9S60MABnH9lF4Wf2T7k"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/1200px-WhatsApp_logo-color-vertical.svg.png" height="29px"></a>
 
-[![blog](https://img.shields.io/badge/Grupo2-GataBot-25D366?style=for-the-badge&logo=whatsapp&logoColor=white 
+[![blog](https://img.shields.io/badge/Grupo2--25D366?style=for-the-badge&logo=whatsapp&logoColor=white 
 )](https://chat.whatsapp.com/GKdDtQKWP5LCgpbzucz6kt) <a href="https://chat.whatsapp.com/GKdDtQKWP5LCgpbzucz6kt"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/1200px-WhatsApp_logo-color-vertical.svg.png" height="29px"></a>
 -----
 
