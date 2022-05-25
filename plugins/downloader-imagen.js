@@ -7,9 +7,9 @@ let link = image
 conn.sendHydrated(m.chat, `🔎 *𝚁𝙴𝚂𝚄𝙻𝚃𝙰𝙳𝙾 𝙳𝙴:* ${text}
 🌎 *𝙱𝚄𝙲𝙰𝙳𝙾𝚁:* Google
 `, author, link, link, '🔗 𝚄𝚁𝙻', null, null, [
-['🔄 𝚂𝙸𝙶𝚄𝙸𝙴𝙽𝚃𝙴 🔄', `/imagen ${text}`],
-['Pinterest', `/pinterest ${text}`],
-['Menu', `.menu ${text}`],  
+['🔄 𝙎𝙞𝙜𝙪𝙞𝙚𝙣𝙩𝙚 | 𝙉𝙚𝙭𝙩', `/imagen ${text}`],
+['🔍 𝙋𝙞𝙣𝙩𝙚𝙧𝙚𝙨𝙩 ', `#pinterest ${text}`],
+['🐈 𝙈𝙚𝙣𝙪', `.menu`],  
 ], m)
 }
 handler.help = ['gimage <query>', 'imagen <query>']
