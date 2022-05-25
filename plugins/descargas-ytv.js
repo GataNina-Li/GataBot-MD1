@@ -4,17 +4,17 @@ if (!args || !args[0]) throw `${mg}𝙄𝙉𝙂𝙍𝙀𝙎𝙀 𝙀𝙇 𝙀�
 try {
 let { thumbnail, video, title } = await youtubedl(args[0])
 .catch(async () => await youtubedlv2(args[0]))
-let link = await video['480p'].download()
+let link = await video['720p'].download()
 const isY = /y(es)/gi.test(args[1])
 const limitedSize = (isPrems || isOwner ? 350 : 200) * 3074
-let isLimit = limitedSize < video['480p'].fileSize
+let isLimit = limitedSize < video['720p'].fileSize
 if (!isY) await conn.sendFile(m.chat, thumbnail, 'thumbnail.jpg', `
 ╭━━❰  ${wm}  ❱━━⬣
 ┃ 🤍 𝙏𝙄𝙏𝙐𝙇𝙊 | 𝙏𝙄𝙏𝙇𝙀
 ┃ ${title}
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃ 🧡 𝙋𝙀𝙎𝙊 | 𝙎𝙄𝙕𝙀
-┃ ${video['480p'].fileSizeH}
+┃ ${video['720p'].fileSizeH}
 ╰━━━━━━❰ *𓃠 ${vs}* ❱━━━━━⬣`.trim(), m)
   
 await conn.sendFile(m.chat, link, title + '.mp3', `
@@ -23,7 +23,7 @@ await conn.sendFile(m.chat, link, title + '.mp3', `
 ┃ ${title}
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃ 🧡 𝙋𝙀𝙎𝙊 | 𝙎𝙄𝙕𝙀
-┃ ${video['480p'].fileSizeH}
+┃ ${video['720p'].fileSizeH}
 ╰━━━━━━❰ *𓃠 ${vs}* ❱━━━━━⬣`.trim(), m, null, {
   
 asDocument: 0
