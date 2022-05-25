@@ -11,16 +11,28 @@ let isLimit = limitedSize < video['720p'].fileSize
 if (!isY) await conn.sendFile(m.chat, thumbnail, 'thumbnail.jpg', `
 *🔥 𝚃𝙸𝚃𝚄𝙻𝙾:* ${title}
 *📁 𝙿𝙴𝚂𝙾 𝙳𝙴𝙻 𝚅𝙸𝙳𝙴𝙾:* ${video['720p'].fileSizeH}
-`.trim(), m)
+`.trim(), wm, m)
+  
 await conn.sendFile(m.chat, link, title + '.mp3', `
 *🔥 𝚃𝙸𝚃𝚄𝙻𝙾:* ${title}
 *📁 𝙿𝙴𝚂𝙾 𝙳𝙴𝙻 𝚅𝙸𝙳𝙴𝙾:* ${video['720p'].fileSizeH}
 `.trim(), m, null, {
+  
 asDocument: 0
 })
 }catch(e){
 m.reply('*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝚁𝚁𝙾𝚁 𝙰𝙻 𝙴𝙽𝚅𝙸𝙰𝚁 𝙴𝙻 𝙰𝚁𝙲𝙷𝙸𝚅𝙾.. 𝙴𝚂𝚃𝙾 𝚂𝙴 𝙿𝚄𝙴𝙳𝙴 𝙳𝙴𝙱𝙴𝚁 𝙰 𝚀𝚄𝙴 𝙴𝙻 𝚅𝙸𝙳𝙴𝙾 𝙴𝚂 𝙳𝙴 𝚄𝙽 𝙿𝙴𝚂𝙾 / 𝚃𝙰𝙼𝙰𝙽̃𝙾 𝙶𝚁𝙰𝙽𝙳𝙴*')
 console.log(e)
+  
+  let info = `💖 *Infórmate sobre las Novedades y recuerda tener la última versión.*\n\n💝 *Find out about what's new and remember to have the latest version.*
+  `.trim()
+  
+await conn.sendHydrated(m.chat, info, wm, null, ig, '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢', null, null, [
+['𝙈𝙚𝙣𝙪 𝘿𝙚𝙨𝙘𝙖𝙧𝙜𝙖𝙨 🌀', '#descargasmenu'],
+['𝙈𝙚𝙣𝙪 𝘾𝙤𝙢𝙥𝙡𝙚𝙩𝙤 | 𝙁𝙪𝙡𝙡 𝙈𝙚𝙣𝙪 ✨', '.allmenu'],
+['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', '/menu']
+], m,)
+  
 }}
 handler.help = ['mp4', 'v'].map(v => 'yt' + v + ` <url>`)
 handler.tags = ['downloader']
