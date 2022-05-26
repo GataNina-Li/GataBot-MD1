@@ -67,7 +67,7 @@ let str = `
 
 *📅 𝙵𝙴𝙲𝙷𝙰: ${week}, ${date}*
 
-*📊 𝚄𝚂𝚄𝙰𝚁𝙸𝙾𝚂: ${rtotalreg}*
+*Activo: ${uptime}*
 
 *Número de bot:* *wa.me/17787202830*
 
