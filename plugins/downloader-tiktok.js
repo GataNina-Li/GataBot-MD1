@@ -19,7 +19,7 @@ conn.reply(m.chat, `${eg}PRONTO TENDRA EL VIDEO DE TIKTOK 😸\n`, m, {
 contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
 title: '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 | 𝙂𝙖𝙩𝙖 𝘿𝙞𝙤𝙨',
 body: 'Super Bot WhatsApp',         
-previewType: 0, thumbnail: fs.readFileSync(user, 'image'),
+previewType: 0, thumbnail: fs.readFileSync(user, "image"),
 sourceUrl: `https://github.com/GataNina-Li/GataBot-MD`}}})
   
 let res = await fetch("https://api.dhamzxploit.my.id/api/tiktod/?url="+args[0])
