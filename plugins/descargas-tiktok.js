@@ -23,7 +23,7 @@ sourceUrl: `https://github.com/GataNina-Li/GataBot-MD`}}})
   
 let res = await fetch("https://api.dhamzxploit.my.id/api/tiktod/?url="+args[0])
 let json = await res.json()
-conn.sendFile(m.chat, json.result.nowatermark, 'error.mp4', `${wm}`, m){
+conn.sendFile(m.chat, json.result.nowatermark, 'error.mp4', `${wm}`, m), [['🎁 𝙄𝙣𝙛𝙤 𝙊𝙛𝙞𝙘𝙞𝙖𝙡', '.cuentasgb'],['🐈 𝙈𝙚𝙣𝙪', '.menu']], false }
            
 }
 handler.help = ['tiktok'].map(v => v + ' <link>')
