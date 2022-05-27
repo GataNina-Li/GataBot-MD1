@@ -19,11 +19,7 @@ let user
 let groupMetadata = await this.groupMetadata(id) || (conn.chats[id] || {}).metadata
                 for (let user of participants) {
                     let pp = './src/sinfoto.jpg'
-                    try {
-                        pp = await this.profilePictureUrl(user, 'image')
-                    }
-                           } catch (e) {
-                    } finally {
+                  
 if (command == 'tiktok') {
 conn.reply(m.chat, `${eg}PRONTO TENDRA EL VIDEO DE TIKTOK 😸\n`, m, {
 contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
