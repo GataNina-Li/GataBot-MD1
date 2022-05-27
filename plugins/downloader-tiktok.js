@@ -18,7 +18,7 @@ if (!text) throw `${mg}𝘿𝙀𝘽𝙀 𝙄𝙉𝙂𝙍𝙀𝙎𝘼𝙍 𝙐�
 let user
 let groupMetadata = await this.groupMetadata(id) || (conn.chats[id] || {}).metadata
                 for (let user of participants) {
-                    let pp = './src/sinfoto.jpg'
+                    let pp = './src/sinfoto.jpg'}
                   
 if (command == 'tiktok') {
 conn.reply(m.chat, `${eg}PRONTO TENDRA EL VIDEO DE TIKTOK 😸\n`, m, {
@@ -26,7 +26,7 @@ contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: nul
 title: '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 | 𝙂𝙖𝙩𝙖 𝘿𝙞𝙤𝙨',
 body: 'Super Bot WhatsApp',         
 previewType: 0, thumbnail: fs.readFileSync(user, 'image'),
-sourceUrl: `https://github.com/GataNina-Li/GataBot-MD`}}})}
+sourceUrl: `https://github.com/GataNina-Li/GataBot-MD`}}})
   
 let res = await fetch("https://api.dhamzxploit.my.id/api/tiktod/?url="+args[0])
 let json = await res.json()
