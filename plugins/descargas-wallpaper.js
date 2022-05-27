@@ -16,4 +16,4 @@ let link = img
 handler.help = ['', '2'].map(v => 'wallpaper' + v + ' <query>')
 handler.tags = ['downloader']
 handler.command = /^(wp|wallpaper2?)$/i
-export default handler
+export default handler 
