@@ -23,7 +23,7 @@ sourceUrl: `https://github.com/GataNina-Li/GataBot-MD`}}})
   
 let res = await fetch("https://api.dhamzxploit.my.id/api/tiktod/?url="+args[0])
 let json = await res.json()
-conn.sendFile(m.chat, json.result.nowatermark, 'error.mp4', `${wm}`, m)
+await conn.sendFile(m.chat, json.result.nowatermark, 'error.mp4', `${wm}`, m)
 
 let info = `💖 *Infórmate sobre las Novedades y recuerda tener la última versión.*\n\n💝 *Find out about what's new and remember to have the latest version.*
   `.trim()
