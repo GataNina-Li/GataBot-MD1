@@ -23,8 +23,9 @@ ${result.lyrics}
 𝐔𝐑𝐋 ${result.link}
 `.trim()
 conn.sendHydrated(m.chat, letratexto, wm, json.thumbnail.genius, null, null, null, null, [
-['𝙳𝙴𝚂𝙲𝙰𝚁𝙶𝙰𝚁 𝙰𝚄𝙳𝙸𝙾', `/play.1 ${text}`],
-['𝙳𝙴𝚂𝙲𝙰𝚁𝙶𝙰𝚁 𝚅𝙸𝙳𝙴𝙾', `/play.2 ${text}`]
+['𝙳𝙴𝚂𝙲𝙰𝚁𝙶𝙰𝚁 𝙰𝚄𝙳𝙸𝙾', `/yta ${text}`],
+['𝙳𝙴𝚂𝙲𝙰𝚁𝙶𝙰𝚁 𝙰𝚄𝙳𝙸𝙾', `/ytv ${text}`],
+['𝙳𝙴𝚂𝙲𝙰𝚁𝙶𝙰𝚁 𝚅𝙸𝙳𝙴𝙾', `/ytv ${text}`]
 ], m)
 }
 handler.help = ['lirik','letra'].map(v => v + ' <Apa>')
