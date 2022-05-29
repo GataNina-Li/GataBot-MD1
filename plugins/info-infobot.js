@@ -48,6 +48,10 @@ let info = `
 ┃➥ *USUARIOS | USERS*
 ┃ღ *${totalreg}* 
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+╠➥ [🔋] Bateria: *${conn.battery ? `${conn.battery.value}%* *${conn.battery.live ? '🔌 Cargando...*' : '⚡ Desconectado*'}` : 'Desconocido*'}
+╠➥ [📲] Sistema operativo: *${conn.user.phone.device_manufacturer}*
+╠➥ [🪀] version de WhatsApp: *${conn.user.phone.wa_version}*
+
 ┃➥ *VELOCIDAD | SPEED*
 ┃ღ  *${speed}*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
