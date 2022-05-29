@@ -19,26 +19,6 @@ let old = performance.now()
 let neww = performance.now()
 let speed = neww - old
 
- const cpu = cpus.reduce((last, cpu, _, { length }) => {
-    last.total += cpu.total
-    last.speed += cpu.speed / length
-    last.times.user += cpu.times.user
-    last.times.nice += cpu.times.nice
-    last.times.sys += cpu.times.sys
-    last.times.idle += cpu.times.idle
-    last.times.irq += cpu.times.irq
-    return last
-  }, {
-    speed: 0,
-    total: 0,
-    times: {
-      user: 0,
-      nice: 0,
-      sys: 0,
-      idle: 0,
-      irq: 0
-    }})
-
 let info = `
 ╭━━━━[ ${gt} ]━━━━━⬣
 ┃
@@ -70,7 +50,7 @@ let info = `
 ┃ღ *${totalreg}* 
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ╠➥ [🔋] Bateria: *${conn.battery ? `${conn.battery.value}%* *${conn.battery.live ? '🔌 Cargando...*' : '⚡ Desconectado*'}` : 'Desconocido*'}
-╠➥ [📲] Sistema operativo: *${conn.user.phone.device_manufacturer}*
+
 ╠➥ [🪀] version de WhatsApp: *${conn.user.phone.wa_version}*
 
 ┃➥ *VELOCIDAD | SPEED*
