@@ -99,17 +99,20 @@ footer: `╭━━〔 *${wm}* 〕━━⬣
 ┃🚀➺ _${usedPrefix}imagen | image *texto*_
 ┃🚀➺ _${usedPrefix}pinterest | dlpinterest *texto*_
 ┃🚀➺ _${usedPrefix}wallpaper|wp *texto*_
-┃🚀➺ _${usedPrefix}facebook | fb *link*_
 ┃🚀➺ _${usedPrefix}play | play2 *texto o link*_
-┃🚀➺ _${usedPrefix}play.1 | play.2 *texto o link*_
-┃🚀➺ _${usedPrefix}velocidad | ping_
-┃🚀➺ _${usedPrefix}velocidad | ping_
-┃🚀➺ _${usedPrefix}velocidad | ping_
-┃🚀➺ _${usedPrefix}velocidad | ping_
-┃🚀➺ _${usedPrefix}velocidad | ping_
-┃🚀➺ _${usedPrefix}velocidad | ping_
-┃🚀➺ _${usedPrefix}velocidad | ping_
-┃🚀➺ _Bot_ 
+┃🚀➺ _${usedPrefix}play.1 *texto o link*_
+┃🚀➺ _${usedPrefix}play.2 *texto o link*_ 
+┃🚀➺ _${usedPrefix}ytmp3 | yta *link*_
+┃🚀➺ _${usedPrefix}ytmp4 | ytv *link*_
+┃🚀➺ _${usedPrefix}facebook | fb *link*_
+┃🚀➺ _${usedPrefix}instagram *link video o imagen*_
+┃🚀➺ _${usedPrefix}verig | igstalk *usuario(a)*_
+┃🚀➺ _${usedPrefix}ighistoria | igstory *usuario(a)*_
+┃🚀➺ _${usedPrefix}tiktok *link*_
+┃🚀➺ _${usedPrefix}tiktokfoto | tiktokphoto *usuario(a)*_
+┃🚀➺ _${usedPrefix}vertiktok | tiktokstalk *usuario(a)*_
+┃🚀➺ _${usedPrefix}mediafire | dlmediafire *link*_
+┃🚀➺ _${usedPrefix}clonarepo | gitclone *link*_
 ╰━━━━━━━━━━━━━━━━━━━━⬣
 ${wm}`,
 title: null,
@@ -121,7 +124,7 @@ await conn.sendMessage(m.chat, listMessage)
 
 handler.help = ['infomenu'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
-handler.command = /^(descargasmenu)$/i
+handler.command = /^(descargasmenuu)$/i
 export default handler
 
 const more = String.fromCharCode(8206)
