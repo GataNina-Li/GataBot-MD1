@@ -15,4 +15,5 @@ await conn.sendHydrated(m.chat, info, wm, null, ig, '𝙄𝙣𝙨𝙩𝙖𝙜�
 handler.help = ['facebbok'].map(v => v + ' <url>')
 handler.tags = ['downloader']
 handler.command = /^((facebook|fb)(downloder|dl)?)$/i
+handler.exp = 35
 export default handler
