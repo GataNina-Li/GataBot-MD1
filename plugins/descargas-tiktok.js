@@ -38,4 +38,5 @@ await conn.sendHydrated(m.chat, info, wm, null, ig, '𝙄𝙣𝙨𝙩𝙖𝙜�
 handler.help = ['tiktok'].map(v => v + ' <link>')
 handler.tags = ['downloader']
 handler.command = ['tiktok']
+handler.exp = 60
 export default handler
