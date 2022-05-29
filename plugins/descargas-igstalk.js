@@ -47,6 +47,7 @@ await conn.sendHydrated(m.chat, info, wm, null, ig, '𝙄𝙣𝙨𝙩𝙖𝙜�
 }
 handler.help = ['igstalk'].map(v => v + ' <username>')
 handler.tags = ['downloader']
-handler.command = /^(igstalk)$/i
+handler.command = /^(igstalk|verig|igver)$/i
+handler.exp = 80
 export default handler
 
