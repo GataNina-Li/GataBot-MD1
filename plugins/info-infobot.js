@@ -18,6 +18,27 @@ let pp = './media/menus/Menu1.jpg'
 let old = performance.now()
 let neww = performance.now()
 let speed = neww - old
+
+ const cpu = cpus.reduce((last, cpu, _, { length }) => {
+    last.total += cpu.total
+    last.speed += cpu.speed / length
+    last.times.user += cpu.times.user
+    last.times.nice += cpu.times.nice
+    last.times.sys += cpu.times.sys
+    last.times.idle += cpu.times.idle
+    last.times.irq += cpu.times.irq
+    return last
+  }, {
+    speed: 0,
+    total: 0,
+    times: {
+      user: 0,
+      nice: 0,
+      sys: 0,
+      idle: 0,
+      irq: 0
+    }})
+
 let info = `
 ╭━━━━[ ${gt} ]━━━━━⬣
 ┃
