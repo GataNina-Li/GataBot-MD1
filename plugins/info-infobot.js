@@ -51,7 +51,7 @@ let info = `
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ╠➥ [🔋] Bateria: *${conn.battery ? `${conn.battery.value}%* *${conn.battery.live ? '🔌 Cargando...*' : '⚡ Desconectado*'}` : 'Desconocido*'}
 
-╠➥ [🪀] version de WhatsApp: *${conn.user.phone.wa_version}*
+
 
 ┃➥ *VELOCIDAD | SPEED*
 ┃ღ  *${speed}*
