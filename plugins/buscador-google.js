@@ -12,7 +12,7 @@ title,
 url,
 description
 }) => {
-return `*${title}*\n_${url}_\n_${description}_`
+return `┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈\n*${title}*\n_${url}_\n_${description}_\n┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈`
 }).join('\n\n')
 try {
 let ss = await (await fetch(global.API('nrtm', '/api/ssweb', { delay: 1000, url, full }))).arrayBuffer()
