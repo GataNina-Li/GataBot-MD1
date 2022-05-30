@@ -30,6 +30,6 @@ await conn.sendHydrated(m.chat, info, wm, null, ig, '𝙄𝙣𝙨𝙩𝙖𝙜�
 }
 handler.help = ['', 'earch'].map(v => 'yts' + v + ' <pencarian>')
 handler.tags = ['tools']
-handler.command = /^yts(earch)?$/i
+handler.command = /^ytbuscar|yts(earch)?$/i
 handler.exp = 70
 export default handler
