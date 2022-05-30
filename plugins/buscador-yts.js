@@ -7,14 +7,14 @@ switch (v.type) {
 case 'video': return `
 ✨ *${v.title}* 
 🎈 (${v.url})
-⏳ *Duración:* ${v.timestamp}
-🗓 *Fecha:* de subida: ${v.ago}
-👀 *Vistas:* ${v.views} 
+⏳ *Duración:* ${v.durationH}
+🗓 *Fecha:* de subida: ${v.durationH}
+👀 *Vistas:* ${v.view} 
       `.trim()
       case 'channel': return `
-✨ *${v.name}*
+✨ *${v.channelName}*
 🎈 (${v.url})
-👥 *Subscriptores:* ${v.subCountLabel}  (${v.subCount}) 
+👥 *Subscriptores:* ${v.subscriberH} 
 🎥 *Videos:* ${v.videoCount}  
 `.trim()
     }
