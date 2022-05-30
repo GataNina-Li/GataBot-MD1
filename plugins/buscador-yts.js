@@ -12,8 +12,8 @@ case 'video': return `
 👀 *Vistas:* ${v.view} 
       `.trim()
       case 'channel': return `
-✨ *${v.channelName}*
-🎈 (${v.url})
+✨ *${v.channelName}* 
+(${v.url})
 👥 *Subscriptores:* ${v.subscriberH} 
 🎥 *Videos:* ${v.videoCount}  
 `.trim()
