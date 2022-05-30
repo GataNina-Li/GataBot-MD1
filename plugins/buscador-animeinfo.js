@@ -47,4 +47,5 @@ await conn.sendHydrated(m.chat, info, wm, null, ig, '𝙄𝙣𝙨𝙩𝙖𝙜�
 handler.help = ['animeinfo <anime>']
 handler.tags = ['internet']
 handler.command = /^(animeinfo)$/i
+handler.exp = 50
 export default handler
