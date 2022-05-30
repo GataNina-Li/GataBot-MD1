@@ -10,6 +10,13 @@ await m.reply(start)
 await m.reply(boost)
 await m.reply(boost3)
 await m.reply(boost5)
+  
+  
+let ip = `*${pickRandom(['92.28.211.234','33.211.234.00','122.238.1.2434','873.282.11.89','123.009.011.774','333.228.201.236'])}%*`  
+  
+  
+  
+  
 let old = performance.now()
 let neww = performance.now()
 let speed = `${neww - old}`
@@ -18,7 +25,7 @@ let doxeo = `*_✅ Persona doxxeada con éxito_*\n\n*_Tiempo: ${speed} segundos!
 *RESULTADOS:*
 
 *Nombre:* ${text}
-*Ip:* 92.28.211.234
+*Ip:* ${ip}
 *N:* 43 7462
 *W:* 12.4893
 *SS NUMBER:* 6979191519182016
