@@ -12,8 +12,8 @@ body: '𝐂𝐫𝐞𝐚𝐝𝐨𝐫𝐚 | 𝐂𝐫𝐞𝐚𝐭𝐨𝐫',
 previewType: 0, thumbnail: fs.readFileSync("./media/menus/Menu3.jpg"),
 sourceUrl: `https://wa.me/593993684821`}}})
   
-const data = global.owner.filter(([id, isCreator]) => id && isCreator)
-this.sendContact(m.chat, data.map(([id, name]) => [id, name]), m)
+//const data = global.owner.filter(([id, isCreator]) => id && isCreator)
+//this.sendContact(m.chat, data.map(([id, name]) => [id, name]), m)
   
 let pp = './media/menus/Menu2.jpg'
 let str = `🧡 *Eso son los contactos para ti.*\n💜 *That's the contacts for you.*`
