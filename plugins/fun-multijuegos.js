@@ -70,7 +70,7 @@ rows: [
 {title: "❇️ 𝙈𝙚𝙣𝙪 𝙋𝙧𝙞𝙣𝙘𝙞𝙥𝙖𝙡 |  𝘿𝙖𝙨𝙝𝙗𝙤𝙖𝙧𝙙 ❇️", description: null, rowId: `${usedPrefix}menu`},
 {title: "✳️ 𝙈𝙚𝙣𝙪 𝘾𝙤𝙢𝙥𝙡𝙚𝙩𝙤 | 𝙁𝙪𝙡𝙡 𝙈𝙚𝙣𝙪 ✳️", description: null, rowId: `${usedPrefix}allmenu`},
 {title: "✅ 𝘾𝙪𝙚𝙣𝙩𝙖𝙨 𝙊𝙛𝙞𝙘𝙞𝙖𝙡𝙚𝙨 | 𝘼𝙘𝙘𝙤𝙪𝙣𝙩𝙨 ✅", description: null, rowId: `${usedPrefix}cuentasgatabot`},
-{title: "𝙈𝙪𝙡𝙩𝙞𝙟𝙪𝙚𝙜𝙤𝙨 | 𝙈𝙪𝙡𝙩𝙞𝙜𝙖𝙢𝙚𝙨", description: "ggggg", rowId: `${pickRandom}`},
+{title: "𝙈𝙪𝙡𝙩𝙞𝙟𝙪𝙚𝙜𝙤𝙨 | 𝙈𝙪𝙡𝙩𝙞𝙜𝙖𝙢𝙚𝙨", description: "ggggg", rowId: juegos},
 ]}, ]
 //let name = await conn.getName(m.sender)
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
@@ -120,3 +120,6 @@ let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000)
 let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
 let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
 return [h, m, s].map(v => v.toString().padStart(2, 0)).join(':')}
+
+function pickRandom(list) {
+return list[Math.floor(Math.random() * list.length)]}
