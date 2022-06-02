@@ -11,7 +11,9 @@ body: 'Super Bot WhatsApp',
 previewType: 0, thumbnail: fs.readFileSync("./media/menus/Menu3.jpg"),
 sourceUrl: `https://github.com/GataNina-Li/GataBot-MD`}}})
   
-let res = await fetch("https://api.dhamzxploit.my.id/api/ytplaymp3?text="+text)
+let res = await fetch("https://leyscoders-api.herokuapp.com/api/playmp3?text="+text)
+
+  //("https://api.dhamzxploit.my.id/api/ytplaymp3?text="+text)
 let json = await res.json()
 conn.sendFile(m.chat, json.result.url, 'error.mp3', null, m, false, { mimetype: 'audio/mp4' })}
 if (command == 'play.2') {
