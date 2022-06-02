@@ -9,8 +9,6 @@ m.reply(`*${toM(a)}, 𝙳𝙴𝙱𝙴𝚁𝙸𝙰𝚂 𝙲𝙰𝚂𝙰𝚁𝚃�
 mentions: [a, b]
 })
 
- this.sendButton(m.chat, `*Kesempatan habis!*\nJawaban: *sss`, author, null, [['again', `/math`]], m)
-
 handler.help = ['formarpareja']
 handler.tags = ['main', 'fun']
 handler.command = ['formarpareja','formarparejas']
