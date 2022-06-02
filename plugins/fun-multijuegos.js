@@ -84,7 +84,7 @@ conn.sendMessage(m.chat, tm, m)
   let veloz = 
 `🚄 *VELOCIDAD:*\n * *Milisegundos*\n\n🚄 *SPEED:*\n ** *Milliseconds*`
 
- await templateButtonsReplyMessage = [
+ const templateButtonsReplyMessage = [
 {index: 1, urlButton: {displayText: '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', url: 'https://github.com/GataNina-Li/GataBot-MD'}},
 {index: 2, urlButton: {displayText: '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢', url: 'https://www.instagram.com/gata_dios/'}},
 {index: 3, quickReplyButton: {displayText: '𝙊𝙩𝙧𝙖 𝙫𝙚𝙯 | 𝘼𝙜𝙖𝙞𝙣', id: juegos}},
