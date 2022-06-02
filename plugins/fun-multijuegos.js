@@ -121,8 +121,8 @@ conn.sendMessage(m.chat, tt, m)
 {index: 5, quickReplyButton: {displayText: 'Otra vez', id: juegos}},
 ]
 let ttt = {
-text: null,
-footer: null,
+text: sss,
+footer: global.wm,
 templateButtons: templateButtonsReplyMessage
 } 
 conn.sendMessage(m.chat, ttt, m)
