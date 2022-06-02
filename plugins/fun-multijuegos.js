@@ -128,6 +128,8 @@ templateButtons: templateButtonsReplyMessage
 } 
 conn.sendMessage(m.chat, tm, m)
       
+      
+ if (command == 'juegos') {      
        let velozz = 
 `Use los botones`
 
