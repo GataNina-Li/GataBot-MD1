@@ -117,8 +117,8 @@ conn.sendMessage(m.chat, tt, m)
            `Use los botones`
 
  const templateButtonsReplyMessage = [
-{index: 1, urlButton: {displayText: null, url: null}},
-{index: 2, urlButton: {displayText: null, url: null}},
+{index: 1, urlButton: {displayText: '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', url: 'https://github.com/GataNina-Li/GataBot-MD'}},
+{index: 2, urlButton: {displayText: '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢', url: 'https://www.instagram.com/gata_dios/'}},
 {index: 3, quickReplyButton: {displayText: 'Otra vez', id: juegos}},
 {index: 4, quickReplyButton: {displayText: 'Otra vez', id: juegos}},
 {index: 5, quickReplyButton: {displayText: 'Otra vez', id: juegos}},
