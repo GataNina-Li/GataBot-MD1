@@ -131,11 +131,11 @@ templateButtons: templateButtonsReplyMessage
 conn.sendMessage(m.chat, ttt, m)
 }   
       
-   await if (command == 'juegos') {  
+   if (command == 'juegos') {  
                  let c = `${usedPrefix}`
                  let juegos = `${pickRandom([`${c}reto`,`${c}verdad`])}`
          
-                 let ssss = 
+                await let ssss = 
                  `Use los botones`
 
  const templateButtonsReplyMessage = [
