@@ -7,9 +7,7 @@ let handler = async (m, { conn, usedPrefix, command, args, usedPrefix: _p, __dir
   
 let com = `${usedPrefix}`
 let juegos = `${pickRandom([`${com}formarareja`,`${com}reto`,`${com}verdad`])}`   
-let old = performance.now()
-let neww = performance.now()
-let juegos2 = `${neww - old}`
+
 
 
 const { levelling } = '../lib/levelling.js'
@@ -72,7 +70,7 @@ rows: [
 {title: "❇️ 𝙈𝙚𝙣𝙪 𝙋𝙧𝙞𝙣𝙘𝙞𝙥𝙖𝙡 |  𝘿𝙖𝙨𝙝𝙗𝙤𝙖𝙧𝙙 ❇️", description: null, rowId: `${usedPrefix}menu`},
 {title: "✳️ 𝙈𝙚𝙣𝙪 𝘾𝙤𝙢𝙥𝙡𝙚𝙩𝙤 | 𝙁𝙪𝙡𝙡 𝙈𝙚𝙣𝙪 ✳️", description: null, rowId: `${usedPrefix}allmenu`},
 {title: "✅ 𝘾𝙪𝙚𝙣𝙩𝙖𝙨 𝙊𝙛𝙞𝙘𝙞𝙖𝙡𝙚𝙨 | 𝘼𝙘𝙘𝙤𝙪𝙣𝙩𝙨 ✅", description: null, rowId: `${usedPrefix}cuentasgatabot`},
-{title: "𝙈𝙪𝙡𝙩𝙞𝙟𝙪𝙚𝙜𝙤𝙨 | 𝙈𝙪𝙡𝙩𝙞𝙜𝙖𝙢𝙚𝙨", description: "ggggg", rowId: `${juegos2}`},
+{title: "𝙈𝙪𝙡𝙩𝙞𝙟𝙪𝙚𝙜𝙤𝙨 | 𝙈𝙪𝙡𝙩𝙞𝙜𝙖𝙢𝙚𝙨", description: "ggggg", rowId: juegos},
 ]}, ]
 //let name = await conn.getName(m.sender)
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
