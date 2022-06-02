@@ -132,7 +132,7 @@ templateButtons: templateButtonsReplyMessage
 conn.sendMessage(m.chat, ttt, m)
    
       
-      if (command == 'juegos') {  
+ /*     if (command == 'juegos') {  
                  let c = `${usedPrefix}`
                  let juegos = `${pickRandom([`${c}reto`,`${c}verdad`])}`
          
@@ -152,14 +152,14 @@ footer: global.wm,
 templateButtons: templateButtonsReplyMessage
   } 
 conn.sendMessage(m.chat, tttt, m)  
-
+*/
  }
 handler.help = ['infomenu'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
 handler.command = ['multijuegos'], ['juegos']
 handler.exp = 50
 export default handler
-                                               
+                              
 const more = String.fromCharCode(8206)
 const readMore = more.repeat(4001)
 function clockString(ms) {
