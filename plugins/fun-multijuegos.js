@@ -80,7 +80,7 @@ templateButtons: templateButtonsReplyMessage
 }
 conn.sendMessage(m.chat, tm, m)
   
-  if (command == 'multijuegos') { 
+  if (command == 'juegos') { 
   let veloz = 
 `🚄 *VELOCIDAD:*\n * *Milisegundos*\n\n🚄 *SPEED:*\n ** *Milliseconds*`
 
