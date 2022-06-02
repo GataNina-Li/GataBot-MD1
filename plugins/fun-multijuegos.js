@@ -128,7 +128,7 @@ templateButtons: templateButtonsReplyMessage
 } 
 conn.sendMessage(m.chat, tm, m)
       
-       let veloz = 
+       let velozz = 
 `Use los botones`
 
  const templateButtonsReplyMessage = [
@@ -139,7 +139,7 @@ conn.sendMessage(m.chat, tm, m)
 {index: 5, quickReplyButton: {displayText: 'Reiniciar', id: '#juegos'}},
 ]
 let tm = {
-text: veloz,
+text: velozz,
 footer: global.wm,
 templateButtons: templateButtonsReplyMessage
 } 
