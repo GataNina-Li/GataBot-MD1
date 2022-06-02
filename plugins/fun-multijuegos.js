@@ -82,7 +82,7 @@ footer: global.wm,
 templateButtons: templateButtonsReplyMessage
   }
 conn.sendMessage(m.chat, t, m)
- 
+}
   
   
   if (command == 'juegos') { 
@@ -106,7 +106,7 @@ footer: global.wm,
 templateButtons: templateButtonsReplyMessage
 } 
 conn.sendMessage(m.chat, tt, m)
-  
+  } 
     
     
  if (command == 'juegos') { 
@@ -123,14 +123,13 @@ conn.sendMessage(m.chat, tt, m)
 {index: 4, quickReplyButton: {displayText: 'Otra vez', id: juegos}},
 {index: 5, quickReplyButton: {displayText: 'Otra vez', id: juegos}},
 ]
- 
 let ttt = {
 text: sss,
 footer: global.wm,
 templateButtons: templateButtonsReplyMessage
 } 
 conn.sendMessage(m.chat, ttt, m)
-   
+ }  
       
  /*     if (command == 'juegos') {  
                  let c = `${usedPrefix}`
