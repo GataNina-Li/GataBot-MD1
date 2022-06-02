@@ -65,7 +65,7 @@ text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length
   
   
 if (command == 'multijuegos') { 
-            let veloz = 
+            let s = 
             `Bienvenido al Multijuegos Aleeatorios`
 
  const templateButtonsReplyMessage = [
@@ -76,20 +76,20 @@ if (command == 'multijuegos') {
 {index: 5, quickReplyButton: {displayText: '𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪', id: '#menu'}},
 ]
  
-let tmo = {
-text: veloz,
+let t = {
+text: s,
 footer: global.wm,
 templateButtons: templateButtonsReplyMessage
   }
-conn.sendMessage(m.chat, tmo, m)
-  }
+conn.sendMessage(m.chat, t, m)
+ 
   
   
   if (command == 'juegos') { 
               let c = `${usedPrefix}`
               let juegos = `${pickRandom([`${c}reto`,`${c}verdad`])}`
 
-              let veloz = 
+              let ss = 
               `Use los botones`
 
  const templateButtonsReplyMessage = [
@@ -100,20 +100,20 @@ conn.sendMessage(m.chat, tmo, m)
 {index: 5, quickReplyButton: {displayText: 'Otra vez', id: juegos}},
 ]
  
-let tm = {
-text: veloz,
+let tt = {
+text: ss,
 footer: global.wm,
 templateButtons: templateButtonsReplyMessage
 } 
-conn.sendMessage(m.chat, tm, m)
-  }  
+conn.sendMessage(m.chat, tt, m)
+  
     
     
  if (command == 'juegos') { 
            let c = `${usedPrefix}`
            let juegos = `${pickRandom([`${c}reto`,`${c}verdad`])}`
 
-           let veloz = 
+           let sss = 
            `Use los botones`
 
  const templateButtonsReplyMessage = [
@@ -124,19 +124,19 @@ conn.sendMessage(m.chat, tm, m)
 {index: 5, quickReplyButton: {displayText: 'Otra vez', id: juegos}},
 ]
  
-let tm = {
-text: veloz,
+let ttt = {
+text: sss,
 footer: global.wm,
 templateButtons: templateButtonsReplyMessage
 } 
-conn.sendMessage(m.chat, tm, m)
-  }    
+conn.sendMessage(m.chat, ttt, m)
+   
       
        if (command == 'juegos') {  
                  let c = `${usedPrefix}`
                  let juegos = `${pickRandom([`${c}reto`,`${c}verdad`])}`
          
-                 let velozz = 
+                 let ssss = 
                  `Use los botones`
 
  const templateButtonsReplyMessage = [
@@ -146,12 +146,12 @@ conn.sendMessage(m.chat, tm, m)
 {index: 4, quickReplyButton: {displayText: 'Otra vez', id: juegos}},
 {index: 5, quickReplyButton: {displayText: 'Reiniciar', id: '#juegos'}},
 ]
-let tme = {
-text: velozz,
+let tttt = {
+text: ssss,
 footer: global.wm,
 templateButtons: templateButtonsReplyMessage
   } 
-conn.sendMessage(m.chat, tme, m)  
+conn.sendMessage(m.chat, tttt, m)  
 } 
 
 handler.help = ['infomenu'].map(v => v + 'able <option>')
