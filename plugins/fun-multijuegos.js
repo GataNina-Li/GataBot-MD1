@@ -5,8 +5,8 @@ import { join } from 'path'
 import { performance } from 'perf_hooks'
 let handler = async (m, { conn, usedPrefix, command, args, usedPrefix: _p, __dirname, isOwner, text, isAdmin, isROwner }) => {
   
-let com = `${usedPrefix}`
-let juegos = `${pickRandom([`${com}formarareja`,`${com}reto`,`${com}verdad`])}`   
+//let com = `${usedPrefix}`
+//let juegos = `${pickRandom([`${com}formarareja`,`${com}reto`,`${com}verdad`])}`   
 
 
 
@@ -85,6 +85,9 @@ conn.sendMessage(m.chat, tmo, m)
   
   
   if (command == 'juegos') { 
+    let com = `${usedPrefix}`
+    let juegos = `${pickRandom([`${com}formarareja`,`${com}reto`,`${com}verdad`])}`
+
   let veloz = 
 `🚄 *VELOCIDAD:*\n * *Milisegundos*\n\n🚄 *SPEED:*\n ** *Milliseconds*`
 
