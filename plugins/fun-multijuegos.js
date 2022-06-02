@@ -82,7 +82,7 @@ footer: global.wm,
 templateButtons: templateButtonsReplyMessage
   }
 conn.sendMessage(m.chat, tmo, m)
-}  
+  
   
   
   if (command == 'juegos') { 
@@ -178,7 +178,6 @@ conn.sendMessage(m.chat, tm, m)
  
 */   
 
-}
 handler.help = ['infomenu'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
 handler.command = ['multijuegos', 'juegos']
