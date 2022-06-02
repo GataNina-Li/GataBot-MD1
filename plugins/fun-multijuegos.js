@@ -65,8 +65,8 @@ text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length
   
   
 if (command == 'multijuegos') { 
-let veloz = 
-`Bienvenido al Multijuegos Aleeatorios`
+            let veloz = 
+            `Bienvenido al Multijuegos Aleeatorios`
 
  const templateButtonsReplyMessage = [
 {index: 1, urlButton: {displayText: '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', url: 'https://github.com/GataNina-Li/GataBot-MD'}},
@@ -75,21 +75,22 @@ let veloz =
 {index: 4, quickReplyButton: {displayText: 'menu de juegos', id: '#infobot'}},
 {index: 5, quickReplyButton: {displayText: '𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪', id: '#menu'}},
 ]
+ 
 let tmo = {
 text: veloz,
 footer: global.wm,
 templateButtons: templateButtonsReplyMessage
-}
+  }
 conn.sendMessage(m.chat, tmo, m)
 }  
   
   
   if (command == 'juegos') { 
-    let c = `${usedPrefix}`
-    let juegos = `${pickRandom([`${c}reto`,`${c}verdad`])}`
+              let c = `${usedPrefix}`
+              let juegos = `${pickRandom([`${c}reto`,`${c}verdad`])}`
 
-  let veloz = 
-`Use los botones`
+              let veloz = 
+              `Use los botones`
 
  const templateButtonsReplyMessage = [
 {index: 1, urlButton: {displayText: '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', url: 'https://github.com/GataNina-Li/GataBot-MD'}},
@@ -98,6 +99,7 @@ conn.sendMessage(m.chat, tmo, m)
 {index: 4, quickReplyButton: {displayText: 'Otra vez', id: juegos}},
 {index: 5, quickReplyButton: {displayText: 'Otra vez', id: juegos}},
 ]
+ 
 let tm = {
 text: veloz,
 footer: global.wm,
@@ -107,12 +109,12 @@ conn.sendMessage(m.chat, tm, m)
     
     
     
-    if (command == 'juegos') { 
-     let c = `${usedPrefix}`
-    let juegos = `${pickRandom([`${c}reto`,`${c}verdad`])}`
+ if (command == 'juegos') { 
+           let c = `${usedPrefix}`
+           let juegos = `${pickRandom([`${c}reto`,`${c}verdad`])}`
 
- let veloz = 
-`Use los botones`
+           let veloz = 
+           `Use los botones`
 
  const templateButtonsReplyMessage = [
 {index: 1, urlButton: {displayText: null, url: null}},
@@ -121,6 +123,7 @@ conn.sendMessage(m.chat, tm, m)
 {index: 4, quickReplyButton: {displayText: 'Otra vez', id: juegos}},
 {index: 5, quickReplyButton: {displayText: 'Otra vez', id: juegos}},
 ]
+ 
 let tm = {
 text: veloz,
 footer: global.wm,
@@ -129,9 +132,12 @@ templateButtons: templateButtonsReplyMessage
 conn.sendMessage(m.chat, tm, m)
       
       
- if (command == 'juegos') {      
-       let velozz = 
-`Use los botones`
+       if (command == 'juegos') {  
+                 let c = `${usedPrefix}`
+                 let juegos = `${pickRandom([`${c}reto`,`${c}verdad`])}`
+         
+                 let velozz = 
+                 `Use los botones`
 
  const templateButtonsReplyMessage = [
 {index: 1, urlButton: {displayText: null, url: null}},
@@ -144,9 +150,8 @@ let tme = {
 text: velozz,
 footer: global.wm,
 templateButtons: templateButtonsReplyMessage
-} 
-conn.sendMessage(m.chat, tme, m)
-  
+  } 
+conn.sendMessage(m.chat, tme, m)  
 } 
   
   
@@ -172,7 +177,7 @@ templateButtons: templateButtonsReplyMessage
 conn.sendMessage(m.chat, tm, m) 
  
 */   
-}
+
 
 handler.help = ['infomenu'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
