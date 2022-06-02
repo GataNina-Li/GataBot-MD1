@@ -138,12 +138,12 @@ conn.sendMessage(m.chat, tm, m)
 {index: 4, quickReplyButton: {displayText: 'Otra vez', id: juegos}},
 {index: 5, quickReplyButton: {displayText: 'Reiniciar', id: '#juegos'}},
 ]
-let tm = {
+let tme = {
 text: velozz,
 footer: global.wm,
 templateButtons: templateButtonsReplyMessage
 } 
-conn.sendMessage(m.chat, tm, m)
+conn.sendMessage(m.chat, tme, m)
   
 } 
   
