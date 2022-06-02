@@ -171,7 +171,7 @@ templateButtons: templateButtonsReplyMessage
 } 
 conn.sendMessage(m.chat, tm, m) 
  
-*/  }  
+*/   
 }
 
 handler.help = ['infomenu'].map(v => v + 'able <option>')
