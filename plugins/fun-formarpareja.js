@@ -22,7 +22,7 @@ let veloz =
 let tm = {
 text: veloz,
 footer: global.wm,
-templateButtons: templateButtonsReplyMessage }
+templateButtons: templateButtonsReplyMessage }}
 
 handler.help = ['formarpareja']
 handler.tags = ['main', 'fun']
