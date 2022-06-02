@@ -62,6 +62,8 @@ level, limit, weton, week, date, dateIslamic, time, totalreg, rtotalreg, role,
 readmore: readMore
 }
 text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name]) 
+  
+  
 if (command == 'multijuegos') { 
 let veloz = 
 `🚄 *VELOCIDAD:*\n * *Milisegundos*\n\n🚄 *SPEED:*\n ** *Milliseconds*`
@@ -73,12 +75,14 @@ let veloz =
 {index: 4, quickReplyButton: {displayText: '𝙄𝙣𝙛𝙤𝙧𝙢𝙖𝙘𝙞ó𝙣 | 𝙄𝙣𝙛𝙤𝙧𝙢𝙖𝙩𝙞𝙤𝙣', id: '#infobot'}},
 {index: 5, quickReplyButton: {displayText: '𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪', id: '#menu'}},
 ]
-let tm = {
+let tmo = {
 text: veloz,
 footer: global.wm,
 templateButtons: templateButtonsReplyMessage
-}}
-conn.sendMessage(m.chat, tm, m)
+}
+conn.sendMessage(m.chat, tmo, m)
+}  
+  
   
   if (command == 'juegos') { 
   let veloz = 
