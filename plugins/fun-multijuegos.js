@@ -63,48 +63,23 @@ readmore: readMore
 }
 text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name]) 
 
-const sections = [
-{
-title: `𝙇𝙄𝙎𝙏𝘼 𝘿𝙀𝙎𝙋𝙇𝙀𝙂𝘼𝘽𝙇𝙀 | 𝘿𝙍𝙊𝙋-𝘿𝙊𝙒𝙉 𝙇𝙄𝙎𝙏`,
-rows: [
-{title: "❇️ 𝙈𝙚𝙣𝙪 𝙋𝙧𝙞𝙣𝙘𝙞𝙥𝙖𝙡 |  𝘿𝙖𝙨𝙝𝙗𝙤𝙖𝙧𝙙 ❇️", description: null, rowId: `${usedPrefix}menu`},
-{title: "✳️ 𝙈𝙚𝙣𝙪 𝘾𝙤𝙢𝙥𝙡𝙚𝙩𝙤 | 𝙁𝙪𝙡𝙡 𝙈𝙚𝙣𝙪 ✳️", description: null, rowId: `${usedPrefix}allmenu`},
-{title: "✅ 𝘾𝙪𝙚𝙣𝙩𝙖𝙨 𝙊𝙛𝙞𝙘𝙞𝙖𝙡𝙚𝙨 | 𝘼𝙘𝙘𝙤𝙪𝙣𝙩𝙨 ✅", description: null, rowId: `${usedPrefix}cuentasgatabot`},
-{title: "𝙈𝙪𝙡𝙩𝙞𝙟𝙪𝙚𝙜𝙤𝙨 | 𝙈𝙪𝙡𝙩𝙞𝙜𝙖𝙢𝙚𝙨", description: "ggggg", rowId: `${juegos}`},
-]}, ]
-//let name = await conn.getName(m.sender)
-let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
-let mentionedJid = [who]
-let username = conn.getName(who)
+let veloz = 
+`🚄 *VELOCIDAD:*\n *${speed}* *Milisegundos*\n\n🚄 *SPEED:*\n *${speed}* *Milliseconds*`
 
+ const templateButtonsReplyMessage = [
+{index: 1, urlButton: {displayText: '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', url: 'https://github.com/GataNina-Li/GataBot-MD'}},
+{index: 2, urlButton: {displayText: '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢', url: 'https://www.instagram.com/gata_dios/'}},
+{index: 3, quickReplyButton: {displayText: '𝙊𝙩𝙧𝙖 𝙫𝙚𝙯 | 𝘼𝙜𝙖𝙞𝙣', id: '#ping'}},
+{index: 4, quickReplyButton: {displayText: '𝙄𝙣𝙛𝙤𝙧𝙢𝙖𝙘𝙞ó𝙣 | 𝙄𝙣𝙛𝙤𝙧𝙢𝙖𝙩𝙞𝙤𝙣', id: '#infobot'}},
+{index: 5, quickReplyButton: {displayText: '𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪', id: '#menu'}},
+]
+let tm = {
+text: veloz,
+footer: global.wm,
+templateButtons: templateButtonsReplyMessage
+}
+conn.sendMessage(m.chat, tm, m)
 
-const listMessage = {
-text: `💗 *¡HOLA | HI!* ${username}`,
-footer: `╭━━〔 *${wm}* 〕━━⬣
-┃🪄🪄🪄🪄🪄🪄🪄🪄🪄
-┃✪ *EXPERIENCIA | EXP ➺ ${exp}*
-┃✪ *NIVEL | LEVEL ➺ ${level}*
-┃✪ *ROL ➺ ${role}*
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃✪ *FECHA ➺ ${week}, ${date}*
-┃✪ *USUARIOS | USERS ➺ ${Object.keys(global.db.data.users).length}* 
-┃🪄🪄🪄🪄🪄🪄🪄🪄🪄
-╰━━━━━━〔 𓃠 *${vs}* 〕━━━━━━⬣
-
-╭━━〔 𝙈𝙐𝙇𝙏𝙄𝙅𝙐𝙀𝙂𝙊𝙎 | 𝙈𝙐𝙇𝙏𝙄𝙂𝘼𝙈𝙀𝙎 〕━⬣
-┃ *PRESIONE ESTE MENSAJE PARA IR AL MENÚ.*
-┃ *PRESS THIS MESSAGE TO GO TO THE MENU.*
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃
-┃🚀➺ _${usedPrefix}mediafire | dlmediafire *link*_
-┃🚀➺ _${usedPrefix}clonarepo | gitclone *link*_
-╰━━━━━━━━━━━━━━━━━━━⬣
-${wm}`,
-title: null,
-buttonText: "𝙋𝙍𝙀𝙎𝙄𝙊𝙉𝙀 𝘼𝙌𝙐Í | 𝙋𝙍𝙀𝙎𝙎 𝙃𝙀𝙍𝙀", 
-sections }
-
-await conn.sendMessage(m.chat, listMessage)
 }
 
 handler.help = ['infomenu'].map(v => v + 'able <option>')
