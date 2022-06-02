@@ -64,7 +64,6 @@ global.APIKeys = { // APIKey Here
   'https://botstyle-api.herokuapp.com': 'Eyar749L',
   'https://neoxr-api.herokuapp.com': 'yntkts',
   'https://anabotofc.herokuapp.com/': 'AnaBot'
-  'https://leyscoders-api.herokuapp.com': 'dappakntlll'
 }
 
 
