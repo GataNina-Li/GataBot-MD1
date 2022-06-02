@@ -82,7 +82,7 @@ footer: global.wm,
 templateButtons: templateButtonsReplyMessage
   }
 conn.sendMessage(m.chat, t, m)
- /*
+ 
   
   
   if (command == 'juegos') { 
@@ -132,7 +132,7 @@ templateButtons: templateButtonsReplyMessage
 conn.sendMessage(m.chat, ttt, m)
    
       
-   /*    if (command == 'juegos') {  
+      if (command == 'juegos') {  
                  let c = `${usedPrefix}`
                  let juegos = `${pickRandom([`${c}reto`,`${c}verdad`])}`
          
@@ -152,7 +152,7 @@ footer: global.wm,
 templateButtons: templateButtonsReplyMessage
   } 
 conn.sendMessage(m.chat, tttt, m)  
-}*/ 
+
  }
 handler.help = ['infomenu'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
