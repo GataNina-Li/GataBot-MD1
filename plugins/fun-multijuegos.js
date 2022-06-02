@@ -82,7 +82,7 @@ footer: global.wm,
 templateButtons: templateButtonsReplyMessage
   }
 conn.sendMessage(m.chat, tmo, m)
-  
+  }
   
   
   if (command == 'juegos') { 
@@ -106,7 +106,7 @@ footer: global.wm,
 templateButtons: templateButtonsReplyMessage
 } 
 conn.sendMessage(m.chat, tm, m)
-    
+  }  
     
     
  if (command == 'juegos') { 
@@ -130,7 +130,7 @@ footer: global.wm,
 templateButtons: templateButtonsReplyMessage
 } 
 conn.sendMessage(m.chat, tm, m)
-      
+  }    
       
        if (command == 'juegos') {  
                  let c = `${usedPrefix}`
@@ -153,30 +153,6 @@ templateButtons: templateButtonsReplyMessage
   } 
 conn.sendMessage(m.chat, tme, m)  
 } 
-  
-  
- /* if (command == 'juegos') { 
-     let c = `${usedPrefix}`
-    let juegos = `${pickRandom([`${c}reto`,`${c}verdad`])}`
-
- let veloz = 
-`Use los botones`
-
- const templateButtonsReplyMessage = [
-{index: 1, urlButton: {displayText: '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', url: 'https://github.com/GataNina-Li/GataBot-MD'}},
-{index: 2, urlButton: {displayText: '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢', url: 'https://www.instagram.com/gata_dios/'}},
-{index: 3, quickReplyButton: {displayText: 'Jugar', id: juegos}},
-{index: 4, quickReplyButton: {displayText: 'Otra vez', id: '#multijuegos'}},
-{index: 5, quickReplyButton: {displayText: '𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪', id: '#menu'}},
-]
-let tm = {
-text: veloz,
-footer: global.wm,
-templateButtons: templateButtonsReplyMessage
-} 
-conn.sendMessage(m.chat, tm, m) 
- 
-*/   
 
 handler.help = ['infomenu'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
