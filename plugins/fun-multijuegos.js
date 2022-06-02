@@ -72,7 +72,7 @@ let veloz =
 {index: 1, urlButton: {displayText: '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', url: 'https://github.com/GataNina-Li/GataBot-MD'}},
 {index: 2, urlButton: {displayText: '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢', url: 'https://www.instagram.com/gata_dios/'}},
 {index: 3, quickReplyButton: {displayText: 'Ingresar', id: '.juegos'}},
-{index: 4, quickReplyButton: {displayText: '𝙄𝙣𝙛𝙤𝙧𝙢𝙖𝙘𝙞ó𝙣 | 𝙄𝙣𝙛𝙤𝙧𝙢𝙖𝙩𝙞𝙤𝙣', id: '#infobot'}},
+{index: 4, quickReplyButton: {displayText: 'menu de juegos', id: '#infobot'}},
 {index: 5, quickReplyButton: {displayText: '𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪', id: '#menu'}},
 ]
 let tmo = {
@@ -85,8 +85,8 @@ conn.sendMessage(m.chat, tmo, m)
   
   
   if (command == 'juegos') { 
-    let com = `${usedPrefix}`
-    let juegos = `${pickRandom([`${com}formarareja`,`${com}reto`,`${com}verdad`])}`
+    let c = `${usedPrefix}`
+    let juegos = `${pickRandom([`${c}reto`,`${c}verdad`])}`
 
   let veloz = 
 `Use los botones`
@@ -109,8 +109,8 @@ conn.sendMessage(m.chat, tm, m)
   
   
   if (command == 'juegos') { 
-     let com = `${usedPrefix}`
-    let juegos = `${pickRandom([`${com}formarareja`,`${com}reto`,`${com}verdad`])}`
+     let c = `${usedPrefix}`
+    let juegos = `${pickRandom([`${c}reto`,`${c}verdad`])}`
 
  let veloz = 
 `Use los botones`
