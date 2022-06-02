@@ -4,7 +4,8 @@ import { promises } from 'fs'
 import { join } from 'path'
 import { performance } from 'perf_hooks'
 let handler = async (m, { conn, usedPrefix, command, args, usedPrefix: _p, __dirname, isOwner, text, isAdmin, isROwner }) => {
-  
+let com = `${usedPrefix}`
+let juegos = `*${pickRandom([`${com}formarareja`,`${com}reto`,`${com}verdad`])}%*`   
   
 const { levelling } = '../lib/levelling.js'
 //let handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text }) => {
@@ -57,10 +58,7 @@ xp4levelup: max - exp,
 level, limit, weton, week, date, dateIslamic, time, totalreg, rtotalreg, role,
 readmore: readMore
 }
-text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-let com = `${usedPrefix}`
-let juegos = `*${pickRandom([`${com}formarareja`,`${com}reto`,`${com}verdad`])}%*`  
-
+text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name]) 
 
 const sections = [
 {
