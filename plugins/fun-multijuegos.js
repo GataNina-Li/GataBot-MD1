@@ -65,8 +65,7 @@ text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length
   
   
 if (command == 'multijuegos') { 
-            let s = 
-            `Bienvenido al Multijuegos Aleeatorios`
+            let s = `Bienvenido al Multijuegos Aleeatorios`
 
  const templateButtonsReplyMessage = [
 {index: 1, urlButton: {displayText: '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', url: 'https://github.com/GataNina-Li/GataBot-MD'}},
@@ -89,8 +88,7 @@ conn.sendMessage(m.chat, t, m)
               let c = `${usedPrefix}`
               let juegos = `${pickRandom([`${c}reto`,`${c}verdad`])}`
 
-              let ss = 
-              `Use los botones`
+              let ss = await `Use los botones`
 
  const templateButtonsReplyMessage = [
 {index: 1, urlButton: {displayText: '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', url: 'https://github.com/GataNina-Li/GataBot-MD'}},
@@ -113,8 +111,7 @@ conn.sendMessage(m.chat, tt, m)
            let c = `${usedPrefix}`
            let juegos = `${pickRandom([`${c}reto`,`${c}verdad`])}`
 
-           let sss = 
-           `Use los botones`
+           let sss = await `Use los botones`
 
  const templateButtonsReplyMessage = [
 {index: 1, urlButton: {displayText: null, url: null}},
@@ -135,8 +132,7 @@ conn.sendMessage(m.chat, ttt, m)
                  let c = `${usedPrefix}`
                  let juegos = `${pickRandom([`${c}reto`,`${c}verdad`])}`
          
-                 let ssss = await
-                 `Use los botones`
+                 let ssss = await `Use los botones`
 
  const templateButtonsReplyMessage = [
 {index: 1, urlButton: {displayText: null, url: null}},
