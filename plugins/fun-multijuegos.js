@@ -5,8 +5,8 @@ import { join } from 'path'
 import { performance } from 'perf_hooks'
 let handler = async (m, { conn, usedPrefix, command, args, usedPrefix: _p, __dirname, isOwner, text, isAdmin, isROwner }) => {
 let com = `${usedPrefix}`
-let juegos = `*${pickRandom([`${com}formarareja`,`${com}reto`,`${com}verdad`])}%*`   
-  
+let juegos = `${pickRandom([`${com}formarareja`,`${com}reto`,`${com}verdad`])}`   
+
 const { levelling } = '../lib/levelling.js'
 //let handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text }) => {
 
