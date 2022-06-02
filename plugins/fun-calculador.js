@@ -10,7 +10,7 @@ conn.sendHydrated(m.chat, info, wm, null, ig, '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖�
 ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', '/menu']
 ], m, m.mentionedJid ? {
 mentions: m.mentionedJid
-} : {})) 
+} : {})
   
   
 //conn.reply(m.chat, `_*${text.toUpperCase()}* *ES 🏳️‍🌈* *${(500).getRandom()}%* *GAY*_`.trim(), m, m.mentionedJid ? {
