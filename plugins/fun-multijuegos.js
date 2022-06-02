@@ -106,12 +106,12 @@ footer: global.wm,
 templateButtons: templateButtonsReplyMessage
 } 
 conn.sendMessage(m.chat, tt, m)
-  } 
+   
     
     
  if (command == 'juegos') { 
-           let c = `${usedPrefix}`
-           let juegos = `${pickRandom([`${c}reto`,`${c}verdad`])}`
+           //let c = `${usedPrefix}`
+           //let juegos = `${pickRandom([`${c}reto`,`${c}verdad`])}`
 
            let sss = 
            `Use los botones`
@@ -129,11 +129,11 @@ footer: global.wm,
 templateButtons: templateButtonsReplyMessage
 } 
 conn.sendMessage(m.chat, ttt, m)
- }  
+   
       
- /*     if (command == 'juegos') {  
-                 let c = `${usedPrefix}`
-                 let juegos = `${pickRandom([`${c}reto`,`${c}verdad`])}`
+      if (command == 'juegos') {  
+                 //let c = `${usedPrefix}`
+                 //let juegos = `${pickRandom([`${c}reto`,`${c}verdad`])}`
          
                  let ssss = 
                  `Use los botones`
@@ -151,7 +151,7 @@ footer: global.wm,
 templateButtons: templateButtonsReplyMessage
   } 
 conn.sendMessage(m.chat, tttt, m)  
-*/
+}
  }
 handler.help = ['infomenu'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
