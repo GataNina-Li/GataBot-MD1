@@ -80,7 +80,7 @@ templateButtons: templateButtonsReplyMessage
 }
 conn.sendMessage(m.chat, tm, m)
   
-  if (com == 'juegos') { 
+  if (command == 'juegos') { 
   let veloz = 
 `🚄 *VELOCIDAD:*\n * *Milisegundos*\n\n🚄 *SPEED:*\n ** *Milliseconds*`
 
@@ -103,7 +103,7 @@ conn.sendMessage(m.chat, tm, m)
 
 handler.help = ['infomenu'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
-handler.command = ['multijuegos']
+handler.command = ['multijuegos', 'juegos']
 handler.exp = 50
 export default handler
 
