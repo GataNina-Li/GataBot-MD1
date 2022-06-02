@@ -80,7 +80,7 @@ templateButtons: templateButtonsReplyMessage
 }
 conn.sendMessage(m.chat, tm, m)
   
-  if (command == 'juegos') { 
+  if (juegos == 'pickRandom') { 
   let veloz = 
 `🚄 *VELOCIDAD:*\n * *Milisegundos*\n\n🚄 *SPEED:*\n ** *Milliseconds*`
 
