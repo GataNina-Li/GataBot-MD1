@@ -157,7 +157,7 @@ conn.sendMessage(m.chat, tttt, m)
 handler.help = ['infomenu'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
 handler.command = ['multijuegos', ['juegos']
-handler.exp = 50
+//handler.exp = 50
 export default handler
 
 const more = String.fromCharCode(8206)
