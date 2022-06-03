@@ -31,10 +31,11 @@ let top = `*🌈TOP 10 GAYS/LESBIANAS DEL GRUPO🌈*
 //m.reply(top, null, {
 conn.sendHydrated(m.chat, top, `𝙎𝙞𝙢𝙎𝙞𝙢𝙞 | ${wm}`, null, null, null, null, null, [
 ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', '/menu']
-], m, m.mentionedJid ? {   
+], m, null, {
 contextInfo: {
 mentionedJid: [a, b, c, d, e, f, g, h, i, j]
-}}})
+}})
+
 conn.sendFile(m.chat, vn, 'error.mp3', null, m, true, {
 type: 'audioMessage', 
 ptt: true })}
