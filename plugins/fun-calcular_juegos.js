@@ -178,7 +178,7 @@ mentions: m.mentionedJid
   
  // ------------------------------------------------------------------------------------------------------------------------------------------------   
 if (command == 'love') {
-let juego = `*❤️❤️ MEDIDOR DE AMOR ❤️❤️*\n_*El amor de *${text.toUpperCase()}* *ES DE* *${(100).getRandom()}%* *${command.replace('how', '').toUpperCase()} *Deberias pedirle que sea tu  novia/o ?*`.trim()
+let juego = `*❤️❤️ MEDIDOR DE AMOR ❤️❤️*\n_*El amor de ${text.toUpperCase()} ES DE ${(100).getRandom()}% Deberias pedirle que sea tu  novia/o ?*`.trim()
 conn.sendHydrated(m.chat, juego, wm, null, md, '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
 ['𝙈𝙚𝙣𝙪 𝙅𝙪𝙚𝙜𝙤𝙨 | 𝙂𝙖𝙢𝙚𝙨 𝙈𝙚𝙣𝙪 🎡', '#juegosmenu'],
 ['𝙊𝙩𝙧𝙖 𝙫𝙚𝙯 | 𝘼𝙜𝙖𝙞𝙣 🤭', `${usedPrefix + command} ${text.toUpperCase()}`],
