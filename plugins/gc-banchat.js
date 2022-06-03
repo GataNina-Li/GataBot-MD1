@@ -5,6 +5,5 @@ m.reply('*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝚂𝚃𝙴 𝙲𝙷𝙰𝚃 𝙵𝚄�
 handler.help = ['banchat']
 handler.tags = ['group']
 handler.command = /^banchat$/i
-handler.group = true
-handler.admin = true
+
 export default handler
