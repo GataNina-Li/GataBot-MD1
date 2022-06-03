@@ -39,6 +39,7 @@ process.once('message', resolve)
 setTimeout(resolve, 1000)
 }) * 1000
 }
+let { money } = global.db.data.users[m.sender]
 let muptime = clockString(_muptime)
 let uptime = clockString(_uptime)
 let totalreg = Object.keys(global.db.data.users).length
@@ -88,6 +89,7 @@ footer: `╭━━〔 *${wm}* 〕━━⬣
 ┃✪ *EXPERIENCIA | EXP ➺ ${exp}*
 ┃✪ *NIVEL | LEVEL ➺ ${level}*
 ┃✪ *ROL ➺ ${role}*
+┃✪ *GATACOINS ➺ $ ${money}*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃✪ *FECHA ➺ ${week}, ${date}*
 ┃✪ *USUARIOS | USERS ➺ ${Object.keys(global.db.data.users).length}* 
