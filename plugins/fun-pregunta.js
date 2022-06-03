@@ -17,5 +17,5 @@ mentions: m.mentionedJid
   
 handler.help = ['pregunta <texto>?']
 handler.tags = ['kerang']
-handler.command = /^pregunta|preguntas|apakah$/i
+handler.command = /^pregunta|preguntas|apakah$/i 
 export default handler
