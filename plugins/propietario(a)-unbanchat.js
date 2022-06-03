@@ -8,7 +8,7 @@ handler.command = /^desban1|unbanchat1$/i
 handler.rowner = true
 handler.exp = 50
 
-export default handler*/
+export default handler
 
 let handler = async (m) => {
 global.db.data.chats[m.chat].isBanned = false
@@ -20,4 +20,4 @@ handler.command = /^desban1|unbanchat1$/i
 handler.group = true
 handler.admin = true
 
-export default handler
+export default handler*/
