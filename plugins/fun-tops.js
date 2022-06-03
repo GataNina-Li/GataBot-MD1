@@ -2,7 +2,6 @@ import util from 'util'
 import path from 'path'
 
 let user = a => '@' + a.split('@')[0]
-let user = await conn.getName(m.sender)
 function handler(m, { groupMetadata, command, usedPrefix, conn }) {
    
 let ps = groupMetadata.participants.map(v => v.id)
