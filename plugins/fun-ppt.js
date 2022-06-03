@@ -1,12 +1,12 @@
-let handler = async (m, { text, usedPrefix }) => {
-
+let handler = async (m, { text, usedPrefix, command }) => {
+if (command == 'ppt') {
 let salah = `*_Hola 👋🏻, bienvenido al juego de piedra, papel o tijera_*\n\n*_Opciones Disponibles:_*\n*_piedra, papel o tijera_*\n\n*_${usedPrefix}ppt tijera_*\n\n*_Use las opciones en minusculas como se indica en el ejemplo, no use los _ ni los * para que el Bot lo detecte correctamente_*\n\n_©The Mystic - Bot_`
 
 conn.sendHydrated(m.chat, salah, wm, null, md, '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
-['🪨', 'piedra'],
-['📄', 'papel'],
-['✂️', 'tijera']
-], m,)
+['🪨', `${usedPrefix + command} piedra`],
+['📄', `${usedPrefix + command} papel`],
+['✂️', `${usedPrefix + command} tijera`]
+], m,)}
   
 //  conn.sendHydrated(m.chat, salah, wm, null, md, '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
 //['𝙈𝙚𝙣𝙪 𝙅𝙪𝙚𝙜𝙤𝙨 | 𝙂𝙖𝙢𝙚𝙨 𝙈𝙚𝙣𝙪 🎡', '#juegosmenu'],
