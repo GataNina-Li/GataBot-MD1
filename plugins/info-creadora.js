@@ -3,6 +3,7 @@ function handler(m, { conn }) {
 let text = `
 *𝘾𝙤𝙣𝙩𝙖𝙘𝙩𝙤 | 𝘾𝙤𝙣𝙩𝙖𝙘𝙩* 
 *Wa.me/593993684821 (BOT)*
+*Wa.me/51993042301 (BOT)*
 *https://www.instagram.com/gata_dios*
 `.trim()   
 conn.reply(m.chat, text, m, {
