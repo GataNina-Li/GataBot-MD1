@@ -5,7 +5,7 @@ conn.sendHydrated(m.chat, salah, wm, null, md, '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-�
 ['🪨', '.ppt piedra')],
 ['v', '.ppt papel')],
 ['✂️', '.ppt tijera')]
-], m)
+], m,)
                   
 if (!text) throw salah
 var astro = Math.random()
