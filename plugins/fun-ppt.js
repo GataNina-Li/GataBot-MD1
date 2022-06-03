@@ -60,9 +60,9 @@ m.reply(`*🥳 Tú ganas! 🎉*\n\n*👉🏻 Usted: ${text}*\n*👉🏻 El Bot: 
 } else {
 m.reply(`*☠️ Tú pierdes! ❌*\n\n*👉🏻 Usted: ${text}*\n*👉🏻 El Bot: ${astro}*`)
 }
-} else {
-throw salah
-}}
+} //else {
+//throw salah
+} //}
 handler.help = ['ppt']
 handler.tags = ['games']
 handler.command = /^(ppt)$/i
