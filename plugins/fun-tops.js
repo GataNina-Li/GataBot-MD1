@@ -1,8 +1,9 @@
 import util from 'util'
 import path from 'path'
 //let user = a => '@' + a.split('@')[0]
+let user = await conn.getName(m.sender)
 function handler(m, { groupMetadata, command, conn }) {
-let user = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
+
     
 let ps = groupMetadata.participants.map(v => v.id)
 let a = ps.getRandom()
