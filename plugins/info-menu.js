@@ -30,6 +30,7 @@ hour: 'numeric',
 minute: 'numeric',
 second: 'numeric'
 })
+let { money } = global.db.data.users[m.sender]
 let _uptime = process.uptime() * 1000
 let _muptime
 if (process.send) {
@@ -87,6 +88,7 @@ footer: `╭━━〔 *${wm}* 〕━━⬣
 ┃✪ *EXPERIENCIA | EXP ➺ ${exp}*
 ┃✪ *NIVEL | LEVEL ➺ ${level}*
 ┃✪ *ROL ➺ ${role}*
+┃✪ *GATACOINS ➺ $ ${money}*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃✪ *FECHA ➺ ${week}, ${date}*
 ┃✪ *USUARIOS | USERS ➺ ${Object.keys(global.db.data.users).length}* 
