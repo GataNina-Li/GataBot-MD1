@@ -30,7 +30,7 @@ let who
 if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.sender
 else who = m.sender
 let name = conn.getName(who) 
-let money = global.db.data.users[who].money 
+let money = global.db.data.users[who].uang 
 let money0 = global.db.data.users[m.sender].uang += 1
 let money1 = global.db.data.users[m.sender].uang += 5
 let money2 = global.db.data.users[m.sender].uang += 10
