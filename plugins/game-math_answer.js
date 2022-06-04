@@ -19,8 +19,8 @@ clearTimeout(global.math[id][3])
 delete global.math[id]
 } else conn.reply(m.chat, `*𝚁𝙴𝚂𝙿𝚄𝙴𝚂𝚃𝙰 𝙸𝙽𝙲𝙾𝚁𝚁𝙴𝙲𝚃𝙰!!*\n*𝙰𝚄𝙽 𝙳𝙸𝚂𝙿𝙾𝙽𝙸𝙱𝙻𝙴𝚂 ${global.math[id][2]} 𝚘𝚙𝚘𝚛𝚝𝚞𝚗𝚒𝚍𝚊𝚍𝚎𝚜*`, m)
 }}}
-//handler.customPrefix = /^-?[0-9]+(\.[0-9]+)?$/
-//handler.command = new RegExp
-handler.command = /^(respuesta)$/i
+
+handler.customPrefix = /^-?[0-9]+(\.[0-9]+)?$/
+handler.command = new RegExp
 handler.exp = 0
 export default handler
