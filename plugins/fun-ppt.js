@@ -201,7 +201,7 @@ handler.help = ['ppt']
 handler.tags = ['games']
 handler.command = /^(ppt)$/i
 handler.register = false
-handler.limit = 2
+handler.limit = false
 export default handler
 
 function pickRandom(list) {
