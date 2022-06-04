@@ -5,7 +5,7 @@ conn.sendHydrated(m.chat, `╭━━━━[ 𝙍𝙀𝙏𝙊 😏 ]━━━━�
 ['𝙏𝙤𝙥𝙨 | 𝙍𝙖𝙣𝙠𝙞𝙣𝙜 🏆', `${usedPrefix}top`],
 ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', `${usedPrefix}menu`]
 ], m,)}
-}
+
 handler.help = ['reto']
 handler.tags = ['fun']
 handler.command = /^reto/i
