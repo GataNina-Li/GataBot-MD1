@@ -25,7 +25,7 @@ astro = 'tijera'
 astro = 'papel'
 } 
 if (text == astro) {
-let mimoney = global.db.data.users[m.sender].money
+let { mimoney } = global.db.data.users[m.sender]
 let money = global.db.data.users[m.sender].money = 10
   
 //m.reply(`*_🔰 Empate!_*\n\n*👉🏻 Usted: ${text}*\n*👉🏻 El Bot: ${astro}*`)
