@@ -31,11 +31,11 @@ if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.sender
 else who = m.sender
 let name = conn.getName(who) 
 let money = global.db.data.users[who].money 
-let money0 = global.db.data.users[m.sender].money += `1`
-let money1 = global.db.data.users[m.sender].money += `5`
-let money2 = global.db.data.users[m.sender].money += `10`
-let money3 = global.db.data.users[m.sender].money += `0`
-let money4 = global.db.data.users[m.sender].money += `8`
+let money0 = global.db.data.users[m.sender].money += 1
+let money1 = global.db.data.users[m.sender].money += 5
+let money2 = global.db.data.users[m.sender].money += 10
+let money3 = global.db.data.users[m.sender].money += 0
+let money4 = global.db.data.users[m.sender].money += 8
  
 //m.reply(`*_🔰 Empate!_*\n\n*👉🏻 Usted: ${text}*\n*👉🏻 El Bot: ${astro}*`)
 conn.sendHydrated(m.chat, `╭━━━━[ 𝙀𝙈𝙋𝘼𝙏𝙀! 🤝 ]━━━━⬣\n┃👤 ${name} 𝙐𝙨𝙩𝙚𝙙: ${text}\n┃🐱 𝙂𝙖𝙩𝙖𝘽𝙤𝙩: ${astro}\n┃💰 𝙍𝙚𝙘𝙤𝙢𝙥𝙚𝙣𝙨𝙖: $ ${[money0, money1, money2, money3, money4].getRandom()} 𝙂𝙖𝙩𝙖𝘾𝙤𝙞𝙣𝙨\n┃💵 𝙎𝙪 𝘿𝙞𝙣𝙚𝙧𝙤: ${money} 𝙂𝙖𝙩𝙖𝘾𝙤𝙞𝙣𝙨\n╰━━━━━━[ ${vs} ]━━━━⬣`, wm, null, yt, '𝙔𝙤𝙪𝙏𝙪𝙗𝙚', null, null, [
