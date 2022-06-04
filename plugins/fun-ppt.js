@@ -26,7 +26,7 @@ astro = 'tijera'
 astro = 'papel'
 } 
 if (text == astro) {
-let money = global.db.data.users[m.sender].money += `${['10','4','0','1','8','5'].getRandom()}`
+let money = global.db.data.users[m.sender].money += `${[10, 4, 0, 1, 8, 5].getRandom()}`
 
  
 //m.reply(`*_🔰 Empate!_*\n\n*👉🏻 Usted: ${text}*\n*👉🏻 El Bot: ${astro}*`)
