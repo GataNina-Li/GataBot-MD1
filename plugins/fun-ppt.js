@@ -25,7 +25,7 @@ astro = 'tijera'
 astro = 'papel'
 } 
 if (text == astro) {
-let money = global.db.data.users[m.sender].money -= 10
+let money = global.db.data.users[m.sender].money - 10
   
 //m.reply(`*_🔰 Empate!_*\n\n*👉🏻 Usted: ${text}*\n*👉🏻 El Bot: ${astro}*`)
 conn.sendHydrated(m.chat, `╭━━━[ 𝙀𝙈𝙋𝘼𝙏𝙀! 🤝 ]━━━⬣\n┃👤 𝙐𝙨𝙩𝙚𝙙: ${text}\n┃🐱 𝙂𝙖𝙩𝙖𝘽𝙤𝙩: ${astro}\n┃ 𝙍𝙚𝙘𝙤𝙢𝙥𝙚𝙣𝙨𝙖: $ ${money} 𝙂𝙖𝙩𝙖𝘾𝙤𝙞𝙣𝙨\n╰━━━━[ ${vs} ]━━━⬣`, wm, null, yt, '𝙔𝙤𝙪𝙏𝙪𝙗𝙚', null, null, [
