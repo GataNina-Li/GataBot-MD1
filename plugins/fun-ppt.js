@@ -25,7 +25,7 @@ astro = 'tijera'
 astro = 'papel'
 } 
 if (text == astro) {
-let money = global.db.data.users[m.sender].money 
+//let money = global.db.data.users[m.sender].money 
 let mmoney = global.db.data.users[m.sender].money += 10
 
   
