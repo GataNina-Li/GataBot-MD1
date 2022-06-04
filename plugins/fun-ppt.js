@@ -1,3 +1,4 @@
+import { performance } from 'perf_hooks'
 let handler = async (m, { text, usedPrefix, command }) => {
 let pp = 'https://www.bighero6challenge.com/images/thumbs/Piedra,-papel-o-tijera-0003318_1584.jpeg' 
 if (command == 'ppt') {
@@ -25,8 +26,9 @@ astro = 'tijera'
 astro = 'papel'
 } 
 if (text == astro) {
-let money = global.db.data.users[m.sender].money += 10, 4, 1, 9
-  
+let money = global.db.data.users[m.sender].money += `${['10','4','0','1','8','5'].getRandom()}`
+
+ 
 //m.reply(`*_🔰 Empate!_*\n\n*👉🏻 Usted: ${text}*\n*👉🏻 El Bot: ${astro}*`)
 conn.sendHydrated(m.chat, `╭━━━━[ 𝙀𝙈𝙋𝘼𝙏𝙀! 🤝 ]━━━━⬣\n┃👤 𝙐𝙨𝙩𝙚𝙙: ${text}\n┃🐱 𝙂𝙖𝙩𝙖𝘽𝙤𝙩: ${astro}\n┃💰 𝙍𝙚𝙘𝙤𝙢𝙥𝙚𝙣𝙨𝙖: +10 𝙂𝙖𝙩𝙖𝘾𝙤𝙞𝙣𝙨\n┃💵 𝙎𝙪 𝘿𝙞𝙣𝙚𝙧𝙤: $${money} 𝙂𝙖𝙩𝙖𝘾𝙤𝙞𝙣𝙨\n╰━━━━━━[ ${vs} ]━━━━⬣`, wm, null, yt, '𝙔𝙤𝙪𝙏𝙪𝙗𝙚', null, null, [
 ['𝙈𝙚𝙣𝙪 𝙅𝙪𝙚𝙜𝙤𝙨 | 𝙂𝙖𝙢𝙚𝙨 𝙈𝙚𝙣𝙪 🎡', '#juegosmenu'],
@@ -138,3 +140,6 @@ handler.command = /^(ppt)$/i
 handler.register = false
 handler.limit = false
 export default handler
+
+function pickRandom(list) {
+return list[Math.floor(Math.random() * list.length)]}
