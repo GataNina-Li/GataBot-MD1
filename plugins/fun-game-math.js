@@ -97,14 +97,14 @@ result
 
 // Diamantes
 function genMath(diamantes) {
-let [a1, a2, b1, b2, ops, time, bonus] = modes[diamantes]
-let a = randomInt(a1, a2)
-let b = randomInt(b1, b2)
+let [aa1, aa2, bb1, bb2, ops, dia] = modes[diamantes]
+let aa = randomInt(aa1, aa2)
+let bb = randomInt(bb1, bb2)
 let op = pickRandom([...ops])
-let result = (new Function(`return ${a} ${op.replace('/', '*')} ${b < 0 ? `(${b})` : b}`))()
-if (op == '/') [a, result] = [result, a]
+let result = (new Function(`return ${aa} ${op.replace('/', '*')} ${bb < 0 ? `(${bb})` : bb}`))()
+if (op == '/') [aa, result] = [result, aa]
 return {
-str: `${a} ${operators[op]} ${b}`,
+str: `${aa} ${operators[op]} ${bb}`,
 dia,
 }}
 
