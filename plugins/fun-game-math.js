@@ -1,16 +1,6 @@
 global.math = global.math ? global.math : {}
 let handler  = async (m, { conn, args, usedPrefix, command }) => {
    
-  await if (command == 'matess') {
-//let id = text.join(' ')
-let ejemplo = `Respuesta 1`.trim()
-
-conn.sendHydrated(m.chat, ejemplo, null, null, null, null, null, null, [
-['Juego 1', `.juego1 whats`],
-['Juego 2', `.juego2 whatsat`],
-['Juego 3', `.juego3 whatsapp`]
-], m,) }
-   
 let mat =`
 *[❗𝐈𝐍𝐅𝐎❗] 𝙸𝙽𝙶𝚁𝙴𝚂𝙴 𝙻𝙰 𝙳𝙸𝙵𝙸𝙲𝚄𝙻𝚃𝙰𝙳𝙾 𝙲𝙾𝙽 𝙻𝙰 𝚀𝚄𝙴 𝙳𝙴𝚂𝙴𝙰 𝙹𝚄𝙶𝙰𝚁*
 
@@ -20,7 +10,7 @@ let mat =`
 if (args.length < 1) return conn.sendHydrated(m.chat, mat, author, null, null, null, null, null, [
 ['𝙼𝙰𝚃𝙴𝚂 𝙴𝙰𝚂𝚈', `${usedPrefix + command} easy`], 
 ['𝙼𝙰𝚃𝙴𝚂 𝙼𝙴𝙳𝙸𝚄𝙼', `${usedPrefix + command} medium`], 
-['𝙼𝙰𝚃𝙴𝚂 𝙷𝙰𝚁𝙳', `${usedPrefix}matess`]], m) //hard
+['𝙼𝙰𝚃𝙴𝚂 𝙷𝙰𝚁𝙳', `${usedPrefix + command} hard`]], m)
    
    
     
@@ -30,8 +20,6 @@ if (!(mode in modes)) return conn.sendHydrated(m.chat, mat, author, null, null, 
 ['𝙼𝙰𝚃𝙴𝚂 𝙼𝙴𝙳𝙸𝚄𝙼', `${usedPrefix + command} medium`], 
 ['𝙼𝙰𝚃𝙴𝚂 𝙷𝙰𝚁𝙳', `${usedPrefix + command} hard`]], m)
  
-
-  
   
 let id = m.chat
 if (id in global.math) return conn.reply(m.chat, '*[❗𝐈𝐍𝐅𝐎❗] 𝚃𝙾𝙳𝙰𝚅𝙸𝙰 𝙷𝙰𝚈 𝙿𝚁𝙴𝙶𝚄𝙽𝚃𝙰𝚂 𝚂𝙸𝙽 𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙴𝚁 𝙴𝙽 𝙴𝚂𝚃𝙴 𝙲𝙷𝙰𝚃!*', global.math[id][0])
@@ -46,7 +34,7 @@ delete global.math[id]
 ]}
 handler.help = ['math <mode>']
 handler.tags = ['game']
-handler.command = ['matess', 'math', 'mates', 'matemáticas']///^math|mates|matemáticas/i
+handler.command = /^math|mates|matemáticas/i ///^math|mates|matemáticas/i
 export default handler
 
 let modes = {
