@@ -42,7 +42,7 @@ conn.sendHydrated(m.chat, wm, null, null, md, '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈
 }
 handler.help = ['math <mode>']
 handler.tags = ['game']
-handler.command = /^math|mates|matemáticas|mmm/i ///^math|mates|matemáticas/i
+handler.command = /^math|mates|matemáticas/i ///^math|mates|matemáticas/i
 export default handler
 
 let modes = {
