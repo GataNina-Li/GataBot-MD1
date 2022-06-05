@@ -9,7 +9,7 @@ let mat =`
 if (args.length < 1) return conn.sendHydrated(m.chat, mat, author, null, null, null, null, null, [
 ['𝙼𝙰𝚃𝙴𝚂 𝙴𝙰𝚂𝚈', `${usedPrefix + command} easy`], 
 ['𝙼𝙰𝚃𝙴𝚂 𝙼𝙴𝙳𝙸𝚄𝙼', `${usedPrefix + command} medium`], 
-['𝙼𝙰𝚃𝙴𝚂 𝙷𝙰𝚁𝙳', `${usedPrefix + command} hard`]], m)
+['𝙼𝙰𝚃𝙴𝚂 𝙷𝙰𝚁𝙳', `${usedPrefix + command} matess`]], m) //hard
    
    
     
@@ -19,7 +19,7 @@ if (!(mode in modes)) return conn.sendHydrated(m.chat, mat, author, null, null, 
 ['𝙼𝙰𝚃𝙴𝚂 𝙼𝙴𝙳𝙸𝚄𝙼', `${usedPrefix + command} medium`], 
 ['𝙼𝙰𝚃𝙴𝚂 𝙷𝙰𝚁𝙳', `${usedPrefix + command} hard`]], m)
  
-if (command == 'mates') {
+if (command == 'matess') {
 //let id = text.join(' ')
 let ejemplo = `Respuesta 1`.trim()
 
@@ -43,7 +43,7 @@ delete global.math[id]
 ]}
 handler.help = ['math <mode>']
 handler.tags = ['game']
-handler.command = ['math', 'mates', 'matemáticas']///^math|mates|matemáticas/i
+handler.command = ['matess', 'math', 'mates', 'matemáticas']///^math|mates|matemáticas/i
 export default handler
 
 let modes = {
