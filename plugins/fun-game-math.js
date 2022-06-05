@@ -33,7 +33,8 @@ await conn.reply(m.chat, `𝘾𝙪𝙖𝙡 𝙚𝙨 𝙧𝙚𝙨𝙪𝙡𝙩𝙖
 🧭 *${(math.time / 1000).toFixed(0)} 𝚜𝚎𝚐𝚞𝚗𝚍𝚘𝚜*
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 𝙍𝙚𝙨𝙥𝙤𝙣𝙙𝙚 𝙖 𝙚𝙨𝙩𝙚 𝙢𝙚𝙣𝙨𝙖𝙟𝙚 𝙮 𝙂𝙖𝙣𝙖 
-🏆 *${math.bonus} 𝙓𝙋*`, m),
+🏆 *${math.bonus} 𝙓𝙋*
+dia ${math.dia}`, m),
 math, 4,
   
 await conn.sendHydrated(m.chat, `⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆`, `𝙍𝙀𝙎𝙋𝙊𝙉𝘿𝘼 𝘼𝙇 𝙈𝙀𝙉𝙎𝘼𝙅𝙀 𝘿𝙀 𝘼𝙍𝙍𝙄𝘽𝘼 𝘾𝙊𝙉 𝙇𝘼 𝙍𝙀𝙎𝙋𝙐𝙀𝙎𝙏𝘼\n\n𝘼𝙉𝙎𝙒𝙀𝙍 𝙏𝙃𝙀 𝙈𝙀𝙎𝙎𝘼𝙂𝙀 𝘼𝘽𝙊𝙑𝙀 𝙏𝙊 𝙆𝙉𝙊𝙒 𝙔𝙊𝙐𝙍 𝘼𝙉𝙎𝙒𝙀𝙍`, null, md, '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [ 
@@ -52,7 +53,17 @@ handler.command = /^math|mates|matemáticas/i
 export default handler
 
 let modes = {
-noob: [-3, 3,-3, 3, '+', 15000, 10],
+noob: [-3, 3,-3, 3, '+-', 15000, 10], 
+easy: [-10, 10, -10, 10, '*/+-', 20000, 40],
+medium: [-40, 40, -20, 20, '*/+-', 40000, 150],
+hard: [-100, 100, -70, 70, '*/+-', 60000, 350],
+extreme: [-999999, 999999, -999999, 999999, '*/', 99999, 9999],
+impossible: [-99999999999, 99999999999, -99999999999, 999999999999, '*/', 30000, 35000],
+impossible2: [-999999999999999, 999999999999999, -999, 999, '/', 30000, 5000]
+} 
+
+let diamantes = {
+noob: [-3, 3,-3, 3, '+-', 15000, 10], 
 easy: [-10, 10, -10, 10, '*/+-', 20000, 40],
 medium: [-40, 40, -20, 20, '*/+-', 40000, 150],
 hard: [-100, 100, -70, 70, '*/+-', 60000, 350],
@@ -68,6 +79,7 @@ let operators = {
 '/': '÷'
 }
 
+// XP
 function genMath(mode) {
 let [a1, a2, b1, b2, ops, time, bonus] = modes[mode]
 let a = randomInt(a1, a2)
@@ -81,6 +93,19 @@ mode,
 time,
 bonus,
 result
+}}
+
+// Diamantes
+function genMath(diamantes) {
+let [a1, a2, b1, b2, ops, time, bonus] = modes[diamantes]
+let a = randomInt(a1, a2)
+let b = randomInt(b1, b2)
+let op = pickRandom([...ops])
+let result = (new Function(`return ${a} ${op.replace('/', '*')} ${b < 0 ? `(${b})` : b}`))()
+if (op == '/') [a, result] = [result, a]
+return {
+str: `${a} ${operators[op]} ${b}`,
+dia,
 }}
 
 function randomInt(from, to) {
