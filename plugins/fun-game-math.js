@@ -31,10 +31,18 @@ setTimeout(() => {
 if (global.math[id]) conn.sendButton(m.chat, `*[❗𝐈𝐍𝐅𝐎❗] 𝚂𝙴 𝙰𝙷 𝙵𝙸𝙽𝙰𝙻𝙸𝚉𝙰𝙳𝙾 𝙴𝙻 𝚃𝙸𝙴𝙼𝙿𝙾 𝙿𝙰𝚁𝙰 𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙴𝚁*\n\n*𝙻𝙰 𝚁𝙴𝚂𝙿𝚄𝙴𝚂𝚃𝙰 𝙴𝚂 ${math.result}*`, author, null, [['𝚅𝙾𝙻𝚅𝙴𝚁 𝙰 𝙸𝙽𝚃𝙴𝙽𝚃𝙰𝚁', `${usedPrefix + command} ${math.mode}`]], global.math[id][0])
 delete global.math[id]
 }, math.time)
-]}
+] 
+if (command == 'mmm') {   
+conn.sendHydrated(m.chat, wm, null, null, md, '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
+['𝙋𝙞𝙚𝙙𝙧𝙖 🥌', `${usedPrefix + command} piedra`],
+['𝙋𝙖𝙥𝙚𝙡 📄', `${usedPrefix + command} papel`],
+['𝙏𝙞𝙟𝙚𝙧𝙖 ✂️', `${usedPrefix + command} tijera`]
+], m,)}
+
+}
 handler.help = ['math <mode>']
 handler.tags = ['game']
-handler.command = /^math|mates|matemáticas/i ///^math|mates|matemáticas/i
+handler.command = /^math|mates|matemáticas|mmm/i ///^math|mates|matemáticas/i
 export default handler
 
 let modes = {
