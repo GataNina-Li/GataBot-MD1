@@ -21,7 +21,7 @@ if (!(mode in modes)) return conn.sendHydrated(m.chat, mat, author, null, null, 
  
 if (command == 'mates') 
 //let id = text.join(' ')
-let ejemplo = `Respuesta 1`
+let ejemplo = `Respuesta 1`.trim()
 
 conn.sendHydrated(m.chat, ejemplo, null, null, null, null, null, null, [
 ['Juego 1', `.juego1 whats`],
