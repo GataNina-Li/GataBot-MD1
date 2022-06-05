@@ -1,7 +1,7 @@
 global.math = global.math ? global.math : {}
-let handler  = async (m, { conn, args, usedPrefix, command }) => {{
+let handler  = async (m, { conn, args, usedPrefix, command }) => {
    
-   if (command == 'matess') 
+  await if (command == 'matess') {
 //let id = text.join(' ')
 let ejemplo = `Respuesta 1`.trim()
 
