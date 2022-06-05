@@ -11,6 +11,11 @@ if (args.length < 1) return conn.sendHydrated(m.chat, mat, author, null, null, n
 ['𝙼𝙰𝚃𝙴𝚂 𝙼𝙴𝙳𝙸𝚄𝙼', `${usedPrefix + command} medium`], 
 ['𝙼𝙰𝚃𝙴𝚂 𝙷𝙰𝚁𝙳', `${usedPrefix + command} hard`]], m)
    
+if (args.length < 1) return conn.sendHydrated(m.chat, null, author, null, null, null, null, null, [
+['𝙼𝙰𝚃𝙴𝚂 𝙴𝙰𝚂𝚈', `${usedPrefix + command} easy`], 
+['𝙼𝙰𝚃𝙴𝚂 𝙼𝙴𝙳𝙸𝚄𝙼', `${usedPrefix + command} medium`], 
+['𝙼𝙰𝚃𝙴𝚂 𝙷𝙰𝚁𝙳', `${usedPrefix + command} hard`]], m)
+   
     
 let mode = args[0].toLowerCase()
 if (!(mode in modes)) return conn.sendHydrated(m.chat, mat, author, null, null, null, null, null, [
@@ -18,15 +23,6 @@ if (!(mode in modes)) return conn.sendHydrated(m.chat, mat, author, null, null, 
 ['𝙼𝙰𝚃𝙴𝚂 𝙼𝙴𝙳𝙸𝚄𝙼', `${usedPrefix + command} medium`], 
 ['𝙼𝙰𝚃𝙴𝚂 𝙷𝙰𝚁𝙳', `${usedPrefix + command} hard`]], m)
    
-if (command == `mates`) {
-//let id = text.join(' ')
-let ejemplo = `Respuesta 1`
-
-conn.sendHydrated(m.chat, ejemplo, null, null, null, null, null, null, [
-['Juego 1', `.juego1 whats`],
-['Juego 2', `.juego2 whatsat`],
-['Juego 3', `.juego3 whatsapp`]
-], m,) }
   
   
 let id = m.chat
