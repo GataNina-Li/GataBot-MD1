@@ -206,3 +206,35 @@ export default handler
 
 function pickRandom(list) {
 return list[Math.floor(Math.random() * list.length)]}
+
+/*
+let handler = async (m, { command, text }) => { 
+if (!text) throw `error, vuelva a intentar.` 
+//let id = text.join(' ')
+
+if (command == 'e1') {
+ if (text == 'a') {
+ m.reply(`Resultado 1`) }
+}
+  
+  if (command == 'e2') {
+ if (text == 'b') {
+ m.reply(`Resultado 2`) }
+}  
+    
+    if (command == 'e3') {
+ if (text == 'c') {
+ m.reply(`Resultado 3`) }
+}
+}
+ 
+//handler.help = handler.command = ['e1', 'e2', 'e3']
+//handler.tags = ['Prueba']
+
+//export default handler  
+handler.help = ['e1', 'e2', 'e3']
+handler.tags = ['ejemplo']
+handler.command = ['e1', 'e2', 'e3'] //'a', 'b', 'c'
+
+export default  handler */ 
+  
