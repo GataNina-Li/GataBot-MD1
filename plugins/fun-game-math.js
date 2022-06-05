@@ -96,8 +96,8 @@ result
 }}
 
 // Diamantes
-function genMath(mode) {
-let [aa1, aa2, bb1, bb2, ops, time, dia] = diamantes[mode]
+function genMath(mod) {
+let [aa1, aa2, bb1, bb2, ops, time, dia] = diamantes[mod]
 let aa = randomInt(aa1, aa2)
 let bb = randomInt(bb1, bb2)
 let op = pickRandom([...ops])
