@@ -18,7 +18,7 @@ if (!(mode in modes)) return conn.sendHydrated(m.chat, mat, author, null, null, 
 ['𝙼𝙰𝚃𝙴𝚂 𝙼𝙴𝙳𝙸𝚄𝙼', `${usedPrefix + command} medium`], 
 ['𝙼𝙰𝚃𝙴𝚂 𝙷𝙰𝚁𝙳', `${usedPrefix + command} hard`]], m)
    
-if (command == `${command}`) {
+if (command == `mates`) {
 //let id = text.join(' ')
 let ejemplo = `Respuesta 1`
 
