@@ -9,13 +9,13 @@ ${Object.keys(modes).join('  |  ')}
 ${usedPrefix + command} noob
 ${usedPrefix + command} impossible2
 
-𝙈𝙄𝙀𝙉𝙏𝙍𝘼𝙎 𝙈𝘼𝙎 𝘿𝙄𝙁𝙄𝘾𝙐𝙇𝙏𝘼𝘿 𝙋𝙊𝘿𝙍𝘼 𝙊𝘽𝙏𝙀𝙉𝙀𝙍 𝙈𝘼𝙔𝙊𝙍 𝙍𝙀𝘾𝙊𝙈𝙋𝙀𝙉𝙎𝘼
-𝙏𝙃𝙀 𝙈𝙊𝙍𝙀 𝘿𝙄𝙁𝙁𝙄𝘾𝙐𝙇𝙏𝙔 𝙔𝙊𝙐 𝘾𝘼𝙉 𝙂𝙀𝙏 𝙏𝙃𝙀 𝙂𝙍𝙀𝘼𝙏𝙀𝙍 𝙍𝙀𝙒𝘼𝙍𝘿
+😼 𝙈𝙄𝙀𝙉𝙏𝙍𝘼𝙎 𝙈𝘼𝙎 𝘿𝙄𝙁𝙄𝘾𝙐𝙇𝙏𝘼𝘿 𝙈𝘼𝙔𝙊𝙍 𝙍𝙀𝘾𝙊𝙈𝙋𝙀𝙉𝙎𝘼
+😼 𝙈𝙊𝙍𝙀 𝘿𝙄𝙁𝙁𝙄𝘾𝙐𝙇𝙏𝙔 𝙔𝙊𝙐 𝘾𝘼𝙉 𝙂𝙀𝙏 𝙏𝙃𝙀 𝙂𝙍𝙀𝘼𝙏𝙀𝙍 𝙍𝙀𝙒𝘼𝙍𝘿
 `.trim()
 if (args.length < 1) return conn.sendHydrated(m.chat, wm, mat, null, null, null, null, null, [
-['𝙼𝙰𝚃𝙴𝚂 𝙴𝙰𝚂𝚈', `${usedPrefix + command} easy`], 
-['𝙼𝙰𝚃𝙴𝚂 𝙼𝙴𝙳𝙸𝚄𝙼', `${usedPrefix + command} medium`], 
-['𝙼𝙰𝚃𝙴𝚂 𝙷𝙰𝚁𝙳', `${usedPrefix + command} hard`]], m)
+['𝙁𝙖𝙘𝙞𝙡 | 𝙀𝙖𝙨𝙮', `${usedPrefix + command} easy`], 
+['𝘿𝙞𝙛𝙞𝙘𝙞𝙡 | 𝙃𝙖𝙧𝙙', `${usedPrefix + command} hard`], 
+['𝙀𝙭𝙩𝙧𝙚𝙢𝙤 | 𝙀𝙭𝙩𝙧𝙚𝙢𝙚', `${usedPrefix + command} extreme`]], m)
 let mode = args[0].toLowerCase()
 if (!(mode in modes)) return conn.sendHydrated(m.chat, wm, mat, null, null, null, null, null, [
 ['𝙼𝙰𝚃𝙴𝚂 𝙴𝙰𝚂𝚈', `${usedPrefix + command} easy`], 
