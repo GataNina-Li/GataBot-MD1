@@ -1,8 +1,9 @@
 global.math = global.math ? global.math : {}
 let handler  = async (m, { conn, args, usedPrefix, command }) => {
-let mat =`${iig}PUEDE USAR LOS BOTONES O ESCRIBIR LA DIFICULTAD 
+let mat =`❕⊱ 𝙄𝙉𝙁𝙊𝙍𝙈𝘼𝘾𝙄𝙊́𝙉 | 𝙄𝙉𝙁𝙊𝙍𝙈𝘼𝙏𝙄𝙊𝙉 ⊱❕\n\n🎔 PUEDE USAR LOS BOTONES O ESCRIBIR LA DIFICULTAD\n🎔 𝙔𝙊𝙐 𝘾𝘼𝙉 𝙐𝙎𝙀 𝙏𝙃𝙀 𝘽𝙐𝙏𝙏𝙊𝙉𝙎 𝙊𝙍 𝙒𝙍𝙄𝙏𝙀 𝙏𝙃𝙀 𝘿𝙄𝙁𝙁𝙄𝘾𝙐𝙇𝙏𝙔
 
-NIVEL DE DIFICULTAD: ${Object.keys(modes).join('  |  ')}
+NIVEL DE DIFICULTAD | 𝘿𝙄𝙁𝙁𝙄𝘾𝙐𝙇𝙏𝙔 𝙇𝙀𝙑𝙀𝙇
+${Object.keys(modes).join('  |  ')}
 
 ${usedPrefix + command} noob
 ${usedPrefix + command} impossible2
