@@ -104,12 +104,12 @@ footer: global.wm,
 templateButtons: templateButtonsReplyMessage
 } 
 conn.sendMessage(m.chat, tt, m)
-}   
+ 
     
     
  if (command == 'juegos') { 
            let c = `${usedPrefix}`
-           let juegos = `${pickRandom([`${c}reto`,`${c}verdad`])}`
+           //let juegos = `${pickRandom([`${c}reto`,`${c}verdad`])}`
 
            let sss = await `Use los botones`
 
@@ -126,11 +126,11 @@ footer: global.wm,
 templateButtons: templateButtonsReplyMessage
 } 
 conn.sendMessage(m.chat, ttt, m)
-}   
+
       
    if (command == 'juegos') {  
                  let c = `${usedPrefix}`
-                 let juegos = `${pickRandom([`${c}reto`,`${c}verdad`])}`
+                 //let juegos = `${pickRandom([`${c}reto`,`${c}verdad`])}`
          
                  let ssss = await `Use los botones`
 
@@ -152,7 +152,7 @@ conn.sendMessage(m.chat, tttt, m)
 handler.help = ['infomenu'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
 handler.command = ['multijuegos', 'juegos']
-handler.exp = 50
+handler.exp = 500
 export default handler
                               
 const more = String.fromCharCode(8206)
