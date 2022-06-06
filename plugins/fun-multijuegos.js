@@ -108,7 +108,7 @@ conn.sendMessage(m.chat, tt, m)
 } 
     
     
- /*if (command == 'juegos') { 
+ if (command == 'juegos') { 
            let c = `${usedPrefix}`
            let juegos = `${pickRandom([`${c}reto`,`${c}verdad`])}`
 
@@ -127,7 +127,7 @@ footer: global.wm,
 templateButtons: templateButtonsReplyMessage
 } 
 conn.sendMessage(m.chat, ttt, m)
-}*/
+}
   
   if (command == 'juegos') {  
                  let c = `${usedPrefix}`
