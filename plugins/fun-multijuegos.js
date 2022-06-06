@@ -87,7 +87,7 @@ conn.sendMessage(m.chat, t, m)
   if (command == 'juegos') { 
               let c = `${usedPrefix}`
               let juegos = `${pickRandom([`${c}reto`,`${c}verdad`,`${c}topgays`,`${c}topotakus`,`${c}mates medium`,`${c}mates noob`])}`
-              let juegos2 = `${pickRandom([`${c}reto`,`${c}verdad`,`${c}formarpareja`,`${c}ppt tijeras`,`${c}ppt piedra`])}`
+              //let juegos2 = `${pickRandom([`${c}reto`,`${c}verdad`,`${c}formarpareja`,`${c}ppt tijeras`,`${c}ppt piedra`])}`
 
               let ss = await `Use los botones`
 
@@ -96,7 +96,7 @@ conn.sendMessage(m.chat, t, m)
 {index: 2, urlButton: {displayText: '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢', url: 'https://www.instagram.com/gata_dios/'}},
 {index: 3, quickReplyButton: {displayText: `✨`, id: juegos}},
 {index: 4, quickReplyButton: {displayText: `🥳`, id: juegos}},
-{index: 5, quickReplyButton: {displayText: `🐈`, id: juegos2}},
+{index: 5, quickReplyButton: {displayText: `🐈`, id: juegos}},
 ]
  
 let tt = {
