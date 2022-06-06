@@ -85,6 +85,7 @@ conn.sendMessage(m.chat, t, m)
   
   
   if (command == 'juegos') { 
+    global.db.data.users[m.sender].money += 500
               let c = `${usedPrefix}`
               let juegos = `${pickRandom([`${c}reto`,`${c}verdad`,`${c}topgays`,`${c}topotakus`,`${c}mates medium`,`${c}mates noob`])}`
                let emojis1 = `${pickRandom([`🦁`,`🐮`,`🦖`,`👻`,`🐈`,`🐆`,`🐅`,`🐒`])}`
