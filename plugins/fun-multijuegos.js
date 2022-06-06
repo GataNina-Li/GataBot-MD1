@@ -84,7 +84,7 @@ conn.sendMessage(m.chat, t, m)
 }
   
   
-  if (command == 'juegos1') { 
+  if (command == 'juegos') { 
               let c = `${usedPrefix}`
               let juegos = `${pickRandom([`${c}reto`,`${c}verdad`,`${c}topgays`,`${c}topotakus`,`${c}mates medium`,`${c}mates noob`])}`
               //let juegos2 = `${pickRandom([`${c}reto`,`${c}verdad`,`${c}formarpareja`,`${c}ppt tijeras`,`${c}ppt piedra`])}`
@@ -108,7 +108,7 @@ conn.sendMessage(m.chat, tt, m)
 } 
     
     
- if (command == 'juegos1') { 
+ /*if (command == 'juegos') { 
            let c = `${usedPrefix}`
            let juegos = `${pickRandom([`${c}reto`,`${c}verdad`])}`
 
@@ -127,9 +127,9 @@ footer: global.wm,
 templateButtons: templateButtonsReplyMessage
 } 
 conn.sendMessage(m.chat, ttt, m)
-}
-      
-   if (command == 'juegos1') {  
+}*/
+  
+  if (command == 'juegos') {  
                  let c = `${usedPrefix}`
                  let juegos = `${pickRandom([`${c}reto`,`${c}verdad`])}`
          
@@ -140,7 +140,30 @@ conn.sendMessage(m.chat, ttt, m)
 {index: 2, urlButton: {displayText: null, url: null}},
 {index: 3, quickReplyButton: {displayText: '🎁', id: juegos}},
 {index: 4, quickReplyButton: {displayText: '🤨', id: juegos}},
-{index: 5, quickReplyButton: {displayText: 'Reiniciar', id: '#juegos1'}},
+{index: 5, quickReplyButton: {displayText: 'Reiniciar', id: '#juegos'}},
+]
+let tttt = {
+text: ssss,
+footer: global.wm,
+templateButtons: templateButtonsReplyMessage
+  } 
+conn.sendMessage(m.chat, tttt, m)  
+}
+  
+  
+      
+   if (command == 'juegos') {  
+                 let c = `${usedPrefix}`
+                 let juegos = `${pickRandom([`${c}reto`,`${c}verdad`])}`
+         
+                 let ssss = await `Use los botones`
+
+ const templateButtonsReplyMessage = [
+{index: 1, urlButton: {displayText: null, url: null}},
+{index: 2, urlButton: {displayText: null, url: null}},
+{index: 3, quickReplyButton: {displayText: '🎁', id: juegos}},
+{index: 4, quickReplyButton: {displayText: '🤨', id: juegos}},
+{index: 5, quickReplyButton: {displayText: 'Reiniciar', id: '#juegos'}},
 ]
 let tttt = {
 text: ssss,
@@ -152,7 +175,7 @@ conn.sendMessage(m.chat, tttt, m)
  }
 handler.help = ['infomenu'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
-handler.command = ['multijuegos', 'juegos1']
+handler.command = ['multijuegos', 'juegos']
 handler.group = true
 handler.exp = 500
 export default handler
