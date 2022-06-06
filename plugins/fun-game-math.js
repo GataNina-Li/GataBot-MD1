@@ -62,16 +62,6 @@ impossible: [-99999999999, 99999999999, -99999999999, 999999999999, '*/', 30000,
 impossible2: [-999999999999999, 999999999999999, -999, 999, '/', 30000, 5000]
 } 
 
-let diamantes = {
-noob: [-3, 3,-3, 3, '+-', 15000, 10], 
-easy: [-10, 10, -10, 10, '*/+-', 20000, 40],
-medium: [-40, 40, -20, 20, '*/+-', 40000, 150],
-hard: [-100, 100, -70, 70, '*/+-', 60000, 350],
-extreme: [-999999, 999999, -999999, 999999, '*/', 99999, 9999],
-impossible: [-99999999999, 99999999999, -99999999999, 999999999999, '*/', 30000, 35000],
-impossible2: [-999999999999999, 999999999999999, -999, 999, '/', 30000, 5000]
-} 
-
 let operators = {
 '+': '+',
 '-': '-',
@@ -92,24 +82,25 @@ str: `${a} ${operators[op]} ${b}`,
 mode,
 time,
 bonus,
+dia,
 result
 }}
 
 // Diamantes
-function genMath(mod) {
-let [aa1, aa2, bb1, bb2, ops, time, dia] = diamantes[mod]
-let aa = randomInt(aa1, aa2)
-let bb = randomInt(bb1, bb2)
-let op = pickRandom([...ops])
-let result = (new Function(`return ${aa} ${op.replace('/', '*')} ${bb < 0 ? `(${bb})` : bb}`))()
-if (op == '/') [aa, result] = [result, aa]
-return {
-str: `${aa} ${operators[op]} ${bb}`,
-mode,
-time,
-dia,
-result
-}}
+//function genMath(mod) {
+//let [aa1, aa2, bb1, bb2, ops, time, dia] = diamantes[mod]
+//let aa = randomInt(aa1, aa2)
+//let bb = randomInt(bb1, bb2)
+//let op = pickRandom([...ops])
+//let result = (new Function(`return ${aa} ${op.replace('/', '*')} ${bb < 0 ? `(${bb})` : bb}`))()
+//if (op == '/') [aa, result] = [result, aa]
+//return {
+//str: `${aa} ${operators[op]} ${bb}`,
+//mode,
+//time,
+//dia,
+//result
+//}}
 
 function randomInt(from, to) {
 if (from > to) [from, to] = [to, from]
