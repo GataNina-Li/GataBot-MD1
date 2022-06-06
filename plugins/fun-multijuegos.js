@@ -70,7 +70,7 @@ if (command == 'multijuegos') {
  const templateButtonsReplyMessage = [
 {index: 1, urlButton: {displayText: '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', url: 'https://github.com/GataNina-Li/GataBot-MD'}},
 {index: 2, urlButton: {displayText: '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢', url: 'https://www.instagram.com/gata_dios/'}},
-{index: 3, quickReplyButton: {displayText: 'Ingresar', id: '.juegos1'}},
+{index: 3, quickReplyButton: {displayText: 'Ingresar', id: '.juegos'}},
 {index: 4, quickReplyButton: {displayText: 'menu de juegos', id: '#infobot'}},
 {index: 5, quickReplyButton: {displayText: '𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪', id: '#menu'}},
 ]
