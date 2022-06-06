@@ -62,7 +62,7 @@ impossible: [-99999999999, 99999999999, -99999999999, 999999999999, '*/', 30000,
 impossible2: [-999999999999999, 999999999999999, -999, 999, '/', 30000, 5000]
 } 
 
-let dia = {
+let diamantes = {
 noob: [-3, 3,-3, 3, '+-', 15000, 10], 
 easy: [-10, 10, -10, 10, '*/+-', 20000, 40],
 medium: [-40, 40, -20, 20, '*/+-', 40000, 150],
@@ -82,6 +82,21 @@ let operators = {
 // XP
 function genMath(mode) {
 let [a1, a2, b1, b2, ops, time, bonus] = modes[mode]
+let a = randomInt(a1, a2)
+let b = randomInt(b1, b2)
+let op = pickRandom([...ops])
+let result = (new Function(`return ${a} ${op.replace('/', '*')} ${b < 0 ? `(${b})` : b}`))()
+if (op == '/') [a, result] = [result, a]
+return {
+str: `${a} ${operators[op]} ${b}`,
+mode,
+time,
+bonus,
+result
+}}
+
+function gennMath(mode) {
+let [a1, a2, b1, b2, ops, time, dia] = diamantes[mode]
 let a = randomInt(a1, a2)
 let b = randomInt(b1, b2)
 let op = pickRandom([...ops])
