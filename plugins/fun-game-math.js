@@ -54,7 +54,7 @@ handler.command = /^math|mates|matemáticas/i
 export default handler
 
 let modes = {
-noob: [-3, 3,-3, 3, '+-', 15000, 10], 
+noob: [-3, 3,-3, 3, '+-', 15000, 30], 
 easy: [-10, 10, -10, 10, '*/+-', 20000, 40],
 medium: [-40, 40, -20, 20, '*/+-', 40000, 150],
 hard: [-100, 100, -70, 70, '*/+-', 60000, 350],
