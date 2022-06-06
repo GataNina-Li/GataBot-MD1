@@ -153,6 +153,7 @@ conn.sendMessage(m.chat, tttt, m)
 handler.help = ['infomenu'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
 handler.command = ['multijuegos', 'juegos']
+handler.group = true
 handler.exp = 500
 export default handler
                               
