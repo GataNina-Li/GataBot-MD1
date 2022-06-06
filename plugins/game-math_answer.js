@@ -8,11 +8,11 @@ if (!/^𝘾𝙪𝙖𝙡 𝙚𝙨 𝙧𝙚𝙨𝙪𝙡𝙩𝙖𝙙𝙤 𝙙𝙚/i
 if (!(m.chat in global.math)) return conn.sendButton(m.chat, '*[❗𝐈𝐍𝐅𝐎❗] 𝚈𝙰 𝚂𝙴 𝙰𝙷 𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙸𝙳𝙾 𝙰 𝙴𝚂𝙰 𝙿𝚁𝙴𝙶𝚄𝙽𝚃𝙰*', author, null, [['𝚅𝙾𝙻𝚅𝙴𝚁 𝙰 𝙹𝚄𝙶𝙰𝚁', '/mates']], m)
 if (m.quoted.id == global.math[id][0].id) {
 let math = global.math[id][1]
-let money0 = global.db.data.users[m.sender].money += 1000000
+let gatacoins = global.db.data.users[m.sender].money += 1000
 if (m.text == math.result) {
-  if (conn.sendButton == money0) {
+  //if (conn.sendButton == money0) {
  
-conn.sendButton(m.chat, `*𝚁𝙴𝚂𝙿𝚄𝙴𝚂 𝙲𝙾𝚁𝚁𝙴𝙲𝚃𝙰!!*\n*𝙷𝙰𝚉 𝙶𝙰𝙽𝙰𝙳𝙾: ${math.bonus} 𝚇𝙿*\bono ${money0}`, author, null, [['𝚅𝙾𝙻𝚅𝙴𝚁 𝙰 𝙹𝚄𝙶𝙰𝚁', `/math ${math.mode}`]], m)}
+conn.sendButton(m.chat, `💖 RESPUESTA CORRECTA, QUE PRO 😎\n🏆 GANASTE: ${math.bonus} XP\n🎁 BONO: $${gatacoins} GataCoins`, wm, null, [['𝚅𝙾𝙻𝚅𝙴𝚁 𝙰 𝙹𝚄𝙶𝙰𝚁', `/math ${math.mode}`], ['𝙈𝙚𝙣𝙪 𝙅𝙪𝙚𝙜𝙤𝙨 | 𝙂𝙖𝙢𝙚𝙨 𝙈𝙚𝙣𝙪 🎡', `/juegosmenu`]], m)
 global.db.data.users[m.sender].exp += math.bonus
 
 clearTimeout(global.math[id][3])
