@@ -70,7 +70,7 @@ if (command == 'multijuegos') {
  const templateButtonsReplyMessage = [
 {index: 1, urlButton: {displayText: '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', url: 'https://github.com/GataNina-Li/GataBot-MD'}},
 {index: 2, urlButton: {displayText: '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢', url: 'https://www.instagram.com/gata_dios/'}},
-{index: 3, quickReplyButton: {displayText: 'Ingresar', id: '.juegos'}},
+{index: 3, quickReplyButton: {displayText: 'Ingresar', id: '.juegos1'}},
 {index: 4, quickReplyButton: {displayText: 'menu de juegos', id: '#infobot'}},
 {index: 5, quickReplyButton: {displayText: '𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪', id: '#menu'}},
 ]
@@ -84,7 +84,7 @@ conn.sendMessage(m.chat, t, m)
 }
   
   
-  if (command == 'juegos') { 
+  if (command == 'juegos1') { 
               let c = `${usedPrefix}`
               let juegos = `${pickRandom([`${c}reto`,`${c}verdad`,`${c}topgays`,`${c}topotakus`,`${c}mates medium`,`${c}mates noob`])}`
               //let juegos2 = `${pickRandom([`${c}reto`,`${c}verdad`,`${c}formarpareja`,`${c}ppt tijeras`,`${c}ppt piedra`])}`
@@ -108,7 +108,7 @@ conn.sendMessage(m.chat, tt, m)
 } 
     
     
- if (command == 'juegos') { 
+ if (command == 'juegos1') { 
            let c = `${usedPrefix}`
            let juegos = `${pickRandom([`${c}reto`,`${c}verdad`])}`
 
@@ -129,7 +129,7 @@ templateButtons: templateButtonsReplyMessage
 conn.sendMessage(m.chat, ttt, m)
 }
       
-   if (command == 'juegos') {  
+   if (command == 'juegos1') {  
                  let c = `${usedPrefix}`
                  let juegos = `${pickRandom([`${c}reto`,`${c}verdad`])}`
          
@@ -140,7 +140,7 @@ conn.sendMessage(m.chat, ttt, m)
 {index: 2, urlButton: {displayText: null, url: null}},
 {index: 3, quickReplyButton: {displayText: '🎁', id: juegos}},
 {index: 4, quickReplyButton: {displayText: '🤨', id: juegos}},
-{index: 5, quickReplyButton: {displayText: 'Reiniciar', id: '#juegos'}},
+{index: 5, quickReplyButton: {displayText: 'Reiniciar', id: '#juegos1'}},
 ]
 let tttt = {
 text: ssss,
@@ -152,7 +152,7 @@ conn.sendMessage(m.chat, tttt, m)
  }
 handler.help = ['infomenu'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
-handler.command = ['multijuegos', 'juegos']
+handler.command = ['multijuegos', 'juegos1']
 handler.group = true
 handler.exp = 500
 export default handler
