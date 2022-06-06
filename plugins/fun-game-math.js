@@ -96,7 +96,7 @@ bonus,
 result
 }}
 
-function genMath(mode) {
+function gennMath(mode) {
 let [a1, a2, b1, b2, ops, time, dia] = diamantes[mode]
 let a = randomInt(a1, a2)
 let b = randomInt(b1, b2)
