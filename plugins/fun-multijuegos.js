@@ -136,7 +136,7 @@ conn.sendMessage(m.chat, ttt, m)
                  let c = `${usedPrefix}`
                  let juegos = `${pickRandom([`${c}reto`,`${c}verdad`])}`
          
-                 let ssss = `Use los botones`
+                 let ssss = await `Use los botones`
 
  const templateButtonsReplyMessage = [
 {index: 1, urlButton: {displayText: null, url: null}},
@@ -159,7 +159,7 @@ conn.sendMessage(m.chat, tttt, m)
                  let c = `${usedPrefix}`
                  let juegos = `${pickRandom([`${c}reto`,`${c}verdad`])}`
          
-                 let ssss = `Use los botones`
+                 let ssss = await `Use los botones`
 
  const templateButtonsReplyMessage = [
 {index: 1, urlButton: {displayText: null, url: null}},
