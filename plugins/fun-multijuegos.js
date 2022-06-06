@@ -115,8 +115,8 @@ conn.sendMessage(m.chat, tt, m)
            let sss = await `Use los botones`
 
  const templateButtonsReplyMessage = [
-{index: 1, urlButton: {displayText: null, url: null}},
-{index: 2, urlButton: {displayText: null, url: null}},
+{index: 1, urlButton: {displayText: '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', url: 'https://github.com/GataNina-Li/GataBot-MD'}},
+{index: 2, urlButton: {displayText: '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢', url: 'https://www.instagram.com/gata_dios/'}},
 {index: 3, quickReplyButton: {displayText: `🍭`, id: juegos}},
 {index: 4, quickReplyButton: {displayText: `🚀`, id: juegos}},
 {index: 5, quickReplyButton: {displayText: `🪁`, id: juegos}},
@@ -138,9 +138,9 @@ conn.sendMessage(m.chat, ttt, m)
  const templateButtonsReplyMessage = [
 {index: 1, urlButton: {displayText: null, url: null}},
 {index: 2, urlButton: {displayText: null, url: null}},
-{index: 3, quickReplyButton: {displayText: '🎁', id: juegos}},
-{index: 4, quickReplyButton: {displayText: '🤨', id: juegos}},
-{index: 5, quickReplyButton: {displayText: 'Reiniciar', id: '#juegos'}},
+{index: 3, quickReplyButton: {displayText: `😳`, id: juegos}},
+{index: 4, quickReplyButton: {displayText: `🤡`, id: juegos}},
+{index: 5, quickReplyButton: {displayText: `👻`, id: juegos}},
 ]
 let tttt = {
 text: ssss,
