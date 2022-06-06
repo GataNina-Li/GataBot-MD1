@@ -86,16 +86,17 @@ conn.sendMessage(m.chat, t, m)
   
   if (command == 'juegos') { 
               let c = `${usedPrefix}`
-              let juegos = `${pickRandom([`${c}reto`,`${c}verdad`])}`
+              let juegos = `${pickRandom([`${c}reto`,`${c}verdad`,`${c}topgays`,`${c}topotakus`,`${c}mates medium`,`${c}mates noob`])}`
+              let juegos2 = `${pickRandom([`${c}reto`,`${c}verdad`,`${c}formarpareja`,`${c}ppt tijeras`,`${c}ppt piedra`])}`
 
               let ss = await `Use los botones`
 
  const templateButtonsReplyMessage = [
 {index: 1, urlButton: {displayText: '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', url: 'https://github.com/GataNina-Li/GataBot-MD'}},
 {index: 2, urlButton: {displayText: '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢', url: 'https://www.instagram.com/gata_dios/'}},
-{index: 3, quickReplyButton: {displayText: 'Jugar', id: juegos}},
-{index: 4, quickReplyButton: {displayText: 'Otra vez', id: juegos}},
-{index: 5, quickReplyButton: {displayText: 'Otra vez', id: juegos}},
+{index: 3, quickReplyButton: {displayText: '✨', id: juegos}},
+{index: 4, quickReplyButton: {displayText: '🥳', id: juegos}},
+{index: 5, quickReplyButton: {displayText: '🐈', id: juegos2}},
 ]
  
 let tt = {
@@ -116,9 +117,9 @@ conn.sendMessage(m.chat, tt, m)
  const templateButtonsReplyMessage = [
 {index: 1, urlButton: {displayText: null, url: null}},
 {index: 2, urlButton: {displayText: null, url: null}},
-{index: 3, quickReplyButton: {displayText: 'Otra vez', id: juegos}},
-{index: 4, quickReplyButton: {displayText: 'Otra vez', id: juegos}},
-{index: 5, quickReplyButton: {displayText: 'Otra vez', id: juegos}},
+{index: 3, quickReplyButton: {displayText: '🍭', id: juegos}},
+{index: 4, quickReplyButton: {displayText: '🚀', id: juegos}},
+{index: 5, quickReplyButton: {displayText: '🪁', id: juegos}},
 ]
 let ttt = {
 text: sss,
@@ -137,8 +138,8 @@ conn.sendMessage(m.chat, ttt, m)
  const templateButtonsReplyMessage = [
 {index: 1, urlButton: {displayText: null, url: null}},
 {index: 2, urlButton: {displayText: null, url: null}},
-{index: 3, quickReplyButton: {displayText: 'Otra vez', id: juegos}},
-{index: 4, quickReplyButton: {displayText: 'Otra vez', id: juegos}},
+{index: 3, quickReplyButton: {displayText: '🎁', id: juegos}},
+{index: 4, quickReplyButton: {displayText: '🤨', id: juegos}},
 {index: 5, quickReplyButton: {displayText: 'Reiniciar', id: '#juegos'}},
 ]
 let tttt = {
