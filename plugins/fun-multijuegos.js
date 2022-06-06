@@ -85,7 +85,7 @@ conn.sendMessage(m.chat, t, m)
   
   
   if (command == 'juegos') { 
-    global.db.data.users[m.sender].money += 500
+    
               let c = `${usedPrefix}`
               let juegos = `${pickRandom([`${c}reto`,`${c}verdad`,`${c}topgays`,`${c}topotakus`,`${c}mates medium`,`${c}mates noob`])}`
                let emojis1 = `${pickRandom([`🦁`,`🐮`,`🦖`,`👻`,`🐈`,`🐆`,`🐅`,`🐒`])}`
@@ -181,7 +181,8 @@ handler.help = ['infomenu'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
 handler.command = ['multijuegos', 'juegos']
 handler.group = true
-handler.exp = 500
+handler.exp = 200
+handler.money = 200
 export default handler
                               
 const more = String.fromCharCode(8206)
