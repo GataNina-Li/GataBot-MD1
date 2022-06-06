@@ -27,7 +27,6 @@ let id = m.chat
 if (id in global.math) return conn.reply(m.chat, `${ag} 𝙃𝘼𝙔 𝙋𝙍𝙀𝙂𝙐𝙉𝙏𝘼𝙎 𝙎𝙄𝙉 𝙍𝙀𝙎𝙋𝙊𝙉𝘿𝙀𝙍 𝙀𝙉 𝙀𝙇 𝘾𝙃𝘼𝙏!!\n\n𝙏𝙃𝙀𝙍𝙀 𝘼𝙍𝙀 𝙌𝙐𝙀𝙎𝙏𝙄𝙊𝙉𝙎 𝙒𝙄𝙏𝙃𝙊𝙐𝙏 𝘼𝙉𝙎𝙒𝙀𝙍𝙄𝙉𝙂 𝙄𝙉 𝙏𝙃𝙀 𝘾𝙃𝘼𝙏!!`, global.math[id][0])
 //let ii = global.db.data.users[m.sender].limit += 10 math.dia
 let math = genMath(mode)
-let mathh = gennMath(mode)
 global.math[id] = [
 await conn.reply(m.chat, `𝘾𝙪𝙖𝙡 𝙚𝙨 𝙧𝙚𝙨𝙪𝙡𝙩𝙖𝙙𝙤 𝙙𝙚 *${math.str} = ?*
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
@@ -36,7 +35,7 @@ await conn.reply(m.chat, `𝘾𝙪𝙖𝙡 𝙚𝙨 𝙧𝙚𝙨𝙪𝙡𝙩𝙖
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 𝙍𝙚𝙨𝙥𝙤𝙣𝙙𝙚 𝙖 𝙚𝙨𝙩𝙚 𝙢𝙚𝙣𝙨𝙖𝙟𝙚 𝙮 𝙂𝙖𝙣𝙖 
 🏆 *${math.bonus} 𝙓𝙋*
-dia ${mathh.dia}`, m),
+`, m),
 math, 4,
   
 await conn.sendHydrated(m.chat, `⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️`, `𝙍𝙀𝙎𝙋𝙊𝙉𝘿𝘼 𝘼𝙇 𝙈𝙀𝙉𝙎𝘼𝙅𝙀 𝘿𝙀 𝘼𝙍𝙍𝙄𝘽𝘼 𝘾𝙊𝙉 𝙇𝘼 𝙍𝙀𝙎𝙋𝙐𝙀𝙎𝙏𝘼\n\n𝘼𝙉𝙎𝙒𝙀𝙍 𝙏𝙃𝙀 𝙈𝙀𝙎𝙎𝘼𝙂𝙀 𝘼𝘽𝙊𝙑𝙀 𝙏𝙊 𝙆𝙉𝙊𝙒 𝙔𝙊𝙐𝙍 𝘼𝙉𝙎𝙒𝙀𝙍`, null, md, '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [ 
@@ -56,16 +55,6 @@ export default handler
 
 let modes = {
 noob: [-3, 3,-3, 3, '+-', 15000, 10], 
-easy: [-10, 10, -10, 10, '*/+-', 20000, 40],
-medium: [-40, 40, -20, 20, '*/+-', 40000, 150],
-hard: [-100, 100, -70, 70, '*/+-', 60000, 350],
-extreme: [-999999, 999999, -999999, 999999, '*/', 99999, 9999],
-impossible: [-99999999999, 99999999999, -99999999999, 999999999999, '*/', 30000, 35000],
-impossible2: [-999999999999999, 999999999999999, -999, 999, '/', 30000, 5000]
-} 
-
-let diamantes = {
-noob: [-2, 3, -3, 3, '+-', 15000, 10], 
 easy: [-10, 10, -10, 10, '*/+-', 20000, 40],
 medium: [-40, 40, -20, 20, '*/+-', 40000, 150],
 hard: [-100, 100, -70, 70, '*/+-', 60000, 350],
@@ -96,37 +85,6 @@ time,
 bonus,
 result
 }}
-
-function gennMath(mode) {
-let [a1, a2, b1, b2, ops, time, dia] = diamantes[mode]
-let a = randomInt(a1, a2)
-let b = randomInt(b1, b2)
-let op = pickRandom([...ops])
-let result = (new Function(`return ${a} ${op.replace('/', '*')} ${b < 0 ? `(${b})` : b}`))()
-if (op == '/') [a, result] = [result, a]
-return {
-str: `${a} ${operators[op]} ${b}`,
-mode,
-time,
-dia,
-result
-}}
-
-// Diamantes
-//function genMath(mod) {
-//let [aa1, aa2, bb1, bb2, ops, time, dia] = diamantes[mod]
-//let aa = randomInt(aa1, aa2)
-//let bb = randomInt(bb1, bb2)
-//let op = pickRandom([...ops])
-//let result = (new Function(`return ${aa} ${op.replace('/', '*')} ${bb < 0 ? `(${bb})` : bb}`))()
-//if (op == '/') [aa, result] = [result, aa]
-//return {
-//str: `${aa} ${operators[op]} ${bb}`,
-//mode,
-//time,
-//dia,
-//result
-//}}
 
 function randomInt(from, to) {
 if (from > to) [from, to] = [to, from]
