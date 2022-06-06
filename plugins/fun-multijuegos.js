@@ -87,6 +87,7 @@ conn.sendMessage(m.chat, t, m)
   if (command == 'juegos') { 
               let c = `${usedPrefix}`
               let juegos = `${pickRandom([`${c}reto`,`${c}verdad`,`${c}topgays`,`${c}topotakus`,`${c}mates medium`,`${c}mates noob`])}`
+               let emojis = `${pickRandom([`🥳`,`🎃`,`🐈`,`👻`,`😼`,`👀`,`🥸`,`✨`])}`
               //let juegos2 = `${pickRandom([`${c}reto`,`${c}verdad`,`${c}formarpareja`,`${c}ppt tijeras`,`${c}ppt piedra`])}`
 
               let ss = await `Use los botones`
@@ -94,9 +95,9 @@ conn.sendMessage(m.chat, t, m)
  const templateButtonsReplyMessage = [
 {index: 1, urlButton: {displayText: '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', url: 'https://github.com/GataNina-Li/GataBot-MD'}},
 {index: 2, urlButton: {displayText: '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢', url: 'https://www.instagram.com/gata_dios/'}},
-{index: 3, quickReplyButton: {displayText: `✨`, id: juegos}},
-{index: 4, quickReplyButton: {displayText: `🥳`, id: juegos}},
-{index: 5, quickReplyButton: {displayText: `🐈`, id: juegos}},
+{index: 3, quickReplyButton: {displayText: emojis, id: juegos}},
+{index: 4, quickReplyButton: {displayText: emojis, id: juegos}},
+{index: 5, quickReplyButton: {displayText: emojis, id: juegos}},
 ]
  
 let tt = {
