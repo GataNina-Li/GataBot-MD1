@@ -138,16 +138,19 @@ conn.sendMessage(m.chat, ttt, m)
   
   if (command == 'juegos') {  
                  let c = `${usedPrefix}`
-                 let juegos = `${pickRandom([`${c}reto`,`${c}verdad`])}`
+                  let juegos = `${pickRandom([`${c}reto`,`${c}verdad`])}`
+                   let emojis1 = `${pickRandom([`🎄`,`🌲`,`🌴`,`🌱`,`🌿`,`☘️`,`🍀`,`🪴`,`🍃`,`🍂`,`🍁`,`🍄`,`🌷`,`🌹`,`💐`,`🌼`,`🌻`,`🌺`,`🌸`])}`
+                    let emojis2 = `${pickRandom([`❤️`,`🧡`,`💛`,`💚`,`💙`,`💜`,`🖤`,`🤍`,`🤎`,`💔`,`❤️‍🔥`,`❤️‍🩹`,`❣️`,`💕`,`💞`,`💓`,`💗`,`💖`,`💘`,`💝`])}`
+                     let emojis3 = `${pickRandom([`🪁`,`🥊`,`🥋`,`🎣`,`🎊`,`🎉`,`🪄`,`🎈`,`✨`,`⭐`,`💫`,`🌟`,`🪐`,`🌈`,`🔥`,`💥`,`☃️`,`❄️`,`⛱️`,`🗿`,`🔮`])}`
          
                  let ssss = await `Use los botones`
 
  const templateButtonsReplyMessage = [
 {index: 1, urlButton: {displayText: null, url: null}},
 {index: 2, urlButton: {displayText: null, url: null}},
-{index: 3, quickReplyButton: {displayText: `😳`, id: juegos}},
-{index: 4, quickReplyButton: {displayText: `🤡`, id: juegos}},
-{index: 5, quickReplyButton: {displayText: `👻`, id: juegos}},
+{index: 3, quickReplyButton: {displayText: emojis1, id: juegos}},
+{index: 4, quickReplyButton: {displayText: emojis2, id: juegos}},
+{index: 5, quickReplyButton: {displayText: emojis3, id: juegos}},
 ]
 let tttt = {
 text: ssss,
@@ -161,7 +164,9 @@ conn.sendMessage(m.chat, tttt, m)
       
    if (command == 'juegos') {  
                  let c = `${usedPrefix}`
-                 let juegos = `${pickRandom([`${c}reto`,`${c}verdad`])}`
+                  let juegos = `${pickRandom([`${c}reto`,`${c}verdad`])}`
+                   let emojis1 = `${pickRandom([`🦁`,`🐮`,`🦖`,`👻`,`🐈`,`🐆`,`🐅`,`🐒`])}`
+                    let emojis2 = `${pickRandom([`💟`,`☮️`,`☪️`,`☯️`,`🕉️`,`☸️`,`✡️`,`🔯`])}`
          
                  let ssss = await `Use los botones`
 
@@ -170,7 +175,7 @@ conn.sendMessage(m.chat, tttt, m)
 {index: 2, urlButton: {displayText: null, url: null}},
 {index: 3, quickReplyButton: {displayText: '🎁', id: juegos}},
 {index: 4, quickReplyButton: {displayText: '🤨', id: juegos}},
-{index: 5, quickReplyButton: {displayText: 'Reiniciar', id: '#juegos'}},
+{index: 5, quickReplyButton: {displayText: '🎁 𝙈𝙖𝙨 𝙅𝙪𝙚𝙜𝙤𝙨 | 𝙍𝙚𝙨𝙩𝙖𝙧𝙩', id: '#juegos'}},
 ]
 let tttt = {
 text: ssss,
