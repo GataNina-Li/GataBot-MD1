@@ -1,5 +1,6 @@
 global.math = global.math ? global.math : {}
 let handler = async (m, { conn }) => {
+let money0 = global.db.data.users[m.sender].money += 100
 let id = m.chat
 if (!m.quoted) return
 if (m.quoted.sender != conn.user.jid) return
@@ -8,10 +9,10 @@ if (!(m.chat in global.math)) return conn.sendButton(m.chat, '*[❗𝐈𝐍𝐅�
 if (m.quoted.id == global.math[id][0].id) {
 let math = global.math[id][1]
 if (m.text == math.result) {
-conn.sendButton(m.chat, `*𝚁𝙴𝚂𝙿𝚄𝙴𝚂 𝙲𝙾𝚁𝚁𝙴𝙲𝚃𝙰!!*\n*𝙷𝙰𝚉 𝙶𝙰𝙽𝙰𝙳𝙾: ${math.bonus} 𝚇𝙿*\ndia ${mathh.dia}`, author, null, [['𝚅𝙾𝙻𝚅𝙴𝚁 𝙰 𝙹𝚄𝙶𝙰𝚁', `/math ${math.mode}`]], m)
+conn.sendButton(m.chat, `*𝚁𝙴𝚂𝙿𝚄𝙴𝚂 𝙲𝙾𝚁𝚁𝙴𝙲𝚃𝙰!!*\n*𝙷𝙰𝚉 𝙶𝙰𝙽𝙰𝙳𝙾: ${math.bonus} 𝚇𝙿*\bono ${money0}`, author, null, [['𝚅𝙾𝙻𝚅𝙴𝚁 𝙰 𝙹𝚄𝙶𝙰𝚁', `/math ${math.mode}`]], m)
 global.db.data.users[m.sender].exp += math.bonus
-global.db.data.users[m.sender].money += mathh.dia
-//global.db.data.users[m.sender].limit += math.dia
+let money0 = global.db.data.users[m.sender].money += 100
+
 clearTimeout(global.math[id][3])
 delete global.math[id]
 } else {
