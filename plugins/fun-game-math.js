@@ -106,7 +106,6 @@ return {
 str: `${a} ${operators[op]} ${b}`,
 mode,
 time,
-bonus,
 dia,
 result
 }}
