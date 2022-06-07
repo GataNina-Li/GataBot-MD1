@@ -112,7 +112,7 @@ conn.sendMessage(m.chat, t, m)
 ]
  
 let tt = {
-text: global.wm,
+text: `𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 | 𝙂𝙖𝙩𝙖 𝘿𝙞𝙤𝙨`,
 footer: gata,
 templateButtons: templateButtonsReplyMessage
 } 
@@ -141,7 +141,7 @@ conn.sendMessage(m.chat, tt, m)
 {index: 5, quickReplyButton: {displayText: `𝙅𝙪𝙜𝙖𝙧 ${emojis3}`, id: juegos3}},
 ]
 let ttt = {
-text: global.wm,
+text: `𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 | 𝙂𝙖𝙩𝙖 𝘿𝙞𝙤𝙨`,
 footer: gata,
 templateButtons: templateButtonsReplyMessage
 } 
@@ -169,7 +169,7 @@ conn.sendMessage(m.chat, ttt, m)
 {index: 5, quickReplyButton: {displayText: `𝙅𝙪𝙜𝙖𝙧 ${emojis3}`, id: juegos3}},
 ]
 let tttt = {
-text: global.wm,
+text: `𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 | 𝙂𝙖𝙩𝙖 𝘿𝙞𝙤𝙨`,
 footer: gata,
 templateButtons: templateButtonsReplyMessage
   } 
@@ -197,7 +197,7 @@ conn.sendMessage(m.chat, tttt, m)
 {index: 5, quickReplyButton: {displayText: '🎁 𝙈𝙖𝙨 𝙅𝙪𝙚𝙜𝙤𝙨 | 𝙍𝙚𝙨𝙩𝙖𝙧𝙩', id: '#juegos'}},
 ]
 let tttt = {
-text: global.wm,
+text: `𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 | 𝙂𝙖𝙩𝙖 𝘿𝙞𝙤𝙨`,
 footer: gata,
 templateButtons: templateButtonsReplyMessage
   } 
