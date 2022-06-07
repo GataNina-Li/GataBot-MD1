@@ -43,7 +43,7 @@ _muptime = await new Promise(resolve => {
 process.once('message', resolve)
 setTimeout(resolve, 1000)
 }) * 1000
-}
+} 
 let muptime = clockString(_muptime)
 let uptime = clockString(_uptime)
 let totalreg = Object.keys(global.db.data.users).length
