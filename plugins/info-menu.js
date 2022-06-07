@@ -97,8 +97,6 @@ let menu = `
 ╰━━━━━━〔 𓃠 *${vs}* 〕━━━━━━⬣
 
 ╭━〔 𝙄𝙉𝙁𝙊𝙍𝙈𝘼𝘾𝙄𝙊𝙉 | 𝙄𝙉𝙁𝙊 𝙈𝙀𝙉𝙐 〕━⬣
-┃ *PRESIONE ESTE MENSAJE PARA IR AL MENÚ.*
-┃ *PRESS THIS MESSAGE TO GO TO THE MENU.*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃💫➺ _${usedPrefix}cuentasgatabot | cuentasgb | accounts_
 ┃💫➺ _${usedPrefix}gruposgb | grupos | groupgb_
