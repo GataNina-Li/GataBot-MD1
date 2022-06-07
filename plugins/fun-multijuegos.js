@@ -128,9 +128,9 @@ conn.sendMessage(m.chat, tt, m)
  const templateButtonsReplyMessage = [
 {index: 1, urlButton: {displayText: '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', url: 'https://github.com/GataNina-Li/GataBot-MD'}},
 {index: 2, urlButton: {displayText: '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢', url: 'https://www.instagram.com/gata_dios/'}},
-{index: 3, quickReplyButton: {displayText: emojis1, id: juegos}},
-{index: 4, quickReplyButton: {displayText: emojis2, id: juegos2}},
-{index: 5, quickReplyButton: {displayText: emojis3, id: juegos3}},
+{index: 3, quickReplyButton: {displayText: `𝙅𝙪𝙜𝙖𝙧 ${emojis1}`, id: juegos}},
+{index: 4, quickReplyButton: {displayText: `𝙅𝙪𝙜𝙖𝙧 ${emojis2}`, id: juegos2}},
+{index: 5, quickReplyButton: {displayText: `𝙅𝙪𝙜𝙖𝙧 ${emojis3}`, id: juegos3}},
 ]
 let ttt = {
 text: sss,
@@ -154,9 +154,9 @@ conn.sendMessage(m.chat, ttt, m)
  const templateButtonsReplyMessage = [
 {index: 1, urlButton: {displayText: null, url: null}},
 {index: 2, urlButton: {displayText: null, url: null}},
-{index: 3, quickReplyButton: {displayText: emojis1, id: juegos}},
-{index: 4, quickReplyButton: {displayText: emojis2, id: juegos2}},
-{index: 5, quickReplyButton: {displayText: emojis3, id: juegos3}},
+{index: 3, quickReplyButton: {displayText: `𝙅𝙪𝙜𝙖𝙧 ${emojis1}`, id: juegos}},
+{index: 4, quickReplyButton: {displayText: `𝙅𝙪𝙜𝙖𝙧 ${emojis2}`, id: juegos2}},
+{index: 5, quickReplyButton: {displayText: `𝙅𝙪𝙜𝙖𝙧 ${emojis3}`, id: juegos3}},
 ]
 let tttt = {
 text: ssss,
@@ -180,8 +180,8 @@ conn.sendMessage(m.chat, tttt, m)
  const templateButtonsReplyMessage = [
 {index: 1, urlButton: {displayText: null, url: null}},
 {index: 2, urlButton: {displayText: null, url: null}},
-{index: 3, quickReplyButton: {displayText: emojis1, id: juegos2}},
-{index: 4, quickReplyButton: {displayText: emojis2, id: juegos3}},
+{index: 3, quickReplyButton: {displayText: `𝙅𝙪𝙜𝙖𝙧 ${emojis1}`, id: juegos2}},
+{index: 4, quickReplyButton: {displayText: `𝙅𝙪𝙜𝙖𝙧 ${emojis2}`, id: juegos3}},
 {index: 5, quickReplyButton: {displayText: '🎁 𝙈𝙖𝙨 𝙅𝙪𝙚𝙜𝙤𝙨 | 𝙍𝙚𝙨𝙩𝙖𝙧𝙩', id: '#juegos'}},
 ]
 let tttt = {
@@ -196,7 +196,7 @@ handler.help = ['infomenu'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
 handler.command = ['multijuegos', 'juegos']
 handler.group = true
-handler.exp = 200
+//handler.exp = 200
 handler.money = 200
 export default handler
                               
