@@ -105,25 +105,35 @@ let menu = `
 ┃🎠🎠🎠🎠🎠🎠🎠🎠🎠
 ╰━━━━━━〔 𓃠 *${vs}* 〕━━━━━━⬣
 
-╭━〔 𝘿𝙀𝙎𝘾𝘼𝙍𝙂𝘼𝙎 | 𝘿𝙊𝙒𝙉𝙇𝙊𝘼𝘿𝙎 〕━⬣
+╭━〔 𝙅𝙐𝙀𝙂𝙊𝙎 𝘿𝙄𝙉𝘼𝙈𝙄𝘾𝙊𝙎 | 𝙂𝘼𝙈𝙀𝙎 〕━⬣
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃🎡➺ _${usedPrefix}imagen | image *texto*_
-┃🎡➺ _${usedPrefix}pinterest | dlpinterest *texto*_
-┃🎡➺ _${usedPrefix}wallpaper|wp *texto*_
-┃🎡➺ _${usedPrefix}play | play2 *texto o link*_
-┃🎡➺ _${usedPrefix}play.1 *texto o link*_
-┃🎡➺ _${usedPrefix}play.2 *texto o link*_ 
-┃🎡➺ _${usedPrefix}ytmp3 | yta *link*_
-┃🎡➺ _${usedPrefix}ytmp4 | ytv *link*_
-┃🎡➺ _${usedPrefix}facebook | fb *link*_
-┃🎡➺ _${usedPrefix}instagram *link video o imagen*_
-┃🎡➺ _${usedPrefix}verig | igstalk *usuario(a)*_
-┃🎡➺ _${usedPrefix}ighistoria | igstory *usuario(a)*_
-┃🎡➺ _${usedPrefix}tiktok *link*_
-┃🎡➺ _${usedPrefix}tiktokfoto | tiktokphoto *usuario(a)*_
-┃🎡➺ _${usedPrefix}vertiktok | tiktokstalk *usuario(a)*_
-┃🎡➺ _${usedPrefix}mediafire | dlmediafire *link*_
-┃🎡➺ _${usedPrefix}clonarepo | gitclone *link*_
+┃🎡➺ _${usedPrefix}mates | matemáticas | math_
+┃🎡➺ _${usedPrefix}ppt *piedra : papel : tijera*_
+┃🎡➺ _${usedPrefix}topgays_
+┃🎡➺ _${usedPrefix}topotakus_
+┃🎡➺ _${usedPrefix}gay | gay *@tag*_
+┃🎡➺ _${usedPrefix}gay2 *nombre : @tag*_
+┃🎡➺ _${usedPrefix}lesbiana *nombre : @tag*_
+┃🎡➺ _${usedPrefix}manca *nombre : @tag*_
+┃🎡➺ _${usedPrefix}manco *nombre : @tag*_
+┃🎡➺ _${usedPrefix}pajero *nombre : @tag*_
+┃🎡➺ _${usedPrefix}pajera *nombre : @tag*_
+┃🎡➺ _${usedPrefix}puto *nombre : @tag*_
+┃🎡➺ _${usedPrefix}puta *nombre : @tag*_
+┃🎡➺ _${usedPrefix}rata *nombre : @tag*_
+┃🎡➺ _${usedPrefix}love *nombre : @tag*_
+┃🎡➺ _${usedPrefix}doxear *nombre : @tag*_
+┃🎡➺ _${usedPrefix}doxxeame_
+┃🎡➺ _${usedPrefix}pregunta *texto*_
+┃🎡➺ _${usedPrefix}slot *apuesta*_
+┃🎡➺ _${usedPrefix}formarpareja_
+┃🎡➺ _${usedPrefix}verdad_
+┃🎡➺ _${usedPrefix}reto_
+┃🎡➺ _${usedPrefix}simi | okgoogle *texto*_
+┃🎡➺ _${usedPrefix}alexa | siri | cortana *texto*_
+┃🎡➺ _${usedPrefix}simsimi | bixby *texto*_
+┃🎡➺ _${usedPrefix}multijuegos_
+┃🎡➺ _${usedPrefix}juegos_
 ╰━━━━━━━━━━━━━━━━━━━⬣`.trim()
 conn.sendHydrated(m.chat, menu, wm, pp, 'https://github.com/GataNina-Li/GataBot-MD', '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
 ['𝙈𝙚𝙣𝙪́ 𝙘𝙤𝙢𝙥𝙡𝙚𝙩𝙤 | 𝙁𝙪𝙡𝙡 𝙈𝙚𝙣𝙪 💫', '.allmenu'],
