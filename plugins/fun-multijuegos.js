@@ -155,7 +155,7 @@ conn.sendMessage(m.chat, ttt, m)
 {index: 5, quickReplyButton: {displayText: emojis3, id: juegos}},
 ]
 let tttt = {
-text: null,
+text: ssss,
 footer: global.wm,
 templateButtons: templateButtonsReplyMessage
   } 
@@ -180,7 +180,7 @@ conn.sendMessage(m.chat, tttt, m)
 {index: 5, quickReplyButton: {displayText: '🎁 𝙈𝙖𝙨 𝙅𝙪𝙚𝙜𝙤𝙨 | 𝙍𝙚𝙨𝙩𝙖𝙧𝙩', id: '#juegos'}},
 ]
 let tttt = {
-text: null,
+text: ssss,
 footer: global.wm,
 templateButtons: templateButtonsReplyMessage
   } 
