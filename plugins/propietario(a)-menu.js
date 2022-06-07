@@ -59,7 +59,7 @@ readmore: readMore
 }
 text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
   
-
+/*
 const sections = [
 {
 title: `𝙇𝙄𝙎𝙏𝘼 𝘿𝙀𝙎𝙋𝙇𝙀𝙂𝘼𝘽𝙇𝙀 | 𝘿𝙍𝙊𝙋-𝘿𝙊𝙒𝙉 𝙇𝙄𝙎𝙏`,
@@ -75,16 +75,17 @@ rows: [
 {title: "💎 𝘾𝙤𝙢𝙪𝙣𝙞𝙘𝙖𝙙𝙤 𝙂𝙚𝙣𝙚𝙧𝙖𝙡 | 𝘽𝙧𝙤𝙖𝙙𝙘𝙖𝙨𝙩 𝘼𝙡𝙡 💎", description: "𝙀𝙉𝙑𝙄𝘼𝙍 𝙐𝙉 𝘼𝙉𝙐𝙉𝘾𝙄𝙊 𝘼 𝙏𝙊𝘿𝙊𝙎\n𝙎𝙀𝙉𝘿 𝘼𝙉 𝘼𝘿 𝙏𝙊 𝙀𝙑𝙀𝙍𝙔𝙊𝙉𝙀", rowId: `${usedPrefix}bc`}, 
 {title: "💎 𝘾𝙤𝙢𝙪𝙣𝙞𝙘𝙖𝙙𝙤 𝙖 𝙋𝙧𝙞𝙫𝙖𝙙𝙤 | 𝘽𝙧𝙤𝙖𝙙𝙘𝙖𝙨𝙩 𝙋𝙧𝙞𝙫𝙖𝙩𝙚 💎", description: "𝙀𝙉𝙑𝙄𝘼𝙍 𝙐𝙉 𝘼𝙉𝙐𝙉𝘾𝙄𝙊 𝘼𝙇 𝙋𝙍𝙄𝙑𝘼𝘿𝙊\n𝙎𝙀𝙉𝘿 𝘼𝙉 𝘼𝘿 𝙏𝙊 𝙋𝙍𝙄𝙑𝘼𝙏𝙀 𝘾𝙃𝘼𝙏𝙎", rowId: `${usedPrefix}comunicarpv`},  
 {title: "💎 𝘾𝙤𝙢𝙪𝙣𝙞𝙘𝙖𝙙𝙤 𝙖 𝙂𝙧𝙪𝙥𝙤𝙨 | 𝘽𝙧𝙤𝙖𝙙𝙘𝙖𝙨𝙩 𝙂𝙧𝙤𝙪𝙥𝙨 💎", description: "𝙀𝙉𝙑𝙄𝘼𝙍 𝙐𝙉 𝘼𝙉𝙐𝙉𝘾𝙄𝙊 𝘼 𝙂𝙍𝙐𝙋𝙊𝙎\n𝙎𝙀𝙉𝘿 𝘼𝙉 𝘼𝘿 𝙏𝙊 𝙂𝙍𝙊𝙐𝙋𝙎", rowId: `${usedPrefix}bcgc`},  
-]}, ]
+]}, ] */
 //let name = await conn.getName(m.sender)
+let pp = './media/menus/Menuvid1.mp4'  
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 let mentionedJid = [who]
 let username = conn.getName(who)
 
 
-const listMessage = {
-text: `💗 *¡HOLA | HI!* ${username}`,
-footer: `╭━━〔 *${wm}* 〕━━⬣
+let menu = `
+💗 *¡HOLA | HI!* ${username}
+╭━━〔 *${wm}* 〕━━⬣
 ┃⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️
 ┃✪ *EXPERIENCIA | EXP ➺ ${exp}*
 ┃✪ *NIVEL | LEVEL ➺ ${level}*
@@ -96,9 +97,7 @@ footer: `╭━━〔 *${wm}* 〕━━⬣
 ┃⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️
 ╰━━━━━━〔 𓃠 *${vs}* 〕━━━━━━⬣
 
-╭━━〔 𝙄𝙉𝙁𝙊𝙍𝙈𝘼𝘾𝙄Ó𝙉 | 𝙄𝙉𝙁𝙊 𝙈𝙀𝙉𝙐 〕━━⬣
-┃ *PRESIONE ESTE MENSAJE PARA IR AL MENÚ.*
-┃ *PRESS THIS MESSAGE TO GO TO THE MENU.*
+╭━〔 𝙄𝙉𝙁𝙊𝙍𝙈𝘼𝘾𝙄Ó𝙉 | 𝙄𝙉𝙁𝙊 𝙈𝙀𝙉𝙐 〕━⬣
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃💎➺ _${usedPrefix}actualizar | update_
 ┃💎➺ _${usedPrefix}reiniciar | restart_
@@ -108,13 +107,12 @@ footer: `╭━━〔 *${wm}* 〕━━⬣
 ┃💎➺ _${usedPrefix}comunicar | broadcastall | bc_
 ┃💎➺ _${usedPrefix}comunicarpv | broadcastchats | bcc_
 ┃💎➺ _${usedPrefix}comunicargrupos | broadcastgc | bcgc_
-╰━━━━━━━━━━━━━━━━━━━━⬣
-${wm}`,
-title: null,
-buttonText: "𝙋𝙍𝙀𝙎𝙄𝙊𝙉𝙀 𝘼𝙌𝙐Í | 𝙋𝙍𝙀𝙎𝙎 𝙃𝙀𝙍𝙀", 
-sections }
-
-await conn.sendMessage(m.chat, listMessage)
+╰━━━━━━━━━━━━━━━━━━━⬣`.trim()
+conn.sendHydrated(m.chat, menu, wm, pp, 'https://github.com/GataNina-Li/GataBot-MD', '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
+['𝙈𝙚𝙣𝙪́ 𝙘𝙤𝙢𝙥𝙡𝙚𝙩𝙤 | 𝙁𝙪𝙡𝙡 𝙈𝙚𝙣𝙪 💫', '.allmenu'],
+['𝙈𝙚𝙣𝙪 𝙙𝙚𝙨𝙥𝙡𝙚𝙜𝙖𝙗𝙡𝙚 | 𝙈𝙚𝙣𝙪 𝙇𝙞𝙨𝙩 🌟', '/menulista'],
+['𝙈𝙚𝙣𝙪 𝙋𝙧𝙞𝙣𝙘𝙞𝙥𝙖𝙡 | 𝙈𝙖𝙞𝙣 𝙢𝙚𝙣𝙪 ⚡', '#menu']
+], m,)
 }
 
 handler.help = ['infomenu'].map(v => v + 'able <option>')
