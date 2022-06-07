@@ -65,6 +65,7 @@ text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length
   
   
 if (command == 'multijuegos') { 
+  global.db.data.users[m.sender].money += 200
             let s = `Bienvenido al Multijuegos Aleeatorios`
 
  const templateButtonsReplyMessage = [
@@ -197,7 +198,7 @@ handler.tags = ['group', 'owner']
 handler.command = ['multijuegos', 'juegos']
 handler.group = true
 //handler.exp = 200
-handler.money = 200
+//handler.money = 200
 export default handler
                               
 const more = String.fromCharCode(8206)
