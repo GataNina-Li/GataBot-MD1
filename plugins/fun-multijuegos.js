@@ -159,7 +159,7 @@ conn.sendMessage(m.chat, ttt, m)
                       let emojis2 = `${pickRandom([`❤️`,`🧡`,`💛`,`💚`,`💙`,`💜`,`🖤`,`💔`,`❤️‍🔥`,`❤️‍🩹`,`❣️`,`💕`,`💞`,`💓`,`💗`,`💖`,`💘`,`💝`])}`
                        let emojis3 = `${pickRandom([`🥊`,`🥋`,`🎣`,`🎊`,`🎉`,`🪄`,`🎈`,`✨`,`⭐`,`💫`,`🌟`,`🌈`,`🔥`,`💥`,`☃️`,`❄️`,`⛱️`,`🗿`,`🔮`])}`
          
-                 let ssss = await `Use los botones`
+                 //let ssss = await `Use los botones`
 
  const templateButtonsReplyMessage = [
 {index: 1, urlButton: {displayText: null, url: null}},
