@@ -101,7 +101,7 @@ conn.sendMessage(m.chat, t, m)
                    let emojis3 = `${pickRandom([`🛸`,`🚁`,`🚀`,`🧠`,`✈️`,`🚤`,`🚢`,`🚗`])}`
               
 
-              //let ss = await `Use los botones`
+              let ss = await `Use los botones`
 
  const templateButtonsReplyMessage = [
 {index: 1, urlButton: {displayText: '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', url: 'https://github.com/GataNina-Li/GataBot-MD'}},
@@ -112,7 +112,7 @@ conn.sendMessage(m.chat, t, m)
 ]
  
 let tt = {
-text: `𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 | 𝙂𝙖𝙩𝙖 𝘿𝙞𝙤𝙨`,
+text: ss,
 footer: gata,
 templateButtons: templateButtonsReplyMessage
 } 
