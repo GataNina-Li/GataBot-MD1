@@ -94,7 +94,7 @@ let username = conn.getName(who)
 let menu = `
 💗 *¡HOLA | HI!* ${username}
 ╭━━〔 *${wm}* 〕━━⬣
-┃🪄🪄🪄🪄🪄🪄🪄🪄🪄
+┃🎠🎠🎠🎠🎠🎠🎠🎠🎠
 ┃✪ *EXPERIENCIA | EXP ➺ ${exp}*
 ┃✪ *NIVEL | LEVEL ➺ ${level}*
 ┃✪ *ROL ➺ ${role}*
@@ -102,28 +102,28 @@ let menu = `
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃✪ *FECHA ➺ ${week}, ${date}*
 ┃✪ *USUARIOS | USERS ➺ ${Object.keys(global.db.data.users).length}* 
-┃🪄🪄🪄🪄🪄🪄🪄🪄🪄
+┃🎠🎠🎠🎠🎠🎠🎠🎠🎠
 ╰━━━━━━〔 𓃠 *${vs}* 〕━━━━━━⬣
 
 ╭━〔 𝘿𝙀𝙎𝘾𝘼𝙍𝙂𝘼𝙎 | 𝘿𝙊𝙒𝙉𝙇𝙊𝘼𝘿𝙎 〕━⬣
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃🚀➺ _${usedPrefix}imagen | image *texto*_
-┃🚀➺ _${usedPrefix}pinterest | dlpinterest *texto*_
-┃🚀➺ _${usedPrefix}wallpaper|wp *texto*_
-┃🚀➺ _${usedPrefix}play | play2 *texto o link*_
-┃🚀➺ _${usedPrefix}play.1 *texto o link*_
-┃🚀➺ _${usedPrefix}play.2 *texto o link*_ 
-┃🚀➺ _${usedPrefix}ytmp3 | yta *link*_
-┃🚀➺ _${usedPrefix}ytmp4 | ytv *link*_
-┃🚀➺ _${usedPrefix}facebook | fb *link*_
-┃🚀➺ _${usedPrefix}instagram *link video o imagen*_
-┃🚀➺ _${usedPrefix}verig | igstalk *usuario(a)*_
-┃🚀➺ _${usedPrefix}ighistoria | igstory *usuario(a)*_
-┃🚀➺ _${usedPrefix}tiktok *link*_
-┃🚀➺ _${usedPrefix}tiktokfoto | tiktokphoto *usuario(a)*_
-┃🚀➺ _${usedPrefix}vertiktok | tiktokstalk *usuario(a)*_
-┃🚀➺ _${usedPrefix}mediafire | dlmediafire *link*_
-┃🚀➺ _${usedPrefix}clonarepo | gitclone *link*_
+┃🎡➺ _${usedPrefix}imagen | image *texto*_
+┃🎡➺ _${usedPrefix}pinterest | dlpinterest *texto*_
+┃🎡➺ _${usedPrefix}wallpaper|wp *texto*_
+┃🎡➺ _${usedPrefix}play | play2 *texto o link*_
+┃🎡➺ _${usedPrefix}play.1 *texto o link*_
+┃🎡➺ _${usedPrefix}play.2 *texto o link*_ 
+┃🎡➺ _${usedPrefix}ytmp3 | yta *link*_
+┃🎡➺ _${usedPrefix}ytmp4 | ytv *link*_
+┃🎡➺ _${usedPrefix}facebook | fb *link*_
+┃🎡➺ _${usedPrefix}instagram *link video o imagen*_
+┃🎡➺ _${usedPrefix}verig | igstalk *usuario(a)*_
+┃🎡➺ _${usedPrefix}ighistoria | igstory *usuario(a)*_
+┃🎡➺ _${usedPrefix}tiktok *link*_
+┃🎡➺ _${usedPrefix}tiktokfoto | tiktokphoto *usuario(a)*_
+┃🎡➺ _${usedPrefix}vertiktok | tiktokstalk *usuario(a)*_
+┃🎡➺ _${usedPrefix}mediafire | dlmediafire *link*_
+┃🎡➺ _${usedPrefix}clonarepo | gitclone *link*_
 ╰━━━━━━━━━━━━━━━━━━━⬣`.trim()
 conn.sendHydrated(m.chat, menu, wm, pp, 'https://github.com/GataNina-Li/GataBot-MD', '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
 ['𝙈𝙚𝙣𝙪́ 𝙘𝙤𝙢𝙥𝙡𝙚𝙩𝙤 | 𝙁𝙪𝙡𝙡 𝙈𝙚𝙣𝙪 💫', '.allmenu'],
