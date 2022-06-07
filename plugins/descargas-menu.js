@@ -105,8 +105,6 @@ let menu = `
 ╰━━━━━━〔 𓃠 *${vs}* 〕━━━━━━⬣
 
 ╭━〔 𝘿𝙀𝙎𝘾𝘼𝙍𝙂𝘼𝙎 | 𝘿𝙊𝙒𝙉𝙇𝙊𝘼𝘿𝙎 〕━⬣
-┃ *PRESIONE ESTE MENSAJE PARA IR AL MENÚ.*
-┃ *PRESS THIS MESSAGE TO GO TO THE MENU.*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃🚀➺ _${usedPrefix}imagen | image *texto*_
 ┃🚀➺ _${usedPrefix}pinterest | dlpinterest *texto*_
