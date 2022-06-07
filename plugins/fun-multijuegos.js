@@ -140,8 +140,8 @@ conn.sendMessage(m.chat, ttt, m)
                  let c = `${usedPrefix}`
                   let juegos = `${pickRandom([`${c}reto`,`${c}verdad`])}`
                    let emojis1 = `${pickRandom([`🎄`,`🌲`,`🌴`,`🌱`,`🌿`,`☘️`,`🍀`,`🪴`,`🍃`,`🍂`,`🍁`,`🍄`,`🌷`,`🌹`,`💐`,`🌼`,`🌻`,`🌺`,`🌸`])}`
-                    let emojis2 = `${pickRandom([`❤️`,`🧡`,`💛`,`💚`,`💙`,`💜`,`🖤`,`🤍`,`🤎`,`💔`,`❤️‍🔥`,`❤️‍🩹`,`❣️`,`💕`,`💞`,`💓`,`💗`,`💖`,`💘`,`💝`])}`
-                     let emojis3 = `${pickRandom([`🪁`,`🥊`,`🥋`,`🎣`,`🎊`,`🎉`,`🪄`,`🎈`,`✨`,`⭐`,`💫`,`🌟`,`🌈`,`🔥`,`💥`,`☃️`,`❄️`,`⛱️`,`🗿`,`🔮`])}`
+                    let emojis2 = `${pickRandom([`❤️`,`🧡`,`💛`,`💚`,`💙`,`💜`,`🖤`,`💔`,`❤️‍🔥`,`❤️‍🩹`,`❣️`,`💕`,`💞`,`💓`,`💗`,`💖`,`💘`,`💝`])}`
+                     let emojis3 = `${pickRandom([`🥊`,`🥋`,`🎣`,`🎊`,`🎉`,`🪄`,`🎈`,`✨`,`⭐`,`💫`,`🌟`,`🌈`,`🔥`,`💥`,`☃️`,`❄️`,`⛱️`,`🗿`,`🔮`])}`
          
                  let ssss = await `Use los botones`
 
@@ -153,7 +153,7 @@ conn.sendMessage(m.chat, ttt, m)
 {index: 5, quickReplyButton: {displayText: emojis3, id: juegos}},
 ]
 let tttt = {
-text: ssss,
+text: null,
 footer: global.wm,
 templateButtons: templateButtonsReplyMessage
   } 
@@ -178,7 +178,7 @@ conn.sendMessage(m.chat, tttt, m)
 {index: 5, quickReplyButton: {displayText: '🎁 𝙈𝙖𝙨 𝙅𝙪𝙚𝙜𝙤𝙨 | 𝙍𝙚𝙨𝙩𝙖𝙧𝙩', id: '#juegos'}},
 ]
 let tttt = {
-text: ssss,
+text: null,
 footer: global.wm,
 templateButtons: templateButtonsReplyMessage
   } 
