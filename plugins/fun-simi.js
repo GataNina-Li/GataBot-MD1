@@ -5,11 +5,11 @@ let res = await fetch(`https://api-sv2.simsimi.net/v2/?text=${text}&lc=es`)
 let json = await res.json()
 let tes = json.success.replace('simsimi', 'simsimi').replace('Simsimi', 'Simsimi').replace('sim simi', 'sim simi')
 //m.reply(`${tes}`) 
-conn.sendHydrated(m.chat, `${tes}`, `𝙎𝙞𝙢𝙎𝙞𝙢𝙞 | ${wm}`, null, null, null, null, null, [
+conn.sendHydrated(m.chat, `${tes}`, `𝘼𝙄 | ${wm}`, null, null, null, null, null, [
 ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', '/menu']
 ], m)
 }
 handler.help = ['simsimi']
 handler.tags = ['General']
-handler.command = ['bot', 'simi', 'simsimi'] 
+handler.command = ['bot', 'simi', 'simsimi', 'alexa', 'bixby', 'cortana', 'siri', 'okgoogle']
 export default handler
