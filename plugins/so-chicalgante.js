@@ -11,7 +11,6 @@ ptt: true
 }
 handler.customPrefix = /Me olvide|ME OLVIDE|me olvide|Me olvidé|me olvidé|ME OLVIDÉ/ 
 handler.command = new RegExp
-handler.exp = 100
 handler.money = 100
 export default handler
 
