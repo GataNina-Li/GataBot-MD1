@@ -67,12 +67,9 @@ let audio16B = audio16A.exec(m.text) */
 
 if (audio1B) {
 	let vn = './media/basado.mp3'
-	conn.sendFile(m.chat, vn, 'basado.mp3', null, m, true, {
-type: 'audioMessage', 
-ptt: true 
-}) } else
-}}
-
+	conn.sendFile(m.chat, vn, 'basado.mp3', null, m, true, { type: 'audioMessage', ptt: true })
+	} else
+}
 export default handler
 /*
 if (audio2B) {
