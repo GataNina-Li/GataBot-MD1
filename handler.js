@@ -567,10 +567,10 @@ export async function handler(chatUpdate) {
                     }
                     if (m.limit)
                         m.reply(+m.limit + ' 𝘿𝙄𝘼𝙈𝘼𝙉𝙏𝙀(𝙎) 💎 𝙐𝙎𝘼𝘿𝙊(𝙎)')
-                    
+                    {
                     if (m.money)
                         m.reply(+m.money + ' 𝙂𝘼𝙏𝘼𝘾𝙊𝙄𝙉𝙎 🐈 𝙐𝙎𝘼𝘿𝙊(𝙎)')
-                }
+                }}
                 break
             }
         }
