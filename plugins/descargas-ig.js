@@ -20,6 +20,7 @@ await conn.sendHydrated(m.chat, info, wm, null, ig, '𝙄𝙣𝙨𝙩𝙖𝙜�
 } 
 handler.help = ['ig'].map(v => v + ' <url>')
 handler.tags = ['downloader']
-handler.command =/^(instagram|ig(dl)?)$/i 
+handler.command =/^(instagram|ig(dl)?)$/i
+handler.limit = 4
 handler.exp = 70
 export default handler
