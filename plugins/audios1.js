@@ -59,7 +59,7 @@ let audio16B = audio16A.exec(m.text) */
 //let texto1A = /No tengo hermana|No tengo ermana/i
 //let texto1B = texto1A.exec(m.text)
 
-if (audio1B) {
+if (audio1A) {
 	let vn = './media/basado.mp3'
 	conn.sendFile(m.chat, vn, 'basado.mp3', null, m, true, {
 type: 'audioMessage', 
@@ -143,18 +143,18 @@ if (audio16B) {
         let pp = await conn.getProfilePicture(m.sender) 
         let ppp = await(await fetch(pp)).buffer()
         conn.sendMessage(m.chat, fs.readFileSync(vn), MessageType.sticker, { quoted: m, contextInfo: { externalAdReply: {title: conn.getName(m.sender), body:"© lolibot", previewType: "PHOTO", thumbnail: ppp, sourceUrl:``}}})
-        }
+        } 
 
 
 
 //Mensaje new
 if (texto1B) {
         conn.sendMessage(m.chat, 'En ese caso el tuyo 7w7', MessageType.text, { sendEphemeral: true, quoted: m })
-        }
+        } */
 
 
 
-} */ 
+  
 }
 handler.customPrefix = audio1A
 handler.command = new RegExp
