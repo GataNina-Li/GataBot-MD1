@@ -18,7 +18,7 @@ let week = d.toLocaleDateString(locale, { weekday: 'long' })
 let date = d.toLocaleDateString(locale, {
 day: 'numeric',
 month: 'long',
-year: 'numeric'
+year: 'numeric' 
 })
 let dateIslamic = Intl.DateTimeFormat(locale + '-TN-u-ca-islamic', {
 day: 'numeric',
