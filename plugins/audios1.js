@@ -4,7 +4,7 @@ import path from 'path'
 
 let handler = m => m
 handler.before = async function (m, { conn, command }) {
-if (!db.data.chats[m.chat].audios && m.isGroup) throw 0	
+//if (!db.data.chats[m.chat].audios && m.isGroup) throw 0	
 if ((m.isBaileys && m.fromMe) || m.fromMe ) return true
 	
 
@@ -69,8 +69,10 @@ if (audio1B) {
 	conn.sendFile(m.chat, vn, 'basado.mp3', null, m, true, {
 type: 'audioMessage', 
 ptt: true 
-})
-}  
+}) } else
+ 
+
+export default handler
 /*
 if (audio2B) {
 	let vn = './media/Buenos-dias-2.mp3'
@@ -164,4 +166,3 @@ if (texto1B) {
 //handler.customPrefix = audio1A
 //handler.command = new RegExp
 //handler.exp = 100
-export default handler
