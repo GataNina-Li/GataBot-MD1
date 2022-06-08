@@ -505,7 +505,7 @@ export async function handler(chatUpdate) {
                     m.reply('Ngecit -_-') // Hehehe
                 else
                     m.money += money
-                if (!isPrems && plugin.limit && global.db.data.users[m.sender].money < plugin.limit * 1) {
+                if (!isPrems && plugin.money && global.db.data.users[m.sender].money < plugin.money * 1) {
                     this.reply(m.chat, `${ag}𝙉𝙊 𝙏𝙄𝙀𝙉𝙀 𝙂𝘼𝙏𝘼𝘾𝙊𝙄𝙉𝙎. 🐈 𝙋𝙐𝙀𝘿𝙀 𝘾𝙊𝙈𝙋𝙍𝘼𝙍 𝘾𝙊𝙉 𝙀𝙇 𝘾𝙊𝙈𝘼𝙉𝘿𝙊 *${usedPrefix}buy2 cantidad*\n\n𝙄𝙏 𝙃𝘼𝙎 𝙉𝙊 𝙂𝘼𝙏𝘼𝘾𝙊𝙄𝙉𝙎. 🐈 𝙔𝙊𝙐 𝘾𝘼𝙉 𝘽𝙐𝙔 𝙒𝙄𝙏𝙃 𝙏𝙃𝙀 𝘾𝙊𝙈𝙈𝘼𝙉𝘿 *${usedPrefix}buy2 cantidad*`, m)
                     continue // Limit habis
                 }
@@ -588,7 +588,12 @@ export async function handler(chatUpdate) {
             if (m.sender && (user = global.db.data.users[m.sender])) {
                 user.exp += m.exp
                 user.limit -= m.limit * 1
-            }
+                
+             if (m.sender && (user = global.db.data.users[m.sender])) {
+                user.exp += m.exp
+                user.money -= m.money * 1
+      
+            }}
 
             let stat
             if (m.plugin) {
