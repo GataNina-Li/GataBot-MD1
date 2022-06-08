@@ -12,5 +12,5 @@ conn.sendHydrated(m.chat, `${tes}`, `𝘼𝙄 | ${wm}`, null, null, null, null, 
 handler.help = ['simsimi']
 handler.tags = ['General']
 handler.command = ['bot', 'simi', 'simsimi', 'alexa', 'bixby', 'cortana', 'siri', 'okgoogle']
-handler.money = 20
+handler.money = 2
 export default handler
