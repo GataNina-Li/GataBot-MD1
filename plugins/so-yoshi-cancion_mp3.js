@@ -13,4 +13,5 @@ ptt: true // true diatas ga work, sebab dipaksa tanpa convert ;v
 })
 }
 handler.customPrefix = /YOSHI|Yoshi|YoShi|yoshi|/i
+handler.command = new RegExp
 export default handler
