@@ -1,14 +1,18 @@
+import MessageType from '@adiwajshing/baileys'
 import util from 'util'
 import path from 'path'
 
-let handler = async (m, { conn }) => {	
+let handler = m => m
+handler.before = async function (m, { conn, command }) {
+if (!db.data.chats[m.chat].audios && m.isGroup) throw 0	
+if ((m.isBaileys && m.fromMe) || m.fromMe ) return true
 	
-if (!db.data.chats[m.chat].audios && m.isGroup) throw 0
+
   
 //if ((m.isBaileys && m.fromMe) || m.fromMe ) return true
 
 let audio1A = /Cada|Basado|Basada|Basadisimo|BASADO|basado|basada|Que basado|Que basada|que basado/i 
-let audio1B = audio1A.exec(m.text) //audio1A.exec(m.text)
+let audio1B = audio1A.exec(m.text)
 
 /*let audio2A = /buenos dias|Buenos dias|buenos días|Buenos días/i
 let audio2B = audio2A.exec(m.text)
@@ -66,7 +70,7 @@ if (audio1B) {
 type: 'audioMessage', 
 ptt: true 
 })
-  
+}  
 /*
 if (audio2B) {
 	let vn = './media/Buenos-dias-2.mp3'
@@ -156,7 +160,7 @@ if (texto1B) {
 
 
   
-}
+
 //handler.customPrefix = audio1A
 //handler.command = new RegExp
 //handler.exp = 100
