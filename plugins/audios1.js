@@ -2,10 +2,11 @@ import MessageType from '@adiwajshing/baileys'
 import util from 'util'
 import path from 'path'
 
-let handler = m => m
-handler.before = async function (m, { conn, command }) {
+let handler = async (m, { conn }) => {
+//let handler = m => m
+//handler.before = async function (m, { conn, command }) {
 //if (!db.data.chats[m.chat].audios && m.isGroup) throw 0	
-if ((m.isBaileys && m.fromMe) || m.fromMe ) return true
+//if ((m.isBaileys && m.fromMe) || m.fromMe ) return true
 	
 
   
