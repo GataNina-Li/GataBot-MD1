@@ -1,6 +1,6 @@
 import { canLevelUp, xpRange } from '../lib/levelling.js'
 import { levelup } from '../lib/canvas.js'
-
+let pp = './media/menus/Menuvid1.mp4'
 let handler = async (m, { conn }) => {
 	let name = conn.getName(m.sender)
     let user = global.db.data.users[m.sender]
@@ -16,6 +16,7 @@ let handler = async (m, { conn }) => {
 Te falta *${max - user.exp}* de *XP* para subir de nivel
 `.trim()
     }
+	let pp = './media/menus/Menu2.jpg'
     let before = user.level * 1
     while (canLevelUp(user.level, user.exp, global.multiplier)) user.level++
     if (before !== user.level) {
@@ -28,9 +29,11 @@ Te falta *${max - user.exp}* de *XP* para subir de nivel
 
 *_Cuanto más interactúes con los bots, mayor será tu nivel_*
 `.trim()
+	
+	
         try {
-            const img = await levelup(teks, user.level)
-            conn.sendFile(m.chat, img, 'levelup.jpg', str, m)
+           const img = await pp(teks, user.level)
+            conn.sendFile(m.chat, img, 'levelup.jpg', pp, m)
         } catch (e) {
             m.reply(str)
         }
