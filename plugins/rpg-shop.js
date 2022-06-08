@@ -1,4 +1,4 @@
-const xpperlimit = 200 
+const xpperlimit = 100
 let handler = async (m, { conn, command, args, usedPrefix }) => {
   let count = command.replace(/^buy/i, '')
   count = count ? /all/i.test(count) ? Math.floor(global.db.data.users[m.sender].exp / xpperlimit) : parseInt(count) : args[0] ? parseInt(args[0]) : 1
@@ -11,7 +11,7 @@ let handler = async (m, { conn, command, args, usedPrefix }) => {
 ╭━━〔 *DATOS DE COMPRA* 〕━━⬣
 ‣ *Compra Efectuada* : + ${count}💎 
 ‣ *Ha Gastado* : -${xpperlimit * count} 𝙓𝙋
-╰━━━━━━〔 *𓃠 ${vs}* 〕━━━━━━⬣`.trim()
+╰━━━━━〔 *𓃠 ${vs}* 〕━━━━━⬣`.trim()
     
 await conn.sendHydrated(m.chat, gata, wm, null, ig, '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢', null, null, [
 ['𝙂𝙍𝘼𝘾𝙄𝘼𝙎!', '.top'],
