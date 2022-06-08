@@ -1,13 +1,14 @@
 import util from 'util'
 import path from 'path'
 
-let handler = async (m, { conn }) => {
+let handler = async (m, { conn }) => {	
+	
 if (!db.data.chats[m.chat].audios && m.isGroup) throw 0
   
 //if ((m.isBaileys && m.fromMe) || m.fromMe ) return true
 
 let audio1A = /Cada|Basado|Basada|Basadisimo|BASADO|basado|basada|Que basado|Que basada|que basado/i 
-//let audio1B = audio1A.exec(m.text) //audio1A.exec(m.text)
+let audio1B = audio1A.exec(m.text) //audio1A.exec(m.text)
 
 /*let audio2A = /buenos dias|Buenos dias|buenos días|Buenos días/i
 let audio2B = audio2A.exec(m.text)
@@ -59,7 +60,7 @@ let audio16B = audio16A.exec(m.text) */
 //let texto1A = /No tengo hermana|No tengo ermana/i
 //let texto1B = texto1A.exec(m.text)
 
-if (audio1A) {
+if (audio1B) {
 	let vn = './media/basado.mp3'
 	conn.sendFile(m.chat, vn, 'basado.mp3', null, m, true, {
 type: 'audioMessage', 
@@ -156,7 +157,7 @@ if (texto1B) {
 
   
 }
-handler.customPrefix = audio1A
-handler.command = new RegExp
-handler.exp = 100
+//handler.customPrefix = audio1A
+//handler.command = new RegExp
+//handler.exp = 100
 export default handler
