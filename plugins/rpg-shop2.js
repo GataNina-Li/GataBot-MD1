@@ -9,8 +9,8 @@ let handler = async (m, { conn, command, args, usedPrefix }) => {
     //conn.reply(m.chat, `
     let gata = `
 ╭━━〔 *DATOS DE COMPRA* 〕━━⬣
-‣ *Compra Efectuada* : +${count} *GATACOINS*
-‣ *Ha Gastado* :  -${xpperlimit * count} 𝙓𝙋
+‣ *Compra Efectuada* : +${count} 💎 
+‣ *Ha Gastado* :  -${xpperlimit * count} 𝙂𝘼𝙏𝘼𝘾𝙊𝙄𝙉𝙎
 ╰━━━━━〔 *𓃠 ${vs}* 〕━━━━⬣`.trim()
     
 await conn.sendHydrated(m.chat, gata, wm, null, md, '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
@@ -19,7 +19,7 @@ await conn.sendHydrated(m.chat, gata, wm, null, md, '𝙂𝙖𝙩𝙖𝘽𝙤�
 ], m,)
     
   } else //conn.reply(m.chat, `❎ Lo siento, no tienes suficientes *XP* para comprar *${count}* Diamantes💎`, m)
-  await conn.sendHydrated(m.chat, `No tiene sufuciente 𝙓𝙋 para comprar *${count}* Diamantes 💎\n\nLe recomiendo que interactúe con GataBot-MD para Obtener experiencia, puede ver su experiencia con el comando ${usedPrefix}exp o ${usedPrefix}experiencia`, wm, null, ig, '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢', null, null, [
+  await conn.sendHydrated(m.chat, `No tiene sufuciente 𝙂𝘼𝙏𝘼𝘾𝙊𝙄𝙉𝙎 para comprar *${count}* Diamantes 💎\n\nLe recomiendo que interactúe con GataBot-MD para Obtener GataCoins, puede ver su experiencia con el comando ${usedPrefix}exp o ${usedPrefix}experiencia`, wm, null, ig, '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢', null, null, [
 ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', '/menu']
 ], m,)
 }
