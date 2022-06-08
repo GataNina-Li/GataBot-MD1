@@ -10,8 +10,8 @@ let handler = async (m, { conn, command, args, usedPrefix }) => {
     let gata = `
 ╭━━〔 *DATOS DE COMPRA* 〕━━⬣
 ‣ *Compra Efectuada* : + ${count}💎 
-‣ *Ha Gastado* : -${xpperlimit * count} 𝙓𝙋
-╰━━━━━〔 *𓃠 ${vs}* 〕━━━━━⬣`.trim()
+‣ *Ha Gastado* :  -${xpperlimit * count} 𝙓𝙋
+╰━━━━━〔 *𓃠 ${vs}* 〕━━━━⬣`.trim()
     
 await conn.sendHydrated(m.chat, gata, wm, null, md, '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
 ['𝙂𝙍𝘼𝘾𝙄𝘼𝙎!', '.top'],
