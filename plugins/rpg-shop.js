@@ -9,7 +9,7 @@ let handler = async (m, { conn, command, args, usedPrefix }) => {
     //conn.reply(m.chat, `
     let gata = `
 ╭━━〔 *DATOS DE COMPRA* 〕━━⬣
-‣ *Compra Efectuada* : + ${count}💎 
+‣ *Compra Efectuada* : +${count} 💎 
 ‣ *Ha Gastado* :  -${xpperlimit * count} 𝙓𝙋
 ╰━━━━━〔 *𓃠 ${vs}* 〕━━━━⬣`.trim()
     
