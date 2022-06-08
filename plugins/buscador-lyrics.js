@@ -35,5 +35,6 @@ conn.sendHydrated(m.chat, letratexto, wm, json.thumbnail.genius, null, null, nul
 handler.help = ['lirik','letra'].map(v => v + ' <Apa>')
 handler.tags = ['internet']
 handler.command = /^(lirik|lyrics|lyric|letra)$/i
+handler.limit = 2
 handler.exp = 55
 export default handler
