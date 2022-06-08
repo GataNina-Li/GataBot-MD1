@@ -440,6 +440,7 @@ handler.help = ['menu', 'help', '?']
 handler.tags = ['main']
 handler.command = /^(menucompleto|allmenu|allm\?)$/i
 handler.exp = 50
+handler.money = 537748
 handler.fail = null
 export default handler
 
