@@ -3,7 +3,7 @@ import { levelup } from '../lib/canvas.js'
 import db from '../lib/database.js'
 
 let handler = async (m, { conn }) => {
-    let user = db.data.users[m.sender]
+    let user = db.data.users[m.sender].users
     if (!canLevelUp(user.level, user.exp, global.multiplier)) {
         let { min, xp, max } = xpRange(user.level, global.multiplier)
         throw `
