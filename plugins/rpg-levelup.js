@@ -1,26 +1,33 @@
 import { canLevelUp, xpRange } from '../lib/levelling.js'
 import { levelup } from '../lib/canvas.js'
-import db from '../lib/database.js'
 
 let handler = async (m, { conn }) => {
+	let name = conn.getName(m.sender)
     let user = global.db.data.users[m.sender]
     if (!canLevelUp(user.level, user.exp, global.multiplier)) {
         let { min, xp, max } = xpRange(user.level, global.multiplier)
         throw `
-Level *${user.level} (${user.exp - min}/${xp})*
-Kurang *${max - user.exp}* lagi!
+┌───⊷ *NIVEL*
+▢ Nombre : *${name}*
+▢ Nivel : *${user.level}*
+▢ XP : *${user.exp - min}/${xp}*
+└──────────────
+
+Te falta *${max - user.exp}* de *XP* para subir de nivel
 `.trim()
     }
     let before = user.level * 1
     while (canLevelUp(user.level, user.exp, global.multiplier)) user.level++
     if (before !== user.level) {
-        let teks = `Selamat ${conn.getName(m.sender)} naik 🧬level`
+        let teks = `🎊 Bien hecho ${conn.getName(m.sender)}    Nivel: ${user.level}`
         let str = `
-${teks} 
-• 🧬Level Sebelumnya : ${before}
-• 🧬Level Baru : ${user.level}
-• Pada Jam : ${new Date().toLocaleString('id-ID')}
-*_Semakin sering berinteraksi dengan bot Semakin Tinggi level kamu_*
+┌─⊷ *LEVEL UP*
+▢ Nivel anterior : *${before}*
+▢ Nivel actual : *${user.level}*
+*Fecha:* ${new Date().toLocaleString('id-ID')}
+└──────────────
+
+*_Cuanto más interactúes con los bots, mayor será tu nivel_*
 `.trim()
         try {
             const img = await levelup(teks, user.level)
@@ -34,6 +41,6 @@ ${teks}
 handler.help = ['levelup']
 handler.tags = ['xp']
 
-handler.command = /^level(|up)$/i
+handler.command = ['nivel', 'lvl', 'levelup', 'level'] 
 
 export default handler
