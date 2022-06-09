@@ -60,7 +60,8 @@ readmore: readMore
 text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
  let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 let mentionedJid = [who]
-let username = conn.getName(who) 
+let username = conn.getName(who)
+let pp = './media/menus/Menuvid1.mp4'
   
  let str = `
 ╭══〘 🐈⚡️🐈⚡️🐈⚡️🐈 〙══╮    
@@ -205,7 +206,7 @@ let username = conn.getName(who)
 `.trim()
 conn.sendHydrated(m.chat, str, wm, pp, md, '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
 ['𝙈𝙚𝙣𝙪 𝙋𝙧𝙞𝙣𝙘𝙞𝙥𝙖𝙡 | 𝙈𝙖𝙞𝙣 𝙢𝙚𝙣𝙪 ⚡', '#menu']
-], m) 
+], m)  
   
   
 
