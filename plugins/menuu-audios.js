@@ -205,6 +205,8 @@ let pp = './media/menus/Menuvid1.mp4'
 ╰════• ೋ•✧๑♡๑✧•ೋ •════╯
 `.trim()
 conn.sendHydrated(m.chat, str, wm, pp, md, '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
+['𝙈𝙚𝙣𝙪 𝙋𝙧𝙞𝙣𝙘𝙞𝙥𝙖𝙡 | 𝙈𝙖𝙞𝙣 𝙢𝙚𝙣𝙪 ⚡', '#menu'],
+['𝙈𝙚𝙣𝙪 𝙋𝙧𝙞𝙣𝙘𝙞𝙥𝙖𝙡 | 𝙈𝙖𝙞𝙣 𝙢𝙚𝙣𝙪 ⚡', '#menu'],
 ['𝙈𝙚𝙣𝙪 𝙋𝙧𝙞𝙣𝙘𝙞𝙥𝙖𝙡 | 𝙈𝙖𝙞𝙣 𝙢𝙚𝙣𝙪 ⚡', '#menu']
 ], m)  
   
@@ -227,33 +229,15 @@ rows: [
 //let name = await conn.getName(m.sender)
 
 const listMessage = {
-text: `💗 *¡HOLA | HI!* ${username}`,
-footer: `╭━━〔 *${wm}* 〕━━⬣
-┃🌟🌟🌟🌟🌟🌟🌟🌟🌟
-┃✪ *EXPERIENCIA | EXP ➺ ${exp}*
-┃✪ *NIVEL | LEVEL ➺ ${level}*
-┃✪ *ROL ➺ ${role}*
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃✪ *FECHA ➺ ${week}, ${date}*
-┃✪ *USUARIOS | USERS ➺ ${Object.keys(global.db.data.users).length}* 
-┃🌟🌟🌟🌟🌟🌟🌟🌟🌟
-╰━━━━━━〔 𓃠 *${vs}* 〕━━━━━━⬣
-╭━━〔 𝙄𝙉𝙁𝙊𝙍𝙈𝘼𝘾𝙄Ó𝙉 | 𝙄𝙉𝙁𝙊 𝙈𝙀𝙉𝙐 〕━━⬣
-┃ *PRESIONE ESTE MENSAJE PARA IR AL MENÚ.*
-┃ *PRESS THIS MESSAGE TO GO TO THE MENU.*
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃💫➺ _${usedPrefix}cuentasgatabot | cuentasgb | accounts_
-┃💫➺ _${usedPrefix}gruposgb | grupos | groupgb_
-┃💫➺ _${usedPrefix}listagrupos | grouplist_
-┃💫➺ _${usedPrefix}estado | heygata | status_
-┃💫➺ _${usedPrefix}infogata | infobot_
-┃💫➺ _${usedPrefix}creadora | owner_
-┃💫➺ _${usedPrefix}velocidad | ping_
-┃💫➺ _Bot_ 
-╰━━━━━━━━━━━━━━━━━━━━⬣
+text: `𝙂𝘼𝙏𝘼𝘽𝙊𝙏-𝙈𝘿 | 𝘼𝙐𝘿𝙄𝙊𝙎`,
+footer: `
+*╭━━〔 𝙈𝙀𝙉𝙐 𝘿𝙄𝙉𝘼𝙈𝙄𝘾𝙊 〕━━⬣*
+*┃ 𝙃𝙚𝙮 𝙖𝙦𝙪𝙞 𝙥𝙪𝙚𝙙𝙚 𝙚𝙡𝙚𝙜𝙞𝙧*
+*┃ 𝙚𝙡 𝘼𝙪𝙙𝙞𝙤 𝙖 𝙨𝙚𝙧 𝙪𝙩𝙞𝙡𝙞𝙯𝙖𝙙𝙤.*
+*╰━━━━━━━━━━━━━━━━━━━━⬣*
 ${wm}`,
 title: null,
-buttonText: "𝙋𝙍𝙀𝙎𝙄𝙊𝙉𝙀 𝘼𝙌𝙐Í | 𝙋𝙍𝙀𝙎𝙎 𝙃𝙀𝙍𝙀", 
+buttonText: "𝙀𝙇𝙀𝙂𝙄𝙍 𝘼𝙐𝘿𝙄𝙊", 
 sections }
 
 await conn.sendMessage(m.chat, listMessage)
