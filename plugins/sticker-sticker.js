@@ -46,7 +46,6 @@ handler.help = ['stiker (caption|reply media)', 'stiker <url>', 'stikergif (capt
 handler.tags = ['sticker']
 handler.command = /^s(tic?ker)?(gif)?(wm)?$/i
 handler.exp = 200
-handler.limit = 1
 
 export default handler
 
