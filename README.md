@@ -130,5 +130,5 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 ### 🌟 AGRADECIMIENTOS
  
 [![TheShadowBrokers1](https://github.com/BrunoSobrino.png?size=100)](https://github.com/BrunoSobrino)
-[![Colapsus](https://avatars.githubusercontent.com/u/106274886?v=4)](https://github.com/ColapsusHD)
+[![Colapsus](https://avatars.githubusercontent.com/u/106274886?s=100&v=4)](https://github.com/ColapsusHD)
 
