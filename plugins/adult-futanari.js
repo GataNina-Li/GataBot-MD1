@@ -1,24 +1,16 @@
-let fetch = require('node-fetch')
-
-let handler = async (m, { conn }) => {
-if (!DATABASE._data.chats[m.chat].nsfw && m.isGroup) throw '❰ ⚠️ ❱ *Función Nsfw Desactivada*\n*Escriba #on nsfw para activar esta Función.*'
-	let url = futanari[Math.floor(Math.random() * futanari.length)]
-	await conn.sendMessage(m.chat, {
-		contentText: '_*ACA TIENES UNA RICA FUTANARI 🔥*_',
-		footerText: 'Futabu Bot',
-		buttons: [
-			{ buttonId: '.futanari', buttonText: { displayText: 'SIGUIENTE 🔄' }, type: 1 }
-		],
-		headerType: 4,
-		imageMessage: (await conn.prepareMessageMedia(await (await fetch(url)).buffer(), 'imageMessage', {})).imageMessage
-	}, 'buttonsMessage', { quoted: m })
-}
-handler.command = /^futanari|futa|futasolo|futanarisolo$/i
-handler.tags = ['internet']
+let handler  = async (m, { conn, usedPrefix, command }) => {
+if (!db.data.chats[m.chat].modohorny && m.isGroup) throw '*[❗𝐈𝐍𝐅𝐎❗] 𝙻𝙾𝚂 𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂 +𝟷𝟾 𝙴𝚂𝚃𝙰𝙽 𝙳𝙴𝚂𝙰𝙲𝚃𝙸𝚅𝙰𝙳𝙾𝚂 𝙴𝙽 𝙴𝚂𝚃𝙴 𝙶𝚁𝚄𝙿𝙾, 𝚂𝙸 𝙴𝚂 𝙰𝙳𝙼𝙸𝙽 𝚈 𝙳𝙴𝚂𝙴𝙰 𝙰𝙲𝚃𝙸𝚅𝙰𝚁𝙻𝙾𝚂 𝚄𝚂𝙴 𝙴𝙻 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 #enable modohorny*'   
+let res = pickRandom(futanari)
+conn.sendHydrated(m.chat, null, null, res, null, null, null, null, [['🔄 𝚂𝙸𝙶𝚄𝙸𝙴𝙽𝚃𝙴 🔄', `/${command}`]], m)}
 handler.help = ['futanari']
-module.exports = handler
+handler.tags = ['nsfw']
+handler.command = /^futanari|futa|futasolo|futanarisolo$/i
+export default handler
 
-global.futanari = [
+function pickRandom(list) {
+return list[Math.floor(list.length * Math.random())]}
+
+const futanari = [
   "https://us.rule34.xxx//samples/5221/sample_894a09820f1d582f92352071b2cec687.jpg?6167953",
   "https://us.rule34.xxx//samples/5415/sample_af8e6107e6a0eacd59cf82536ffe303b.jpg?6166816",
   "https://us.rule34.xxx//samples/873/sample_c7929364b29ff20ee85ce685f2bd24e7.jpg?6167964",
