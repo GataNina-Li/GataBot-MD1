@@ -248,7 +248,7 @@ let str = `
 *<ℂ𝕆𝕄𝔸ℕ𝔻𝕆𝕊 +𝟙𝟠/>*
 
 ° ඬ⃟🔞 _${usedPrefix}booty_
-° ඬ⃟🔞 _${usedPrefix}futanari|futa|futasolo|futanarisolo | futanarisolo_
+° ඬ⃟🔞 _${usedPrefix}futanari|futa|futasolo|futanarisolo|futanarisolo_
 ° ඬ⃟🔞 _${usedPrefix}futanarionboy | PRONTO!_
 ° ඬ⃟🔞 _${usedPrefix}futanariongirl | PRONTO!_
 ° ඬ⃟🔞 _${usedPrefix}futanarivideos | PRONTO!_
