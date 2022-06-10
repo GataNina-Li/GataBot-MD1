@@ -7,22 +7,26 @@ let ejemplo = `🔰 𝐍𝐈𝐃𝐎𝐒 • 𝐆𝐄𝐍𝐄𝐑𝐀𝐂𝐈�
 await conn.sendHydrated(m.chat, ejemplo, null, pp, null, null, null, null, [
 ['Caterpie', `.nido caterpie`],
 ['Ekans', `.nido ekans`],
-['Pikachu', `.nido pikachu`]], m,)
+['Pikachu', `.nido pikachu`]
+], m,)
 
-await conn.sendHydrated(m.chat, null, wm, null, null, null, null, null, [
+await conn.sendHydrated(m.chat, ejemplo, wm, null, null, null, null, null, [
 ['Jigglypuf', `.nido jigglypuf`],
 ['Psyduck', `.nido psyduck`],
-['Growlithe', `.nido growlithe`]], m,) 
+['Growlithe', `.nido growlithe`]
+], m,) 
  
-await conn.sendHydrated(m.chat, null, wm, null, null, null, null, null, [ 
+await conn.sendHydrated(m.chat, ejemplo, wm, null, null, null, null, null, [ 
 ['Abra', `.nido abra`],
 ['Drowzee', `.nido drowzee`],
-['Exeggcute', `.nido exeggcute`]], m,)
+['Exeggcute', `.nido exeggcute`]
+], m,)
  
-await conn.sendHydrated(m.chat, null, wm, null, null, null, null, null, [  
+await conn.sendHydrated(m.chat, ejemplo, wm, null, null, null, null, null, [  
 ['Cubone', `.nido cubone`],
 ['Pinsir', `.nido pinsir`],
-['Eevee', `.nido eevee`]], m,) }
+['Eevee', `.nido eevee`]
+], m,)
 
 if (command == 'nido') {
  if (text == 'caterpie') {
