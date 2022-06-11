@@ -1,38 +1,23 @@
 import fs from 'fs'
 let handler = async (m, { command, text }) => { 
-let pp = './media/menus/Menu1.jpg' //'./Menu2.jpg'
+let pp = './media/menus/Menu1.jpg'
 if (command == 'nidos') {
 let ejemplo = `🔰 𝐍𝐈𝐃𝐎𝐒 • 𝐆𝐄𝐍𝐄𝐑𝐀𝐂𝐈𝐎𝐍 𝐈 🔰`
 
-await conn.sendHydrated(m.chat, ejemplo, null, pp, null, null, null, null, [
+conn.sendHydrated(m.chat, ejemplo, null, pp, null, null, null, null, [
 ['Caterpie', `.nido caterpie`],
 ['Ekans', `.nido ekans`],
-['Pikachu', `.nido pikachu`]
-], m,)
-/* 
-if (command == 'nidos') {
-
-await conn.sendHydrated(m.chat, ejemplo, wm, null, null, null, null, null, [
-['Jigglypuf', `.nido jigglypuf`],
-['Psyduck', `.nido psyduck`],
-['Growlithe', `.nido growlithe`]
-], m,)
- 
-if (command == 'nidos') {
-
-await conn.sendHydrated(m.chat, ejemplo, wm, null, null, null, null, null, [ 
-['Abra', `.nido abra`],
-['Drowzee', `.nido drowzee`],
-['Exeggcute', `.nido exeggcute`]
-], m,) 
-
-if (command == 'nidos') {
-
-await conn.sendHydrated(m.chat, ejemplo, wm, null, null, null, null, null, [  
-['Cubone', `.nido cubone`],
-['Pinsir', `.nido pinsir`],
-['Eevee', `.nido eevee`]
-], m,)*/ }
+['Pikachu', `.nido pikachu`],
+//['Jigglypuf', `.nido jigglypuf`],
+//['Psyduck', `.nido psyduck`],
+//['Growlithe', `.nido growlithe`],
+//['Abra', `.nido abra`],
+//['Drowzee', `.nido drowzee`],
+//['Exeggcute', `.nido exeggcute`],
+//['Cubone', `.nido cubone`],
+//['Pinsir', `.nido pinsir`],
+//['Eevee', `.nido eevee`]
+], m,) }
 
 if (command == 'nido') {
  if (text == 'caterpie') {
