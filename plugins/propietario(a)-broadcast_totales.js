@@ -12,6 +12,7 @@ m.reply(`${iig} ✅ *El mensaje fue enviado a ${chatsall.length} Chats Totales*\
 }
 handler.help = ['broadcast', 'bc'].map(v => v + ' <teks>')
 handler.tags = ['owner']
-handler.command = /^(broadcast2|bc2)$/i
+handler.command = /^(comunicar|comunicado|broadcastall|bc)$/i
 handler.rowner = true
+handler.exp = 500
 export default handler

@@ -1,25 +1,35 @@
 import { youtubeSearch } from '@bochilteam/scraper'
 let handler = async (m, { text }) => {
-if (!text) throw '*[❗𝐈𝐍𝐅𝐎❗] 𝙸𝙽𝚂𝙴𝚁𝚃𝙴 𝙴𝙻 𝙽𝙾𝙼𝙱𝚁𝙴 𝙳𝙴 𝙰𝙻𝙶𝚄𝙽 𝚅𝙸𝙳𝙴𝙾 𝙾 𝙲𝙰𝙽𝙰𝙻 𝙳𝙴 𝚈𝙾𝚄𝚃𝚄𝙱𝙴*'
+if (!text) throw `${mg}𝙀𝙎𝘾𝙍𝙄𝘽𝘼 𝙀𝙇 𝙉𝙊𝙈𝘽𝙍𝙀 𝘿𝙀 𝙐𝙉 𝙑𝙄𝘿𝙀𝙊 𝙊 𝘾𝘼𝙉𝘼𝙇 𝘿𝙀 𝙔𝙊𝙐𝙏𝙐𝘽𝙀\n\n𝙒𝙍𝙄𝙏𝙀 𝙏𝙃𝙀 𝙉𝘼𝙈𝙀 𝙊𝙁 𝘼 𝙔𝙊𝙐𝙏𝙐𝘽𝙀 𝙑𝙄𝘿𝙀𝙊 𝙊𝙍 𝘾𝙃𝘼𝙉𝙉𝙀𝙇`
 const { video, channel } = await youtubeSearch(text)
 let teks = [...video, ...channel].map(v => {
 switch (v.type) {
 case 'video': return `
-📌 *${v.title}* (${v.url})
-⌚ 𝙳𝚞𝚛𝚊𝚌𝚒𝚘𝚗: ${v.durationH}
-⏲️ 𝙿𝚞𝚋𝚕𝚒𝚌𝚊𝚍𝚘 ${v.publishedTime}
-👁️ ${v.view} 𝚟𝚒𝚜𝚝𝚊𝚜
+✨ *${v.title}* 
+🎈 (${v.url})
+⏳ *Duración:* ${v.durationH}
+🗓 *Fecha:* de subida: ${v.durationH}
+👀 *Vistas:* ${v.view} 
+      `.trim()
+      case 'channel': return `
+✨ *${v.channelName}* 
+(${v.url})
+👥 *Subscriptores:* ${v.subscriberH} 
+🎥 *Videos:* ${v.videoCount}  
 `.trim()
-case 'channel': return `
-📌 *${v.channelName}* (${v.url})
-🧑‍🤝‍🧑 _${v.subscriberH} 𝚜𝚞𝚜𝚌𝚛𝚒𝚙𝚝𝚘𝚛𝚎𝚜_
-🎥 ${v.videoCount} 𝚟𝚒𝚍𝚎𝚘𝚜
-`.trim()
-}
-}).filter(v => v).join('\n\n========================\n\n')
-m.reply(teks)
+    }
+  }).filter(v => v).join('\n====================================\n')
+ await m.reply(teks)
+ let info = `💖 *Infórmate sobre las Novedades y recuerda tener la última versión.*\n\n💝 *Find out about what's new and remember to have the latest version.*
+  `.trim()
+await conn.sendHydrated(m.chat, info, wm, null, ig, '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢', null, null, [
+['𝙈𝙚𝙣𝙪 𝘽𝙪𝙨𝙦𝙪𝙚𝙙𝙖𝙨 | 𝙎𝙚𝙖𝙧𝙘𝙝𝙚𝙨 🔎', '#buscarmenu'],
+['𝙈𝙚𝙣𝙪 𝘾𝙤𝙢𝙥𝙡𝙚𝙩𝙤 | 𝙁𝙪𝙡𝙡 𝙈𝙚𝙣𝙪 ✨', '.allmenu'],
+['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', '/menu']
+], m,)      
 }
 handler.help = ['', 'earch'].map(v => 'yts' + v + ' <pencarian>')
 handler.tags = ['tools']
-handler.command = /^yts(earch)?$/i
+handler.command = /^ytbuscar|yts(earch)?$/i
+handler.exp = 70
 export default handler

@@ -18,5 +18,6 @@ m.reply(`${ag}*✅ Su enlace se envió a Mí Propietario(a).*\n*Your link was se
 
 handler.help = ['join [chat.whatsapp.com]']
 handler.tags = ['premium']
-handler.command = /^unete|join|nuevogrupo|unir|unite|unirse|entra|entrar$/i
+handler.exp = 50
+handler.command = /^unete|join|nuevogrupo|unir|unite|unirse|entra|entrar$/i 
 export default handler
