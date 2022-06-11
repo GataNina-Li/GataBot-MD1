@@ -27,8 +27,9 @@ await conn.sendHydrated(m.chat, ejemplo, null, null, null, null, null, null, [
 
 if (command == 'nido') {
  if (text == 'caterpie') {
+let hola = 'Hola1'
  
-m.reply(m.chat, 'Hola1', m, {
+m.reply(m.chat, hola, m, {
 contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
 title: '𝐍𝐈𝐃𝐎𝐒.',
 body: '✦҈͜͡➳👻𝕲𝔥𝔬𝔰𝔱•✓☆ۣۜۜ͜͡🌹',         
