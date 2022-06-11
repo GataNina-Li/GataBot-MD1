@@ -4,22 +4,22 @@ let pp = './media/menus/Menu1.jpg'
 if (command == 'nidos') {
 let ejemplo = `🔰 𝐍𝐈𝐃𝐎𝐒 • 𝐆𝐄𝐍𝐄𝐑𝐀𝐂𝐈𝐎𝐍 𝐈 🔰`
 
-conn.sendHydrated(m.chat, ejemplo, null, pp, null, null, null, null, [
+await conn.sendHydrated(m.chat, ejemplo, null, pp, null, null, null, null, [
 ['Caterpie', `.nido caterpie`],
 ['Ekans', `.nido ekans`],
 ['Pikachu', `.nido pikachu`]], m,) 
 
- conn.sendHydrated(m.chat, ejemplo, null, null, null, null, null, null, [
+await conn.sendHydrated(m.chat, ejemplo, null, null, null, null, null, null, [
 ['Jigglypuf', `.nido jigglypuf`],
 ['Psyduck', `.nido psyduck`],
 ['Growlithe', `.nido growlithe`]], m,) 
 
-conn.sendHydrated(m.chat, ejemplo, null, null, null, null, null, null, [
+await conn.sendHydrated(m.chat, ejemplo, null, null, null, null, null, null, [
 ['Abra', `.nido abra`],
 ['Drowzee', `.nido drowzee`],
 ['Exeggcute', `.nido exeggcute`]], m,) 
 
-conn.sendHydrated(m.chat, ejemplo, null, null, null, null, null, null, [
+await conn.sendHydrated(m.chat, ejemplo, null, null, null, null, null, null, [
 ['Cubone', `.nido cubone`],
 ['Pinsir', `.nido pinsir`],
 ['Eevee', `.nido eevee`]
