@@ -69,7 +69,7 @@ global.APIKeys = { // APIKey Here
 //⊱ ━━━━━.⋅ Sticker WM ⋅.━━━━ ⊰
 
 global.packname = 'toma tu sticker'
-global.author = 'the whatBots420'
+global.author = 'the Lolibot MD'
 
 //━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 
@@ -79,7 +79,7 @@ global.author = 'the whatBots420'
 global.vs = '1.0.14'
 global.version = vs
 
-global.gt = 'the whatBots420'
+global.gt = 'the Lolibot MD'
 global.gatabot = gt
 
 global.yt = 'https://youtube.com/channel/UCCQcDL1rZ4YIg7R3W0YrlhA'
@@ -94,7 +94,7 @@ global.gatabot = md
 global.nn = 'https://chat.whatsapp.com/Lus9S60MABnH9lF4Wf2T7k'
 global.nngrupo = nn
 
-global.nnn = 'https://chat.whatsapp.com/GKdDtQKWP5LCgpbzucz6kt'
+global.nnn = 'https://chat.whatsapp.com/CFSvSOGCnuL3vk4Js1DWI2'
 global.nnngrupo = nnn
 
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
@@ -128,8 +128,8 @@ global.exito = eg
 
 //⊱ ━━━━━.⋅ Información ⋅.━━━━ ⊰
 
-global.wm = 'the whatBots420'
-global.igfg = 'the whatBots420'
+global.wm = 'the Lolibot MD'
+global.igfg = 'the Lolibot MD'
 global.wait = '*⌛ _Cargando..._ ▬▬▬▭*'
 
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
