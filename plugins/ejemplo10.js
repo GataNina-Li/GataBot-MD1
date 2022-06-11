@@ -26,7 +26,7 @@ contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: nul
 title: '𝐍𝐈𝐃𝐎𝐒.',
 body: '✦҈͜͡➳👻𝕲𝔥𝔬𝔰𝔱•✓☆ۣۜۜ͜͡🌹',         
 previewType: 0, thumbnail: fs.readFileSync("./Menu2.jpg"),
-sourceUrl: `http://wa.me/+51996089079`}}})
+sourceUrl: `http://wa.me/+51996089079`}}})  }}
  //await m.reply(`Resultado 2`)
  //await m.reply(`hola`) }
   
@@ -37,7 +37,7 @@ contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: nul
 title: '𝐍𝐈𝐃𝐎𝐒.',
 body: '✦҈͜͡➳👻𝕲𝔥𝔬𝔰𝔱•✓☆ۣۜۜ͜͡🌹',         
 previewType: 0, thumbnail: fs.readFileSync("./Menu2.jpg"),
-sourceUrl: `http://wa.me/+51996089079`}}})
+sourceUrl: `http://wa.me/+51996089079`}}})  }}
  //await m.reply(`Resultado 2`)
  //await m.reply(`hola`) }
 }
@@ -49,7 +49,7 @@ contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: nul
 title: '𝐍𝐈𝐃𝐎𝐒.',
 body: '✦҈͜͡➳👻𝕲𝔥𝔬𝔰𝔱•✓☆ۣۜۜ͜͡🌹',         
 previewType: 0, thumbnail: fs.readFileSync("./Menu2.jpg"),
-sourceUrl: `http://wa.me/+51996089079`}}})
+sourceUrl: `http://wa.me/+51996089079`}}})  }}
  //await m.reply(`Resultado 2`)
  //await m.reply(`hola`) }
 }
@@ -61,7 +61,7 @@ contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: nul
 title: '𝐍𝐈𝐃𝐎𝐒.',
 body: '✦҈͜͡➳👻𝕲𝔥𝔬𝔰𝔱•✓☆ۣۜۜ͜͡🌹',         
 previewType: 0, thumbnail: fs.readFileSync("./Menu2.jpg"),
-sourceUrl: `http://wa.me/+51996089079`}}})
+sourceUrl: `http://wa.me/+51996089079`}}})  }}
  //await m.reply(`Resultado 2`)
  //await m.reply(`hola`) }
 }
@@ -73,7 +73,7 @@ contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: nul
 title: '𝐍𝐈𝐃𝐎𝐒.',
 body: '✦҈͜͡➳👻𝕲𝔥𝔬𝔰𝔱•✓☆ۣۜۜ͜͡🌹',         
 previewType: 0, thumbnail: fs.readFileSync("./Menu2.jpg"),
-sourceUrl: `http://wa.me/+51996089079`}}})
+sourceUrl: `http://wa.me/+51996089079`}}})  }}
  //await m.reply(`Resultado 2`)
 //await m.reply(`hola`) }
 }
@@ -85,7 +85,7 @@ contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: nul
 title: '𝐍𝐈𝐃𝐎𝐒.',
 body: '✦҈͜͡➳👻𝕲𝔥𝔬𝔰𝔱•✓☆ۣۜۜ͜͡🌹',         
 previewType: 0, thumbnail: fs.readFileSync("./Menu2.jpg"),
-sourceUrl: `http://wa.me/+51996089079`}}})
+sourceUrl: `http://wa.me/+51996089079`}}})  }}
  //await m.reply(`Resultado 2`)
  //wait m.reply(`hola`) }
 }
@@ -97,7 +97,7 @@ contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: nul
 title: '𝐍𝐈𝐃𝐎𝐒.',
 body: '✦҈͜͡➳👻𝕲𝔥𝔬𝔰𝔱•✓☆ۣۜۜ͜͡🌹',         
 previewType: 0, thumbnail: fs.readFileSync("./Menu2.jpg"),
-sourceUrl: `http://wa.me/+51996089079`}}})
+sourceUrl: `http://wa.me/+51996089079`}}})  }}
  //await m.reply(`Resultado 2`)
  //await m.reply(`hola`) }
 }
@@ -109,7 +109,7 @@ contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: nul
 title: '𝐍𝐈𝐃𝐎𝐒.',
 body: '✦҈͜͡➳👻𝕲𝔥𝔬𝔰𝔱•✓☆ۣۜۜ͜͡🌹',         
 previewType: 0, thumbnail: fs.readFileSync("./Menu2.jpg"),
-sourceUrl: `http://wa.me/+51996089079`}}})
+sourceUrl: `http://wa.me/+51996089079`}}})  }}
  //await m.reply(`Resultado 2`)
  //await m.reply(`hola`) }
 }
@@ -121,7 +121,7 @@ contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: nul
 title: '𝐍𝐈𝐃𝐎𝐒.',
 body: '✦҈͜͡➳👻𝕲𝔥𝔬𝔰𝔱•✓☆ۣۜۜ͜͡🌹',         
 previewType: 0, thumbnail: fs.readFileSync("./Menu2.jpg"),
-sourceUrl: `http://wa.me/+51996089079`}}})
+sourceUrl: `http://wa.me/+51996089079`}}})  }}
  //await m.reply(`Resultado 2`)
  //await m.reply(`hola`) }
 }
@@ -133,7 +133,7 @@ contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: nul
 title: '𝐍𝐈𝐃𝐎𝐒.',
 body: '✦҈͜͡➳👻𝕲𝔥𝔬𝔰𝔱•✓☆ۣۜۜ͜͡🌹',         
 previewType: 0, thumbnail: fs.readFileSync("./Menu2.jpg"),
-sourceUrl: `http://wa.me/+51996089079`}}})
+sourceUrl: `http://wa.me/+51996089079`}}})  }}
  //await m.reply(`Resultado 2`)
  //await m.reply(`hola`) }
 }
@@ -145,7 +145,7 @@ contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: nul
 title: '𝐍𝐈𝐃𝐎𝐒.',
 body: '✦҈͜͡➳👻𝕲𝔥𝔬𝔰𝔱•✓☆ۣۜۜ͜͡🌹',         
 previewType: 0, thumbnail: fs.readFileSync("./Menu2.jpg"),
-sourceUrl: `http://wa.me/+51996089079`}}})
+sourceUrl: `http://wa.me/+51996089079`}}})  }}
  //await m.reply(`Resultado 2`)
  //await m.reply(`hola`) }
 }
@@ -157,10 +157,10 @@ contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: nul
 title: '𝐍𝐈𝐃𝐎𝐒.',
 body: '✦҈͜͡➳👻𝕲𝔥𝔬𝔰𝔱•✓☆ۣۜۜ͜͡🌹',         
 previewType: 0, thumbnail: fs.readFileSync("./Menu2.jpg"),
-sourceUrl: `http://wa.me/+51996089079`}}})
+sourceUrl: `http://wa.me/+51996089079`}}})  }}
  //await m.reply(`Resultado 2`)
  //await m.reply(`hola`) }
-}}
+}
  
 handler.help = ['nidos', 'nido']
 handler.tags = ['ejemplo']
