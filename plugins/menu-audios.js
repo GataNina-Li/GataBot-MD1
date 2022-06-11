@@ -74,6 +74,7 @@ let pp = './media/menus/Menuvid3.mp4'
 ┃ *Palabra o Frase.*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ⎪➫🔊 _A_
+⎪➫🔊 _🚨_
 ⎪➫🔊 _Atencion grupo_
 ⎪➫🔊 _Audio hentai_
 ⎪➫🔊 _A nadie le importa_
@@ -99,7 +100,6 @@ let pp = './media/menus/Menuvid3.mp4'
 ⎪➫🔊 _Cambiate a Movistar_
 ⎪➫🔊 _Contexto_
 ⎪➫🔊 _Callate | 🤫_
-⎪➫🔊 _🚨_
 ⎪➫🔊 _Chau | 👋_
 ⎪➫🔊 _DIVINO | 💋_
 ⎪➫🔊 _Depresion_
@@ -124,6 +124,7 @@ let pp = './media/menus/Menuvid3.mp4'
 ⎪➫🔊 _Fiesta del admin_
 ⎪➫🔊 _Fiesta del admin 2_
 ⎪➫🔊 _Fiesta del administrador_
+⎪➫🔊 _Hasta la proxima_
 ⎪➫🔊 _Hablar primos_
 ⎪➫🔊 _Hablame_
 ⎪➫🔊 _Hentai_
@@ -184,6 +185,7 @@ let pp = './media/menus/Menuvid3.mp4'
 ⎪➫🔊 _Que sucede_
 ⎪➫🔊 _Quien es tu sempai botsito 7w7_
 ⎪➫🔊 _Rawr_
+⎪➫🔊 _🕺_
 ⎪➫🔊 _Salimo en caravana_
 ⎪➫🔊 _Sexo_
 ⎪➫🔊 _Su nivel de pendejo_
@@ -205,11 +207,13 @@ let pp = './media/menus/Menuvid3.mp4'
 ⎪➫🔊 _Una pregunta_
 ⎪➫🔊 _Usted está detenido_
 ⎪➫🔊 _Viernes_
+⎪➫🔊 _Viernes de la jungla_
 ⎪➫🔊 _Vete a la vrg_
 ⎪➫🔊 _Verdad que te engañe_
 ⎪➫🔊 _Vivan los novios_
 ⎪➫🔊 _Wenomechainsama | 🐹_
 ⎪➫🔊 _Wtf_
+⎪➫🔊 _Wtf y este random?_
 ⎪➫🔊 _Yumbi yumbi | 🤠_
 ⎪➫🔊 _Y Digo Wo_
 ⎪➫🔊 _Yamete_
@@ -233,6 +237,7 @@ const sections = [
 title: `𝙇𝙄𝙎𝙏𝘼 𝘿𝙀𝙎𝙋𝙇𝙀𝙂𝘼𝘽𝙇𝙀 | 𝘿𝙍𝙊𝙋-𝘿𝙊𝙒𝙉 𝙇𝙄𝙎𝙏`,
 rows: [
 {title: "➥🔊 A", description: null, rowId: `A`},
+{title: "➥🔊 🚨", description: null, rowId: `🚨`},
 {title: "➥🔊 Atencion grupo", description: null, rowId: `Atencion grupo`},
 {title: "➥🔊 Audio hentai", description: null, rowId: `Audio hentai`},
 {title: "➥🔊 A nadie le importa", description: null, rowId: `A nadie le importa`},
@@ -257,7 +262,6 @@ rows: [
 {title: "➥🔊 Cambiate a Movistar", description: null, rowId: `Cambiate a Movistar`},
 {title: "➥🔊 Contexto", description: null, rowId: `Contexto`},
 {title: "➥🔊 Callate", description: null, rowId: `🤫`},
-{title: "➥🔊 🚨", description: null, rowId: `🚨`},
 {title: "➥🔊 Chau", description: null, rowId: `👋`},
 {title: "➥🔊 DIVINO", description: null, rowId: `💋`},
 {title: "➥🔊 Depresion", description: null, rowId: `Depresion`},
@@ -286,6 +290,7 @@ rows: [
 {title: "➥🔊 Hablame", description: null, rowId: `Hablame`},
 {title: "➥🔊 Hentai", description: null, rowId: `Hentai`},
 {title: "➥🔊 Hey", description: null, rowId: `Hey`},
+{title: "➥🔊 Hasta la proxima", description: null, rowId: `Hasta la proxima`},
 {title: "➥🔊 Homero chino", description: null, rowId: `Homero chino`},
 {title: "➥🔊 Hola", description: null, rowId: `Hola`},
 {title: "➥🔊 Ingresa épicamente", description: null, rowId: `Ingresa épicamente`},
@@ -341,6 +346,7 @@ rows: [
 {title: "➥🔊 Que sucede", description: null, rowId: `Que sucede`},
 {title: "➥🔊 Quien es tu sempai botsito 7w7", description: null, rowId: `Quien es tu sempai botsito 7w7`},
 {title: "➥🔊 Rawr", description: null, rowId: `Rawr`},
+{title: "➥🔊 🕺", description: null, rowId: `🕺`},
 {title: "➥🔊 Salimo en caravana", description: null, rowId: `Salimo en caravana`},
 {title: "➥🔊 Sexo", description: null, rowId: `Sexo`},
 {title: "➥🔊 Su nivel de pendejo", description: null, rowId: `Su nivel de pendejo`},
@@ -362,11 +368,13 @@ rows: [
 {title: "➥🔊 Una pregunta", description: null, rowId: `Una pregunta`},
 {title: "➥🔊 Usted está detenido", description: null, rowId: `Usted está detenido`},
 {title: "➥🔊 Viernes", description: null, rowId: `Viernes`},
+{title: "➥🔊 Viernes de la junga", description: null, rowId: `Viernes de la jungla`},
 {title: "➥🔊 Vete a la verga", description: null, rowId: `Vete a la verga`},
 {title: "➥🔊 Verdad que te engañe", description: null, rowId: `Verdad que te engañe`},
 {title: "➥🔊 Vivan los novios", description: null, rowId: `Vivan los novios`},
 {title: "➥🔊 Wenomechainsama", description: null, rowId: `🐹`},
 {title: "➥🔊 Wtf", description: null, rowId: `Wtf`},
+{title: "➥🔊 Wtf y este random?", description: null, rowId: `Wtf y este random`},
 {title: "➥🔊 Yumbi yumbi", description: null, rowId: `🤠`},
 {title: "➥🔊 Y Digo Wo", description: null, rowId: `Y Digo Wo`},
 {title: "➥🔊 Yamete", description: null, rowId: `Yamete`},
