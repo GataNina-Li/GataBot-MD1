@@ -99,7 +99,7 @@ let pp = './media/menus/Menuvid3.mp4'
 ⎪➫🔊 _Cambiate a Movistar_
 ⎪➫🔊 _Contexto_
 ⎪➫🔊 _Callate | 🤫_
-⎪➫🔊 _Como??? | 🚨_
+⎪➫🔊 _🚨_
 ⎪➫🔊 _Chau | 👋_
 ⎪➫🔊 _DIVINO | 💋_
 ⎪➫🔊 _Depresion_
@@ -257,7 +257,7 @@ rows: [
 {title: "➥🔊 Cambiate a Movistar", description: null, rowId: `Cambiate a Movistar`},
 {title: "➥🔊 Contexto", description: null, rowId: `Contexto`},
 {title: "➥🔊 Callate", description: null, rowId: `🤫`},
-{title: "➥🔊 Como???", description: null, rowId: `🚨`},
+{title: "➥🔊 🚨", description: null, rowId: `🚨`},
 {title: "➥🔊 Chau", description: null, rowId: `👋`},
 {title: "➥🔊 DIVINO", description: null, rowId: `💋`},
 {title: "➥🔊 Depresion", description: null, rowId: `Depresion`},
