@@ -1,4 +1,4 @@
-# Esta versión de the whatBots420 no esta terminada. <img src="https://c.tenor.com/QaPEi-tcFXQAAAAC/gato-besando-a-la-camara.gif" height="32px">
+# Esta versión de the Lolibot MD no esta terminada. <img src="https://c.tenor.com/QaPEi-tcFXQAAAAC/gato-besando-a-la-camara.gif" height="32px">
 > #### 🚀 Versión actual: 1.0.14
 
 <p align="center"> 
