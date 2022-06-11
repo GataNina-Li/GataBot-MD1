@@ -162,7 +162,7 @@ previewType: 0, thumbnail: fs.readFileSync("./media/menus/Menu3.jpg"),
 sourceUrl: `http://wa.me/+51996089079`}}})
  //await m.reply(`Resultado 2`)
  //await m.reply(`hola`) }
- }
+ }}
  
 handler.help = ['nidos', 'nido']
 handler.tags = ['ejemplo']
