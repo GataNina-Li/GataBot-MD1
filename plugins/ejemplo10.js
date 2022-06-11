@@ -9,7 +9,7 @@ await conn.sendHydrated(m.chat, ejemplo, null, pp, null, null, null, null, [
 ['Ekans', `.nido ekans`],
 ['Pikachu', `.nido pikachu`]
 ], m,)
- 
+/* 
 if (command == 'nidos') {
 
 await conn.sendHydrated(m.chat, ejemplo, wm, null, null, null, null, null, [
@@ -32,7 +32,7 @@ await conn.sendHydrated(m.chat, ejemplo, wm, null, null, null, null, null, [
 ['Cubone', `.nido cubone`],
 ['Pinsir', `.nido pinsir`],
 ['Eevee', `.nido eevee`]
-], m,) }
+], m,)*/ }
 
 if (command == 'nido') {
  if (text == 'caterpie') {
