@@ -67,12 +67,12 @@ let str = `
 
 *📅 𝙵𝙴𝙲𝙷𝙰: ${week}, ${date}*
 
-*📊 𝚄𝚂𝚄𝙰𝚁𝙸𝙾𝚂: ${rtotalreg}*
+*activo: ${uptime}*
 
 *<𝕀ℕ𝔽𝕆ℝ𝕄𝔸ℂ𝕀𝕆ℕ 𝔻𝔼𝕃 𝔹𝕆𝕋/>*
-
+______________
 ° ඬ ⃟ 💟 _${usedPrefix}grupos_
-° ඬ ⃟ 💟 _${usedPrefix}cuentasgatabot_
+° ඬ ⃟ 💟 _${usedPrefix}cuentaslolibot_
 ° ඬ ⃟ 💟 _${usedPrefix}estado_
 ° ඬ ⃟ 💟 _${usedPrefix}infobot_
 ° ඬ ⃟ 💟 _${usedPrefix}donar_
@@ -80,11 +80,11 @@ let str = `
 ° ඬ ⃟ 💟 _${usedPrefix}velocidad_
 ° ඬ ⃟ 💟 _${usedPrefix}owner_
 ° ඬ ⃟ 💟 _Bot_ (𝑢𝑠𝑜 𝑠𝑖𝑛 𝑝𝑟𝑒𝑓𝑖𝑗𝑜)
-
+______________
 *<𝕌ℕ𝔼 𝕌ℕ 𝔹𝕆𝕋 𝔸 𝕋𝕌 𝔾ℝ𝕌ℙ𝕆/>*
 
 ° ඬ⃟👽 _${usedPrefix}join *<enlace / link / url>*_
-
+______________
 *<𝕁𝕌𝔼𝔾𝕆𝕊/>*
 
 ° ඬ⃟🎖️ _${usedPrefix}mates *<noob / easy / medium / hard / extreme /impossible /impossible2>*_
@@ -110,28 +110,14 @@ let str = `
 ° ඬ⃟🎖️ _${usedPrefix}formarpareja_
 ° ඬ⃟🎖️ _${usedPrefix}verdad_
 ° ඬ⃟🎖️ _${usedPrefix}reto_
-
+______________
 *<𝔸ℂ𝕋𝕀𝕍𝔸ℝ 𝕆 𝔻𝔼𝕊𝔸ℂ𝕋𝕀𝕍𝔸ℝ/>*
-
-° ඬ⃟☑️ _${usedPrefix}enable *welcome*_
-° ඬ⃟☑️ _${usedPrefix}disable *welcome*_
-° ඬ⃟☑️ _${usedPrefix}enable *modohorny*_
-° ඬ⃟☑️ _${usedPrefix}disable *modohorny*_
-° ඬ⃟☑️ _${usedPrefix}enable *antilink*_
-° ඬ⃟☑️ _${usedPrefix}disable *antilink*_
-° ඬ⃟☑️ _${usedPrefix}enable *antilink2*_
-° ඬ⃟☑️ _${usedPrefix}disable *antilink2*_
-° ඬ⃟☑️ _${usedPrefix}enable *detect*_
-° ඬ⃟☑️ _${usedPrefix}disable *detect*_
-° ඬ⃟☑️ _${usedPrefix}enable *audios*_
-° ඬ⃟☑️ _${usedPrefix}disable *audios*_
-° ඬ⃟☑️ _${usedPrefix}enable *autosticker*_
-° ඬ⃟☑️ _${usedPrefix}disable *autosticker*_
-
+*Enable*
+______________
 *<ℝ𝔼ℙ𝕆ℝ𝕋𝔼𝕊 𝔻𝔼 𝔽𝔸𝕃𝕃𝕆𝕊/>*
 
 ° ඬ⃟🔰 _${usedPrefix}reporte *<texto>*_
-
+______________
 *<𝔻𝔼𝕊ℂ𝔸ℝ𝔾𝔸𝕊/>*
 
 ° ඬ⃟📥 _${usedPrefix}facebook *<enlace / link / url>*_
@@ -153,7 +139,7 @@ let str = `
 ° ඬ⃟📥 _${usedPrefix}pptiktok *<nombre de usuario>*_
 ° ඬ⃟📥 _${usedPrefix}igstalk *<nombre de usuario>*_
 ° ඬ⃟📥 _${usedPrefix}tiktokstalk *<nombre de usuario>*_
-
+______________
 *<𝔾ℝ𝕌ℙ𝕆𝕊/>* 
 
 ° ඬ⃟💎 _${usedPrefix}add *<numero>*_
@@ -174,7 +160,7 @@ let str = `
 ° ඬ⃟💎 _${usedPrefix}setbye *<texto>*_
 ° ඬ⃟💎 _${usedPrefix}hidetag *<texto>*_
 ° ඬ⃟💎 _${usedPrefix}simular *<welcome / bye / promote / demote>*_
-
+______________
 *<ℂ𝕆ℕ𝕍𝔼ℝ𝕋𝕀𝔻𝕆ℝ𝔼𝕊/>*
 
 ° ඬ⃟🧧 _${usedPrefix}toimg *<responde a un sticker>*_
@@ -183,7 +169,7 @@ let str = `
 ° ඬ⃟🧧 _${usedPrefix}tovideo *<responde a un audio>*_
 ° ඬ⃟🧧 _${usedPrefix}tourl *<responde a un video / imagen / audio>*_
 ° ඬ⃟🧧 _${usedPrefix}tts es *<texto>*_
-
+______________
 *<𝔼𝔽𝔼ℂ𝕋𝕆𝕊 𝕐 𝕃𝕆𝔾𝕆𝕊/>*
 
 ° ඬ⃟🖍️ _${usedPrefix}logos *<efecto> <texto>*_
@@ -194,7 +180,7 @@ let str = `
 ° ඬ⃟🖍️ _${usedPrefix}itssostupid_
 ° ඬ⃟🖍️ _${usedPrefix}pixelar_
 ° ඬ⃟🖍️ _${usedPrefix}blur_
-
+______________
 *<ℝ𝔸ℕ𝔻𝕆𝕄/>*
 
 ° ඬ⃟👾 _${usedPrefix}cristianoronaldo_
@@ -244,7 +230,7 @@ let str = `
 ° ඬ⃟👾 _${usedPrefix}sasuke_
 ° ඬ⃟👾 _${usedPrefix}sakura_
 ° ඬ⃟👾 _${usedPrefix}cosplay_
-
+______________
 *<ℂ𝕆𝕄𝔸ℕ𝔻𝕆𝕊 +𝟙𝟠/>*
 
 ° ඬ⃟🔞 _${usedPrefix}pack_
@@ -278,7 +264,7 @@ let str = `
 ° ඬ⃟🔞 _${usedPrefix}nsfwero_
 ° ඬ⃟🔞 _${usedPrefix}nsfwfemdom_
 ° ඬ⃟🔞 _${usedPrefix}nsfwglass_
-
+______________
 *<𝔼𝔽𝔼ℂ𝕋𝕆𝕊 𝔻𝔼 𝔸𝕌𝔻𝕀𝕆𝕊/>*
 *- 𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙴 𝙰 𝚄𝙽 𝙰𝚄𝙳𝙸𝙾 𝙾 𝙽𝙾𝚃𝙰 𝙳𝙴 𝚅𝙾𝚉*
 
@@ -294,13 +280,13 @@ let str = `
 ° ඬ⃟🎤 _${usedPrefix}slow_
 ° ඬ⃟🎤 _${usedPrefix}smooth_
 ° ඬ⃟🎤 _${usedPrefix}tupai_
-
+______________
 *<ℂℍ𝔸𝕋 𝔸ℕ𝕆ℕ𝕀𝕄𝕆/>*
 
 ° ඬ⃟📳 _${usedPrefix}start_
 ° ඬ⃟📳 _${usedPrefix}next_
 ° ඬ⃟📳 _${usedPrefix}leave_
-
+______________
 *<𝔹𝕌𝕊ℂ𝔸𝔻𝕆ℝ𝔼𝕊/>*
 
 ° ඬ⃟🔍 _${usedPrefix}animeinfo *<texto>*_
@@ -308,7 +294,7 @@ let str = `
 ° ඬ⃟🔍 _${usedPrefix}letra *<texto>*_
 ° ඬ⃟🔍 _${usedPrefix}wikipedia *<texto>*_
 ° ඬ⃟🔍 _${usedPrefix}ytsearch *<texto>*_
-
+______________
 *<𝔸𝕌𝔻𝕀𝕆𝕊/>* 
 *- 𝙴𝚂𝙲𝚁𝙸𝙱𝙴 𝙻𝙰𝚂 𝚂𝙸𝙶𝚄𝙸𝙴𝙽𝚃𝙴𝚂 𝙿𝙰𝙻𝙰𝙱𝚁𝙰𝚂 𝙾 𝙵𝚁𝙰𝚂𝙴𝚂 𝚂𝙸𝙽 𝙽𝙸𝙽𝙶𝚄𝙽 𝙿𝚁𝙴𝙵𝙸𝙹𝙾 (#, /, *, .)* 
 _(𝑢𝑠𝑜 𝑠𝑖𝑛 𝑝𝑟𝑒𝑓𝑖𝑗𝑜)_
@@ -351,7 +337,7 @@ _(𝑢𝑠𝑜 𝑠𝑖𝑛 𝑝𝑟𝑒𝑓𝑖𝑗𝑜)_
 ° ඬ⃟🔊 _UwU_
 ° ඬ⃟🔊 _:c_
 ° ඬ⃟🔊 _a_
-
+______________
 *<ℍ𝔼ℝℝ𝔸𝕄𝕀𝔼ℕ𝕋𝔸𝕊/>*
 
 ° ඬ⃟🛠️ _${usedPrefix}afk *<motivo>*_
@@ -363,7 +349,7 @@ _(𝑢𝑠𝑜 𝑠𝑖𝑛 𝑝𝑟𝑒𝑓𝑖𝑗𝑜)_
 ° ඬ⃟🛠️ _${usedPrefix}spamwa *<numero|texto|cantidad>*_
 ° ඬ⃟🛠️ _${usedPrefix}styletext *<texto>*_
 ° ඬ⃟🛠️ _${usedPrefix}traducir *<texto>*_
-
+______________
 *<ℝℙ𝔾 - 𝕃𝕀𝕄𝕀𝕋𝔼𝕊 - 𝔼ℂ𝕆ℕ𝕆𝕄𝕀𝔸/>*
 
 ° ඬ⃟💵 _${usedPrefix}balance_
@@ -379,7 +365,7 @@ _(𝑢𝑠𝑜 𝑠𝑖𝑛 𝑝𝑟𝑒𝑓𝑖𝑗𝑜)_
 ° ඬ⃟💵 _${usedPrefix}transfer *<tipo> <cantidad> <@tag>*_
 ° ඬ⃟💵 _${usedPrefix}verificar_
 ° ඬ⃟💵 _${usedPrefix}unreg *<numero de serie>*_
-
+______________
 *<𝕊𝕋𝕀ℂ𝕂𝔼ℝ𝕊/>*
 
 ° ඬ⃟👽 _${usedPrefix}emojimix *<emoji 1>&<emoji 2>*_
@@ -392,7 +378,7 @@ _(𝑢𝑠𝑜 𝑠𝑖𝑛 𝑝𝑟𝑒𝑓𝑖𝑗𝑜)_
 ° ඬ⃟👽 _${usedPrefix}wm *<packname> <author>*_
 ° ඬ⃟👽 _${usedPrefix}stickermarker *<efecto> <responder a imagen>*_
 ° ඬ⃟👽 _${usedPrefix}stickerfilter *<efecto> <responder a imagen>*_
-
+______________
 *<𝕆𝕎ℕ𝔼ℝ 𝕐 𝕄𝕆𝔻𝔼ℝ𝔸𝔻𝕆ℝ𝔼𝕊/>*
 
 ° ඬ⃟👑 _${usedPrefix}cajafuerte_
@@ -424,8 +410,8 @@ _(𝑢𝑠𝑜 𝑠𝑖𝑛 𝑝𝑟𝑒𝑓𝑖𝑗𝑜)_
 ° ඬ⃟👑 _${usedPrefix}añadirxp *<@tag> <cantidad>*_
 `.trim()
 conn.sendHydrated(m.chat, str, wm, pp, 'https://github.com/GataNina-Li/GataBot-MD', '𝙶𝙸𝚃𝙷𝚄𝙱', null, null, [
-['💖 𝘿𝙤𝙣𝙖𝙧 | 𝘿𝙤𝙣𝙖𝙩𝙚', '.donar'],
-['💗 𝙈𝙚𝙣𝙪 𝘼𝙫𝙚𝙣𝙩𝙪𝙧𝙖 | 𝙍𝙋𝙂 💗', null],
+['💖 grupos', '.grupos'],
+['💗 𝙈𝙚𝙣𝙪 𝘼𝙫𝙚𝙣𝙩𝙪𝙧𝙖 💗', null],
 ['💝 𝙈𝙚𝙣𝙪 𝘼𝙪𝙙𝙞𝙤𝙨 💝', '.audios']
 
 ], m,)
