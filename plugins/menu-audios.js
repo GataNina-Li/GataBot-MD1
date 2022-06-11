@@ -185,7 +185,7 @@ let pp = './media/menus/Menuvid3.mp4'
 ⎪➫🔊 _Que sucede_
 ⎪➫🔊 _Quien es tu sempai botsito 7w7_
 ⎪➫🔊 _Rawr_
-⎪➫🔊 _Rick | 🕺_
+⎪➫🔊 _🕺_
 ⎪➫🔊 _Salimo en caravana_
 ⎪➫🔊 _Sexo_
 ⎪➫🔊 _Su nivel de pendejo_
@@ -290,10 +290,11 @@ rows: [
 {title: "➥🔊 Hablame", description: null, rowId: `Hablame`},
 {title: "➥🔊 Hentai", description: null, rowId: `Hentai`},
 {title: "➥🔊 Hey", description: null, rowId: `Hey`},
-{title: "➥🔊 Hasta la proxima", description: null, rowId: `TUTUTU`},
+{title: "➥🔊 Hasta la proxima", description: null, rowId: `Hasta la proxima`},
 {title: "➥🔊 Homero chino", description: null, rowId: `Homero chino`},
 {title: "➥🔊 Hola", description: null, rowId: `Hola`},
 {title: "➥🔊 Ingresa épicamente", description: null, rowId: `Ingresa épicamente`},
+{title: "➥🔊 Joder odio a chile", description: null, rowId: `Odio a chile`},
 {title: "➥🔊 Jijija", description: null, rowId: `😂`},
 {title: "➥🔊 Joder", description: null, rowId: `Joder`},
 {title: "➥🔊 Jesucristo", description: null, rowId: `Jesucristo`},
@@ -327,7 +328,6 @@ rows: [
 {title: "➥🔊 Niconico", description: null, rowId: `Niconico`},
 {title: "➥🔊 No digas eso papu", description: null, rowId: `No digas eso papu`},
 {title: "➥🔊 Nyanpasu", description: null, rowId: `Nyanpasu`},
-{title: "➥🔊 Odio a Chile", description: null, rowId: `Odio a Chile`},
 {title: "➥🔊 Orale", description: null, rowId: `Orale`},
 {title: "➥🔊 Omaiga", description: null, rowId: `Omaiga`},
 {title: "➥🔊 Ohayo", description: null, rowId: `Ohayo`},
@@ -346,7 +346,7 @@ rows: [
 {title: "➥🔊 Que sucede", description: null, rowId: `Que sucede`},
 {title: "➥🔊 Quien es tu sempai botsito 7w7", description: null, rowId: `Quien es tu sempai botsito 7w7`},
 {title: "➥🔊 Rawr", description: null, rowId: `Rawr`},
-{title: "➥🔊 Rick", description: null, rowId: `🕺`},
+{title: "➥🔊 🕺", description: null, rowId: `🕺`},
 {title: "➥🔊 Salimo en caravana", description: null, rowId: `Salimo en caravana`},
 {title: "➥🔊 Sexo", description: null, rowId: `Sexo`},
 {title: "➥🔊 Su nivel de pendejo", description: null, rowId: `Su nivel de pendejo`},
