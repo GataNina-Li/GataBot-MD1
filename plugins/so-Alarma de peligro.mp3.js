@@ -12,6 +12,6 @@ type: 'audioMessage',
 ptt: true 
 })
 }
-handler.customPrefix = /como|como???|como?|como??|🚨/i 
+handler.customPrefix = /🚨/i 
 handler.command = new RegExp
 export default handler
