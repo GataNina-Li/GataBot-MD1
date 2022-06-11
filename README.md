@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-<img src="https://i.imgur.com/WwxBm8o.jpg" alt="FutabuBot-MD" width="900"/>
+<img src="https://pm1.narvii.com/6477/6dc1e005c4379323bd06f1254b45b497ab8b6c28_hq.jpg" alt="FutabuBot-MD" width="900"/>
 </p>
 
 <p align="center">
