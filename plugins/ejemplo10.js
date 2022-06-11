@@ -20,13 +20,13 @@ await conn.sendHydrated(m.chat, ejemplo, wm, null, null, null, null, null, [
 ['Abra', `.nido abra`],
 ['Drowzee', `.nido drowzee`],
 ['Exeggcute', `.nido exeggcute`]
-], m,)
+], m,) 
  
 await conn.sendHydrated(m.chat, ejemplo, wm, null, null, null, null, null, [  
 ['Cubone', `.nido cubone`],
 ['Pinsir', `.nido pinsir`],
 ['Eevee', `.nido eevee`]
-], m,)
+], m,) }
 
 if (command == 'nido') {
  if (text == 'caterpie') {
