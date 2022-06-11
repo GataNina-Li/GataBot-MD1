@@ -185,7 +185,7 @@ let pp = './media/menus/Menuvid3.mp4'
 ⎪➫🔊 _Que sucede_
 ⎪➫🔊 _Quien es tu sempai botsito 7w7_
 ⎪➫🔊 _Rawr_
-⎪➫🔊 _🕺_
+⎪➫🔊 _Rick | 🕺_
 ⎪➫🔊 _Salimo en caravana_
 ⎪➫🔊 _Sexo_
 ⎪➫🔊 _Su nivel de pendejo_
@@ -290,7 +290,7 @@ rows: [
 {title: "➥🔊 Hablame", description: null, rowId: `Hablame`},
 {title: "➥🔊 Hentai", description: null, rowId: `Hentai`},
 {title: "➥🔊 Hey", description: null, rowId: `Hey`},
-{title: "➥🔊 Hasta la proxima", description: null, rowId: `Hasta la proxima`},
+{title: "➥🔊 Hasta la proxima", description: null, rowId: `TUTUTU`},
 {title: "➥🔊 Homero chino", description: null, rowId: `Homero chino`},
 {title: "➥🔊 Hola", description: null, rowId: `Hola`},
 {title: "➥🔊 Ingresa épicamente", description: null, rowId: `Ingresa épicamente`},
@@ -346,7 +346,7 @@ rows: [
 {title: "➥🔊 Que sucede", description: null, rowId: `Que sucede`},
 {title: "➥🔊 Quien es tu sempai botsito 7w7", description: null, rowId: `Quien es tu sempai botsito 7w7`},
 {title: "➥🔊 Rawr", description: null, rowId: `Rawr`},
-{title: "➥🔊 🕺", description: null, rowId: `🕺`},
+{title: "➥🔊 Rick", description: null, rowId: `🕺`},
 {title: "➥🔊 Salimo en caravana", description: null, rowId: `Salimo en caravana`},
 {title: "➥🔊 Sexo", description: null, rowId: `Sexo`},
 {title: "➥🔊 Su nivel de pendejo", description: null, rowId: `Su nivel de pendejo`},
