@@ -22,7 +22,7 @@ let info = `
 ╭━━━━[ ${gb} ]━━━━━⬣
 ┃
 ┃➥ *CREADOR*
-┃ღ *the whatBots420*
+┃ღ *the LOLIBOT MD*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃➥ *CONTACTo* 
 ┃ღ *wa.me/56977774748*
