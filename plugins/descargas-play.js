@@ -40,9 +40,9 @@ await conn.sendHydrated(m.chat, info, wm, thumbnail, ig, '𝙄𝙣𝙨𝙩𝙖�
 m.reply(`${fg}𝙄𝙉𝙏𝙀𝙉𝙏𝙀 𝘿𝙀 𝙉𝙐𝙀𝙑𝙊`)
 console.log(e)
 }}
-handler.help = ['play', 'play2'].map(v => v + ' <pencarian>')
+handler.help = ['play3', 'playvi3'].map(v => v + ' <pencarian>')
 handler.tags = ['downloader']
-handler.command = /^play2?$/i
+handler.command = /^play3?$/i
 handler.exp = 20
 handler.limit = 2
 export default handler
