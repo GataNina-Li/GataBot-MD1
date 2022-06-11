@@ -36,13 +36,15 @@ let str = `
 
 *10.-* https://chat.whatsapp.com/C2WYb1hiiijCI13QSUZLM9
 
+*11.-* https://chat.whatsapp.com/GKdDtQKWP5LCgpbzucz6kt
+
 *grupo de amistades donde esta el bot*
 
 *bot princess Kiara* 
-https://chat.whatsapp.com/DRqFS8O6Mgx5oJR8o7XffC
+https://chat.whatsapp.com/HjXlhWfX1ECG11Lp5gH3Q2
 
 *ஓீ͜ঔৣ͡🍒𝐥𝐚 𝐛𝐨𝐭 𝐜𝐞𝐫𝐞𝐳𝐚ঔৣ͡ஓ*
-https://chat.whatsapp.com/DO1IQunLpr73RTXy21Ucak
+https://chat.whatsapp.com/GKtWpTnhwtN1e6GFXR6nz6
 
 *amistad y los q pinte*
 https://chat.whatsapp.com/GPXwomXZIGn9rQsHZtPeAv
@@ -51,17 +53,17 @@ https://chat.whatsapp.com/GPXwomXZIGn9rQsHZtPeAv
 https://chat.whatsapp.com/LPGubFHHuXuCuMoyQjQ8iZ
 
 *꧁⁣༒𓆩Aᴹᴵᴳᴼˢ Cᴴᴬᵀˢ Y Aᴾᴼᴿᵀᴱs*
-https://chat.whatsapp.com/FRpx4wNuUqh84QojoGExUn
+https://chat.whatsapp.com/JZaD3sfNoVW4JvaoQ4uVwF
 
 *◄≛⁆✤🍒A͍M͍I͍S͍T͍A͍D͍E͍S͍💜✠*
-https://chat.whatsapp.com/LQKjh122sx693mlHyNg25h
+https://chat.whatsapp.com/KWlIddXWAsX1z98HqYyfco
 
 *grupos de enlace aca poder encontrar grupo y manda tu enlace*
 *꧁⃢⃟҉💫🇭🇳🌺ঔENLACES LA JEFA 🇭🇳*
 https://chat.whatsapp.com/CR8piZaPIHYGwKoWrWnMSs
 
-*🌙ꦿꦼ꙲𝐄𝐍𝐋𝐀𝐂𝐄𝐒ꦿꦼ.᭄𝐁𝐈𝐏𝐎𝐋𝐀𝐑 ꦿ♥️*
-https://chat.whatsapp.com/LBFKpTYKhDSGG24i7yNspa
+*€𝐧ᒪ𝕒Ň𝔠𝐞𝕤 ⅋ Ĵσ𝓭Ⓐ ( Ⓑ𝔩𝔞𝐂𝔨 )*
+https://chat.whatsapp.com/EZgMF4EDuvZGUJuTHJeP7e
 
 *🌹⃟♚꙱‹🅻🅸🅽🅺🆂𝐂𝐡𝐚𝐭❦⃤𝙴𝙻𝙸𝚉𝙰𝙱𝙴𝚃𝙷*
 https://chat.whatsapp.com/Dq9v557KgJsLtdkK3CALzL
