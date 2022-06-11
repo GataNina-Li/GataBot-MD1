@@ -27,9 +27,9 @@ let estado =`
 ┃➥ ${uptime}
 ┃ღ *Usuario(s)* 
 ┃➥ ${Object.keys(global.db.data.users).length} 
-┃ღ *Chat(s) Prohibido(s) | Forbidden Chats*
+┃ღ *Chat(s) Prohibido(s)
 ┃➥ ${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length} 
-┃ღ *Usuario(s) Prohibido(s) | Prohibited Urs*
+┃ღ *Usuario(s) Prohibido(s)
 ┃➥ ${Object.entries(global.db.data.users).filter(user => user[1].banned).length} 
 ╰━━━━━━━━━━━━━━━━━━⬣`.trim()
 
