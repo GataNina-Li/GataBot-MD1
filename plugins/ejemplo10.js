@@ -8,20 +8,26 @@ await conn.sendHydrated(m.chat, ejemplo, null, pp, null, null, null, null, [
 ['Caterpie', `.nido caterpie`],
 ['Ekans', `.nido ekans`],
 ['Pikachu', `.nido pikachu`]
-], m,)
-
+], m,)}
+ 
+if (command == 'nidos') {
+let ejemplo = `🔰 𝐍𝐈𝐃𝐎𝐒 • 𝐆𝐄𝐍𝐄𝐑𝐀𝐂𝐈𝐎𝐍 𝐈 🔰`
 await conn.sendHydrated(m.chat, ejemplo, wm, null, null, null, null, null, [
 ['Jigglypuf', `.nido jigglypuf`],
 ['Psyduck', `.nido psyduck`],
 ['Growlithe', `.nido growlithe`]
-], m,) 
+], m,)} 
  
+if (command == 'nidos') {
+let ejemplo = `🔰 𝐍𝐈𝐃𝐎𝐒 • 𝐆𝐄𝐍𝐄𝐑𝐀𝐂𝐈𝐎𝐍 𝐈 🔰`
 await conn.sendHydrated(m.chat, ejemplo, wm, null, null, null, null, null, [ 
 ['Abra', `.nido abra`],
 ['Drowzee', `.nido drowzee`],
 ['Exeggcute', `.nido exeggcute`]
-], m,) 
- 
+], m,) }
+
+if (command == 'nidos') {
+let ejemplo = `🔰 𝐍𝐈𝐃𝐎𝐒 • 𝐆𝐄𝐍𝐄𝐑𝐀𝐂𝐈𝐎𝐍 𝐈 🔰`
 await conn.sendHydrated(m.chat, ejemplo, wm, null, null, null, null, null, [  
 ['Cubone', `.nido cubone`],
 ['Pinsir', `.nido pinsir`],
@@ -169,7 +175,7 @@ previewType: 0, thumbnail: fs.readFileSync("./Menu2.jpg"),
 sourceUrl: `http://wa.me/+51996089079`}}})
  await m.reply(`Resultado 2`)
  await m.reply(`hola`) }
-}
+}}
  
 handler.help = ['nidos', 'nido']
 handler.tags = ['ejemplo']
