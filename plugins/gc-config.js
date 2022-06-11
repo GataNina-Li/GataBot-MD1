@@ -16,7 +16,12 @@ throw `
 *┠┉↯ ${usedPrefix + command} cerrar*
 `.trim()
 await conn.groupSettingUpdate(m.chat, isClose)
-{m.reply(`*[ ✔ ] 𝙶𝚁𝚄𝙿𝙾 𝙲𝙾𝙽𝙵𝙸𝙶𝚄𝚁𝙰𝙳𝙾 𝙲𝙾𝚁𝚁𝙴𝙲𝚃𝙰𝙼𝙴𝙽𝚃𝙴* ${global.opts['isClose'] ? 'abrir' : 'cerrar'}`)}
+  
+if (isClose === 'announcement')
+{m.reply(`*[ ✔ ] 𝙶𝚁𝚄𝙿𝙾 𝙲𝙾𝙽𝙵𝙸𝙶𝚄𝚁𝙰𝙳𝙾 𝙲𝙾𝚁𝚁𝙴𝙲𝚃𝙰𝙼𝙴𝙽𝚃𝙴* cerrar}`)}
+  
+if (isClose === 'not_announcement')
+{m.reply(`*[ ✔ ] 𝙶𝚁𝚄𝙿𝙾 𝙲𝙾𝙽𝙵𝙸𝙶𝚄𝚁𝙰𝙳𝙾 𝙲𝙾𝚁𝚁𝙴𝙲𝚃𝙰𝙼𝙴𝙽𝚃𝙴* abrir}`)}  
 }
 handler.help = ['group open / close', 'grupo abrir / cerrar']
 handler.tags = ['group']
