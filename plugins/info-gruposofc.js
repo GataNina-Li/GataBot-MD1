@@ -75,7 +75,7 @@ https://chat.whatsapp.com/HTeeFKFAHsP1b0YUm5eDRm
 *si quiere que tu grupo aparezca aca habla con el admin ofc del bot*
 `.trim()
   
-conn.sendHydrated(m.chat, str, wm, media, 'https://github.com/GataNina-Li/GataBot-MD', 'the whatBots420', null, null, [
+conn.sendHydrated(m.chat, str, wm, media, 'https://github.com/Subbotsito/GataBot-MD', 'the whatBots420', null, null, [
 ['𝘾𝙪𝙚𝙣𝙩𝙖𝙨 𝙊𝙛𝙞𝙘𝙞𝙖𝙡𝙚𝙨 ✅', '.cuentasgb'],
 ['𝘾𝙧𝙚𝙖𝙙𝙤𝙧 💗', '#owner'],
 ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ ☘️', '/menu']
