@@ -24,19 +24,18 @@ await conn.sendHydrated(m.chat, ejemplo, null, null, null, null, null, null, [
 ['Pinsir', `.nido pinsir`],
 ['Eevee', `.nido eevee`]
 ], m,) }
-//let ejemplo = `🔰 𝐍𝐈𝐃𝐎𝐒 • 𝐆𝐄𝐍𝐄𝐑𝐀𝐂𝐈𝐎𝐍 𝐈 🔰`
+
 if (command == 'nido') {
  if (text == 'caterpie') {
  
-//conn.reply(m.chat, ejemplo, m, {
-//contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
-//title: '𝐍𝐈𝐃𝐎𝐒.',
-//body: '✦҈͜͡➳👻𝕲𝔥𝔬𝔰𝔱•✓☆ۣۜۜ͜͡🌹',         
-//previewType: 0, thumbnail: fs.readFileSync("./media/menus/Menu3.jpg"),
-//sourceUrl: `http://wa.me/+51996089079`}}})
+m.reply(m.chat, 'Hola1', m, {
+contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
+title: '𝐍𝐈𝐃𝐎𝐒.',
+body: '✦҈͜͡➳👻𝕲𝔥𝔬𝔰𝔱•✓☆ۣۜۜ͜͡🌹',         
+previewType: 0, thumbnail: fs.readFileSync("./media/menus/Menu3.jpg"),
+sourceUrl: `http://wa.me/+51996089079`}}}) }}
   
- //await m.reply(`Resultado 2`)}}
-m.reply(`hola`) }}
+//m.reply(`hola`) 
   
 if (command == 'nido') {
  if (text == 'ekans') {
