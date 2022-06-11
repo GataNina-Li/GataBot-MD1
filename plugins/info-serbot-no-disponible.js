@@ -14,7 +14,7 @@ let text = `
 *Las funciones #jadibot #bots #serbot #subbot #getcode. No estan disponibles en * ${gt} si quiere hacerte bot instenta hacerlo vos mismo instalado 👉 https://github.com/Subbotsito/GataBot-MD`.trim()   
 conn.reply(m.chat, text, m, {
 contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
-title: 'the whatBots420',
+title: 'the Lolibot MD',
 body: 'Super Bot WhatsApp',         
 previewType: 1, thumbnail: fs.readFileSync("./media/menus/Menu3.jpg"),
 sourceUrl: `${yt}`}}})  
