@@ -1,5 +1,5 @@
 import fs from 'fs'
-let handler = async (m, { conn, command, text }) => { 
+let handler = async (m, { command, text }) => { 
 let pp = './media/menus/Menu1.mp4' //'./Menu2.jpg'
 if (command == 'nidos') {
 let ejemplo = `🔰 𝐍𝐈𝐃𝐎𝐒 • 𝐆𝐄𝐍𝐄𝐑𝐀𝐂𝐈𝐎𝐍 𝐈 🔰`
