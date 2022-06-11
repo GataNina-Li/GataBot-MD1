@@ -166,7 +166,6 @@ let pp = './media/menus/Menuvid3.mp4'
 ⎪➫🔊 _Niconico_
 ⎪➫🔊 _No digas eso papu_
 ⎪➫🔊 _Nyanpasu_
-⎪➫🔊 _Odio a Chile_
 ⎪➫🔊 _Orale_
 ⎪➫🔊 _Omaiga_
 ⎪➫🔊 _Ohayo_
@@ -294,7 +293,6 @@ rows: [
 {title: "➥🔊 Homero chino", description: null, rowId: `Homero chino`},
 {title: "➥🔊 Hola", description: null, rowId: `Hola`},
 {title: "➥🔊 Ingresa épicamente", description: null, rowId: `Ingresa épicamente`},
-{title: "➥🔊 Joder odio a chile", description: null, rowId: `Odio a chile`},
 {title: "➥🔊 Jijija", description: null, rowId: `😂`},
 {title: "➥🔊 Joder", description: null, rowId: `Joder`},
 {title: "➥🔊 Jesucristo", description: null, rowId: `Jesucristo`},
