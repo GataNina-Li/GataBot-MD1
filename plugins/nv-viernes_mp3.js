@@ -9,6 +9,6 @@ type: 'audioMessage',
 ptt: true 
 })
 }
-handler.customPrefix = /fiesta viernes|viernes|Viernes|viernes fiesta/
+handler.customPrefix = /fiesta viernes de la jungla|viernes de la jungla|viernes fiesta de la jungla/
 handler.command = new RegExp
 export default handler
