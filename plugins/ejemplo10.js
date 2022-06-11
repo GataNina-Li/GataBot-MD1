@@ -9,17 +9,17 @@ conn.sendHydrated(m.chat, ejemplo, null, pp, null, null, null, null, [
 ['Ekans', `.nido ekans`],
 ['Pikachu', `.nido pikachu`]], m,) 
 
- conn.sendHydrated(m.chat, ejemplo, null, pp, null, null, null, null, [
+ conn.sendHydrated(m.chat, ejemplo, null, null, null, null, null, null, [
 ['Jigglypuf', `.nido jigglypuf`],
 ['Psyduck', `.nido psyduck`],
 ['Growlithe', `.nido growlithe`]], m,) 
 
-conn.sendHydrated(m.chat, ejemplo, null, pp, null, null, null, null, [
+conn.sendHydrated(m.chat, ejemplo, null, null, null, null, null, null, [
 ['Abra', `.nido abra`],
 ['Drowzee', `.nido drowzee`],
 ['Exeggcute', `.nido exeggcute`]], m,) 
 
-conn.sendHydrated(m.chat, ejemplo, null, pp, null, null, null, null, [
+conn.sendHydrated(m.chat, ejemplo, null, null, null, null, null, null, [
 ['Cubone', `.nido cubone`],
 ['Pinsir', `.nido pinsir`],
 ['Eevee', `.nido eevee`]
