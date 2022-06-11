@@ -12,6 +12,6 @@ type: 'audioMessage',
 ptt: true 
 })
 }
-handler.customPrefix = /Odio a Chile/i 
+handler.customPrefix = /Joder odio a chile|Odio a chile/i 
 handler.command = new RegExp
 export default handler
