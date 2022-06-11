@@ -1,5 +1,5 @@
 let handler = async (m, { conn, args, usedPrefix, command }) => {
-let pp = 'getProfilePicture(m.chat)'
+let pp = 'conn.getProfilePicture(m.chat)'
 let isClose = { // Switch Case Like :v
 'open': 'not_announcement',
 'close': 'announcement',
