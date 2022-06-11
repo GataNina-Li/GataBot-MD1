@@ -31,10 +31,10 @@ let hola = 'Hola1'.trim()
  
 m.reply(m.chat, hola, m, {
 contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
-title: '𝐍𝐈𝐃𝐎𝐒.',
-body: '✦҈͜͡➳👻𝕲𝔥𝔬𝔰𝔱•✓☆ۣۜۜ͜͡🌹',         
-previewType: 0, thumbnail: fs.readFileSync("./media/menus/Menu3.jpg"),
-sourceUrl: `http://wa.me/+51996089079`}}}) }}
+title: '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 | 𝙂𝙖𝙩𝙖 𝘿𝙞𝙤𝙨',
+body: 'Super Bot WhatsApp',         
+previewType: 1, thumbnail: fs.readFileSync("./media/menus/Menu3.jpg"),
+sourceUrl: `${yt}`}}}) }}
   
 //m.reply(`hola`) 
   
