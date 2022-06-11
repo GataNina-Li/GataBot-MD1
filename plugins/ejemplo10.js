@@ -17,8 +17,8 @@ conn.sendHydrated(m.chat, ejemplo, null, pp, null, null, null, null, [
 //['Cubone', `.nido cubone`],
 //['Pinsir', `.nido pinsir`],
 //['Eevee', `.nido eevee`]
-], m,) 
-
+], m,) }
+let ejemplo = `🔰 𝐍𝐈𝐃𝐎𝐒 • 𝐆𝐄𝐍𝐄𝐑𝐀𝐂𝐈𝐎𝐍 𝐈 🔰`
 if (command == 'nido') {
  if (text == 'caterpie') {
  
@@ -162,7 +162,7 @@ previewType: 0, thumbnail: fs.readFileSync("./media/menus/Menu3.jpg"),
 sourceUrl: `http://wa.me/+51996089079`}}})
  //await m.reply(`Resultado 2`)
  //await m.reply(`hola`) }
- }}
+ }
  
 handler.help = ['nidos', 'nido']
 handler.tags = ['ejemplo']
