@@ -40,7 +40,7 @@ previewType: 0, thumbnail: fs.readFileSync("./Menu2.jpg"),
 sourceUrl: `http://wa.me/+51996089079`}}})  }}
  //await m.reply(`Resultado 2`)
  //await m.reply(`hola`) }
-}
+
 
 if (command == 'nido') {
  if (text == 'pikachu') {
@@ -52,7 +52,7 @@ previewType: 0, thumbnail: fs.readFileSync("./Menu2.jpg"),
 sourceUrl: `http://wa.me/+51996089079`}}})  }}
  //await m.reply(`Resultado 2`)
  //await m.reply(`hola`) }
-}
+
 
 if (command == 'nido') {
  if (text == 'jigglypuf') {
@@ -64,7 +64,7 @@ previewType: 0, thumbnail: fs.readFileSync("./Menu2.jpg"),
 sourceUrl: `http://wa.me/+51996089079`}}})  }}
  //await m.reply(`Resultado 2`)
  //await m.reply(`hola`) }
-}
+
 
 if (command == 'nido') {
  if (text == 'psyduck') {
@@ -76,7 +76,7 @@ previewType: 0, thumbnail: fs.readFileSync("./Menu2.jpg"),
 sourceUrl: `http://wa.me/+51996089079`}}})  }}
  //await m.reply(`Resultado 2`)
 //await m.reply(`hola`) }
-}
+
 
 if (command == 'nido') {
  if (text == 'growlithe') {
@@ -88,7 +88,7 @@ previewType: 0, thumbnail: fs.readFileSync("./Menu2.jpg"),
 sourceUrl: `http://wa.me/+51996089079`}}})  }}
  //await m.reply(`Resultado 2`)
  //wait m.reply(`hola`) }
-}
+
 
 if (command == 'nido') {
  if (text == 'abra') {
@@ -100,7 +100,7 @@ previewType: 0, thumbnail: fs.readFileSync("./Menu2.jpg"),
 sourceUrl: `http://wa.me/+51996089079`}}})  }}
  //await m.reply(`Resultado 2`)
  //await m.reply(`hola`) }
-}
+
 
 if (command == 'nido') {
  if (text == 'drowzee') {
@@ -112,7 +112,7 @@ previewType: 0, thumbnail: fs.readFileSync("./Menu2.jpg"),
 sourceUrl: `http://wa.me/+51996089079`}}})  }}
  //await m.reply(`Resultado 2`)
  //await m.reply(`hola`) }
-}
+
 
 if (command == 'nido') {
  if (text == 'exeggcute') {
@@ -124,7 +124,7 @@ previewType: 0, thumbnail: fs.readFileSync("./Menu2.jpg"),
 sourceUrl: `http://wa.me/+51996089079`}}})  }}
  //await m.reply(`Resultado 2`)
  //await m.reply(`hola`) }
-}
+
 
 if (command == 'nido') {
  if (text == 'cubone') {
@@ -136,7 +136,7 @@ previewType: 0, thumbnail: fs.readFileSync("./Menu2.jpg"),
 sourceUrl: `http://wa.me/+51996089079`}}})  }}
  //await m.reply(`Resultado 2`)
  //await m.reply(`hola`) }
-}
+
 
 if (command == 'nido') {
  if (text == 'pinzir') {
@@ -148,7 +148,7 @@ previewType: 0, thumbnail: fs.readFileSync("./Menu2.jpg"),
 sourceUrl: `http://wa.me/+51996089079`}}})  }}
  //await m.reply(`Resultado 2`)
  //await m.reply(`hola`) }
-}
+
 
 if (command == 'nido') {
  if (text == 'eevee') {
@@ -160,7 +160,7 @@ previewType: 0, thumbnail: fs.readFileSync("./Menu2.jpg"),
 sourceUrl: `http://wa.me/+51996089079`}}})  }}
  //await m.reply(`Resultado 2`)
  //await m.reply(`hola`) }
-}
+
  
 handler.help = ['nidos', 'nido']
 handler.tags = ['ejemplo']
