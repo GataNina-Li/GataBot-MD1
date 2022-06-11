@@ -12,7 +12,7 @@ await conn.sendHydrated(m.chat, ejemplo, null, pp, null, null, null, null, [
  
 if (command == 'nidos') {
 let ejemplo = `🔰 𝐍𝐈𝐃𝐎𝐒 • 𝐆𝐄𝐍𝐄𝐑𝐀𝐂𝐈𝐎𝐍 𝐈 🔰`
-await conn.sendHydrated(m.chat, null, wm, null, null, null, null, null, [
+await conn.sendHydrated(m.chat, ejemplo, wm, null, null, null, null, null, [
 ['Jigglypuf', `.nido jigglypuf`],
 ['Psyduck', `.nido psyduck`],
 ['Growlithe', `.nido growlithe`]
@@ -20,7 +20,7 @@ await conn.sendHydrated(m.chat, null, wm, null, null, null, null, null, [
  
 if (command == 'nidos') {
 let ejemplo = `🔰 𝐍𝐈𝐃𝐎𝐒 • 𝐆𝐄𝐍𝐄𝐑𝐀𝐂𝐈𝐎𝐍 𝐈 🔰`
-await conn.sendHydrated(m.chat, null, wm, null, null, null, null, null, [ 
+await conn.sendHydrated(m.chat, ejemplo, wm, null, null, null, null, null, [ 
 ['Abra', `.nido abra`],
 ['Drowzee', `.nido drowzee`],
 ['Exeggcute', `.nido exeggcute`]
@@ -28,7 +28,7 @@ await conn.sendHydrated(m.chat, null, wm, null, null, null, null, null, [
 
 if (command == 'nidos') {
 let ejemplo = `🔰 𝐍𝐈𝐃𝐎𝐒 • 𝐆𝐄𝐍𝐄𝐑𝐀𝐂𝐈𝐎𝐍 𝐈 🔰`
-await conn.sendHydrated(m.chat, null, wm, null, null, null, null, null, [  
+await conn.sendHydrated(m.chat, ejemplo, wm, null, null, null, null, null, [  
 ['Cubone', `.nido cubone`],
 ['Pinsir', `.nido pinsir`],
 ['Eevee', `.nido eevee`]
