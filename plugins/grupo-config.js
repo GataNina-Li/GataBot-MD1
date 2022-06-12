@@ -13,7 +13,7 @@ throw `
 ${mg}*╭━[ ${wm} ]━⬣*
 *┃➥ ${usedPrefix + command} abrir*
 *┃➥ ${usedPrefix + command} cerrar*
-*╰━━━━━━[ 𓃠 ${vs} ]━━━━━⬣*
+*╰━━━━━[ 𓃠 ${vs} ]━━━━━⬣*
 `.trim()
 await conn.groupSettingUpdate(m.chat, isClose)
   
