@@ -6,7 +6,8 @@ throw false
 let pesan = args.join` `
 let oi = `*ღ 𝙈𝙀𝙉𝙎𝘼𝙅𝙀:* ${pesan}`
 let teks = `𝙄𝙉𝙑𝙊𝘾𝘼𝙉𝘿𝙊 𝘼𝙇 𝙂𝙍𝙐𝙋𝙊\n\n❏ ${oi}\n\n`
-
+let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
+let mentionedJid = [who]
 let username = conn.getName(who)
 for (let username of participants) {
 teks += `┃➥ @${username.id.split('@')[0]}\n`}
