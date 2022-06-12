@@ -7,7 +7,8 @@ let pesan = args.join` `
 let oi = `*ღ 𝙈𝙀𝙉𝙎𝘼𝙅𝙀:* ${pesan}`
 let teks = `𝙄𝙉𝙑𝙊𝘾𝘼𝙉𝘿𝙊 𝘼𝙇 𝙂𝙍𝙐𝙋𝙊\n\n❏ ${oi}\n\n`
 for (let mem of participants) {
-teks += `┃➥ @${mem.id.split('@')[0]}\n╰━━━━━━[ *𓃠 ${vs}* ]━━━━━⬣`}
+teks += `┃➥ @${mem.id.split('@')[0]}\n`}
+teks += `╰━━━━━━[ *𓃠 ${vs}* ]━━━━━⬣`
 //conn.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) }, )
   
 conn.sendHydrated(m.chat, teks, `𝙀𝙩𝙞𝙦𝙪𝙚𝙩𝙖𝙨 | ${wm}`, null, 'https://github.com/GataNina-Li/GataBot-MD', '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
