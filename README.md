@@ -77,6 +77,9 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 > pkg install yarn
 
 > git clone https://github.com/Subbotsito/GataBot-MD
+Si es por los archivos descarga poner
+Cd storage/download/
+cd && cd /sdcard/GataBot-MD
 
 > cd GataBot-MD
 
