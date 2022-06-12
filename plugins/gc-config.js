@@ -10,7 +10,7 @@ let isClose = { // Switch Case Like :v
 }[(args[0] || '')]
 if (isClose === undefined)
 throw `
-${fg}*╭━[ ${wm} ]━⬣*
+${mg}*╭━[ ${wm} ]━⬣*
 *┃➥ ${usedPrefix + command} abrir*
 *┃➥ ${usedPrefix + command} cerrar*
 *╰━━━━━━[ 𓃠 ${vs} ]━━━━━⬣*
