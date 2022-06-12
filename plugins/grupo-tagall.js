@@ -6,8 +6,10 @@ throw false
 let pesan = args.join` `
 let oi = `*ღ 𝙈𝙀𝙉𝙎𝘼𝙅𝙀:* ${pesan}`
 let teks = `𝙄𝙉𝙑𝙊𝘾𝘼𝙉𝘿𝙊 𝘼𝙇 𝙂𝙍𝙐𝙋𝙊\n\n❏ ${oi}\n\n`
-for (let mem of participants) {
-teks += `┃➥ @${mem.id.split('@')[0]}\n`}
+
+let username = conn.getName(who)
+for (let username of participants) {
+teks += `┃➥ @${username.id.split('@')[0]}\n`}
 teks += `╰━━━━━━[ *𓃠 ${vs}* ]━━━━━⬣`
 //conn.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) }, )
   
