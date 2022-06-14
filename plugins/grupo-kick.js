@@ -22,7 +22,7 @@ conn.sendHydrated(m.chat, `𝘼𝙃 𝙎𝙄𝘿𝙊 𝙀𝙍𝙍𝘼𝘿𝙄�
 }}
 handler.help = ['kick @user']
 handler.tags = ['group']
-handler.command = /^(kick|sacar|\-)$/i
+handler.command = handler.command = ['kick', 'sacar'] ///^(kick|sacar|\-)$/i
 handler.group = true
 handler.admin = true
 handler.botAdmin = true
