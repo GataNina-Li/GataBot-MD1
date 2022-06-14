@@ -36,6 +36,6 @@ console.log(e)
 handler.help = ['mp3', 'a'].map(v => 'yt' + v + ` <url>`)
 handler.tags = ['downloader']
 handler.command = /^yt(a|mp3)$/i
-handler.limit = 3
+handler.limit = 2
 handler.exp = 40
 export default handler
