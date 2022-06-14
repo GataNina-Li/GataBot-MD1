@@ -5,7 +5,7 @@ const pp = await conn.profilePictureUrl(m.chat, 'image').catch(_ => null) || './
   
 conn.sendHydrated(m.chat, 'https://chat.whatsapp.com/' + await conn.groupInviteCode(group)), wm, pp, md, '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
 ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', '/menu']
-],)
+])
 }
 handler.help = ['linkgroup']
 handler.tags = ['group']
