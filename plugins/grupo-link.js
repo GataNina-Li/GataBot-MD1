@@ -8,7 +8,7 @@ conn.sendHydrated(m.chat, ('https://chat.whatsapp.com/' + await conn.groupInvite
 }
 handler.help = ['linkgroup']
 handler.tags = ['group']
-handler.command = /^link(gro?up)?$/i
+handler.command = /^enlace|link(gro?up)?$/i
 handler.group = true
 //handler.admin = false
 handler.botAdmin = true
