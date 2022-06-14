@@ -25,7 +25,7 @@ conn.sendHydrated(m.chat, `${eg}𝘼𝙃𝙊𝙍𝘼 𝙉𝙊 𝙏𝙄𝙀𝙉�
 ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', '/menu']
 ], m)
 }}
-handler.help = ['*593xxx*','*@usuario*','*responder chat*'].map(v => 'demote ' + v)
+handler.help = ['*593xxx*','*@usuario*','*responder chat*'].map(v => 'demote ' + v) 
 handler.tags = ['group']
 handler.command = /^(demote|quitarpoder|quitaradmin)$/i
 handler.group = true
