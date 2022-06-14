@@ -8,7 +8,7 @@ if (user.endsWith('@s.whatsapp.net') && !(participants.find(v => areJidsSameUser
 const res = await conn.groupParticipantsUpdate(m.chat, [user], 'remove')
 kickedUser.concat(res) 
 await delay(1 * 1000)
-if (command == 'juegos') { 
+if (command == 'kick') { 
 conn.sendHydrated(m.chat, `𝘼𝙃 𝙎𝙄𝘿𝙊 𝙀𝙍𝙍𝘼𝘿𝙄𝘾𝘼𝘿𝙊(𝘼) 𝘿𝙀𝙇 𝙂𝙍𝙐𝙋𝙊 😎`, wm, pp, md, '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
 ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', '/menu']
 ], m,)
@@ -19,10 +19,16 @@ conn.sendHydrated(m.chat, `𝘼𝙃 𝙎𝙄𝘿𝙊 𝙀𝙍𝙍𝘼𝘿𝙄�
 ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', '/menu']
 ], m,)
 }
+  
+if (command == 'ban') { 
+conn.sendHydrated(m.chat, `𝘼𝙃 𝙎𝙄𝘿𝙊 𝙀𝙍𝙍𝘼𝘿𝙄𝘾𝘼𝘿𝙊(𝘼) 𝘿𝙀𝙇 𝙂𝙍𝙐𝙋𝙊 😎`, wm, pp, md, '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
+['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', '/menu']
+], m,)
+}
 }}
 handler.help = ['kick @user']
 handler.tags = ['group']
-handler.command = ['kick', 'sacar'] ///^(kick|sacar|\-)$/i
+handler.command = ['kick', 'sacar', 'ban'] ///^(kick|sacar|\-)$/i
 handler.group = true
 handler.admin = true
 handler.botAdmin = true
