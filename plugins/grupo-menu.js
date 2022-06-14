@@ -96,11 +96,46 @@ let menu = `
 
 ╭━〔 𝙄𝙉𝙁𝙊𝙍𝙈𝘼𝘾𝙄𝙊𝙉 | 𝙄𝙉𝙁𝙊 𝙈𝙀𝙉𝙐 〕━⬣
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃🔍➺ _${usedPrefix}animeinfo *texto*_
-┃🔍➺ _${usedPrefix}google *texto*_
-┃🔍➺ _${usedPrefix}letra | lirik *texto*_
-┃🔍➺ _${usedPrefix}ytsearch | yts *texto*_
-┃🔍➺ _${usedPrefix}wiki | wikipedia *texto*_
+┃🔍➺ _${usedPrefix}add *numero*_
+┃🔍➺ _${usedPrefix}sacar | ban | kick  *@tag*_
+┃🔍➺ _${usedPrefix}grupo *abrir : cerrar*_
+┃🔍➺ _${usedPrefix}group *open : close*_
+┃🔍➺ _${usedPrefix}daradmin | promote *@tag*_
+┃🔍➺ _${usedPrefix}quitar | demote *@tag*_
+┃🔍➺ _${usedPrefix}banchat_
+┃🔍➺ _${usedPrefix}unbanchat_
+┃🔍➺ _${usedPrefix}admins *texto*_
+┃🔍➺ _${usedPrefix}invocar *texto*_
+┃🔍➺ _${usedPrefix}hidetag *texto*_
+┃🔍➺ _${usedPrefix}infogrupo | infogroup_
+┃🔍➺ _${usedPrefix}enlace | link *texto*_
+
+┃🔍➺ _${usedPrefix}newnombre | setname *texto*_
+┃🔍➺ _${usedPrefix}newdesc | setdesc *texto*_
+┃🔍➺ _${usedPrefix}newwelcome | setwelcome *texto*_
+┃🔍➺ _${usedPrefix}admins *texto*_
+
+┃🔍➺ _${usedPrefix}admins *texto*_
+
+
+° ඬ⃟💎 _${usedPrefix}add *<numero>*_
+° ඬ⃟💎 _${usedPrefix}kick *<@tag>*_
+° ඬ⃟💎 _${usedPrefix}grupo *<abrir / cerrar>*_
+° ඬ⃟💎 _${usedPrefix}promote *<@tag>*_
+° ඬ⃟💎 _${usedPrefix}demote *<@tag>*_
+° ඬ⃟💎 _${usedPrefix}banchat_
+° ඬ⃟💎 _${usedPrefix}unbanchat_
+° ඬ⃟💎 _admins *<texto>*_ (𝑢𝑠𝑜 𝑠𝑖𝑛 𝑝𝑟𝑒𝑓𝑖𝑗𝑜)
+° ඬ⃟💎 _${usedPrefix}demote *<@tag>*_
+° ඬ⃟💎 _${usedPrefix}infogroup_
+° ඬ⃟💎 _${usedPrefix}link_
+° ඬ⃟💎 _${usedPrefix}setname *<texto>*_
+° ඬ⃟💎 _${usedPrefix}setdesc *<texto>*_
+° ඬ⃟💎 _${usedPrefix}invocar *<texto>*_
+° ඬ⃟💎 _${usedPrefix}setwelcome *<texto>*_
+° ඬ⃟💎 _${usedPrefix}setbye *<texto>*_
+° ඬ⃟💎 _${usedPrefix}hidetag *<texto>*_
+° ඬ⃟💎 _${usedPrefix}simular *<welcome / bye / promote / demote>*_
 ╰━━━━━━━━━━━━━━━━━━━⬣`.trim()
 conn.sendHydrated(m.chat, menu, wm, pp, 'https://github.com/GataNina-Li/GataBot-MD', '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
 ['𝙈𝙚𝙣𝙪́ 𝙘𝙤𝙢𝙥𝙡𝙚𝙩𝙤 | 𝙁𝙪𝙡𝙡 𝙈𝙚𝙣𝙪 💫', '.allmenu'],
