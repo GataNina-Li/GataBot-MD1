@@ -83,7 +83,7 @@ let username = conn.getName(who)
 let menu = `
 💗 *¡HOLA | HI!* ${username}
 ╭━━〔 *${wm}* 〕━━⬣
-┃🎈🎈🎈🎈🎈🎈🎈🎈🎈
+┃🔰🔰🔰🔰🔰🔰🔰🔰🔰 
 ┃✪ *EXPERIENCIA | EXP ➺ ${exp}*
 ┃✪ *NIVEL | LEVEL ➺ ${level}*
 ┃✪ *ROL ➺ ${role}*
@@ -91,31 +91,31 @@ let menu = `
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃✪ *FECHA ➺ ${week}, ${date}*
 ┃✪ *USUARIOS | USERS ➺ ${Object.keys(global.db.data.users).length}* 
-┃🎈🎈🎈🎈🎈🎈🎈🎈🎈
+┃🔰🔰🔰🔰🔰🔰🔰🔰🔰
 ╰━━━━━━〔 𓃠 *${vs}* 〕━━━━━━⬣
 
 ╭━〔 𝙈𝙀𝙉𝙐 𝘿𝙀 𝙂𝙍𝙐𝙋𝙊 | 𝙂𝙍𝙊𝙐𝙋 〕━⬣
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃🔍➺ _${usedPrefix}add *numero*_
-┃🔍➺ _${usedPrefix}sacar | ban | kick  *@tag*_
-┃🔍➺ _${usedPrefix}grupo *abrir : cerrar*_
-┃🔍➺ _${usedPrefix}group *open : close*_
-┃🔍➺ _${usedPrefix}daradmin | promote *@tag*_
-┃🔍➺ _${usedPrefix}quitar | demote *@tag*_
-┃🔍➺ _${usedPrefix}banchat_
-┃🔍➺ _${usedPrefix}unbanchat_
-┃🔍➺ _${usedPrefix}admins *texto*_
-┃🔍➺ _${usedPrefix}invocar *texto*_
-┃🔍➺ _${usedPrefix}tagall *texto*_
-┃🔍➺ _${usedPrefix}hidetag *texto*_
-┃🔍➺ _${usedPrefix}infogrupo | infogroup_
-┃🔍➺ _${usedPrefix}enlace | link *texto*_
-┃🔍➺ _${usedPrefix}newnombre | setname *texto*_
-┃🔍➺ _${usedPrefix}newdesc | setdesc *texto*_
-┃🔍➺ _${usedPrefix}setwelcome *texto*_
-┃🔍➺ _${usedPrefix}setbye *texto*_
-┃🔍➺ _${usedPrefix}on_
-┃🔍➺ _${usedPrefix}off_
+┃🌐➺ _${usedPrefix}add *numero*_
+┃🌐➺ _${usedPrefix}sacar | ban | kick  *@tag*_
+┃🌐➺ _${usedPrefix}grupo *abrir : cerrar*_
+┃🌐➺ _${usedPrefix}group *open : close*_
+┃🌐➺ _${usedPrefix}daradmin | promote *@tag*_
+┃🌐➺ _${usedPrefix}quitar | demote *@tag*_
+┃🌐➺ _${usedPrefix}banchat_
+┃🌐➺ _${usedPrefix}unbanchat_
+┃🌐➺ _${usedPrefix}admins *texto*_
+┃🌐➺ _${usedPrefix}invocar *texto*_
+┃🌐➺ _${usedPrefix}tagall *texto*_
+┃🌐➺ _${usedPrefix}hidetag *texto*_
+┃🌐➺ _${usedPrefix}infogrupo | infogroup_
+┃🌐➺ _${usedPrefix}enlace | link *texto*_
+┃🌐➺ _${usedPrefix}newnombre | setname *texto*_
+┃🌐➺ _${usedPrefix}newdesc | setdesc *texto*_
+┃🌐➺ _${usedPrefix}setwelcome *texto*_
+┃🌐➺ _${usedPrefix}setbye *texto*_
+┃🌐➺ _${usedPrefix}on_
+┃🌐➺ _${usedPrefix}off_
 ╰━━━━━━━━━━━━━━━━━━━⬣`.trim()
 conn.sendHydrated(m.chat, menu, wm, pp, 'https://github.com/GataNina-Li/GataBot-MD', '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
 ['𝙈𝙚𝙣𝙪́ 𝙘𝙤𝙢𝙥𝙡𝙚𝙩𝙤 | 𝙁𝙪𝙡𝙡 𝙈𝙚𝙣𝙪 💫', '.allmenu'],
