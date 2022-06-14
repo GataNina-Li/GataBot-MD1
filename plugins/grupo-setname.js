@@ -11,7 +11,7 @@ if (text.length < 25) throw `${fg}𝙇𝙊 𝙎𝙄𝙀𝙉𝙏𝙊, 𝙀𝙇 �
 }}
 handler.help = ['setname <text>']
 handler.tags = ['group']
-handler.command = /^(setname)$/i
+handler.command = /^(setname|newnombre)$/i
 handler.group = true
 handler.admin = true
 export default handler
