@@ -9,5 +9,6 @@ conn.sendHydrated(m.chat, `${eg} 𝙇𝘼 𝘿𝙀𝙎𝙋𝙀𝘿𝙄𝘿𝘼 �
 handler.help = ['setbye <text>']
 handler.tags = ['group']
 handler.command = ['setbye'] 
+handler.botAdmin = true
 handler.admin = true
 export default handler
