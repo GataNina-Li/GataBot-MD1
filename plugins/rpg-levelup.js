@@ -19,7 +19,7 @@ Te falta *${max - user.exp}* de *XP* para subir de nivel
     let before = user.level * 1
     while (canLevelUp(user.level, user.exp, global.multiplier)) user.level++
     if (before !== user.level) {
-        let teks = `🎊 Bien hecho ${conn.getName(m.sender)}    Nivel: ${user.level}`
+        let teks = `Bien hecho! ${conn.getName(m.sender)} Nivel: ${user.level}`
         let str = `
 ┌─⊷ *LEVEL UP*
 ▢ Nivel anterior : *${before}*
