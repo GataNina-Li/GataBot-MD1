@@ -7,7 +7,7 @@ conn.sendButton(m.chat, `${eg}𝙎𝙀 𝙃𝘼 𝘾𝘼𝙈𝘽𝙄𝘼𝘿𝙊
 }
 handler.help = ['Setdesc <text>']
 handler.tags = ['group']
-handler.command = /^setdesk|setdesc$/i
+handler.command = /^setdesk|setdesc|newdesc$/i
 handler.group = true
 handler.admin = true
 handler.botAdmin = true
