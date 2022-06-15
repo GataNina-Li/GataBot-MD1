@@ -11,18 +11,27 @@ user.age = age
 user.regTime = + new Date
 user.registered = true
 let sn = createHash('md5').update(m.sender).digest('hex')
-let caption = `┏┅ ━━━━━━━━━━━━ ┅ ━
-┇「 𝐈𝐍𝐅𝐎𝐑𝐌𝐀𝐂𝐈𝐎𝐍 」
-┣┅ ━━━━━━━━━━━━ ┅ ━
-┃ *𝙽𝙾𝙼𝙱𝚁𝙴:* ${name}
-┃ *𝙴𝙳𝙰𝙳:* ${age} años
-┃ *𝙽𝚄𝙼𝙴𝚁𝙾 𝙳𝙴 𝚂𝙴𝚁𝙸𝙴:* 
-┃ ${sn}
-┗┅ ━━━━━━━━━━━━ ┅ ━`
-let author = global.author
-conn.sendButton(m.chat, caption, `¡𝚃𝚄 𝙽𝚄𝙼𝙴𝚁𝙾 𝙳𝙴 𝚂𝙴𝚁𝙸𝙴 𝚃𝙴 𝚂𝙴𝚁𝚅𝙸𝚁𝙰 𝙿𝙾𝚁 𝚂𝙸 𝙳𝙴𝚂𝙴𝙰𝚂 𝙱𝙾𝚁𝚁𝙰𝚁 𝚃𝚄 𝚁𝙴𝙶𝙸𝚂𝚃𝚁𝙾 𝙴𝙽 𝙴𝙻 𝙱𝙾𝚃!\n${author}`, [['¡¡𝙰𝙷𝙾𝚁𝙰 𝚂𝙾𝚈 𝚄𝙽 𝚅𝙴𝚁𝙸𝙵𝙸𝙲𝙰𝙳𝙾/𝙰!!', '/profile']], m)
-global.db.data.users[m.sender].money += 10000
-global.db.data.users[m.sender].exp += 10000
+let g = global.db.data.users[m.sender].money += 4000
+let d = global.db.data.users[m.sender].limit += 35
+let e = global.db.data.users[m.sender].exp += 5000
+let caption = `
+╭━[ *𝙑𝙀𝙍𝙄𝙁𝙄𝘾𝘼𝙍 | 𝙑𝙀𝙍𝙄𝙁𝙔* ]━━⬣
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃ *NOMBRE* 
+┃ ${name}
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃ *EDAD* 
+┃ *${age} años*
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃ *BONO POR VERIFICACIÓN* 
+┃ *$${e} XP*
+┃ *$${g} GATACOINS*
+┃ *$ ${d} DIAMANTES*
+╰━━━━━━━━━━━━━━━━━━⬣`
+//let author = global.author
+conn.sendButton(m.chat, caption, `TU NUMERO DE SERIE TE SERVIRA EN CASO QUE QUIERA BORRAR SU REGISTRO\n${wm}`, [['𝘼𝙝𝙤𝙧𝙖 𝙚𝙨𝙩𝙤𝙮 𝙑𝙚𝙧𝙞𝙛𝙞𝙘𝙖𝙙𝙤(𝙖)!!', '/profile']], m)
+m.reply(`${sn}`) 
+
 }
 handler.help = ['verificar']
 handler.tags = ['xp']
