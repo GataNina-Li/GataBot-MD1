@@ -69,39 +69,59 @@ let username = conn.getName(who)
 
 let menu = `
 ╭━━━〔 𝙍𝘼𝙉𝙂𝙊𝙎 | 𝙍𝙊𝙇 〕━━━⬣
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃🎡➺ _${usedPrefix}mates | matemáticas | math_
-┃🎡➺ _${usedPrefix}ppt *piedra : papel : tijera*_
-┃🎡➺ _${usedPrefix}topgays_
-┃🎡➺ _${usedPrefix}topotakus_
-┃🎡➺ _${usedPrefix}gay | gay *@tag*_
-┃🎡➺ _${usedPrefix}gay2 *nombre : @tag*_
-┃🎡➺ _${usedPrefix}lesbiana *nombre : @tag*_
-┃🎡➺ _${usedPrefix}manca *nombre : @tag*_
-┃🎡➺ _${usedPrefix}manco *nombre : @tag*_
-┃🎡➺ _${usedPrefix}pajero *nombre : @tag*_
-┃🎡➺ _${usedPrefix}pajera *nombre : @tag*_
-┃🎡➺ _${usedPrefix}puto *nombre : @tag*_
-┃🎡➺ _${usedPrefix}puta *nombre : @tag*_
-┃🎡➺ _${usedPrefix}rata *nombre : @tag*_
-┃🎡➺ _${usedPrefix}love *nombre : @tag*_
-┃🎡➺ _${usedPrefix}doxear *nombre : @tag*_
-┃🎡➺ _${usedPrefix}doxxeame_
-┃🎡➺ _${usedPrefix}pregunta *texto*_
-┃🎡➺ _${usedPrefix}slot *apuesta*_
-┃🎡➺ _${usedPrefix}formarpareja_
-┃🎡➺ _${usedPrefix}dado_
-┃🎡➺ _${usedPrefix}verdad_
-┃🎡➺ _${usedPrefix}reto_
-┃🎡➺ _${usedPrefix}simi | okgoogle *texto*_
-┃🎡➺ _${usedPrefix}alexa | siri | cortana *texto*_
-┃🎡➺ _${usedPrefix}simsimi | bixby *texto*_
-┃🎡➺ _${usedPrefix}multijuegos_
-┃🎡➺ _${usedPrefix}juegos_
+𝙉𝙊𝙈𝘽𝙍𝙀
+${username}
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+𝙍𝘼𝙉𝙂𝙊 𝘼𝘾𝙏𝙐𝘼𝙇
+${role}
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+👑 *ÉLITE GLOBAL* 🏁
+*TOP ASTRAL I* ⚜️🔱
+*TOP ASTRAL II* ⚜️🔱
+*TOP ASTRAL III* ⚜️🔱
+*ESTELAR I* ☄️
+*ESTELAR II* ☄️
+*ESTELAR III* ☄️
+*LEYENDA I* 🏆
+*LEYENDA II* 🏆
+*LEYENDA III* 🏆
+*LEGENDARIO(A) I* 🛡️
+*LEGENDARIO(A) II* 🛡️
+*LEGENDARIO(A) III* 🛡️
+*SUPER PRO I* 🎩
+*SUPER PRO II* 🎩
+*SUPER PRO III* 🎩
+*PRO EN GATABOT I* 😼
+*PRO EN GATABOT II* 😼
+*PRO EN GATABOT III* 😼
+*DIAMANTE I* 💎
+*DIAMANTE II* 💎
+*DIAMANTE III* 💎
+*ORO I* 🏅
+*ORO II* 🏅
+*ORO III* 🏅
+*PLATA I* 🔮
+*PLATA II* 🔮
+*PLATA III* 🔮
+*IRON I* 🦾
+*IRON II* 🦾
+*IRON III* 🦾
+*MAESTRO(A) I* ⚒️
+*MAESTRO(A) II* ⚒️
+*MAESTRO(A) III* ⚒️
+*EXPLORADOR(A) I* 🪓
+*EXPLORADOR(A) II* 🪓
+*EXPLORADOR(A) III* 🪓
+*APRENDIS I* 🪚
+*APRENDIS II* 🪚
+*APRENDIS III* 🪚
+*NOVATO(A) I* 🪤
+*NOVATO(A) II* 🪤
+*NOVATO(A) III* 🪤
 ╰━━━━━━━━━━━━━━━━━━━⬣`.trim()
-conn.sendHydrated(m.chat, menu, wm, pp, 'https://github.com/GataNina-Li/GataBot-MD', '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
+conn.sendHydrated(m.chat, menu, `𝙍𝘼𝙉𝙂𝙊𝙎 | ${wm}`, pp, 'https://github.com/GataNina-Li/GataBot-MD', '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
 ['𝙈𝙚𝙣𝙪́ 𝙘𝙤𝙢𝙥𝙡𝙚𝙩𝙤 | 𝙁𝙪𝙡𝙡 𝙈𝙚𝙣𝙪 💫', '.allmenu'],
-['𝙈𝙚𝙣𝙪 𝙙𝙚𝙨𝙥𝙡𝙚𝙜𝙖𝙗𝙡𝙚 | 𝙈𝙚𝙣𝙪 𝙇𝙞𝙨𝙩 🌟', '/menulista'],
+['𝙏𝙤𝙥𝙨 | 𝙍𝙖𝙣𝙠𝙞𝙣𝙜 🏆', `${usedPrefix}top`],
 ['𝙈𝙚𝙣𝙪 𝙋𝙧𝙞𝙣𝙘𝙞𝙥𝙖𝙡 | 𝙈𝙖𝙞𝙣 𝙢𝙚𝙣𝙪 ⚡', '#menu']
 ], m,)
 
@@ -109,7 +129,7 @@ conn.sendHydrated(m.chat, menu, wm, pp, 'https://github.com/GataNina-Li/GataBot-
 
 handler.help = ['infomenu'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
-handler.command = /^(yyyy)$/i
+handler.command = /^(rol|rango|roles|rangos)$/i
 handler.exp = 50
 export default handler
 
