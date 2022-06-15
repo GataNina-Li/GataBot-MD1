@@ -6,5 +6,6 @@ handler.help = ['attp <teks>']
 handler.tags = ['sticker']
 
 handler.command = /^attp$/i
+handler.level = 200
 
 export default handler
