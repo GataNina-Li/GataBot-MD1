@@ -36,7 +36,7 @@ ${sortedLevel.slice(0, len).map(({ jid, level }, i) => `${i + 1}. ${participants
 ▢ *TOP ${len} ROL* •
 Tú : *${usersRole.indexOf(m.sender) + 1}* de *${usersRole.length}*
 
-${sortedRole.slice(0, len).map(({ jid, role }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *Rol ${role}*`).join`\n`}
+${sortedRole.slice(0, len).map(({ jid, role }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} ${role}`).join`\n`}
 
 ▢ *TOP ${len} GATACOINS* •
 Tú : *${usersMoney.indexOf(m.sender) + 1}* de *${usersMoney.length}*
