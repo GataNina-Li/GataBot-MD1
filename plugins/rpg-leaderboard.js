@@ -22,22 +22,22 @@ let handler = async (m, { conn, args, participants }) => {
 Tú : *${usersExp.indexOf(m.sender) + 1}* de *${usersExp.length} Usuarios*
 
 ${sortedExp.slice(0, len).map(({ jid, exp }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *${exp} Exp*`).join`\n`}
-
-💠 *TOP ${len} DIAMANTES💎* •
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+💠 *TOP ${len} DIAMANTES💎* 
 Tú : *${usersLim.indexOf(m.sender) + 1}* de *${usersLim.length} Usuarios*
 
 ${sortedLim.slice(0, len).map(({ jid, limit }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *${limit} Diamantes*`).join`\n`}
-
-💠 *TOP ${len} NIVEL 💪* •
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+💠 *TOP ${len} NIVEL 💪* 
 Tú : *${usersLevel.indexOf(m.sender) + 1}* de *${usersLevel.length} Usuarios*
 
 ${sortedLevel.slice(0, len).map(({ jid, level }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *Nivel ${level}*`).join`\n`}
-
-💠 *TOP ${len} ROL 🌟* •
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+💠 *TOP ${len} ROL 🌟* 
 Tú : *${usersRole.indexOf(m.sender) + 1}* de *${usersRole.length} Usuarios*
 
 ${sortedRole.slice(0, len).map(({ jid, role }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} ${role}`).join`\n`}
-
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 💠 *TOP ${len} GATACOINS 🐈*
 Tú : *${usersMoney.indexOf(m.sender) + 1}* de *${usersMoney.length} Usuarios*
 
