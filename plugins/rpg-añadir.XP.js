@@ -25,6 +25,6 @@ conn.sendHydrated(m.chat, `╭━[ 𝙀𝙓𝙋𝙀𝙍𝙄𝙀𝙉𝘾𝙄𝘼 
 }
 handler.help = ['addxp <@user>']
 handler.tags = ['xp']
-handler.command = ['añadirxp', 'añadirexp', 'añadirexperiencia'] 
+handler.command = ['añadirxp', 'añadirexp', 'añadirexperiencia', 'darexperiencia', 'darxp', 'darexp'] 
 handler.rowner = true
 export default handler
