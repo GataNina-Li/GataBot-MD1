@@ -15,7 +15,7 @@ let username = conn.getName(who)
 let prem = global.prems.includes(who.split`@`[0])
 let sn = createHash('md5').update(who).digest('hex')
 let str =
-`┃ 𝙉𝙊𝙈𝘽𝙍𝙀 ${username} ${registered ? '(' + name + ') ': ''}
+`┃ 𝙉𝙊𝙈𝘽𝙍𝙀 ${name}
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃ 𝙉𝙐𝙈𝙀𝙍𝙊 ${PhoneNumber('+' + who.replace('@s.whatsapp.net', '')).getNumber('international')}
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
