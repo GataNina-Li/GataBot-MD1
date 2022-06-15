@@ -112,7 +112,7 @@ conn.sendHydrated(m.chat, menu, wm, pp, 'https://github.com/GataNina-Li/GataBot-
 handler.help = ['infomenu'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
 handler.command = /^(buscarmenu)$/i
-handler.unreg = true
+handler.registered = true
 handler.exp = 70
 export default handler
 
