@@ -2,6 +2,8 @@ import { xpRange } from '../lib/levelling.js'
 const { levelling } = '../lib/levelling.js'
 import moment from 'moment-timezone'
 let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isROwner }) => {
+let userr = global.db.data.users[m.sender]
+userr.registered = false
 let locale = 'es'
 let d = new Date(new Date + 3600000)
 let time = d.toLocaleTimeString(locale, {
@@ -78,6 +80,7 @@ await conn.sendMessage(m.chat, listMessage)
 handler.help = ['en', 'dis'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
 handler.command = /^(menu|menú|memu|memú|help|info|comandos|2help|menu1.2|ayuda|commands|commandos|m|\?)$/i
+handler.register = true
 handler.exp = 50
 export default handler
 
