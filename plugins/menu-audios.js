@@ -62,6 +62,8 @@ text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length
 let mentionedJid = [who]
 let username = conn.getName(who)
 let pp = './media/menus/Menuvid3.mp4'
+let user = global.db.data.users[m.sender]
+user.registered = false
   
  let str = `
 ╭━━〔 🐈⚡️🐈⚡️🐈⚡️🐈 〙━━⬣   
@@ -373,6 +375,7 @@ handler.help = ['infomenu'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
 handler.command = /^(menu2|audios|menú2|memu2|menuaudio|menuaudios|memuaudios|memuaudio|audios|audio)$/i
 handler.exp = 60
+handler.register = true
 export default handler
 
 const more = String.fromCharCode(8206)
