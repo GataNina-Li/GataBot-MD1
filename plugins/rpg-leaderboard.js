@@ -5,12 +5,14 @@ let handler = async (m, { conn, args, participants }) => {
   let sortedExp = users.map(toNumber('exp')).sort(sort('exp'))
    let sortedLim = users.map(toNumber('limit')).sort(sort('limit'))
     let sortedLevel = users.map(toNumber('level')).sort(sort('level'))
-     let sortedMoney = users.map(toNumber('money')).sort(sort('money'))
+     let sortedRole = users.map(toNumber('role')).sort(sort('role'))
+      let sortedMoney = users.map(toNumber('money')).sort(sort('money'))
      
       let usersExp = sortedExp.map(enumGetKey)
        let usersLim = sortedLim.map(enumGetKey)
         let usersLevel = sortedLevel.map(enumGetKey)
-         let usersMoney = sortedMoney.map(enumGetKey)
+         let usersRole = sortedRole.map(enumGetKey)
+          let usersMoney = sortedMoney.map(enumGetKey)
   console.log(participants)
   let len = args[0] && args[0].length > 0 ? Math.min(100, Math.max(parseInt(args[0]), 10)) : Math.min(10, sortedExp.length)
   let text = `
@@ -31,6 +33,11 @@ Tú : *${usersLevel.indexOf(m.sender) + 1}* de *${usersLevel.length}*
 
 ${sortedLevel.slice(0, len).map(({ jid, level }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *Nivel ${level}*`).join`\n`}
 
+▢ *TOP ${len} ROL* •
+Tú : *${usersRole.indexOf(m.sender) + 1}* de *${usersRole.length}*
+
+${sortedRole.slice(0, len).map(({ jid, role }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *Rol ${role}*`).join`\n`}
+
 ▢ *TOP ${len} GATACOINS* •
 Tú : *${usersMoney.indexOf(m.sender) + 1}* de *${usersMoney.length}*
 
@@ -38,7 +45,7 @@ ${sortedMoney.slice(0, len).map(({ jid, money }, i) => `${i + 1}. ${participants
 `.trim()
   conn.reply(m.chat, text, m, {
     contextInfo: {
-      mentionedJid: [...usersExp.slice(0, len), ...usersLim.slice(0, len), ...usersLevel.slice(0, len), ...usersMoney.slice(0, len)].filter(v => !participants.some(p => v === p.jid))
+      mentionedJid: [...usersExp.slice(0, len), ...usersLim.slice(0, len), ...usersLevel.slice(0, len), ...usersRole.slice(0, len), ...usersMoney.slice(0, len)].filter(v => !participants.some(p => v === p.jid))
     }
   })
 }
