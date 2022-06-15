@@ -50,8 +50,9 @@ handler.before = function (m) {
 
     user.role = role
     return true
-    
-if (user.level >= 6) { 
+
+let before = user.level * 1   
+if (before !== user.level >= 7) {
 let m = global.db.data.users[m.sender].exp += 2000
 let g = global.db.data.users[m.sender].money += 1000
 let d = global.db.data.users[m.sender].limit += 40
