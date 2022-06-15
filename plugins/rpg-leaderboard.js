@@ -16,30 +16,30 @@ let handler = async (m, { conn, args, participants }) => {
   console.log(participants)
   let len = args[0] && args[0].length > 0 ? Math.min(100, Math.max(parseInt(args[0]), 10)) : Math.min(10, sortedExp.length)
   let text = `
-       ≡ *TABLA DE CLASIFICACION*
+       🏆 *TABLA DE CLASIFICACION*
     
-▢ *TOP ${len} XP* •
-Tú : *${usersExp.indexOf(m.sender) + 1}* de *${usersExp.length}*
+💠 *TOP ${len} XP 🎯* 
+Tú : *${usersExp.indexOf(m.sender) + 1}* de *${usersExp.length} Usuarios*
 
 ${sortedExp.slice(0, len).map(({ jid, exp }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *${exp} Exp*`).join`\n`}
 
-▢ *TOP ${len} DIAMANTES💎* •
-Tú : *${usersLim.indexOf(m.sender) + 1}* de *${usersLim.length}*
+💠 *TOP ${len} DIAMANTES💎* •
+Tú : *${usersLim.indexOf(m.sender) + 1}* de *${usersLim.length} Usuarios*
 
 ${sortedLim.slice(0, len).map(({ jid, limit }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *${limit} Diamantes*`).join`\n`}
 
-▢ *TOP ${len} NIVEL* •
-Tú : *${usersLevel.indexOf(m.sender) + 1}* de *${usersLevel.length}*
+💠 *TOP ${len} NIVEL 💪* •
+Tú : *${usersLevel.indexOf(m.sender) + 1}* de *${usersLevel.length} Usuarios*
 
 ${sortedLevel.slice(0, len).map(({ jid, level }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *Nivel ${level}*`).join`\n`}
 
-▢ *TOP ${len} ROL* •
-Tú : *${usersRole.indexOf(m.sender) + 1}* de *${usersRole.length}*
+💠 *TOP ${len} ROL 🌟* •
+Tú : *${usersRole.indexOf(m.sender) + 1}* de *${usersRole.length} Usuarios*
 
 ${sortedRole.slice(0, len).map(({ jid, role }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} ${role}`).join`\n`}
 
-▢ *TOP ${len} GATACOINS* •
-Tú : *${usersMoney.indexOf(m.sender) + 1}* de *${usersMoney.length}*
+💠 *TOP ${len} GATACOINS 🐈*
+Tú : *${usersMoney.indexOf(m.sender) + 1}* de *${usersMoney.length} Usuarios*
 
 ${sortedMoney.slice(0, len).map(({ jid, money }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *${money} GataCoins*`).join`\n`}
 `.trim()
