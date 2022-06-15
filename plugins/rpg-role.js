@@ -1,6 +1,6 @@
 let handler = m => m
 
-handler.before = function (m) {
+handler.before = function (m, text) {
     let user = global.db.data.users[m.sender]
     let role = (user.level <= 3) ? '*NOVATO(A) III* 🪤'
         : ((user.level >= 3) && (user.level <= 6)) ? '*NOVATO(A) II* 🪤'
@@ -51,7 +51,7 @@ handler.before = function (m) {
     user.role = role
     return true
 
-if ((user.level >= 12) && (user.level <= 15)) {
+if ((user.level >= 12) && (user.level <= 15) == '*APRENDIS II* 🪚') {
 global.db.data.users[m.sender].exp += 2000
 global.db.data.users[m.sender].money += 1000
 global.db.data.users[m.sender].limit += 40
