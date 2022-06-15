@@ -48,4 +48,5 @@ handler.help = ['animeinfo <anime>']
 handler.tags = ['internet']
 handler.command = /^(animeinfo)$/i
 handler.exp = 50
+handler.level = 4
 export default handler
