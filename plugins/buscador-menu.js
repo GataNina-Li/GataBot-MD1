@@ -78,7 +78,8 @@ let pp = './media/menus/Menuvid1.mp4'
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 let mentionedJid = [who]
 let username = conn.getName(who)
-username.registered = true
+let user = global.db.data.users[m.sender]
+user.registered = false
 
 let menu = `
 💗 *¡HOLA | HI!* ${username}
