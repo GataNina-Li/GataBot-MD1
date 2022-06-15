@@ -50,6 +50,14 @@ handler.before = function (m) {
 
     user.role = role
     return true
+    
+if (user.level = 6) { 
+let m = global.db.data.users[m.sender].exp += 2000
+let g = global.db.data.users[m.sender].money += 1000
+let d = global.db.data.users[m.sender].limit += 40
+conn.sendHydrated(m.chat, `Ah subido de rol ${role}\n gana ${m} exp ${g} GataCoins ${d} diamantes`, wm, null, md, '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
+['Menu', `.menu`]
+], m,)}
 }
 
 export default handler
