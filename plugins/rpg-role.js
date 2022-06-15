@@ -51,7 +51,7 @@ handler.before = function (m) {
     user.role = role
     return true
 
-if (user == user.level = 15) {
+if ((user.level >= 12) && (user.level <= 15)) {
 global.db.data.users[m.sender].exp += 2000
 global.db.data.users[m.sender].money += 1000
 global.db.data.users[m.sender].limit += 40
