@@ -88,7 +88,7 @@ let menu = `
 ╭━━〔 *${wm}* 〕━━⬣
 ┃⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️
 ┃✪ *EXPERIENCIA | EXP ➺ ${exp}*
-┃✪ *NIVEL | LEVEL ➺ ${level}*
+┃✪ *NIVEL | LEVEL ➺* ${level}
 ┃✪ *ROL ➺ ${role}*
 ┃✪ *GATACOINS ➺ $ ${money}*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
