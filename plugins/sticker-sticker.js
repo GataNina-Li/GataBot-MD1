@@ -4,8 +4,7 @@ import uploadImage from '../lib/uploadImage.js'
 import { webp2png } from '../lib/webp2mp4.js'
 
 let handler = async (m, { conn, args, usedPrefix, command }) => {
-let userr = global.db.data.users[m.sender]
-userr.registered = false
+
 let stiker = false
 try {
 let q = m.quoted ? m.quoted : m
@@ -47,7 +46,6 @@ else throw '*[❗𝐈𝐍𝐅𝐎❗] 𝙻𝙾 𝚂𝙸𝙴𝙽𝚃𝙾, 𝙾�
 handler.help = ['stiker (caption|reply media)', 'stiker <url>', 'stikergif (caption|reply media)', 'stikergif <url>']
 handler.tags = ['sticker']
 handler.command = /^s(tic?ker)?(gif)?(wm)?$/i
-handler.register = true
 handler.exp = 200
 
 export default handler
