@@ -3,13 +3,13 @@ let minar = `${pickRandom(['Que pro 😎 has minado','🌟✨ Genial!! Obtienes'
 let pp = 'https://media.istockphoto.com/vectors/basic-rgb-vector-id1315251368?b=1&k=6&m=1315251368&s=170667a&w=0&h=2BgQx5Pu2CewGeq93Qxsyoyw5oT4gioHOOIkHb7PoyY='
 
 let hasil = Math.floor(Math.random() * 2000)
-let time = global.db.data.users[m.sender].lastmiming + 600000
-if (new Date - global.db.data.users[m.sender].lastmiming < 600000) throw `*💟 Vuelva en ${msToTime(time - new Date())} para continuar minando ⛏️*`  
+let time = global.db.data.users[m.sender].exp + 600000
+if (new Date - global.db.data.users[m.sender].exp < 600000) throw `*💟 Vuelva en ${msToTime(time - new Date())} para continuar minando ⛏️*`  
 
 conn.sendHydrated(m.chat, `*${minar} ${hasil} 𝙓𝙋*`, wm, pp, md, '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
 ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', `menu`]
 ], m,)
-global.db.data.users[m.sender].lastmiming = new Date * 1  
+global.db.data.users[m.sender].exp = new Date * 1  
 //m.reply(`*${minar} *${hasil} 𝙓𝙋*`)
 
 }
