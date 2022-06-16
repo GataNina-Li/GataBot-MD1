@@ -19,7 +19,7 @@ let user = global.db.data.users[m.sender]
 ┃ *XP:* *${user.exp - min}/${xp}*
 ╰━━〔 *𓃠 ${vs}* 〕━━━━⬣
 
-Te falta *${max - user.exp}* de *XP* para subir de nivel
+*Te falta ${max - user.exp} de *XP* para subir de nivel*
 `.trim()
     }
     let before = user.level * 1
