@@ -79,7 +79,7 @@ global.author = '𝙂𝙖𝙩𝙖 𝘿𝙞𝙤𝙨'
 
 //⊱ ━━━━━.⋅ Versión | Nombre | cuentas ⋅.━━━━ ⊰
 
-global.vs = '1.1.4'
+global.vs = '1.1.5'
 global.version = vs
 
 global.gt = '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿'
@@ -140,7 +140,7 @@ global.wait = '*⌛ _Cargando..._ ▬▬▬▭*'
 
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 
-global.multiplier = 2000 // Cuanto más alto, más difícil subir de nivel | The higher, The harder levelup
+global.multiplier = 70 // Cuanto más alto, más difícil subir de nivel | The higher, The harder levelup
 
 global.rpg = {
   emoticon(string) {
