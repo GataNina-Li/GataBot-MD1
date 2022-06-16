@@ -3,7 +3,7 @@ let minar = `${pickRandom(['Que pro 😎 has minado','🌟✨ Genial!! Obtienes'
 let pp = 'https://us.123rf.com/450wm/emojiimage/emojiimage1802/emojiimage180200332/95468325-mont%C3%B3n-de-piedras-preciosas-diamantes-azules-brillantes-concepto-de-joyas-caras-s%C3%ADmbolo-de-riqueza-d.jpg?ver=6'
 
 let d = Math.floor(Math.random() * 10)
-global.db.data.users[m.sender].limit = d * 1  
+global.db.data.users[m.sender].limit += d * 1  
 //let hasil = Math.floor(Math.random() * 2000)
 let time = global.db.data.users[m.sender].lastdiamantes + 600000
 if (new Date - global.db.data.users[m.sender].lastdiamantes < 600000) throw `*💟 Vuelva en ${msToTime(time - new Date())} para continuar minando ⛏️*`  
