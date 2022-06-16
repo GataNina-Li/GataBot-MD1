@@ -1,5 +1,5 @@
 let handler = async (m, { conn, args, participants, usedPrefix }) => {
-  //let user = global.db.data.users[m.sender]
+  //let user = global.db.data.users[m.sender] 
    //user.registered = false
   let users = Object.entries(global.db.data.users).map(([key, value]) => {
     return {...value, jid: key}
