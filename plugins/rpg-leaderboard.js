@@ -1,6 +1,6 @@
 let handler = async (m, { conn, args, participants, usedPrefix }) => {
-  let user = global.db.data.users[m.sender]
-   user.registered = false
+  //let user = global.db.data.users[m.sender]
+   //user.registered = false
   let users = Object.entries(global.db.data.users).map(([key, value]) => {
     return {...value, jid: key}
   })
@@ -60,7 +60,7 @@ await conn.sendHydrated(m.chat, wm, `𝘼𝙘𝙩𝙪𝙖𝙡𝙞𝙯𝙖 𝙩�
 handler.help = ['top']
 handler.tags = ['xp']
 handler.command = ['leaderboard', 'lb', 'top'] 
-handler.register = true
+//handler.register = true
 handler.fail = null
 handler.exp = 0
 
