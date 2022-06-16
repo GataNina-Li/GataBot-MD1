@@ -8,7 +8,7 @@ let user = global.db.data.users[m.sender]
     if (!canLevelUp(user.level, user.exp, global.multiplier)) {
         let { min, xp, max } = xpRange(user.level, global.multiplier)
         throw `
-╭━━[ *𝙉𝙄𝙑𝙀𝙇 | 𝙇𝙀𝙑𝙀𝙇* ]━━━⬣
+╭━━━[ *𝙉𝙄𝙑𝙀𝙇 | 𝙇𝙀𝙑𝙀𝙇* ]━━━━⬣
 ┃ *NOMBRE | NAME*
 ┃ ${name}
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
@@ -17,9 +17,9 @@ let user = global.db.data.users[m.sender]
 ┃ *RANGO:* ${role}
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃ *XP:* *${user.exp - min}/${xp}*
-╰━━〔 *𓃠 ${vs}* 〕━━━━⬣
+╰━━━〔 *𓃠 ${vs}* 〕━━━━━⬣
 
-*Te falta ${max - user.exp} de *XP* para subir de nivel*
+*Te falta ${max - user.exp} de XP para subir de nivel*
 `.trim()
     }
     let before = user.level * 1
@@ -27,13 +27,15 @@ let user = global.db.data.users[m.sender]
     if (before !== user.level) {
         let teks = `Bien hecho! ${conn.getName(m.sender)} Nivel: ${user.level}`
         let str = `
-┌─⊷ *LEVEL UP*
-▢ Nivel anterior : *${before}*
-▢ Nivel actual : *${user.level}*
-*Fecha:* ${new Date().toLocaleString('id-ID')}
-└──────────────
+╭━━━[ *𝙉𝙄𝙑𝙀𝙇 | 𝙇𝙀𝙑𝙀𝙇* ]━━━━⬣
+┃ *NIVEL ANTERIOR* : *${before}*
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃ *NIVEL ACTUAL* *${user.level}*
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃ *FECHA:* *${new Date().toLocaleString('id-ID')}*
+╰━━━〔 *𓃠 ${vs}* 〕━━━━━⬣
 
-*_Cuanto más interactúes con los bots, mayor será tu nivel_*
+*_Cuanto más interactúes con GataBot-MD, mayor será tu nivel!!_*
 `.trim()
         try {
             const img = await levelup(teks, user.level)
