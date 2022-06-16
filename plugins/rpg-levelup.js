@@ -28,9 +28,11 @@ let user = global.db.data.users[m.sender]
         let teks = `Bien hecho! ${conn.getName(m.sender)} Nivel: ${user.level}`
         let str = `
 ╭━━━[ *𝙉𝙄𝙑𝙀𝙇 | 𝙇𝙀𝙑𝙀𝙇* ]━━━━⬣
-┃ *NIVEL ANTERIOR* : *${before}*
+┃ *NIVEL ANTERIOR:* *${before}*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ *NIVEL ACTUAL* *${user.level}*
+┃ *NIVEL ACTUAL:* *${user.level}*
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃ *RANGO:* ${role}
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃ *FECHA:* *${new Date().toLocaleString('id-ID')}*
 ╰━━━〔 *𓃠 ${vs}* 〕━━━━━⬣
