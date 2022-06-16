@@ -45,7 +45,7 @@ handler.before = function (m, text) {
                                                                                                                                                                 : ((user.level >= 185) && (user.level <= 200)) ? '*TOP ASTRAL III* ⚜️🔱'
                                                                                                                                                                     : ((user.level >= 200) && (user.level <= 700)) ? '*TOP ASTRAL III* ⚜️🔱'
                                                                                                                                                                             : ((user.level >= 700) && (user.level <= 1000)) ? '👑 *ÉLITE GLOBAL* 🏁'
-                                                                                                                                                                                : '👑 *MEGA ÉLITE GLOBAL* 💎🏁'
+                                                                                                                                                                                : '👑 *∞ ÉLITE GLOBAL* 💎🏁'
 
 
     user.role = role
