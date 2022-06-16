@@ -2,7 +2,8 @@
 let handler = async (m, { conn, isPrems}) => { //lastmiming
 let minar = `${pickRandom(['Que pro 😎 has minado','🌟✨ Genial!! Obtienes','WOW!! eres un(a) gran Minero(a) ⛏️ Obtienes','Felicidades!! Ahora tienes','⛏️⛏️⛏️ Obtienes'])}`
 //let boost = `${pickRandom(['https://us.123rf.com/450wm/gioiak2/gioiak21707/gioiak2170700462/82888173-el-casco-el-pico-y-la-pala-del-minero-aislados-en-fondo-negro-ilustraci%C3%B3n-3d.jpg?ver=6','1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20'])}`  
-let pp = 'https://us.123rf.com/450wm/gioiak2/gioiak21707/gioiak2170700462/82888173-el-casco-el-pico-y-la-pala-del-minero-aislados-en-fondo-negro-ilustraci%C3%B3n-3d.jpg?ver=6' 
+//let pp = 'https://us.123rf.com/450wm/gioiak2/gioiak21707/gioiak2170700462/82888173-el-casco-el-pico-y-la-pala-del-minero-aislados-en-fondo-negro-ilustraci%C3%B3n-3d.jpg?ver=6' 
+let pp = './src/grupos.jpg'
 let hasil = Math.floor(Math.random() * 2000)
 let time = global.db.data.users[m.sender].exp + 600000
 if (new Date - global.db.data.users[m.sender].exp < 600000) throw `*💟 Vuelva en ${msToTime(time - new Date())} para continuar minando ⛏️*`  
