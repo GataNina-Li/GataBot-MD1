@@ -140,7 +140,7 @@ global.wait = '*⌛ _Cargando..._ ▬▬▬▭*'
 
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 
-global.multiplier = 120 // Cuanto más alto, más difícil subir de nivel | The higher, The harder levelup
+global.multiplier = 200 // Cuanto más alto, más difícil subir de nivel | The higher, The harder levelup
 
 global.rpg = {
   emoticon(string) {
