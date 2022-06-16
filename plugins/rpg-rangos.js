@@ -76,7 +76,7 @@ ${username}
 𝙍𝘼𝙉𝙂𝙊 𝘼𝘾𝙏𝙐𝘼𝙇
 ${role}
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-👑 *MEGA ÉLITE GLOBAL* 💎🏁
+👑 *∞ ÉLITE GLOBAL* 💎🏁
 👑 *ÉLITE GLOBAL* 🏁
 *TOP ASTRAL I* ⚜️🔱
 *TOP ASTRAL II* ⚜️🔱
