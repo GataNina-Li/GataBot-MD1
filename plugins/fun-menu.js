@@ -65,8 +65,8 @@ let pp = './media/menus/Menuvid1.mp4'
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 let mentionedJid = [who]
 let username = conn.getName(who)
-let user = global.db.data.users[m.sender]
-user.registered = false
+//let user = global.db.data.users[m.sender]
+//user.registered = false
 
 let menu = `
 💗 *¡HOLA | HI!* ${username}
@@ -124,7 +124,7 @@ conn.sendHydrated(m.chat, menu, wm, pp, 'https://github.com/GataNina-Li/GataBot-
 handler.help = ['infomenu'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
 handler.command = /^(juegosmenu)$/i
-handler.register = true
+//handler.register = true
 handler.exp = 50
 export default handler
 
