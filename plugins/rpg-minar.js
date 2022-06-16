@@ -21,7 +21,7 @@ global.db.data.users[m.sender].lastmiming = new Date * 1
 }
 handler.help = ['minar']
 handler.tags = ['xp']
-handler.command = ['minar', 'miming', 'mine'] 
+handler.command = ['minar', 'miming', 'mine', 'minarxp', 'minarexp', 'minarexperiencia'] 
 handler.fail = null
 handler.exp = 0
 export default handler
