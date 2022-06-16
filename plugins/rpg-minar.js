@@ -8,7 +8,7 @@ let hasil = Math.floor(Math.random() * 2000)
 let time = global.db.data.users[m.sender].exp + 600000
 if (new Date - global.db.data.users[m.sender].exp < 600000) throw `*💟 Vuelva en ${msToTime(time - new Date())} para continuar minando ⛏️*`  
 
-conn.sendHydrated(m.chat, `*${minar} ${xp} 𝙓𝙋*`, wm, pp, md, '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
+conn.sendHydrated(m.chat, `*${minar} ${hasil} 𝙓𝙋*`, wm, pp, md, '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
 ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', `menu`]
 ], m,)
 global.db.data.users[m.sender].exp = new Date * 1  
