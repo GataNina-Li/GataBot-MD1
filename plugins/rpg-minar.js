@@ -1,9 +1,9 @@
 let handler = async (m, { conn, isPrems}) => {
-let hasil = Math.floor(Math.random() * 1000)
-let time = global.db.data.users[m.sender].lastmiming + 600000
+let hasil = Math.floor(Math.random() * 3000)
+let time = global.db.data.users[m.sender].exp + 600000
 if (new Date - global.db.data.users[m.sender].lastmiming < 600000) throw `⏲️ _𝙴𝚜𝚙𝚎𝚛𝚊_ ${msToTime(time - new Date())} _𝚙𝚊𝚛𝚊 𝚟𝚘𝚕𝚟𝚎𝚛 𝚊 𝚖𝚒𝚗𝚊𝚛_`  
 m.reply(`🎉 𝙶𝚎𝚗𝚒𝚊𝚕! 𝚖𝚒𝚗𝚊𝚜𝚝𝚎 *${hasil} 𝚇𝙿*`)
-global.db.data.users[m.sender].lastmiming = new Date * 1
+global.db.data.users[m.sender].exp = new Date * 1
   
 }
 handler.help = ['minar']
