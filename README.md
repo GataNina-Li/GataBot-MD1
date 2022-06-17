@@ -1,4 +1,3 @@
-# Esta versión de GataBot no esta terminada. <img src="https://c.tenor.com/QaPEi-tcFXQAAAAC/gato-besando-a-la-camara.gif" height="32px">
 > #### 🚀 Versión actual: 1.1.5
 
 <p align="center"> 
