@@ -73,11 +73,11 @@ export async function handler(chatUpdate) {
                     user.autolevelup = true
 
                 if (!isNumber(user.money))
-                    user.money = 0
+                    user.money = 1000
                 if (!isNumber(user.health))
                     user.health = 100
                 if (!isNumber(user.limit))
-                    user.limit = 10
+                    user.limit = 1000
                 if (!isNumber(user.potion))
                     user.potion = 0
                 if (!isNumber(user.trash))
@@ -175,7 +175,7 @@ export async function handler(chatUpdate) {
             } else
                 global.db.data.users[m.sender] = {
                     exp: 0,
-                    limit: 10,
+                    limit: 1000,
                     lastclaim: 0,
                     registered: false,
                     name: m.name,
@@ -189,7 +189,7 @@ export async function handler(chatUpdate) {
                     role: 'Novato',
                     autolevelup: true,
 
-                    money: 0,
+                    money: 1000,
                     health: 100,
                     limit: 10,
                     potion: 10,
