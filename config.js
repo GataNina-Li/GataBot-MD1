@@ -88,6 +88,9 @@ global.gatabot = gt
 global.yt = 'https://youtube.com/channel/UC9b3UIVnVb5eQt7_Y-Qz-3A'
 global.youtube = yt
 
+global.ig = 'https://www.instagram.com/gata_dios'
+global.gatadiosig = ig
+
 global.md = 'https://github.com/Subbotsito/The-LoliBot-MD'
 global.gatabot = md
 
