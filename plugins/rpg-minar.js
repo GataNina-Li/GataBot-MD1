@@ -3,7 +3,7 @@ let minar = `${pickRandom(['Que pro 😎 has minado','🌟✨ Genial!! Obtienes'
 let pp = 'https://media.istockphoto.com/vectors/basic-rgb-vector-id1315251368?b=1&k=6&m=1315251368&s=170667a&w=0&h=2BgQx5Pu2CewGeq93Qxsyoyw5oT4gioHOOIkHb7PoyY='
 
 let xp = Math.floor(Math.random() * 2000)
-global.db.data.users[m.sender].exp += xp * 1  
+global.db.data.users[m.sender].exp = xp * 1  
 //let hasil = Math.floor(Math.random() * 2000)
 let time = global.db.data.users[m.sender].lastmiming + 600000
 if (new Date - global.db.data.users[m.sender].lastmiming < 600000) throw `*💟 Vuelva en ${msToTime(time - new Date())} para continuar minando ⛏️*`  
