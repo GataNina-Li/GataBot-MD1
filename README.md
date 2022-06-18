@@ -41,7 +41,7 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 > pkg install imagemagick -y
 > pkg install yarn
 > git clone https://github.com/Subbotsito/The-LoliBot-MD
-> cd THE-LOLIBOT-MD
+> cd The-LoliBot-MD
 > npm install
 > yarn install 
 > npm install
