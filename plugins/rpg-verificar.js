@@ -15,7 +15,7 @@ let sn = createHash('md5').update(m.sender).digest('hex')
 global.db.data.users[m.sender].money += 200
 global.db.data.users[m.sender].limit += 2
 global.db.data.users[m.sender].exp += 350
-let caption = `╭━━━[ *𝙑𝙀𝙍𝙄𝙁𝙄𝘾𝘼𝙍 | 𝙑𝙀𝙍𝙄𝙁𝙔* ]━━━━⬣
+let caption = `╭━━━[ *𝙑𝙀𝙍𝙄𝙁𝙄𝘾𝘼𝙍* ]━━━━⬣
 ┃ *NOMBRE* 
 ┃ ${name}
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
@@ -24,7 +24,7 @@ let caption = `╭━━━[ *𝙑𝙀𝙍𝙄𝙁𝙄𝘾𝘼𝙍 | 𝙑𝙀�
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃ *BONO* 
 ┃ *$350 XP*
-┃ *$200 GATACOINS*
+┃ *$200 LoliCOINS*
 ┃ *$2 DIAMANTES*
 ╰━━━━━━━━━━━━━━━━━━⬣`
 //let author = global.author
