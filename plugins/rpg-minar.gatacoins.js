@@ -1,4 +1,4 @@
-let handler = async (m, { conn, isPrems}) => { //lastmiming
+/*let handler = async (m, { conn, isPrems}) => { //lastmiming
 let minar = `${pickRandom(['Que pro 😎 has minado','🌟✨ Genial!! Obtienes','WOW!! eres un(a) gran Minero(a) ⛏️ Obtienes','Felicidades!! Ahora tienes','⛏️⛏️⛏️ Obtienes'])}`
 let pp = 'https://media.tvalacarta.info/programas/0/clantve/44-gatos/aida-la-gata-robot.jpg'
 
@@ -40,4 +40,4 @@ return minutes + " m y " + seconds + " s "
 }  
 
 function pickRandom(list) {
-return list[Math.floor(Math.random() * list.length)]}
+return list[Math.floor(Math.random() * list.length)]}*/
