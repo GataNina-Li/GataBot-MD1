@@ -14,7 +14,7 @@ if (!text) throw `${mg}𝘿𝙀𝘽𝙀 𝙄𝙉𝙂𝙍𝙀𝙎𝘼𝙍 𝙐�
 //let json = await res.json()
 //conn.sendFile(m.chat, json.result.audio, 'error.mp3', null, m, false, { mimetype: 'mp3/mp4' })}
 
-conn.reply(m.chat, `${eg}ESPERE UNOS SEG EL QUE LE MANDAMOS SUS 𝙑𝙄𝘿𝙀𝙊 𝘿𝙀 𝙏𝙄𝙆𝙏𝙊𝙆 🔰`, m, {
+conn.reply(m.chat, `${eg}*ESPERE UNOS SEGUNDOS EL QUE MANDO SUS 𝙑𝙄𝘿𝙀𝙊 𝘿𝙀 𝙏𝙄𝙆𝙏𝙊𝙆 🔰*`, m, {
 contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
 title: 'The Lolibot-MD',
 body: 'Super Bot WhatsApp',         
@@ -28,7 +28,7 @@ await conn.sendFile(m.chat, json.result.nowatermark, 'error.mp4', `${wm}`, m)
 let info = `💖 *Infórmate sobre las Novedades y recuerda tener la última versión.*
   `.trim()
   
-await conn.sendHydrated(m.chat, info, wm, null, null, null, [
+await conn.sendHydrated(m.chat, info, wm, null, ig, '', null, null, [
 ['𝙈𝙚𝙣𝙪 𝘿𝙚𝙨𝙘𝙖𝙧𝙜𝙖𝙨 🌀', '#descargasmenu'],
 ['𝙈𝙚𝙣𝙪 𝘾𝙤𝙢𝙥𝙡𝙚𝙩𝙤 ✨', '.allmenu'],
 ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ ☘️', '/menu']

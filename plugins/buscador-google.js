@@ -18,7 +18,7 @@ return `*${title}*\n_${url}_\n_${description}_\n┈┈┈┈┈┈┈┈┈┈�
 
 let info = `💖 *Infórmate sobre las Novedades y recuerda tener la última versión.*
   `.trim()
-conn.sendHydrated(m.chat, info, wm, pp, null, null, [
+await conn.sendHydrated(m.chat, info, wm, null, ig, '', null, null, [
 ['𝙈𝙚𝙣𝙪 𝘽𝙪𝙨𝙦𝙪𝙚𝙙𝙖𝙨 🔎', '#buscarmenu'],
 ['𝙈𝙚𝙣𝙪 𝘾𝙤𝙢𝙥𝙡𝙚𝙩𝙤 ✨', '.allmenu'],
 ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ ☘️', '/menu']
