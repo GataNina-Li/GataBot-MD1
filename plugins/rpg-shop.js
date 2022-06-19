@@ -20,7 +20,7 @@ await conn.sendHydrated(m.chat, gata, wm, null, md, 'The Lolibot-𝙈𝘿', null
 ], m,)
     
   } else //conn.reply(m.chat, `❎ Lo siento, no tienes suficientes *XP* para comprar *${count}* Diamantes💎`, m)
-  await conn.sendHydrated(m.chat, `*No tiene sufuciente 𝙓𝙋 para comprar ${count} Diamantes* 💎\n\n*Le recomiendo que interactúe con The Lolibot-MD para Obtener experiencia, puede ver su experiencia con el comando ${usedPrefix}exp o ${usedPrefix}experiencia. También puede comprar con GataCoins con el Comando ${usedPrefix}buy2*`, wm, null, ig, '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢', null, null, [
+  await conn.sendHydrated(m.chat, `*No tiene sufuciente 𝙓𝙋 para comprar ${count} Diamantes* 💎\n\n*Le recomiendo que interactúe con The Lolibot-MD para Obtener experiencia, puede ver su experiencia con el comando ${usedPrefix}exp o ${usedPrefix}experiencia. También puede comprar con loliCoins con el Comando ${usedPrefix}buy2*`, wm, null, ig, '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢', null, null, [
 ['🐈 𝘾𝙤𝙢𝙥𝙧𝙖𝙧 𝙘𝙤𝙣 loli𝘾𝙤𝙞𝙣𝙨', '/buy2'],
 ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ ☘️', '/menu']
 ], m,)
