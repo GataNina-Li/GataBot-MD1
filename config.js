@@ -82,13 +82,13 @@ global.author = 'the Lolibot-MD'
 global.vs = '1.1.5'
 global.version = vs
 
-global.gt = 'THE Lolibot-MD'
+global.gt = 'The LoliBot-MD'
 global.gatabot = gt
 
 global.yt = 'https://youtube.com/channel/UC9b3UIVnVb5eQt7_Y-Qz-3A'
 global.youtube = yt
 
-global.ig = 'https://www.instagram.com/gata_dios'
+global.ig = ''
 global.gatadiosig = ig
 
 global.md = 'https://github.com/Subbotsito/The-LoliBot-MD'
