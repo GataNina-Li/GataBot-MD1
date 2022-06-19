@@ -8,10 +8,61 @@ let handler  = async (m, { conn, command, args, usedPrefix, DevMode }) => {
 //} catch (e) {
 
 //} finally { }
-  await m.reply(`╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼* ⊱⚠️⊱╮`)
+  await m.reply(`╰⊱🔰⊱ *INSTALACIÓN* ⊱🔰⊱╮`)
   //conn.sendButton(m.chat, str, author, await(await fetch(pp)).buffer(), [['Menu', '/menu']], m)
 let text = `
-*Las funciones #jadibot #bots #serbot #subbot #getcode. No estan disponibles en* ${gt} *si quiere hacerte bot intenta hacerlo vos mismo instalado poner #instalarbot* *y si necesitas ayuda habla con el owner del bot*`.trim()   
+*PASO PARA LA INSTALACIÓN*
+*The LoliBot-MD ya esta lista para la instalación*
+
+*si necesitas ayuda entra al grupo del bot*
+
+📌 *https://chat.whatsapp.com/Lus9S60MABnH9lF4Wf2T7k*
+
+*o escribime al wa.me/56977774748*
+*solo por tema del bot*
+
+📌 *paso para instalar el bot el termux*
+🔸 *necesita 2 celu solo para escanear el QR*
+🔸 *instalar termux de Google*
+
+*paso numero 1*
+
+🔸 termux-setup-storage
+   *(le dar el permite)*
+
+🔸  apt update 
+
+🔸  pkg upgrade 
+
+🔸 pkg install git -y
+
+🔸 pkg install nodejs -y
+
+🔸 pkg install ffmpeg -y
+
+🔸 pkg install imagemagick -y
+
+🔸 pkg install yarn
+
+🔸 git clone https://github.com/Subbotsito/The-LoliBot-MD
+
+🔸  cd The-LoliBot-MD
+
+🔸 npm install
+
+🔸 yarn install 
+
+🔸 npm install
+
+🔸 npm update
+
+🔸 ls
+
+🔸 npm start 
+*(y aca que van manda el QR tener la  opción saca una captura y mandala* *a tu otro celu y escanea)*
+
+*cualquier cosa hablame solo por tema del bot🔰🤖*
+*saludos🔰🤖*`.trim()   
 conn.reply(m.chat, text, m, {
 contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
 title: 'The Lolibot-𝙈𝘿',
@@ -31,5 +82,5 @@ sourceUrl: `${yt}`}}})
   
   //await conn.sendButton(m.chat, `Infórmate sobre las Novedades y recuerda tener la última versión.\nFind out about what's new and remember to have the latest version.`, author, url, [['🔄 𝚂𝙸𝙶𝚄𝙸𝙴𝙽𝚃𝙴 🔄', /${command}], ['🔄 𝚂𝙸𝙶𝚄𝙸𝙴𝙽𝚃𝙴 2 🔄', /${command}]], m)
 }
-handler.command = /^(jadibot|serbot|bots|subbots|getcode)/i
+handler.command = /^(Instalarbot|botinstalacion|instalarbot|botinstalacion)/i
 export default handler

@@ -7,7 +7,7 @@ key: m.key
     	}
     })	
 }
-handler.customPrefix = /(gatadios|dios|gatabot-md|gata dios|gata - bot|gata-bot|gatabot|gata|gatabotmd|gata - bot md)/i
+handler.customPrefix = /(lolibot|loli|the lolibot-md|lolibot md|lolibot -md|botloli|lolibot|theloli|lolibot|gata - bot md)/i
 handler.command = new RegExp
 
 export default handler

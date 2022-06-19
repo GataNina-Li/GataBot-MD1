@@ -5,7 +5,7 @@ throw false
 }
 let pesan = args.join` `
 let oi = `*ღ 𝙈𝙀𝙉𝙎𝘼𝙅𝙀:* ${pesan}`
-let teks = `╭━〔 *𝙄𝙉𝙑𝙊𝘾𝘼𝙉𝘿𝙊 𝘼𝙇 𝙂𝙍𝙐𝙋𝙊* 〕━⬣\n\n${oi}\n\n`
+let teks = `╭━〔 *𝙄𝙉𝙑𝙊𝘾𝘼𝙉𝘿𝙊 𝘼𝙇 𝙂𝙍𝙐𝙋𝙊 🗣️* 〕━⬣\n\n${oi}\n\n`
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 let mentionedJid = [who]
 let username = conn.getName(who)
@@ -14,9 +14,9 @@ teks += `┃➥ @${username.id.split('@')[0]}\n`}
 teks += `╰━━━━━━[ *𓃠 ${vs}* ]━━━━━⬣`
 //conn.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) }, )
   
-conn.sendHydrated(m.chat, teks, `𝙀𝙩𝙞𝙦𝙪𝙚𝙩𝙖𝙨 | ${wm}`, null, 'https://github.com/GataNina-Li/GataBot-MD', '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
+conn.sendHydrated(m.chat, teks, `𝙀𝙩𝙞𝙦𝙪𝙚𝙩𝙖𝙨 | ${wm}`, null, 'https://github.com/Subbotsito/The-LoliBot-MD', 'The Lolibot-𝙈𝘿', null, null, [
 ['𝙄𝙣𝙫𝙤𝙘𝙖𝙧 𝙤𝙩𝙧𝙖 𝙫𝙚𝙯 📣', `${usedPrefix + command}`],
-['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘', '.menu']
+['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ ☘', '.menu']
 ], m, { mentions: participants.map(a => a.id) })  
 }
 handler.help = ['tagall <mesaje>','invocar <mesaje>']

@@ -31,9 +31,9 @@ let top = `*🌈TOP 10 GAYS/LESBIANAS DEL GRUPO🌈*
 *_9.- ${user(i)}_*
 *_10.- ${user(j)}_*`
 //m.reply(top, null, {
-conn.sendHydrated(m.chat, top, wm, null, md, '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
-['𝙊𝙩𝙧𝙖 𝙫𝙚𝙯 | 𝘼𝙜𝙖𝙞𝙣 🔮', `${usedPrefix + command}`],
-['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', '/menu']
+conn.sendHydrated(m.chat, top, wm, null, md, 'The Lolibot-𝙈𝘿', null, null, [
+['𝙊𝙩𝙧𝙖 𝙫𝙚𝙯 🔮', `${usedPrefix + command}`],
+['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ ☘️', '/menu']
 ], m, null, {
 contextInfo: {
 mentionedJid: [a, b, c, d, e, f, g, h, i, j]
@@ -58,9 +58,9 @@ let top = `*🌸 TOP 10 OTAKUS DEL GRUPO 🌸*
 *_9.- ${user(i)}_*
 *_10.- ${user(j)}_*`
 //m.reply(top, null, {
-conn.sendHydrated(m.chat, top, wm, null, md, '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
-['𝙊𝙩𝙧𝙖 𝙫𝙚𝙯 | 𝘼𝙜𝙖𝙞𝙣 🔮', `${usedPrefix + command}`],
-['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', '/menu']
+conn.sendHydrated(m.chat, top, wm, null, md, 'The Lolibot-𝙈𝘿', null, null, [
+['𝙊𝙩𝙧𝙖 𝙫𝙚𝙯 🔮', `${usedPrefix + command}`],
+['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ ☘️', '/menu']
 ], m, null, {
 contextInfo: {
 mentionedJid: [a, b, c, d, e, f, g, h, i, j]
