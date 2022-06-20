@@ -37,7 +37,6 @@ let ip = `*${pickRandom(['','','','','','','','','','','','','','','','','','','
 */
 
 let pp = './media/menus/Doxeado.mp4'
-
 let old = performance.now()
 let neww = performance.now()
 let speed = `${neww - old}`
