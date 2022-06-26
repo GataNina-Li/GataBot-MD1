@@ -44,7 +44,7 @@ export async function handler(chatUpdate) {
                 if (!isNumber(user.exp))
                     user.exp = 0
                 if (!isNumber(user.limit))
-                    user.limit = 1000
+                    user.limit = 10000
                 if (!isNumber(user.lastclaim))
                     user.lastclaim = 0
                 if (!('registered' in user))
@@ -73,11 +73,11 @@ export async function handler(chatUpdate) {
                     user.autolevelup = true
 
                 if (!isNumber(user.money))
-                    user.money = 1000
+                    user.money = 10000
                 if (!isNumber(user.health))
                     user.health = 100
                 if (!isNumber(user.limit))
-                    user.limit = 1000
+                    user.limit = 10000
                 if (!isNumber(user.potion))
                     user.potion = 0
                 if (!isNumber(user.trash))
@@ -175,7 +175,7 @@ export async function handler(chatUpdate) {
             } else
                 global.db.data.users[m.sender] = {
                     exp: 0,
-                    limit: 1000,
+                    limit: 10000,
                     lastclaim: 0,
                     registered: false,
                     name: m.name,
@@ -189,9 +189,9 @@ export async function handler(chatUpdate) {
                     role: 'Novato',
                     autolevelup: true,
 
-                    money: 1000,
+                    money: 10000,
                     health: 100,
-                    limit: 1000,
+                    limit: 10000,
                     potion: 10,
                     trash: 0,
                     wood: 0,
@@ -554,6 +554,10 @@ export async function handler(chatUpdate) {
                         } catch (e) {
                             console.error(e)
                         }
+                    }
+                    if (m.limit)
+                        m.reply(+m.limit + ' 𝘿𝙄𝘼𝙈𝘼𝙉𝙏𝙀(𝙎) 💎 𝙐𝙎𝘼𝘿𝙊(𝙎)')
+                }
                 break
             }
         }
@@ -726,7 +730,7 @@ global.dfail = (type, m, conn) => {
         unreg: '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼 | 𝙒𝘼𝙍𝙉𝙄𝙉𝙂* ⊱⚠️⊱╮\n\n_*¡Qué esperas para estar Verificando(a) en GataBot-MD! Usa el comando #verificar*_\n_*What are you waiting for to be Verifying with GataBot-MD! Use the #verify command*_',
         restrict: '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼 | 𝙒𝘼𝙍𝙉𝙄𝙉𝙂* ⊱⚠️⊱╮\n\n_*¡¡Esta función está Restringida | disable por Mí Creador(a)!!*_\n_*¡¡This feature is off | disable!!*_'
     }[type]
-    if (msg) return m.reply(msg)
+    if (msg) return m.reply(msg) 
 }
 
 let file = global.__filename(import.meta.url, true)
