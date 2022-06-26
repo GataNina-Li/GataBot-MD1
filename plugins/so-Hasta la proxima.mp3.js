@@ -12,6 +12,6 @@ type: 'audioMessage',
 ptt: true 
 })
 }
-handler.customPrefix = /Hasta la proxima/i 
+handler.customPrefix = /Hasta la proxima|hasta la proxima/i 
 handler.command = new RegExp
 export default handler
