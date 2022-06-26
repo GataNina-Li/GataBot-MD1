@@ -2,10 +2,11 @@ import { createHash } from 'crypto'
 import PhoneNumber from 'awesome-phonenumber'
 import fetch from 'node-fetch'
 let handler = async (m, { conn, usedPrefix }) => {
-let pp = 'https://i.imgur.com/WHjtUae.jpg'
+let pp = 'https://i.imgur.com/EXTbyyn.jpg'
+//const pp = await conn.profilePictureUrl(conn.user.jid).catch(_ => './src/avatar_contact.png')
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 try {
-pp = await conn.getProfilePicture(who)
+pp = await conn.getProfilePicture(who)         //pp = await conn.getProfilePicture(who)
 } catch (e) {
 
 } finally {
@@ -13,15 +14,22 @@ let { name, limit, lastclaim, registered, regTime, age } = global.db.data.users[
 let username = conn.getName(who)
 let prem = global.prems.includes(who.split`@`[0])
 let sn = createHash('md5').update(who).digest('hex')
-let str = `*𝙽𝙾𝙼𝙱𝚁𝙴:* ${username} ${registered ? '(' + name + ') ': ''}
-*𝙽𝚄𝙼𝙴𝚁𝙾:* ${PhoneNumber('+' + who.replace('@s.whatsapp.net', '')).getNumber('international')}
-*𝙻𝙸𝙽𝙺:* wa.me/${who.split`@`[0]}${registered ? '\n*𝙴𝙳𝙰𝙳:* ' + age + ' años' : ''}
-*𝙻𝙸𝙼𝙸𝚃𝙴:* ${limit} 𝚄𝚂𝙾𝚂
-*𝚁𝙴𝙶𝙸𝚂𝚃𝚁𝙰𝙳𝙾:* ${registered ? 'Si': 'No'}
-*𝙿𝚁𝙴𝙼𝙸𝚄𝙼:* ${prem ? 'Si' : 'No'}
-*𝙽𝚄𝙼𝙴𝚁𝙾 𝙳𝙴 𝚂𝙴𝚁𝙸𝙴:* 
-${sn}`
-conn.sendButton(m.chat, str, author, await(await fetch(pp)).buffer(), [['𝙼𝙴𝙽𝚄 𝙿𝚁𝙸𝙽𝙲𝙸𝙿𝙰𝙻', '/menu']], m)
+let str =
+`┃ 𝙉𝙊𝙈𝘽𝙍𝙀 ${name}
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃ 𝙉𝙐𝙈𝙀𝙍𝙊 ${PhoneNumber('+' + who.replace('@s.whatsapp.net', '')).getNumber('international')}
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃ 𝙀𝙉𝙇𝘼𝘾𝙀 wa.me/${who.split`@`[0]}${registered ?'\n┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈\n┃ 𝙀𝘿𝘼𝘿 ' + age + ' *años*' : ''}
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃ 𝙇𝙄𝙈𝙄𝙏𝙀𝙎 *${limit}* 𝙙𝙚 𝙐𝙨𝙤𝙨
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃ 𝙍𝙀𝙂𝙄𝙎𝙏𝙍𝘼𝘿𝙊(𝘼) ${registered ? '✅': '❎'}
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃ 𝙋𝙍𝙀𝙈𝙄𝙐𝙈 ${prem ? '✅' : '❎'}
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃ 𝙉𝙐𝙈𝙀𝙍𝙊 𝘿𝙀 𝙎𝙀𝙍𝙄𝙀
+┃ *${sn}*`
+conn.sendButton(m.chat, str, wm, await(await fetch(pp)).buffer(), [['𝙑𝙚𝙧𝙞𝙛𝙞𝙘𝙖𝙧 | 𝙑𝙚𝙧𝙞𝙛𝙮', '/verificar ✅'], ['𝙌𝙪𝙚 𝙚𝙢𝙥𝙞𝙚𝙘𝙚 𝙡𝙖 𝙖𝙫𝙚𝙣𝙩𝙪𝙧𝙖!! 😎', '/menu']], m)
 }}
 handler.help = ['profile [@user]']
 handler.tags = ['xp']

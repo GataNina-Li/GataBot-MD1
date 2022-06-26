@@ -1,7 +1,7 @@
 const items = [
     'limit', 'exp',
 ]
-let confirmation = {}
+let confirmation = {} 
 async function handler(m, { conn, args, usedPrefix, command }) {
     if (confirmation[m.sender]) return m.reply('estas haciendo una transferencia')
     let user = global.db.data.users[m.sender]

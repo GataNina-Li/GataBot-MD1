@@ -42,7 +42,7 @@ id: m.chat,
 participants: part,
 action: act
 })}
-handler.help = ['simulate <event> [@mention]','simular <event>']
+handler.help = ['simulate <event> [@mention]','simular <event>'] 
 handler.tags = ['owner']
 handler.command = /^simulate|simular$/i
 handler.group = true

@@ -24,6 +24,6 @@ await conn.sendHydrated(m.chat, info, wm, null, ig, '𝙄𝙣𝙨𝙩𝙖𝙜�
 handler.help = ['igstory <username>']
 handler.tags = ['downloader']
 handler.command = ['igstory', 'ighistoria', 'ighistorias' ]
-handler.limit = 7
+handler.limit = 3
 handler.exp = 87
 export default handler

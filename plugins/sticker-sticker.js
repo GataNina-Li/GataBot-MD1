@@ -4,6 +4,7 @@ import uploadImage from '../lib/uploadImage.js'
 import { webp2png } from '../lib/webp2mp4.js'
 
 let handler = async (m, { conn, args, usedPrefix, command }) => {
+
 let stiker = false
 try {
 let q = m.quoted ? m.quoted : m
