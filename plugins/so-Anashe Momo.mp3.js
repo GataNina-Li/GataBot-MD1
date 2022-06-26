@@ -12,6 +12,6 @@ type: 'audioMessage',
 ptt: true 
 })
 }
-handler.customPrefix = /nashe|Nashe|anashei|anashe|nasheee|anachei|nachei|😏🍔/i 
+handler.customPrefix = /Nashe|anashei|anashe|anachei|nachei|😏🍔/i 
 handler.command = new RegExp
 export default handler
