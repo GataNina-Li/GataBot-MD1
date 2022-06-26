@@ -295,44 +295,165 @@ let str = `
 *- 𝙴𝚂𝙲𝚁𝙸𝙱𝙴 𝙻𝙰𝚂 𝚂𝙸𝙶𝚄𝙸𝙴𝙽𝚃𝙴𝚂 𝙿𝙰𝙻𝙰𝙱𝚁𝙰𝚂 𝙾 𝙵𝚁𝙰𝚂𝙴𝚂 𝚂𝙸𝙽 𝙽𝙸𝙽𝙶𝚄𝙽 𝙿𝚁𝙴𝙵𝙸𝙹𝙾 (#, /, *, .)* 
 _(𝑢𝑠𝑜 𝑠𝑖𝑛 𝑝𝑟𝑒𝑓𝑖𝑗𝑜)_
 
-° ඬ⃟🔊 _Quien es tu sempai botsito 7w7_
-° ඬ⃟🔊 _Te diagnostico con gay_
-° ඬ⃟🔊 _A nadie le importa_
-° ඬ⃟🔊 _Fiesta del admin_
-° ඬ⃟🔊 _Fiesta del administrador_ 
-° ඬ⃟🔊 _Vivan los novios_
-° ඬ⃟🔊 _Feliz cumpleaños_
-° ඬ⃟🔊 _Noche de paz_
-° ඬ⃟🔊 _Buenos dias_
-° ඬ⃟🔊 _Buenos tardes_
-° ඬ⃟🔊 _Buenos noches_
-° ඬ⃟🔊 _Audio hentai_
-° ඬ⃟🔊 _Chica lgante_
-° ඬ⃟🔊 _Feliz navidad_
-° ඬ⃟🔊 _Vete a la vrg_
-° ඬ⃟🔊 _Pasa pack Bot_
+° ඬ⃟🔊 _A-_
+° ඬ⃟🔊 _Aaa es demasiado sexo_
+° ඬ⃟🔊 _Alabado sea el sexooo_
+° ඬ⃟🔊 _🚨_
 ° ඬ⃟🔊 _Atencion grupo_
-° ඬ⃟🔊 _Marica quien_
-° ඬ⃟🔊 _Murio el grupo_
-° ඬ⃟🔊 _Oh me vengo_
-° ඬ⃟🔊 _Viernes_
+° ඬ⃟🔊 _Audio hentai_
+° ඬ⃟🔊 _A nadie le importa_
+° ඬ⃟🔊 _Ara ara_
+° ඬ⃟🔊 _Among us_
+° ඬ⃟🔊 _Abduzcan_
+° ඬ⃟🔊 _Buenos dias_
 ° ඬ⃟🔊 _Baneado_
-° ඬ⃟🔊 _Sexo_
-° ඬ⃟🔊 _Hola_
-° ඬ⃟🔊 _Un pato_
-° ඬ⃟🔊 _Nyanpasu_
-° ඬ⃟🔊 _Te amo_
-° ඬ⃟🔊 _Yamete_
 ° ඬ⃟🔊 _Bañate_
+° ඬ⃟🔊 _Bot puto_
+° ඬ⃟🔊 _Bv_
+° ඬ⃟🔊 _Basado_
+° ඬ⃟🔊 _Basada_
+° ඬ⃟🔊 _Bien pensado Woody_
+° ඬ⃟🔊 _Bueno si_
+° ඬ⃟🔊 _Buenas noches_
+° ඬ⃟🔊 _Bueno Master | 🫂_
+° ඬ⃟🔊 _Bienvenido/a | 🤗_
+° ඬ⃟🔊 _Buen día grupo | 🙌_
+° ඬ⃟🔊 _Blackpink in your area_
+° ඬ⃟🔊 _Chichotas asi de grandes peter_
+° ඬ⃟🔊 _Corte corte_
+° ඬ⃟🔊 _Calla Fan de BTS_
+° ඬ⃟🔊 _Cambiate a Movistar_
+° ඬ⃟🔊 _Contexto_
+° ඬ⃟🔊 _Callate | 🤫_
+° ඬ⃟🔊 _Chau | 👋_
+° ඬ⃟🔊 _DIVINO | 💋_
+° ඬ⃟🔊 _Depresion_
+° ඬ⃟🔊 _Diablos Señorita | 😈_
+° ඬ⃟🔊 _En caso de una investigación_
+° ඬ⃟🔊 _Elmo sabe donde vives_
+° ඬ⃟🔊 _Eres Fuerte_
+° ඬ⃟🔊 _El rap de Fernanfloo_
+° ඬ⃟🔊 _Está Zzzz_
+° ඬ⃟🔊 _El tóxico_
+° ඬ⃟🔊 _Esto va para ti_
+° ඬ⃟🔊 _El pepe_
+° ඬ⃟🔊 _Esto va ser épico papus_
+° ඬ⃟🔊 _Entrada épica_ 
+° ඬ⃟🔊 _Estoy triste_
+° ඬ⃟🔊 _Enojada_
+° ඬ⃟🔊 _Enojado_
 ° ඬ⃟🔊 _Es puto_
+° ඬ⃟🔊 _Fino señores_
+° ඬ⃟🔊 _Feliz cumpleaños | 🥳 | 🎉_
+° ඬ⃟🔊 _Feliz navidad_
+° ඬ⃟🔊 _Fiesta del admin_
+° ඬ⃟🔊 _Fiesta del admin 2_
+° ඬ⃟🔊 _Fiesta del administrador_
+° ඬ⃟🔊 _Hasta la proxima_
+° ඬ⃟🔊 _Hablar primos_
+° ඬ⃟🔊 _Hablame_
+° ඬ⃟🔊 _Hentai_
+° ඬ⃟🔊 _Hey_
+° ඬ⃟🔊 _Homero chino_
+° ඬ⃟🔊 _Hola_
+° ඬ⃟🔊 _Ingresa épicamente_
+° ඬ⃟🔊 _Jaja el pendejo | 🤣_
+° ඬ⃟🔊 _Jijija | 😂_
+° ඬ⃟🔊 _Joder esas tetas no dejan de mirarme_
+° ඬ⃟🔊 _Jesucristo_
+° ඬ⃟🔊 _Los que se pelean se aman_
+° ඬ⃟🔊 _Leche | 🥛_
+° ඬ⃟🔊 _La roca | 🤨_
+° ඬ⃟🔊 _Las reglas del grupo_
+° ඬ⃟🔊 _La voz de hombre_
 ° ඬ⃟🔊 _La biblia_
+° ඬ⃟🔊 _LESS GO_
+° ඬ⃟🔊 _Motivación_
+° ඬ⃟🔊 _Muchachos_
+° ඬ⃟🔊 _Moshi moshi_
+° ඬ⃟🔊 _Momento equisde | Momento XD_
+° ඬ⃟🔊 _Me anda buscando anonymous_
+° ඬ⃟🔊 _Mmm_
+° ඬ⃟🔊 _Ma ma masivo_
+° ඬ⃟🔊 _Masivo_
+° ඬ⃟🔊 _Me voy_
+° ඬ⃟🔊 _Me pican los cocos_
+° ඬ⃟🔊 _Murio el grupo_
+° ඬ⃟🔊 _Marica quien_
+° ඬ⃟🔊 _Me olvidé_
+° ඬ⃟🔊 _Nya | 🐱_
+° ඬ⃟🔊 _Noche de paz_
+° ඬ⃟🔊 _Noche de paz_
+° ඬ⃟🔊 _No Rompas más | 💔_
+° ඬ⃟🔊 _Nico nico_
+° ඬ⃟🔊 _No me hagas usar esto_
+° ඬ⃟🔊 _No chu_
+° ඬ⃟🔊 _No me hables_
+° ඬ⃟🔊 _Nadie te preguntó_
+° ඬ⃟🔊 _Niconico_
+° ඬ⃟🔊 _No digas eso papu_
+° ඬ⃟🔊 _Nyanpasu_
+° ඬ⃟🔊 _Orale_
+° ඬ⃟🔊 _🚬🐛_
+° ඬ⃟🔊 _Omaiga_
+° ඬ⃟🔊 _Ohayo_
+° ඬ⃟🔊 _Oh me vengo_
 ° ඬ⃟🔊 _Onichan_
-° ඬ⃟🔊 _Mierda de Bot_
-° ඬ⃟🔊 _Siuuu_
+° ඬ⃟🔊 _Porque me excita tanto | 🥵_
+° ඬ⃟🔊 _Porque ta tite_
+° ඬ⃟🔊 _Potaxio | 🥑_
+° ඬ⃟🔊 _Pasen furras_
+° ඬ⃟🔊 _Pokémon_
+° ඬ⃟🔊 _Pikachu_
+° ඬ⃟🔊 _Pero esto_
+° ඬ⃟🔊 _Pasa pack Bot_
+° ඬ⃟🔊 _Puta que rico | 🍑_
+° ඬ⃟🔊 _Que ricas tetas_
+° ඬ⃟🔊 _Que linda que estas hija de puta_
+° ඬ⃟🔊 _Que dice? | 😐_
+° ඬ⃟🔊 _Que tal grupo_
+° ඬ⃟🔊 _Que sucede_
+° ඬ⃟🔊 _Quien es tu sempai botsito 7w7_
 ° ඬ⃟🔊 _Rawr_
+° ඬ⃟🔊 _🕺_
+° ඬ⃟🔊 _Salimo en caravana_
+° ඬ⃟🔊 _Si o no pendejo_
+° ඬ⃟🔊 _Sexo_
+° ඬ⃟🔊 _Su nivel de pendejo_
+° ඬ⃟🔊 _Se están riendo de mí_
+° ඬ⃟🔊 _Siuuu_
+° ඬ⃟🔊 _Troleado_
+° ඬ⃟🔊 _Toy Chica_
+° ඬ⃟🔊 _Turi ip ip ip | 🐶_
+° ඬ⃟🔊 _Traiganle una falda_
+° ඬ⃟🔊 _Tal vez_
+° ඬ⃟🔊 _Te gusta el Pepino | 🥒_
+° ඬ⃟🔊 _Todo bien_
+° ඬ⃟🔊 _Tengo los calzones del admin_
+° ඬ⃟🔊 _Triste_
+° ඬ⃟🔊 _Te diagnostico con gay_
+° ඬ⃟🔊 _Te amo_
+° ඬ⃟🔊 _Tunometecabrasaramambiche_
 ° ඬ⃟🔊 _UwU_
-° ඬ⃟🔊 _:c_
-° ඬ⃟🔊 _a_
+° ඬ⃟🔊 _Un pato_
+° ඬ⃟🔊 _Una pregunta_
+° ඬ⃟🔊 _Usted está detenido_
+° ඬ⃟🔊 _Viernes_
+° ඬ⃟🔊 _Viernes de la jungla_
+° ඬ⃟🔊 _Vete a la vrg_
+° ඬ⃟🔊 _Verdad que te engañe_
+° ඬ⃟🔊 _Vivan los novios_
+° ඬ⃟🔊 _Wenomechainsama | 🐹_
+° ඬ⃟🔊 _Wtf_
+° ඬ⃟🔊 _Wtf y este random?_
+° ඬ⃟🔊 _Yumbi yumbi | 🤠_
+° ඬ⃟🔊 _Y Digo Wo_
+° ඬ⃟🔊 _Yamete_
+° ඬ⃟🔊 _Yoshi_
+° ඬ⃟🔊 _Yokese_
+° ඬ⃟🔊 _Ya antojaron_
+° ඬ⃟🔊 _Y este quien es_
+° ඬ⃟🔊 _:c_ 
 
 *<ℍ𝔼ℝℝ𝔸𝕄𝕀𝔼ℕ𝕋𝔸𝕊/>*
 
