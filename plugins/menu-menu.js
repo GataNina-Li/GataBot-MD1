@@ -250,11 +250,11 @@ let str = `
 
 ° ඬ⃟🔞 _${usedPrefix}booty_
 ° ඬ⃟🔞 _${usedPrefix}futanari|futa|futasolo|futanarisolo|futanarisolo_
-° ඬ⃟🔞 _${usedPrefix}futanarionboy | PRONTO!_
-° ඬ⃟🔞 _${usedPrefix}futanariongirl | PRONTO!_
-° ඬ⃟🔞 _${usedPrefix}futanarivideos | PRONTO!_
-° ඬ⃟🔞 _${usedPrefix}futanarivideos2 | PRONTO!_
-° ඬ⃟🔞 _${usedPrefix}futanarivideos3 | PRONTO_
+° ඬ⃟🔞 _${usedPrefix}boyonfutanari | PRONTO!_
+° ඬ⃟🔞 _${usedPrefix}girlonfutanari | PRONTO!_
+° ඬ⃟🔞 _${usedPrefix}videosfutanari | PRONTO!_
+° ඬ⃟🔞 _${usedPrefix}videosfutanari2 | PRONTO!_
+° ඬ⃟🔞 _${usedPrefix}videosfutanari3 | PRONTO_
 ° ඬ⃟🔞 _${usedPrefix}hentai_
 ° ඬ⃟🔞 _${usedPrefix}pechos_
 ° ඬ⃟🔞 _${usedPrefix}randomxxx_
