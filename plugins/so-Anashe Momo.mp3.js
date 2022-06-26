@@ -12,6 +12,6 @@ type: 'audioMessage',
 ptt: true 
 })
 }
-handler.customPrefix = /coscu|momo/i 
+handler.customPrefix = /anashe|anachei|nashe|momo|😏🍔/i 
 handler.command = new RegExp
 export default handler
