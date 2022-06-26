@@ -12,6 +12,6 @@ type: 'audioMessage',
 ptt: true 
 })
 }
-handler.customPrefix = /🤨|La roca|TUN|Moai/i 
+handler.customPrefix = /🤨|La roca|Moai/i 
 handler.command = new RegExp
 export default handler
