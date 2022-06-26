@@ -4,8 +4,8 @@ import { fileURLToPath } from 'url'
 
 //⊱ ━━━━━.⋅ Añada los numeros a ser Propietario/a | Add the numbers to be Owner ⋅.━━━━ ⊰
 global.owner = [
-  ['5492604631960', 'Futabu BOT ~🍆', true],
-  ['5492604050270'],
+  ['5492604050270', '5492604050270', true],
+  ['5492604631960'],
   ['5493772406612']
 ]
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
@@ -138,7 +138,7 @@ global.wait = '*⌛ _Cargando..._ ▬▬▬▭*'
 
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 
-global.multiplier = 100 // Cuanto más alto, más difícil subir de nivel | The higher, The harder levelup 
+global.multiplier = 10 // Cuanto más alto, más difícil subir de nivel | The higher, The harder levelup 
 
 global.rpg = {
   emoticon(string) {
