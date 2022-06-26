@@ -1,4 +1,8 @@
 import { performance } from 'perf_hooks'
+let vn = './media/oruga con cara de enojada  lo doxea .mp3'
+conn.sendFile(m.chat, vn, 'oruga con cara de enojada  lo doxea .mp3', null, m, true, {
+type: 'audioMessage', 
+ptt: true 
 let handler = async (m, { conn, text }) => {
 let start = `*😱 ¡¡Empezando Doxxeo!! 😱*`
 let boost = `*${pickRandom(['0','1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20'])}%*`
@@ -80,12 +84,6 @@ Sof02s32inf14.1e100.net
 *EXTERNAL MAC:* 6U:77:89:ER:O4
 *MODEM JUMPS:* 64`
 conn.reply(m.chat, doxeo, m)}
-let vn = './media/oruga con cara de enojada  lo doxea .mp3'
-conn.sendFile(m.chat, vn, 'oruga con cara de enojada  lo doxea .mp3', null, m, true, {
-type: 'audioMessage', 
-ptt: true 
-})
-}
 handler.help = ['doxear <nombre> | <@tag>']
 handler.tags = ['fun']
 handler.command = /^Doxxeo|doxxeo|doxxear|Doxxear|doxeo|doxear|doxxeame|doxeame/i
