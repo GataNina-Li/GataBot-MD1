@@ -78,6 +78,7 @@ let pp = './media/menus/Menuvid3.mp4'
 ⎪➫🔊 _A-_
 ⎪➫🔊 _Aaa es demasiado sexo_
 ⎪➫🔊 _Alabado sea el sexooo_
+⎪➫🔊 _Anashe | 😏🍔_
 ⎪➫🔊 _🚨_
 ⎪➫🔊 _Atencion grupo_
 ⎪➫🔊 _Audio hentai_
@@ -252,6 +253,7 @@ rows: [
 {title: "➥🔊 A-", description: null, rowId: `A-`},
 {title: "➥🔊 Aaa es demasiado sexo", description: null, rowId: `Aaa es demasiado sexo`},
 {title: "➥🔊 Alabado sea el sexooo", description: null, rowId: `Alabado sea el sexooo`},
+{title: "➥🔊 Anashe", description: null, rowId: `😏🍔`},
 {title: "➥🔊 🚨", description: null, rowId: `🚨`},
 {title: "➥🔊 Atencion grupo", description: null, rowId: `Atencion grupo`},
 {title: "➥🔊 Audio hentai", description: null, rowId: `Audio hentai`},
