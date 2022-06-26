@@ -75,7 +75,9 @@ let pp = './media/menus/Menuvid3.mp4'
 ┃ *Puede solo escribir la*
 ┃ *Palabra o Frase.*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-⎪➫🔊 _A_
+⎪➫🔊 _A-_
+⎪➫🔊 _Aaa es demasiado sexo_
+⎪➫🔊 _Alabado sea el sexooo_
 ⎪➫🔊 _🚨_
 ⎪➫🔊 _Atencion grupo_
 ⎪➫🔊 _Audio hentai_
@@ -97,6 +99,7 @@ let pp = './media/menus/Menuvid3.mp4'
 ⎪➫🔊 _Bienvenido/a | 🤗_
 ⎪➫🔊 _Buen día grupo | 🙌_
 ⎪➫🔊 _Blackpink in your area_
+⎪➫🔊 _Chichotas asi de grandes peter_
 ⎪➫🔊 _Corte corte_
 ⎪➫🔊 _Calla Fan de BTS_
 ⎪➫🔊 _Cambiate a Movistar_
@@ -134,9 +137,11 @@ let pp = './media/menus/Menuvid3.mp4'
 ⎪➫🔊 _Homero chino_
 ⎪➫🔊 _Hola_
 ⎪➫🔊 _Ingresa épicamente_
+⎪➫🔊 _Jaja el pendejo | 🤣_
 ⎪➫🔊 _Jijija | 😂_
-⎪➫🔊 _Joder_
+⎪➫🔊 _Joder esas tetas no dejan de mirarme_
 ⎪➫🔊 _Jesucristo_
+⎪➫🔊 _Los que se pelean se aman_
 ⎪➫🔊 _Leche | 🥛_
 ⎪➫🔊 _La roca | 🤨_
 ⎪➫🔊 _Las reglas del grupo_
@@ -169,6 +174,7 @@ let pp = './media/menus/Menuvid3.mp4'
 ⎪➫🔊 _No digas eso papu_
 ⎪➫🔊 _Nyanpasu_
 ⎪➫🔊 _Orale_
+⎪➫🔊 _🚬🐛_
 ⎪➫🔊 _Omaiga_
 ⎪➫🔊 _Ohayo_
 ⎪➫🔊 _Oh me vengo_
@@ -176,11 +182,14 @@ let pp = './media/menus/Menuvid3.mp4'
 ⎪➫🔊 _Porque me excita tanto | 🥵_
 ⎪➫🔊 _Porque ta tite_
 ⎪➫🔊 _Potaxio | 🥑_
+⎪➫🔊 _Pasen furras_
 ⎪➫🔊 _Pokémon_
 ⎪➫🔊 _Pikachu_
 ⎪➫🔊 _Pero esto_
 ⎪➫🔊 _Pasa pack Bot_
 ⎪➫🔊 _Puta que rico | 🍑_
+⎪➫🔊 _Que ricas tetas_
+⎪➫🔊 _Que linda que estas hija de puta_
 ⎪➫🔊 _Que dice? | 😐_
 ⎪➫🔊 _Que tal grupo_
 ⎪➫🔊 _Que sucede_
@@ -188,12 +197,14 @@ let pp = './media/menus/Menuvid3.mp4'
 ⎪➫🔊 _Rawr_
 ⎪➫🔊 _🕺_
 ⎪➫🔊 _Salimo en caravana_
+⎪➫🔊 _Si o no pendejo_
 ⎪➫🔊 _Sexo_
 ⎪➫🔊 _Su nivel de pendejo_
 ⎪➫🔊 _Se están riendo de mí_
 ⎪➫🔊 _Siuuu_
 ⎪➫🔊 _Troleado_
 ⎪➫🔊 _Toy Chica_
+⎪➫🔊 _Turi ip ip ip | 🐶_
 ⎪➫🔊 _Traiganle una falda_
 ⎪➫🔊 _Tal vez_
 ⎪➫🔊 _Te gusta el Pepino | 🥒_
@@ -237,7 +248,9 @@ const sections = [
 {
 title: `𝙇𝙄𝙎𝙏𝘼 𝘿𝙀𝙎𝙋𝙇𝙀𝙂𝘼𝘽𝙇𝙀 | 𝘿𝙍𝙊𝙋-𝘿𝙊𝙒𝙉 𝙇𝙄𝙎𝙏`,
 rows: [
-{title: "➥🔊 A", description: null, rowId: `A`},
+{title: "➥🔊 A-", description: null, rowId: `A-`},
+{title: "➥🔊 Aaa es demasiado sexo", description: null, rowId: `Aaa es demasiado sexo`},
+{title: "➥🔊 Alabado sea el sexooo", description: null, rowId: `Alabado sea el sexooo`},
 {title: "➥🔊 🚨", description: null, rowId: `🚨`},
 {title: "➥🔊 Atencion grupo", description: null, rowId: `Atencion grupo`},
 {title: "➥🔊 Audio hentai", description: null, rowId: `Audio hentai`},
@@ -258,6 +271,7 @@ rows: [
 {title: "➥🔊 Bienvenido/a", description: null, rowId: `🤗`},
 {title: "➥🔊 Buen día grupo", description: null, rowId: `🙌`},
 {title: "➥🔊 Blackpink in your area", description: null, rowId: `Blackpink in your area`},
+{title: "➥🔊 Chichotas asi de grandes peter", description: null, rowId: `Chichotas asi de grandes peter`},
 {title: "➥🔊 Corte corte", description: null, rowId: `Corte corte`},
 {title: "➥🔊 Calla Fan de BTS", description: null, rowId: `Calla Fan de BTS`},
 {title: "➥🔊 Cambiate a Movistar", description: null, rowId: `Cambiate a Movistar`},
@@ -295,9 +309,11 @@ rows: [
 {title: "➥🔊 Homero chino", description: null, rowId: `Homero chino`},
 {title: "➥🔊 Hola", description: null, rowId: `Hola`},
 {title: "➥🔊 Ingresa épicamente", description: null, rowId: `Ingresa épicamente`},
+{title: "➥🔊 Jaja el pendejo", description: null, rowId: `🤣`},
 {title: "➥🔊 Jijija", description: null, rowId: `😂`},
-{title: "➥🔊 Joder", description: null, rowId: `Joder`},
+{title: "➥🔊 Joder esas tetas no dejan de mirarme", description: null, rowId: `Joder esas tetas no dejan de mirarme`},
 {title: "➥🔊 Jesucristo", description: null, rowId: `Jesucristo`},
+{title: "➥🔊 Los que se pelean se aman", description: null, rowId: `Los que se pelean se aman`},
 {title: "➥🔊 Leche", description: null, rowId: `🥛`},
 {title: "➥🔊 La roca", description: null, rowId: `🤨`},
 {title: "➥🔊 Las reglas del grupo", description: null, rowId: `Las reglas del grupo`},
@@ -329,18 +345,22 @@ rows: [
 {title: "➥🔊 No digas eso papu", description: null, rowId: `No digas eso papu`},
 {title: "➥🔊 Nyanpasu", description: null, rowId: `Nyanpasu`},
 {title: "➥🔊 Orale", description: null, rowId: `Orale`},
+{title: "➥🔊 🚬🐛", description: null, rowId: `🚬🐛`},
 {title: "➥🔊 Omaiga", description: null, rowId: `Omaiga`},
 {title: "➥🔊 Ohayo", description: null, rowId: `Ohayo`},
 {title: "➥🔊 Oh me vengo", description: null, rowId: `Oh me vengo`},
 {title: "➥🔊 Onichan", description: null, rowId: `Onichan`},
 {title: "➥🔊 Porque me excita tanto", description: null, rowId: `🥵`},
 {title: "➥🔊 Porque ta tite", description: null, rowId: `Porque ta tite`},
+{title: "➥🔊 Pasen furras", description: null, rowId: `Pasen furras`},
 {title: "➥🔊 Potaxio", description: null, rowId: `🥑`},
 {title: "➥🔊 Pokémon", description: null, rowId: `Pokémon`},
 {title: "➥🔊 Pikachu", description: null, rowId: `Pikachu`},
 {title: "➥🔊 Pero esto", description: null, rowId: `Pero esto`},
 {title: "➥🔊 Pasa pack Bot", description: null, rowId: `Pasa pack Bot`},
 {title: "➥🔊 Puta que rico", description: null, rowId: `🍑`},
+{title: "➥🔊 Que ricas tetas", description: null, rowId: `Que ricas tetas`},
+{title: "➥🔊 Que linda que estas hija de puta", description: null, rowId: `Que linda que estas hija de puta`},
 {title: "➥🔊 Que dice?", description: null, rowId: `😐`},
 {title: "➥🔊 Que tal grupo", description: null, rowId: `Que tal grupo`},
 {title: "➥🔊 Que sucede", description: null, rowId: `Que sucede`},
@@ -348,12 +368,14 @@ rows: [
 {title: "➥🔊 Rawr", description: null, rowId: `Rawr`},
 {title: "➥🔊 🕺", description: null, rowId: `🕺`},
 {title: "➥🔊 Salimo en caravana", description: null, rowId: `Salimo en caravana`},
+{title: "➥🔊 Si o no pendejo", description: null, rowId: `Si o no pendejo`},
 {title: "➥🔊 Sexo", description: null, rowId: `Sexo`},
 {title: "➥🔊 Su nivel de pendejo", description: null, rowId: `Su nivel de pendejo`},
 {title: "➥🔊 Se están riendo de mí", description: null, rowId: `Se están riendo de mí`},
 {title: "➥🔊 Siuuu", description: null, rowId: `Siuuu`},
 {title: "➥🔊 Troleado", description: null, rowId: `Troleado`},
 {title: "➥🔊 Toy Chica", description: null, rowId: `Toy Chica`},
+{title: "➥🔊 Turi ip ip ip", description: null, rowId: `🐶`},
 {title: "➥🔊 Traiganle una falda", description: null, rowId: `Traiganle una falda`},
 {title: "➥🔊 Tal vez", description: null, rowId: `Tal vez`},
 {title: "➥🔊 Te gusta el Pepino", description: null, rowId: `🥒`},
