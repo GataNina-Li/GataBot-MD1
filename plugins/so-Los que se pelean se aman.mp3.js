@@ -12,6 +12,6 @@ type: 'audioMessage',
 ptt: true 
 })
 }
-handler.customPrefix = /Los que pelean se aman/i 
+handler.customPrefix = /Los que pelean se aman|se aman/i 
 handler.command = new RegExp
 export default handler
