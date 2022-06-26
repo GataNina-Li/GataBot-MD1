@@ -21,7 +21,7 @@ conn.sendHydrated(m.chat, teks, `𝙀𝙩𝙞𝙦𝙪𝙚𝙩𝙖𝙨 | ${wm}`, 
 }
 handler.help = ['tagall <mesaje>','invocar <mesaje>']
 handler.tags = ['group']
-handler.command = /^(tagall|invocar|invocacion|todos|invocación)$/i
+handler.command = /^(tagall|invocar|invocacion|invocación)$/i
 handler.botAdmin = true
 handler.admin = true
 handler.group = true
