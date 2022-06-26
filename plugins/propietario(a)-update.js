@@ -1,7 +1,7 @@
 import { execSync } from 'child_process'
 let handler = async (m, { conn, text }) => {
 if (global.conn.user.jid == conn.user.jid) {
-let stdout = execSync('git pull https://github.com/ColapsusHD/FutabuBot-MD.git futabubotmd' + (m.fromMe && text ? ' ' + text : ''))
+let stdout = execSync('git pull https://github.com/ColapsusHD/FutabuBot-MD.git%20futabubotmd' + (m.fromMe && text ? ' ' + text : ''))
 conn.reply(m.chat, stdout.toString(), m)
 }}
 handler.help = ['update']
