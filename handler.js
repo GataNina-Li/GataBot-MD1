@@ -554,7 +554,6 @@ export async function handler(chatUpdate) {
                         } catch (e) {
                             console.error(e)
                         }
-                }
                 break
             }
         }
