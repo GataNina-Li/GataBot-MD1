@@ -35,6 +35,7 @@
 <a href="https://github.com/ColapsusHD"><img src="http://readme-typing-svg.herokuapp.com?
 font=mono&size=14&duration=3000&color=ABF7BB&center=verdadero&vCenter=verdadero&lines=Solo+escr%C3%ADba+si+tiene+dudas." height="40px"
 </p>
+
 -----
 ### ✅ GRUPOS DE WHATSAPP (CREADORA)
 [![blog](https://img.shields.io/badge/Grupo-GataBot-25D366?style=for-the-badge&logo=whatsapp&logoColor=white 
