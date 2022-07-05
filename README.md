@@ -39,7 +39,7 @@
 [![blog](https://img.shields.io/badge/Grupo2-GataBot-25D366?style=for-the-badge&logo=whatsapp&logoColor=white 
 )](https://chat.whatsapp.com/K3BB4VtvyzyJdnX2jLeurh) <a href="https://chat.whatsapp.com/JFTOYLdpiTBCluFJvikBxN"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/1200px-WhatsApp_logo-color-vertical.svg.png" height="29px"></a>
 
-[![blog](https://img.shields.io/badge/Grupo3-Futabu Club-25D366?style=for-the-badge&logo=whatsapp&logoColor=white 
+[![blog](https://img.shields.io/badge/Grupo3-FutabuClub-25D366?style=for-the-badge&logo=whatsapp&logoColor=white 
 )](https://chat.whatsapp.com/K3BB4VtvyzyJdnX2jLeurh) <a href="https://chat.whatsapp.com/C6ZT7fQTm2FEgaWDbtTXsG"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/1200px-WhatsApp_logo-color-vertical.svg.png" height="29px"></a>
 -----
 ### 💖 ```DONAR``` [`Aquí`](https://paypal.me/OficialGD)
