@@ -17,12 +17,23 @@ userJid: conn.user.id
 text || q.text, conn.user.jid, { mentions: users }
 )
 //await conn.relayMessage(m.chat, msg.message, { messageId: msg.key.id }
-await conn.relayMessage(m.chat, msg.message, m, {
-contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
+
+//await conn.relayMessage(m.chat, msg.message, m, {
+//contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
+//title: '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 | 𝙂𝙖𝙩𝙖 𝘿𝙞𝙤𝙨',
+//body: 'Super Bot WhatsApp',         
+//previewType: 1, thumbnail: fs.readFileSync("./media/menus/Menu3.jpg"),
+//sourceUrl: `${yt}`}}})
+  
+conn.sendButton(m.chat, msg.message, wm, fs.readFileSync('./src/avatar_contact.png'), 
+[['🎁 𝙄𝙣𝙛𝙤 𝙊𝙛𝙞𝙘𝙞𝙖𝙡', '.cuentasgb'],
+['🐈 𝙈𝙚𝙣𝙪', '.menu']], false, { messageId: msg.key.id }, {
+contextInfo: { externalAdReply: {
 title: '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 | 𝙂𝙖𝙩𝙖 𝘿𝙞𝙤𝙨',
-body: 'Super Bot WhatsApp',         
-previewType: 1, thumbnail: fs.readFileSync("./media/menus/Menu3.jpg"),
-sourceUrl: `${yt}`}}})
+body: 'Super Bot WhatsApp', 
+sourceUrl: `https://www.instagram.com/gata_dios`, 
+thumbnail: fs.readFileSync('./media/menus/Menu3.jpg') }}})}
+
 }
 handler.help = ['pengumuman', 'announce', 'hidetag'].map(v => v + ' [teks]')
 handler.tags = ['group']
