@@ -32,7 +32,7 @@ contextInfo: { externalAdReply: {
 title: '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 | 𝙂𝙖𝙩𝙖 𝘿𝙞𝙤𝙨',
 body: 'Super Bot WhatsApp', 
 sourceUrl: `https://www.instagram.com/gata_dios`, 
-thumbnail: fs.readFileSync('./media/menus/Menu3.jpg') }}})}
+thumbnail: fs.readFileSync('./media/menus/Menu3.jpg') }}})
 
 }
 handler.help = ['pengumuman', 'announce', 'hidetag'].map(v => v + ' [teks]')
