@@ -4,14 +4,14 @@ global.dfail('admin', m, conn)
 throw false
 }
 let pesan = args.join` `
-let oi = `*⚡ 𝑴𝒆𝒏𝒔𝒂𝒋𝒆*\n ${pesan}`
+let oi = `*⚡ 𝑴𝒆𝒏𝒔𝒂𝒋𝒆*\n ${pesan}\n┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈`
 let teks = `╭━〔 *𝑨𝑻𝑬𝑵𝑪𝑰𝑶𝑵 𝑮𝑹𝑼𝑷𝑶* 〕━⬣\n\n${oi}\n\n`
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 let mentionedJid = [who]
 let username = conn.getName(who)
 for (let username of participants) {
 teks += `┃➥ @${username.id.split('@')[0]}\n`}
-teks += `╰━━━━━━[ *𓃠 ${vs}* ]━━━━━⬣`
+teks += `╰━━━━[ *𓃠 ${vs}* ]━━━━⬣`
 //conn.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) }, )
   
 conn.sendHydrated(m.chat, teks, `𝑰𝒏𝒇𝒍𝒖.𝒛𝒆𝒖𝒔 | ${wm}`, null, 'https://github.com/GataNina-Li/GataBot-MD', '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
