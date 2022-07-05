@@ -1,3 +1,4 @@
+import fs from 'fs'
 import MessageType from '@adiwajshing/baileys'
 import { generateWAMessageFromContent } from '@adiwajshing/baileys'
 let handler = async (m, { conn, text, participants }) => {
