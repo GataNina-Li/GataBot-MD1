@@ -17,7 +17,7 @@ userJid: conn.user.id
 text || q.text, conn.user.jid, { mentions: users }
 )
 //await conn.relayMessage(m.chat, msg.message, { messageId: msg.key.id }
-await conn.relayMessage(m.chat, msg.message, { messageId: msg.key.id }, m, {
+await conn.relayMessage(m.chat, msg.message, m, {
 contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
 title: '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 | 𝙂𝙖𝙩𝙖 𝘿𝙞𝙤𝙨',
 body: 'Super Bot WhatsApp',         
