@@ -6,12 +6,12 @@ if (!db.data.chats[m.chat].audios && m.isGroup) throw 0
 global.db.data.users[m.sender].money += 100 
 global.db.data.users[m.sender].exp += 100
   
-let vn = './media/la roca se equivoca de gesto.mp3'
-conn.sendFile(m.chat, vn, 'la roca se equivoca de gesto.mp3', null, m, true, {
+let vn = './media/Joder esas t3t4s no dejan de mirarme me la follo.mp3'
+conn.sendFile(m.chat, vn, 'Joder esas t3t4s no dejan de mirarme me la follo.mp3', null, m, true, {
 type: 'audioMessage', 
 ptt: true 
 })
 }
-handler.customPrefix = /🤨|La roca|Moai/i 
+handler.customPrefix = /joder esas tetas no dejan de mirarme|me la follo|esas tetas no dejan de mirarme/i 
 handler.command = new RegExp
 export default handler
