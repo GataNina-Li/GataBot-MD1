@@ -36,6 +36,7 @@
 font=mono&size=14&duration=3000&color=ABF7BB&center=verdadero&vCenter=verdadero&lines=Solo+escr%C3%ADba+si+tiene+dudas." height="40px"
 </p>
 
+-----
 ### ✅ GRUPOS DE WHATSAPP (CREADORA)
 [![blog](https://img.shields.io/badge/Grupo-GataBot-25D366?style=for-the-badge&logo=whatsapp&logoColor=white 
 )](https://chat.whatsapp.com/Hahc7UwSouH9jIDStkT5QW)  <a href="https://chat.whatsapp.com/Hahc7UwSouH9jIDStkT5QW"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/1200px-WhatsApp_logo-color-vertical.svg.png" height="29px"></a>
