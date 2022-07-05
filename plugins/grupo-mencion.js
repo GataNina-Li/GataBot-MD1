@@ -25,7 +25,7 @@ text || q.text, conn.user.jid, { mentions: users }
 //previewType: 1, thumbnail: fs.readFileSync("./media/menus/Menu3.jpg"),
 //sourceUrl: `${yt}`}}})
   
-conn.sendButton(m.chat, conn.relayMessage(msg.message) + { messageId: msg.key.id }, wm, fs.readFileSync('./src/avatar_contact.png'), 
+conn.sendButton(m.chat, conn.relayMessage(msg.message + { messageId: msg.key.id }), wm, fs.readFileSync('./src/avatar_contact.png'), 
 [['🎁 𝙄𝙣𝙛𝙤 𝙊𝙛𝙞𝙘𝙞𝙖𝙡', '.cuentasgb'],
 ['🐈 𝙈𝙚𝙣𝙪', '.menu']], false, {
 contextInfo: { externalAdReply: {
