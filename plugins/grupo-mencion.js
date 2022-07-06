@@ -39,8 +39,15 @@ const msg = conn.cMod(m.chat, generateWAMessageFromContent(m.chat, { [c.toJSON ?
 quoted: m,
 userJid: conn.user.id
 }),
-`${text} Hola` || q.text, conn.user.jid, { mentions: users }
-)
+conn.reply(m.chat, `${text} Hola` || q.text, conn.user.jid, { mentions: users }), {
+contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
+title: '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 | 𝙂𝙖𝙩𝙖 𝘿𝙞𝙤𝙨',
+body: 'Super Bot WhatsApp',         
+previewType: 1, thumbnail: fs.readFileSync("./media/menus/Menu3.jpg"),
+sourceUrl: `${yt}`}}})
+                      
+//`${text} Hola` || q.text, conn.user.jid, { mentions: users })
+
 await conn.relayMessage(m.chat, msg.message, { messageId: msg.key.id })
 }
 handler.help = ['pengumuman', 'announce', 'hidetag'].map(v => v + ' [teks]')
