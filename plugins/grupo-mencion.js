@@ -37,7 +37,7 @@ let c = m.quoted ? m.quoted : m.msg
 const msg = conn.cMod(m.chat,
 generateWAMessageFromContent(m.chat, {
 [c.toJSON ? q.mtype : 'extendedTextMessage']: c.toJSON ? c.toJSON() : {
-text: c || ''`Hola`
+text: c || 'Si '
 }
 }, {
 quoted: m,
