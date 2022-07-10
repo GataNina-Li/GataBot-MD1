@@ -5,7 +5,7 @@ conn.sendHydrated(m.chat, null, null, res, null, null, null, null, [['🥵 𝙎�
 handler.help = ['videoxxx']
 handler.tags = ['random']
 handler.command = /^(pornovid|pornovideo|Pornovid|Pornovideo|Pornvid|Ponrvid|pornvid|ponrvid|pornov)$/i
-handler.level = 40
+handler.level = 5
 handler.limit = 4
 export default handler
 
