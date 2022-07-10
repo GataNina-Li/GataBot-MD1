@@ -19,31 +19,31 @@ rows: [
 let name = await conn.getName(m.sender)
 const listMessage = {
 text: ' ',
-footer: `╭══〘 ✯✯✯✯✯✯✯✯ 〙═╮
-║≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-║➤ *✨𝐇𝐎𝐋𝐀, ${name}!!*
-║≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-╰══╡✯✯✯✯✯✯✯✯╞══╯
-┏━━━━━━━━━━━━━┓
-┣❧ *𝙋𝙍𝙀𝙎𝙄𝙊𝙉𝙀 𝙀𝙎𝙏𝙀 𝙈𝙀𝙉𝙎𝘼𝙅𝙀 𝙊 𝙐𝙎𝙀*
+footer: `╭━[ *𝘼𝙅𝙐𝙎𝙏𝙀𝙎 𝙂𝘼𝙏𝘼𝘽𝙊𝙏* ]━━⬣
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃🌟 *¡Hola | Hi!* ${name}
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+╰━━━━━━━❰ *${vs}* ❱━━━━━━⬣
+╭━━━━━━━━━━━━━⬣
+┃ *𝙋𝙍𝙀𝙎𝙄𝙊𝙉𝙀 𝙀𝙎𝙏𝙀 𝙈𝙀𝙉𝙎𝘼𝙅𝙀 𝙊 𝙐𝙎𝙀*
 ┃ *𝙇𝙊𝙎 𝘾𝙊𝙈𝘼𝙉𝘿𝙊𝙎 𝘿𝙀 𝙀𝙎𝙏𝙀 𝙈𝙀𝙉𝙎𝘼𝙅𝙀*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-┣ ඬ⃟ℹ️ _${usedPrefix}on *:* off *welcome*_
-┣ ඬ⃟ℹ️ _${usedPrefix}on *:* off *public*_
-┣ ඬ⃟ℹ️ _${usedPrefix}on *:* off *modohorny*_
-┣ ඬ⃟ℹ️ _${usedPrefix}on *:* off *antilink*_
-┣ ඬ⃟ℹ️ _${usedPrefix}on *:* off *antilink2*_
-┣ ඬ⃟ℹ️ _${usedPrefix}on *:* off *detect*_
-┣ ඬ⃟ℹ️ _${usedPrefix}on *:* off *restrict*_
-┣ ඬ⃟ℹ️ _${usedPrefix}on *:* off *pconly*_
-┣ ඬ⃟ℹ️ _${usedPrefix}on *:* off *gconly*_
-┣ ඬ⃟ℹ️ _${usedPrefix}on *:* off *autoread*_
-┣ ඬ⃟ℹ️ _${usedPrefix}on *:* off *audios*_
-┣ ඬ⃟ℹ️ _${usedPrefix}on *:* off *autosticker*_
-┗━━━━━━━━━━━━━┛
+┃⚙️ _${usedPrefix}on *:* off *welcome*_
+┃⚙️ _${usedPrefix}on *:* off *public*_
+┃⚙️ _${usedPrefix}on *:* off *modohorny*_
+┃⚙️ _${usedPrefix}on *:* off *antilink*_
+┃⚙️ _${usedPrefix}on *:* off *antilink2*_
+┃⚙️ _${usedPrefix}on *:* off *detect*_
+┃⚙️ _${usedPrefix}on *:* off *restrict*_
+┃⚙️ _${usedPrefix}on *:* off *pconly*_
+┃⚙️ _${usedPrefix}on *:* off *gconly*_
+┃⚙️ _${usedPrefix}on *:* off *autoread*_
+┃⚙️ _${usedPrefix}on *:* off *audios*_
+┃⚙️ _${usedPrefix}on *:* off *autosticker*_
+╰━━━━━━━━━━━━━⬣
 ${wm}`,
 title: null,
-buttonText: "𝐒𝐄𝐋𝐄𝐂𝐂𝐈𝐎𝐍𝐄 𝐀𝐐𝐔𝐢",
+buttonText: "𝘾𝙊𝙉𝙁𝙄𝙂𝙐𝙍𝘼𝙍",
 sections }
 
 let isEnable = /true|enable|(turn)?on|1/i.test(command)
