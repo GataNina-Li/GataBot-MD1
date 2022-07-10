@@ -129,6 +129,22 @@ let menu = `
 ┃🔞➺ _${usedPrefix}pack2_
 ┃🔞➺ _${usedPrefix}pack3_
 ┃🔞➺ _${usedPrefix}videoxxx_
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃ 𝘾𝙊𝙉𝙏𝙀𝙉𝙄𝘿𝙊 𝘿𝙄𝙉𝘼𝙈𝙄𝘾𝙊 
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃»🔞 _${usedPrefix}pornovideo | pornovid_
+┃»🔞 _${usedPrefix}pornovidgay | pornogayv_
+┃»🔞 _${usedPrefix}pornolesbivid | pornolesbiv_
+┃»🔞 _${usedPrefix}pornobisexualvid | pornobiv_
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃ 🔥 𝙋𝙍𝙀𝙈𝙄𝙐𝙈 🔥
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃ *Usar bajo su responsabilidad* 
+┃ *Vídeos +18 aleatorios*
+┃ *Puede tardar en enviar*
+┃ *Contenido de Calidad*
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃»🔥 _${usedPrefix}pornopremium_
 ╰━━━━━━━━━━━━━━━━━━━⬣`.trim()
 conn.sendHydrated(m.chat, menu, wm, pp, 'https://github.com/GataNina-Li/GataBot-MD', '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
 ['𝙈𝙚𝙣𝙪́ 𝙘𝙤𝙢𝙥𝙡𝙚𝙩𝙤 | 𝙁𝙪𝙡𝙡 𝙈𝙚𝙣𝙪 💫', '.allmenu'],
