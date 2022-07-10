@@ -4,7 +4,7 @@ let res = pickRandom(asupan)
 conn.sendHydrated(m.chat, null, null, res, 'https://github.com/GataNina-Li/GataBot-MD', '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [['🥵 𝙎𝙄𝙂𝙐𝙄𝙀𝙉𝙏𝙀 | 𝙉𝙀𝙓𝙏', `/${command}`]], m)}
 handler.help = ['videoxxx']
 handler.tags = ['random']
-handler.command = /^(pornovid|pornovideo|Pornovid|Pornovideo|Pornvid|Ponrvid|pornvid|ponrvid|pornov)$/i
+handler.command = /^(pornovid|pornovideo|Pornovid|Pornovideo|Pornvid|Ponrvid|pornvid|ponrvid|pornov)$/i 
 handler.level = 5
 handler.limit = 4
 export default handler
