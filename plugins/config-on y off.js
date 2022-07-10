@@ -197,7 +197,7 @@ if (!/[01]/.test(command)) return await conn.sendMessage(m.chat, listMessage)
 throw false
 }
 conn.sendButton(m.chat, `${rg}ღ *_COMANDO_* *|* ${type} 
-ღ *_ACTUALMENTE_* *|* ${isEnable ? '✅ ACTIVADO' : '❌ DESACTIVADO'} 
+ღ *_ACTUALMENTE_* *|* ${isEnable ? 'ACTIVADO' : 'DESACTIVADO'} 
 ღ *_EN ESTE_* *|* ${isAll ? 'BOT' : isUser ? '' : 'CHAT'}`, wm, null, [[`${isEnable ? '🔕 DESACTIVAR' : '🔔 ACTIVAR'}`, `${isEnable ? `.off ${type}` : `.on ${type}`}`], ['👾 𝙼𝙴𝙽𝚄 𝙿𝚁𝙸𝙽𝙲𝙸𝙿𝙰𝙻 👾', '.menu']],m)}
 
 handler.help = ['en', 'dis'].map(v => v + 'able <option>')
