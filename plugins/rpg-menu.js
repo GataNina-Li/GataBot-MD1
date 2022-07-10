@@ -109,6 +109,7 @@ let menu = `
 ┃⚗️➺ _${usedPrefix}minardiamantes | minargemas_
 ┃⚗️➺ _${usedPrefix}minargatacoins | minarcoins_
 ┃⚗️➺ _${usedPrefix}minarexperiencia | minarexp_
+┃⚗️➺ _${usedPrefix}minar *:* minar2 *:* minar3_
 ┃⚗️➺ _${usedPrefix}buy *cantidad*_
 ┃⚗️➺ _${usedPrefix}buyall_
 ┃⚗️➺ _${usedPrefix}buy2 *cantidad*__
