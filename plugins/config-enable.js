@@ -27,30 +27,18 @@ footer: `╭══〘 ✯✯✯✯✯✯✯✯ 〙═╮
 ┏━━━━━━━━━━━━━┓
 ┣❧ *𝚂𝙴𝙻𝙴𝙲𝙲𝙸𝙾𝙽𝙰 𝚄𝙽𝙰 𝙳𝙴 𝙻𝙰𝚂 𝙾𝙲𝙿𝙸𝙾𝙽𝙴𝚂 𝚀𝚄𝙴 𝚂𝙰𝙻𝙴𝙽 𝙴𝙽 𝙻𝙰 𝚂𝙸𝙶𝚄𝙸𝙴𝙽𝚃𝙴 𝙻𝙸𝚂𝚃𝙰 𝙾 𝙳𝙰 𝙲𝙻𝙸𝙲𝙺 𝙴𝙽 𝙰𝙻𝙶𝚄𝙽 𝙱𝙾𝚃𝙾𝙽 𝙳𝙴 𝙴𝚂𝚃𝙴 𝙼𝙴𝙽𝚂𝙰𝙹𝙴*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-┣ ඬ⃟ℹ️ _${usedPrefix}enable *welcome*_
-┣ ඬ⃟ℹ️ _${usedPrefix}disable *welcome*_
-┣ ඬ⃟ℹ️ _${usedPrefix}enable *public*_
-┣ ඬ⃟ℹ️ _${usedPrefix}disable *public*_
-┣ ඬ⃟ℹ️ _${usedPrefix}enable *modohorny*_
-┣ ඬ⃟ℹ️ _${usedPrefix}disable *modohorny*_
-┣ ඬ⃟ℹ️ _${usedPrefix}enable *antilink*_
-┣ ඬ⃟ℹ️ _${usedPrefix}disable *antilink*_
-┣ ඬ⃟ℹ️ _${usedPrefix}enable *antilink2*_
-┣ ඬ⃟ℹ️ _${usedPrefix}disable *antilink2*_
-┣ ඬ⃟ℹ️ _${usedPrefix}enable *detect*_
-┣ ඬ⃟ℹ️ _${usedPrefix}disable *detect*_
-┣ ඬ⃟ℹ️ _${usedPrefix}enable *restrict*_
-┣ ඬ⃟ℹ️ _${usedPrefix}disable *restrict*_
-┣ ඬ⃟ℹ️ _${usedPrefix}enable *pconly*_
-┣ ඬ⃟ℹ️ _${usedPrefix}disable *pconly*_
-┣ ඬ⃟ℹ️ _${usedPrefix}enable *gconly*_
-┣ ඬ⃟ℹ️ _${usedPrefix}disable *gconly*_
-┣ ඬ⃟ℹ️ _${usedPrefix}enable *autoread*_
-┣ ඬ⃟ℹ️ _${usedPrefix}disable *autoread*_
-┣ ඬ⃟ℹ️ _${usedPrefix}enable *audios*_
-┣ ඬ⃟ℹ️ _${usedPrefix}disable *audios*_
-┣ ඬ⃟ℹ️ _${usedPrefix}enable *autosticker*_
-┣ ඬ⃟ℹ️ _${usedPrefix}disable *autosticker*_
+┣ ඬ⃟ℹ️ _${usedPrefix}on *:* off *welcome*_
+┣ ඬ⃟ℹ️ _${usedPrefix}on *:* off *public*_
+┣ ඬ⃟ℹ️ _${usedPrefix}on *:* off *modohorny*_
+┣ ඬ⃟ℹ️ _${usedPrefix}on *:* off *antilink*_
+┣ ඬ⃟ℹ️ _${usedPrefix}on *:* off *antilink2*_
+┣ ඬ⃟ℹ️ _${usedPrefix}on *:* off *detect*_
+┣ ඬ⃟ℹ️ _${usedPrefix}on *:* off *restrict*_
+┣ ඬ⃟ℹ️ _${usedPrefix}on *:* off *pconly*_
+┣ ඬ⃟ℹ️ _${usedPrefix}on *:* off *gconly*_
+┣ ඬ⃟ℹ️ _${usedPrefix}on *:* off *autoread*_
+┣ ඬ⃟ℹ️ _${usedPrefix}on *:* off *audios*_
+┣ ඬ⃟ℹ️ _${usedPrefix}on *:* off *autosticker*_
 ┗━━━━━━━━━━━━━┛
 ${author}`,
 title: null,
