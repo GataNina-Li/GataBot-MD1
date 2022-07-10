@@ -5,7 +5,9 @@ conn.sendHydrated(m.chat, null, null, res, 'https://github.com/GataNina-Li/GataB
 handler.help = ['videoxxx']
 handler.tags = ['random']
 handler.command = /^(pornoaleatorio|pornopremium|pornoalevid|pornovidale|pornopremiumvid|pornopremiumv|Pornopremium|Pornopremiumvid)$/i
-handler.premium = true
+//handler.premium = true
+handler.level = 10
+handler.limit = 2
 export default handler
 
 function pickRandom(list) {
