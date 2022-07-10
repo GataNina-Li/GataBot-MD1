@@ -96,7 +96,6 @@ let menu = `
 ╰━━━━━━〔 𓃠 *${vs}* 〕━━━━━━⬣
 
 ╭━━━━〔 𝙈𝙀𝙉𝙐 *+18* 〕━━━━⬣
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃🔞➺ _${usedPrefix}nsfwloli_
 ┃🔞➺ _${usedPrefix}nsfwfoot_
 ┃🔞➺ _${usedPrefix}nsfwass_
@@ -130,14 +129,14 @@ let menu = `
 ┃🔞➺ _${usedPrefix}pack3_
 ┃🔞➺ _${usedPrefix}videoxxx_
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ 𝘾𝙊𝙉𝙏𝙀𝙉𝙄𝘿𝙊 𝘿𝙄𝙉𝘼𝙈𝙄𝘾𝙊 
+┃ 🥵 𝘾𝙊𝙉𝙏𝙀𝙉𝙄𝘿𝙊 𝘿𝙄𝙉𝘼𝙈𝙄𝘾𝙊 🥵
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃»🔞 _${usedPrefix}pornovideo | pornovid_
-┃»🔞 _${usedPrefix}pornovidgay | pornogayv_
-┃»🔞 _${usedPrefix}pornolesbivid | pornolesbiv_
-┃»🔞 _${usedPrefix}pornobisexualvid | pornobiv_
+┃»🥵 _${usedPrefix}pornovideo | pornovid_
+┃»🥵 _${usedPrefix}pornovidgay | pornogayv_
+┃»🥵 _${usedPrefix}pornolesbivid | pornolesbiv_
+┃»🥵 _${usedPrefix}pornobisexualvid | pornobiv_
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ 🔥 𝙋𝙍𝙀𝙈𝙄𝙐𝙈 🔥
+┃ 🔥 𝘾𝙊𝙉𝙏𝙀𝙉𝙄𝘿𝙊 𝙋𝙇𝙐𝙎 🔥
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃ *Usar bajo su responsabilidad* 
 ┃ *Vídeos +18 aleatorios*
