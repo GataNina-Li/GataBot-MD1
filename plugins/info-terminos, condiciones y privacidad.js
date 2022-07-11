@@ -60,7 +60,7 @@ readmore: readMore
 text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
   
 //let name = await conn.getName(m.sender)
-let pp = './media/menus/Menuvid1.mp4'
+let pp = './media/menus/Menu1.jpg'
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 let mentionedJid = [who]
 let username = conn.getName(who)
@@ -68,8 +68,8 @@ let username = conn.getName(who)
 //user.registered = false
 
 let Terminos = `
-*Toda la información que se mencione aquí no excluye a la Propietaria del Bot, y Propietarios Acredores al uso de GataBot-MD*
-No Somos responsables del desconocimiento por parte de esta información 
+*_Toda la información que se mencione aquí no excluye a la Propietaria del Bot, y Propietarios Acredores al uso de GataBot-MD_*
+*_No Somos responsables del desconocimiento por parte de esta información._* 
 
 
 *TÉRMINOS DE PRIVACIDAD*
