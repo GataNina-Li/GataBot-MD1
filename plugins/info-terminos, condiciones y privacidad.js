@@ -69,7 +69,7 @@ let username = conn.getName(who)
 
 let Terminos = `
 *_Toda la información que se mencione aquí no excluye a la Propietaria del Bot, y Propietarios Acredores al uso de GataBot-MD_*
-*_No Somos responsables del desconocimiento por parte de esta información._* 
+*_No Somos responsables del desconocimiento que tenga por parte de esta información._* 
 
 
 *TÉRMINOS DE PRIVACIDAD*
