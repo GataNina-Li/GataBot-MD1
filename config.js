@@ -97,7 +97,7 @@ global.gatabot = md
 global.nn = 'https://chat.whatsapp.com/Hahc7UwSouH9jIDStkT5QW'
 global.nngrupo = nn
 
-global.nnn = 'https://chat.whatsapp.com/K3BB4VtvyzyJdnX2jLeurh'
+global.nnn = 'https://chat.whatsapp.com/J96jlutgGlr1gaKgafBj8b'
 global.nnngrupo = nnn
 
 global.paypal = 'https://paypal.me/OficialGD'
