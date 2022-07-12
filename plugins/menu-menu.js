@@ -83,7 +83,7 @@ let str =
 *┆🐈 GATACOINS ➟ ${money}*
 *┆🎟️ PREMIUM ➟* ${global.prem ? '✅' : '❌'}
 *╰*┅┅┅┅┅┅┅┅┅┅┅┅┅ *✧*
-%readmore
+readMore
 *<𝕀ℕ𝔽𝕆ℝ𝕄𝔸ℂ𝕀𝕆ℕ 𝔻𝔼𝕃 𝔹𝕆𝕋/>*
 
 ┃💫➺ _${usedPrefix}cuentasgatabot | cuentasgb_
