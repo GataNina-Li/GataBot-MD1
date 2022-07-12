@@ -85,7 +85,6 @@ let str =
 *┆🎟️ PREMIUM ➟* ${global.prem ? '✅' : '❌'}
 *╰*┅┅┅┅┅┅┅┅┅┅┅┅┅ *✧*
 ${readMore}
-
 *╭━〔 INFORMACIÓN DE GATABOT 〕━⬣*
 ┃💫➺ _${usedPrefix}cuentasgatabot | cuentasgb_
 ┃💫➺ _${usedPrefix}gruposgb | grupos | groupgb_
