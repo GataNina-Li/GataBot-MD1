@@ -39,6 +39,7 @@ process.once('message', resolve)
 setTimeout(resolve, 1000)
 }) * 1000
 }
+let { money } = global.db.data.users[m.sender]
 let muptime = clockString(_muptime)
 let uptime = clockString(_uptime)
 let totalreg = Object.keys(global.db.data.users).length
@@ -61,15 +62,26 @@ readmore: readMore
 text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
 //let user = global.db.data.users[m.sender]
 //user.registered = false
-    
+let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
+let mentionedJid = [who]
+let username = conn.getName(who)   
 
 let str = 
-` *╭━〔 𝙈𝙀𝙉𝙐 𝘾𝙊𝙈𝙋𝙇𝙀𝙏𝙊 〕━━⬣*
- *┆⦒ 𓃠 𝙑𝙀𝙍𝙎𝙄𝙊𝙉 » ${vs}*
- *┆⦒ 𝙁𝙀𝘾𝙃𝘼 » ${week}, ${date}*
- *┆⦒ 𝙏𝙄𝙀𝙈𝙋𝙊 𝘼𝘾𝙏𝙄𝙑𝙊 » ${uptime}*
- *┆⦒ 𝙐𝙎𝙐𝘼𝙍𝙄𝙊𝙎 » ${Object.keys(global.db.data.users).length}*
- ╰┅┅┅┅┅┅┅┅┅┅┅✧ 
+`*╭━━━〔 𝙈𝙀𝙉𝙐 𝘾𝙊𝙈𝙋𝙇𝙀𝙏𝙊 〕━━━⬣*
+*┆⦒ 𓃠 𝙑𝙀𝙍𝙎𝙄𝙊𝙉 » ${vs}*
+*┆⦒ 𝙁𝙀𝘾𝙃𝘼 » ${week}, ${date}*
+*┆⦒ 𝙏𝙄𝙀𝙈𝙋𝙊 𝘼𝘾𝙏𝙄𝙑𝙊 » ${uptime}*
+*┆⦒ 𝙐𝙎𝙐𝘼𝙍𝙄𝙊𝙎 » ${Object.keys(global.db.data.users).length}*
+╰┅┅┅┅┅┅┅┅┅┅┅┅┅✧ 
+
+*╭━〔* ${username} *〕━━⬣*
+*┆ EXPERIENCIA ${exp}*
+*┆ NIVEL ${level} | ${user.exp - min}/${xp}*
+*┆ RANGO* ${role}
+*┆ DIAMANTES ${limit}*
+*┆ GATACOINS ${money}*
+*┆ PREMIUM* ${global.prem ? '✅' : '❌'}
+*╰*┅┅┅┅┅┅┅┅┅┅┅┅┅*✧*
 *<𝕀ℕ𝔽𝕆ℝ𝕄𝔸ℂ𝕀𝕆ℕ 𝔻𝔼𝕃 𝔹𝕆𝕋/>*
 
 ┃💫➺ _${usedPrefix}cuentasgatabot | cuentasgb_
