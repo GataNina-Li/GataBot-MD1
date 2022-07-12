@@ -66,8 +66,7 @@ text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 let mentionedJid = [who]
 let username = conn.getName(who) 
-const more = String.fromCharCode(8206)
-const readMore = more.repeat(4001)
+
 
 let str = 
 `*╭━━━〔 𝙈𝙀𝙉𝙐 𝘾𝙊𝙈𝙋𝙇𝙀𝙏𝙊 〕━━━⬣*
@@ -468,8 +467,8 @@ handler.exp = 50
 handler.fail = null
 export default handler
 
-//const more = String.fromCharCode(8206)
-//const readMore = more.repeat(4001)
+const more = String.fromCharCode(8206)
+const readMore = more.repeat(4001)
 function clockString(ms) {
 let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000)
 let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
