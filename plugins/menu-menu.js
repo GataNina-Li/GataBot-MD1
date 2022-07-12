@@ -84,7 +84,7 @@ let str =
 *┆🐈 GATACOINS ➟ ${money}*
 *┆🎟️ PREMIUM ➟* ${global.prem ? '✅' : '❌'}
 *╰*┅┅┅┅┅┅┅┅┅┅┅┅┅ *✧*
-${readMore}
+
 *╭━〔 INFORMACIÓN DE GATABOT 〕━⬣*
 ┃💫➺ _${usedPrefix}cuentasgatabot | cuentasgb_
 ┃💫➺ _${usedPrefix}gruposgb | grupos | groupgb_
@@ -98,12 +98,18 @@ ${readMore}
 ┃💫➺ _términos y condiciones_
 *╰━━━━━━━━━━━━⬣*
 
-*<𝕌ℕ𝔼 𝕌ℕ 𝔹𝕆𝕋 𝔸 𝕋𝕌 𝔾ℝ𝕌ℙ𝕆/>*
+*╭━〔 ÚNETE AL GRUPO 〕━⬣*
+┃ *Une a GataBot en Grupos!!*
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃🪅 _${usedPrefix}join *enlace*_
+┃🪅 _${usedPrefix}unete *enlace*_
+*╰━━━━━━━━━━━━⬣*
 
-° ඬ⃟👽 _${usedPrefix}join *<enlace / link / url>*_
+*<ℝ𝔼ℙ𝕆ℝ𝕋𝔼𝕊 𝔻𝔼 𝔽𝔸𝕃𝕃𝕆𝕊/>*
 
-*<𝕁𝕌𝔼𝔾𝕆𝕊/>*
+° ඬ⃟🔰 _${usedPrefix}reporte *<texto>*_
 
+*╭━〔 JUEGOS - MULTI JUEGOS 〕━⬣*
 ┃🎡➺ _${usedPrefix}mates | matemáticas | math_
 ┃🎡➺ _${usedPrefix}ppt *piedra : papel : tijera*_
 ┃🎡➺ _${usedPrefix}topgays_
@@ -127,11 +133,18 @@ ${readMore}
 ┃🎡➺ _${usedPrefix}dado_
 ┃🎡➺ _${usedPrefix}verdad_
 ┃🎡➺ _${usedPrefix}reto_
-┃🎡➺ _${usedPrefix}simi | okgoogle *texto*_
-┃🎡➺ _${usedPrefix}alexa | siri | cortana *texto*_
-┃🎡➺ _${usedPrefix}simsimi | bixby *texto*_
 ┃🎡➺ _${usedPrefix}multijuegos_
 ┃🎡➺ _${usedPrefix}juegos_
+*╰━━━━━━━━━━━━⬣*
+
+*╭━〔 IA 〕━⬣*
+┃ *Tienes la Ocasión de*
+┃ *Conversar con GataBot!!*
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃🪄➺ _${usedPrefix}simi | okgoogle *texto*_
+┃🪄➺ _${usedPrefix}alexa | siri | cortana *texto*_
+┃🪄➺ _${usedPrefix}simsimi | bixby *texto*_
+*╰━━━━━━━━━━━━⬣*
 
 *<𝔸ℂ𝕋𝕀𝕍𝔸ℝ 𝕆 𝔻𝔼𝕊𝔸ℂ𝕋𝕀𝕍𝔸ℝ/>*
 
