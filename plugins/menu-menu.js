@@ -76,12 +76,12 @@ let str =
 ╰┅┅┅┅┅┅┅┅┅┅┅┅┅✧ 
 
 *╭━〔* ${username} *〕━━⬣*
-*┆🧰 EXPERIENCIA ➟${exp}*
-*┆🎖️ NIVEL       ➟${level} || ${user.exp - min}/${xp}*
-*┆⚓ RANGO*      ➟${role}
-*┆💎 DIAMANTES   ➟${limit}*
-*┆🐈 GATACOINS   ➟${money}*
-*┆🎟️ PREMIUM*    ➟${global.prem ? '✅' : '❌'}
+*┆🧰 EXPERIENCIA ➟ ${exp}*
+*┆🎖️ NIVEL ➟ ${level} || ${user.exp - min}/${xp}*
+*┆⚓ RANGO ➟* ${role}
+*┆💎 DIAMANTES ➟ ${limit}*
+*┆🐈 GATACOINS ➟ ${money}*
+*┆🎟️ PREMIUM ➟* ${global.prem ? '✅' : '❌'}
 *╰*┅┅┅┅┅┅┅┅┅┅┅┅┅*✧*
 *<𝕀ℕ𝔽𝕆ℝ𝕄𝔸ℂ𝕀𝕆ℕ 𝔻𝔼𝕃 𝔹𝕆𝕋/>*
 
