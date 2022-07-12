@@ -63,24 +63,26 @@ text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length
 //user.registered = false
     
 
-let str = `
-*ミ💖 𝙷𝙾𝙻𝙰 ✨${name}✨, 𝙰𝚀𝚄𝙸 𝙴𝚂𝚃𝙰 𝙴𝙻 𝙼𝙴𝙽𝚄 𝙲𝙾𝙼𝙿𝙻𝙴𝚃𝙾 𝙳𝙴 𝚃𝙷𝙴 𝙼𝚈𝚂𝚃𝙸𝙲 - 𝙱𝙾𝚃 💖彡*
-
-*📅 𝙵𝙴𝙲𝙷𝙰: ${week}, ${date}*
-
-*📊 𝚄𝚂𝚄𝙰𝚁𝙸𝙾𝚂: ${rtotalreg}*
-
+let str = 
+`╭━〔 *𝙈𝙀𝙉𝙐 𝘾𝙊𝙈𝙋𝙇𝙀𝙏𝙊* 〕━━⬣
+ ┆ *ミ💖 𝙷𝙾𝙻𝙰 ✨${name}✨, 𝙰𝚀𝚄𝙸 𝙴𝚂𝚃𝙰 𝙴𝙻 𝙼𝙴𝙽𝚄 𝙲𝙾𝙼𝙿𝙻𝙴𝚃𝙾 𝙳𝙴 𝚃𝙷𝙴 𝙼𝚈𝚂𝚃𝙸𝙲 - 𝙱𝙾𝚃 💖彡*
+ ┆
+ ┆ ⦒ *𝙁𝙀𝘾𝙃𝘼 | ${week}, ${date}*
+ ┆ ⦒ *𝙏𝙄𝙀𝙈𝙋𝙊 𝘼𝘾𝙏𝙄𝙑𝙊 ${uptime}*
+ ┆ ⦒ *𝙐𝙎𝙐𝘼𝙍𝙄𝙊𝙎 | ${Object.keys(global.db.data.users).length}*
+ ╰┅┅┅┅┅┅┅┅┅┅┅
 *<𝕀ℕ𝔽𝕆ℝ𝕄𝔸ℂ𝕀𝕆ℕ 𝔻𝔼𝕃 𝔹𝕆𝕋/>*
 
-° ඬ ⃟ 💟 _${usedPrefix}grupos_
-° ඬ ⃟ 💟 _${usedPrefix}cuentasgatabot_
-° ඬ ⃟ 💟 _${usedPrefix}estado_
-° ඬ ⃟ 💟 _${usedPrefix}infobot_
-° ඬ ⃟ 💟 _${usedPrefix}donar_
-° ඬ ⃟ 💟 _${usedPrefix}listagrupos_
-° ඬ ⃟ 💟 _${usedPrefix}velocidad_
-° ඬ ⃟ 💟 _${usedPrefix}owner_
-° ඬ ⃟ 💟 _Bot_ (𝑢𝑠𝑜 𝑠𝑖𝑛 𝑝𝑟𝑒𝑓𝑖𝑗𝑜)
+┃💫➺ _${usedPrefix}cuentasgatabot | cuentasgb_
+┃💫➺ _${usedPrefix}gruposgb | grupos | groupgb_
+┃💫➺ _${usedPrefix}donar | donate_
+┃💫➺ _${usedPrefix}listagrupos | grouplist_
+┃💫➺ _${usedPrefix}estado | heygata | status_
+┃💫➺ _${usedPrefix}infogata | infobot_
+┃💫➺ _${usedPrefix}creadora | owner_
+┃💫➺ _${usedPrefix}velocidad | ping_
+┃💫➺ _Bot_ 
+┃💫➺ _términos y condiciones_
 
 *<𝕌ℕ𝔼 𝕌ℕ 𝔹𝕆𝕋 𝔸 𝕋𝕌 𝔾ℝ𝕌ℙ𝕆/>*
 
@@ -88,29 +90,34 @@ let str = `
 
 *<𝕁𝕌𝔼𝔾𝕆𝕊/>*
 
-° ඬ⃟🎖️ _${usedPrefix}mates *<noob / easy / medium / hard / extreme /impossible /impossible2>*_
-° ඬ⃟🎖️ _${usedPrefix}ppt *<papel / tijera /piedra>*_
-° ඬ⃟🎖️ _${usedPrefix}prostituto *<nombre / @tag>*_
-° ඬ⃟🎖️ _${usedPrefix}prostituta *<nombre / @tag>*_
-° ඬ⃟🎖️ _${usedPrefix}gay2 *<nombre / @tag>*_
-° ඬ⃟🎖️ _${usedPrefix}lesbiana *<nombre / @tag>*_
-° ඬ⃟🎖️ _${usedPrefix}pajero *<nombre / @tag>*_
-° ඬ⃟🎖️ _${usedPrefix}pajera *<nombre / @tag>*_
-° ඬ⃟🎖️ _${usedPrefix}puto *<nombre / @tag>*_
-° ඬ⃟🎖️ _${usedPrefix}puta *<nombre / @tag>*_
-° ඬ⃟🎖️ _${usedPrefix}manco *<nombre / @tag>*_
-° ඬ⃟🎖️ _${usedPrefix}manca *<nombre / @tag>*_
-° ඬ⃟🎖️ _${usedPrefix}rata *<nombre / @tag>*_
-° ඬ⃟🎖️ _${usedPrefix}love *<nombre / @tag>*_
-° ඬ⃟🎖️ _${usedPrefix}doxear *<nombre / @tag>*_
-° ඬ⃟🎖️ _${usedPrefix}pregunta *<texto>*_
-° ඬ⃟🎖️ _${usedPrefix}slot *<apuesta>*_
-° ඬ⃟🎖️ _${usedPrefix}simi *<texto>*_
-° ඬ⃟🎖️ _${usedPrefix}topgays_
-° ඬ⃟🎖️ _${usedPrefix}topotakus_
-° ඬ⃟🎖️ _${usedPrefix}formarpareja_
-° ඬ⃟🎖️ _${usedPrefix}verdad_
-° ඬ⃟🎖️ _${usedPrefix}reto_
+┃🎡➺ _${usedPrefix}mates | matemáticas | math_
+┃🎡➺ _${usedPrefix}ppt *piedra : papel : tijera*_
+┃🎡➺ _${usedPrefix}topgays_
+┃🎡➺ _${usedPrefix}topotakus_
+┃🎡➺ _${usedPrefix}gay | gay *@tag*_
+┃🎡➺ _${usedPrefix}gay2 *nombre : @tag*_
+┃🎡➺ _${usedPrefix}lesbiana *nombre : @tag*_
+┃🎡➺ _${usedPrefix}manca *nombre : @tag*_
+┃🎡➺ _${usedPrefix}manco *nombre : @tag*_
+┃🎡➺ _${usedPrefix}pajero *nombre : @tag*_
+┃🎡➺ _${usedPrefix}pajera *nombre : @tag*_
+┃🎡➺ _${usedPrefix}puto *nombre : @tag*_
+┃🎡➺ _${usedPrefix}puta *nombre : @tag*_
+┃🎡➺ _${usedPrefix}rata *nombre : @tag*_
+┃🎡➺ _${usedPrefix}love *nombre : @tag*_
+┃🎡➺ _${usedPrefix}doxear *nombre : @tag*_
+┃🎡➺ _${usedPrefix}doxxeame_
+┃🎡➺ _${usedPrefix}pregunta *texto*_
+┃🎡➺ _${usedPrefix}slot *apuesta*_
+┃🎡➺ _${usedPrefix}formarpareja_
+┃🎡➺ _${usedPrefix}dado_
+┃🎡➺ _${usedPrefix}verdad_
+┃🎡➺ _${usedPrefix}reto_
+┃🎡➺ _${usedPrefix}simi | okgoogle *texto*_
+┃🎡➺ _${usedPrefix}alexa | siri | cortana *texto*_
+┃🎡➺ _${usedPrefix}simsimi | bixby *texto*_
+┃🎡➺ _${usedPrefix}multijuegos_
+┃🎡➺ _${usedPrefix}juegos_
 
 *<𝔸ℂ𝕋𝕀𝕍𝔸ℝ 𝕆 𝔻𝔼𝕊𝔸ℂ𝕋𝕀𝕍𝔸ℝ/>*
 
