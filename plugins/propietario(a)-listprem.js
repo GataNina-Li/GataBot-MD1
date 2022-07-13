@@ -21,6 +21,6 @@ await conn.sendHydrated(m.chat, null, wm, null, ig, '𝙄𝙣𝙨𝙩𝙖𝙜�
 }
 handler.help = ['premlist']
 handler.tags = ['owner']
-handler.command = /^(listprem|premlist)$/i
+handler.command = /^(listapremium|listprem|premlist)$/i
 
 export default handler
