@@ -84,7 +84,7 @@ let str =
 *┆🐈 GATACOINS ➟ ${money}*
 *┆🎟️ PREMIUM ➟* ${global.prem ? '✅' : '❌'}
 *╰*┅┅┅┅┅┅┅┅┅┅┅┅┅ *✧*
-
+${readMore}
 *╭━〔 INFORMACIÓN DE GATABOT 〕━⬣*
 ┃💫➺ _${usedPrefix}cuentasgatabot | cuentasgb_
 ┃💫➺ _${usedPrefix}gruposgb | grupos | groupgb_
@@ -151,7 +151,8 @@ let str =
 *╰━━━━━━━━━━━━⬣*
 
 *╭━━━[ AJUSTES - CHATS ]━━━⬣*
-┃ *Configura si eres Propietario(a) y/o Admin!!*
+┃ *Configura si eres Propietario(a) y/o*
+┃ *Admin!!*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃⚙️ _${usedPrefix}on *:* off *welcome*_
 ┃⚙️ _${usedPrefix}on *:* off *public*_
@@ -167,7 +168,7 @@ let str =
 ┃⚙️ _${usedPrefix}on *:* off *autosticker*_
 *╰━━━━━━━━━━━━⬣*
 
-*╭━━━[ DESCARGAS | DOWNLOADS ]━━⬣*
+*╭━[ DESCARGAS | DOWNLOADS ]━⬣*
 ┃🚀➺ _${usedPrefix}imagen | image *texto*_
 ┃🚀➺ _${usedPrefix}pinterest | dlpinterest *texto*_
 ┃🚀➺ _${usedPrefix}wallpaper|wp *texto*_
@@ -187,7 +188,7 @@ let str =
 ┃🚀➺ _${usedPrefix}clonarepo | gitclone *link*_
 *╰━━━━━━━━━━━━⬣*
 
-*╭━━━[ CONFIGURACIÓN - GRUPOS ]━━⬣*
+*╭━[ CONFIGURACIÓN - GRUPOS ]━⬣*
 ┃ *Mejora tú Grupo con GataBot!!*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃🌐➺ _${usedPrefix}add *numero*_
@@ -369,7 +370,7 @@ let str =
 *╰━━━━━━━━━━━━⬣*
 
 *╭━━━[ TOP EN GATABOT ]━━⬣*
-┃ *Averigua en que Top te encuentras!!
+┃ *Averigua en que Top te encuentras!!*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃🏆➺ _${usedPrefix}top | lb | leaderboard_
 *╰━━━━━━━━━━━━⬣*
@@ -392,8 +393,10 @@ let str =
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃💎➺ _${usedPrefix}cajafuerte_
 ┃💎➺ _${usedPrefix}comunicar | broadcastall | bc *texto*_
-┃💎➺ _${usedPrefix}comunicarpv | broadcastchats | bcc *texto*_
-┃💎➺ _${usedPrefix}comunicargrupos | broadcastgc *texto*_
+┃💎➺ _${usedPrefix}broadcastchats | bcc *texto*_
+┃💎➺ _${usedPrefix}comunicarpv *texto*_
+┃💎➺ _${usedPrefix}broadcastgc *texto*_
+┃💎➺ _${usedPrefix}comunicargrupos *texto*_
 ┃💎➺ _${usedPrefix}borrartmp | cleartmp_
 ┃💎➺ _${usedPrefix}reiniciar | restart_
 ┃💎➺ _${usedPrefix}ctualizar | update_
@@ -405,7 +408,7 @@ let str =
 ┃💎➺ _${usedPrefix}añadirgatacoins *@tag cantidad*_
 *╰━━━━━━━━━━━━⬣*
 `.trim()
-conn.sendHydrated(m.chat, str, wm, pp, 'https://github.com/GataNina-Li/GataBot-MD', '𝙶𝙸𝚃𝙷𝚄𝙱', null, null, [
+conn.sendHydrated(m.chat, str, wm, pp, 'https://github.com/GataNina-Li/GataBot-MD', '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
 ['💖 𝘿𝙤𝙣𝙖𝙧 | 𝘿𝙤𝙣𝙖𝙩𝙚', '.donar'],
 ['💗 𝙈𝙚𝙣𝙪 𝘼𝙫𝙚𝙣𝙩𝙪𝙧𝙖 | 𝙍𝙋𝙂 💗', '.rpgmenu'],
 ['💝 𝙈𝙚𝙣𝙪 𝘼𝙪𝙙𝙞𝙤𝙨 💝', '.audios']
