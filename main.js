@@ -19,7 +19,7 @@ import {
 import yargs from 'yargs';
 import { spawn } from 'child_process';
 import lodash from 'lodash';
-//import chalk from 'chalk';
+import chalk from 'chalk';
 import syntaxerror from 'syntax-error';
 import { tmpdir } from 'os';
 import { format } from 'util';
@@ -272,10 +272,10 @@ async function _quickTest() {
   if (!s.convert && !s.magick && !s.gm) conn.logger.warn('Stickers may not work without imagemagick if libwebp on ffmpeg doesnt isntalled (pkg install imagemagick)')
 }
 
-//setInterval(async () => {
-//var a = await clearTmp()
-//console.log(chalk.cyanBright(`\n▣────────[ 𝙰𝚄𝚃𝙾𝙲𝙻𝙴𝙰𝚁𝚃𝙼𝙿 ]───────────···\n│\n▣─❧ 𝙰𝚁𝙲𝙷𝙸𝚅𝙾𝚂 𝙴𝙻𝙸𝙼𝙸𝙽𝙰𝙳𝙾𝚂 ✅\n│\n▣────────────────────────────────────···\n`))
-//}, 180000)
+setInterval(async () => {
+var a = await clearTmp()
+console.log(chalk.cyanBright(`\n▣────────[ 𝙰𝚄𝚃𝙾𝙲𝙻𝙴𝙰𝚁𝚃𝙼𝙿 ]───────────···\n│\n▣─❧ 𝙰𝚁𝙲𝙷𝙸𝚅𝙾𝚂 𝙴𝙻𝙸𝙼𝙸𝙽𝙰𝙳𝙾𝚂 ✅\n│\n▣────────────────────────────────────···\n`))
+}, 180000)
 
 _quickTest()
   .then(() => conn.logger.info('Quick Test Done'))
