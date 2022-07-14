@@ -1,4 +1,4 @@
-import { sticker } from '../lib/sticker.js'
+/*import { sticker } from '../lib/sticker.js'
 import fetch from 'node-fetch'
 import MessageType from '@adiwajshing/baileys'
 let handler = async (m, { conn}) => {
@@ -12,4 +12,17 @@ let stiker = await sticker(null, url, `+${m.sender.split('@')[0]} está alimenta
 conn.sendFile(m.chat, stiker, null, { asSticker: true })
 } catch (e) { }}
 handler.command = /^(chicago)$/i 
+export default handler*/
+
+
+const dir = [
+  'https://source.unsplash.com/featured/?girl,woman',
+  'https://source.unsplash.com/featured/?girl,woman',
+];
+let handler = async (m, { conn }) => {
+conn.sendFile(m.chat, dir[Math.floor(Math.random() * dir.length)], 'dadu.webp', '', m)
+}
+handler.help = ['dado']
+handler.tags = ['game']
+handler.command = ['chi'] 
 export default handler
