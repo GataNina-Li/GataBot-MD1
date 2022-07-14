@@ -1,4 +1,3 @@
-let media = './media/menus/Menu4paypal.jpg'
 let handler = async (m, { conn, command }) => {
 let pp = './src/apoyo.jpg'
 //await conn.sendButton(m.chat, wm, `https://paypal.me/OficialGD`, pp, m)
