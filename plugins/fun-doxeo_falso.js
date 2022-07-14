@@ -36,6 +36,7 @@ let ip = `*${pickRandom(['','','','','','','','','','','','','','','','','','','
 let ip = `*${pickRandom(['','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','',''])}%*`
 */
 
+let pp = './media/menus/Doxeado.mp4'
 let old = performance.now()
 let neww = performance.now()
 let speed = `${neww - old}`
@@ -79,7 +80,7 @@ Sof02s32inf14.1e100.net
 *Tcp:* 192.168.629-->92.28.211.167:8615
 *EXTERNAL MAC:* 6U:77:89:ER:O4
 *MODEM JUMPS:* 64`
-conn.reply(m.chat, doxeo, m)}
+conn.reply(m.chat, pp, doxeo, m)}
 handler.help = ['doxear <nombre> | <@tag>']
 handler.tags = ['fun']
 handler.command = /^Doxxeo|doxxeo|doxxear|Doxxear|doxeo|doxear|doxxeame|doxeame/i
