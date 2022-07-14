@@ -42,6 +42,6 @@ console.log(e)
 handler.help = ['mediafire'].map(v => v + ' <url>')
 handler.tags = ['downloader']
 handler.command = /^(mediafire|mediafiredl|dlmediafire)$/i
-handler.limit = 8
+handler.limit = 3
 handler.exp = 100
 export default handler

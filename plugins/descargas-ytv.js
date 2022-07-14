@@ -46,6 +46,6 @@ conn.sendHydrated(m.chat, info, wm, null, ig, '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖�
 handler.help = ['mp4', 'v'].map(v => 'yt' + v + ` <url>`)
 handler.tags = ['downloader']
 handler.command = /^yt(v|mp4)?$/i
-handler.limit = 4
+handler.limit = 2
 handler.exp = 100
 export default handler

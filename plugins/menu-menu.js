@@ -59,7 +59,8 @@ level, limit, name, weton, week, date, dateIslamic, time, totalreg, rtotalreg, r
 readmore: readMore
 }
 text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-
+//let user = global.db.data.users[m.sender]
+//user.registered = false
     
 
 let str = `
@@ -420,6 +421,7 @@ throw e
 handler.help = ['menu', 'help', '?']
 handler.tags = ['main']
 handler.command = /^(menucompleto|allmenu|allm\?)$/i
+//handler.register = true
 handler.exp = 50
 handler.fail = null
 export default handler

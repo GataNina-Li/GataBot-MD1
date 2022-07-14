@@ -32,4 +32,6 @@ handler.help = ['', 'earch'].map(v => 'yts' + v + ' <pencarian>')
 handler.tags = ['tools']
 handler.command = /^ytbuscar|yts(earch)?$/i
 handler.exp = 70
+handler.limit = 1
+handler.level = 4
 export default handler

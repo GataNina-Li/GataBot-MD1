@@ -39,4 +39,5 @@ handler.help = ['wikipedia'].map(v => v + ' <apa>')
 handler.tags = [ 'internet']
 handler.command = /^(wiki|wikipedia)$/i 
 handler.exp = 40
+handler.level = 2
 export default handler
