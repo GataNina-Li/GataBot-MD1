@@ -39,8 +39,9 @@ let ip = `*${pickRandom(['','','','','','','','','','','','','','','','','','','
 let old = performance.now()
 let neww = performance.now()
 let speed = `${neww - old}`
-let doxeo = `*_🚬🐛 Persona doxxeada con éxito 🐛🚬_*\n\n*_Tiempo: ${speed} segundos!_*
 let pp = './media/menus/Doxeado.mp4'
+let doxeo = `*_🚬🐛 Persona doxxeada con éxito 🐛🚬_*\n\n*_Tiempo: ${speed} segundos!_*
+
 
 *RESULTADOS:*
 
