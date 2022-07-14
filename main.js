@@ -331,36 +331,32 @@ global.authFile = `${opts._[0] || 'session'}.data.json`
 const { state, saveState } = store.useSingleFileAuthState(global.authFile)
 
 const connectionOptions = {
-  printQRInTerminal: true,
-  auth: state,
-  // logger: pino({ level: 'trace' })
+printQRInTerminal: true,
+auth: state,
+logger: P({ level: 'silent'}),
+browser: ['GataBot-MD','Edge','1.0.0']
 }
 
 global.conn = makeWASocket(connectionOptions)
 conn.isInit = false
 
 if (!opts['test']) {
-  setInterval(async () => {
-    if (global.db.data) await global.db.write().catch(console.error)
-    if (opts['autocleartmp']) try {
-      clearTmp()
+if (global.db) setInterval(async () => {
+if (global.db.data) await global.db.write()
+if (opts['autocleartmp'] && (global.support || {}).find) (tmp = [os.tmpdir(), 'tmp'], tmp.forEach(filename => cp.spawn('find', [filename, '-amin', '3', '-type', 'f', '-delete'])))
+}, 30 * 1000)}
 
-    } catch (e) { console.error(e) }
-  }, 60 * 1000)
-}
 if (opts['server']) (await import('./server.js')).default(global.conn, PORT)
 
-
 function clearTmp() {
-  const tmp = [tmpdir(), join(__dirname, './tmp')]
-  const filename = []
-  tmp.forEach(dirname => readdirSync(dirname).forEach(file => filename.push(join(dirname, file))))
-  return filename.map(file => {
-    const stats = statSync(file)
-    if (stats.isFile() && (Date.now() - stats.mtimeMs >= 1000 * 60 * 3)) return unlinkSync(file) // 3 minutes
-    return false
-  })
-}
+const tmp = [tmpdir(), join(__dirname, './tmp')]
+const filename = []
+tmp.forEach(dirname => readdirSync(dirname).forEach(file => filename.push(join(dirname, file))))
+return filename.map(file => {
+const stats = statSync(file)
+if (stats.isFile() && (Date.now() - stats.mtimeMs >= 1000 * 60 * 3)) return unlinkSync(file) // 3 minutes
+return false
+})}
 
 async function connectionUpdate(update) {
   const { connection, lastDisconnect, isNewLogin } = update
