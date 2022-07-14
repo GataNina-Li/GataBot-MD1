@@ -14,7 +14,6 @@ const groups = chats.filter(([id]) => id.endsWith('@g.us'))
 const used = process.memoryUsage()
 const { restrict } = global.db.data.settings[conn.user.jid] || {}
 const { autoread } = global.opts
-let pp = './media/menus/Menu1.jpg'
 let old = performance.now()
 let neww = performance.now()
 let speed = neww - old
