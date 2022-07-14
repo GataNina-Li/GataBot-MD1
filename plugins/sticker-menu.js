@@ -88,7 +88,6 @@ let menu = `
 ┃🎐 _${usedPrefix}sticker | s *url de tipo jpg*_
 ┃🎐 _${usedPrefix}emojimix *😺+😆*_
 ┃🎐 _${usedPrefix}scircle | círculo *imagen*_
-┃🎐 _${usedPrefix}sremovebg | ssinfondo *imagen*_
 ┃🎐 _${usedPrefix}semoji | emoji *tipo emoji*_
 ┃🎐 _${usedPrefix}attp *texto*_
 ┃🎐 _${usedPrefix}attp2 *texto*_
