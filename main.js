@@ -110,7 +110,7 @@ global.timestamp.connect = new Date
 }
 if (global.db.data == null) loadDatabase()
 if (connection == 'open') {
-console.log(chalk.yellow('▣─────────────────────────────···\n│\n│❧ 𝙲𝙾𝙽𝙴𝙲𝚃𝙰𝙳𝙾 𝙲𝙾𝚁𝚁𝙴𝙲𝚃𝙰𝙼𝙴𝙽𝚃𝙴 𝙰𝙻 𝚆𝙷𝙰𝚃𝚂𝙰𝙿𝙿 ✅\n│\n▣─────────────────────────────···'))}
+console.log(chalk.yellow('╭══•ೋ•✧๑ೋ•✧๑ೋ•✧๑ೋ•✧๑♡๑✧•ೋ๑✧•ೋ๑✧•ೋ๑✧•ೋ •══╮\n│\n│✨ 𝙎𝙀 𝙃𝘼 𝘾𝙊𝙉𝙀𝘾𝙏𝘼𝘿𝙊 𝙀𝙓𝙄𝙏𝙊𝙎𝘼𝙈𝙀𝙉𝙏𝙀 𝘼𝙇 𝙒𝙃𝘼𝙏𝙎𝘼𝙋𝙋\n│✨ 𝙔𝙊𝙐 𝙃𝘼𝙑𝙀 𝙎𝙐𝘾𝘾𝙀𝙎𝙎𝙁𝙐𝙇𝙇𝙔 𝘾𝙊𝙉𝙉𝙀𝘾𝙏𝙀𝘿 𝙏𝙊 𝙒𝙃𝘼𝙏𝙎𝘼𝙋𝙋\n│\n╰══•ೋ•✧๑ೋ•✧๑ೋ•✧๑ೋ•✧๑♡๑✧•ೋ๑✧•ೋ๑✧•ೋ๑✧•ೋ •══╯'))}
 }
 
 process.on('uncaughtException', console.error)
