@@ -331,10 +331,10 @@ global.authFile = `${opts._[0] || 'session'}.data.json`
 const { state, saveState } = store.useSingleFileAuthState(global.authFile)
 
 const connectionOptions = {
-printQRInTerminal: true,
-auth: state,
-logger: ({ level: 'silent'}),
-browser: ['GataBot-MD','Edge','1.0.0']
+  printQRInTerminal: true,
+  auth: state,
+  browser: ['GataBot-MD','Edge','1.0.0']
+  // logger: pino({ level: 'trace' })
 }
 
 global.conn = makeWASocket(connectionOptions)
