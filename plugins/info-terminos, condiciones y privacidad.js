@@ -85,7 +85,7 @@ _- NO somos responsable si Hay alteraciones de este Bot no siendo Número(s) Ofi
 
 
 *TÉRMINOS DE USO* 
-_- La información que haya en este Bot y el/la usuaruio/a Haga uso de las Mismas asumirá saber los Términos y Condiciones de tal forma que no habrá incovenientes al hacer un uso Particular de las Funciones del Bot._
+_- La información que haya en este Bot y el/la usuario/a Haga uso de las Mismas asumirá saber los Términos y Condiciones de tal forma que no habrá incovenientes al hacer un uso Particular de las Funciones del Bot._
 
 _- El Bot contiene Material que solo puede ser visible para mayores de 18 Años, NO somos responsable si no cumple con la edad mínima para usar el Material para Adultos._
 
