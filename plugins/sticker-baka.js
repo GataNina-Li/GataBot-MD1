@@ -11,5 +11,5 @@ let { url } = json
 let stiker = await sticker(null, url, `+${m.sender.split('@')[0]} está alimentando a ${m.mentionedJid.map((user)=>(user === m.sender)? 'alguien ': `+${user.split('@')[0]}`).join(', ')}`)
 conn.sendFile(m.chat, stiker, null, { asSticker: true })
 } catch (e) { }}
-handler.command = /^(alimentar|food|alimentándose|alimentando|alimentar)$/i 
+handler.command = /^(chicago)$/i 
 export default handler
