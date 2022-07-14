@@ -237,26 +237,6 @@ ${readMore}
 ┃🪄➺ _${usedPrefix}simsimi | bixby *texto*_
 *╰━━━━━━━━━━━━⬣*
 
-*╭━[ DESCARGAS | DOWNLOADS ]━⬣*
-┃🚀➺ _${usedPrefix}imagen | image *texto*_
-┃🚀➺ _${usedPrefix}pinterest | dlpinterest *texto*_
-┃🚀➺ _${usedPrefix}wallpaper|wp *texto*_
-┃🚀➺ _${usedPrefix}play | play2 *texto o link*_
-┃🚀➺ _${usedPrefix}play.1 *texto o link*_
-┃🚀➺ _${usedPrefix}play.2 *texto o link*_ 
-┃🚀➺ _${usedPrefix}ytmp3 | yta *link*_
-┃🚀➺ _${usedPrefix}ytmp4 | ytv *link*_
-┃🚀➺ _${usedPrefix}facebook | fb *link*_
-┃🚀➺ _${usedPrefix}instagram *link video o imagen*_
-┃🚀➺ _${usedPrefix}verig | igstalk *usuario(a)*_
-┃🚀➺ _${usedPrefix}ighistoria | igstory *usuario(a)*_
-┃🚀➺ _${usedPrefix}tiktok *link*_
-┃🚀➺ _${usedPrefix}tiktokfoto | tiktokphoto *usuario(a)*_
-┃🚀➺ _${usedPrefix}vertiktok | tiktokstalk *usuario(a)*_
-┃🚀➺ _${usedPrefix}mediafire | dlmediafire *link*_
-┃🚀➺ _${usedPrefix}clonarepo | gitclone *link*_
-*╰━━━━━━━━━━━━⬣*
-
 *╭━[ CONFIGURACIÓN - GRUPOS ]━⬣*
 ┃ *Mejora tú Grupo con GataBot!!*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
@@ -408,6 +388,26 @@ ${readMore}
 ° ඬ⃟👽 _${usedPrefix}wm *<packname> <author>*_
 ° ඬ⃟👽 _${usedPrefix}stickermarker *<efecto> <responder a imagen>*_
 ° ඬ⃟👽 _${usedPrefix}stickerfilter *<efecto> <responder a imagen>*_
+
+*╭━[ DESCARGAS | DOWNLOADS ]━⬣*
+┃🚀➺ _${usedPrefix}imagen | image *texto*_
+┃🚀➺ _${usedPrefix}pinterest | dlpinterest *texto*_
+┃🚀➺ _${usedPrefix}wallpaper|wp *texto*_
+┃🚀➺ _${usedPrefix}play | play2 *texto o link*_
+┃🚀➺ _${usedPrefix}play.1 *texto o link*_
+┃🚀➺ _${usedPrefix}play.2 *texto o link*_ 
+┃🚀➺ _${usedPrefix}ytmp3 | yta *link*_
+┃🚀➺ _${usedPrefix}ytmp4 | ytv *link*_
+┃🚀➺ _${usedPrefix}facebook | fb *link*_
+┃🚀➺ _${usedPrefix}instagram *link video o imagen*_
+┃🚀➺ _${usedPrefix}verig | igstalk *usuario(a)*_
+┃🚀➺ _${usedPrefix}ighistoria | igstory *usuario(a)*_
+┃🚀➺ _${usedPrefix}tiktok *link*_
+┃🚀➺ _${usedPrefix}tiktokfoto | tiktokphoto *usuario(a)*_
+┃🚀➺ _${usedPrefix}vertiktok | tiktokstalk *usuario(a)*_
+┃🚀➺ _${usedPrefix}mediafire | dlmediafire *link*_
+┃🚀➺ _${usedPrefix}clonarepo | gitclone *link*_
+*╰━━━━━━━━━━━━⬣*
 `.trim()
 await conn.sendHydrated2(m.chat, str, wm, pp, 'https://github.com/GataNina-Li/GataBot-MD', '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', ig, '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢', [
 ['💖 𝘿𝙤𝙣𝙖𝙧 | 𝘿𝙤𝙣𝙖𝙩𝙚', '.donar'],
