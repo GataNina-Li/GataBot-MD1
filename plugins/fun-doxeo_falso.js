@@ -1,5 +1,4 @@
 import { performance } from 'perf_hooks'
-let pp = './media/menus/Doxeado.mp4'
 let handler = async (m, { conn, text }) => {
 let start = `*😱 ¡¡Empezando Doxxeo!! 😱*`
 let boost = `*${pickRandom(['0','1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20'])}%*`
@@ -80,7 +79,7 @@ Sof02s32inf14.1e100.net
 *Tcp:* 192.168.629-->92.28.211.167:8615
 *EXTERNAL MAC:* 6U:77:89:ER:O4
 *MODEM JUMPS:* 64`
-conn.reply(m.chat, pp, doxeo, m)}
+conn.reply(m.chat, doxeo, m)}
 handler.help = ['doxear <nombre> | <@tag>']
 handler.tags = ['fun']
 handler.command = /^Doxxeo|doxxeo|doxxear|Doxxear|doxeo|doxear|doxxeame|doxeame/i
