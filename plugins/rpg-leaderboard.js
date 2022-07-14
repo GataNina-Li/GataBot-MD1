@@ -1,5 +1,5 @@
 let handler = async (m, { conn, args, participants, usedPrefix }) => {
-  //let user = global.db.data.users[m.sender] 
+  //let user = global.db.data.users[m.sender]  
   let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
   let name = await conn.getName(m.sender)
    //user.registered = false
