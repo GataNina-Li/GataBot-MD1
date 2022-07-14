@@ -1,4 +1,5 @@
 import { performance } from 'perf_hooks'
+let pp = './media/menus/Doxeado.mp4'
 let handler = async (m, { conn, text }) => {
 let start = `*😱 ¡¡Empezando Doxxeo!! 😱*`
 let boost = `*${pickRandom(['0','1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20'])}%*`
@@ -39,9 +40,7 @@ let ip = `*${pickRandom(['','','','','','','','','','','','','','','','','','','
 let old = performance.now()
 let neww = performance.now()
 let speed = `${neww - old}`
-let pp = './media/menus/Doxeado.mp4'
 let doxeo = `*_🚬🐛 Persona doxxeada con éxito 🐛🚬_*\n\n*_Tiempo: ${speed} segundos!_*
-
 
 *RESULTADOS:*
 
