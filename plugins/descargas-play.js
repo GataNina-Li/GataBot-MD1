@@ -32,7 +32,7 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
   ], m)
     let info = `💝 𝙏𝘼𝙈𝘽𝙄𝙀𝙉 𝙋𝙐𝙀𝘿𝙀 𝙄𝙉𝙏𝙀𝙍𝙀𝙎𝘼𝙍𝙇𝙀.
 💗 𝙔𝙊𝙐 𝙈𝘼𝙔 𝘼𝙇𝙎𝙊 𝘽𝙀 𝙄𝙉𝙏𝙀𝙍𝙀𝙎𝙏𝙀𝘿.`.trim()  
-await conn.sendHydrated(m.chat, info, wm, ig, '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢', null, null, [
+await conn.sendHydrated(m.chat, info, wm, null, ig, '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢', null, null, [
 ['𝘼𝙪𝙙𝙞𝙤| 2️⃣ [NO USAR EN REPARACION]', `${usedPrefix}play.1 ${url} yes`],
 ['𝘽𝙪𝙨𝙘𝙖𝙧 | 𝙎𝙚𝙖𝙧𝙘𝙝 | 🌐', `.ytsearch ${url} yes`],
 ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', `/menu`]
