@@ -9,6 +9,6 @@ conn.sendHydrated(m.chat, str, wm, media, 'https://github.com/GataNina-Li/GataBo
 ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', '/menu']
 ], m,)}
 
-handler.command = /^telegram|grupodetelegram$/i
+handler.command = /^telegram|grupodetelegram|linktelegram$/i
 handler.exp = 35
 export default handler
