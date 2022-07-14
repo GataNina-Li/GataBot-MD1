@@ -17,11 +17,11 @@ handler.command = /^(baka)$/i
 export default handler*/
 
 
-
+import fetch from 'node-fetch'
 const dir = [
-  'http://api.nekos.fun:8080/api/baka',
-  'http://api.nekos.fun:8080/api/baka',
-  'http://api.nekos.fun:8080/api/baka',
+  await fetch('http://api.nekos.fun:8080/api/baka'),
+  await fetch('http://api.nekos.fun:8080/api/baka'),
+  await fetch('http://api.nekos.fun:8080/api/baka'),
 ];
 let handler = async (m, { conn }) => {
 conn.sendFile(m.chat, dir[Math.floor(Math.random() * dir.length)], 'dadu.webp', '', m)
