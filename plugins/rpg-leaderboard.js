@@ -1,5 +1,6 @@
 let handler = async (m, { conn, args, participants, usedPrefix }) => {
   //let user = global.db.data.users[m.sender] 
+  let name = await conn.getName(m.sender)
    //user.registered = false
   let users = Object.entries(global.db.data.users).map(([key, value]) => {
     return {...value, jid: key}
@@ -24,6 +25,7 @@ let handler = async (m, { conn, args, participants, usedPrefix }) => {
 Tú : *${usersExp.indexOf(m.sender) + 1}* de *${usersExp.length} Usuarios*
 
 ${sortedExp.slice(0, len).map(({ jid, exp }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *${exp} Exp*`).join`\n`}
+${name}
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 💠 *TOP ${len} DIAMANTES💎* 
 Tú : *${usersLim.indexOf(m.sender) + 1}* de *${usersLim.length} Usuarios*
