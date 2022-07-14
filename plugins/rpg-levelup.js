@@ -40,8 +40,8 @@ let user = global.db.data.users[m.sender]
 *_Cuanto más interactúes con GataBot-MD, mayor será tu nivel!!_*
 `.trim()
         try {
-            const img = await levelup(teks, user.level)
-            conn.sendFile(m.chat, img, 'null', str, m)
+            //const img = await levelup(teks, user.level)
+            conn.sendFile(m.chat, null, 'levelup.jpg', str, m)
         } catch (e) {
             m.reply(str)
         }
