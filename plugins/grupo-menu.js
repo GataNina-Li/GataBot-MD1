@@ -106,12 +106,14 @@ let menu = `
 ┃🌐➺ _${usedPrefix}quitar | demote *@tag*_
 ┃🌐➺ _${usedPrefix}banchat_
 ┃🌐➺ _${usedPrefix}unbanchat_
+┃🌐➺ _${usedPrefix}banuser *@tag*_
+┃🌐➺ _${usedPrefix}unbanuser *@tag*_
 ┃🌐➺ _${usedPrefix}admins *texto*_
 ┃🌐➺ _${usedPrefix}invocar *texto*_
 ┃🌐➺ _${usedPrefix}tagall *texto*_
 ┃🌐➺ _${usedPrefix}hidetag *texto*_
 ┃🌐➺ _${usedPrefix}infogrupo | infogroup_
-┃🌐➺ _${usedPrefix}enlace | link *texto*_
+┃🌐➺ _${usedPrefix}enlace | link_
 ┃🌐➺ _${usedPrefix}newnombre | setname *texto*_
 ┃🌐➺ _${usedPrefix}newdesc | setdesc *texto*_
 ┃🌐➺ _${usedPrefix}setwelcome *texto*_
