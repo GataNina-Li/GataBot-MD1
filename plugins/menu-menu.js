@@ -85,7 +85,6 @@ let str =
 *┆🎟️ PREMIUM ➟* ${global.prem ? '✅' : '❌'}
 *╰*┅┅┅┅┅┅┅┅┅┅┅┅┅ *✧*
 ${readMore}
-
 *╭━━━[ CONTENIDO 🔞 ]━━⬣*
 ┃ *Visita el Menú de Comandos*
 ┃ *Para Adultos!!*
