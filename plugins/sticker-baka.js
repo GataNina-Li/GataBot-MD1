@@ -1,7 +1,7 @@
 import { sticker } from '../lib/sticker.js'
 import fetch from 'node-fetch'
 import MessageType from '@adiwajshing/baileys'
-let handler = async (m, { conn}) => {
+/*let handler = async (m, { conn}) => {
 try {
 if(m.quoted?.sender) m.mentionedJid.push(m.quoted.sender)
 if(!m.mentionedJid.length) m.mentionedJid.push(m.sender)
@@ -12,4 +12,16 @@ let stiker = await sticker(null, url, `+${m.sender.split('@')[0]} está diciendo
 conn.sendFile(m.chat, stiker, null, { asSticker: true })
 } catch (e) { }}
 handler.command = /^(baka)$/i  
+export default handler*/
+
+
+//let fetch = require('node-fetch')
+async function getRandom(url) {
+return Math.floor(Math.random() * url)
+}
+let handler  = async (m, { conn }) => {
+conn.sendFile(m.chat, `http://api.nekos.fun:8080/api/baka`, '', ``, m)
+}
+handler.command = /^(baka)$/i 
+
 export default handler
