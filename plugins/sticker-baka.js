@@ -13,15 +13,10 @@ conn.sendFile(m.chat, stiker, null, { asSticker: true })
 } catch (e) { }}
 handler.command = /^(baka)$/i  
 export default handler*/
+import axios from "axios" 
+let handler = async (m, { conn}) => {
+let haha = await conn.getFile(`http://api.nekos.fun:8080/api/baka`)
+conn.sendButton(m.chat, `a`.trim(), wm, haha.data, [['🥵 𝙎𝙄𝙂𝙐𝙄𝙀𝙉𝙏𝙀 | 𝙉𝙀𝙓𝙏', `.baka`]], m)}   
 
-
-//let fetch = require('node-fetch')
-async function getRandom(url) {
-return Math.floor(Math.random() * url)
-}
-let handler  = async (m, { conn }) => {
-conn.sendFile(m.chat, `http://api.nekos.fun:8080/api/baka`, '', ``, m)
-}
-handler.command = /^(baka)$/i 
-
+handler.command = /^(baka)$/i  
 export default handler
