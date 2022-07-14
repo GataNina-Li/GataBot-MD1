@@ -94,7 +94,8 @@ const { state, saveState } = store.useSingleFileAuthState(global.authFile)
 const connectionOptions = {
   printQRInTerminal: true,
   auth: state,
-  // logger: pino({ level: 'trace' })
+  logger: pino({ level: 'trace' })
+  browser: ['GataBot-MD','Edge','1.0.0']
 }
 
 global.conn = makeWASocket(connectionOptions)
