@@ -103,7 +103,7 @@ conn.sendHydrated(m.chat, menu, wm, pp, 'https://github.com/GataNina-Li/GataBot-
 
 handler.help = ['infomenu'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
-handler.command = /^(xp|experiencia|esperiencia|esperiensia|experiensia|exp|level|gatacoins|coinsgata|coins)$/i
+handler.command = /^(xp|experiencia|esperiencia|esperiensia|experiensia|exp|coinsgata|coins)$/i
 handler.exp = 10
 export default handler
 
