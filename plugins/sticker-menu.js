@@ -100,6 +100,7 @@ let menu = `
 ┃🎐 _${usedPrefix}palmaditas | pat *@tag*_
 ┃🎐 _${usedPrefix}bofetada | slap *@tag*_
 ┃🎐 _${usedPrefix}besar | kiss *@tag*_
+┃🎐 _${usedPrefix}alimentar | food *@tag*_
 ┃🎐 _${usedPrefix}dado_
 ┃🎐 _${usedPrefix}wm *packname|author*_
 ┃🎐 _${usedPrefix}wm *texto1|texto2*_
