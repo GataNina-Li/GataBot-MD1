@@ -644,7 +644,7 @@ export async function participantsUpdate({ id, participants, action }) {
                         text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || '*𝙂𝙧𝙪𝙥𝙤 𝙂𝙚𝙣𝙞𝙖𝙡 | 𝘾𝙤𝙤𝙡 𝙂𝙧𝙤𝙪𝙥 😼*') :
                             (chat.sBye || this.bye || conn.bye || 'Bye, @user!')).replace('@user', '@' + user.split('@')[0])
                             let apii = await this.getFile(pp)
-                            this.sendHydrated(id, text, groupMetadata.subject, apii.data,                                                       'https://github.com/GataNina-Li/GataBot-MD', '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
+                            this.sendHydrated(id, text, groupMetadata.subject, apii.data,                                                       'https://github.com/ColapsusHD/FutabuBot-MD', '𝙵𝚞𝚝𝚊𝚋𝚞𝙱𝚘𝚝-𝙼𝙳', null, null, [
                             [(action == 'add' ? '𝙎𝙚 𝙪𝙣𝙞𝙤 🥳 | 𝙃𝙞!!' : '𝙎𝙚 𝙛𝙪𝙚 𝙪𝙣 𝙍𝙖𝙣𝙙𝙤𝙢 🧐 | 𝘽𝙮𝙚'), '.s'],    
                             ['💖 𝙄𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪 | 𝙂𝙤 𝙈𝙚𝙣𝙪', '/menu']
                             ], '', { mentions: [user]})
@@ -727,7 +727,7 @@ global.dfail = (type, m, conn) => {
         private: '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼 | 𝙒𝘼𝙍𝙉𝙄𝙉𝙂* ⊱⚠️⊱╮\n\n_*¡¡Este comando solo se puede usar en el chat privado del Bot!!*_\n_*¡¡This command can only be used in private chat*_',
         admin: '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼 | 𝙒𝘼𝙍𝙉𝙄𝙉𝙂* ⊱⚠️⊱╮\n\n_*¡¡Este comando es solo para Administradores!!*_\n_*¡¡This command is for Administrators only!!*_',
         botAdmin: '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼 | 𝙒𝘼𝙍𝙉𝙄𝙉𝙂* ⊱⚠️⊱╮\n\n_*¡¡Haz que Yo (Bot) sea Administrador para usar este comando!!*_\n_*¡¡Make the bot an Admin to use this command!!*_',
-        unreg: '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼 | 𝙒𝘼𝙍𝙉𝙄𝙉𝙂* ⊱⚠️⊱╮\n\n_*¡Qué esperas para estar Verificando(a) en GataBot-MD! Usa el comando #verificar*_\n_*What are you waiting for to be Verifying with GataBot-MD! Use the #verify command*_',
+        unreg: '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼 | 𝙒𝘼𝙍𝙉𝙄𝙉𝙂* ⊱⚠️⊱╮\n\n_*¡Qué esperas para estar Verificando(a) en FutabuBot-Md! Usa el comando #verificar*_\n_*What are you waiting for to be Verifying with GataBot-MD! Use the #verify command*_',
         restrict: '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼 | 𝙒𝘼𝙍𝙉𝙄𝙉𝙂* ⊱⚠️⊱╮\n\n_*¡¡Esta función está Restringida | disable por Mí Creador(a)!!*_\n_*¡¡This feature is off | disable!!*_'
     }[type]
     if (msg) return m.reply(msg) 
