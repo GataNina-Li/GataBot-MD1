@@ -2,7 +2,6 @@ process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '0';
 import './config.js';
 
 import { createRequire } from "module"; // Incorpore la capacidad de crear el método 'requerir'
-import chalk from 'chalk';
 import path, { join } from 'path'
 import { fileURLToPath, pathToFileURL } from 'url'
 import { platform } from 'process'
@@ -20,6 +19,7 @@ import {
 import yargs from 'yargs';
 import { spawn } from 'child_process';
 import lodash from 'lodash';
+import chalk from 'chalk';
 import syntaxerror from 'syntax-error';
 import { tmpdir } from 'os';
 import { format } from 'util';
