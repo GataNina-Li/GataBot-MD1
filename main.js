@@ -333,7 +333,7 @@ const { state, saveState } = store.useSingleFileAuthState(global.authFile)
 const connectionOptions = {
 printQRInTerminal: true,
 auth: state,
-logger: P({ level: 'silent'}),
+logger: ({ level: 'silent'}),
 browser: ['GataBot-MD','Edge','1.0.0']
 }
 
