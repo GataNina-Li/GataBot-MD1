@@ -22,6 +22,10 @@ let user = global.db.data.users[m.sender]
 *Te falta ${max - user.exp} de XP para subir de nivel*
 `.trim()
     }
+     let beforerole = user.role * 1
+    while (canLevelUp(user.role, user.role, global.multiplier)) user.role++
+    if (beforerole !== user.role) {
+        
     let before = user.level * 1
     while (canLevelUp(user.level, user.exp, global.multiplier)) user.level++
     if (before !== user.level) {
@@ -32,7 +36,9 @@ let user = global.db.data.users[m.sender]
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃ *NIVEL ACTUAL:* *${user.level}*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ *RANGO:* ${role}
+┃ *RANGO ANTERIOR:* *${beforerole}*
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃ *RANGO ACTUAL:* *${user.role}*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃ *FECHA:* *${new Date().toLocaleString('id-ID')}*
 ╰━━━〔 *𓃠 ${vs}* 〕━━━━━⬣
@@ -44,8 +50,9 @@ let user = global.db.data.users[m.sender]
             conn.sendFile(m.chat, img, 'levelup.jpg', str, m)
         } catch (e) {
             m.reply(str)
-        }
+      }
     }
+  }
 }
 
 handler.help = ['levelup']
