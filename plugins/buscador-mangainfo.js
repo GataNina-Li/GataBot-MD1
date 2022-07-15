@@ -5,7 +5,7 @@ if (!text) throw `${mg}𝙀𝙎𝘾𝙍𝙄𝘽𝘼 𝙀𝙇 𝙉𝙊𝙈𝘽�
 let res = await fetch(global.API('https://api.jikan.moe', '/v3/search/manga', { q: text }))
 if (!res.ok) throw await res.text()
 let json = await res.json()
-let { title, chapters, volumes, members, score, synopsis, url, rated, image_url, type, start_date, end_date, mal_id } = json.results[0]
+let { title, chapters, volumes, members, score, synopsis, url, image_url, type, start_date, end_date, mal_id } = json.results[0]
 let res2 = await fetch(`https://myanimelist.net/manga/${mal_id}`)
 if (!res2.ok) throw await res2.text()
 let html = await res2.text()
@@ -18,9 +18,6 @@ let animeingfo =
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 𝙑𝙊𝙇𝙐𝙈𝙀𝙉𝙀𝙎 | 𝙑𝙊𝙇𝙐𝙈𝙀𝙎
 ❣ ${volumes}
-┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-𝘾𝙇𝘼𝙎𝙄𝙁𝙄𝘾𝘼𝘾𝙄𝙊𝙉 | 𝙍𝘼𝙏𝙄𝙉𝙂
-❣ ${rated}
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 𝙁𝙀𝘾𝙃𝘼 𝘿𝙀 𝙄𝙉𝙄𝘾𝙄𝙊 | 𝙎𝙏𝘼𝙍𝙏 𝘿𝘼𝙏𝙀
 ❣ ${start_date}
@@ -44,7 +41,7 @@ let info = `💖 *Infórmate sobre las Novedades y recuerda tener la última ver
   `.trim()
   
 await conn.sendHydrated(m.chat, info, wm, null, ig, '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢', null, null, [
-['𝙏𝙧𝙖𝙙𝙪𝙘𝙞𝙧 𝙎𝙞𝙣𝙤𝙥𝙨𝙞𝙨 📠', `#tr es ${synopsis}`],
+['𝙈𝙚𝙣𝙪 𝘽𝙪𝙨𝙦𝙪𝙚𝙙𝙖𝙨 | 𝙎𝙚𝙖𝙧𝙘𝙝𝙚𝙨 🔎', '#buscarmenu'],
 ['𝙈𝙚𝙣𝙪 𝘾𝙤𝙢𝙥𝙡𝙚𝙩𝙤 | 𝙁𝙪𝙡𝙡 𝙈𝙚𝙣𝙪 ✨', '.allmenu'],
 ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', '/menu']
 ], m,)  
