@@ -11,7 +11,7 @@ if (!res2.ok) throw await res2.text()
 let html = await res2.text()
 let animeingfo = 
 `𝙏𝙄𝙏𝙐𝙇𝙊 | 𝙏𝙄𝙏𝙇𝙀 
-❣ ${title}
+❣ ${getManga.data.results[0].title}
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 𝙀𝙋𝙄𝙎𝙊𝘿𝙄𝙊𝙎 | 𝙀𝙋𝙄𝙎𝙊𝘿𝙀𝙎
 ❣ ${chapters}
