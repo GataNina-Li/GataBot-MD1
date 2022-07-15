@@ -292,21 +292,23 @@ ${readMore}
 ° ඬ⃟👾 _${usedPrefix}sakura_
 ° ඬ⃟👾 _${usedPrefix}cosplay_
 
-*<𝔼𝔽𝔼ℂ𝕋𝕆𝕊 𝔻𝔼 𝔸𝕌𝔻𝕀𝕆𝕊/>*
-*- 𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙴 𝙰 𝚄𝙽 𝙰𝚄𝙳𝙸𝙾 𝙾 𝙽𝙾𝚃𝙰 𝙳𝙴 𝚅𝙾𝚉*
-
-° ඬ⃟🎤 _${usedPrefix}bass_
-° ඬ⃟🎤 _${usedPrefix}blown_
-° ඬ⃟🎤 _${usedPrefix}deep_
-° ඬ⃟🎤 _${usedPrefix}earrape_
-° ඬ⃟🎤 _${usedPrefix}fast_
-° ඬ⃟🎤 _${usedPrefix}fat_
-° ඬ⃟🎤 _${usedPrefix}nightcore_
-° ඬ⃟🎤 _${usedPrefix}reverse_
-° ඬ⃟🎤 _${usedPrefix}robot_
-° ඬ⃟🎤 _${usedPrefix}slow_
-° ඬ⃟🎤 _${usedPrefix}smooth_
-° ඬ⃟🎤 _${usedPrefix}tupai_
+*╭━[ MODIFICAR AUDIO 🧰 ]━⬣*
+┃ *Realiza Modificaciones*
+┃ *al Audio o Nota de Voz!!*
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃ 🧰 _${usedPrefix}bass_
+┃ 🧰 _${usedPrefix}blown_
+┃ 🧰 _${usedPrefix}deep_
+┃ 🧰 _${usedPrefix}earrape_
+┃ 🧰 _${usedPrefix}fast_
+┃ 🧰 _${usedPrefix}fat_
+┃ 🧰 _${usedPrefix}nightcore_
+┃ 🧰 _${usedPrefix}reverse_
+┃ 🧰 _${usedPrefix}robot_
+┃ 🧰 _${usedPrefix}slow_
+┃ 🧰 _${usedPrefix}smooth_
+┃ 🧰 _${usedPrefix}tupai_
+*╰━━━━━━━━━━━━⬣*
 
 *<ℂℍ𝔸𝕋 𝔸ℕ𝕆ℕ𝕀𝕄𝕆/>*
 
@@ -314,13 +316,16 @@ ${readMore}
 ° ඬ⃟📳 _${usedPrefix}next_
 ° ඬ⃟📳 _${usedPrefix}leave_
 
-*<𝔹𝕌𝕊ℂ𝔸𝔻𝕆ℝ𝔼𝕊/>*
-
-° ඬ⃟🔍 _${usedPrefix}animeinfo *<texto>*_
-° ඬ⃟🔍 _${usedPrefix}google *<texto>*_
-° ඬ⃟🔍 _${usedPrefix}letra *<texto>*_
-° ඬ⃟🔍 _${usedPrefix}wikipedia *<texto>*_
-° ඬ⃟🔍 _${usedPrefix}ytsearch *<texto>*_
+*╭━━[ BÚSQUEDAS 🔍 ]━━⬣*
+┃ *Busca lo que quieres con GataBot!!*
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃🔍➺ _${usedPrefix}animeinfo *texto*_
+┃🔍➺ _${usedPrefix}mangainfo *texto*_
+┃🔍➺ _${usedPrefix}google *texto*_
+┃🔍➺ _${usedPrefix}letra | lirik *texto*_
+┃🔍➺ _${usedPrefix}ytsearch | yts *texto*_
+┃🔍➺ _${usedPrefix}wiki | wikipedia *texto*_
+*╰━━━━━━━━━━━━⬣*
 
 *╭━━━[ AUDIOS 🔊 ]━━⬣*
 ┃ *Visita el Menú de Audios!!*
