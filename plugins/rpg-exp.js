@@ -93,7 +93,7 @@ let menu = `╭━━〔 *${wm}* 〕━━⬣
 ┃ ✪ *USUARIOS | USERS*
 ┃ ➥ *${Object.keys(global.db.data.users).length}* 
 ╰━━━━━━〔 *𓃠 ${vs}* 〕━━━━━━⬣`.trim()
-conn.sendHydrated(m.chat, menu, wm, null, 'https://github.com/GataNina-Li/GataBot-MD', '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
+conn.sendHydrated(m.chat, menu, wm, null, 'https://github.com/ColapsusHD/FutabuBot-MD', '𝙵𝚞𝚝𝚊𝚋𝚞𝙱𝚘𝚝-𝙼𝙳', null, null, [
 ['𝙀𝙭𝙥𝙚𝙧𝙞𝙚𝙣𝙘𝙞𝙖 𝙥𝙤𝙧 𝘿𝙞𝙖𝙢𝙖𝙣𝙩𝙚 ⚡', '.buy'],
 ['𝙂𝙖𝙩𝙖𝘾𝙤𝙞𝙣𝙨 𝙥𝙤𝙧 𝘿𝙞𝙖𝙢𝙖𝙣𝙩𝙚 🐈', '/buy2'],
 ['𝙏𝙤𝙥𝙨 | 𝙍𝙖𝙣𝙠𝙞𝙣𝙜 🏆', '#top']
