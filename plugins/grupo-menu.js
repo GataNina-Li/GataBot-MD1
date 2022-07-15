@@ -105,6 +105,8 @@ let menu = `
 ┃🌐➺ _${usedPrefix}daradmin | promote *@tag*_
 ┃🌐➺ _${usedPrefix}quitar | demote *@tag*_
 ┃🌐➺ _${usedPrefix}banchat_
+┃🌐➺ _${usedPrefix}reglas_
+┃🌐➺ _${usedPrefix}telegram_
 ┃🌐➺ _${usedPrefix}unbanchat_
 ┃🌐➺ _${usedPrefix}banuser *@tag*_
 ┃🌐➺ _${usedPrefix}unbanuser *@tag*_
