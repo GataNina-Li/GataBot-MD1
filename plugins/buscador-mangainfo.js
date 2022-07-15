@@ -5,13 +5,13 @@ if (!text) throw `${mg}𝙀𝙎𝘾𝙍𝙄𝘽𝘼 𝙀𝙇 𝙉𝙊𝙈𝘽�
 let res = await fetch(global.API('https://api.jikan.moe', '/v3/search/manga', { q: text }))
 if (!res.ok) throw await res.text()
 let json = await res.json()
-let { title, chapters, volumes, members, score, synopsis, episodes, url, rated, score, image_url, type, start_date, end_date, mal_id } = json.results[0]
+let { title, chapters, volumes, members, score, synopsis, url, rated, image_url, type, start_date, end_date, mal_id } = json.results[0]
 let res2 = await fetch(`https://myanimelist.net/manga/${mal_id}`)
 if (!res2.ok) throw await res2.text()
 let html = await res2.text()
 let animeingfo = 
 `𝙏𝙄𝙏𝙐𝙇𝙊 | 𝙏𝙄𝙏𝙇𝙀 
-❣ ${getManga.data.results[0].title}
+❣ ${title}
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 𝙀𝙋𝙄𝙎𝙊𝘿𝙄𝙊𝙎 | 𝙀𝙋𝙄𝙎𝙊𝘿𝙀𝙎
 ❣ ${chapters}
