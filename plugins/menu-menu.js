@@ -375,18 +375,46 @@ ${readMore}
 ┃🏆➺ _${usedPrefix}top | lb | leaderboard_
 *╰━━━━━━━━━━━━⬣*
 
-*<𝕊𝕋𝕀ℂ𝕂𝔼ℝ𝕊/>*
+*╭━[ STICKERS Y FILTROS ]━⬣*
+┃ *Realiza stickers o crea*
+┃ *stickers con filtros!!*
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃🎐 _${usedPrefix}sticker | s *imagen o video*_
+┃🎐 _${usedPrefix}sticker | s *url de tipo jpg*_
+┃🎐 _${usedPrefix}emojimix *😺+😆*_
+┃🎐 _${usedPrefix}scircle | círculo *imagen*_
+┃🎐 _${usedPrefix}semoji | emoji *tipo emoji*_
+┃🎐 _${usedPrefix}attp *texto*_
+┃🎐 _${usedPrefix}attp2 *texto*_
+┃🎐 _${usedPrefix}ttp *texto*_
+┃🎐 _${usedPrefix}ttp2 *texto*_
+┃🎐 _${usedPrefix}ttp3 *texto*_
+┃🎐 _${usedPrefix}ttp4 *texto*_
+┃🎐 _${usedPrefix}ttp5 *texto*_
+┃🎐 _${usedPrefix}ttp6 *texto*_
+┃🎐 _${usedPrefix}dado_
+┃🎐 _${usedPrefix}stickermarker *efecto : responder a imagen*_
+┃🎐 _${usedPrefix}stickerfilter *efecto : responder a imagen*_
+┃🎐 _${usedPrefix}cs *:* cs2_
+*╰━━━━━━━━━━━━⬣*
 
-° ඬ⃟👽 _${usedPrefix}emojimix *<emoji 1>&<emoji 2>*_
-° ඬ⃟👽 _${usedPrefix}attp *<texto>*_
-° ඬ⃟👽 _${usedPrefix}ttp *<texto>*_
-° ඬ⃟👽 _${usedPrefix}pat *<@tag>_
-° ඬ⃟👽 _${usedPrefix}slap *<@tag>_
-° ඬ⃟👽 _${usedPrefix}kiss *<@tag>*_
-° ඬ⃟👽 _${usedPrefix}dado_
-° ඬ⃟👽 _${usedPrefix}wm *<packname> <author>*_
-° ඬ⃟👽 _${usedPrefix}stickermarker *<efecto> <responder a imagen>*_
-° ඬ⃟👽 _${usedPrefix}stickerfilter *<efecto> <responder a imagen>*_
+*╭━[ MODIFICAR STICKERS ]━⬣*
+┃ *Personaliza la información del Sticker!!*
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃💡 _${usedPrefix}wm *packname|author*_
+┃💡 _${usedPrefix}wm *texto1|texto2*_
+*╰━━━━━━━━━━━━⬣*
+
+*╭━[ STICKERS DINÁMICOS ]━⬣*
+┃ *Realiza acciones con Stickers*
+┃ *Etiquetando a alguien!!*
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃⛱️ _${usedPrefix}palmaditas | pat *@tag*_
+┃⛱️ _${usedPrefix}bofetada | slap *@tag*_
+┃⛱️ _${usedPrefix}golpear *@tag*_
+┃⛱️ _${usedPrefix}besar | kiss *@tag*_
+┃⛱️ _${usedPrefix}alimentar | food *@tag*_
+*╰━━━━━━━━━━━━⬣*
 
 *╭━[ MENU PARA PROPIETARIO/A ]━⬣*
 ┃ *Comandos solo para Propietario/a!!*
