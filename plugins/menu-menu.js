@@ -231,16 +231,23 @@ ${readMore}
 ° ඬ⃟🧧 _${usedPrefix}tourl *<responde a un video / imagen / audio>*_
 ° ඬ⃟🧧 _${usedPrefix}tts es *<texto>*_
 
-*<𝔼𝔽𝔼ℂ𝕋𝕆𝕊 𝕐 𝕃𝕆𝔾𝕆𝕊/>*
 
-° ඬ⃟🖍️ _${usedPrefix}logos *<efecto> <texto>*_
-° ඬ⃟🖍️ _${usedPrefix}simpcard *<@tag>*_
-° ඬ⃟🖍️ _${usedPrefix}hornycard *<@tag>*_
-° ඬ⃟🖍️ _${usedPrefix}lolice *<@tag>*_
-° ඬ⃟🖍️ _${usedPrefix}ytcomment *<texto>*_
-° ඬ⃟🖍️ _${usedPrefix}itssostupid_
-° ඬ⃟🖍️ _${usedPrefix}pixelar_
-° ඬ⃟🖍️ _${usedPrefix}blur_
+*╭━━━[ LOGOS 🔆 ]━━⬣*
+┃ *Crea Logos o personaliza*
+┃ *la información del Logo!!*
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃🔆 _${usedPrefix}logos *efecto texto*_
+*╰━━━━━━━━━━━━⬣*
+
+*╭━━━[ EFECTOS ⛺ ]━━⬣*
+┃⛺ _${usedPrefix}simpcard *@tag*_
+┃⛺ _${usedPrefix}hornycard *@tag*_
+┃⛺ _${usedPrefix}lolice *@tag*_
+┃⛺ _${usedPrefix}ytcomment *texto*_
+┃⛺ _${usedPrefix}itssostupid_
+┃⛺ _${usedPrefix}pixelar_
+┃⛺ _${usedPrefix}blur_
+*╰━━━━━━━━━━━━⬣*
 
 *╭━[ RANDOM | ANIME 🧩 ]━⬣*
 ┃🧩 _${usedPrefix}cristianoronaldo_
