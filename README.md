@@ -46,7 +46,8 @@
 -----
 ### 💖 ```DONAR``` [`Aquí`](https://paypal.me/OficialGD)
 ### 🟣 ACTIVAR EN HEROKU 
-	@@ -79,8 +74,8 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
+
+ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 > pkg install ffmpeg -y
 > pkg install imagemagick -y
 > pkg install yarn
@@ -55,15 +56,14 @@
 > npm install
 > yarn install 
 > npm install
-	@@ -98,7 +93,7 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 ```bash
+
 ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 > cd 
 > cd FutabuBot-MD
 > npm start
 ```
 ----
-	@@ -107,15 +102,15 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 ```bash
 ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 > cd 
