@@ -1,6 +1,6 @@
 {
-    "name": "FutabuBot-MD",
-    "version": "1.1.10",
+    "name": "GataBot-MD",
+    "version": "1.1.12",
     "description": "Super Bot WhatsApp",
     "main": "index.js",
     "type": "module",
@@ -14,16 +14,16 @@
         "cli": "node . --optimize_for_size --max_old_space_size=460 index.js",
         "db": "node . --autocleartmp --db 'mongodb+srv://BrunoSobrino:Akhmad6825@cluster0.mflne.mongodb.net/TheMystic-Bot?retryWrites=true&w=majority'"
     },
-    "homepage": "https://github.com/ColapsusHD",
+    "homepage": "https://github.com/GataNina-Li",
     "author": {
-        "name": "Colapsus"
+        "name": "GataNina-Li"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/ColapsusHD/FutabuBot-MD.git"
+        "url": "git+https://github.com/GataNina-Li/GataBot-MD.git"
     },
     "bugs": {
-        "url": "https://github.com/ColapsusHD/FutabuBot-MD/issues"
+        "url": "https://github.com/GataNina-Li/GataBot-MD/issues"
     },
     "license": "MIT",
     "dependencies": {

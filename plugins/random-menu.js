@@ -70,7 +70,7 @@ let username = conn.getName(who)
 let menu = `
 💗 *¡HOLA | HI!* ${username}
 ╭━━〔 *${wm}* 〕━━⬣
-┃🎈🎈🎈🎈🎈🎈🎈🎈🎈
+┃⛩️⛩️⛩️⛩️⛩️⛩️⛩️⛩️⛩️
 ┃✪ *EXPERIENCIA | EXP ➺ ${exp}*
 ┃✪ *NIVEL | LEVEL ➺ ${level}*
 ┃✪ *ROL ➺* ${role}
@@ -78,19 +78,60 @@ let menu = `
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃✪ *FECHA ➺ ${week}, ${date}*
 ┃✪ *USUARIOS | USERS ➺ ${Object.keys(global.db.data.users).length}* 
-┃🎈🎈🎈🎈🎈🎈🎈🎈🎈
+┃⛩️⛩️⛩️⛩️⛩️⛩️⛩️⛩️⛩️
 ╰━━━━━━〔 𓃠 *${vs}* 〕━━━━━━⬣
 
-╭━〔 𝙈𝙀𝙉𝙐 𝘿𝙀 𝘽𝙐𝙎𝙌𝙐𝙀𝘿𝘼𝙎 〕━⬣
+╭━〔 𝙍𝘼𝙉𝘿𝙊𝙈 𝙈𝙀𝙈𝙀 | 𝘼𝙉𝙄𝙈𝙀 〕━⬣
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃🔍➺ _${usedPrefix}animeinfo *texto*_
-┃🔍➺ _${usedPrefix}mangainfo *texto*_
-┃🔍➺ _${usedPrefix}google *texto*_
-┃🔍➺ _${usedPrefix}letra | lirik *texto*_
-┃🔍➺ _${usedPrefix}ytsearch | yts *texto*_
-┃🔍➺ _${usedPrefix}wiki | wikipedia *texto*_
+┃🧩 _${usedPrefix}cristianoronaldo_
+┃🧩 _${usedPrefix}messi_
+┃🧩 _${usedPrefix}meme_
+┃🧩 _${usedPrefix}itzy_
+┃🧩 _${usedPrefix}blackpink_
+┃🧩 _${usedPrefix}kpop *blackpink : exo : bts*_
+┃🧩 _${usedPrefix}lolivid_
+┃🧩 _${usedPrefix}loli_
+┃🧩 _${usedPrefix}navidad_
+┃🧩 _${usedPrefix}ppcouple_
+┃🧩 _${usedPrefix}neko_
+┃🧩 _${usedPrefix}waifu_
+┃🧩 _${usedPrefix}akira_
+┃🧩 _${usedPrefix}akiyama_
+┃🧩 _${usedPrefix}anna_
+┃🧩 _${usedPrefix}asuna_
+┃🧩 _${usedPrefix}ayuzawa_
+┃🧩 _${usedPrefix}boruto_
+┃🧩 _${usedPrefix}chiho_
+┃🧩 _${usedPrefix}chitoge_
+┃🧩 _${usedPrefix}deidara_
+┃🧩 _${usedPrefix}erza_
+┃🧩 _${usedPrefix}elaina_
+┃🧩 _${usedPrefix}eba_
+┃🧩 _${usedPrefix}emilia_
+┃🧩 _${usedPrefix}hestia_
+┃🧩 _${usedPrefix}hinata_
+┃🧩 _${usedPrefix}inori_
+┃🧩 _${usedPrefix}isuzu_
+┃🧩 _${usedPrefix}itachi_
+┃🧩 _${usedPrefix}itori_
+┃🧩 _${usedPrefix}kaga_
+┃🧩 _${usedPrefix}kagura_
+┃🧩 _${usedPrefix}kaori_
+┃🧩 _${usedPrefix}keneki_
+┃🧩 _${usedPrefix}kotori_
+┃🧩 _${usedPrefix}kurumi_
+┃🧩 _${usedPrefix}madara_
+┃🧩 _${usedPrefix}mikasa_
+┃🧩 _${usedPrefix}miku_
+┃🧩 _${usedPrefix}minato_
+┃🧩 _${usedPrefix}naruto_
+┃🧩 _${usedPrefix}nezuko_
+┃🧩 _${usedPrefix}sagiri_
+┃🧩 _${usedPrefix}sasuke_
+┃🧩 _${usedPrefix}sakura_
+┃🧩 _${usedPrefix}cosplay_
 ╰━━━━━━━━━━━━━━━━━━━⬣`.trim()
-conn.sendHydrated(m.chat, menu, wm, pp, 'https://github.com/ColapsusHD/FutabuBot-MD', '𝙵𝚞𝚝𝚊𝚋𝚞𝙱𝚘𝚝-𝙼𝙳', null, null, [
+conn.sendHydrated(m.chat, menu, wm, pp, 'https://github.com/GataNina-Li/GataBot-MD', '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
 ['𝙈𝙚𝙣𝙪́ 𝙘𝙤𝙢𝙥𝙡𝙚𝙩𝙤 | 𝙁𝙪𝙡𝙡 𝙈𝙚𝙣𝙪 💫', '.allmenu'],
 ['𝙈𝙚𝙣𝙪 𝙙𝙚𝙨𝙥𝙡𝙚𝙜𝙖𝙗𝙡𝙚 | 𝙈𝙚𝙣𝙪 𝙇𝙞𝙨𝙩 🌟', '/menulista'],
 ['𝙈𝙚𝙣𝙪 𝙋𝙧𝙞𝙣𝙘𝙞𝙥𝙖𝙡 | 𝙈𝙖𝙞𝙣 𝙢𝙚𝙣𝙪 ⚡', '#menu']
@@ -99,7 +140,7 @@ conn.sendHydrated(m.chat, menu, wm, pp, 'https://github.com/ColapsusHD/FutabuBot
 
 handler.help = ['infomenu'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
-handler.command = /^(buscarmenu)$/i
+handler.command = /^(randommenu)$/i
 //handler.register = true
 handler.exp = 70
 export default handler

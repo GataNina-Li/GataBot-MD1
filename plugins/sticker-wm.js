@@ -20,4 +20,5 @@ else throw `${fg}𝙍𝙀𝘾𝙐𝙀𝙍𝘿𝙀 𝙍𝙀𝙎𝙋𝙊𝙉𝘿�
 handler.help = ['wm <packname>|<author>']
 handler.tags = ['sticker']
 handler.command = /^wm|crearwm$/i
+handler.level = 4
 export default handler

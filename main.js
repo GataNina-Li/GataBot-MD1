@@ -1,4 +1,4 @@
-process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '0';
+/*process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '0';
 import './config.js';
 
 import { createRequire } from "module"; // Bring in the ability to create the 'require' method 
@@ -94,7 +94,6 @@ const { state, saveState } = store.useSingleFileAuthState(global.authFile)
 const connectionOptions = {
   printQRInTerminal: true,
   auth: state,
-  browser: ['FutabuBot-MD','Edge','1.0.0']
   // logger: pino({ level: 'trace' })
 }
 
@@ -278,11 +277,11 @@ async function _quickTest() {
 
 _quickTest()
   .then(() => conn.logger.info('Quick Test Done'))
-  .catch(console.error)
+  .catch(console.error)*/
 
 
 
-/*process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '0';
+process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '0';
 import './config.js';
 
 import { createRequire } from "module"; // Bring in the ability to create the 'require' method 
@@ -558,6 +557,11 @@ async function _quickTest() {
   if (!s.convert && !s.magick && !s.gm) conn.logger.warn('Stickers may not work without imagemagick if libwebp on ffmpeg doesnt isntalled (pkg install imagemagick)')
 }
 
+setInterval(async () => {
+var a = await clearTmp()
+console.log(conn.logger.info(`\n▣────────[ 𝙰𝚄𝚃𝙾𝙲𝙻𝙴𝙰𝚁𝚃𝙼𝙿 ]───────────···\n│\n▣─❧ 𝙰𝚁𝙲𝙷𝙸𝚅𝙾𝚂 𝙴𝙻𝙸𝙼𝙸𝙽𝙰𝙳𝙾𝚂 ✅\n│\n▣────────────────────────────────────···\n`))
+}, 180000)
+
 _quickTest()
   .then(() => conn.logger.info('Quick Test Done'))
-  .catch(console.error)*/
+  .catch(console.error)
