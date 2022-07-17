@@ -13,5 +13,5 @@ conn.sendFile(m.chat, audio.data, 'error.mp3', '', m, true, { mimetype: 'audio/m
 }
 handler.help = ['tovn (reply)']
 handler.tags = ['audio']
-handler.command = /^to(vn|(ptt)?)$/i
+handler.command = /^tovn|vn|ptt$/i
 export default handler
