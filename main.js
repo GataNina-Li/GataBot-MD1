@@ -564,4 +564,4 @@ console.log(conn.logger.info(`\n▣────────[ 𝙰𝚄𝚃𝙾�
 
 _quickTest()
   .then(() => conn.logger.info('Quick Test Done'))
-  .catch(console.error)*/
+  .catch(console.error)
