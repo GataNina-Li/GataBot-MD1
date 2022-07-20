@@ -30,7 +30,7 @@ handler.tags = ['info']
 handler.command = /^(contacto|owner|creator|propietario|dueño|dueña|propietaria|dueño|creadora|creador)$/i
 export default handler*/
 
-
+import fs from 'fs'
 let handler = async (m, { conn, usedPrefix }) => {
 var doc = ['pdf','zip','vnd.openxmlformats-officedocument.presentationml.presentation','vnd.openxmlformats-officedocument.spreadsheetml.sheet','vnd.openxmlformats-officedocument.wordprocessingml.document']
 var document = doc[Math.floor(Math.random() * doc.length)]    
@@ -55,7 +55,7 @@ let buttonMessage= {
 'previewType': 'pdf',
 'title': 'Super Bot',
 'body': wm,
-'thumbnail': gataimg,
+'thumbnail': fs.readFileSync('./media/menus/Menu3.jpg'),
 'sourceUrl': yt }},
 'caption': text,
 'footer': wm,
