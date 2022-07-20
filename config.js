@@ -106,7 +106,7 @@ global.nnngrupo = nnnt //Grupo 3
 global.paypal = 'https://paypal.me/OficialGD'
 global.donar = paypal
 
-global.gataimg = fs.readFileSync('./media/menus/Menu3.jpg')
+//global.gataimg = fs.readFileSync('./media/menus/Menu3.jpg')
 
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 
