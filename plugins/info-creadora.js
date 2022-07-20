@@ -40,6 +40,7 @@ let text = `
 *Wa.me/51993042301 (BOT)*
 *https://www.instagram.com/gata_dios*
 `.trim()   
+
 let buttonMessage= {
 'document': { url: md },
 'mimetype': `application/${document}`,
@@ -60,13 +61,21 @@ let buttonMessage= {
 'caption': text,
 'footer': wm,
 'buttons':[
-{buttonId: `${usedPrefix}menu`, buttonText: {displayText: 'Menu'}, type: 1}, 
-{buttonId: `${usedPrefix}menu`, buttonText: {displayText: 'Menu'}, type: 1}, 
+{buttonId: `${usedPrefix}donar`, buttonText: {displayText: '🎁 𝘿𝙤𝙣𝙖𝙧 | 𝘿𝙤𝙣𝙖𝙩𝙚'}, type: 1}, 
+{buttonId: `${usedPrefix}infobot`, buttonText: {displayText: '🐈 𝙄𝙣𝙛𝙤𝙧𝙢𝙖𝙘𝙞𝙤𝙣 | 𝙄𝙣𝙛𝙤𝙧𝙢𝙖𝙩𝙞𝙤𝙣'}, type: 1}, 
 {buttonId: `${usedPrefix}donar`, buttonText: {displayText: 'Donar'}, type: 1}],
 'headerType': 6 }
+
 conn.sendMessage(m.chat, buttonMessage, { quoted: m })
 const data = global.owner.filter(([id, isCreator]) => id && isCreator)
 await conn.sendContact(m.chat, data.map(([id, name]) => [id, name]), m)
+  
+let pp = './media/menus/Menu2.jpg'
+let str = `🧡 *Eso son los contactos para ti.*\n💜 *That's the contacts for you.*`
+
+conn.sendHydrated2(m.chat, str, wm, pp, 'https://github.com/GataNina-Li/GataBot-MD', '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', 'https://www.instagram.com/gata_dios', '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢', [
+['☘ 𝙄𝙧 𝙖𝙡 𝙞𝙣𝙞𝙘𝙞𝙤 | 𝙂𝙤 𝙩𝙤 𝙨𝙩𝙖𝙧𝙩', '/menu'],
+], m,)
 }
 handler.help = ['owner', 'creator']
 handler.tags = ['info']
