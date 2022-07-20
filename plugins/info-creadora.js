@@ -1,4 +1,4 @@
-import fs from 'fs'
+/*import fs from 'fs'
 function handler(m, { conn }) {
 let text = `
 *𝘾𝙤𝙣𝙩𝙖𝙘𝙩𝙤 | 𝘾𝙤𝙣𝙩𝙖𝙘𝙩* 
@@ -28,4 +28,46 @@ conn.sendHydrated(m.chat, str, wm, pp, 'https://www.instagram.com/gata_dios', '�
 handler.help = ['owner', 'creator']
 handler.tags = ['info']
 handler.command = /^(contacto|owner|creator|propietario|dueño|dueña|propietaria|dueño|creadora|creador)$/i
+export default handler*/
+
+
+let handler = async (m, { conn, usedPrefix }) => {
+var doc = ['pdf','zip','vnd.openxmlformats-officedocument.presentationml.presentation','vnd.openxmlformats-officedocument.spreadsheetml.sheet','vnd.openxmlformats-officedocument.wordprocessingml.document']
+var document = doc[Math.floor(Math.random() * doc.length)]    
+let text = `
+*𝘾𝙤𝙣𝙩𝙖𝙘𝙩𝙤 | 𝘾𝙤𝙣𝙩𝙖𝙘𝙩* 
+*Wa.me/593993684821 (BOT)*
+*Wa.me/51993042301 (BOT)*
+*https://www.instagram.com/gata_dios*
+`.trim()   
+let buttonMessage= {
+'document': { url: md },
+'mimetype': `application/${document}`,
+'fileName': `「  𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿  」`,
+'fileLength': 99999999999999,
+'pageCount': 200,
+'contextInfo': {
+'forwardingScore': 200,
+'isForwarded': true,
+'externalAdReply': {
+'mediaUrl': md,
+'mediaType': 2,
+'previewType': 'pdf',
+'title': 'Super Bot',
+'body': wm,
+'thumbnail': gataimg,
+'sourceUrl': yt }},
+'caption': text,
+'footer': wm,
+'buttons':[
+{buttonId: `${usedPrefix}menu`, buttonText: {displayText: 'Menu'}, type: 1}, 
+{buttonId: `${usedPrefix}donar`, buttonText: {displayText: 'Donar'}, type: 1}],
+'headerType': 6 }
+conn.sendMessage(m.chat, buttonMessage, { quoted: m })
+const data = global.owner.filter(([id, isCreator]) => id && isCreator)
+await conn.sendContact(m.chat, data.map(([id, name]) => [id, name]), m)
+}
+handler.help = ['owner', 'creator']
+handler.tags = ['info']
+handler.command = /^(owner|creator|creador|propietario)$/i
 export default handler
