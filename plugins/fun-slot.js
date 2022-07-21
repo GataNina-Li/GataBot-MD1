@@ -12,8 +12,8 @@ if (!args[0]) throw fa
 if (isNaN(args[0])) throw fa
 let apuesta = parseInt(args[0])
 let users = global.db.data.users[m.sender]
-let time = users.lastslot + 10000
-if (new Date - users.lastslot < 10000) throw `𝙑𝙐𝙀𝙇𝙑𝘼 𝙀𝙉 *${msToTime(time - new Date())}* 𝙋𝘼𝙍𝘼 𝘾𝙊𝙉𝙏𝙄𝙉𝙐𝘼𝙍 𝘼𝙋𝙊𝙎𝙏𝘼𝙉𝘿𝙊
+let time = users.lastmining + 10000
+if (new Date - users.lastmining < 10000) throw `𝙑𝙐𝙀𝙇𝙑𝘼 𝙀𝙉 *${msToTime(time - new Date())}* 𝙋𝘼𝙍𝘼 𝘾𝙊𝙉𝙏𝙄𝙉𝙐𝘼𝙍 𝘼𝙋𝙊𝙎𝙏𝘼𝙉𝘿𝙊
 
 𝘾𝙊𝙈𝙀 𝘽𝘼𝘾𝙆 𝙄𝙉 *${msToTime(time - new Date())}* 𝙏𝙊 𝘾𝙊𝙉𝙏𝙄𝙉𝙐𝙀 𝘽𝙀𝙏𝙏𝙄𝙉𝙂`
 
