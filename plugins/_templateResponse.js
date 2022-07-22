@@ -3,7 +3,7 @@ const {
     generateWAMessage,
     areJidsSameUser
 } = (await import('@adiwajshing/baileys')).default
-
+ 
 export async function all(m, chatUpdate) {
     if (m.isBaileys)
         return
