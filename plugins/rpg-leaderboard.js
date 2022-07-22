@@ -48,7 +48,7 @@ ${sortedMoney.slice(0, len).map(({ jid, money }, i) => `${i + 1}. ${participants
   //await conn.reply(m.chat, text, m, { 
   //  contextInfo: {
     //  mentionedJid: [...usersExp.slice(0, len), ...usersLim.slice(0, len), ...usersLevel.slice(0, len), ...usersRole.slice(0, len), ...usersMoney.slice(0, len)].filter(v => !participants.some(p => v === p.jid))
-    //}
+    //} 
   //})
 await conn.sendHydrated(m.chat, wm, `𝘼𝙘𝙩𝙪𝙖𝙡𝙞𝙯𝙖 𝙩𝙪𝙨 𝘿𝙖𝙩𝙤𝙨 𝙘𝙤𝙣 𝙡𝙤𝙨 𝘽𝙤𝙩𝙤𝙣𝙚𝙨 𝙙𝙚 𝘼𝙗𝙖𝙟𝙤 𝙚𝙣 𝙚𝙡 𝙏𝙤𝙥 | 𝙍𝙖𝙣𝙠𝙞𝙣𝙜 𝙤 𝙘𝙤𝙣 𝙚𝙡 𝙘𝙤𝙢𝙖𝙣𝙙𝙤:\n${usedPrefix}nivel\n${usedPrefix}exp\n${usedPrefix}rol`, null, md, '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
 ['𝙈𝙚𝙣𝙪 𝙅𝙪𝙚𝙜𝙤𝙨 | 𝙂𝙖𝙢𝙚𝙨 𝙈𝙚𝙣𝙪 🎡', '#juegosmenu'],
