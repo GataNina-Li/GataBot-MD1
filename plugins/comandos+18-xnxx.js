@@ -16,4 +16,6 @@ m.reply(`${fg}𝙉𝙊 𝙁𝙐𝙉𝘾𝙄𝙊𝙉𝙊, 𝙐𝙎𝙀 𝙐𝙉 �
 console.log(e)
 }}
 handler.command = /^(xnxx|videoxnxx|xnxxvideo|xnxxdl)$/i
+handler.level = 5
+handler.limit = 3
 export default handler
