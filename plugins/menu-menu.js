@@ -232,11 +232,15 @@ ${readMore}
 *╰━━━━━━━━━━━━⬣*
 
 *╭━[ CONVERTIDORES 🛰️ ]━⬣*
+┃ *Convierte sticker en imagen!!*
+┃ *Crea enlace de archivos!!*
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃🛰️➺ _${usedPrefix}toimg | img | jpg *sticker*_
 ┃🛰️➺ _${usedPrefix}tomp3 | mp3 *video o nota de voz*_
 ┃🛰️➺ _${usedPrefix}tovn | vn *video o audio*_
 ┃🛰️➺ _${usedPrefix}tovideo *audio*_
-┃🛰️➺ _${usedPrefix}tourl | toenlace *video, imagen o audio*_
+┃🛰️➺ _${usedPrefix}tourl *video, imagen*_
+┃🛰️➺ _${usedPrefix}toenlace  *video, imagen o audio*_
 ┃🛰️➺ _${usedPrefix}tts es *texto*_
 *╰━━━━━━━━━━━━⬣*
 
