@@ -81,13 +81,14 @@ let menu = `
 ┃📍📍📍📍📍📍📍📍📍
 ╰━━━━━━〔 𓃠 *${vs}* 〕━━━━━━⬣
 
-╭━〔 𝘾𝙊𝙉𝙑𝙀𝙍𝙏𝙄𝘿𝙊𝙍𝙀𝙎 | 𝘾𝙊𝙉𝙑𝙀𝙍𝙏𝙀𝙍 〕━⬣
+╭━〔 𝘾𝙊𝙉𝙑𝙀𝙍𝙏𝙄𝘿𝙊𝙍 | 𝘾𝙊𝙉𝙑𝙀𝙍𝙏𝙀𝙍 〕━⬣
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃🛰️➺ _${usedPrefix}toimg | img | jpg *sticker*_
 ┃🛰️➺ _${usedPrefix}tomp3 | mp3 *video o nota de voz*_
 ┃🛰️➺ _${usedPrefix}tovn | vn *video o audio*_
 ┃🛰️➺ _${usedPrefix}tovideo *audio*_
-┃🛰️➺ _${usedPrefix}tourl | toenlace *video, imagen o audio*_
+┃🛰️➺ _${usedPrefix}tourl *video, imagen*_
+┃🛰️➺ _${usedPrefix}toenlace  *video, imagen o audio*_
 ┃🛰️➺ _${usedPrefix}tts es *texto*_
 ╰━━━━━━━━━━━━━━━━━━━⬣`.trim()
 conn.sendHydrated(m.chat, menu, wm, pp, 'https://github.com/GataNina-Li/GataBot-MD', '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
