@@ -231,15 +231,14 @@ ${readMore}
 ┃🔞➺ _${usedPrefix}hornymenu_
 *╰━━━━━━━━━━━━⬣*
 
-*<ℂ𝕆ℕ𝕍𝔼ℝ𝕋𝕀𝔻𝕆ℝ𝔼𝕊/>*
-
-° ඬ⃟🧧 _${usedPrefix}toimg *<responde a un sticker>*_
-° ඬ⃟🧧 _${usedPrefix}tomp3 *<responde a un video / nota de voz>*_
-° ඬ⃟🧧 _${usedPrefix}toptt *<responde a un video / audio>*_
-° ඬ⃟🧧 _${usedPrefix}tovideo *<responde a un audio>*_
-° ඬ⃟🧧 _${usedPrefix}tourl *<responde a un video / imagen / audio>*_
-° ඬ⃟🧧 _${usedPrefix}tts es *<texto>*_
-
+*╭━[ CONVERTIDORES 🛰️ ]━⬣*
+┃🛰️➺ _${usedPrefix}toimg | img | jpg *sticker*_
+┃🛰️➺ _${usedPrefix}tomp3 | mp3 *video o nota de voz*_
+┃🛰️➺ _${usedPrefix}tovn | vn *video o audio*_
+┃🛰️➺ _${usedPrefix}tovideo *audio*_
+┃🛰️➺ _${usedPrefix}tourl | toenlace *video, imagen o audio*_
+┃🛰️➺ _${usedPrefix}tts es *texto*_
+*╰━━━━━━━━━━━━⬣*
 
 *╭━━━[ LOGOS 🔆 ]━━⬣*
 ┃ *Crea Logos o personaliza*
