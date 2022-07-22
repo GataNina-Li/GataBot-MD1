@@ -31,7 +31,7 @@ let top = `*🌈TOP 10 GAYS/LESBIANAS DEL GRUPO🌈*
 *_8.- 🪂 ${user(h)}_* 🪂
 *_9.- 🪁 ${user(i)}_* 🪁
 *_10.- 🏳️‍🌈 ${user(j)}_* 🏳️‍🌈`
-await m.reply(top, null, { mentions: conn.parseMention(top) })
+m.reply(top, null, { mentions: conn.parseMention(top) })
 //m.reply(top, null, {
 
 //conn.sendHydrated(m.chat, top, wm, null, md, '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
