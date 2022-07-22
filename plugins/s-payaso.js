@@ -1,3 +1,4 @@
+import { sticker } from '../lib/sticker.js'
 let handler = async(m, { conn }) => {
   
 const s = [
