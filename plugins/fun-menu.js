@@ -88,6 +88,15 @@ let menu = `
 ┃🎡➺ _${usedPrefix}ppt *piedra : papel : tijera*_
 ┃🎡➺ _${usedPrefix}topgays_
 ┃🎡➺ _${usedPrefix}topotakus_
+┃🎡➺ _${usedPrefix}topintegrantes | topintegrante_
+┃🎡➺ _${usedPrefix}toplagrasa | topgrasa_
+┃🎡➺ _${usedPrefix}toppanafrescos | toppanafresco_
+┃🎡➺ _${usedPrefix}topshiposters | topshipost_
+┃🎡➺ _${usedPrefix}toppajeros | toppajer@s_
+┃🎡➺ _${usedPrefix}toplindos | toplind@s_
+┃🎡➺ _${usedPrefix}topputos | topput@s_
+┃🎡➺ _${usedPrefix}topfamosos | topfamos@s_
+┃🎡➺ _${usedPrefix}topparejas | top5parejas_
 ┃🎡➺ _${usedPrefix}gay | gay *@tag*_
 ┃🎡➺ _${usedPrefix}gay2 *nombre : @tag*_
 ┃🎡➺ _${usedPrefix}lesbiana *nombre : @tag*_
