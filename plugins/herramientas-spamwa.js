@@ -7,7 +7,7 @@ if (jumlah && isNaN(jumlah)) throw `𝙀𝙉 𝘾𝘼𝙉𝙏𝙄𝘿𝘼𝘿 �
 let fixedNumber = nomor.replace(/[-+<>@]/g, '').replace(/ +/g, '').replace(/^[0]/g, '62') + '@s.whatsapp.net'
 let fixedJumlah = jumlah ? jumlah * 1 : 10
 if (fixedJumlah > 50) throw `${fg}𝙈𝙄𝙉𝙄𝙈𝙊 *50* 𝙈𝙀𝙉𝙎𝘼𝙅𝙀𝙎 𝙋𝘼𝙍𝘼 𝙃𝘼𝘾𝙀𝙍 𝙀𝙇 𝙎𝙋𝘼𝙈\n\n𝙈𝙄𝙉𝙄𝙈𝙐𝙈 *50* 𝙈𝙀𝙎𝙎𝘼𝙂𝙀𝙎 𝙏𝙊 𝙎𝙋𝘼𝙈`
-await m.reply(`${eg}𝙀𝙇 𝙎𝙋𝘼𝙈 𝙎𝙀 𝙀𝙉𝙑𝙄𝙊 *${fixedJumlah}* VECES A *${nomor}*\n\n𝙏𝙃𝙀 𝙎𝙋𝘼𝙈 𝙒𝘼𝙎 𝙎𝙀𝙉𝙏 *${fixedJumlah}* 𝙏𝙄𝙈𝙀𝙎 𝙏𝙊 *${nomor}*`)
+await m.reply(`${eg}𝙀𝙇 𝙎𝙋𝘼𝙈 𝙎𝙀 𝙀𝙉𝙑𝙄𝙊 *${fixedJumlah}* 𝙑𝙀𝘾𝙀𝙎 𝘼 *${nomor}*\n\n𝙏𝙃𝙀 𝙎𝙋𝘼𝙈 𝙒𝘼𝙎 𝙎𝙀𝙉𝙏 *${fixedJumlah}* 𝙏𝙄𝙈𝙀𝙎 𝙏𝙊 *${nomor}*`)
 for (let i = fixedJumlah; i > 1; i--) {
 if (i !== 0) conn.reply(fixedNumber, pesan.trim(), m)
 }}
