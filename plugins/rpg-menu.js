@@ -102,6 +102,7 @@ let menu = `
 ┃⚗️➺ _${usedPrefix}dargatacoins *cantidad*_
 ┃⚗️➺ _${usedPrefix}transfer *tipo cantidad @user*_
 ┃⚗️➺ _${usedPrefix}balance_
+┃⚗️➺ _${usedPrefix}cartera | wallet_
 ┃⚗️➺ _${usedPrefix}experiencia | exp_
 ┃⚗️➺ _${usedPrefix}top | lb | leaderboard_
 ┃⚗️➺ _${usedPrefix}nivel | level | lvl_
