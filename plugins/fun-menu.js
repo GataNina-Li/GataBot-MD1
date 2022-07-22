@@ -102,7 +102,7 @@ let menu = `
 ┃🎡➺ _${usedPrefix}doxear *nombre : @tag*_
 ┃🎡➺ _${usedPrefix}doxxeame_
 ┃🎡➺ _${usedPrefix}pregunta *texto*_
-┃🎡➺ _${usedPrefix}slot *apuesta*_
+┃🎡➺ _${usedPrefix}apostar | slot *cantidad*_
 ┃🎡➺ _${usedPrefix}formarpareja_
 ┃🎡➺ _${usedPrefix}dado_
 ┃🎡➺ _${usedPrefix}verdad_
