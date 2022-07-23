@@ -27,7 +27,7 @@ const s = [
 'https://img-15.stickers.cloud/packs/e4e40cc1-9ad1-47c2-aeba-88d246b9b6ac/webp/31d3fc0b-3dc3-43da-bdc8-700a492f8c26.webp'
 ];  
  
- let stiker = await sticker(s, null, global.packname, global.author)
+ let stiker = await sticker(null, s, global.packname, global.author)
  conn.sendFile(m.chat, stiker, null, { asSticker: true })
  
  }
