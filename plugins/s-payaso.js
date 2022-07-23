@@ -10,6 +10,6 @@ conn.sendFile(m.chat, s, 'sticker.webp', '', m)
      //let stiker = await sticker(null, url, global.packname, global.author)
      //conn.sendFile(m.chat, stiker, null, { asSticker: true })
 }
-handler.customPrefix = /payaso|🤡|pallaso/
+handler.customPrefix = /payaso|🤡|pallaso/ 
 handler.command = new RegExp
 export default handler
