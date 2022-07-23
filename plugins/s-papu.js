@@ -17,7 +17,7 @@ conn.sendFile(m.chat, stiker, null, { asSticker: true })
 //conn.sendFile(m.chat, s, 'sticker.gif', null, m)
  
  }
-handler.customPrefix = /^(papu)$/i  
+handler.customPrefix = /^papu$/i  
 handler.command = new RegExp
 handler.exp = 50
 export default handler
