@@ -16,4 +16,5 @@ conn.sendFile(m.chat, stiker, null, { asSticker: true })
  }
 handler.customPrefix = /papu/i 
 handler.command = new RegExp
+handler.exp = 50
 export default handler
