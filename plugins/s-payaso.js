@@ -28,10 +28,10 @@ if (!db.data.chats[m.chat].stickers && m.isGroup) throw `${ag}𝙇𝙊𝙎 𝘾�
 //const s = [
 //'https://file.io/j0cuzZpQSp97'
 //];  
-let s = './media/stickers/prueba.mp4'
+let s = "./media/stickers/prueba.mp4"
  
  let stiker = await sticker(null, s, global.packname, global.author)
- conn.sendFile(m.chat, s, null, { asSticker: true })
+ conn.sendFile(m.chat, stiker, null, { asSticker: true })
 //conn.sendFile(m.chat, stiker, 'sticker.webp', null, m)
 
  //conn.sendFile(m.chat, stiker, 'sticker.webp', '', m, null, { asSticker: true })
