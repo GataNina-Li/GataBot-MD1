@@ -11,17 +11,13 @@ if (!db.data.chats[m.chat].stickers && m.isGroup) throw `${ag}𝙇𝙊𝙎 𝘾�
  //    'https://img-15.stickers.cloud/packs/e4e40cc1-9ad1-47c2-aeba-88d246b9b6ac/webp/31d3fc0b-3dc3-43da-bdc8-700a492f8c26.webp'
 //];  
 //conn.sendFile(m.chat, s, 'sticker.webp', '', m)
-let q = m.quoted ? m.quoted : m
-let mime = (q.msg || q).mimetype || q.mediaType || ''
-q.download?.()
-if (/webp/g.test(mime)) = await webp2png(img)
 
-const url = [
+const s = [
 'https://img-16.stickers.cloud/packs/f73a3b52-02ed-4f9c-83ea-969d698b6200/webp/animated/2887d998-3f0c-424a-aaeb-132bad02da58.webp'
 //'https://img-15.stickers.cloud/packs/e4e40cc1-9ad1-47c2-aeba-88d246b9b6ac/webp/31d3fc0b-3dc3-43da-bdc8-700a492f8c26.webp'
 ]; 
-     let stiker = await sticker(null, url, global.packname, global.author)
-     conn.sendFile(m.chat, stiker, 'sticker.webp', { asSticker: true })
+     let stiker = await sticker(null, s, global.packname, global.author)
+     conn.sendFile(m.chat, stiker, null, { asSticker: true })
 }
 handler.customPrefix = /payaso|🤡|pallaso/ 
 handler.command = new RegExp
