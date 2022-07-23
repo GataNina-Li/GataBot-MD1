@@ -95,10 +95,10 @@ global.gatadiosig = ig
 global.md = 'https://github.com/GataNina-Li/GataBot-MD'
 global.gatabot = md
 
-global.nn = 'https://chat.whatsapp.com/Hahc7UwSouH9jIDStkT5QW'
+global.nn = 'https://chat.whatsapp.com/EbX1SWnKWLaERnPGEMLUxe'
 global.nngrupo = nn //Grupo 1
 
-global.nnn = 'https://chat.whatsapp.com/J96jlutgGlr1gaKgafBj8b'
+global.nnn = 'https://chat.whatsapp.com/CgeNpQwHF6VHghgFxIXSXi'
 global.nnngrupo = nnn //Grupo 2
 
 global.nnnt = 'https://chat.whatsapp.com/LJs5xqqTLrN51npqfAnGXD'
