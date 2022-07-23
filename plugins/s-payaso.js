@@ -30,7 +30,7 @@ const s = [
 ];  
  
  let stiker = await sticker(null, s, global.packname, global.author)
- conn.sendFile(m.chat, stiker, 'sticker.webp', null, m)
+// conn.sendFile(m.chat, stiker, 'sticker.webp', null, m)
 // conn.sendFile(m.chat, stiker, null, { asSticker: true })
  conn.sendFile(m.chat, stiker, 'sticker.webp', 'Hola', m, null, { asSticker: true })
  
