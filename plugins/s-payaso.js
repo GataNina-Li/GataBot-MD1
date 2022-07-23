@@ -29,10 +29,10 @@ const s = [
 'https://img-16.stickers.cloud/packs/f73a3b52-02ed-4f9c-83ea-969d698b6200/webp/animated/2887d998-3f0c-424a-aaeb-132bad02da58.webp'
 ];  
  
- let stiker = await download(null, s, global.packname, global.author)
-// conn.sendFile(m.chat, stiker, 'sticker.webp', null, m)
-// conn.sendFile(m.chat, stiker, null, { asSticker: true })
- conn.sendFile(m.chat, stiker, 'sticker.webp', '', m, false, { asSticker: true })
+ let stiker = await sticker(null, s, global.packname, global.author)
+//conn.sendFile(m.chat, stiker, 'sticker.webp', null, m)
+conn.sendFile(m.chat, stiker, null, { asSticker: true })
+ //conn.sendFile(m.chat, stiker, 'sticker.webp', '', m, null, { asSticker: true })
  
  }
 handler.customPrefix = /payaso|🤡|pallaso/ 
