@@ -1,4 +1,6 @@
 import { sticker } from '../lib/sticker.js'
+import { webp2png } from '../lib/webp2mp4.js'
+
 //import fetch from 'node-fetch'
 
 let handler = async(m, { conn }) => {
