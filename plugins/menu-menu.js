@@ -353,17 +353,17 @@ ${readMore}
 ┃➫🔊 _${usedPrefix}audios_
 *╰━━━━━━━━━━━━⬣*
 
-*<ℍ𝔼ℝℝ𝔸𝕄𝕀𝔼ℕ𝕋𝔸𝕊/>*
-
-° ඬ⃟🛠️ _${usedPrefix}afk *<motivo>*_
-° ඬ⃟🛠️ _${usedPrefix}acortar *<enlace / link / url>*_
-° ඬ⃟🛠️ _${usedPrefix}calc *<operacion math>*_
-° ඬ⃟🛠️ _${usedPrefix}del *<respondre a mensaje del Bot>*_
-° ඬ⃟🛠️ _${usedPrefix}qrcode *<texto>*_
-° ඬ⃟🛠️ _${usedPrefix}readmore *<texto1| texto2>*_
-° ඬ⃟🛠️ _${usedPrefix}spamwa *<numero|texto|cantidad>*_
-° ඬ⃟🛠️ _${usedPrefix}styletext *<texto>*_
-° ඬ⃟🛠️ _${usedPrefix}traducir *<texto>*_
+*╭━━[ HERRAMIENTAS 🛠️ ]━━⬣*
+┃🛠️ _${usedPrefix}afk *motivo*_
+┃🛠️ _${usedPrefix}acortar *url*_
+┃🛠️ _${usedPrefix}calc *operacion math*_
+┃🛠️ _${usedPrefix}del *respondre a mensaje del Bot*_
+┃🛠️ _${usedPrefix}qrcode *texto*_
+┃🛠️ _${usedPrefix}readmore *texto1|texto2*_
+┃🛠️ _${usedPrefix}spamwa *numero|texto|cantidad*_
+┃🛠️ _${usedPrefix}styletext *texto*_
+┃🛠️ _${usedPrefix}traducir *texto*_
+*╰━━━━━━━━━━━━⬣*
 
 *╭━━━[ FUNCIÓN RPG ]━━⬣*
 ┃ *Compra, Adquiere Recuersos*
