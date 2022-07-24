@@ -454,7 +454,7 @@ await conn.sendHydrated2(m.chat, str, wm, null, 'https://github.com/GataNina-Li/
 ['💝 𝙈𝙚𝙣𝙪 𝘼𝙪𝙙𝙞𝙤𝙨 💝', '.audios']
 
 ], m,)
-await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, {
+await conn.sendFile(m.chat, null, 'menu.mp3', null, m, true, {
 type: 'audioMessage', 
 ptt: true})
 } catch (e) {
