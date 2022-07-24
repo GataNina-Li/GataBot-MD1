@@ -19,9 +19,9 @@ const s = [
 //'https://c.tenor.com/woUBgv2VLKoAAAAC/didnt-xd.gif',
 //'https://img.wattpad.com/2b0a1d3963768b68bf2a50af1206e0e3ed6e5d46/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f326b6174556d5a55542d777546413d3d2d38322e313634663337626661323934613934663433343634353630383138392e6a7067?s=fit&w=720&h=720',
 //'https://pbs.twimg.com/media/ExhbbMvWUAAjaTJ.jpg',
-'https://i.pinimg.com/originals/51/ec/ca/51eccabf758cfa6ddf23a7d62b82fbcf.jpg',
-/*'https://i0.wp.com/ytimg.googleusercontent.com/vi/MwM7FPazq6Q/maxresdefault.jpg?resize=650,400',
-'https://i.gifer.com/99do.gif',
+//'https://i.pinimg.com/originals/51/ec/ca/51eccabf758cfa6ddf23a7d62b82fbcf.jpg',
+'https://i0.wp.com/ytimg.googleusercontent.com/vi/MwM7FPazq6Q/maxresdefault.jpg?resize=650,400',
+/*'https://i.gifer.com/99do.gif',
 'https://i.gifer.com/G0ph.gif',
 'https://i.gifer.com/VLgZ.gif',*/
 'https://i.gifer.com/4q.gif' 
