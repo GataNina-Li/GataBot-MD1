@@ -6,10 +6,10 @@ let nombre = '🐈 𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿'
 let nombre2 = '𝙂𝙖𝙩𝙖 𝘿𝙞𝙤𝙨'
  
 const s = [
-//'https://c.tenor.com/BBNrRQkKdcUAAAAi/anime.gif',
-//'https://c.tenor.com/OHMxfMcU4eQAAAAi/anime-girl.gif',  
-//'https://c.tenor.com/7nadUsiwZioAAAAd/satanichia-gabriel-dropout.gif',
-//'https://c.tenor.com/Gr6Z_6lBm2kAAAAd/satania-satanichia.gif',
+'https://c.tenor.com/BBNrRQkKdcUAAAAi/anime.gif',
+'https://c.tenor.com/OHMxfMcU4eQAAAAi/anime-girl.gif',  
+'https://c.tenor.com/7nadUsiwZioAAAAd/satanichia-gabriel-dropout.gif',
+'https://c.tenor.com/Gr6Z_6lBm2kAAAAd/satania-satanichia.gif',
 'https://i.pinimg.com/originals/e4/f7/a2/e4f7a2ca99c568e64c1d41f2a61133eb.jpg',  
 'https://i.pinimg.com/474x/b0/62/3f/b0623f46719f73be8b2d65357d8e30b2.jpg',
 'https://i.pinimg.com/736x/e4/df/2d/e4df2d77375455726233c66882e5e0e7.jpg',
