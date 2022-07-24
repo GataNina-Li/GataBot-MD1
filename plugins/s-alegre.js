@@ -9,7 +9,7 @@ const s = [
 'https://c.tenor.com/-8qgEEd80skAAAAi/chika.gif',
 'https://c.tenor.com/GLpWclhFs28AAAAi/mine-funny.gif',
 'https://c.tenor.com/KyoAsIz_GH8AAAAi/heat-wave.gif',
-'https://c.tenor.com/4cNykyUM0M0AAAAi/draxy-stickery.gif
+'https://c.tenor.com/4cNykyUM0M0AAAAi/draxy-stickery.gif',
 'https://c.tenor.com/-I1sYsJQ-XUAAAAi/vibe-dance.gif',  
 'https://media4.giphy.com/media/5dQQUpPjaZQeQ/giphy.gif?cid=ecf05e47wz1ny77fqnp8gvps730g2edfumud5kz2pqe9wh2o&rid=giphy.gif&ct=g',
 'https://c.tenor.com/U-XE486arkUAAAAi/chika-fujiwara-chika.gif'
