@@ -332,7 +332,7 @@ export async function handler(chatUpdate) {
         const isMods = isOwner || global.mods.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
         const isPrems = isROwner || global.prems.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
 
-        if (opts['queque'] && m.text && !(isMods || isPrems)) {
+       /* if (opts['queque'] && m.text && !(isMods || isPrems)) {
             let queque = this.msgqueque, time = 1000 * 5
             const previousID = queque[queque.length - 1]
             queque.push(m.id || m.key.id)
@@ -340,6 +340,12 @@ export async function handler(chatUpdate) {
                 if (queque.indexOf(previousID) === -1) clearInterval(this)
                 await delay(time)
             }, time)
+        } */
+        
+        if (opts['queque'] && m.text && !m.fromMe && !(isMods || isPrems)) {
+            const id = m.id
+            this.msgqueque.add(id)
+            await this.msgqueque.waitQueue(id)
         }
 
         if (m.isBaileys)
