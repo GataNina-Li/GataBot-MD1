@@ -7,7 +7,7 @@ let nombre2 = '𝙂𝙖𝙩𝙖 𝘿𝙞𝙤𝙨'
  
 const s = [
 'https://c.tenor.com/-8qgEEd80skAAAAi/chika.gif',
-'https://c.tenor.com/GLpWclhFs28AAAAi/mine-funny.gif',
+'https://c.tenor.com/GLpWclhFs28AAAAi/mine-funny.gif', 
 'https://c.tenor.com/KyoAsIz_GH8AAAAi/heat-wave.gif',
 'https://c.tenor.com/4cNykyUM0M0AAAAi/draxy-stickery.gif',
 'https://c.tenor.com/-I1sYsJQ-XUAAAAi/vibe-dance.gif',  
