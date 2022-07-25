@@ -16,4 +16,4 @@ gunakan .profile untuk mengecek
     }
 }
 
-export const disabled = true
+export const disabled = false
