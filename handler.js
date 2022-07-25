@@ -56,8 +56,7 @@ export async function handler(chatUpdate) {
                         user.age = -1
                     if (!isNumber(user.regTime))
                         user.regTime = -1
-	            if (!isNumber(user.premiumDate)) 
-			user.premiumDate = -1
+	            
                 }
                 if (!isNumber(user.afk))
                     user.afk = -1
@@ -71,14 +70,9 @@ export async function handler(chatUpdate) {
                     user.level = 0
                 if (!('role' in user))
                     user.role = 'Novato'
-		if (!('premium' in user)) 
-		    user.premium = false
                 if (!('autolevelup' in user)) 
                     user.autolevelup = false
-                if (!user.premium) 
-                    user.premium = false
-                if (!user.premium) 
-                    user.premiumTime= 0
+                
 
                 if (!isNumber(user.money))
                     user.money = 0
@@ -196,8 +190,6 @@ export async function handler(chatUpdate) {
                     level: 0,
                     role: 'Novato',
                     autolevelup: false,
-                    premium: false,
-                    premiumTime: 0,
 
                     money: 0,
                     health: 100,
@@ -280,10 +272,6 @@ export async function handler(chatUpdate) {
                     chat.autosticker = false                    
                 if (!('audios' in chat))
                     chat.audios = false  
-                if (!('premium' in chat)) 
-                    chat.premium = false
-                if (!('premiumTime' in chat)) 
-                    chat.premiumTime = false
                 if (!('antiLink' in chat))
                     chat.antiLink = false
                 if (!('antiLink2' in chat))
@@ -308,8 +296,6 @@ export async function handler(chatUpdate) {
                     stickers: true,
                     autosticker: false,
                     audios: true,
-                    premium: false,
-	                premiumTime: false,
                     antiLink: false,
                     antiLink2: false,
                     viewonce: false,
