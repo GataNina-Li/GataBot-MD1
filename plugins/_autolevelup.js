@@ -40,9 +40,10 @@ export const disabled = true */
 import db from '../lib/database.js'
 import { canLevelUp } from '../lib/levelling.js'
 
-export function before(m) {
+export function before(m, { conn }) {  
 	
     let user = global.db.data.users[m.sender]
+    let { role } = conn.getName(conn.user.jid)
     if (!user.autolevelup)
         return !0
 	
