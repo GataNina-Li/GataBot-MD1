@@ -2,7 +2,8 @@ import db from '../lib/database.js'
 import { canLevelUp } from '../lib/levelling.js'
 
 export function before(m) {
-    let user = db.data.users[m.sender]
+    let { user, role } = global.db.data.users[m.sender]
+    //let user = db.data.users[m.sender]
     if (!user.autolevelup)
         return !0
   
@@ -11,9 +12,16 @@ export function before(m) {
 
     if (before !== user.level) {
 m.reply(`
-Selamat, anda telah naik level!
-*${before}* -> *${user.level}*
-gunakan *.profile* untuk mengecek
+╭━━━[ 𝙉𝙄𝙑𝙀𝙇 | 𝙇𝙀𝙑𝙀𝙇 ]━━━━⬣
+┃ NIVEL ANTERIOR: ${before}
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃ NIVEL ACTUAL: ${user.level}
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃ RANGO ${role}
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃ FECHA: ${new Date().toLocaleString('id-ID')}
+╰━━━〔 𓃠 ${vs} 〕━━━━━⬣
+Cuanto más interactúes con GataBot-MD, mayor será tu nivel!!
 `.trim())
   }
 }
