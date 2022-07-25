@@ -10,9 +10,9 @@ ${mg}𝘿𝙀𝘽𝙀 𝘿𝙀 𝙐𝙎𝘼𝙍 𝘿𝙀 𝙇𝘼 𝙎𝙄𝙂�
 
 if (!args[0]) throw fa
 if (isNaN(args[0])) throw fa
-let apuesta = parseInt(args[0])
-let apuesta2 = parseInt(args[0])
-let apuesta3 = parseInt(args[0])
+let { apuesta, apuesta2, apuesta3 } = parseInt(args[0])
+//let apuesta2 = parseInt(args[0])
+//let apuesta3 = parseInt(args[0])
 let users = global.db.data.users[m.sender]
 let time = users.lastmining + 10000
 if (new Date - users.lastmining < 10000) throw `𝙑𝙐𝙀𝙇𝙑𝘼 𝙀𝙉 *${msToTime(time - new Date())}* 𝙋𝘼𝙍𝘼 𝘾𝙊𝙉𝙏𝙄𝙉𝙐𝘼𝙍 𝘼𝙋𝙊𝙎𝙏𝘼𝙉𝘿𝙊
@@ -111,14 +111,14 @@ if (c == emojis.length) c = 0;
 }
 let end;
 if (a == b && b == c) {
-end = `✨ *QUE PRO!! HAS GANADO +${apuesta + apuesta} GataCoins*\n\n🥳 *COOL!! YOU JUST WON +${apuesta + apuesta} GataCoins*`
-users.money += apuesta
+end = `✨ *QUE PRO!! HAS GANADO +${apuesta2 + apuesta2} GataCoins*\n\n🥳 *COOL!! YOU JUST WON +${apuesta2 + apuesta2} GataCoins*`
+users.money += apuesta2
 } else if (a == b || a == c || b == c) {
 end = `🙀 *CASI!!, VUELVA A INTENTAR*\n*BONO DE +30 GataCoins*\n\n😯 *ALMOST!!, TRY AGAIN*\n*BONDS OF +30 GataCoins*`
 users.money += 30
 } else {
 end = `😿 *HA PERDIDO!! ❌ -${apuesta} GataCoins*\n\n*HAS LOST!! ❌ -${apuesta} GataCoins*`
-users.money -= apuesta
+users.money -= apuesta2
 }
 users.lastslot = new Date * 1
 //return await m.reply(
@@ -167,14 +167,14 @@ if (c == emojis.length) c = 0;
 }
 let end;
 if (a == b && b == c) {
-end = `✨ *QUE PRO!! HAS GANADO +${apuesta + apuesta} Diamantes*\n\n🥳 *COOL!! YOU JUST WON +${apuesta + apuesta} Diamantes*`
+end = `✨ *QUE PRO!! HAS GANADO +${apuesta3 + apuesta3} Diamantes*\n\n🥳 *COOL!! YOU JUST WON +${apuesta3 + apuesta3} Diamantes*`
 users.limit += apuesta
 } else if (a == b || a == c || b == c) {
 end = `🙀 *CASI!!, VUELVA A INTENTAR*\n*BONO DE +2 Diamantes*\n\n😯 *ALMOST!!, TRY AGAIN*\n*BONDS OF +2 Diamantes*`
 users.limit += 2
 } else {
-end = `😿 *HA PERDIDO!! ❌ -${apuesta} Diamantes*\n\n*HAS LOST!! ❌ -${apuesta} Diamantes*`
-users.limit -= apuesta
+end = `😿 *HA PERDIDO!! ❌ -${apuesta3} Diamantes*\n\n*HAS LOST!! ❌ -${apuesta3} Diamantes*`
+users.limit -= apuesta3
 }
 users.lastslot = new Date * 1
 //return await m.reply(
@@ -195,14 +195,14 @@ await conn.sendHydrated(m.chat, `${sss}\n\n${end}`, wm, null, md, '𝙂𝙖𝙩�
         
         
 if (command == 'slot') {       
-await conn.sendHydrated(m.chat, `*Elija en que apostará el valor de ${apuesta}*`, wm, null, md, '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
+await conn.sendHydrated(m.chat, `*Elija en que apostará*`, wm, null, md, '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
 ['⚡ 𝙀𝙓𝙋', `${usedPrefix}slot1 ${apuesta}`],
 ['🐈 𝙂𝘼𝙏𝘼𝘾𝙊𝙄𝙉𝙎', `${usedPrefix}slot2 ${apuesta2}`],
 ['💎 𝘿𝙄𝘼𝙈𝘼𝙉𝙏𝙀𝙎', `${usedPrefix}slot3 ${apuesta3}`]
 ], m,)}
         
 if (command == 'apostar') {       
-await conn.sendHydrated(m.chat, `*Elija en que apostará el valor de ${apuesta}*\n\n*Choose what you will bet the value of ${apuesta}*`, wm, null, md, '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
+await conn.sendHydrated(m.chat, `*Elija en que apostará*\n\n*Choose what you will*`, wm, null, md, '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
 ['⚡ 𝙀𝙓𝙋', `${usedPrefix}slot1 ${apuesta}`],
 ['🐈 𝙂𝘼𝙏𝘼𝘾𝙊𝙄𝙉𝙎', `${usedPrefix}slot2 ${apuesta2}`],
 ['💎 𝘿𝙄𝘼𝙈𝘼𝙉𝙏𝙀𝙎', `${usedPrefix}slot3 ${apuesta3}`]
