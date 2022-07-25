@@ -12,7 +12,7 @@ export function before(m, { conn }) {
     if (before !== user.level) {
 	        
 let str = 
-`╭━━━[ *𝙉𝙄𝙑𝙀𝙇 | 𝙇𝙀𝙑𝙀𝙇* ]━━━━⬣
+(`╭━━━[ *𝙉𝙄𝙑𝙀𝙇 | 𝙇𝙀𝙑𝙀𝙇* ]━━━━⬣
 ┃ *NIVEL ANTERIOR:* *${before}*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃ *NIVEL ACTUAL:* *${user.level}*
@@ -22,15 +22,10 @@ let str =
 ┃ *FECHA:* *${new Date().toLocaleString('id-ID')}*
 ╰━━━〔 *𓃠 ${vs}* 〕━━━━━⬣
 *_Cuanto más interactúes con GataBot-MD, mayor será tu nivel!!_*
-`.trim()
+`.trim())
 
-try {
-          let img = './src/lvlup_template.jpg'
-           conn.sendFile(m.chat, img, 'levelup.jpg', str, m)
-    } catch (e) {
-           m.reply(str)
-  }
- }
-}
+let img = './src/lvlup_template.jpg'
+conn.sendFile(m.chat, img, 'levelup.jpg', str, m)
+}}
   
 export const disabled = false
