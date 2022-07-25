@@ -63,7 +63,7 @@ let str =
 ┃ *FECHA:* *${new Date().toLocaleString('id-ID')}*
 ╰━━━〔 *𓃠 ${vs}* 〕━━━━━⬣
 *_Cuanto más interactúes con GataBot-MD, mayor será tu nivel!!_*
-`.trim())
+`.trim()
 try {
        const img = await levelup(teks, user.level)
         conn.sendFile(m.chat, img, 'levelup.jpg', str, m)
