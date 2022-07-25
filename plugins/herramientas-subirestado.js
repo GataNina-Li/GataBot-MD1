@@ -10,7 +10,7 @@ const colors = [
     0xff8294ca, 0xffa62c71,
     0xffff8a8c, 0xff7e90a3,
     0xff74676a
-]
+] 
 let handler = async (m, { conn, text }) => {
     let _m = Promise.resolve({ key: { id: '' }})
     if (!m.quoted && !text) throw '*_Ingrese un texto o reponda a algun archivo multimedia_*'

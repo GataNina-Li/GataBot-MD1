@@ -26,5 +26,5 @@ conn.sendHydrated(m.chat, `╭━━━[ 𝙂𝘼𝙏𝘼𝘾𝙊𝙄𝙉𝙎 �
 handler.help = ['addgb <@user>']
 handler.tags = ['gatacoins']
 handler.command = ['añadirgatacoins', 'añadirgata', 'añadircoins', 'dargatacoins', 'dargata', 'darcoins'] 
-handler.rowner = true
+handler.group = true
 export default handler

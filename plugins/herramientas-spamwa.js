@@ -1,14 +1,13 @@
-let handler = async (m, { conn, text }) => {
+let handler = async (m, { conn, text, usedPrefix, command }) => {
 
 let [nomor, pesan, jumlah] = text.split('|')
-if (!nomor) throw '*[ ⚠️ ] 𝙿𝙾𝚁 𝙵𝙰𝚅𝙾𝚁 𝙸𝙽𝙶𝚁𝙴𝚂𝙴 𝙴𝙻 𝙽𝚄𝙼𝙴𝚁𝙾 𝙰𝙻 𝙲𝚄𝙰𝙻 𝚂𝙴 𝙻𝙴 𝙷𝙰𝚁𝙰 𝙴𝙻 𝚂𝙿𝙰𝙼 𝙳𝙴 𝙼𝙴𝙽𝚂𝙰𝙹𝙴𝚂!*\n*𝚄𝚂𝙾 𝙲𝙾𝚁𝚁𝙴𝙲𝚃𝙾:*\n*—◉ #spamwa numero|texto|cantidad*\n*𝙴𝙹𝙴𝙼𝙿𝙻𝙾:*\n*—◉ #spamwa 5219999999999|responde :v|25*'
-if (!pesan) throw '*[ ⚠️ ] 𝙿𝙾𝚁 𝙵𝙰𝚅𝙾𝚁 𝙸𝙽𝙶𝚁𝙴𝚂𝙴 𝙴𝙻 𝙼𝙴𝙽𝚂𝙰𝙹𝙴 𝙿𝙰𝚁𝙰 𝙷𝙰𝙲𝙴𝚁 𝙴𝙻 𝚂𝙿𝙰𝙼!*\n*𝚄𝚂𝙾 𝙲𝙾𝚁𝚁𝙴𝙲𝚃𝙾:*\n*—◉ #spamwa numero|texto|cantidad*\n*𝙴𝙹𝙴𝙼𝙿𝙻𝙾:*\n*—◉ #spamwa 5219999999999|responde :v|25*'
-if (jumlah && isNaN(jumlah)) throw '*[ ⚠️ ] 𝙻𝙰 𝙲𝙰𝙽𝚃𝙸𝙳𝙰𝙳 𝙳𝙴𝙱𝙴 𝚂𝙴𝚁 𝚄𝙽 𝙽𝚄𝙼𝙴𝚁𝙾!*\n*𝚄𝚂𝙾 𝙲𝙾𝚁𝚁𝙴𝙲𝚃𝙾:*\n*—◉ #spamwa numero|texto|cantidad*\n*𝙴𝙹𝙴𝙼𝙿𝙻𝙾:*\n*—◉ #spamwa 5219999999999|responde :v|25*'
-
+if (!nomor) throw `${mg}𝙄𝙉𝙂𝙍𝙀𝙎𝙀 𝙀𝙇 𝙉𝙐𝙈𝙀𝙍𝙊 𝘼𝙇 𝙌𝙐𝙀 𝙎𝙀 𝙇𝙀 𝙃𝘼𝙍𝘼 𝙎𝙋𝘼𝙈\n*❊ ${usedPrefix + command} numero|texto|cantidad*\n𝙀𝙅𝙀𝙈𝙋𝙇𝙊\n*❊ ${usedPrefix + command} 999999999999|Holaaa|35*\n\n𝙀𝙉𝙏𝙀𝙍 𝙏𝙃𝙀 𝙉𝙐𝙈𝘽𝙀𝙍 𝙏𝙊 𝘽𝙀 𝙎𝙋𝘼𝙈𝙀𝘿\n*❊ ${usedPrefix + command} number|text|amount*\n𝙀𝙓𝘼𝙈𝙋𝙇𝙀\n*❊ ${usedPrefix + command} 999999999999|Hi!!|35*`
+if (!pesan) throw `${mg}𝙄𝙉𝙂𝙍𝙀𝙎𝙀 𝙀𝙇 𝙉𝙐𝙈𝙀𝙍𝙊 𝘼𝙇 𝙌𝙐𝙀 𝙎𝙀 𝙇𝙀 𝙃𝘼𝙍𝘼 𝙎𝙋𝘼𝙈\n*❊ ${usedPrefix + command} numero|texto|cantidad*\n𝙀𝙅𝙀𝙈𝙋𝙇𝙊\n*❊ ${usedPrefix + command} 999999999999|Holaaa|35*\n\n𝙀𝙉𝙏𝙀𝙍 𝙏𝙃𝙀 𝙉𝙐𝙈𝘽𝙀𝙍 𝙏𝙊 𝘽𝙀 𝙎𝙋𝘼𝙈𝙀𝘿\n*❊ ${usedPrefix + command} number|text|amount*\n𝙀𝙓𝘼𝙈𝙋𝙇𝙀\n*❊ ${usedPrefix + command} 999999999999|Hi!!|35*`
+if (jumlah && isNaN(jumlah)) throw `𝙀𝙉 𝘾𝘼𝙉𝙏𝙄𝘿𝘼𝘿 𝘿𝙀𝘽𝙀 𝘿𝙀 𝙄𝙍 𝙀𝙇 𝙉𝙐𝙈𝙀𝙍𝙊 𝘼𝙇 𝙌𝙐𝙀 𝙎𝙀 𝙇𝙀 𝙃𝘼𝙍𝘼 𝙎𝙋𝘼𝙈\n*❊ ${usedPrefix + command} numero|texto|cantidad*\n𝙀𝙅𝙀𝙈𝙋𝙇𝙊\n*❊ ${usedPrefix + command} 999999999999|Holaaa|35*\n\n𝙀𝙉𝙏𝙀𝙍 𝙏𝙃𝙀 𝙉𝙐𝙈𝘽𝙀𝙍 𝙏𝙊 𝘽𝙀 𝙎𝙋𝘼𝙈𝙀𝘿\n*❊ ${usedPrefix + command} number|text|amount*\n𝙀𝙓𝘼𝙈𝙋𝙇𝙀\n*❊ ${usedPrefix + command} 999999999999|Hi!!|35*`
 let fixedNumber = nomor.replace(/[-+<>@]/g, '').replace(/ +/g, '').replace(/^[0]/g, '62') + '@s.whatsapp.net'
 let fixedJumlah = jumlah ? jumlah * 1 : 10
-if (fixedJumlah > 50) throw '*[ ⚠️ ] 𝙳𝙴𝙼𝙰𝚂𝙸𝙰𝙳𝙾𝚂 𝙼𝙴𝙽𝚂𝙰𝙹𝙴𝚂! 𝙻𝙰 𝙲𝙰𝙽𝚃𝙸𝙳𝙰𝙳 𝙳𝙴𝙱𝙴 𝚂𝙴𝚁 𝙼𝙴𝙽𝙾𝚁 𝙰 𝟻0 𝙼𝙴𝙽𝚂𝙰𝙹𝙴𝚂*️'
-await m.reply(`*[❗] 𝙴𝙻 𝚂𝙿𝙰𝙼 𝙳𝙴 𝙼𝙴𝙽𝚂𝙰𝙹𝙴𝚂 𝙰𝙻 𝙽𝚄𝙼𝙴𝚁𝙾 ${nomor} 𝙵𝚄𝙴 𝚁𝙴𝙰𝙻𝙸𝚉𝙰𝙳𝙾 𝙲𝙾𝙽 𝙴𝚇𝙸𝚃𝙾*\n*𝙲𝙰𝙽𝚃𝙸𝙳𝙰𝙳 𝙴𝙽𝚅𝙸𝙰𝙳𝙰:*\n*—◉ ${fixedJumlah} 𝚟𝚎𝚌𝚎𝚜!*`)
+if (fixedJumlah > 50) throw `${fg}𝙈𝙄𝙉𝙄𝙈𝙊 *50* 𝙈𝙀𝙉𝙎𝘼𝙅𝙀𝙎 𝙋𝘼𝙍𝘼 𝙃𝘼𝘾𝙀𝙍 𝙀𝙇 𝙎𝙋𝘼𝙈\n\n𝙈𝙄𝙉𝙄𝙈𝙐𝙈 *50* 𝙈𝙀𝙎𝙎𝘼𝙂𝙀𝙎 𝙏𝙊 𝙎𝙋𝘼𝙈`
+await m.reply(`${eg}𝙀𝙇 𝙎𝙋𝘼𝙈 𝙎𝙀 𝙀𝙉𝙑𝙄𝙊 *${fixedJumlah}* 𝙑𝙀𝘾𝙀𝙎 𝘼 *${nomor}*\n\n𝙏𝙃𝙀 𝙎𝙋𝘼𝙈 𝙒𝘼𝙎 𝙎𝙀𝙉𝙏 *${fixedJumlah}* 𝙏𝙄𝙈𝙀𝙎 𝙏𝙊 *${nomor}*`)
 for (let i = fixedJumlah; i > 1; i--) {
 if (i !== 0) conn.reply(fixedNumber, pesan.trim(), m)
 }}
@@ -18,4 +17,4 @@ handler.command = /^spam(wa)?$/i
 handler.group = false
 handler.premium = false
 handler.private = true
-export default handler
+export default handler 
