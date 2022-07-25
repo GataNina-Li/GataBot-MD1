@@ -118,6 +118,15 @@ ${readMore}
 ┃🎡➺ _${usedPrefix}ppt *piedra : papel : tijera*_
 ┃🎡➺ _${usedPrefix}topgays_
 ┃🎡➺ _${usedPrefix}topotakus_
+┃🎡➺ _${usedPrefix}topintegrantes | topintegrante_
+┃🎡➺ _${usedPrefix}toplagrasa | topgrasa_
+┃🎡➺ _${usedPrefix}toppanafrescos | toppanafresco_
+┃🎡➺ _${usedPrefix}topshiposters | topshipost_
+┃🎡➺ _${usedPrefix}toppajeros | toppajer@s_
+┃🎡➺ _${usedPrefix}toplindos | toplind@s_
+┃🎡➺ _${usedPrefix}topputos | topput@s_
+┃🎡➺ _${usedPrefix}topfamosos | topfamos@s_
+┃🎡➺ _${usedPrefix}topparejas | top5parejas_
 ┃🎡➺ _${usedPrefix}gay | gay *@tag*_
 ┃🎡➺ _${usedPrefix}gay2 *nombre : @tag*_
 ┃🎡➺ _${usedPrefix}lesbiana *nombre : @tag*_
@@ -132,7 +141,7 @@ ${readMore}
 ┃🎡➺ _${usedPrefix}doxear *nombre : @tag*_
 ┃🎡➺ _${usedPrefix}doxxeame_
 ┃🎡➺ _${usedPrefix}pregunta *texto*_
-┃🎡➺ _${usedPrefix}slot *apuesta*_
+┃🎡➺ _${usedPrefix}apostar | slot *cantidad*_
 ┃🎡➺ _${usedPrefix}formarpareja_
 ┃🎡➺ _${usedPrefix}dado_
 ┃🎡➺ _${usedPrefix}verdad_
@@ -222,15 +231,18 @@ ${readMore}
 ┃🔞➺ _${usedPrefix}hornymenu_
 *╰━━━━━━━━━━━━⬣*
 
-*<ℂ𝕆ℕ𝕍𝔼ℝ𝕋𝕀𝔻𝕆ℝ𝔼𝕊/>*
-
-° ඬ⃟🧧 _${usedPrefix}toimg *<responde a un sticker>*_
-° ඬ⃟🧧 _${usedPrefix}tomp3 *<responde a un video / nota de voz>*_
-° ඬ⃟🧧 _${usedPrefix}toptt *<responde a un video / audio>*_
-° ඬ⃟🧧 _${usedPrefix}tovideo *<responde a un audio>*_
-° ඬ⃟🧧 _${usedPrefix}tourl *<responde a un video / imagen / audio>*_
-° ඬ⃟🧧 _${usedPrefix}tts es *<texto>*_
-
+*╭━[ CONVERTIDORES 🛰️ ]━⬣*
+┃ *Convierte sticker en imagen!!*
+┃ *Crea enlace de archivos!!*
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃🛰️➺ _${usedPrefix}toimg | img | jpg *sticker*_
+┃🛰️➺ _${usedPrefix}tomp3 | mp3 *video o nota de voz*_
+┃🛰️➺ _${usedPrefix}tovn | vn *video o audio*_
+┃🛰️➺ _${usedPrefix}tovideo *audio*_
+┃🛰️➺ _${usedPrefix}tourl *video, imagen*_
+┃🛰️➺ _${usedPrefix}toenlace  *video, imagen o audio*_
+┃🛰️➺ _${usedPrefix}tts es *texto*_
+*╰━━━━━━━━━━━━⬣*
 
 *╭━━━[ LOGOS 🔆 ]━━⬣*
 ┃ *Crea Logos o personaliza*
@@ -341,17 +353,17 @@ ${readMore}
 ┃➫🔊 _${usedPrefix}audios_
 *╰━━━━━━━━━━━━⬣*
 
-*<ℍ𝔼ℝℝ𝔸𝕄𝕀𝔼ℕ𝕋𝔸𝕊/>*
-
-° ඬ⃟🛠️ _${usedPrefix}afk *<motivo>*_
-° ඬ⃟🛠️ _${usedPrefix}acortar *<enlace / link / url>*_
-° ඬ⃟🛠️ _${usedPrefix}calc *<operacion math>*_
-° ඬ⃟🛠️ _${usedPrefix}del *<respondre a mensaje del Bot>*_
-° ඬ⃟🛠️ _${usedPrefix}qrcode *<texto>*_
-° ඬ⃟🛠️ _${usedPrefix}readmore *<texto1| texto2>*_
-° ඬ⃟🛠️ _${usedPrefix}spamwa *<numero|texto|cantidad>*_
-° ඬ⃟🛠️ _${usedPrefix}styletext *<texto>*_
-° ඬ⃟🛠️ _${usedPrefix}traducir *<texto>*_
+*╭━━[ HERRAMIENTAS 🛠️ ]━━⬣*
+┃🛠️ _${usedPrefix}afk *motivo*_
+┃🛠️ _${usedPrefix}acortar *url*_
+┃🛠️ _${usedPrefix}calc *operacion math*_
+┃🛠️ _${usedPrefix}del *respondre a mensaje del Bot*_
+┃🛠️ _${usedPrefix}qrcode *texto*_
+┃🛠️ _${usedPrefix}readmore *texto1|texto2*_
+┃🛠️ _${usedPrefix}spamwa *numero|texto|cantidad*_
+┃🛠️ _${usedPrefix}styletext *texto*_
+┃🛠️ _${usedPrefix}traducir *texto*_
+*╰━━━━━━━━━━━━⬣*
 
 *╭━━━[ FUNCIÓN RPG ]━━⬣*
 ┃ *Compra, Adquiere Recuersos*
@@ -458,7 +470,7 @@ await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, {
 type: 'audioMessage', 
 ptt: true})
 } catch (e) {
-conn.reply(m.chat, '*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝙻 𝙼𝙴𝙽𝚄 𝚃𝙸𝙴𝙽𝙴 𝚄𝙽 𝙴𝚁𝚁𝙾𝚁 𝚈 𝙽𝙾 𝙵𝚄𝙴 𝙿𝙾𝚂𝙸𝙱𝙻𝙴 𝙴𝙽𝚅𝙸𝙰𝚁𝙻𝙾, 𝚁𝙴𝙿𝙾𝚁𝚃𝙴𝙻𝙾 𝙰𝙻 𝙿𝚁𝙾𝙿𝙸𝙴𝚃𝙰𝚁𝙸𝙾 𝙳𝙴𝙻 𝙱𝙾𝚃*', m)
+conn.reply(m.chat, `${fg}𝙀𝙍𝙍𝙊𝙍 𝙀𝙉 𝙀𝙇 𝙈𝙀𝙉𝙐, 𝙍𝙀𝙋𝙊𝙍𝙏𝘼 𝘾𝙊𝙉 𝙀𝙇 𝘾𝙊𝙈𝘼𝙉𝘿𝙊 *#reporte*\n\n𝙀𝙍𝙍𝙊𝙍 𝙄𝙉 𝙏𝙃𝙀 𝙈𝙀𝙉𝙐, 𝙍𝙀𝙋𝙊𝙍𝙏 𝙏𝙃𝙄𝙎 𝙒𝙄𝙏𝙃 𝙏𝙃𝙀 𝘾𝙊𝙈𝙈𝘼𝙉𝘿 *#report*`, m)
 throw e
 }}
 handler.help = ['menu', 'help', '?']

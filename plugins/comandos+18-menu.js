@@ -113,6 +113,13 @@ let menu = `
 ┃»🥵 _${usedPrefix}videosfutanari3 | PRONTO!_
 ┃»🥵 _${usedPrefix}videosfutanari4 | PRONTO!_
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃ ❤️‍🔥 𝘽𝙐𝙎𝘾𝘼 𝙔 𝘿𝙀𝙎𝘾𝘼𝙍𝙂𝘼 ❤️‍🔥
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃❤️‍🔥➺ _${usedPrefix}xnxxsearch | buscarxnxx *texto*_
+┃❤️‍🔥➺ _${usedPrefix}xvideossearch *texto*_
+┃❤️‍🔥➺ _${usedPrefix}xnxxdl | xnxx *enlace*_
+┃❤️‍🔥➺ _${usedPrefix}xvideosdl | xvideos *enlace*_
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃ 🔥 𝘾𝙊𝙉𝙏𝙀𝙉𝙄𝘿𝙊 𝙋𝙇𝙐𝙎 🔥
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃ *Usar bajo su responsabilidad* 

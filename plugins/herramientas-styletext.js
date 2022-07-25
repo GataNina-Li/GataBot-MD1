@@ -20,5 +20,5 @@ let name = tr.querySelector('.aname').innerHTML
 let content = tr.children[1].textContent.replace(/^\n/, '').replace(/\n$/, '')
 obj[name + (obj[name] ? ' Reversed' : '')] = content
 }
-return obj
+return obj 
 }

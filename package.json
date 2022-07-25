@@ -1,6 +1,6 @@
 {
     "name": "GataBot-MD",
-    "version": "1.1.12",
+    "version": "1.1.22",
     "description": "Super Bot WhatsApp",
     "main": "index.js",
     "type": "module",
@@ -12,7 +12,7 @@
     "scripts": {
         "start": "node index.js",
         "cli": "node . --optimize_for_size --max_old_space_size=460 index.js",
-        "db": "node . --autocleartmp --db 'mongodb+srv://BrunoSobrino:Akhmad6825@cluster0.mflne.mongodb.net/TheMystic-Bot?retryWrites=true&w=majority'"
+        "db": "node . --autocleartmp --db 'mongodb+srv://GataNina-Li:Akhmad6825@cluster0.mflne.mongodb.net/GataBot-MD?retryWrites=true&w=majority'"
     },
     "homepage": "https://github.com/GataNina-Li",
     "author": {

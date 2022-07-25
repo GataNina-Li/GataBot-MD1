@@ -7,7 +7,7 @@ if (!mime) throw `${mg}𝙍𝙀𝙎𝙋𝙊𝙉𝘿𝙀𝙍 𝘼 𝙐𝙉 𝙑�
 let media = await q.download()
 let isTele = /image\/(png|jpe?g|gif)|video\/mp4/.test(mime)
 let link = await (isTele ? uploadImage : uploadFile)(media)
-m.reply(`*ENACE ${link}*`)
+m.reply(`*ENLACE ${link}*`)
 }
 handler.help = ['tourl <reply image>']
 handler.tags = ['sticker']
