@@ -96,7 +96,7 @@ if (global.support.convert || global.support.magick || global.support.gm) {
 
     return true
   }
-}
+
 	    
 /*try {
        const img = await levelup(teks, user.level)
