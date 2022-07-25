@@ -7,7 +7,7 @@ export async function all(m) {
     if (m.sender in this.spam) {
         this.spam[m.sender].count++
         if (m.messageTimestamp.toNumber() - this.spam[m.sender].lastspam > 3) {
-            if (this.spam[m.sender].count > 3) {
+            if (this.spam[m.sender].count > 10) {
                 //db.data.users[m.sender].banned = true
                 m.reply('*¡No hagas spam!*')
             }
@@ -18,7 +18,7 @@ export async function all(m) {
     else
         this.spam[m.sender] = {
             jid: m.sender,
-            count: 3,
-            lastspam: 3
+            count: 0,
+            lastspam: 0
         }
 }
