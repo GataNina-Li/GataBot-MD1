@@ -202,7 +202,7 @@ await conn.sendHydrated(m.chat, `*Elija en que apostará*`, wm, null, md, '𝙂�
 ], m,)}
         
 if (command == 'apostar') {       
-await conn.sendHydrated(m.chat, `*Elija en que apostará*\n\n*Choose what you will*`, wm, null, md, '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
+await conn.sendHydrated(m.chat, `*Elija en que apostará* ${parseInt(args[0])}\n\n*Choose what you will*`, wm, null, md, '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
 ['⚡ 𝙀𝙓𝙋', `${usedPrefix}slot1 ${apuesta}`],
 ['🐈 𝙂𝘼𝙏𝘼𝘾𝙊𝙄𝙉𝙎', `${usedPrefix}slot2 ${apuesta2}`],
 ['💎 𝘿𝙄𝘼𝙈𝘼𝙉𝙏𝙀𝙎', `${usedPrefix}slot3 ${apuesta3}`]
