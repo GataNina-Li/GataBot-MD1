@@ -1,4 +1,4 @@
-import db from '../lib/database.js'
+/*import db from '../lib/database.js'
 
 export async function all(m) {
     if (!m.message)
@@ -21,4 +21,4 @@ export async function all(m) {
             count: 10,
             lastspam: 10
         }
-}
+}*/
