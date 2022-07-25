@@ -1,4 +1,4 @@
-import db from '../lib/database.js'
+/*import db from '../lib/database.js'
 import { canLevelUp } from '../lib/levelling.js'
 
 export function before(m, { conn }) {  	
@@ -28,4 +28,4 @@ let img = './src/lvlup_template.jpg'
 conn.sendFile(m.chat, img, 'levelup.jpg', str, m)
 }}
   
-export const disabled = false
+export const disabled = false */
