@@ -71,6 +71,10 @@ export async function handler(chatUpdate) {
                     user.role = 'Novato'
                 if (!('autolevelup' in user)) 
                     user.autonivel = false
+                if (!user.premium) 
+                    user.premium = false
+                if (!user.premium) 
+                    user.premiumTime= 0
 
                 if (!isNumber(user.money))
                     user.money = 0
@@ -188,6 +192,8 @@ export async function handler(chatUpdate) {
                     level: 0,
                     role: 'Novato',
                     autolevelup: false,
+                    premium: false,
+                    premiumTime: 0,
 
                     money: 0,
                     health: 100,
@@ -269,7 +275,11 @@ export async function handler(chatUpdate) {
                 if (!('autosticker' in chat))
                     chat.autosticker = false                    
                 if (!('audios' in chat))
-                    chat.audios = false                            
+                    chat.audios = false  
+                if (!('premium' in chat)) 
+                    chat.premium = false
+                if (!('premiumTime' in chat)) 
+                    chat.premiumTime = false
                 if (!('antiLink' in chat))
                     chat.antiLink = false
                 if (!('antiLink2' in chat))
@@ -294,6 +304,8 @@ export async function handler(chatUpdate) {
                     stickers: true,
                     autosticker: false,
                     audios: true,
+                    premium: false,
+	                premiumTime: false,
                     antiLink: false,
                     antiLink2: false,
                     viewonce: false,
