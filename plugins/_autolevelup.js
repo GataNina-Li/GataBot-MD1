@@ -42,8 +42,8 @@ import { canLevelUp } from '../lib/levelling.js'
 
 export function before(m, { conn }) {  
 	
-    let user = global.db.data.users[m.sender]
-    let { role } = conn.getName(conn.user.jid)
+    //let user = global.db.data.users[m.sender]
+    let { user, role } = global.db.data.users[m.sender]
     if (!user.autolevelup)
         return !0
 	
@@ -51,7 +51,8 @@ export function before(m, { conn }) {
     while (canLevelUp(user.level, user.exp, global.multiplier)) user.level++
     if (before !== user.level) {
 	    
-m.reply(
+let teks = `Genial! ${conn.getName(m.sender)} Nivel: ${user.level}`	    
+let str = 
 `╭━━━[ *𝙉𝙄𝙑𝙀𝙇 | 𝙇𝙀𝙑𝙀𝙇* ]━━━━⬣
 ┃ *NIVEL ANTERIOR:* *${before}*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
@@ -63,6 +64,11 @@ m.reply(
 ╰━━━〔 *𓃠 ${vs}* 〕━━━━━⬣
 *_Cuanto más interactúes con GataBot-MD, mayor será tu nivel!!_*
 `.trim())
-    }
+try {
+       const img = await levelup(teks, user.level)
+        conn.sendFile(m.chat, img, 'levelup.jpg', str, m)
+     } catch (e) {
+            m.reply(str)
+   }
 }
 export const disabled = false
