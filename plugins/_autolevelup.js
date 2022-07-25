@@ -1,4 +1,4 @@
-import { spawn } from 'child_process'
+//import { spawn } from 'child_process'
 import db from '../lib/database.js'
 import { canLevelUp } from '../lib/levelling.js'
 //import { levelup } from '../lib/canvas.js'
@@ -6,7 +6,7 @@ import { canLevelUp } from '../lib/levelling.js'
 export function before(m, { conn }) {  	
 	
     //let user = global.db.data.users[m.sender]
-    let { user, role, level } = global.db.data.users[m.sender]
+    let { user, role } = global.db.data.users[m.sender]
     if (!user.autolevelup)
         return !0
 	
@@ -14,7 +14,7 @@ export function before(m, { conn }) {
     while (canLevelUp(user.level, user.exp, global.multiplier)) user.level++
     if (before !== user.level) {
 	    
-let teks = `Genial! ${conn.getName(m.sender)} Nivel: ${user.level}`	    
+//let teks = `Genial! ${conn.getName(m.sender)} Nivel: ${user.level}`	    
 let str = 
 `╭━━━[ *𝙉𝙄𝙑𝙀𝙇 | 𝙇𝙀𝙑𝙀𝙇* ]━━━━⬣
 ┃ *NIVEL ANTERIOR:* *${before}*
@@ -28,9 +28,18 @@ let str =
 *_Cuanto más interactúes con GataBot-MD, mayor será tu nivel!!_*
 `.trim()
 
+/*try {
+       const img = await levelup(teks, user.level)
+        conn.sendFile(m.chat, img, 'levelup.jpg', str, m)
+     } catch (e) {
+            m.reply(str)*/
+   }
+}
+export const disabled = false
+
 //function levelup(teks, level) {
 
-if (global.support.convert || global.support.magick || global.support.gm) {
+/*if (global.support.convert || global.support.magick || global.support.gm) {
 	 
         //const font = join(__dirname, '../src/font')
         let fontLevel = join(font, './level_c.otf')
@@ -95,14 +104,4 @@ if (global.support.convert || global.support.magick || global.support.gm) {
     }
 
     return true
-  }
-
-	    
-/*try {
-       const img = await levelup(teks, user.level)
-        conn.sendFile(m.chat, img, 'levelup.jpg', str, m)
-     } catch (e) {
-            m.reply(str)
-   }
-}*/
-export const disabled = false
+  }*/	    
