@@ -266,6 +266,8 @@ export async function handler(chatUpdate) {
                     chat.modohorny = false
                 if (!('stickers' in chat))
                     chat.stickers = false
+                if (!('autonivel' in chat))
+                    chat.autonivel = false
                 if (!('autosticker' in chat))
                     chat.autosticker = false                    
                 if (!('audios' in chat))
