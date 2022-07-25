@@ -124,7 +124,7 @@ handler.help = ['levelup']
 handler.tags = ['xp']
 
 handler.command = ['nivel', 'lvl', 'levelup', 'level'] 
-
+handler.exp = null
 export default handler
     
 const more = String.fromCharCode(8206)
