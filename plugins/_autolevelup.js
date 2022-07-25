@@ -64,11 +64,82 @@ let str =
 ╰━━━〔 *𓃠 ${vs}* 〕━━━━━⬣
 *_Cuanto más interactúes con GataBot-MD, mayor será tu nivel!!_*
 `.trim()
-try {
+
+export function levelup(teks, level) {
+
+if (global.support.convert || global.support.magick || global.support.gm) {
+	 
+        //const font = join(__dirname, '../src/font')
+        let fontLevel = join(font, './level_c.otf')
+        let fontTexts = join(font, './texts.otf')
+        let xtsx = join(__dirname, '../src/lvlup_template.jpg')
+	let bufs = []
+        let anotations = '+1385+260' // gapake else if kadang error
+        if (level > 2) anotations = '+1370+260'
+        if (level > 10) anotations = '+1330+260'
+        if (level > 50) anotations = '+1310+260'
+        if (level > 100) anotations = '+1260+260'
+	    
+	   const [_spawnprocess, ..._spawnargs] = [...(global.support.gm ? ['gm'] : global.support.magick ? ['magick'] : []),
+            'convert',
+            xtsx,
+            '-font',
+            fontTexts,
+            '-fill',
+            '#0F3E6A',
+            '-size',
+            '1024x784',
+            '-pointsize',
+            '68',
+            '-interline-spacing',
+            '-7.5',
+            '-annotate',
+            '+153+200',
+            teks,
+            //original together
+            '-font',
+            fontLevel,
+            '-fill',
+            '#0A2A48',
+            '-size',
+            '1024x784',
+            '-pointsize',
+            '140',
+            '-interline-spacing',
+            '-1.2',
+            '-annotate',
+            anotations,
+            level,
+            '-append',
+            'jpg:-'
+        ]
+        spawn(_spawnprocess, _spawnargs)
+          .on('error', e => {
+            throw e
+          })
+          .on('close', () => {
+           this.sendFile(m.chat, Buffer.concat(bufs), 'levelup.jpg', str, m) //this.sendFile(m.chat, Buffer.concat(bufs), 'result.jpg', str, m)
+          })
+          .stdout.on('data', chunk => bufs.push(chunk))
+
+      } else {
+        m.reply(str, m.chat, {
+          contextInfo: {
+            mentionedJid: [m.sender]
+          }
+        })
+      }
+    }
+
+    return true
+  }
+}
+	    
+/*try {
        const img = await levelup(teks, user.level)
         conn.sendFile(m.chat, img, 'levelup.jpg', str, m)
      } catch (e) {
             m.reply(str)
    }
-}
+}*/
 export const disabled = false
