@@ -138,12 +138,8 @@ throw false
 chat.stickers = isEnable          
 break
 case 'autolevelup':
-if (m.isGroup) {
-if (!(isAdmin || isOwner)) {
-global.dfail('admin', m, conn)
-throw false
-}}
-chat.autolevelup = isEnable
+isUser = true
+user.autolevelup = isEnable
 break
 case 'autosticker':
 if (m.isGroup) {
