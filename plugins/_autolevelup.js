@@ -36,11 +36,12 @@ let { role } = global.db.data.users[m.sender]
   }
 
 export const disabled = true */
-
+import { spawn } from 'child_process'
 import db from '../lib/database.js'
 import { canLevelUp } from '../lib/levelling.js'
 
-export function before(m, { conn }) {  
+export function levelup before(m, teks, level, { conn }) {  
+	
 	
     //let user = global.db.data.users[m.sender]
     let { user, role } = global.db.data.users[m.sender]
@@ -65,7 +66,7 @@ let str =
 *_Cuanto más interactúes con GataBot-MD, mayor será tu nivel!!_*
 `.trim()
 
-export function levelup(teks, level) {
+//export function levelup(teks, level) {
 
 if (global.support.convert || global.support.magick || global.support.gm) {
 	 
