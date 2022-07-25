@@ -17,4 +17,4 @@ gunakan *.profile* untuk mengecek
 	`.trim())
     }
 }
-export const disabled = true
+export const disabled = false
