@@ -135,6 +135,14 @@ throw false
 }}
 chat.stickers = isEnable          
 break
+case 'autonivel':
+if (m.isGroup) {
+if (!(isAdmin || isOwner)) {
+global.dfail('admin', m, conn)
+throw false
+}}
+chat.autonivel = isEnable          
+break
 case 'autosticker':
 if (m.isGroup) {
 if (!(isAdmin || isOwner)) {
