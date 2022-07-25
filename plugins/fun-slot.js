@@ -26,7 +26,8 @@ if (command == 'slot1') {
 let users = global.db.data.users[m.sender]
 let time = global.db.data.users[m.sender].lastwork + 30000
 if (new Date - users.lastwork < 30000) throw `*𝙑𝙐𝙀𝙇𝙑𝘼 𝙀𝙉 ${msToTime(time - new Date())} 𝙋𝘼𝙍𝘼 𝘾𝙊𝙉𝙏𝙄𝙉𝙐𝘼𝙍 𝘼𝙋𝙊𝙎𝙏𝘼𝙉𝘿𝙊 𝙀𝙓𝙋* 🎰\n\n*𝘾𝙊𝙈𝙀 𝘽𝘼𝘾𝙆 𝙄𝙉 ${msToTime(time - new Date())} 𝙏𝙊 𝘾𝙊𝙉𝙏𝙄𝙉𝙐𝙀 𝘽𝙀𝙏𝙏𝙄𝙉𝙂* 💰`
-
+global.db.data.users[m.sender].lastwork = new Date * 1
+    
 let emojis = ["🍁", "⚡", "🍇"];
 let a = Math.floor(Math.random() * emojis.length);
 let b = Math.floor(Math.random() * emojis.length);
@@ -85,6 +86,7 @@ if (command == 'slot2') {
 let users = global.db.data.users[m.sender]
 let time = global.db.data.users[m.sender].lastwork + 30000
 if (new Date - users.lastwork < 30000) throw `*𝙑𝙐𝙀𝙇𝙑𝘼 𝙀𝙉 ${msToTime(time - new Date())} 𝙋𝘼𝙍𝘼 𝘾𝙊𝙉𝙏𝙄𝙉𝙐𝘼𝙍 𝘼𝙋𝙊𝙎𝙏𝘼𝙉𝘿𝙊 𝙂𝘼𝙏𝘼𝘾𝙊𝙄𝙉𝙎* 🎰\n\n*𝘾𝙊𝙈𝙀 𝘽𝘼𝘾𝙆 𝙄𝙉 ${msToTime(time - new Date())} 𝙏𝙊 𝘾𝙊𝙉𝙏𝙄𝙉𝙐𝙀 𝘽𝙀𝙏𝙏𝙄𝙉𝙂* 💰`
+global.db.data.users[m.sender].lastwork = new Date * 1
     
 let emojis = ["🐈", "🐓", "🐙"];
 let a = Math.floor(Math.random() * emojis.length);
@@ -144,7 +146,8 @@ if (command == 'slot3') {
 let users = global.db.data.users[m.sender]
 let time = global.db.data.users[m.sender].lastwork + 30000
 if (new Date - users.lastwork < 30000) throw `*𝙑𝙐𝙀𝙇𝙑𝘼 𝙀𝙉 ${msToTime(time - new Date())} 𝙋𝘼𝙍𝘼 𝘾𝙊𝙉𝙏𝙄𝙉𝙐𝘼𝙍 𝘼𝙋𝙊𝙎𝙏𝘼𝙉𝘿𝙊 𝘿𝙄𝘼𝙈𝘼𝙉𝙏𝙀𝙎* 🎰\n\n*𝘾𝙊𝙈𝙀 𝘽𝘼𝘾𝙆 𝙄𝙉 ${msToTime(time - new Date())} 𝙏𝙊 𝘾𝙊𝙉𝙏𝙄𝙉𝙐𝙀 𝘽𝙀𝙏𝙏𝙄𝙉𝙂* 💰`
-
+global.db.data.users[m.sender].lastwork = new Date * 1
+    
 let emojis = ["🪵", "💣", "💎"];
 let a = Math.floor(Math.random() * emojis.length);
 let b = Math.floor(Math.random() * emojis.length);
@@ -210,7 +213,7 @@ await conn.sendHydrated(m.chat, `*Elija en que apostará ${apuesta}*\n\n*Choose 
 ['💎 𝘿𝙄𝘼𝙈𝘼𝙉𝙏𝙀𝙎', `${usedPrefix}slot3 ${apuesta}`]
 ], m,)}
 
-global.db.data.users[m.sender].lastwork = new Date * 1
+//global.db.data.users[m.sender].lastwork = new Date * 1
        
 }
 handler.help = ['slot <apuesta>']
