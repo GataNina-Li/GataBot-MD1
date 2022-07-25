@@ -2,7 +2,8 @@ import { canLevelUp, xpRange } from '../lib/levelling.js'
 import { levelup } from '../lib/canvas.js'
 export function before(m, { conn }) {
 	
-let { user, role } = global.db.data.users[m.sender]
+let user = global.db.data.users[m.sender]
+let role = global.db.data.users[m.sender]
   if (!user.autolevelup)
         return !0
 	
@@ -26,4 +27,4 @@ Cuanto más interactúes con GataBot-MD, mayor será tu nivel!!
     }
 }
 
-export const disabled = false
+export const disabled = true
