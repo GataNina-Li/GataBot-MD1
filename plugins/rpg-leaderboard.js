@@ -35,9 +35,9 @@ Tú : *${usersLevel.indexOf(m.sender) + 1}* de *${usersLevel.length} Usuarios*
 ${sortedLevel.slice(0, len).map(({ jid, level }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *Nivel ${level}*`).join`\n`}
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 💠 *TOP ${len} ROL 🌟* 
-Tú : *${usersRole.indexOf(m.sender) + 1}* de *${usersRole.length} Usuarios*
+Tú : *${usersLevel.indexOf(m.sender) + 1}* de *${usersLevel.length} Usuarios*
 
-${sortedRole.slice(0, len).map(({ jid, role }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} ${role}`).join`\n`}
+${sortedLevel.slice(0, len).map(({ jid, role, level }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} ${role}`).join`\n`}
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 💠 *TOP ${len} GATACOINS 🐈*
 Tú : *${usersMoney.indexOf(m.sender) + 1}* de *${usersMoney.length} Usuarios*
