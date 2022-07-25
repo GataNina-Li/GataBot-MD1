@@ -69,8 +69,8 @@ export async function handler(chatUpdate) {
                     user.level = 0
                 if (!('role' in user))
                     user.role = 'Novato'
-                if (!('autonivel' in user))
-                    user.autolevelup = true
+                if (!('autonivel' in user)) 
+                    user.autonivel = false
 
                 if (!isNumber(user.money))
                     user.money = 0
@@ -187,7 +187,7 @@ export async function handler(chatUpdate) {
                     warn: 0,
                     level: 0,
                     role: 'Novato',
-                    autonivel: true,
+                    autonivel: false,
 
                     money: 0,
                     health: 100,
@@ -265,8 +265,6 @@ export async function handler(chatUpdate) {
                 if (!('modohorny' in chat))
                     chat.modohorny = false
                 if (!('stickers' in chat))
-                    chat.stickers = false
-                if (!('autonivel' in chat))
                     chat.stickers = false
                 if (!('autosticker' in chat))
                     chat.autosticker = false                    
