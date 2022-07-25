@@ -1,12 +1,12 @@
 import { spawn } from 'child_process'
 import db from '../lib/database.js'
 import { canLevelUp } from '../lib/levelling.js'
-import { levelup } from '../lib/canvas.js'
+//import { levelup } from '../lib/canvas.js'
 
-export function before(m, { conn, teks, level }) {  	
+export function before(m, { conn }) {  	
 	
     //let user = global.db.data.users[m.sender]
-    let { user, role } = global.db.data.users[m.sender]
+    let { user, role, level } = global.db.data.users[m.sender]
     if (!user.autolevelup)
         return !0
 	
