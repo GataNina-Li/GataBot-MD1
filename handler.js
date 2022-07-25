@@ -56,6 +56,8 @@ export async function handler(chatUpdate) {
                         user.age = -1
                     if (!isNumber(user.regTime))
                         user.regTime = -1
+	            if (!isNumber(user.premiumDate)) 
+			user.premiumDate = -1
                 }
                 if (!isNumber(user.afk))
                     user.afk = -1
@@ -69,8 +71,10 @@ export async function handler(chatUpdate) {
                     user.level = 0
                 if (!('role' in user))
                     user.role = 'Novato'
+		if (!('premium' in user)) 
+		    user.premium = false
                 if (!('autolevelup' in user)) 
-                    user.autonivel = false
+                    user.autolevelup = false
                 if (!user.premium) 
                     user.premium = false
                 if (!user.premium) 
