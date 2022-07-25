@@ -25,4 +25,4 @@ Cuanto más interactúes con GataBot-MD, mayor será tu nivel!!
 `.trim())
   }
 }
-export const disabled = true
+export const disabled = false
