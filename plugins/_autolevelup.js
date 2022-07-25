@@ -11,8 +11,7 @@ export function before(m, { conn }) {
     while (canLevelUp(user.level, user.exp, global.multiplier)) user.level++
     if (before !== user.level) {
 	        
-let str = 
-(`╭━━━[ 𝙉𝙄𝙑𝙀𝙇 | 𝙇𝙀𝙑𝙀𝙇 ]━━━━⬣
+m.reply(`╭━━━[ 𝙉𝙄𝙑𝙀𝙇 | 𝙇𝙀𝙑𝙀𝙇 ]━━━━⬣
 ┃ NIVEL ANTERIOR: ${before}
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃ NIVEL ACTUAL: ${user.level}
@@ -23,9 +22,6 @@ let str =
 ╰━━━〔 𓃠 ${vs} 〕━━━━━⬣
 Cuanto más interactúes con GataBot-MD, mayor será tu nivel!!
 `.trim())
-
-let img = './src/lvlup_template.jpg'
-conn.sendFile(m.chat, img, 'levelup.jpg', str, m)
-}}
-  
+    }
+}
 export const disabled = false
