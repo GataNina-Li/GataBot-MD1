@@ -56,6 +56,7 @@ export async function handler(chatUpdate) {
                         user.age = -1
                     if (!isNumber(user.regTime))
                         user.regTime = -1
+	            
                 }
                 if (!isNumber(user.afk))
                     user.afk = -1
@@ -70,7 +71,8 @@ export async function handler(chatUpdate) {
                 if (!('role' in user))
                     user.role = 'Novato'
                 if (!('autolevelup' in user)) 
-                    user.autonivel = false
+                    user.autolevelup = false
+                
 
                 if (!isNumber(user.money))
                     user.money = 0
@@ -269,7 +271,7 @@ export async function handler(chatUpdate) {
                 if (!('autosticker' in chat))
                     chat.autosticker = false                    
                 if (!('audios' in chat))
-                    chat.audios = false                            
+                    chat.audios = false  
                 if (!('antiLink' in chat))
                     chat.antiLink = false
                 if (!('antiLink2' in chat))
