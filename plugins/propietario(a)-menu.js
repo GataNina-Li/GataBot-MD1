@@ -103,6 +103,9 @@ let menu = `
 ┃💎➺ _${usedPrefix}actualizar | update_
 ┃💎➺ _${usedPrefix}reiniciar | restart_
 ┃💎➺ _${usedPrefix}borrartmp | cleartmp_
+┃💎➺ _${usedPrefix}delexp *@tag*_
+┃💎➺ _${usedPrefix}delgatacoins *@tag*_
+┃💎➺ _${usedPrefix}deldiamantes *@tag*_
 ┃💎➺ _${usedPrefix}ban1 | banchat1_
 ┃💎➺ _${usedPrefix}desban1 | unbanchat1_
 ┃💎➺ _${usedPrefix}comunicar | broadcastall | bc_
