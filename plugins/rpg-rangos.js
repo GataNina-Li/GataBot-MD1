@@ -76,7 +76,7 @@ ${username}
 𝙏𝙐  𝙍𝘼𝙉𝙂𝙊 𝘼𝘾𝙏𝙐𝘼𝙇
 ${role}
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-👑 *∞ ÉLITE GLOBAL II* 💎🏁
+👑 *∞ ÉLITE GLOBAL I* 💎🏁
 👑 *∞ ÉLITE GLOBAL II* 💎🏁
 👑 *∞ ÉLITE GLOBAL III* 💎🏁
 👑 *∞ ÉLITE GLOBAL IV* 💎🏁
