@@ -26,4 +26,4 @@ handler.command = ['eliminargatacoins', 'eliminargata', 'eliminarcoins', 'quitar
 handler.group = true
 handler.botAdmin = true
 handler.rowner = true
-export default handler
+export default handler 
