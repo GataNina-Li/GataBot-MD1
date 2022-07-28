@@ -23,7 +23,6 @@ conn.sendHydrated(m.chat, `╭━━━[ 𝙂𝘼𝙏𝘼𝘾𝙊𝙄𝙉𝙎 �
 handler.help = ['addgb <@user>']
 handler.tags = ['gatacoins']
 handler.command = ['eliminargatacoins', 'eliminargata', 'eliminarcoins', 'quitargatacoins', 'quitargata', 'quitarcoins', 'delgatacoins', 'delgata', 'delcoins'] 
-handler.command = ['eliminardiamantes', 'quitardiamantes', 'quitardiamante', 'deldiamante', 'deldiamantes'] 
 handler.group = true
 handler.botAdmin = true
 handler.rowner = true
