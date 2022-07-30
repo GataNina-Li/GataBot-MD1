@@ -100,6 +100,9 @@ let menu = `
 
 ╭━〔 𝙈𝙀𝙉𝙐 𝙋𝘼𝙍𝘼 𝙋𝙍𝙊𝙋𝙄𝙀𝙏𝘼𝙍𝙄𝙊/𝘼 〕━⬣
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃💎➺ _${usedPrefix}dardiamantes *cantidad*_
+┃💎➺ _${usedPrefix}darxp *cantidad*_
+┃💎➺ _${usedPrefix}dargatacoins *cantidad*_
 ┃💎➺ _${usedPrefix}cajafuerte_
 ┃💎➺ _${usedPrefix}comunicar | broadcastall | bc *texto*_
 ┃💎➺ _${usedPrefix}broadcastchats | bcc *texto*_
