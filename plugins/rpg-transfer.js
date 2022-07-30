@@ -33,13 +33,14 @@ async function handler(m, { conn, args, usedPrefix, command }) {
     let username = conn.getName(who)
     
     let confirm = `
-${username} *ESTAS A PUNTO DE HACER ESTA ACCIÓN DE TRANFERENCIA* 
-*${count}* ${type} a  *@${(who || '').replace(/@s\.whatsapp\.net/g, '')}* ? 
+*ESTAS A PUNTO DE HACER ESTA ACCIÓN DE TRANFERENCIA* 
+
+💹 *${count} ${type} para* *@${(who || '').replace(/@s\.whatsapp\.net/g, '')}* ? 
 
 *DESEAS CONTINUAR?*`.trim()
     
     let c = `${wm}\nTienes 60 segundos!!`
-    conn.sendButton(m.chat, confirm, c, null, [['𝙎𝙄 '], ['𝙉𝙊']], m, { mentions: [who] })
+    conn.sendButton(m.chat, confirm, c, null, [['𝙎𝙄'], ['𝙉𝙊']], m, { mentions: [who] })
     confirmation[m.sender] = {
         sender: m.sender,
         to: who,
@@ -58,21 +59,21 @@ handler.before = async m => {
     if (m.id === message.id) return
     let user = global.db.data.users[sender]
     let _user = global.db.data.users[to]
-    if (/no?/g.test(m.text.toLowerCase())) {
+    if (/𝙉𝙊?/g.test(m.text.toLowerCase())) {
         clearTimeout(timeout)
         delete confirmation[sender]
         return m.reply('*CANCELADO*')
     }
-    if (/si?/g.test(m.text.toLowerCase())) {
+    if (/𝙎𝙄?/g.test(m.text.toLowerCase())) {
         let previous = user[type] * 1
         let _previous = _user[type] * 1
         user[type] -= count * 1
         _user[type] += count * 1
-        if (previous > user[type] * 1 && _previous < _user[type] * 1) m.reply(`✅ transferencia exitosa de \n\n*${count}* *${type}*  a @${(to || '').replace(/@s\.whatsapp\.net/g, '')}`, null, { mentions: [to] })
+        if (previous > user[type] * 1 && _previous < _user[type] * 1) m.reply(`✅ *TRANSFERENCIA HECHA CON ÉXITO:*\n\n*${count} ${type} para* @${(to || '').replace(/@s\.whatsapp\.net/g, '')}`, null, { mentions: [to] })
         else {
             user[type] = previous
             _user[type] = _previous
-            m.reply(`Error al transferir *${count}* ${type} to *@${(to || '').replace(/@s\.whatsapp\.net/g, '')}*`, null, { mentions: [to] })
+            m.reply(`*Error al transferir ${count} ${type} para* *@${(to || '').replace(/@s\.whatsapp\.net/g, '')}*`, null, { mentions: [to] })
         }
         clearTimeout(timeout)
         delete confirmation[sender]
@@ -81,7 +82,7 @@ handler.before = async m => {
 
 handler.help = ['transfer'].map(v => v + ' [tipo] [cantidad] [@tag]')
 handler.tags = ['xp']
-handler.command = ['payxp', 'transfer', 'darxp'] 
+handler.command = ['payxp', 'transfer', 'darxp', 'dar', 'enviar', 'transferir'] 
 
 handler.disabled = false
 
