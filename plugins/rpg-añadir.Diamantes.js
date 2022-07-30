@@ -23,5 +23,6 @@ conn.sendHydrated(m.chat, `╭[ 𝘿𝙄𝘼𝙈𝘼𝙉𝙏𝙀𝙎 | 𝘿𝙄�
 handler.help = ['adddi <@user>']
 handler.tags = ['xp']
 handler.command = ['añadirdiamantes', 'dardiamantes', 'dardiamante'] 
+handler.group = true
 handler.admin = true
 export default handler
