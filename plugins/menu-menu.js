@@ -369,9 +369,9 @@ ${readMore}
 ┃ *Compra, Adquiere Recuersos*
 ┃ *Mejora Tú Nivel y Rango!!*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃⚗️➺ _${usedPrefix}dardiamantes *cantidad*_
-┃⚗️➺ _${usedPrefix}darxp *cantidad*_
-┃⚗️➺ _${usedPrefix}dargatacoins *cantidad*_
+┃⚗️➺ _${usedPrefix}transfer *tipo cantidad @tag*_
+┃⚗️➺ _${usedPrefix}dar *tipo cantidad @tag*_
+┃⚗️➺ _${usedPrefix}enviar *tipo cantidad @tag*_
 ┃⚗️➺ _${usedPrefix}transfer *tipo cantidad @user*_
 ┃⚗️➺ _${usedPrefix}balance_
 ┃⚗️➺ _${usedPrefix}experiencia | exp_
@@ -443,6 +443,9 @@ ${readMore}
 *╭━[ MENU PARA PROPIETARIO/A ]━⬣*
 ┃ *Comandos solo para Propietario/a!!*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃💎➺ _${usedPrefix}dardiamantes *cantidad*_
+┃💎➺ _${usedPrefix}darxp *cantidad*_
+┃💎➺ _${usedPrefix}dargatacoins *cantidad*_
 ┃💎➺ _${usedPrefix}cajafuerte_
 ┃💎➺ _${usedPrefix}comunicar | broadcastall | bc *texto*_
 ┃💎➺ _${usedPrefix}broadcastchats | bcc *texto*_
