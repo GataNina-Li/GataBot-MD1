@@ -24,5 +24,6 @@ handler.help = ['adddi <@user>']
 handler.tags = ['xp']
 handler.command = ['añadirdiamantes', 'dardiamantes', 'dardiamante'] 
 handler.group = true
+handler.botAdmin = true
 handler.admin = true
 export default handler
