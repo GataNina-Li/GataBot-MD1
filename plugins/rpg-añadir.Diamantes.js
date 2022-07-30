@@ -25,5 +25,5 @@ handler.tags = ['xp']
 handler.command = ['añadirdiamantes', 'dardiamantes', 'dardiamante'] 
 handler.group = true
 handler.botAdmin = true
-handler.admin = true
+handler.rowner = true
 export default handler
