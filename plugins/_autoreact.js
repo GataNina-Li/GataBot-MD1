@@ -7,7 +7,7 @@ key: m.key
     	}
     })	
 }
-handler.customPrefix = /(res|ya|auto|dis|ito|ita|sin|azo|enta|ante|endo|nar|ando||ido|ado|ismo)/i
+handler.customPrefix = /(res|ya|auto|dis|ito|ita|sin|azo|enta|ante|endo|nar|ando|ido|ado|ismo|ivo|upo|ks|ace)/i
 handler.command = new RegExp
  
 export default handler
