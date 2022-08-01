@@ -27,7 +27,7 @@
     },
     "license": "GPL-3.0-or-later",
     "dependencies": {
-        "@adiwajshing/baileys": "^4.1.0",
+        "@adiwajshing/baileys": "^4.3.0",
         "@bochilteam/scraper": "^3.0.0",
         "acrcloud": "^1.4.0",
         "awesome-phonenumber": "^2.68.0",
@@ -48,7 +48,7 @@
         "lodash": "^4.17.21",
         "lowdb": "^3.0.0",
         "moment-timezone": "^0.5.34",
-        "mongoose": "^6.3.3",
+        "mongoose": "github:Automattic/mongoose",
         "node-fetch": "^3.2.0",
         "node-gtts": "^2.0.2",
         "node-webpmux": "^3.1.1",
