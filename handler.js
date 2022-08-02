@@ -418,182 +418,143 @@ let extra = {
                     chatUpdate,
                     __dirname: ___dirname,
                     __filename
-                }
-                try {
-                    await plugin.call(this, m, extra)
-                    if (!isPrems)
-                        m.limit = m.limit || plugin.limit || false
-                } catch (e) {
-                    // Error occured
-                    m.error = e
-                    console.error(e)
-                    if (e) {
-                        let text = format(e)
-                        for (let key of Object.values(global.APIKeys))
-                            text = text.replace(new RegExp(key, 'g'), '#HIDDEN#')
-                        if (e.name)
-                            for (let [jid] of global.owner.filter(([number, _, isDeveloper]) => isDeveloper && number)) {
-                                let data = (await conn.onWhatsApp(jid))[0] || {}
-                                if (data.exists)
-                                    m.reply(`*[ ⚠️ 𝚁𝙴𝙿𝙾𝚁𝚃𝙴 𝙳𝙴 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 𝙲𝙾𝙽 𝙵𝙰𝙻𝙻𝙾𝚂 ⚠️ ]*\n\n*—◉ 𝙿𝙻𝚄𝙶𝙸𝙽:* ${m.plugin}\n*—◉ 𝚄𝚂𝚄𝙰𝚁𝙸𝙾:* ${m.sender}\n*—◉ 𝙲𝙾𝙼𝙰𝙽𝙳𝙾:* ${usedPrefix}${command} ${args.join(' ')}\n\n\`\`\`${text}\`\`\`\n\n*[❗] 𝚁𝙴𝙿𝙾𝚁𝚃𝙴𝙻𝙾 𝙰𝙻 𝙲𝚁𝙴𝙰𝙳𝙾𝚁 𝙳𝙴𝙻 𝙱𝙾𝚃 𝙿𝙰𝚁𝙰 𝙳𝙰𝚁𝙻𝙴 𝚄𝙽𝙰 𝚂𝙾𝙻𝚄𝙲𝙸𝙾𝙽, 𝙿𝚄𝙴𝙳𝙴 𝚄𝚂𝙰𝚁 𝙴𝙻 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 #reporte*`.trim(), data.jid)
-                            }
-                        m.reply(text)
-                    }
-                } finally {
-                    // m.reply(util.format(_user))
-                    if (typeof plugin.after === 'function') {
-                        try {
-                            await plugin.after.call(this, m, extra)
-                        } catch (e) {
-                            console.error(e)
-                        }
-                    }
-                    if (m.limit)
-                        m.reply(+m.limit + ' 𝘿𝙄𝘼𝙈𝘼𝙉𝙏𝙀(𝙎) 💎 𝙐𝙎𝘼𝘿𝙊(𝙎)')
-                }
-                break
-            }
-        }
-    } catch (e) {
-        console.error(e)
-    } finally {
-        if (opts['queque'] && m.text) {
-            const quequeIndex = this.msgqueque.indexOf(m.id || m.key.id)
-            if (quequeIndex !== -1)
-                this.msgqueque.splice(quequeIndex, 1)
-        }
-        //console.log(global.db.data.users[m.sender])
-        let user, stats = global.db.data.stats
-        if (m) {
-            if (m.sender && (user = global.db.data.users[m.sender])) {
-                user.exp += m.exp
-                user.limit -= m.limit * 1
-            }
-
-            let stat
-            if (m.plugin) {
-                let now = +new Date
-                if (m.plugin in stats) {
-                    stat = stats[m.plugin]
-                    if (!isNumber(stat.total))
-                        stat.total = 1
-                    if (!isNumber(stat.success))
-                        stat.success = m.error != null ? 0 : 1
-                    if (!isNumber(stat.last))
-                        stat.last = now
-                    if (!isNumber(stat.lastSuccess))
-                        stat.lastSuccess = m.error != null ? 0 : now
-                } else
-                    stat = stats[m.plugin] = {
-                        total: 1,
-                        success: m.error != null ? 0 : 1,
-                        last: now,
-                        lastSuccess: m.error != null ? 0 : now
-                    }
-                stat.total += 1
-                stat.last = now
-                if (m.error == null) {
-                    stat.success += 1
-                    stat.lastSuccess = now
-                }
-            }
-        }
-
-        try {
-            if (!opts['noprint']) await (await import(`./lib/print.js`)).default(m, this)
-        } catch (e) {
-            console.log(m, m.quoted, e)
-        }
-        if (opts['autoread'])
-            await this.chatRead(m.chat, m.isGroup ? m.sender : undefined, m.id || m.key.id).catch(() => { })
-    }
 }
 
+try {
+await plugin.call(this, m, extra)
+if (!isPrems) m.limit = m.limit || plugin.limit || false
+} catch (e) { // Error occured
+m.error = e
+console.error(e)
+	
+if (e) {
+let text = format(e)
+for (let key of Object.values(global.APIKeys)) text = text.replace(new RegExp(key, 'g'), '#HIDDEN#')
+if (e.name)
+for (let [jid] of global.owner.filter(([number, _, isDeveloper]) => isDeveloper && number)) {
+let data = (await conn.onWhatsApp(jid))[0] || {}
+if (data.exists) m.reply(`*[ ⚠️ 𝚁𝙴𝙿𝙾𝚁𝚃𝙴 𝙳𝙴 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 𝙲𝙾𝙽 𝙵𝙰𝙻𝙻𝙾𝚂 ⚠️ ]*\n\n*—◉ 𝙿𝙻𝚄𝙶𝙸𝙽:* ${m.plugin}\n*—◉ 𝚄𝚂𝚄𝙰𝚁𝙸𝙾:* ${m.sender}\n*—◉ 𝙲𝙾𝙼𝙰𝙽𝙳𝙾:* ${usedPrefix}${command} ${args.join(' ')}\n\n\`\`\`${text}\`\`\`\n\n*[❗] 𝚁𝙴𝙿𝙾𝚁𝚃𝙴𝙻𝙾 𝙰𝙻 𝙲𝚁𝙴𝙰𝙳𝙾𝚁 𝙳𝙴𝙻 𝙱𝙾𝚃 𝙿𝙰𝚁𝙰 𝙳𝙰𝚁𝙻𝙴 𝚄𝙽𝙰 𝚂𝙾𝙻𝚄𝙲𝙸𝙾𝙽, 𝙿𝚄𝙴𝙳𝙴 𝚄𝚂𝙰𝚁 𝙴𝙻 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 #reporte*`.trim(), data.jid)
+} m.reply(text) }
+} finally {
+// m.reply(util.format(_user))
+if (typeof plugin.after === 'function') {
+try {
+await plugin.after.call(this, m, extra)
+} catch (e) { console.error(e) }
+}
+if (m.limit) m.reply(+m.limit + ' 𝘿𝙄𝘼𝙈𝘼𝙉𝙏𝙀(𝙎) 💎 𝙐𝙎𝘼𝘿𝙊(𝙎)') }
+break
+}}
+} catch (e) { console.error(e)
+} finally { if (opts['queque'] && m.text) { const quequeIndex = this.msgqueque.indexOf(m.id || m.key.id) if (quequeIndex !== -1) this.msgqueque.splice(quequeIndex, 1)
+} //console.log(global.db.data.users[m.sender])
+
+let user, stats = global.db.data.stats
+if (m) {
+if (m.sender && (user = global.db.data.users[m.sender])) {
+user.exp += m.exp
+user.limit -= m.limit * 1 }
+
+let stat
+if (m.plugin) { let now = +new Date
+if (m.plugin in stats) { stat = stats[m.plugin]
+if (!isNumber(stat.total)) stat.total = 1
+if (!isNumber(stat.success)) stat.success = m.error != null ? 0 : 1
+if (!isNumber(stat.last)) stat.last = now
+if (!isNumber(stat.lastSuccess)) stat.lastSuccess = m.error != null ? 0 : now
+} else
+
+stat = stats[m.plugin] = {
+total: 1,
+success: m.error != null ? 0 : 1,
+last: now,
+lastSuccess: m.error != null ? 0 : now }
+	       
+stat.total += 1
+stat.last = now
+if (m.error == null) {
+stat.success += 1
+stat.lastSuccess = now
+}}}
+
+try {
+if (!opts['noprint']) await (await import(`./lib/print.js`)).default(m, this)
+} catch (e) { console.log(m, m.quoted, e) }
+if (opts['autoread'])
+await this.chatRead(m.chat, m.isGroup ? m.sender : undefined, m.id || m.key.id).catch(() => { })}}
 /**
  * Handle groups participants update
  * @param {import('@adiwajshing/baileys').BaileysEventMap<unknown>['group-participants.update']} groupsUpdate 
  */
-export async function participantsUpdate({ id, participants, action }) {
-    if (opts['self'])
-        return
-    // if (id in conn.chats) return // First login will spam
-    if (this.isInit)
-        return
-    if (global.db.data == null)
-        await loadDatabase()
-    let chat = global.db.data.chats[id] || {}
-    let text = ''
-    switch (action) {
-        case 'add':
-        case 'remove':
-            if (chat.welcome) {
-                let groupMetadata = await this.groupMetadata(id) || (conn.chats[id] || {}).metadata
-                for (let user of participants) {
-                    let pp = './src/sinfoto.jpg'
-                    try {
-                        pp = await this.profilePictureUrl(user, 'image')
-                    } catch (e) {
-                    } finally {
-                        text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || '*𝙂𝙧𝙪𝙥𝙤 𝙂𝙚𝙣𝙞𝙖𝙡 | 𝘾𝙤𝙤𝙡 𝙂𝙧𝙤𝙪𝙥 😼*') :
-                            (chat.sBye || this.bye || conn.bye || 'Bye, @user!')).replace('@user', await this.getName(user)) //.replace('@user', '@' + user.split('@')[0])
-                            let apii = await this.getFile(pp)
-                            this.sendHydrated(id, text, groupMetadata.subject, apii.data, 'https://github.com/GataNina-Li/GataBot-MD', '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
-                            [(action == 'add' ? '𝙎𝙚 𝙪𝙣𝙞𝙤 🥳 | 𝙃𝙞!!' : '𝙎𝙚 𝙛𝙪𝙚 𝙪𝙣 𝙍𝙖𝙣𝙙𝙤𝙢 🧐 | 𝘽𝙮𝙚'), '.s'],    
-                            ['💖 𝙄𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪 | 𝙂𝙤 𝙈𝙚𝙣𝙪', '/menu']
-                            ], '', { mentions: [user]})
-                           }
-                }
-            }
+export async function participantsUpdate({ id, participants, action }) { if (opts['self']) return
+// if (id in conn.chats) return // First login will spam
+if (this.isInit) return
+if (global.db.data == null)
+await loadDatabase()
+let chat = global.db.data.chats[id] || {}
+let text = ''
+
+switch (action) {
+case 'add':
+case 'remove':
+if (chat.welcome) {
+let groupMetadata = await this.groupMetadata(id) || (conn.chats[id] || {}).metadata
+for (let user of participants) {
+let pp = './src/sinfoto.jpg'
+try { pp = await this.profilePictureUrl(user, 'image') } catch (e) {
+} finally {
+	
+text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || '*𝙂𝙧𝙪𝙥𝙤 𝙂𝙚𝙣𝙞𝙖𝙡 | 𝘾𝙤𝙤𝙡 𝙂𝙧𝙤𝙪𝙥 😼*') :
+(chat.sBye || this.bye || conn.bye || 'Bye, @user!')).replace('@user', await this.getName(user)) //.replace('@user', '@' + user.split('@')[0])
+let apii = await this.getFile(pp)
+this.sendHydrated(id, text, groupMetadata.subject, apii.data, 'https://github.com/GataNina-Li/GataBot-MD', '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
+[(action == 'add' ? '𝙎𝙚 𝙪𝙣𝙞𝙤 🥳 | 𝙃𝙞!!' : '𝙎𝙚 𝙛𝙪𝙚 𝙪𝙣 𝙍𝙖𝙣𝙙𝙤𝙢 🧐 | 𝘽𝙮𝙚'), '.s'],    
+['💖 𝙄𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪 | 𝙂𝙤 𝙈𝙚𝙣𝙪', '/menu']
+], '', { mentions: [user]})}}}
+		
             break
-        case 'promote':
-        case 'daradmin':
-        case 'darpoder':
-            text = (chat.sPromote || this.spromote || conn.spromote || '@user ```is now Admin```')
-        case 'demote':
-        case 'quitarpoder':
-        case 'quitaradmin':
-            if (!text)
-                text = (chat.sDemote || this.sdemote || conn.sdemote || '@user ```is no longer Admin```')
-            text = text.replace('@user', '@' + participants[0].split('@')[0])
-            if (chat.detect)
-                this.sendMessage(id, { text, mentions: this.parseMention(text) })
-            break
-    }
-}
+case 'promote':
+case 'daradmin':
+case 'darpoder': text = (chat.sPromote || this.spromote || conn.spromote || '@user ```is now Admin```')
+case 'demote': 
+case 'quitarpoder':
+case 'quitaradmin':
+if (!text)
+text = (chat.sDemote || this.sdemote || conn.sdemote || '@user ```is no longer Admin```')
+text = text.replace('@user', '@' + participants[0].split('@')[0])
+if (chat.detect) this.sendMessage(id, { text, mentions: this.parseMention(text) })
+break
+}}
 
 /**
  * Handle groups update
  * @param {import('@adiwajshing/baileys').BaileysEventMap<unknown>['groups.update']} groupsUpdate 
  */
+
 export async function groupsUpdate(groupsUpdate) {
-    if (opts['self'])
-        return
-    for (const groupUpdate of groupsUpdate) {
-        const id = groupUpdate.id
-        if (!id) continue
-        let chats = global.db.data.chats[id], text = ''
-        if (!chats?.detect) continue
-        if (groupUpdate.desc) text = (chats.sDesc || this.sDesc || conn.sDesc || '```Description has been changed to```\n@desc').replace('@desc', groupUpdate.desc)
-        if (groupUpdate.subject) text = (chats.sSubject || this.sSubject || conn.sSubject || '```Subject has been changed to```\n@subject').replace('@subject', groupUpdate.subject)
-        if (groupUpdate.icon) text = (chats.sIcon || this.sIcon || conn.sIcon || '```Icon has been changed to```').replace('@icon', groupUpdate.icon)
-        if (groupUpdate.revoke) text = (chats.sRevoke || this.sRevoke || conn.sRevoke || '```Group link has been changed to```\n@revoke').replace('@revoke', groupUpdate.revoke)
-        if (!text) continue
-        await this.sendMessage(id, { text, mentions: this.parseMention(text) })
-    }
-}
+if (opts['self']) return
+for (const groupUpdate of groupsUpdate) {
+const id = groupUpdate.id
+if (!id) continue
+let chats = global.db.data.chats[id], text = ''
+if (!chats?.detect) continue
+if (groupUpdate.desc) text = (chats.sDesc || this.sDesc || conn.sDesc || '```Description has been changed to```\n@desc').replace('@desc', groupUpdate.desc)
+if (groupUpdate.subject) text = (chats.sSubject || this.sSubject || conn.sSubject || '```Subject has been changed to```\n@subject').replace('@subject', groupUpdate.subject)
+if (groupUpdate.icon) text = (chats.sIcon || this.sIcon || conn.sIcon || '```Icon has been changed to```').replace('@icon', groupUpdate.icon)
+if (groupUpdate.revoke) text = (chats.sRevoke || this.sRevoke || conn.sRevoke || '```Group link has been changed to```\n@revoke').replace('@revoke', groupUpdate.revoke)
+if (!text) continue
+await this.sendMessage(id, { text, mentions: this.parseMention(text) })}}
 
 export async function deleteUpdate(message) {
-    try {
-        const { fromMe, id, participant } = message
-        if (fromMe)
-            return
-        let msg = this.serializeM(this.loadMessage(id))
-        if (!msg)
-            return
-        let chat = global.db.data.chats[msg.chat] || {}
-        if (chat.delete)
-            return
-        await this.reply(msg.chat, `
+try {
+const { fromMe, id, participant } = message 
+if (fromMe) return
+let msg = this.serializeM(this.loadMessage(id))
+if (!msg) return
+let chat = global.db.data.chats[msg.chat] || {}
+if (chat.delete) return
+	
+await this.reply(msg.chat, `
 ━━━━⬣  𝘼𝙉𝙏𝙄 𝘿𝙀𝙇𝙀𝙏𝙀  ⬣━━━━
 *■ Nombre:* @${participant.split`@`[0]}
 *■ Enviando el mensaje..*
@@ -601,17 +562,13 @@ export async function deleteUpdate(message) {
 *—◉ #disable antidelete*
 *—◉ #enable delete*
 ━━━━⬣  𝘼𝙉𝙏𝙄 𝘿𝙀𝙇𝙀𝙏𝙀  ⬣━━━━
-`.trim(), msg, {
-            mentions: [participant]
-        })
-        this.copyNForward(msg.chat, msg).catch(e => console.log(e, msg))
-    } catch (e) {
-        console.error(e)
-    }
-}
+`.trim(), msg, { mentions: [participant] })
+	
+this.copyNForward(msg.chat, msg).catch(e => console.log(e, msg))
+} catch (e) { console.error(e) }}
 
 global.dfail = (type, m, conn) => {
-    let msg = {
+let msg = {
         rowner: '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼 | 𝙒𝘼𝙍𝙉𝙄𝙉𝙂* ⊱⚠️⊱╮\n\n_*¡¡Este comando solo lo puede usar Mí Creador(a)!!*_\n_*¡¡This command can only be used by My Creator!!*_',
         owner: '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼 | 𝙒𝘼𝙍𝙉𝙄𝙉𝙂* ⊱⚠️⊱╮\n\n_*¡¡Este comando solo puede ser utilizado por Mí Creador(a) de Bot!!*_\n_*¡¡This command can only be used by Owner Bot!!*_',
         mods: '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼 | 𝙒𝘼𝙍𝙉𝙄𝙉𝙂* ⊱⚠️⊱╮\n\n_*¡¡Este comando solo puede ser utilizado por Moderador(es) y Mí Creador(a)!!*_\n_*¡¡This command can only be used by Moderator!!*_',
@@ -622,13 +579,10 @@ global.dfail = (type, m, conn) => {
         botAdmin: '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼 | 𝙒𝘼𝙍𝙉𝙄𝙉𝙂* ⊱⚠️⊱╮\n\n_*¡¡Haz que Yo (Bot) sea Administrador para usar este comando!!*_\n_*¡¡Make the bot an Admin to use this command!!*_',
         unreg: '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼 | 𝙒𝘼𝙍𝙉𝙄𝙉𝙂* ⊱⚠️⊱╮\n\n_*¡Qué esperas para estar Verificando(a) en GataBot-MD! Usa el comando #verificar*_\n_*What are you waiting for to be Verifying with GataBot-MD! Use the #verify command*_',
         restrict: '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼 | 𝙒𝘼𝙍𝙉𝙄𝙉𝙂* ⊱⚠️⊱╮\n\n_*¡¡Esta función está Restringida | disable por Mí Creador(a)!!*_\n_*¡¡This feature is off | disable!!*_'
-    }[type]
-    if (msg) return m.reply(msg) 
-}
+}[type]
+if (msg) return m.reply(msg) }
 
 let file = global.__filename(import.meta.url, true)
-watchFile(file, async () => {
-    unwatchFile(file)
-    console.log(chalk.redBright("Update 'handler.js'"))
-    if (global.reloadHandler) console.log(await global.reloadHandler())
-})
+watchFile(file, async () => { unwatchFile(file) 
+console.log(chalk.redBright("Update 'handler.js'"))
+if (global.reloadHandler) console.log(await global.reloadHandler())})
