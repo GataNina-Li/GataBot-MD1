@@ -5,9 +5,20 @@ import path, { join } from 'path'
 import { unwatchFile, watchFile } from 'fs'
 import chalk from 'chalk'
 
+/**
+ * @type {import('@adiwajshing/baileys')}
+ */
+
 const { proto } = (await import('@adiwajshing/baileys')).default
 const isNumber = x => typeof x === 'number' && !isNaN(x)
-const delay = ms => isNumber(ms) && new Promise(resolve => setTimeout(function () { clearTimeout(this) resolve() }, ms))
+const delay = ms => isNumber(ms) && new Promise(resolve => setTimeout(function () { 
+clearTimeout(this) 
+resolve() }, ms))
+
+/**
+ * Handle messages upsert
+ * @param {import('@adiwajshing/baileys').BaileysEventMap<unknown>['messages.upsert']} groupsUpdate 
+ */
 
 export async function handler(chatUpdate) {
 this.msgqueque = this.msgqueque || []
@@ -198,7 +209,7 @@ m.limit = false
             if (!('antiLink2' in chat)) chat.antiLink2 = false
             if (!('viewonce' in chat)) chat.viewonce = false
             if (!('antiToxic' in chat)) chat.antiToxic = false
-            if (!isNumber(chat.expired))   chat.expired = 0
+            if (!isNumber(chat.expired)) chat.expired = 0
 		    
             } else
 		    
@@ -300,7 +311,7 @@ m.reply(`*[ ⚠️ 𝚁𝙴𝙿𝙾𝚁𝚃𝙴 𝙳𝙴 𝙲𝙾𝙼𝙰𝙽�
 }}}
 
 if (!opts['restrict'])
-if (plugin.tags && plugin.tags.includes('admin')) { // global.dfail('restrict', m, this)
+if (plugin.tags && plugin.tags.includes('admin')) {
 continue
 }
 	
@@ -312,11 +323,14 @@ Array.isArray(_prefix) ? // Array?
 	     
 _prefix.map(p => {
 let re = p instanceof RegExp ? // RegExp in Array?
-p : new RegExp(str2Regex(p))
-return [re.exec(m.text), re] }) :
+p : 
+new RegExp(str2Regex(p))
+return [re.exec(m.text), re] 
+}) :
 typeof _prefix === 'string' ? // String?
 [[new RegExp(str2Regex(_prefix)).exec(m.text), new RegExp(str2Regex(_prefix))]] :
-[[[], new RegExp]] ).find(p => p[1])
+[[[], new RegExp]] 
+).find(p => p[1])
 
 if (typeof plugin.before === 'function') {
 if (await plugin.before.call(this, m, {
@@ -342,16 +356,22 @@ continue
 if (typeof plugin !== 'function') continue
 if ((usedPrefix = (match[0] || '')[0])) {
 let noPrefix = m.text.replace(usedPrefix, '')
-let [command, ...args] = noPrefix.trim().split` `.filter(v => v) args = args || []
+let [command, ...args] = noPrefix.trim().split` `.filter(v => v) 
+args = args || []
 let _args = noPrefix.trim().split` `.slice(1)
-let text = _args.join` ` command = (command || '').toLowerCase()
+let text = _args.join` ` 
+command = (command || '').toLowerCase()
 let fail = plugin.fail || global.dfail // When failed
 let isAccept = plugin.command instanceof RegExp ? // RegExp Mode?
-plugin.command.test(command) : Array.isArray(plugin.command) ? // Array?
+plugin.command.test(command) : 
+Array.isArray(plugin.command) ? // Array?
 plugin.command.some(cmd => cmd instanceof RegExp ? // RegExp in Array?
-cmd.test(command) : cmd === command
-) : typeof plugin.command === 'string' ? // String?
-plugin.command === command : false
+cmd.test(command) : 
+cmd === command
+) : 
+typeof plugin.command === 'string' ? // String?
+plugin.command === command : 
+false
 
 if (!isAccept) continue
 m.plugin = name
@@ -422,7 +442,8 @@ let extra = {
 
 try {
 await plugin.call(this, m, extra)
-if (!isPrems) m.limit = m.limit || plugin.limit || false
+if (!isPrems) 
+m.limit = m.limit || plugin.limit || false
 } catch (e) { // Error occured
 m.error = e
 console.error(e)
@@ -433,9 +454,11 @@ for (let key of Object.values(global.APIKeys)) text = text.replace(new RegExp(ke
 if (e.name)
 for (let [jid] of global.owner.filter(([number, _, isDeveloper]) => isDeveloper && number)) {
 let data = (await conn.onWhatsApp(jid))[0] || {}
-if (data.exists) m.reply(`*[ ⚠️ 𝚁𝙴𝙿𝙾𝚁𝚃𝙴 𝙳𝙴 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 𝙲𝙾𝙽 𝙵𝙰𝙻𝙻𝙾𝚂 ⚠️ ]*\n\n*—◉ 𝙿𝙻𝚄𝙶𝙸𝙽:* ${m.plugin}\n*—◉ 𝚄𝚂𝚄𝙰𝚁𝙸𝙾:* ${m.sender}\n*—◉ 𝙲𝙾𝙼𝙰𝙽𝙳𝙾:* ${usedPrefix}${command} ${args.join(' ')}\n\n\`\`\`${text}\`\`\`\n\n*[❗] 𝚁𝙴𝙿𝙾𝚁𝚃𝙴𝙻𝙾 𝙰𝙻 𝙲𝚁𝙴𝙰𝙳𝙾𝚁 𝙳𝙴𝙻 𝙱𝙾𝚃 𝙿𝙰𝚁𝙰 𝙳𝙰𝚁𝙻𝙴 𝚄𝙽𝙰 𝚂𝙾𝙻𝚄𝙲𝙸𝙾𝙽, 𝙿𝚄𝙴𝙳𝙴 𝚄𝚂𝙰𝚁 𝙴𝙻 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 #reporte*`.trim(), data.jid)
-} m.reply(text) }
-} finally {
+if (data.exists) 
+m.reply(`*[ ⚠️ 𝚁𝙴𝙿𝙾𝚁𝚃𝙴 𝙳𝙴 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 𝙲𝙾𝙽 𝙵𝙰𝙻𝙻𝙾𝚂 ⚠️ ]*\n\n*—◉ 𝙿𝙻𝚄𝙶𝙸𝙽:* ${m.plugin}\n*—◉ 𝚄𝚂𝚄𝙰𝚁𝙸𝙾:* ${m.sender}\n*—◉ 𝙲𝙾𝙼𝙰𝙽𝙳𝙾:* ${usedPrefix}${command} ${args.join(' ')}\n\n\`\`\`${text}\`\`\`\n\n*[❗] 𝚁𝙴𝙿𝙾𝚁𝚃𝙴𝙻𝙾 𝙰𝙻 𝙲𝚁𝙴𝙰𝙳𝙾𝚁 𝙳𝙴𝙻 𝙱𝙾𝚃 𝙿𝙰𝚁𝙰 𝙳𝙰𝚁𝙻𝙴 𝚄𝙽𝙰 𝚂𝙾𝙻𝚄𝙲𝙸𝙾𝙽, 𝙿𝚄𝙴𝙳𝙴 𝚄𝚂𝙰𝚁 𝙴𝙻 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 #reporte*`.trim(), data.jid)
+} 
+m.reply(text) 
+}} finally {
 // m.reply(util.format(_user))
 if (typeof plugin.after === 'function') {
 try {
@@ -501,7 +524,9 @@ if (chat.welcome) {
 let groupMetadata = await this.groupMetadata(id) || (conn.chats[id] || {}).metadata
 for (let user of participants) {
 let pp = './src/sinfoto.jpg'
-try { pp = await this.profilePictureUrl(user, 'image') } catch (e) {
+try { 
+pp = await this.profilePictureUrl(user, 'image') 
+} catch (e) {
 } finally {
 	
 text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || '*𝙂𝙧𝙪𝙥𝙤 𝙂𝙚𝙣𝙞𝙖𝙡 | 𝘾𝙤𝙤𝙡 𝙂𝙧𝙤𝙪𝙥 😼*') :
@@ -510,19 +535,22 @@ let apii = await this.getFile(pp)
 this.sendHydrated(id, text, groupMetadata.subject, apii.data, 'https://github.com/GataNina-Li/GataBot-MD', '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
 [(action == 'add' ? '𝙎𝙚 𝙪𝙣𝙞𝙤 🥳 | 𝙃𝙞!!' : '𝙎𝙚 𝙛𝙪𝙚 𝙪𝙣 𝙍𝙖𝙣𝙙𝙤𝙢 🧐 | 𝘽𝙮𝙚'), '.s'],    
 ['💖 𝙄𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪 | 𝙂𝙤 𝙈𝙚𝙣𝙪', '/menu']
-], '', { mentions: [user]})}}}
+], '', { mentions: [user]})
+}}}
 		
-            break
+break
 case 'promote':
 case 'daradmin':
-case 'darpoder': text = (chat.sPromote || this.spromote || conn.spromote || '@user ```is now Admin```')
+case 'darpoder': 
+text = (chat.sPromote || this.spromote || conn.spromote || '@user ```is now Admin```')
 case 'demote': 
 case 'quitarpoder':
 case 'quitaradmin':
 if (!text)
 text = (chat.sDemote || this.sdemote || conn.sdemote || '@user ```is no longer Admin```')
 text = text.replace('@user', '@' + participants[0].split('@')[0])
-if (chat.detect) this.sendMessage(id, { text, mentions: this.parseMention(text) })
+if (chat.detect) 
+this.sendMessage(id, { text, mentions: this.parseMention(text) })
 break
 }}
 
@@ -533,6 +561,7 @@ break
 
 export async function groupsUpdate(groupsUpdate) {
 if (opts['self']) return
+	
 for (const groupUpdate of groupsUpdate) {
 const id = groupUpdate.id
 if (!id) continue
@@ -543,7 +572,8 @@ if (groupUpdate.subject) text = (chats.sSubject || this.sSubject || conn.sSubjec
 if (groupUpdate.icon) text = (chats.sIcon || this.sIcon || conn.sIcon || '```Icon has been changed to```').replace('@icon', groupUpdate.icon)
 if (groupUpdate.revoke) text = (chats.sRevoke || this.sRevoke || conn.sRevoke || '```Group link has been changed to```\n@revoke').replace('@revoke', groupUpdate.revoke)
 if (!text) continue
-await this.sendMessage(id, { text, mentions: this.parseMention(text) })}}
+await this.sendMessage(id, { text, mentions: this.parseMention(text) })
+}}
 
 export async function deleteUpdate(message) {
 try {
@@ -565,10 +595,13 @@ await this.reply(msg.chat, `
 `.trim(), msg, { mentions: [participant] })
 	
 this.copyNForward(msg.chat, msg).catch(e => console.log(e, msg))
-} catch (e) { console.error(e) }}
+} catch (e) { 
+console.error(e) 
+}}
 
 global.dfail = (type, m, conn) => {
 let msg = {
+	
         rowner: '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼 | 𝙒𝘼𝙍𝙉𝙄𝙉𝙂* ⊱⚠️⊱╮\n\n_*¡¡Este comando solo lo puede usar Mí Creador(a)!!*_\n_*¡¡This command can only be used by My Creator!!*_',
         owner: '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼 | 𝙒𝘼𝙍𝙉𝙄𝙉𝙂* ⊱⚠️⊱╮\n\n_*¡¡Este comando solo puede ser utilizado por Mí Creador(a) de Bot!!*_\n_*¡¡This command can only be used by Owner Bot!!*_',
         mods: '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼 | 𝙒𝘼𝙍𝙉𝙄𝙉𝙂* ⊱⚠️⊱╮\n\n_*¡¡Este comando solo puede ser utilizado por Moderador(es) y Mí Creador(a)!!*_\n_*¡¡This command can only be used by Moderator!!*_',
@@ -579,10 +612,13 @@ let msg = {
         botAdmin: '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼 | 𝙒𝘼𝙍𝙉𝙄𝙉𝙂* ⊱⚠️⊱╮\n\n_*¡¡Haz que Yo (Bot) sea Administrador para usar este comando!!*_\n_*¡¡Make the bot an Admin to use this command!!*_',
         unreg: '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼 | 𝙒𝘼𝙍𝙉𝙄𝙉𝙂* ⊱⚠️⊱╮\n\n_*¡Qué esperas para estar Verificando(a) en GataBot-MD! Usa el comando #verificar*_\n_*What are you waiting for to be Verifying with GataBot-MD! Use the #verify command*_',
         restrict: '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼 | 𝙒𝘼𝙍𝙉𝙄𝙉𝙂* ⊱⚠️⊱╮\n\n_*¡¡Esta función está Restringida | disable por Mí Creador(a)!!*_\n_*¡¡This feature is off | disable!!*_'
+
 }[type]
 if (msg) return m.reply(msg) }
 
 let file = global.__filename(import.meta.url, true)
-watchFile(file, async () => { unwatchFile(file) 
+watchFile(file, async () => { 
+unwatchFile(file) 
 console.log(chalk.redBright("Update 'handler.js'"))
-if (global.reloadHandler) console.log(await global.reloadHandler())})
+if (global.reloadHandler) console.log(await global.reloadHandler())
+})
