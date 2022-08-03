@@ -62,9 +62,9 @@ https://github.com/clhuang/heroku-buildpack-webp-binaries.git
 ------------------
 
 ### ACTIVAR EN TERMUX  <img src="https://c.tenor.com/HLrXIleGBToAAAAC/transparent-cat.gif" height="30px">
-```bash
-ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
+> ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 
+```bash
 termux-setup-storage
 apt update 
 pkg upgrade 
