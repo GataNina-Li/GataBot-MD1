@@ -1,4 +1,4 @@
-> #### 🚀 Versión actual: 1.1.22
+> #### 🚀 Versión actual: 1.1.25
 
 <p align="center"> 
   <a href="https://github.com/GataNina-Li"><img src="http://readme-typing-svg.herokuapp.com?font=mono&size=17&duration=4000&color=F7B11B&center=falso&vCenter=falso&lines=GataBot-MD++%F0%9F%90%88;Gracias+por+visitar+este+repositorio.+%F0%9F%92%96" height="90px"
@@ -57,9 +57,6 @@
 ```bash
 > https://github.com/clhuang/heroku-buildpack-webp-binaries.git
 ```
-```bash
-> https://github.com/DuckyTeam/heroku-buildpack-imagemagick.git
-```
 -----
 
 ### ACTIVAR EN TERMUX  <img src="https://c.tenor.com/HLrXIleGBToAAAAC/transparent-cat.gif" height="30px">
@@ -80,7 +77,6 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 > yarn install 
 > npm install
 > npm update
->  ls
 > npm start
 ```
 ----    
