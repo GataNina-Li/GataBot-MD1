@@ -49,13 +49,13 @@
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/GataNina-Li/GataBot-MD) <img src="https://c.tenor.com/OIc0cAei3dwAAAAd/gato-baile.gif" height="32px">
 ### Añada lo siguente al Buildpack: <img src="https://cdn-0.emojis.wiki/emoji-pics/microsoft/backhand-index-pointing-down-microsoft.png" height="32px">
 ```bash
-> heroku/nodejs
+heroku/nodejs
 ```
 ```bash
-> https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git
+https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git
 ```
 ```bash
-> https://github.com/clhuang/heroku-buildpack-webp-binaries.git
+https://github.com/clhuang/heroku-buildpack-webp-binaries.git
 ```
 ------------------
 - [x] Resultado <details><summary>Buildpack</summary><img src="https://i.imgur.com/t3Xzgnh.jpeg"></details>
@@ -65,20 +65,20 @@
 ```bash
 ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 
-> termux-setup-storage
-> apt update 
-> pkg upgrade 
-> pkg install git -y
-> pkg install nodejs -y
-> pkg install ffmpeg -y
-> pkg install imagemagick -y
-> pkg install yarn
-> git clone https://github.com/GataNina-Li/GataBot-MD
-> cd GataBot-MD
-> yarn install 
-> npm install
-> npm update
-> npm start
+termux-setup-storage
+apt update 
+pkg upgrade 
+pkg install git -y
+pkg install nodejs -y
+pkg install ffmpeg -y
+pkg install imagemagick -y
+pkg install yarn
+git clone https://github.com/GataNina-Li/GataBot-MD
+cd GataBot-MD
+yarn install 
+npm install
+npm update
+npm start
 ```
 ----
 ## 💻 PARA USUARIOS DE WINDOWS/VPS/RDP (Opcional)
