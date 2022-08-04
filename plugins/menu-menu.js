@@ -39,7 +39,7 @@ process.once('message', resolve)
 setTimeout(resolve, 1000)
 }) * 1000
 }
-let { money } = global.db.data.users[m.sender]
+let { money, joincount } = global.db.data.users[m.sender]
 let user = global.db.data.users[m.sender]
 let muptime = clockString(_muptime)
 let uptime = clockString(_uptime)
@@ -82,6 +82,7 @@ let str =
 *┆⚓ RANGO ➟* ${role}
 *┆💎 DIAMANTES ➟ ${limit}*
 *┆🐈 GATACOINS ➟ ${money}*
+*┆🪙 TOKENS ➟ ${joincount}*
 *┆🎟️ PREMIUM ➟* ${global.prem ? '✅' : '❌'}
 *╰*┅┅┅┅┅┅┅┅┅┅┅┅┅ *✧*
 ${readMore}
