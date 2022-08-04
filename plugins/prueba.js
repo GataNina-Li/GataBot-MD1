@@ -3,7 +3,7 @@ import fetch from 'node-fetch';
 //let img = 'https://i.imgur.com/8fK4h6F.jpg'
 
 let handler = async (m, { conn, args, usedPrefix, command, isPrems, isOwner, isROwner}) => {
-    if (!args[0]) throw `${mg}*USE EL COMANDO COMO ESTE EJEMPLO*\n${usedPrefix + command} enlace y número por hora*\n\n*EJEMPLO*\n*${usedPrefix + command} ${nn} 1*`
+    if (!args[0]) throw `${mg}*USE EL COMANDO COMO ESTE EJEMPLO*\n*${usedPrefix + command} enlace y número por hora*\n\n*EJEMPLO*\n*${usedPrefix + command} ${nn} 1*`
     let [_, code] = args[0].match(linkRegex) || []
     
     if (!code) throw `${fg}*ENLACE INCORRECTO, VERIFIQUE QUE EL ENLACE SEA DE UN GRUPO DE WHATSAPP Y QUE NO ESTE CADUCADO*`
@@ -29,7 +29,7 @@ let handler = async (m, { conn, args, usedPrefix, command, isPrems, isOwner, isR
                 }
         })
     } else if ((isOwner || !isPrems || isROwner)) {
-        if (!args[1]) throw `${mg}*USE EL COMANDO COMO ESTE EJEMPLO*\n${usedPrefix + command} enlace y número por hora*\n\n*EJEMPLO*\n*${usedPrefix + command} ${nn} 1*`
+        if (!args[1]) throw `${mg}*USE EL COMANDO COMO ESTE EJEMPLO*\n*${usedPrefix + command} enlace y número por hora*\n\n*EJEMPLO*\n*${usedPrefix + command} ${nn} 1*`
         let res = await conn.groupAcceptInvite(code)
         conn.reply(m.chat, 'Holaaaa', m).then(async() => { 
           let img = 'https://i.imgur.com/8fK4h6F.jpg'
