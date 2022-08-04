@@ -109,8 +109,8 @@ ${readMore}
 *╭━〔 ÚNETE AL GRUPO 〕━⬣*
 ┃ *Une a GataBot en Grupos!!*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃🪅 _${usedPrefix}join *enlace*_
-┃🪅 _${usedPrefix}unete *enlace*_
+┃🪅 _${usedPrefix}botemporal *enlace* *cantidad*_
+┃🪅 _${usedPrefix}addbot *enlace* *cantidad*_
 *╰━━━━━━━━━━━━⬣*
 
 *╭━〔 JUEGOS - MULTI JUEGOS 〕━⬣*
@@ -443,6 +443,8 @@ ${readMore}
 *╭━[ MENU PARA PROPIETARIO/A ]━⬣*
 ┃ *Comandos solo para Propietario/a!!*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃💎 _${usedPrefix}join *enlace*_
+┃💎 _${usedPrefix}unete *enlace*_
 ┃💎➺ _${usedPrefix}dardiamantes *cantidad*_
 ┃💎➺ _${usedPrefix}darxp *cantidad*_
 ┃💎➺ _${usedPrefix}dargatacoins *cantidad*_
