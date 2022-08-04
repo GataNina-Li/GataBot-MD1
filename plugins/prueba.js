@@ -81,7 +81,7 @@ function msToDate(ms) {
     let minutes = Math.floor((hoursms) / (60 * 1000));
     let minutesms = ms % (60 * 1000);
     let sec = Math.floor((minutesms) / (1000));
-    return days + " Days ☀️\n" + hours + " Hours 🕐\n" + minutes + " Minute ⏰";
+    return days + " Days ☀️\n" + hours + " Hours 🕐\n" + minutes + " Minute ⏰\n" + sec + " Segundos 🕐";
     //return days + " Hari " + hours + " Jam " + minutes + " Menit";
     // +minutes+":"+sec;
 }
