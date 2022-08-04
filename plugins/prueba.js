@@ -69,11 +69,16 @@ let handler = async (m, { conn, args, usedPrefix, command, isPrems, isOwner, isR
            // await conn.send2ButtonImg(res, await(await fetch(img)).buffer(), `${conn.user.name} es un bot de whatsapp construido con Nodejs, ${conn.user.name} Invitado por @${m.sender.split(`@`)[0]}\n\nKetik ${usedPrefix}menu para ver una lista de comandos\nEl bot saldrá automáticamente después de *${msToDate(global.db.data.chats[res].expired - now)}*`.trim(), wm, 'Menu', usedPrefix + `menu`, 'Creadora', usedPrefix + `owner`, { mentions: [m.sender] })
         })*/
     } 
+    if (command == 'tiempo') {
+        let [_, code] = args[0].match(linkRegex) || []
+        let res = await conn.groupAcceptInvite
+     conn.reply(m.chat, `${rg}*${await conn.getName(res)} EN ESTE GRUPO QUEDA EL SIGUIENTE TIEMPO PARA QUE CADUQUE EL\LOS TOKEN(S):*\n\n${msToDate(global.db.data.chats[res].expired - now)}`, m)   
+    }
 }
 handler.help = ['join <link> <time>']
 handler.tags = ['owner']
 //handler.limit = true
-handler.command = /^(temporal)$/i
+handler.command = /^(temporal|tiempo)$/i
 
 export default handler
 
@@ -86,7 +91,7 @@ function msToDate(ms) {
     let minutes = Math.floor((hoursms) / (60 * 1000));
     let minutesms = ms % (60 * 1000);
     let sec = Math.floor((minutesms) / (1000));
-    return days + " Days ☀️\n" + hours + " Hours 🕐\n" + minutes + " Minute ⏰\n" + sec + " Segundos 🕐";
+    return days + " Día(s) ☀️\n" + hours + " Hora(s) 🕐\n" + minutes + " Minuto(s) ⏰\n" + sec + " Segundo(s) 🕐\n";
     //return days + " Hari " + hours + " Jam " + minutes + " Menit";
     // +minutes+":"+sec;
 }
