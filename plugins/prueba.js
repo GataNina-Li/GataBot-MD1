@@ -78,7 +78,7 @@ let handler = async (m, { conn, args, usedPrefix, command, isPrems, isOwner, isR
 handler.help = ['join <link> <time>']
 handler.tags = ['owner']
 //handler.limit = true
-handler.command = /^(temporal|tiempo)$/i
+handler.command = ['temporal', 'tiempo'] ///^(temporal|tiempo)$/i
 
 export default handler
 
