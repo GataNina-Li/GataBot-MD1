@@ -27,9 +27,9 @@ await conn.reply(m.chat, `✅ SE HA UNIDO AL GRUPO!!!\n${await conn.getName(res)
 await conn.reply(m.chat, `${wm} *ES UN BOT DE WHATSAPP QUE TE AYUDARÁ A REALIZAR DIFERENTES ACTIVIDADES 🪄 AL PRIVADO O GRUPO Y TAMBIÉN TE VAS A DIVERTIR 🎈 CON SUS MULTIPLES FUNCIONES, DISFRUTA DE GATABOT!!! 😸*\n\n💖 *GATABOT FUE INVITADA POR:*\n${username}`, m)
 for (let jid of global.owner.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').filter(v => v != conn.user.jid)) {
 let data = (await conn.onWhatsApp(jid))[0] || {}
-  if (data.exists) conn.reply(m.chat, `@${m.sender.split`@`[0]} adicional ${conn.user.name} a ${await conn.getName(res)}\njid: ${res}, el bot se apagará a tiempo: ${msToDate(global.db.data.chats[res].expired - now)}`, data.jid, m)
-} conn.sendButton(m.chat, '', wm, null, [['Creadora', `/creadora`], ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', '/menu']], m, res) 
-}})
+  if (data.exists) 
+    conn.reply(m.chat, `@${m.sender.split`@`[0]} adicional ${conn.user.name} a ${await conn.getName(res)}\njid: ${res}, el bot se apagará a tiempo: ${msToDate(global.db.data.chats[res].expired - now)}`, data.jid, m) 
+}}
       
 } else if ((isOwner || !isPrems || isROwner)) { //Para Owner
   let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
