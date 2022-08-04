@@ -35,30 +35,17 @@ function msToDate(ms) {
 
 
 export async function all(m) {
-    let res = await conn.groupAcceptInvite(code)
+    //let res = await conn.groupAcceptInvite(code)
     if (!m.isGroup)
         return
     let chats = global.db.data.chats[m.chat]
     if (!chats.expired)
         return !0
     if (+new Date() > chats.expired) {
-        let caption = `Bye🖐 *${this.user.name}* quedará del grupo!!\n\nEl bot saldrá automáticamente después de: ${msToDate(global.db.data.chats[res].expired - now)}`
+        let caption = `Bye🖐 *${this.user.name}* quedará del grupo!!\n\nEl bot saldrá automáticamente`
     await this.sendButton(m.chat, caption, wm, null, [['Eliminar caducado', '/delexpired'], ['Cec caducado', '/cekexpired']], null)
         await this.groupLeave(m.chat)
         chats.expired = null
     }
 }
 
-function msToDate(ms) {
-    let temp = ms
-    let days = Math.floor(ms / (24 * 60 * 60 * 1000));
-    let daysms = ms % (24 * 60 * 60 * 1000);
-    let hours = Math.floor((daysms) / (60 * 60 * 1000));
-    let hoursms = ms % (60 * 60 * 1000);
-    let minutes = Math.floor((hoursms) / (60 * 1000));
-    let minutesms = ms % (60 * 1000);
-    let sec = Math.floor((minutesms) / (1000));
-    return days + " Days ☀️\n" + hours + " Hours 🕐\n" + minutes + " Minute ⏰\n" + sec + " Segundos 🕐";
-    //return days + " Hari " + hours + " Jam " + minutes + " Menit";
-    // +minutes+":"+sec;
-}
