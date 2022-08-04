@@ -29,7 +29,7 @@ for (let jid of global.owner.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.ne
 let data = (await conn.onWhatsApp(jid))[0] || {}
   if (data.exists) 
     conn.reply(m.chat, `@${m.sender.split`@`[0]} adicional ${conn.user.name} a ${await conn.getName(res)}\njid: ${res}, el bot se apagará a tiempo: ${msToDate(global.db.data.chats[res].expired - now)}`, data.jid, m) 
-}}}
+}})
       
 } else if ((isOwner || !isPrems || isROwner)) { //Para Owner
   let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
