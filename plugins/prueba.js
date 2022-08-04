@@ -14,7 +14,7 @@ let handler = async (m, { conn, args, usedPrefix, command, isPrems, isOwner, isR
         user.joincount -= 1
         let res = await conn.groupAcceptInvite(code)
         conn.reply(m.chat, 'Uniéndose al grupo...', m).then(async() => {
-            var jumlahHari = 120000 * 30
+            var jumlahHari = 120000 * 5 // 1 Hora | Usuarios
             var now = new Date() * 1
             if (now < global.db.data.chats[res].expired) global.db.data.chats[res].expired += jumlahHari
             else global.db.data.chats[res].expired = now + jumlahHari
@@ -43,7 +43,8 @@ let handler = async (m, { conn, args, usedPrefix, command, isPrems, isOwner, isR
                 if (data.exists)
                 m.reply(`@${m.sender.split`@`[0]} adicional ${conn.user.name} ke ${await conn.getName(res)} jid: ${res}, el bot saldrá a tiempo: ${msToDate(global.db.data.chats[res].expired - now)}`.trim(), data.jid, { mentions: [m.sender] })
             }
-            await conn.send2ButtonImg(res, await (await fetch(img)).buffer(), teks, wm, 'Menu', usedPrefix + `menu`, 'Creadora', usedPrefix + `owner`)
+            //await conn.send2ButtonImg(res, await (await fetch(img)).buffer(), teks, wm, 'Menu', usedPrefix + `menu`, 'Creadora', usedPrefix + `owner`)
+            conn.sendButton(m.chat, res, teks, wm, null, [['Creadora', `/creadora`], ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', '/menu']], m)
         })
     } else if ((isPrems || !isOwner || !isROwner)) {
       let img = 'https://i.imgur.com/8fK4h6F.jpg'
@@ -61,7 +62,8 @@ let handler = async (m, { conn, args, usedPrefix, command, isPrems, isOwner, isR
                     if (data.exists)
                     m.reply(`@${m.sender.split`@`[0]} adicional ${conn.user.name} a ${await conn.getName(res)} jid: ${res}, el bot se apagará a tiempo:: ${msToDate(global.db.data.chats[res].expired - now)}`.trim(), data.jid, { mentions: [m.sender] })
                 }
-            await conn.send2ButtonImg(res, await(await fetch(img)).buffer(), `${conn.user.name} es un bot de whatsapp construido con Nodejs, ${conn.user.name} Invitado por @${m.sender.split(`@`)[0]}\n\nKetik ${usedPrefix}menu para ver una lista de comandos\nEl bot saldrá automáticamente después de *${msToDate(global.db.data.chats[res].expired - now)}*`.trim(), wm, 'Menu', usedPrefix + `menu`, 'Creadora', usedPrefix + `owner`, { mentions: [m.sender] })
+            conn.sendButton(m.chat, res, `${conn.user.name} es un bot de whatsapp construido con Nodejs, ${conn.user.name} Invitado por @${m.sender.split(`@`)[0]}\n\nKetik ${usedPrefix}menu para ver una lista de comandos\nEl bot saldrá automáticamente después de *${msToDate(global.db.data.chats[res].expired - now)}*`, wm, null, [['Creadora', `/creadora`], ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', '/menu']], m)
+           // await conn.send2ButtonImg(res, await(await fetch(img)).buffer(), `${conn.user.name} es un bot de whatsapp construido con Nodejs, ${conn.user.name} Invitado por @${m.sender.split(`@`)[0]}\n\nKetik ${usedPrefix}menu para ver una lista de comandos\nEl bot saldrá automáticamente después de *${msToDate(global.db.data.chats[res].expired - now)}*`.trim(), wm, 'Menu', usedPrefix + `menu`, 'Creadora', usedPrefix + `owner`, { mentions: [m.sender] })
         })
     }
 }
