@@ -178,8 +178,8 @@ rows: [
  
 let name = await conn.getName(m.sender)
 //let name = conn.getName(m.sender)
-let menu = `╭─────────────────────❀\n│${ucapan()}\n│💖•.¸💝¸.• *${name}* •.¸💝¸.•💖\n╰─────────────────────❀
-╭━━━〔 *${wm}* 〕━━━⬣
+let menu = `╭───────────────────❀\n│${ucapan()}\n│💖•.¸💝¸.• *${name}* •.¸💝¸.•💖\n╰───────────────────❀
+╭━━〔 *${wm}* 〕━━⬣
 ┃✪ *Tiempo Actual | Current Time*	    
 ┃➺ ${time}   
 ┃   ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
@@ -200,7 +200,7 @@ let menu = `╭─────────────────────�
 ┃   ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃✪ *Usuario(s) Prohibido(s) | Prohibited Users*
 ┃➺ ${Object.entries(global.db.data.users).filter(user => user[1].banned).length}
-╰━━━━━━━━━━━━━━━━━━━━━⬣`
+╰━━━━━━━━━━━━━━━━━━━⬣`
 
 const fkontak = {
 	"key": {
@@ -211,16 +211,14 @@ const fkontak = {
 	},
 	"message": {
 		"contactMessage": {
-			"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
+			//"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
+		"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:;GataBot;;;\nFN:GataBot\nORG:GataBot\nTITLE:\nitem1.TEL;waid=593993684821:+593 099 368 4821\nitem1.X-ABLabel:GataBot\nX-WA-BIZ-DESCRIPTION:Contata el Bot\nX-WA-BIZ-NAME:GataBot\nEND:VCARD`
 		}
 	},
 	"participant": "0@s.whatsapp.net"
 } 
 await conn.sendMessage(m.chat, { text: menu, mentions: [m.sender] }, { quoted: fkontak, m })
-//await conn.sendMessage(m.chat, { contacts: { displayName: wm, contacts: [{ fkontak }] }}, {quoted: m})
-//conn.sendMessage(m.chat, menu, { quoted: m })
-//await conn.sendMessage(m.chat, listMessage)
-//await conn.relayMessage( m.key.remoteJid, template.message, { messageId: template.key.id }
+	
 }
 handler.help = ['en', 'dis'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
