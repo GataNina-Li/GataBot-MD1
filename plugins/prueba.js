@@ -64,8 +64,8 @@ let handler = async (m, { conn, args, usedPrefix, command, isPrems, isOwner, isR
                 }
             conn.sendButton(m.chat, res, `${conn.user.name} es un bot de whatsapp construido con Nodejs, ${conn.user.name} Invitado por @${m.sender.split(`@`)[0]}\n\nKetik ${usedPrefix}menu para ver una lista de comandos\nEl bot saldrá automáticamente después de *${msToDate(global.db.data.chats[res].expired - now)}*`, wm, null, [['Creadora', `/creadora`], ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', '/menu']], m)
            // await conn.send2ButtonImg(res, await(await fetch(img)).buffer(), `${conn.user.name} es un bot de whatsapp construido con Nodejs, ${conn.user.name} Invitado por @${m.sender.split(`@`)[0]}\n\nKetik ${usedPrefix}menu para ver una lista de comandos\nEl bot saldrá automáticamente después de *${msToDate(global.db.data.chats[res].expired - now)}*`.trim(), wm, 'Menu', usedPrefix + `menu`, 'Creadora', usedPrefix + `owner`, { mentions: [m.sender] })
-        })
-    } */
+        })*/
+    } 
 }
 handler.help = ['join <link> <time>']
 handler.tags = ['owner']
