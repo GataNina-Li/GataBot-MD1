@@ -44,9 +44,9 @@ let handler = async (m, { conn, args, usedPrefix, command, isPrems, isOwner, isR
                 m.reply(`@${m.sender.split`@`[0]} adicional ${conn.user.name} ke ${await conn.getName(res)} jid: ${res}, el bot saldrá a tiempo: ${msToDate(global.db.data.chats[res].expired - now)}`.trim(), data.jid, { mentions: [m.sender] })
             }
             //await conn.send2ButtonImg(res, await (await fetch(img)).buffer(), teks, wm, 'Menu', usedPrefix + `menu`, 'Creadora', usedPrefix + `owner`)
-            conn.sendButton(m.chat, res, teks, wm, null, [['Creadora', `/creadora`], ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', '/menu']], m)
+            conn.sendButton(m.chat, teks, wm, null, [['Creadora', `/creadora`], ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', '/menu']], m, res)
         })
-    } else if ((isPrems || !isOwner || !isROwner)) {
+    /*} else if ((isPrems || !isOwner || !isROwner)) {
       let img = 'https://i.imgur.com/8fK4h6F.jpg'
         if (user.joincount === 0) throw `¡Has excedido el token/límite de agregar bots al grupo!`
         user.joincount -= 1
@@ -65,7 +65,7 @@ let handler = async (m, { conn, args, usedPrefix, command, isPrems, isOwner, isR
             conn.sendButton(m.chat, res, `${conn.user.name} es un bot de whatsapp construido con Nodejs, ${conn.user.name} Invitado por @${m.sender.split(`@`)[0]}\n\nKetik ${usedPrefix}menu para ver una lista de comandos\nEl bot saldrá automáticamente después de *${msToDate(global.db.data.chats[res].expired - now)}*`, wm, null, [['Creadora', `/creadora`], ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', '/menu']], m)
            // await conn.send2ButtonImg(res, await(await fetch(img)).buffer(), `${conn.user.name} es un bot de whatsapp construido con Nodejs, ${conn.user.name} Invitado por @${m.sender.split(`@`)[0]}\n\nKetik ${usedPrefix}menu para ver una lista de comandos\nEl bot saldrá automáticamente después de *${msToDate(global.db.data.chats[res].expired - now)}*`.trim(), wm, 'Menu', usedPrefix + `menu`, 'Creadora', usedPrefix + `owner`, { mentions: [m.sender] })
         })
-    }
+    } */
 }
 handler.help = ['join <link> <time>']
 handler.tags = ['owner']
