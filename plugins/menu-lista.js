@@ -211,8 +211,7 @@ const fkontak = {
 	},
 	"message": {
 		"contactMessage": {
-			//"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
-		"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:;GataBot;;;\nFN:GataBot\nORG:GataBot\nTITLE:\nitem1.TEL;waid=593993684821:+593 099 368 4821\nitem1.X-ABLabel:GataBot\nX-WA-BIZ-DESCRIPTION:Contata el Bot\nX-WA-BIZ-NAME:GataBot\nEND:VCARD`
+			"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
 		}
 	},
 	"participant": "0@s.whatsapp.net"
