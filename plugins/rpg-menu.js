@@ -116,6 +116,8 @@ let menu = `
 ┃⚗️➺ _${usedPrefix}buyall_
 ┃⚗️➺ _${usedPrefix}buy2 *cantidad*__
 ┃⚗️➺ _${usedPrefix}buyall2_
+┃⚗️➺ _${usedPrefix}buy3 *cantidad*__
+┃⚗️➺ _${usedPrefix}buyall3_
 ┃⚗️➺ _${usedPrefix}verificar | registrar_
 ┃⚗️➺ _${usedPrefix}perfil | profile_
 ┃⚗️➺ _${usedPrefix}myns_
