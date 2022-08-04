@@ -272,6 +272,9 @@ handler.command = /^(menu|menú|memu|memú|help|info|comandos|2help|menu1.2|ayud
 handler.exp = 50
 export default handler
 
+const more = String.fromCharCode(8206)
+const readMore = more.repeat(4001)
+
 function clockString(ms) {
   let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000)
   let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
