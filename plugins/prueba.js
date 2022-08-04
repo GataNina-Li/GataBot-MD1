@@ -72,14 +72,13 @@ let handler = async (m, { conn, args, usedPrefix, command, isPrems, isOwner, isR
     if (command == 'tiempo') {
         let [_, code] = args[0].match(linkRegex) || []
         let res = await conn.groupAcceptInvite
+        var now = new Date() * 1
      conn.reply(m.chat, `${rg}*${await conn.getName(res)} EN ESTE GRUPO QUEDA EL SIGUIENTE TIEMPO PARA QUE CADUQUE EL\LOS TOKEN(S):*\n\n${msToDate(global.db.data.chats[res].expired - now)}`, m)   
     }
 }
-handler.help = ['join <link> <time>']
-handler.tags = ['owner']
-//handler.limit = true
-handler.command = ['temporal', 'tiempo'] ///^(temporal|tiempo)$/i
 
+handler.help = ['temporal', 'tiempo']
+handler.command = ['temporal', 'tiempo'] ///^(temporal|tiempo)$/i
 export default handler
 
 function msToDate(ms) {
