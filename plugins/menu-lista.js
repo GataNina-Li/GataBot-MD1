@@ -216,7 +216,7 @@ const fkontak = {
 	},
 	"participant": "0@s.whatsapp.net"
 } 
-conn.sendMessage(m.chat, { text: menu, mentions: [m.sender] }, { quoted: m })
+conn.sendMessage(m.chat, { text: menu, mentions: [m.sender] }, { quoted: m, fkontak })
 //conn.sendMessage(m.chat, menu, { quoted: m })
 //await conn.sendMessage(m.chat, listMessage)
 //await conn.relayMessage( m.key.remoteJid, template.message, { messageId: template.key.id }
