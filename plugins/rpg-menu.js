@@ -97,6 +97,8 @@ let menu = `
 
 ╭━━━━━〔 𝙈𝙀𝙉𝙐 𝙍𝙋𝙂 〕━━━━━⬣
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃🪅 _${usedPrefix}botemporal *enlace* *cantidad*_
+┃🪅 _${usedPrefix}addbot *enlace* *cantidad*_
 ┃⚗️➺ _${usedPrefix}transfer *tipo cantidad @tag*_
 ┃⚗️➺ _${usedPrefix}dar *tipo cantidad @tag*_
 ┃⚗️➺ _${usedPrefix}enviar *tipo cantidad @tag*_
