@@ -138,13 +138,21 @@ throw false
 }}
 chat.stickers = isEnable          
 break
+//case 'temporal':
+//if (m.isGroup) {
+//if (!(isAdmin || isOwner)) {
+//global.dfail('admin', m, conn)
+//throw false
+//}}
+//chat.temporal = isEnable          
+//break
 case 'temporal':
-if (m.isGroup) {
-if (!(isAdmin || isOwner)) {
-global.dfail('admin', m, conn)
+isAll = true
+if (!isOwner) {
+global.dfail('owner', m, conn)
 throw false
-}}
-chat.temporal = isEnable          
+}
+bot.temporal = isEnable
 break
 case 'autolevelup':
 isUser = true
