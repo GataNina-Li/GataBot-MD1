@@ -39,7 +39,7 @@ process.once('message', resolve)
 setTimeout(resolve, 1000)
 }) * 1000
 }
-let { money } = global.db.data.users[m.sender]
+let { money, joincount } = global.db.data.users[m.sender]
 //let { limit } = global.db.data.users[m.sender]
 let muptime = clockString(_muptime)
 let uptime = clockString(_uptime)
@@ -82,10 +82,13 @@ let menu = `╭━━〔 *${wm}* 〕━━⬣
 ┃ ➥ ${role}
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃ ✪ *GATACOINS*
-┃ ➥ *$${money}*
+┃ ➥ *${money}*
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃ ✪ *TOKENS*
+┃ ➥ *${joincount}*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃ ✪ *DIAMANTES* 
-┃ ➥ *$${limit}*
+┃ ➥ *${limit}*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃ ✪ *FECHA*
 ┃ ➥ *${week}, ${date}*
