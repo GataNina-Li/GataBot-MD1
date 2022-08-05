@@ -19,8 +19,8 @@ let img = 'https://i.imgur.com/8fK4h6F.jpg'
  
 if (!args[1]) throw `${mg}*USE EL COMANDO COMO ESTE EJEMPLO*\n*${usedPrefix + command} enlace y Número de Token(s)*\n\n*EJEMPLO*\n*${usedPrefix + command} ${nn} 1*\n\n*1 TOKEN 🪙 = 10 MINUTOS*`
 let res = await conn.groupAcceptInvite(code) 
-if (args[1].l > 1) throw `${fg}*MÍNIMO 1 TOKEN! 🪙 PARA PODER INVITAR A GATABOT AL GRUPO*`
-if (args[1].length < 20) throw `${fg}*MÁXIMO 20 TOKEN! 🪙 PARA PODER INVITAR A GATABOT AL GRUPO*`
+if (user.joincount => 1) throw `${fg}*MÍNIMO 1 TOKEN! 🪙 PARA PODER INVITAR A GATABOT AL GRUPO*`
+//if (args[1].length < 20) throw `${fg}*MÁXIMO 20 TOKEN! 🪙 PARA PODER INVITAR A GATABOT AL GRUPO*`
 conn.reply(m.chat, `${eg}😻 *SE HA UNIDO GATABOT AL GRUPO!!!*`, m).then(async() => { 
   user.joincount -= 2
  var jumlahHari = 600000 * args[1] // 10 minutos | Owner
