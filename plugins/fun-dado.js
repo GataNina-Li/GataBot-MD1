@@ -29,7 +29,12 @@ let nombre = '🐈 𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿'
 let nombre2 = '𝙂𝙖𝙩𝙖 𝘿𝙞𝙤𝙨'
  
 const s = [
-'https://media.giphy.com/media/H3Bnu1SUQ7nPvwkaZj/giphy.gif',
+'https://media.giphy.com/media/h5cY0X4NcHP2JiFXNG/giphy.gif',
+'https://media.giphy.com/media/SSinJFA7xCih5g9F1c/giphy.gif',
+'https://media.giphy.com/media/kBHH2rfm1VHIYgodQx/giphy.gif',
+'https://media.giphy.com/media/UpDKR8EYG5zFtYhWNz/giphy.gif',
+'https://media.giphy.com/media/h8mwX2Tt1R2oIOhszC/giphy.gif',
+'https://media.giphy.com/media/iGeW8L2Pvzzbtf6jII/giphy.gif'
 
 ];  
  
