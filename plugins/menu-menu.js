@@ -995,8 +995,6 @@ const fkontak = {
 	"participant": "0@s.whatsapp.net"
 } 
 await conn.sendMessage(m.chat, { text: str, mentions: [m.sender] }, { quoted: fkontak, m })
-
-], m,)
 await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, {
 type: 'audioMessage', 
 ptt: true})
