@@ -13,11 +13,9 @@ let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? c
 let mentionedJid = [who]
 let username = conn.getName(who)
 let img = 'https://i.imgur.com/8fK4h6F.jpg'
-if (user.joincount === 0 ) throw `${ag}*¡YA NO TIENES TOKENS! 🪙*\n\n*COMPRA TOKENS PARA PODER INVITAR A GATABOT A TÚ GRUPO CON EL COMANDO ${usedPrefix}buy3* *cantidad*`  
- 
-if (!args[1]) throw `${mg}*USE EL COMANDO COMO ESTE EJEMPLO*\n*${usedPrefix + command} enlace y Número de Token(s)*\n\n*EJEMPLO*\n*${usedPrefix + command} ${nn} 1*\n\n*1 TOKEN 🪙 = 10 MINUTOS*`
-//if (user.joincount === 0) throw `${fg}*MÍNIMO 1 TOKEN! 🪙 PARA PODER INVITAR A GATABOT AL GRUPO*`
-//if (args[1].length < 20) throw `${fg}*MÁXIMO 20 TOKEN! 🪙 PARA PODER INVITAR A GATABOT AL GRUPO*`
+ if (user.joincount === 0 ) throw `${ag}*¡YA NO TIENES TOKENS! 🪙*\n\n*COMPRA TOKENS PARA PODER INVITAR A GATABOT A TÚ GRUPO CON EL COMANDO ${usedPrefix}buy3* *cantidad*`  
+ if (!args[1]) throw `${mg}*USE EL COMANDO COMO ESTE EJEMPLO*\n*${usedPrefix + command} enlace y Número de Token(s)*\n\n*EJEMPLO*\n*${usedPrefix + command} ${nn} 1*\n\n*1 TOKEN 🪙 = 10 MINUTOS*`
+
 let res = await conn.groupAcceptInvite(code) 
 conn.reply(m.chat, `${eg}😻 *SE HA UNIDO GATABOT AL GRUPO!!!*`, m).then(async() => { 
   user.joincount -= 2
@@ -27,6 +25,7 @@ conn.reply(m.chat, `${eg}😻 *SE HA UNIDO GATABOT AL GRUPO!!!*`, m).then(async(
 //conn.reply(m.chat, `${eg}😻 *SE HA UNIDO GATABOT AL GRUPO!!!*`, m).then(async() => {
  //var jumlahHari = 600000 * 1 // 10 minutos | Usuarios
 // var now = new Date() * 1
+ 
  if (now < global.db.data.chats[res].expired) global.db.data.chats[res].expired += jumlahHari
 else global.db.data.chats[res].expired = now + jumlahHari
 await conn.reply(m.chat, `✅ SE HA UNIDO AL GRUPO!!!\n${await conn.getName(res)}\n\n*RECUERDE QUE ES ⏳ TEMPORAL, USE EL COMANDO ${usedPrefix}menu PARA VER EL MENÚ*\n\n🚪 *ME SALDRÉ AUTOMÁTICAMENTE DESPUÉS DE:*\n${msToDate(global.db.data.chats[res].expired - now)}\n\n${username} *LE QUEDA ${user.joincount} TOKEN(S) 🪙*`, m)
@@ -37,19 +36,19 @@ let data = (await conn.onWhatsApp(jid))[0] || {}
     conn.reply(m.chat, `@${m.sender.split`@`[0]} adicional ${conn.user.name} a ${await conn.getName(res)}\njid: ${res}, el bot se apagará a tiempo: ${msToDate(global.db.data.chats[res].expired - now)}`, data.jid, m) 
 }})
 
-    
-    
+       
 } else if ((isOwner || !isPrems || isROwner)) { //Para Owner
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 let mentionedJid = [who]
 let username = conn.getName(who)
-  //if (user.joincount === 0 ) throw `${ag}*¡YA NO TIENES TOKENS! 🪙*\n\n*COMPRA TOKENS PARA PODER INVITAR A GATABOT A TÚ GRUPO CON EL COMANDO ${usedPrefix}buy3* *cantidad*` 
+  
   if (!args[1]) throw `${mg}*USE EL COMANDO COMO ESTE EJEMPLO*\n*${usedPrefix + command} enlace y Número de Token(s)*\n\n*EJEMPLO*\n*${usedPrefix + command} ${nn} 1*\n\n*1 TOKEN 🪙 = 10 MINUTOS*`
-conn.reply(m.chat, `${eg}😻 *SE HA UNIDO GATABOT AL GRUPO!!!*`, m).then(async() => { 
+let res = await conn.groupAcceptInvite(code) 
+  conn.reply(m.chat, `${eg}😻 *SE HA UNIDO GATABOT AL GRUPO!!!*`, m).then(async() => { 
 let img = 'https://i.imgur.com/8fK4h6F.jpg'
  var jumlahHari = 600000 * args[1] // 10 minutos | Owner
  var now = new Date() * 1
-  let res = await conn.groupAcceptInvite(code) 
+  
   if (now < global.db.data.chats[res].expired) global.db.data.chats[res].expired += jumlahHari
 else global.db.data.chats[res].expired = now + jumlahHari
 
