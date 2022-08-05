@@ -2,6 +2,8 @@ let linkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i
 import fetch from 'node-fetch';
 
 let handler = async (m, { conn, args, usedPrefix, command, isPrems, isOwner, isROwner}) => {
+  if (!db.data.chats[m.chat].temporal && m.isGroup) throw `${ag}𝙇𝘼 𝙁𝙐𝙉𝘾𝙄𝙊𝙉 𝘿𝙀 𝙄𝙉𝙂𝙍𝙀𝙎𝘼𝙍 𝙀𝙇 𝘽𝙊𝙏 𝙏𝙀𝙈𝙋𝙊𝙍𝘼𝙇𝙈𝙀𝙉𝙏𝙀 𝘼𝙇 𝙂𝙍𝙐𝙋𝙊 𝙀𝙎𝙏𝘼 𝘿𝙀𝙎𝘼𝘾𝙏𝙄𝙑𝘼𝘿𝘼 𝙐𝙎𝙀 *#on temporal* 𝙋𝘼𝙍𝘼 𝘼𝘾𝙏𝙄𝙑𝘼𝙍\n\n𝙏𝙃𝙀 𝙁𝙐𝙉𝘾𝙏𝙄𝙊𝙉 𝙊𝙁 𝙅𝙊𝙄𝙉𝙄𝙉𝙂 𝙏𝙃𝙀 𝘽𝙊𝙏 𝙏𝙀𝙈𝙋𝙊𝙍𝘼𝙍𝙄𝙇𝙔 𝙏𝙊 𝙏𝙃𝙀 𝙂𝙍𝙊𝙐𝙋 𝙄𝙎 𝘿𝙀𝘼𝘾𝙏𝙄𝙑𝘼𝙏𝙀𝘿 𝙐𝙎𝙀 *#on temporal* 𝙁𝙊𝙍 𝘼𝘾𝙏𝙄𝙑𝘼𝙏𝙀`
+  
   if (!args[0]) throw `${mg}*USE EL COMANDO COMO ESTE EJEMPLO*\n*${usedPrefix + command} enlace Número de Token(s)*\n\n*EJEMPLO*\n*${usedPrefix + command} ${nn} 1*\n\n*1 TOKEN 🪙 = 10 MINUTOS*`
 let [_, code] = args[0].match(linkRegex) || []
     
