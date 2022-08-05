@@ -271,6 +271,8 @@ export async function handler(chatUpdate) {
                     chat.modohorny = false
                 if (!('stickers' in chat))
                     chat.stickers = false
+		if (!('temporal' in chat))
+                    chat.temporal = false
                 if (!('autosticker' in chat))
                     chat.autosticker = false  
                 if (!('audios' in chat))
@@ -297,6 +299,7 @@ export async function handler(chatUpdate) {
                     delete: true,
                     modohorny: true,
                     stickers: true,
+		    temporal: true,
                     autosticker: false,
                     audios: true,
                     antiLink: false,
