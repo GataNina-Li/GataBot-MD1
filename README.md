@@ -133,18 +133,18 @@ Si tiene éxito, le dará un mensaje como: `SUCCESS: specified value was saved`.
 ### GataBot-MD - Preguntas
 
 * Cómo detengo el Bot en Termux?
-> Use CTRL + z para apagar el Bot
+> Use CTRL + z 2 veces para apagar el Bot
 
 * Cómo enciendo el Bot en termux?
-> En caso que vuelva a iniciar en termux use este comando ```cd MultiverseBot-MD && node .```
-En caso que este Apagado el Bot sin salir de la carpeta del Bot, use este comando ```node .```
+> En caso que vuelva a iniciar en termux use este comando ```cd GataBot-MD & npm start```
+En caso que este Apagado el Bot sin salir de la carpeta del Bot, use este comando ```npm start```
 
 * Que hago si quiero volver a clonar el Bot?
 > En caso que quiera eliminar la carpeta del Bot y volver a clonar use este comando ```rm -rf GataBot-MD && git clone https://github.com/GataNina-Li/GataBot-MD && cd GataBot-MD && yarn install && npm install && node .``` Esta acción también sirve en caso que quiera Actualizar a la última versión (Si usa el Repositorio Oficial es probable que no sea Owner)
 
 * Cómo puedo borrar la Session?
 > Ejecute este comando en Termux ```rm -rf session.data.json```
-En caso que no tenga nada en el terminar puede usar este comando ```cd GataBot-MD && rm -rf session.data.json``` luego use ```node .``` Y después solo debe de escanear el Código QR
+En caso que no tenga nada en el terminar puede usar este comando ```cd GataBot-MD && rm -rf session.data.json  Y después solo debe de escanear el Código QR
 
 * Cómo puedo hacer el Bot Owner?
 > Debe de ingresar al archivo `config.js` o también [`Aquí`](https://github.com/GataNina-Li/GataBot-MD/blob/master/config.js) luego añadir su número en donde diga `global.owner` Recuerde que requiere de hacer una Bifurcación, puede hacerla [`Aquí`](https://github.com/GataNina-Li/GataBot-MD/fork)
