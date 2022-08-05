@@ -14,12 +14,13 @@ let mentionedJid = [who]
 let username = conn.getName(who)
 
 let img = 'https://i.imgur.com/8fK4h6F.jpg'
-  if (user.joincount === 0 ) throw `${ag}*¡YA NO TIENES TOKENS! 🪙*\n\n*COMPRA TOKENS PARA PODER INVITAR A GATABOT A TÚ GRUPO CON EL COMANDO ${usedPrefix}buy3* *cantidad*`
+  //if (user.joincount === 0 ) throw `${ag}*¡YA NO TIENES TOKENS! 🪙*\n\n*COMPRA TOKENS PARA PODER INVITAR A GATABOT A TÚ GRUPO CON EL COMANDO ${usedPrefix}buy3* *cantidad*`
         //user.joincount -= 1
  
 if (!args[1]) throw `${mg}*USE EL COMANDO COMO ESTE EJEMPLO*\n*${usedPrefix + command} enlace y Número de Token(s)*\n\n*EJEMPLO*\n*${usedPrefix + command} ${nn} 1*\n\n*1 TOKEN 🪙 = 10 MINUTOS*`
 let res = await conn.groupAcceptInvite(code) 
-if (user.joincount => 1) throw `${fg}*MÍNIMO 1 TOKEN! 🪙 PARA PODER INVITAR A GATABOT AL GRUPO*`
+if (user.joincount === 0 ) throw `${ag}*¡YA NO TIENES TOKENS! 🪙*\n\n*COMPRA TOKENS PARA PODER INVITAR A GATABOT A TÚ GRUPO CON EL COMANDO ${usedPrefix}buy3* *cantidad*`
+//if (user.joincount === 0) throw `${fg}*MÍNIMO 1 TOKEN! 🪙 PARA PODER INVITAR A GATABOT AL GRUPO*`
 //if (args[1].length < 20) throw `${fg}*MÁXIMO 20 TOKEN! 🪙 PARA PODER INVITAR A GATABOT AL GRUPO*`
 conn.reply(m.chat, `${eg}😻 *SE HA UNIDO GATABOT AL GRUPO!!!*`, m).then(async() => { 
   user.joincount -= 2
