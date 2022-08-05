@@ -29,7 +29,7 @@ let nombre = '🐈 𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿'
 let nombre2 = '𝙂𝙖𝙩𝙖 𝘿𝙞𝙤𝙨'
  
 const s = [
-'https://e.top4top.io/p_2408grgis1.gif',
+'https://media.giphy.com/media/H3Bnu1SUQ7nPvwkaZj/giphy.gif',
 
 ];  
  
