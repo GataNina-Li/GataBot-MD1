@@ -29,12 +29,8 @@ let nombre = '🐈 𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿'
 let nombre2 = '𝙂𝙖𝙩𝙖 𝘿𝙞𝙤𝙨'
  
 const s = [
-'https://media.giphy.com/media/Tbgz6D1ejQi0dfRScK/giphy.gif',
-'https://media.giphy.com/media/GcueBoSIHwPhOaJoaq/giphy.gif',
-'https://media.giphy.com/media/P4dpkKvH2fZRMaDyPZ/giphy.gif',
-'https://media.giphy.com/media/XwVxuUrbEA5V8SQZ7o/giphy.gif',
-'https://media.giphy.com/media/t3e6RDJZVwJNPKLQHy/giphy.gif',
-'https://media.giphy.com/media/8DdFztLilbJH8y8d2X/giphy.gif',
+'https://e.top4top.io/p_2408grgis1.gif',
+
 ];  
  
 let stiker = await sticker(null, s[Math.floor(Math.random() * s.length)], nombre, nombre2)
