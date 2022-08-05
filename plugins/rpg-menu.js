@@ -97,10 +97,11 @@ let menu = `
 
 ╭━━━━━〔 𝙈𝙀𝙉𝙐 𝙍𝙋𝙂 〕━━━━━⬣
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃⚗️➺ _${usedPrefix}dardiamantes *cantidad*_
-┃⚗️➺ _${usedPrefix}darxp *cantidad*_
-┃⚗️➺ _${usedPrefix}dargatacoins *cantidad*_
-┃⚗️➺ _${usedPrefix}transfer *tipo cantidad @user*_
+┃🪅 _${usedPrefix}botemporal *enlace* *cantidad*_
+┃🪅 _${usedPrefix}addbot *enlace* *cantidad*_
+┃⚗️➺ _${usedPrefix}transfer *tipo cantidad @tag*_
+┃⚗️➺ _${usedPrefix}dar *tipo cantidad @tag*_
+┃⚗️➺ _${usedPrefix}enviar *tipo cantidad @tag*_
 ┃⚗️➺ _${usedPrefix}balance_
 ┃⚗️➺ _${usedPrefix}cartera | wallet_
 ┃⚗️➺ _${usedPrefix}experiencia | exp_
@@ -115,6 +116,8 @@ let menu = `
 ┃⚗️➺ _${usedPrefix}buyall_
 ┃⚗️➺ _${usedPrefix}buy2 *cantidad*__
 ┃⚗️➺ _${usedPrefix}buyall2_
+┃⚗️➺ _${usedPrefix}buy3 *cantidad*__
+┃⚗️➺ _${usedPrefix}buyall3_
 ┃⚗️➺ _${usedPrefix}verificar | registrar_
 ┃⚗️➺ _${usedPrefix}perfil | profile_
 ┃⚗️➺ _${usedPrefix}myns_

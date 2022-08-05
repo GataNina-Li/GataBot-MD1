@@ -100,15 +100,27 @@ let menu = `
 
 ╭━〔 𝙈𝙀𝙉𝙐 𝙋𝘼𝙍𝘼 𝙋𝙍𝙊𝙋𝙄𝙀𝙏𝘼𝙍𝙄𝙊/𝘼 〕━⬣
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃💎➺ _${usedPrefix}actualizar | update_
-┃💎➺ _${usedPrefix}reiniciar | restart_
+┃💎➺ _${usedPrefix}dardiamantes *cantidad*_
+┃💎➺ _${usedPrefix}darxp *cantidad*_
+┃💎➺ _${usedPrefix}dargatacoins *cantidad*_
+┃💎➺ _${usedPrefix}cajafuerte_
+┃💎➺ _${usedPrefix}comunicar | broadcastall | bc *texto*_
+┃💎➺ _${usedPrefix}broadcastchats | bcc *texto*_
+┃💎➺ _${usedPrefix}comunicarpv *texto*_
+┃💎➺ _${usedPrefix}broadcastgc *texto*_
+┃💎➺ _${usedPrefix}comunicargrupos *texto*_
 ┃💎➺ _${usedPrefix}borrartmp | cleartmp_
-┃💎➺ _${usedPrefix}ban1 | banchat1_
-┃💎➺ _${usedPrefix}desban1 | unbanchat1_
-┃💎➺ _${usedPrefix}comunicar | broadcastall | bc_
-┃💎➺ _${usedPrefix}comunicarpv | broadcastchats | bcc_
-┃💎➺ _${usedPrefix}comunicargrupos | broadcastgc_
-┃💎➺ _${usedPrefix}bcgc_
+┃💎➺ _${usedPrefix}delexp *@tag*_
+┃💎➺ _${usedPrefix}delgatacoins *@tag*_
+┃💎➺ _${usedPrefix}deldiamantes *@tag*_
+┃💎➺ _${usedPrefix}reiniciar | restart_
+┃💎➺ _${usedPrefix}ctualizar | update_
+┃💎➺ _${usedPrefix}addprem | +prem *@tag*_
+┃💎➺ _${usedPrefix}delprem | -prem *@tag*_
+┃💎➺ _${usedPrefix}listapremium | listprem_
+┃💎➺ _${usedPrefix}añadirdiamantes *@tag cantidad*_
+┃💎➺ _${usedPrefix}añadirxp *@tag cantidad*_
+┃💎➺ _${usedPrefix}añadirgatacoins *@tag cantidad*_
 ╰━━━━━━━━━━━━━━━━━━━⬣`.trim()
 conn.sendHydrated(m.chat, menu, wm, null, 'https://github.com/ColapsusHD/FutabuBot-MD', '𝙵𝚞𝚝𝚊𝚋𝚞𝙱𝚘𝚝-𝙼𝙳', null, null, [
 ['𝙈𝙚𝙣𝙪́ 𝙘𝙤𝙢𝙥𝙡𝙚𝙩𝙤 | 𝙁𝙪𝙡𝙡 𝙈𝙚𝙣𝙪 💫', '.allmenu'],

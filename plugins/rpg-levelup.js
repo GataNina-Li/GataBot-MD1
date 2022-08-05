@@ -85,7 +85,7 @@ let user = global.db.data.users[m.sender]
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃ *NIVEL:* *${user.level}*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ *RANGO:* ${role}
+┃ *RANGO:* ${user.role}
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃ *XP:* *${user.exp - min}/${xp}*
 ╰━━━〔 *𓃠 ${vs}* 〕━━━━━⬣
@@ -104,12 +104,13 @@ let user = global.db.data.users[m.sender]
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃ *NIVEL ACTUAL:* *${user.level}*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ *RANGO* ${role}
+┃ *RANGO* ${user.role}
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃ *FECHA:* *${new Date().toLocaleString('id-ID')}*
 ╰━━━〔 *𓃠 ${vs}* 〕━━━━━⬣
 
-*_Cuanto más interactúes con FutabuBot-MD, mayor será tu nivel!!_*
+*_Cuanto más interactúes con GataBot-MD, mayor será tu nivel!!_*
+*_Actualiza tú rango con el comando ${usedPrefix}rol!!_*
 `.trim()
         try {
             const img = await levelup(teks, user.level)

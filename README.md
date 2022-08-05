@@ -1,4 +1,4 @@
-> #### 🚀 Versión actual: 1.1.22
+> #### 🚀 Versión actual: 1.1.28
 
 <p align="center"> 
   <a href="https://github.com/GataNina-Li"><img src="http://readme-typing-svg.herokuapp.com?font=mono&size=17&duration=4000&color=F7B11B&center=falso&vCenter=falso&lines=GataBot-MD++%F0%9F%90%88;Gracias+por+visitar+este+repositorio.+%F0%9F%92%96" height="90px"
@@ -49,85 +49,114 @@
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/GataNina-Li/GataBot-MD) <img src="https://c.tenor.com/OIc0cAei3dwAAAAd/gato-baile.gif" height="32px">
 ### Añada lo siguente al Buildpack: <img src="https://cdn-0.emojis.wiki/emoji-pics/microsoft/backhand-index-pointing-down-microsoft.png" height="32px">
 ```bash
-> heroku/nodejs
+heroku/nodejs
 ```
 ```bash
-> https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git
+https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git
 ```
 ```bash
-> https://github.com/clhuang/heroku-buildpack-webp-binaries.git
+https://github.com/clhuang/heroku-buildpack-webp-binaries.git
 ```
-```bash
-> https://github.com/DuckyTeam/heroku-buildpack-imagemagick.git
-```
------
+------------------
+- [x] Resultado <details><summary>Buildpack</summary><img src="https://i.imgur.com/t3Xzgnh.jpeg"></details>
+------------------
 
 ### ACTIVAR EN TERMUX  <img src="https://c.tenor.com/HLrXIleGBToAAAAC/transparent-cat.gif" height="30px">
-```bash
-ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
+> ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 
-> termux-setup-storage
-> apt update 
-> pkg upgrade 
-> pkg install git -y
-> pkg install nodejs -y
-> pkg install ffmpeg -y
-> pkg install imagemagick -y
-> pkg install yarn
-> git clone https://github.com/GataNina-Li/GataBot-MD
-> cd GataBot-MD
-> npm install
-> yarn install 
-> npm install
-> npm update
->  ls
-> npm start
+```bash
+termux-setup-storage
+apt update 
+pkg upgrade 
+pkg install git -y
+pkg install nodejs -y
+pkg install ffmpeg -y
+pkg install imagemagick -y
+pkg install yarn
+git clone https://github.com/GataNina-Li/GataBot-MD
+cd GataBot-MD
+yarn install 
+npm install
+npm update
+npm start
+```
+----
+## 💻 PARA USUARIOS DE WINDOWS/VPS/RDP (Opcional)
+
+* Descargar e instala Git [`Aquí`](https://git-scm.com/downloads)
+* Descargar e instala NodeJS [`Aquí`](https://nodejs.org/en/download)
+* Descargar e instala FFmpeg [`Aquí`](https://ffmpeg.org/download.html) (**No olvide agregar FFmpeg a la variable de entorno PATH**)
+* Descargar e instala ImageMagick [`Aquí`](https://imagemagick.org/script/download.php)
+* Descargar e instala Yarn [`Aquí`](https://classic.yarnpkg.com/en/docs/install#windows-stable)
+
+```bash
+git clone https://github.com/GataNina-Li/GataBot-MD
+cd GataBot-MD
+npm install
+npm update
+node .
+```
+
+## 💻 Instalación de FFmpeg para Windows 
+* Descarga cualquiera de las versiones de FFmpeg disponibles haciendo clic en [FFmpeg](https://www.gyan.dev/ffmpeg/builds/).
+* Extraer archivos a `C:\` path.
+* Cambie el nombre de la carpeta extraída a `ffmpeg`.
+* Ejecute el símbolo del sistema como administrador.
+* Ejecute el siguiente comando:
+```cmd
+> setx /m PATH "C:\ffmpeg\bin;%PATH%"
+```
+Si tiene éxito, le dará un mensaje como: `SUCCESS: specified value was saved`.
+* Ahora que tiene FFmpeg instalado, verifique que funcionó ejecutando este comando para ver la versión:
+```cmd
+> ffmpeg -version
 ```
 ----    
 ###  AJUSTE <img src="https://i.pinimg.com/originals/98/1b/e2/981be28d3ec7b85bfb797a5f9e6a01c2.png" height="32px">
 - CLONAR EL REPOSITORIO [`Aquí`](https://github.com/GataNina-Li/GataBot-MD/fork)
 - CAMBIAR NÚMERO DEL OWNER [`Aquí`](https://github.com/GataNina-Li/GataBot-MD/blob/master/config.js)
 ----  
-
-### ACTIVAR EN CASO DE DETENERSE <img src="https://i.pinimg.com/originals/0e/c9/89/0ec989dde8b5fc0deef4e5b09292b605.gif" height="30px">
-```bash
-ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
-> cd 
-> cd GataBot-MD
-> npm start
-```
-----
-
-### OBTENER OTRO CODIGO QR <img src="http://4.bp.blogspot.com/-mFQY5cKLkQ0/U0kwKQn5RzI/AAAAAAAADk0/FDOXxWZ9grU/s1600/QR-code-color.png" height="30px">
-```bash
-ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
-> cd 
-> cd GataBot-MD
-> rm -rf session.data.json
-> npm start
-```
-----
   
-### NOTA 
+### SOBRE GATABOT <img src="https://i.pinimg.com/originals/0e/c9/89/0ec989dde8b5fc0deef4e5b09292b605.gif" height="30px">
 ```bash
-- ESTE REPOSITORIO PÚBLICA LA VERSIÓN ACTUAL|OFICIAL DE GATABOT-MD  
-- ES POSIBLE QUE EL BOT TENGA ALGUNAS FALLAS, SE IRAN SOLUCIONANDO CONFORME SE VAYAN DETECTANDO
-- ES RECOMENDABLE LEER TODO EL MENU Y VER EL FUNCIONAMIENTO DE CADA UNO DE LOS COMANDOS
-- REPORTA CUALQUIER FALLO CON EL COMANDO DE REPORTE 
-- PARA PODER ESCANEAR EL CODIGO QR DEBES SER PARTICIPANTE DE LA VERSION MULTI-DEVICE (BETA) DE WHATSAPP
-- NO MODIFIQUES NADA QUE NO SEPAS PARA QUE ES, PARA EVITAR PROBLEMAS O ERRORES
-- SI VAS A EDITAR POR COMPLETO DEJA LOS CREDITOS DEL BOT 
-- EL BOT ES COMPARTIBLE CON WHATSAPP NORMAL O BUSINESS
-- ATENTO A LAS ACTUALIZACIONES QUE SE HAGAN EN ESTE REPOSITORIO
-- EL ADD Y EL KICK PUEDEN OCASIONAR QUE EL NUMERO SE VAYA A SOPORTE 
-- EL BOT FUNCIONA AUNQUE EL WHATSAPP NO TENGA CONEXION 
-- SE RECOMIENDA REESCANEAR EL CODIGO QR CADA 2 DIAS, PARA EVITAR PROBLEMAS O ERRORES
+> SOLO AQUÍ SE HACE LAS ACTUALIZACIONES OFICIALES DE GATABOT-MD
+> LA VERSIÓN DEL BOT DETERMINA LAS ACTUALIZACIONES EXISTENTES 
+> EN CASO QUE ENCUENTRES UN ERROR O FALLA ESCRÍBEME AL INSTAGRAM 
+> SI SE PRESENTA ERRORES AL USAR EL BOT USE EL COMANDO /REPORTE PARA QUE LA PROPIETARIA LO SOLUCIONE
+> EL BOT FUNCIONA EN WHATSAPP MESSAGE Y WHATSAPP BUSINESS 
+> SI HACES MODIFICACIONES, POR FAVOR DEJA CREDITOS DEL REPOSITORIO
+> FUNCIONA EL BOT INCLUSO CUANDO EL NÚMERO NO TIENE INTERNET 
+> USAR EL COMANDO /ADD O /SACAR PUEDE HACER QUE EL NÚMERO VAYA AL SOPORTE
+> PUEDE ESTAR HASTA 50 GRUPOS, SI EL NÚMERO ES MAYOR, PUEDE HABER SATURACIÓN 
 ```
+----- 
+### GataBot-MD - Preguntas
+
+* Cómo detengo el Bot en Termux?
+> Use CTRL + z 2 veces para apagar el Bot
+
+* Cómo enciendo el Bot en termux?
+> En caso que vuelva a iniciar en termux use este comando ```cd GataBot-MD & npm start```
+En caso que este Apagado el Bot sin salir de la carpeta del Bot, use este comando ```npm start```
+
+* Que hago si quiero volver a clonar el Bot?
+> En caso que quiera eliminar la carpeta del Bot y volver a clonar use este comando ```rm -rf GataBot-MD && git clone https://github.com/GataNina-Li/GataBot-MD && cd GataBot-MD && yarn install && npm install && node .``` Esta acción también sirve en caso que quiera Actualizar a la última versión (Si usa el Repositorio Oficial es probable que no sea Owner)
+
+* Cómo puedo borrar la Session?
+> Ejecute este comando en Termux ```rm -rf session.data.json```
+En caso que no tenga nada en el terminar puede usar este comando ```cd GataBot-MD && rm -rf session.data.json``` Y después solo debe de escanear el Código QR
+
+* Cómo puedo hacer el Bot Owner?
+> Debe de ingresar al archivo `config.js` o también [`Aquí`](https://github.com/GataNina-Li/GataBot-MD/blob/master/config.js) luego añadir su número en donde diga `global.owner` Recuerde que requiere de hacer una Bifurcación, puede hacerla [`Aquí`](https://github.com/GataNina-Li/GataBot-MD/fork)
 ----
 
 ### 🌟 CREADORA 
  
 [![GataNina-Li](https://github.com/GataNina-Li.png?size=100)](https://github.com/GataNina-Li) 
+
+### 🌟 DESARROLLADORES
+
+[![Abiguelreyes75](https://github.com/Abiguelreyes75.png?size=100)](https://github.com/Abiguelreyes75)
  
 ### 🌟 AGRADECIMIENTOS
  

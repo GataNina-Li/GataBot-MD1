@@ -45,6 +45,8 @@ export async function handler(chatUpdate) {
                     user.exp = 0
                 if (!isNumber(user.limit))
                     user.limit = 20
+		    if (!isNumber(user.joincount)) 
+			    user.joincount = 1
                 if (!isNumber(user.lastclaim))
                     user.lastclaim = 0
                 if (!('registered' in user))
@@ -179,6 +181,7 @@ export async function handler(chatUpdate) {
                     exp: 0,
                     limit: 20,
                     lastclaim: 0,
+		    joincount: 1,
                     registered: false,
                     name: m.name,
                     age: -1,
@@ -269,7 +272,7 @@ export async function handler(chatUpdate) {
                 if (!('stickers' in chat))
                     chat.stickers = false
                 if (!('autosticker' in chat))
-                    chat.autosticker = false                    
+                    chat.autosticker = false  
                 if (!('audios' in chat))
                     chat.audios = false  
                 if (!('antiLink' in chat))
@@ -290,7 +293,7 @@ export async function handler(chatUpdate) {
                     sWelcome: '',
                     sBye: '',
                     sPromote: '',
-                    sDemote: '',
+                    sDemote: '', 
                     delete: true,
                     modohorny: true,
                     stickers: true,
