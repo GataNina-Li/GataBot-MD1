@@ -48,7 +48,6 @@ let res = await conn.groupAcceptInvite(code)
 let img = 'https://i.imgur.com/8fK4h6F.jpg'
  var jumlahHari = 600000 * args[1] // 10 minutos | Owner
  var now = new Date() * 1
-  
   if (now < global.db.data.chats[res].expired) global.db.data.chats[res].expired += jumlahHari
 else global.db.data.chats[res].expired = now + jumlahHari
 
@@ -56,16 +55,11 @@ await conn.reply(m.chat, `✅ *SE HA UNIDO AL GRUPO!!!*\n${await conn.getName(re
 await conn.reply(m.chat, `${wm} *ES UN BOT DE WHATSAPP QUE TE AYUDARÁ A REALIZAR DIFERENTES ACTIVIDADES 🪄 AL PRIVADO O GRUPO Y TAMBIÉN TE VAS A DIVERTIR 🎈 CON SUS MULTIPLES FUNCIONES, DISFRUTA DE GATABOT!!! 😸*\n\n💖 *GATABOT FUE INVITADA POR:*\n${username}`, m)
 for (let jid of global.owner.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').filter(v => v != m.sender)) {
 let data = (await conn.onWhatsApp(jid))[0] || {}
-  if (data.exists) conn.reply(m.chat, `@${m.sender.split`@`[0]} adicional ${conn.user.name} a ${await conn.getName(res)}\njid: ${res}, el bot se apagará a tiempo: ${msToDate(global.db.data.chats[res].expired - now)}`, data.jid, m)
+  if (data.exists) 
+    conn.reply(m.chat, `@${m.sender.split`@`[0]} adicional ${conn.user.name} a ${await conn.getName(res)}\njid: ${res}, el bot se apagará a tiempo: ${msToDate(global.db.data.chats[res].expired - now)}`, data.jid, m)
                 
-} conn.sendButton(m.chat, teks, wm, null, [['Creadora', `/creadora`], ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', '/menu']], m, res) })}
+} conn.sendButton(m.chat, '', wm, null, [['Creadora', `/creadora`], ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', '/menu']], m, res) })}
     
-    //if (command == 'tiempo') {
-        //let [_, code] = args[0].match(linkRegex) || []
-        //let res = await conn.groupAcceptInvite
-       // var now = new Date() * 1
-     //conn.reply(m.chat, `${rg}*${await conn.getName(res)} EN ESTE GRUPO QUEDA EL SIGUIENTE TIEMPO PARA QUE CADUQUE EL\LOS TOKEN(S):*\n\n${msToDate(global.db.data.chats[res].expired - now)}`, m)   
-    //}
 }
 
 handler.help = ['temporal', 'tiempo']
