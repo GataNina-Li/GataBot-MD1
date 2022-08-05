@@ -18,7 +18,7 @@ let img = 'https://i.imgur.com/8fK4h6F.jpg'
 
 let res = await conn.groupAcceptInvite(code) 
 conn.reply(m.chat, `${eg}😻 *SE HA UNIDO GATABOT AL GRUPO!!!*`, m).then(async() => { 
-  user.joincount -= 2
+  user.joincount -= args[1] //2
  var jumlahHari = 600000 * args[1] // 10 minutos | Owner
  var now = new Date() * 1
 //let res = await conn.groupAcceptInvite(code) 
