@@ -39,7 +39,7 @@ let data = (await conn.onWhatsApp(jid))[0] || {}
     conn.reply(m.chat, `@${m.sender.split`@`[0]} adicional ${conn.user.name} a ${await conn.getName(res)}\njid: ${res}, el bot se apagará a tiempo: ${msToDate(global.db.data.chats[res].expired - now)}`, data.jid, m) 
 }})
       
-} else if ((isOwner || !isPrems || isROwner)) { //Para Owner
+} /*else if ((isOwner || !isPrems || isROwner)) { //Para Owner
   let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 let mentionedJid = [who]
 let username = conn.getName(who)
@@ -59,7 +59,7 @@ for (let jid of global.owner.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.ne
 let data = (await conn.onWhatsApp(jid))[0] || {}
   if (data.exists) conn.reply(m.chat, `@${m.sender.split`@`[0]} adicional ${conn.user.name} a ${await conn.getName(res)}\njid: ${res}, el bot se apagará a tiempo: ${msToDate(global.db.data.chats[res].expired - now)}`, data.jid, m)
                 
-} conn.sendButton(m.chat, teks, wm, null, [['Creadora', `/creadora`], ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', '/menu']], m, res) })}
+} conn.sendButton(m.chat, teks, wm, null, [['Creadora', `/creadora`], ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', '/menu']], m, res) })} */
     
     //if (command == 'tiempo') {
         //let [_, code] = args[0].match(linkRegex) || []
