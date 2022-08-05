@@ -8,14 +8,14 @@ let handler = async (m, { conn, args, participants, usedPrefix }) => {
     let sortedLevel = users.map(toNumber('level')).sort(sort('level'))
      let sortedRole = users.map(toNumber('role')).sort(sort('role'))
       let sortedMoney = users.map(toNumber('money')).sort(sort('money'))
-       let sortedJoincount = users.map(toNumber('joincount')).sort(sort('joincount'))
+       let sortedExpired = users.map(toNumber('expired')).sort(sort('expired'))
      
       let usersExp = sortedExp.map(enumGetKey)
        let usersLim = sortedLim.map(enumGetKey)
         let usersLevel = sortedLevel.map(enumGetKey)
          let usersRole = sortedRole.map(enumGetKey)
           let usersMoney = sortedMoney.map(enumGetKey)
-           let usersJoincount = sortedJoincount.map(enumGetKey)
+           let usersExpired = sortedExpired.map(enumGetKey)
            
   console.log(participants)
   let len = args[0] && args[0].length > 0 ? Math.min(100, Math.max(parseInt(args[0]), 10)) : Math.min(10, sortedExp.length)
@@ -28,9 +28,9 @@ Tú : *${usersExp.indexOf(m.sender) + 1}* de *${usersExp.length} Usuarios*
 ${sortedExp.slice(0, len).map(({ jid, exp }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *${exp} Exp*`).join`\n`}
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 💠 *TOP ${len} TOKEN(S) 🪙* 
-Tú : *${usersJoincount.indexOf(m.sender) + 1}* de *${usersJoincount.length} Usuarios*
+Tú : *${usersExpired.indexOf(m.sender) + 1}* de *${usersExpired.length} Usuarios*
 
-${sortedJoincount.slice(0, len).map(({ jid, Joincount }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *${Joincount} TOKEN(S)*`).join`\n`}
+${sortedExpired.slice(0, len).map(({ jid, expired }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *${expired} TOKEN(S)*`).join`\n`}
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 💠 *TOP ${len} DIAMANTE(S)💎* 
 Tú : *${usersLim.indexOf(m.sender) + 1}* de *${usersLim.length} Usuarios*
