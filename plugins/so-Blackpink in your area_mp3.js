@@ -1,4 +1,4 @@
-import util from 'util'
+/*import util from 'util'
 import path from 'path'
 
 let handler = async (m, { conn }) => {
@@ -14,5 +14,5 @@ ptt: true
 }
 handler.customPrefix = /Blackpink in your area|blackpink in your area|in your area|In your area/i 
 handler.command = new RegExp
-export default handler
+export default handler*/
  
