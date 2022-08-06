@@ -22,7 +22,7 @@ conn.sendHydrated(m.chat, `╭[ 𝙏𝙊𝙆𝙀𝙉(𝙎) 🪙 ]⬣\n┃\n┃�
 }
 handler.help = ['adddi <@user>']
 handler.tags = ['xp']
-handler.command = ['añadirdiamantes', 'dardiamantes', 'dardiamante'] 
+handler.command = ['añadirtokens', 'dartokens', 'dartoken'] 
 handler.group = true
 handler.botAdmin = true
 handler.owner = true
