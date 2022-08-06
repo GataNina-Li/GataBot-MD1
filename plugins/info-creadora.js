@@ -1,3 +1,5 @@
+//error en mandar el numero de contacto no se ve la foto
+
 import fs from 'fs'
 let handler = async (m, { conn, usedPrefix }) => {
 var doc = ['pdf','zip','vnd.openxmlformats-officedocument.presentationml.presentation','vnd.openxmlformats-officedocument.spreadsheetml.sheet','vnd.openxmlformats-officedocument.wordprocessingml.document']
