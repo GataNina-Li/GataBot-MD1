@@ -386,6 +386,11 @@ if (chat.audios && m.text.match(/(nadie te pregunto|Nadie te pregunto|Nadie te p
 let vn = './media/nadie te pregunto.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
+    
+if (chat.audios && m.text.match(/(Feliz navidad|feliz navidad|Merry Christmas|merry chritmas)/gi)) {    
+let vn = './media/navidad.m4a'
+this.sendPresenceUpdate('recording', m.chat)   
+this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
    
    
 return !0 }
