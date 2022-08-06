@@ -1,5 +1,6 @@
 let handler = m => m
 handler.all = async function (m) {
+if (!db.data.chats[m.chat].audios && m.isGroup) throw 0
 let chat = global.db.data.chats[m.chat]
 
 if (/^A Bueno master|Bueno master|Bueno Máster|🫂$/i.test(m.text) && chat.audios) {
