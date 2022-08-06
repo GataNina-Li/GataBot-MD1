@@ -21,6 +21,21 @@ if (chat.audios && m.text.match(/(Blackpink in your area|blackpink in your area|
 let vn = './media/Blackpink in your area.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
+    
+if (chat.audios && m.text.match(/(Buen día grupo|Buen dia grupo|🙌)/gi)) {    
+let vn = './media/Buen día grupo.mp3'
+this.sendPresenceUpdate('recording', m.chat)   
+this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
+    
+if (chat.audios && m.text.match(/(Calla Fan de bts|bts|Amo a bts|Chino|Chinos)/gi)) {    
+let vn = './media/Calla Fan de BTS.mp3'
+this.sendPresenceUpdate('recording', m.chat)   
+this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
+    
+if (chat.audios && m.text.match(/(Calla Fan de bts|bts|Amo a bts|Chino|Chinos)/gi)) {    
+let vn = './media/Calla Fan de BTS.mp3'
+this.sendPresenceUpdate('recording', m.chat)   
+this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
    
 return !0 }
 export default handler
