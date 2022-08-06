@@ -178,6 +178,15 @@ ${readMore}
 ┃⚙️ _${usedPrefix}on *:* off *autosticker*_
 *╰━━━━━━━━━━━━⬣*
 
+*╭━〔 GRUPO - RESUMEN 〕━⬣*
+┃ *Ahora puedes ver el resumen*
+┃ *de configuracion de Grupos!!*
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃🧾➺ _${usedPrefix}configuracion_
+┃🧾➺ _${usedPrefix}settings_
+┃🧾➺ _${usedPrefix}vergrupo_
+*╰━━━━━━━━━━━━⬣*
+
 *╭━[ DESCARGAS | DOWNLOADS ]━⬣*
 ┃🚀➺ _${usedPrefix}imagen | image *texto*_
 ┃🚀➺ _${usedPrefix}pinterest | dlpinterest *texto*_
@@ -683,6 +692,15 @@ ${readMore}
 ┃⚙️ _${usedPrefix}on *:* off *autoread*_
 ┃⚙️ _${usedPrefix}on *:* off *audios*_
 ┃⚙️ _${usedPrefix}on *:* off *autosticker*_
+*╰━━━━━━━━━━━━⬣*
+
+*╭━〔 GRUPO - RESUMEN 〕━⬣*
+┃ *Ahora puedes ver el resumen*
+┃ *de configuracion de Grupos!!*
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃🧾➺ _${usedPrefix}configuracion_
+┃🧾➺ _${usedPrefix}settings_
+┃🧾➺ _${usedPrefix}vergrupo_
 *╰━━━━━━━━━━━━⬣*
 
 *╭━[ DESCARGAS | DOWNLOADS ]━⬣*
