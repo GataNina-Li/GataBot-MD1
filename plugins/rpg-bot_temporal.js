@@ -30,7 +30,7 @@ conn.reply(m.chat, `${eg}😻 *SE HA UNIDO GATABOT AL GRUPO!!!*`, m).then(async(
 //let res = await conn.groupAcceptInvite(code) 
 //conn.reply(m.chat, `${eg}😻 *SE HA UNIDO GATABOT AL GRUPO!!!*`, m).then(async() => {
  //var jumlahHari = 600000 * 1 // 10 minutos | Usuarios
-// var now = new Date() * 1
+// var now = new Date() * 1 
  
  if (now < global.db.data.chats[res].expired) global.db.data.chats[res].expired += jumlahHari
 else global.db.data.chats[res].expired = now + jumlahHari
