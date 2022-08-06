@@ -1,10 +1,11 @@
 let handler = m => m
 handler.all = async function (m) {
 let chat = global.db.data.chats[m.chat]
-
-if (/^A Bueno master|Bueno master|Bueno Máster|🫂$/i.test(m.text) && chat.audios) {
 global.db.data.users[m.sender].money += 100 
 global.db.data.users[m.sender].exp += 100
+    
+if (/^A Bueno master|Bueno master|Bueno Máster|🫂$/i.test(m.text) && chat.audios) {
+
     
 if (!db.data.chats[m.chat].audios && m.isGroup) throw 0    
 let vn = './media/A bueno adios master.mp3'
