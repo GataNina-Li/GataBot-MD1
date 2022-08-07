@@ -8,6 +8,7 @@ let handler = async (m, { conn, args, usedPrefix, command, isPrems, isOwner, isR
   if (!args[0]) throw `${mg}*USE EL COMANDO COMO ESTE EJEMPLO*\n*${usedPrefix + command} enlace Número de Token(s)*\n\n*EJEMPLO*\n*${usedPrefix + command} ${nn} 1*\n\n*1 TOKEN 🪙 = 10 MINUTOS*`
 let [_, code] = args[0].match(linkRegex) || [] 
 if (!linkRegex.test(args[0])) throw `${fg}𝙀𝙉𝙇𝘼𝘾𝙀 𝙉𝙊 𝙑𝘼𝙇𝙄𝘿𝙊.` //Aquí 
+
     
   //if (!code) throw `${fg}*ENLACE INCORRECTO, VERIFIQUE QUE EL ENLACE SEA DE UN GRUPO DE WHATSAPP Y QUE NO ESTE CADUCADO*`
 let user = db.data.users[m.sender]
@@ -21,6 +22,7 @@ if (user.joincount < 1) throw `${ag}*¡YA NO TIENES TOKENS! 🪙*\n\n*COMPRA TOK
  //if (user.joincount === 0 ) throw `${ag}*¡YA NO TIENES TOKENS! 🪙*\n\n*COMPRA TOKENS PARA PODER INVITAR A GATABOT A TÚ GRUPO CON EL COMANDO ${usedPrefix}buy3* *cantidad*`  
  if (!args[1]) throw `${mg}*USE EL COMANDO COMO ESTE EJEMPLO*\n*${usedPrefix + command} enlace y Número de Token(s)*\n\n*EJEMPLO*\n*${usedPrefix + command} ${nn} 1*\n\n*1 TOKEN 🪙 = 10 MINUTOS*`
  if (!linkRegex.test(args[0])) throw `${fg}𝙀𝙉𝙇𝘼𝘾𝙀 𝙉𝙊 𝙑𝘼𝙇𝙄𝘿𝙊.` //Aquí 
+ if (args[1] < 10) throw `${fg}*MÁXIMO 10 TOKEN(S) PARA PODER INVITAR A GATABOT*`
  
 let res = await conn.groupAcceptInvite(code) 
 conn.reply(m.chat, `${eg}😻 *SE HA UNIDO GATABOT AL GRUPO!!!*`, m).then(async() => { 
