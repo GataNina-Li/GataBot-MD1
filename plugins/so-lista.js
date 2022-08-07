@@ -327,11 +327,6 @@ let vn = './media/jesucristo.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
     
-if (chat.audios && m.text.match(/(Joder|joder|cha|verg)/gi)) {    
-let vn = './media/joder.mp3'
-this.sendPresenceUpdate('recording', m.chat)   
-this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
-    
 if (chat.audios && m.text.match(/(La voz de hombre|la voz de hombre|La voz del hombre|la voz del hombre|La voz|la voz|🥸|👨|👩|🤦‍|♂️🤦‍|♀️🤷‍♂️|🤷‍♀️)/gi)) {    
 let vn = './media/la-voz-de-hombre.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
