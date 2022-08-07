@@ -13,6 +13,7 @@ await m.reply(`
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃ 𝙄𝙣 𝙮𝙤𝙪𝙧 𝙬𝙖𝙡𝙡𝙚𝙩 𝙮𝙤𝙪 𝙝𝙖𝙫𝙚...
 ┃ *${global.db.data.users[who].limit} Diamond(s)* 💎
+┃ *${global.db.data.users[who].exp} EXP* ⚡
 ┃ *${global.db.data.users[who].money} GataCoin(s)* 🐈
 ┃ *${global.db.data.users[who].joincount} Token(s)* 🪙
 ╰━━━━〔 *𓃠 ${vs}* 〕━━━⬣`)

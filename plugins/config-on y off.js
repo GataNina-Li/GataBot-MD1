@@ -43,6 +43,7 @@ footer: `╭━━━[ *𝘼𝙅𝙐𝙎𝙏𝙀𝙎 𝙂𝘼𝙏𝘼𝘽𝙊�
 ┃⚙️ _${usedPrefix}on *:* off *autoread*_
 ┃⚙️ _${usedPrefix}on *:* off *audios*_
 ┃⚙️ _${usedPrefix}on *:* off *stickers*_
+┃⚙️ _${usedPrefix}on *:* off *temporal*_
 ┃⚙️ _${usedPrefix}on *:* off *autosticker*_
 ╰━━━━━━━━━━━━━⬣
 ${wm}`,
@@ -136,6 +137,22 @@ global.dfail('admin', m, conn)
 throw false
 }}
 chat.stickers = isEnable          
+break
+//case 'temporal':
+//if (m.isGroup) {
+//if (!(isAdmin || isOwner)) {
+//global.dfail('admin', m, conn)
+//throw false
+//}}
+//chat.temporal = isEnable          
+//break
+case 'temporal':
+isAll = true
+if (!isOwner) {
+global.dfail('owner', m, conn)
+throw false
+}
+bot.temporal = isEnable
 break
 case 'autolevelup':
 isUser = true

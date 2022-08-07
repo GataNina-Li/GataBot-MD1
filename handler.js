@@ -271,6 +271,8 @@ export async function handler(chatUpdate) {
                     chat.modohorny = false
                 if (!('stickers' in chat))
                     chat.stickers = false
+		//if (!('temporal' in chat))
+                    //chat.temporal = false
                 if (!('autosticker' in chat))
                     chat.autosticker = false  
                 if (!('audios' in chat))
@@ -297,6 +299,7 @@ export async function handler(chatUpdate) {
                     delete: true,
                     modohorny: true,
                     stickers: true,
+		    //temporal: true,
                     autosticker: false,
                     audios: true,
                     antiLink: false,
@@ -311,10 +314,12 @@ export async function handler(chatUpdate) {
                 if (!('self' in settings)) settings.self = false
                 if (!('autoread' in settings)) settings.autoread = false
                 if (!('restrict' in settings)) settings.restrict = false
+		if (!('temporal' in settings)) settings.temporal = false
             } else global.db.data.settings[this.user.jid] = {
                 self: false,
                 autoread: false,
-                restrict: false
+                restrict: false,
+		temporal: false
             }
         } catch (e) {
             console.error(e)

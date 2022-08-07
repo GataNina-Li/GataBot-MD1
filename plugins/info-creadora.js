@@ -43,4 +43,4 @@ await conn.sendHydrated2(m.chat, str, oficial, pp, 'https://github.com/GataNina-
 handler.help = ['owner', 'creator']
 handler.tags = ['info']
 handler.command = /^(contacto|owner|creator|propietario|dueño|dueña|propietaria|dueño|creadora|creador)$/i
-export default handler
+export default handler 

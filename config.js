@@ -79,7 +79,7 @@ global.author = '𝙂𝙖𝙩𝙖 𝘿𝙞𝙤𝙨'
 
 //⊱ ━━━━━.⋅ Versión | Nombre | cuentas ⋅.━━━━ ⊰
 
-global.vs = '1.1.28'
+global.vs = '1.2.0'
 global.version = vs
 
 global.gt = '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿'
@@ -97,10 +97,10 @@ global.gatabot = md
 global.nn = 'https://chat.whatsapp.com/CunoFmEfBW75APfI0ZO5DJ'
 global.nngrupo = nn //Grupo 1
 
-global.nnn = 'https://chat.whatsapp.com/FvWByAGQIoRHH9FwrgB35E'
+global.nnn = 'https://chat.whatsapp.com/KFtXRV9OdK31cArkyxRpq6'
 global.nnngrupo = nnn //Grupo 2
 
-global.nnnt = 'https://chat.whatsapp.com/DJXZNYZXixx9Zmb0gLPD0b'
+global.nnnt = 'https://chat.whatsapp.com/IG6aOo0xCuAARZCTlMImPI'
 global.nnngrupo = nnnt //Grupo 3
 
 global.paypal = 'https://paypal.me/OficialGD'
