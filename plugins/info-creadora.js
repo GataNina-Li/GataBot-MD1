@@ -30,7 +30,7 @@ let buttonMessage= {
 
 await conn.sendMessage(m.chat, buttonMessage, { quoted: m })
 const data = global.owner.filter(([id, isCreator]) => id && isCreator)
-await conn.sendContact(m.chat, data.map(([id, name]) => [id, name]), m)
+await this.sendContact(m.chat, data.map(([id, name]) => [id, name]), m)
   
 let pp = './media/menus/Menu2.jpg'
 let str = `${wm}`
