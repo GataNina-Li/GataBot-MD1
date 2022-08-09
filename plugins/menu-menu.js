@@ -206,6 +206,9 @@ ${readMore}
 ┃🚀➺ _${usedPrefix}mediafire | dlmediafire *link*_
 ┃🚀➺ _${usedPrefix}clonarepo | gitclone *link*_
 ┃🚀➺ _${usedPrefix}clima_
+┃🚀➺ _${usedPrefix}consejo_
+┃🚀➺ _${usedPrefix}fraseromantica_
+┃🚀➺ _${usedPrefix}historia_
 *╰━━━━━━━━━━━━⬣*
 
 *╭━[ CONFIGURACIÓN - GRUPOS ]━⬣*
@@ -725,6 +728,9 @@ ${readMore}
 ┃🚀➺ _${usedPrefix}mediafire | dlmediafire *link*_
 ┃🚀➺ _${usedPrefix}clonarepo | gitclone *link*_
 ┃🚀➺ _${usedPrefix}clima_
+┃🚀➺ _${usedPrefix}consejo_
+┃🚀➺ _${usedPrefix}fraseromantica_
+┃🚀➺ _${usedPrefix}historia_
 *╰━━━━━━━━━━━━⬣*
 
 *╭━[ CONFIGURACIÓN - GRUPOS ]━⬣*
