@@ -205,6 +205,7 @@ ${readMore}
 ┃🚀➺ _${usedPrefix}vertiktok | tiktokstalk *usuario(a)*_
 ┃🚀➺ _${usedPrefix}mediafire | dlmediafire *link*_
 ┃🚀➺ _${usedPrefix}clonarepo | gitclone *link*_
+┃🚀➺ _${usedPrefix}clima_
 *╰━━━━━━━━━━━━⬣*
 
 *╭━[ CONFIGURACIÓN - GRUPOS ]━⬣*
@@ -272,6 +273,8 @@ ${readMore}
 *╰━━━━━━━━━━━━⬣*
 
 *╭━[ RANDOM | ANIME 🧩 ]━⬣*
+┃🧩 _${usedPrefix}chica_
+┃🧩 _${usedPrefix}chico_
 ┃🧩 _${usedPrefix}cristianoronaldo_
 ┃🧩 _${usedPrefix}messi_
 ┃🧩 _${usedPrefix}meme_
@@ -721,6 +724,7 @@ ${readMore}
 ┃🚀➺ _${usedPrefix}vertiktok | tiktokstalk *usuario(a)*_
 ┃🚀➺ _${usedPrefix}mediafire | dlmediafire *link*_
 ┃🚀➺ _${usedPrefix}clonarepo | gitclone *link*_
+┃🚀➺ _${usedPrefix}clima_
 *╰━━━━━━━━━━━━⬣*
 
 *╭━[ CONFIGURACIÓN - GRUPOS ]━⬣*
@@ -788,6 +792,8 @@ ${readMore}
 *╰━━━━━━━━━━━━⬣*
 
 *╭━[ RANDOM | ANIME 🧩 ]━⬣*
+┃🧩 _${usedPrefix}chica_
+┃🧩 _${usedPrefix}chico_
 ┃🧩 _${usedPrefix}cristianoronaldo_
 ┃🧩 _${usedPrefix}messi_
 ┃🧩 _${usedPrefix}meme_
