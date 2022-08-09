@@ -124,7 +124,7 @@ let menu = `
 ┃🚀➺ _${usedPrefix}vertiktok | tiktokstalk *usuario(a)*_
 ┃🚀➺ _${usedPrefix}mediafire | dlmediafire *link*_
 ┃🚀➺ _${usedPrefix}clonarepo | gitclone *link*_
-┃🚀➺ _${usedPrefix}clima_
+┃🚀➺ _${usedPrefix}clima *país ciudad*_
 ┃🚀➺ _${usedPrefix}consejo_
 ┃🚀➺ _${usedPrefix}fraseromantica_
 ┃🚀➺ _${usedPrefix}historia_
