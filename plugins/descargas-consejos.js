@@ -119,8 +119,8 @@ let res = await fetch("https://api-xcoders.xyz/api/random/cerpen/cinta?apikey=xc
 let json = await res.json()
 let { story, title, author_name } = json.result
 const tld = 'cn'
-let storytime = await translate(`${story}`, { tld, to: 'es' })
-let titletime = await translate(`${title}`, { tld, to: 'es' })
+let storytime = await translate(`${story}`, { tld, to: 'en' })
+let titletime = await translate(`${title}`, { tld, to: 'en' })
 let texto = `
 💗 *Título: ${titletime}*
 💗 *Autor(a): ${author_name}*
