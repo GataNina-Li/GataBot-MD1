@@ -125,6 +125,9 @@ let menu = `
 ┃🚀➺ _${usedPrefix}mediafire | dlmediafire *link*_
 ┃🚀➺ _${usedPrefix}clonarepo | gitclone *link*_
 ┃🚀➺ _${usedPrefix}clima_
+┃🚀➺ _${usedPrefix}consejo_
+┃🚀➺ _${usedPrefix}fraseromantica_
+┃🚀➺ _${usedPrefix}historia_
 ╰━━━━━━━━━━━━━━━━━━━⬣`.trim()
 conn.sendHydrated(m.chat, menu, wm, pp, 'https://github.com/GataNina-Li/GataBot-MD', '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
 ['𝙈𝙚𝙣𝙪́ 𝙘𝙤𝙢𝙥𝙡𝙚𝙩𝙤 | 𝙁𝙪𝙡𝙡 𝙈𝙚𝙣𝙪 💫', '.allmenu'],
