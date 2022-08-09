@@ -113,7 +113,7 @@ conn.sendHydrated(m.chat, texto, wm, letra, 'https://github.com/GataNina-Li/Gata
 ['⚡ 𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪', '#menu']
 ], m,)}
   
-if (command == 'historia') {
+if (command == 'historia2') {
 let letra = 'https://cdn.pixabay.com/photo/2015/07/23/19/12/book-857377_960_720.jpg'
 let res = await fetch("https://api-xcoders.xyz/api/random/cerpen/cinta?apikey=xcoders")
 let json = await res.json()
