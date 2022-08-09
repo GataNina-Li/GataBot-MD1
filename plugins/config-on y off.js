@@ -44,6 +44,7 @@ footer: `╭━━━[ *𝘼𝙅𝙐𝙎𝙏𝙀𝙎 𝙂𝘼𝙏𝘼𝘽𝙊�
 ┃⚙️ _${usedPrefix}on *:* off *audios*_
 ┃⚙️ _${usedPrefix}on *:* off *stickers*_
 ┃⚙️ _${usedPrefix}on *:* off *temporal*_
+┃⚙️ _${usedPrefix}on *:* off *antiver*_
 ┃⚙️ _${usedPrefix}on *:* off *autosticker*_
 ╰━━━━━━━━━━━━━⬣
 ${wm}`,
@@ -173,6 +174,14 @@ global.dfail('admin', m, conn)
 throw false
 }}
 chat.audios = isEnable          
+break
+case 'antiver':
+if (m.isGroup) {
+if (!(isAdmin || isOwner)) {
+global.dfail('admin', m, conn)
+throw false
+}}
+chat.antiver = isEnable 
 break
 case 'restrict':
 isAll = true
