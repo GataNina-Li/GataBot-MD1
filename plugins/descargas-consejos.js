@@ -89,18 +89,51 @@ conn.sendHydrated(m.chat, texto, wm, letra, 'https://github.com/GataNina-Li/Gata
   
 
 if (command == 'historia') {
+let letra = 'https://cdn.pixabay.com/photo/2015/07/23/19/12/book-857377_960_720.jpg'
 let res = await fetch("https://api-xcoders.xyz/api/random/cerpen/cinta?apikey=xcoders")
 let json = await res.json()
 let { story, title, author_name } = json.result
 const tld = 'cn'
 let storytime = await translate(`${story}`, { tld, to: 'es' })
 let titletime = await translate(`${title}`, { tld, to: 'es' })
-conn.reply(m.chat, `
+let texto = `
 💗 *Título: ${titletime}*
 💗 *Autor(a): ${author_name}*
-┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-📖 *${storytime}*`, m)}
+┈┈┈┈┈┈┈┈┈┈┈┈┈
+📖 *${storytime}*`
+
+//conn.reply(m.chat, `
+//💗 *Título: ${titletime}*
+//💗 *Autor(a): ${author_name}*
+//┈┈┈┈┈┈┈┈┈┈┈┈┈
+//📖 *${storytime}*`, m)}
+conn.sendHydrated(m.chat, texto, wm, letra, 'https://github.com/GataNina-Li/GataBot-MD', '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
+['📃 𝙉𝙪𝙚𝙫𝙖 𝙃𝙞𝙨𝙩𝙤𝙧𝙞𝙖 | 𝙉𝙚𝙬 𝙃𝙞𝙨𝙩𝙤𝙧𝙮', `${usedPrefix + command}`],
+['📑 𝙀𝙣𝙜𝙡𝙞𝙨𝙝 𝙫𝙚𝙧𝙨𝙞𝙤𝙣', '.historia2'],
+['⚡ 𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪', '#menu']
+], m,)}
+  
+if (command == 'historia') {
+let letra = 'https://cdn.pixabay.com/photo/2015/07/23/19/12/book-857377_960_720.jpg'
+let res = await fetch("https://api-xcoders.xyz/api/random/cerpen/cinta?apikey=xcoders")
+let json = await res.json()
+let { story, title, author_name } = json.result
+const tld = 'cn'
+let storytime = await translate(`${story}`, { tld, to: 'es' })
+let titletime = await translate(`${title}`, { tld, to: 'es' })
+let texto = `
+💗 *Título: ${titletime}*
+💗 *Autor(a): ${author_name}*
+┈┈┈┈┈┈┈┈┈┈┈┈┈
+📖 *${storytime}*`
+
+conn.sendHydrated(m.chat, texto, wm, letra, 'https://github.com/GataNina-Li/GataBot-MD', '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
+['📃 𝙉𝙪𝙚𝙫𝙖 𝙃𝙞𝙨𝙩𝙤𝙧𝙞𝙖 | 𝙉𝙚𝙬 𝙃𝙞𝙨𝙩𝙤𝙧𝙮', `${usedPrefix + command}`],
+['📑 𝙑𝙚𝙧𝙨𝙞𝙤𝙣 𝙀𝙨𝙥𝙖𝙣𝙤𝙡', '.historia'],
+['⚡ 𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪', '#menu']
+], m,)}
+  
 }
 handler.tags = ['frases']
-handler.command = handler.help = ['consejo', 'consejo2', 'fraseromantica', 'fraseromantica2', 'historia']
+handler.command = handler.help = ['consejo', 'consejo2', 'fraseromantica', 'fraseromantica2', 'historia', 'historia2']
 export default handler
