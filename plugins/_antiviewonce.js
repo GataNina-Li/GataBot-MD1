@@ -4,7 +4,7 @@ export async function before(m, { isAdmin, isBotAdmin }) {
  
 let chat = db.data.chats[m.chat]
 if (/^[.~#/\$,](read)?viewonce/.test(m.text)) return
-if (!chat.antiviewonce || chat.isBanned) return
+//if (!chat.antiviewonce || chat.isBanned) return
 if (m.mtype == 'viewOnceMessage') {
 let msg = m.message.viewOnceMessage.message
 let type = Object.keys(msg)[0]
