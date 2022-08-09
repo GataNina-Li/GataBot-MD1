@@ -1,4 +1,4 @@
- = async (m, {text, usedPrefix, command, conn}) => {
+/* async (m, {text, usedPrefix, command, conn}) => {
 if (!text) throw `*[❗] 𝙸𝙽𝙶𝚁𝙴𝙴𝚂𝙴 𝙴𝙻 𝙽𝙾𝙼𝙱𝚁𝙴 𝙳𝙴 𝙻𝙰 𝙰𝙿𝙺 𝚀𝚄𝙴 𝚀𝚄𝙸𝙴𝚁𝙰 𝙱𝚄𝚂𝙲𝙰𝚁*`
 const res = await googleImage(text)
 let image = res.getRandom()
@@ -118,4 +118,4 @@ await conn.sendFile(m.chat, link, 'error.mp3', caption, m)}
 
 }
 handler.command = ['apkdone', 'apkgoogle', 'apkmody', 'apkshub', 'happymod', 'hostapk', 'revdl', 'toraccino', 'uapkpro']
-export default handler
+export default handler */
