@@ -49,6 +49,8 @@ export async function handler(chatUpdate) {
 			    user.joincount = 1
                 if (!isNumber(user.lastclaim))
                     user.lastclaim = 0
+		if (!isNumber(user.lastcofre))
+                    user.lastcofre = 0
                 if (!('registered' in user))
                     user.registered = false
                 if (!user.registered) {
@@ -160,6 +162,8 @@ export async function handler(chatUpdate) {
 
                 if (!isNumber(user.lastclaim))
                     user.lastclaim = 0
+		if (!isNumber(user.lastcofre))
+                    user.lastcofre = 0
                 if (!isNumber(user.lastadventure))
                     user.lastadventure = 0
                 if (!isNumber(user.lastfishing))
@@ -238,6 +242,7 @@ export async function handler(chatUpdate) {
                     fishingroddurability: 0,
 
                     lastclaim: 0,
+		    lastcofre: 0,
                     lastadventure: 0,
                     lastfishing: 0,
                     lastdungeon: 0,
