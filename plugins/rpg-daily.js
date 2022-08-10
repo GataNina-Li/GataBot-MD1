@@ -1,24 +1,12 @@
-//const free = 5000
-//const prem = 20000
-
 let handler = async (m, { isPrems, conn }) => {
 let time = global.db.data.users[m.sender].lastclaim + 120000//86400000 
-if (new Date - global.db.data.users[m.sender].lastclaim < 120000) throw `🎁 *Ya recogiste tu recompensa diaria*\n\n🕚 Vuelve en *${msToTime(time - new Date())}* `
-
-//let dia = `${pickRandom(['20','25','30','35','40','45','50','55','60','65','70'])}`
-//let gata = `${pickRandom(['1000','1500','2000','2500','3000','3500','4000','4500','5000','5500','6000'])}`
-//let tok = `${pickRandom(['2','4','8','12','15','20','24','28','30','35','40'])}`
-//let expp = `${pickRandom(['3000','4000','5000','6000','7000','8000','9000','10000','11000','12000','13000'])}`
+if (new Date - global.db.data.users[m.sender].lastclaim < 120000) throw `𝙔𝘼 𝙍𝙀𝘾𝙇𝘼𝙈𝘼𝙎𝙏𝙀 𝙏𝙐 𝙍𝙀𝙂𝘼𝙇𝙊 🎁\n𝙑𝙐𝙀𝙇𝙑𝙀 𝙀𝙉 *${msToTime(time - new Date())}* 𝙋𝘼𝙍𝘼 𝙑𝙊𝙇𝙑𝙀𝙍 𝘼 𝙍𝙀𝘾𝙇𝘼𝙈𝘼𝙍\n\n𝙔𝙊𝙐 𝘼𝙇𝙍𝙀𝘼𝘿𝙔 𝘾𝙇𝘼𝙄𝙈𝙀𝘿 𝙔𝙊𝙐𝙍 𝙂𝙄𝙁𝙏 🎁\n𝘾𝙊𝙈𝙀 𝘽𝘼𝘾𝙆 𝙄𝙉 *${msToTime(time - new Date())}* 𝙏𝙊 𝘾𝙇𝘼𝙄𝙈 𝘼𝙂𝘼𝙄𝙉`
 
 let img = 'https://img.freepik.com/vector-gratis/gente-diminuta-enormes-cajas-regalo-ilustracion-vectorial-plana-personas-que-celebran-cumpleanos-envian-o-reciben-regalos-lealtad-o-ideas-brillantes-recompensa-bonificacion-concepto-fiesta_74855-25016.jpg?w=2000'
-//let dia = ${pickRandom(['5','10','15','20','25','30','35','40','45','50','55'])}
-//let gata = ${pickRandom(['500','1000','1500','2000','2500','3000','3500','4000','4500','5000','5500'])}
-//let tok = ${pickRandom(['2','12','3','4','5','6','7','8','9','10','11'])}
-//let expp = ${pickRandom(['1000','1500','2000','2500','3000','3500','4000','4500','5000','5500','6000'])}
-let dia = Math.floor(Math.random() * 30)
+let dia = Math.floor(Math.random() * 20)
 let tok = Math.floor(Math.random() * 10)
 let gata = Math.floor(Math.random() * 2000)
-let expp = Math.floor(Math.random() * 3000)
+let expp = Math.floor(Math.random() * 2500)
 
   global.db.data.users[m.sender].limit += dia
   global.db.data.users[m.sender].money += gata
@@ -26,19 +14,17 @@ let expp = Math.floor(Math.random() * 3000)
   global.db.data.users[m.sender].exp += expp
   
 let texto = `
-✨ *RECLAMO DIARIO*
+╭━━🎁━━🎁━━🎁━━⬣
+┃✨ 𝙊𝘽𝙏𝙄𝙀𝙉𝙀𝙎 𝙐𝙉 𝙍𝙀𝙂𝘼𝙇𝙊!!
+┃✨ 𝙔𝙊𝙐 𝙂𝙀𝙏 𝘼 𝙂𝙄𝙁𝙏!!
+┃ ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃🎁 ${dia} Diamantes 💎
+┃🎁 ${tok} Tokens 🪙
+┃🎁 ${gata} GataCoins 🐈
+┃🎁 ${expp} Exp ⚡
+╰━━〔 𓃠 *${vs}* 〕━━⬣`
 
-🎁 ${dia} Diamantes 💎
-🎁 ${tok} Tokens 🪙
-🎁 ${gata} GataCoins 🐈
-🎁 ${expp} Exp ⚡`
-
-await conn.sendButton(m.chat, texto, wm, img, [['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', '/menu']], m)
-
-  //m.reply(`
-//🎁 *RECOMPENSA DIARIA*
-//▢ *Has recibido:*
-//🆙 *XP* : +${isPrems ? prem : free}`)
+await conn.sendButton(m.chat, texto, wm, img, [['⛰️ 𝘼𝘽𝙍𝙄𝙍 𝘾𝙊𝙁𝙍𝙀 | 𝘾𝙊𝙁𝙁𝙀𝙍 ⛰️', '/menu'], ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', '/menu'] ], m)  
 global.db.data.users[m.sender].lastclaim = new Date * 1
 }
 handler.help = ['daily']
