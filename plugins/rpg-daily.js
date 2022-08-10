@@ -10,7 +10,7 @@ if (new Date - global.db.data.users[m.sender].lastclaim < 120000) throw `🎁 *Y
 //let tok = `${pickRandom(['2','4','8','12','15','20','24','28','30','35','40'])}`
 //let expp = `${pickRandom(['3000','4000','5000','6000','7000','8000','9000','10000','11000','12000','13000'])}`
 
-//let img = 'https://img.freepik.com/vector-gratis/gente-diminuta-enormes-cajas-regalo-ilustracion-vectorial-plana-personas-que-celebran-cumpleanos-envian-o-reciben-regalos-lealtad-o-ideas-brillantes-recompensa-bonificacion-concepto-fiesta_74855-25016.jpg?w=2000'
+let img = 'https://img.freepik.com/vector-gratis/gente-diminuta-enormes-cajas-regalo-ilustracion-vectorial-plana-personas-que-celebran-cumpleanos-envian-o-reciben-regalos-lealtad-o-ideas-brillantes-recompensa-bonificacion-concepto-fiesta_74855-25016.jpg?w=2000'
 //let dia = ${pickRandom(['5','10','15','20','25','30','35','40','45','50','55'])}
 //let gata = ${pickRandom(['500','1000','1500','2000','2500','3000','3500','4000','4500','5000','5500'])}
 //let tok = ${pickRandom(['2','12','3','4','5','6','7','8','9','10','11'])}
