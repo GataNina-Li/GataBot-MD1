@@ -44,7 +44,7 @@ global.db.data.users[m.sender].lastclaim = new Date * 1
 }
 handler.help = ['daily']
 handler.tags = ['xp']
-handler.command = ['daily', 'reclamar', 'reclamo', 'claim'] 
+handler.command = ['daily', 'reclamar', 'reclamo', 'regalo', 'claim'] 
 export default handler
 
 function pickRandom(list) {
