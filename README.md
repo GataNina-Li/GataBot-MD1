@@ -61,7 +61,7 @@ https://github.com/clhuang/heroku-buildpack-webp-binaries.git
 - [x] Resultado <details><summary>Buildpack</summary><img src="https://i.imgur.com/t3Xzgnh.jpeg"></details>
 ------------------
 
-### ACTIVAR EN TERMUX  <img src="https://c.tenor.com/HLrXIleGBToAAAAC/transparent-cat.gif" height="30px">
+### POR EL MOMENTO NO ACTIVAR POR TERMUX  <img src="https://c.tenor.com/HLrXIleGBToAAAAC/transparent-cat.gif" height="30px">
 > ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 
 ```bash
@@ -80,6 +80,7 @@ npm install
 npm update
 npm start
 ```
+### ✨ SI QUIERES ACTIVAR EN TERMUX, USA EL REPOSITORIO [`GataBot-MD2`](https://github.com/GataNina-Li/GataBot-MD2)
 ----
 ## 💻 PARA USUARIOS DE WINDOWS/VPS/RDP (Opcional)
 
