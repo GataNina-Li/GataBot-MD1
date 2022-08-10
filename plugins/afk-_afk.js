@@ -4,7 +4,7 @@ export function before(m) {
         m.reply(`
   ${eg}𝘿𝙀𝙅𝘼𝙎𝙏𝙀 𝘿𝙀 𝙀𝙎𝙏𝘼𝙍 𝙄𝙉𝘼𝘾𝙏𝙄𝙑𝙊 *(𝘼𝙁𝙆)*${user.afkReason ? ' 𝙀𝙇 𝙈𝙊𝙏𝙄𝙑𝙊 𝘿𝙀 𝙄𝙉𝘼𝘾𝙏𝙄𝙑𝙄𝘿𝘼𝘿 𝙀𝙍𝘼: ' + user.afkReason : ''}
   
-  𝙏𝙄𝙀𝙈𝙋𝙊 𝙄𝙉𝘼𝘾𝙏𝙄𝙑𝙊: *${(new Date - user.afk).toTimeString()}*`.trim())
+𝙏𝙄𝙀𝙈𝙋𝙊 𝙄𝙉𝘼𝘾𝙏𝙄𝙑𝙊: *${(new Date - user.afk).toTimeString()}*`.trim())
         user.afk = -1
         user.afkReason = ''
     }
