@@ -211,6 +211,17 @@ ${readMore}
 ┃🚀➺ _${usedPrefix}historia_
 *╰━━━━━━━━━━━━⬣*
 
+*╭━[ CHAT ANONIMO ]━⬣*
+┃ *¡Escribe con Alguien* 
+┃ *de forma Anónima!* 
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃👤➺ _${usedPrefix}chatanonimo | anonimochat_
+┃👤➺ _${usedPrefix}anonimoch_
+┃👤➺ _${usedPrefix}start_
+┃👤➺ _${usedPrefix}next_
+┃👤➺ _${usedPrefix}leave_
+*╰━━━━━━━━━━━━⬣*
+
 *╭━[ CONFIGURACIÓN - GRUPOS ]━⬣*
 ┃ *Mejora tú Grupo con GataBot!!*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
@@ -344,12 +355,6 @@ ${readMore}
 ┃🧰 _${usedPrefix}smooth_
 ┃🧰 _${usedPrefix}tupai_
 *╰━━━━━━━━━━━━⬣*
-
-*<ℂℍ𝔸𝕋 𝔸ℕ𝕆ℕ𝕀𝕄𝕆/>*
-
-° ඬ⃟📳 _${usedPrefix}start_
-° ඬ⃟📳 _${usedPrefix}next_
-° ඬ⃟📳 _${usedPrefix}leave_
 
 *╭━━[ BÚSQUEDAS 🔍 ]━━⬣*
 ┃ *Busca lo que quieres con GataBot!!*
