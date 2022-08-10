@@ -99,7 +99,8 @@ const fkontak = {
 	"participant": "0@s.whatsapp.net"
 }
 
-await conn.sendMessage(m.chat, listMessage, fkontak)
+//await conn.sendMessage(m.chat, listMessage, fkontak)
+await conn.relayMessage(m.chat, { text: listMessage, mentions: [m.sender] }, { quoted: fkontak, m })
 //{mentions: this.parseMention(listMessage)})
 //await conn.sendMessage(m.chat, { text: listMessage, mentions: [m.sender] }, { quoted: fkontak, m })
 }
