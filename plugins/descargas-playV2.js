@@ -58,6 +58,6 @@ m.reply(`${fg}𝙄𝙉𝙏𝙀𝙉𝙏𝙀 𝘿𝙀 𝙉𝙐𝙀𝙑𝙊\n𝙏�
 handler.help = ['play.1' , 'play.2'].map(v => v + ' <texto>')
 handler.tags = ['downloader']
 handler.command = ['play.1', 'play.2']
-handler.level = 8
+handler.level = 7
 handler.limit = 1
 export default handler
