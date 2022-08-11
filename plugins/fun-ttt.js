@@ -24,7 +24,12 @@ await conn.sendButton(m.chat, `${eg}𝘼𝙇𝙂𝙐𝙄𝙀𝙉 𝙎𝙀 𝙃�
 
 //if (command == 'indicacion') { 
 //if (/indicacion/i.test(command)) {
-if (!/^(INDICACION)$/i.test(m.text)) {
+let isSurrender = !1
+if (!/^([1-9]|INDICACION)$/i.test(m.text)) {
+return !0
+isSurrender = !/^[1-9]$/.test(m.text)
+if (!isSurrender)
+return !0 
 await conn.sendButton(m.chat, `${rg}⭕️ *Clasico juego de gato o 3 en raya* ❌
 *¿Como jugar? R//* _Responde al mensaje que envie el Bot con la tablita del juego, el mensaje debe contener la posiscion en la que quieras estar (1,2,3,4,5,6,7,8,9)_`, wm, null, [['😽 𝙊𝙆 𝙂𝙍𝘼𝘾𝙄𝘼𝙎', 'ok'] ], fkontak, m)}  
 
