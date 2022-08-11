@@ -1,8 +1,23 @@
 import { format } from 'util'
 let debugMode = !1
-let winScore = 4999
-let playScore = 99
+//let winScore = 4999
+//let playScore = 99
 export async function before(m) {
+const fkontak = {
+	"key": {
+    "participants":"0@s.whatsapp.net",
+		"remoteJid": "status@broadcast",
+		"fromMe": false,
+		"id": "Halo"
+	},
+	"message": {
+		"contactMessage": {
+			"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
+		}
+	},
+	"participant": "0@s.whatsapp.net"
+}
+
 let ok
 let isWin = !1
 let isTie = !1
@@ -47,32 +62,56 @@ O: '⭕',
 9: '9️⃣',
 }[v]})
 if (isSurrender) {
+        
 room.game._currentTurn = m.sender === room.game.playerX
 isWin = true }
+        
+let dia = Math.floor(Math.random() * 2)
+let tok = Math.floor(Math.random() * 2)
+let gata = Math.floor(Math.random() * 10)
+let expp = Math.floor(Math.random() * 10)
+
+let dia2 = Math.floor(Math.random() * 15)
+let tok2 = Math.floor(Math.random() * 10)
+let gata2 = Math.floor(Math.random() * 1500)
+let expp2 = Math.floor(Math.random() * 2500)  
+
 let winner = isSurrender ? room.game.currentTurn : room.game.winner
 let str = `
-TRES EN RAYAS
-
+🫂 𝙅𝙐𝙂𝘼𝘿𝙊𝙍𝙀𝙎 *:* 𝙋𝙇𝘼𝙔𝙀𝙍𝙎
 ❎ = @${room.game.playerX.split('@')[0]}
 ⭕ = @${room.game.playerO.split('@')[0]}
-
-        ${arr.slice(0, 3).join('')}
-        ${arr.slice(3, 6).join('')}
-        ${arr.slice(6).join('')}
-
-${isWin ? `@${(isSurrender ? room.game.currentTurn : room.game.winner).split('@')[0]} GANASTE, OBTIENES +4999 EXP` : isTie ? 'EL JUEGO TERMINO EN EMPATE' : `TURNO DE @${room.game.currentTurn.split('@')[0]}`}
+┈┈┈┈┈┈┈┈┈┈┈┈┈
+     ${arr.slice(0, 3).join('')}
+     ${arr.slice(3, 6).join('')}
+     ${arr.slice(6).join('')}
+┈┈┈┈┈┈┈┈┈┈┈┈┈
+${isWin ? `@${(isSurrender ? room.game.currentTurn : room.game.winner).split('@')[0]} 😎 *GANASTE!!, POR HABER GANADO OBTIENES*\n\n💎 *${dia2} Diamantes*\n🪙 *${tok2} Tokens*\n🐈 *${gata2} GataCoins*\n⚡ *${expp2} Exp*` : isTie ? `*EMPATE!! 🤨 POR TERMINAR EN EMPATE AMBOS OBTIENEN*\n\n💎 *${dia} Diamantes*\n🪙 *${tok} Tokens*\n🐈 *${gata} GataCoins*\n⚡ *${expp} Exp*` : `TURNO DE @${room.game.currentTurn.split('@')[0]}`}
 `.trim()
 let users = global.db.data.users
 if ((room.game._currentTurn ^ isSurrender ? room.x : room.o) !== m.chat)
 room[room.game._currentTurn ^ isSurrender ? 'x' : 'o'] = m.chat
 if (room.x !== room.o)
-await this.sendMessage(room.x, { text: str, mentions: this.parseMention(str)}, { quoted: m })
-await this.sendMessage(room.o, { text: str, mentions: this.parseMention(str)}, { quoted: m })
+await this.sendMessage(room.x, { text: str, mentions: this.parseMention(str)}, { quoted: fkontak, m })
+await this.sendMessage(room.o, { text: str, mentions: this.parseMention(str)}, { quoted: fkontak, m })
+        
 if (isTie || isWin) {
-users[room.game.playerX].exp += playScore
-users[room.game.playerO].exp += playScore
+users[room.game.playerX].limit += dia //empate
+users[room.game.playerX].joincount += tok
+users[room.game.playerX].money += gata
+users[room.game.playerX].exp += expp
+        
+users[room.game.playerO].limit += dia //empate
+users[room.game.playerO].joincount += tok
+users[room.game.playerO].money += gata
+users[room.game.playerO].exp += expp 
+        
 if (isWin)
-users[winner].exp += winScore - playScore
+users[winner].limit += dia2 //Ganador
+users[winner].joincount += tok2
+users[winner].money += gata2
+users[winner].exp += expp2
+        
 if (debugMode)
 m.reply('[DEBUG]\n' + format(room))
 delete this.game[room.id]}}
