@@ -61,6 +61,21 @@ https://github.com/clhuang/heroku-buildpack-webp-binaries.git
 - [x] Resultado <details><summary>Buildpack</summary><img src="https://i.imgur.com/t3Xzgnh.jpeg"></details>
 ------------------
 
+### ✅ BOXMINEHOST
+> ACTIVA GATABOT 24/7 EN LA PLATAFORMA BOXMINEHOST
+
+<a href="https://boxmineworld.com"><img src="https://i.imgur.com/allAyd4.png" height="125px"></a>
+### BoxMine World
+
+- Pagina Oficial: [`https://boxmineworld.com`](https://boxmineworld.com)
+- Tutorial - Crea una cuenta en la Dashboard: [`https://www.youtube.com/watch?v=ZAwBLuNmIlI`](https://www.youtube.com/watch?v=ZAwBLuNmIlI)
+- Dashboard: [`https://dash.boxmineworld.com`](https://dash.boxmineworld.com)
+- Panel: [`https://panel.boxmineworld.com`](https://panel.boxmineworld.com)
+- Dudas UNICAMENTE SOBRE EL HOST: [`https://discord.gg/84qsr4v`](https://discord.gg/84qsr4v) (Preguntar por Vicemi)
+------------------
+- [x] Resultado <details><summary>Ajustes del Servidor - GataBot-MD</summary><img src="https://i.imgur.com/N0SwvbY.jpeg"></details>
+------------------
+
 ### POR EL MOMENTO NO ACTIVAR POR TERMUX  <img src="https://c.tenor.com/HLrXIleGBToAAAAC/transparent-cat.gif" height="30px">
 > ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 
