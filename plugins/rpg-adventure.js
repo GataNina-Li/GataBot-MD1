@@ -34,7 +34,7 @@ ${cmenub} *LONGITUD :* ${kt[1][0].longitude}
 ${cmenub} *LATITUD :* ${kt[1][0].latitude}
 ${cmenuf}
 
-AVENTURA FINALIZADA
+AVENTURA FINALIZADA 
 ${cmenua}`
     
     for (const lost in rewards.lost) if (user[lost]) {
