@@ -136,11 +136,16 @@ export async function handler(chatUpdate) {
 		    armor: 0,
                     armordurability: 0,
 		    autolevelup: false,
+		    anakcentaur: 0,
 			
 		    banned: false,
 		    catlastfeed: 0,
 		    cat: 0,
                     catngexp: 0,
+		    centaur: 0,
+                    centaurexp: 0,
+                    centaurlastclaim: 0,
+                    centaurlastfeed: 0,
 		    common: 0,
 			
 	            diamond: 0,
@@ -178,7 +183,8 @@ export async function handler(chatUpdate) {
                     lasthunt: 0,
                     lastweekly: 0,
                     lastmonthly: 0,
-			
+		
+		    makanancentaur: 0,	
 		    mythic: 0,
 		    money: 0,
 		    name: m.name,
@@ -187,6 +193,7 @@ export async function handler(chatUpdate) {
 		    pickaxe: 0,
                     pickaxedurability: 0,
 		    
+		    ramuancentaurlast: 0,
 		    regTime: -1,
 		    registered: false,
 		    rock: 0,
