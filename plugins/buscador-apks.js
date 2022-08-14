@@ -4,6 +4,20 @@ import fs from 'fs'
 let handler = async (m, {text, usedPrefix, command, conn}) => {
 let img = './media/menus/Menu3.jpg'  
 let ftroli = { key: { fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "6289523258649-1604595598@g.us" }, "message": { orderMessage: { itemCount: 6546464643, status: 200, thumbnail: img, surface: 200, message: wm, orderTitle: wm, sellerJid: '0@s.whatsapp.net' }}, contextInfo: { "forwardingScore": 999, "isForwarded": true}, sendEphemeral: true}
+const fkontak = {
+	"key": {
+    "participants":"0@s.whatsapp.net",
+		"remoteJid": "status@broadcast",
+		"fromMe": false,
+		"id": "Halo"
+	},
+	"message": {
+		"contactMessage": {
+			"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
+		}
+	},
+	"participant": "0@s.whatsapp.net"
+}
 
 if (!text) throw `𝙀𝙎𝘾𝙍𝙄𝘽𝘼 𝙀𝙇 𝙉𝙊𝙈𝘽𝙍𝙀 𝘿𝙀𝙇 𝘼𝙋𝙆\n\n𝙏𝙔𝙋𝙀 𝙏𝙃𝙀 𝘼𝙋𝙆 𝙉𝘼𝙈𝙀`
 const res = await googleImage(text)
@@ -27,7 +41,7 @@ caption += `${eg}
 ┃ ✅ 𝙑𝙀𝙍𝙎𝙄𝙊𝙉
 ┃ ${x.apps_version}
 `}
-await conn.reply(m.chat, caption, ftroli, m)  
+await conn.reply(m.chat, caption, fkontak, m)  
 await conn.sendFile(m.chat, link, 'error.mp3', caption, m)}
 //await conn.reply(m.chat, caption, m)
 
