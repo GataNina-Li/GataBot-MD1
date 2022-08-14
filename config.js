@@ -169,6 +169,7 @@ global.flaaa = [
 global.cmenut = '❏––––––『'
 global.cmenub = '┊✦ '
 global.cmenuf = '┗━═┅═━––––––๑\n'
+global.cmenua = '\n⌕ ❙❘❙❙❘❙❚❙❘❙❙❚❙❘❙❘❙❚❙❘❙❙❚❙❘❙❙❘❙❚❙❘ ⌕\n     '
 
 global.htki = '––––––『'
 global.htka = '』––––––'
