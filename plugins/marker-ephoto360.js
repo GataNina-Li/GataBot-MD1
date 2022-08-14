@@ -22,12 +22,12 @@ const fkontak = {
 try {    
 if (command == 'logocorazon') {
 await conn.reply(m.chat, `${eg}𝙀𝙎𝙋𝙀𝙍𝙀 𝙐𝙉 𝙈𝙊𝙈𝙀𝙉𝙏𝙊 𝙋𝙊𝙍 𝙁𝘼𝙑𝙊𝙍 𝙎𝙐 𝙇𝙊𝙂𝙊 𝙎𝙀 𝙀𝙎𝙏𝘼 𝘾𝙍𝙀𝘼𝙉𝘿𝙊\n\n`, ftroli,  m)
-let res = `https://violetics.pw/api/ephoto360/heart-flashlight?apikey=beta&text=${response[0]}`
+let res = `https://violetics.pw/api/ephoto360/heart-flashlight?apikey=beta&text=${args[0]}`
 conn.sendFile(m.chat, res, 'error.jpg', null, m)}
   
 if (command == 'logochristmas') {
 await conn.reply(m.chat, `${eg}𝙀𝙎𝙋𝙀𝙍𝙀 𝙐𝙉 𝙈𝙊𝙈𝙀𝙉𝙏𝙊 𝙋𝙊𝙍 𝙁𝘼𝙑𝙊𝙍 𝙎𝙐 𝙇𝙊𝙂𝙊 𝙎𝙀 𝙀𝙎𝙏𝘼 𝘾𝙍𝙀𝘼𝙉𝘿𝙊\n\n`, ftroli,  m)
-let res = `https://violetics.pw/api/ephoto360/christmas-snow?apikey=beta&text=${response[0]}`
+let res = `https://violetics.pw/api/ephoto360/christmas-snow?apikey=beta&text=${args[0]}`
 conn.sendFile(m.chat, res, 'error.jpg', null, m)}
   
 } catch {
