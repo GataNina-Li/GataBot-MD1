@@ -10,22 +10,19 @@ let kt = await ke.json()
 let imgr = flaaa.getRandom()
     let user = global.db.data.users[m.sender]
     let timers = (cooldown - (new Date - user.lastadventure))
-    if (user.health < 80) return conn.sendButton(m.chat,
-`${htki} BAJA SALUD ${htka}`,
+if (user.health < 80) return conn.sendButton(m.chat,`${htki} BAJA SALUD ${htka}`,
 `TU SALUD ESTÁ POR DEBAJO DE 80!!
-POR FAVOR CURA PRIMERO PARA AVENTURAR DE NUEVO`.trim(), imgr + 'lowhealth', [
-[`CURAR`, `${usedPrefix}heal`]
-], m)
-    if (new Date - user.lastadventure <= cooldown) return conn.sendButton(m.chat, 
-`${htki} ENFRIARSE ${htka}`,
-`YA HAS AVENTURA POR FAVOR ESPERA HASTA QUE TERMINE EL ENFRIAMIENTO
-
-⏱️ ${timers.toTimeString()}`.trim(), imgr + 'enfriarse', [
+POR FAVOR CURATE PRIMERO PARA AVENTURAR DE NUEVO`.trim(), imgr + 'Mala Salud', [
+[`CURAR`, `${usedPrefix}heal`]], m)
+    
+if (new Date - user.lastadventure <= cooldown) return conn.sendButton(m.chat, `${htki} ENFRIARSE ${htka}`,
+`YA AVENTURASTE!! POR FAVOR ESPERA HASTA QUE TERMINE EL TIEMPO DE DESCANSO 
+⏱️ ${timers.toTimeString()}`.trim(), imgr + 'Descansando...', [
 [`INVENTARIO`, `${usedPrefix}inventory`],
-[`RECLAMAR`, `${usedPrefix}daily`]
-], m)
+[`RECLAMAR`, `${usedPrefix}daily`]], m)
+    
     const rewards = reward(user)
-    let text = `🔖 AVENTURA A *${kt[1][0].name}*
+    let text = `🔖 ESTAS AVENTURANDO EN *${kt[1][0].name}*
 
 ${cmenut}
 ${cmenub} *ID :* ${kt[1][0].id}
@@ -42,11 +39,11 @@ ${cmenua}`
         user[lost] -= total * 1
         if (total) text += `\n${global.rpg.emoticon(lost)}${lost}: ${total}`
     }
-    text += '\n\n🔖 RECOMPENSA DE AVENTURA RECIBIDA :'
+    text += '\n\n🔖 RECOMPENSA DE AVENTURA RECIBIDA:'
     for (const rewardItem in rewards.reward) if (rewardItem in user) {
         const total = rewards.reward[rewardItem].getRandom()
         user[rewardItem] += total * 1
-        if (total) text += `\n⮕ ${global.rpg.emoticon(rewardItem)}${rewardItem}: ${total}`
+        if (total) text += `\n» ${global.rpg.emoticon(rewardItem)}${rewardItem}: ${total}`
     }
     conn.sendButton(m.chat, 
     `${htki} ADVENTURE ${htka}`, 
