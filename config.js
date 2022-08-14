@@ -65,8 +65,14 @@ global.APIKeys = { // APIKey Here
   'https://botstyle-api.herokuapp.com': 'Eyar749L',
   'https://neoxr-api.herokuapp.com': 'yntkts',
   'https://anabotofc.herokuapp.com/': 'AnaBot'
+  'https://violetics.pw': 'beta'
 }
 
+//⊱ ━━━━━.⋅ KEY ⋅.━━━━ ⊰
+
+global.Key360 = ['964f-0c75-7afc'] //keys ephoto360
+
+//━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 
 
 //⊱ ━━━━━.⋅ Sticker WM ⋅.━━━━ ⊰
