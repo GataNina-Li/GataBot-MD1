@@ -44,7 +44,8 @@ global.APIs = { // API Prefix.
   neoxr: 'https://neoxr-api.herokuapp.com',
   ana: 'https://anabotofc.herokuapp.com/',
   kanx: 'https://kannxapi.herokuapp.com/',
-  dhnjing: 'https://dhnjing.xyz'
+  dhnjing: 'https://dhnjing.xyz',
+  'https://violetics.pw': 'beta'
 },
   
 global.APIKeys = { // APIKey Here
@@ -70,7 +71,7 @@ global.APIKeys = { // APIKey Here
 //⊱ ━━━━━.⋅ KEY ⋅.━━━━ ⊰
 
 global.Key360 = ['964f-0c75-7afc'] //keys ephoto360
-global.beta = ['https://violetics.pw'] //keys ephoto360
+//global.beta = ['https://violetics.pw'] //keys ephoto360
 
 //━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 
