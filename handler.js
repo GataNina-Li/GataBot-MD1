@@ -49,7 +49,8 @@ export async function handler(chatUpdate) {
 		if (!isNumber(user.lastcofre)) user.lastcofre = 0    
                 if (!('registered' in user)) user.registered = false
                     
-                if (!user.registered) {
+            if (!user.registered) {
+		    
                 if (!('name' in user)) user.name = m.name      
                 if (!isNumber(user.age)) user.age = -1
                 if (!isNumber(user.regTime)) user.regTime = -1
@@ -57,58 +58,42 @@ export async function handler(chatUpdate) {
 	        }
 		    
                 if (!isNumber(user.afk)) user.afk = -1                    
-                if (!('afkReason' in user)) user.afkReason = ''                   
-                if (!('banned' in user)) user.banned = false                    
-                if (!isNumber(user.warn)) user.warn = 0      
-                if (!isNumber(user.level)) user.level = 0
-                if (!('role' in user)) user.role = 'Novato'    
-                if (!('autolevelup' in user))  user.autolevelup = false
-                    
-                if (!isNumber(user.money)) user.money = 0                    
-                if (!isNumber(user.health)) user.health = 100                   
-                if (!isNumber(user.limit)) user.limit = 10                    
-                if (!isNumber(user.potion)) user.potion = 0                    
-                if (!isNumber(user.trash)) user.trash = 0                    
-                if (!isNumber(user.wood)) user.wood = 0                    
-                if (!isNumber(user.rock)) user.rock = 0                    
-                if (!isNumber(user.string)) user.string = 0                    
-                if (!isNumber(user.petFood)) user.petFood = 0
-                    
-                if (!isNumber(user.emerald)) user.emerald = 0                   
-                if (!isNumber(user.diamond)) user.diamond = 0                    
-                if (!isNumber(user.gold)) user.gold = 0                    
-                if (!isNumber(user.iron)) user.iron = 0
-                    
-                if (!isNumber(user.common)) user.common = 0                    
-                if (!isNumber(user.uncommon)) user.uncommon = 0                    
-                if (!isNumber(user.mythic)) user.mythic = 0                    
-                if (!isNumber(user.legendary)) user.legendary = 0                   
-                if (!isNumber(user.pet)) user.pet = 0
-                    
-                if (!isNumber(user.horse)) user.horse = 0                    
-                if (!isNumber(user.horseexp)) user.horseexp = 0                   
-                if (!isNumber(user.cat)) user.cat = 0                   
-                if (!isNumber(user.catexp)) user.catexp = 0                    
-                if (!isNumber(user.fox)) user.fox = 0                    
-                if (!isNumber(user.foxhexp)) user.foxexp = 0                    
-                if (!isNumber(user.dog)) user.dog = 0                    
+                if (!('afkReason' in user)) user.afkReason = ''
+		if (!('autolevelup' in user))  user.autolevelup = false                    
+		if (!isNumber(user.anakcentaur)) user.anakcentaur = 0
+		if (!isNumber(user.armor)) user.armor = 0                    
+                if (!isNumber(user.armordurability)) user.armordurability = 0
+		    
+		if (!('banned' in user)) user.banned = false
+		if (!isNumber(user.cat)) user.cat = 0
+		if (!isNumber(user.catexp)) user.catexp = 0
+		if (!isNumber(user.catlastfeed)) user.catlastfeed = 0
+		if (!isNumber(user.centaur)) user.centaur = 0
+                if (!isNumber(user.centaurexp)) user.centaurexp = 0
+                if (!isNumber(user.centaurlastclaim)) user.centaurlastclaim = 0
+                if (!isNumber(user.centaurlastfeed)) user.centaurlastfeed = 0
+		if (!isNumber(user.common)) user.common = 0
+		    
+		if (!isNumber(user.diamond)) user.diamond = 0
+		if (!isNumber(user.dog)) user.dog = 0                    
                 if (!isNumber(user.dogexp)) user.dogexp = 0
-                    
-                if (!isNumber(user.horselastfeed)) user.horselastfeed = 0                    
-                if (!isNumber(user.catlastfeed)) user.catlastfeed = 0                    
-                if (!isNumber(user.foxlastfeed)) user.foxlastfeed = 0                    
-                if (!isNumber(user.doglastfeed)) user.doglastfeed = 0
-                    
-                if (!isNumber(user.armor)) user.armor = 0                    
-                if (!isNumber(user.armordurability)) user.armordurability = 0                    
-                if (!isNumber(user.sword)) user.sword = 0                    
-                if (!isNumber(user.sworddurability)) user.sworddurability = 0                    
-                if (!isNumber(user.pickaxe)) user.pickaxe = 0                    
-                if (!isNumber(user.pickaxedurability)) user.pickaxedurability = 0                    
-                if (!isNumber(user.fishingrod)) user.fishingrod = 0                    
+		if (!isNumber(user.doglastfeed)) user.doglastfeed = 0
+		    
+		if (!isNumber(user.emerald)) user.emerald = 0
+		if (!isNumber(user.fishingrod)) user.fishingrod = 0                    
                 if (!isNumber(user.fishingroddurability)) user.fishingroddurability = 0
-                    
-                if (!isNumber(user.lastclaim)) user.lastclaim = 0                    
+		if (!isNumber(user.foxlastfeed)) user.foxlastfeed = 0
+		if (!isNumber(user.fox)) user.fox = 0                    
+                if (!isNumber(user.foxhexp)) user.foxexp = 0
+		    
+		if (!isNumber(user.gold)) user.gold = 0
+		if (!isNumber(user.health)) user.health = 100
+		if (!isNumber(user.horse)) user.horse = 0                    
+                if (!isNumber(user.horseexp)) user.horseexp = 0                                                                                         
+                if (!isNumber(user.horselastfeed)) user.horselastfeed = 0
+		    
+		if (!isNumber(user.iron)) user.iron = 0
+		if (!isNumber(user.lastclaim)) user.lastclaim = 0                    
 		if (!isNumber(user.lastcofre)) user.lastcofre = 0                    
                 if (!isNumber(user.lastadventure)) user.lastadventure = 0                    
                 if (!isNumber(user.lastfishing)) user.lastfishing = 0                   
@@ -118,69 +103,72 @@ export async function handler(chatUpdate) {
                 if (!isNumber(user.lasthunt)) user.lasthunt = 0                    
                 if (!isNumber(user.lastweekly)) user.lastweekly = 0                    
                 if (!isNumber(user.lastmonthly)) user.lastmonthly = 0
-                    
+		if (!isNumber(user.level)) user.level = 0
+		if (!isNumber(user.legendary)) user.legendary = 0
+		if (!isNumber(user.makanancentaur)) user.makanancentaur = 0
+		if (!isNumber(user.limit)) user.limit = 10
+		    
+		if (!isNumber(user.mythic)) user.mythic = 0
+		if (!isNumber(user.money)) user.money = 0
+		if (!isNumber(user.petFood)) user.petFood = 0
+		if (!isNumber(user.pet)) user.pet = 0
+		if (!isNumber(user.pickaxe)) user.pickaxe = 0                    
+                if (!isNumber(user.pickaxedurability)) user.pickaxedurability = 0
+		if (!isNumber(user.potion)) user.potion = 0
+		    
+		if (!('role' in user)) user.role = 'Novato'
+		if (!isNumber(user.ramuancentaurlast)) user.ramuancentaurlast = 0
+		if (!isNumber(user.rock)) user.rock = 0
+		if (!isNumber(user.string)) user.string = 0
+		if (!isNumber(user.sword)) user.sword = 0                    
+                if (!isNumber(user.sworddurability)) user.sworddurability = 0
+		    
+		if (!isNumber(user.trash)) user.trash = 0
+		if (!isNumber(user.uncommon)) user.uncommon = 0		    
+                if (!isNumber(user.warn)) user.warn = 0                                                                                                                                                                                                                                                                 
+                if (!isNumber(user.wood)) user.wood = 0                                                        
+                                                   		                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
             } else
                 global.db.data.users[m.sender] = {
-                    exp: 0,
-                    limit: 20,
-                    lastclaim: 0,
-		    joincount: 1,
-                    registered: false,
-                    name: m.name,
-                    age: -1,
-                    regTime: -1,
-                    afk: -1,
-                    afkReason: '',
-                    banned: false,
-                    warn: 0,
-                    level: 0,
-                    role: 'Novato',
-                    autolevelup: false,
-
-                    money: 0,
-                    health: 100,
-                    limit: 20,
-                    potion: 10,
-                    trash: 0,
-                    wood: 0,
-                    rock: 0,
-                    string: 0,
-
-                    emerald: 0,
-                    diamond: 0,
-                    gold: 0,
-                    iron: 0,
-
-                    common: 0,
-                    uncommon: 0,
-                    mythic: 0,
-                    legendary: 0,
-                    pet: 0,
-
-                    horse: 0,
-                    horseexp: 0,
-                    cat: 0,
-                    catngexp: 0,
-                    fox: 0,
-                    foxexp: 0,
-                    dog: 0,
-                    dogexp: 0,
-
-                    horselastfeed: 0,
-                    catlastfeed: 0,
-                    foxlastfeed: 0,
-                    doglastfeed: 0,
-
-                    armor: 0,
+		    afk: -1,
+	            afkReason: '',
+		    age: -1,
+		    armor: 0,
                     armordurability: 0,
-                    sword: 0,
-                    sworddurability: 0,
-                    pickaxe: 0,
-                    pickaxedurability: 0,
-                    fishingrod: 0,
+		    autolevelup: false,
+			
+		    banned: false,
+		    catlastfeed: 0,
+		    cat: 0,
+                    catngexp: 0,
+		    common: 0,
+			
+	            diamond: 0,
+	            dog: 0,
+                    dogexp: 0,
+		    doglastfeed: 0,
+		    emerald: 0,
+		    exp: 0,
+			
+		    fox: 0,
+                    foxexp: 0,
+	            foxlastfeed: 0,
+		    fishingrod: 0,
                     fishingroddurability: 0,
-
-                    lastclaim: 0,
+		    gold: 0,
+			
+		    health: 100,
+		    horse: 0,
+                    horseexp: 0,                                                            
+                    horselastfeed: 0,
+		    iron: 0,
+			
+		    level: 0,
+		    legendary: 0,
+		    limit: 20,
+		    joincount: 1,
+		    lastclaim: 0,
+		    lastclaim: 0,
 		    lastcofre: 0,
                     lastadventure: 0,
                     lastfishing: 0,
@@ -190,6 +178,28 @@ export async function handler(chatUpdate) {
                     lasthunt: 0,
                     lastweekly: 0,
                     lastmonthly: 0,
+			
+		    mythic: 0,
+		    money: 0,
+		    name: m.name,
+		    potion: 10,
+		    pet: 0,
+		    pickaxe: 0,
+                    pickaxedurability: 0,
+		    
+		    regTime: -1,
+		    registered: false,
+		    rock: 0,
+		    role: 'Novato',
+			
+		    string: 0,
+		    sword: 0,
+                    sworddurability: 0,
+			
+		    trash: 0,
+		    uncommon: 0,
+		    warn: 0,
+		    wood: 0,			                                                            		                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
                 }
             let chat = global.db.data.chats[m.chat]
             if (typeof chat !== 'object')
