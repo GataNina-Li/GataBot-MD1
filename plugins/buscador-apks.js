@@ -41,7 +41,7 @@ caption += `${eg}
 ┃ ✅ 𝙑𝙀𝙍𝙎𝙄𝙊𝙉
 ┃ ${x.apps_version}
 `}
-await conn.reply(m.chat, caption, fkontak, m)  
+//await conn.reply(m.chat, caption, fkontak, m)  
 await conn.sendFile(m.chat, link, 'error.mp3', caption, m)}
 //await conn.reply(m.chat, caption, m)
 
