@@ -1,4 +1,4 @@
-/*import fetch from 'node-fetch'
+import fetch from 'node-fetch'
 
 const cooldown = 300000
 let handler = async (m, { usedPrefix, conn }) => {
@@ -120,4 +120,4 @@ function reward(user = {}) {
         }
     }
     return rewards
-}*/
+}
