@@ -62,6 +62,7 @@ export async function handler(chatUpdate) {
 		if (!('autolevelup' in user))  user.autolevelup = false                    
 		if (!isNumber(user.anakcentaur)) user.anakcentaur = 0
 		if (!isNumber(user.anakkyubi)) user.anakkyubi = 0
+		if (!isNumber(user.anakphonix)) user.anakphonix = 0
 		if (!isNumber(user.armor)) user.armor = 0                    
                 if (!isNumber(user.armordurability)) user.armordurability = 0
 		    
@@ -117,11 +118,15 @@ export async function handler(chatUpdate) {
                 if (!isNumber(user.lasthunt)) user.lasthunt = 0                    
                 if (!isNumber(user.lastweekly)) user.lastweekly = 0                    
                 if (!isNumber(user.lastmonthly)) user.lastmonthly = 0
+		if (!isNumber(user.lastwarpet)) user.lastwarpet = 0
+		    
 		if (!isNumber(user.level)) user.level = 0
 		if (!isNumber(user.legendary)) user.legendary = 0
 		if (!isNumber(user.makanankyubi)) user.makanankyubi = 0
 		if (!isNumber(user.makanangriffin)) user.makanangriffin = 0
 		if (!isNumber(user.makanancentaur)) user.makanancentaur = 0
+		if (!isNumber(user.makananpet)) user.makananpet = 0
+		if (!isNumber(user.makananphonix)) user.makananphonix = 0
 		    
 		if (!isNumber(user.limit)) user.limit = 10
 		if (!isNumber(user.lion)) user.lion = 0
@@ -132,6 +137,10 @@ export async function handler(chatUpdate) {
 		if (!isNumber(user.money)) user.money = 0
 		if (!isNumber(user.petFood)) user.petFood = 0
 		if (!isNumber(user.pet)) user.pet = 0
+		if (!isNumber(user.phonix)) user.phonix = 0
+                if (!isNumber(user.phonixexp)) user.phonixexp = 0
+                if (!isNumber(user.phonixlastclaim)) user.phonixlastclaim = 0
+                if (!isNumber(user.phonixlastfeed)) user.phonixlastfeed = 0
 		if (!isNumber(user.pickaxe)) user.pickaxe = 0                    
                 if (!isNumber(user.pickaxedurability)) user.pickaxedurability = 0
 		if (!isNumber(user.potion)) user.potion = 0
@@ -140,6 +149,12 @@ export async function handler(chatUpdate) {
 		if (!isNumber(user.ramuankyubilast)) user.ramuankyubilast = 0
 		if (!isNumber(user.ramuangriffinlast)) user.ramuangriffinlast = 0
 		if (!isNumber(user.ramuancentaurlast)) user.ramuancentaurlast = 0
+		if (!isNumber(user.ramuanphonixlast)) user.ramuanphonixlast = 0
+		if (!isNumber(user.rhinoceros)) user.rhinoceros = 0
+                if (!isNumber(user.rhinocerosexp)) user.rhinocerosexp = 0
+                if (!isNumber(user.rhinoceroslastfeed)) user.rhinoceroslastfeed = 0
+		if (!isNumber(user.robo)) user.robo = 0
+                if (!isNumber(user.roboxp)) user.roboxp = 0		    
 		if (!isNumber(user.rock)) user.rock = 0
 		if (!isNumber(user.string)) user.string = 0
 		if (!isNumber(user.sword)) user.sword = 0                    
@@ -148,7 +163,10 @@ export async function handler(chatUpdate) {
 		if (!isNumber(user.trash)) user.trash = 0
 		if (!isNumber(user.uncommon)) user.uncommon = 0		    
                 if (!isNumber(user.warn)) user.warn = 0                                                                                                                                                                                                                                                                 
-                if (!isNumber(user.wood)) user.wood = 0                                                        
+                if (!isNumber(user.wood)) user.wood = 0
+		if (!isNumber(user.wolf)) user.wolf = 0
+                if (!isNumber(user.wolfexp)) user.wolfexp = 0
+                if (!isNumber(user.wolflastfeed)) user.wolflastfeed = 0
                                                    		                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
             } else
                 global.db.data.users[m.sender] = {
@@ -161,6 +179,7 @@ export async function handler(chatUpdate) {
 		    anakkyubi: 0,
 		    anakcentaur: 0,
 	            anakgriffin: 0,
+		    anakphonix: 0,
 			
 		    banned: false,
 		    catlastfeed: 0,
@@ -220,23 +239,35 @@ export async function handler(chatUpdate) {
                     lasthunt: 0,
                     lastweekly: 0,
                     lastmonthly: 0,
+		    lastwarpet: 0,
 		
 		    makanancentaur: 0,
 		    makanangriffin: 0,
 		    makanankyubi: 0,
+		    makananpet: 0,
+		    makananphonix: 0,
 		    mythic: 0,
 		    money: 0,
 		    name: m.name,
+			
 		    potion: 10,
 		    pet: 0,
+		    phonix: 0,
+                    phonixexp: 0,
+                    phonixlastclaim: 0,
+                    phonixlastfeed: 0,
 		    pickaxe: 0,
                     pickaxedurability: 0,
 		    
 		    ramuancentaurlast: 0,
 		    ramuankyubilast: 0,
 		    ramuangriffinlast: 0,
+		    ramuanphonixlast: 0,
 		    regTime: -1,
 		    registered: false,
+		    rhinoceros: 0,
+                    rhinocerosexp: 0,
+                    rhinoceroslastfeed: 0,
 		    rock: 0,
 		    role: 'Novato',
 			
@@ -247,7 +278,10 @@ export async function handler(chatUpdate) {
 		    trash: 0,
 		    uncommon: 0,
 		    warn: 0,
-		    wood: 0,			                                                            		                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+		    wood: 0,
+		    wolf: 0,
+                    wolfexp: 0,
+                    wolflastfeed: 0,
                 }
             let chat = global.db.data.chats[m.chat]
             if (typeof chat !== 'object')
