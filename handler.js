@@ -119,6 +119,7 @@ export async function handler(chatUpdate) {
                 if (!isNumber(user.lastweekly)) user.lastweekly = 0                    
                 if (!isNumber(user.lastmonthly)) user.lastmonthly = 0
 		if (!isNumber(user.lastwarpet)) user.lastwarpet = 0
+		if (!isNumber(user.lastsironclaim)) user.lastsironclaim = 0
 		    
 		if (!isNumber(user.level)) user.level = 0
 		if (!isNumber(user.legendary)) user.legendary = 0
@@ -240,6 +241,7 @@ export async function handler(chatUpdate) {
                     lastweekly: 0,
                     lastmonthly: 0,
 		    lastwarpet: 0,
+	            lastsironclaim: 0,
 		
 		    makanancentaur: 0,
 		    makanangriffin: 0,
