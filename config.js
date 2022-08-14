@@ -64,13 +64,13 @@ global.APIKeys = { // APIKey Here
   'https://api.lolhuman.xyz': '9b817532fadff8fc7cb86862',
   'https://botstyle-api.herokuapp.com': 'Eyar749L',
   'https://neoxr-api.herokuapp.com': 'yntkts',
-  'https://anabotofc.herokuapp.com/': 'AnaBot',
-  'https://violetics.pw': 'beta'
+  'https://anabotofc.herokuapp.com/': 'AnaBot'
 }
 
 //⊱ ━━━━━.⋅ KEY ⋅.━━━━ ⊰
 
 global.Key360 = ['964f-0c75-7afc'] //keys ephoto360
+global.beta = ['https://violetics.pw'] //keys ephoto360
 
 //━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 
