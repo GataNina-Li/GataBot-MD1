@@ -156,6 +156,14 @@ global.lolkeysapi = lolkeys[Math.floor(lolkeys.length * Math.random())]
 
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 
+
+//⊱ ━━━━━.⋅ RPG ⋅.━━━━ ⊰
+
+global.htki = '––––––『'
+global.htka = '』––––––'
+
+//━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
+
 global.multiplier = 60 // Cuanto más alto, más difícil subir de nivel | The higher, The harder levelup 
 
 global.rpg = {
