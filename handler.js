@@ -43,8 +43,8 @@ export async function handler(chatUpdate) {
 		
             if (user) {
                 if (!isNumber(user.exp)) user.exp = 0
-                if (!isNumber(user.limit)) user.limit = 20    
-		if (!isNumber(user.joincount)) user.joincount = 1	    
+		if (!isNumber(user.joincount)) user.joincount = 1    
+                if (!isNumber(user.limit)) user.limit = 20    	    
                 if (!isNumber(user.lastclaim)) user.lastclaim = 0
 		if (!isNumber(user.lastcofre)) user.lastcofre = 0    
                 if (!('registered' in user)) user.registered = false
@@ -61,6 +61,7 @@ export async function handler(chatUpdate) {
                 if (!('afkReason' in user)) user.afkReason = ''
 		if (!('autolevelup' in user))  user.autolevelup = false                    
 		if (!isNumber(user.anakcentaur)) user.anakcentaur = 0
+		if (!isNumber(user.anakkyubi)) user.anakkyubi = 0
 		if (!isNumber(user.armor)) user.armor = 0                    
                 if (!isNumber(user.armordurability)) user.armordurability = 0
 		    
@@ -73,7 +74,10 @@ export async function handler(chatUpdate) {
                 if (!isNumber(user.centaurlastclaim)) user.centaurlastclaim = 0
                 if (!isNumber(user.centaurlastfeed)) user.centaurlastfeed = 0
 		if (!isNumber(user.common)) user.common = 0
-		    
+		
+		if (!isNumber(user.dragon)) user.dragon = 0
+                if (!isNumber(user.dragonexp)) user.dragonexp = 0
+                if (!isNumber(user.dragonlastfeed)) user.dragonlastfeed = 0
 		if (!isNumber(user.diamond)) user.diamond = 0
 		if (!isNumber(user.dog)) user.dog = 0                    
                 if (!isNumber(user.dogexp)) user.dogexp = 0
@@ -86,13 +90,23 @@ export async function handler(chatUpdate) {
 		if (!isNumber(user.fox)) user.fox = 0                    
                 if (!isNumber(user.foxhexp)) user.foxexp = 0
 		    
+		if (!isNumber(user.griffin)) user.griffin = 0
+                if (!isNumber(user.griffinexp)) user.griffinexp = 0
+                if (!isNumber(user.griffinlastclaim)) user.griffinlastclaim = 0
+                if (!isNumber(user.griffinlastfeed)) user.griffinlastfeed = 0    
 		if (!isNumber(user.gold)) user.gold = 0
+		
 		if (!isNumber(user.health)) user.health = 100
 		if (!isNumber(user.horse)) user.horse = 0                    
                 if (!isNumber(user.horseexp)) user.horseexp = 0                                                                                         
                 if (!isNumber(user.horselastfeed)) user.horselastfeed = 0
-		    
+				    
 		if (!isNumber(user.iron)) user.iron = 0
+		if (!isNumber(user.kyubi)) user.kyubi = 0
+                if (!isNumber(user.kyubiexp)) user.kyubiexp = 0
+                if (!isNumber(user.kyubilastclaim)) user.kyubilastclaim = 0
+                if (!isNumber(user.kyubilastfeed)) user.kyubilastfeed = 0  
+		    
 		if (!isNumber(user.lastclaim)) user.lastclaim = 0                    
 		if (!isNumber(user.lastcofre)) user.lastcofre = 0                    
                 if (!isNumber(user.lastadventure)) user.lastadventure = 0                    
@@ -105,8 +119,14 @@ export async function handler(chatUpdate) {
                 if (!isNumber(user.lastmonthly)) user.lastmonthly = 0
 		if (!isNumber(user.level)) user.level = 0
 		if (!isNumber(user.legendary)) user.legendary = 0
+		if (!isNumber(user.makanankyubi)) user.makanankyubi = 0
+		if (!isNumber(user.makanangriffin)) user.makanangriffin = 0
 		if (!isNumber(user.makanancentaur)) user.makanancentaur = 0
+		    
 		if (!isNumber(user.limit)) user.limit = 10
+		if (!isNumber(user.lion)) user.lion = 0
+                if (!isNumber(user.lionexp)) user.lionexp = 0
+                if (!isNumber(user.lionlastfeed)) user.lionlastfeed = 0
 		    
 		if (!isNumber(user.mythic)) user.mythic = 0
 		if (!isNumber(user.money)) user.money = 0
@@ -117,6 +137,8 @@ export async function handler(chatUpdate) {
 		if (!isNumber(user.potion)) user.potion = 0
 		    
 		if (!('role' in user)) user.role = 'Novato'
+		if (!isNumber(user.ramuankyubilast)) user.ramuankyubilast = 0
+		if (!isNumber(user.ramuangriffinlast)) user.ramuangriffinlast = 0
 		if (!isNumber(user.ramuancentaurlast)) user.ramuancentaurlast = 0
 		if (!isNumber(user.rock)) user.rock = 0
 		if (!isNumber(user.string)) user.string = 0
@@ -136,7 +158,9 @@ export async function handler(chatUpdate) {
 		    armor: 0,
                     armordurability: 0,
 		    autolevelup: false,
+		    anakkyubi: 0,
 		    anakcentaur: 0,
+	            anakgriffin: 0,
 			
 		    banned: false,
 		    catlastfeed: 0,
@@ -147,7 +171,10 @@ export async function handler(chatUpdate) {
                     centaurlastclaim: 0,
                     centaurlastfeed: 0,
 		    common: 0,
-			
+		
+		    dragon: 0,
+                    dragonexp: 0,
+                    dragonlastfeed: 0,
 	            diamond: 0,
 	            dog: 0,
                     dogexp: 0,
@@ -160,6 +187,10 @@ export async function handler(chatUpdate) {
 	            foxlastfeed: 0,
 		    fishingrod: 0,
                     fishingroddurability: 0,
+		    griffin: 0,
+                    griffinexp: 0,
+                    griffinlastclaim: 0,
+                    griffinlastfeed: 0,
 		    gold: 0,
 			
 		    health: 100,
@@ -167,10 +198,16 @@ export async function handler(chatUpdate) {
                     horseexp: 0,                                                            
                     horselastfeed: 0,
 		    iron: 0,
+		    kyubi: 0,
+                    kyubilastclaim: 0,
 			
 		    level: 0,
 		    legendary: 0,
 		    limit: 20,
+		    lion: 0,
+                    lionexp: 0,
+                    lionlastfeed: 0,
+			
 		    joincount: 1,
 		    lastclaim: 0,
 		    lastclaim: 0,
@@ -184,7 +221,9 @@ export async function handler(chatUpdate) {
                     lastweekly: 0,
                     lastmonthly: 0,
 		
-		    makanancentaur: 0,	
+		    makanancentaur: 0,
+		    makanangriffin: 0,
+		    makanankyubi: 0,
 		    mythic: 0,
 		    money: 0,
 		    name: m.name,
@@ -194,6 +233,8 @@ export async function handler(chatUpdate) {
                     pickaxedurability: 0,
 		    
 		    ramuancentaurlast: 0,
+		    ramuankyubilast: 0,
+		    ramuangriffinlast: 0,
 		    regTime: -1,
 		    registered: false,
 		    rock: 0,
