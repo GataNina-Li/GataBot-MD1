@@ -174,7 +174,7 @@ const listMessage = {
   text: `✨ *AVERIGUA EL INVENTARIO QUE TIENES*`,
   footer: global.wm,
   title: `*»»—— ֎ INVENTARIO : INVENTORY ֎ —-««*`,
-  buttonText: `🗃️ SELECCIONE AQUÍ 🗃️`,
+  buttonText: `🔖 SELECCIONE AQUÍ 🔖`,
   sections
 }
 let bottime = `${name} 𝗧𝗜𝗠𝗘: ${moment.tz('America/Bogota').format('HH:mm:ss')}`//America/Los_Angeles
@@ -265,12 +265,26 @@ let member = global.db.data.users[m.sender]
     let userspet = sortedpet.map(v => v[0])
 
     let str = `
-Inventory *🏷️ Nama:* *(${name})* ( @${who.split("@")[0]} )\n
-❤️Nyawa: *${healt}*
-⛏️Pickaxe: *${pickaxe == 0 ? 'Tidak Punya' : '' || pickaxe == 1 ? 'Level 1' : '' || pickaxe == 2 ? 'Level 2' : '' || pickaxe == 3 ? 'Level 3' : '' || pickaxe == 4 ? 'Level 4' : '' || pickaxe == 5 ? 'Level 5 (MAX)' : ''}*
-⚔️Sword: *${sword == 0 ? 'Tidak Punya' : '' || sword == 1 ? 'Leather Sword' : '' || sword == 2 ? 'Iron Sword' : '' || sword == 3 ? 'Gold Sword' : '' || sword == 4 ? 'Diamond Sword' : '' || sword == 5 ? 'Netherite Sword (MAX)' : ''}*
-👚Armor: *${armor == 0 ? 'Tidak Punya' : '' || armor == 1 ? 'Leather Armor' : '' || armor == 2 ? 'Iron Armor' : '' || armor == 3 ? 'Gold Armor' : '' || armor == 4 ? 'Diamond Armor' : '' || armor == 5 ? 'Netherite Armor (MAX)' : ''}*
-🎣FishingRod: ${fishingrod}
+🏷️ *INVENTARIO | INVENTORY* 
+👤» *(${name})* ( @${who.split("@")[0]} )\n
+
+*INVENTARIO DE COMBATE*
+*COMBAT INVENTORY*
+
+❤️ *Vida | Life:* 
+*» ${healt}*
+╸╸╸╸╸╸╸╸╸╸╸╸╸╸
+⛏️ *Pico | Peak:* 
+*» ${pickaxe == 0 ? 'No tengo' : '' || pickaxe == 1 ? 'Nivel | Level ✦ 1' : '' || pickaxe == 2 ? 'Nivel | Level ✦ 2' : '' || pickaxe == 3 ? 'Nivel | Level ✦ 3' : '' || pickaxe == 4 ? 'Nivel | Level ✦ 4' : '' || pickaxe == 5 ? 'Nivel | Level ✦ 5 ǁ MAX' : ''}*
+╸╸╸╸╸╸╸╸╸╸╸╸╸╸
+⚔️ *Espada | Sword:*
+*» ${sword == 0 ? 'No tengo' : '' || sword == 1 ? 'Espada de Cuero ✦ Leather Sword' : '' || sword == 2 ? 'Espada de Hierro ✦ Iron Sword' : '' || sword == 3 ? 'Espada de Oro ✦ Gold Sword' : '' || sword == 4 ? 'Espada de Energía ✦ Energy Sword' : '' || sword == 5 ? 'Espada Galáctica ✦ Galactic Sword ǁ MAX' : ''}*
+╸╸╸╸╸╸╸╸╸╸╸╸╸╸
+👚 *Armadura | Armor:* 
+*» ${armor == 0 ? 'No tengo' : '' || armor == 1 ? '✦ Armadura de Cuero : Leather Armor' : '' || armor == 2 ? '✦ Armadura de Hierro : Iron Armor' : '' || armor == 3 ? '✦ Armadura Mágica : Magic Armor' : '' || armor == 4 ? '✦ Armadura Robótica : Robotic Armor' : '' || armor == 5 ? 'Armadura Cyborg Estelar : Cyborg Armor ǁ MAX' : ''}*
+╸╸╸╸╸╸╸╸╸╸╸╸╸╸
+🎣 *Caña de Pescar | FishingRod:* 
+*»${fishingrod}* 
 
 💵Uang: *${money}*
 🔱Level: *${level}*
