@@ -179,7 +179,7 @@ const listMessage = {
   buttonText: `🗃️ SELECCIONE AQUÍ 🗃️`,
   sections
 }
-let bottime = `${name} | 𝗧 𝗜 𝗠 𝗘 : ${moment.tz('Asia/Jakarta').format('HH:mm:ss')}`//America/Los_Angeles
+let bottime = `${name} | 𝗧 𝗜 𝗘 𝗠 𝗣 𝗢 / 𝗧 𝗜 𝗠 𝗘 : ${moment.tz('America/Bogota').format('HH:mm:ss')}`//America/Los_Angeles
 let fgif = {
             key: {
                  participant : '0@s.whatsapp.net'},
