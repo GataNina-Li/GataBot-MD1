@@ -32,8 +32,7 @@ const inventory = {
     diamond: true,
     gold: true,
     iron: true,
-    upgrader: true,
-    pet: true
+    upgrader: true
   },
   durabi: {
     sworddurability: true,
@@ -91,6 +90,7 @@ const inventory = {
     common: true,
     uncommon: true,
     mythic: true,
+    pet: true,
     legendary: true
   },
   pets: {
@@ -443,7 +443,7 @@ let user = global.db.data.users[m.sender]
   const items = Object.keys(inventory.items).map(v => user[v] && `*${global.rpg.emoticon(v)} » ${user[v]}*`).filter(v => v).join('\n').trim()
   const dura = Object.keys(inventory.durabi).map(v => user[v] && `*${global.rpg.emoticon(v)} » ${user[v]}*`).filter(v => v).join('\n').trim()
   const crates = Object.keys(inventory.crates).map(v => user[v] && `*${global.rpg.emoticon(v)} » ${user[v]}*`).filter(v => v).join('\n').trim()
-  const pets = Object.keys(inventory.pets).map(v => user[v] && `*${global.rpg.emoticon(v)} » ${user[v] >= inventory.pets[v] ? 'Nivel Máximo : Max Level*' : `Nivel : Level » ${user[v]}*`}`).filter(v => v).join('\n').trim()
+  const pets = Object.keys(inventory.pets).map(v => user[v] && `*${global.rpg.emoticon(v)} » ${user[v] >= inventory.pets[v] ? '*Nivel Máximo : Max Level*' : `Nivel : Level* \n*» ${user[v]}*\n`}`).filter(v => v).join('\n').trim()
   const cooldowns = Object.entries(inventory.cooldowns).map(([cd, { name, time }]) => cd in user && `*✧ ${name}*: ${new Date() - user[cd] >= time ? '✅' : '❌'}`).filter(v => v).join('\n').trim()
  // ${Object.keys(inventory.others).map(v => user[v] && `⮕ ${global.rpg.emoticon(v)} ${v}: ${user[v]}`).filter(v => v).join('\n')}${tools ? `
   const caption = `
@@ -453,13 +453,14 @@ ${Object.keys(inventory.others).map(v => user[v] && `*⇢ ${global.rpg.emoticon(
 
 `${tools}\n\n╸╸╸╸╸╸╸╸╸╸╸╸╸╸\n` : ''}${items ? 
 
-`\n╸╸╸╸╸╸╸╸╸╸╸╸╸╸\n\n🔖 𝗘𝗟𝗘𝗠𝗘𝗡𝗧𝗢𝗦 : 𝗜𝗧𝗘𝗠𝗦
+`\n\n╸╸╸╸╸╸╸╸╸╸╸╸╸╸\n\n🔖 𝗘𝗟𝗘𝗠𝗘𝗡𝗧𝗢𝗦 : 𝗜𝗧𝗘𝗠𝗦
 ${items}\n\n╸╸╸╸╸╸╸╸╸╸╸╸╸╸\n\n` : ''}${crates ? 
 
 `🔖 𝗖𝗔𝗝𝗔𝗦 𝗔𝗗𝗤𝗨𝗜𝗥𝗜𝗗𝗔𝗦 : 𝗕𝗢𝗫𝗘𝗦
 ${crates}\n\n╸╸╸╸╸╸╸╸╸╸╸╸╸╸\n\n` : ''}${pets ? 
 	
 `🔖 𝗠𝗔𝗦𝗖𝗢𝗧𝗔𝗦 : 𝗣𝗘𝗧𝗦
+𝗜𝗡𝗦𝗨𝗠𝗢𝗦 : 𝗦𝗨𝗣𝗣𝗟𝗜𝗘𝗦
 ${pets}\n\n╸╸╸╸╸╸╸╸╸╸╸╸╸╸\n\n` : ''}${cooldowns ? 
 
 //`🔖 𝗘𝗦𝗧𝗔𝗗𝗢 𝗗𝗘 𝗖𝗢𝗠𝗕𝗔𝗧𝗘 : 𝗖𝗢𝗠𝗕𝗔𝗧 𝗦𝗧𝗔𝗧𝗨𝗦
@@ -467,17 +468,31 @@ ${pets}\n\n╸╸╸╸╸╸╸╸╸╸╸╸╸╸\n\n` : ''}${cooldowns ?
 
 `🤺 𝗥𝗘𝗖𝗢𝗠𝗣𝗘𝗡𝗦𝗔𝗦 𝗥𝗘𝗔𝗟𝗜𝗭𝗔𝗗𝗔𝗦 : 𝗥𝗘𝗪𝗔𝗥𝗗𝗦
 ${cooldowns}` : ''}
-*✧ dungeon: ${user.lastdungeon == 0 ? '✅': '❌'}*
-*✧ mining: ${user.lastmining == 0 ? '✅': '❌'}*
-*✧ roket: ${user.lastroket == 0 ? '✅': '❌'}*
-*✧ mancing: ${user.lastfishing == 0 ? '✅': '❌'}*
-*✧ ngojek: ${user.lastngojek == 0 ? '✅': '❌'}*
-*✧ taxy: ${user.lastgrab == 0 ? '✅': '❌'}*
-*✧ nebang: ${user.lastlumber == 0 ? '✅': '❌'}*
-*✧ ngocok: ${user.lastngocok == 0 ? '✅': '❌'}*
-`.trim()
+*✧ Calabozo : Dungeon » ${user.lastdungeon == 0 ? '✅': '❌'}*
+*✧ minería : mining » ${user.lastmining == 0 ? '✅': '❌'}*
+*✧ Cohete : Roket » ${user.lastroket == 0 ? '✅': '❌'}*
+*✧ Pescar : Fish » ${user.lastfishing == 0 ? '✅': '❌'}*
+*✧ Conducir : ngojek » ${user.lastngojek == 0 ? '✅': '❌'}*
+*✧ taxy: » ${user.lastgrab == 0 ? '✅': '❌'}*
+*✧ Maldición : nebang » ${user.lastlumber == 0 ? '✅': '❌'}*
+*✧ Sacudir : ngocok » ${user.lastngocok == 0 ? '✅': '❌'}*`.trim()
+
+const fkontak = {
+	"key": {
+    "participants":"0@s.whatsapp.net",
+		"remoteJid": "status@broadcast",
+		"fromMe": false,
+		"id": "Halo"
+	},
+	"message": {
+		"contactMessage": {
+			"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
+		}
+	},
+	"participant": "0@s.whatsapp.net"
+}
 await conn.sendButton(m.chat, caption, wm, imgr + 'Inventario : Inventory', [[`ᴛʀᴀɴsғᴇʀ`, `.transfer`],
-[`ᴀᴅᴠᴇɴᴛᴜʀᴇ`, `.adventure`]], m, { mentions: conn.parseMention(caption) })
+[`ᴀᴅᴠᴇɴᴛᴜʀᴇ`, `.adventure`]], fkontak, m, { mentions: conn.parseMention(caption) })
 	
 } else if (args[0] == '3') {
 // Inventory 3
