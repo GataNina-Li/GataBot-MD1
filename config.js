@@ -219,6 +219,7 @@ global.rpg = {
       bow: '🏹 Super Arco : Super Bow',
       bull: '🐃 Toro : Bull',
       cat: '🐈 Gato : Cat',
+      centaur: '🐐 Centauro : Centaur',
       chicken: '🐓 Pollo : Chicken',
       common: '📦 Caja Común : Common Box',
       cow: '🐄 Vaca : Cow',
