@@ -10,7 +10,7 @@ import fs from 'fs'
 
 const inventory = {
   others: {
-    level: true,
+    level: true = `Nivel`,
     limit: true,
     health: true,
     money: true,
@@ -434,8 +434,9 @@ const fkontak = {
 await conn.sendButton(m.chat, str, wm, imgr + `Inventario : Inventory`, [[`Transferir`, `.transfer`],
 [`Aventura`, `.adventure`]], fkontak, m, { mentions: conn.parseMention(str) })
 } else if (args[0] == '2') {
+
 	
-// Inventory 2
+// Inventario 2
 let user = global.db.data.users[m.sender]
   const tools = Object.keys(inventory.tools).map(v => user[v] && `*${global.rpg.emoticon(v)}${v}:* ${typeof inventory.tools[v] === 'object' ? inventory.tools[v][user[v]?.toString()] : `Level(s) ${user[v]}`}`).filter(v => v).join('\n').trim()
   const items = Object.keys(inventory.items).map(v => user[v] && `*${global.rpg.emoticon(v)}${v}:* ${user[v]}`).filter(v => v).join('\n').trim()
