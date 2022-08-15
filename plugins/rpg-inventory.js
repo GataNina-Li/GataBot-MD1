@@ -9,8 +9,9 @@ import moment from 'moment-timezone'
 import fs from 'fs'
 
 const inventory = {
+	//text = text.replace(/@/, '')
   others: {
-    level: true == 'Nivel',
+    level: = true.replace(/Nivel/, ''),
     limit: true,
     health: true,
     money: true,
