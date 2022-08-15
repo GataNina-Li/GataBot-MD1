@@ -440,15 +440,15 @@ await conn.sendButton(m.chat, str, wm, imgr + `Inventario : Inventory`, [[`Trans
 // Inventario 2
 let user = global.db.data.users[m.sender]
   const tools = Object.keys(inventory.tools).map(v => user[v] && `*${global.rpg.emoticon(v)}* ${typeof inventory.tools[v] === 'object' ? inventory.tools[v][user[v]?.toString()] : `\n*Nivel : Level » ${user[v]}*`}`).filter(v => v).join('\n').trim()
-  const items = Object.keys(inventory.items).map(v => user[v] && `*${global.rpg.emoticon(v)} ${user[v]}*`).filter(v => v).join('\n').trim()
-  const dura = Object.keys(inventory.durabi).map(v => user[v] && `*${global.rpg.emoticon(v)} ${user[v]}*`).filter(v => v).join('\n').trim()
-  const crates = Object.keys(inventory.crates).map(v => user[v] && `*${global.rpg.emoticon(v)}* ${user[v]}`).filter(v => v).join('\n').trim()
-  const pets = Object.keys(inventory.pets).map(v => user[v] && `*${global.rpg.emoticon(v)}* ${user[v] >= inventory.pets[v] ? 'Nivel Máximo : Max Level' : `Level(s) ${user[v]}`}`).filter(v => v).join('\n').trim()
+  const items = Object.keys(inventory.items).map(v => user[v] && `*${global.rpg.emoticon(v)} » ${user[v]}*`).filter(v => v).join('\n').trim()
+  const dura = Object.keys(inventory.durabi).map(v => user[v] && `*${global.rpg.emoticon(v)} » ${user[v]}*`).filter(v => v).join('\n').trim()
+  const crates = Object.keys(inventory.crates).map(v => user[v] && `*${global.rpg.emoticon(v)} » ${user[v]}*`).filter(v => v).join('\n').trim()
+  const pets = Object.keys(inventory.pets).map(v => user[v] && `*${global.rpg.emoticon(v)} » ${user[v]* >= inventory.pets[v] ? 'Nivel Máximo : Max Level' : `*Nivel : Level » ${user[v]}*`}`).filter(v => v).join('\n').trim()
   const cooldowns = Object.entries(inventory.cooldowns).map(([cd, { name, time }]) => cd in user && `*✧ ${name}*: ${new Date() - user[cd] >= time ? '✅' : '❌'}`).filter(v => v).join('\n').trim()
  // ${Object.keys(inventory.others).map(v => user[v] && `⮕ ${global.rpg.emoticon(v)} ${v}: ${user[v]}`).filter(v => v).join('\n')}${tools ? `
   const caption = `
 👤» *${name}* ( @${who.split("@")[0]} )\n\n🔖 𝗘𝗦𝗧𝗔𝗗𝗢 𝗗𝗜𝗔𝗥𝗜𝗢 : 𝗗𝗔𝗜𝗟𝗬 𝗦𝗧𝗔𝗧𝗨𝗦\n
-${Object.keys(inventory.others).map(v => user[v] && `*⇢ ${global.rpg.emoticon(v)}: ${user[v]}*`).filter(v => v).join('\n')}${tools ? 
+${Object.keys(inventory.others).map(v => user[v] && `*⇢ ${global.rpg.emoticon(v)} » ${user[v]}*`).filter(v => v).join('\n')}${tools ? 
 //${tools}` : ''}${items ? `
 
 `${tools}\n\n╸╸╸╸╸╸╸╸╸╸╸╸╸╸\n` : ''}${items ? 
