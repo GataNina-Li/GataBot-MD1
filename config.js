@@ -1,6 +1,7 @@
 import { watchFile, unwatchFile } from 'fs'
 import chalk from 'chalk'
 import { fileURLToPath } from 'url'
+import moment from 'moment-timezone'
 
 //⊱ ━━━━━.⋅ Añada los numeros a ser Propietario/a | Add the numbers to be Owner ⋅.━━━━ ⊰ 
 global.owner = [
@@ -185,7 +186,7 @@ global.fgif = {
                         'seconds': '999999999', 
                         'gifPlayback': 'true', 
                         'caption': bottime,
-                        'jpegThumbnail': fs.readFileSync('./thumbnail.jpg')
+                        'jpegThumbnail': fs.readFileSync('./media/menus/Menu3.jpg')
                                }
                               }
                              }
