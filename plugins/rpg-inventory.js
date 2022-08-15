@@ -443,7 +443,7 @@ let user = global.db.data.users[m.sender]
   const items = Object.keys(inventory.items).map(v => user[v] && `*${global.rpg.emoticon(v)} » ${user[v]}*`).filter(v => v).join('\n').trim()
   const dura = Object.keys(inventory.durabi).map(v => user[v] && `*${global.rpg.emoticon(v)} » ${user[v]}*`).filter(v => v).join('\n').trim()
   const crates = Object.keys(inventory.crates).map(v => user[v] && `*${global.rpg.emoticon(v)} » ${user[v]}*`).filter(v => v).join('\n').trim()
-  const pets = Object.keys(inventory.pets).map(v => user[v] && `*${global.rpg.emoticon(v)} » ${user[v]* >= inventory.pets[v] ? 'Nivel Máximo : Max Level' : `*Nivel : Level » ${user[v]}*`}`).filter(v => v).join('\n').trim()
+  const pets = Object.keys(inventory.pets).map(v => user[v] && `*${global.rpg.emoticon(v)} » ${user[v] >= inventory.pets[v] ? 'Nivel Máximo : Max Level' : `*Nivel : Level » ${user[v]}*`}`).filter(v => v).join('\n').trim()
   const cooldowns = Object.entries(inventory.cooldowns).map(([cd, { name, time }]) => cd in user && `*✧ ${name}*: ${new Date() - user[cd] >= time ? '✅' : '❌'}`).filter(v => v).join('\n').trim()
  // ${Object.keys(inventory.others).map(v => user[v] && `⮕ ${global.rpg.emoticon(v)} ${v}: ${user[v]}`).filter(v => v).join('\n')}${tools ? `
   const caption = `
