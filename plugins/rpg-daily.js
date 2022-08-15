@@ -4,7 +4,7 @@ if (new Date - global.db.data.users[m.sender].lastclaim < 36000000) throw `ð™”ð
 
 let img = 'https://img.freepik.com/vector-gratis/gente-diminuta-enormes-cajas-regalo-ilustracion-vectorial-plana-personas-que-celebran-cumpleanos-envian-o-reciben-regalos-lealtad-o-ideas-brillantes-recompensa-bonificacion-concepto-fiesta_74855-25016.jpg?w=2000'
 let dia = Math.floor(Math.random() * 15)
-let tok = Math.floor(Math.random() * 10)
+let tok = Math.floor(Math.random() * 3)
 let gata = Math.floor(Math.random() * 2000)
 let expp = Math.floor(Math.random() * 2500)
 
