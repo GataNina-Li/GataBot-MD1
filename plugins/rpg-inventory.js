@@ -11,7 +11,7 @@ import fs from 'fs'
 const inventory = {
 	
   others: {
-    level,
+    level: true,
     limit: true,
     health: true,
     money: true,
