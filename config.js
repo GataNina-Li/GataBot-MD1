@@ -1,4 +1,4 @@
-import { watchFile, unwatchFile } from 'fs'
+import { watchFile, unwatchFile, fs } from 'fs'
 import chalk from 'chalk'
 import { fileURLToPath } from 'url'
 import moment from 'moment-timezone'
