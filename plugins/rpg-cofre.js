@@ -4,7 +4,7 @@ if (new Date - global.db.data.users[m.sender].lastcofre < 86400000) throw `ð™”ð
 
 let img = 'https://img.freepik.com/vector-gratis/cofre-monedas-oro-piedras-preciosas-cristales-trofeo_107791-7769.jpg?w=2000'
 let dia = Math.floor(Math.random() * 30)
-let tok = Math.floor(Math.random() * 20)
+let tok = Math.floor(Math.random() * 10)
 let gata = Math.floor(Math.random() * 4000)
 let expp = Math.floor(Math.random() * 5000)
 
