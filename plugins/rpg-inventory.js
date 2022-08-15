@@ -134,7 +134,7 @@ let name = await conn.getName(who)
 if (typeof global.db.data.users[who] == "Sin Datos | No Dates") {
       global.db.data.users[who] = {
         exp: 0,
-        limit: 10,
+        limit: 20,
         lastclaim: 0,
         registered: false,
         name: conn.getName(m.sender),
@@ -145,7 +145,7 @@ if (typeof global.db.data.users[who] == "Sin Datos | No Dates") {
         banned: false,
         level: 0,
         lastweekly: 0,
-        role: 'Warrior V',
+        role: 'Novato',
         autolevelup: false,
         money: 0,
         pasangan: "",
@@ -155,23 +155,23 @@ if (typeof global.db.data.users[who] == "Sin Datos | No Dates") {
 if (!args[0]) {
 	const sections = [
     {
-	title: htki + ' Inventory ' + htka,
+	title: htki2 + ' ❖ 𝗜𝗡𝗩𝗘𝗡𝗧𝗔𝗥𝗜𝗢 - 𝗜𝗡𝗩𝗘𝗡𝗧𝗢𝗥𝗬 ❖ ' + htka2,
 	rows: [
-{title: "Inventory 1", rowId: usedPrefix + command + ' 1'},
-{title: "Inventory 2", rowId: usedPrefix + command + ' 2'},
-{title: "Inventory 3", rowId: usedPrefix + command + ' 3'},
-{title: "Inventory 4", rowId: usedPrefix + command + ' 4'}
+{title: "დ 𝘐𝘕𝘝𝘌𝘕𝘛𝘈𝘙𝘐𝘖 - 𝘐𝘕𝘝𝘌𝘕𝘛𝘖𝘙𝘠 1", rowId: usedPrefix + command + ' 1'},
+{title: "დ 𝘐𝘕𝘝𝘌𝘕𝘛𝘈𝘙𝘐𝘖 - 𝘐𝘕𝘝𝘌𝘕𝘛𝘖𝘙𝘠 2", rowId: usedPrefix + command + ' 2'},
+{title: "დ 𝘐𝘕𝘝𝘌𝘕𝘛𝘈𝘙𝘐𝘖 - 𝘐𝘕𝘝𝘌𝘕𝘛𝘖𝘙𝘠 3", rowId: usedPrefix + command + ' 3'},
+{title: "დ 𝘐𝘕𝘝𝘌𝘕𝘛𝘈𝘙𝘐𝘖 - 𝘐𝘕𝘝𝘌𝘕𝘛𝘖𝘙𝘠 4", rowId: usedPrefix + command + ' 4'}
 ]
 },{
-	title: htki + ' Kolam ' + htka,
+	title: htki2 + ' 𝗣𝗜𝗦𝗖𝗜𝗡𝗔 - 𝗣𝗢𝗢𝗟 ' + htka2,
 	rows: [
-{title: "kolam 1", rowId: usedPrefix + command + ' invkolam'},
-{title: "kolam 2", rowId: usedPrefix + 'kolamikan'}
+{title: "❣ 𝘗𝘐𝘚𝘊𝘐𝘕𝘈 - 𝘗𝘖𝘖𝘓", rowId: usedPrefix + command + ' invkolam'},
+{title: "❣ 𝘗𝘐𝘚𝘊𝘐𝘕𝘈 - 𝘗𝘖𝘖𝘓", rowId: usedPrefix + 'kolamikan'}
 ]}
 ]
 
 const listMessage = {
-  text: `✨ *AVERIGUA EL INVENTARIO QUE TIENES*`,
+  text: `✨ *AVERIGUA EL INVENTARIO QUE TIENES*\n✨ *FIND OUT YOUR INVENTORY*`,
   footer: global.wm,
   title: `*»»—— ֎ INVENTARIO : INVENTORY ֎ —-««*`,
   buttonText: `🔖 SELECCIONE AQUÍ 🔖`,
@@ -195,8 +195,8 @@ let fgif = {
 await conn.sendMessage(m.chat, listMessage, {quoted: fgif})
 }
 
-if (args[0] == '1') {
-// Inventory 1
+if (args[0] == '1') { // Inventario 1
+
 let member = global.db.data.users[m.sender]
     let healt = member.healt
     let pickaxe = member.pickaxe
@@ -276,19 +276,19 @@ let member = global.db.data.users[m.sender]
 ┃ *INVENTARIO DE COMBATE*
 ┃ *COMBAT INVENTORY*
 ┃
-┃ ❤️ *Vida | Life:* 
+┃ ❤️ *Vida | Life* 
 ┃ *» ${healt}*
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
-┃ ⛏️ *Pico | Peak:* 
+┃ ⛏️ *Pico | Peak* 
 ┃ *» ${pickaxe == 0 ? 'No tengo | I do not have' : '' || pickaxe == 1 ? 'Nivel | Level ✦ 1' : '' || pickaxe == 2 ? 'Nivel | Level ✦ 2' : '' || pickaxe == 3 ? 'Nivel | Level ✦ 3' : '' || pickaxe == 4 ? 'Nivel | Level ✦ 4' : '' || pickaxe == 5 ? 'Nivel | Level ✦ 5 ǁ MAX' : ''}*
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
-┃ ⚔️ *Espada | Sword:*
+┃ ⚔️ *Espada | Sword*
 ┃ *» ${sword == 0 ? 'No tengo | I do not have' : '' || sword == 1 ? 'Espada de Cuero ✦ Leather Sword' : '' || sword == 2 ? 'Espada de Hierro ✦ Iron Sword' : '' || sword == 3 ? 'Espada de Oro ✦ Gold Sword' : '' || sword == 4 ? 'Espada de Energía ✦ Energy Sword' : '' || sword == 5 ? 'Espada Galáctica ✦ Galactic Sword ǁ MAX' : ''}*
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
-┃ 👚 *Armadura | Armor:* 
+┃ 👚 *Armadura | Armor* 
 ┃ *» ${armor == 0 ? 'No tengo | I do not have' : '' || armor == 1 ? '✦ Armadura de Cuero : Leather Armor' : '' || armor == 2 ? '✦ Armadura de Hierro : Iron Armor' : '' || armor == 3 ? '✦ Armadura Mágica : Magic Armor' : '' || armor == 4 ? '✦ Armadura Robótica : Robotic Armor' : '' || armor == 5 ? 'Armadura Cyborg Estelar : Cyborg Armor ǁ MAX' : ''}*
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
-┃ 🎣 *Caña de Pescar | FishingRod:* 
+┃ 🎣 *Caña de Pescar | FishingRod* 
 ┃ *» ${fishingrod}* 
 ╰━━━━━━━━━⬣
 
@@ -369,28 +369,28 @@ let member = global.db.data.users[m.sender]
 ┃ *${kucing == 0 ? 'No tengo Mascota : I do not have pet' : '' || kucing == 1 ? 'Nivel | Level ✦ 1' : '' || kucing == 2 ? 'Nivel | Level ✦ 2' : '' || kucing == 3 ? 'Nivel | Level ✦ 3' : '' || kucing == 4 ? 'Nivel | Level ✦ 4' : '' || kucing == 5 ? 'Nivel | Level ✦ 5 ǁ MAX' : ''}*
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
 ┃ 🐶 *Perro : Dog* 
-┃ *${anjing == 0 ? 'No tengo Mascota : I do not have pet' : '' || anjing == 1 ? 'Nivel | Level ✦ 1' : '' || anjing == 2 ? 'Nivel | Level ✦ 2' : '' || anjing == 3 ? 'Nivel | Level ✦ 3' : '' || anjing == 4 ? 'Nivel | Level ✦ 4' : '' || anjing == 5 ? 'Nivel | Level ✦ 5 ǁ MAX' : ''}*\n\n
+┃ *${anjing == 0 ? 'No tengo Mascota : I do not have pet' : '' || anjing == 1 ? 'Nivel | Level ✦ 1' : '' || anjing == 2 ? 'Nivel | Level ✦ 2' : '' || anjing == 3 ? 'Nivel | Level ✦ 3' : '' || anjing == 4 ? 'Nivel | Level ✦ 4' : '' || anjing == 5 ? 'Nivel | Level ✦ 5 ǁ MAX' : ''}*
 ╰━━━━━━━━━⬣
 
 *PROGRESO : PROGRESS*
 *╭────────────┄⸙*
 *│ ❇️ Nivel : Level » ${level}*
-*│ ✨ *Rango : Role » ${rol}*
+*│ ✨ Rango : Role »* ${rol}
 *╰──┬─┄*
 *╭──┴─────────┄⸙*
-*│🦊 *Zorro : Fox*
+*│🦊 Zorro : Fox*
 *│* ${rubah == 0 ? '*No tengo | I do not have*' : '' || rubah > 0 && rubah < 5 ? `*Nivel/Level ${rubah} A Nivel/To Level ${rubah + 1}*\n*│* Exp *${_rubah}* -> *${rubah *100}*` : '' || rubah == 5 ? '*Nivel Máximo : Max Level*' : ''}
 *╰──┬─┄*
 *╭──┴─────────┄⸙*
-*│🐈 *Gato : Cat* 
+*│🐈 Gato : Cat* 
 *│* ${kucing == 0 ? '*No tengo | I do not have*' : '' || kucing > 0 && kucing < 5 ? `*Nivel/Level ${kucing} A Nivel/To Level ${kucing + 1}*\n*│* Exp *${_kucing}* -> *${kucing *100}*` : '' || kucing == 5 ? '*Nivel Máximo : Max Level*' : ''}
 *╰──┬─┄*
 *╭──┴─────────┄⸙*
-*│🐎 *Caballo : Horse* 
+*│🐎 Caballo : Horse* 
 *│* ${kuda == 0 ? '*No tengo | I do not have*' : '' || kuda > 0 && kuda < 5 ? `*Nivel/Level ${kuda} A Nivel/To Level ${kuda + 1}*\n*│* Exp *${_kuda}* -> *${kuda *100}*` : '' || kuda == 5 ? '*Nivel Máximo : Max Level*' : ''}
 *╰──┬─┄*
 *╭──┴─────────┄⸙*
-*│🐶 *Perro : Dog* 
+*│🐶 Perro : Dog* 
 *│* ${anjing == 0 ? '*No tengo | I do not have*' : '' || anjing > 0 && anjing < 5 ? `*Nivel/Level ${anjing} A Nivel/To Level ${anjing + 1}*\n*│* Exp *${_anjing}* -> *${anjing *100}*` : '' || anjing == 5 ? '*Nivel Máximo : Max Level*' : ''}
 *╰────┄⸙*
 
@@ -399,7 +399,7 @@ let member = global.db.data.users[m.sender]
 👤» *${name}* ( @${who.split("@")[0]} )\n
 _1.Top Nivel_ *${userslevel.indexOf(m.sender) + 1}* _de_ *${userslevel.length}*
 _2.Top GataCoins_ *${usersmoney.indexOf(m.sender) + 1}* _de_ *${usersmoney.length}*
-_3.Top Diamantes+ *${usersdiamond.indexOf(m.sender) + 1}* _de_ *${usersdiamond.length}*
+_3.Top Diamantes+_ *${usersdiamond.indexOf(m.sender) + 1}* _de_ *${usersdiamond.length}*
 _4.Top Poción_ *${userspotion.indexOf(m.sender) + 1}* _de_ *${userspotion.length}*
 _5.Top Basura_ *${userssampah.indexOf(m.sender) + 1}* _de_ *${userssampah.length}*
 _6.Top Alimento para Mascotas_ *${usersmakananpet.indexOf(m.sender) + 1}* _de_ *${usersmakananpet.length}*
@@ -409,12 +409,12 @@ _9.Top Madera_ *${userskayu.indexOf(m.sender) + 1}* _de_ *${userskayu.length}*
 _10.Top Cuerda_ *${usersstring.indexOf(m.sender) + 1}* _de_ *${usersstring.length}*
 _11.Top Caja Común_ *${userscommon.indexOf(m.sender) + 1}* _de_ *${userscommon.length}*
 _13.Top Caja poco Común_ *${usersuncommon.indexOf(m.sender) + 1}* _de_ *${usersuncommon.length}*
--14.Top Caja Mítica_ *${usersmythic.indexOf(m.sender) + 1}* _de_ *${usersmythic.length}*
+_14.Top Caja Mítica_ *${usersmythic.indexOf(m.sender) + 1}* _de_ *${usersmythic.length}*
 _15.Top Caja Legendaria_ *${userslegendary.indexOf(m.sender) + 1}* _de_ *${userslegendary.length}*
 _16.Top Caja para Mascota_ *${userspet.indexOf(m.sender) + 1}* _de_ *${userspet.length}*
 \n\n
-Warn: *${warn}*
-Banned: *No*`.trim()
+⚠️ Advertido(a) : Warn » *${warn}*
+🚫 Baneado(a) : Banned » ${member.banned ? '✅' : '❌'}`.trim()
 
 const fkontak = {
 	"key": {
@@ -431,7 +431,7 @@ const fkontak = {
 	"participant": "0@s.whatsapp.net"
 }
 //conn.reply(m.chat, str, m)
-await conn.sendButton(m.chat, str, wm, imgr + `Inventario`, [[`Transferir`, `.transfer`],
+await conn.sendButton(m.chat, str, wm, imgr + `Inventario : Inventory`, [[`Transferir`, `.transfer`],
 [`Aventura`, `.adventure`]], fkontak, m, { mentions: conn.parseMention(str) })
 } else if (args[0] == '2') {
 	
