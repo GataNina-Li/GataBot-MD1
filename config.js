@@ -1,7 +1,8 @@
-import { watchFile, unwatchFile, fs } from 'fs'
+import { watchFile, unwatchFile } from 'fs'
 import chalk from 'chalk'
 import { fileURLToPath } from 'url'
 import moment from 'moment-timezone'
+import fs from 'fs'
 
 //⊱ ━━━━━.⋅ Añada los numeros a ser Propietario/a | Add the numbers to be Owner ⋅.━━━━ ⊰ 
 global.owner = [
