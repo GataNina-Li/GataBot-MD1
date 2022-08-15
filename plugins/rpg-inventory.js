@@ -439,29 +439,28 @@ await conn.sendButton(m.chat, str, wm, imgr + `Inventario : Inventory`, [[`Trans
 	
 // Inventario 2
 let user = global.db.data.users[m.sender]
-  const tools = Object.keys(inventory.tools).map(v => user[v] && `*${global.rpg.emoticon(v)}:* ${typeof inventory.tools[v] === 'object' ? inventory.tools[v][user[v]?.toString()] : `Level(s) ${user[v]}`}`).filter(v => v).join('\n').trim()
-  const items = Object.keys(inventory.items).map(v => user[v] && `*${global.rpg.emoticon(v)}:* ${user[v]}`).filter(v => v).join('\n').trim()
-  const dura = Object.keys(inventory.durabi).map(v => user[v] && `*${global.rpg.emoticon(v)}:* ${user[v]}`).filter(v => v).join('\n').trim()
-  const crates = Object.keys(inventory.crates).map(v => user[v] && `*${global.rpg.emoticon(v)}:* ${user[v]}`).filter(v => v).join('\n').trim()
-  const pets = Object.keys(inventory.pets).map(v => user[v] && `*${global.rpg.emoticon(v)}:* ${user[v] >= inventory.pets[v] ? 'Max Levels' : `Level(s) ${user[v]}`}`).filter(v => v).join('\n').trim()
+  const tools = Object.keys(inventory.tools).map(v => user[v] && `*${global.rpg.emoticon(v)}* ${typeof inventory.tools[v] === 'object' ? inventory.tools[v][user[v]?.toString()] : `\n*Nivel : Level » ${user[v]}*`}`).filter(v => v).join('\n').trim()
+  const items = Object.keys(inventory.items).map(v => user[v] && `*${global.rpg.emoticon(v)} ${user[v]}*`).filter(v => v).join('\n').trim()
+  const dura = Object.keys(inventory.durabi).map(v => user[v] && `*${global.rpg.emoticon(v)} ${user[v]}*`).filter(v => v).join('\n').trim()
+  const crates = Object.keys(inventory.crates).map(v => user[v] && `*${global.rpg.emoticon(v)}* ${user[v]}`).filter(v => v).join('\n').trim()
+  const pets = Object.keys(inventory.pets).map(v => user[v] && `*${global.rpg.emoticon(v)}* ${user[v] >= inventory.pets[v] ? 'Nivel Máximo : Max Level' : `Level(s) ${user[v]}`}`).filter(v => v).join('\n').trim()
   const cooldowns = Object.entries(inventory.cooldowns).map(([cd, { name, time }]) => cd in user && `*✧ ${name}*: ${new Date() - user[cd] >= time ? '✅' : '❌'}`).filter(v => v).join('\n').trim()
  // ${Object.keys(inventory.others).map(v => user[v] && `⮕ ${global.rpg.emoticon(v)} ${v}: ${user[v]}`).filter(v => v).join('\n')}${tools ? `
   const caption = `
-👤» *${name}* ( @${who.split("@")[0]} )\n
-${Object.keys(inventory.others).map(v => user[v] && `⇢ ${global.rpg.emoticon(v)}: ${user[v]}`).filter(v => v).join('\n')}${tools ? 
+👤» *${name}* ( @${who.split("@")[0]} )\n\n🔖 ᴛᴏᴏʟs :\n
+${Object.keys(inventory.others).map(v => user[v] && `*⇢ ${global.rpg.emoticon(v)}: ${user[v]}*`).filter(v => v).join('\n')}${tools ? 
 //${tools}` : ''}${items ? `
-`🔖 ᴛᴏᴏʟs :
-${tools}\n╸╸╸╸╸╸╸╸╸╸╸╸╸╸\n` : ''}${items ? 
+
+`${tools}\n\n╸╸╸╸╸╸╸╸╸╸╸╸╸╸\n` : ''}${items ? 
 
 `🔖 ɪᴛᴇᴍs :
-${items}\n╸╸╸╸╸╸╸╸╸╸╸╸╸╸\n` : ''}${crates ? 
+${items}\n\n╸╸╸╸╸╸╸╸╸╸╸╸╸╸\n` : ''}${crates ? 
 
 `🔖 ᴄʀᴀᴛᴇs :
-${crates}\n╸╸╸╸╸╸╸╸╸╸╸╸╸╸\n` : ''}${pets ? 
+${crates}\n\n╸╸╸╸╸╸╸╸╸╸╸╸╸╸\n` : ''}${pets ? 
 
 `🔖 ᴩᴇᴛs :
-${pets}\n╸╸╸╸╸╸╸╸╸╸╸╸╸╸\n` : ''}${cooldowns ? `
-
+${pets}\n\n╸╸╸╸╸╸╸╸╸╸╸╸╸╸\n` : ''}${cooldowns ? `
 ♻️ ᴄᴏʟʟᴇᴄᴛ ʀᴇᴡᴀʀᴅs:
 ${cooldowns}` : ''}
 *✧ dungeon: ${user.lastdungeon == 0 ? '✅': '❌'}*
@@ -473,8 +472,9 @@ ${cooldowns}` : ''}
 *✧ nebang: ${user.lastlumber == 0 ? '✅': '❌'}*
 *✧ ngocok: ${user.lastngocok == 0 ? '✅': '❌'}*
 `.trim()
-await conn.sendButton(m.chat, caption, wm, imgr + 'inventory', [[`ᴛʀᴀɴsғᴇʀ`, `.transfer`],
+await conn.sendButton(m.chat, caption, wm, imgr + 'Inventario : Inventory', [[`ᴛʀᴀɴsғᴇʀ`, `.transfer`],
 [`ᴀᴅᴠᴇɴᴛᴜʀᴇ`, `.adventure`]], m, { mentions: conn.parseMention(caption) })
+	
 } else if (args[0] == '3') {
 // Inventory 3
 let date = global.botdate
