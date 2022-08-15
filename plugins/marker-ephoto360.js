@@ -99,5 +99,5 @@ await conn.sendFile(m.chat, res, 'error.jpg', null, m)}
 } catch {
 conn.reply(m.chat, `${fg}𝘼𝙇𝙂𝙊 𝙎𝘼𝙇𝙄𝙊 𝙈𝘼𝙇 𝙑𝙐𝙀𝙇𝘼𝙑𝘼 𝙄𝙉𝙏𝙀𝙉𝙏𝘼𝙍\n\n𝙎𝙊𝙈𝙀𝙏𝙃𝙄𝙉𝙂 𝙒𝙀𝙉𝙏 𝙒𝙍𝙊𝙉𝙂 𝙏𝙍𝙔 𝘼𝙂𝘼𝙄𝙉`, fkontak, m)    
 }}
-handler.command = /^logocorazon|logochristmas/i
+handler.command = /^logocorazon|logochristmas|3dtext|angels|batshalloween|bear2|boom|graffiticartoon|girlgamer|firework|gold|handlove|heartcup|heartflashlight|heartwings/i
 export default handler
