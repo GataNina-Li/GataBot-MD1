@@ -155,7 +155,7 @@ if (typeof global.db.data.users[who] == "Sin Datos | No Dates") {
 if (!args[0]) {
 	const sections = [
     {
-	title: htki2 + ' ❖ 𝗜𝗡𝗩𝗘𝗡𝗧𝗔𝗥𝗜𝗢 - 𝗜𝗡𝗩𝗘𝗡𝗧𝗢𝗥𝗬 ❖ ' + htka2,
+	title: comienzo + ' ❖ 𝗜𝗡𝗩𝗘𝗡𝗧𝗔𝗥𝗜𝗢 - 𝗜𝗡𝗩𝗘𝗡𝗧𝗢𝗥𝗬 ❖ ' + fin,
 	rows: [
 {title: "დ 𝘐𝘕𝘝𝘌𝘕𝘛𝘈𝘙𝘐𝘖 - 𝘐𝘕𝘝𝘌𝘕𝘛𝘖𝘙𝘠 1", rowId: usedPrefix + command + ' 1'},
 {title: "დ 𝘐𝘕𝘝𝘌𝘕𝘛𝘈𝘙𝘐𝘖 - 𝘐𝘕𝘝𝘌𝘕𝘛𝘖𝘙𝘠 2", rowId: usedPrefix + command + ' 2'},
@@ -163,7 +163,7 @@ if (!args[0]) {
 {title: "დ 𝘐𝘕𝘝𝘌𝘕𝘛𝘈𝘙𝘐𝘖 - 𝘐𝘕𝘝𝘌𝘕𝘛𝘖𝘙𝘠 4", rowId: usedPrefix + command + ' 4'}
 ]
 },{
-	title: htki2 + ' 𝗣𝗜𝗦𝗖𝗜𝗡𝗔 - 𝗣𝗢𝗢𝗟 ' + htka2,
+	title: comienzo + ' ❖ 𝗣𝗜𝗦𝗖𝗜𝗡𝗔 - 𝗣𝗢𝗢𝗟 ❖ ' +fin,
 	rows: [
 {title: "❣ 𝘗𝘐𝘚𝘊𝘐𝘕𝘈 - 𝘗𝘖𝘖𝘓", rowId: usedPrefix + command + ' invkolam'},
 {title: "❣ 𝘗𝘐𝘚𝘊𝘐𝘕𝘈 - 𝘗𝘖𝘖𝘓", rowId: usedPrefix + 'kolamikan'}
