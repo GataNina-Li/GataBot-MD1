@@ -11,7 +11,7 @@ import fs from 'fs'
 const inventory = {
 	//text = text.replace(/@/, '')
   others: {
-    level: = true.replace(/Nivel/, ''),
+    level: 'Nivel ',
     limit: true,
     health: true,
     money: true,
