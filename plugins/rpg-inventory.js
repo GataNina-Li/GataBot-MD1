@@ -175,11 +175,11 @@ if (!args[0]) {
 const listMessage = {
   text: `✨ *AVERIGUA EL INVENTARIO QUE TIENES*`,
   footer: global.wm,
-  title: `*»»—— ֎ ${command} ֎ —-««*`,
+  title: `*»»—— ֎ INVENTARIO : INVENTORY ֎ —-««*`,
   buttonText: `🗃️ SELECCIONE AQUÍ 🗃️`,
   sections
 }
-let bottime = `${name} | 𝗧 𝗜 𝗘 𝗠 𝗣 𝗢 / 𝗧 𝗜 𝗠 𝗘 : ${moment.tz('America/Bogota').format('HH:mm:ss')}`//America/Los_Angeles
+let bottime = `${name}\n𝗧 𝗜 𝗠 𝗘 : ${moment.tz('America/Bogota').format('HH:mm:ss')}`//America/Los_Angeles
 let fgif = {
             key: {
                  participant : '0@s.whatsapp.net'},
