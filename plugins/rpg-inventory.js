@@ -443,29 +443,29 @@ let user = global.db.data.users[m.sender]
   const items = Object.keys(inventory.items).map(v => user[v] && `*${global.rpg.emoticon(v)} » ${user[v]}*`).filter(v => v).join('\n').trim()
   const dura = Object.keys(inventory.durabi).map(v => user[v] && `*${global.rpg.emoticon(v)} » ${user[v]}*`).filter(v => v).join('\n').trim()
   const crates = Object.keys(inventory.crates).map(v => user[v] && `*${global.rpg.emoticon(v)} » ${user[v]}*`).filter(v => v).join('\n').trim()
-  const pets = Object.keys(inventory.pets).map(v => user[v] && `*${global.rpg.emoticon(v)} » ${user[v] >= inventory.pets[v] ? 'Nivel Máximo : Max Level' : `*Nivel : Level » ${user[v]}*`}`).filter(v => v).join('\n').trim()
+  const pets = Object.keys(inventory.pets).map(v => user[v] && `*${global.rpg.emoticon(v)} » ${user[v] >= inventory.pets[v] ? 'Nivel Máximo : Max Level*' : `Nivel : Level » ${user[v]}*`}`).filter(v => v).join('\n').trim()
   const cooldowns = Object.entries(inventory.cooldowns).map(([cd, { name, time }]) => cd in user && `*✧ ${name}*: ${new Date() - user[cd] >= time ? '✅' : '❌'}`).filter(v => v).join('\n').trim()
  // ${Object.keys(inventory.others).map(v => user[v] && `⮕ ${global.rpg.emoticon(v)} ${v}: ${user[v]}`).filter(v => v).join('\n')}${tools ? `
   const caption = `
-👤» *${name}* ( @${who.split("@")[0]} )\n\n🔖 𝗘𝗦𝗧𝗔𝗗𝗢 𝗗𝗜𝗔𝗥𝗜𝗢 : 𝗗𝗔𝗜𝗟𝗬 𝗦𝗧𝗔𝗧𝗨𝗦\n
+👤» *${name}* ( @${who.split("@")[0]} )\n\n🔖 𝗘𝗦𝗧𝗔𝗗𝗢 𝗗𝗜𝗔𝗥𝗜𝗢 : 𝗗𝗔𝗜𝗟𝗬 𝗦𝗧𝗔𝗧𝗨𝗦
 ${Object.keys(inventory.others).map(v => user[v] && `*⇢ ${global.rpg.emoticon(v)} » ${user[v]}*`).filter(v => v).join('\n')}${tools ? 
-//${tools}` : ''}${items ? `
+
 
 `${tools}\n\n╸╸╸╸╸╸╸╸╸╸╸╸╸╸\n` : ''}${items ? 
 
 `\n╸╸╸╸╸╸╸╸╸╸╸╸╸╸\n\n🔖 𝗘𝗟𝗘𝗠𝗘𝗡𝗧𝗢𝗦 : 𝗜𝗧𝗘𝗠𝗦
-${items}\n\n╸╸╸╸╸╸╸╸╸╸╸╸╸╸\n` : ''}${crates ? 
+${items}\n\n╸╸╸╸╸╸╸╸╸╸╸╸╸╸\n\n` : ''}${crates ? 
 
-`🔖 𝗖𝗔𝗝𝗔𝗦 𝗔𝗗𝗤𝗨𝗜𝗥𝗜𝗗𝗔𝗦 : 𝗔𝗖𝗤𝗨𝗜𝗥𝗘𝗗 𝗕𝗢𝗫𝗘𝗦
-${crates}\n\n╸╸╸╸╸╸╸╸╸╸╸╸╸╸\n` : ''}${pets ? 
+`🔖 𝗖𝗔𝗝𝗔𝗦 𝗔𝗗𝗤𝗨𝗜𝗥𝗜𝗗𝗔𝗦 : 𝗕𝗢𝗫𝗘𝗦
+${crates}\n\n╸╸╸╸╸╸╸╸╸╸╸╸╸╸\n\n` : ''}${pets ? 
 	
 `🔖 𝗠𝗔𝗦𝗖𝗢𝗧𝗔𝗦 : 𝗣𝗘𝗧𝗦
-${pets}\n\n╸╸╸╸╸╸╸╸╸╸╸╸╸╸\n` : ''}${cooldowns ? 
+${pets}\n\n╸╸╸╸╸╸╸╸╸╸╸╸╸╸\n\n` : ''}${cooldowns ? 
 
-`🔖 𝗘𝗦𝗧𝗔𝗗𝗢 𝗗𝗘 𝗖𝗢𝗠𝗕𝗔𝗧𝗘 : 𝗖𝗢𝗠𝗕𝗔𝗧 𝗦𝗧𝗔𝗧𝗨𝗦
-${cooldowns}\n\n╸╸╸╸╸╸╸╸╸╸╸╸╸╸\n` : ''}${dura ? `
+//`🔖 𝗘𝗦𝗧𝗔𝗗𝗢 𝗗𝗘 𝗖𝗢𝗠𝗕𝗔𝗧𝗘 : 𝗖𝗢𝗠𝗕𝗔𝗧 𝗦𝗧𝗔𝗧𝗨𝗦
+//${cooldowns}\n\n╸╸╸╸╸╸╸╸╸╸╸╸╸╸\n\n` : ''}${dura ? `
 
-🤺 𝗥𝗘𝗖𝗢𝗠𝗣𝗘𝗡𝗦𝗔𝗦 𝗥𝗘𝗔𝗟𝗜𝗭𝗔𝗗𝗔𝗦 : 𝗥𝗘𝗪𝗔𝗥𝗗𝗦 𝗥𝗘𝗔𝗟𝗜𝗭𝗘𝗗
+`🤺 𝗥𝗘𝗖𝗢𝗠𝗣𝗘𝗡𝗦𝗔𝗦 𝗥𝗘𝗔𝗟𝗜𝗭𝗔𝗗𝗔𝗦 : 𝗥𝗘𝗪𝗔𝗥𝗗𝗦
 ${cooldowns}` : ''}
 *✧ dungeon: ${user.lastdungeon == 0 ? '✅': '❌'}*
 *✧ mining: ${user.lastmining == 0 ? '✅': '❌'}*
