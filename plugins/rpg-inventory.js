@@ -10,7 +10,7 @@ import fs from 'fs'
 
 const inventory = {
   others: {
-    level: true = `Nivel`,
+    level: true == 'Nivel',
     limit: true,
     health: true,
     money: true,
