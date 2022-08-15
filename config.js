@@ -230,7 +230,7 @@ global.rpg = {
       dragon: '🐉 Dragón : Dragon',
       elephant: '🐘 Elefante : Elephant',
       emerald: '💚 Esmeralda : Emerald',
-      exp: '⚡ Experiencia : Experience',
+      exp: '⚡ Experiencia : Exp',
       fishingrod: '🎣 Caña de Pescar : Fishing Rod',
       fox: '🦊 Zorro : Fox',
       gems: '🍀 Gemas : Gemas',
