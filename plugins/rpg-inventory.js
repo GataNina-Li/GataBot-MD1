@@ -268,23 +268,25 @@ let member = global.db.data.users[m.sender]
 🏷️ *INVENTARIO | INVENTORY* 
 👤» *(${name})* ( @${who.split("@")[0]} )\n
 
-*INVENTARIO DE COMBATE*
-*COMBAT INVENTORY*
-
-❤️ *Vida | Life:* 
-*» ${healt}*
-╸╸╸╸╸╸╸╸╸╸╸╸╸╸
-⛏️ *Pico | Peak:* 
-*» ${pickaxe == 0 ? 'No tengo' : '' || pickaxe == 1 ? 'Nivel | Level ✦ 1' : '' || pickaxe == 2 ? 'Nivel | Level ✦ 2' : '' || pickaxe == 3 ? 'Nivel | Level ✦ 3' : '' || pickaxe == 4 ? 'Nivel | Level ✦ 4' : '' || pickaxe == 5 ? 'Nivel | Level ✦ 5 ǁ MAX' : ''}*
-╸╸╸╸╸╸╸╸╸╸╸╸╸╸
-⚔️ *Espada | Sword:*
-*» ${sword == 0 ? 'No tengo' : '' || sword == 1 ? 'Espada de Cuero ✦ Leather Sword' : '' || sword == 2 ? 'Espada de Hierro ✦ Iron Sword' : '' || sword == 3 ? 'Espada de Oro ✦ Gold Sword' : '' || sword == 4 ? 'Espada de Energía ✦ Energy Sword' : '' || sword == 5 ? 'Espada Galáctica ✦ Galactic Sword ǁ MAX' : ''}*
-╸╸╸╸╸╸╸╸╸╸╸╸╸╸
-👚 *Armadura | Armor:* 
-*» ${armor == 0 ? 'No tengo' : '' || armor == 1 ? '✦ Armadura de Cuero : Leather Armor' : '' || armor == 2 ? '✦ Armadura de Hierro : Iron Armor' : '' || armor == 3 ? '✦ Armadura Mágica : Magic Armor' : '' || armor == 4 ? '✦ Armadura Robótica : Robotic Armor' : '' || armor == 5 ? 'Armadura Cyborg Estelar : Cyborg Armor ǁ MAX' : ''}*
-╸╸╸╸╸╸╸╸╸╸╸╸╸╸
-🎣 *Caña de Pescar | FishingRod:* 
-*»${fishingrod}* 
+╭━━━━━━━━━⬣
+┃ *INVENTARIO DE COMBATE*
+┃ *COMBAT INVENTORY*
+┃
+┃ ❤️ *Vida | Life:* 
+┃ *» ${healt}*
+┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
+┃ ⛏️ *Pico | Peak:* 
+┃ *» ${pickaxe == 0 ? 'No tengo' : '' || pickaxe == 1 ? 'Nivel | Level ✦ 1' : '' || pickaxe == 2 ? 'Nivel | Level ✦ 2' : '' || pickaxe == 3 ? 'Nivel | Level ✦ 3' : '' || pickaxe == 4 ? 'Nivel | Level ✦ 4' : '' || pickaxe == 5 ? 'Nivel | Level ✦ 5 ǁ MAX' : ''}*
+┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
+┃ ⚔️ *Espada | Sword:*
+┃ *» ${sword == 0 ? 'No tengo' : '' || sword == 1 ? 'Espada de Cuero ✦ Leather Sword' : '' || sword == 2 ? 'Espada de Hierro ✦ Iron Sword' : '' || sword == 3 ? 'Espada de Oro ✦ Gold Sword' : '' || sword == 4 ? 'Espada de Energía ✦ Energy Sword' : '' || sword == 5 ? 'Espada Galáctica ✦ Galactic Sword ǁ MAX' : ''}*
+┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
+┃ 👚 *Armadura | Armor:* 
+┃ *» ${armor == 0 ? 'No tengo' : '' || armor == 1 ? '✦ Armadura de Cuero : Leather Armor' : '' || armor == 2 ? '✦ Armadura de Hierro : Iron Armor' : '' || armor == 3 ? '✦ Armadura Mágica : Magic Armor' : '' || armor == 4 ? '✦ Armadura Robótica : Robotic Armor' : '' || armor == 5 ? 'Armadura Cyborg Estelar : Cyborg Armor ǁ MAX' : ''}*
+┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
+┃ 🎣 *Caña de Pescar | FishingRod:* 
+┃ *» ${fishingrod}* 
+╰━━━━━━━━━⬣
 
 💵Uang: *${money}*
 🔱Level: *${level}*
