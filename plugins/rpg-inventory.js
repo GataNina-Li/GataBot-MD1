@@ -799,9 +799,11 @@ ${readMore}
 │🎁 *Top Mythic:* ${usersmythic.indexOf(m.sender) + 1} / ${usersmythic.length}
 │🧰 *Top Legendary:* ${userslegendary.indexOf(m.sender) + 1} / ${userslegendary.length}
 │🗑️ *Top Sampah:* ${userssampah.indexOf(m.sender) + 1} / ${userssampah.length}
-╰──────────━⃝┅⃝━━────────┄⸙
-`
-    await conn.sendButton(m.chat, str, global.botdate, imgr + 'inventory', [[`${healt < 40 ? 'Heal' : 'Adventure'}`, `${healt < 40 ? '.heal' : '.adventure'}`], ['Shop', '.shop']], m, {quoted: ftroli})
+╰──────────━⃝┅⃝━━────────┄⸙`
+ 
+ let ftroli = { key: {participant : '0@s.whatsapp.net'}, message: { orderMessage: { itemCount: 2022, status: 1, surface: 1, message: bottime, orderTitle: wm, sellerJid: '0@s.whatsapp.net' } } }   
+ await conn.sendButton(m.chat, str, global.botdate, imgr + 'inventory', [[`${healt < 40 ? 'Heal' : 'Adventure'}`, `${healt < 40 ? '.heal' : '.adventure'}`], ['Shop', '.shop']], m, {quoted: ftroli})
+
 } else if (args[0] == '4') {
 // Inventory 4
 let health = global.db.data.users[m.sender].health
