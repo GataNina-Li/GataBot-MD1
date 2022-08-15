@@ -179,6 +179,7 @@ global.htka = '*☪ ••••̩̩͙⊰•⭑*'
 global.comienzo = '• • ◕◕════'
 global.fin = '════◕◕ • •'
 
+global.botdate = `⫹⫺ Date :  ${moment.tz('Asia/Jakarta').format('DD/MM/YY')}`
 /*global.bottime = `𝗧 𝗜 𝗠 𝗘 : ${moment.tz('Asia/Jakarta').format('HH:mm:ss')}`//America/Los_Angeles
 global.fgif = {
             key: {
