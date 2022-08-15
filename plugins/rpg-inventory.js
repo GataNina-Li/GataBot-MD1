@@ -165,8 +165,8 @@ if (!args[0]) {
 },{
 	title: comienzo + ' ❖ 𝗣𝗜𝗦𝗖𝗜𝗡𝗔 - 𝗣𝗢𝗢𝗟 ❖ ' +fin,
 	rows: [
-{title: "❣ 𝘗𝘐𝘚𝘊𝘐𝘕𝘈 - 𝘗𝘖𝘖𝘓", rowId: usedPrefix + command + ' invkolam'},
-{title: "❣ 𝘗𝘐𝘚𝘊𝘐𝘕𝘈 - 𝘗𝘖𝘖𝘓", rowId: usedPrefix + 'kolamikan'}
+{title: "ღ 𝘗𝘐𝘚𝘊𝘐𝘕𝘈 - 𝘗𝘖𝘖𝘓", rowId: usedPrefix + command + ' invkolam'},
+{title: "ღ 𝘗𝘐𝘚𝘊𝘐𝘕𝘈 - 𝘗𝘖𝘖𝘓", rowId: usedPrefix + 'kolamikan'}
 ]}
 ]
 
@@ -198,7 +198,7 @@ await conn.sendMessage(m.chat, listMessage, {quoted: fgif})
 if (args[0] == '1') { // Inventario 1
 
 let member = global.db.data.users[m.sender]
-    let healt = member.healt
+    let healt = member.health 
     let pickaxe = member.pickaxe
     let sword = member.sword
     let armor = member.armor
@@ -327,7 +327,7 @@ let member = global.db.data.users[m.sender]
 ┃ 🪨 *Piedra : Rock*
 ┃ *» ${batu}*
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
-┃ 🪵 *Kayu : Wood* 
+┃ 🪵 *Madera : Wood* 
 ┃ *» ${kayu}*
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
 ┃ 🕸️ *Cuerda : String*
