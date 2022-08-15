@@ -448,19 +448,19 @@ let user = global.db.data.users[m.sender]
  // ${Object.keys(inventory.others).map(v => user[v] && `⮕ ${global.rpg.emoticon(v)} ${v}: ${user[v]}`).filter(v => v).join('\n')}${tools ? `
   const caption = `
 👤» *${name}* ( @${who.split("@")[0]} )\n
-${Object.keys(inventory.others).map(v => user[v] && `⇢ ${global.rpg.emoticon(v)}: ${user[v]}`).filter(v => v).join('\n')}${tools ` ╸╸╸╸╸╸╸╸╸╸╸╸╸╸\n` ? 
+${Object.keys(inventory.others).map(v => user[v] && `⇢ ${global.rpg.emoticon(v)}: ${user[v]}`).filter(v => v).join('\n')}${tools ? 
 //${tools}` : ''}${items ? `
 `🔖 ᴛᴏᴏʟs :
-${tools}` : ''}${items ? `
+${tools}\n╸╸╸╸╸╸╸╸╸╸╸╸╸╸\n` : ''}${items ? 
 
-🔖 ɪᴛᴇᴍs :
-${items}` : ''}${crates ? `
+`🔖 ɪᴛᴇᴍs :
+${items}\n╸╸╸╸╸╸╸╸╸╸╸╸╸╸\n` : ''}${crates ? 
 
-🔖 ᴄʀᴀᴛᴇs :
-${crates}` : ''}${pets ? `
+`🔖 ᴄʀᴀᴛᴇs :
+${crates}\n╸╸╸╸╸╸╸╸╸╸╸╸╸╸\n` : ''}${pets ? 
 
-🔖 ᴩᴇᴛs :
-${pets}` : ''}${cooldowns ? `
+`🔖 ᴩᴇᴛs :
+${pets}\n╸╸╸╸╸╸╸╸╸╸╸╸╸╸\n` : ''}${cooldowns ? `
 
 ♻️ ᴄᴏʟʟᴇᴄᴛ ʀᴇᴡᴀʀᴅs:
 ${cooldowns}` : ''}
