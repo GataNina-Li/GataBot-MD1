@@ -267,8 +267,7 @@ let member = global.db.data.users[m.sender]
     let userslegendary = sortedlegendary.map(v => v[0])
     let userspet = sortedpet.map(v => v[0])
     
-    let { exp, limit, level, role } = global.db.data.users[m.sender]
-    let { min, xp, max } = xpRange(level, global.multiplier)
+    let { min, exp, max } = xpRange(level, global.multiplier)
     let { min, role, max } = xpRange(level, global.multiplier)
 
     let str = `
@@ -377,8 +376,8 @@ let member = global.db.data.users[m.sender]
 *PROGRESO : PROGRESS*
 ╭────────────┄⸙
 │🔱Level *${level}* To Level *${level + 1}*
-│✨ *Rango : Role »* ${rol + 1}
-│⚜️ Exp *${member.exp - min}/${xp}*
+│✨ *Rango : Role »* ${rol} | ${rol + 1}
+│⚜️ Exp *${member.exp - min}/${exp}*
 ╰──┬─┄
 ╭──┴─────────┄⸙
 │🦊Rubah ${rubah == 0 ? 'Tidak Punya' : '' || rubah > 0 && rubah < 5 ? `Level *${rubah}* To level *${rubah + 1}*\n│Exp *${_rubah}* -> *${rubah *100}*` : '' || rubah == 5 ? '*Max Level*' : ''}
