@@ -131,7 +131,7 @@ let handler = async (m, { conn, args, command, text, usedPrefix }) => {
 let imgr = flaaa.getRandom()
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 let name = await conn.getName(who)
-if (typeof global.db.data.users[who] == "undefined") {
+if (typeof global.db.data.users[who] == "Sin Datos | No Dates") {
       global.db.data.users[who] = {
         exp: 0,
         limit: 10,
@@ -155,21 +155,19 @@ if (typeof global.db.data.users[who] == "undefined") {
 if (!args[0]) {
 	const sections = [
     {
-	title: htki + 'Inventory' + htka,
+	title: htki + ' Inventory ' + htka,
 	rows: [
 {title: "Inventory 1", rowId: usedPrefix + command + ' 1'},
 {title: "Inventory 2", rowId: usedPrefix + command + ' 2'},
 {title: "Inventory 3", rowId: usedPrefix + command + ' 3'},
 {title: "Inventory 4", rowId: usedPrefix + command + ' 4'}
-	]
-    },{
-	title: htki + 'Kolam' + htka,
+]
+},{
+	title: htki + ' Kolam ' + htka,
 	rows: [
 {title: "kolam 1", rowId: usedPrefix + command + ' invkolam'},
 {title: "kolam 2", rowId: usedPrefix + 'kolamikan'}
-
-	]
-    }
+]}
 ]
 
 const listMessage = {
@@ -179,7 +177,7 @@ const listMessage = {
   buttonText: `🗃️ SELECCIONE AQUÍ 🗃️`,
   sections
 }
-let bottime = `${name}\n𝗧 𝗜 𝗠 𝗘 : ${moment.tz('America/Bogota').format('HH:mm:ss')}`//America/Los_Angeles
+let bottime = `${name} 𝗧𝗜𝗠𝗘: ${moment.tz('America/Bogota').format('HH:mm:ss')}`//America/Los_Angeles
 let fgif = {
             key: {
                  participant : '0@s.whatsapp.net'},
