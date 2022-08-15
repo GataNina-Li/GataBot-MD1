@@ -448,8 +448,8 @@ let user = global.db.data.users[m.sender]
  // ${Object.keys(inventory.others).map(v => user[v] && `⮕ ${global.rpg.emoticon(v)} ${v}: ${user[v]}`).filter(v => v).join('\n')}${tools ? `
   const caption = `
 👤» *${name}* ( @${who.split("@")[0]} )\n
-${Object.keys(inventory.others).map(v => user[v] && `⇢ ${global.rpg.emoticon(v)}: ${user[v]}`).filter(v => v).join('\n\n ╸╸╸╸╸╸╸╸╸╸╸╸╸╸')}${tools ? 
-
+${Object.keys(inventory.others).map(v => user[v] && `⇢ ${global.rpg.emoticon(v)}: ${user[v]}`).filter(v => v).join('\n')}${tools ` ╸╸╸╸╸╸╸╸╸╸╸╸╸╸\n` ? 
+//${tools}` : ''}${items ? `
 `🔖 ᴛᴏᴏʟs :
 ${tools}` : ''}${items ? `
 
