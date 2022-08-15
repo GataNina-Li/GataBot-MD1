@@ -397,29 +397,44 @@ let member = global.db.data.users[m.sender]
 🏆 *RESUMEN EN LOS TOPS* 🏆 
 🚀 *SUMMARY IN THE TOPS* 🚀
 👤» *${name}* ( @${who.split("@")[0]} )\n
-1.Top level *${userslevel.indexOf(m.sender) + 1}* dari *${userslevel.length}*
-2.Top Money *${usersmoney.indexOf(m.sender) + 1}* dari *${usersmoney.length}*
-3.Top Diamond *${usersdiamond.indexOf(m.sender) + 1}* dari *${usersdiamond.length}*
-4.Top Potion *${userspotion.indexOf(m.sender) + 1}* dari *${userspotion.length}*
-5.Top Sampah *${userssampah.indexOf(m.sender) + 1}* dari *${userssampah.length}*
-6.Top Makanan Pet *${usersmakananpet.indexOf(m.sender) + 1}* dari *${usersmakananpet.length}*
-7.Top Batu *${usersbatu.indexOf(m.sender) + 1}* dari *${usersbatu.length}*
-8.Top Iron *${usersiron.indexOf(m.sender) + 1}* dari *${usersiron.length}*
-9.Top Kayu *${userskayu.indexOf(m.sender) + 1}* dari *${userskayu.length}*
-10.Top String *${usersstring.indexOf(m.sender) + 1}* dari *${usersstring.length}*
-11.Top Common *${userscommon.indexOf(m.sender) + 1}* dari *${userscommon.length}*
-13.Top Uncommon *${usersuncommon.indexOf(m.sender) + 1}* dari *${usersuncommon.length}*
-14.Top Mythic *${usersmythic.indexOf(m.sender) + 1}* dari *${usersmythic.length}*
-15.Top Legendary *${userslegendary.indexOf(m.sender) + 1}* dari *${userslegendary.length}*
-16.Top Pet Crate *${userspet.indexOf(m.sender) + 1}* dari *${userspet.length}*
+_1.Top Nivel_ *${userslevel.indexOf(m.sender) + 1}* _de_ *${userslevel.length}*
+_2.Top GataCoins_ *${usersmoney.indexOf(m.sender) + 1}* _de_ *${usersmoney.length}*
+_3.Top Diamantes+ *${usersdiamond.indexOf(m.sender) + 1}* _de_ *${usersdiamond.length}*
+_4.Top Poción_ *${userspotion.indexOf(m.sender) + 1}* _de_ *${userspotion.length}*
+_5.Top Basura_ *${userssampah.indexOf(m.sender) + 1}* _de_ *${userssampah.length}*
+_6.Top Alimento para Mascotas_ *${usersmakananpet.indexOf(m.sender) + 1}* _de_ *${usersmakananpet.length}*
+_7.Top Piedra_ *${usersbatu.indexOf(m.sender) + 1}* _de_ *${usersbatu.length}*
+_8.Top Hierro_ *${usersiron.indexOf(m.sender) + 1}* _de_ *${usersiron.length}*
+_9.Top Madera_ *${userskayu.indexOf(m.sender) + 1}* _de_ *${userskayu.length}*
+_10.Top Cuerda_ *${usersstring.indexOf(m.sender) + 1}* _de_ *${usersstring.length}*
+_11.Top Caja Común_ *${userscommon.indexOf(m.sender) + 1}* _de_ *${userscommon.length}*
+_13.Top Caja poco Común_ *${usersuncommon.indexOf(m.sender) + 1}* _de_ *${usersuncommon.length}*
+-14.Top Caja Mítica_ *${usersmythic.indexOf(m.sender) + 1}* _de_ *${usersmythic.length}*
+_15.Top Caja Legendaria_ *${userslegendary.indexOf(m.sender) + 1}* _de_ *${userslegendary.length}*
+_16.Top Caja para Mascota_ *${userspet.indexOf(m.sender) + 1}* _de_ *${userspet.length}*
 \n\n
 Warn: *${warn}*
-Banned: *No*
-`.trim()
-    //conn.reply(m.chat, str, m)
-await conn.sendButton(m.chat, str, wm, imgr + `Inventario\nInventory`, [[`ᴛʀᴀɴsғᴇʀ`, `.transfer`],
-[`ᴀᴅᴠᴇɴᴛᴜʀᴇ`, `.adventure`]], m, { mentions: conn.parseMention(str) })
+Banned: *No*`.trim()
+
+const fkontak = {
+	"key": {
+    "participants":"0@s.whatsapp.net",
+		"remoteJid": "status@broadcast",
+		"fromMe": false,
+		"id": "Halo"
+	},
+	"message": {
+		"contactMessage": {
+			"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
+		}
+	},
+	"participant": "0@s.whatsapp.net"
+}
+//conn.reply(m.chat, str, m)
+await conn.sendButton(m.chat, str, wm, imgr + `Inventario`, [[`Transferir`, `.transfer`],
+[`Aventura`, `.adventure`]], fkontak, m, { mentions: conn.parseMention(str) })
 } else if (args[0] == '2') {
+	
 // Inventory 2
 let user = global.db.data.users[m.sender]
   const tools = Object.keys(inventory.tools).map(v => user[v] && `*${global.rpg.emoticon(v)}${v}:* ${typeof inventory.tools[v] === 'object' ? inventory.tools[v][user[v]?.toString()] : `Level(s) ${user[v]}`}`).filter(v => v).join('\n').trim()
