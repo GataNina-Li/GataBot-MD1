@@ -267,8 +267,7 @@ let member = global.db.data.users[m.sender]
     let userslegendary = sortedlegendary.map(v => v[0])
     let userspet = sortedpet.map(v => v[0])
     
-    let { min, exp, max } = xpRange(level, global.multiplier)
-    let { min, role, max } = xpRange(level, global.multiplier)
+    let { min, max } = xpRange(level, global.multiplier)    
 
     let str = `
 🏷️ *INVENTARIO | INVENTORY* 
