@@ -300,16 +300,38 @@ let member = global.db.data.users[m.sender]
 ┃ 🪙 *Token » ${token}*
 ╰━━━━━━━━━⬣
 
-*Inventory*
-💎Diamond: *${diamond}*
-🥤Potion: *${potion}*
-🗑️Sampah: *${sampah}*
-🍖Makanan Pet: *${makananpet}*
-⛓️Iron: *${iron}*
-🪨Batu: *${batu}*
-🪵Kayu: *${kayu}*
-🕸️String: *${string}*
-Total inv: *${diamond + potion + sampah + makananpet}* item\n
+╭━━━━━━━━━⬣
+┃ *INVENTARIO DE SUPERVIVENCIA* 
+┃ *SURVIVAL INVENTORY*
+┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
+┃ 💎 *Diamante : Diamond*
+┃ *» ${diamond}*
+┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
+┃ 🥤 *Poción : Potion*
+┃ *» ${potion}*
+┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
+┃ 🗑️ *Basura : Trash* 
+┃ *${sampah}*
+┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
+┃ 🍖 *Alimento para Mascotas* 
+┃ *Pet food* 
+┃ *» ${makananpet}*
+┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
+┃ ⛓️ *Hierro : Iron* 
+┃ *» ${iron}*
+┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
+┃ 🪨 *Piedra : Rock*
+┃ *» ${batu}*
+┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
+┃ 🪵 *Kayu : Wood* 
+┃ *» ${kayu}*
+┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
+┃ 🕸️ *Cuerda : String*
+┃ *» ${string}*
+┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
+┃ 🌀 *Total inv » ${diamond + potion + sampah + makananpet + iron + batu + kayu + string} Tipos*
+╰━━━━━━━━━⬣
+
 *Crate*
 📦Common: *${common}*
 📦Uncommon: *${uncommon}*
