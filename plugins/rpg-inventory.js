@@ -373,24 +373,30 @@ let member = global.db.data.users[m.sender]
 ╰━━━━━━━━━⬣
 
 *PROGRESO : PROGRESS*
-╭────────────┄⸙
-│🔱Level *${level}* To Level *${level + 1}*
-│✨ *Rango : Role »* ${rol} | ${rol + 1}
-│⚜️ Exp *${member.exp - min}/${exp}*
-╰──┬─┄
-╭──┴─────────┄⸙
-│🦊Rubah ${rubah == 0 ? 'Tidak Punya' : '' || rubah > 0 && rubah < 5 ? `Level *${rubah}* To level *${rubah + 1}*\n│Exp *${_rubah}* -> *${rubah *100}*` : '' || rubah == 5 ? '*Max Level*' : ''}
-╰──┬─┄
-╭──┴─────────┄⸙
-│🐈Kucing ${kucing == 0 ? 'Tidak Punya' : '' || kucing > 0 && kucing < 5 ? `Level *${kucing}* To level *${kucing + 1}*\n│Exp *${_kucing}* -> *${kucing *100}*` : '' || kucing == 5 ? '*Max Level*' : ''}
-╰──┬─┄
-╭──┴─────────┄⸙
-│🐎Kuda ${kuda == 0 ? 'Tidak Punya' : '' || kuda > 0 && kuda < 5 ? `Level *${kuda}* To level *${kuda + 1}*\n│Exp *${_kuda}* -> *${kuda *100}*` : '' || kuda == 5 ? '*Max Level*' : ''}
-╰──┬─┄
-╭──┴─────────┄⸙
-│🐶Anjing ${anjing == 0 ? 'Tidak Punya' : '' || anjing > 0 && anjing < 5 ? `Level *${anjing}* To level *${anjing + 1}*\n│Exp *${_anjing}* -> *${anjing *100}*` : '' || anjing == 5 ? '*Max Level*' : ''}
-╰────┄⸙\n\n
-*achievement*
+*╭────────────┄⸙*
+*│ ❇️ Nivel : Level » ${level}*
+*│ ✨ *Rango : Role » ${rol}*
+*╰──┬─┄*
+*╭──┴─────────┄⸙*
+*│🦊 *Zorro : Fox*
+*│* ${rubah == 0 ? '*No tengo | I do not have*' : '' || rubah > 0 && rubah < 5 ? `*Nivel/Level ${rubah} A Nivel/To Level ${rubah + 1}*\n*│* Exp *${_rubah}* -> *${rubah *100}*` : '' || rubah == 5 ? '*Nivel Máximo : Max Level*' : ''}
+*╰──┬─┄*
+*╭──┴─────────┄⸙*
+*│🐈 *Gato : Cat* 
+*│* ${kucing == 0 ? '*No tengo | I do not have*' : '' || kucing > 0 && kucing < 5 ? `*Nivel/Level ${kucing} A Nivel/To Level ${kucing + 1}*\n*│* Exp *${_kucing}* -> *${kucing *100}*` : '' || kucing == 5 ? '*Nivel Máximo : Max Level*' : ''}
+*╰──┬─┄*
+*╭──┴─────────┄⸙*
+*│🐎 *Caballo : Horse* 
+*│* ${kuda == 0 ? '*No tengo | I do not have*' : '' || kuda > 0 && kuda < 5 ? `*Nivel/Level ${kuda} A Nivel/To Level ${kuda + 1}*\n*│* Exp *${_kuda}* -> *${kuda *100}*` : '' || kuda == 5 ? '*Nivel Máximo : Max Level*' : ''}
+*╰──┬─┄*
+*╭──┴─────────┄⸙*
+*│🐶 *Perro : Dog* 
+*│* ${anjing == 0 ? '*No tengo | I do not have*' : '' || anjing > 0 && anjing < 5 ? `*Nivel/Level ${anjing} A Nivel/To Level ${anjing + 1}*\n*│* Exp *${_anjing}* -> *${anjing *100}*` : '' || anjing == 5 ? '*Nivel Máximo : Max Level*' : ''}
+*╰────┄⸙*
+
+🏆 *RESUMEN EN LOS TOPS* 🏆 
+🚀 *SUMMARY IN THE TOPS* 🚀
+👤» *${name}* ( @${who.split("@")[0]} )\n
 1.Top level *${userslevel.indexOf(m.sender) + 1}* dari *${userslevel.length}*
 2.Top Money *${usersmoney.indexOf(m.sender) + 1}* dari *${usersmoney.length}*
 3.Top Diamond *${usersdiamond.indexOf(m.sender) + 1}* dari *${usersdiamond.length}*
@@ -411,7 +417,7 @@ Warn: *${warn}*
 Banned: *No*
 `.trim()
     //conn.reply(m.chat, str, m)
-await conn.sendButton(m.chat, str, wm, imgr + 'inventory', [[`ᴛʀᴀɴsғᴇʀ`, `.transfer`],
+await conn.sendButton(m.chat, str, wm, imgr + `Inventario\nInventory`, [[`ᴛʀᴀɴsғᴇʀ`, `.transfer`],
 [`ᴀᴅᴠᴇɴᴛᴜʀᴇ`, `.adventure`]], m, { mentions: conn.parseMention(str) })
 } else if (args[0] == '2') {
 // Inventory 2
