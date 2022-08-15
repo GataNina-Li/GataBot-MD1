@@ -612,7 +612,7 @@ let date = global.botdate
     let udang = global.db.data.users[m.sender].udang
     let orca = global.db.data.users[m.sender].orca
     
-    let number = `${PhoneNumber('+' + pasangan.replace('@s.whatsapp.net', '')).getNumber('international')}`
+    //let number = `${PhoneNumber('+' + pasangan.replace('@s.whatsapp.net', '')).getNumber('international')}`
     let pepe = flaaa.getRandom()
     let pp = pepe + 'Inventory'
     let str = `╭──────━• *STATUS*
