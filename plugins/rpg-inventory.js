@@ -233,6 +233,7 @@ let member = global.db.data.users[m.sender]
     let exp = member.exp
     let token = member.joincount
     let rol = member.role
+    let dia = member.limit
     let sampah = member.sampah
 
     let sortedmoney = Object.entries(global.db.data.users).sort((a, b) => b[1].money - a[1].money)
@@ -295,6 +296,7 @@ let member = global.db.data.users[m.sender]
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
 ┃ ❇️ *Nivel : Level » ${level}*
 ┃ ✨ *Rango : Role »* ${rol}
+┃ 💎 *Diamante : Diamond » ${dia}*
 ┃ 🐈 *GataCoins: » ${money}*
 ┃ ⚡ *Exp » ${exp}*
 ┃ 🪙 *Token » ${token}*
@@ -304,7 +306,7 @@ let member = global.db.data.users[m.sender]
 ┃ *INVENTARIO DE SUPERVIVENCIA* 
 ┃ *SURVIVAL INVENTORY*
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
-┃ 💎 *Diamante : Diamond*
+┃ *💎+ Diamante+ : Diamond+*
 ┃ *» ${diamond}*
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
 ┃ 🥤 *Poción : Potion*
@@ -329,15 +331,29 @@ let member = global.db.data.users[m.sender]
 ┃ 🕸️ *Cuerda : String*
 ┃ *» ${string}*
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
-┃ 🌀 *Total inv » ${diamond + potion + sampah + makananpet + iron + batu + kayu + string} Tipos*
+┃ 🌀 *Total Inv » ${diamond + potion + sampah + makananpet + iron + batu + kayu + string} Recuersos*
 ╰━━━━━━━━━⬣
 
-*Crate*
-📦Common: *${common}*
-📦Uncommon: *${uncommon}*
-📦Mythic: *${mythic}*
-🎁Legendary: *${legendary}*
-📦Pet: *${pet}*\n
+╭━━━━━━━━━⬣
+┃ *INVENTARIO ADQUIRIDO*
+┃ *ACQUIRED INVENTORY*
+┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
+┃ 🎁 Legendary: 
+┃ *${legendary}*
+┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
+┃ 📦 Common: 
+┃ *${common}*
+┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
+┃ 📦 Uncommon: 
+┃ *${uncommon}*
+┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
+┃ 📦 Mythic: 
+┃ *${mythic}*
+┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
+┃ 📦 Pet: 
+┃ *${pet}*
+╰━━━━━━━━━⬣
+
 *Pet*
 🐎Kuda: *${kuda == 0 ? 'Tidak Punya' : '' || kuda == 1 ? 'Level 1' : '' || kuda == 2 ? 'Level 2' : '' || kuda == 3 ? 'Level 3' : '' || kuda == 4 ? 'Level 4' : '' || kuda == 5 ? 'Level MAX' : ''}*
 🦊Rubah: *${rubah == 0 ? 'Tidak Punya' : '' || rubah == 1 ? 'Level 1' : '' || rubah == 2 ? 'Level 2' : '' || rubah == 3 ? 'Level 3' : '' || rubah == 4 ? 'Level 4' : '' || rubah == 5 ? 'Level MAX' : ''}*
