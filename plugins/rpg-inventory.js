@@ -169,10 +169,10 @@ if (!args[0]) {
 ]
 
 const listMessage = {
-  text: `⚡ Silakan pilih inventory di bawah...`,
+  text: `✨ *AVERIGUA EL INVENTARIO QUE TIENES*`,
   footer: global.wm,
-  title: `⎔───「 ${command} 」───⎔`,
-  buttonText: `☂️ Klik Disini ☂️`,
+  title: `*»»—— ֎ ${command} ֎ —-««*`,
+  buttonText: `🗃️ SELECCIONE AQUÍ 🗃️`,
   sections
 }
 await conn.sendMessage(m.chat, listMessage, {quoted: fgif})
