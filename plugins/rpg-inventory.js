@@ -5,6 +5,9 @@ import adventure from './rpg-adventure.js'
 import { xpRange } from '../lib/levelling.js'
 import PhoneNumber from 'awesome-phonenumber'
 
+import moment from 'moment-timezone'
+import fs from 'fs'
+
 const inventory = {
   others: {
     level: true,
@@ -124,6 +127,7 @@ const inventory = {
   }
 }
 let handler = async (m, { conn, args, command, text, usedPrefix }) => {
+	
 let imgr = flaaa.getRandom()
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 let name = await conn.getName(who)
@@ -175,6 +179,21 @@ const listMessage = {
   buttonText: `🗃️ SELECCIONE AQUÍ 🗃️`,
   sections
 }
+let bottime = `${name} | 𝗧 𝗜 𝗠 𝗘 : ${moment.tz('Asia/Jakarta').format('HH:mm:ss')}`//America/Los_Angeles
+let fgif = {
+            key: {
+                 participant : '0@s.whatsapp.net'},
+            message: { 
+                        "videoMessage": { 
+                        "title": wm,
+                        "h": `Hmm`,
+                        'seconds': '999999999', 
+                        'gifPlayback': 'true', 
+                        'caption': bottime,
+                        'jpegThumbnail': fs.readFileSync('./media/menus/Menu3.jpg')
+                               }
+                              }
+                             }
 await conn.sendMessage(m.chat, listMessage, {quoted: fgif})
 }
 
