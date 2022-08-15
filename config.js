@@ -245,7 +245,7 @@ global.rpg = {
       kyubi: '🍁 ',
       knife: '🔪 ',
       legendary: '🗃️ ',
-      level: '🧬 ',
+      level: '🧬 Nivel ',
       limit: '🌌 ',
       lion: '🦁 ',
       magicwand: '⚕️ ',
