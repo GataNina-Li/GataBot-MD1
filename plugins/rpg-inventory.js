@@ -505,16 +505,26 @@ let date = global.botdate
     let usrname = global.db.data.users[m.sender].name
     let stamina = global.db.data.users[m.sender].stamina
     let armor = global.db.data.users[m.sender].armor 
+    let adurability = global.db.data.users[m.sender].armordurability
+    
     let sword = global.db.data.users[m.sender].sword
     let sdurability = global.db.data.users[m.sender].sworddurability
+    
     let warn = global.db.data.users[m.sender].warn
     let premium = global.db.data.users[m.sender].premium
     let tprem = global.db.data.users[m.sender].tprem
+    
     let pancing = global.db.data.users[m.sender].pancing
     let fdurability = global.db.data.users[m.sender].fishingroddurability
+    
     let role = global.db.data.users[m.sender].role
+    
     let pickaxe = global.db.data.users[m.sender].pickaxe
     let pdurability = global.db.data.users[m.sender].pickaxedurability
+    
+    let bow = global.db.data.users[m.sender].bow
+    let bdurability = global.db.data.users[m.sender].bowdurability
+    
 
     let psepick = global.db.data.users[m.sender].psepick
     let psenjata = global.db.data.users[m.sender].psenjata
@@ -662,16 +672,33 @@ let date = global.botdate
 *│${registered ? '✨ Edad : Age:* ' + age : ''}
 *╰─⋆─⋆─⋆──⊱ 𓃠 ⊰─⋆─⋆─⋆─┄⸙*
 ${readMore}
-╭──────━• *TOOLS*
-│🥼 *Armor:* ${armor == 0 ? '❌' : '' || armor == 1 ? 'Leather Armor' : '' || armor == 2 ? 'Iron Armor' : '' || armor == 3 ? 'Gold Armor' : '' || armor == 4 ? 'Diamond Armor' : '' || armor == 5 ? 'Netherite Armor' : ''}
-│⚔️ *Sword:* ${sword == 0 ? '❌' : '' || sword == 1 ? 'wooden sword' : '' || sword == 2 ? 'Stone sword' : '' || sword == 3 ? 'Iron sword' : '' || sword == 4 ? 'Diamond sword' : '' || sword > 0 && sword < 5 ? `Ketahanan (*${_sword}* / *${sword *100}*)` : '' || sword == 5 ? '*Netherite Sword*' : ''}
-│╰ *Durability:* ${sdurability}
-│⛏️ *Pickaxe:* ${pickaxe == 0 ? '❌' : '' || pickaxe == 1 ? 'wooden pickaxe' : '' || pickaxe == 2 ? 'stone pickaxe' : '' || pickaxe == 3 ? 'Iron pickaxe' : '' || pickaxe == 4 ? 'Diamond pickaxe' : '' || pickaxe == 5 ? 'Netherite pickaxe' : ''}
-│╰ *Durability:* ${pdurability}
-│🎣 *Fishingrod:* ${pancing == 0 ? '❌' : '' || pancing == 1 ? 'Wooden Fishingrod' : '' || pancing == 2 ? 'Iron Fishingrod' : '' || pancing == 1 ? 'Diamond Fishingrod' : '' || pancing == 1 ? 'Netherite Fishingrod' : '' }
-│╰ *Durability:* ${fdurability}
-│🏹 *Bow:* Cooming Soon!
-╰──────────━⃝┅⃝━━────────┄⸙
+*╭────━• ESTRATEGIAS*
+*╭────━• STRATEGIES*
+*│🥼 Armadura : Armor:* 
+*│🢒 ${armor == 0 ? 'No tengo | I do not have' : '' || armor == 1 ? '✦ Armadura de Cuero : Leather Armor' : '' || armor == 2 ? '✦ Armadura de Hierro : Iron Armor' : '' || armor == 3 ? '✦ Armadura Mágica : Magic Armor' : '' || armor == 4 ? '✦ Armadura Robótica : Robotic Armor' : '' || armor == 5 ? 'Armadura Cyborg Estelar : Cyborg Armor ǁ MAX' : ''}*
+*│🥼⇡ Durabilidad : Durability:* 
+*│🢒 ${adurability}*
+*│┈┈┈┈┈┈┈┈┈┈┈┈┈*
+*│⚔️ Espada : Sword* 
+*│🢒 ${sword == 0 ? 'No tengo | I do not have' : '' || sword == 1 ? 'wooden sword' : '' || sword == 2 ? 'Stone sword' : '' || sword == 3 ? 'Iron sword' : '' || sword == 4 ? 'Diamond sword' : '' || sword > 0 && sword < 5 ? `Ketahanan (*${sword}* / *${sword *100}*)` : '' || sword == 5 ? '*Netherite Sword*' : ''}
+*│⚔️⇡ *Durabilidad : Durability:* 
+*│🢒 ${sdurability}*
+*│┈┈┈┈┈┈┈┈┈┈┈┈┈*
+*│⛏️ Pico : Peak* 
+*│🢒 ${pickaxe == 0 ? 'No tengo | I do not have' : '' || pickaxe == 1 ? 'Nivel | Level ✦ 1' : '' || pickaxe == 2 ? 'Nivel | Level ✦ 2' : '' || pickaxe == 3 ? 'Nivel | Level ✦ 3' : '' || pickaxe == 4 ? 'Nivel | Level ✦ 4' : '' || pickaxe == 5 ? 'Nivel | Level ✦ 5 ǁ MAX' : ''}*
+*│⛏️⇡ *Durabilidad : Durability:* 
+*│🢒 ${pdurability}*
+*│┈┈┈┈┈┈┈┈┈┈┈┈┈*
+*│🎣 Caña de pescar : Fishing Rod* 
+*│🢒 ${pancing == 0 ? 'No tengo | I do not have' : '' || pancing == 1 ? 'Wooden Fishingrod' : '' || pancing == 2 ? 'Iron Fishingrod' : '' || pancing == 3 ? 'Diamond Fishingrod' : '' || pancing == 4 ? 'Diamond pickaxe' : '' || pancing == 5 ? 'Netherite pickaxe' : ''}
+*│🎣⇡ *Durabilidad : Durability:* 
+*│🢒 ${fdurability}*
+*│┈┈┈┈┈┈┈┈┈┈┈┈┈*
+*│🏹 Arco : Bow*
+*│🢒 ${pancing == 0 ? 'No tengo | I do not have' : '' || pancing == 1 ? '✦ Arco de Poca Distancia : ' : '' || pancing == 2 ? 'Iron Fishingrod' : '' || pancing == 3 ? 'Diamond Fishingrod' : '' || pancing == 4 ? 'Diamond pickaxe' : '' || pancing == 5 ? 'Netherite pickaxe' : ''}
+*│🏹⇡ *Durabilidad : Durability:* 
+*│🢒 ${bdurability}*
+*╰─⋆─⋆─⋆─⋆─⋆─⋆─⋆─⋆─┄⸙*
 
 ╭──────━• *KANDANG*
 │🐔 *Ayam:* ${ayam}    
@@ -830,8 +857,22 @@ ${readMore}
 │🗑️ *Top Sampah:* ${userssampah.indexOf(m.sender) + 1} / ${userssampah.length}
 ╰──────────━⃝┅⃝━━────────┄⸙`
  
- let ftroli = { key: {participant : '0@s.whatsapp.net'}, message: { orderMessage: { itemCount: 2022, status: 1, surface: 1, message: bottime, orderTitle: wm, sellerJid: '0@s.whatsapp.net' } } }   
- await conn.sendButton(m.chat, str, global.botdate, imgr + 'inventory', [[`${healt < 40 ? 'Heal' : 'Adventure'}`, `${healt < 40 ? '.heal' : '.adventure'}`], ['Shop', '.shop']], m, {quoted: ftroli})
+const fkontak = {
+	"key": {
+    "participants":"0@s.whatsapp.net",
+		"remoteJid": "status@broadcast",
+		"fromMe": false,
+		"id": "Halo"
+	},
+	"message": {
+		"contactMessage": {
+			"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
+		}
+	},
+	"participant": "0@s.whatsapp.net"
+}
+// let ftroli = { key: {participant : '0@s.whatsapp.net'}, message: { orderMessage: { itemCount: 2022, status: 1, surface: 1, message: bottime, orderTitle: wm, sellerJid: '0@s.whatsapp.net' } } }   
+ await conn.sendButton(m.chat, str, wm, imgr + 'Inventario : Inventory', [[`${healt < 40 ? 'Heal' : 'Adventure'}`, `${healt < 40 ? '.heal' : '.adventure'}`], ['Shop', '.shop']], m, {quoted: fkontak})
 
 } else if (args[0] == '4') {
 // Inventory 4
