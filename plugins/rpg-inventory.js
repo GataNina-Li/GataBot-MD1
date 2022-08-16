@@ -647,7 +647,7 @@ let date = global.botdate
 │💌 *Pareja : Pasangan ⊹* ${pasangan ? `@${pasangan.split("@")[0]}` : `❌`}
 │❗ *Adventencias : Warn ⊹* ${warn}
 │⛔ *Baneado(a) : Banned ⊹* No
-│ ${rpg.emoticon('cat')}
+│ ${rpg.emoticon('cat2')}
 │❤️️ *Vida : Life ⊹*  ${health}
 │⚡ *Stamina:* ${stamina}
 │💹 *Money:* $${money}
