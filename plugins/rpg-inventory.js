@@ -494,10 +494,11 @@ const fkontak = {
 await conn.sendButton(m.chat, caption, wm, imgr + 'Inventario : Inventory', [[`ᴛʀᴀɴsғᴇʀ`, `.transfer`],
 [`ᴀᴅᴠᴇɴᴛᴜʀᴇ`, `.adventure`]], fkontak, m, { mentions: conn.parseMention(caption) })
 	
-} else if (args[0] == '3') {
-// Inventory 3
+} else if (args[0] == '3') { // Inventario 3
+
 let date = global.botdate
     let { registered, age, lastrampok, lastdagang, lastcodereg, lastberkebon, lasthourly, lastberburu, lastbansos, lastadventure, lastfishing, lastwar, lastduel, lastmining, lastdungeon, lastclaim, lastweekly, lastmonthly } = global.db.data.users[m.sender]
+    let health = global.db.data.users[m.sender].health
     let healt = global.db.data.users[m.sender].healt
     let lapar = global.db.data.users[m.sender].laper
     let haus = global.db.data.users[m.sender].haus
@@ -637,15 +638,16 @@ let date = global.botdate
     
     //let number = `${PhoneNumber('+' + pasangan.replace('@s.whatsapp.net', '')).getNumber('international')}`
     let pepe = flaaa.getRandom()
-    let pp = pepe + 'Inventory'
-    let str = `╭──────━• *STATUS*
-│📡 *Status:* ${premium ? "Premium": "Free"} User
-│📇 *Name:* ${usrname} 
-│💌 *Pasangan:* ${pasangan ? `@${pasangan.split("@")[0]}` : `❌`}
-│❗ *Warn:* ${warn}
-│⛔ *Banned:* No
-│
-│❤️️ *Health:* ${healt}
+    let pp = pepe + 'Inventario : Inventory'
+    let str = `
+╭──────━• *ESTADO DE INVENTARIO*
+│📡 *Estado de tipo : Status ⊹ ${premium ? "VIP : Premium": "Limitado : Free"}*
+│📇 *Nombre : Name ⊹* ${usrname} 
+│💌 *Pareja : Pasangan ⊹* ${pasangan ? `@${pasangan.split("@")[0]}` : `❌`}
+│❗ *Adventencias : Warn ⊹* ${warn}
+│⛔ *Baneado(a) : Banned ⊹* No
+│${global.rpg.emoticon(cat)}
+│❤️️ *Vida : Life ⊹*  ${health}
 │⚡ *Stamina:* ${stamina}
 │💹 *Money:* $${money}
 │💳 *Bank:* $${atm}
