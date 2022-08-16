@@ -284,6 +284,21 @@ global.rpg = {
   }
 }
 
+global.rpg = {
+  emoticonn(string) {
+    string = string.toLowerCase()
+    let emott = {
+      agility: '🤸‍♂️',
+      arc: '🏹',
+      armor: '🥼'
+      
+    }
+    let results = Object.keys(emott).map(v => [v, new RegExp(v, 'gi')]).filter(v => v[1].test(string))
+    if (!results.length) return ''
+    else return emott[results[0][0]]
+  }
+}
+
 
 let file = fileURLToPath(import.meta.url)
 watchFile(file, () => {
