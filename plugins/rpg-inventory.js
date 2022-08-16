@@ -739,20 +739,21 @@ ${readMore}
 *│💬 Pescados : Fish Total » ${orca + udang + hiu + lobster + lumba + cumi + gurita + kepiting + paus + nila + bawal + ikan + lele + psepick + psenjata }*
 *╰─⋆─⋆─⋆─⋆─⋆─⋆─⋆─⋆─┄⸙*
 
-╭──────━• *INVENTORY*
-│💎 *Diamond:* ${diamond}
-│🧪 *Ramuan:* ${ramuan}
-│🥤 *Potion:* ${potion}
-│🗑️ *Sampah:* ${sampah}
-│🥫 *Kaleng:* ${kaleng}
-│📦 *Kardus:* ${kardus}
-│🪵  *Kayu:* ${kayu}
-│🕸️ *String:* ${string}
-│🪙  *Gold:* ${emas}
-│⛓  *Iron:* ${besi}
-│🪨  *Batu:* ${batu}
-│🧭 *Arloji:* ${arlok}
-╰──────────━⃝┅⃝━━────────┄⸙
+*╭─────━• INVENTARIO*
+*╭─────━• INVENTORY*
+*│💎+ Diamante+ : Diamond+ » ${diamond}*
+*│🧪 Ingredientes : Ingredients » ${ramuan}*
+*│🥤 Poción : Potion » ${potion}*
+*│🗑️ Basura : Trash: » ${sampah}*
+*│🥫 Lata : Can » ${kaleng}*
+*│📦 Caja de cartón : Carton box » ${kardus}*
+*│🪵 Madera : Wood » ${kayu}*
+*│🕸️ Cuerda : String » ${string}*
+*│🪙 Oro : Gold » ${emas}*
+*│⛓ Hierro : Iron » ${besi}*
+*│🪨 Piedra : Rock » ${batu}*
+*│🧭 Reloj : Reloj » ${arlok}*
+*╰─⋆─⋆─⋆─⋆─⋆─⋆─⋆─⋆─┄⸙*
 
 ╭──────━• *FOOD*
 │🥓 *FoodPet :* ${makananpet}
