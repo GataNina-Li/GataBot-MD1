@@ -648,14 +648,14 @@ let date = global.botdate
 │❗ *Adventencias : Warn ⊹* ${warn}
 │⛔ *Baneado(a) : Banned ⊹* No
 │
-│*${rpg.emoticon('health')} ⊹ ${health}*
-│${rpg.emoticonn('arc')}⚡ *Stamina:* ${stamina}
-│${rpg.emoticonn('arc')}💹 *Money:* $${money}
-│${rpg.emoticonn('arc')}💳 *Bank:* $${atm}
-│${rpg.emoticonn('arc')}📊 *Level:* ${level}
-│${rpg.emoticonn('arc')}✨ *Exp:* ${exp}
-│${rpg.emoticonn('arc')}📍 *Role:* ${role}
-│${rpg.emoticonn('arc')}🎫 *Limit:* ${limit}
+│*${rpgg.emoticon('health')} ⊹ ${health}*
+│${rpg.emoticon('arc')}⚡ *Stamina:* ${stamina}
+│${rpg.emoticon('arc')}💹 *Money:* $${money}
+│${rpg.emoticon('arc')}💳 *Bank:* $${atm}
+│${rpg.emoticon('arc')}📊 *Level:* ${level}
+│${rpg.emoticon('arc')}✨ *Exp:* ${exp}
+│${rpg.emoticon('arc')}📍 *Role:* ${role}
+│${rpg.emoticon('arc')}🎫 *Limit:* ${limit}
 │${registered ? '🎨 *Age:* ' + age : ''}
 ╰──────────━⃝┅⃝━━────────┄⸙
 ${readMore}
