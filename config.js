@@ -220,7 +220,7 @@ global.rpg = {
       bull: '🐃 Toro : Bull',
       
       cat: '🐈 Gato : Cat',
-      cat2: '🐈',
+      catt: '🐈',
       
       centaur: '🐐 Centauro : Centaur',
       chicken: '🐓 Pollo : Chicken',
