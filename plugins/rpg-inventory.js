@@ -755,15 +755,16 @@ ${readMore}
 *│🧭 Reloj : Reloj » ${arlok}*
 *╰─⋆─⋆─⋆─⋆─⋆─⋆─⋆─⋆─┄⸙*
 
-╭──────━• *FOOD*
-│🥓 *FoodPet :* ${makananpet}
-│🍖 *ayam bakar:* ${ayamb}
-│🍗 *ayam goreng:* ${ayamg}
-│🥘 *Rendang Sapi :* ${sapir}
-│🥩 *steak sapi:* ${ssapi}
-│
-│🎒 *Total inv:* ${aqua + ramuan + kardus + kaleng + arlok + psepick + psenjata + common + uncommon + mythic + legendary + pet + diamond + potion + besi + emas + string + sampah + kayu + batu + potion + sampah + makananpet + apel + ayamb + ayamg + sapir + ssapi } item
-╰──────────━⃝┅⃝━━────────┄⸙
+*╭────━• COMIDA*
+*╭─────━• FOOD*
+*│🥓 Comida de Mascota : Food Pet » ${makananpet}*
+*│🍖 Pollo a la Parrilla : Grilled Chicken » ${ayamb}*
+*│🍗 Pollo frito : Fried Chicken » ${ayamg}*
+*│🥘 Alimento de Carne : Meat Food » ${sapir}*
+*│🥩 Bistec de Carne : Beef Steak » ${ssapi}*
+*│*
+*│🎒 Total inv » ${aqua + ramuan + kardus + kaleng + arlok + psepick + psenjata + common + uncommon + mythic + legendary + pet + diamond + potion + besi + emas + string + sampah + kayu + batu + potion + sampah + makananpet + apel + ayamb + ayamg + sapir + ssapi} Comida*
+*╰─⋆─⋆─⋆─⋆─⋆─⋆─⋆─⋆─┄⸙*
 
 ╭──────━• *FRUIT & SEED*
 │🥭 *Mangga:* ${mangga}
