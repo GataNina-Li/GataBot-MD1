@@ -641,23 +641,23 @@ let date = global.botdate
     let pepe = flaaa.getRandom()
     let pp = pepe + 'Inventario : Inventory'
     let str = `
-╭──────━• *ESTADO DE INVENTARIO*
-│📡 *Estado de tipo : Status ⊹ ${premium ? "VIP : Premium": "Limitado : Free"}*
-│📇 *Nombre : Name ⊹* ${usrname} 
-│💌 *Pareja : Pasangan ⊹* ${pasangan ? `@${pasangan.split("@")[0]}` : `❌`}
-│❗ *Adventencias : Warn ⊹* ${warn}
-│⛔ *Baneado(a) : Banned ⊹* No
-│
-│*${rpgg.emoticon('health')} ⊹ ${health}*
-│${rpg.emoticon('arc')}⚡ *Stamina:* ${stamina}
-│${rpg.emoticon('arc')}💹 *Money:* $${money}
-│${rpg.emoticon('arc')}💳 *Bank:* $${atm}
-│${rpg.emoticon('arc')}📊 *Level:* ${level}
-│${rpg.emoticon('arc')}✨ *Exp:* ${exp}
-│${rpg.emoticon('arc')}📍 *Role:* ${role}
-│${rpg.emoticon('arc')}🎫 *Limit:* ${limit}
-│${registered ? '🎨 *Age:* ' + age : ''}
-╰──────────━⃝┅⃝━━────────┄⸙
+*╭──━• ESTADO DE INVENTARIO | BALANCE*
+*│📡 Estado de tipo : Status ⊹ ${premium ? "VIP : Premium*": "Limitado : Free*"}*
+*│📇 Nombre : Name ⊹* ${usrname} 
+*│💌 Pareja : Pasangan ⊹* ${pasangan ? `@${pasangan.split("@")[0]}` : `❌`}
+*│❗ Adventencias : Warn ⊹ ${warn}*
+*│⛔ Baneado(a) : Banned ⊹ No*
+*│
+*│${rpg.emoticon('health')} ⊹ ${health}*
+*│${rpg.emoticon('stamina')} ⊹ ${stamina}*
+*│${rpg.emoticon('money')} ⊹ ${money}
+*│${rpg.emoticon('bank')} ⊹ $${atm}*
+*│${rpg.emoticon('level')} ⊹ ${level}*
+*│${rpg.emoticon('exp')} ⊹ ${exp}*
+*│🛎️ Rango : Role:* ${role}
+*│${rpg.emoticon('arc')} ⊹ ${limit}*
+*│${registered ? '✨ Edad : Age:* ' + age : ''}
+*╰──────━⃝┅⃝━━────┄⸙*
 ${readMore}
 ╭──────━• *TOOLS*
 │🥼 *Armor:* ${armor == 0 ? '❌' : '' || armor == 1 ? 'Leather Armor' : '' || armor == 2 ? 'Iron Armor' : '' || armor == 3 ? 'Gold Armor' : '' || armor == 4 ? 'Diamond Armor' : '' || armor == 5 ? 'Netherite Armor' : ''}
