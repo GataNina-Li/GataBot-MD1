@@ -637,6 +637,7 @@ let date = global.botdate
     let orca = global.db.data.users[m.sender].orca
     
     //let number = `${PhoneNumber('+' + pasangan.replace('@s.whatsapp.net', '')).getNumber('international')}`
+						   
     let pepe = flaaa.getRandom()
     let pp = pepe + 'Inventario : Inventory'
     let str = `
@@ -646,7 +647,7 @@ let date = global.botdate
 │💌 *Pareja : Pasangan ⊹* ${pasangan ? `@${pasangan.split("@")[0]}` : `❌`}
 │❗ *Adventencias : Warn ⊹* ${warn}
 │⛔ *Baneado(a) : Banned ⊹* No
-│${global.rpg.emoticon(cat)}
+│ ${rpg.emoticon('cat')}
 │❤️️ *Vida : Life ⊹*  ${health}
 │⚡ *Stamina:* ${stamina}
 │💹 *Money:* $${money}
