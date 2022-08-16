@@ -642,13 +642,13 @@ let date = global.botdate
     let pp = pepe + 'Inventario : Inventory'
     let str = `
 *╭──━• ESTADO DE INVENTARIO*
-*╭──────━• BALANCE*
+*╭─────━• BALANCE*
 *│📡 Estado de tipo : Status* 
-*│${premium ? "VIP : Premium*": "Limitado : Free*"}*
+*│ɞ ${premium ? "VIP : Premium": "Limitado : Free"}*
 *│*
-*│📇 Nombre : Name ⊹* ${usrname} 
+*│👤 Nombre : Name ⊹* ${usrname} 
 *│💌 Pareja : Pasangan ⊹* ${pasangan ? `@${pasangan.split("@")[0]}` : `❌`}
-*│❗ Adventencias : Warn ⊹ ${warn}*
+*│❗ Advertencia : Warn ⊹ ${warn}*
 *│⛔ Baneado(a) : Banned ⊹ No*
 *│*
 *│${rpg.emoticon('health')} ⊹ ${health}*
@@ -660,7 +660,7 @@ let date = global.botdate
 *│🛎️ Rango : Role:* ${role}
 *│${rpg.emoticon('arc')} ⊹ ${limit}*
 *│${registered ? '✨ Edad : Age:* ' + age : ''}
-*╰─⋆─⋆─⋆──» 𓃠 «─⋆─⋆─⋆─┄⸙*
+*╰─⋆─⋆─⋆──⊱ 𓃠 ⊰─⋆─⋆─⋆─┄⸙*
 ${readMore}
 ╭──────━• *TOOLS*
 │🥼 *Armor:* ${armor == 0 ? '❌' : '' || armor == 1 ? 'Leather Armor' : '' || armor == 2 ? 'Iron Armor' : '' || armor == 3 ? 'Gold Armor' : '' || armor == 4 ? 'Diamond Armor' : '' || armor == 5 ? 'Netherite Armor' : ''}
