@@ -720,23 +720,23 @@ ${readMore}
 *│💬 Animales totales » ${ buaya + gajah + panda + babihutan + monyet + harimau + kerbau + kambing + ayam + sapi + babi + banteng } Para Cocinar*
 *╰─⋆─⋆─⋆─⋆─⋆─⋆─⋆─⋆─┄⸙*
 
-*╭─────━• *PISCINA*
-*╭──━• *SWIMMING POOL*
-*│🐋 *Orca : Killer whale » ${orca}*
-*│🐳 *Ballena : Whale » ${paus}*
-*│🐬 *Delfín : Dolphin » ${lumba}*
-*│🦈 *Tiburón : Shark » ${hiu}*
-*│🐟 *Pez : Fish » ${ikan}*
-*│🐟 *Pez Pequeño : Small fish » ${lele}*
-*│🐡 *Pez Globo : Blowfish » ${bawal}*
-*│🐠 *Dory : Surgeonfish » ${nila}*
-*│🦀 *Cangrejo : Crab » ${kepiting}*
-*│🦞 *Langosta : Lobster » ${lobster}*
-*│🐙 *Pulpo : Octopus » ${gurita}*
-*│🦑 *Calamar : Squid » ${cumi}*
-*│🦐 *Camarón : Shrimp » ${udang}* 
+*╭─────━• PISCINA*
+*╭──━• SWIMMING POOL*
+*│🐋 Orca : Killer whale » ${orca}*
+*│🐳 Ballena : Whale » ${paus}*
+*│🐬 Delfín : Dolphin » ${lumba}*
+*│🦈 Tiburón : Shark » ${hiu}*
+*│🐟 Pez : Fish » ${ikan}*
+*│🐟 Pez Pequeño : Small fish » ${lele}*
+*│🐡 Pez Globo : Blowfish » ${bawal}*
+*│🐠 Dory : Surgeonfish » ${nila}*
+*│🦀 Cangrejo : Crab » ${kepiting}*
+*│🦞 Langosta : Lobster » ${lobster}*
+*│🐙 Pulpo : Octopus » ${gurita}*
+*│🦑 Calamar : Squid » ${cumi}*
+*│🦐 Camarón : Shrimp » ${udang}* 
 *│*
-*│💬 *Pescados : Fish Total » ${orca + udang + hiu + lobster + lumba + cumi + gurita + kepiting + paus + nila + bawal + ikan + lele + psepick + psenjata }*
+*│💬 Pescados : Fish Total » ${orca + udang + hiu + lobster + lumba + cumi + gurita + kepiting + paus + nila + bawal + ikan + lele + psepick + psenjata }*
 *╰─⋆─⋆─⋆─⋆─⋆─⋆─⋆─⋆─┄⸙*
 
 ╭──────━• *INVENTORY*
