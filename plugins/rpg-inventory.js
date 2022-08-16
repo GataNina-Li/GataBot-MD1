@@ -680,7 +680,7 @@ ${readMore}
 *│🢒 ${adurability}*
 *│┈┈┈┈┈┈┈┈┈┈┈┈┈*
 *│⚔️ Espada : Sword* 
-*│🢒 ${sword == 0 ? 'No tengo | I do not have' : '' || sword == 1 ? 'wooden sword' : '' || sword == 2 ? 'Stone sword' : '' || sword == 3 ? 'Iron sword' : '' || sword == 4 ? 'Diamond sword' : '' || sword > 0 && sword < 5 ? `Ketahanan (*${sword}* / *${sword *100}*)` : '' || sword == 5 ? '*Netherite Sword*' : ''}
+*│🢒 ${sword == 0 ? 'No tengo | I do not have' : '' || sword == 1 ? 'Espada de Cuero ✦ Leather Sword' : '' || sword == 2 ? 'Espada de Hierro ✦ Iron Sword' : '' || sword == 3 ? 'Espada de Oro ✦ Gold Sword' : '' || sword == 4 ? 'Espada de Energía ✦ Energy Sword' : '' || sword > 0 && sword < 5 ? `Ketahanan (*${sword}* / *${sword *100}*)` : '' || sword == 5 ? 'Espada Galáctica ✦ Galactic Sword ǁ MAX' : ''}*
 *│⚔️⇡ *Durabilidad : Durability:* 
 *│🢒 ${sdurability}*
 *│┈┈┈┈┈┈┈┈┈┈┈┈┈*
@@ -690,12 +690,12 @@ ${readMore}
 *│🢒 ${pdurability}*
 *│┈┈┈┈┈┈┈┈┈┈┈┈┈*
 *│🎣 Caña de pescar : Fishing Rod* 
-*│🢒 ${pancing == 0 ? 'No tengo | I do not have' : '' || pancing == 1 ? 'Wooden Fishingrod' : '' || pancing == 2 ? 'Iron Fishingrod' : '' || pancing == 3 ? 'Diamond Fishingrod' : '' || pancing == 4 ? 'Diamond pickaxe' : '' || pancing == 5 ? 'Netherite pickaxe' : ''}
+*│🢒 ${pancing == 0 ? 'No tengo | I do not have' : '' || pancing == 1 ? 'Nivel | Level ✦ 1' : '' || pancing == 2 ? 'Nivel | Level ✦ 2' : '' || pancing == 3 ? 'Nivel | Level ✦ 3' : '' || pancing == 4 ? 'Nivel | Level ✦ 4' : '' || pancing == 5 ? 'Nivel | Level ✦ 5 ǁ MAX' : ''}*
 *│🎣⇡ *Durabilidad : Durability:* 
 *│🢒 ${fdurability}*
 *│┈┈┈┈┈┈┈┈┈┈┈┈┈*
 *│🏹 Arco : Bow*
-*│🢒 ${pancing == 0 ? 'No tengo | I do not have' : '' || pancing == 1 ? '✦ Arco de Poca Distancia : ' : '' || pancing == 2 ? 'Iron Fishingrod' : '' || pancing == 3 ? 'Diamond Fishingrod' : '' || pancing == 4 ? 'Diamond pickaxe' : '' || pancing == 5 ? 'Netherite pickaxe' : ''}
+*│🢒 ${pancing == 0 ? 'No tengo | I do not have' : '' || pancing == 1 ? '✦ Arco de Poca Distancia || 1' : '' || pancing == 2 ? '✦ Flechas Mejoradas || 2' : '' || pancing == 3 ? '✦ Arco de última tecnología || 3' : '' || pancing == 4 ? '✦ Arco Explosivo || 4' : '' || pancing == 5 ? '✦ Arco Nuclear || 5' : ''}*
 *│🏹⇡ *Durabilidad : Durability:* 
 *│🢒 ${bdurability}*
 *╰─⋆─⋆─⋆─⋆─⋆─⋆─⋆─⋆─┄⸙*
