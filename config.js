@@ -218,7 +218,10 @@ global.rpg = {
       bibitpisang: '🍌 Semillas de Plátano : Banana Seeds',
       bow: '🏹 Super Arco : Super Bow',
       bull: '🐃 Toro : Bull',
+      
       cat: '🐈 Gato : Cat',
+      cat2: '🐈',
+      
       centaur: '🐐 Centauro : Centaur',
       chicken: '🐓 Pollo : Chicken',
       common: '📦 Caja Común : Common Box',
