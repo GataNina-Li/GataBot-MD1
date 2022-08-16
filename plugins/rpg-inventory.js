@@ -647,15 +647,15 @@ let date = global.botdate
 │💌 *Pareja : Pasangan ⊹* ${pasangan ? `@${pasangan.split("@")[0]}` : `❌`}
 │❗ *Adventencias : Warn ⊹* ${warn}
 │⛔ *Baneado(a) : Banned ⊹* No
-│ ${rpg.emoticonn('arc')}
-│❤️️ *Vida : Life ⊹*  ${health}
-│⚡ *Stamina:* ${stamina}
-│💹 *Money:* $${money}
-│💳 *Bank:* $${atm}
-│📊 *Level:* ${level}
-│✨ *Exp:* ${exp}
-│📍 *Role:* ${role}
-│🎫 *Limit:* ${limit}
+│
+│*${rpg.emoticon('health')} ⊹ ${health}*
+│${rpg.emoticonn('arc')}⚡ *Stamina:* ${stamina}
+│${rpg.emoticonn('arc')}💹 *Money:* $${money}
+│${rpg.emoticonn('arc')}💳 *Bank:* $${atm}
+│${rpg.emoticonn('arc')}📊 *Level:* ${level}
+│${rpg.emoticonn('arc')}✨ *Exp:* ${exp}
+│${rpg.emoticonn('arc')}📍 *Role:* ${role}
+│${rpg.emoticonn('arc')}🎫 *Limit:* ${limit}
 │${registered ? '🎨 *Age:* ' + age : ''}
 ╰──────────━⃝┅⃝━━────────┄⸙
 ${readMore}
