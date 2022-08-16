@@ -282,8 +282,8 @@ global.rpg = {
   }
 }
 
-global.rpg = {
-  emoticonn(string) {
+global.rpgg = {
+  emoticon(string) {
     string = string.toLowerCase()
     let emott = {
       agility: '🤸‍♂️',
