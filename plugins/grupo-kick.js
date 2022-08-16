@@ -30,8 +30,10 @@ handler.help = ['kick @user']
 handler.tags = ['group']
 handler.command = ['kick', 'sacar', 'ban'] ///^(kick|sacar|\-)$/i
 handler.group = true
-handler.admin = true
+//handler.admin = true
 handler.botAdmin = true
+handler.premium = true
+
 export default handler
 const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
 
