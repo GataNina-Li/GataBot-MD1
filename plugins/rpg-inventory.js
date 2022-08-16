@@ -675,33 +675,33 @@ ${readMore}
 *╭────━• ESTRATEGIAS*
 *╭────━• STRATEGIES*
 *│🥼 Armadura : Armor:* 
-*│⮞ ${armor == 0 ? 'No tengo | I do not have' : '' || armor == 1 ? '✦ Armadura de Cuero : Leather Armor' : '' || armor == 2 ? '✦ Armadura de Hierro : Iron Armor' : '' || armor == 3 ? '✦ Armadura Mágica : Magic Armor' : '' || armor == 4 ? '✦ Armadura Robótica : Robotic Armor' : '' || armor == 5 ? 'Armadura Cyborg Estelar : Cyborg Armor ǁ MAX' : ''}*
+*│➠ ${armor == 0 ? 'No tengo | I do not have' : '' || armor == 1 ? '✦ Armadura de Cuero : Leather Armor' : '' || armor == 2 ? '✦ Armadura de Hierro : Iron Armor' : '' || armor == 3 ? '✦ Armadura Mágica : Magic Armor' : '' || armor == 4 ? '✦ Armadura Robótica : Robotic Armor' : '' || armor == 5 ? 'Armadura Cyborg Estelar : Cyborg Armor ǁ MAX' : ''}*
 *│🥼⇡ Durabilidad : Durability:* 
-*│⮬ ${adurability}*
+*│↸ ${adurability}*
 *│┈┈┈┈┈┈┈┈┈┈┈┈┈*
 *│⚔️ Espada : Sword* 
-*│⮞ ${sword == 0 ? 'No tengo | I do not have' : '' || sword == 1 ? 'Espada de Cuero ✦ Leather Sword' : '' || sword == 2 ? 'Espada de Hierro ✦ Iron Sword' : '' || sword == 3 ? 'Espada de Oro ✦ Gold Sword' : '' || sword == 4 ? 'Espada de Energía ✦ Energy Sword' : '' || sword > 0 && sword < 5 ? `Ketahanan (*${sword}* / *${sword *100}*)` : '' || sword == 5 ? 'Espada Galáctica ✦ Galactic Sword ǁ MAX' : ''}*
+*│➠ ${sword == 0 ? 'No tengo | I do not have' : '' || sword == 1 ? 'Espada de Cuero ✦ Leather Sword' : '' || sword == 2 ? 'Espada de Hierro ✦ Iron Sword' : '' || sword == 3 ? 'Espada de Oro ✦ Gold Sword' : '' || sword == 4 ? 'Espada de Energía ✦ Energy Sword' : '' || sword > 0 && sword < 5 ? `Ketahanan (*${sword}* / *${sword *100}*)` : '' || sword == 5 ? 'Espada Galáctica ✦ Galactic Sword ǁ MAX' : ''}*
 *│⚔️⇡ Durabilidad : Durability:* 
-*│⮬ ${sdurability}*
+*│↸ ${sdurability}*
 *│┈┈┈┈┈┈┈┈┈┈┈┈┈*
 *│⛏️ Pico : Peak* 
-*│⮞ ${pickaxe == 0 ? 'No tengo | I do not have' : '' || pickaxe == 1 ? 'Nivel | Level ✦ 1' : '' || pickaxe == 2 ? 'Nivel | Level ✦ 2' : '' || pickaxe == 3 ? 'Nivel | Level ✦ 3' : '' || pickaxe == 4 ? 'Nivel | Level ✦ 4' : '' || pickaxe == 5 ? 'Nivel | Level ✦ 5 ǁ MAX' : ''}*
+*│➠ ${pickaxe == 0 ? 'No tengo | I do not have' : '' || pickaxe == 1 ? 'Nivel | Level ✦ 1' : '' || pickaxe == 2 ? 'Nivel | Level ✦ 2' : '' || pickaxe == 3 ? 'Nivel | Level ✦ 3' : '' || pickaxe == 4 ? 'Nivel | Level ✦ 4' : '' || pickaxe == 5 ? 'Nivel | Level ✦ 5 ǁ MAX' : ''}*
 *│⛏️⇡ Durabilidad : Durability:* 
-*│⮬ ${pdurability}*
+*│↸ ${pdurability}*
 *│┈┈┈┈┈┈┈┈┈┈┈┈┈*
 *│🎣 Caña de pescar : Fishing Rod* 
-*│⮞ ${pancing == 0 ? 'No tengo | I do not have' : '' || pancing == 1 ? 'Nivel | Level ✦ 1' : '' || pancing == 2 ? 'Nivel | Level ✦ 2' : '' || pancing == 3 ? 'Nivel | Level ✦ 3' : '' || pancing == 4 ? 'Nivel | Level ✦ 4' : '' || pancing == 5 ? 'Nivel | Level ✦ 5 ǁ MAX' : ''}*
+*│➠ ${pancing == 0 ? 'No tengo | I do not have' : '' || pancing == 1 ? 'Nivel | Level ✦ 1' : '' || pancing == 2 ? 'Nivel | Level ✦ 2' : '' || pancing == 3 ? 'Nivel | Level ✦ 3' : '' || pancing == 4 ? 'Nivel | Level ✦ 4' : '' || pancing == 5 ? 'Nivel | Level ✦ 5 ǁ MAX' : ''}*
 *│🎣⇡ Durabilidad : Durability:* 
-*│⮬ ${fdurability}*
+*│↸ ${fdurability}*
 *│┈┈┈┈┈┈┈┈┈┈┈┈┈*
 *│🏹 Arco : Bow*
-*│⮞ ${pancing == 0 ? 'No tengo | I do not have' : '' || pancing == 1 ? '✦ Arco de Poca Distancia || 1' : '' || pancing == 2 ? '✦ Flechas Mejoradas || 2' : '' || pancing == 3 ? '✦ Arco de última tecnología || 3' : '' || pancing == 4 ? '✦ Arco Explosivo || 4' : '' || pancing == 5 ? '✦ Arco Nuclear || 5' : ''}*
+*│➠ ${pancing == 0 ? 'No tengo | I do not have' : '' || pancing == 1 ? '✦ Arco de Poca Distancia || 1' : '' || pancing == 2 ? '✦ Flechas Mejoradas || 2' : '' || pancing == 3 ? '✦ Arco de última tecnología || 3' : '' || pancing == 4 ? '✦ Arco Explosivo || 4' : '' || pancing == 5 ? '✦ Arco Nuclear || 5' : ''}*
 *│🏹⇡ Durabilidad : Durability:* 
-*│⮬ ${bdurability}*
+*│↸ ${bdurability}*
 *╰─⋆─⋆─⋆─⋆─⋆─⋆─⋆─⋆─┄⸙*
 
-*╭──━• *ANIMALES EN RESERVA*
-*╭─━• *ANIMALS IN RESERVATION*
+*╭──━• ANIMALES EN RESERVA*
+*╭─━• ANIMALS IN RESERVATION*
 *│🐔 Pollo : Chicken » ${ayam}*    
 *│🐐 Cabra : Goat » ${kambing}*
 *│🐄 Vaca : Cow » ${sapi}* 
@@ -717,26 +717,27 @@ ${readMore}
 *│*
 *│🥢 Animales listos para Cocinar*
 *│🥢 Animals ready to Cook*
-*│💬 Animales totales: ${ buaya + gajah + panda + babihutan + monyet + harimau + kerbau + kambing + ayam + sapi + babi + banteng } Para Cocinar*
+*│💬 Animales totales » ${ buaya + gajah + panda + babihutan + monyet + harimau + kerbau + kambing + ayam + sapi + babi + banteng } Para Cocinar*
 *╰─⋆─⋆─⋆─⋆─⋆─⋆─⋆─⋆─┄⸙*
 
-╭──────━• *KOLAM*
-│🐋 *Orca:* ${orca}
-│🐳 *Paus:* ${paus}
-│🐬 *Lumba:* ${lumba}
-│🦈 *Hiu:* ${hiu}
-│🐟 *Ikan:* ${ikan}
-│🐟 *Lele:* ${lele}
-│🐡 *Bawal:* ${bawal}
-│🐠 *Nila:* ${nila}
-│🦀 *Kepiting:* ${kepiting}
-│🦞 *Lobster:* ${lobster}
-│🐙 *Gurita:* ${gurita}
-│🦑 *Cumi:* ${cumi}
-│🦐 *Udang:* ${udang}
-│
-│💬 *Total Ikan:* ${orca + udang + hiu + lobster + lumba + cumi + gurita + kepiting + paus + nila + bawal + ikan + lele + psepick + psenjata }
-╰──────────━⃝┅⃝━━────────┄⸙
+*╭─────━• *PISCINA*
+*╭──━• *SWIMMING POOL*
+*│🐋 *Orca : Killer whale » ${orca}*
+*│🐳 *Ballena : Whale » ${paus}*
+*│🐬 *Delfín : Dolphin » ${lumba}*
+*│🦈 *Tiburón : Shark » ${hiu}*
+*│🐟 *Pez : Fish » ${ikan}*
+*│🐟 *Pez Pequeño : Small fish » ${lele}*
+*│🐡 *Pez Globo : Blowfish » ${bawal}*
+*│🐠 *Dory : Surgeonfish » ${nila}*
+*│🦀 *Cangrejo : Crab » ${kepiting}*
+*│🦞 *Langosta : Lobster » ${lobster}*
+*│🐙 *Pulpo : Octopus » ${gurita}*
+*│🦑 *Calamar : Squid » ${cumi}*
+*│🦐 *Camarón : Shrimp » ${udang}* 
+*│*
+*│💬 *Pescados : Fish Total » ${orca + udang + hiu + lobster + lumba + cumi + gurita + kepiting + paus + nila + bawal + ikan + lele + psepick + psenjata }*
+*╰─⋆─⋆─⋆─⋆─⋆─⋆─⋆─⋆─┄⸙*
 
 ╭──────━• *INVENTORY*
 │💎 *Diamond:* ${diamond}
