@@ -19,7 +19,7 @@ if (new Date - user.lastadventure <= cooldown) return conn.sendButton(m.chat, `$
 `YA AVENTURASTE!! POR FAVOR ESPERA HASTA QUE TERMINE EL TIEMPO DE DESCANSO 
 ⏱️ ${timers.toTimeString()}`.trim(), imgr + 'Descansando...', [
 [`INVENTARIO`, `${usedPrefix}inventory`],
-[`RECLAMAR`, `${usedPrefix}daily`]], m)
+[`RECLAMAR`, `${usedPrefix}daily`]], m) 
     
     const rewards = reward(user)
     let text = `🔖 ESTAS AVENTURANDO EN *${kt[1][0].name}*
