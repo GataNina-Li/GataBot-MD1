@@ -2,13 +2,29 @@ import { join } from 'path'
 import { promises } from 'fs'
 
 let handler = async (m, { conn, args, usedPrefix, __dirname }) => {
+const fkontak = {
+	"key": {
+    "participants":"0@s.whatsapp.net",
+		"remoteJid": "status@broadcast",
+		"fromMe": false,
+		"id": "Halo"
+	},
+	"message": {
+		"contactMessage": {
+			"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
+		}
+	},
+	"participant": "0@s.whatsapp.net"
+}
+
 let imgr = flaaa.getRandom()
     let _package = JSON.parse(await promises.readFile(join(__dirname, '../package.json')).catch(_ => ({}))) || {}
     let user = global.db.data.users[m.sender]
     
-    if (user.health >= 100) return m.reply(`*¡Tú Salud está llena!!*\n*SALUD ACTUAL: ❤️ ${user.health}*`.trim())
-  
-    const heal = 40 + (user.cat * 4)
+    if (user.health >= 100) return conn.sendButton(m.chat, `𝙏𝙐 𝙎𝘼𝙇𝙐𝘿 𝙀𝙎𝙏𝘼 𝙇𝙇𝙀𝙉𝘼 ❤️\n𝙔𝙊𝙐𝙍 𝙃𝙀𝘼𝙇𝙏𝙃 𝙄𝙎 𝙁𝙐𝙇𝙇 ❤️`, wm, imgr + `SALUD | HEALTH : ${user.health}`,
+    //m.reply(`*¡Tú Salud está llena!!*\n*SALUD ACTUAL: ❤️ ${user.health}*`.trim())
+    
+    const heal = 40 + (user.cat * 2)
     let count = Math.max(1, Math.min(Number.MAX_SAFE_INTEGER, (isNumber(args[0]) && parseInt(args[0]) || Math.round((50 - user.health) / heal)))) * 1
     
 if (user.potion < count) return conn.sendButton(m.chat,`${htki} *POCIÓN INSUFICIENTE* ${htka}`, 
