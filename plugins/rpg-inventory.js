@@ -789,7 +789,7 @@ ${readMore}
 *╭─────━• CAJAS*
 *╭──────━• BOX*
 *│${rpg.emoticon('common')} » ${common}*
-*│${rpg.emoticon('uncommon')} » ${uncommon}*
+*│${rpg.emoticon('uncommonn')} » ${uncommon}*
 *│${rpg.emoticon('mythic')} » ${mythic}*
 *│${rpg.emoticon('legendary')} » ${legendary}*
 *│${rpg.emoticon('pet')} » ${pet}*
