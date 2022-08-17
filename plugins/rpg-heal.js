@@ -18,14 +18,14 @@ const fkontak = {
 }
 
 let imgr = flaaa.getRandom()
-    let _package = JSON.parse(await promises.readFile(join(__dirname, '../package.json')).catch(_ => ({}))) || {}
-    let user = global.db.data.users[m.sender]
+let _package = JSON.parse(await promises.readFile(join(__dirname, '../package.json')).catch(_ => ({}))) || {}
+let user = global.db.data.users[m.sender]
     
-    if (user.health >= 100) return conn.sendButton(m.chat, `𝙏𝙐 𝙎𝘼𝙇𝙐𝘿 𝙀𝙎𝙏𝘼 𝙇𝙇𝙀𝙉𝘼 ❤️\n𝙔𝙊𝙐𝙍 𝙃𝙀𝘼𝙇𝙏𝙃 𝙄𝙎 𝙁𝙐𝙇𝙇 ❤️`, wm, imgr + `SALUD | HEALTH : ${user.health}`,
-    //m.reply(`*¡Tú Salud está llena!!*\n*SALUD ACTUAL: ❤️ ${user.health}*`.trim())
+if (user.health >= 100) return conn.sendButton(m.chat, `𝙏𝙐 𝙎𝘼𝙇𝙐𝘿 𝙀𝙎𝙏𝘼 𝙇𝙇𝙀𝙉𝘼 ❤️\n𝙔𝙊𝙐𝙍 𝙃𝙀𝘼𝙇𝙏𝙃 𝙄𝙎 𝙁𝙐𝙇𝙇 ❤️`, wm, imgr + `SALUD | HEALTH: ${user.health}`, [
+[`🏕️ 𝘼𝙑𝙀𝙉𝙏𝙐𝙍𝘼𝙍 | 𝙑𝙀𝙉𝙏𝙐𝙍𝙀`, `${usedPrefix}adventure`], [`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊 | 𝙄𝙉𝙑𝙀𝙉𝙏𝙊𝙍𝙔`, `${usedPrefix}adventure`]], fkontak, m)
     
-    const heal = 40 + (user.cat * 2)
-    let count = Math.max(1, Math.min(Number.MAX_SAFE_INTEGER, (isNumber(args[0]) && parseInt(args[0]) || Math.round((50 - user.health) / heal)))) * 1
+const heal = 40 + (user.cat * 2)
+let count = Math.max(1, Math.min(Number.MAX_SAFE_INTEGER, (isNumber(args[0]) && parseInt(args[0]) || Math.round((50 - user.health) / heal)))) * 1
     
 if (user.potion < count) return conn.sendButton(m.chat,`${htki} *POCIÓN INSUFICIENTE* ${htka}`, 
 `NECESITAS COMPRAR ${count - user.potion} POCIÓN 🥤 PARA CURAR
