@@ -497,7 +497,7 @@ await conn.sendButton(m.chat, caption, wm, imgr + 'Inventario : Inventory', [[`�
 } else if (args[0] == '3') { // Inventario 3
 
 let date = global.botdate
-    let { registered, age, lastrampok, lastdagang, lastcodereg, lastberkebon, lasthourly, lastberburu, lastbansos, lastadventure, lastfishing, lastwar, lastduel, lastmining, lastdungeon, lastclaim, lastweekly, lastmonthly } = global.db.data.users[m.sender]
+    let { registered, age, lastrampok, lastdagang, lastcofre, lastcodereg, lastberkebon, lasthourly, lastberburu, lastbansos, lastadventure, lastfishing, lastwar, lastduel, lastmining, lastdungeon, lastclaim, lastweekly, lastmonthly } = global.db.data.users[m.sender]
     let health = global.db.data.users[m.sender].health
     let healt = global.db.data.users[m.sender].healt
     let lapar = global.db.data.users[m.sender].laper
@@ -814,47 +814,49 @@ ${readMore}
 *╭┫ ✨ Exp » ${exp} ➠ ${max}*
 *╰──┬─┄*
 *╭──┴─────────┄⸙*
-*╰┫${rpg.emoticon('fox')}*\n${rubah == 0 ? '*╰┫❌' : '' || rubah > 0 && rubah < 5 ? `*╰┫ Nivel : Level » ${rubah} ➠ ${rubah + 1}*\n*╭┫ExpPet » ${_rubah} -> ${rubah *100}` : '' || rubah == 5 ? 'Nivel | Level ✦ ǁ MAX' : ''}*
+*╰┫${rpg.emoticon('fox')}*\n${rubah == 0 ? '*╰┫❌' : '' || rubah > 0 && rubah < 5 ? `*╰┫ Nivel : Level » ${rubah} ➠ ${rubah + 1}*\n*╭┫ ExpPet » ${_rubah} -> ${rubah *100}` : '' || rubah == 5 ? 'Nivel | Level ✦ ǁ MAX' : ''}*
 *╰──┬─┄*
 *╭──┴─────────┄⸙*
-*╰┫${rpg.emoticon('cat')}*\n${kucing == 0 ? '*╰┫❌' : '' || kucing > 0 && kucing < 5 ? `*╰┫ Nivel : Level » ${kucing} ➠ ${kucing + 1}*\n*╭┫ExpPet » ${_kucing} -> ${kucing *100}` : '' || kucing == 5 ? 'Nivel | Level ✦ ǁ MAX' : ''}*
+*╰┫${rpg.emoticon('cat')}*\n${kucing == 0 ? '*╰┫❌' : '' || kucing > 0 && kucing < 5 ? `*╰┫ Nivel : Level » ${kucing} ➠ ${kucing + 1}*\n*╭┫ ExpPet » ${_kucing} -> ${kucing *100}` : '' || kucing == 5 ? 'Nivel | Level ✦ ǁ MAX' : ''}*
 *╰──┬─┄*
 *╭──┴─────────┄⸙*
-*╰┫${rpg.emoticon('horse')}*\n${kuda == 0 ? '*╰┫❌' : '' || kuda > 0 && kuda < 5 ? `*╰┫ Nivel : Level » ${kuda} ➠ ${kuda + 1}*\n*╭┫ExpPet » ${_kuda} -> ${kuda *100}` : '' || kuda == 5 ? 'Nivel | Level ✦ ǁ MAX' : ''}*
+*╰┫${rpg.emoticon('horse')}*\n${kuda == 0 ? '*╰┫❌' : '' || kuda > 0 && kuda < 5 ? `*╰┫ Nivel : Level » ${kuda} ➠ ${kuda + 1}*\n*╭┫ ExpPet » ${_kuda} -> ${kuda *100}` : '' || kuda == 5 ? 'Nivel | Level ✦ ǁ MAX' : ''}*
 *╰──┬─┄*
 *╭──┴─────────┄⸙*
-*╰┫${rpg.emoticon('dragon')}*\n${naga == 0 ? '*╰┫❌' : '' || naga > 0 && naga < 5 ? `*╰┫ Nivel : Level » ${naga} ➠ ${naga + 1}*\n*╭┫ExpPet » ${_naga} -> ${naga *100}` : '' || naga == 5 ? 'Nivel | Level ✦ ǁ MAX' : ''}*
+*╰┫${rpg.emoticon('dragon')}*\n${naga == 0 ? '*╰┫❌' : '' || naga > 0 && naga < 5 ? `*╰┫ Nivel : Level » ${naga} ➠ ${naga + 1}*\n*╭┫ ExpPet » ${_naga} -> ${naga *100}` : '' || naga == 5 ? 'Nivel | Level ✦ ǁ MAX' : ''}*
 *╰──┬─┄*
 *╭──┴─────────┄⸙*
-*╰┫${rpg.emoticon('phonix')}*\n${phonix == 0 ? '*╰┫❌' : '' || phonix > 0 && phonix < 5 ? `*╰┫ Nivel : Level » ${phonix} ➠ ${phonix + 1}*\n*╭┫ExpPet » ${_phonix} -> ${phonix *100}` : '' || phonix == 5 ? 'Nivel | Level ✦ ǁ MAX' : ''}*
+*╰┫${rpg.emoticon('phonix')}*\n${phonix == 0 ? '*╰┫❌' : '' || phonix > 0 && phonix < 5 ? `*╰┫ Nivel : Level » ${phonix} ➠ ${phonix + 1}*\n*╭┫ ExpPet » ${_phonix} -> ${phonix *100}` : '' || phonix == 5 ? 'Nivel | Level ✦ ǁ MAX' : ''}*
 *╰──┬─┄*
 *╭──┴─────────┄⸙*
-*╰┫${rpg.emoticon('centaur')}*\n${centaur == 0 ? '*╰┫❌' : '' || centaur > 0 && centaur < 5 ? `*╰┫ Nivel : Level » ${centaur} ➠ ${centaur + 1}*\n*╭┫ExpPet » ${_centaur} -> ${centaur *100}` : '' || centaur == 5 ? 'Nivel | Level ✦ ǁ MAX' : ''}*
+*╰┫${rpg.emoticon('centaur')}*\n${centaur == 0 ? '*╰┫❌' : '' || centaur > 0 && centaur < 5 ? `*╰┫ Nivel : Level » ${centaur} ➠ ${centaur + 1}*\n*╭┫ ExpPet » ${_centaur} -> ${centaur *100}` : '' || centaur == 5 ? 'Nivel | Level ✦ ǁ MAX' : ''}*
 *╰──┬─┄*
 *╭──┴─────────┄⸙*
-*╰┫${rpg.emoticon('griffin')}*\n${griffin == 0 ? '*╰┫❌' : '' || griffin > 0 && griffin < 5 ? `*╰┫ Nivel : Level » ${griffin} ➠ ${griffin + 1}*\n*╭┫ExpPet » ${_griffin} -> ${griffin *100}` : '' || griffin == 5 ? 'Nivel | Level ✦ ǁ MAX' : ''}*
+*╰┫${rpg.emoticon('griffin')}*\n${griffin == 0 ? '*╰┫❌' : '' || griffin > 0 && griffin < 5 ? `*╰┫ Nivel : Level » ${griffin} ➠ ${griffin + 1}*\n*╭┫ ExpPet » ${_griffin} -> ${griffin *100}` : '' || griffin == 5 ? 'Nivel | Level ✦ ǁ MAX' : ''}*
 *╰──┬─┄*
 *╭──┴─────────┄⸙*
-*╰┫${rpg.emoticon('wolf')}*\n${serigala == 0 ? '*╰┫❌' : '' || serigala > 0 && serigala < 5 ? `*╰┫ Nivel : Level » *${serigala}* ➠ ${serigala + 1}*\n*╭┫ExpPet » ${_serigala} -> ${serigala *100}` : '' || serigala == 5 ? 'Nivel | Level ✦ ǁ MAX' : ''}*
+*╰┫${rpg.emoticon('wolf')}*\n${serigala == 0 ? '*╰┫❌' : '' || serigala > 0 && serigala < 5 ? `*╰┫ Nivel : Level » *${serigala}* ➠ ${serigala + 1}*\n*╭┫ ExpPet » ${_serigala} -> ${serigala *100}` : '' || serigala == 5 ? 'Nivel | Level ✦ ǁ MAX' : ''}*
 *╰────────────┄⸙*
 
-╭──────━• *COOLDOWN*
-│ *🏹 Berburu :* ${lastberburu > 0 ? '❌' : '✅'}
-│ *⛰️ Adventure :* ${lastadventure > 0 ? '❌' : '✅'}
-│ *⚔️ Duel :* ${lastduel > 0 ? '❌' : '✅'}
-│ *🛡️ War :* ${lastwar > 0 ? '❌'  : '✅'}
-│ *🎃 Dungeon :* ${lastdungeon > 0 ? '❌' : '✅'}
-│ *💱 Berdagang :* ${lastdagang > 0 ? '❌'  : '✅'}
-│ *🧺 Berkebun :* ${lastberkebon > 0 ? '❌'  : '✅'}
-│ *⛏️ Mining :* ${lastmining > 0 ? '❌' : '✅'}
-│ *🎣 Fishing :* ${lastfishing > 0 ? '❌'  : '✅'}
-│ *💰 Bansos :* ${lastbansos > 0 ? '❌' : '✅'}
-│
-│ *🕐 Hourly :* ${lasthourly > 0 ? '❌' : '✅'}
-│ *📦 Claim :* ${lastclaim > 0 ? '❌' : '✅'}
-│ *🎁 Weekly :* ${lastweekly > 0 ? '❌' : '✅'}
-│ *📮 Monthly :* ${lastmonthly > 0 ? '❌' : '✅'}
-╰──────────━⃝┅⃝━━────────┄⸙
+*╭──━• MISIONES DIARIAS*
+*╭────━•DAILY MISSIONS*
+*│ 🏹 Caza : Berburu :* ${lastberburu > 0 ? '❌' : '✅'}
+*│ ⛰️ Aventura : Adventure :* ${lastadventure > 0 ? '❌' : '✅'}
+*│ ⚔️ Duelo : Duel :* ${lastduel > 0 ? '❌' : '✅'}
+*│ 🛡️ Guerra : War :* ${lastwar > 0 ? '❌'  : '✅'}
+*│ 🎃 Mazmorras : Dungeon :* ${lastdungeon > 0 ? '❌' : '✅'}
+*│ 💱 Comercio : Berdagang :* ${lastdagang > 0 ? '❌'  : '✅'}
+*│ 🧺 Jardinería : Berkebun :* ${lastberkebon > 0 ? '❌'  : '✅'}
+*│ ⛏️ Minería : Mining :* ${lastmining > 0 ? '❌' : '✅'}
+*│ 🎣 Pezca : Fishing :* ${lastfishing > 0 ? '❌'  : '✅'}
+*│ 💰 Asistencia social : Bansos :* ${lastbansos > 0 ? '❌' : '✅'}
+*│*
+*│ 🕐 Cada hora : Hourly :* ${lasthourly > 0 ? '❌' : '✅'}
+*│ 📦 Reclamar : laim :* ${lastclaim > 0 ? '❌' : '✅'}
+*│ 🎁 Semanalmente :* ${lastweekly > 0 ? '❌' : '✅'}
+*│ 📮 Mensual :* ${lastmonthly > 0 ? '❌' : '✅'}
+*│ ⚗️ Cofre : Coffer* ${lastcofre > 0 ? '❌' : '✅'}
+*╰─⋆─⋆─⋆─⋆─⋆─⋆─⋆─⋆─┄⸙*
 
 ╭──────━• *ACHIEVEMENT*
 │📊 *Top level:* ${userslevel.indexOf(m.sender) + 1} / ${userslevel.length}
