@@ -16,7 +16,7 @@ let hiu = global.db.data.users[m.sender].hiu
 let udang = global.db.data.users[m.sender].udang
 let ikan = global.db.data.users[m.sender].ikan
 let orca = global.db.data.users[m.sender].orca
-//let wm = global.wm
+//let wm = global.wm 
 
 let past = `*—「 KOLAM 🏝️ 」—*
   
