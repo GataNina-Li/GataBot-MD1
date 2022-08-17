@@ -105,6 +105,8 @@ let menu = `
 ┃🌐➺ _${usedPrefix}daradmin | promote *@tag*_
 ┃🌐➺ _${usedPrefix}quitar | demote *@tag*_
 ┃🌐➺ _${usedPrefix}banchat_
+┃🌐➺ _${usedPrefix}reglas | rules_
+┃🌐➺ _${usedPrefix}telegram | grupotelegram_
 ┃🌐➺ _${usedPrefix}unbanchat_
 ┃🌐➺ _${usedPrefix}banuser *@tag*_
 ┃🌐➺ _${usedPrefix}unbanuser *@tag*_
@@ -113,9 +115,6 @@ let menu = `
 ┃🌐➺ _${usedPrefix}tagall *texto*_
 ┃🌐➺ _${usedPrefix}hidetag *texto*_
 ┃🌐➺ _${usedPrefix}infogrupo | infogroup_
-┃🌐➺ _${usedPrefix}configuracion_
-┃🌐➺ _${usedPrefix}settings_
-┃🌐➺ _${usedPrefix}vergrupo_
 ┃🌐➺ _${usedPrefix}enlace | link_
 ┃🌐➺ _${usedPrefix}newnombre | setname *texto*_
 ┃🌐➺ _${usedPrefix}newdesc | setdesc *texto*_
