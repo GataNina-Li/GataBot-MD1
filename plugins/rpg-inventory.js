@@ -164,7 +164,7 @@ if (!args[0]) {
 {title: "დ 𝘐𝘕𝘝𝘌𝘕𝘛𝘈𝘙𝘐𝘖 - 𝘐𝘕𝘝𝘌𝘕𝘛𝘖𝘙𝘠 4", rowId: usedPrefix + command + ' 4'}
 ]
 },{
-	title: comienzo + ' ❖ 𝗣𝗘𝗖𝗘𝗦 - 𝗙𝗜𝗦𝗛 ❖ ' +fin,
+	title: comienzo + ' ❖ 𝗣𝗘𝗖𝗘𝗦 - 𝗙𝗜𝗦𝗛 ❖ ' + fin,
 	rows: [
 {title: "ღ 𝘗𝘐𝘚𝘊𝘐𝘕𝘈 - 𝘗𝘖𝘖𝘓", rowId: usedPrefix + command + ' invkolam'},
 {title: "ღ 𝘈𝘊𝘜𝘈𝘙𝘐𝘖 - 𝘈𝘘𝘜𝘈𝘙𝘐𝘜𝘔", rowId: usedPrefix + 'kolamikan'}
