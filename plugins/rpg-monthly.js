@@ -5,7 +5,7 @@ const rewards = {
     mythic: 3,
     legendary: 1
 }
-
+ 
 const cooldown = 2592000000
 let handler = async (m) => {
     let user = global.db.data.users[m.sender]
