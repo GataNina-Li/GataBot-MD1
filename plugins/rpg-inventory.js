@@ -668,7 +668,7 @@ let date = global.botdate
 *│${rpg.emoticon('level')} ⊹ ${level}*
 *│${rpg.emoticon('exp')} ⊹ ${exp}*
 *│🛎️ Rango : Role:* ${role}
-*│${rpg.emoticon('arc')} ⊹ ${limit}*
+*│${rpg.emoticon('limit')} ⊹ ${limit}*
 *│${registered ? '✨ Edad : Age:* ' + age : ''}
 *╰─⋆─⋆─⋆──⊱ 𓃠 ⊰─⋆─⋆─⋆─┄⸙*
 ${readMore}
