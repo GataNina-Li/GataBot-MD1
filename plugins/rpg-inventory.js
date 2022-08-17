@@ -839,7 +839,7 @@ ${readMore}
 *╰────────────┄⸙*
 
 *╭──━• MISIONES DIARIAS*
-*╭────━•DAILY MISSIONS*
+*╭────━• DAILY MISSIONS*
 *│ 🏹 Caza : Berburu :* ${lastberburu > 0 ? '❌' : '✅'}
 *│ ⛰️ Aventura : Adventure :* ${lastadventure > 0 ? '❌' : '✅'}
 *│ ⚔️ Duelo : Duel :* ${lastduel > 0 ? '❌' : '✅'}
@@ -858,19 +858,19 @@ ${readMore}
 *│ ⚗️ Cofre : Coffer* ${lastcofre > 0 ? '❌' : '✅'}
 *╰─⋆─⋆─⋆─⋆─⋆─⋆─⋆─⋆─┄⸙*
 
-╭──────━• *ACHIEVEMENT*
-│📊 *Top level:* ${userslevel.indexOf(m.sender) + 1} / ${userslevel.length}
-│💹 *Top Money:* ${usersmoney.indexOf(m.sender) + 1} / ${usersmoney.length}
-│🪙  *Top Gold:* ${usersgold.indexOf(m.sender) + 1} / ${usersgold.length}
-│💎 *Top Diamond:* ${usersdiamond.indexOf(m.sender) + 1} / ${usersdiamond.length}
-│🧭 *Top Arloji:* ${usersarlok.indexOf(m.sender) + 1} / ${usersarlok.length}
-│🥤 *Top Potion:* ${userspotion.indexOf(m.sender) + 1} / ${userspotion.length}
-│📦 *Top Common:* ${userscommon.indexOf(m.sender) + 1} / ${userscommon.length}
-│🛍️ *Top Uncommon:* ${usersuncommon.indexOf(m.sender) + 1} / ${usersuncommon.length}
-│🎁 *Top Mythic:* ${usersmythic.indexOf(m.sender) + 1} / ${usersmythic.length}
-│🧰 *Top Legendary:* ${userslegendary.indexOf(m.sender) + 1} / ${userslegendary.length}
-│🗑️ *Top Sampah:* ${userssampah.indexOf(m.sender) + 1} / ${userssampah.length}
-╰──────────━⃝┅⃝━━────────┄⸙`
+*╭──────━• TOPS*
+*│📊 Top level: ${userslevel.indexOf(m.sender) + 1} / ${userslevel.length}*
+*│🐱 Top GataCoins: ${usersmoney.indexOf(m.sender) + 1} / ${usersmoney.length}*
+*│🔔 Top Gold: ${usersgold.indexOf(m.sender) + 1} / ${usersgold.length}*
+*│💎+ Top Diamond+: ${usersdiamond.indexOf(m.sender) + 1} / ${usersdiamond.length}*
+*│🧭 Top Clock: ${usersarlok.indexOf(m.sender) + 1} / ${usersarlok.length}*
+*│🥤 Top Potion: ${userspotion.indexOf(m.sender) + 1} / ${userspotion.length}*
+*│📦 Top Common: ${userscommon.indexOf(m.sender) + 1} / ${userscommon.length}*
+*│🥡 Top Uncommon: ${usersuncommon.indexOf(m.sender) + 1} / ${usersuncommon.length}*
+*│🗳️ Top Mythic: ${usersmythic.indexOf(m.sender) + 1} / ${usersmythic.length}*
+*│🎁 Top Legendary: ${userslegendary.indexOf(m.sender) + 1} / ${userslegendary.length}*
+*│🗑️ Top Trash: ${userssampah.indexOf(m.sender) + 1} / ${userssampah.length}*
+*╰─⋆─⋆─⋆──⊱ 𓃠 ⊰─⋆─⋆─⋆─┄⸙*`
  
 const fkontak = {
 	"key": {
