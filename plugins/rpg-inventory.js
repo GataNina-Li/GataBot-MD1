@@ -739,8 +739,8 @@ ${readMore}
 *│💬 Pescados : Fish Total » ${orca + udang + hiu + lobster + lumba + cumi + gurita + kepiting + paus + nila + bawal + ikan + lele + psepick + psenjata }*
 *╰─⋆─⋆─⋆─⋆─⋆─⋆─⋆─⋆─┄⸙*
 
-*╭─────━• INVENTARIO*
-*╭─────━• INVENTORY*
+*╭────━• INVENTARIO*
+*╭────━• INVENTORY*
 *│💎+ Diamante+ : Diamond+ » ${diamond}*
 *│🧪 Ingredientes : Ingredients » ${ramuan}*
 *│🥤 Poción : Potion » ${potion}*
@@ -766,7 +766,7 @@ ${readMore}
 *│🎒 Total inv » ${aqua + ramuan + kardus + kaleng + arlok + psepick + psenjata + common + uncommon + mythic + legendary + pet + diamond + potion + besi + emas + string + sampah + kayu + batu + potion + sampah + makananpet + apel + ayamb + ayamg + sapir + ssapi} Comida*
 *╰─⋆─⋆─⋆─⋆─⋆─⋆─⋆─⋆─┄⸙*
 
-*──━• FRUTAS Y SEMILLAS*
+*╭──━• FRUTAS Y SEMILLAS*
 *╭──━• FRUIT & SEED*
 *│🥭 Mango » ${mangga}*
 *│🍇 Uva : Grape » ${anggur}*
@@ -786,13 +786,14 @@ ${readMore}
 *│» ${bibitapel}*
 *╰─⋆─⋆─⋆─⋆─⋆─⋆─⋆─⋆─┄⸙*
 
-╭──────━• *CRATE*
-│📦 *Common:* ${common}
-│🛍️ *Uncommon:* ${uncommon}
-│🎁 *Mythic:* ${mythic}
-│🧰 *Legendary:* ${legendary}
-│📫 *Pet:* ${pet}
-╰──────────━⃝┅⃝━━────────┄⸙
+*╭─────━• *CAJAS*
+*╭──────━• *BOX*
+*│${rpg.emoticon('common')} » ${common}*
+*│${rpg.emoticon('uncommon')} » ${uncommon}*
+*│${rpg.emoticon('mythic')} » ${mythic}*
+*│${rpg.emoticon('legendary')} » ${legendary}*
+*│${rpg.emoticon('pet')} » ${pet}*
+*╰─⋆─⋆─⋆─⋆─⋆─⋆─⋆─⋆─┄⸙*
 
 ╭──────━• *PET*
 │🐴 *Kuda:* ${kuda == 0 ? '❌' : '' || kuda == 1 ? 'Level 1' : '' || kuda == 2 ? 'Level 2' : '' || kuda == 3 ? 'Level 3' : '' || kuda == 4 ? 'Level 4' : '' || kuda == 5 ? 'Level MAX' : ''}
