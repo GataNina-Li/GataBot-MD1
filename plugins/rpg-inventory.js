@@ -807,35 +807,35 @@ ${readMore}
 *│${rpg.emoticon('wolf')} » ${serigala == 0 ? '❌' : '' || serigala == 1 ? 'Nivel | Level ✦ 1' : '' || serigala == 2 ? 'Nivel | Level ✦ 2' : '' || serigala == 3 ? 'Nivel | Level ✦ 3' : '' || naga == 4 ? 'Nivel | Level ✦ 4' : '' || serigala == 5 ? 'Nivel | Level ✦ 5 ǁ MAX' : ''}*
 *╰─⋆─⋆─⋆─⋆─⋆─⋆─⋆─⋆─┄⸙*
 
-*╭ ${htki} PROGSES ${htka}*
+*╭* ${htki} *PROGSES* ${htka}
 *╰──┬─┄*
 *╭──┴─────────┄⸙*
 *╰┫ 📊 Nivel : Level » ${level} ➠  ${level + 1}*
 *╭┫ ✨ Exp » ${exp} ➠ ${max}*
 *╰──┬─┄*
 *╭──┴─────────┄⸙*
-*╰┫${rpg.emoticon('fox')}*\n${rubah == 0 ? '*❌' : '' || rubah > 0 && rubah < 5 ? `*╰┫ Nivel : Level » ${rubah} ➠ ${rubah + 1}*\n*╭┫Exp ${_rubah} -> ${rubah *100}` : '' || rubah == 5 ? 'Nivel | Level ✦ ǁ MAX' : ''}*
+*╰┫${rpg.emoticon('fox')}*\n${rubah == 0 ? '*╰┫❌' : '' || rubah > 0 && rubah < 5 ? `*╰┫ Nivel : Level » ${rubah} ➠ ${rubah + 1}*\n*╭┫ExpPet » ${_rubah} -> ${rubah *100}` : '' || rubah == 5 ? 'Nivel | Level ✦ ǁ MAX' : ''}*
 *╰──┬─┄*
 *╭──┴─────────┄⸙*
-*╰┫${rpg.emoticon('cat')}*\n${kucing == 0 ? '*❌' : '' || kucing > 0 && kucing < 5 ? `*╰┫ Nivel : Level » ${kucing} ➠ ${kucing + 1}*\n*╭┫Exp ${_kucing} -> ${kucing *100}` : '' || kucing == 5 ? 'Nivel | Level ✦ ǁ MAX' : ''}*
+*╰┫${rpg.emoticon('cat')}*\n${kucing == 0 ? '*╰┫❌' : '' || kucing > 0 && kucing < 5 ? `*╰┫ Nivel : Level » ${kucing} ➠ ${kucing + 1}*\n*╭┫ExpPet » ${_kucing} -> ${kucing *100}` : '' || kucing == 5 ? 'Nivel | Level ✦ ǁ MAX' : ''}*
 *╰──┬─┄*
 *╭──┴─────────┄⸙*
-*╰┫${rpg.emoticon('horse')}*\n${kuda == 0 ? '*❌' : '' || kuda > 0 && kuda < 5 ? `*╰┫ Nivel : Level » ${kuda} ➠ ${kuda + 1}*\n*╭┫Exp ${_kuda} -> ${kuda *100}` : '' || kuda == 5 ? 'Nivel | Level ✦ ǁ MAX' : ''}*
+*╰┫${rpg.emoticon('horse')}*\n${kuda == 0 ? '*╰┫❌' : '' || kuda > 0 && kuda < 5 ? `*╰┫ Nivel : Level » ${kuda} ➠ ${kuda + 1}*\n*╭┫ExpPet » ${_kuda} -> ${kuda *100}` : '' || kuda == 5 ? 'Nivel | Level ✦ ǁ MAX' : ''}*
 *╰──┬─┄*
 *╭──┴─────────┄⸙*
-*╰┫${rpg.emoticon('dragon')}*\n${naga == 0 ? '*❌' : '' || naga > 0 && naga < 5 ? `*╰┫ Nivel : Level » ${naga} ➠ ${naga + 1}*\n*╭┫Exp ${_naga} -> ${naga *100}` : '' || naga == 5 ? 'Nivel | Level ✦ ǁ MAX' : ''}*
+*╰┫${rpg.emoticon('dragon')}*\n${naga == 0 ? '*╰┫❌' : '' || naga > 0 && naga < 5 ? `*╰┫ Nivel : Level » ${naga} ➠ ${naga + 1}*\n*╭┫ExpPet » ${_naga} -> ${naga *100}` : '' || naga == 5 ? 'Nivel | Level ✦ ǁ MAX' : ''}*
 *╰──┬─┄*
 *╭──┴─────────┄⸙*
-*╰┫${rpg.emoticon('phonix')}*\n${phonix == 0 ? '*❌' : '' || phonix > 0 && phonix < 5 ? `*╰┫ Nivel : Level » ${phonix} ➠ ${phonix + 1}*\n*╭┫Exp ${_phonix} -> ${phonix *100}` : '' || phonix == 5 ? 'Nivel | Level ✦ ǁ MAX' : ''}*
+*╰┫${rpg.emoticon('phonix')}*\n${phonix == 0 ? '*╰┫❌' : '' || phonix > 0 && phonix < 5 ? `*╰┫ Nivel : Level » ${phonix} ➠ ${phonix + 1}*\n*╭┫ExpPet » ${_phonix} -> ${phonix *100}` : '' || phonix == 5 ? 'Nivel | Level ✦ ǁ MAX' : ''}*
 *╰──┬─┄*
 *╭──┴─────────┄⸙*
-*╰┫${rpg.emoticon('centaur')}*\n${centaur == 0 ? '*❌' : '' || centaur > 0 && centaur < 5 ? `*╰┫ Nivel : Level » ${centaur} ➠ ${centaur + 1}*\n*╭┫Exp ${_centaur} -> ${centaur *100}` : '' || centaur == 5 ? 'Nivel | Level ✦ ǁ MAX' : ''}*
+*╰┫${rpg.emoticon('centaur')}*\n${centaur == 0 ? '*╰┫❌' : '' || centaur > 0 && centaur < 5 ? `*╰┫ Nivel : Level » ${centaur} ➠ ${centaur + 1}*\n*╭┫ExpPet » ${_centaur} -> ${centaur *100}` : '' || centaur == 5 ? 'Nivel | Level ✦ ǁ MAX' : ''}*
 *╰──┬─┄*
 *╭──┴─────────┄⸙*
-*╰┫${rpg.emoticon('griffin')}*\n${griffin == 0 ? '*❌' : '' || griffin > 0 && griffin < 5 ? `*╰┫ Nivel : Level » ${griffin} ➠ ${griffin + 1}*\n*╭┫Exp ${_griffin} -> ${griffin *100}` : '' || griffin == 5 ? 'Nivel | Level ✦ ǁ MAX' : ''}*
+*╰┫${rpg.emoticon('griffin')}*\n${griffin == 0 ? '*╰┫❌' : '' || griffin > 0 && griffin < 5 ? `*╰┫ Nivel : Level » ${griffin} ➠ ${griffin + 1}*\n*╭┫ExpPet » ${_griffin} -> ${griffin *100}` : '' || griffin == 5 ? 'Nivel | Level ✦ ǁ MAX' : ''}*
 *╰──┬─┄*
 *╭──┴─────────┄⸙*
-*╰┫${rpg.emoticon('wolf')}*\n${serigala == 0 ? '*❌' : '' || serigala > 0 && serigala < 5 ? `*╰┫ Nivel : Level » *${serigala}* ➠ ${serigala + 1}*\n*╭┫Exp ${_serigala} -> ${serigala *100}` : '' || serigala == 5 ? 'Nivel | Level ✦ ǁ MAX' : ''}*
+*╰┫${rpg.emoticon('wolf')}*\n${serigala == 0 ? '*╰┫❌' : '' || serigala > 0 && serigala < 5 ? `*╰┫ Nivel : Level » *${serigala}* ➠ ${serigala + 1}*\n*╭┫ExpPet » ${_serigala} -> ${serigala *100}` : '' || serigala == 5 ? 'Nivel | Level ✦ ǁ MAX' : ''}*
 *╰────────────┄⸙*
 
 ╭──────━• *COOLDOWN*
