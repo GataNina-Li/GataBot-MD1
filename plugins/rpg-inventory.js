@@ -889,8 +889,8 @@ const fkontak = {
 // let ftroli = { key: {participant : '0@s.whatsapp.net'}, message: { orderMessage: { itemCount: 2022, status: 1, surface: 1, message: bottime, orderTitle: wm, sellerJid: '0@s.whatsapp.net' } } }   
  await conn.sendButton(m.chat, str, wm, imgr + 'Inventario : Inventory', [[`${healt < 40 ? 'Heal' : 'Adventure'}`, `${healt < 40 ? '.heal' : '.adventure'}`], ['Shop', '.shop']], m, {quoted: fkontak})
 
-} else if (args[0] == '4') {
-// Inventory 4
+} else if (args[0] == '4') { // Inventario 4
+
 let health = global.db.data.users[m.sender].health
     let armor = global.db.data.users[m.sender].armor 
    // let warn = global.db.data.users[m.sender].warn
@@ -963,7 +963,10 @@ let health = global.db.data.users[m.sender].health
     let emaspro = global.db.data.users[m.sender].emasbatang
     let hero = global.db.data.users[m.sender].hero
     let exphero = global.db.data.users[m.sender].exphero
+    let dia = global.db.data.users[m.sender].limit
+    let token = global.db.data.users[m.sender].joincount
     let { max } = xpRange(level, exp, global.multiplier)
+    
    // let name = m.fromMe ? conn.user : conn.contacts[m.sender]
     let name = m.sender
     let sortedmoney = Object.entries(global.db.data.users).sort((a, b) => b[1].money - a[1].money)
@@ -985,65 +988,99 @@ let health = global.db.data.users[m.sender].health
     let usersmythic = sortedmythic.map(v => v[0])
     let userslegendary = sortedlegendary.map(v => v[0])
     let str = `
-Inventory *${await conn.getName(name)}*
+╭━━━━━━━━━⬣
+┃ *INVENTARIO | INVENTORY*
+┃ *${await conn.getName(name)}*
+┃ *╸╸╸╸╸╸╸╸╸╸╸╸╸╸*
+┃ ❤️ *Vida | Life* » *${health}*
+┃ 👚 *Armadura | Armor*  
+┃ *» ${armor == 0 ? 'No tengo | I do not have' : '' || armor == 1 ? '✦ Armadura de Cuero : Leather Armor' : '' || armor == 2 ? '✦ Armadura de Hierro : Iron Armor' : '' || armor == 3 ? '✦ Armadura Mágica : Magic Armor' : '' || armor == 4 ? '✦ Armadura Robótica : Robotic Armor' : '' || armor == 5 ? 'Armadura Cyborg Estelar : Cyborg Armor ǁ MAX' : ''}*
+┃ *╸╸╸╸╸╸╸╸╸╸╸╸╸╸*
+┃ 🐈 *GataCoins: » ${money}*
+┃ 🎫 *Gata Tickers » ${tiketcoin}*
+┃ 💎 *Diamante : Diamond » ${dia}*
+┃ ❇️ *Nivel : Level » ${level}*
+┃ ⚡ *Exp » ${exp}*
+┃ 🪙 *Token » ${token}*
+┃ 🏦 *Banco : Bank » ${bank}*
+┃ 🎟️ *Cupón : Coupon » ${cupon}*
+┃ 📉 *Gastos : Expg » ${expg}*
+┃ 💵 *Billetes : Fare » ${tiketm}*
+╰━━━━━━━━━⬣
 
-Health: *${health}*
-Armor: *${armor == 0 ? 'Tidak Punya' : '' || armor == 1 ? 'Leather Armor' : '' || armor == 2 ? 'Iron Armor' : '' || armor == 3 ? 'Gold Armor' : '' || armor == 4 ? 'Diamond Armor' : '' || armor == 5 ? 'Netherite Armor' : ''}*
-Money: *${money}*
-Limit: *${limit}*
-Level: *${level}*
-Exp: *${exp}*
-Atm: *${bank}*
-Cupon: *${cupon}*
-Expg: *${expg}*
-Tiketm: *${tiketm}*
-Tiketcoin: *${tiketcoin}*
+╭━━━━━━━━━⬣
+┃ *RECUERSOS Y ALIMENTOS*
+┃ *RESOURCES AND FOOD*
+┃ *╸╸╸╸╸╸╸╸╸╸╸╸╸╸*
+┃ 🥤 *Poción : Potion » ${potion}*
+┃ 🧪 *Ingredientes : Ingredients » ${ramuan}*
+┃ ⛓ *Hierro : Iron » ${iron}*
+┃ 🕸️ *Cuerda : String » ${string}*
+┃ ⚔️ *Espada : Sword » ${sword}*
+┃ 🗑️ *Basura : Trash: » ${sampah}*
+┃ 🪵 *Madera : Wood » ${kayu}*
+┃ 🪨 *Piedra : Rock » ${batu}*
+┃ 💧 Agua : Water » *${aqua}*
+┃ *╸╸╸╸╸╸╸╸╸╸╸╸╸╸*
+┃ 🍱 *Alimentos para mascotas: Pet Food*
+┃ » *${makananpet}*
+┃ 🕊️ *Comida para Fénix : Phoenix Food*
+┃ » *${makananphonix}*
+┃ 🐉 *Comida para Dragón : Dragon Food*
+┃ » *${makanannaga}*
+┃ 🦅 *Comida para Ave : Griffin Food*
+┃ » *${makanangriffin}*
+┃ 🌀 *Comida Mágica : Magic Food*
+┃ » *${makanankyubi}*
+┃ 🐐 *Comida para Centauro : Centauro Food*
+┃ » *${makanancentaur}*
+┃ *╸╸╸╸╸╸╸╸╸╸╸╸╸╸*
+┃ *Total inv » ${diamond + potion + ramuan + sampah + kayu + sword + iron + string + makananpet + makananphonix + makanannaga + makanangriffin + makanankyubi + makanancentaur} Elementos*
+╰━━━━━━━━━⬣
+╭━━━━━━━━━⬣
+┃ *CAJAS : BOX*
+┃ *╸╸╸╸╸╸╸╸╸╸╸╸╸╸*
+┃📥 *Cajas : Boxs » ${boxs}*
+┃📦 *Caja Común : Common Box » ${common}*
+┃🥡 *Caja Poco Común : Uncommon » ${uncommon}*
+┃🗳️ *Caja Mítica : Mythic Box » ${mythic}*
+┃🎁 *Caja Legendaria : Legendary Box » ${legendary}*.
+┃🍱 *Caja para Mascota : Pet Box » ${pet}*
+┃💐 *Caja de Jardinería : Garden boxs » ${gardenboxs}*
+╰━━━━━━━━━⬣
 
-*Inventory*
-Potion: *${potion}*
-Ramuan: *${ramuan}*
-Iron: *${iron}*
-String: *${string}*
-Sword: *${sword}*
-Sampah: *${sampah}*
-Kayu: *${kayu}*
-Batu: *${batu}*
-Aqua: *${aqua}*
-Makanan Pet: *${makananpet}*
-Makanan Phonix: *${makananphonix}*
-Makanan Naga: *${makanannaga}*
-Makanan Griffin: *${makanangriffin}*
-Makanan Kyubi: *${makanankyubi}*
-Makanan Centaur: *${makanancentaur}*
-Total inv: *${diamond + potion + ramuan + sampah + kayu + sword + iron + string + makananpet + makananphonix + makanannaga + makanangriffin + makanankyubi + makanancentaur}* item
+╭━━━━━━━━━⬣ 
+┃ *FRUTAS : FRUIT*
+┃ *╸╸╸╸╸╸╸╸╸╸╸╸╸╸*
+┃🥭 *Mango » ${mangga}*
+┃🍇 *Uva : Grape » ${anggur}*
+┃🍌 *Platano : Banana » ${pisang}*
+┃🍊 *Naranja : Orange » ${jeruk}*
+┃🍎 *Manzana : Apple » ${apel}*
+╰━━━━━━━━━⬣
 
-*Crate*
-Boxs: *${boxs}*
-Common: *${common}*
-Uncommon: *${uncommon}*
-Mythic: *${mythic}*
-Legendary: *${legendary}*.
-Pet: *${pet}*
-Gardenboxs: *${gardenboxs}*
+╭━━━━━━━━━⬣ 
+┃ *SEMILLAS : SEED*
+┃ *╸╸╸╸╸╸╸╸╸╸╸╸╸╸*
+┃🌾 *Semillas de Mango : Mango Seeds*
+┃ *» ${bibitmangga}*
+┃🌾 *Semillas de uva : Grape Seeds*
+┃ *» ${bibitanggur}*                                   
+┃🌾 *Semillas de plátano : Banana Seeds*
+┃ *» ${bibitpisang}*
+┃🌾 *Semillas de naranja : Orange Seeds*
+┃ *» ${bibitjeruk}*
+┃🌾 *Semillas de manzana : Apple seeds*
+┃ *» ${bibitapel}*
+╰━━━━━━━━━⬣
 
-*Fruits*
-Mangga: ${mangga}
-Anggur: ${anggur}
-Pisang: ${pisang}
-Jeruk: ${jeruk}
-Apel: ${apel}
-
-*Seeds*
-Bibit Mangga: ${bibitmangga}
-Bibit Anggur: ${bibitanggur}
-Bibit Pisang: ${bibitpisang}
-Bibit Jeruk: ${bibitjeruk}
-Bibit Apel: ${bibitapel}
-
-*Trash Man*
-Kardus: ${kardus}
-Kaleng: ${kaleng}
-Botol: ${botol}
+╭━━━━━━━━━⬣ 
+┃ *SÚPER BASURA : SUPER TRASH*
+┃ *╸╸╸╸╸╸╸╸╸╸╸╸╸╸
+┃ 🪧 *Cartón : Paperboard ${kardus}*
+┃ 🥫 *Lata : Can ${kaleng}*
+┃ 🍶 *Botella : Bottle ${botol}*
+╰━━━━━━━━━⬣
 
 *Mining*
 Berlian: ${berlian}
