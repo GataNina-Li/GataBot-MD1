@@ -1166,8 +1166,8 @@ const fkontak = {
 
     await conn.sendButton(m.chat, str, wm, imgr + 'Inventario : Inventory', [[`ᴛʀᴀɴsғᴇʀ`, `.transfer`],
 [`ᴀᴅᴠᴇɴᴛᴜʀᴇ`, `.adventure`]], fkontak, m, { mentions: conn.parseMention(str) })
-    } else if (args[0] == 'invkolam') {
-// Inventory kolam
+    } else if (args[0] == 'invkolam') { // Inventario piscina
+
     let paus = global.db.data.users[m.sender].paus 
          let kepiting = global.db.data.users[m.sender].kepiting
          let gurita = global.db.data.users[m.sender].gurita 
@@ -1183,31 +1183,46 @@ const fkontak = {
          let pancingan = global.db.data.users[m.sender].pancingan
          let _pancingan = global.db.data.users[m.sender].anakpancingan 
          let aineh = `
-*Fish Pond*
-Hiu: ${hiu}
-Ikan: ${ikan}
-Dory: ${dory}
-Orca: ${orca}
-Paus: ${paus}
-Cumi: ${cumi}
-Gurita: ${gurita}
-Buntal: ${buntal}
-Udang: ${udang}
-Lumba²: ${lumba}
-Lobster: ${lobster}
-Kepiting: ${kepiting}
+╭━━━━━━━━━⬣ 
+┃ *PISCINA DE PECES : FISH POOL*
+┃ *╸╸╸╸╸╸╸╸╸╸╸╸╸╸*
+┃ 🦈 *Tiburón : Shark » ${hiu}*
+┃ 🐟 *Pez : Fish » ${ikan}*
+┃ 🐠 *Dory : Surgeonfish » ${dory}*
+┃ 🐋 *Orca : Killer whale » ${orca}*
+┃ 🐳 *Ballena : Whale » ${paus}*
+┃ 🦑 *Calamar : Squid » ${cumi}*
+┃ 🐙 *Pulpo : Octopus » ${gurita}*
+┃ 🐡 *Pez Globo : Blowfish » ${buntal}*
+┃ 🦐 *Camarón : Shrimp » ${udang}*
+┃ 🐬 *Delfín : Dolphin » ${lumba}*
+┃ 🦞 *Langosta : Lobster » ${lobster}*
+┃ 🦀 *Cangrejo : Crab » ${kepiting}*
+╰━━━━━━━━━⬣
 
-*Level Pancingan:*
-Pancingan: *${pancingan == 0 ? 'Tidak Punya' : '' || pancingan == 1 ? 'Level 1' : '' || pancingan == 2 ? 'Level 2' : '' || pancingan == 3 ? 'Level 3' : '' || pancingan == 4 ? 'Level 4' : '' || pancingan == 5 ? 'Level MAX' : ''}*
-
-╭────────────────
-│pancingan ${pancingan == 0 ? 'Tidak Punya' : '' || pancingan > 0 && pancingan < 5 ? `Level *${pancingan}* To level *${pancingan + 1}*\n│Exp *${_pancingan}* -> *${pancingan *10000}*` : '' || pancingan == 5 ? '*Max Level*' : ''}
-╰────────────────
+*DATOS DEL GANCHO : HOOK DATA*
+*╭────────────────*
+*│🪝 Gancho : Hook » ${pancingan == 0 ? 'No tengo | I do not have' : '' || pancingan == 1 ? 'Nivel | Level ✦ 1' : '' || pancingan == 2 ? 'Nivel | Level ✦ 2' : '' || pancingan == 3 ? 'Nivel | Level ✦ 3' : '' || pancingan == 4 ? 'Nivel | Level ✦ 4' : '' || pancingan == 5 ? 'Nivel | Level ✦ 5 ǁ MAX' : ''}*
+*│ Poder del Gancho » ${pancingan == 0 ? 'No tengo | I do not have' : '' || pancingan > 0 && pancingan < 5 ? `Nivel : Level » ${pancingan} a Nivel ${pancingan + 1}\n*│Exp » ${_pancingan} -> ${pancingan *10000}*` : '' || pancingan == 5 ? 'Nivel | Level ✦ 5 ǁ MAX' : ''}*
+*╰────────────────*
 `.trim()
 
-await conn.sendButton(m.chat, aineh, wm, imgr + 'inventory', [[`ᴛʀᴀɴsғᴇʀ`, `.transfer`],
-[`ᴀᴅᴠᴇɴᴛᴜʀᴇ`, `.adventure`]], m)
+const fkontak = {
+	"key": {
+    "participants":"0@s.whatsapp.net",
+		"remoteJid": "status@broadcast",
+		"fromMe": false,
+		"id": "Halo"
+	},
+	"message": {
+		"contactMessage": {
+			"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
+		}
+	},
+	"participant": "0@s.whatsapp.net"
 }
+await conn.sendButton(m.chat, aineh, wm, imgr + 'Inventario : Inventory', [[`ᴛʀᴀɴsғᴇʀ`, `.transfer`],
+[`ᴀᴅᴠᴇɴᴛᴜʀᴇ`, `.adventure`]], fkontak, m)}
 
 }
 handler.help = ['inventory', 'inv']
