@@ -1,4 +1,4 @@
-> #### 🚀 Versión actual: 1.2.0
+> #### 🚀 Versión actual: 1.2.12
 
 <p align="center"> 
   <a href="https://github.com/GataNina-Li"><img src="http://readme-typing-svg.herokuapp.com?font=mono&size=17&duration=4000&color=F7B11B&center=falso&vCenter=falso&lines=GataBot-MD++%F0%9F%90%88;Gracias+por+visitar+este+repositorio.+%F0%9F%92%96" height="90px"
@@ -31,16 +31,16 @@
 <p align="hihg">   
 <a href="https://instagram.com/gata_dios" target="_blank"> <img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a> <img src="https://github.com/siegrin/siegrin/blob/main/Assets/Handshake.gif" height="30px">
 <a href="https://github.com/GataNina-Li"><img src="http://readme-typing-svg.herokuapp.com?font=mono&size=14&duration=3000&color=ABF7BB&center=verdadero&vCenter=verdadero&lines=Solo+escr%C3%ADba+si+tiene+dudas." height="40px"
-</p>
+</p> 
   
 [![blog](https://img.shields.io/badge/Grupo-GataBot-25D366?style=for-the-badge&logo=whatsapp&logoColor=white 
 )](https://chat.whatsapp.com/CunoFmEfBW75APfI0ZO5DJ)  <a href="https://chat.whatsapp.com/Hahc7UwSouH9jIDStkT5QW"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/1200px-WhatsApp_logo-color-vertical.svg.png" height="29px"></a>
 
 [![blog](https://img.shields.io/badge/Grupo2-GataBot-25D366?style=for-the-badge&logo=whatsapp&logoColor=white 
-)](https://chat.whatsapp.com/KFtXRV9OdK31cArkyxRpq6) <a href="https://chat.whatsapp.com/JFTOYLdpiTBCluFJvikBxN"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/1200px-WhatsApp_logo-color-vertical.svg.png" height="29px"></a>
+)](https://chat.whatsapp.com/KDTSNka7Z82Jr2iO3S2Dfo) <a href="https://chat.whatsapp.com/JFTOYLdpiTBCluFJvikBxN"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/1200px-WhatsApp_logo-color-vertical.svg.png" height="29px"></a>
 
 [![blog](https://img.shields.io/badge/Grupo3-GataBot-25D366?style=for-the-badge&logo=whatsapp&logoColor=white 
-)](https://chat.whatsapp.com/IG6aOo0xCuAARZCTlMImPI)  <a href="https://chat.whatsapp.com/Hahc7UwSouH9jIDStkT5QW"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/1200px-WhatsApp_logo-color-vertical.svg.png" height="29px"></a>
+)](https://chat.whatsapp.com/GiodIwTRDek4QMPJd2jpPH)  <a href="https://chat.whatsapp.com/Hahc7UwSouH9jIDStkT5QW"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/1200px-WhatsApp_logo-color-vertical.svg.png" height="29px"></a>
 -----
 ### 💖 ```DONAR``` [`Aquí`](https://paypal.me/OficialGD)
 ### 🟣 ACTIVAR EN HEROKU 
@@ -61,7 +61,22 @@ https://github.com/clhuang/heroku-buildpack-webp-binaries.git
 - [x] Resultado <details><summary>Buildpack</summary><img src="https://i.imgur.com/t3Xzgnh.jpeg"></details>
 ------------------
 
-### ACTIVAR EN TERMUX  <img src="https://c.tenor.com/HLrXIleGBToAAAAC/transparent-cat.gif" height="30px">
+### ✅ BOXMINEHOST
+> ACTIVA GATABOT 24/7 EN LA PLATAFORMA BOXMINEHOST
+
+<a href="https://boxmineworld.com"><img src="https://i.imgur.com/allAyd4.png" height="125px"></a>
+### BoxMine World
+
+- Pagina Oficial: [`https://boxmineworld.com`](https://boxmineworld.com)
+- Tutorial - Crea una cuenta en la Dashboard: [`https://www.youtube.com/watch?v=ZAwBLuNmIlI`](https://www.youtube.com/watch?v=ZAwBLuNmIlI)
+- Dashboard: [`https://dash.boxmineworld.com`](https://dash.boxmineworld.com)
+- Panel: [`https://panel.boxmineworld.com`](https://panel.boxmineworld.com)
+- Dudas UNICAMENTE SOBRE EL HOST: [`https://discord.gg/84qsr4v`](https://discord.gg/84qsr4v) (Preguntar por Vicemi)
+------------------
+- [x] Resultado <details><summary>Ajustes del Servidor - GataBot-MD</summary><img src="https://i.imgur.com/N0SwvbY.jpeg"></details>
+------------------
+
+### POR EL MOMENTO NO ACTIVAR POR TERMUX  <img src="https://c.tenor.com/HLrXIleGBToAAAAC/transparent-cat.gif" height="30px">
 > ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 
 ```bash
@@ -80,6 +95,7 @@ npm install
 npm update
 npm start
 ```
+### ✨ SI QUIERES ACTIVAR EN TERMUX, USA EL REPOSITORIO [`GataBot-MD2`](https://github.com/GataNina-Li/GataBot-MD2)
 ----
 ## 💻 PARA USUARIOS DE WINDOWS/VPS/RDP (Opcional)
 

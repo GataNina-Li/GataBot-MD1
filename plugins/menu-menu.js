@@ -1,4 +1,4 @@
-/*import { xpRange } from '../lib/levelling.js'
+import { xpRange } from '../lib/levelling.js'
 const { levelling } = '../lib/levelling.js'
 import PhoneNumber from 'awesome-phonenumber'
 import { promises } from 'fs'
@@ -6,7 +6,7 @@ import { join } from 'path'
 let handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text }) => {
 try {
 let vn = './media/menu.mp3'
-//let pp = './media/menus/Menuvid1.mp4'
+let pp = './media/menus/Menuvid1.mp4'
 let _package = JSON.parse(await promises.readFile(join(__dirname, '../package.json')).catch(_ => ({}))) || {}
 let { exp, limit, level, role } = global.db.data.users[m.sender]
 let { min, xp, max } = xpRange(level, global.multiplier)
@@ -117,6 +117,8 @@ ${readMore}
 *╭━〔 JUEGOS - MULTI JUEGOS 〕━⬣*
 ┃🎡➺ _${usedPrefix}mates | matemáticas | math_
 ┃🎡➺ _${usedPrefix}ppt *piedra : papel : tijera*_
+┃🎡➺ _${usedPrefix}tictactoe | ttt *sala*_
+┃🎡➺ _${usedPrefix}deltictactoe | delttt_
 ┃🎡➺ _${usedPrefix}topgays_
 ┃🎡➺ _${usedPrefix}topotakus_
 ┃🎡➺ _${usedPrefix}topintegrantes | topintegrante_
@@ -205,6 +207,21 @@ ${readMore}
 ┃🚀➺ _${usedPrefix}vertiktok | tiktokstalk *usuario(a)*_
 ┃🚀➺ _${usedPrefix}mediafire | dlmediafire *link*_
 ┃🚀➺ _${usedPrefix}clonarepo | gitclone *link*_
+┃🚀➺ _${usedPrefix}clima *país ciudad*_
+┃🚀➺ _${usedPrefix}consejo_
+┃🚀➺ _${usedPrefix}fraseromantica_
+┃🚀➺ _${usedPrefix}historia_
+*╰━━━━━━━━━━━━⬣*
+
+*╭━[ CHAT ANONIMO ]━⬣*
+┃ *¡Escribe con Alguien* 
+┃ *de forma Anónima!* 
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃👤➺ _${usedPrefix}chatanonimo | anonimochat_
+┃👤➺ _${usedPrefix}anonimoch_
+┃👤➺ _${usedPrefix}start_
+┃👤➺ _${usedPrefix}next_
+┃👤➺ _${usedPrefix}leave_
 *╰━━━━━━━━━━━━⬣*
 
 *╭━[ CONFIGURACIÓN - GRUPOS ]━⬣*
@@ -272,6 +289,8 @@ ${readMore}
 *╰━━━━━━━━━━━━⬣*
 
 *╭━[ RANDOM | ANIME 🧩 ]━⬣*
+┃🧩 _${usedPrefix}chica_
+┃🧩 _${usedPrefix}chico_
 ┃🧩 _${usedPrefix}cristianoronaldo_
 ┃🧩 _${usedPrefix}messi_
 ┃🧩 _${usedPrefix}meme_
@@ -339,12 +358,6 @@ ${readMore}
 ┃🧰 _${usedPrefix}tupai_
 *╰━━━━━━━━━━━━⬣*
 
-*<ℂℍ𝔸𝕋 𝔸ℕ𝕆ℕ𝕀𝕄𝕆/>*
-
-° ඬ⃟📳 _${usedPrefix}start_
-° ඬ⃟📳 _${usedPrefix}next_
-° ඬ⃟📳 _${usedPrefix}leave_
-
 *╭━━[ BÚSQUEDAS 🔍 ]━━⬣*
 ┃ *Busca lo que quieres con GataBot!!*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
@@ -404,7 +417,8 @@ ${readMore}
 ┃⚗️➺ _${usedPrefix}perfil | profile_
 ┃⚗️➺ _${usedPrefix}myns_
 ┃⚗️➺ _${usedPrefix}unreg *numero de serie*_
-┃⚗️➺ _${usedPrefix}claim_
+┃⚗️➺ _${usedPrefix}reclamar | regalo | claim_
+┃⚗️➺ _${usedPrefix}cofre | abrircofre | coffer_
 ┃⚗️➺ _${usedPrefix}trabajar | work_
 *╰━━━━━━━━━━━━⬣*
 
@@ -483,12 +497,28 @@ ${readMore}
 ┃💎➺ _${usedPrefix}añadirgatacoins *@tag cantidad*_
 *╰━━━━━━━━━━━━⬣*
 `.trim()
-await conn.sendHydrated2(m.chat, str, wm, null, 'https://github.com/GataNina-Li/GataBot-MD', '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', ig, '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢', [
+
+const fkontak = {
+	"key": {
+    "participants":"0@s.whatsapp.net",
+		"remoteJid": "status@broadcast",
+		"fromMe": false,
+		"id": "Halo"
+	},
+	"message": {
+		"contactMessage": {
+			"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
+		}
+	},
+	"participant": "0@s.whatsapp.net"
+}
+
+await conn.sendHydrated2(m.chat, str, wm, pp, 'https://github.com/GataNina-Li/GataBot-MD', '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', ig, '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢', [
 ['💖 𝘿𝙤𝙣𝙖𝙧 | 𝘿𝙤𝙣𝙖𝙩𝙚', '.donar'],
 ['💗 𝙈𝙚𝙣𝙪 𝘼𝙫𝙚𝙣𝙩𝙪𝙧𝙖 | 𝙍𝙋𝙂 💗', '.rpgmenu'],
 ['💝 𝙈𝙚𝙣𝙪 𝘼𝙪𝙙𝙞𝙤𝙨 💝', '.audios']
-
 ], m,)
+	
 await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, {
 type: 'audioMessage', 
 ptt: true})
@@ -510,11 +540,11 @@ function clockString(ms) {
 let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000)
 let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
 let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
-return [h, m, s].map(v => v.toString().padStart(2, 0)).join(':')}*/
+return [h, m, s].map(v => v.toString().padStart(2, 0)).join(':')}  
 
 
 
-import { xpRange } from '../lib/levelling.js'
+/*import { xpRange } from '../lib/levelling.js'
 const { levelling } = '../lib/levelling.js'
 import PhoneNumber from 'awesome-phonenumber'
 import { promises } from 'fs'
@@ -721,6 +751,10 @@ ${readMore}
 ┃🚀➺ _${usedPrefix}vertiktok | tiktokstalk *usuario(a)*_
 ┃🚀➺ _${usedPrefix}mediafire | dlmediafire *link*_
 ┃🚀➺ _${usedPrefix}clonarepo | gitclone *link*_
+┃🚀➺ _${usedPrefix}clima *país ciudad*_
+┃🚀➺ _${usedPrefix}consejo_
+┃🚀➺ _${usedPrefix}fraseromantica_
+┃🚀➺ _${usedPrefix}historia_
 *╰━━━━━━━━━━━━⬣*
 
 *╭━[ CONFIGURACIÓN - GRUPOS ]━⬣*
@@ -788,6 +822,8 @@ ${readMore}
 *╰━━━━━━━━━━━━⬣*
 
 *╭━[ RANDOM | ANIME 🧩 ]━⬣*
+┃🧩 _${usedPrefix}chica_
+┃🧩 _${usedPrefix}chico_
 ┃🧩 _${usedPrefix}cristianoronaldo_
 ┃🧩 _${usedPrefix}messi_
 ┃🧩 _${usedPrefix}meme_
@@ -1034,4 +1070,4 @@ function clockString(ms) {
 let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000)
 let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
 let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
-return [h, m, s].map(v => v.toString().padStart(2, 0)).join(':')}
+return [h, m, s].map(v => v.toString().padStart(2, 0)).join(':')} */

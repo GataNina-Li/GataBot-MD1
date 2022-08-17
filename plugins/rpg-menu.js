@@ -122,7 +122,8 @@ let menu = `
 ┃⚗️➺ _${usedPrefix}perfil | profile_
 ┃⚗️➺ _${usedPrefix}myns_
 ┃⚗️➺ _${usedPrefix}unreg *numero de serie*_
-┃⚗️➺ _${usedPrefix}claim_
+┃⚗️➺ _${usedPrefix}reclamar | regalo | claim_
+┃⚗️➺ _${usedPrefix}cofre | abrircofre | coffer_
 ┃⚗️➺ _${usedPrefix}trabajar | work_
 ╰━━━━━━━━━━━━━━━━━━━⬣`.trim()
 conn.sendHydrated(m.chat, menu, wm, null, 'https://github.com/ColapsusHD/FutabuBot-MD', '𝙵𝚞𝚝𝚊𝚋𝚞𝙱𝚘𝚝-𝙼𝙳', null, null, [
