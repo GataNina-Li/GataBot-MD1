@@ -272,6 +272,7 @@ global.rpg = {
       joincount: '🪙 Token',
       trash: '🗑 Basura : Trash',
       uncommon: '🗳️ Caja Poco Común : Uncommon',
+      uncommonn: '🗳️ Caja Poco Común : Uncommon',
       upgrader: '🧰 Aumentar Mejora : Upgrade',
       wolf: '🐺 Lobo : Wolf',
       wood: '🪵 Madera : Wood'
@@ -352,6 +353,7 @@ global.rpgg = {
       joincount: '🪙',
       trash: '🗑',
       uncommon: '🗳️',
+      uncommonn: '🗳️',
       upgrader: '🧰',
       wolf: '🐺',
       wood: '🪵'      
