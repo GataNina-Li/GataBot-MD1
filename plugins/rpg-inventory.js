@@ -756,7 +756,7 @@ ${readMore}
 *╰─⋆─⋆─⋆─⋆─⋆─⋆─⋆─⋆─┄⸙*
 
 *╭────━• COMIDA*
-*╭─────━• FOOD*
+*╭────━• FOOD*
 *│🥓 Comida de Mascota : Food Pet » ${makananpet}*
 *│🍖 Pollo a la Parrilla : Grilled Chicken » ${ayamb}*
 *│🍗 Pollo frito : Fried Chicken » ${ayamg}*
@@ -767,7 +767,7 @@ ${readMore}
 *╰─⋆─⋆─⋆─⋆─⋆─⋆─⋆─⋆─┄⸙*
 
 *╭──━• FRUTAS Y SEMILLAS*
-*╭──━• FRUIT & SEED*
+*╭────━• FRUIT & SEED*
 *│🥭 Mango » ${mangga}*
 *│🍇 Uva : Grape » ${anggur}*
 *│🍌 Platano : Banana » ${pisang}*
@@ -786,8 +786,8 @@ ${readMore}
 *│» ${bibitapel}*
 *╰─⋆─⋆─⋆─⋆─⋆─⋆─⋆─⋆─┄⸙*
 
-*╭─────━• *CAJAS*
-*╭──────━• *BOX*
+*╭─────━• CAJAS*
+*╭──────━• BOX*
 *│${rpg.emoticon('common')} » ${common}*
 *│${rpg.emoticon('uncommon')} » ${uncommon}*
 *│${rpg.emoticon('mythic')} » ${mythic}*
