@@ -766,19 +766,25 @@ ${readMore}
 *│🎒 Total inv » ${aqua + ramuan + kardus + kaleng + arlok + psepick + psenjata + common + uncommon + mythic + legendary + pet + diamond + potion + besi + emas + string + sampah + kayu + batu + potion + sampah + makananpet + apel + ayamb + ayamg + sapir + ssapi} Comida*
 *╰─⋆─⋆─⋆─⋆─⋆─⋆─⋆─⋆─┄⸙*
 
-╭──────━• *FRUIT & SEED*
-│🥭 *Mangga:* ${mangga}
-│🍇 *Anggur:* ${anggur}
-│🍌 *Pisang:* ${pisang}
-│🍊 *Jeruk:* ${jeruk}
-│🍎 *Apel:* ${apel}
-│
-│🌾 *Bibit Mangga:* ${bibitmangga}
-│🌾 *Bibit Anggur:* ${bibitanggur}                                    
-│🌾 *Bibit Pisang:* ${bibitpisang}
-│🌾 *Bibit Jeruk:* ${bibitjeruk}
-│🌾 *Bibit Apel:* ${bibitapel}
-╰──────────━⃝┅⃝━━────────┄⸙
+*──━• FRUTAS Y SEMILLAS*
+*╭──━• FRUIT & SEED*
+*│🥭 Mango » ${mangga}*
+*│🍇 Uva : Grape » ${anggur}*
+*│🍌 Platano : Banana » ${pisang}*
+*│🍊 Naranja : Orange » ${jeruk}*
+*│🍎 Manzana : Apple » ${apel}*
+*│*
+*│🌾 Semillas de Mango : Mango Seeds*
+*│» ${bibitmangga}*
+*│🌾 Semillas de uva : Grape Seeds*
+*│» ${bibitanggur}*                                   
+*│🌾 Semillas de plátano : Banana Seeds*
+*│» ${bibitpisang}*
+*│🌾 Semillas de naranja : Orange Seeds*
+*│» ${bibitjeruk}*
+*│🌾 Semillas de manzana : Apple seeds*
+*│» ${bibitapel}*
+*╰─⋆─⋆─⋆─⋆─⋆─⋆─⋆─⋆─┄⸙*
 
 ╭──────━• *CRATE*
 │📦 *Common:* ${common}
