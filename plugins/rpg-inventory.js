@@ -858,7 +858,7 @@ ${readMore}
 *│ ⚗️ Cofre : Coffer* ${lastcofre > 0 ? '❌' : '✅'}
 *╰─⋆─⋆─⋆─⋆─⋆─⋆─⋆─⋆─┄⸙*
 
-*╭──────━• TOPS*
+*╭────━• TOPS*
 *│📊 Top level: ${userslevel.indexOf(m.sender) + 1} / ${userslevel.length}*
 *│🐱 Top GataCoins: ${usersmoney.indexOf(m.sender) + 1} / ${usersmoney.length}*
 *│🔔 Top Gold: ${usersgold.indexOf(m.sender) + 1} / ${usersgold.length}*
