@@ -22,4 +22,4 @@ handler.command = /^(weekly)$/i
 
 handler.cooldown = cooldown
 
-export default handler
+export default handler 
