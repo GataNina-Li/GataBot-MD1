@@ -1076,7 +1076,7 @@ let health = global.db.data.users[m.sender].health
 
 ╭━━━━━━━━━⬣ 
 ┃ *SÚPER BASURA : SUPER TRASH*
-┃ *╸╸╸╸╸╸╸╸╸╸╸╸╸╸
+┃ *╸╸╸╸╸╸╸╸╸╸╸╸╸╸*
 ┃ 🪧 *Cartón : Paperboard » ${kardus}*
 ┃ 🥫 *Lata : Can » ${kaleng}*
 ┃ 🍶 *Botella : Bottle » ${botol}*
@@ -1084,7 +1084,7 @@ let health = global.db.data.users[m.sender].health
 
 ╭━━━━━━━━━⬣ 
 ┃ *MINERIA : MINING*
-┃ *╸╸╸╸╸╸╸╸╸╸╸╸╸╸
+┃ *╸╸╸╸╸╸╸╸╸╸╸╸╸╸*
 ┃ ♦️ *Joya : Ruby » ${berlian}*
 ┃ 👑 *Oro : Gold » ${emas}*
 ┃ *💎+ Diamante+ : Diamond+ » ${diamond}*
