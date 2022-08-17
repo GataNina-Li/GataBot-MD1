@@ -789,7 +789,7 @@ ${readMore}
 *╭─────━• CAJAS*
 *╭──────━• BOX*
 *│${rpg.emoticon('common')} » ${common}*
-*│🗳️ Caja Poco Común : Uncommon » ${uncommon}*
+*│🥡 Caja Poco Común : Uncommon » ${uncommon}*
 *│${rpg.emoticon('mythic')} » ${mythic}*
 *│${rpg.emoticon('legendary')} » ${legendary}*
 *│${rpg.emoticon('pet')} » ${pet}*
