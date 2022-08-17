@@ -1077,16 +1077,19 @@ let health = global.db.data.users[m.sender].health
 ╭━━━━━━━━━⬣ 
 ┃ *SÚPER BASURA : SUPER TRASH*
 ┃ *╸╸╸╸╸╸╸╸╸╸╸╸╸╸
-┃ 🪧 *Cartón : Paperboard ${kardus}*
-┃ 🥫 *Lata : Can ${kaleng}*
-┃ 🍶 *Botella : Bottle ${botol}*
+┃ 🪧 *Cartón : Paperboard » ${kardus}*
+┃ 🥫 *Lata : Can » ${kaleng}*
+┃ 🍶 *Botella : Bottle » ${botol}*
 ╰━━━━━━━━━⬣
 
-*Mining*
-Berlian: ${berlian}
-Emas: ${emas}
-Diamond: ${diamond}
-
+╭━━━━━━━━━⬣ 
+┃ *MINERIA : MINING*
+┃ *╸╸╸╸╸╸╸╸╸╸╸╸╸╸
+┃ ♦️ *Joya : Ruby » ${berlian}*
+┃ 👑 *Oro : Gold » ${emas}*
+┃ *💎+ Diamante+ : Diamond+ » ${diamond}*
+╰━━━━━━━━━⬣`.trim()
+/*
 *Hero*
 My Hero: *${hero == 0 ? 'Tidak Punya' : '' || hero == 1 ? 'Level 1' : '' || hero == 2 ? 'Level 2' : '' || hero == 3 ? 'Level 3' : '' || hero == 4 ? 'Level 4' : '' || hero == 5 ? 'Level 5' : '' || hero == 6 ? 'Level 6' : '' || hero == 7 ? 'Level 7' : '' || hero == 8 ? 'Level 8' : '' || hero == 9 ? 'Level 9' : '' || hero == 10 ? 'Level 10' : '' || hero == 11 ? 'Level 11' : '' || hero == 12 ? 'Level 12' : '' || hero == 13 ? 'Level 13' : '' || hero == 14 ? 'Level 14' : '' || hero == 15 ? 'Level 15' : '' || hero == 16 ? 'Level 16' : '' || hero == 17 ? 'Level 17' : '' || hero == 18 ? 'Level 18' : '' || hero == 19 ? 'Level 19' : '' || hero == 20 ? 'Level 20' : '' || hero == 21 ? 'Level 21' : '' || hero == 22 ? 'Level 22' : '' || hero == 23 ? 'Level 23' : '' || hero == 24 ? 'Level 24' : '' || hero == 25 ? 'Level 25' : '' || hero == 26 ? 'Level 26' : '' || hero == 27 ? 'Level 27' : '' || hero == 28 ? 'Level 28' : '' || hero == 29 ? 'Level 29' : '' || hero == 30 ? 'Level 30' : '' || hero == 31 ? 'Level 31' : '' || hero == 32 ? 'Level 32' : '' || hero == 33 ? 'Level 33' : '' || hero == 34 ? 'Level 34' : '' || hero == 35 ? 'Level 35' : '' || hero == 36 ? 'Level 36' : '' || hero == 37 ? 'Level 37'  : '' || hero == 38 ? 'Level 38' : '' || hero == 39 ? 'Level 39' : '' || hero == 40 ? 'Level MAX' : ''}*
 
@@ -1144,10 +1147,25 @@ Serigala: *${serigala == 0 ? 'Tidak Punya' : '' || serigala == 1 ? 'Level 1' : '
 7.Top Mythic *${usersmythic.indexOf(m.sender) + 1}* dari *${usersmythic.length}*
 8.Top Legendary *${userslegendary.indexOf(m.sender) + 1}* dari *${userslegendary.length}*
 9.Top Sampah *${userssampah.indexOf(m.sender) + 1}* dari *${userssampah.length}*
-\n${readMore}
-`.trim()
-    await conn.sendButton(m.chat, str, wm, imgr + 'inventory', [[`ᴛʀᴀɴsғᴇʀ`, `.transfer`],
-[`ᴀᴅᴠᴇɴᴛᴜʀᴇ`, `.adventure`]], m, { mentions: conn.parseMention(str) })
+*/
+
+const fkontak = {
+	"key": {
+    "participants":"0@s.whatsapp.net",
+		"remoteJid": "status@broadcast",
+		"fromMe": false,
+		"id": "Halo"
+	},
+	"message": {
+		"contactMessage": {
+			"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
+		}
+	},
+	"participant": "0@s.whatsapp.net"
+} 
+
+    await conn.sendButton(m.chat, str, wm, imgr + 'Inventario : Inventory', [[`ᴛʀᴀɴsғᴇʀ`, `.transfer`],
+[`ᴀᴅᴠᴇɴᴛᴜʀᴇ`, `.adventure`]], fkontak, m, { mentions: conn.parseMention(str) })
     } else if (args[0] == 'invkolam') {
 // Inventory kolam
     let paus = global.db.data.users[m.sender].paus 
