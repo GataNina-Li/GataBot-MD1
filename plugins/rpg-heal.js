@@ -48,7 +48,7 @@ conn.sendButton(m.chat, `*━┈━┈━『 SALUD COMPLETA 』━┈━┈━*`
 
 handler.help = ['heal']
 handler.tags = ['rpg']
-handler.command = /^(heal)$/i
+handler.command = /^(heal|curar)$/i
 
 export default handler
 
