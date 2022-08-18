@@ -109,7 +109,6 @@ let menu = `
 ┃🌅 ${usedPrefix}handlove *Texto*
 ┃🌅 ${usedPrefix}heartcup *Texto*
 ┃🌅 ${usedPrefix}heartflashlight *Texto*
-┃🌅 ${usedPrefix}heartwings *Texto*
 ┃🌅 ${usedPrefix}birthdaycake *Texto*
 ┃🌅 ${usedPrefix}birthdaycake2 *Texto*
 ┃🌅 ${usedPrefix}birthdaycake3 *Texto*
