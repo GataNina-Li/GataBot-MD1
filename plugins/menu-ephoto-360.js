@@ -80,7 +80,7 @@ let mentionedJid = [who]
 let username = conn.getName(who)
 //let user = global.db.data.users[m.sender]
 //user.registered = false
-
+//menu de ephotho360
 let menu = `
 💗 *¡HOLA | HI!* ${username}
 ╭━━〔 *${wm}* 〕━━⬣
