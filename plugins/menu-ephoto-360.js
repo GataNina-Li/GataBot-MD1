@@ -96,32 +96,32 @@ let menu = `
 ╰━━━━━━〔 𓃠 *${vs}* 〕━━━━━━⬣
 ╭━━━━━〔 𝐌𝐄𝐍𝐔 𝐋𝐎𝐆𝐎𝐒 𝟐 〕━━━━━⬣
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃🌅 _${usedPrefix}logocorazon Texto
-┃🌅 _${usedPrefix}3dtext Texto
-┃🌅 _${usedPrefix}angels Texto
-┃🌅 _${usedPrefix}batshalloween Texto
-┃🌅 _${usedPrefix}bear2 Texto
-┃🌅 _${usedPrefix}boom Texto
-┃🌅 _${usedPrefix}graffiticartoon Texto
-┃🌅 _${usedPrefix}girlgamer *Texto*
-┃🌅 _${usedPrefix}firework *Texto*
-┃🌅 _${usedPrefix}gold *Texto*
-┃🌅 _${usedPrefix}handlove *Texto*
-┃🌅 _${usedPrefix}heartcup *Texto*
-┃🌅 _${usedPrefix}heartflashlight *Texto*
-┃🌅 _${usedPrefix}heartwings *Texto*
-┃🌅 _${usedPrefix}birthdaycake *Texto*
-┃🌅 _${usedPrefix}birthdaycake2 *Texto*
-┃🌅 _${usedPrefix}birthdaycake3 *Texto*
-┃🌅 _${usedPrefix}facebooksilverplay *Texto*
-┃🌅 _${usedPrefix}facebooksilverplay2 *Texto*
-┃🌅 _${usedPrefix}neonsantin *Texto*
-┃🌅 _${usedPrefix}womenday *Texto*
-┃🌅 _${usedPrefix}summerysand *Texto*
-┃🌅 _${usedPrefix}wetglass *Texto*
-┃🌅 _${usedPrefix}mylove *Texto*
-┃🌅 _${usedPrefix}pikachu *Texto*
-┃🌅 _${usedPrefix}logochristmas *Texto*
+┃🌅 _ ${usedPrefix}logocorazon *Texto*
+┃🌅 _ ${usedPrefix}3dtext *Texto*
+┃🌅 _ ${usedPrefix}angels *Texto*
+┃🌅 _ ${usedPrefix}batshalloween *Texto*
+┃🌅 _ ${usedPrefix}bear2 *Texto*
+┃🌅 _ ${usedPrefix}boom *Texto*
+┃🌅 _ ${usedPrefix}graffiticartoon *Texto*
+┃🌅 _ ${usedPrefix}girlgamer *Texto*
+┃🌅 _ ${usedPrefix}firework *Texto*
+┃🌅 _ ${usedPrefix}gold *Texto*
+┃🌅 _ ${usedPrefix}handlove *Texto*
+┃🌅 _ ${usedPrefix}heartcup *Texto*
+┃🌅 _ ${usedPrefix}heartflashlight *Texto*
+┃🌅 _ ${usedPrefix}heartwings *Texto*
+┃🌅 _ ${usedPrefix}birthdaycake *Texto*
+┃🌅 _ ${usedPrefix}birthdaycake2 *Texto*
+┃🌅 _ ${usedPrefix}birthdaycake3 *Texto*
+┃🌅 _ ${usedPrefix}facebooksilverplay *Texto*
+┃🌅 _ ${usedPrefix}facebooksilverplay2 *Texto*
+┃🌅 _ ${usedPrefix}neonsantin *Texto*
+┃🌅 _ ${usedPrefix}womenday *Texto*
+┃🌅 _ ${usedPrefix}summerysand *Texto*
+┃🌅 _ ${usedPrefix}wetglass *Texto*
+┃🌅 _ ${usedPrefix}mylove *Texto*
+┃🌅 _ ${usedPrefix}pikachu *Texto*
+┃🌅 _ ${usedPrefix}logochristmas *Texto*
 ╰━━━━━━━━━━━━━━━━━━━⬣`.trim()
 conn.sendHydrated(m.chat, menu, wm, pp, 'https://github.com/GataNina-Li/GataBot-MD', '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
 ['𝙈𝙚𝙣𝙪́ 𝙘𝙤𝙢𝙥𝙡𝙚𝙩𝙤 | 𝙁𝙪𝙡𝙡 𝙈𝙚𝙣𝙪 💫', '.allmenu'],
