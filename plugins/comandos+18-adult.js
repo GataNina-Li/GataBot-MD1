@@ -26,7 +26,7 @@ if (command == 'nsfwglass') {
 let haha = await conn.getFile(`https://api-alc.herokuapp.com/api/nsfw/foot?apikey=ConfuMods`)
 conn.sendButton(m.chat, `_${command}_`.trim(), wm, haha.data, [['🥵 𝙎𝙄𝙂𝙐𝙄𝙀𝙉𝙏𝙀 | 𝙉𝙀𝙓𝙏', `/${command}`]], m)}    
 if (command == 'hentai') {
-let haha = await conn.getFile(`https://api.xteam.xyz/randomimage/hentai?APIKEY=29d4b59a4aa687ca`)
+let haha = await conn.getFile(`https://server-api-rey.herokuapp.com/api/nsfw/hentai?apikey=apirey`)
 conn.sendButton(m.chat, `_${command}_`.trim(), wm, haha.data, [['🥵 𝙎𝙄𝙂𝙐𝙄𝙀𝙉𝙏𝙀 | 𝙉𝙀𝙓𝙏', `/${command}`]], m)}
 if (command == 'nsfworgy') {
 let haha = await conn.getFile(`https://api.xteam.xyz/randomimage/orgy?APIKEY=29d4b59a4aa687ca`)
@@ -117,7 +117,6 @@ handler.command = ['nsfwloli', 'nsfwfoot', 'nsfwass', 'nsfwbdsm', 'nsfwcum', 'ns
 handler.tags = ['nsfw']
 handler.level = 3
 export default  handler
-
 
 /*import util from 'util'
 import path from 'path'
