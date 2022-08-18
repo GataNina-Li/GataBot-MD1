@@ -276,7 +276,7 @@ ${readMore}
 ┃ *la información del Logo!!*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃🔆 _${usedPrefix}logos *efecto texto*_
-┃🌅 _${usedPrefix}menulogos2 
+┃🌅 _${usedPrefix}menulogos2_
 *╰━━━━━━━━━━━━⬣*
 
 *╭━━━[ EFECTOS ⛺ ]━━⬣*
