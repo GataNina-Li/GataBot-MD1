@@ -195,7 +195,7 @@ let menu = `╭───────────────────❀\n│
 ┃✪ *Usuario(s) Prohibido(s) | Prohibited Users*
 ┃➺ ${Object.entries(global.db.data.users).filter(user => user[1].banned).length}
 ╰━━━━━━━━━━━━━━━━━━━⬣`
-
+//menulista
 let menulista = `
 ╭━━━━━━━━━━━━━━━━━━━⬣
 ┃ ⚡ 𝙇𝙄𝙎𝙏𝘼 𝘿𝙀 𝙈𝙀𝙉𝙐 ⚡
