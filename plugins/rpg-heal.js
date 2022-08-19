@@ -27,13 +27,15 @@ if (user.health >= 100) return conn.sendButton(m.chat, `𝙏𝙐 𝙎𝘼𝙇�
 const heal = 40 + (user.cat * 2)
 let count = Math.max(1, Math.min(Number.MAX_SAFE_INTEGER, (isNumber(args[0]) && parseInt(args[0]) || Math.round((50 - user.health) / heal)))) * 1
     
-if (user.potion < count) return conn.sendButton(m.chat,`${htki} *POCIÓN INSUFICIENTE* ${htka}`, 
-`NECESITAS COMPRAR ${count - user.potion} POCIÓN 🥤 PARA CURAR
-TU SALUD ACTUAL ES DE ${user.health} 
-TIENES ${user.potion} 🥤 POCIÓN EN TU ALMACÉN 
-⛊━─┈────────┈─━⛊
-PROPINA :
-'COMPRAR POCIÓN 🥤' | 'PREGUNTAR A TODOS'`.trim(), imgr + 'lowpotion', [
+if (user.potion < count) return conn.sendButton(m.chat,`${htki} 𝙉𝙊 𝙏𝙄𝙀𝙉𝙀𝙎 𝙋𝙊𝘾𝙄𝙊𝙉𝙀𝙎 ${htka}`, 
+`𝙉𝙀𝘾𝙀𝙎𝙄𝙏𝘼𝙎 ${count - user.potion} 𝙋𝙊𝘾𝙄𝙊𝙉 🥤 𝙋𝘼𝙍𝘼 𝘾𝙐𝙍𝘼𝙍𝙏𝙀
+𝙔𝙊𝙐 𝙉𝙀𝙀𝘿 ${count - user.potion} 𝙋𝙊𝙏𝙄𝙊𝙉 🥤 𝙏𝙊 𝙃𝙀𝘼𝙇 𝙔𝙊𝙐
+
+𝙎𝘼𝙇𝙐𝘿 : 𝙃𝙀𝘼𝙇𝙏𝙃 » ${user.health} ❤️
+𝙋𝙊𝘾𝙄𝙊𝙉 : 𝙋𝙊𝙏𝙄𝙊𝙉 » ${user.potion} 🥤
+
+𝘾𝙊𝙈𝙋𝙍𝘼 𝙋𝙊𝘾𝙄𝙊𝙉 𝙊 𝙋𝙄𝘿𝙀𝙇𝙀 𝘼 𝘼𝙇𝙂𝙐𝙄𝙀𝙉 𝙌𝙐𝙀 𝙏𝙀 𝙏𝙍𝘼𝙉𝙎𝙁𝙄𝙀𝙍𝘼
+𝘽𝙐𝙔 𝙋𝙊𝙏𝙄𝙊𝙉 𝙊𝙍 𝘼𝙎𝙆 𝙎𝙊𝙈𝙀𝙊𝙉𝙀 𝙏𝙊 𝙏𝙍𝘼𝙉𝙎𝙁𝙀𝙍 𝙔𝙊𝙐`.trim(), imgr + 'POCION BAJA : LOW POTION', [
 [`COMPRAR POCIÓN 🥤`, `${usedPrefix}buy potion ${count - user.potion}`],
 [`PREGUNTAR A TODOS`, `${usedPrefix}tagall *ALGUIEN POR FAVOR ENVIAR ${count - user.potion} POCIÓN A MI.*
 *» AYUDA TRANSFIRIENDO:*
