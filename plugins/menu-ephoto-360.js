@@ -84,7 +84,7 @@ let username = conn.getName(who)
 let menu = `
 💗 *¡HOLA | HI!* ${username}
 ╭━━〔 *${wm}* 〕━━⬣
-┃🌅🌅🌅🌅🌅🌅🌅🌅🌅🌅🌅🌅🌅
+┃⛲⛲⛲⛲⛲⛲⛲⛲⛲⛲
 ┃✪ *EXPERIENCIA | EXP ➺ ${exp}*
 ┃✪ *NIVEL | LEVEL ➺ ${level}*
 ┃✪ *ROL ➺* ${role}
@@ -92,9 +92,9 @@ let menu = `
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃✪ *FECHA ➺ ${week}, ${date}*
 ┃✪ *USUARIOS | USERS ➺ ${Object.keys(global.db.data.users).length}* 
-┃🌅🌅🌅🌅🌅🌅🌅🌅🌅🌅🌅🌅🌅
+┃⛲⛲⛲⛲⛲⛲⛲⛲⛲⛲
 ╰━━━━━━〔 𓃠 *${vs}* 〕━━━━━━⬣
-╭━━━━━〔 𝐌𝐄𝐍𝐔 𝐋𝐎𝐆𝐎𝐒 𝟐 〕━━━━━⬣
+╭━━━━━〔 𝙈𝙀𝙉𝙐 𝙇𝙊𝙂𝙊 *2* 〕━━━━━⬣
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃🌅 ${usedPrefix}logocorazon *Texto*
 ┃🌅 ${usedPrefix}3dtext *Texto*
