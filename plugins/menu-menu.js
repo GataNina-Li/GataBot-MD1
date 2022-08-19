@@ -172,11 +172,15 @@ ${readMore}
 ┃⚙️ _${usedPrefix}on *:* off *antilink*_
 ┃⚙️ _${usedPrefix}on *:* off *antilink2*_
 ┃⚙️ _${usedPrefix}on *:* off *detect*_
+┃⚙️ _${usedPrefix}on *:* off *autolevelup*_
 ┃⚙️ _${usedPrefix}on *:* off *restrict*_
 ┃⚙️ _${usedPrefix}on *:* off *pconly*_
 ┃⚙️ _${usedPrefix}on *:* off *gconly*_
 ┃⚙️ _${usedPrefix}on *:* off *autoread*_
 ┃⚙️ _${usedPrefix}on *:* off *audios*_
+┃⚙️ _${usedPrefix}on *:* off *stickers*_
+┃⚙️ _${usedPrefix}on *:* off *temporal*_
+┃⚙️ _${usedPrefix}on *:* off *antiver*_
 ┃⚙️ _${usedPrefix}on *:* off *autosticker*_
 *╰━━━━━━━━━━━━⬣*
 
