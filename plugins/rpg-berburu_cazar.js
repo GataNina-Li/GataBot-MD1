@@ -20,7 +20,7 @@ let handler = async (m, { conn }) => {
 	let timers = clockString(_timers)
 	let user = global.db.data.users[m.sender]
   
-	if (new Date - global.db.data.users[m.sender].lastberbru > 500000) {
+	if (new Date - global.db.data.users[m.sender].lastberbru > 100000) {
 		let randomaku1 = `${Math.floor(Math.random() * 10)}`
 		let randomaku2 = `${Math.floor(Math.random() * 10)}`
 		let randomaku4 = `${Math.floor(Math.random() * 10)}`
