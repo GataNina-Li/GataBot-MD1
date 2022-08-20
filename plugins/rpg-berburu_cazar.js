@@ -88,26 +88,21 @@ let time = global.db.data.users[m.sender].lastberburu + 100000
 if (new Date - global.db.data.users[m.sender].lastberburu < 100000) throw conn.sendButton(m.chat, `*Por favor descanse*`, `Tiempo: ${msToTime(time - new Date())}\n${wm}`, null, [
 ['Kandang', '.kandang']], fkontak, m)	
 
-		setTimeout(() => {
-			conn.sendHydrated(m.chat, hsl, fkontak, null, null, null, null, null, [
-      [null, null]], null)}, 20000)
+setTimeout(() => {
+conn.sendHydrated(m.chat, hsl, wm, null, null, null, null, null, [[null, null]], fkontak m)}, 20000)
 	        
-		setTimeout(() => {
-			conn.sendHydrated(m.chat, `${conn.getName(m.sender)} Nah ini dia`, fkontak, null, null, null, null, null, [
-      [null, null]], null)}, 18000)
+setTimeout(() => {
+conn.sendHydrated(m.chat, `${conn.getName(m.sender)} Nah ini dia`, wm, null, null, null, null, null, [[null, null]], fkontak m)}, 18000)
 
-		setTimeout(() => {
-			conn.sendHydrated(m.chat, `${conn.getName(m.sender)} ......`, fkontak, null, null, null, null, null, [
-      [null, null]], null)}, 15000)
+setTimeout(() => {
+conn.sendHydrated(m.chat, `${conn.getName(m.sender)} ......`, wm, null, null, null, null, null, [[null, null]], fkontak m)}, 15000)
 
-		setTimeout(() => {
-			conn.sendHydrated(m.chat, `${conn.getName(m.sender)} Dapet nih..`, fkontak, null, null, null, null, null, [
-      [null, null]], null)}, 14000)
+setTimeout(() => {
+conn.sendHydrated(m.chat, `${conn.getName(m.sender)} Dapet nih..`, wm, null, null, null, null, null, [[null, null]], fkontak m)}, 14000)
 
-		setTimeout(() => {
-			conn.sendHydrated(m.chat, `${conn.getName(m.sender)} Sedang berburu...`, fkontak, null, null, null, null, null, [
-      [null, null]], null)}, 0)
-           user.lastberburu = new Date * 1			
+setTimeout(() => {
+conn.sendHydrated(m.chat, `${conn.getName(m.sender)} Sedang berburu...`, wm, null, null, null, null, null, [[null, null]], fkontak m)}, 0)
+user.lastberburu = new Date * 1			
 }
 handler.help = ['berburu']
 handler.tags = ['rpg']
@@ -134,5 +129,5 @@ function msToTime(duration) {
   minutes = (minutes < 10) ? "0" + minutes : minutes
   seconds = (seconds < 10) ? "0" + seconds : seconds
 
-  return hours + " Hora(s) " + minutes + " Minuto(s)" + seconds + " Segundo(s)"
+  return minutes + " Minuto(s)" + seconds + " Segundo(s)"
 }
