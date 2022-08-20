@@ -15,12 +15,13 @@ let handler = async (m, { conn }) => {
 	"participant": "0@s.whatsapp.net"
 }
   
-	let __timers = (new Date - global.db.data.users[m.sender].lastberbru)
-	let _timers = (500000 - __timers)
-	let timers = msToTime(_timers) 
+	//let __timers = (new Date - global.db.data.users[m.sender].lastberbru)
+	//let _timers = (500000 - __timers)
+	//let timers = msToTime(_timers) 
 	let user = global.db.data.users[m.sender]
+	let time = user.lastclaim + 100000
   
-	if (new Date - global.db.data.users[m.sender].lastberbru > 500000) {
+	if (new Date - global.db.data.users[m.sender].lastberbru > 100000) {
 		let randomaku1 = `${Math.floor(Math.random() * 10)}`
 		let randomaku2 = `${Math.floor(Math.random() * 10)}`
 		let randomaku4 = `${Math.floor(Math.random() * 10)}`
@@ -106,7 +107,7 @@ let handler = async (m, { conn }) => {
       [null, null]], null)}, 0)
            user.lastberburu = new Date * 1	
 		
-	} if (timers) return conn.sendButton(m.chat, `\n*Parece que estás cansado*\n*por favor descansa ${timers}*\n*Para poder seguir cazando*\n`, wm, null, [
+	} if (new Date - user.lastclaim < 100000) throw conn.sendButton(m.chat, `\n*Parece que estás cansado*\n*por favor descansa ${msToTime(time - new Date())}*\n*Para poder seguir cazando*\n`, wm, null, [
 		['Kandang', '.kandang']], fkontak, m)
 }
 handler.help = ['berburu']
