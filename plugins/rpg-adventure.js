@@ -86,6 +86,7 @@ function reward(user = {}) {
             trash: 150,
             potion: 3,
             rock: 2,
+	    joincount: 2,
             wood: 3,
             string: 2,
             common: 2 * (user.dog && (user.dog > 2 ? 2 : user.dog) * 1.2 || 1),
