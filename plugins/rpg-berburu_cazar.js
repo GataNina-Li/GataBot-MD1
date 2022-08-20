@@ -15,10 +15,10 @@ let handler = async (m, { conn }) => {
 	"participant": "0@s.whatsapp.net"
 }
   
-	//let __timers = (new Date - global.db.data.users[m.sender].lastberbru)
-	//let _timers = (100000 - __timers)
-	//let timers = clockString(_timers)
-	let user = global.db.data.users[m.sender]
+	let __timers = (new Date - global.db.data.users[m.sender].lastclaim)
+        let _timers = (100000 - __timers)
+        let timers = clockString(_timers) 
+        let user = global.db.data.users[m.sender]
   
 	//if (new Date - global.db.data.users[m.sender].lastberbru > 100000) {
 		let randomaku1 = `${Math.floor(Math.random() * 5)}`
@@ -81,7 +81,7 @@ let hsl = `
  *🐘 ${ar3} ${anti3}*			 *🐒 ${ar9} ${anti9}*
  *🐐 ${ar4} ${anti4}*			 *🐗 ${ar10} ${anti10}*
  *🐼 ${ar5} ${anti5}*			 *🐖 ${ar11} ${anti11}*
- *🐊 ${ar6} ${anti6}*		     *🐓 ${ar12} ${anti12}*`
+ *🐊 ${ar6} ${anti6}*		    *🐓 ${ar12} ${anti12}*`
 
 		global.db.data.users[m.sender].banteng += rbrb1
 		global.db.data.users[m.sender].harimau += rbrb2
@@ -96,12 +96,12 @@ let hsl = `
 		global.db.data.users[m.sender].babi += rbrb11
 		global.db.data.users[m.sender].ayam += rbrb12
 	
-let time = global.db.data.users[m.sender].lastberburu + 100000
-if (new Date - global.db.data.users[m.sender].lastberburu < 100000) throw conn.sendButton(m.chat, `*Por favor descanse*`, `Tiempo: ${clockString(time - new Date())}\n${wm}`, null, [
-['Kandang', '.kandang']], fkontak, m)	
+//let time = global.db.data.users[m.sender].lastberburu + 100000
+//if (new Date - global.db.data.users[m.sender].lastberburu < 100000)
+if (new Date - global.db.data.users[m.sender].lastberburu > 100000) { 	
 
 setTimeout(() => {
-conn.sendHydrated(m.chat, hsl, wm, null, null, null, null, null, [
+conn.sendHydrated(m.chat, hsl, wm, null, md, `𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿`, null, null, [
 [null, null]], null)}, 20000)
 	        
 setTimeout(() => {
@@ -120,6 +120,8 @@ setTimeout(() => {
 conn.sendHydrated(m.chat, `${conn.getName(m.sender)} *${['Buscando implementos de caza...','Alistando todo para la caza!!','Estableciendo Lugar de la Caza...','PREPARANDO LUGAR DE CAZA!!'].getRandom()}*`, wm, null, null, null, null, null, [
 [null, null]], null)}, 0)	
 user.lastberburu = new Date * 1	
+} else conn.sendButton(m.chat, `*Por favor descanse*`, `Tiempo: ${timers}\n${wm}`, null, [
+['Kandang', '.kandang']], fkontak, m)							     
 	
 }
 handler.help = ['berburu']
