@@ -1,6 +1,6 @@
 import fetch from 'node-fetch'
 
-const cooldown = 300000
+const cooldown = 300000 //3 minutos
 let handler = async (m, { usedPrefix, conn }) => {
 const fkontak = {
 	"key": {
@@ -81,12 +81,12 @@ export default handler
 function reward(user = {}) {
     let rewards = {
         reward: {
-            money: 201,
-            exp: 301,
-            trash: 101,
-            potion: 2,
+            money: 400,
+            exp: 300,
+            trash: 150,
+            potion: 3,
             rock: 2,
-            wood: 2,
+            wood: 3,
             string: 2,
             common: 2 * (user.dog && (user.dog > 2 ? 2 : user.dog) * 1.2 || 1),
             uncommon: [0, 0, 0, 1, 0].concat(
