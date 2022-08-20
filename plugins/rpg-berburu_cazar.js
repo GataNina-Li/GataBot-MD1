@@ -98,7 +98,7 @@ let hsl = `
 	
 let time = global.db.data.users[m.sender].lastberburu + 100000
 //if (new Date - global.db.data.users[m.sender].lastberburu > 100000)
-if (new Date - global.db.data.users[m.sender].lastberburu < 100000) { 	
+if (new Date - global.db.data.users[m.sender].lastberburu > 100000) { 	
 
 setTimeout(() => {
 conn.sendHydrated(m.chat, hsl, wm, null, md, `𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿`, null, null, [
