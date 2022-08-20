@@ -21,18 +21,18 @@ let handler = async (m, { conn }) => {
 	let user = global.db.data.users[m.sender]
   
 	//if (new Date - global.db.data.users[m.sender].lastberbru > 100000) {
-		let randomaku1 = `${Math.floor(Math.random() * 10)}`
-		let randomaku2 = `${Math.floor(Math.random() * 10)}`
-		let randomaku4 = `${Math.floor(Math.random() * 10)}`
-		let randomaku3 = `${Math.floor(Math.random() * 10)}`
-		let randomaku5 = `${Math.floor(Math.random() * 10)}`
-		let randomaku6 = `${Math.floor(Math.random() * 10)}`
-		let randomaku7 = `${Math.floor(Math.random() * 10)}`
-		let randomaku8 = `${Math.floor(Math.random() * 10)}`
-		let randomaku9 = `${Math.floor(Math.random() * 10)}`
-		let randomaku10 = `${Math.floor(Math.random() * 10)}`
-		let randomaku11 = `${Math.floor(Math.random() * 10)}`
-		let randomaku12 = `${Math.floor(Math.random() * 10)}`.trim()
+		let randomaku1 = `${Math.floor(Math.random() * 5)}`
+		let randomaku2 = `${Math.floor(Math.random() * 5)}`
+		let randomaku4 = `${Math.floor(Math.random() * 5)}`
+		let randomaku3 = `${Math.floor(Math.random() * 5)}`
+		let randomaku5 = `${Math.floor(Math.random() * 5)}`
+		let randomaku6 = `${Math.floor(Math.random() * 5)}`
+		let randomaku7 = `${Math.floor(Math.random() * 5)}`
+		let randomaku8 = `${Math.floor(Math.random() * 5)}`
+		let randomaku9 = `${Math.floor(Math.random() * 5)}`
+		let randomaku10 = `${Math.floor(Math.random() * 5)}`
+		let randomaku11 = `${Math.floor(Math.random() * 5)}`
+		let randomaku12 = `${Math.floor(Math.random() * 5)}`.trim()
 
 		let rbrb1 = (randomaku1 * 1)
 		let rbrb2 = (randomaku2 * 1)
@@ -59,16 +59,29 @@ let handler = async (m, { conn }) => {
 		let anti10 = `${rbrb10}`
 		let anti11 = `${rbrb11}`
 		let anti12 = `${rbrb12}`
+		
+		let ar1 = `${['🪚','⛏️','🧨','💣','🔫','🔪','🗡️','🏹','🦾','🥊','🧹','🔨','🛻'].getRandom()}`
+		let ar2 = `${['🪚','⛏️','🧨','💣','🔫','🔪','🗡️','🏹','🦾','🥊','🧹','🔨','🛻'].getRandom()}`
+		let ar3 = `${['🪚','⛏️','🧨','💣','🔫','🔪','🗡️','🏹','🦾','🥊','🧹','🔨','🛻'].getRandom()}`
+		let ar4 = `${['🪚','⛏️','🧨','💣','🔫','🔪','🗡️','🏹','🦾','🥊','🧹','🔨','🛻'].getRandom()}`
+		let ar5 = `${['🪚','⛏️','🧨','💣','🔫','🔪','🗡️','🏹','🦾','🥊','🧹','🔨','🛻'].getRandom()}`
+		let ar6 = `${['🪚','⛏️','🧨','💣','🔫','🔪','🗡️','🏹','🦾','🥊','🧹','🔨','🛻'].getRandom()}`
+		let ar7 = `${['🪚','⛏️','🧨','💣','🔫','🔪','🗡️','🏹','🦾','🥊','🧹','🔨','🛻'].getRandom()}`
+		let ar8 = `${['🪚','⛏️','🧨','💣','🔫','🔪','🗡️','🏹','🦾','🥊','🧹','🔨','🛻'].getRandom()}`
+		let ar9 = `${['🪚','⛏️','🧨','💣','🔫','🔪','🗡️','🏹','🦾','🥊','🧹','🔨','🛻'].getRandom()}`
+		let ar10 = `${['🪚','⛏️','🧨','💣','🔫','🔪','🗡️','🏹','🦾','🥊','🧹','🔨','🛻'].getRandom()}`
+		let ar11 = `${['🪚','⛏️','🧨','💣','🔫','🔪','🗡️','🏹','🦾','🥊','🧹','🔨','🛻'].getRandom()}`
+		let ar12 = `${['🪚','⛏️','🧨','💣','🔫','🔪','🗡️','🏹','🦾','🥊','🧹','🔨','🛻'].getRandom()}`
 
 let hsl = `
 *《 Resultados de la caza ${conn.getName(m.sender)} 》*
 
- *🐂 = [ ${anti1} ]*			 *🐃 = [ ${anti7} ]*
- *🐅 = [ ${anti2} ]*			 *🐮 = [ ${anti8} ]*
- *🐘 = [ ${anti3} ]*			 *🐒 = [ ${anti9} ]*
- *🐐 = [ ${anti4} ]*			 *🐗 = [ ${anti10} ]*
- *🐼 = [ ${anti5} ]*			 *🐖 = [ ${anti11} ]*
- *🐊 = [ ${anti6} ]*		     *🐓 = [ ${anti12} ]*`
+ *🐂 ${ar1} ${anti1}*			 *🐃 ${ar7} ${anti7}*
+ *🐅 ${ar2} ${anti2}*			 *🐮 ${ar8} ${anti8}*
+ *🐘 ${ar3} ${anti3}*			 *🐒 ${ar9} ${anti9}*
+ *🐐 ${ar4} ${anti4}*			 *🐗 ${ar10} ${anti10}*
+ *🐼 ${ar5} ${anti5}*			 *🐖 ${ar11} ${anti11}*
+ *🐊 ${ar6} ${anti6}*		     *🐓 ${ar12} ${anti12}*`
 
 		global.db.data.users[m.sender].banteng += rbrb1
 		global.db.data.users[m.sender].harimau += rbrb2
