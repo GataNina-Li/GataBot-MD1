@@ -123,7 +123,7 @@ user.lastberburu = new Date * 1
 }
 handler.help = ['berburu']
 handler.tags = ['rpg']
-handler.command = /^(berburu|caza(r)?)$/i
+handler.command = /^(hunt|berburu|caza(r)?)$/i
 handler.group = true
 export default handler
 
