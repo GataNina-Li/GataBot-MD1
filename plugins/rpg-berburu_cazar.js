@@ -107,10 +107,7 @@ if (new Date - global.db.data.users[m.sender].lastberburu < 100000) throw conn.s
 		setTimeout(() => {
 			conn.sendHydrated(m.chat, `${conn.getName(m.sender)} Sedang berburu...`, fkontak, null, null, null, null, null, [
       [null, null]], null)}, 0)
-           global.db.data.users[m.sender].lastberburu = new Date * 1	
-		
-//} throw conn.sendButton(m.chat, `*Parece que estás cansado*\n*por favor descansa ${timers}*\n*Para poder seguir cazando*\n`, wm, null, [
-//['Kandang', '.kandang']], fkontak, m)
+           user.lastberburu = new Date * 1			
 }
 handler.help = ['berburu']
 handler.tags = ['rpg']
