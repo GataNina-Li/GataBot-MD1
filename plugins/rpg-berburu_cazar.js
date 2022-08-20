@@ -84,7 +84,8 @@ let handler = async (m, { conn }) => {
 		global.db.data.users[m.sender].babihutan += rbrb10
 		global.db.data.users[m.sender].babi += rbrb11
 		global.db.data.users[m.sender].ayam += rbrb12
-
+	
+if (new Date - user.lastclaim < 100000) {
 		setTimeout(() => {
 			conn.sendHydrated(m.chat, hsl, fkontak, null, null, null, null, null, [
       [null, null]], null)}, 20000)
@@ -107,7 +108,7 @@ let handler = async (m, { conn }) => {
       [null, null]], null)}, 0)
            user.lastberburu = new Date * 1	
 		
-if (new Date - user.lastclaim < 100000) throw conn.sendButton(m.chat, `*Parece que estás cansado*\n*por favor descansa ${msToTime(time - new Date())}*\n*Para poder seguir cazando*\n`, wm, null, [
+} throw conn.sendButton(m.chat, `*Parece que estás cansado*\n*por favor descansa ${msToTime(time - new Date())}*\n*Para poder seguir cazando*\n`, wm, null, [
 ['Kandang', '.kandang']], fkontak, m)
 }
 handler.help = ['berburu']
