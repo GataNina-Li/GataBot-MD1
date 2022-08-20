@@ -213,7 +213,7 @@ global.rpg = {
       //armordurability: '🤺 ',
       babi: '🐖 Puerco : Pig',
       bank: '🏦 Banco : Bank',
-      babihutan: '🐗 Jabalí : Wild Boar',
+      Jabali: '🐗 Jabalí : Wild Boar',
       bibitanggur: '🍇 Semilla de Uva : Grapeseed',
       bibitapel: '🍎 Semilla de Manzana : Apple Seed',
       bibitjeruk: '🍊 Semillas de naranja : Orange Seeds',
