@@ -15,12 +15,8 @@ let handler = async (m, { conn }) => {
 	"participant": "0@s.whatsapp.net"
 }
   
-	//let __timers = (new Date - global.db.data.users[m.sender].lastclaim)
-        //let _timers = (100000 - __timers)
-        //let timers = clockString(_timers) 
         let user = global.db.data.users[m.sender]
   
-	//if (new Date - global.db.data.users[m.sender].lastberbru > 100000) {
 		let randomaku1 = `${Math.floor(Math.random() * 5)}`
 		let randomaku2 = `${Math.floor(Math.random() * 5)}`
 		let randomaku4 = `${Math.floor(Math.random() * 5)}`
@@ -96,9 +92,9 @@ let hsl = `
 		global.db.data.users[m.sender].babi += rbrb11
 		global.db.data.users[m.sender].ayam += rbrb12
 	
-let time = global.db.data.users[m.sender].lastberburu + 100000
+let time = global.db.data.users[m.sender].lastberburu + 1500000 //15 Minutos
 //if (new Date - global.db.data.users[m.sender].lastberburu > 100000)
-if (new Date - global.db.data.users[m.sender].lastberburu > 100000) { 	
+if (new Date - global.db.data.users[m.sender].lastberburu > 1500000) { 	
 
 setTimeout(() => {
 conn.sendHydrated(m.chat, hsl, wm, null, md, `𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿`, null, null, [
