@@ -108,6 +108,11 @@ let menu = `
 ┃⚗️➺ _${usedPrefix}top | lb | leaderboard_
 ┃⚗️➺ _${usedPrefix}nivel | level | lvl_
 ┃⚗️➺ _${usedPrefix}rol | rango_
+┃⚗️➺ _${usedPrefix}inventario | inventory_
+┃⚗️➺ _${usedPrefix}aventura | adventure_
+┃⚗️➺ _${usedPrefix}caza | cazar | hunt_
+┃⚗️➺ _${usedPrefix}animales | animals_
+┃⚗️➺ _${usedPrefix}curar | heal_
 ┃⚗️➺ _${usedPrefix}minardiamantes | minargemas_
 ┃⚗️➺ _${usedPrefix}minargatacoins | minarcoins_
 ┃⚗️➺ _${usedPrefix}minarexperiencia | minarexp_
