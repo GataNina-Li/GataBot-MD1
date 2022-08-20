@@ -16,11 +16,11 @@ let handler = async (m, { conn }) => {
 }
   
 	let __timers = (new Date - global.db.data.users[m.sender].lastberbru)
-	let _timers = (100000 - __timers)
+	let _timers = (500000 - __timers)
 	let timers = clockString(_timers)
 	let user = global.db.data.users[m.sender]
   
-	if (new Date - global.db.data.users[m.sender].lastberbru > 100000) {
+	if (new Date - global.db.data.users[m.sender].lastberbru > 500000) {
 		let randomaku1 = `${Math.floor(Math.random() * 10)}`
 		let randomaku2 = `${Math.floor(Math.random() * 10)}`
 		let randomaku4 = `${Math.floor(Math.random() * 10)}`
@@ -32,8 +32,7 @@ let handler = async (m, { conn }) => {
 		let randomaku9 = `${Math.floor(Math.random() * 10)}`
 		let randomaku10 = `${Math.floor(Math.random() * 10)}`
 		let randomaku11 = `${Math.floor(Math.random() * 10)}`
-		let randomaku12 = `${Math.floor(Math.random() * 10)}`
-			.trim()
+		let randomaku12 = `${Math.floor(Math.random() * 10)}`.trim()
 
 		let rbrb1 = (randomaku1 * 1)
 		let rbrb2 = (randomaku2 * 1)
@@ -56,7 +55,7 @@ let handler = async (m, { conn }) => {
 		let anti6 = `${rbrb6}`
 		let anti7 = `${rbrb7}`
 		let anti8 = `${rbrb8}`
-	    let anti9 = `${rbrb9}`
+	        let anti9 = `${rbrb9}`
 		let anti10 = `${rbrb10}`
 		let anti11 = `${rbrb11}`
 		let anti12 = `${rbrb12}`
@@ -69,10 +68,9 @@ let handler = async (m, { conn }) => {
  *🐘 = [ ${anti3} ]*			 *🐒 = [ ${anti9} ]*
  *🐐 = [ ${anti4} ]*			 *🐗 = [ ${anti10} ]*
  *🐼 = [ ${anti5} ]*			 *🐖 = [ ${anti11} ]*
- *🐊 = [ ${anti6} ]*		     *🐓 = [${anti12} ]*
+ *🐊 = [ ${anti6} ]*		     *🐓 = [ ${anti12} ]*
 
- *${author}*
-`
+ *${author}*`
 		global.db.data.users[m.sender].banteng += rbrb1
 		global.db.data.users[m.sender].harimau += rbrb2
 		global.db.data.users[m.sender].gajah += rbrb3
@@ -107,7 +105,7 @@ let handler = async (m, { conn }) => {
       [null, null]], null)}, 0)
     
 		user.lastberburu = new Date * 1
-	} else conn.sendButton(m.chat, `\n*Parece que estás cansado*\n*por favor descansa ${timers}*\n*Para poder seguir cazando*\n`, wm, null, [
+	} else return conn.sendButton(m.chat, `\n*Parece que estás cansado*\n*por favor descansa ${timers}*\n*Para poder seguir cazando*\n`, wm, null, [
 		['Kandang', '.kandang']], fkontak, m)
 }
 handler.help = ['berburu']
