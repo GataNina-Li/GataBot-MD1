@@ -60,7 +60,7 @@ let handler = async (m, { conn }) => {
 		let anti11 = `${rbrb11}`
 		let anti12 = `${rbrb12}`
 
-		let hsl = `
+let hsl = `
 *《 Resultados de la caza ${conn.getName(m.sender)} 》*
 
  *🐂 = [ ${anti1} ]*			 *🐃 = [ ${anti7} ]*
@@ -85,14 +85,13 @@ let handler = async (m, { conn }) => {
 		global.db.data.users[m.sender].ayam += rbrb12
 	
 let time = global.db.data.users[m.sender].lastberburu + 100000
-if (new Date - global.db.data.users[m.sender].lastberburu < 100000) throw conn.sendButton(m.chat, `*Parece que estás cansado*\n*por favor descansa ${msToTime(time - new Date())}*\n*Para poder seguir cazando*\n`, wm, null, [
+if (new Date - global.db.data.users[m.sender].lastberburu < 100000) throw conn.sendButton(m.chat, `*Por favor descanse*`, `Tiempo: ${msToTime(time - new Date())}\n${wm}`, null, [
 ['Kandang', '.kandang']], fkontak, m)	
 
 		setTimeout(() => {
 			conn.sendHydrated(m.chat, hsl, fkontak, null, null, null, null, null, [
       [null, null]], null)}, 20000)
 	        
-
 		setTimeout(() => {
 			conn.sendHydrated(m.chat, `${conn.getName(m.sender)} Nah ini dia`, fkontak, null, null, null, null, null, [
       [null, null]], null)}, 18000)
