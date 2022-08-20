@@ -41,7 +41,7 @@ if (user.potion < count) return conn.sendButton(m.chat,`${htki} 𝙉𝙊 𝙏�
 *» AYUDA TRANSFIRIENDO:*
 *${usedPrefix}transfer potion ${count - user.potion}* @${conn.getName(m.sender)}`]], m)
   
-    user.potion -= count * 1
+    user.potion -= count * 10
     user.health += heal * count
     
 conn.sendButton(m.chat, `*━┈━┈━『 SALUD COMPLETA 』━┈━┈━*`, `EXITOSAMENTE USO ${count} DE POCIONES 🥤 PARA RECUPERAR SU SALUD`, imgr + 'Salud Completada', [
