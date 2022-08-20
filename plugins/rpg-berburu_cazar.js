@@ -89,19 +89,25 @@ if (new Date - global.db.data.users[m.sender].lastberburu < 100000) throw conn.s
 ['Kandang', '.kandang']], fkontak, m)	
 
 setTimeout(() => {
-conn.sendHydrated(m.chat, hsl, wm, null, null, null, null, null, [[null, null]], fkontak m)}, 20000)
+conn.sendHydrated(m.chat, hsl, wm, null, null, null, null, null, [
+[null, null]], fkontak, m)}, 20000)
 	        
 setTimeout(() => {
-conn.sendHydrated(m.chat, `${conn.getName(m.sender)} Nah ini dia`, wm, null, null, null, null, null, [[null, null]], fkontak m)}, 18000)
+conn.sendHydrated(m.chat, `${conn.getName(m.sender)} Nah ini dia`, wm, null, null, null, null, null, [
+[null, null]], fkontak, m)}, 18000)
 
 setTimeout(() => {
-conn.sendHydrated(m.chat, `${conn.getName(m.sender)} ......`, wm, null, null, null, null, null, [[null, null]], fkontak m)}, 15000)
+conn.sendHydrated(m.chat, `${conn.getName(m.sender)} ......`, wm, null, null, null, null, null, [
+[null, null]], fkontak, m)}, 15000)
 
 setTimeout(() => {
-conn.sendHydrated(m.chat, `${conn.getName(m.sender)} Dapet nih..`, wm, null, null, null, null, null, [[null, null]], fkontak m)}, 14000)
+conn.sendHydrated(m.chat, `${conn.getName(m.sender)} Dapet nih..`, wm, null, null, null, null, null, [
+[null, null]], fkontak, m)}, 14000)
 
 setTimeout(() => {
-conn.sendHydrated(m.chat, `${conn.getName(m.sender)} Sedang berburu...`, wm, null, null, null, null, null, [[null, null]], fkontak m)}, 0)
+conn.sendHydrated(m.chat, `${conn.getName(m.sender)} Sedang berburu...`, wm, null, null, null, null, null, [
+[null, null]], fkontak, m)}, 0)
+	
 user.lastberburu = new Date * 1			
 }
 handler.help = ['berburu']
