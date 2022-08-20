@@ -19,7 +19,8 @@ let handler = async (m, { conn }) => {
 	//let _timers = (500000 - __timers)
 	//let timers = msToTime(_timers) 
 	let user = global.db.data.users[m.sender]
-	let time = user.lastclaim + 100000
+	let time = global.db.data.users[m.sender].lastberburu + 100000
+	//let time = global.db.data.users[m.sender].lastclaim + 36000000
   
 	//if (new Date - global.db.data.users[m.sender].lastberbru > 100000) {
 		let randomaku1 = `${Math.floor(Math.random() * 10)}`
@@ -85,7 +86,7 @@ let handler = async (m, { conn }) => {
 		global.db.data.users[m.sender].babi += rbrb11
 		global.db.data.users[m.sender].ayam += rbrb12
 	
-if (new Date - user.lastclaim < 100000) {
+if (new Date - global.db.data.users[m.sender].lastberburu < 100000) {
 		setTimeout(() => {
 			conn.sendHydrated(m.chat, hsl, fkontak, null, null, null, null, null, [
       [null, null]], null)}, 20000)
@@ -106,7 +107,7 @@ if (new Date - user.lastclaim < 100000) {
 		setTimeout(() => {
 			conn.sendHydrated(m.chat, `${conn.getName(m.sender)} Sedang berburu...`, fkontak, null, null, null, null, null, [
       [null, null]], null)}, 0)
-           user.lastberburu = new Date * 1	
+           global.db.data.users[m.sender].lastberburu = new Date * 1	
 		
 } throw conn.sendButton(m.chat, `*Parece que estás cansado*\n*por favor descansa ${msToTime(time - new Date())}*\n*Para poder seguir cazando*\n`, wm, null, [
 ['Kandang', '.kandang']], fkontak, m)
