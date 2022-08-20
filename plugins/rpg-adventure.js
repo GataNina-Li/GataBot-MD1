@@ -25,7 +25,7 @@ let imgr = flaaa.getRandom()
     let user = global.db.data.users[m.sender]
     let timers = (cooldown - (new Date - user.lastadventure))
 if (user.health < 80) return conn.sendButton(m.chat,`${htki} 𝘽𝘼𝙅𝘼 𝙎𝘼𝙇𝙐𝘿 ${htka}`,
-`𝙏𝙐 𝙎𝘼𝙇𝙐𝘿 💔 𝙀𝙎𝙏Á 𝙋𝙊𝙍 𝘿𝙀𝘽𝘼𝙅𝙊 𝘿𝙀 *80!!*
+`𝙏𝙐 𝙎𝘼𝙇𝙐𝘿 💔 𝙀𝙎𝙏𝘼 𝙋𝙊𝙍 𝘿𝙀𝘽𝘼𝙅𝙊 𝘿𝙀 *80!!*
 𝙋𝙊𝙍 𝙁𝘼𝙑𝙊𝙍 𝘾𝙐𝙍𝘼𝙏𝙀 𝙋𝙍𝙄𝙈𝙀𝙍𝙊 𝙋𝘼𝙍𝘼 𝘼𝙑𝙀𝙉𝙏𝙐𝙍𝘼𝙍 𝘿𝙀 𝙉𝙐𝙀𝙑𝙊\n\n𝙔𝙊𝙐𝙍 𝙃𝙀𝘼𝙇𝙏𝙃 💔 𝙄𝙎 𝘽𝙀𝙇𝙊𝙒 *80!!*\n𝙋𝙇𝙀𝘼𝙎𝙀 𝙃𝙀𝘼𝙇 𝙁𝙄𝙍𝙎𝙏 𝙏𝙊 𝘼𝘿𝙑𝙀𝙉𝙏𝙐𝙍𝙀 𝘼𝙂𝘼𝙄𝙉`.trim(), imgr + 'MALA SALUD : BAD HEALTH', [
 [`❤️ 𝘾𝙐𝙍𝘼𝙍𝙈𝙀 | 𝙃𝙀𝘼𝙇 𝙈𝙀`, `${usedPrefix}heal`],
 [`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊 | 𝙄𝙉𝙑𝙀𝙉𝙏𝙊𝙍𝙔`, `${usedPrefix}inventory`]], fkontak, m)
@@ -62,8 +62,8 @@ ${cmenua}`
         if (total) text += `\n» ${global.rpg.emoticon(rewardItem)} ${total}`
     }
     conn.sendButton(m.chat, 
-     `${htki} 𝘼𝙑𝙀𝙉𝙏𝙐𝙍𝘼 ${htka}` 
-    `${htki} 𝘼𝘿𝙑𝙀𝙉𝙏𝙐𝙍𝙀 ${htka}`, text.trim(), `https://static-maps.yandex.ru/1.x/?lang=id-ID&ll=${kt[1][0].longitude},${kt[1][0].latitude}&z=12&l=map&size=600,300`, [
+     `${htki} 𝘼𝙑𝙀𝙉𝙏𝙐𝙍𝘼 ${htka}`, 
+     text.trim(), `https://static-maps.yandex.ru/1.x/?lang=id-ID&ll=${kt[1][0].longitude},${kt[1][0].latitude}&z=12&l=map&size=600,300`, [
 [`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊 | 𝙄𝙉𝙑𝙀𝙉𝙏𝙊𝙍𝙔`, `${usedPrefix}inventory`],
 [`🔔 𝙍𝙀𝘾𝙇𝘼𝙈𝙊 𝘿𝙄𝘼𝙍𝙄𝙊 | 𝘿𝘼𝙄𝙇𝙔`, `${usedPrefix}daily`]
 ], fkontak, m)
