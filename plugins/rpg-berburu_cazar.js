@@ -85,45 +85,37 @@ let hsl = `
 		global.db.data.users[m.sender].ayam += rbrb12
 	
 let time = global.db.data.users[m.sender].lastberburu + 100000
-if (new Date - global.db.data.users[m.sender].lastberburu < 100000) throw conn.sendButton(m.chat, `*Por favor descanse*`, `Tiempo: ${msToTime(time - new Date())}\n${wm}`, null, [
-['Kandang', '.kandang']], fkontak, m)	
+if (new Date - global.db.data.users[m.sender].lastberburu < 100000) { 
 
 setTimeout(() => {
 conn.sendHydrated(m.chat, hsl, wm, null, null, null, null, null, [
-[null, null]], fkontak, m)}, 20000)
+[null, null]], null)}, 20000)
 	        
 setTimeout(() => {
 conn.sendHydrated(m.chat, `${conn.getName(m.sender)} Nah ini dia`, wm, null, null, null, null, null, [
-[null, null]], fkontak, m)}, 18000)
+[null, null]], null)}, 18000)
 
 setTimeout(() => {
 conn.sendHydrated(m.chat, `${conn.getName(m.sender)} ......`, wm, null, null, null, null, null, [
-[null, null]], fkontak, m)}, 15000)
+[null, null]], null)}, 15000)
 
 setTimeout(() => {
 conn.sendHydrated(m.chat, `${conn.getName(m.sender)} Dapet nih..`, wm, null, null, null, null, null, [
-[null, null]], fkontak, m)}, 14000)
+[null, null]], null)}, 14000)
 
 setTimeout(() => {
 conn.sendHydrated(m.chat, `${conn.getName(m.sender)} Sedang berburu...`, wm, null, null, null, null, null, [
-[null, null]], fkontak, m)}, 0)
+[null, null]], null)}, 0)	
+user.lastberburu = new Date * 1	
 	
-user.lastberburu = new Date * 1			
+} throw conn.sendButton(m.chat, `*Por favor descanse*`, `Tiempo: ${msToTime(time - new Date())}\n${wm}`, null, [
+['Kandang', '.kandang']], fkontak, m)	
 }
 handler.help = ['berburu']
 handler.tags = ['rpg']
 handler.command = /^(berburu|caza(r)?)$/i
 handler.group = true
 export default handler
-
-/*function clockString(ms) {
-	let h = Math.floor(ms / 3600000)
-	let m = Math.floor(ms / 60000) % 60
-	let s = Math.floor(ms / 1000) % 60
-	console.log({ ms, h, m, s })
-  
-	return [h, m, s].map(v => v.toString().padStart(2, 0)).join(':')
-}*/
 
 function msToTime(duration) {
   var milliseconds = parseInt((duration % 1000) / 100),
@@ -135,5 +127,5 @@ function msToTime(duration) {
   minutes = (minutes < 10) ? "0" + minutes : minutes
   seconds = (seconds < 10) ? "0" + seconds : seconds
 
-  return minutes + " Minuto(s)" + seconds + " Segundo(s)"
+  return minutes + " Minuto(s) " + seconds + " Segundo(s)"
 }
