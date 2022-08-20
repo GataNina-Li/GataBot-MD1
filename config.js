@@ -301,7 +301,7 @@ global.rpgg = {
       //armordurability: '🤺 ',
       babi: '🐖',
       bank: '🏦',
-      babihutan: '🐗',
+      Jabali: '🐗',
       bibitanggur: '🍇',
       bibitapel: '🍎',
       bibitjeruk: '🍊',
