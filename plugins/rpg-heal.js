@@ -22,7 +22,7 @@ let _package = JSON.parse(await promises.readFile(join(__dirname, '../package.js
 let user = global.db.data.users[m.sender]
     
 if (user.health >= 100) return conn.sendButton(m.chat, `𝙏𝙐 𝙎𝘼𝙇𝙐𝘿 𝙀𝙎𝙏𝘼 𝙇𝙇𝙀𝙉𝘼 ❤️\n𝙔𝙊𝙐𝙍 𝙃𝙀𝘼𝙇𝙏𝙃 𝙄𝙎 𝙁𝙐𝙇𝙇 ❤️`, wm, imgr + `SALUD | HEALTH: ${user.health}`, [
-[`🏕️ 𝘼𝙑𝙀𝙉𝙏𝙐𝙍𝘼𝙍 | 𝙑𝙀𝙉𝙏𝙐𝙍𝙀`, `${usedPrefix}adventure`], [`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊 | 𝙄𝙉𝙑𝙀𝙉𝙏𝙊𝙍𝙔`, `${usedPrefix}adventure`]], fkontak, m)
+[`🏕️ 𝘼𝙑𝙀𝙉𝙏𝙐𝙍𝘼𝙍 | 𝙑𝙀𝙉𝙏𝙐𝙍𝙀`, `${usedPrefix}adventure`], [`𝘼𝙫𝙚𝙣𝙩𝙪𝙧𝙖𝙧 | 𝙑𝙚𝙣𝙩𝙪𝙧𝙚 🏕️`, `${usedPrefix}adventure`]], fkontak, m)
     
 const heal = 40 + (user.cat * 4)
 let count = Math.max(1, Math.min(Number.MAX_SAFE_INTEGER, (isNumber(args[0]) && parseInt(args[0]) || Math.round((90 - user.health) / heal)))) * 1
