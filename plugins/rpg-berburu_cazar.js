@@ -106,7 +106,7 @@ let handler = async (m, { conn }) => {
       [null, null]], null)}, 0)
            user.lastberburu = new Date * 1	
 		
-	} if (__timers) return conn.sendButton(m.chat, `\n*Parece que estás cansado*\n*por favor descansa ${timers}*\n*Para poder seguir cazando*\n`, wm, null, [
+	} if (timers) return conn.sendButton(m.chat, `\n*Parece que estás cansado*\n*por favor descansa ${timers}*\n*Para poder seguir cazando*\n`, wm, null, [
 		['Kandang', '.kandang']], fkontak, m)
 }
 handler.help = ['berburu']
