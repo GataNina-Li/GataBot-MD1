@@ -68,9 +68,8 @@ let hsl = `
  *🐘 = [ ${anti3} ]*			 *🐒 = [ ${anti9} ]*
  *🐐 = [ ${anti4} ]*			 *🐗 = [ ${anti10} ]*
  *🐼 = [ ${anti5} ]*			 *🐖 = [ ${anti11} ]*
- *🐊 = [ ${anti6} ]*		     *🐓 = [ ${anti12} ]*
+ *🐊 = [ ${anti6} ]*		     *🐓 = [ ${anti12} ]*`
 
- *${author}*`
 		global.db.data.users[m.sender].banteng += rbrb1
 		global.db.data.users[m.sender].harimau += rbrb2
 		global.db.data.users[m.sender].gajah += rbrb3
@@ -85,7 +84,8 @@ let hsl = `
 		global.db.data.users[m.sender].ayam += rbrb12
 	
 let time = global.db.data.users[m.sender].lastberburu + 100000
-if (new Date - global.db.data.users[m.sender].lastberburu < 100000) { 
+if (new Date - global.db.data.users[m.sender].lastberburu < 100000) throw conn.sendButton(m.chat, `*Por favor descanse*`, `Tiempo: ${clockString(time - new Date())}\n${wm}`, null, [
+['Kandang', '.kandang']], fkontak, m)	
 
 setTimeout(() => {
 conn.sendHydrated(m.chat, hsl, wm, null, null, null, null, null, [
@@ -108,8 +108,6 @@ conn.sendHydrated(m.chat, `${conn.getName(m.sender)} Sedang berburu...`, wm, nul
 [null, null]], null)}, 0)	
 user.lastberburu = new Date * 1	
 	
-} throw conn.sendButton(m.chat, `*Por favor descanse*`, `Tiempo: ${msToTime(time - new Date())}\n${wm}`, null, [
-['Kandang', '.kandang']], fkontak, m)	
 }
 handler.help = ['berburu']
 handler.tags = ['rpg']
@@ -117,7 +115,20 @@ handler.command = /^(berburu|caza(r)?)$/i
 handler.group = true
 export default handler
 
-function msToTime(duration) {
+function clockString(ms) {
+	let h = Math.floor(ms / 3600000)
+	let m = Math.floor(ms / 60000) % 60
+	let s = Math.floor(ms / 1000) % 60
+	console.log({
+		ms,
+		h,
+		m,
+		s
+	})
+	return [h, m, s].map(v => v.toString().padStart(2, 0)).join(':')
+}
+
+/*function msToTime(duration) {
   var milliseconds = parseInt((duration % 1000) / 100),
     seconds = Math.floor((duration / 1000) % 60),
     minutes = Math.floor((duration / (1000 * 60)) % 60),
@@ -128,4 +139,4 @@ function msToTime(duration) {
   seconds = (seconds < 10) ? "0" + seconds : seconds
 
   return minutes + " Minuto(s) " + seconds + " Segundo(s)"
-}
+}*/
