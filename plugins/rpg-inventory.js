@@ -1227,7 +1227,7 @@ await conn.sendButton(m.chat, aineh, wm, imgr + 'Inventario : Inventory', [[`ᴛ
 }
 handler.help = ['inventory', 'inv']
 handler.tags = ['rpg']
-handler.command = /^(inventory)$/i
+handler.command = /^(inventory|inv|inventario)$/i
 export default handler
 
 const more = String.fromCharCode(8206)
