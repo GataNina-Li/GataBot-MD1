@@ -19,7 +19,7 @@ let handler = async (m, { conn }) => {
 	//let _timers = (500000 - __timers)
 	//let timers = msToTime(_timers) 
 	let user = global.db.data.users[m.sender]
-	let time = global.db.data.users[m.sender].lastberburu + 100000
+	let time = global.db.data.users[m.sender].lastberburu + 10000
 	//let time = global.db.data.users[m.sender].lastclaim + 36000000
   
 	//if (new Date - global.db.data.users[m.sender].lastberbru > 100000) {
@@ -86,7 +86,7 @@ let handler = async (m, { conn }) => {
 		global.db.data.users[m.sender].babi += rbrb11
 		global.db.data.users[m.sender].ayam += rbrb12
 	
-if (new Date - global.db.data.users[m.sender].lastberburu < 100000) {
+if (new Date - global.db.data.users[m.sender].lastberburu < 10000) {
 		setTimeout(() => {
 			conn.sendHydrated(m.chat, hsl, fkontak, null, null, null, null, null, [
       [null, null]], null)}, 20000)
@@ -137,5 +137,5 @@ function msToTime(duration) {
   minutes = (minutes < 10) ? "0" + minutes : minutes
   seconds = (seconds < 10) ? "0" + seconds : seconds
 
-  return hours + " Horas " + minutes + " Minutos"
+  return hours + " Hora(s) " + minutes + " Minuto(s)" + seconds + " Segundo(s)"
 }
