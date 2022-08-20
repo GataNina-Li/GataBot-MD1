@@ -92,19 +92,19 @@ conn.sendHydrated(m.chat, hsl, wm, null, null, null, null, null, [
 [null, null]], null)}, 20000)
 	        
 setTimeout(() => {
-conn.sendHydrated(m.chat, `${conn.getName(m.sender)} Nah ini dia`, wm, null, null, null, null, null, [
+conn.sendHydrated(m.chat, `${conn.getName(m.sender)} *${['OBJETIVO FIJADO 🎯','Carnada en Marcha 🍫 🍇 🍖','ANIMALES DETECTADOS!! 🐂 🐅 🐘 🐼','ANIMALES DETECTADOS!! 🐖 🐃 🐮 🐒'].getRandom()}*`, wm, null, null, null, null, null, [
 [null, null]], null)}, 18000)
 
 setTimeout(() => {
-conn.sendHydrated(m.chat, `${conn.getName(m.sender)} ......`, wm, null, null, null, null, null, [
+conn.sendHydrated(m.chat, `${conn.getName(m.sender)} *${['Armas lista para la Caza!!','Probando Armas 🔫 💣 🪓 🏹','CARROS PARA LA CAZA!! 🚗 🏍️ 🚜','TIEMPO BUENO PARA LA CAZA 🧤'].getRandom()}*`, wm, null, null, null, null, null, [
 [null, null]], null)}, 15000)
 
 setTimeout(() => {
-conn.sendHydrated(m.chat, `${conn.getName(m.sender)} Dapet nih..`, wm, null, null, null, null, null, [
+conn.sendHydrated(m.chat, `${conn.getName(m.sender)} *${['Looking for hunting implements...','Getting everything ready for the hunt!!','Establishing Hunting Place...','PREPARING HUNTING PLACE!!'].getRandom()}*`, wm, null, null, null, null, null, [
 [null, null]], null)}, 14000)
 
 setTimeout(() => {
-conn.sendHydrated(m.chat, `${conn.getName(m.sender)} Sedang berburu...`, wm, null, null, null, null, null, [
+conn.sendHydrated(m.chat, `${conn.getName(m.sender)} *${['Buscando implementos de caza...','Alistando todo para la caza!!','Estableciendo Lugar de la Caza...','PREPARANDO LUGAR DE CAZA!!'].getRandom()}*`, wm, null, null, null, null, null, [
 [null, null]], null)}, 0)	
 user.lastberburu = new Date * 1	
 	
