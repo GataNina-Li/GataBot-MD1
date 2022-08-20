@@ -447,8 +447,9 @@ const fkontak = {
 	"participant": "0@s.whatsapp.net"
 }
 //conn.reply(m.chat, str, m)
-await conn.sendButton(m.chat, str, wm, imgr + `Inventario : Inventory`, [[`Transferir`, `.transfer`],
-[`Aventura`, `.adventure`]], fkontak, m, { mentions: conn.parseMention(str) })
+await conn.sendButton(m.chat, str, wm, imgr + `Inventario : Inventory`, [
+[`𝘼𝙫𝙚𝙣𝙩𝙪𝙧𝙖𝙧 | 𝙑𝙚𝙣𝙩𝙪𝙧𝙚 🏕️`, `${usedPrefix}adventure`],
+['𝙈𝙚𝙣𝙪 𝘼𝙫𝙚𝙣𝙩𝙪𝙧𝙖 | 𝙍𝙋𝙂 💗', '.rpgmenu']], fkontak, m, { mentions: conn.parseMention(str) })
 } else if (args[0] == '2') {
 
 	
@@ -506,8 +507,9 @@ const fkontak = {
 	},
 	"participant": "0@s.whatsapp.net"
 }
-await conn.sendButton(m.chat, caption, wm, imgr + 'Inventario : Inventory', [[`ᴛʀᴀɴsғᴇʀ`, `.transfer`],
-[`ᴀᴅᴠᴇɴᴛᴜʀᴇ`, `.adventure`]], fkontak, m, { mentions: conn.parseMention(caption) })
+await conn.sendButton(m.chat, caption, wm, imgr + 'Inventario : Inventory', [
+[`𝘼𝙫𝙚𝙣𝙩𝙪𝙧𝙖𝙧 | 𝙑𝙚𝙣𝙩𝙪𝙧𝙚 🏕️`, `${usedPrefix}adventure`],
+['𝙈𝙚𝙣𝙪 𝘼𝙫𝙚𝙣𝙩𝙪𝙧𝙖 | 𝙍𝙋𝙂 💗', '.rpgmenu']], fkontak, m, { mentions: conn.parseMention(caption) })
 	
 } else if (args[0] == '3') { // Inventario 3
 
@@ -902,7 +904,7 @@ const fkontak = {
 	"participant": "0@s.whatsapp.net"
 }
 // let ftroli = { key: {participant : '0@s.whatsapp.net'}, message: { orderMessage: { itemCount: 2022, status: 1, surface: 1, message: bottime, orderTitle: wm, sellerJid: '0@s.whatsapp.net' } } }   
- await conn.sendButton(m.chat, str, wm, imgr + 'Inventario : Inventory', [[`${healt < 40 ? 'Heal' : 'Adventure'}`, `${healt < 40 ? '.heal' : '.adventure'}`], ['Shop', '.shop']], m, {quoted: fkontak})
+ await conn.sendButton(m.chat, str, wm, imgr + 'Inventario : Inventory', [[`${healt < 40 ? '❤️ 𝘾𝙐𝙍𝘼𝙍𝙈𝙀 | 𝙃𝙀𝘼𝙇 𝙈𝙀' : '𝘼𝙫𝙚𝙣𝙩𝙪𝙧𝙖𝙧 | 𝙑𝙚𝙣𝙩𝙪𝙧𝙚 🏕️'}`, `${healt < 40 ? '.heal' : '.adventure'}`], ['🏪 𝙏𝙞𝙚𝙣𝙙𝙖 | 𝙎𝙝𝙤𝙥', '.shop']], m, {quoted: fkontak})
 
 } else if (args[0] == '4') { // Inventario 4
 
@@ -1179,8 +1181,9 @@ const fkontak = {
 	"participant": "0@s.whatsapp.net"
 } 
 
-    await conn.sendButton(m.chat, str, wm, imgr + 'Inventario : Inventory', [[`ᴛʀᴀɴsғᴇʀ`, `.transfer`],
-[`ᴀᴅᴠᴇɴᴛᴜʀᴇ`, `.adventure`]], fkontak, m, { mentions: conn.parseMention(str) })
+    await conn.sendButton(m.chat, str, wm, imgr + 'Inventario : Inventory', [
+[`𝘼𝙫𝙚𝙣𝙩𝙪𝙧𝙖𝙧 | 𝙑𝙚𝙣𝙩𝙪𝙧𝙚 🏕️`, `${usedPrefix}adventure`],
+['𝙈𝙚𝙣𝙪 𝘼𝙫𝙚𝙣𝙩𝙪𝙧𝙖 | 𝙍𝙋𝙂 💗', '.rpgmenu']], fkontak, m, { mentions: conn.parseMention(str) })
     } else if (args[0] == 'invkolam') { // Inventario piscina
 
     let paus = global.db.data.users[m.sender].paus 
@@ -1236,8 +1239,9 @@ const fkontak = {
 	},
 	"participant": "0@s.whatsapp.net"
 }
-await conn.sendButton(m.chat, aineh, wm, imgr + 'Inventario : Inventory', [[`ᴛʀᴀɴsғᴇʀ`, `.transfer`],
-[`ᴀᴅᴠᴇɴᴛᴜʀᴇ`, `.adventure`]], fkontak, m)}
+await conn.sendButton(m.chat, aineh, wm, imgr + 'Inventario : Inventory', [
+[`𝘼𝙫𝙚𝙣𝙩𝙪𝙧𝙖𝙧 | 𝙑𝙚𝙣𝙩𝙪𝙧𝙚 🏕️`, `${usedPrefix}adventure`],
+['𝙈𝙚𝙣𝙪 𝘼𝙫𝙚𝙣𝙩𝙪𝙧𝙖 | 𝙍𝙋𝙂 💗', '.rpgmenu']], fkontak, m)}
 
 }
 handler.help = ['inventory', 'inv']
