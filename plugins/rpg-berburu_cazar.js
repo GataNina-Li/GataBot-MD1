@@ -17,7 +17,7 @@ let handler = async (m, { conn }) => {
   
 	let __timers = (new Date - global.db.data.users[m.sender].lastberbru)
 	let _timers = (500000 - __timers)
-	let timers = clockString(_timers)
+	let timers = msToTime(_timers) 
 	let user = global.db.data.users[m.sender]
   
 	if (new Date - global.db.data.users[m.sender].lastberbru > 500000) {
@@ -115,11 +115,24 @@ handler.command = /^(berburu|caza(r)?)$/i
 handler.group = true
 export default handler
 
-function clockString(ms) {
+/*function clockString(ms) {
 	let h = Math.floor(ms / 3600000)
 	let m = Math.floor(ms / 60000) % 60
 	let s = Math.floor(ms / 1000) % 60
 	console.log({ ms, h, m, s })
   
 	return [h, m, s].map(v => v.toString().padStart(2, 0)).join(':')
+}*/
+
+function msToTime(duration) {
+  var milliseconds = parseInt((duration % 1000) / 100),
+    seconds = Math.floor((duration / 1000) % 60),
+    minutes = Math.floor((duration / (1000 * 60)) % 60),
+    hours = Math.floor((duration / (1000 * 60 * 60)) % 24)
+
+  hours = (hours < 10) ? "0" + hours : hours
+  minutes = (minutes < 10) ? "0" + minutes : minutes
+  seconds = (seconds < 10) ? "0" + seconds : seconds
+
+  return hours + " Horas " + minutes + " Minutos"
 }
