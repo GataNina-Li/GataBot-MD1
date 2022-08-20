@@ -29,23 +29,21 @@ let handler = async (m, { conn, usedPrefix}) => {
 	let ayam = global.db.data.users[m.sender].ayam
 
 	let ndy = `
-*${htki} 𝘼𝙉𝙄𝙈𝘼𝙇𝙀𝙎 𝘾𝘼𝙋𝙏𝙐𝙍𝘼𝘿𝙊𝙎 ${htka}*
+*${htki} 𝘼𝙉𝙄𝙈𝘼𝙇𝙀𝙎 ${htka}*
     
- ${rpg.emoticon('bull')} *➡️ ${banteng}*
- ${rpg.emoticon('tiger')} *➡️ ${harimau}*
- ${rpg.emoticon('elephant')} *➡️ ${gajah}*
- ${rpg.emoticon('kambing')} *➡️ ${kambing}*
- ${rpg.emoticon('panda')} *➡️ ${panda}*
- ${rpg.emoticon('buaya')} *➡️ ${buaya}*
- ${rpg.emoticon('kerbau')} *➡️ ${kerbau}*
- ${rpg.emoticon('cow')} *➡️ ${sapi}*
- ${rpg.emoticon('monyet')} *➡️ ${monyet}*
- ${rpg.emoticon('babihutan')} *➡️ ${babihutan}*
- ${rpg.emoticon('babi')} *➡️ ${babi}*
- ${rpg.emoticon('ayam')} *➡️ ${ayam}
- 
- `.trim()
-	await conn.sendButton(m.chat, ndy, wm, null, [['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', '/menu'], [`🎒 𝙄𝙣𝙫𝙚𝙣𝙩𝙖𝙧𝙞𝙤 | 𝙄𝙣𝙫𝙚𝙣𝙩𝙤𝙧𝙮`, `.inventario`]], fkontak, m)
+ *${rpg.emoticon('bull')} ➡️ ${banteng}*
+ *${rpg.emoticon('tiger')} ➡️ ${harimau}*
+ *${rpg.emoticon('elephant')} ➡️ ${gajah}*
+ *${rpg.emoticon('kambing')} ➡️ ${kambing}*
+ *${rpg.emoticon('panda')} ➡️ ${panda}*
+ *${rpg.emoticon('buaya')} ➡️ ${buaya}*
+ *${rpg.emoticon('kerbau')} ➡️ ${kerbau}*
+ *${rpg.emoticon('cow')} ➡️ ${sapi}*
+ *${rpg.emoticon('monyet')} ➡️ ${monyet}*
+ *${rpg.emoticon('Jabali')} ➡️ ${babihutan}*
+ *${rpg.emoticon('babi')} ➡️ ${babi}*
+ *${rpg.emoticon('ayam')} ➡️ ${ayam}`.trim()
+	await conn.sendButton(m.chat, ndy, `🔖 𝘼𝙣𝙞𝙢𝙖𝙡𝙚𝙨 𝙡𝙞𝙨𝙩𝙤𝙨 𝙥𝙖𝙧𝙖 𝘾𝙤𝙘𝙞𝙣𝙖𝙧\n𝘼𝙣𝙞𝙢𝙖𝙡𝙨 𝙧𝙚𝙖𝙙𝙮 𝙩𝙤 𝙘𝙤𝙤𝙠\n${wm}`, null, [['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', '/menu'], [`🎒 𝙄𝙣𝙫𝙚𝙣𝙩𝙖𝙧𝙞𝙤 | 𝙄𝙣𝙫𝙚𝙣𝙩𝙤𝙧𝙮`, `.inventario`]], fkontak, m)
 
 }
 handler.help = ['kandang']
