@@ -109,7 +109,7 @@ if (new Date - global.db.data.users[m.sender].lastberburu < 10000) {
       [null, null]], null)}, 0)
            global.db.data.users[m.sender].lastberburu = new Date * 1	
 		
-} throw conn.sendButton(m.chat, `*Parece que estás cansado*\n*por favor descansa ${msToTime(time - new Date())}*\n*Para poder seguir cazando*\n`, wm, null, [
+} throw conn.sendButton(m.chat, `*Parece que estás cansado*\n*por favor descansa ${clockString(time - new Date())}*\n*Para poder seguir cazando*\n`, wm, null, [
 ['Kandang', '.kandang']], fkontak, m)
 }
 handler.help = ['berburu']
@@ -118,16 +118,16 @@ handler.command = /^(berburu|caza(r)?)$/i
 handler.group = true
 export default handler
 
-/*function clockString(ms) {
+function clockString(ms) {
 	let h = Math.floor(ms / 3600000)
 	let m = Math.floor(ms / 60000) % 60
 	let s = Math.floor(ms / 1000) % 60
 	console.log({ ms, h, m, s })
   
 	return [h, m, s].map(v => v.toString().padStart(2, 0)).join(':')
-}*/
+}
 
-function msToTime(duration) {
+/*function msToTime(duration) {
   var milliseconds = parseInt((duration % 1000) / 100),
     seconds = Math.floor((duration / 1000) % 60),
     minutes = Math.floor((duration / (1000 * 60)) % 60),
@@ -138,4 +138,4 @@ function msToTime(duration) {
   seconds = (seconds < 10) ? "0" + seconds : seconds
 
   return hours + " Hora(s) " + minutes + " Minuto(s)" + seconds + " Segundo(s)"
-}
+}*/
