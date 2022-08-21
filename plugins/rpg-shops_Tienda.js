@@ -3,62 +3,119 @@ const items = {
         exp: {
             emerald: 22,
         },
-        potion: {
+        limit: {
             money: 1250,
         },
-        aqua: {
+        diamond: {
            money: 500
         },
-        trash: {
+        joincount: {
             money: 4,
         },
-        wood: {
+        emerald: {
             money: 700
         },
-        rock: {
+        berlian: {
             money: 850
         },
-        string: {
+        kyubi: {
             money: 400
         },
-        iron: { 
+        gold: { 
         	money: 3000
         },
-        diamond: {
+        money: {
             money: 7500
         },
-        emerald: {
+        tiketcoin: {
             money: 8500
         },
-        gold: {
+        potion: {
             money: 3500
         },
-        coal: {
+        aqua: {
             money: 1500
         },
-        common: {
+        trash: {
             money: 200
+        },
+        wood: {
+            money: 2000
+        },
+        rock: {
+            money: 25000
+        },
+        batu: {
+            money: 75000
+        },
+        string: {
+            money: 3500
+        },
+        iron: {
+            money: 40000
+        },
+        coal: {
+            money: 120000
+        },
+        botol: {
+            money: 120000
+        },
+        kaleng: {
+            money: 2000
+        },
+        kardus: {
+            money: 2000
+        },
+        eleksirb: {
+            money: 2000
+        },
+        emasbatang: {
+            money: 2000
+        },
+        emasbiasa: {
+            money: 2000
+        },
+        rubah: {
+            money: 2000
+        },
+        sampah: {
+            money: 2000
+        },
+        serigala: {
+            money: 2000
+        },
+        kayu: {
+            money: 2000
+        },
+        sword: {
+            money: 2000
+        },
+        umpan: {
+            money: 2000
+        },
+        healtmonster: {
+            money: 2000
+        },
+        pancingan: {
+            money: 2000
+        },
+        common: {
+            money: 2000
         },
         uncommon: {
             money: 2000
         },
         mythic: {
-            money: 25000
-        },
-        legendary: {
-            money: 75000
-        },
-        foodpet: {
-            money: 3500
-        },
-        fox: {
-            money: 40000
-        },
-        naga: {
-            money: 120000
+            money: 2000
         },
         pet: {
-            money: 120000
+            money: 2000
+        },
+        gardenboxs: {
+            money: 2000
+        },
+        legendary: {
+            money: 2000
         },
         anggur: {
             money: 2000
@@ -66,10 +123,13 @@ const items = {
         apel: {
             money: 2000
         },
-        batu: {
+        jeruk: {
             money: 2000
         },
-        berlian: {
+        mangga: {
+            money: 2000
+        },
+        pisang: {
             money: 2000
         },
         bibitanggur: {
@@ -87,61 +147,31 @@ const items = {
         bibitpisang: {
             money: 2000
         },
-        botol: {
-            money: 2000
-        },
         centaur: {
-            money: 2000
-        },
-        eleksirb: {
-            money: 2000
-        },
-        emasbatang: {
-            money: 2000
-        },
-        emasbiasa: {
-            money: 2000
-        },
-        exp: {
-            money: 2000
-        },
-        gardenboc: {
-            money: 2000
-        },
-        gardenboxs: {
             money: 2000
         },
         griffin: {
             money: 2000
         },
-        healtmonster: {
-            money: 2000
-        },
-        jeruk: {
-            money: 2000
-        },
-        kaleng: {
-            money: 2000
-        },
-        kardus: {
-            money: 2000
-        },
-        kayu: {
-            money: 2000
-        },
-        ketake: {
-            money: 2000
-        },
-        koinexpg: {
-            money: 2000
-        },
         kucing: {
+            money: 2000
+        },
+        naga: {
+            money: 2000
+        },
+        fox: {
             money: 2000
         },
         kuda: {
             money: 2000
         },
-        kyubi: {
+        phonix: {
+            money: 2000
+        },
+        wolf: {
+            money: 2000
+        },
+        petFood: {
             money: 2000
         },
         makanancentaur: {
@@ -160,99 +190,126 @@ const items = {
             money: 2000
         },
         makananphonix: {
-            money: 2000
-        },
-        mangga: {
-            money: 2000
-        },
-        pancingan: {
-            money: 2000
-        },
-        phonix: {
-            money: 2000
-        },
-        pisang: {
-            money: 2000
-        },
-        rubah: {
-            money: 2000
-        },
-        sampah: {
-            money: 2000
-        },
-        serigala: {
-            money: 2000
-        },
-        sword: {
-            money: 2000
-        },
-        tiketcoin: {
-            money: 2000
-        },
-        umpan: {
             money: 2000
         }
     },
     sell: {
-        limit: {
-            exp: 999
+        exp: {
+            emerald: 22,
         },
-        potion: {
+        limit: {
             money: 1250,
         },
-        aqua: {
+        diamond: {
            money: 500
         },
-        trash: {
+        joincount: {
             money: 4,
         },
-        wood: {
+        emerald: {
             money: 700
         },
-        rock: {
+        berlian: {
             money: 850
         },
-        string: {
+        kyubi: {
             money: 400
         },
-        iron: { 
+        gold: { 
         	money: 3000
         },
-        diamond: {
+        money: {
             money: 7500
         },
-        emerald: {
+        tiketcoin: {
             money: 8500
         },
-        gold: {
+        potion: {
             money: 3500
         },
-        coal: {
+        aqua: {
             money: 1500
         },
-        common: {
+        trash: {
             money: 200
+        },
+        wood: {
+            money: 2000
+        },
+        rock: {
+            money: 25000
+        },
+        batu: {
+            money: 75000
+        },
+        string: {
+            money: 3500
+        },
+        iron: {
+            money: 40000
+        },
+        coal: {
+            money: 120000
+        },
+        botol: {
+            money: 120000
+        },
+        kaleng: {
+            money: 2000
+        },
+        kardus: {
+            money: 2000
+        },
+        eleksirb: {
+            money: 2000
+        },
+        emasbatang: {
+            money: 2000
+        },
+        emasbiasa: {
+            money: 2000
+        },
+        rubah: {
+            money: 2000
+        },
+        sampah: {
+            money: 2000
+        },
+        serigala: {
+            money: 2000
+        },
+        kayu: {
+            money: 2000
+        },
+        sword: {
+            money: 2000
+        },
+        umpan: {
+            money: 2000
+        },
+        healtmonster: {
+            money: 2000
+        },
+        pancingan: {
+            money: 2000
+        },
+        common: {
+            money: 2000
         },
         uncommon: {
             money: 2000
         },
         mythic: {
-            money: 25000
-        },
-        legendary: {
-            money: 75000
-        },
-        foodpet: {
-            money: 3500
-        },
-        Fox: {
-            money: 40000
-        },
-        naga: {
-            money: 120000
+            money: 2000
         },
         pet: {
-            money: 120000
+            money: 2000
+        },
+        gardenboxs: {
+            money: 2000
+        },
+        legendary: {
+            money: 2000
         },
         anggur: {
             money: 2000
@@ -260,10 +317,13 @@ const items = {
         apel: {
             money: 2000
         },
-        batu: {
+        jeruk: {
             money: 2000
         },
-        berlian: {
+        mangga: {
+            money: 2000
+        },
+        pisang: {
             money: 2000
         },
         bibitanggur: {
@@ -281,61 +341,31 @@ const items = {
         bibitpisang: {
             money: 2000
         },
-        botol: {
-            money: 2000
-        },
         centaur: {
-            money: 2000
-        },
-        eleksirb: {
-            money: 2000
-        },
-        emasbatang: {
-            money: 2000
-        },
-        emasbiasa: {
-            money: 2000
-        },
-        exp: {
-            money: 2000
-        },
-        gardenboc: {
-            money: 2000
-        },
-        gardenboxs: {
             money: 2000
         },
         griffin: {
             money: 2000
         },
-        healtmonster: {
-            money: 2000
-        },
-        jeruk: {
-            money: 2000
-        },
-        kaleng: {
-            money: 2000
-        },
-        kardus: {
-            money: 2000
-        },
-        kayu: {
-            money: 2000
-        },
-        ketake: {
-            money: 2000
-        },
-        koinexpg: {
-            money: 2000
-        },
         kucing: {
+            money: 2000
+        },
+        naga: {
+            money: 2000
+        },
+        fox: {
             money: 2000
         },
         kuda: {
             money: 2000
         },
-        kyubi: {
+        phonix: {
+            money: 2000
+        },
+        wolf: {
+            money: 2000
+        },
+        petFood: {
             money: 2000
         },
         makanancentaur: {
@@ -356,36 +386,6 @@ const items = {
         makananphonix: {
             money: 2000
         },
-        mangga: {
-            money: 2000
-        },
-        pancingan: {
-            money: 2000
-        },
-        phonix: {
-            money: 2000
-        },
-        pisang: {
-            money: 2000
-        },
-        rubah: {
-            money: 2000
-        },
-        sampah: {
-            money: 2000
-        },
-        serigala: {
-            money: 2000
-        },
-        sword: {
-            money: 2000
-        },
-        tiketcoin: {
-            money: 2000
-        },
-        umpan: {
-            money: 2000
-        }
     }
 }
 
@@ -412,7 +412,7 @@ let imgr = flaaa.getRandom()
 ${Object.keys(listItems).map((v) => {
         let paymentMethod = Object.keys(listItems[v]).find(v => v in user)
         //return `» 1 ${global.rpgshop.emoticon(v)}\nCuesta: ${listItems[paymentMethod]}\n\nTiene: ${global.rpgshopp.emoticon(v)} = ${user.v}\nCompre ${global.rpgshopp.emoticon(v)} Usando ${v}`.trim()
-        return `*» 1 ⇢ ${global.rpgshop.emoticon(v)}*\n*Cuesta:* ${listItems[v][paymentMethod]} ${global.rpgshop.emoticon(paymentMethod)}\n*Compra* ${global.rpgshopp.emoticon(v)} Usando ${usedPrefix + command} ${v} *Cantidad*\n-----------------\n`.trim()
+        return `*» 1 ⇢ ${global.rpgshop.emoticon(v)}*\n*Cuesta:* ${listItems[v][paymentMethod]} ${global.rpgshop.emoticon(paymentMethod)}\n*Compra* ${global.rpgshopp.emoticon(v)} Usando ${usedPrefix + command} ${v} *Cantidad*\n*---------------------------------------------------*\n`.trim()
     }).join('\n')}
 –––––––––––––––––––––––––
 💁🏻‍♂ ᴛɪᴩ :
