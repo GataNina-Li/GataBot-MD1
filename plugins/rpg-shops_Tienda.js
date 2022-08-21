@@ -389,7 +389,7 @@ const items = {
     }
 }
 
-let handler = async (m, { command, usedPrefix, args }) => {
+let handler = async (m, { command, conn, usedPrefix, args }) => {
 let imgr = flaaa.getRandom()
     let user = global.db.data.users[m.sender]
     const listItems = Object.fromEntries(Object.entries(items[command.toLowerCase()]).filter(([v]) => v && v in user))
@@ -475,20 +475,20 @@ ${usedPrefix}transfer ${paymentMethod} ${(listItems[item][paymentMethod] * total
         user[paymentMethod] -= listItems[item][paymentMethod] * total
         user[item] += total
         return conn.sendButton(m.chat,
-`*––––––『 BOUGHT 』––––––*`,
-`ʏᴏᴜ *ʙᴏᴜɢʜᴛ ${total} ${global.rpg.emoticon(item)}${item}*.
-`.trim(), imgr + 'bought', [
-[`ɪɴᴠᴇɴᴛᴏʀʏ`, `${usedPrefix}inventory`]
+`*––『 COMPRADO | BOUGHT 』––*`,
+`${conn.getName(m.sender)} ʏᴏᴜ *ʙᴏᴜɢʜᴛ ${total} ${global.rpg.emoticon(item)}${item}*.
+`.trim(), imgr + 'COMPRA EXITOSA : DONE', [
+[`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊 | 𝙄𝙉𝙑𝙀𝙉𝙏𝙊𝙍𝙔`, `${usedPrefix}inventory`]
 ], m)
     } else {
         if (user[item] < total) return m.reply(`You don't have enough *${global.rpg.emoticon(item)}${item}* to sell, you only have ${user[item]} items`)
         user[item] -= total
         user.money += listItems[item].money * total
         return conn.sendButton(m.chat,
-`*–––––––『 SOLD 』–––––––*`,
-`ʏᴏᴜ *sᴏʟᴅ ${total} ${global.rpg.emoticon(item)}${item}*.
-`.trim(), imgr + 'sold', [
-[`ɪɴᴠᴇɴᴛᴏʀʏ`, `${usedPrefix}inventory`]
+`*––『 VENDIDO | SOLD 』––*`,
+`${conn.getName(m.sender)} ʏᴏᴜ *sᴏʟᴅ ${total} ${global.rpg.emoticon(item)}${item}*.
+`.trim(), imgr + 'VENTA EXITOSA : DONE', [
+[`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊 | 𝙄𝙉𝙑𝙀𝙉𝙏𝙊𝙍𝙔`, `${usedPrefix}inventory`]
 ], m)
     }
 }
