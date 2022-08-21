@@ -290,7 +290,7 @@ global.rpg = {
   }
 }
 
-global.rpgg = {
+global.rpgg = { //Solo emojis 
   emoticon(string) {
     string = string.toLowerCase()
     let emott = {
@@ -375,6 +375,90 @@ global.rpgg = {
     let results = Object.keys(emott).map(v => [v, new RegExp(v, 'gi')]).filter(v => v[1].test(string))
     if (!results.length) return ''
     else return emott[results[0][0]]
+  }
+}
+
+
+global.rpgshop = { //Tienda
+  emoticon(string) {
+    string = string.toLowerCase()
+    let emottt = {
+      exp: '⚡ Experiencia : Exp',
+      limit: '💎 Diamante : Diamond',
+      diamond: '💎+ Diamante+ : Diamond+',
+      joincount: '🪙 Token',
+      emerald: '💚 Esmeralda : Emerald',
+      berlian: '♦️ *Joya : Ruby',
+      kyubi: '🌀 Magia : Magic',
+      gold: '👑 Oro : Gold',
+      money: '🐱 GataCoins : CatCoins',
+      tiketcoin: '🎫 Gata Tickers',
+            
+      potion: '🥤 Poción : Potion',
+      aqua: '💧 Agua : Water',
+      trash: '🗑 Basura : Trash',
+      wood: '🪵 Madera : Wood',
+      rock: '🪨 Roca : Rock',
+      batu: '🥌 Piedra : Stone',
+      string: '🕸️ Cuerda : Cuerda',
+      iron: '⛓️ Hierro : Iron',
+      coal: '⚱️ Carbón : Coal',
+      botol: '🍶 Botella : Bottle',
+      kaleng: '🥫 Lata : Can',
+      kardus: '🪧 *Cartón : Paperboard',
+      
+      eleksirb: '💡 Electricidad : Electricity',
+      emasbatang: '〽️ Barra de Oro : Gold bar',
+      emasbiasa: '🧭 Oro Común : Common Gold',
+      rubah: '🦊🌫️ Zorro Grande : Big Fox',
+      sampah: '🗑🌫️ Super Basura : Big Trash',
+      serigala: '🐺🌫️ Super Lobo : Big Wolf',
+      kayu: '🛷 Super Madera : Super Wood',
+      sword: '⚔️ Espada : Sword',
+      umpan: '🪱 Carnada : Bait', 
+      healtmonster: '👺 Salud Maligna : Evil Health',
+      pancingan: '🪝 Gancho : Hook',
+       
+      common: '📦 Caja Común : Common Box',
+      uncommon: '🥡 Caja Poco Común : Uncommon',
+      mythic: '🗳️ Caja Mítica : Mythic Box',
+      pet: '📫 Caja de Mascotas : Pet Box',//?
+      gardenboxs: '💐 Caja de Jardinería : Garden boxs',//?
+      legendary: '🎁 Caja Legendaria : Legendary Box',
+      
+      anggur: '🍇 Uva : Grape',
+      apel: '🍎 Manzana : Apple',
+      jeruk: '🍊 Naranja : Orange',
+      mangga: '🥭 Mango',
+      pisang: '🍌 Platano : Banana',
+      
+      bibitanggur: '🌾🍇 Semillas de uva : Grape Seeds',
+      bibitapel: '🌾🍎 Semillas de manzana : Apple seeds',
+      bibitjeruk: '🌾🍊 Semillas de naranja : Orange Seeds',
+      bibitmangga: '🌾🥭 Semillas de Mango : Mango Seeds',
+      bibitpisang: '🌾🍌 Semillas de plátano : Banana Seeds',
+      
+      centaur: '🐐 Centauro : Centaur',
+      griffin: '🦅 Ave : Griffin',
+      kucing: '🐈 Gato : Cat',
+      naga: '🐉 Dragón : Dragon',
+      fox: '🦊 Zorro : Fox',
+      kuda: '🐎 Caballo : Horse',
+      phonix: '🕊️ Fénix : Phoenix',
+      //gardenboc:
+      //ketake:
+      //koinexpg: 
+      petFood: '🍖 Alimento para Mascota : Pet Food', //?
+      makanancentaur: '🐐🥩 Comida de Centauro : Centauro Food',
+      makanangriffin: '🦅🥩 Comida de Ave : Griffin Food',
+      makanankyubi: '🌀🥩 Comida Mágica : Magic Food',
+      makanannaga: '🐉🥩 Comida de Dragón : Dragon Food',
+      makananpet: '🍱🥩 Alimentos de mascotas: Pet Food',
+      makananphonix: '🕊️🥩 Comida de Fénix : Phoenix Food'  
+    }
+    let results = Object.keys(emottt).map(v => [v, new RegExp(v, 'gi')]).filter(v => v[1].test(string))
+    if (!results.length) return ''
+    else return emottt[results[0][0]]
   }
 }
 
