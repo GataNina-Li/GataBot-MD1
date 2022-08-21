@@ -412,7 +412,7 @@ let imgr = flaaa.getRandom()
 ${Object.keys(listItems).map((v) => {
         let paymentMethod = Object.keys(listItems[v]).find(v => v in user)
         //return `» 1 ${global.rpgshop.emoticon(v)}\nCuesta: ${listItems[paymentMethod]}\n\nTiene: ${global.rpgshopp.emoticon(v)} = ${user.v}\nCompre ${global.rpgshopp.emoticon(v)} Usando ${v}`.trim()
-        return `\n» 1 ${global.rpgshop.emoticon(v)}\nCuesta: ﹫ ${listItems[v][paymentMethod]} ${global.rpgshop.emoticon(paymentMethod)}\nCompra ${global.rpgshopp.emoticon(v)} ${usedPrefix + command} ${v} *Cantidad*\n\n`.trim()
+        return `» 1 ${global.rpgshop.emoticon(v)}\nCuesta: ﹫ ${listItems[v][paymentMethod]} ${global.rpgshop.emoticon(paymentMethod)}\nCompra ${global.rpgshopp.emoticon(v)} ${usedPrefix + command} ${v} *Cantidad*\n\n\n`.trim()
     }).join('\n')}
 –––––––––––––––––––––––––
 💁🏻‍♂ ᴛɪᴩ :
