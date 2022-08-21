@@ -438,17 +438,17 @@ ${usedPrefix}${command} potion 10
 `.trim())
 )
     image = (command.toLowerCase() == 'buy' ?
-(imgr + 'buy') : 
-(imgr + 'sell')
+(imgr + 'COMPRAR : BUY') : 
+(imgr + 'VENDER : SELL')
 )
     buttons = (command.toLowerCase() == 'buy' ?
 ([
-[`ʙᴜʏ ʟɪᴍɪᴛ`, `${usedPrefix}buy limit`],
-[`ʙᴜʏ ᴩᴏᴛɪᴏɴ`, `${usedPrefix}buy potion`]
+[`💎 𝘾𝙊𝙈𝙋𝙍𝘼𝙍 𝘿𝙄𝘼𝙈𝘼𝙉𝙏𝙀 𝙓5 | 𝘽𝙐𝙔`, `${usedPrefix}buy limit 5`],
+[`🥤 𝘾𝙊𝙈𝙋𝙍𝘼𝙍 𝙋𝙊𝘾𝙄𝙊𝙉 𝙓5 | 𝘽𝙐𝙔`, `${usedPrefix}buy potion 5`]
 ]) : 
 ([
-[`sᴇʟʟ ᴩᴏᴛɪᴏɴ`, `${usedPrefix}sell potion`],
-[`sᴇʟʟ ᴛʀᴀsʜ`, `${usedPrefix}sell trash`]
+[`💎 𝙑𝙀𝙉𝘿𝙀𝙍 𝘿𝙄𝘼𝙈𝘼𝙉𝙏𝙀 𝙓5 | 𝙎𝙀𝙇𝙇`, `${usedPrefix}sell potion 5`],
+[`🥤 𝙑𝙀𝙉𝘿𝙀𝙍 𝙋𝙊𝘾𝙄𝙊𝙉 𝙓5 | 𝙎𝙀𝙇𝙇`, `${usedPrefix}sell trash 5`]
 ])
 )
     const item = (args[0] || '').toLowerCase()
