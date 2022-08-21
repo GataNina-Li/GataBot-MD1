@@ -164,6 +164,7 @@ export async function handler(chatUpdate) {
               if (!isNumber(user.exp)) user.exp = 0
               if (!isNumber(user.expg)) user.expg = 0
               if (!isNumber(user.exphero)) user.exphero = 0
+	      if (!isNumber(user.eleksirb)) user.eleksirb = 0
               if (!isNumber(user.fishingrod)) user.fishingrod = 0
               if (!isNumber(user.fishingroddurability)) user.fishingroddurability = 0
               if (!isNumber(user.fortress)) user.fortress = 0
@@ -567,6 +568,7 @@ export async function handler(chatUpdate) {
                     expg: 0,
                     exphero: 0,
                     expired: 0,
+		    eleksirb: 0,
                     fishingrod: 0,
                     fishingroddurability: 0,
                     fortress: 0,
