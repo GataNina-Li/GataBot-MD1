@@ -400,32 +400,34 @@ let imgr = flaaa.getRandom()
     let buttons = ''
     text = (command.toLowerCase() == 'buy' ?
 (`
-*${htki} BUY ${htka}*
+${htki} *COMPRAR : BUY* ${htka}
 `.trim()) : 
 (`
-*${htki} SELL ${htka}*
+${htki} *VENDER : SELL* ${htka}
 `.trim())
 )
     footer = (command.toLowerCase() == 'buy' ?
 (`
-🔖 ɪᴛᴇᴍs ʟɪsᴛ :
+🔖 𝙇𝙄𝙎𝙏𝘼 𝘿𝙀 𝘼𝙍𝙏𝙄𝘾𝙐𝙇𝙊𝙎 : 𝙇𝙄𝙎𝙏 𝙊𝙁 𝘼𝙍𝙏𝙄𝘾𝙇𝙀𝙎
 ${Object.keys(listItems).map((v) => {
         let paymentMethod = Object.keys(listItems[v]).find(v => v in user)
         //return `» 1 ${global.rpgshop.emoticon(v)}\nCuesta: ${listItems[paymentMethod]}\n\nTiene: ${global.rpgshopp.emoticon(v)} = ${user.v}\nCompre ${global.rpgshopp.emoticon(v)} Usando ${v}`.trim()
-        return `*» 1 ⇢ ${global.rpgshop.emoticon(v)}*\n*Cuesta:* ${listItems[v][paymentMethod]} ${global.rpgshop.emoticon(paymentMethod)}\n*Usted Tiene* ${global.rpgshopp.emoticon(v)} ⇢ ${user}.${listItems}\n*Compra* ${global.rpgshopp.emoticon(v)} Usando ${usedPrefix + command} ${v} *Cantidad*\n*---------------------------------------------------*\n`.trim()
+        return `*» 1 ⇢ ${global.rpgshop.emoticon(v)}*\n*Cuesta:* ${listItems[v][paymentMethod]} ${global.rpgshop.emoticon(paymentMethod)}\n*Compra* ${global.rpgshopp.emoticon(v)} Usando ${usedPrefix + command} ${v} *Cantidad*\n*---------------------------------------------------*\n`.trim()
     }).join('\n')}
-–––––––––––––––––––––––––
-💁🏻‍♂ ᴛɪᴩ :
-⮕ ᴛᴏ ʙᴜʏ ɪᴛᴇᴍs:
-${usedPrefix}${command} [item] [quantity]
-★ ᴇxᴀᴍᴩʟᴇ:
-${usedPrefix}${command} potion 10
+✨ 𝙀𝙅𝙀𝙈𝙋𝙇𝙊 𝙋𝘼𝙍𝘼 𝘾𝙊𝙈𝙋𝙍𝘼𝙍 : 𝙎𝘼𝙈𝙋𝙇𝙀 𝙏𝙊 𝘽𝙐𝙔
+*Use el comando de la siguiente forma:*
+*» ${usedPrefix}${command} (articulo) (cantidad)*
+*» ${usedPrefix}${command} (item) (quantity)*
+
+*★ Ejemplo : Example*
+*» ${usedPrefix}${command} potion 5*
 `.trim()) : 
 (`
 🔖 ɪᴛᴇᴍs ʟɪsᴛ :
 ${Object.keys(listItems).map((v) => {
         let paymentMethod = Object.keys(listItems[v]).find(v => v in user)
-        return `» 1 ${global.rpg.emoticon(v)}${v}\n﹫ ${listItems[v][paymentMethod]} ${global.rpg.emoticon(paymentMethod)}\n\n${paymentMethod}`.trim()
+        //return `» 1 ${global.rpg.emoticon(v)}${v}\n﹫ ${listItems[v][paymentMethod]} ${global.rpg.emoticon(paymentMethod)}\n\n${paymentMethod}`.trim()
+        return `*» 1 ⇢ ${global.rpgshop.emoticon(v)}*\n*Cuesta:* ${listItems[v][paymentMethod]} ${global.rpgshop.emoticon(paymentMethod)}\n*Compra* ${global.rpgshopp.emoticon(v)} Usando ${usedPrefix + command} ${v} *Cantidad*\n*---------------------------------------------------*\n`.trim()
     }).join('\n')}
 –––––––––––––––––––––––––
 💁🏻‍♂ ᴛɪᴩ :
