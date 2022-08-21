@@ -477,7 +477,7 @@ ${usedPrefix}transfer ${paymentMethod} ${(listItems[item][paymentMethod] * total
         user[item] += total
         return conn.sendButton(m.chat,
 `*––『 COMPRADO | BOUGHT 』––*`,
-`${conn.getName(m.sender)} ʏᴏᴜ *ʙᴏᴜɢʜᴛ ${total} ${global.rpg.emoticon(item)}${item}*.
+`${conn.getName(m.sender)} *𝙃𝙖𝙨 𝘾𝙤𝙢𝙥𝙧𝙖𝙙𝙤 ${item} » ${total} ${global.rpgshop.emoticon(item)}*.
 `.trim(), imgr + 'COMPRA EXITOSA : DONE', [
 [`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊 | 𝙄𝙉𝙑𝙀𝙉𝙏𝙊𝙍𝙔`, `${usedPrefix}inventory`]
 ], m)
@@ -487,7 +487,7 @@ ${usedPrefix}transfer ${paymentMethod} ${(listItems[item][paymentMethod] * total
         user.money += listItems[item].money * total
         return conn.sendButton(m.chat,
 `*––『 VENDIDO | SOLD 』––*`,
-`${conn.getName(m.sender)} ʏᴏᴜ *sᴏʟᴅ ${total} ${global.rpg.emoticon(item)}${item}*.
+`${conn.getName(m.sender)} *𝙃𝙖𝙨 𝙑𝙚𝙣𝙙𝙞𝙙𝙤 ${item} » ${total} ${global.rpgshop.emoticon(item)}*.
 `.trim(), imgr + 'VENTA EXITOSA : DONE', [
 [`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊 | 𝙄𝙉𝙑𝙀𝙉𝙏𝙊𝙍𝙔`, `${usedPrefix}inventory`]
 ], m)
