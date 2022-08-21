@@ -1,7 +1,7 @@
 const items = {
     buy: {
-        limit: {
-            exp: 999
+        exp: {
+            emerald: 22,
         },
         potion: {
             money: 1250,
@@ -492,7 +492,7 @@ ${usedPrefix}transfer ${paymentMethod} ${(listItems[item][paymentMethod] * total
 
 handler.help = ['buy', 'sell'].map(v => v + ' [item] [count]')
 handler.tags = ['rpg']
-handler.command = /^(buyy|sell)$/i
+handler.command = /^(buy|sell)$/i
 
 handler.disabled = false
 
