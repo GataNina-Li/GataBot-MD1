@@ -411,7 +411,7 @@ let imgr = flaaa.getRandom()
 🔖 ɪᴛᴇᴍs ʟɪsᴛ :
 ${Object.keys(listItems).map((v) => {
         let paymentMethod = Object.keys(listItems[v]).find(v => v in user)
-        return `⮕ 1 ${global.rpg.emoticon(v)}${v}\n﹫ ${listItems[v][paymentMethod]}\n${global.rpg.emoticon(paymentMethod)}${paymentMethod}`.trim()
+        return `» 1 ${global.rpg.emoticon(v)}${v}\n﹫ ${listItems[v][paymentMethod]}\n${global.rpg.emoticon(paymentMethod)}${paymentMethod}`.trim()
     }).join('\n')}
 –––––––––––––––––––––––––
 💁🏻‍♂ ᴛɪᴩ :
@@ -424,7 +424,7 @@ ${usedPrefix}${command} potion 10
 🔖 ɪᴛᴇᴍs ʟɪsᴛ :
 ${Object.keys(listItems).map((v) => {
         let paymentMethod = Object.keys(listItems[v]).find(v => v in user)
-        return `⮕ 1 ${global.rpg.emoticon(v)}${v} ﹫ ${listItems[v][paymentMethod]} ${global.rpg.emoticon(paymentMethod)}${paymentMethod}`.trim()
+        return `» 1 ${global.rpg.emoticon(v)}${v}\n﹫ ${listItems[v][paymentMethod]}/n/n${global.rpg.emoticon(paymentMethod)}${paymentMethod}`.trim()
     }).join('\n')}
 –––––––––––––––––––––––––
 💁🏻‍♂ ᴛɪᴩ :
