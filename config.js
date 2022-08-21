@@ -388,7 +388,7 @@ global.rpgshop = { //Tienda
       diamond: '💎+ Diamante+ : Diamond+',
       joincount: '🪙 Token',
       emerald: '💚 Esmeralda : Emerald',
-      berlian: '♦️ *Joya : Ruby',
+      berlian: '♦️ Joya : Ruby',
       kyubi: '🌀 Magia : Magic',
       gold: '👑 Oro : Gold',
       money: '🐱 GataCoins : CatCoins',
@@ -405,7 +405,7 @@ global.rpgshop = { //Tienda
       coal: '⚱️ Carbón : Coal',
       botol: '🍶 Botella : Bottle',
       kaleng: '🥫 Lata : Can',
-      kardus: '🪧 *Cartón : Paperboard',
+      kardus: '🪧 Cartón : Paperboard',
       
       eleksirb: '💡 Electricidad : Electricity',
       emasbatang: '〽️ Barra de Oro : Gold bar',
@@ -445,6 +445,7 @@ global.rpgshop = { //Tienda
       fox: '🦊 Zorro : Fox',
       kuda: '🐎 Caballo : Horse',
       phonix: '🕊️ Fénix : Phoenix',
+      wolf: '🐺 Lobo : Wolf',
       //gardenboc:
       //ketake:
       //koinexpg: 
@@ -459,6 +460,90 @@ global.rpgshop = { //Tienda
     let results = Object.keys(emottt).map(v => [v, new RegExp(v, 'gi')]).filter(v => v[1].test(string))
     if (!results.length) return ''
     else return emottt[results[0][0]]
+  }
+}
+
+global.rpgshopp = { //Tienda
+  emoticon(string) {
+    string = string.toLowerCase()
+    let emotttt = {
+      exp: '⚡',
+      limit: '💎',
+      diamond: '💎+',
+      joincount: '🪙',
+      emerald: '💚',
+      berlian: '♦️',
+      kyubi: '🌀',
+      gold: '👑',
+      money: '🐱',
+      tiketcoin: '🎫',
+            
+      potion: '🥤',
+      aqua: '💧',
+      trash: '🗑',
+      wood: '🪵',
+      rock: '🪨',
+      batu: '🥌',
+      string: '🕸️',
+      iron: '⛓️',
+      coal: '⚱️',
+      botol: '🍶',
+      kaleng: '🥫',
+      kardus: '🪧',
+      
+      eleksirb: '💡',
+      emasbatang: '〽️',
+      emasbiasa: '🧭',
+      rubah: '🦊🌫️',
+      sampah: '🗑🌫️',
+      serigala: '🐺🌫️',
+      kayu: '🛷',
+      sword: '⚔️',
+      umpan: '🪱', 
+      healtmonster: '👺',
+      pancingan: '🪝',
+       
+      common: '📦',
+      uncommon: '🥡',
+      mythic: '🗳️',
+      pet: '📫',//?
+      gardenboxs: '💐',//?
+      legendary: '🎁',
+      
+      anggur: '🍇',
+      apel: '🍎',
+      jeruk: '🍊',
+      mangga: '🥭',
+      pisang: '🍌',
+      
+      bibitanggur: '🌾🍇',
+      bibitapel: '🌾🍎',
+      bibitjeruk: '🌾🍊',
+      bibitmangga: '🌾🥭',
+      bibitpisang: '🌾🍌',
+      
+      centaur: '🐐',
+      griffin: '🦅',
+      kucing: '🐈',
+      naga: '🐉',
+      fox: '🦊',
+      kuda: '🐎',
+      phonix: '🕊️',
+      wolf: '🐺',
+      //gardenboc:
+      //ketake:
+      //koinexpg: 
+      petFood: '🍖', //?
+      makanancentaur: '🐐🥩',
+      makanangriffin: '🦅🥩',
+      makanankyubi: '🌀🥩',
+      makanannaga: '🐉🥩',
+      makananpet: '🍱🥩',
+      makananphonix: '🕊️🥩'  
+    }
+    let results = Object.keys(emotttt).map(v => [v, new RegExp(v, 'gi')]).filter(v => v[1].test(string))
+    if (!results.length) return ''
+    else return emotttt[results[0][0]]
   }
 }
 
