@@ -462,7 +462,7 @@ ${Object.keys(listItems).map((v) => {
 `ʏᴏᴜ ɴᴇᴇᴅ ᴇxᴛʀᴀ *${(listItems[item][paymentMethod] * total) - user[paymentMethod]}* ${global.rpg.emoticon(paymentMethod)}${paymentMethod} ᴛᴏ ʙᴜʏ *${total}* ${global.rpg.emoticon(item)}${item}.
 ʏᴏᴜ'ᴠᴇ *${user[paymentMethod]}* ${global.rpg.emoticon(paymentMethod)}${paymentMethod} ɪɴ ʙᴀɢ.
 –––––––––––––––––––––––––
-💁🏻‍♂ ᴛɪᴩ :
+ᴛɪᴩ :
 ᴏᴩᴇɴ ᴄʀᴀᴛᴇs & ᴄᴏʟʟᴇᴄᴛ ʀᴇᴡᴀʀᴅs.
 ⮕ ᴛᴏ ᴏᴩᴇɴ ᴄʀᴀᴛᴇs:
 .open crate
