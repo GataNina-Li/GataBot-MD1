@@ -1,7 +1,8 @@
 let handler = async(m, { conn, text, args, usedPrefix, command }) => {
 if (!db.data.chats[m.chat].stickers && m.isGroup) throw `${ag}𝙇𝙊𝙎 𝘾𝙊𝙈𝘼𝙉𝘿𝙊𝙎 𝘿𝙀 𝙎𝙏𝙄𝘾𝙆𝙀𝙍𝙎 𝙀𝙎𝙏𝘼𝙉 𝘿𝙀𝙎𝘼𝘾𝙏𝙄𝙑𝘼𝘿𝙊𝙎 𝙐𝙎𝙀 *#on stickers* 𝙋𝘼𝙍𝘼 𝘼𝘾𝙏𝙄𝙑𝘼𝙍\n\n𝙏𝙃𝙀 𝙎𝙏𝙄𝘾𝙆𝙀𝙍𝙎 𝘾𝙊𝙈𝙈𝘼𝙉𝘿𝙎 𝘼𝙍𝙀 𝘿𝙄𝙎𝘼𝘽𝙇𝙀𝘿 𝙐𝙎𝙀 *#on stickers* 𝙏𝙊 𝙀𝙉𝘼𝘽𝙇𝙀`
-conn.sendFile(m.chat, `https://violetics.pw/api/random/dadu?apikey=964f-0c75-7afc`, 'sticker.webp', '', m, { asSticker: true })}
 await conn.reply(m.chat, `${eg}𝙀𝙎𝙋𝙀𝙍𝙀 𝙐𝙉 𝙈𝙊𝙈𝙀𝙉𝙏𝙊 \n`, fkontak,  m)
+conn.sendFile(m.chat, `https://violetics.pw/api/random/dadu?apikey=964f-0c75-7afc`, 'sticker.webp', '', m, { asSticker: true })}
+
 handler.help = ['dado']
 handler.tags = ['game'] 
 handler.command = /^(dado|dados)/
