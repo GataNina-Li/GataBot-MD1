@@ -1,15 +1,10 @@
- CREDITOS A https://github.com/FG98F 
-const dir = [
-  'https://violetics.pw/api/random/dadu?apikey=964f-0c75-7afc',
-];
-let handler = async (m, { conn }) => {
-conn.sendFile(m.chat, dir[Math.floor(Math.random() * dir.length)], 'dadu.webp', '', m)
-}
-handler.help = ['dado']
-handler.tags = ['game']
-handler.command = ['dado', 'dados'] 
-export default handler
+let handler = async(m, { conn, text, args, usedPrefix, command }) => {
+if (command == 'dado') {
+conn.sendFile(m.chat, `https://violetics.pw/api/random/dadu?apikey=964f-0c75-7afc`, 'sticker.webp', '', m, { asSticker: true })}
 
+handler.command = handler.help = ['ttp', 'ttp2', 'ttp3', 'ttp4', 'ttp5', 'attp', 'attp2', 'attp3']
+handler.tags = ['sticker']
+export default handler
 
 
 
