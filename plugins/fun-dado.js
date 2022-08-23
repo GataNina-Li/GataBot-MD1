@@ -1,9 +1,10 @@
 let handler = async(m, { conn, text, args, usedPrefix, command }) => {
-if (command == 'dado') {
 conn.sendFile(m.chat, `https://violetics.pw/api/random/dadu?apikey=964f-0c75-7afc`, 'sticker.webp', '', m, { asSticker: true })}
 
-handler.command = handler.help = ['dado']
-handler.tags = ['sticker']
+handler.help = ['dado']
+handler.tags = ['game'] 
+handler.command = /^(dado|dados)/
+handler.exp = 50
 export default handler
 
 
