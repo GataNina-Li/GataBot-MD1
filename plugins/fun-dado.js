@@ -1,47 +1,11 @@
 let handler = async(m, { conn, text, args, usedPrefix, command }) => {
 await conn.reply(m.chat, '*𝐄𝐒𝐏𝐄𝐑𝐄 𝐔𝐍 𝐌𝐎𝐌𝐄𝐍𝐓𝐎. 𝐄𝐋𝐀𝐁𝐎𝐑𝐀𝐍𝐃𝐎 𝐒𝐔 𝐃𝐀𝐃𝐎...*', m)
-//conn.sendFile(m.chat, `https://violetics.pw/api/random/dadu?apikey=${Key360}`, 'sticker.webp', '', m, { asSticker: true })}
- conn.sendFile(m.chat, `https://violetics.pw/api/random/dadu?apikey=${Key360}`,  m, {})}
+conn.sendFile(m.chat, `https://violetics.pw/api/random/dadu?apikey=${Key360}`, 'sticker.webp', '', m, { asSticker: true })}
 handler.help = ['dado']
 handler.tags = ['game'] 
 handler.command = /^(dado|dados)/
 handler.exp = 50
 export default handler
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
  /*import { sticker } from '../lib/sticker.js'
 let handler = async(m, { conn }) => {
