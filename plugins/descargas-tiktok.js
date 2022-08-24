@@ -21,8 +21,8 @@ body: 'Super Bot WhatsApp',
 previewType: 0, thumbnail: fs.readFileSync("./media/menus/Menu3.jpg"),
 sourceUrl: `https://github.com/GataNina-Li/GataBot-MD`}}})
            
-          //https://api.dhamzxploit.my.id/api/tiktod/?url=      
-let res = await fetch("https://violetics.pw/api/downloader/tiktok?apikey=964f-0c75-7afc&url="+args[0])
+               
+let res = await fetch("https://api.dhamzxploit.my.id/api/tiktod/?url="+args[0])
 let json = await res.json()
 await conn.sendFile(m.chat, json.result.nowatermark, 'error.mp4', `${wm}`, m)
 
