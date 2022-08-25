@@ -1,5 +1,5 @@
 let handler = async(m, { conn, text, args, usedPrefix, command }) => {
-//await conn.reply(m.chat, '*𝐄𝐒𝐏𝐄𝐑𝐄 𝐔𝐍 𝐌𝐎𝐌𝐄𝐍𝐓𝐎. 𝐄𝐋𝐀𝐁𝐎𝐑𝐀𝐍𝐃𝐎 𝐒𝐔 𝐃𝐀𝐃𝐎...*', m)
+await conn.reply(m.chat, '𝙋𝙊𝙍 𝙁𝘼𝙑𝙊𝙍 𝙀𝙎𝙋𝙀𝙍𝙀, 𝙎𝙐 𝘿𝘼𝘿𝙊 𝙎𝙀 𝙀𝙎𝙏𝘼 𝘾𝙍𝙀𝘼𝙉𝘿𝙊\n\n𝙋𝙇𝙀𝘼𝙎𝙀 𝙒𝘼𝙄𝙏, 𝙔𝙊𝙐𝙍 𝘿𝙄𝘾𝙀 𝙄𝙎 𝘽𝙀𝙄𝙉𝙂 𝘾𝙍𝙀𝘼𝙏𝙀𝘿', m)
 await conn.sendFile(m.chat, `https://violetics.pw/api/random/dadu?apikey=${Key360}`, 'sticker.webp', '', m, { asSticker: true })}
 handler.help = ['dado']
 handler.tags = ['game'] 
@@ -16,7 +16,7 @@ let nombre = '🐈 𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿'
 let nombre2 = '𝙂𝙖𝙩𝙖 𝘿𝙞𝙤𝙨'
  
 const s = [
-'https://media.giphy.com/media/h5cY0X4NcHP2JiFXNG/giphy.gif',
+'https://media.giphy.com/media/h5cY0X4NcHP2JiFXNG/giphy.gif', 
 'https://media.giphy.com/media/SSinJFA7xCih5g9F1c/giphy.gif',
 'https://media.giphy.com/media/kBHH2rfm1VHIYgodQx/giphy.gif',
 'https://media.giphy.com/media/UpDKR8EYG5zFtYhWNz/giphy.gif',
