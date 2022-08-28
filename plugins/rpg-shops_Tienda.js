@@ -1,136 +1,190 @@
 const items = {
     buy: {
         exp: {
-            emerald: 22,
+            eleksirb: 2,
         },
         limit: {
-            money: 1250,
+            money: 300,
         },
         diamond: {
-           money: 500
+           berlian: 1
         },
         joincount: {
-            money: 4,
+            limit: 15,
         },
         emerald: {
-            money: 700
+            emasbatang: 5
         },
         berlian: {
-            money: 850
+            kyubi: 10
         },
         kyubi: {
-            money: 400
+            trash: 5
         },
         gold: { 
-        	money: 3000
+        	money: 1000
+        },    
+        gold: { 
+        	diamond: 25
         },
         money: {
-            money: 7500
+            kaleng: 2
         },
         tiketcoin: {
-            money: 8500
+            joincount: 1
         },
         potion: {
-            money: 3500
+            money: 500
         },
         aqua: {
-            money: 1500
+            botol: 2
         },
         trash: {
-            money: 200
+            eleksirb: 15
         },
         wood: {
-            money: 2000
+            string: 2
         },
         rock: {
-            money: 25000
+            kardus: 4
         },
         batu: {
-            money: 75000
+            coal: 20
         },
         string: {
-            money: 3500
+            kaleng: 3
         },
         iron: {
-            money: 40000
+            kyubi: 20
         },
         coal: {
-            money: 120000
+            trash: 7
         },
         botol: {
-            money: 120000
+            wood: 5
         },
         kaleng: {
-            money: 2000
+            potion: 2
         },
         kardus: {
-            money: 2000
+            trash: 20
         },
         eleksirb: {
-            money: 2000
+            healtmonster: 8
         },
         emasbatang: {
-            money: 2000
+            kayu: 4
         },
         emasbiasa: {
-            money: 2000
+            diamond: 30
         },
         rubah: {
-            money: 2000
+            berlian: 45
         },
         sampah: {
-            money: 2000
+            trash: 200
         },
         serigala: {
-            money: 2000
+            kaleng: 150
         },
         kayu: {
-            money: 2000
+            wood: 40
         },
         sword: {
-            money: 2000
+            gold: 2
         },
         umpan: {
-            money: 2000
+            string: 4
         },
         healtmonster: {
-            money: 2000
+            kyubi: 35
         },
         pancingan: {
-            money: 2000
+            iron: 4
         },
         common: {
-            money: 2000
+            money: 1500
+        },
+        common: {
+            diamond: 50
+        },
+        common: {
+            berlian: 30
         },
         uncommon: {
-            money: 2000
+            money: 3000
+         },
+        uncommon: {
+            diamond: 80
+         },
+        uncommon: {
+            berlian: 40
         },
         mythic: {
-            money: 2000
+            money: 4500
+        },
+        mythic: {
+            diamond: 100
+        },
+        mythic: {
+            berlian: 50
         },
         pet: {
-            money: 2000
+            aqua: 120
+        },
+        pet: {
+            kyubi: 160
+        },
+        pet: {
+            joincount: 45
         },
         gardenboxs: {
-            money: 2000
+            aqua: 80
+        },
+        gardenboxs: {
+            rock: 100
+        },
+        gardenboxs: {
+            kardus: 150
         },
         legendary: {
-            money: 2000
+            money: 10000
+        },
+        legendary: {
+            diamond: 200
+        },
+        legendary: {
+            berlian: 80
         },
         anggur: {
-            money: 2000
+            emerald: 2
+        },
+        anggur: {
+            gold: 1
         },
         apel: {
-            money: 2000
+            emerald: 2
+        },
+        apel: {
+            gold: 1
         },
         jeruk: {
-            money: 2000
+            emerald: 2
+        },
+        jeruk: {
+            gold: 1
         },
         mangga: {
-            money: 2000
+            emerald: 2
+        },
+        mangga: {
+            gold: 1
         },
         pisang: {
-            money: 2000
+            emerald: 2
+        },
+        pisang: {
+            gold: 1
         },
         bibitanggur: {
             money: 2000
