@@ -236,7 +236,7 @@ ${usedPrefix}transfer ${paymentMethod} ${(listItems[item][paymentMethod] * total
 `${conn.getName(m.sender)} 
 *𝙃𝙖𝙨 𝘾𝙤𝙢𝙥𝙧𝙖𝙙𝙤 ${item} » ${total} ${global.rpgshop.emoticon(item)}*.
 *--------------------------------------------*
-*𝙈𝙤𝙣𝙩𝙤 𝙙𝙚𝙡 𝙂𝙖𝙨𝙩𝙤: ${(listItems[item][paymentMethod] * total)} ${global.rpgshop.emoticon(paymentMethod)}*
+*𝙂𝙖𝙨𝙩𝙤𝙨: ${(listItems[item][paymentMethod] * total)} ${global.rpgshop.emoticon(paymentMethod)}*
 *𝘼𝙝𝙤𝙧𝙖 𝙩𝙞𝙚𝙣𝙚: ${user[item]} ${global.rpgshopp.emoticon(item)}*
 `.trim(), imgr + 'COMPRA EXITOSA : DONE', [
 [`👝 𝘾𝘼𝙍𝙏𝙀𝙍𝘼 | 𝙒𝘼𝙇𝙇𝙀𝙏`, `${usedPrefix}cartera`],
