@@ -244,7 +244,8 @@ ${usedPrefix}transfer ${paymentMethod} ${(listItems[item][paymentMethod] * total
        
       let paymentMethod = Object.keys(listItems[item]).find(v => v in user)
         user[item] -= total
-        user.[paymentMethod] += listItems[item][paymentMethod] * total
+        user[paymentMethod] += listItems[item][paymentMethod] * total
+        //user.money += listItems[item].money * total
         return conn.sendButton(m.chat,
 `*––『 VENDIDO | SOLD 』––*`,
 `${conn.getName(m.sender)} 
