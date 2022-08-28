@@ -245,19 +245,19 @@ ${usedPrefix}transfer ${paymentMethod} ${(listItems[item][paymentMethod] * total
       let paymentMethod = Object.keys(listItems[item]).find(v => v in user)
         user[item] -= total
         user[paymentMethod] += listItems[item][paymentMethod] * total
-        //user.money += listItems[item].money * total
+    
         return conn.sendButton(m.chat,
 `*––『 VENDIDO | SOLD 』––*`,
 `${conn.getName(m.sender)} 
 *𝙃𝙖𝙨 𝙑𝙚𝙣𝙙𝙞𝙙𝙤 ${item} » ${total} ${global.rpgshop.emoticon(item)}*.
 *--------------------------------------------*
-*𝙂𝙖𝙣𝙖𝙣𝙘𝙞𝙖𝙨 𝙙𝙚: ${listItems[item][paymentMethod]} ${global.rpgshop.emoticon(paymentMethod)}*
+*𝙂𝙖𝙣𝙖𝙣𝙘𝙞𝙖𝙨 𝙙𝙚: ${user[paymentMethod]} ${global.rpgshop.emoticon(paymentMethod)}
 `.trim(), imgr + 'VENTA EXITOSA : DONE', [
 [`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊 | 𝙄𝙉𝙑𝙀𝙉𝙏𝙊𝙍𝙔`, `${usedPrefix}inventory`]
 ], m)
 }
 }
-
+//*𝙂𝙖𝙣𝙖𝙣𝙘𝙞𝙖𝙨 𝙙𝙚: ${listItems[item][paymentMethod]} ${global.rpgshop.emoticon(paymentMethod)}*
 handler.help = ['buy', 'sell'].map(v => v + ' [item] [count]')
 handler.tags = ['rpg']
 handler.command = /^(buy|sell)$/i
