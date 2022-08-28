@@ -200,12 +200,12 @@ ${Object.keys(listItems).map((v) => {
 )
     buttons = (command.toLowerCase() == 'buy' ?
 ([
-[`💎 𝘾𝙊𝙈𝙋𝙍𝘼𝙍 𝘿𝙄𝘼𝙈𝘼𝙉𝙏𝙀 𝙓5 | 𝘽𝙐𝙔`, `${usedPrefix}buy limit 5`],
-[`🥤 𝘾𝙊𝙈𝙋𝙍𝘼𝙍 𝙋𝙊𝘾𝙄𝙊𝙉 𝙓5 | 𝘽𝙐𝙔`, `${usedPrefix}buy potion 5`]
+[`🏪 𝙏𝙄𝙀𝙉𝘿𝘼 𝙋𝘼𝙍𝘼 𝙑𝙀𝙉𝘿𝙀𝙍`, `${usedPrefix}sell`],
+[`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊 | 𝙄𝙉𝙑𝙀𝙉𝙏𝙊𝙍𝙔`, `${usedPrefix}inventory`]
 ]) : 
 ([
-[`💎 𝙑𝙀𝙉𝘿𝙀𝙍 𝘿𝙄𝘼𝙈𝘼𝙉𝙏𝙀 𝙓5 | 𝙎𝙀𝙇𝙇`, `${usedPrefix}sell potion 5`],
-[`🥤 𝙑𝙀𝙉𝘿𝙀𝙍 𝙋𝙊𝘾𝙄𝙊𝙉 𝙓5 | 𝙎𝙀𝙇𝙇`, `${usedPrefix}sell trash 5`]
+[`🏪 𝙏𝙄𝙀𝙉𝘿𝘼 𝙋𝘼𝙍𝘼 𝘾𝙊𝙈𝙋𝙍𝘼𝙍`, `${usedPrefix}buy`],
+[`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊 | 𝙄𝙉𝙑𝙀𝙉𝙏𝙊𝙍𝙔`, `${usedPrefix}inventory`]
 ])
 )
     const item = (args[0] || '').toLowerCase()
@@ -215,8 +215,8 @@ ${Object.keys(listItems).map((v) => {
         let paymentMethod = Object.keys(listItems[item]).find(v => v in user)
         if (user[paymentMethod] < listItems[item][paymentMethod] * total) return conn.sendButton(m.chat,
 `*–『 INSUFFICIENT CREDIT 』–*`, 
-`ʏᴏᴜ ɴᴇᴇᴅ ᴇxᴛʀᴀ *${(listItems[item][paymentMethod] * total) - user[paymentMethod]}* ${global.rpg.emoticon(paymentMethod)}${paymentMethod} ᴛᴏ ʙᴜʏ *${total}* ${global.rpg.emoticon(item)}${item}.
-ʏᴏᴜ'ᴠᴇ *${user[paymentMethod]}* ${global.rpg.emoticon(paymentMethod)}${paymentMethod} ɪɴ ʙᴀɢ.
+`Necesitas *${(listItems[item][paymentMethod] * total) - user[paymentMethod]}* ${global.rpg.emoticon(paymentMethod)}${paymentMethod} Compra *${total}* ${global.rpg.emoticon(item)}${item}.
+Tienes *${user[paymentMethod]}* ${global.rpg.emoticon(paymentMethod)}${paymentMethod} en túinventario.
 –––––––––––––––––––––––––
 ᴛɪᴩ :
 ᴏᴩᴇɴ ᴄʀᴀᴛᴇs & ᴄᴏʟʟᴇᴄᴛ ʀᴇᴡᴀʀᴅs.
@@ -224,14 +224,14 @@ ${Object.keys(listItems).map((v) => {
 .open crate
 ⮕ ᴛᴏ ᴄᴏʟʟᴇᴄᴛ ʀᴇᴡᴀʀᴅs:
 .adventure | .daily | .monthly
-`.trim(), imgr + 'lowcredit', [
-[`ᴀsᴋ ᴛᴏ ᴀʟʟ`, `${usedPrefix}tagall sᴏᴍᴇʙᴏᴅʏ ᴩʟᴇᴀsᴇ sᴇɴᴅ *${(listItems[item][paymentMethod] * total) - user[paymentMethod]}* ${global.rpg.emoticon(paymentMethod)}${paymentMethod} ᴛᴏ ᴍᴇ.
-⮕ ᴛᴏ ᴛʀᴀɴsғᴇʀ ${paymentMethod}:
-${usedPrefix}transfer ${paymentMethod} ${(listItems[item][paymentMethod] * total) - user[paymentMethod]} @${conn.getName(m.sender)}`]
-], m)
+`.trim(), imgr + 'RECURSOS BAJOS : LOW RESOURCES', [
+[`𝙋𝙚𝙙𝙞𝙧 𝘼𝙮𝙪𝙙𝙖 | 𝘼𝙨𝙠 𝙛𝙤𝙧 𝙝𝙚𝙡𝙥 ☘️`, `${usedPrefix}pedirayuda *Por Favor alguien ayudeme con *${(listItems[item][paymentMethod] * total) - user[paymentMethod]}* ${global.rpg.emoticon(paymentMethod)}${paymentMethod}.
+*» AYUDA TRANSFIRIENDO:*
+*${usedPrefix}transfer ${paymentMethod} ${(listItems[item][paymentMethod] * total) - user[paymentMethod]} @${conn.getName(m.sender)}`]], m)
+       
         user[paymentMethod] -= listItems[item][paymentMethod] * total
         user[item] += total
-        return conn.sendButton(m.chat,
+return conn.sendButton(m.chat,
 `*––『 COMPRADO | BOUGHT 』––*`,
 `${conn.getName(m.sender)} 
 *𝙃𝙖𝙨 𝘾𝙤𝙢𝙥𝙧𝙖𝙙𝙤 ${item} » ${total} ${global.rpgshop.emoticon(item)}*.
@@ -242,14 +242,14 @@ ${usedPrefix}transfer ${paymentMethod} ${(listItems[item][paymentMethod] * total
 [`👝 𝘾𝘼𝙍𝙏𝙀𝙍𝘼 | 𝙒𝘼𝙇𝙇𝙀𝙏`, `${usedPrefix}cartera`],
 [`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊 | 𝙄𝙉𝙑𝙀𝙉𝙏𝙊𝙍𝙔`, `${usedPrefix}inventory`]
 ], m)
-    } else {
-        if (user[item] < total) return m.reply(`You don't have enough *${global.rpg.emoticon(item)}${item}* to sell, you only have ${user[item]} items`)
+} else {
+        if (user[item] < total) return m.reply(`No tienes suficiente *${global.rpg.emoticon(item)}${item}* para vender solo tienes ${user[item]} Recursos\n\nYou don't have enough *${global.rpg.emoticon(item)}${item}* to sell, you only have ${user[item]}`)
        
       let paymentMethod = Object.keys(listItems[item]).find(v => v in user)
         user[item] -= total
         user[paymentMethod] += listItems[item][paymentMethod] * total
     
-        return conn.sendButton(m.chat,
+return conn.sendButton(m.chat,
 `*––『 VENDIDO | SOLD 』––*`,
 `${conn.getName(m.sender)} 
 *𝙃𝙖𝙨 𝙑𝙚𝙣𝙙𝙞𝙙𝙤 ${item} » ${total} ${global.rpgshop.emoticon(item)}*.
@@ -260,9 +260,8 @@ ${usedPrefix}transfer ${paymentMethod} ${(listItems[item][paymentMethod] * total
 [`👝 𝘾𝘼𝙍𝙏𝙀𝙍𝘼 | 𝙒𝘼𝙇𝙇𝙀𝙏`, `${usedPrefix}cartera`],
 [`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊 | 𝙄𝙉𝙑𝙀𝙉𝙏𝙊𝙍𝙔`, `${usedPrefix}inventory`]
 ], m)
-}
-}//${user[paymentMethod]} Total
-//*𝙂𝙖𝙣𝙖𝙣𝙘𝙞𝙖𝙨 𝙙𝙚: ${listItems[item][paymentMethod]} ${global.rpgshop.emoticon(paymentMethod)}*
+}}
+
 handler.help = ['buy', 'sell'].map(v => v + ' [item] [count]')
 handler.tags = ['rpg']
 handler.command = /^(buy|sell)$/i
