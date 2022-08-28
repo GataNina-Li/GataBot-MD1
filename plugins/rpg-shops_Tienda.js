@@ -251,12 +251,13 @@ ${usedPrefix}transfer ${paymentMethod} ${(listItems[item][paymentMethod] * total
 `${conn.getName(m.sender)} 
 *𝙃𝙖𝙨 𝙑𝙚𝙣𝙙𝙞𝙙𝙤 ${item} » ${total} ${global.rpgshop.emoticon(item)}*.
 *--------------------------------------------*
-*𝙂𝙖𝙣𝙖𝙣𝙘𝙞𝙖𝙨 𝙙𝙚: ${user[paymentMethod]} ${global.rpgshop.emoticon(paymentMethod)}
+*𝙂𝙖𝙣𝙖𝙣𝙘𝙞𝙖𝙨 𝙙𝙚: ${(listItems[item][paymentMethod] * total)} ${global.rpgshop.emoticon(paymentMethod)}*
+*𝘼𝙝𝙤𝙧𝙖 𝙩𝙞𝙚𝙣𝙚: ${user[paymentMethod]} ${global.rpgshopp.emoticon(paymentMethod)}*
 `.trim(), imgr + 'VENTA EXITOSA : DONE', [
 [`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊 | 𝙄𝙉𝙑𝙀𝙉𝙏𝙊𝙍𝙔`, `${usedPrefix}inventory`]
 ], m)
 }
-}
+}//${user[paymentMethod]} Total
 //*𝙂𝙖𝙣𝙖𝙣𝙘𝙞𝙖𝙨 𝙙𝙚: ${listItems[item][paymentMethod]} ${global.rpgshop.emoticon(paymentMethod)}*
 handler.help = ['buy', 'sell'].map(v => v + ' [item] [count]')
 handler.tags = ['rpg']
