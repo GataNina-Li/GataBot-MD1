@@ -213,7 +213,7 @@ ${Object.keys(listItems).map((v) => {
     const item = (args[0] || '').toLowerCase()
     const total = Math.floor(isNumber(args[1]) ? Math.min(Math.max(parseInt(args[1]), 1), Number.MAX_SAFE_INTEGER) : 1) * 1
     if (!listItems[item]) return conn.sendButton(m.chat, text, footer, image, buttons, m)
-    if (command.toLowerCase() == 'buy') {
+    if (command.toLowerCase() == 'buy', 'comprar') {
         let paymentMethod = Object.keys(listItems[item]).find(v => v in user)
         if (user[paymentMethod] < listItems[item][paymentMethod] * total) return conn.sendButton(m.chat,
 `*–『 INSUFFICIENT CREDIT 』–*`, 
