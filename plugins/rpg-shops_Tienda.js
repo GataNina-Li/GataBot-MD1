@@ -305,7 +305,7 @@ let imgr = flaaa.getRandom()
     let footer = ''
     let image = ''
     let buttons = ''
-    text = (command.toLowerCase() == 'buy' ?
+    text = (command.toLowerCase() == 'buy', 'comprar' ?
 (`
 ${htki} *COMPRAR : BUY* ${htka}
 `.trim()) : 
@@ -313,7 +313,7 @@ ${htki} *COMPRAR : BUY* ${htka}
 ${htki} *VENDER : SELL* ${htka}
 `.trim())
 )
-    footer = (command.toLowerCase() == 'buy' ?
+    footer = (command.toLowerCase() == 'buy', 'comprar' ?
 (`
 🔖 𝙇𝙄𝙎𝙏𝘼 𝘿𝙀 𝘼𝙍𝙏𝙄𝘾𝙐𝙇𝙊𝙎 : 𝙇𝙄𝙎𝙏 𝙊𝙁 𝘼𝙍𝙏𝙄𝘾𝙇𝙀𝙎
 ${Object.keys(listItems).map((v) => {
@@ -345,11 +345,11 @@ ${Object.keys(listItems).map((v) => {
 *» ${usedPrefix}${command} potion 5*
 `.trim())
 )
-    image = (command.toLowerCase() == 'buy' ?
+    image = (command.toLowerCase() == 'buy', 'comprar' ?
 (imgr + 'COMPRAR : BUY') : 
 (imgr + 'VENDER : SELL')
 )
-    buttons = (command.toLowerCase() == 'buy' ?
+    buttons = (command.toLowerCase() == 'buy', 'comprar' ?
 ([
 [`💎 𝘾𝙊𝙈𝙋𝙍𝘼𝙍 𝘿𝙄𝘼𝙈𝘼𝙉𝙏𝙀 𝙓5 | 𝘽𝙐𝙔`, `${usedPrefix}buy limit 5`],
 [`🥤 𝘾𝙊𝙈𝙋𝙍𝘼𝙍 𝙋𝙊𝘾𝙄𝙊𝙉 𝙓5 | 𝘽𝙐𝙔`, `${usedPrefix}buy potion 5`]
@@ -362,7 +362,7 @@ ${Object.keys(listItems).map((v) => {
     const item = (args[0] || '').toLowerCase()
     const total = Math.floor(isNumber(args[1]) ? Math.min(Math.max(parseInt(args[1]), 1), Number.MAX_SAFE_INTEGER) : 1) * 1
     if (!listItems[item]) return conn.sendButton(m.chat, text, footer, image, buttons, m)
-    if (command.toLowerCase() == 'buy') {
+    if (command.toLowerCase() == 'buy', 'comprar') {
         let paymentMethod = Object.keys(listItems[item]).find(v => v in user)
         if (user[paymentMethod] < listItems[item][paymentMethod] * total) return conn.sendButton(m.chat,
 `*–『 INSUFFICIENT CREDIT 』–*`, 
