@@ -72,7 +72,6 @@ const items = {
         makananpet: { tiketcoin: 14 },
         makananphonix: { tiketcoin: 16 }
     },
-   
     sell: {
         exp: { emerald: 22 },
         limit: { money: 1250 },
@@ -144,7 +143,7 @@ const items = {
         makanankyubi: { money: 2000 },
         makanannaga: { money: 2000 },
         makananpet: { money: 2000 },
-        makananphonix: { money: 2000 }
+        makananphonix: { money: 2000 },
     }
 }
 
@@ -242,15 +241,19 @@ ${usedPrefix}transfer ${paymentMethod} ${(listItems[item][paymentMethod] * total
 ], m)
     } else {
         if (user[item] < total) return m.reply(`You don't have enough *${global.rpg.emoticon(item)}${item}* to sell, you only have ${user[item]} items`)
+       Object.keys(listItems).map((v) => { 
+       let paymentMethod = Object.keys(listItems[item]).find(v => v in user)
         user[item] -= total
         user.money += listItems[item].money * total
         return conn.sendButton(m.chat,
 `*––『 VENDIDO | SOLD 』––*`,
-`${conn.getName(m.sender)} *𝙃𝙖𝙨 𝙑𝙚𝙣𝙙𝙞𝙙𝙤 ${item} » ${total} ${global.rpgshop.emoticon(item)}*.
-`.trim(), imgr + 'VENTA EXITOSA : DONE', [
+`${conn.getName(m.sender)} 
+*𝙃𝙖𝙨 𝙑𝙚𝙣𝙙𝙞𝙙𝙤 ${item} » ${total} ${global.rpgshop.emoticon(item)}*.
+*--------------------------------------------*
+*𝙂𝙖𝙣𝙖𝙣𝙘𝙞𝙖𝙨 𝙙𝙚: ${listItems[v][paymentMethod]} ${global.rpgshop.emoticon(paymentMethod)}.*`.trim(), imgr + 'VENTA EXITOSA : DONE', [
 [`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊 | 𝙄𝙉𝙑𝙀𝙉𝙏𝙊𝙍𝙔`, `${usedPrefix}inventory`]
-], m)
-    }
+], m)}
+}
 }
 
 handler.help = ['buy', 'sell'].map(v => v + ' [item] [count]')
