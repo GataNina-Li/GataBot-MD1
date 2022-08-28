@@ -10,6 +10,7 @@ const items = {
         gold: {  diamond: 25 },
         money: { kaleng: 2 },
         tiketcoin: { joincount: 1 },
+        
         potion: { money: 500 },
         aqua: { botol: 2 },
         trash: { eleksirb: 15 },
@@ -22,6 +23,7 @@ const items = {
         botol: { wood: 5 },
         kaleng: { potion: 2 },
         kardus: { trash: 20 },
+        
         eleksirb: { healtmonster: 8 },
         emasbatang: { kayu: 4},
         emasbiasa: { diamond: 30 },
@@ -33,77 +35,42 @@ const items = {
         umpan: { string: 4 },
         healtmonster: { kyubi: 35 },
         pancingan: { iron: 4 },
+        
         common: { berlian: 30 },
         uncommon: { berlian: 40 },
         mythic: { berlian: 50 },
         pet: { aqua: 120 },
         gardenboxs: { aqua: 80 },
         legendary: { berlian: 80 },
+        
         anggur: { emerald: 2 },
         apel: { emerald: 2 },
         jeruk: { emerald: 2 },
         mangga: { emerald: 2 },
         pisang: { emerald: 2 },
-        bibitanggur: {
-            money: 2000
-        },
-        bibitapel: {
-            money: 2000
-        },
-        bibitjeruk: {
-            money: 2000
-        },
-        bibitmangga: {
-            money: 2000
-        },
-        bibitpisang: {
-            money: 2000
-        },
-        centaur: {
-            money: 2000
-        },
-        griffin: {
-            money: 2000
-        },
-        kucing: {
-            money: 2000
-        },
-        naga: {
-            money: 2000
-        },
-        fox: {
-            money: 2000
-        },
-        kuda: {
-            money: 2000
-        },
-        phonix: {
-            money: 2000
-        },
-        wolf: {
-            money: 2000
-        },
-        petFood: {
-            money: 2000
-        },
-        makanancentaur: {
-            money: 2000
-        },
-        makanangriffin: {
-            money: 2000
-        },
-        makanankyubi: {
-            money: 2000
-        },
-        makanannaga: {
-            money: 2000
-        },
-        makananpet: {
-            money: 2000
-        },
-        makananphonix: {
-            money: 2000
-        }
+        
+        bibitanggur: { aqua: 10 },
+        bibitapel: { aqua: 10 },
+        bibitjeruk: { aqua: 10 },
+        bibitmangga: { aqua: 10 },
+        bibitpisang: { aqua: 10 },
+        
+        centaur: { limit: 35 },
+        griffin: { limit: 45 },
+        kucing: { limit: 55 },
+        naga: { limit: 65 },
+        fox: { limit: 75 },
+        kuda: { limit: 85 },
+        phonix: { limit: 95 },
+        wolf: { limit: 100 },
+        
+        petFood: { tiketcoin: 4 },
+        makanancentaur: { tiketcoin: 6 },
+        makanangriffin: { tiketcoin: 8 },
+        makanankyubi: { tiketcoin: 10 },
+        makanannaga: { tiketcoin: 12 },
+        makananpet: { tiketcoin: 14 },
+        makananphonix: { tiketcoin: 16 }
     },
     sell: {
         exp: {
