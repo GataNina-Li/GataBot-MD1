@@ -1,6 +1,7 @@
 const items = {
     buy: {
         exp: {
+            money: 300,
             eleksirb: 2
         },
         limit: {
