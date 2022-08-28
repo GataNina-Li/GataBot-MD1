@@ -1,192 +1,49 @@
 const items = {
     buy: {
-        exp: {
-            money: 300,
-            eleksirb: 2
-        },
-        limit: {
-            money: 300
-        },
-        diamond: {
-           berlian: 1
-        },
-        joincount: {
-            limit: 15
-        },
-        emerald: {
-            emasbatang: 5
-        },
-        berlian: {
-            kyubi: 10
-        },
-        kyubi: {
-            trash: 5
-        },
-        gold: { 
-        	money: 1000
-        },    
-        gold: { 
-        	diamond: 25
-        },
-        money: {
-            kaleng: 2
-        },
-        tiketcoin: {
-            joincount: 1
-        },
-        potion: {
-            money: 500
-        },
-        aqua: {
-            botol: 2
-        },
-        trash: {
-            eleksirb: 15
-        },
-        wood: {
-            string: 2
-        },
-        rock: {
-            kardus: 4
-        },
-        batu: {
-            coal: 20
-        },
-        string: {
-            kaleng: 3
-        },
-        iron: {
-            kyubi: 20
-        },
-        coal: {
-            trash: 7
-        },
-        botol: {
-            wood: 5
-        },
-        kaleng: {
-            potion: 2
-        },
-        kardus: {
-            trash: 20
-        },
-        eleksirb: {
-            healtmonster: 8
-        },
-        emasbatang: {
-            kayu: 4
-        },
-        emasbiasa: {
-            diamond: 30
-        },
-        rubah: {
-            berlian: 45
-        },
-        sampah: {
-            trash: 200
-        },
-        serigala: {
-            kaleng: 150
-        },
-        kayu: {
-            wood: 40
-        },
-        sword: {
-            gold: 2
-        },
-        umpan: {
-            string: 4
-        },
-        healtmonster: {
-            kyubi: 35
-        },
-        pancingan: {
-            iron: 4
-        },
-        common: {
-            money: 1500
-        },
-        common: {
-            diamond: 50
-        },
-        common: {
-            berlian: 30
-        },
-        uncommon: {
-            money: 3000
-         },
-        uncommon: {
-            diamond: 80
-         },
-        uncommon: {
-            berlian: 40
-        },
-        mythic: {
-            money: 4500
-        },
-        mythic: {
-            diamond: 100
-        },
-        mythic: {
-            berlian: 50
-        },
-        pet: {
-            aqua: 120
-        },
-        pet: {
-            kyubi: 160
-        },
-        pet: {
-            joincount: 45
-        },
-        gardenboxs: {
-            aqua: 80
-        },
-        gardenboxs: {
-            rock: 100
-        },
-        gardenboxs: {
-            kardus: 150
-        },
-        legendary: {
-            money: 10000
-        },
-        legendary: {
-            diamond: 200
-        },
-        legendary: {
-            berlian: 80
-        },
-        anggur: {
-            emerald: 2
-        },
-        anggur: {
-            gold: 1
-        },
-        apel: {
-            emerald: 2
-        },
-        apel: {
-            gold: 1
-        },
-        jeruk: {
-            emerald: 2
-        },
-        jeruk: {
-            gold: 1
-        },
-        mangga: {
-            emerald: 2
-        },
-        mangga: {
-            gold: 1
-        },
-        pisang: {
-            emerald: 2
-        },
-        pisang: {
-            gold: 1
-        },
+        exp: { eleksirb: 2 },
+        limit: { money: 300 },
+        diamond: { berlian: 1 },
+        joincount: { limit: 15 },
+        emerald: { emasbatang: 5 },
+        berlian: { kyubi: 10 },
+        kyubi: { trash: 5 },  
+        gold: {  diamond: 25 },
+        money: { kaleng: 2 },
+        tiketcoin: { joincount: 1 },
+        potion: { money: 500 },
+        aqua: { botol: 2 },
+        trash: { eleksirb: 15 },
+        wood: { string: 2 },
+        rock: { kardus: 4 },
+        batu: { coal: 20 },
+        string: { kaleng: 3 },
+        iron: { kyubi: 20 },
+        coal: { trash: 7 },
+        botol: { wood: 5 },
+        kaleng: { potion: 2 },
+        kardus: { trash: 20 },
+        eleksirb: { healtmonster: 8 },
+        emasbatang: { kayu: 4},
+        emasbiasa: { diamond: 30 },
+        rubah: { berlian: 45 },
+        sampah: { trash: 200 },
+        serigala: { kaleng: 150 },
+        kayu: { wood: 40 },
+        sword: { gold: 2 },
+        umpan: { string: 4 },
+        healtmonster: { kyubi: 35 },
+        pancingan: { iron: 4 },
+        common: { berlian: 30 },
+        uncommon: { berlian: 40 },
+        mythic: { berlian: 50 },
+        pet: { aqua: 120 },
+        gardenboxs: { aqua: 80 },
+        legendary: { berlian: 80 },
+        anggur: { emerald: 2 },
+        apel: { emerald: 2 },
+        jeruk: { emerald: 2 },
+        mangga: { emerald: 2 },
+        pisang: { emerald: 2 },
         bibitanggur: {
             money: 2000
         },
