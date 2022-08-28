@@ -1,5 +1,5 @@
 const items = {
-    buy, comprar: {
+   buy: {
         exp: { eleksirb: 2 }, 
         limit: { money: 300 },
         diamond: { berlian: 1 },
