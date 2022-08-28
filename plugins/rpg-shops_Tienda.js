@@ -72,7 +72,156 @@ const items = {
         makananpet: { tiketcoin: 14 },
         makananphonix: { tiketcoin: 16 }
     },
+   
+   comprar: {
+        exp: { eleksirb: 2 }, 
+        limit: { money: 300 },
+        diamond: { berlian: 1 },
+        joincount: { limit: 15 },
+        emerald: { emasbatang: 5 },
+        berlian: { kyubi: 10 },
+        kyubi: { trash: 5 },  
+        gold: {  diamond: 25 },
+        money: { kaleng: 2 },
+        tiketcoin: { joincount: 1 },
+        
+        potion: { money: 500 },
+        aqua: { botol: 2 },
+        trash: { eleksirb: 15 },
+        wood: { string: 2 },
+        rock: { kardus: 4 },
+        batu: { coal: 20 },
+        string: { kaleng: 3 },
+        iron: { kyubi: 20 },
+        coal: { trash: 7 },
+        botol: { wood: 5 },
+        kaleng: { potion: 2 },
+        kardus: { trash: 20 },
+        
+        eleksirb: { healtmonster: 8 },
+        emasbatang: { kayu: 4},
+        emasbiasa: { diamond: 30 },
+        rubah: { berlian: 45 },
+        sampah: { trash: 200 },
+        serigala: { kaleng: 150 },
+        kayu: { wood: 40 },
+        sword: { gold: 2 },
+        umpan: { string: 4 },
+        healtmonster: { kyubi: 35 },
+        pancingan: { iron: 4 },
+        
+        common: { berlian: 30 },
+        uncommon: { berlian: 40 },
+        mythic: { berlian: 50 },
+        pet: { aqua: 120 },
+        gardenboxs: { aqua: 80 },
+        legendary: { berlian: 80 },
+        
+        anggur: { emerald: 2 },
+        apel: { emerald: 2 },
+        jeruk: { emerald: 2 },
+        mangga: { emerald: 2 },
+        pisang: { emerald: 2 },
+        
+        bibitanggur: { aqua: 10 },
+        bibitapel: { aqua: 10 },
+        bibitjeruk: { aqua: 10 },
+        bibitmangga: { aqua: 10 },
+        bibitpisang: { aqua: 10 },
+        
+        centaur: { limit: 35 },
+        griffin: { limit: 45 },
+        kucing: { limit: 55 },
+        naga: { limit: 65 },
+        fox: { limit: 75 },
+        kuda: { limit: 85 },
+        phonix: { limit: 95 },
+        wolf: { limit: 100 },
+        
+        petFood: { tiketcoin: 4 },
+        makanancentaur: { tiketcoin: 6 },
+        makanangriffin: { tiketcoin: 8 },
+        makanankyubi: { tiketcoin: 10 },
+        makanannaga: { tiketcoin: 12 },
+        makananpet: { tiketcoin: 14 },
+        makananphonix: { tiketcoin: 16 }
+    },
+   
     sell: {
+        exp: { emerald: 22 },
+        limit: { money: 1250 },
+        diamond: { money: 500 },
+        joincount: { money: 4, },
+        emerald: { money: 700 },
+        berlian: { money: 850 },
+        kyubi: { money: 400 },
+        gold: { money: 3000 },
+        money: { money: 7500 },
+        tiketcoin: { money: 8500 },
+        
+        potion: { money: 3500 },
+        aqua: { money: 1500 },
+        trash: { money: 200 },
+        wood: { money: 2000 },
+        rock: { money: 25000 },
+        batu: { money: 75000 },
+        string: { money: 3500 },
+        iron: { money: 40000 },
+        coal: { money: 120000 },
+        botol: { money: 120000 },
+        kaleng: { money: 2000 },
+        kardus: { money: 2000 },
+        
+        eleksirb: { money: 2000 },
+        emasbatang: { money: 2000 },
+        emasbiasa: { money: 2000 },
+        rubah: { money: 2000 },
+        sampah: { money: 2000 },
+        serigala: { money: 2000 },
+        kayu: { money: 2000 },
+        sword: { money: 2000 },
+        umpan: { money: 2000 },
+        healtmonster: { money: 2000 },
+        pancingan: { money: 2000 },
+        
+        common: { money: 2000 },
+        uncommon: { money: 2000 },
+        mythic: { money: 2000 },
+        pet: { money: 2000 },
+        gardenboxs: { money: 2000 },
+        legendary: { money: 2000 },
+        
+        anggur: { money: 2000 },
+        apel: { money: 2000 },
+        jeruk: { money: 2000 },
+        mangga: { money: 2000 },
+        pisang: { money: 2000 },
+        
+        bibitanggur: { money: 2000 },
+        bibitapel: { money: 2000 },
+        bibitjeruk: { money: 2000 },
+        bibitmangga: { money: 2000 },
+        bibitpisang: { money: 2000 },
+        
+        centaur: { money: 2000 },
+        griffin: { money: 2000 },
+        kucing: { money: 2000 },
+        naga: { money: 2000 },
+        fox: { money: 2000 },
+        kuda: { money: 2000 },
+        phonix: { money: 200 },
+        wolf: { money: 2000 },
+        
+        petFood: { money: 2000 },
+        makanancentaur: { money: 2000  },
+        makanangriffin: { money: 2000 },
+        makanankyubi: { money: 2000 },
+        makanannaga: { money: 2000 },
+        makananpet: { money: 2000 },
+        makananphonix: { money: 2000 }
+    },
+   
+   vender: {
         exp: { emerald: 22 },
         limit: { money: 1250 },
         diamond: { money: 500 },
@@ -156,7 +305,7 @@ let imgr = flaaa.getRandom()
     let footer = ''
     let image = ''
     let buttons = ''
-    text = (command.toLowerCase() == 'buy', 'comprar' ?
+    text = (command.toLowerCase() == 'buy' ?
 (`
 ${htki} *COMPRAR : BUY* ${htka}
 `.trim()) : 
@@ -164,7 +313,7 @@ ${htki} *COMPRAR : BUY* ${htka}
 ${htki} *VENDER : SELL* ${htka}
 `.trim())
 )
-    footer = (command.toLowerCase() == 'buy', 'comprar' ?
+    footer = (command.toLowerCase() == 'buy' ?
 (`
 🔖 𝙇𝙄𝙎𝙏𝘼 𝘿𝙀 𝘼𝙍𝙏𝙄𝘾𝙐𝙇𝙊𝙎 : 𝙇𝙄𝙎𝙏 𝙊𝙁 𝘼𝙍𝙏𝙄𝘾𝙇𝙀𝙎
 ${Object.keys(listItems).map((v) => {
@@ -196,11 +345,11 @@ ${Object.keys(listItems).map((v) => {
 *» ${usedPrefix}${command} potion 5*
 `.trim())
 )
-    image = (command.toLowerCase() == 'buy', 'comprar' ?
+    image = (command.toLowerCase() == 'buy' ?
 (imgr + 'COMPRAR : BUY') : 
 (imgr + 'VENDER : SELL')
 )
-    buttons = (command.toLowerCase() == 'buy', 'comprar' ?
+    buttons = (command.toLowerCase() == 'buy' ?
 ([
 [`💎 𝘾𝙊𝙈𝙋𝙍𝘼𝙍 𝘿𝙄𝘼𝙈𝘼𝙉𝙏𝙀 𝙓5 | 𝘽𝙐𝙔`, `${usedPrefix}buy limit 5`],
 [`🥤 𝘾𝙊𝙈𝙋𝙍𝘼𝙍 𝙋𝙊𝘾𝙄𝙊𝙉 𝙓5 | 𝘽𝙐𝙔`, `${usedPrefix}buy potion 5`]
@@ -213,7 +362,7 @@ ${Object.keys(listItems).map((v) => {
     const item = (args[0] || '').toLowerCase()
     const total = Math.floor(isNumber(args[1]) ? Math.min(Math.max(parseInt(args[1]), 1), Number.MAX_SAFE_INTEGER) : 1) * 1
     if (!listItems[item]) return conn.sendButton(m.chat, text, footer, image, buttons, m)
-    if (command.toLowerCase() == 'buy', 'comprar') {
+    if (command.toLowerCase() == 'buy') {
         let paymentMethod = Object.keys(listItems[item]).find(v => v in user)
         if (user[paymentMethod] < listItems[item][paymentMethod] * total) return conn.sendButton(m.chat,
 `*–『 INSUFFICIENT CREDIT 』–*`, 
