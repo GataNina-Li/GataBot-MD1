@@ -124,7 +124,7 @@ user.lastberburu = new Date * 1
 handler.help = ['berburu']
 handler.tags = ['rpg']
 handler.command = /^(hunt|berburu|caza(r)?)$/i
-handler.group = true
+//handler.group = true
 export default handler
 
 /*function clockString(ms) {
@@ -136,14 +136,14 @@ export default handler
 }*/
 
 function msToTime(duration) {
-  var milliseconds = parseInt((duration % 1000) / 100),
-    seconds = Math.floor((duration / 1000) % 60),
-    minutes = Math.floor((duration / (1000 * 60)) % 60),
-    hours = Math.floor((duration / (1000 * 60 * 60)) % 24)
+var milliseconds = parseInt((duration % 1000) / 100),
+seconds = Math.floor((duration / 1000) % 60),
+minutes = Math.floor((duration / (1000 * 60)) % 60),
+hours = Math.floor((duration / (1000 * 60 * 60)) % 24)
 
-  hours = (hours < 10) ? "0" + hours : hours
-  minutes = (minutes < 10) ? "0" + minutes : minutes
-  seconds = (seconds < 10) ? "0" + seconds : seconds
+hours = (hours < 10) ? "0" + hours : hours
+minutes = (minutes < 10) ? "0" + minutes : minutes
+seconds = (seconds < 10) ? "0" + seconds : seconds
 
-  return minutes + " Minuto(s) " + seconds + " Segundo(s)"
-}
+return minutes + " m y " + seconds + " s " 
+}  
