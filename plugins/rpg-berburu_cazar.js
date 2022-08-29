@@ -92,7 +92,7 @@ let hsl = `
 		global.db.data.users[m.sender].babi += rbrb11
 		global.db.data.users[m.sender].ayam += rbrb12
 	
-let time = global.db.data.users[m.sender].lastberburu + 1500000 //15 Minutos
+let time = global.db.data.users[m.sender].lastberburu + 1500000 //25 Minutos
 //if (new Date - global.db.data.users[m.sender].lastberburu > 100000)
 if (new Date - global.db.data.users[m.sender].lastberburu > 1500000) { 	
 
@@ -116,7 +116,7 @@ setTimeout(() => {
 conn.sendHydrated(m.chat, `${conn.getName(m.sender)} *${['Buscando implementos de caza...','Alistando todo para la caza!!','Estableciendo Lugar de la Caza...','PREPARANDO LUGAR DE CAZA!!'].getRandom()}*`, wm, null, null, null, null, null, [
 [null, null]], null)}, 0)	
 user.lastberburu = new Date * 1	
-} else conn.sendButton(m.chat, `𝙋𝙊𝙍 𝙁𝘼𝙑𝙊𝙍 𝘿𝙀𝙎𝘾𝘼𝙉𝙎𝘼 𝙐𝙉 𝙈𝙊𝙈𝙀𝙉𝙏𝙊 𝙋𝘼𝙍𝘼 𝙇𝙐𝙀𝙂𝙊 𝙎𝙀𝙂𝙐𝙄𝙍 𝘾𝘼𝙕𝘼𝙉𝘿𝙊\n\n𝙋𝙇𝙀𝘼𝙎𝙀 𝙍𝙀𝙎𝙏 𝘼 𝙈𝙊𝙈𝙀𝙉𝙏 𝘼𝙉𝘿 𝙏𝙃𝙀𝙉 𝘾𝙊𝙉𝙏𝙄𝙉𝙐𝙀 𝙃𝙐𝙉𝙏𝙄𝙉𝙂`, `⫹⫺ 𝙏𝙄𝙀𝙈𝙋𝙊 : 𝙏𝙄𝙈𝙀 ${clockString(time - new Date())}\n${wm}`, null, [
+} else conn.sendButton(m.chat, `𝙋𝙊𝙍 𝙁𝘼𝙑𝙊𝙍 𝘿𝙀𝙎𝘾𝘼𝙉𝙎𝘼 𝙐𝙉 𝙈𝙊𝙈𝙀𝙉𝙏𝙊 𝙋𝘼𝙍𝘼 𝙇𝙐𝙀𝙂𝙊 𝙎𝙀𝙂𝙐𝙄𝙍 𝘾𝘼𝙕𝘼𝙉𝘿𝙊\n\n𝙋𝙇𝙀𝘼𝙎𝙀 𝙍𝙀𝙎𝙏 𝘼 𝙈𝙊𝙈𝙀𝙉𝙏 𝘼𝙉𝘿 𝙏𝙃𝙀𝙉 𝘾𝙊𝙉𝙏𝙄𝙉𝙐𝙀 𝙃𝙐𝙉𝙏𝙄𝙉𝙂`, `⫹⫺ 𝙏𝙄𝙀𝙈𝙋𝙊 : 𝙏𝙄𝙈𝙀 ${msToTime(time - new Date())}\n${wm}`, null, [
 ['🛕 𝘼𝙣𝙞𝙢𝙖𝙡𝙚𝙨 𝘾𝙖𝙥𝙩𝙪𝙧𝙖𝙙𝙤𝙨 ', '.kandang'],
 [`🎒 𝙄𝙣𝙫𝙚𝙣𝙩𝙖𝙧𝙞𝙤 | 𝙄𝙣𝙫𝙚𝙣𝙩𝙤𝙧𝙮`, `.inventario`]], fkontak, m)							     
 	
@@ -127,15 +127,15 @@ handler.command = /^(hunt|berburu|caza(r)?)$/i
 handler.group = true
 export default handler
 
-function clockString(ms) {
+/*function clockString(ms) {
   let h = Math.floor(ms / 3600000)
   let m = Math.floor(ms / 60000) % 60
   let s = Math.floor(ms / 1000) % 60
   console.log({ms,h,m,s})
   return [h, m, s].map(v => v.toString().padStart(2, 0) ).join(':')
-}
+}*/
 
-/*function msToTime(duration) {
+function msToTime(duration) {
   var milliseconds = parseInt((duration % 1000) / 100),
     seconds = Math.floor((duration / 1000) % 60),
     minutes = Math.floor((duration / (1000 * 60)) % 60),
@@ -146,4 +146,4 @@ function clockString(ms) {
   seconds = (seconds < 10) ? "0" + seconds : seconds
 
   return minutes + " Minuto(s) " + seconds + " Segundo(s)"
-}*/
+}
