@@ -37,7 +37,7 @@ const items = {
         pancingan: { iron: 4 },
         
         common: { berlian: 30 },
-        uncommon: { berlian: 40 },
+        uncoommon: { berlian: 40 },
         mythic: { berlian: 50 },
         pet: { aqua: 120 },
         gardenboxs: { aqua: 80 },
@@ -110,7 +110,7 @@ const items = {
         pancingan: { money: 20 },
         
         common: { limit: 30 },
-        uncommon: { diamond: 45 },
+        uncoommon: { diamond: 45 },
         mythic: { berlian: 40 },
         pet: { money: 5000 },
         gardenboxs: { gold: 30 },
