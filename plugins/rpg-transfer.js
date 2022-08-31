@@ -93,7 +93,7 @@ export default handler
 
 function special(type) {
     let b = type.toLowerCase()
-    let special = (['common', 'uncommon', 'mythic', 'legendary', 'pet'].includes(b) ? ' Crate' : '')
+    let special = (['common', 'uncoommon', 'mythic', 'legendary', 'pet'].includes(b) ? ' Crate' : '')
     return special
 }
 
