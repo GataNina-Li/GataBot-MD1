@@ -88,7 +88,7 @@ const inventory = {
   },
   crates: {
     common: true,
-    uncommon: true,
+    uncoommon: true,
     mythic: true,
     pet: true,
     legendary: true
@@ -241,7 +241,7 @@ let member = global.db.data.users[m.sender]
     let kayu = member.kayu
     let string = member.string
 
-    let uncommon = member.uncommon
+    let uncoommon = member.uncoommon
     let mythic = member.mythic
     let legendary = member.legendary
     let level = member.level
@@ -263,7 +263,7 @@ let member = global.db.data.users[m.sender]
     let sortedkayu = Object.entries(global.db.data.users).sort((a, b) => b[1].kayu - a[1].kayu)
     let sortedstring = Object.entries(global.db.data.users).sort((a, b) => b[1].string - a[1].string)
     let sortedcommon = Object.entries(global.db.data.users).sort((a, b) => b[1].common - a[1].common)
-    let sorteduncommon = Object.entries(global.db.data.users).sort((a, b) => b[1].uncommon - a[1].uncommon)
+    let sorteduncoommon = Object.entries(global.db.data.users).sort((a, b) => b[1].uncoommon - a[1].uncoommon)
     let sortedmythic = Object.entries(global.db.data.users).sort((a, b) => b[1].mythic - a[1].mythic)
     let sortedlegendary = Object.entries(global.db.data.users).sort((a, b) => b[1].legendary - a[1].legendary)
     let sortedpet = Object.entries(global.db.data.users).sort((a, b) => b[1].pet - a[1].pet)
@@ -278,7 +278,7 @@ let member = global.db.data.users[m.sender]
     let userskayu = sortedkayu.map(v => v[0])
     let usersstring = sortedstring.map(v => v[0])
     let userscommon = sortedcommon.map(v => v[0])
-    let usersuncommon = sorteduncommon.map(v => v[0])
+    let usersuncoommon = sorteduncoommon.map(v => v[0])
     let usersmythic = sortedmythic.map(v => v[0])
     let userslegendary = sortedlegendary.map(v => v[0])
     let userspet = sortedpet.map(v => v[0])
@@ -363,7 +363,7 @@ let member = global.db.data.users[m.sender]
 ┃ *» ${common}*
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
 ┃ 📦 *Poco común: Uncommon* 
-┃ *» ${uncommon}*
+┃ *» ${uncoommon}*
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
 ┃ 📦 *Mítico : Mythic* 
 ┃ *» ${mythic}*
@@ -424,7 +424,7 @@ _8.Top Hierro_ *${usersiron.indexOf(m.sender) + 1}* _de_ *${usersiron.length}*
 _9.Top Madera_ *${userskayu.indexOf(m.sender) + 1}* _de_ *${userskayu.length}*
 _10.Top Cuerda_ *${usersstring.indexOf(m.sender) + 1}* _de_ *${usersstring.length}*
 _11.Top Caja Común_ *${userscommon.indexOf(m.sender) + 1}* _de_ *${userscommon.length}*
-_13.Top Caja poco Común_ *${usersuncommon.indexOf(m.sender) + 1}* _de_ *${usersuncommon.length}*
+_13.Top Caja poco Común_ *${usersuncoommon.indexOf(m.sender) + 1}* _de_ *${usersuncoommon.length}*
 _14.Top Caja Mítica_ *${usersmythic.indexOf(m.sender) + 1}* _de_ *${usersmythic.length}*
 _15.Top Caja Legendaria_ *${userslegendary.indexOf(m.sender) + 1}* _de_ *${userslegendary.length}*
 _16.Top Caja para Mascota_ *${userspet.indexOf(m.sender) + 1}* _de_ *${userspet.length}*
@@ -594,7 +594,7 @@ let date = global.botdate
     let makanangriffin = global.db.data.users[m.sender].makanangriffin
     let makanankyubi = global.db.data.users[m.sender].makanankyubi                                       
     let makanancentaur = global.db.data.users[m.sender].makanancentaur
-    let uncommon = global.db.data.users[m.sender].uncommon
+    let uncoommon = global.db.data.users[m.sender].uncoommon
     let mythic = global.db.data.users[m.sender].mythic
     let legendary = global.db.data.users[m.sender].legendary
     let level = global.db.data.users[m.sender].level
@@ -629,7 +629,7 @@ let date = global.botdate
     let sortedpotion = Object.entries(global.db.data.users).sort((a, b) => b[1].potion - a[1].potion)
     let sortedsampah = Object.entries(global.db.data.users).sort((a, b) => b[1].sampah - a[1].sampah)
     let sortedcommon = Object.entries(global.db.data.users).sort((a, b) => b[1].common - a[1].common)
-    let sorteduncommon = Object.entries(global.db.data.users).sort((a, b) => b[1].uncommon - a[1].uncommon)
+    let sorteduncoommon = Object.entries(global.db.data.users).sort((a, b) => b[1].uncoommon - a[1].uncoommon)
     let sortedmythic = Object.entries(global.db.data.users).sort((a, b) => b[1].mythic - a[1].mythic)
     let sortedlegendary = Object.entries(global.db.data.users).sort((a, b) => b[1].legendary - a[1].legendary)
     let usersmoney = sortedmoney.map(v => v[0])
@@ -640,7 +640,7 @@ let date = global.botdate
     let userssampah = sortedsampah.map(v => v[0])
     let userslevel = sortedlevel.map(v => v[0])
     let userscommon = sortedcommon.map(v => v[0])
-    let usersuncommon = sorteduncommon.map(v => v[0])
+    let usersuncoommon = sorteduncoommon.map(v => v[0])
     let usersmythic = sortedmythic.map(v => v[0])
     let userslegendary = sortedlegendary.map(v => v[0])
     
@@ -780,7 +780,7 @@ ${readMore}
 *│🥘 Alimento de Carne : Meat Food » ${sapir}*
 *│🥩 Bistec de Carne : Beef Steak » ${ssapi}*
 *│*
-*│🎒 Total inv » ${aqua + ramuan + kardus + kaleng + arlok + psepick + psenjata + common + uncommon + mythic + legendary + pet + diamond + potion + besi + emas + string + sampah + kayu + batu + potion + sampah + makananpet + apel + ayamb + ayamg + sapir + ssapi} Comida*
+*│🎒 Total inv » ${aqua + ramuan + kardus + kaleng + arlok + psepick + psenjata + common + uncoommon + mythic + legendary + pet + diamond + potion + besi + emas + string + sampah + kayu + batu + potion + sampah + makananpet + apel + ayamb + ayamg + sapir + ssapi} Comida*
 *╰─⋆─⋆─⋆─⋆─⋆─⋆─⋆─⋆─┄⸙*
 
 *╭──━• FRUTAS Y SEMILLAS*
@@ -806,7 +806,7 @@ ${readMore}
 *╭─────━• CAJAS*
 *╭──────━• BOX*
 *│${rpg.emoticon('common')} » ${common}*
-*│🥡 Caja Poco Común : Uncommon » ${uncommon}*
+*│🥡 Caja Poco Común : Uncommon » ${uncoommon}*
 *│${rpg.emoticon('mythic')} » ${mythic}*
 *│${rpg.emoticon('legendary')} » ${legendary}*
 *│${rpg.emoticon('pet')} » ${pet}*
@@ -883,7 +883,7 @@ ${readMore}
 *│🧭 Top Clock: ${usersarlok.indexOf(m.sender) + 1} / ${usersarlok.length}*
 *│🥤 Top Potion: ${userspotion.indexOf(m.sender) + 1} / ${userspotion.length}*
 *│📦 Top Common: ${userscommon.indexOf(m.sender) + 1} / ${userscommon.length}*
-*│🥡 Top Uncommon: ${usersuncommon.indexOf(m.sender) + 1} / ${usersuncommon.length}*
+*│🥡 Top Uncommon: ${usersuncoommon.indexOf(m.sender) + 1} / ${usersuncoommon.length}*
 *│🗳️ Top Mythic: ${usersmythic.indexOf(m.sender) + 1} / ${usersmythic.length}*
 *│🎁 Top Legendary: ${userslegendary.indexOf(m.sender) + 1} / ${userslegendary.length}*
 *│🗑️ Top Trash: ${userssampah.indexOf(m.sender) + 1} / ${userssampah.length}*
@@ -940,7 +940,7 @@ let health = global.db.data.users[m.sender].health
     let makanangriffin = global.db.data.users[m.sender].makanangriffin
     let makanankyubi = global.db.data.users[m.sender].makanankyubi
     let makanancentaur = global.db.data.users[m.sender].makanancentaur
-    let uncommon = global.db.data.users[m.sender].uncommon
+    let uncoommon = global.db.data.users[m.sender].uncoommon
     let mythic = global.db.data.users[m.sender].mythic
     let legendary = global.db.data.users[m.sender].legendary
     let level = global.db.data.users[m.sender].level
@@ -992,7 +992,7 @@ let health = global.db.data.users[m.sender].health
     let sortedpotion = Object.entries(global.db.data.users).sort((a, b) => b[1].potion - a[1].potion)
     let sortedsampah = Object.entries(global.db.data.users).sort((a, b) => b[1].sampah - a[1].sampah)
     let sortedcommon = Object.entries(global.db.data.users).sort((a, b) => b[1].common - a[1].common)
-    let sorteduncommon = Object.entries(global.db.data.users).sort((a, b) => b[1].uncommon - a[1].uncommon)
+    let sorteduncoommon = Object.entries(global.db.data.users).sort((a, b) => b[1].uncoommon - a[1].uncoommon)
     let sortedmythic = Object.entries(global.db.data.users).sort((a, b) => b[1].mythic - a[1].mythic)
     let sortedlegendary = Object.entries(global.db.data.users).sort((a, b) => b[1].legendary - a[1].legendary)
     let usersmoney = sortedmoney.map(v => v[0])
@@ -1001,7 +1001,7 @@ let health = global.db.data.users[m.sender].health
     let userssampah = sortedsampah.map(v => v[0])
     let userslevel = sortedlevel.map(v => v[0])
     let userscommon = sortedcommon.map(v => v[0])
-    let usersuncommon = sorteduncommon.map(v => v[0])
+    let usersuncoommon = sorteduncoommon.map(v => v[0])
     let usersmythic = sortedmythic.map(v => v[0])
     let userslegendary = sortedlegendary.map(v => v[0])
     let str = `
@@ -1059,7 +1059,7 @@ let health = global.db.data.users[m.sender].health
 ┃ *╸╸╸╸╸╸╸╸╸╸╸╸╸╸*
 ┃📥 *Cajas : Boxs » ${boxs}*
 ┃📦 *Caja Común : Common Box » ${common}*
-┃🥡 *Caja Poco Común : Uncommon » ${uncommon}*
+┃🥡 *Caja Poco Común : Uncommon » ${uncoommon}*
 ┃🗳️ *Caja Mítica : Mythic Box » ${mythic}*
 ┃🎁 *Caja Legendaria : Legendary Box » ${legendary}*.
 ┃🍱 *Caja para Mascota : Pet Box » ${pet}*
@@ -1160,7 +1160,7 @@ Serigala: *${serigala == 0 ? 'Tidak Punya' : '' || serigala == 1 ? 'Level 1' : '
 3.Top Diamond *${usersdiamond.indexOf(m.sender) + 1}* dari *${usersdiamond.length}*
 4.Top Potion *${userspotion.indexOf(m.sender) + 1}* dari *${userspotion.length}*
 5.Top Common *${userscommon.indexOf(m.sender) + 1}* dari *${userscommon.length}*
-6.Top Uncommon *${usersuncommon.indexOf(m.sender) + 1}* dari *${usersuncommon.length}*
+6.Top Uncommon *${usersuncoommon.indexOf(m.sender) + 1}* dari *${usersuncoommon.length}*
 7.Top Mythic *${usersmythic.indexOf(m.sender) + 1}* dari *${usersmythic.length}*
 8.Top Legendary *${userslegendary.indexOf(m.sender) + 1}* dari *${userslegendary.length}*
 9.Top Sampah *${userssampah.indexOf(m.sender) + 1}* dari *${userssampah.length}*
