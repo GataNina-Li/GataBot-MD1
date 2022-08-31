@@ -17,7 +17,7 @@ const fkontak = {
 let picture = './media/menus/Menu1.jpg'
 let gata = `𝙄𝙉𝙎𝙏𝘼𝙇𝘼𝘾𝙄𝙊𝙉 𝘿𝙀 𝙂𝘼𝙏𝘼𝘽𝙊𝙏 🐈
 
-*╭━━━━━━━━━━━━━⬣*
+*━━━━━━━━━━━━━⬣*
 ✅ 𝗜𝗡𝗦𝗧𝗔𝗟𝗔𝗥 𝗘𝗡 𝗕𝗢𝗫𝗠𝗜𝗡𝗘
 *⎯ ⎯ ⎯ ⎯ ⎯ ⎯ ⎯ ⎯ ⎯ ⎯ ⎯ ⎯ ⎯*
 *𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 : 𝘽𝙤𝙭𝙈𝙞𝙣𝙚*
@@ -34,9 +34,9 @@ _https://dash.boxmineworld.com_
 *⎯ ⎯ ⎯ ⎯ ⎯ ⎯ ⎯ ⎯ ⎯ ⎯ ⎯ ⎯ ⎯*
 _Panel_
 _https://panel.boxmineworld.com_
-*╰━━━━━━━━━━━━━⬣*
+*━━━━━━━━━━━━━⬣*
 
-*╭━━━━━━━━━━━━━⬣*
+*━━━━━━━━━━━━━⬣*
 ✅ 𝙄𝙉𝙎𝙏𝘼𝙇𝘼𝙍 𝙀𝙉 𝙏𝙀𝙍𝙈𝙐𝙓
 *⎯ ⎯ ⎯ ⎯ ⎯ ⎯ ⎯ ⎯ ⎯ ⎯ ⎯ ⎯ ⎯*
 termux-setup-storage
@@ -53,9 +53,9 @@ yarn install
 npm install
 npm update
 npm start
-*╰━━━━━━━━━━━━━⬣*
+*━━━━━━━━━━━━━⬣*
 
-*╭━━━━━━━━━━━━━⬣*
+*━━━━━━━━━━━━━⬣*
 ✅ 𝙄𝙉𝙎𝙏𝘼𝙇𝘼𝙍 𝙀𝙉 𝙃𝙀𝙍𝙊𝙆𝙐
 *⎯ ⎯ ⎯ ⎯ ⎯ ⎯ ⎯ ⎯ ⎯ ⎯ ⎯ ⎯ ⎯*
 *_https://heroku.com/deploy?template=https://github.com/GataNina-Li/GataBot-MD_*
@@ -63,7 +63,7 @@ npm start
 *Añada lo siguente al Buildpack:*
 _https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git_
 _https://github.com/clhuang/heroku-buildpack-webp-binaries.git_
-*╰━━━━━━━━━━━━━⬣*`
+*━━━━━━━━━━━━━⬣*`
 
 conn.sendButton(m.chat, gata, `Comunícate con Mí Creadora si necesitas ayuda con la Instalación.\n\nContact My Creator if you need help with the Installation.\n\n${ig}\n${wm}`, picture, [
 ['𝘾𝙪𝙚𝙣𝙩𝙖𝙨 𝙊𝙛𝙞𝙘𝙞𝙖𝙡𝙚𝙨 | 𝘼𝙘𝙘𝙤𝙪𝙣𝙩𝙨 ✅', '.cuentasgb'],
