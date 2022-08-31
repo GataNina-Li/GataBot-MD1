@@ -453,7 +453,7 @@ export async function handler(chatUpdate) {
               if (!isNumber(user.udang)) user.udang = 0
               if (!isNumber(user.udangbakar)) user.udangbakar = 0
               if (!isNumber(user.umpan)) user.umpan = 0
-              if (!isNumber(user.uncommon)) user.uncommon = 0
+              if (!isNumber(user.uncoommon)) user.uncoommon = 0
               if (!isNumber(user.unreglast)) user.unreglast = 0
               if (!isNumber(user.upgrader)) user.upgrader = 0
               if (!isNumber(user.vodka)) user.vodka = 0
@@ -858,7 +858,7 @@ export async function handler(chatUpdate) {
                     udang: 0,
                     udangbakar: 0,
                     umpan: 0,
-                    uncommon: 0,
+                    uncoommon: 0,
                     unreglast: 0,
                     upgrader: 0,
                     vodka: 0,
