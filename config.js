@@ -279,7 +279,7 @@ global.rpg = {
       tiger: '🐅 Tigre : Tiger',
       joincount: '🪙 Token',
       trash: '🗑 Basura : Trash',
-      uncommon: '🥡 Caja Poco Común : Uncommon',
+      uncoommon: '🥡 Caja Poco Común : Uncommon',
       upgrader: '🧰 Aumentar Mejora : Upgrade',
       wolf: '🐺 Lobo : Wolf',
       wood: '🪵 Madera : Wood'
@@ -367,7 +367,7 @@ global.rpgg = { //Solo emojis
       tiger: '🐅',
       joincount: '🪙',
       trash: '🗑',
-      uncommon: '🥡',
+      uncoommon: '🥡',
       upgrader: '🧰',
       wolf: '🐺',
       wood: '🪵'      
@@ -420,7 +420,7 @@ global.rpgshop = { //Tienda
       pancingan: '🪝 Gancho : Hook',
        
       common: '📦 Caja Común : Common Box',
-      uncommon: '🥡 Caja Poco Común : Uncommon',
+      uncoommon: '🥡 Caja Poco Común : Uncommon',
       mythic: '🗳️ Caja Mítica : Mythic Box',
       pet: '📫 Caja de Mascotas : Pet Box',//?
       gardenboxs: '💐 Caja de Jardinería : Garden boxs',//?
@@ -504,7 +504,7 @@ global.rpgshopp = { //Tienda
       pancingan: '🪝',
        
       common: '📦',
-      uncommon: '🥡',
+      uncoommon: '🥡',
       mythic: '🗳️',
       pet: '📫',//?
       gardenboxs: '💐',//?
