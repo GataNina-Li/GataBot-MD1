@@ -2,7 +2,7 @@ const items = [
     'limit', 'exp', 'money', 'potion', 'trash', 'wood',
     'rock', 'string', 'petFood', 'emerald',
     'diamond', 'gold', 'iron', 'common',
-    'uncommon', 'mythic', 'legendary', 'pet',
+    'uncoommon', 'mythic', 'legendary', 'pet',
 ]
 let confirmation = {} 
 async function handler(m, { conn, args, usedPrefix, command }) {
