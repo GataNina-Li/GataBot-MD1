@@ -91,7 +91,7 @@ function reward(user = {}) {
             wood: 3,
             string: 2,
             common: 2 * (user.dog && (user.dog > 2 ? 2 : user.dog) * 1.2 || 1),
-            uncommon: [0, 0, 0, 1, 0].concat(
+            uncoommon: [0, 0, 0, 1, 0].concat(
                 new Array(5 - (
                     (user.dog > 2 && user.dog < 6 && user.dog) || (user.dog > 5 && 5) || 2
                 )).fill(0)
