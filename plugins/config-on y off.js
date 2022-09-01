@@ -219,6 +219,7 @@ throw false
 }
 global.opts['autoread'] = isEnable
 break
+case 'anticall':
 case 'antillamar':
 isAll = true
 if (!isROwner) {
