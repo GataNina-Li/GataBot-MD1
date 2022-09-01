@@ -169,6 +169,14 @@ throw false
 }}
 chat.autosticker = isEnable          
 break
+case 'reaction':
+if (m.isGroup) {
+if (!(isAdmin || isOwner)) {
+global.dfail('admin', m, conn)
+throw false
+}}
+chat.reaction = isEnable          
+break
 case 'audios':
 if (m.isGroup) {
 if (!(isAdmin || isOwner)) {
