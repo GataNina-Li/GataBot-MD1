@@ -154,6 +154,7 @@ global.reloadHandler = async function (restatConn) {
     conn.ev.off('message.delete', conn.onDelete)
     conn.ev.off('connection.update', conn.connectionUpdate)
     conn.ev.off('creds.update', conn.credsUpdate)
+    conn.ev.off('call', conn.onCall)
   }
   
   //Información para Grupos
@@ -172,12 +173,14 @@ global.reloadHandler = async function (restatConn) {
   conn.onDelete = handler.deleteUpdate.bind(global.conn)
   conn.connectionUpdate = connectionUpdate.bind(global.conn)
   conn.credsUpdate = saveState.bind(global.conn, true)
+  conn.onCall = handler.callUpdate.bind(global.conn)
 
   conn.ev.on('messages.upsert', conn.handler)
   conn.ev.on('group-participants.update', conn.participantsUpdate)
   conn.ev.on('groups.update', conn.groupsUpdate)
   conn.ev.on('message.delete', conn.onDelete)
   conn.ev.on('connection.update', conn.connectionUpdate)
+  conn.ev.on('call', conn.onCall)
   conn.ev.on('creds.update', conn.credsUpdate)
   isInit = false
   return true
