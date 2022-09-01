@@ -332,8 +332,8 @@ global.opts['swonly'] = isEnable
 break
 default:
 if (!/[01]/.test(command)) return await conn.sendMessage(m.chat, listMessage)
-throw await conn.sendButton(m.chat, null, ajuste, null, [['🌟 𝙄𝙉𝙁𝙊𝙍𝙈𝘼𝘾𝙄𝙊𝙉 | 𝙄𝙉𝙁𝙊 𝙈𝙀𝙉𝙐 🌟', `/infomenu`]], fkontak, m)         
-//throw false
+if (!/[01]/.test(command)) return await conn.sendButton(m.chat, null, ajuste, null, [['🌟 𝙄𝙉𝙁𝙊𝙍𝙈𝘼𝘾𝙄𝙊𝙉 | 𝙄𝙉𝙁𝙊 𝙈𝙀𝙉𝙐 🌟', `/infomenu`]], fkontak, m)         
+throw false
 }
 conn.sendButton(m.chat, `${rg}ღ *_COMANDO_* *|* ${type} 
 ღ *_ACTUALMENTE_* *|* ${isEnable ? 'ACTIVADO' : 'DESACTIVADO'} 
