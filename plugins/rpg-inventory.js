@@ -292,16 +292,16 @@ let member = global.db.data.users[m.sender]
 ┃ *INVENTARIO DE COMBATE*
 ┃ *COMBAT INVENTORY*
 ┃
-┃ ❤️ *Vida | Life* 
+┃ ${rpgshopp.emoticon('health')} *Vida | Life* 
 ┃ *» ${healt}*
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
-┃ ⛏️ *Pico | Peak* 
+┃ ${rpgshopp.emoticon('pickaxe')} *Pico | Peak* 
 ┃ *» ${pickaxe == 0 ? 'No tengo | I do not have' : '' || pickaxe == 1 ? 'Nivel | Level ✦ 1' : '' || pickaxe == 2 ? 'Nivel | Level ✦ 2' : '' || pickaxe == 3 ? 'Nivel | Level ✦ 3' : '' || pickaxe == 4 ? 'Nivel | Level ✦ 4' : '' || pickaxe == 5 ? 'Nivel | Level ✦ 5 ǁ MAX' : ''}*
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
-┃ ⚔️ *Espada | Sword*
+┃ ${rpgshopp.emoticon('sword')} *Espada | Sword*
 ┃ *» ${sword == 0 ? 'No tengo | I do not have' : '' || sword == 1 ? 'Espada de Cuero ✦ Leather Sword' : '' || sword == 2 ? 'Espada de Hierro ✦ Iron Sword' : '' || sword == 3 ? 'Espada de Oro ✦ Gold Sword' : '' || sword == 4 ? 'Espada de Energía ✦ Energy Sword' : '' || sword == 5 ? 'Espada Galáctica ✦ Galactic Sword ǁ MAX' : ''}*
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
-┃ 👚 *Armadura | Armor* 
+┃ ${rpgg.emoticon('armor')} *Armadura | Armor* 
 ┃ *» ${armor == 0 ? 'No tengo | I do not have' : '' || armor == 1 ? '✦ Armadura de Cuero : Leather Armor' : '' || armor == 2 ? '✦ Armadura de Hierro : Iron Armor' : '' || armor == 3 ? '✦ Armadura Mágica : Magic Armor' : '' || armor == 4 ? '✦ Armadura Robótica : Robotic Armor' : '' || armor == 5 ? 'Armadura Cyborg Estelar : Cyborg Armor ǁ MAX' : ''}*
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
 ┃ 🎣 *Caña de Pescar | FishingRod* 
@@ -312,79 +312,79 @@ let member = global.db.data.users[m.sender]
 ┃ *INVENTARIO GLOBAL* 
 ┃ *GLOBAL INVENTORY*
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
-┃ ❇️ *Nivel : Level » ${level}*
-┃ ✨ *Rango : Role »* ${rol}
-┃ 💎 *Diamante : Diamond » ${dia}*
-┃ 🐈 *GataCoins: » ${money}*
-┃ ⚡ *Exp » ${exp}*
-┃ 🪙 *Token » ${token}*
+┃ ${rpgg.emoticon('level')} *Nivel : Level » ${level}*
+┃ ${rpgg.emoticon('role')} *Rango : Role »* ${rol}
+┃ ${rpgg.emoticon('limit')} *Diamante : Diamond » ${dia}*
+┃ ${rpgg.emoticon('money')} *GataCoins: » ${money}*
+┃ ${rpgg.emoticon('exp')} *Exp » ${exp}*
+┃ ${rpgg.emoticon('joincount')} *Token » ${token}*
 ╰━━━━━━━━━⬣
 
 ╭━━━━━━━━━⬣
 ┃ *INVENTARIO DE SUPERVIVENCIA* 
 ┃ *SURVIVAL INVENTORY*
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
-┃ *💎+ Diamante+ : Diamond+*
+┃ *${rpgshop.emoticon('diamond')}*
 ┃ *» ${diamond}*
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
-┃ 🥤 *Poción : Potion*
+┃ *${rpgshop.emoticon('potion')}*
 ┃ *» ${potion}*
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
-┃ 🗑️ *Basura : Trash* 
+┃ *${rpgshop.emoticon('trash')}*
 ┃ *${sampah}*
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
-┃ 🍖 *Alimento para Mascotas* 
+┃ *${rpgshop.emoticon('petFood')}*
 ┃ *Pet food* 
 ┃ *» ${makananpet}*
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
-┃ ⛓️ *Hierro : Iron* 
+┃ *${rpgshop.emoticon('iron')}*
 ┃ *» ${iron}*
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
-┃ 🪨 *Piedra : Rock*
+┃ *${rpgshop.emoticon('rock')}*
 ┃ *» ${batu}*
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
-┃ 🪵 *Madera : Wood* 
+┃ *${rpgshop.emoticon('wood')}*
 ┃ *» ${kayu}*
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
-┃ 🕸️ *Cuerda : String*
+┃ *${rpgshop.emoticon('string')}*
 ┃ *» ${string}*
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
-┃ 🌀 *Total Inv » ${diamond + potion + sampah + makananpet + iron + batu + kayu + string} Recuersos*
+┃ 👾 *Total Inv » ${diamond + potion + sampah + makananpet + iron + batu + kayu + string} Recuersos*
 ╰━━━━━━━━━⬣
 
 ╭━━━━━━━━━⬣
 ┃ *INVENTARIO ADQUIRIDO*
 ┃ *ACQUIRED INVENTORY*
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
-┃ 🎁 *Legendario : Legendary* 
-┃ *» ${legendary}*
-┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
-┃ 📦 *Común : Common*
+┃ *${rpgshop.emoticon('common')}*
 ┃ *» ${common}*
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
-┃ 📦 *Poco común: Uncommon* 
+┃ *${rpgshop.emoticon('uncoommon')}*
 ┃ *» ${uncoommon}*
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
-┃ 📦 *Mítico : Mythic* 
+┃ *${rpgshop.emoticon('mythic')}*
 ┃ *» ${mythic}*
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
-┃ 📦 *Mascota : Pet*
+┃ *${rpgshop.emoticon('pet')}*
 ┃ *» ${pet}*
+┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
+┃ *${rpgshop.emoticon('legendary')}*
+┃ *» ${legendary}*
 ╰━━━━━━━━━⬣
 
 ╭━━━━━━━━━⬣
 ┃ *MASCOTAS : PETS*
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
-┃ 🐎 *Caballo : Horse* 
+┃ *${rpgshop.emoticon('legendary')}*🐎 *Caballo : Horse* 
 ┃ *${kuda == 0 ? 'No tengo Mascota : I do not have pet' : '' || kuda == 1 ? 'Nivel | Level ✦ 1' : '' || kuda == 2 ? 'Nivel | Level ✦ 2' : '' || kuda == 3 ? 'Nivel | Level ✦ 3' : '' || kuda == 4 ? 'Nivel | Level ✦ 4' : '' || kuda == 5 ? 'Nivel | Level ✦ 5 ǁ MAX' : ''}*
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
-┃ 🦊 *Zorro : Fox*
+┃ *${rpgshop.emoticon('legendary')}*🦊 *Zorro : Fox*
 ┃ *${rubah == 0 ? 'No tengo Mascota : I do not have pet' : '' || rubah == 1 ? 'Nivel | Level ✦ 1' : '' || rubah == 2 ? 'Nivel | Level ✦ 2' : '' || rubah == 3 ? 'Nivel | Level ✦ 3' : '' || rubah == 4 ? 'Nivel | Level ✦ 4' : '' || rubah == 5 ? 'Nivel | Level ✦ 5 ǁ MAX' : ''}*
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
-┃ 🐈 *Gato : Cat* 
+┃ *${rpgshop.emoticon('legendary')}*🐈 *Gato : Cat* 
 ┃ *${kucing == 0 ? 'No tengo Mascota : I do not have pet' : '' || kucing == 1 ? 'Nivel | Level ✦ 1' : '' || kucing == 2 ? 'Nivel | Level ✦ 2' : '' || kucing == 3 ? 'Nivel | Level ✦ 3' : '' || kucing == 4 ? 'Nivel | Level ✦ 4' : '' || kucing == 5 ? 'Nivel | Level ✦ 5 ǁ MAX' : ''}*
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
-┃ 🐶 *Perro : Dog* 
+┃ *${rpgshop.emoticon('legendary')}*🐶 *Perro : Dog* 
 ┃ *${anjing == 0 ? 'No tengo Mascota : I do not have pet' : '' || anjing == 1 ? 'Nivel | Level ✦ 1' : '' || anjing == 2 ? 'Nivel | Level ✦ 2' : '' || anjing == 3 ? 'Nivel | Level ✦ 3' : '' || anjing == 4 ? 'Nivel | Level ✦ 4' : '' || anjing == 5 ? 'Nivel | Level ✦ 5 ǁ MAX' : ''}*
 ╰━━━━━━━━━⬣
 
