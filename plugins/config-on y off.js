@@ -17,6 +17,7 @@ rows: [
 {title: "👀 𝘼𝙉𝙏𝙄 𝙑𝙀𝙍 | 𝘼𝙉𝙏𝙄 𝙎𝙀𝙀", description: "𝙃𝙖𝙘𝙚𝙧 𝙦𝙪𝙚 𝙣𝙖𝙙𝙖 𝙨𝙚 𝙤𝙘𝙪𝙡𝙩𝙚 𝙚𝙣 𝙂𝙧𝙪𝙥𝙤𝙨\n𝙈𝙖𝙠𝙚 𝙣𝙤𝙩𝙝𝙞𝙣𝙜 𝙝𝙞𝙙𝙚 𝙞𝙣 𝙂𝙧𝙤𝙪𝙥𝙨", rowId: `${usedPrefix + command} antiver`},
 {title: "🤡 𝙍𝙀𝘼𝘾𝘾𝙄𝙊𝙉𝙀𝙎 | 𝙍𝙀𝘼𝘾𝙏𝙄𝙊𝙉𝙎", description: "𝙃𝙖𝙘𝙚𝙧 𝙦𝙪𝙚 𝙚𝙡 𝘽𝙤𝙩 𝙧𝙚𝙖𝙘𝙘𝙞𝙤𝙣𝙚 𝙖 𝙈𝙚𝙣𝙨𝙖𝙟𝙚𝙨\n𝙈𝙖𝙠𝙚 𝙩𝙝𝙚 𝘽𝙤𝙩 𝙧𝙚𝙖𝙘𝙩 𝙩𝙤 𝙈𝙚𝙨𝙨𝙖𝙜𝙚𝙨", rowId: `${usedPrefix + command} reaction`},
 {title: "🪄 𝘼𝙐𝙏𝙊𝙎𝙏𝙄𝘾𝙆𝙀𝙍", description: "𝙏𝙤𝙙𝙖 𝙞𝙢𝙖𝙜𝙚𝙣, 𝙫𝙞𝙙𝙚𝙤, 𝙂𝙞𝙛, 𝙚𝙣𝙡𝙖𝙘𝙚 𝙟𝙥𝙜 𝙎𝙚 𝙘𝙤𝙣𝙫𝙚𝙧𝙩𝙞𝙧𝙖 𝙚𝙣 𝙎𝙩𝙞𝙘𝙠𝙚𝙧 𝘼𝙪𝙩𝙤𝙢𝙖𝙩𝙞𝙘𝙖𝙢𝙚𝙣𝙩𝙚\n𝘼𝙡𝙡 𝙞𝙢𝙖𝙜𝙚, 𝙫𝙞𝙙𝙚𝙤, 𝙂𝙞𝙛, 𝙟𝙥𝙜 𝙡𝙞𝙣𝙠𝙨 𝙒𝙞𝙡𝙡 𝘽𝙚 𝘾𝙤𝙣𝙫𝙚𝙧𝙩𝙚𝙙 𝙏𝙤 𝙎𝙩𝙞𝙘𝙠𝙚𝙧 𝘼𝙪𝙩𝙤𝙢𝙖𝙩𝙞𝙘𝙖𝙡𝙡𝙮", rowId: `${usedPrefix + command} autosticker`},
+{title: "🚫 𝘼𝙉𝙏𝙄𝙇𝙇𝘼𝙈𝘼𝙍 | 𝘼𝙉𝙏𝙄𝘾𝘼𝙇𝙇", description: "𝙀𝙟𝙚𝙘𝙪𝙩𝙖𝙧 𝙗𝙡𝙤𝙦𝙪𝙚𝙤𝙨 𝙖 𝙡𝙖𝙨 𝙥𝙚𝙧𝙨𝙤𝙣𝙖𝙨 𝙦𝙪𝙚 𝙡𝙡𝙖𝙢𝙚𝙣 𝙤 𝙧𝙚𝙖𝙡𝙞𝙘𝙚𝙣 𝙫𝙞𝙙𝙚𝙤𝙡𝙡𝙖𝙢𝙖𝙙𝙖 𝙖𝙡 𝘽𝙤𝙩\n𝙀𝙭𝙚𝙘𝙪𝙩𝙚 𝙗𝙡𝙤𝙘𝙠𝙨 𝙩𝙤 𝙥𝙚𝙤𝙥𝙡𝙚 𝙬𝙝𝙤 𝙘𝙖𝙡𝙡 𝙤𝙧 𝙢𝙖𝙠𝙚 𝙖 𝙫𝙞𝙙𝙚𝙤 𝙘𝙖𝙡𝙡 𝙩𝙤 𝙩𝙝𝙚 𝘽𝙤𝙩", rowId: `${usedPrefix + command} anticall`},
 {title: "🎠 𝙎𝙏𝙄𝘾𝙆𝙀𝙍𝙎", description: "𝙃𝙖𝙘𝙚𝙧 𝙦𝙪𝙚 𝙨𝙚 𝙚𝙣𝙫𝙞𝙚 𝙨𝙩𝙞𝙘𝙠𝙚𝙧𝙨 𝙙𝙚𝙡 𝙗𝙤𝙩\n𝙃𝙖𝙫𝙚 𝙩𝙝𝙚 𝙗𝙤𝙩 𝙨𝙚𝙣𝙙 𝙨𝙩𝙞𝙘𝙠𝙚𝙧𝙨", rowId: `${usedPrefix + command} stickers`},
 {title: "⚜️ 𝙋𝘾𝙊𝙉𝙇𝙔", description: "𝙃𝙖𝙘𝙚𝙧 𝙦𝙪𝙚 𝙚𝙡 𝘽𝙤𝙩 𝙧𝙚𝙨𝙥𝙤𝙣𝙙𝙖 𝙨𝙤𝙡𝙤 𝙚𝙣 𝘾𝙝𝙖𝙩𝙨 𝙋𝙧𝙞𝙫𝙖𝙙𝙤𝙨\n𝙍𝙚𝙥𝙡𝙮 𝙤𝙣𝙡𝙮 𝙞𝙣 𝙋𝙧𝙞𝙫𝙖𝙩𝙚 𝘾𝙝𝙖𝙩𝙨", rowId: `${usedPrefix + command} pconly`},
 {title: "⚜️ 𝙂𝘾𝙊𝙉𝙇𝙔", description: "𝙃𝙖𝙘𝙚𝙧 𝙦𝙪𝙚 𝙚𝙡 𝘽𝙤𝙩 𝙧𝙚𝙨𝙥𝙤𝙣𝙙𝙖 𝙨𝙤𝙡𝙤 𝙚𝙣 𝘾𝙝𝙖𝙩𝙨 𝙙𝙚 𝙂𝙧𝙪𝙥𝙤𝙨\n𝙈𝙖𝙠𝙚 𝙩𝙝𝙚 𝘽𝙤𝙩 𝙧𝙚𝙨𝙥𝙤𝙣𝙙 𝙤𝙣𝙡𝙮 𝙞𝙣 𝙂𝙧𝙤𝙪𝙥 𝘾𝙝𝙖𝙩𝙨", rowId: `${usedPrefix + command} gconly`},
@@ -33,23 +34,24 @@ footer: `╭━━━[ *𝘼𝙅𝙐𝙎𝙏𝙀𝙎 𝙂𝘼𝙏𝘼𝘽𝙊�
 ┃ *𝙋𝙍𝙀𝙎𝙄𝙊𝙉𝙀 𝙀𝙎𝙏𝙀 𝙈𝙀𝙉𝙎𝘼𝙅𝙀 𝙊 𝙐𝙎𝙀*
 ┃ *𝙇𝙊𝙎 𝘾𝙊𝙈𝘼𝙉𝘿𝙊𝙎 𝘿𝙀 𝙀𝙎𝙏𝙀 𝙈𝙀𝙉𝙎𝘼𝙅𝙀*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃⚙️ _${usedPrefix}on *:* off *welcome*_
-┃⚙️ _${usedPrefix}on *:* off *public*_
-┃⚙️ _${usedPrefix}on *:* off *modohorny*_
-┃⚙️ _${usedPrefix}on *:* off *antilink*_
-┃⚙️ _${usedPrefix}on *:* off *antilink2*_
-┃⚙️ _${usedPrefix}on *:* off *detect*_
-┃⚙️ _${usedPrefix}on *:* off *autolevelup*_
-┃⚙️ _${usedPrefix}on *:* off *restrict*_
-┃⚙️ _${usedPrefix}on *:* off *pconly*_
-┃⚙️ _${usedPrefix}on *:* off *gconly*_
-┃⚙️ _${usedPrefix}on *:* off *autoread*_
-┃⚙️ _${usedPrefix}on *:* off *audios*_
+┃⚙️ _${usedPrefix}on *:* off *bienvenida | welcome*_
+┃⚙️ _${usedPrefix}on *:* off *publico | public*_
+┃⚙️ _${usedPrefix}on *:* off *modocaliente | modohorny*_
+┃⚙️ _${usedPrefix}on *:* off *antienlace | antilink*_
+┃⚙️ _${usedPrefix}on *:* off *antienlace2 | antilink2*_
+┃⚙️ _${usedPrefix}on *:* off *avisos | detect*_
+┃⚙️ _${usedPrefix}on *:* off *autonivel | autolevelup*_
+┃⚙️ _${usedPrefix}on *:* off *restringir | restrict*_
+┃⚙️ _${usedPrefix}on *:* off *soloprivados | pconly*_
+┃⚙️ _${usedPrefix}on *:* off *sologrupos | gconly*_
+┃⚙️ _${usedPrefix}on *:* off *autovisto | autoread*_
+┃⚙️ _${usedPrefix}on *:* off *reaccion | reaction*_
+┃⚙️ _${usedPrefix}on *:* off *antiver | antiviewonce*_
+┃⚙️ _${usedPrefix}on *:* off *antillamar | anticall*_
 ┃⚙️ _${usedPrefix}on *:* off *stickers*_
-┃⚙️ _${usedPrefix}on *:* off *reaction*_
 ┃⚙️ _${usedPrefix}on *:* off *temporal*_
-┃⚙️ _${usedPrefix}on *:* off *antiver*_
 ┃⚙️ _${usedPrefix}on *:* off *autosticker*_
+┃⚙️ _${usedPrefix}on *:* off *audios*_
 ╰━━━━━━━━━━━━━⬣
 ${wm}`,
 title: null,
@@ -64,6 +66,7 @@ let type = (args[0] || '').toLowerCase()
 let isAll = false, isUser = false
 switch (type) {
 case 'welcome':
+case 'bienvenida':
 if (!m.isGroup) {
 if (!isOwner) {
 global.dfail('group', m, conn)
@@ -75,7 +78,9 @@ throw false
 }
 chat.welcome = isEnable
 break
+    
 case 'detect':
+case 'avisos':
 if (!m.isGroup) {
 if (!isOwner) {
 global.dfail('group', m, conn)
@@ -87,6 +92,7 @@ throw false
 }
 chat.detect = isEnable
 break
+    
 case 'delete':
 if (m.isGroup) {
 if (!(isAdmin || isOwner)) {
@@ -103,7 +109,9 @@ throw false
 }}
 chat.delete = !isEnable
 break
+    
 case 'public':
+case 'publico':
 isAll = true
 if (!isROwner) {
 global.dfail('rowner', m, conn)
@@ -111,7 +119,9 @@ throw false
 }
 global.opts['self'] = !isEnable
 break
+    
 case 'antilink':
+case 'antienlace':
 if (m.isGroup) {
 if (!(isAdmin || isOwner)) {
 global.dfail('admin', m, conn)
@@ -119,7 +129,9 @@ throw false
 }}
 chat.antiLink = isEnable
 break
+    
 case 'antilink2':
+case 'antienlace2':
 if (m.isGroup) {
 if (!(isAdmin || isOwner)) {
 global.dfail('admin', m, conn)
@@ -127,7 +139,9 @@ throw false
 }}
 chat.antiLink2 = isEnable 
 break
+    
 case 'modohorny':
+case 'modocaliente':
 if (m.isGroup) {
 if (!(isAdmin || isOwner)) {
 global.dfail('admin', m, conn)
@@ -135,6 +149,7 @@ throw false
 }}
 chat.modohorny = isEnable          
 break
+    
 case 'stickers':
 if (m.isGroup) {
 if (!(isAdmin || isOwner)) {
@@ -151,6 +166,7 @@ break
 //}}
 //chat.temporal = isEnable          
 //break
+    
 case 'temporal':
 isAll = true
 if (!isOwner) {
@@ -159,10 +175,13 @@ throw false
 }
 bot.temporal = isEnable
 break
+    
 case 'autolevelup':
+case 'autonivel':
 isUser = true
 user.autolevelup = isEnable
 break
+    
 case 'autosticker':
 if (m.isGroup) {
 if (!(isAdmin || isOwner)) {
@@ -171,7 +190,9 @@ throw false
 }}
 chat.autosticker = isEnable          
 break
+    
 case 'reaction':
+case 'reaccion':
 if (m.isGroup) {
 if (!(isAdmin || isOwner)) {
 global.dfail('admin', m, conn)
@@ -179,6 +200,7 @@ throw false
 }}
 chat.reaction = isEnable          
 break
+    
 case 'audios':
 if (m.isGroup) {
 if (!(isAdmin || isOwner)) {
@@ -187,7 +209,9 @@ throw false
 }}
 chat.audios = isEnable          
 break
+    
 case 'antiver':
+case 'antiviewonce':
 if (m.isGroup) {
 if (!(isAdmin || isOwner)) {
 global.dfail('admin', m, conn)
@@ -195,7 +219,9 @@ throw false
 }}
 chat.antiver = isEnable 
 break
+    
 case 'restrict':
+case 'restringir':
 isAll = true
 if (!isOwner) {
 global.dfail('owner', m, conn)
@@ -203,6 +229,7 @@ throw false
 }
 bot.restrict = isEnable
 break
+    
 case 'nyimak':
 isAll = true
 if (!isROwner) {
@@ -211,7 +238,9 @@ throw false
 }
 global.opts['nyimak'] = isEnable
 break
+    
 case 'autoread':
+case 'autovisto':
 isAll = true
 if (!isROwner) {
 global.dfail('rowner', m, conn)
@@ -219,6 +248,7 @@ throw false
 }
 global.opts['autoread'] = isEnable
 break
+    
 case 'anticall':
 case 'antillamar':
 isAll = true
@@ -228,8 +258,10 @@ throw false
 }
 bot.antiCall = isEnable
 break
+    
 case 'pconly':
 case 'privateonly':
+case 'soloprivados':
 isAll = true
 if (!isROwner) {
 global.dfail('rowner', m, conn)
@@ -237,8 +269,10 @@ throw false
 }
 global.opts['pconly'] = isEnable
 break
+    
 case 'gconly':
 case 'grouponly':
+case 'sologrupos':
 isAll = true
 if (!isROwner) {
 global.dfail('rowner', m, conn)
@@ -246,6 +280,7 @@ throw false
 }
 global.opts['gconly'] = isEnable
 break
+    
 case 'swonly':
 case 'statusonly':
 isAll = true
