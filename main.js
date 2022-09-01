@@ -173,7 +173,7 @@ global.reloadHandler = async function (restatConn) {
   conn.onDelete = handler.deleteUpdate.bind(global.conn)
   conn.connectionUpdate = connectionUpdate.bind(global.conn)
   conn.credsUpdate = saveState.bind(global.conn, true)
-  //conn.onCall = handler.callUpdate.bind(global.conn)
+  conn.onCall = handler.callUpdate.bind(global.conn)
 
   conn.ev.on('messages.upsert', conn.handler)
   conn.ev.on('group-participants.update', conn.participantsUpdate)
