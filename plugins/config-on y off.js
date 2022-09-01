@@ -41,7 +41,7 @@ let name = await conn.getName(m.sender)
 let ajuste = `╭━━━━━━━━━━━━━⬣
 ┃ 𝙈𝘼𝙎 𝘼𝙅𝙐𝙎𝙏𝙀𝙎 | 𝙈𝙊𝙍𝙀 𝙎𝙀𝙏𝙏𝙄𝙉𝙂𝙎
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-${readMore}
+
 ┃⚙️ _${usedPrefix}on *:* off *bienvenida | welcome*_
 ┃⚙️ _${usedPrefix}on *:* off *publico | public*_
 ┃⚙️ _${usedPrefix}on *:* off *modocaliente | modohorny*_
