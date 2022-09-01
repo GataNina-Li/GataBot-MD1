@@ -375,16 +375,16 @@ let member = global.db.data.users[m.sender]
 ╭━━━━━━━━━⬣
 ┃ *MASCOTAS : PETS*
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
-┃ *${rpgshop.emoticon('legendary')}*🐎 *Caballo : Horse* 
+┃ *${rpgshop.emoticon('kuda')}*
 ┃ *${kuda == 0 ? 'No tengo Mascota : I do not have pet' : '' || kuda == 1 ? 'Nivel | Level ✦ 1' : '' || kuda == 2 ? 'Nivel | Level ✦ 2' : '' || kuda == 3 ? 'Nivel | Level ✦ 3' : '' || kuda == 4 ? 'Nivel | Level ✦ 4' : '' || kuda == 5 ? 'Nivel | Level ✦ 5 ǁ MAX' : ''}*
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
-┃ *${rpgshop.emoticon('legendary')}*🦊 *Zorro : Fox*
+┃ *${rpgshop.emoticon('fox')}*
 ┃ *${rubah == 0 ? 'No tengo Mascota : I do not have pet' : '' || rubah == 1 ? 'Nivel | Level ✦ 1' : '' || rubah == 2 ? 'Nivel | Level ✦ 2' : '' || rubah == 3 ? 'Nivel | Level ✦ 3' : '' || rubah == 4 ? 'Nivel | Level ✦ 4' : '' || rubah == 5 ? 'Nivel | Level ✦ 5 ǁ MAX' : ''}*
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
-┃ *${rpgshop.emoticon('legendary')}*🐈 *Gato : Cat* 
+┃ *${rpgshop.emoticon('kucing')}*
 ┃ *${kucing == 0 ? 'No tengo Mascota : I do not have pet' : '' || kucing == 1 ? 'Nivel | Level ✦ 1' : '' || kucing == 2 ? 'Nivel | Level ✦ 2' : '' || kucing == 3 ? 'Nivel | Level ✦ 3' : '' || kucing == 4 ? 'Nivel | Level ✦ 4' : '' || kucing == 5 ? 'Nivel | Level ✦ 5 ǁ MAX' : ''}*
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
-┃ *${rpgshop.emoticon('legendary')}*🐶 *Perro : Dog* 
+┃ *${rpgshop.emoticon('anjing')}*
 ┃ *${anjing == 0 ? 'No tengo Mascota : I do not have pet' : '' || anjing == 1 ? 'Nivel | Level ✦ 1' : '' || anjing == 2 ? 'Nivel | Level ✦ 2' : '' || anjing == 3 ? 'Nivel | Level ✦ 3' : '' || anjing == 4 ? 'Nivel | Level ✦ 4' : '' || anjing == 5 ? 'Nivel | Level ✦ 5 ǁ MAX' : ''}*
 ╰━━━━━━━━━⬣
 
