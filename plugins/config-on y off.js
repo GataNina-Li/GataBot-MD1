@@ -1,4 +1,19 @@
 let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isROwner }) => { 
+const fkontak = {
+	"key": {
+    "participants":"0@s.whatsapp.net",
+		"remoteJid": "status@broadcast",
+		"fromMe": false,
+		"id": "Halo"
+	},
+	"message": {
+		"contactMessage": {
+			"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
+		}
+	},
+	"participant": "0@s.whatsapp.net"
+}
+
 const sections = [
 {
 title: `𝙇𝙄𝙎𝙏𝘼 𝘿𝙀 𝘾𝙊𝙉𝙁𝙄𝙂𝙐𝙍𝘼𝘾𝙄𝙊𝙉`,
@@ -23,6 +38,31 @@ rows: [
 {title: "⚜️ 𝙂𝘾𝙊𝙉𝙇𝙔", description: "𝙃𝙖𝙘𝙚𝙧 𝙦𝙪𝙚 𝙚𝙡 𝘽𝙤𝙩 𝙧𝙚𝙨𝙥𝙤𝙣𝙙𝙖 𝙨𝙤𝙡𝙤 𝙚𝙣 𝘾𝙝𝙖𝙩𝙨 𝙙𝙚 𝙂𝙧𝙪𝙥𝙤𝙨\n𝙈𝙖𝙠𝙚 𝙩𝙝𝙚 𝘽𝙤𝙩 𝙧𝙚𝙨𝙥𝙤𝙣𝙙 𝙤𝙣𝙡𝙮 𝙞𝙣 𝙂𝙧𝙤𝙪𝙥 𝘾𝙝𝙖𝙩𝙨", rowId: `${usedPrefix + command} gconly`},
 ]}, ]
 let name = await conn.getName(m.sender)
+let ajuste = `╭━━━━━━━━━━━━━⬣
+┃ 𝙈𝘼𝙎 𝘼𝙅𝙐𝙎𝙏𝙀𝙎 | 𝙈𝙊𝙍𝙀 𝙎𝙀𝙏𝙏𝙄𝙉𝙂𝙎
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+${readMore}
+┃⚙️ _${usedPrefix}on *:* off *bienvenida | welcome*_
+┃⚙️ _${usedPrefix}on *:* off *publico | public*_
+┃⚙️ _${usedPrefix}on *:* off *modocaliente | modohorny*_
+┃⚙️ _${usedPrefix}on *:* off *antienlace | antilink*_
+┃⚙️ _${usedPrefix}on *:* off *antienlace2 | antilink2*_
+┃⚙️ _${usedPrefix}on *:* off *avisos | detect*_
+┃⚙️ _${usedPrefix}on *:* off *autonivel | autolevelup*_
+┃⚙️ _${usedPrefix}on *:* off *restringir | restrict*_
+┃⚙️ _${usedPrefix}on *:* off *soloprivados | pconly*_
+┃⚙️ _${usedPrefix}on *:* off *sologrupos | gconly*_
+┃⚙️ _${usedPrefix}on *:* off *autovisto | autoread*_
+┃⚙️ _${usedPrefix}on *:* off *reaccion | reaction*_
+┃⚙️ _${usedPrefix}on *:* off *antiver | antiviewonce*_
+┃⚙️ _${usedPrefix}on *:* off *antillamar | anticall*_
+┃⚙️ _${usedPrefix}on *:* off *stickers*_
+┃⚙️ _${usedPrefix}on *:* off *temporal*_
+┃⚙️ _${usedPrefix}on *:* off *autosticker*_
+┃⚙️ _${usedPrefix}on *:* off *audios*_
+╰━━━━━━━━━━━━━⬣
+${wm}`
+
 const listMessage = {
 text: '*~ CENTRO DE CONFIGURACIÓN*',
 footer: `╭━━━[ *𝘼𝙅𝙐𝙎𝙏𝙀𝙎 𝙂𝘼𝙏𝘼𝘽𝙊𝙏* ]━━━⬣
@@ -292,6 +332,7 @@ global.opts['swonly'] = isEnable
 break
 default:
 if (!/[01]/.test(command)) return await conn.sendMessage(m.chat, listMessage)
+await conn.sendButton(m.chat, null, ajuste, null, [['🌟 𝙄𝙉𝙁𝙊𝙍𝙈𝘼𝘾𝙄𝙊𝙉 | 𝙄𝙉𝙁𝙊 𝙈𝙀𝙉𝙐 🌟', `/infomenu`]], fkontak, m)         
 throw false
 }
 conn.sendButton(m.chat, `${rg}ღ *_COMANDO_* *|* ${type} 
@@ -302,3 +343,6 @@ handler.help = ['en', 'dis'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
 handler.command = /^((en|dis)able|(tru|fals)e|(turn)?o(n|ff)|[01])$/i
 export default handler
+
+const more = String.fromCharCode(8206)
+const readMore = more.repeat(4001)
