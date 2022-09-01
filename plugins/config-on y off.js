@@ -15,6 +15,7 @@ rows: [
 {title: "🔊 𝘼𝙐𝘿𝙄𝙊𝙎", description: "𝙐𝙨𝙖𝙧 𝙡𝙤𝙨 𝘾𝙤𝙢𝙖𝙣𝙙𝙤𝙨 𝙙𝙚 𝘼𝙪𝙙𝙞𝙤𝙨\n𝙐𝙨𝙚 𝘼𝙪𝙙𝙞𝙤 𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨", rowId: `${usedPrefix + command} audios`},
 {title: "🐈 𝘽𝙊𝙏 𝙏𝙀𝙈𝙋𝙊𝙍𝘼𝙇 | 𝘽𝙊𝙏 𝙏𝙀𝙈𝙋𝙊𝙍𝘼𝙇𝙇𝙔 ", description: "𝙋𝙖𝙧𝙖 𝙥𝙚𝙧𝙢𝙞𝙩𝙞𝙧 𝙤 𝙣𝙤 𝙦𝙪𝙚 𝙚𝙡 𝙗𝙤𝙩 𝙨𝙚 𝙪𝙣𝙖 𝙩𝙚𝙢𝙥𝙤𝙧𝙖𝙡𝙢𝙚𝙣𝙩𝙚 𝙚𝙣 𝙂𝙧𝙪𝙥𝙤𝙨\n𝙏𝙤 𝙩𝙚𝙢𝙥𝙤𝙧𝙖𝙧𝙞𝙡𝙮 𝙖𝙡𝙡𝙤𝙬 𝙤𝙧 𝙙𝙞𝙨𝙖𝙡𝙡𝙤𝙬 𝙩𝙝𝙚 𝙗𝙤𝙩 𝙩𝙤 𝙟𝙤𝙞𝙣 𝙞𝙣 𝙂𝙧𝙤𝙪𝙥𝙨", rowId: `${usedPrefix + command} temporal`},
 {title: "👀 𝘼𝙉𝙏𝙄 𝙑𝙀𝙍 | 𝘼𝙉𝙏𝙄 𝙎𝙀𝙀", description: "𝙃𝙖𝙘𝙚𝙧 𝙦𝙪𝙚 𝙣𝙖𝙙𝙖 𝙨𝙚 𝙤𝙘𝙪𝙡𝙩𝙚 𝙚𝙣 𝙂𝙧𝙪𝙥𝙤𝙨\n𝙈𝙖𝙠𝙚 𝙣𝙤𝙩𝙝𝙞𝙣𝙜 𝙝𝙞𝙙𝙚 𝙞𝙣 𝙂𝙧𝙤𝙪𝙥𝙨", rowId: `${usedPrefix + command} antiver`},
+{title: "🤡 𝙍𝙀𝘼𝘾𝘾𝙄𝙊𝙉𝙀𝙎 | 𝙍𝙀𝘼𝘾𝙏𝙄𝙊𝙉𝙎", description: "𝙃𝙖𝙘𝙚𝙧 𝙦𝙪𝙚 𝙚𝙡 𝘽𝙤𝙩 𝙧𝙚𝙖𝙘𝙘𝙞𝙤𝙣𝙚 𝙖 𝙈𝙚𝙣𝙨𝙖𝙟𝙚𝙨\n𝙈𝙖𝙠𝙚 𝙩𝙝𝙚 𝘽𝙤𝙩 𝙧𝙚𝙖𝙘𝙩 𝙩𝙤 𝙈𝙚𝙨𝙨𝙖𝙜𝙚𝙨", rowId: `${usedPrefix + command} reaction`},
 {title: "🪄 𝘼𝙐𝙏𝙊𝙎𝙏𝙄𝘾𝙆𝙀𝙍", description: "𝙏𝙤𝙙𝙖 𝙞𝙢𝙖𝙜𝙚𝙣, 𝙫𝙞𝙙𝙚𝙤, 𝙂𝙞𝙛, 𝙚𝙣𝙡𝙖𝙘𝙚 𝙟𝙥𝙜 𝙎𝙚 𝙘𝙤𝙣𝙫𝙚𝙧𝙩𝙞𝙧𝙖 𝙚𝙣 𝙎𝙩𝙞𝙘𝙠𝙚𝙧 𝘼𝙪𝙩𝙤𝙢𝙖𝙩𝙞𝙘𝙖𝙢𝙚𝙣𝙩𝙚\n𝘼𝙡𝙡 𝙞𝙢𝙖𝙜𝙚, 𝙫𝙞𝙙𝙚𝙤, 𝙂𝙞𝙛, 𝙟𝙥𝙜 𝙡𝙞𝙣𝙠𝙨 𝙒𝙞𝙡𝙡 𝘽𝙚 𝘾𝙤𝙣𝙫𝙚𝙧𝙩𝙚𝙙 𝙏𝙤 𝙎𝙩𝙞𝙘𝙠𝙚𝙧 𝘼𝙪𝙩𝙤𝙢𝙖𝙩𝙞𝙘𝙖𝙡𝙡𝙮", rowId: `${usedPrefix + command} autosticker`},
 {title: "🎠 𝙎𝙏𝙄𝘾𝙆𝙀𝙍𝙎", description: "𝙃𝙖𝙘𝙚𝙧 𝙦𝙪𝙚 𝙨𝙚 𝙚𝙣𝙫𝙞𝙚 𝙨𝙩𝙞𝙘𝙠𝙚𝙧𝙨 𝙙𝙚𝙡 𝙗𝙤𝙩\n𝙃𝙖𝙫𝙚 𝙩𝙝𝙚 𝙗𝙤𝙩 𝙨𝙚𝙣𝙙 𝙨𝙩𝙞𝙘𝙠𝙚𝙧𝙨", rowId: `${usedPrefix + command} stickers`},
 {title: "⚜️ 𝙋𝘾𝙊𝙉𝙇𝙔", description: "𝙃𝙖𝙘𝙚𝙧 𝙦𝙪𝙚 𝙚𝙡 𝘽𝙤𝙩 𝙧𝙚𝙨𝙥𝙤𝙣𝙙𝙖 𝙨𝙤𝙡𝙤 𝙚𝙣 𝘾𝙝𝙖𝙩𝙨 𝙋𝙧𝙞𝙫𝙖𝙙𝙤𝙨\n𝙍𝙚𝙥𝙡𝙮 𝙤𝙣𝙡𝙮 𝙞𝙣 𝙋𝙧𝙞𝙫𝙖𝙩𝙚 𝘾𝙝𝙖𝙩𝙨", rowId: `${usedPrefix + command} pconly`},
@@ -45,6 +46,7 @@ footer: `╭━━━[ *𝘼𝙅𝙐𝙎𝙏𝙀𝙎 𝙂𝘼𝙏𝘼𝘽𝙊�
 ┃⚙️ _${usedPrefix}on *:* off *autoread*_
 ┃⚙️ _${usedPrefix}on *:* off *audios*_
 ┃⚙️ _${usedPrefix}on *:* off *stickers*_
+┃⚙️ _${usedPrefix}on *:* off *reaction*_
 ┃⚙️ _${usedPrefix}on *:* off *temporal*_
 ┃⚙️ _${usedPrefix}on *:* off *antiver*_
 ┃⚙️ _${usedPrefix}on *:* off *autosticker*_
