@@ -1352,18 +1352,29 @@ export async function deleteUpdate(message) {
             return
         let chat = global.db.data.chats[msg.chat] || {}
         if (chat.delete)
-            return
-        await this.reply(msg.chat, `
-━━━━⬣  𝘼𝙉𝙏𝙄 𝘿𝙀𝙇𝙀𝙏𝙀  ⬣━━━━
-*■ Nombre:* @${participant.split`@`[0]}
-*■ Enviando el mensaje..*
-*■ Para desactivar esta función escriba el comando:*
-*—◉ #disable antidelete*
-*—◉ #enable delete*
-━━━━⬣  𝘼𝙉𝙏𝙄 𝘿𝙀𝙇𝙀𝙏𝙀  ⬣━━━━
-`.trim(), msg, {
-            mentions: [participant]
-        })
+            return global.dfail = (type, m, conn) => {
+const fkontak = {
+	"key": {
+    "participants":"0@s.whatsapp.net",
+		"remoteJid": "status@broadcast",
+		"fromMe": false,
+		"id": "Halo"
+	},
+	"message": {
+		"contactMessage": {
+			"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
+		}
+	},
+	"participant": "0@s.whatsapp.net"
+} 
+
+        //await this.reply(msg.chat, `
+await conn.sendButton(msg.chat, `
+━━━⬣  𝘼𝙉𝙏𝙄 𝙀𝙇𝙄𝙈𝙄𝙉𝘼𝙍  ⬣━━━
+*✤ Nombre:* @${participant.split`@`[0]}
+*✉ Enviando Mensaje Eliminado...*
+━━━━⬣  𝘼𝙉𝙏𝙄 𝘿𝙀𝙇𝙀𝙏𝙀  ⬣━━━━`.trim(), wm, null, [['⚙️ 𝘿𝙀𝙎𝘼𝘾𝙏𝙄𝙑𝘼𝙍', `/off antidelte`]], msg, { mentions: [participant] }, fkontak, m)} //msg, { mentions: [participant] })}
+	    
         this.copyNForward(msg.chat, msg).catch(e => console.log(e, msg))
     } catch (e) {
         console.error(e)
