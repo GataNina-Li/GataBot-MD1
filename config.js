@@ -276,6 +276,7 @@ global.rpg = {
       rhinoceros: '🦏 Rinoceronte : Rhinoceros',
       rock: '🪨 Roca : Rock',
       robo: '🚔 Robo : Robo',
+      role: '💪 Rango | Role',
       snake: '🐍 Serpiente : Snake',
       stamina: '🦾 Aguante : Stamina',
       strength: '🦹‍ ♀️ Fuerza : Strength',
@@ -364,6 +365,7 @@ global.rpgg = { //Solo emojis
       rhinoceros: '🦏',
       rock: '🪨',
       robo: '🚔',
+      role: '💪',
       snake: '🐍',
       stamina: '🦾',
       strength: '🦹‍ ♀️',
@@ -452,6 +454,7 @@ global.rpgshop = { //Tienda
       kuda: '🐎 Caballo : Horse',
       phonix: '🕊️ Fénix : Phoenix',
       wolf: '🐺 Lobo : Wolf',
+      anjing: '🐶 Perro : Dog',
       //gardenboc:
       //ketake:
       //koinexpg: 
@@ -536,6 +539,7 @@ global.rpgshopp = { //Tienda
       kuda: '🐎',
       phonix: '🕊️',
       wolf: '🐺',
+      anjing: '🐶',
       //gardenboc:
       //ketake:
       //koinexpg: 
