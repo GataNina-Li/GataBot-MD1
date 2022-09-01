@@ -219,6 +219,14 @@ throw false
 }
 global.opts['autoread'] = isEnable
 break
+case 'antillamar':
+isAll = true
+if (!isROwner) {
+global.dfail('rowner', m, conn)
+throw false
+}
+bot.antiCall = isEnable
+break
 case 'pconly':
 case 'privateonly':
 isAll = true
