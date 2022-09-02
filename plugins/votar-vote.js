@@ -4,7 +4,7 @@ conn.vote = conn.vote ? conn.vote : {}
   
 if (!(id in conn.vote)) await conn.sendButton(m.chat, `Sin votar en este grupo!`, wm, null, [
 ['votar', `${usedPrefix}+vote`],
-['menu', `${usedPrefix}menu`]], m)
+['menu', `${usedPrefix}menu`]], m) 
   
 let isVote = conn.vote[id][1].concat(conn.vote[id][2])
 const wasVote = isVote.includes(m.sender)
