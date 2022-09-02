@@ -55,6 +55,6 @@ text,
 }
 handler.help = ['mulaivote [alasan]']
 handler.tags = ['vote']
-handler.command = /^(start|crear|\+)voto$/i
+handler.command = /^(start|crear|iniciar|empezar|\+)voto$/i
 
 export default handler 
