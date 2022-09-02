@@ -9,7 +9,6 @@ const results = await instagramdl(args[0])
 for (const { url } of results) await conn.sendFile(m.chat, url, 'instagram.mp4', `✨ *ENLACE | URL:* ${url}`, m)*/
 import fetch from 'node-fetch'
 import { instagramdl, instagramdlv2, instagramdlv3, instagramdlv4 } from '@bochilteam/scraper'
-import fetch from 'node-fetch'
 
 let handler = async (m, { conn, args, usedPrefix, command }) => {
 try {
