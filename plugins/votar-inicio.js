@@ -29,4 +29,4 @@ handler.help = ['mulaivote [alasan]']
 handler.tags = ['vote']
 handler.command = /^(start|nuevo|\+)vote$/i
 
-export default handler
+export default handler 
