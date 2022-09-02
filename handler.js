@@ -1373,7 +1373,7 @@ await conn.sendButton(msg.chat, `
 ━━━⬣  𝘼𝙉𝙏𝙄 𝙀𝙇𝙄𝙈𝙄𝙉𝘼𝙍  ⬣━━━
 *✤ Nombre:* @${participant.split`@`[0]}
 *✉ Enviando Mensaje Eliminado...*
-━━━━⬣  𝘼𝙉𝙏𝙄 𝘿𝙀𝙇𝙀𝙏𝙀  ⬣━━━━`.trim(), wm, null, [['⚙️ 𝘿𝙀𝙎𝘼𝘾𝙏𝙄𝙑𝘼𝙍', `/off antidelte`]], msg, { mentions: [participant] }, fkontak, m)} //msg, { mentions: [participant] })}
+━━━━⬣  𝘼𝙉𝙏𝙄 𝘿𝙀𝙇𝙀𝙏𝙀  ⬣━━━━`.trim(), wm, null, [['⚙️ 𝘿𝙀𝙎𝘼𝘾𝙏𝙄𝙑𝘼𝙍', `/off antidelete`]], fkontak, { mentions: [participant] }, msg)} //msg, { mentions: [participant] })}
 	    
         this.copyNForward(msg.chat, msg).catch(e => console.log(e, msg))
     } catch (e) {
