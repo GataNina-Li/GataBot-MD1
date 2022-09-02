@@ -153,7 +153,10 @@ global.exito = eg
 
 global.wm = '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 | 𝙂𝙖𝙩𝙖 𝘿𝙞𝙤𝙨'
 global.igfg = '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿'
-global.wait = '*⌛ _Cargando..._ ▬▬▬▭*'
+global.wait = '*⌛ _Cargando | Charging..._ ▬▭▭▭▭▭▭*'
+global.waitt = '*⌛ _Cargando | Charging..._ ▬▬▭▭▭*'
+global.waittt = '*⌛ _Cargando | Charging..._ ▬▬▬▬▭▭*'
+global.waitttt = '*⌛ _Cargando | Charging..._ ▬▬▬▬▬▬▭*'
 
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 
