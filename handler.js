@@ -1342,7 +1342,7 @@ export async function callUpdate(callUpdate) {
     await this.updateBlockStatus(nk.from, 'block')
     }}}}
 
-export async function deleteUpdate(message) {
+export async function deleteUpdate(message) = (type, m, conn) => {
     try {
         const { fromMe, id, participant } = message
         if (fromMe)
@@ -1352,7 +1352,7 @@ export async function deleteUpdate(message) {
             return
         let chat = global.db.data.chats[msg.chat] || {}
         if (chat.delete)
-            return global.dfail = (type, m, conn) => {
+            return 
 const fkontak = {
 	"key": {
     "participants":"0@s.whatsapp.net",
@@ -1373,7 +1373,7 @@ await conn.sendButton(msg.chat, `
 ━━━⬣  𝘼𝙉𝙏𝙄 𝙀𝙇𝙄𝙈𝙄𝙉𝘼𝙍  ⬣━━━
 *✤ Nombre:* @${participant.split`@`[0]}
 *✉ Enviando Mensaje Eliminado...*
-━━━━⬣  𝘼𝙉𝙏𝙄 𝘿𝙀𝙇𝙀𝙏𝙀  ⬣━━━━`.trim(), wm, null, [['⚙️ 𝘿𝙀𝙎𝘼𝘾𝙏𝙄𝙑𝘼𝙍', `/off antidelete`]], fkontak, { mentions: [participant] })} //msg, { mentions: [participant] })}
+━━━━⬣  𝘼𝙉𝙏𝙄 𝘿𝙀𝙇𝙀𝙏𝙀  ⬣━━━━`.trim(), msg, null, [['⚙️ 𝘿𝙀𝙎𝘼𝘾𝙏𝙄𝙑𝘼𝙍', `/off antidelete`]], fkontak, { mentions: [participant] }) //msg, { mentions: [participant] })}
 	    
         this.copyNForward(msg.chat, msg).catch(e => console.log(e, msg))
     } catch (e) {
