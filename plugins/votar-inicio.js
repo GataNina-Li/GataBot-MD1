@@ -5,8 +5,9 @@ if (!(isAdmin || isOwner)) return dfail('admin', m, conn)}
 conn.vote = conn.vote ? conn.vote : {}
 let id = m.chat
 
-if (id in conn.vote) await conn.sendButton(m.chat, `*Todavía hay votos en este chat!!*`, author, null, [
-['hapus', `${usedPrefix}-vote`]], m)
+if (id in conn.vote) { 
+await conn.sendButton(m.chat, `*Todavía hay votos en este chat!!*`, author, null, [
+['hapus', `${usedPrefix}-vote`]], m)}
   
 let caption = `${htjava} MULAI VOTE ${htjava}
 ${dmenub} *${usedPrefix}upvote* - llegar a un acuerdo
