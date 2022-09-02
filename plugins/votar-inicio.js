@@ -19,13 +19,13 @@ if (m.isGroup) {
 if (!(isAdmin || isOwner)) return dfail('admin', m, conn)}
 conn.vote = conn.vote ? conn.vote : {}
 let id = m.chat
-let [reason] = conn.vote[id]
+//let [reason] = conn.vote[id]
 
 if (id in conn.vote) { 
 await conn.sendButton(m.chat, `🗃️ 𝙏𝙊𝘿𝘼𝙑𝙄𝘼 𝙃𝘼𝙔 𝙑𝙊𝙏𝘼𝘾𝙄𝙊𝙉 𝙋𝙀𝙉𝘿𝙄𝙀𝙉𝙏𝙀 𝙀𝙉 𝙀𝙎𝙏𝙀 𝙂𝙍𝙐𝙋𝙊!!\n\n📍 𝙏𝙃𝙀𝙍𝙀 𝙄𝙎 𝙎𝙏𝙄𝙇𝙇 𝙋𝙀𝙉𝘿𝙄𝙉𝙂 𝙑𝙊𝙏𝙄𝙉𝙂 𝙄𝙉 𝙏𝙃𝙄𝙎 𝙂𝙍𝙊𝙐𝙋!!`, wm, null, [
 ['🧾 𝙁𝙄𝙉𝘼𝙇𝙄𝙕𝘼𝙍 𝙑𝙊𝙏𝘼𝘾𝙄𝙊𝙉 | 𝙀𝙉𝘿 𝙑𝙊𝙏𝙄𝙉𝙂', `${usedPrefix}-vote`]], fkontak, m)}
   
-await conn.sendButton(m.chat, `✴️ 𝙉𝙐𝙀𝙑𝘼 𝙑𝙊𝙏𝘼𝘾𝙄𝙊𝙉 | 𝙉𝙀𝙒 𝙑𝙊𝙏𝙀 ✴️\n\n*MOTIVO ➫* ${reason}`, `
+await conn.sendButton(m.chat, `✴️ 𝙉𝙐𝙀𝙑𝘼 𝙑𝙊𝙏𝘼𝘾𝙄𝙊𝙉 | 𝙉𝙀𝙒 𝙑𝙊𝙏𝙀 ✴️\n\n*MOTIVO ➫* ${text}`, `
 *Puede usar los comandos de abajo para hacer una acción en la votación!!*
 *You can use the commands below to do an action on the vote!!*
 
