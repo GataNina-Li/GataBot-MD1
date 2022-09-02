@@ -1342,44 +1342,29 @@ export async function callUpdate(callUpdate) {
     await this.updateBlockStatus(nk.from, 'block')
     }}}}
 
-export async function deleteUpdate(message) = (type, m, conn) => {
-    try {
-        const { fromMe, id, participant } = message
-        if (fromMe)
-            return
-        let msg = this.serializeM(this.loadMessage(id))
-        if (!msg)
-            return
-        let chat = global.db.data.chats[msg.chat] || {}
-        if (chat.delete)
-            return 
-const fkontak = {
-	"key": {
-    "participants":"0@s.whatsapp.net",
-		"remoteJid": "status@broadcast",
-		"fromMe": false,
-		"id": "Halo"
-	},
-	"message": {
-		"contactMessage": {
-			"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
-		}
-	},
-	"participant": "0@s.whatsapp.net"
-} 
-
-        //await this.reply(msg.chat, `
-await conn.sendButton(msg.chat, `
-━━━⬣  𝘼𝙉𝙏𝙄 𝙀𝙇𝙄𝙈𝙄𝙉𝘼𝙍  ⬣━━━
-*✤ Nombre:* @${participant.split`@`[0]}
-*✉ Enviando Mensaje Eliminado...*
-━━━━⬣  𝘼𝙉𝙏𝙄 𝘿𝙀𝙇𝙀𝙏𝙀  ⬣━━━━`.trim(), msg, null, [['⚙️ 𝘿𝙀𝙎𝘼𝘾𝙏𝙄𝙑𝘼𝙍', `/off antidelete`]], fkontak, { mentions: [participant] }) //msg, { mentions: [participant] })}
+export async function deleteUpdate(message) {
+try {
+const { fromMe, id, participant } = message
+if (fromMe)
+return
+let msg = this.serializeM(this.loadMessage(id))
+if (!msg)
+return
+let chat = global.db.data.chats[msg.chat] || {}
+if (chat.delete)
+return 
+await this.reply(msg.chat, `
+*╭━━⬣  𝘼𝙉𝙏𝙄 𝙀𝙇𝙄𝙈𝙄𝙉𝘼𝙍  ⬣━━ 𓃠*
+*┃✤ Nombre:* @${participant.split`@`[0]}
+*┃✤ Enviando el mensaje eliminado...*
+*┃✤ Sending the deleted message...*
+*╰━━━⬣  𝘼𝙉𝙏𝙄 𝘿𝙀𝙇𝙀𝙏𝙀  ⬣━━━━╯*
+`.trim(), msg, { mentions: [participant] })
 	    
-        this.copyNForward(msg.chat, msg).catch(e => console.log(e, msg))
-    } catch (e) {
-        console.error(e)
-    }
-}
+this.copyNForward(msg.chat, msg).catch(e => console.log(e, msg))
+} catch (e) {
+console.error(e)
+}}
 
 global.dfail = (type, m, conn) => {
     let msg = {
