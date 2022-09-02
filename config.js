@@ -182,6 +182,12 @@ global.cmenub = '┊✦ '
 global.cmenuf = '┗━═┅═━––––––๑\n'
 global.cmenua = '\n⌕ ❙❘❙❙❘❙❚❙❘❙❙❚❙❘❙❘❙❚❙❘❙❙❚❙❘❙❙❘❙❚❙❘ ⌕\n     '
 
+global.dmenut = '❏─┅──┅〈'
+global.dmenub = '┊•'
+global.dmenub2 = '┊'
+global.dmenuf = '┗┅────────┅✦'
+global.htjava = '⫹⫺'
+
 global.htki = '*⭑•̩̩͙⊱•••• ☪*'
 global.htka = '*☪ ••••̩̩͙⊰•⭑*'
 
