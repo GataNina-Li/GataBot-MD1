@@ -22,10 +22,7 @@ try {
     if (!args[0]) throw `Use example ${usedPrefix}${command} https://www.instagram.com/p/CU0MhPjBZO2/`
         let res = await fetch(`https://api.lolhuman.xyz/api/instagram2?apikey=9b817532fadff8fc7cb86862&url=${args[0]}`)
     let x = await res.json()
-    conn.sendButton(m.chat, `*${htki} instagram ${htka}*
-*username:* ${x.result.account.username}
-*caption:* ${x.result.caption}
-    `, wm, x.result.media[1], [['Mp4', `.get ${x.result.media[0]}`]],m)
+    conn.sendButton(m.chat, `*${htki} instagram ${htka}*`, wm, x.result.media[1], [['Mp4', `.get ${x.result.media[0]}`]],m)
     }
   
 } 
