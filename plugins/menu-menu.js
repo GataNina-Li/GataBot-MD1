@@ -128,7 +128,7 @@ ${readMore}
 ┃🎡➺ _${usedPrefix}topshiposters | topshipost_
 ┃🎡➺ _${usedPrefix}toppajeros | toppajer@s_
 ┃🎡➺ _${usedPrefix}toplindos | toplind@s_
-┃🎡➺ _${usedPrefix}topputos | topput@s_
+┃🎡➺ _${usedPrefix}topput@s_
 ┃🎡➺ _${usedPrefix}topfamosos | topfamos@s_
 ┃🎡➺ _${usedPrefix}topparejas | top5parejas_
 ┃🎡➺ _${usedPrefix}gay | gay *@tag*_
