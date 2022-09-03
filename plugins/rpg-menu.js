@@ -83,20 +83,20 @@ let username = conn.getName(who)
 
 let menu = `
 💗 *¡HOLA | HI!* ${username}
-╭━━〔 *${wm}* 〕━━⬣
+╭━〔 *${wm}* 〕━⬣
 ┃⚒️⚒️⚒️⚒️⚒️⚒️⚒️⚒️⚒️
 ┃✪ *EXPERIENCIA | EXP ➺ ${exp}*
 ┃✪ *NIVEL | LEVEL ➺ ${level}*
 ┃✪ *ROL ➺* ${role}
 ┃✪ *GATACOINS ➺ $ ${money}*
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃✪ *FECHA ➺ ${week}, ${date}*
 ┃✪ *USUARIOS | USERS ➺ ${Object.keys(global.db.data.users).length}* 
 ┃⚒️⚒️⚒️⚒️⚒️⚒️⚒️⚒️⚒️
-╰━━━━━━〔 𓃠 *${vs}* 〕━━━━━━⬣
+╰━━━━〔 𓃠 *${vs}* 〕━━━━⬣
 
-╭━━━━━〔 𝙈𝙀𝙉𝙐 𝙍𝙋𝙂 〕━━━━━⬣
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+╭━━━━〔 𝙈𝙀𝙉𝙐 𝙍𝙋𝙂 〕━━━━⬣
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃🪅 _${usedPrefix}botemporal *enlace* *cantidad*_
 ┃🪅 _${usedPrefix}addbot *enlace* *cantidad*_
 ┃⚗️➺ _${usedPrefix}transfer *tipo cantidad @tag*_
@@ -117,12 +117,8 @@ let menu = `
 ┃⚗️➺ _${usedPrefix}minargatacoins | minarcoins_
 ┃⚗️➺ _${usedPrefix}minarexperiencia | minarexp_
 ┃⚗️➺ _${usedPrefix}minar *:* minar2 *:* minar3_
-┃⚗️➺ _${usedPrefix}buy *cantidad*_
-┃⚗️➺ _${usedPrefix}buyall_
-┃⚗️➺ _${usedPrefix}buy2 *cantidad*__
-┃⚗️➺ _${usedPrefix}buyall2_
-┃⚗️➺ _${usedPrefix}buy3 *cantidad*__
-┃⚗️➺ _${usedPrefix}buyall3_
+┃⚗️➺ _${usedPrefix}buy_
+┃⚗️➺ _${usedPrefix}sell_
 ┃⚗️➺ _${usedPrefix}verificar | registrar_
 ┃⚗️➺ _${usedPrefix}perfil | profile_
 ┃⚗️➺ _${usedPrefix}myns_
@@ -130,10 +126,10 @@ let menu = `
 ┃⚗️➺ _${usedPrefix}reclamar | regalo | claim_
 ┃⚗️➺ _${usedPrefix}cofre | abrircofre | coffer_
 ┃⚗️➺ _${usedPrefix}trabajar | work_
-╰━━━━━━━━━━━━━━━━━━━⬣`.trim()
+╰━━━━━━━━━━━━━━━━⬣`.trim()
 conn.sendHydrated(m.chat, menu, wm, pp, 'https://github.com/GataNina-Li/GataBot-MD', '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
 ['𝙈𝙚𝙣𝙪́ 𝙘𝙤𝙢𝙥𝙡𝙚𝙩𝙤 | 𝙁𝙪𝙡𝙡 𝙈𝙚𝙣𝙪 💫', '.allmenu'],
-['𝙈𝙚𝙣𝙪 𝙙𝙚𝙨𝙥𝙡𝙚𝙜𝙖𝙗𝙡𝙚 | 𝙈𝙚𝙣𝙪 𝙇𝙞𝙨𝙩 🌟', '/menulista'],
+['𝙄𝙣𝙫𝙚𝙣𝙩𝙖𝙧𝙞𝙤 | 𝙄𝙣𝙫𝙚𝙣𝙩𝙤𝙧𝙮 🎒', '/inventario'],
 ['𝙈𝙚𝙣𝙪 𝙋𝙧𝙞𝙣𝙘𝙞𝙥𝙖𝙡 | 𝙈𝙖𝙞𝙣 𝙢𝙚𝙣𝙪 ⚡', '#menu']
 ], m,)
 }
