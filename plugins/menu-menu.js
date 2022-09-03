@@ -254,11 +254,6 @@ ${readMore}
 ┃🌐➺ _${usedPrefix}configuracion_
 ┃🌐➺ _${usedPrefix}settings_
 ┃🌐➺ _${usedPrefix}vergrupo_
-┃🌐➺ _${usedPrefix}crearvoto | startvoto *texto*_
-┃🌐➺ _${usedPrefix}sivotar | upvote_
-┃🌐➺ _${usedPrefix}novotar | devote_
-┃🌐➺ _${usedPrefix}vervotos | cekvoto_
-┃🌐➺ _${usedPrefix}delvoto | deletevoto_
 ┃🌐➺ _${usedPrefix}enlace | link_
 ┃🌐➺ _${usedPrefix}newnombre | setname *texto*_
 ┃🌐➺ _${usedPrefix}newdesc | setdesc *texto*_
@@ -266,6 +261,17 @@ ${readMore}
 ┃🌐➺ _${usedPrefix}setbye *texto*_
 ┃🌐➺ _${usedPrefix}on_
 ┃🌐➺ _${usedPrefix}off_
+*╰━━━━━━━━━━━━⬣*
+
+*╭━[ VOTACIONES EN GRUPOS 📧 ]━⬣*
+┃ *Ahora puedes hacer*
+┃ *Votaciones en Grupos!!*
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃📧➺ _${usedPrefix}crearvoto | startvoto *texto*_
+┃📧➺ _${usedPrefix}sivotar | upvote_
+┃📧➺ _${usedPrefix}novotar | devote_
+┃📧➺ _${usedPrefix}vervotos | cekvoto_
+┃📧➺ _${usedPrefix}delvoto | deletevoto_
 *╰━━━━━━━━━━━━⬣*
 
 *╭━━━[ CONTENIDO 🔞 ]━━⬣*
