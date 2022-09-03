@@ -4,7 +4,7 @@ import moment from 'moment-timezone'
 let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isROwner }) => {
 //let userr = global.db.data.users[m.sender]
 //userr.registered = false
-let locale = 'co'
+let locale = 'es'
 let d = new Date(new Date + 3600000)
 let time = d.toLocaleTimeString(locale, {
       hour: 'numeric',
