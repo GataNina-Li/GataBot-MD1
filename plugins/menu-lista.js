@@ -4,7 +4,7 @@ import moment from 'moment-timezone'
 let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isROwner }) => {
 //let userr = global.db.data.users[m.sender]
 //userr.registered = false
-let locale = 'es'
+let locale = 'ec'
 let d = new Date(new Date + 3600000)
 let time = d.toLocaleTimeString(locale, {
       hour: 'numeric',
@@ -59,7 +59,7 @@ rows: [
 let name = await conn.getName(m.sender)
 //let name = conn.getName(m.sender)
 const listMessage = {
-text: `╭───────────────────❀\n│${ucapan()}\n│💖•.¸💝¸.• *${name}* •.¸💝¸.•💖\n╰───────────────────❀
+text: `╭───────────────────❀\n│${ucapan()}\n│💝¸.• *${name}* •.¸💝\n╰───────────────────❀
 ╭━━〔 *${wm}* 〕━━⬣
 ┃✪ *Tiempo Actual | Current Time*	    
 ┃➺ ${time}   
@@ -67,7 +67,7 @@ text: `╭───────────────────❀\n│${uca
 ┃✪ *Activa durante | Active during* 
 ┃➺ ${uptime}
 ┃   ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃✪ *Versión de GataBot-MD*
+┃✪ *Versión de GataBot-MD 𓃠*
 ┃➺ ${vs}
 ┃   ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃✪ *Usuario(s) | Users*
