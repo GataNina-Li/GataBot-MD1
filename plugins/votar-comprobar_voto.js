@@ -23,18 +23,24 @@ return await conn.sendButton(m.chat, `${fg}𝙉𝙊 𝙎𝙀 𝙃𝘼 𝘾𝙍�
 
 let [reason, upvote, devote] = conn.vote[id]
 let caption = `*${htjava} 𝙇𝙄𝙎𝙏𝘼 𝘿𝙀 𝙑𝙊𝙏𝙊𝙎 : 𝙑𝙊𝙏𝙀 𝙇𝙄𝙎𝙏 ${htjava}*
-*CREADOR(A) DE LA VOTACIÓN*
-🛃 @${conn.getName(m.sender)}
+
+*USUARIO(A)*
+🐈 @${conn.getName(m.sender)}
+
 *MOTIVO ➫* ${reason}
+
 *${htjava} 𝙑𝙊𝙏𝙊𝙎 𝘼 𝙁𝘼𝙑𝙊𝙍 : 𝙂𝙊𝙊𝘿 𝙑𝙊𝙏𝙀𝙎 ${htjava}*
 *Total: ${upvote.length}*
+
 ${dmenut}
-${upvote.map((v, i) => `${dmenub} ${i + 1}.  @${v.split`@`[0]}`).join('\n')} 
+${upvote.map((v, i) => `${dmenub} ${i + 1}.  @${conn.getName(v)}`).join('\n')} 
 ${dmenuf}
+
 *${htjava} 𝙑𝙊𝙏𝙊𝙎 𝙀𝙉 𝘾𝙊𝙉𝙏𝙍𝘼 : 𝙑𝙊𝙏𝙀𝙎 𝘼𝙂𝘼𝙄𝙉𝙎𝙏 ${htjava}*
 *Total:* ${devote.length}
+
 ${dmenut}
-${devote.map((v, i) => `${dmenub} ${i + 1}.  @${v.split`@`[0]}`).join('\n')}
+${devote.map((v, i) => `${dmenub} ${i + 1}.  @${conn.getName(v)}`).join('\n')}
 ${dmenuf}`.trim()
 
 await conn.sendButton(m.chat, caption, wm, null, [
