@@ -14,6 +14,8 @@ const fkontak = {
 	"participant": "0@s.whatsapp.net"
 }
 
+if (!text) throw await conn.reply(m.chat, `${mg}𝘿𝙀𝘽𝙀 𝘿𝙀 𝙀𝙎𝘾𝙍𝙄𝘽𝙄𝙍 𝙇𝘼 𝙍𝘼𝙕𝙊𝙉 𝘿𝙀 𝙇𝘼 𝙑𝙊𝙏𝘼𝘾𝙄𝙊𝙉\n\n𝙔𝙊𝙐 𝙈𝙐𝙎𝙏 𝙒𝙍𝙄𝙏𝙀 𝙏𝙃𝙀 𝙍𝙀𝘼𝙎𝙊𝙉 𝙁𝙊𝙍 𝙏𝙃𝙀 𝙑𝙊𝙏𝙀`, fkontak,  m)
+try {
 if (m.isGroup) {
   
 if (!(isAdmin || isOwner)) return dfail('admin', m, conn)}
@@ -23,7 +25,7 @@ let id = m.chat
 //if (id in conn.vote) { 
 //await conn.sendButton(m.chat, `🗃️ 𝙏𝙊𝘿𝘼𝙑𝙄𝘼 𝙃𝘼𝙔 𝙑𝙊𝙏𝘼𝘾𝙄𝙊𝙉 𝙋𝙀𝙉𝘿𝙄𝙀𝙉𝙏𝙀 𝙀𝙉 𝙀𝙎𝙏𝙀 𝙂𝙍𝙐𝙋𝙊!!\n\n📍 𝙏𝙃𝙀𝙍𝙀 𝙄𝙎 𝙎𝙏𝙄𝙇𝙇 𝙋𝙀𝙉𝘿𝙄𝙉𝙂 𝙑𝙊𝙏𝙄𝙉𝙂 𝙄𝙉 𝙏𝙃𝙄𝙎 𝙂𝙍𝙊𝙐𝙋!!`, wm, null, [
 //['🧾 𝙁𝙄𝙉𝘼𝙇𝙄𝙕𝘼𝙍 𝙑𝙊𝙏𝘼𝘾𝙄𝙊𝙉 | 𝙀𝙉𝘿 𝙑𝙊𝙏𝙄𝙉𝙂', `${usedPrefix}-vote`]], fkontak, m)
-try {  
+  
 await conn.sendButton(m.chat, `✴️ 𝙉𝙐𝙀𝙑𝘼 𝙑𝙊𝙏𝘼𝘾𝙄𝙊𝙉 | 𝙉𝙀𝙒 𝙑𝙊𝙏𝙀 ✴️\n\n*CREADOR(A) DE LA VOTACIÓN*\n🛃 @${conn.getName(m.sender)}\n\n*MOTIVO ➫* ${text}`, `
 *Puede usar los comandos de abajo o los botones para hacer una acción en la votación!!*
 
