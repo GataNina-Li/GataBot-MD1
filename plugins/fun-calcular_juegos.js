@@ -1,19 +1,4 @@
 let handler = async (m, { conn, command, text, usedPrefix }) => {
-const fkontak = {
-        "key": {
-        "participants":"0@s.whatsapp.net",
-            "remoteJid": "status@broadcast",
-            "fromMe": false,
-            "id": "Halo"    
-        },
-        "message": {
-            "contactMessage": {
-                "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
-            }
-        },
-        "participant": "0@s.whatsapp.net"
-    }
-
 if (!text) throw `${mg}𝙀𝙏𝙄𝙌𝙐𝙀𝙏𝙀 @𝙏𝘼𝙂 𝙊 𝙀𝙎𝘾𝙍𝙄𝘽𝘼 𝙀𝙇 𝙉𝙊𝙈𝘽𝙍𝙀\n𝙏𝘼𝙂 𝙎𝙊𝙈𝙀𝙊𝙉𝙀 @𝙏𝘼𝙂 𝙊𝙍 𝙏𝙔𝙋𝙀 𝙏𝙃𝙀 𝙉𝘼𝙈𝙀` 
 
 if (command == 'gay2') {
@@ -26,7 +11,7 @@ let juego = `_*${text.toUpperCase()}* *ES/IS* *${(1000).getRandom()}%* *GAY*_ �
 //], m, m.mentionedJid ? {
 //mentions: m.mentionedJid
 //} : {})
-await conn.reply(m.chat, juego, fkontak, m, m.mentionedJid ? { mentions: m.mentionedJid } : {})}
+await conn.reply(m.chat, juego, m, m.mentionedJid ? { mentions: m.mentionedJid } : {})}
 //conn.reply(m.chat, `_*${text.toUpperCase()}* *ES 🏳️‍🌈* *${(500).getRandom()}%* *GAY*_`.trim(), m, m.mentionedJid ? { mentions: m.mentionedJid
 //} : {})}
 
