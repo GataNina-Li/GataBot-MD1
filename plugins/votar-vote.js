@@ -47,7 +47,7 @@ let caption = `*${htjava} 𝙇𝙄𝙎𝙏𝘼 𝘿𝙀 𝙑𝙊𝙏𝙊𝙎 : �
 *Total: ${upvote.length}*
 
 ${dmenut}
-${upvote.map((v, i) => `${dmenub} ${i + 1}.  @${v.split`@`[0]}`).join('\n')}
+${upvote.map((v, i) => `${dmenub} ${i + 1}.  @${v.split`@`[0]}`).join('\n')} 
 ${dmenuf}
 
 *${htjava} 𝙑𝙊𝙏𝙊𝙎 𝙀𝙉 𝘾𝙊𝙉𝙏𝙍𝘼 : 𝙑𝙊𝙏𝙀𝙎 𝘼𝙂𝘼𝙄𝙉𝙎𝙏 ${htjava}*
@@ -64,5 +64,8 @@ await conn.sendButton(m.chat, caption, wm, null, [
 handler.help = ['upvote', 'devote']
 handler.tags = ['vote']
 handler.command = /^(up|si|de|no)vote|voto|votar$/i
+handler.group = true
+handler.botAdmin = true
+handler.admin = true
 
 export default handler
