@@ -54,16 +54,16 @@ text,
 ]
 
 if (id in conn.vote) { 
-return	
-//setTimeout(() => {
-//await conn.sendButton(m.chat, `${eg}🥳 𝙃𝘼𝙎 𝙑𝙊𝙏𝘼𝘿𝙊!!\n\n🎊 𝙔𝙊𝙐 𝙑𝙊𝙏𝙀𝘿!!`, wm, null, [
-//['🔰 𝙄𝙉𝙑𝙄𝙏𝘼𝙍 𝘼 𝙑𝙊𝙏𝘼𝙍 | 𝙄𝙉𝙑𝙄𝙏𝙀', `${usedPrefix}pedirayuda ✴️ @${conn.getName(m.sender)} *ESTA INVITANDO A QUE SE UNAN A LA VOTACIÓN!!*\n*USEN EL COMANDO ${usedPrefix}vervotos PARA VOTAR!!*\n\n*THEY ARE INVITING YOU TO A VOTE!!*\n*USE THE COMMAND ${usedPrefix}vervotos TO VOTE*`]
-//], fkontak, m)}, 10000)}}
 	
-setTimeout(() => {
-conn.sendHydrated(m.chat, `${eg}🥳 𝙃𝘼𝙎 𝙑𝙊𝙏𝘼𝘿𝙊!!\n\n🎊 𝙔𝙊𝙐 𝙑𝙊𝙏𝙀𝘿!!`, wm, null, md, `𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿`, null, null, [
+//setTimeout(() => {
+return await conn.sendButton(m.chat, `${eg}🥳 𝙃𝘼𝙎 𝙑𝙊𝙏𝘼𝘿𝙊!!\n\n🎊 𝙔𝙊𝙐 𝙑𝙊𝙏𝙀𝘿!!`, wm, null, [
 ['🔰 𝙄𝙉𝙑𝙄𝙏𝘼𝙍 𝘼 𝙑𝙊𝙏𝘼𝙍 | 𝙄𝙉𝙑𝙄𝙏𝙀', `${usedPrefix}pedirayuda ✴️ @${conn.getName(m.sender)} *ESTA INVITANDO A QUE SE UNAN A LA VOTACIÓN!!*\n*USEN EL COMANDO ${usedPrefix}vervotos PARA VOTAR!!*\n\n*THEY ARE INVITING YOU TO A VOTE!!*\n*USE THE COMMAND ${usedPrefix}vervotos TO VOTE*`]
-], null)}, 10000)}}
+], fkontak, m)}}
+	
+//setTimeout(() => {
+//conn.sendHydrated(m.chat, `${eg}🥳 𝙃𝘼𝙎 𝙑𝙊𝙏𝘼𝘿𝙊!!\n\n🎊 𝙔𝙊𝙐 𝙑𝙊𝙏𝙀𝘿!!`, wm, null, md, `𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿`, null, null, [
+//['🔰 𝙄𝙉𝙑𝙄𝙏𝘼𝙍 𝘼 𝙑𝙊𝙏𝘼𝙍 | 𝙄𝙉𝙑𝙄𝙏𝙀', `${usedPrefix}pedirayuda ✴️ @${conn.getName(m.sender)} *ESTA INVITANDO A QUE SE UNAN A LA VOTACIÓN!!*\n*USEN EL COMANDO ${usedPrefix}vervotos PARA VOTAR!!*\n\n*THEY ARE INVITING YOU TO A VOTE!!*\n*USE THE COMMAND ${usedPrefix}vervotos TO VOTE*`]
+//], null)}, 10000)}}
 
 handler.help = ['mulaivote [alasan]']
 handler.tags = ['vote']
