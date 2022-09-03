@@ -51,7 +51,7 @@ ${upvote.map((v, i) => `${dmenub} ${i + 1}.  @${v.split`@`[0]}`).join('\n')}
 ${dmenuf}
 
 *${htjava} 𝙑𝙊𝙏𝙊𝙎 𝙀𝙉 𝘾𝙊𝙉𝙏𝙍𝘼 : 𝙑𝙊𝙏𝙀𝙎 𝘼𝙂𝘼𝙄𝙉𝙎𝙏 ${htjava}*
-*Total:* ${devote.length}
+*Total: ${devote.length}*
 
 ${dmenut}
 ${devote.map((v, i) => `${dmenub} ${i + 1}.  @${v.split`@`[0]}`).join('\n')}
