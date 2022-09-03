@@ -1,4 +1,4 @@
-const toxicRegex = /puto|puta|rata|estupido|imbecil|rctmre|mrd|verga|vrga|mal/i
+const toxicRegex = /estupido|estupida|estupidos|polla|idiota|maricon|chucha|verga|vrga|naco|zorra|zorro|zorras|zorros|pito|huevon|huevona|huevones|rctmre|mrd|ctm|csm|cp|hldv|ptm|baboso|babosa|babosos|babosas|feo|fea|feos|feas|webo|webos|mamawebos|calla|callese|cállate|callate|chupa|chupala|chupame|bolas|qliao||estupido|imbecil|rctmre|mrd|mal/i
 
 export async function before(m, { conn, isAdmin, isBotAdmin, isOwner }) {
  
