@@ -77,7 +77,8 @@ let menu = `
 ┃✪ *ROL ➺* ${role}
 ┃✪ *GATACOINS ➺ $ ${money}*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃✪ *FECHA ➺ ${week}, ${date}*
+┃✪ *FECHA*
+┃➺ *${week}, ${date}*
 ┃✪ *USUARIOS | USERS ➺ ${Object.keys(global.db.data.users).length}* 
 ┃🎠🎠🎠🎠🎠🎠🎠🎠🎠
 ╰━━━━〔 𓃠 *${vs}* 〕━━━━⬣
