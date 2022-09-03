@@ -50,7 +50,7 @@ await conn.sendButton(m.chat, caption, wm, null, [
 
 handler.help = ['cekvote']
 handler.tags = ['vote']
-handler.command = /^cekvote|vervotos|vervotaciones|votaciones|votacion|vervotacion$/i
+handler.command = /^cekvote|vervotos|vervoto|vervotaciones|votaciones|votacion|vervotacion$/i
 handler.group = true
 handler.botAdmin = true
 
