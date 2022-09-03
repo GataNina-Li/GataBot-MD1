@@ -29,7 +29,7 @@ await conn.sendButton(m.chat, `${eg}𝙇𝘼 𝙑𝙊𝙏𝘼𝘾𝙄𝙊𝙉 �
 
 handler.help = ['hapusvote']
 handler.tags = ['vote']
-handler.command = /^(del|delete|borrar|hapus|-)voto|vote$/i
+handler.command = /^(del|delete|borrar|hapus|-)voto$/i
 handler.group = true
 handler.botAdmin = true
 handler.admin = true
