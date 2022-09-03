@@ -37,10 +37,10 @@ ${dmenub2} *┈┈┈┈┈┈┈┈┈┈┈┈*
 ${dmenub} *${usedPrefix}novotar | devote*
 ${dmenub} _Estar en desacuerdo : Disagree_
 ${dmenub2} *┈┈┈┈┈┈┈┈┈┈┈┈*
-${dmenub} *${usedPrefix}vervotos | cekvote*
+${dmenub} *${usedPrefix}vervotos | cekvoto*
 ${dmenub} _Comprobar el voto : Check the vote_
 ${dmenub2} *┈┈┈┈┈┈┈┈┈┈┈┈*
-${dmenub} *${usedPrefix}borrarvoto | deletevote*
+${dmenub} *${usedPrefix}delvoto | deletevoto*
 ${dmenub} _Borrar votos : Delete votes_
 ${dmenuf}`, null, [
 ['✅ 𝙑𝙊𝙏𝘼𝙍 𝘼 𝙁𝘼𝙑𝙊𝙍 | 𝙐𝙋𝙑𝙊𝙏𝙀', `${usedPrefix}upvote`],
