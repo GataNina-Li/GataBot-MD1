@@ -25,7 +25,7 @@ let isVote = conn.vote[id][1].concat(conn.vote[id][2])
 const wasVote = isVote.includes(m.sender)
 
 if (wasVote) { 
-return await conn.sendButton(m.chat, `${eg}🥳 𝙔𝘼 𝙃𝘼𝙎 𝙑𝙊𝙏𝘼𝘿𝙊!!\n\n🎊 𝙔𝙊𝙐 𝙃𝘼𝙑𝙀 𝘼𝙇𝙍𝙀𝘼𝘿𝙔 𝙑𝙊𝙏𝙀𝘿!!`, `*Su voto no se cambia una vez que hayas votado.*\n\n*Your vote is not changed twice*\n${wm}`, null, [
+return await conn.sendButton(m.chat, `${eg}🥳 𝙔𝘼 𝙃𝘼𝙎 𝙑𝙊𝙏𝘼𝘿𝙊!!\n\n🎊 𝙔𝙊𝙐 𝙃𝘼𝙑𝙀 𝘼𝙇𝙍𝙀𝘼𝘿𝙔 𝙑𝙊𝙏𝙀𝘿!!`, `*Su voto no se cambia una vez que hayas votado.*\n*Your vote is not changed twice*\n\n${wm}`, null, [
 ['📋 𝙑𝙀𝙍 𝙑𝙊𝙏𝙊𝙎 | 𝙎𝙀𝙀 𝙑𝙊𝙏𝙀𝙎', '/vervotos'],
 ['🔰 𝙄𝙉𝙑𝙄𝙏𝘼𝙍 𝘼 𝙑𝙊𝙏𝘼𝙍 | 𝙄𝙉𝙑𝙄𝙏𝙀', `${usedPrefix}pedirayuda ✴️ @${conn.getName(m.sender)} *ESTA INVITANDO A QUE SE UNAN A LA VOTACIÓN!!*\n*USEN EL COMANDO ${usedPrefix}vervotos PARA VOTAR!!*\n\n*THEY ARE INVITING YOU TO A VOTE!!*\n*USE THE COMMAND ${usedPrefix}vervotos TO VOTE*`]
 ], fkontak, m)}
