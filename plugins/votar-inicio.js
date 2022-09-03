@@ -40,7 +40,7 @@ ${dmenub2} *┈┈┈┈┈┈┈┈┈┈┈┈*
 ${dmenub} *${usedPrefix}vervotos | cekvote*
 ${dmenub} _Comprobar el voto : Check the vote_
 ${dmenub2} *┈┈┈┈┈┈┈┈┈┈┈┈*
-${dmenub} *${usedPrefix}eliminarvoto | deletevote*
+${dmenub} *${usedPrefix}borrarvoto | deletevote*
 ${dmenub} _Borrar votos : Delete votes_
 ${dmenuf}`, null, [
 ['✅ 𝙑𝙊𝙏𝘼𝙍 𝘼 𝙁𝘼𝙑𝙊𝙍 | 𝙐𝙋𝙑𝙊𝙏𝙀', `${usedPrefix}upvote`],
