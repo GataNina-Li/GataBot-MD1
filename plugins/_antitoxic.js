@@ -1,7 +1,6 @@
-//const toxicRegex = /puto|puta|rata|estupido|imbecil|rctmre|mrd|verga|vrga/i
+const toxicRegex = /puto|puta|rata|estupido|imbecil|rctmre|mrd|verga|vrga|mal/i
 
 export async function before(m, { conn, isAdmin, isBotAdmin, isOwner }) {
-const toxicRegex = !m.fromMem && m.text.match(/puto|puta|rata|estupido|imbecil|rctmre|mrd|verga|vrga/gi)
  
 if (m.isBaileys && m.fromMe)
 return !0
