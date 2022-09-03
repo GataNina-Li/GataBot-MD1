@@ -75,6 +75,10 @@ global.APIKeys = { // APIKey Here
 global.Key360 = ['964f-0c75-7afc'] //keys ephoto360
 //global.beta = ['https://violetics.pw'] //keys ephoto360
 
+global.keysZens = ['fiktod', 'c2459db922', 'BF39D349845E', '675e34de8a', '37CC845916', '0b917b905e6f', '6fb0eff124']
+global.keysxxx = keysZens[Math.floor(keysZens.length * Math.random())]
+global.lolkeysapi = ['85faf717d0545d14074659ad']
+
 //━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 
 
