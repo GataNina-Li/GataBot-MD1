@@ -16,7 +16,7 @@ user.warn += 1
 if (!(user.warn >= 4)) await conn.sendButton(m.chat,`${user.warn == 1 ? `𝙉𝙊𝙊!!! *@${m.sender.split`@`[0]}*` : `*@${m.sender.split`@`[0]}*`}, 𝘿𝙀𝘾𝙄𝙍 𝙀𝙎𝙏𝘼 𝙋𝘼𝙇𝘼𝘽𝙍𝘼 *(${isToxic})* 𝙀𝙎𝙏𝘼 𝙋𝙍𝙊𝙃𝙄𝘽𝙄𝘿𝘼 𝙉𝙊 𝙎𝙀𝘼𝙎 𝙏𝙊𝙓𝙄𝘾𝙊(𝘼)\n\n🤬 𝘿𝙊𝙉'𝙏 𝘽𝙀 𝙏𝙊𝙓𝙄𝘾 𝙏𝙃𝘼𝙏 𝙒𝙊𝙍𝘿 𝙄𝙎 𝙁𝙊𝙍𝘽𝙄𝘿𝘿𝙀𝙉!!`, `*ADVERTENCIA : WARNING*\n⚠️ *${user.warn}/4*\n\n${wm}`, img, [
 [`😭 𝙇𝙊 𝙎𝙄𝙀𝙉𝙏𝙊 | 𝙄'𝙈 𝙎𝙊𝙍𝙍𝙔`, 'ok'],
 ['☢️ 𝘿𝙀𝙎𝘼𝘾𝙏𝙄𝙑𝘼𝙍 𝘼𝙉𝙏𝙄𝙏𝙊𝙓𝙄𝘾', '.off antitoxic'],
-['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', '/menu']], m, false, { mentions: [m.sender] })}
+['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', '/menu']], false, { mentions: [m.sender] })}
 //await m.reply(`${user.warn == 1 ? `Hola *@${m.sender.split`@`[0]}*` : `*@${m.sender.split`@`[0]}*`}, decir la palabra (${isToxic}) está prohibido en este bot *${user.warn}/4* advertencia`, false, { mentions: [m.sender] })
 
 if (user.warn >= 4) {
