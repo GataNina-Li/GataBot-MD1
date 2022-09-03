@@ -59,7 +59,7 @@ ${dmenuf}`.trim()
 
 await conn.sendButton(m.chat, caption, wm, null, [
 ['✅ 𝙑𝙊𝙏𝘼𝙍 𝘼 𝙁𝘼𝙑𝙊𝙍 | 𝙐𝙋𝙑𝙊𝙏𝙀', `${usedPrefix}upvote`],
-['❌ 𝙑𝙊𝙏𝘼𝙍 𝙀𝙉 𝘾𝙊𝙉𝙏𝙍𝘼 | 𝘿𝙀𝙑𝙊𝙏𝙀', `${usedPrefix}devote`]], fkontak, m, { mentions: conn.parseMention(caption) })}
+['❌ 𝙑𝙊𝙏𝘼𝙍 𝙀𝙉 𝘾𝙊𝙉𝙏𝙍𝘼 | 𝘿𝙀𝙑𝙊𝙏𝙀', `${usedPrefix}devote`]], m, { mentions: conn.parseMention(caption) })}
 
 handler.help = ['upvote', 'devote']
 handler.tags = ['vote']
