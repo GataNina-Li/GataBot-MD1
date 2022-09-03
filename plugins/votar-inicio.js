@@ -53,7 +53,7 @@ text,
 []
 ]
 
-if (conn.vote) {
+if (id in conn.vote) { 
 return	
 //setTimeout(() => {
 //await conn.sendButton(m.chat, `${eg}🥳 𝙃𝘼𝙎 𝙑𝙊𝙏𝘼𝘿𝙊!!\n\n🎊 𝙔𝙊𝙐 𝙑𝙊𝙏𝙀𝘿!!`, wm, null, [
