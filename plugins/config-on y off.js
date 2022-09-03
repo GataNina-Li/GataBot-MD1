@@ -221,6 +221,17 @@ throw false
 }}
 chat.reaction = isEnable          
 break
+		
+case 'antitoxic':
+case 'antitoxicos':
+case 'antimalos':
+if (m.isGroup) {
+if (!(isAdmin || isOwner)) {
+global.dfail('admin', m, conn)
+throw false
+}}
+chat.antitoxic = isEnable
+break
     
 case 'audios':
 if (m.isGroup) {
