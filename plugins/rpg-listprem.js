@@ -38,7 +38,7 @@ function clockString(ms) {
   return ['┊ ', ye, ' *Años 🗓️*\n', '┊ ', mo, ' *Mes 🌙*\n', '┊ ', d, ' *Días ☀️*\n', '┊ ', h, ' *Horas 🕐*\n', '┊ ', m, ' *Minutos ⏰*\n', '┊ ', s, ' *Segundo ⏱️*'].map(v => v.toString().padStart(2, 0)).join('')
 }
 
-function sort(property, ascending = true) {
+/*function sort(property, ascending = true) {
   if (property) return (...args) => args[ascending & 1][property] - args[!ascending & 1][property]
   else return (...args) => args[ascending & 1] - args[!ascending & 1]
 }
@@ -48,4 +48,4 @@ function toNumber(property, _default = 0) {
     return { ...b[i], [property]: a[property] === undefined ? _default : a[property] }
   }
   else return a => a === undefined ? _default : a
-}
+}*/
