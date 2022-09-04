@@ -1,4 +1,4 @@
-let handler = m => m
+/*let handler = m => m
 
 handler.before = async function (m) {
     let user = global.db.data.users[m.sender]                              
@@ -9,7 +9,7 @@ handler.before = async function (m) {
         }
     }
 
-export default handler
+export default handler*/
 
 
 
