@@ -7,7 +7,7 @@ export async function all(m) {
         if (new Date() * 1 >= user.premiumTime) {
             await m.reply(`¡Se acabó tu tiempo premium!`)
             user.premiumTime = 0
-            user.premium = false
+            user.premium = true
         }
     }
 }
