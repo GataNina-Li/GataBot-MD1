@@ -12,6 +12,6 @@ type: 'audioMessage',
 ptt: true 
 })
 }
-handler.customPrefix = /WTF|wtf|Wtf|wataf|watafac|watafack/ 
+handler.customPrefix = /WTF|wataf|watafac|watafack/ 
 handler.command = new RegExp
 export default handler
