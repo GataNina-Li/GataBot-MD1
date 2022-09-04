@@ -2,9 +2,9 @@ let handler = async (m, { conn, text, usedPrefix, command, args }) => {
 let user = global.db.data.users[m.sender]   
 const xpperlimit = 3
 
-let count = command.replace(/^buy/i, '')
-count = count ? /premall/i.test(count) ? Math.floor(global.db.data.users[m.sender].exp / xpperlimit) : parseInt(count) : args[0] ? parseInt(args[0]) : 1
-count = Math.max(1, count)
+//let count = command.replace(/^buy/i, '')
+//count = count ? /premall/i.test(count) ? Math.floor(global.db.data.users[m.sender].exp / xpperlimit) : parseInt(count) : args[0] ? parseInt(args[0]) : 1
+//count = Math.max(1, count)
     
 let txt = text.replace('').trim()
 if (!txt) throw `donde el numero de dias?`
@@ -12,14 +12,15 @@ if (isNaN(txt)) return m.reply(`único número!\n\nexample:\n${usedPrefix + comm
     
 var jumlahHari = 180000 * txt //86400000 son 24 horas
 var now = new Date() * 1
+if txt >= xpperlimit {
 if (now < user.premiumTime) user.premiumTime += jumlahHari
-    
-if txt >= xpperlimit * count  {
 else user.premiumTime = now + jumlahHari
 user.premium = true
+
+
     
-if (global.db.data.users[m.sender].exp >= xpperlimit * count) {
-    global.db.data.users[m.sender].exp -= xpperlimit * count
+if (global.db.data.users[m.sender].limit >= xpperlimit) {
+    global.db.data.users[m.sender].limit -= xpperlimit
     //global.db.data.users[m.sender].limit += count
     
 m.reply(`✔️ Éxito
