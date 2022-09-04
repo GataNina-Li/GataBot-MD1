@@ -29,6 +29,7 @@ rows: [
 {title: "✅ 𝙇𝙀𝘾𝙏𝙐𝙍𝘼 𝘼𝙐𝙏𝙊𝙈𝘼𝙏𝙄𝘾𝘼 | 𝘼𝙐𝙏𝙊𝙍𝙀𝘼𝘿", description: "𝙃𝙖𝙘𝙚𝙧 𝙦𝙪𝙚 𝙚𝙡 𝘽𝙤𝙩 𝙩𝙚𝙣𝙜𝙖 𝙡𝙤𝙨 𝙢𝙚𝙣𝙨𝙖𝙟𝙚𝙨 𝙘𝙤𝙢𝙤 𝙇𝙚í𝙙𝙤\n𝙈𝙖𝙠𝙚 𝙩𝙝𝙚 𝘽𝙤𝙩 𝙝𝙖𝙫𝙚 𝙩𝙝𝙚 𝙢𝙚𝙨𝙨𝙖𝙜𝙚𝙨 𝙖𝙨 𝙍𝙚𝙖𝙙", rowId: `${usedPrefix + command} autoread`},
 {title: "🔊 𝘼𝙐𝘿𝙄𝙊𝙎", description: "𝙐𝙨𝙖𝙧 𝙡𝙤𝙨 𝘾𝙤𝙢𝙖𝙣𝙙𝙤𝙨 𝙙𝙚 𝘼𝙪𝙙𝙞𝙤𝙨\n𝙐𝙨𝙚 𝘼𝙪𝙙𝙞𝙤 𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨", rowId: `${usedPrefix + command} audios`},
 {title: "🗑️ 𝘼𝙉𝙏𝙄𝙀𝙇𝙄𝙈𝙄𝙉𝘼𝙍 | 𝘼𝙉𝙏𝙄𝘿𝙀𝙇𝙀𝙏𝙀", description: "𝙇𝙤𝙨 𝙢𝙚𝙣𝙨𝙖𝙟𝙚𝙨 𝙚𝙡𝙞𝙢𝙞𝙣𝙖𝙙𝙤𝙨, 𝙚𝙡 𝘽𝙤𝙩 𝙡𝙤 𝙢𝙤𝙨𝙩𝙧𝙖𝙧𝙖\n𝘿𝙚𝙡𝙚𝙩𝙚𝙙 𝙢𝙚𝙨𝙨𝙖𝙜𝙚𝙨, 𝙩𝙝𝙚 𝘽𝙤𝙩 𝙬𝙞𝙡𝙡 𝙨𝙝𝙤𝙬 𝙞𝙩", rowId: `${usedPrefix + command} antidelete`},
+{title: "☢️ 𝘼𝙉𝙏𝙄𝙏𝙊𝙓𝙄𝘾𝙊𝙎 | 𝘼𝙉𝙏𝙄𝙏𝙊𝙓𝙄𝘾", description: "𝙀𝙡𝙞𝙢𝙞𝙣𝙖𝙧 𝙖 𝙡𝙖𝙨 𝙥𝙚𝙧𝙨𝙤𝙣𝙖𝙨 𝙦𝙪𝙚 𝙨𝙤𝙣 𝙫𝙪𝙡𝙜𝙖𝙧𝙚𝙨 𝙚𝙣 𝙂𝙧𝙪𝙥𝙤𝙨\n𝙍𝙚𝙢𝙤𝙫𝙚 𝙥𝙚𝙤𝙥𝙡𝙚 𝙬𝙝𝙤 𝙖𝙧𝙚 𝙫𝙪𝙡𝙜𝙖𝙧 𝙞𝙣 𝙂𝙧𝙤𝙪𝙥𝙨", rowId: `${usedPrefix + command} antitoxic`},    
 {title: "🐈 𝘽𝙊𝙏 𝙏𝙀𝙈𝙋𝙊𝙍𝘼𝙇 | 𝘽𝙊𝙏 𝙏𝙀𝙈𝙋𝙊𝙍𝘼𝙇𝙇𝙔 ", description: "𝙋𝙖𝙧𝙖 𝙥𝙚𝙧𝙢𝙞𝙩𝙞𝙧 𝙤 𝙣𝙤 𝙦𝙪𝙚 𝙚𝙡 𝙗𝙤𝙩 𝙨𝙚 𝙪𝙣𝙖 𝙩𝙚𝙢𝙥𝙤𝙧𝙖𝙡𝙢𝙚𝙣𝙩𝙚 𝙚𝙣 𝙂𝙧𝙪𝙥𝙤𝙨\n𝙏𝙤 𝙩𝙚𝙢𝙥𝙤𝙧𝙖𝙧𝙞𝙡𝙮 𝙖𝙡𝙡𝙤𝙬 𝙤𝙧 𝙙𝙞𝙨𝙖𝙡𝙡𝙤𝙬 𝙩𝙝𝙚 𝙗𝙤𝙩 𝙩𝙤 𝙟𝙤𝙞𝙣 𝙞𝙣 𝙂𝙧𝙤𝙪𝙥𝙨", rowId: `${usedPrefix + command} temporal`},
 {title: "👀 𝘼𝙉𝙏𝙄 𝙑𝙀𝙍 | 𝘼𝙉𝙏𝙄 𝙎𝙀𝙀", description: "𝙃𝙖𝙘𝙚𝙧 𝙦𝙪𝙚 𝙣𝙖𝙙𝙖 𝙨𝙚 𝙤𝙘𝙪𝙡𝙩𝙚 𝙚𝙣 𝙂𝙧𝙪𝙥𝙤𝙨\n𝙈𝙖𝙠𝙚 𝙣𝙤𝙩𝙝𝙞𝙣𝙜 𝙝𝙞𝙙𝙚 𝙞𝙣 𝙂𝙧𝙤𝙪𝙥𝙨", rowId: `${usedPrefix + command} antiver`},
 {title: "🤡 𝙍𝙀𝘼𝘾𝘾𝙄𝙊𝙉𝙀𝙎 | 𝙍𝙀𝘼𝘾𝙏𝙄𝙊𝙉𝙎", description: "𝙃𝙖𝙘𝙚𝙧 𝙦𝙪𝙚 𝙚𝙡 𝘽𝙤𝙩 𝙧𝙚𝙖𝙘𝙘𝙞𝙤𝙣𝙚 𝙖 𝙈𝙚𝙣𝙨𝙖𝙟𝙚𝙨\n𝙈𝙖𝙠𝙚 𝙩𝙝𝙚 𝘽𝙤𝙩 𝙧𝙚𝙖𝙘𝙩 𝙩𝙤 𝙈𝙚𝙨𝙨𝙖𝙜𝙚𝙨", rowId: `${usedPrefix + command} reaction`},
@@ -64,6 +65,7 @@ footer: `╭━━━[ *𝘼𝙅𝙐𝙎𝙏𝙀𝙎 𝙂𝘼𝙏𝘼𝘽𝙊�
 ┃⚙️ _${usedPrefix}on *:* off *autovisto | autoread*_
 ┃⚙️ _${usedPrefix}on *:* off *reaccion | reaction*_
 ┃⚙️ _${usedPrefix}on *:* off *antiver | antiviewonce*_
+┃⚙️ _${usedPrefix}on *:* off *antitoxicos | antitoxic*_
 ┃⚙️ _${usedPrefix}on *:* off *antillamar | anticall*_
 ┃⚙️ _${usedPrefix}on *:* off *antieliminar | antidelete*_
 ┃⚙️ _${usedPrefix}on *:* off *stickers*_
