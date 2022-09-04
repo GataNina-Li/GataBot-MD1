@@ -23,4 +23,3 @@ export async function all(m) {
             user.premium = false
         }
     }
-}
