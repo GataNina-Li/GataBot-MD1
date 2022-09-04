@@ -18,7 +18,7 @@ ${prem ? `${clockString (usuario - new Date() * 1)}` : '┃☪ *𝙏𝙄𝙀𝙈
 *╰—————————*
 
 •·–––––––––––––––·•
-${sortedP.slice(0, len).map(({ jid, name, premiumTime, registered }, i) => `\n\n┌✦ ${registered ? name : conn.getName(jid)}\n┊• wa.me/${jid.split`@`[0]}\n${user.premiumTime > 0 ? `${clockString (premiumTime - new Date() * 1)}` : '┊ *CADUCADO 🚫*'}`).join`\n┗━═┅═━––––––๑`}
+${sortedP.slice(0, len).map(({ jid, name, premiumTime, registered, user }, i) => `\n\n┌✦ ${registered ? name : conn.getName(jid)}\n┊• wa.me/${jid.split`@`[0]}\n${user.premiumTime > 0 ? `${clockString (premiumTime - new Date() * 1)}` : '┊ *CADUCADO 🚫*'}`).join`\n┗━═┅═━––––––๑`}
 ╰━═┅═━––––––๑`.trim(), `🎟️ 𝗣 𝗥 𝗘 𝗠 𝗜 𝗨 𝗠 ⇢ ${user.premiumTime > 0 ? '✅' : '❌'}\n${wm}`, null, [[`${prem ? '✦ Owner ✦': '✦ Comprar Premium ✦'}`, `${prem ? '.owner nomor': '.premium'}`]])
 setTimeout(() => {
     if (global.db.data.chats[m.chat].deletemedia) conn.deleteMessage(m.chat, key)
