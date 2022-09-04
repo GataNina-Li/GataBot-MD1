@@ -27,7 +27,8 @@ setTimeout(() => {
 }
 handler.help = ['premlist [angka]']
 handler.tags = ['info']
-handler.command = /^(listprem|premlist)$/i
+//handler.command = /^(listprem|premlist|listavip|vip)$/i
+handler.command = /^(vip|prem|premium|lista|list)vip|prem|premium|lista|list$/i
 
 export default handler
 
