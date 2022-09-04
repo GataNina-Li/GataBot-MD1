@@ -1,13 +1,10 @@
 let handler = m => m
 export async function all(m) {
-//export async function all(m, conn) {
 let user = global.db.data.users[m.sender]
 if (m.chat.endsWith('broadcast')) return
 if (user.premiumTime != 0 && user.premium) {
 if (new Date() * 1 >= user.premiumTime) {
-//await conn.sendButton(m.chat, `*@${m.sender.split`@`[0]} ¡Se acabó tu tiempo premium!*`, wm, null, [
-//['☘️ 𝙈𝙀𝙉𝙐', '/menu']], false, { mentions: [m.sender] })}
-await m.reply(`*@${m.sender.split`@`[0]} ¡Se acabó tu tiempo premium!*`)
+await m.reply(`*@${m.sender.split`@`[0]} ¡Se acabó tu tiempo premium!*`, false, { mentions: [m.sender] })
 user.premiumTime = 0
 user.premium = false
 }}}
