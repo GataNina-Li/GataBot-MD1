@@ -1,4 +1,4 @@
-import fs from 'fs'
+/*import fs from 'fs'
 let handler = async (m, { conn }) => { 
 let prem = global.prems.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').filter(v => v != conn.user.jid)
 
@@ -23,4 +23,4 @@ handler.help = ['premlist']
 handler.tags = ['owner']
 handler.command = /^(listapremium|listprem|premlist)$/i
 
-export default handler
+export default handler*/
