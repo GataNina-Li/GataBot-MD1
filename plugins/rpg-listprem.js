@@ -19,7 +19,7 @@ ${prem ? `${clockString (usuario - new Date() * 1)}` : '┃✢ *𝙏𝙄𝙀𝙈
 
 ╭•·–––––––––––––––·•
 🌟 𝙐𝙎𝙐𝘼𝙍𝙄𝙊𝙎 𝙋𝙍𝙀𝙈𝙄𝙐𝙈
-╰•·–––––––––––––––·•${sortedP.slice(0, len).map(({ jid, name, premiumTime, prem, registered }, i) => `\n\n╭–✦ ${registered ? name : conn.getName(jid)}\n┃• wa.me/${jid.split`@`[0]}\n${new Date() * 1 > -1 ? `${clockString (premiumTime - new Date() * 1)}` : '┃ *CADUCADO 🚫*'}`).join`\n╰–––––––––––·•`}
+╰•·–––––––––––––––·•${sortedP.slice(0, len).map(({ jid, name, premiumTime, prem, registered }, i) => `\n\n╭–✦ ${registered ? name : conn.getName(jid)}\n┃• wa.me/${jid.split`@`[0]}\n${clockString (premiumTime - new Date() * 1 > 0 ? `${clockString (premiumTime - new Date() * 1)}` : '┃ *CADUCADO 🚫*'}`).join`\n╰–––––––––––·•`}
 ╰–––––––––––·•`.trim(), `🎟️ 𝗣 𝗥 𝗘 𝗠 𝗜 𝗨 𝗠 ⇢ ${prem ? '✅' : '❌'}\n${wm}`, null, [[`${prem ? '✦ 𝘿𝙄𝙎𝙁𝙍𝙐𝙏𝘼𝙍 𝙋𝙍𝙀𝙈𝙄𝙐𝙈 ✦': '✦ 𝘾𝙊𝙈𝙋𝙍𝘼𝙍 𝙋𝙍𝙀𝙈𝙄𝙐𝙈 ✦'}`, `${prem ? '.allmenu': '.premium'}`]]) //${premiumTime > 0 ?
 setTimeout(() => {
     if (global.db.data.chats[m.chat].deletemedia) conn.deleteMessage(m.chat, key)
