@@ -5,20 +5,17 @@ const xpperlimit = 3
 //let count = command.replace(/^buy/i, '')
 //count = count ? /premall/i.test(count) ? Math.floor(global.db.data.users[m.sender].exp / xpperlimit) : parseInt(count) : args[0] ? parseInt(args[0]) : 1
 //count = Math.max(1, count)
-    
-let txt = text.replace('').trim()
-if (!txt) throw `donde el numero de dias?`
-if (isNaN(txt)) return m.reply(`único número!\n\nexample:\n${usedPrefix + command} 7`)
-    
-var jumlahHari = 180000 * txt //86400000 son 24 horas
+let text = ''   
+//let txt = text.replace('').trim()
+if (!text) throw `donde el numero de dias?`
+if (isNaN(text)) return m.reply(`único número!\n\nexample:\n${usedPrefix + command} 7`)
+if text < xpperlimit throw `No hay diamantes`   
+var jumlahHari = 180000 * text //86400000 son 24 horas
 var now = new Date() * 1
-if txt >= xpperlimit {
 if (now < user.premiumTime) user.premiumTime += jumlahHari
 else user.premiumTime = now + jumlahHari
 user.premium = true
 
-
-    
 if (global.db.data.users[m.sender].limit >= xpperlimit) {
     global.db.data.users[m.sender].limit -= xpperlimit
     //global.db.data.users[m.sender].limit += count
@@ -28,7 +25,7 @@ m.reply(`✔️ Éxito
 📛 *Nombre:* ${user.name}
 📆 *minutos:* ${txt} minutos
 📉 *cuenta regresiva:* ${user.premiumTime - now}`)
-} else conn.reply(m.chat, `❎ Lo siento, no tienes suficientes *XP* para comprar *${count}* Diamantes💎`, m)
+} else conn.reply(m.chat, `❎ Lo siento, no tienes suficientes Diamantes💎`, m)
 }  
 handler.help = ['prem [@user] <days>']
 handler.command = ['prem', 'buypremall'] 
