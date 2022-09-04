@@ -1,4 +1,4 @@
-const xpperlimit = 330
+/*const xpperlimit = 330
 let handler = async (m, { conn, command, args, usedPrefix }) => {
   let count = command.replace(/^buy2/i, '')
   count = count ? /all/i.test(count) ? Math.floor(global.db.data.users[m.sender].money / xpperlimit) : parseInt(count) : args[0] ? parseInt(args[0]) : 1
@@ -31,4 +31,4 @@ handler.command = ['buy2', 'buyall2']
 
 handler.disabled = false
 
-export default handler
+export default handler*/

@@ -1,6 +1,6 @@
-const xpperlimit = 300
+/*const xpperlimit = 300
 let handler = async (m, { conn, command, args, usedPrefix }) => {
-  let count = command.replace(/^buy/i, '')
+  let count = command.replace(/^buyy/i, '')
   count = count ? /all/i.test(count) ? Math.floor(global.db.data.users[m.sender].exp / xpperlimit) : parseInt(count) : args[0] ? parseInt(args[0]) : 1
   count = Math.max(1, count)
   if (global.db.data.users[m.sender].exp >= xpperlimit * count) {
@@ -27,8 +27,8 @@ await conn.sendHydrated(m.chat, gata, wm, null, md, '𝙵𝚞𝚝𝚊𝚋𝚞�
 }
 handler.help = ['Buy', 'Buyall']
 handler.tags = ['xp']
-handler.command = ['buy', 'buyall'] 
+handler.command = ['buyy', 'buyyall'] 
 
 handler.disabled = false
 
-export default handler
+export default handler*/

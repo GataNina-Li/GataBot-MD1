@@ -21,7 +21,7 @@ say('Futabu\nBot\nMD', {
   align: 'center',
   gradient: ['red', 'magenta']
 })
-say(`Por Colapsus/Benja`, {
+say(`Por Colapsus o Benja`, {
   font: 'console',
   align: 'center',
   gradient: ['red', 'magenta']

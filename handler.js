@@ -3,10 +3,10 @@ import { format } from 'util'
 import { fileURLToPath } from 'url'
 import path, { join } from 'path'
 import { unwatchFile, watchFile } from 'fs'
-import chalk from 'chalk'
+import chalk from 'chalk' 
 
 /**
- * @type {import('@adiwajshing/baileys')} 
+ * @type {import('@adiwajshing/baileys')}  
  */
 const { proto } = (await import('@adiwajshing/baileys')).default
 const isNumber = x => typeof x === 'number' && !isNaN(x)
@@ -164,6 +164,9 @@ export async function handler(chatUpdate) {
               if (!isNumber(user.exp)) user.exp = 0
               if (!isNumber(user.expg)) user.expg = 0
               if (!isNumber(user.exphero)) user.exphero = 0
+	      if (!isNumber(user.eleksirb)) user.eleksirb = 0
+	      if (!isNumber(user.emasbatang)) user.emasbatang = 0
+	      if (!isNumber(user.emasbiasa)) user.emasbiasa = 0
               if (!isNumber(user.fishingrod)) user.fishingrod = 0
               if (!isNumber(user.fishingroddurability)) user.fishingroddurability = 0
               if (!isNumber(user.fortress)) user.fortress = 0
@@ -450,7 +453,7 @@ export async function handler(chatUpdate) {
               if (!isNumber(user.udang)) user.udang = 0
               if (!isNumber(user.udangbakar)) user.udangbakar = 0
               if (!isNumber(user.umpan)) user.umpan = 0
-              if (!isNumber(user.uncommon)) user.uncommon = 0
+              if (!isNumber(user.uncoommon)) user.uncoommon = 0
               if (!isNumber(user.unreglast)) user.unreglast = 0
               if (!isNumber(user.upgrader)) user.upgrader = 0
               if (!isNumber(user.vodka)) user.vodka = 0
@@ -567,6 +570,9 @@ export async function handler(chatUpdate) {
                     expg: 0,
                     exphero: 0,
                     expired: 0,
+		    eleksirb: 0,
+		    emasbatang: 0,
+		    emasbiasa: 0,
                     fishingrod: 0,
                     fishingroddurability: 0,
                     fortress: 0,
@@ -852,7 +858,7 @@ export async function handler(chatUpdate) {
                     udang: 0,
                     udangbakar: 0,
                     umpan: 0,
-                    uncommon: 0,
+                    uncoommon: 0,
                     unreglast: 0,
                     upgrader: 0,
                     vodka: 0,
@@ -885,9 +891,10 @@ export async function handler(chatUpdate) {
                 if (!('audios' in chat)) chat.audios = false                     
 		if (!('antiver' in chat)) chat.antiver = true                    
                 if (!('antiLink' in chat)) chat.antiLink = false                    
-                if (!('antiLink2' in chat)) chat.antiLink2 = false                    
+                if (!('antiLink2' in chat)) chat.antiLink2 = false
+		if (!('reaction' in chat)) chat.reaction = true    
                 if (!('viewonce' in chat)) chat.viewonce = false                    
-                if (!('antiToxic' in chat)) chat.antiToxic = false                    
+                if (!('antitoxic' in chat)) chat.antitoxic = true                    
                 if (!isNumber(chat.expired)) chat.expired = 0
                     
             } else
@@ -907,8 +914,9 @@ export async function handler(chatUpdate) {
 		    antiver: true,
                     antiLink: false,
                     antiLink2: false,
+		    reaction: true,
                     viewonce: false,
-                    antiToxic: false,
+                    antitoxic: true,
                     expired: 0,
                 }
             let settings = global.db.data.settings[this.user.jid]
@@ -918,11 +926,13 @@ export async function handler(chatUpdate) {
                 if (!('autoread' in settings)) settings.autoread = false
                 if (!('restrict' in settings)) settings.restrict = false
 		if (!('temporal' in settings)) settings.temporal = false
+		if (!('antiCall' in settings)) settings.antiCall = false
             } else global.db.data.settings[this.user.jid] = {
                 self: false,
                 autoread: false,
                 restrict: false,
-		temporal: false
+		temporal: false,
+		antiCall: false
             }
         } catch (e) {
             console.error(e)
@@ -1118,7 +1128,7 @@ export async function handler(chatUpdate) {
                 else
                     m.exp += xp
                 if (!isPrems && plugin.limit && global.db.data.users[m.sender].limit < plugin.limit * 1) {
-                    this.reply(m.chat, `${ag}𝙉𝙊 𝙏𝙄𝙀𝙉𝙀 𝘿𝙄𝘼𝙈𝘼𝙉𝙏𝙀𝙎. 💎 𝙋𝙐𝙀𝘿𝙀 𝘾𝙊𝙈𝙋𝙍𝘼𝙍 𝘾𝙊𝙉 𝙀𝙇 𝘾𝙊𝙈𝘼𝙉𝘿𝙊 *${usedPrefix}buy cantidad*\n\n𝙄𝙏 𝙃𝘼𝙎 𝙉𝙊 𝘿𝙄𝘼𝙈𝙊𝙉𝘿𝙎. 💎 𝙔𝙊𝙐 𝘾𝘼𝙉 𝘽𝙐𝙔 𝙒𝙄𝙏𝙃 𝙏𝙃𝙀 𝘾𝙊𝙈𝙈𝘼𝙉𝘿 *${usedPrefix}buy cantidad*`, m)
+                    this.reply(m.chat, `${ag}𝙉𝙊 𝙏𝙄𝙀𝙉𝙀 𝘿𝙄𝘼𝙈𝘼𝙉𝙏𝙀𝙎. 💎 𝙋𝙐𝙀𝘿𝙀 𝘾𝙊𝙈𝙋𝙍𝘼𝙍 𝘾𝙊𝙉 𝙀𝙇 𝘾𝙊𝙈𝘼𝙉𝘿𝙊 *${usedPrefix}buy*\n\n𝙄𝙏 𝙃𝘼𝙎 𝙉𝙊 𝘿𝙄𝘼𝙈𝙊𝙉𝘿𝙎. 💎 𝙔𝙊𝙐 𝘾𝘼𝙉 𝘽𝙐𝙔 𝙒𝙄𝙏𝙃 𝙏𝙃𝙀 𝘾𝙊𝙈𝙈𝘼𝙉𝘿 *${usedPrefix}buy*`, m)
                     continue // Limit habis
                 }
                 if (plugin.level > _user.level) {
@@ -1237,8 +1247,9 @@ export async function handler(chatUpdate) {
             //await this.chatRead(m.chat, m.isGroup ? m.sender : undefined, m.id || m.key.id).catch(() => { })
 		
 	await this.readMessages([m.key])
-        
-        if (!m.fromMem && m.text.match(/(Hola|como|cuando|donde|porque|hi|fine|good|god|suerte|amor|odio|triste|gata|cat|bot|bye|chao|saludo|siempre|veces|.-.|._.|:)|:(|:v|v:|o.o|;v|v;|v':|:'v)/gi)) {
+	    
+        if (!db.data.chats[m.chat].reaction && m.isGroup) throw 0
+        if (!m.fromMem && m.text.match(/(has|ato|ido|ura|des|able|sub|izo|ita|con|.-.|._.|:)|:(|:v|v:|o.o|;v|v;|v':|:'v)/gi)) {
         let emot = pickRandom(["😺", "😸", "😹", "😻", "😼", "😽", "🙀", "😿", "😾", "🤩", "🥰", "😘", "😊", "🥳", "😏", "😳", "🥵", "🤯", "😱", "😨", "🤫", "🥴", "🤧", "🤑", "🤠", "🤖", "👾", "🎃", "👻", "🤡", "🤝", "💪", "👑", "😚", "🐱", "🐈", "🐆", "🐅", "💫", "⭐️", "🌟", "✨", "⚡️", "🌈", "☃️", "⛄️", "🌝", "🌛", "🌜", "🍓", "🍎", "🍭", "🍩", "🍫", "🍧", "🚀", "🚅", "🚄", "🎈", "🪄", "❤️", "🧡", "💛", "💚", "💙", "💜", "🖤", "🤍", "🤎", "💔", "❣️", "💕", "💞", "💓", "💗", "💖", "💘", "💝", "💟", "🌝", "😎", "👻", "🔥", "🖕", "🐦"])
         this.sendMessage(m.chat, { react: { text: emot, key: m.key }})}
         function pickRandom(list) { return list[Math.floor(Math.random() * list.length)]}
@@ -1266,9 +1277,9 @@ export async function participantsUpdate({ id, participants, action }) {
             if (chat.welcome) {
                 let groupMetadata = await this.groupMetadata(id) || (conn.chats[id] || {}).metadata
                 for (let user of participants) {
-                    let pp = './src/sinfoto.jpg'
+                    //let pp = './src/sinfoto.jpg'
                     try {
-                        pp = await this.profilePictureUrl(user, 'image')
+                        null = await this.profilePictureUrl(user, 'image')
                     } catch (e) {
                     } finally {
                         text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || '*𝙂𝙧𝙪𝙥𝙤 𝙂𝙚𝙣𝙞𝙖𝙡 | 𝘾𝙤𝙤𝙡 𝙂𝙧𝙤𝙪𝙥 😼*') :
@@ -1319,33 +1330,41 @@ export async function groupsUpdate(groupsUpdate) {
     }
 }
 
+export async function callUpdate(callUpdate) {
+    let isAnticall = global.db.data.settings[this.user.jid].antiCall  
+    if (!isAnticall) return
+    for (let nk of callUpdate) { 
+    if (nk.isGroup == false) {
+    if (nk.status == "offer") {
+    let callmsg = await this.reply(nk.from, `𝙃𝙊𝙇𝘼 *@${nk.from.split('@')[0]}*, 𝙇𝘼𝙎 ${nk.isVideo ? '📲 𝙑𝙄𝘿𝙀𝙊𝙇𝙇𝘼𝙈𝘼𝘿𝘼𝙎' : '📞 𝙇𝙇𝘼𝙈𝘼𝘿𝘼𝙎'} 𝙉𝙊 𝙀𝙎𝙏𝘼𝙉 𝘼𝙐𝙏𝙊𝙍𝙄𝙕𝘼𝘿𝘼𝙎 𝙋𝙊𝙍 𝙇𝙊 𝙌𝙐𝙀 𝙏𝙀𝙉𝘿𝙍𝙀 𝙌𝙐𝙀 𝘽𝙇𝙊𝙌𝙐𝙀𝘼𝙍𝙏𝙀\n\n𝙎𝙄 𝙇𝙇𝘼𝙈𝘼𝙎𝙏𝙀 𝙋𝙊𝙍 𝘼𝘾𝘾𝙄𝘿𝙀𝙉𝙏𝙀 𝘾𝙊𝙈𝙐𝙉𝙄𝘾𝘼𝙏𝙀 𝘾𝙊𝙉 𝙇𝘼 𝙋𝙀𝙍𝙎𝙊𝙉𝘼 𝙋𝙍𝙊𝙋𝙄𝙀𝙏𝘼𝙍𝙄𝙊/𝘼 𝘿𝙀 𝙀𝙎𝙏𝙀 𝘽𝙊𝙏\n𝙎𝙄 𝙀𝙎 𝙐𝙉𝘼 𝘾𝙐𝙀𝙉𝙏𝘼 𝙊𝙁𝙄𝘾𝙄𝘼𝙇 𝘿𝙀 𝙂𝘼𝙏𝘼𝘽𝙊𝙏 𝘿𝙄𝙍𝙄𝙂𝙀𝙏𝙀 𝘼 𝙇𝘼 𝘼𝙎𝙄𝙎𝙏𝙀𝙉𝘾𝙄𝘼 𝙋𝙊𝙍 𝙄𝙉𝙎𝙏𝘼𝙂𝙍𝘼𝙈 𝙋𝘼𝙍𝘼 𝙏𝙍𝘼𝙏𝘼𝙍 𝙎𝙐 𝘾𝘼𝙎𝙊\n*${ig}*\n\n𝙔𝙊𝙐 𝙃𝘼𝙑𝙀 ${nk.isVideo ? '📲 𝙈𝘼𝘿𝙀 𝙑𝙄𝘿𝙀𝙊 𝘾𝘼𝙇𝙇' : '📞 𝘾𝘼𝙇𝙇𝙀𝘿'} 𝙉𝙊𝙏 𝘼𝙇𝙇𝙊𝙒𝙀𝘿, 𝙎𝙊 𝙄'𝙈 𝙂𝙊𝙄𝙉𝙂 𝙏𝙊 𝘽𝙇𝙊𝘾𝙆 𝙄𝙏\n\n𝙄𝙁 𝙔𝙊𝙐 𝘾𝘼𝙇𝙇𝙀𝘿 𝘽𝙀𝘾𝘼𝙐𝙎𝙀 𝙊𝙁 𝘼𝙉 𝘼𝘾𝘾𝙄𝘿𝙀𝙉𝙏, 𝘾𝙊𝙉𝙏𝘼𝘾𝙏 𝙏𝙃𝙀 𝙋𝙀𝙍𝙎𝙊𝙉 𝙒𝙃𝙊 𝙈𝘼𝙉𝘼𝙂𝙀𝙎 𝙏𝙃𝙀 𝘽𝙊𝙏\n𝙄𝙁 𝙄𝙏 𝙄𝙎 𝘼𝙉 𝙊𝙁𝙁𝙄𝘾𝙄𝘼𝙇 𝙂𝘼𝙏𝘼𝘽𝙊𝙏 𝘼𝘾𝘾𝙊𝙐𝙉𝙏, 𝘾𝙊𝙉𝙏𝘼𝘾𝙏 𝙐𝙎 𝙊𝙉 𝙄𝙉𝙎𝙏𝘼𝙂𝙍𝘼𝙈\n*${ig}*`, false, { mentions: [nk.from] })
+    //let data = global.owner.filter(([id, isCreator]) => id && isCreator)
+    //await this.sendContact(nk.from, data.map(([id, name]) => [id, name]), false, { quoted: callmsg })
+    await this.updateBlockStatus(nk.from, 'block')
+    }}}}
+
 export async function deleteUpdate(message) {
-    try {
-        const { fromMe, id, participant } = message
-        if (fromMe)
-            return
-        let msg = this.serializeM(this.loadMessage(id))
-        if (!msg)
-            return
-        let chat = global.db.data.chats[msg.chat] || {}
-        if (chat.delete)
-            return
-        await this.reply(msg.chat, `
-━━━━⬣  𝘼𝙉𝙏𝙄 𝘿𝙀𝙇𝙀𝙏𝙀  ⬣━━━━
-*■ Nombre:* @${participant.split`@`[0]}
-*■ Enviando el mensaje..*
-*■ Para desactivar esta función escriba el comando:*
-*—◉ #disable antidelete*
-*—◉ #enable delete*
-━━━━⬣  𝘼𝙉𝙏𝙄 𝘿𝙀𝙇𝙀𝙏𝙀  ⬣━━━━
-`.trim(), msg, {
-            mentions: [participant]
-        })
-        this.copyNForward(msg.chat, msg).catch(e => console.log(e, msg))
-    } catch (e) {
-        console.error(e)
-    }
-}
+try {
+const { fromMe, id, participant } = message
+if (fromMe)
+return
+let msg = this.serializeM(this.loadMessage(id))
+if (!msg)
+return
+let chat = global.db.data.chats[msg.chat] || {}
+if (chat.delete)
+return 
+await this.reply(msg.chat, `
+*╭━━⬣  𝘼𝙉𝙏𝙄 𝙀𝙇𝙄𝙈𝙄𝙉𝘼𝙍  ⬣━━ 𓃠*
+*┃✤ Nombre:* @${participant.split`@`[0]}
+*┃✤ Enviando el mensaje eliminado...*
+*┃✤ Sending the deleted message...*
+*╰━━━⬣  𝘼𝙉𝙏𝙄 𝘿𝙀𝙇𝙀𝙏𝙀  ⬣━━━━╯*
+`.trim(), msg, { mentions: [participant] })
+	    
+this.copyNForward(msg.chat, msg).catch(e => console.log(e, msg))
+} catch (e) {
+console.error(e)
+}}
 
 global.dfail = (type, m, conn) => {
     let msg = {

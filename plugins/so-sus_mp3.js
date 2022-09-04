@@ -12,6 +12,6 @@ type: 'audioMessage',
 ptt: true 
 })
 }
-handler.customPrefix = /among us|Among us|Among/i 
+handler.customPrefix = /|Amongos|among us|Among us|Among/i 
 handler.command = new RegExp
 export default handler

@@ -1,4 +1,4 @@
-const diamantetk = 15
+/*const diamantetk = 15
 let handler = async (m, { conn, command, args, usedPrefix }) => {
   let count = command.replace(/^buy3|token|tokens/i, '')
   count = count ? /all/i.test(count) ? Math.floor(global.db.data.users[m.sender].limit / diamantetk) : parseInt(count) : args[0] ? parseInt(args[0]) : 1
@@ -30,4 +30,4 @@ handler.command = ['buy3', 'buyall3', 'token', 'tokens']
 
 handler.disabled = false
 
-export default handler
+export default handler*/

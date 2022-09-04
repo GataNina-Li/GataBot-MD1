@@ -1,10 +1,10 @@
 import { xpRange } from '../lib/levelling.js'
 import PhoneNumber from 'awesome-phonenumber'
 import { promises } from 'fs'
-import { join } from 'path'
+import { join } from 'path' 
 let handler = async (m, { conn, usedPrefix, command, args, usedPrefix: _p, __dirname, isOwner, text, isAdmin, isROwner }) => {
-if (!db.data.chats[m.chat].modohorny && m.isGroup) throw `${ag}𝙇𝙊𝙎 𝘾𝙊𝙈𝘼𝙉𝘿𝙊𝙎 +18 𝙀𝙎𝙏𝘼𝙉 𝘿𝙀𝙎𝘼𝘾𝙏𝙄𝙑𝘼𝘿𝙊𝙎 𝙐𝙎𝙀 #𝙤𝙣 𝙢𝙤𝙙𝙤𝙝𝙤𝙧𝙣𝙮 𝙋𝘼𝙍𝘼 𝘼𝘾𝙏𝙄𝙑𝘼𝙍\n\n+18 𝘾𝙊𝙈𝙈𝘼𝙉𝘿𝙎 𝘼𝙍𝙀 𝘿𝙄𝙎𝘼𝘽𝙇𝙀𝘿 𝙐𝙎𝙀 #𝙤𝙣 𝙢𝙤𝙙𝙤𝙝𝙤𝙧𝙣𝙮 𝙏𝙊 𝙀𝙉𝘼𝘽𝙇𝙀`
-
+  
+  
 const { levelling } = '../lib/levelling.js'
 //let handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text }) => {
 
@@ -74,17 +74,17 @@ rows: [
 {title: "🔍 𝘽𝙪𝙨𝙘𝙖𝙧 𝙥𝙤𝙧 𝙒𝙞𝙠𝙞𝙥𝙚𝙙𝙞𝙖 | 𝙎𝙚𝙖𝙧𝙘𝙝 𝙗𝙮 𝙒𝙞𝙠𝙞𝙥𝙚𝙙𝙞𝙖 🔍", description: "𝙀𝙉𝘾𝙐𝙀𝙉𝙏𝙍𝘼 𝙄𝙉𝙁𝙊𝙍𝙈𝘼𝘾𝙄𝙊𝙉 𝙀𝙉 𝙒𝙄𝙆𝙄𝙋𝙀𝘿𝙄𝘼\n𝙁𝙄𝙉𝘿 𝙄𝙉𝙁𝙊𝙍𝙈𝘼𝙏𝙄𝙊𝙉 𝙊𝙉 𝙒𝙄𝙆𝙄𝙋𝙀𝘿𝙄𝘼", rowId: `${usedPrefix}wiki`},      
 ]}, ]*/
 //let name = await conn.getName(m.sender)
-//let pp = './src/+18.jpg'
+let pp = './media/menus/Menuvid1.mp4'
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 let mentionedJid = [who]
 let username = conn.getName(who)
 //let user = global.db.data.users[m.sender]
 //user.registered = false
-
+//menu de ephotho360
 let menu = `
 💗 *¡HOLA | HI!* ${username}
 ╭━〔 *${wm}* 〕━⬣
-┃😏😏😏😏😏😏😏😏😏
+┃⛲⛲⛲⛲⛲⛲⛲⛲⛲⛲
 ┃✪ *EXPERIENCIA | EXP ➺ ${exp}*
 ┃✪ *NIVEL | LEVEL ➺ ${level}*
 ┃✪ *ROL ➺* ${role}
@@ -93,44 +93,37 @@ let menu = `
 ┃✪ *FECHA*
 ┃➺ *${week}, ${date}*
 ┃✪ *USUARIOS | USERS ➺ ${Object.keys(global.db.data.users).length}* 
-┃😏😏😏😏😏😏😏😏😏
+┃⛲⛲⛲⛲⛲⛲⛲⛲⛲⛲
 ╰━━━━〔 𓃠 *${vs}* 〕━━━━⬣
-
-╭━━━〔 𝙈𝙀𝙉𝙐 *+18* 〕━━━⬣
-┃🔞➺ _${usedPrefix}booty_
-┃🔞➺ _${usedPrefix}boyonfutanari | PRONTO!_
-┃🔞➺ _${usedPrefix}girlonfutanari | PRONTO!_
-┃🔞➺ _${usedPrefix}hentai_
-┃🔞➺ _${usedPrefix}pechos_
-┃🔞➺ _${usedPrefix}randomxxx_
-┃🔞➺ _${usedPrefix}trapito_
-┃🔞➺ _${usedPrefix}tetas_ 
+╭━〔 𝙈𝙀𝙉𝙐 𝙇𝙊𝙂𝙊 *2* 〕━━⬣
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ 🥵 𝘾𝙊𝙉𝙏𝙀𝙉𝙄𝘿𝙊 𝘿𝙄𝙉𝘼𝙈𝙄𝘾𝙊 🥵
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃»🥵 _${usedPrefix}futanari|futa|futasolo|futanarisolo|futanarisolo_
-┃»🥵 _${usedPrefix}videosfutanari | PRONTO!_
-┃»🥵 _${usedPrefix}videosfutanari2 | PRONTO!_
-┃»🥵 _${usedPrefix}videosfutanari3 | PRONTO!_
-┃»🥵 _${usedPrefix}videosfutanari4 | PRONTO!_
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ ❤️‍🔥 𝘽𝙐𝙎𝘾𝘼 𝙔 𝘿𝙀𝙎𝘾𝘼𝙍𝙂𝘼 ❤️‍🔥
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃❤️‍🔥➺ _${usedPrefix}xnxxsearch | buscarxnxx *texto*_
-┃❤️‍🔥➺ _${usedPrefix}xvideossearch *texto*_
-┃❤️‍🔥➺ _${usedPrefix}xnxxdl | xnxx *enlace*_
-┃❤️‍🔥➺ _${usedPrefix}xvideosdl | xvideos *enlace*_
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ 🔥 𝘾𝙊𝙉𝙏𝙀𝙉𝙄𝘿𝙊 𝙋𝙇𝙐𝙎 🔥
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ *Usar bajo su responsabilidad* 
-┃ *Vídeos +18 aleatorios*
-┃ *Puede tardar en enviar*
-┃ *Contenido de Calidad*
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃»🔥 _${usedPrefix}futanaripremium | PRONTO!_
+┃🌅 ${usedPrefix}logocorazon *Texto*
+┃🌅 ${usedPrefix}3dtext *Texto*
+┃🌅 ${usedPrefix}angels *Texto*
+┃🌅 ${usedPrefix}batshalloween *Texto*
+┃🌅 ${usedPrefix}bear2 *Texto*
+┃🌅 ${usedPrefix}boom *Texto*
+┃🌅 ${usedPrefix}graffiticartoon *Texto*
+┃🌅 ${usedPrefix}girlgamer *Texto*
+┃🌅 ${usedPrefix}firework *Texto*
+┃🌅 ${usedPrefix}gold *Texto*
+┃🌅 ${usedPrefix}handlove *Texto*
+┃🌅 ${usedPrefix}heartcup *Texto*
+┃🌅 ${usedPrefix}heartflashlight *Texto*
+┃🌅 ${usedPrefix}birthdaycake *Texto*
+┃🌅 ${usedPrefix}birthdaycake2 *Texto*
+┃🌅 ${usedPrefix}birthdaycake3 *Texto*
+┃🌅 ${usedPrefix}facebooksilverplay *Texto*
+┃🌅 ${usedPrefix}facebooksilverplay2 *Texto*
+┃🌅 ${usedPrefix}neonsantin *Texto*
+┃🌅 ${usedPrefix}womenday *Texto*
+┃🌅 ${usedPrefix}summerysand *Texto*
+┃🌅 ${usedPrefix}wetglass *Texto*
+┃🌅 ${usedPrefix}mylove *Texto*
+┃🌅 ${usedPrefix}pikachu *Texto*
+┃🌅 ${usedPrefix}logochristmas *Texto*
 ╰━━━━━━━━━━━━━━━━⬣`.trim()
-conn.sendHydrated(m.chat, menu, wm, null, 'https://github.com/GataNina-Li/GataBot-MD', '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
+conn.sendHydrated(m.chat, menu, wm, pp, 'https://github.com/GataNina-Li/GataBot-MD', '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
 ['𝙈𝙚𝙣𝙪́ 𝙘𝙤𝙢𝙥𝙡𝙚𝙩𝙤 | 𝙁𝙪𝙡𝙡 𝙈𝙚𝙣𝙪 💫', '.allmenu'],
 ['𝙄𝙣𝙫𝙚𝙣𝙩𝙖𝙧𝙞𝙤 | 𝙄𝙣𝙫𝙚𝙣𝙩𝙤𝙧𝙮 🎒', '/inventario'],
 ['𝙈𝙚𝙣𝙪 𝙋𝙧𝙞𝙣𝙘𝙞𝙥𝙖𝙡 | 𝙈𝙖𝙞𝙣 𝙢𝙚𝙣𝙪 ⚡', '#menu']
@@ -139,7 +132,7 @@ conn.sendHydrated(m.chat, menu, wm, null, 'https://github.com/GataNina-Li/GataBo
 
 handler.help = ['infomenu'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
-handler.command = /^(hornymenu)$/i
+handler.command = /^(menulogos2)$/i
 //handler.register = true
 handler.exp = 70
 export default handler

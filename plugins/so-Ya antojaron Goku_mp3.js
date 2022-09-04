@@ -12,6 +12,6 @@ type: 'audioMessage',
 ptt: true 
 })
 }
-handler.customPrefix = /Ya Antojaron|Goku pervertido|pervertido/i 
+handler.customPrefix = /Ya Antojaron|Antojaron|Antojen/i 
 handler.command = new RegExp
 export default handler

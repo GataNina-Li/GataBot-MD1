@@ -1,5 +1,8 @@
 const items = [
-    'limit', 'exp', 'money',
+    'limit', 'exp', 'money', 'potion', 'trash', 'wood',
+    'rock', 'string', 'petFood', 'emerald',
+    'diamond', 'gold', 'iron', 'common',
+    'uncoommon', 'mythic', 'legendary', 'pet',
 ]
 let confirmation = {} 
 async function handler(m, { conn, args, usedPrefix, command }) {
@@ -90,7 +93,7 @@ export default handler
 
 function special(type) {
     let b = type.toLowerCase()
-    let special = (['common', 'uncommon', 'mythic', 'legendary', 'pet'].includes(b) ? ' Crate' : '')
+    let special = (['common', 'uncoommon', 'mythic', 'legendary', 'pet'].includes(b) ? ' Crate' : '')
     return special
 }
 
