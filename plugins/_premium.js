@@ -1,6 +1,6 @@
 //let handler = m => m
 //export async function all(m) {
-export async function all(m, { conn, isAdmin, isBotAdmin, isOwner }) {
+export async function all(m, conn) {
 let user = global.db.data.users[m.sender]
 if (m.chat.endsWith('broadcast')) return
 if (user.premiumTime != 0 && user.premium) {
