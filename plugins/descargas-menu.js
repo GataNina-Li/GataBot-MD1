@@ -116,6 +116,7 @@ let menu = `
 ┃🚀➺ _${usedPrefix}play.2 *texto o link*_ 
 ┃🚀➺ _${usedPrefix}ytmp3 | yta *link*_
 ┃🚀➺ _${usedPrefix}ytmp4 | ytv *link*_
+┃🚀➺ _${usedPrefix}tw |twdl | twitter *link*_
 ┃🚀➺ _${usedPrefix}facebook | fb *link*_
 ┃🚀➺ _${usedPrefix}instagram *link video o imagen*_
 ┃🚀➺ _${usedPrefix}verig | igstalk *usuario(a)*_
