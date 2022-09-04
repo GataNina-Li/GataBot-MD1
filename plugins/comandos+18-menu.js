@@ -97,45 +97,22 @@ let menu = `
 ╰━━━━〔 𓃠 *${vs}* 〕━━━━⬣
 
 ╭━━━〔 𝙈𝙀𝙉𝙐 *+18* 〕━━━⬣
-┃🔞➺ _${usedPrefix}nsfwloli_
-┃🔞➺ _${usedPrefix}nsfwfoot_
-┃🔞➺ _${usedPrefix}nsfwass_
-┃🔞➺ _${usedPrefix}nsfwbdsm_
-┃🔞➺ _${usedPrefix}nsfwcum_
-┃🔞➺ _${usedPrefix}nsfwero_
-┃🔞➺ _${usedPrefix}nsfwfemdom_
-┃🔞➺ _${usedPrefix}nsfwfoot_
-┃🔞➺ _${usedPrefix}nsfwglss_
-┃🔞➺ _${usedPrefix}nsfworgy_
-┃🔞➺ _${usedPrefix}pies_
-┃🔞➺ _${usedPrefix}yuri_
-┃🔞➺ _${usedPrefix}yuri2_ 
-┃🔞➺ _${usedPrefix}yaoi_
-┃🔞➺ _${usedPrefix}yaoi2_
-┃🔞➺ _${usedPrefix}panties_ 
-┃🔞➺ _${usedPrefix}tetas_ 
 ┃🔞➺ _${usedPrefix}booty_
-┃🔞➺ _${usedPrefix}ecchi_
-┃🔞➺ _${usedPrefix}furro_
+┃🔞➺ _${usedPrefix}boyonfutanari | PRONTO!_
+┃🔞➺ _${usedPrefix}girlonfutanari | PRONTO!_
 ┃🔞➺ _${usedPrefix}hentai_
-┃🔞➺ _${usedPrefix}trapito_
-┃🔞➺ _${usedPrefix}imagenlesbians_
-┃🔞➺ _${usedPrefix}pene_
-┃🔞➺ _${usedPrefix}porno_
-┃🔞➺ _${usedPrefix}porno2_
-┃🔞➺ _${usedPrefix}randomxxx_
 ┃🔞➺ _${usedPrefix}pechos_
-┃🔞➺ _${usedPrefix}pack_
-┃🔞➺ _${usedPrefix}pack2_
-┃🔞➺ _${usedPrefix}pack3_
-┃🔞➺ _${usedPrefix}videoxxx_
+┃🔞➺ _${usedPrefix}randomxxx_
+┃🔞➺ _${usedPrefix}trapito_
+┃🔞➺ _${usedPrefix}tetas_ 
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃ 🥵 𝘾𝙊𝙉𝙏𝙀𝙉𝙄𝘿𝙊 𝘿𝙄𝙉𝘼𝙈𝙄𝘾𝙊 🥵
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃»🥵 _${usedPrefix}pornovideo | pornovid_
-┃»🥵 _${usedPrefix}pornovidgay | pornogayv_
-┃»🥵 _${usedPrefix}pornolesbivid | pornolesbiv_
-┃»🥵 _${usedPrefix}pornobisexualvid | pornobiv_
+┃»🥵 _${usedPrefix}futanari|futa|futasolo|futanarisolo|futanarisolo_
+┃»🥵 _${usedPrefix}videosfutanari | PRONTO!_
+┃»🥵 _${usedPrefix}videosfutanari2 | PRONTO!_
+┃»🥵 _${usedPrefix}videosfutanari3 | PRONTO!_
+┃»🥵 _${usedPrefix}videosfutanari4 | PRONTO!_
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃ ❤️‍🔥 𝘽𝙐𝙎𝘾𝘼 𝙔 𝘿𝙀𝙎𝘾𝘼𝙍𝙂𝘼 ❤️‍🔥
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
@@ -151,7 +128,7 @@ let menu = `
 ┃ *Puede tardar en enviar*
 ┃ *Contenido de Calidad*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃»🔥 _${usedPrefix}pornopremium_
+┃»🔥 _${usedPrefix}futanaripremium | PRONTO!_
 ╰━━━━━━━━━━━━━━━━⬣`.trim()
 conn.sendHydrated(m.chat, menu, wm, pp, 'https://github.com/GataNina-Li/GataBot-MD', '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
 ['𝙈𝙚𝙣𝙪́ 𝙘𝙤𝙢𝙥𝙡𝙚𝙩𝙤 | 𝙁𝙪𝙡𝙡 𝙈𝙚𝙣𝙪 💫', '.allmenu'],
