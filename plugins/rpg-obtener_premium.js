@@ -22,9 +22,9 @@ if (user.limit >= xpperlimit) {
     //global.db.data.users[m.sender].limit += count
     
 m.reply(`✔️ Éxito
-*Ha Gastado* :  -${xpperlimit * count} 𝙓𝙋
+*Ha Gastado* :  -${xpperlimit} 💎
 📛 *Nombre:* ${user.name}
-📆 *minutos:* ${txt} minutos
+📆 *minutos:* ${text} minutos
 📉 *cuenta regresiva:* ${user.premiumTime - now}`)
 } else conn.reply(m.chat, `❎ Lo siento, no tienes suficientes Diamantes💎`, m)
 }  
