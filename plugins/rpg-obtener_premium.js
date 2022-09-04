@@ -28,7 +28,7 @@ m.reply(`✔️ Éxito
 } else conn.reply(m.chat, `❎ Lo siento, no tienes suficientes Diamantes💎`, m)
 }  
 handler.help = ['prem [@user] <days>']
-handler.command = ['prem', 'buypremall'] 
+handler.command = ['obtenerprem'] 
 //handler.command = /^(add|tambah|\+)p(rem)?$/i
 handler.group = true
 
