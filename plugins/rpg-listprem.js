@@ -12,7 +12,7 @@ let handler = async (m, { conn, args }) => {
   await conn.sendButton(m.chat, `${htki} *PREMIUM* ${htka}
 ┌✦ *Mi tiempo premium:*
 ┊• *Nombre:* ${conn.getName(m.sender)}
-${prem ? `${clockString (premiumTime - new Date() * 1)}` : '┊• *Tiempo Premium:* Caducado 🚫'}
+${prem ? `${clockString (user.premiumTime - new Date() * 1)}` : '┊• *Tiempo Premium:* Caducado 🚫'}
 ┗━═┅═━––––––๑
 
 •·–––––––––––––––––––––·•
