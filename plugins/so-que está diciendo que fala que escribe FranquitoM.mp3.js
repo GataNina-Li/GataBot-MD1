@@ -12,6 +12,6 @@ type: 'audioMessage',
 ptt: true 
 })
 }
-handler.customPrefix = /que dice?|que dice|que escribe?|que escribe|que fala?|que fala|😐/i 
+handler.customPrefix = /que escribe?|que escribe|que fala?|que fala|😐/i 
 handler.command = new RegExp
 export default handler
