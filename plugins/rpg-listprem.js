@@ -1,4 +1,5 @@
 let handler = async (m, { conn, args }) => {
+  let usuario = global.db.data.users[m.sender].premiumTime
   let user = Object.entries(global.db.data.users).filter(user => user[1].premiumTime).map(([key, value]) => {
     return { ...value, jid: key }
   })
@@ -12,7 +13,7 @@ let handler = async (m, { conn, args }) => {
   await conn.sendButton(m.chat, `${htki} *PREMIUM* ${htka}
 ┌✦ *Mi tiempo premium:*
 ┊• *Nombre:* ${conn.getName(m.sender)}
-${prem ? `${clockString (user.premiumTime - new Date() * 1)}` : '┊• *Tiempo Premium:* Caducado 🚫'}
+${prem ? `${clockString (usuario - new Date() * 1)}` : '┊• *Tiempo Premium:* Caducado 🚫'}
 ┗━═┅═━––––––๑
 
 •·–––––––––––––––––––––·•
