@@ -83,7 +83,7 @@ let str =
 *┆💎 DIAMANTES ➟ ${limit}*
 *┆🐈 GATACOINS ➟ ${money}*
 *┆🪙 TOKENS ➟ ${joincount}*
-*┆🎟️ PREMIUM ➟* ${global.prem ? '✅' : '❌'}
+*┆🎟️ PREMIUM ➟* ${user.premiumTime > 0 ? '✅' : '❌'}
 *╰*┅┅┅┅┅┅┅┅┅┅┅┅┅ *✧*
 ${readMore}
 *╭━〔 INFORMACIÓN DE GATABOT 〕⬣*
