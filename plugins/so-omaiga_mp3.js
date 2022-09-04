@@ -12,6 +12,6 @@ type: 'audioMessage',
 ptt: true 
 })
 }
-handler.customPrefix = /OMAIGA|OMG|omg|omaiga|Omg|Omaiga|OMAIGA/ 
+handler.customPrefix = /OMAIGA|OMG/ 
 handler.command = new RegExp
 export default handler
