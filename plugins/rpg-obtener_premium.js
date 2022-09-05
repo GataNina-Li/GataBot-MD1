@@ -6,12 +6,12 @@ let user = global.db.data.users[m.sender]
     //else who = m.chat
     //let user = global.db.data.users[who]
     //if (!who) throw `tag or mention someone!`
-    let txt = text.replace('').trim()
-    if (!txt) throw `donde el numero de dias?`
-    if (txt < xpperlimit) throw `No hay diamantes`
+    //let txt = text.replace('').trim()
+    if (!text) throw `donde el numero de dias?`
+    if (text > xpperlimit) throw `No hay diamantes`
     user.limit -= xpperlimit
     //if (isNaN(txt)) return m.reply(`only number!\n\nexample:\n${usedPrefix + command} 7`)
-    var jumlahHari = 180000 * txt //86400000 son 24 horas
+    var jumlahHari = 180000 * text //86400000 son 24 horas
     var now = new Date() * 1
     if (now < user.premiumTime) user.premiumTime += jumlahHari
     else user.premiumTime = now + jumlahHari
@@ -20,7 +20,7 @@ let user = global.db.data.users[m.sender]
     m.reply(`✔️ Éxito
 *Ha Gastado* :  -${xpperlimit} 💎
 📛 *Nombre:* ${user.name}
-📆 *minutos:* ${txt} minutos
+📆 *minutos:* ${text} minutos
 📉 *cuenta regresiva:* ${user.premiumTime - now}`)
 }  
 handler.help = ['addprem [@user] <days>']
