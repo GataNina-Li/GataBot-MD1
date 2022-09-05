@@ -18,7 +18,7 @@ var jumlahHari = 180000 * txt //86400000 son 24 horas
     else user.premiumTime = now + jumlahHari
 user.premium = true
 
-if (user.limit >= xpperlimit) return 
+if (user.limit > xpperlimit) return 
 conn.reply(m.chat, `❎ Lo siento, no tienes suficientes Diamantes💎`, m)
 user.limit -= xpperlimit
     //global.db.data.users[m.sender].limit += count
