@@ -32,11 +32,14 @@ if (now < user.premiumTime) user.premiumTime += jumlahHari
 else user.premiumTime = now + jumlahHari
 user.premium = true
     
-m.reply(`✔️ Éxito
+conn.sendButton(m.chat,`✔️ Éxito
 *Ha Gastado* :  -${xpperlimit} 💎
 📛 *Nombre:* ${user.name}
 📆 *minutos:* ${text} minutos
-📉 *cuenta regresiva:* ${user.premiumTime - now}`)}
+📉 *cuenta regresiva:* ${user.premiumTime - now}`, wm, null, [
+[`𝘼𝙫𝙚𝙣𝙩𝙪𝙧𝙖𝙧 | 𝙑𝙚𝙣𝙩𝙪𝙧𝙚 🏕️`, `${usedPrefix}adventure`],
+[`𝘼𝙫𝙚𝙣𝙩𝙪𝙧𝙖𝙧 | 𝙑𝙚𝙣𝙩𝙪𝙧𝙚 🏕️`, `${usedPrefix}adventure`],
+[`𝘼𝙫𝙚𝙣𝙩𝙪𝙧𝙖𝙧 | 𝙑𝙚𝙣𝙩𝙪𝙧𝙚 🏕️`, `${usedPrefix}adventure`]], fkontak, m)}
 //break
 	
 if (command) {
@@ -74,7 +77,7 @@ break
 handler.help = ['addprem [@user] <days>']
 handler.tags = ['owner']
 //handler.command = /^([01]|add|tambah|\+)p(rem)?$/i
-handler.command = /^(comprar|premium|vip|prem|pass|pase)$/i
+handler.command = /^(comprar|premium|vip|prem|pass|pase|pre1|pre2|pre3|pre4|pre5|pre6|pre7|pre8)$/i
 handler.group = true
 handler.rowner = true
 
