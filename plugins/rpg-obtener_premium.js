@@ -16,11 +16,6 @@ const fkontak = {
 	
 let template = (args[0] || '').toLowerCase() 
 if (/comprar/i.test(command)) {
-//if (command == 'comprar') {
-//if (!args[0]) {
-//if (command) {
-//switch (template) {
-//case 'comprar':
 const gata = 1
 let user = global.db.data.users[m.sender]
     
@@ -29,7 +24,7 @@ if (isNaN(text)) return conn.reply(m.chat, `${mg}𝙎𝙊𝙇𝙊 𝙎𝙀 𝘼�
 if (user.limit < gata) return conn.reply(m.chat, `${ag}𝙉𝙊 𝙏𝙄𝙀𝙉𝙀 𝙎𝙐𝙁𝙄𝘾𝙄𝙀𝙉𝙏𝙀𝙎 *${rpgshop.emoticon('limit')}* 𝙋𝘼𝙍𝘼 𝘼𝘿𝙌𝙐𝙄𝙍𝙄𝙍 🎟️ 𝙋𝙍𝙀𝙈𝙄𝙐𝙈 𝘾𝙊𝙈𝙋𝙍𝙀 ${rpgshopp.emoticon('limit')} 𝙀𝙉 𝙇𝘼 𝙏𝙄𝙀𝙉𝘿𝘼 𝙐𝙎𝘼𝙉𝘿𝙊 𝙀𝙇 𝘾𝙊𝙈𝘼𝙉𝘿𝙊 *${usedPrefix}buy*`, fkontak, m)
 user.limit -= gata
     
-var tiempo = 180000 * text //180000 3min | 900000 15 min | 1800000 30 min | 3600000 1 h | 10800000 3h | 25200000 7h | 86400000 24h | 259200000 3d  
+var tiempo = 180000 * text //180000 3min | 900000 15min | 1800000 30min | 3600000 1h | 10800000 3h | 25200000 7h | 86400000 24h | 259200000 3d  
 var now = new Date() * 1
 if (now < user.premiumTime) user.premiumTime += tiempo
 else user.premiumTime = now + tiempo
@@ -41,9 +36,9 @@ await conn.sendButton(m.chat,`${eg}*╭┈┈┈┈┈◈ 🌟 ◈┈┈┈┈�
 *┃*
 *┃✨ 𝙉𝙊𝙈𝘽𝙍𝙀 : 𝙐𝙎𝙀𝙍 » ${user.name}*
 *┃💰 𝙋𝘼𝙂𝙊 : 𝙋𝘼𝙔𝙈𝙀𝙉𝙏 »  -${gata} ${rpgshopp.emoticon('limit')}*
-*┃🕐 𝙏𝙄𝙀𝙈𝙋𝙊 : 𝙏𝙄𝙈𝙀 » ${text} min*
-*┃📉 𝙁𝙄𝙉𝘼𝙇𝙄𝙕𝘼𝙍 : 𝙏𝙄𝙈𝙀𝙍 » ${user.premiumTime - now} seg*
-*╰┈┈┈┈┈◈ 🌟 ◈┈┈┈┈┈╯*`, `*Ahora tiene Premium por lo tanto no va tener límites.*\n\n*Now you have Premium so there will be no limits.*\n\n${wm}`, imgpre, [
+*┃🕐 𝙏𝙄𝙀𝙈𝙋𝙊 : 𝙏𝙄𝙈𝙀 » 3 min*
+*┃📉 𝙏𝙄𝙈𝙀𝙍 » ${user.premiumTime - now} seg*
+*╰┈┈┈┈┈◈ 🌟 ◈┈┈┈┈┈╯*`, `😻 *Ahora tiene Premium por lo tanto no va tener límites.*\n\n*Now you have Premium so there will be no limits.*\n\n${wm}`, imgpre, [
 [`🌟 𝗨𝗦𝗨𝗔𝗥𝗜𝗢𝗦 𝗣𝗥𝗘𝗠𝗜𝗨𝗠 🌟`, `${usedPrefix}listprem`],
 [`🏆 𝙏𝙊𝙋 𝙈𝙐𝙉𝘿𝙄𝘼𝙇 🏆`, `${usedPrefix}adventure`],
 [`😽 𝗗𝗜𝗦𝗙𝗥𝗨𝗧𝗔𝗥 𝗣𝗥𝗘𝗠𝗜𝗨𝗠 😽`, `${usedPrefix}allmenu`]], fkontak, m)}
@@ -81,13 +76,12 @@ const listMessage = {
   buttonText: `🎟️ 𝗣 𝗥 𝗘 𝗠 𝗜 𝗨 𝗠`,
   sections
 }
-
 await conn.sendMessage(m.chat, listMessage, {quoted: fkontak})
-break		
+break	
+		
 }}}
 handler.help = ['addprem [@user] <days>']
 handler.tags = ['owner']
-//handler.command = /^([01]|add|tambah|\+)p(rem)?$/i
 handler.command = /^(comprar|premium|vip|prem|pass|pase|pre1|pre2|pre3|pre4|pre5|pre6|pre7|pre8)$/i
 
 export default handler
