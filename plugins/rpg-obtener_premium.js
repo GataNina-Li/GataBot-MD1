@@ -27,7 +27,7 @@ case 'passprem':
 case 'passpremium':
 case 'pa':
 case 'pasepremium':
-case 'bienvenida': {    
+case 'bienvenida':   
 const sections = [
     {
 	title: comienzo + ' 🌟 𝙐𝙎𝙐𝘼𝙍𝙄𝙊𝙎 𝙋𝙍𝙀𝙈𝙄𝙐𝙈 ' + fin,
@@ -52,7 +52,7 @@ const listMessage = {
   buttonText: `🎟️ 𝗣 𝗥 𝗘 𝗠 𝗜 𝗨 𝗠`,
   sections
 }
-break
+
 const fkontak = {
 	"key": {
     "participants":"0@s.whatsapp.net",
@@ -67,10 +67,12 @@ const fkontak = {
 	},
 	"participant": "0@s.whatsapp.net"
 }
+
+break
 default:
 if (!/[01]/.test(command)) return await conn.sendMessage(m.chat, listMessage, {quoted: fkontak})
 throw false
-}}  
+}
 handler.help = ['addprem [@user] <days>']
 handler.tags = ['owner']
 //handler.command = /^([01]|add|tambah|\+)p(rem)?$/i
