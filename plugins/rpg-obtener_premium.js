@@ -19,80 +19,63 @@ m.reply(`✔️ Éxito
 📛 *Nombre:* ${user.name}
 📆 *minutos:* ${text} minutos
 📉 *cuenta regresiva:* ${user.premiumTime - now}`)
-}  
+
+let type = (args[0] || '').toLowerCase()    
+switch (type) {   
+case 'pasepremium':
+case 'passprem':
+case 'passpremium':
+case 'pa':
+case 'pasepremium':
+case 'bienvenida': {    
+const sections = [
+    {
+	title: comienzo + ' 🌟 𝙐𝙎𝙐𝘼𝙍𝙄𝙊𝙎 𝙋𝙍𝙀𝙈𝙄𝙐𝙈 ' + fin,
+	rows: [
+{title: "🎟️ 𝗣 𝗥 𝗘 𝗠 𝗜 𝗨 𝗠", rowId: usedPrefix + command + 'ok'},
+{title: "🎟️ 𝗣 𝗥 𝗘 𝗠 𝗜 𝗨 𝗠 2", rowId: usedPrefix + command + ' ok'},
+{title: "🎟️ 𝗣 𝗥 𝗘 𝗠 𝗜 𝗨 𝗠 3", rowId: usedPrefix + command + ' ok'},
+{title: "🎟️ 𝗣 𝗥 𝗘 𝗠 𝗜 𝗨 𝗠 4", rowId: usedPrefix + command + ' ok'}
+]
+},{
+	title: comienzo + ' 🌟 𝙐𝙎𝙐𝘼𝙍𝙄𝙊𝙎 𝙋𝙍𝙀𝙈𝙄𝙐𝙈 ' + fin,
+	rows: [
+{title: "🎟️ 𝗣 𝗥 𝗘 𝗠 𝗜 𝗨 𝗠", rowId: usedPrefix + command + ' ok'},
+{title: "🎟️ 𝗣 𝗥 𝗘 𝗠 𝗜 𝗨 𝗠 2", rowId: usedPrefix + ' ok'}
+]}
+]
+
+const listMessage = {
+  text: `${htki} *🎟️ PREMIUM 🎟️* ${htka}`,
+  footer: global.wm,
+  title: `𝙋𝙍𝙀𝙈𝙄𝙐𝙈 𝙄𝙉𝙁𝙊`,
+  buttonText: `🎟️ 𝗣 𝗥 𝗘 𝗠 𝗜 𝗨 𝗠`,
+  sections
+}
+break
+const fkontak = {
+	"key": {
+    "participants":"0@s.whatsapp.net",
+		"remoteJid": "status@broadcast",
+		"fromMe": false,
+		"id": "Halo"
+	},
+	"message": {
+		"contactMessage": {
+			"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
+		}
+	},
+	"participant": "0@s.whatsapp.net"
+}
+default:
+if (!/[01]/.test(command)) return await conn.sendMessage(m.chat, listMessage, {quoted: fkontak})
+throw false
+}}  
 handler.help = ['addprem [@user] <days>']
 handler.tags = ['owner']
-handler.command = /^(add|tambah|\+)p(rem)?$/i
-
+//handler.command = /^([01]|add|tambah|\+)p(rem)?$/i
+handler.command = /^([01]|addprem)$/i
 handler.group = true
 handler.rowner = true
 
 export default handler
-
-
-/*const xpperlimit = 3
-let handler = async (m, { conn, text, usedPrefix, command, args }) => {
-let user = global.db.data.users[m.sender]   
-
-
-//let count = command.replace(/^buy/i, '')
-//count = count ? /premall/i.test(count) ? Math.floor(global.db.data.users[m.sender].exp / xpperlimit) : parseInt(count) : args[0] ? parseInt(args[0]) : 1
-//count = Math.max(1, count)
-
-let txt = text.replace('').trim()  
-//let txt = text.replace('').trim()
-if (!txt) throw `donde el numero de dias?`
-if (isNaN(txt)) return m.reply(`único número!\n\nexample:\n${usedPrefix + command} 7`)
-if txt < xpperlimit throw `No hay diamantes`   
-var jumlahHari = 180000 * txt //86400000 son 24 horas
-    var now = new Date() * 1
-    if (now < user.premiumTime) user.premiumTime += jumlahHari
-    else user.premiumTime = now + jumlahHari
-user.premium = true
-
-if (user.limit > xpperlimit) return 
-conn.reply(m.chat, `❎ Lo siento, no tienes suficientes Diamantes💎`, m)
-user.limit -= xpperlimit
-    //global.db.data.users[m.sender].limit += count
-    
-m.reply(`✔️ Éxito
-*Ha Gastado* :  -${xpperlimit} 💎
-📛 *Nombre:* ${user.name}
-📆 *minutos:* ${txt} minutos
-📉 *cuenta regresiva:* ${user.premiumTime - now}`)
-}  
-handler.help = ['prem [@user] <days>']
-handler.command = ['obtenerprem', 'buyprem'] 
-//handler.command = /^(add|tambah|\+)p(rem)?$/i
-handler.group = true
-export default handler*/
-    
-    /*let who
-    if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : false
-    else who = m.chat
-    let user = global.db.data.users[who]
-    if (!who) throw `etiqueta o menciona a alguien!`
-    let txt = text.replace('@' + who.split`@`[0], '').trim()
-    if (!txt) throw `donde el numero de dias?`
-    if (isNaN(txt)) return m.reply(`único número!\n\nexample:\n${usedPrefix + command} @${m.sender.split`@`[0]} 7`)
-    var jumlahHari = 180000 * txt //86400000 son 24 horas 
-    var now = new Date() * 1
-    if (now < user.premiumTime) user.premiumTime += jumlahHari
-    else user.premiumTime = now + jumlahHari
-user.premium = true
-    m.reply(`✔️ Éxito
-┃ *Compra Efectuada* : +${count} 💎 
-┃ *Ha Gastado* :  -${xpperlimit * count} 𝙓𝙋
-
-📛 *Nombre:* ${user.name}
-📆 *minutos:* ${txt} minutos
-📉 *cuenta regresiva:* ${user.premiumTime - now}`)
-}
-handler.help = ['addprem [@user] <days>']
-handler.tags = ['owner']
-handler.command = /^(add|tambah|\+)p(rem)?$/i
-
-handler.group = true
-handler.rowner = true
-
-export default handler*/
