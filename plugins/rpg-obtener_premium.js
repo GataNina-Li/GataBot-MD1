@@ -1,7 +1,8 @@
 let handler = async (m, { conn, text, usedPrefix, command, args }) => {
-try {	
+	
 let template = (args[0] || '').toLowerCase()  
 if (!args[0]) {
+try {	
 const xpperlimit = text
 
 let user = global.db.data.users[m.sender]
@@ -83,6 +84,7 @@ await conn.sendMessage(m.chat, listMessage, {quoted: fkontak})
 break		
 } catch {
 throw fg
+}
 }}}
 handler.help = ['addprem [@user] <days>']
 handler.tags = ['owner']
