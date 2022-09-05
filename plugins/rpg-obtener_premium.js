@@ -17,6 +17,7 @@ const fkontak = {
 let template = (args[0] || '').toLowerCase()  
 //if (command == 'comprar') {
 //if (!args[0]) {
+if (command) {
 switch (template) {
 case 'comprar':
 const gata = 20
@@ -47,7 +48,7 @@ await conn.sendButton(m.chat,`${eg}*╭┈┈┈┈┈◈ 🌟 ◈┈┈┈┈�
 [`😽 𝗗𝗜𝗦𝗙𝗥𝗨𝗧𝗔𝗥 𝗣𝗥𝗘𝗠𝗜𝗨𝗠 😽`, `${usedPrefix}allmenu`]], fkontak, m)
 break
 	
-if (command) {
+//if (command) {
 //switch (template) {		
 case 'premium':
 case 'vip':
