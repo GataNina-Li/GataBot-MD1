@@ -4,7 +4,7 @@ let user = global.db.data.users[m.sender]
     //let who
     //if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : false
     //else who = m.chat
-    let user = global.db.data.users[who]
+    //let user = global.db.data.users[who]
     //if (!who) throw `tag or mention someone!`
     let txt = text.replace('').trim()
     if (!txt) throw `donde el numero de dias?`
