@@ -76,7 +76,8 @@ const fkontak = {
 
 
 //default:
-//if (!/[01]/.test(command)) return await conn.sendMessage(m.chat, listMessage, {quoted: fkontak})
+//if (!/[01]/.test(command))
+return await conn.sendMessage(m.chat, listMessage, {quoted: fkontak})
 //throw false
 break		
 }
