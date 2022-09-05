@@ -1,7 +1,7 @@
 let handler = async (m, { conn, text, usedPrefix, command, args }) => {
 	
 let template = (args[0] || '').toLowerCase()  
-if (args[0]) {
+if (command == 'comprar') {
 
 	
 //case 'addprem':
@@ -89,7 +89,7 @@ break
 handler.help = ['addprem [@user] <days>']
 handler.tags = ['owner']
 //handler.command = /^([01]|add|tambah|\+)p(rem)?$/i
-handler.command = /^(pre)$/i
+handler.command = /^(pass|comprar|)$/i
 handler.group = true
 handler.rowner = true
 
