@@ -84,7 +84,7 @@ const listMessage = {
 
 await conn.sendMessage(m.chat, listMessage, {quoted: fkontak})
 break		
-}}
+}}}
 handler.help = ['addprem [@user] <days>']
 handler.tags = ['owner']
 //handler.command = /^([01]|add|tambah|\+)p(rem)?$/i
