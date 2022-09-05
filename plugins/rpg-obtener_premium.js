@@ -24,7 +24,7 @@ m.reply(`✔️ Éxito
 📆 *minutos:* ${text} minutos
 📉 *cuenta regresiva:* ${user.premiumTime - now}`)
 } catch {
-            throw eror
+            throw fg
             }}
 
 
