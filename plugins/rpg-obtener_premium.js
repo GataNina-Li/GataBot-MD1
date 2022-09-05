@@ -2,11 +2,11 @@ let handler = async (m, { conn, text, usedPrefix, command, args }) => {
 	
 let template = (args[0] || '').toLowerCase()  
 if (args[0]) {
-switch (template) {
+
 	
-case 'addprem':
-	case 'addpremm':
-	case 'addpremmm':
+//case 'addprem':
+	//case 'addpremm':
+	//case 'addpremmm':
 const xpperlimit = text
 
 let user = global.db.data.users[m.sender]
@@ -26,9 +26,10 @@ m.reply(`✔️ Éxito
 *Ha Gastado* :  -${xpperlimit} 💎
 📛 *Nombre:* ${user.name}
 📆 *minutos:* ${text} minutos
-📉 *cuenta regresiva:* ${user.premiumTime - now}`)
-break
-		
+📉 *cuenta regresiva:* ${user.premiumTime - now}`)}
+//break
+	
+switch (template) {		
 case 'pasepremium':
 case 'passprem':
 case 'passpremium':
