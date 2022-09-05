@@ -14,9 +14,10 @@ const fkontak = {
 	"participant": "0@s.whatsapp.net"
 }
 	
-let template = (args[0] || '').toLowerCase()  
+let template = (args[0] || '').toLowerCase() 
+if (/comprar/i.test(command)) {
 //if (command == 'comprar') {
-if (!args[0]) {
+//if (!args[0]) {
 //if (command) {
 //switch (template) {
 //case 'comprar':
@@ -83,10 +84,10 @@ const listMessage = {
 
 await conn.sendMessage(m.chat, listMessage, {quoted: fkontak})
 break		
-}}}
+}}
 handler.help = ['addprem [@user] <days>']
 handler.tags = ['owner']
 //handler.command = /^([01]|add|tambah|\+)p(rem)?$/i
-handler.command = /^(premium|vip|prem|pass|pase|pre1|pre2|pre3|pre4|pre5|pre6|pre7|pre8)$/i
+handler.command = /^(comprar|premium|vip|prem|pass|pase|pre1|pre2|pre3|pre4|pre5|pre6|pre7|pre8)$/i
 
 export default handler
