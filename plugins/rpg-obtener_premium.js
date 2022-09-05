@@ -26,7 +26,7 @@ if (isNaN(text)) throw `${mg}*SOLO INGRESE EL NÚMERO*`
 if (user.limit < xpperlimit) throw `No hay diamantes`
 user.limit -= xpperlimit
     
-var jumlahHari = 180000 * text //86400000 son 24 horas
+var jumlahHari = 180000 * text //180000 3min | 900000 15 min | 1800000 30 min | 3600000 1 h | 10800000 3h | 25200000 7h | 86400000 24h | 259200000 3d  
 var now = new Date() * 1
 if (now < user.premiumTime) user.premiumTime += jumlahHari
 else user.premiumTime = now + jumlahHari
@@ -44,6 +44,8 @@ switch (template) {
 case 'premium':
 case 'vip':
 case 'prem':
+case 'pass':
+case 'pase':
 const sections = [{
 title: comienzo + ' 🌟 𝙐𝙎𝙐𝘼𝙍𝙄𝙊𝙎 𝙋𝙍𝙀𝙈𝙄𝙐𝙈 ' + fin,
 rows: [
@@ -72,7 +74,7 @@ break
 handler.help = ['addprem [@user] <days>']
 handler.tags = ['owner']
 //handler.command = /^([01]|add|tambah|\+)p(rem)?$/i
-handler.command = /^(comprar|premium|vip|prem)$/i
+handler.command = /^(comprar|premium|vip|prem|pass|pase)$/i
 handler.group = true
 handler.rowner = true
 
