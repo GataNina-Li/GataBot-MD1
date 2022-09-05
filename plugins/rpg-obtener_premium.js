@@ -76,7 +76,7 @@ const fkontak = {
 
 
 //default:
-//if (!/[01]/.test(command))
+if (!/pasprem/.test(command))
 return await conn.sendMessage(m.chat, listMessage, {quoted: fkontak})
 //throw false
 break		
@@ -87,7 +87,7 @@ throw fg
 handler.help = ['addprem [@user] <days>']
 handler.tags = ['owner']
 //handler.command = /^([01]|add|tambah|\+)p(rem)?$/i
-handler.command = /^(addprem)$/i
+handler.command = /^(pasprem|addprem)$/i
 handler.group = true
 handler.rowner = true
 
