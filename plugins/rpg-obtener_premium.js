@@ -22,7 +22,7 @@ m.reply(`✔️ Éxito
 
 
 let template = (args[0] || '').toLowerCase()  
-if (command) {
+if (!args[0]) {
 try {
 switch (template) {
 		
@@ -76,8 +76,8 @@ const fkontak = {
 
 
 //default:
-if (!/pasprem/.test(command))
-return await conn.sendMessage(m.chat, listMessage, {quoted: fkontak})
+//if (!/pasprem/.test(command))
+await conn.sendMessage(m.chat, listMessage, {quoted: fkontak})
 //throw false
 break		
 }
