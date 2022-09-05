@@ -87,7 +87,7 @@ break
 handler.help = ['addprem [@user] <days>']
 handler.tags = ['owner']
 //handler.command = /^([01]|add|tambah|\+)p(rem)?$/i
-handler.command = /^(pasprem|addprem)$/i
+handler.command = /^(pre)$/i
 handler.group = true
 handler.rowner = true
 
