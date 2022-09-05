@@ -25,9 +25,11 @@ switch (type) {
 case 'pasepremium':
 case 'passprem':
 case 'passpremium':
-case 'pa':
-case 'pasepremium':
-case 'bienvenida':   
+case 'premiumpase':
+case 'premiumpass':
+case 'vippass':   
+case 'pasevip':   
+case 'passvip':    
 const sections = [
     {
 	title: comienzo + ' 🌟 𝙐𝙎𝙐𝘼𝙍𝙄𝙊𝙎 𝙋𝙍𝙀𝙈𝙄𝙐𝙈 ' + fin,
