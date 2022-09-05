@@ -1,8 +1,12 @@
 let handler = async (m, { conn, text, usedPrefix, command, args }) => {
 	
 let template = (args[0] || '').toLowerCase()  
-if (!args[0]) {
-try {	
+if (command) {
+switch (template) {
+	
+case 'addprem':
+	case 'addpremm':
+	case 'addpremmm':
 const xpperlimit = text
 
 let user = global.db.data.users[m.sender]
@@ -23,14 +27,7 @@ m.reply(`✔️ Éxito
 📛 *Nombre:* ${user.name}
 📆 *minutos:* ${text} minutos
 📉 *cuenta regresiva:* ${user.premiumTime - now}`)
-} catch {
-            throw fg
-            }}
-
-
-if (command) {
-try {	
-switch (template) {
+break
 		
 case 'pasepremium':
 case 'passprem':
@@ -86,9 +83,6 @@ const fkontak = {
 await conn.sendMessage(m.chat, listMessage, {quoted: fkontak})
 //throw false
 break		
-} catch {
-throw fg
-}
 }}}
 handler.help = ['addprem [@user] <days>']
 handler.tags = ['owner']
