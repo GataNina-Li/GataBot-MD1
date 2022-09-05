@@ -17,6 +17,7 @@ const fkontak = {
 let template = (args[0] || '').toLowerCase()  
 //if (command == 'comprar') {
 //if (!args[0]) {
+switch (template) {
 case 'comprar':
 const gata = 20
 let user = global.db.data.users[m.sender]
@@ -47,7 +48,7 @@ await conn.sendButton(m.chat,`${eg}*╭┈┈┈┈┈◈ 🌟 ◈┈┈┈┈�
 break
 	
 if (command) {
-switch (template) {		
+//switch (template) {		
 case 'premium':
 case 'vip':
 case 'prem':
