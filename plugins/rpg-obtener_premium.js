@@ -20,8 +20,12 @@ m.reply(`✔️ Éxito
 📆 *minutos:* ${text} minutos
 📉 *cuenta regresiva:* ${user.premiumTime - now}`)
 
-let type = (args[0] || '').toLowerCase()    
-switch (type) {   
+
+let template = (args[0] || '').toLowerCase()  
+if (command) {
+try {
+switch (template) {
+		
 case 'pasepremium':
 case 'passprem':
 case 'passpremium':
@@ -70,16 +74,19 @@ const fkontak = {
 	"participant": "0@s.whatsapp.net"
 }
 
-break
-default:
-if (!/[01]/.test(command)) return await conn.sendMessage(m.chat, listMessage, {quoted: fkontak})
-throw false
+
+//default:
+//if (!/[01]/.test(command)) return await conn.sendMessage(m.chat, listMessage, {quoted: fkontak})
+//throw false
+break		
 }
-}
+} catch {
+throw fg
+}}}
 handler.help = ['addprem [@user] <days>']
 handler.tags = ['owner']
 //handler.command = /^([01]|add|tambah|\+)p(rem)?$/i
-handler.command = /^([01]|addprem)$/i
+handler.command = /^(addprem)$/i
 handler.group = true
 handler.rowner = true
 
