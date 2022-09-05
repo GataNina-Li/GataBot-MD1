@@ -1,7 +1,7 @@
 let handler = async (m, { conn, text, usedPrefix, command, args }) => {
 	
 let template = (args[0] || '').toLowerCase()  
-if (command) {
+if (args[0]) {
 switch (template) {
 	
 case 'addprem':
