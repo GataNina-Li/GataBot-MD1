@@ -1,5 +1,6 @@
 let handler = async (m, { conn, text, usedPrefix, command, args }) => {
-const xpperlimit = 3
+const xpperlimit = text
+
 let user = global.db.data.users[m.sender]
     
 if (!text) throw `donde el numero de dias?`
