@@ -10,7 +10,7 @@ let user = global.db.data.users[m.sender]
     if (!txt) throw `donde el numero de dias?`
     if (txt < xpperlimit) throw `No hay diamantes`
     user.limit -= xpperlimit
-    if (isNaN(txt)) return m.reply(`only number!\n\nexample:\n${usedPrefix + command} 7`)
+    //if (isNaN(txt)) return m.reply(`only number!\n\nexample:\n${usedPrefix + command} 7`)
     var jumlahHari = 180000 * txt //86400000 son 24 horas
     var now = new Date() * 1
     if (now < user.premiumTime) user.premiumTime += jumlahHari
