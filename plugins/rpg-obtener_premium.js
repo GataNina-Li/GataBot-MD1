@@ -73,6 +73,7 @@ default:
 if (!/[01]/.test(command)) return await conn.sendMessage(m.chat, listMessage, {quoted: fkontak})
 throw false
 }
+}
 handler.help = ['addprem [@user] <days>']
 handler.tags = ['owner']
 //handler.command = /^([01]|add|tambah|\+)p(rem)?$/i
