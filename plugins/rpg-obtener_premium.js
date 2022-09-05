@@ -22,10 +22,14 @@ m.reply(`✔️ Éxito
 *Ha Gastado* :  -${xpperlimit} 💎
 📛 *Nombre:* ${user.name}
 📆 *minutos:* ${text} minutos
-📉 *cuenta regresiva:* ${user.premiumTime - now}`)}
+📉 *cuenta regresiva:* ${user.premiumTime - now}`)
+} catch {
+            throw eror
+            }}
 
 
 if (command) {
+try {	
 switch (template) {
 		
 case 'pasepremium':
