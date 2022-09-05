@@ -1,12 +1,22 @@
 let handler = async (m, { conn, text, usedPrefix, command, args }) => {
+const fkontak = {
+	"key": {
+    "participants":"0@s.whatsapp.net",
+		"remoteJid": "status@broadcast",
+		"fromMe": false,
+		"id": "Halo"
+	},
+	"message": {
+		"contactMessage": {
+			"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
+		}
+	},
+	"participant": "0@s.whatsapp.net"
+}
 	
 let template = (args[0] || '').toLowerCase()  
-if (command == 'comprar') {
-
-	
-//case 'addprem':
-	//case 'addpremm':
-	//case 'addpremmm':
+//if (command == 'comprar') {
+if (!args[0]) {
 const xpperlimit = text
 
 let user = global.db.data.users[m.sender]
@@ -31,30 +41,22 @@ m.reply(`✔️ Éxito
 	
 if (command) {
 switch (template) {		
-case 'pasepremium':
-case 'passprem':
-case 'passpremium':
-case 'premiumpase':
-case 'premiumpass':
-case 'vippass':   
-case 'pasevip':   
-case 'passvip':    
-const sections = [
-    {
-	title: comienzo + ' 🌟 𝙐𝙎𝙐𝘼𝙍𝙄𝙊𝙎 𝙋𝙍𝙀𝙈𝙄𝙐𝙈 ' + fin,
-	rows: [
+case 'premium':
+case 'vip':
+case 'prem':
+const sections = [{
+title: comienzo + ' 🌟 𝙐𝙎𝙐𝘼𝙍𝙄𝙊𝙎 𝙋𝙍𝙀𝙈𝙄𝙐𝙈 ' + fin,
+rows: [
 {title: "🎟️ 𝗣 𝗥 𝗘 𝗠 𝗜 𝗨 𝗠", rowId: usedPrefix + command + 'ok'},
 {title: "🎟️ 𝗣 𝗥 𝗘 𝗠 𝗜 𝗨 𝗠 2", rowId: usedPrefix + command + ' ok'},
 {title: "🎟️ 𝗣 𝗥 𝗘 𝗠 𝗜 𝗨 𝗠 3", rowId: usedPrefix + command + ' ok'},
 {title: "🎟️ 𝗣 𝗥 𝗘 𝗠 𝗜 𝗨 𝗠 4", rowId: usedPrefix + command + ' ok'}
-]
-},{
-	title: comienzo + ' 🌟 𝙐𝙎𝙐𝘼𝙍𝙄𝙊𝙎 𝙋𝙍𝙀𝙈𝙄𝙐𝙈 ' + fin,
-	rows: [
+]},{
+title: comienzo + ' 🌟 𝙐𝙎𝙐𝘼𝙍𝙄𝙊𝙎 𝙋𝙍𝙀𝙈𝙄𝙐𝙈 ' + fin,
+rows: [
 {title: "🎟️ 𝗣 𝗥 𝗘 𝗠 𝗜 𝗨 𝗠", rowId: usedPrefix + command + ' ok'},
 {title: "🎟️ 𝗣 𝗥 𝗘 𝗠 𝗜 𝗨 𝗠 2", rowId: usedPrefix + ' ok'}
-]}
-]
+]}]
 
 const listMessage = {
   text: `${htki} *🎟️ PREMIUM 🎟️* ${htka}`,
@@ -64,32 +66,13 @@ const listMessage = {
   sections
 }
 
-const fkontak = {
-	"key": {
-    "participants":"0@s.whatsapp.net",
-		"remoteJid": "status@broadcast",
-		"fromMe": false,
-		"id": "Halo"
-	},
-	"message": {
-		"contactMessage": {
-			"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
-		}
-	},
-	"participant": "0@s.whatsapp.net"
-}
-
-
-//default:
-//if (!/pasprem/.test(command))
 await conn.sendMessage(m.chat, listMessage, {quoted: fkontak})
-//throw false
 break		
 }}}
 handler.help = ['addprem [@user] <days>']
 handler.tags = ['owner']
 //handler.command = /^([01]|add|tambah|\+)p(rem)?$/i
-handler.command = /^(pass|comprar|)$/i
+handler.command = /^(comprar|premium|vip|prem)$/i
 handler.group = true
 handler.rowner = true
 
