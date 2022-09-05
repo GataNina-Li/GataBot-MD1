@@ -1,23 +1,19 @@
-let handler = async (m, { conn, text, usedPrefix, command }) => {
+let handler = async (m, { conn, text, usedPrefix, command, args }) => {
 const xpperlimit = 3
 let user = global.db.data.users[m.sender]
-    //let who
-    //if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : false
-    //else who = m.chat
-    //let user = global.db.data.users[who]
-    //if (!who) throw `tag or mention someone!`
-    //let txt = text.replace('').trim()
-    if (!text) throw `donde el numero de dias?`
-    if (text > xpperlimit) throw `No hay diamantes`
-    user.limit -= xpperlimit
-    //if (isNaN(txt)) return m.reply(`only number!\n\nexample:\n${usedPrefix + command} 7`)
-    var jumlahHari = 180000 * text //86400000 son 24 horas
-    var now = new Date() * 1
-    if (now < user.premiumTime) user.premiumTime += jumlahHari
-    else user.premiumTime = now + jumlahHari
-    user.premium = true
     
-    m.reply(`✔️ Éxito
+if (!text) throw `donde el numero de dias?`
+if (isNaN(text)) throw `${mg}*SOLO INGRESE EL NÚMERO*`
+if (text < xpperlimit) throw `No hay diamantes`
+user.limit -= xpperlimit
+    
+var jumlahHari = 180000 * text //86400000 son 24 horas
+var now = new Date() * 1
+if (now < user.premiumTime) user.premiumTime += jumlahHari
+else user.premiumTime = now + jumlahHari
+user.premium = true
+    
+m.reply(`✔️ Éxito
 *Ha Gastado* :  -${xpperlimit} 💎
 📛 *Nombre:* ${user.name}
 📆 *minutos:* ${text} minutos
