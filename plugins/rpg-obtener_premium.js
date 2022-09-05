@@ -29,6 +29,7 @@ m.reply(`✔️ Éxito
 📉 *cuenta regresiva:* ${user.premiumTime - now}`)}
 //break
 	
+if (command) {
 switch (template) {		
 case 'pasepremium':
 case 'passprem':
