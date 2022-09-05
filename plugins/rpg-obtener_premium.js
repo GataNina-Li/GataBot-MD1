@@ -16,7 +16,8 @@ const fkontak = {
 	
 let template = (args[0] || '').toLowerCase()  
 //if (command == 'comprar') {
-if (!args[0]) {
+//if (!args[0]) {
+case 'comprar':
 const gata = 20
 let user = global.db.data.users[m.sender]
     
@@ -42,8 +43,8 @@ await conn.sendButton(m.chat,`${eg}*╭┈┈┈┈┈◈ 🌟 ◈┈┈┈┈�
 *╰┈┈┈┈┈◈ 🌟 ◈┈┈┈┈┈╯*`, `*Ahora tiene Premium por lo tanto no va tener límites.*\n\n*Now you have Premium so there will be no limits.*\n\n${wm}`, imgpre, [
 [`🌟 𝗨𝗦𝗨𝗔𝗥𝗜𝗢𝗦 𝗣𝗥𝗘𝗠𝗜𝗨𝗠 🌟`, `${usedPrefix}listprem`],
 [`🏆 𝙏𝙊𝙋 𝙈𝙐𝙉𝘿𝙄𝘼𝙇 🏆`, `${usedPrefix}adventure`],
-[`😽 𝗗𝗜𝗦𝗙𝗥𝗨𝗧𝗔𝗥 𝗣𝗥𝗘𝗠𝗜𝗨𝗠 😽`, `${usedPrefix}allmenu`]], fkontak, m)}
-//break
+[`😽 𝗗𝗜𝗦𝗙𝗥𝗨𝗧𝗔𝗥 𝗣𝗥𝗘𝗠𝗜𝗨𝗠 😽`, `${usedPrefix}allmenu`]], fkontak, m)
+break
 	
 if (command) {
 switch (template) {		
@@ -84,6 +85,6 @@ break
 handler.help = ['addprem [@user] <days>']
 handler.tags = ['owner']
 //handler.command = /^([01]|add|tambah|\+)p(rem)?$/i
-handler.command = /^(comprar|premium|vip|prem|pass|pase|pre1|pre2|pre3|pre4|pre5|pre6|pre7|pre8)$/i
+handler.command = /^(premium|vip|prem|pass|pase|pre1|pre2|pre3|pre4|pre5|pre6|pre7|pre8)$/i
 
 export default handler
