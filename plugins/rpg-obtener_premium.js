@@ -16,10 +16,10 @@ const fkontak = {
 	
 let template = (args[0] || '').toLowerCase()  
 //if (command == 'comprar') {
-//if (!args[0]) {
-if (command) {
-switch (template) {
-case 'comprar':
+if (!args[0]) {
+//if (command) {
+//switch (template) {
+//case 'comprar':
 const gata = 20
 let user = global.db.data.users[m.sender]
     
@@ -45,11 +45,11 @@ await conn.sendButton(m.chat,`${eg}*╭┈┈┈┈┈◈ 🌟 ◈┈┈┈┈�
 *╰┈┈┈┈┈◈ 🌟 ◈┈┈┈┈┈╯*`, `*Ahora tiene Premium por lo tanto no va tener límites.*\n\n*Now you have Premium so there will be no limits.*\n\n${wm}`, imgpre, [
 [`🌟 𝗨𝗦𝗨𝗔𝗥𝗜𝗢𝗦 𝗣𝗥𝗘𝗠𝗜𝗨𝗠 🌟`, `${usedPrefix}listprem`],
 [`🏆 𝙏𝙊𝙋 𝙈𝙐𝙉𝘿𝙄𝘼𝙇 🏆`, `${usedPrefix}adventure`],
-[`😽 𝗗𝗜𝗦𝗙𝗥𝗨𝗧𝗔𝗥 𝗣𝗥𝗘𝗠𝗜𝗨𝗠 😽`, `${usedPrefix}allmenu`]], fkontak, m)
-break
+[`😽 𝗗𝗜𝗦𝗙𝗥𝗨𝗧𝗔𝗥 𝗣𝗥𝗘𝗠𝗜𝗨𝗠 😽`, `${usedPrefix}allmenu`]], fkontak, m)}
+//break
 	
-//if (command) {
-//switch (template) {		
+if (command) {
+switch (template) {		
 case 'premium':
 case 'vip':
 case 'prem':
