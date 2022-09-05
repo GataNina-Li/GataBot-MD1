@@ -121,7 +121,7 @@ export async function handler(chatUpdate) {
               if (!isNumber(user.bawal)) user.bawal = 0
               if (!isNumber(user.bawalbakar)) user.bawalbakar = 0
               if (!isNumber(user.bayam)) user.bayam = 0
-              if (!isNumber(user.berlian)) user.berlian = 10000
+              if (!isNumber(user.berlian)) user.berlian = 10
               if (!isNumber(user.bibitanggur)) user.bibitanggur = 0
               if (!isNumber(user.bibitapel)) user.bibitapel = 0
               if (!isNumber(user.bibitjeruk)) user.bibitjeruk = 0
