@@ -5,12 +5,12 @@ let brainly = new Brainly('es')
 
 let handler = async (m, { conn, text }) => {
 	if (!text) throw 'Consulta de entrada'
-	let res = await brainly.search(text, 'id').catch(() => null)
+	let res = await brainly.search(text, 'es').catch(() => null)
 	console.log(res)
 	if (res) {
 		let answer = res.map(({ question, answers }, i) => `
-*Pertanyaan*${question.grade ? ` (${question.grade})` : ''}\n${question.content}${answers.map((v, i) => `
-*Jawaban Ke ${i + 1}*${v.verification ? ' (Verificado)' : ''}${v.isBest ? ' (Mejor)' : ''}
+*Pregunta*${question.grade ? ` (${question.grade})` : ''}\n${question.content}${answers.map((v, i) => `
+*Respuesta para ${i + 1}*${v.verification ? ' (Verificado)' : ''}${v.isBest ? ' (Mejor)' : ''}
 ${v.content}${v.attachments.length > 0 ? `\n*Media Url*: ${v.attachments.join(', ')}` : ''}`).join``}`).join('\n' + '-'.repeat(45))
 		m.reply(answer.trim())
 	} else {
