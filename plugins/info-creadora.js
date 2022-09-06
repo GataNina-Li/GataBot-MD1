@@ -33,7 +33,7 @@ await m.reply(`𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 💖🐈 Wa.me/593993684821
 //const data = global.owner.filter(([id, isCreator]) => id && isCreator)
 //await conn.sendContact(m.chat, data.map(([id, name]) => [id, name]), m)
   
-let pp = './media/menus/Menu2.jpg'
+//let pp = './media/menus/Menu2.jpg'
 let str = `${wm}`
 let oficial = 'Comunícate con Mí Creadora por Instagram!!, Solo por ese medio puede ayudarte sobre Temas de GataBot\n\nCommunicate with My Creator on Instagram!!, Only by that means can help you on GataBot Themes'
 
