@@ -1,4 +1,19 @@
 let handler = async(m, { conn, usedPrefix, command, text }) => {
+const fkontak = {
+	"key": {
+    "participants":"0@s.whatsapp.net",
+		"remoteJid": "status@broadcast",
+		"fromMe": false,
+		"id": "Halo"
+	},
+	"message": {
+		"contactMessage": {
+			"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
+		}
+	},
+	"participant": "0@s.whatsapp.net"
+}
+
   let enc = {
     "a": "•-",
     "b": "-•••",
@@ -99,36 +114,33 @@ let handler = async(m, { conn, usedPrefix, command, text }) => {
     "/": " "
   }
 
-  let selected = text.toLowerCase().split(" ")[0] + " "
-  if(selected == "codificar ") {
-    let str = text.replace(selected, "").toLowerCase()
-    let Output_Morse = ""
-    for(let i of str) {
-      if(!enc[i]) Output_Morse += i
-      for(let j in enc) {
-        if(j == i) Output_Morse += enc[i] + " "
-      }
-    }
+let selected = text.toLowerCase().split(" ")[0] + " "
+if(selected == "codificar ") {
+let str = text.replace(selected, "").toLowerCase()
+let Output_Morse = ""
+for(let i of str) {
+if(!enc[i]) Output_Morse += i
+for(let j in enc) {
+if(j == i) Output_Morse += enc[i] + " "
+}}
 
-    m.reply(Output_Morse)
-  } else if(selected == "descodificar ") {
-    let str = text.replace(selected, "").replace(/[.]/g, "•")
-    let Output_String = ""
-    for(let i of str.split(" ")) {
-      if(!dec[i]) Output_String += i
-      for(let j in dec) {
-        if(j == i) Output_String += dec[i]
-      }
-    }
-    m.reply(Output_String)
-  } else {
-    m.reply(`Código morse codificar / descodificar\nUSO:\n\nCodificar : ${usedPrefix}${command} codificar Hola mundo n\Descodificar : ${usedPrefix}${command} descodificar •••• • •-•• •-•• --- / •-- --- •-• •-•• -••`)
-  }
-}
+return conn.reply(m.chat, Output_Morse, fkontak, m)
+} else if(selected == "decodificar ") { 
+let str = text.replace(selected, "").replace(/[.]/g, "•")
+let Output_String = ""
+for(let i of str.split(" ")) {
+if(!dec[i]) Output_String += i
+for(let j in dec) {
+if(j == i) Output_String += dec[i]
+}}
+return conn.reply(m.chat, Output_String, fkontak, m)
+} else {
+return conn.reply(m.chat, `${mg}🔣 𝘾𝙊𝘿𝙄𝘾𝙊 𝙈𝙊𝙍𝘾𝙀 𝘾𝙊𝘿𝙄𝙁𝙄𝘾𝘼𝙍/𝘿𝙀𝘾𝙊𝘿𝙄𝙁𝙄𝘾𝘼𝙍\n\n𝙋𝘼𝙍𝘼 𝘾𝙊𝘿𝙄𝙁𝙄𝘾𝘼𝙍 𝙐𝙎𝙀 *:* 𝙏𝙊 𝙀𝙉𝘾𝙊𝘿𝙀 𝙐𝙎𝙀\n*${usedPrefix}${command} codificar Hola Gata*\n*${usedPrefix}${command} codificar Hello Gata*\n\n𝙋𝘼𝙍𝘼 𝘿𝙀𝘾𝙊𝘿𝙄𝙁𝙄𝘾𝘼𝙍 𝙐𝙎𝙀 *:* 𝙏𝙊 𝘿𝙀𝘾𝙊𝘿𝙀 𝙐𝙎𝙀\n*${usedPrefix}${command} decodificar •••• --- •-•• •- / --• •- - •-*\n\n*${usedPrefix}${command} decodificar •••• • •-•• •-•• --- / --• •- - •-*`, fkontak, m)
+}}
 
 handler.help = ["morse"].map(v => v + " <encode|decode>")
 handler.tags = ["tools"]
 
-handler.command = /^(morse)/i
+handler.command = /^(morse|morce|)/i
 
 export default handler
