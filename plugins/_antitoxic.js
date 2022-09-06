@@ -1,4 +1,4 @@
-const toxicRegex = /cp|packs|pack||earfuck|scat/i
+const toxicRegex = /cp|earfuck|scat/i
 
 export async function before(m, { conn, isAdmin, isBotAdmin, isOwner }) {
  
