@@ -121,7 +121,7 @@ export async function handler(chatUpdate) {
               if (!isNumber(user.bawal)) user.bawal = 0
               if (!isNumber(user.bawalbakar)) user.bawalbakar = 0
               if (!isNumber(user.bayam)) user.bayam = 0
-              if (!isNumber(user.berlian)) user.berlian = 10000
+              if (!isNumber(user.berlian)) user.berlian = 10
               if (!isNumber(user.bibitanggur)) user.bibitanggur = 0
               if (!isNumber(user.bibitapel)) user.bibitapel = 0
               if (!isNumber(user.bibitjeruk)) user.bibitjeruk = 0
@@ -953,7 +953,8 @@ export async function handler(chatUpdate) {
         const isROwner = [conn.decodeJid(global.conn.user.id), ...global.owner.map(([number]) => number)].map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
         const isOwner = isROwner || m.fromMe
         const isMods = isOwner || global.mods.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
-        const isPrems = isROwner || global.prems.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
+        //const isPrems = isROwner || global.prems.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
+	const isPrems = isROwner || global.db.data.users[m.sender].premiumTime > 0
 
        /* if (opts['queque'] && m.text && !(isMods || isPrems)) {
             let queque = this.msgqueque, time = 1000 * 5
@@ -1277,9 +1278,9 @@ export async function participantsUpdate({ id, participants, action }) {
             if (chat.welcome) {
                 let groupMetadata = await this.groupMetadata(id) || (conn.chats[id] || {}).metadata
                 for (let user of participants) {
-                    //let pp = './src/sinfoto.jpg'
+                    let pp = './src/sinfoto.jpg'
                     try {
-                        null = await this.profilePictureUrl(user, 'image')
+                        pp = await this.profilePictureUrl(user, 'image')
                     } catch (e) {
                     } finally {
                         text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || '*𝙂𝙧𝙪𝙥𝙤 𝙂𝙚𝙣𝙞𝙖𝙡 | 𝘾𝙤𝙤𝙡 𝙂𝙧𝙤𝙪𝙥 😼*') :
