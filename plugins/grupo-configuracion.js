@@ -1,6 +1,6 @@
 let handler = async (m, { conn, participants, groupMetadata }) => {
 const pp = await conn.profilePictureUrl(m.chat, 'image').catch(_ => null) || './src/grupos.jpg' 
-const { isBanned, autolevelup, temporal, restrict, stickers, welcome, detect, sWelcome, sBye, sPromote, sDemote, antiLink, antiLink2, modohorny, autosticker, audios, delete: del } = global.db.data.chats[m.chat]
+const { isBanned, autolevelup, antiver, antitoxic, temporal, restrict, stickers, welcome, detect, sWelcome, sBye, sPromote, sDemote, antiLink, antiLink2, modohorny, autosticker, audios, delete: del } = global.db.data.chats[m.chat]
 
 let text = 
 `╭━[ 𝘾𝙊𝙉𝙁𝙄𝙂𝙐𝙍𝘼𝘾𝙄𝙊𝙉 ]━⬣
@@ -16,6 +16,12 @@ let text =
 ┃ 𝙁𝙐𝙉𝘾𝙄𝙊𝙉 𝘼𝙉𝘼𝘿𝙄𝙍 𝙔 𝙎𝘼𝘾𝘼𝙍 ${global.db.data.settings[conn.user.jid].restrict ? '✅' : '❌'}
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃ 𝘿𝙀𝙏𝙀𝘾𝙏 ${detect ? '✅' : '❌'} 
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃ 𝘼𝙉𝙏𝙄𝙏𝙊𝙓𝙄𝘾 ${antitoxic ? '✅' : '❌'} 
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃ 𝘼𝙉𝙏𝙄 𝙑𝙀𝙍 ${antiver ? '✅' : '❌'}
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃ 𝘼𝙉𝙏𝙄𝘿𝙀𝙇𝙀𝙏𝙀 ${global.db.data.chats[m.chat].delete ? '✅' : '❌'}
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃ 𝘼𝙉𝙏𝙄𝙇𝙄𝙉𝙆 ${antiLink ? '✅' : '❌'} 
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈

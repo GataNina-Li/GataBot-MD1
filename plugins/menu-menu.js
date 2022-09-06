@@ -218,6 +218,8 @@ ${readMore}
 ┃🚀➺ _${usedPrefix}clonarepo | gitclone *link*_
 ┃🚀➺ _${usedPrefix}clima *país ciudad*_
 ┃🚀➺ _${usedPrefix}consejo_
+┃🚀➺ _${usedPrefix}morse codificar *texto*_
+┃🚀➺ _${usedPrefix}morse decodificar *morse*_
 ┃🚀➺ _${usedPrefix}fraseromantica_
 ┃🚀➺ _${usedPrefix}historia_
 *╰━━━━━━━━━━━━⬣*
@@ -410,6 +412,8 @@ ${readMore}
 ┃🛠️ _${usedPrefix}spamwa *numero|texto|cantidad*_
 ┃🛠️ _${usedPrefix}styletext *texto*_
 ┃🛠️ _${usedPrefix}traducir *texto*_
+┃🛠️➺ _${usedPrefix}morse codificar *texto*_
+┃🛠️➺ _${usedPrefix}morse decodificar *morse*_
 *╰━━━━━━━━━━━━⬣*
 
 *╭━━━[ FUNCIÓN RPG ]━━⬣*

@@ -128,6 +128,8 @@ let menu = `
 ┃🚀➺ _${usedPrefix}clonarepo | gitclone *link*_
 ┃🚀➺ _${usedPrefix}clima *país ciudad*_
 ┃🚀➺ _${usedPrefix}consejo_
+┃🚀➺ _${usedPrefix}morse codificar *texto*_
+┃🚀➺ _${usedPrefix}morse decodificar *morse*_
 ┃🚀➺ _${usedPrefix}fraseromantica_
 ┃🚀➺ _${usedPrefix}historia_
 ╰━━━━━━━━━━━━━━━━⬣`.trim()
