@@ -527,7 +527,7 @@ export async function handler(chatUpdate) {
                     bawal: 0,
                     bawalbakar: 0,
                     bayam: 0,
-                    berlian: 100000000,
+                    berlian: 10,
                     bibitanggur: 0,
                     bibitapel: 0,
                     bibitjeruk: 0,
