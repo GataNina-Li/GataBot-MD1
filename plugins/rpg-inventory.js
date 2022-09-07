@@ -641,7 +641,7 @@ await conn.sendButton(m.chat, caption, wm, imgr + 'Inventario : Inventory', [
 [`𝘼𝙫𝙚𝙣𝙩𝙪𝙧𝙖𝙧 | 𝙑𝙚𝙣𝙩𝙪𝙧𝙚 🏕️`, `${usedPrefix}adventure`],
 ['𝙈𝙚𝙣𝙪 𝘼𝙫𝙚𝙣𝙩𝙪𝙧𝙖 | 𝙍𝙋𝙂 💗', '.rpgmenu']], fkontak, m, { mentions: conn.parseMention(caption) })
 	
-} else if (args[0] == '3') { // Inventario 3
+} else if (args[0] == '4') { // Inventario 3
 
 let date = global.botdate
     let { registered, age, lastrampok, lastdagang, lastcofre, lastcodereg, lastberkebon, lasthourly, lastberburu, lastbansos, lastadventure, lastfishing, lastwar, lastduel, lastmining, lastdungeon, lastclaim, lastweekly, lastmonthly } = global.db.data.users[m.sender]
@@ -1036,7 +1036,7 @@ const fkontak = {
 // let ftroli = { key: {participant : '0@s.whatsapp.net'}, message: { orderMessage: { itemCount: 2022, status: 1, surface: 1, message: bottime, orderTitle: wm, sellerJid: '0@s.whatsapp.net' } } }   
  await conn.sendButton(m.chat, str, wm, imgr + 'Inventario : Inventory', [[`${healt < 40 ? '❤️ 𝘾𝙐𝙍𝘼𝙍𝙈𝙀 | 𝙃𝙀𝘼𝙇 𝙈𝙀' : '𝘼𝙫𝙚𝙣𝙩𝙪𝙧𝙖𝙧 | 𝙑𝙚𝙣𝙩𝙪𝙧𝙚 🏕️'}`, `${healt < 40 ? '.heal' : '.adventure'}`], ['🏪 𝙏𝙞𝙚𝙣𝙙𝙖 | 𝙎𝙝𝙤𝙥', '.shop']], m, {quoted: fkontak})
 
-} else if (args[0] == '4') { // Inventario 4
+} else if (args[0] == '3') { // Inventario 4
 
  // let name = m.fromMe ? conn.user : conn.contacts[m.sender]
 //let { lastdiamantes, lastcoins, lastmiming, registered, age, lastrampok, lastdagang, lastcofre, lastcodereg, lastberkebon, lasthourly, lastberburu, lastbansos, lastadventure, lastfishing, lastwar, lastduel, lastmining, lastdungeon, lastclaim, lastweekly, lastmonthly } = global.db.data.users[m.sender]
@@ -1072,19 +1072,24 @@ const fkontak = {
 
 *╭──━• MISIONES*
 *╭──━• MISSIONS*
-*│ ⛏️⚡ Minar EXP » ${user.lastmiming == 0 ? '✅' : '❌'}*
-*│ ⛏️🐱 Minar GataCoins » ${user.lastcoins == 0 ? '✅' : '❌'}*
-*│ ⛏️💎 Minar Diamantes » ${user.lastdiamantes == 0 ? '✅' : '❌'}*
-*│ ⚗️ Cofre : Coffer »* ${user.lastcofre == 0 ? '✅' : '❌'}
-*│ 🏹 Caza : Berburu »* ${user.lastberburu == 0 ? '✅' : '❌'}
-*│ ⛰️ Aventura : Adventure : »* ${user.lastadventure == 0 ? '✅' : '❌'}
-*│ 🕐 Cada hora : Hourly : »* ${user.lasthourly == 0 ? '✅' : '❌'}
-*│ 📦 Reclamar : Claim »* ${user.lastclaim == 0 ? '✅' : '❌'}
-*│ 🎁 Semanalmente : Weekly* ${user.lastweekly == 0 ? '✅' : '❌'}
-*│ 📮 Mensual : Monthly »* ${user.lastmonthly == 0 ? '✅' : '❌'}
+*│ ⛏️⚡ Minar EXP » ${user.lastmiming > 0 ? '❌' : '✅'}*
+*│ ⛏️🐱 Minar GataCoins » ${user.lastcoins > 0 ? '❌' : '✅'}*
+*│ ⛏️💎 Minar Diamantes » ${user.lastdiamantes > 0 ? '❌' : '✅'}*
+*│ ⚗️ Cofre : Coffer »* ${user.lastcofre > 0 ? '❌' : '✅'}
+*│ 🏹 Caza : Berburu »* ${user.lastberburu > 0 ? '❌' : '✅'}
+*│ ⛰️ Aventura : Adventure : »* ${user.lastadventure > 0 ? '❌' : '✅'}
+*│ 🕐 Cada hora : Hourly : »* ${user.lasthourly > 0 ? '❌' : '✅'}
+*│ 📦 Reclamar : Claim »* ${user.lastclaim > 0 ? '❌' : '✅'}
+*│ 🎁 Semanalmente : Weekly* ${user.lastweekly > 0 ? '❌' : '✅'}
+*│ 📮 Mensual : Monthly »* ${user.lastmonthly > 0 ? '❌' : '✅'}
 *│*
 *│ PROXIMAMENTE* ⬇️
 *│*
+*│ 🚀 Cohete : Roket »* ${user.lastroket > 0 ? '✅' : '❌'}
+*│ 🚘 Conducir : ngojek »* ${user.lastngojek > 0 ? '✅' : '❌'}
+*│ 🚖 taxy: »* ${user.lastgrab > 0 ? '✅' : '❌'}
+*│ 👺 Maldición : nebang »* ${user.lastlumber > 0 ? '✅' : '❌'}
+*│ 👾 Sacudir : ngocok »* ${user.lastngocok > 0 ? '✅' : '❌'}
 *│ ⚔️ Duelo : Duel :* ${user.lastduel > 0 ? '✅' : '❌'}
 *│ 🛡️ Guerra : War :* ${user.lastwar > 0 ? '✅' : '❌'}
 *│ 🎃 Mazmorras : Dungeon :* ${user.lastdungeon > 0 ? '✅' : '❌'}
