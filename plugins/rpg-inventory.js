@@ -265,10 +265,10 @@ let str = `
 ┃ *𝗜𝗡𝗩𝗘𝗡𝗧𝗔𝗥𝗜𝗢 𝗗𝗘 𝗔𝗥𝗧𝗜𝗖𝗨𝗟𝗢𝗦* 
 ┃ *𝙄𝙏𝙀𝙈 𝙄𝙉𝙑𝙀𝙉𝙏𝙊𝙍𝙔*
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
-┃ ${rpg.emoticon('health')} » ${healt}* 
+┃ *${rpg.emoticon('health')} » ${healt}* 
 ┃ ${rpgg.emoticon('level')} *Nivel : Level » ${level}*
 ┃ ${rpgg.emoticon('role')} *Rango : Role* 
-┃ *» ${rol}*
+┃ *»* ${rol}
 ┃ *${rpgg.emoticon('premium')} ${member.premium ? "✅ VIP : Premium": "Limitado : Free"}*
 ┃ 🏦 *Banco : Bank » ${member.bank}*
 ┃ 💞 *Pareja : Pasangan »* ${pasangan ? `@${pasangan.split("@")[0]}` : `❌`}
@@ -458,10 +458,10 @@ ${pets}\n\n╸╸╸╸╸╸╸╸╸╸╸╸╸╸\n\n` : ''}${cooldowns ?
 ┃ *𝗘𝗦𝗧𝗔𝗗𝗢 𝗗𝗘 𝗖𝗢𝗠𝗕𝗔𝗧𝗘*
 ┃ *𝗖𝗢𝗠𝗕𝗔𝗧 𝗦𝗧𝗔𝗧𝗨𝗦*
 ┃
-┃ ${rpgshopp.emoticon('health')} *Vida | Life* 
+┃ ${rpg.emoticon('health')} *Vida | Life* 
 ┃ *» ${healt}*
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
-┃ ${rpgshopp.emoticon('pickaxe')} *Pico | Peak* 
+┃ ${rpg.emoticon('pickaxe')} *Pico | Peak* 
 ┃ *» ${pickaxe == 0 ? 'No tengo | I do not have' : '' || pickaxe == 1 ? 'Nivel | Level ✦ 1' : '' || pickaxe == 2 ? 'Nivel | Level ✦ 2' : '' || pickaxe == 3 ? 'Nivel | Level ✦ 3' : '' || pickaxe == 4 ? 'Nivel | Level ✦ 4' : '' || pickaxe == 5 ? 'Nivel | Level ✦ 5 ǁ MAX' : ''}*
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
 ┃ ${rpgshopp.emoticon('sword')} *Espada | Sword*
@@ -1072,9 +1072,9 @@ const fkontak = {
 
 *╭──━• MISIONES*
 *╭──━• MISSIONS*
-*│ ⛏️⚡ Minar EXP » ${user.lastmiming > 0 ? '❌' : '✅'}*
-*│ ⛏️🐱 Minar GataCoins » ${user.lastcoins > 0 ? '❌' : '✅'}*
-*│ ⛏️💎 Minar Diamantes » ${user.lastdiamantes > 0 ? '❌' : '✅'}*
+*│ ⛏️⚡ Minar EXP » ${(new Date - user.lastmiming > 0) ? '❌' : '✅'}*
+*│ ⛏️🐱 Minar GataCoins » ${(new Date - user.lastcoins > 0) ? '❌' : '✅'}*
+*│ ⛏️💎 Minar Diamantes » ${(new Date - user.lastdiamantes > 0) ? '❌' : '✅'}*
 *│ ⚗️ Cofre : Coffer »* ${user.lastcofre > 0 ? '❌' : '✅'}
 *│ 🏹 Caza : Berburu »* ${user.lastberburu > 0 ? '❌' : '✅'}
 *│ ⛰️ Aventura : Adventure : »* ${user.lastadventure > 0 ? '❌' : '✅'}
