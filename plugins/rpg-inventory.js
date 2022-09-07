@@ -328,7 +328,7 @@ let str = `
 ┃ ${rpgg.emoticon('level')} *Nivel : Level » ${level}*
 ┃ ${rpgg.emoticon('role')} *Rango : Role »* ${rol}
 ┃ ${rpgg.emoticon('premium')} ${member.premium ? "✅ VIP : Premium": "Limitado : Free"}*
-┃ 🏦 *Banco : Bank » ${bank}*
+┃ 🏦 *Banco : Bank » ${member.bank}*
 ┃ *Pareja : Pasangan »* ${pasangan ? `@${pasangan.split("@")[0]}` : `❌`}
 ┃ *Advertencia : Warn » ${warn}*
 ┃ *Baneado(a) : Banned » No*
