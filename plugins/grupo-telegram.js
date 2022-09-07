@@ -1,4 +1,4 @@
-let media = './media/menus/telegramfutabuclub.jpg'
+let media = './media/menus/telefutaclub.jpeg'
 let handler = async (m, { conn, command }) => {
 let str = `
 Nuestro grupo de Telegram!
