@@ -1042,6 +1042,7 @@ const fkontak = {
 //let { lastdiamantes, lastcoins, lastmiming, registered, age, lastrampok, lastdagang, lastcofre, lastcodereg, lastberkebon, lasthourly, lastberburu, lastbansos, lastadventure, lastfishing, lastwar, lastduel, lastmining, lastdungeon, lastclaim, lastweekly, lastmonthly } = global.db.data.users[m.sender]
     let user = global.db.data.users[m.sender]
     let name = m.sender
+    let usuario = await conn.getName(name)
     let sortedmoney = Object.entries(global.db.data.users).sort((a, b) => b[1].money - a[1].money)
     let sortedlevel = Object.entries(global.db.data.users).sort((a, b) => b[1].level - a[1].level)
     let sorteddiamond = Object.entries(global.db.data.users).sort((a, b) => b[1].diamond - a[1].diamond)
@@ -1066,7 +1067,7 @@ const fkontak = {
     let usersgold = sortedgold.map(v => v[0])
     let usersarlok = sortedarlok.map(v => v[0])
     let str = `
-👤» *${user}* ( @${who.split("@")[0]} )\n
+👤» *${usuario}* ( @${who.split("@")[0]} )\n
 *✅ » MISIÓN DISPONIBLE : MISSION AVAILABLE* 
 *❌ » MISIÓN NO DISPONIBLE : MISSION NOT AVAILABLE*
 
@@ -1074,7 +1075,7 @@ const fkontak = {
 *╭──━• MISSIONS*
 *│ ⛏️⚡ Minar EXP » ${user.lastmiming > 0 ? '❌' : '✅'}*
 ${(new Date - user.lastmiming)}
-${new Date - user.lastmiming < 600000 ? `${clockString(user.lastmiming + 600000 - new Date())}` : '✅'}
+${new Date - user.lastmiming > 0 ? `${clockString(user.lastmiming - new Date())}` : '✅'}
 *│ ⛏️🐱 Minar GataCoins » ${user.lastcoins > 0 ? '❌' : '✅'}*
 *│ ⛏️💎 Minar Diamantes » ${user.lastdiamantes > 0 ? '❌' : '✅'}*
 *│ ⚗️ Cofre : Coffer »* ${user.lastcofre > 0 ? '❌' : '✅'}
