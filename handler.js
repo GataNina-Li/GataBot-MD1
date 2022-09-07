@@ -272,6 +272,7 @@ export async function handler(chatUpdate) {
               if (!isNumber(user.lastberkebon)) user.lastberkebon = 0
               if (!isNumber(user.lastbunga)) user.lastbunga = 0
               if (!isNumber(user.lastbunuhi)) user.lastbunuhi = 0
+	      if (!isNumber(user.lastcoins)) user.lastcoins = 0    
               if (!isNumber(user.lastclaim)) user.lastclaim = 0
               if (!isNumber(user.lastcode)) user.lastcode = 0
 	      if (!isNumber(user.lastcofre)) user.lastcofre = 0
@@ -675,6 +676,7 @@ export async function handler(chatUpdate) {
                     lastberkebon: 0,
                     lastbunga: 0,
                     lastbunuhi: 0,
+		    lastcoins: 0,
                     lastclaim: 0,
                     lastcode: 0,
 		    lastcofre: 0,
