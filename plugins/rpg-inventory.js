@@ -437,10 +437,10 @@ const cooldowns = Object.entries(inventory.cooldowns).map(([cd, { name, time }])
 ┃ *𝗘𝗦𝗧𝗔𝗗𝗢 𝗗𝗘 𝗖𝗢𝗠𝗕𝗔𝗧𝗘*
 ┃ *𝗖𝗢𝗠𝗕𝗔𝗧 𝗦𝗧𝗔𝗧𝗨𝗦*
 ┃
-┃ ${rpg.emoticon('health')} *Vida | Life* 
+┃ *${rpg.emoticon('health')}* 
 ┃ *» ${healt}*
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
-┃ ${rpg.emoticon('pickaxe')} *Pico | Peak* 
+┃ *${rpg.emoticon('pickaxe')}* 
 ┃ *» ${pickaxe == 0 ? 'No tengo | I do not have' : '' || pickaxe == 1 ? 'Nivel | Level ✦ 1' : '' || pickaxe == 2 ? 'Nivel | Level ✦ 2' : '' || pickaxe == 3 ? 'Nivel | Level ✦ 3' : '' || pickaxe == 4 ? 'Nivel | Level ✦ 4' : '' || pickaxe == 5 ? 'Nivel | Level ✦ 5 ǁ MAX' : ''}*
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
 ┃ ${rpgshopp.emoticon('sword')} *Espada | Sword*
@@ -1144,7 +1144,7 @@ ${new Date - user.lastmonthly < 432000000 ? `${clockString(user.lastmonthly + 43
 
 🏆 *RESUMEN EN LOS TOPS* 🏆 
 🚀 *SUMMARY IN THE TOPS* 🚀
-👤» *${name}* ( @${who.split("@")[0]} )\n
+👤» *${usuario}* ( @${who.split("@")[0]} )\n
 _1.Top Nivel_ *${userslevel.indexOf(m.sender) + 1}* _de_ *${userslevel.length}*
 _2.Top GataCoins_ *${usersmoney.indexOf(m.sender) + 1}* _de_ *${usersmoney.length}*
 _3.Top Diamantes+_ *${usersdiamond.indexOf(m.sender) + 1}* _de_ *${usersdiamond.length}*
@@ -1232,7 +1232,7 @@ await conn.sendButton(m.chat, str, `*𝗣𝗥𝗘𝗠𝗜𝗨𝗠 ${user.premium
 [`🎒 𝙄𝙣𝙫𝙚𝙣𝙩𝙖𝙧𝙞𝙤 𝙩𝙤𝙩𝙖𝙡`, `${usedPrefix}inventario 4`],	
 ['💗 𝙈𝙚𝙣𝙪 𝘼𝙫𝙚𝙣𝙩𝙪𝙧𝙖 | 𝙍𝙋𝙂', '.rpgmenu']], fkontak, m, { mentions: conn.parseMention(str) })
 	
-    } else if (args[0] == 'alimentos') { // Inventario piscina
+    } else if (command == 'alimentos') { // Inventario piscina
 	    
 let user = global.db.data.users[m.sender]
 let ayam = user.ayam
@@ -1425,5 +1425,5 @@ function clockString(ms) {
   let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000) % 24
   let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
   let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
-  return ['*│ 𝗡𝗨𝗘𝗩𝗔 𝗠𝗜𝗦𝗜𝗢𝗡 𝗘𝗡 : 𝗠𝗜𝗦𝗦𝗜𝗢𝗡*\n*│* ', ye, ' 🗓️ Años : Year*\n', '*│* ', mo, ' *⛅ Mes : Month*\n', '*│* ', d, ' *☀️ Días : Days*\n', '*│* ', h, ' *⏰ Horas : Hours*\n', '*│* ', m, ' *🕐 Minutos : Minutes*\n', '*│* ', s, ' *⏱️ Segundos : Seconds*\n*│*'].map(v => v.toString().padStart(2, 0)).join('')
+  return ['*│ 𝗡𝗨𝗘𝗩𝗔 𝗠𝗜𝗦𝗜𝗢𝗡 𝗘𝗡 : 𝗠𝗜𝗦𝗦𝗜𝗢𝗡*\n*│* ', ye, ' *🗓️ Años : Year*\n', '*│* ', mo, ' *⛅ Mes : Month*\n', '*│* ', d, ' *☀️ Días : Days*\n', '*│* ', h, ' *⏰ Horas : Hours*\n', '*│* ', m, ' *🕐 Minutos : Minutes*\n', '*│* ', s, ' *⏱️ Segundos : Seconds*\n*│*'].map(v => v.toString().padStart(2, 0)).join('')
 }
