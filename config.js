@@ -255,6 +255,7 @@ global.rpg = {
       elephant: '🐘 Elefante : Elephant',
       emerald: '💚 Esmeralda : Emerald',
       exp: '⚡ Experiencia : Exp',
+      emas: '🪅 Piñata : Doll',
       fishingrod: '🎣 Caña de Pescar : Fishing Rod',
       fox: '🦊 Zorro : Fox',
       gems: '🍀 Gemas : Gemas',
@@ -346,6 +347,7 @@ global.rpgg = { //Solo emojis
       elephant: '🐘',
       emerald: '💚',
       exp: '⚡',
+      emas: '🪅',
       fishingrod: '🎣',
       fox: '🦊',
       gems: '🍀',
@@ -443,6 +445,7 @@ global.rpgshop = { //Tienda
       sword: '⚔️ Espada : Sword',
       umpan: '🪱 Carnada : Bait', 
       healtmonster: '💵 Billetes : Fare',
+      emas: '🪅 Piñata : Doll',
       pancingan: '🪝 Gancho : Hook',
        
       common: '📦 Caja Común : Common Box',
@@ -528,6 +531,7 @@ global.rpgshopp = { //Tienda
       sword: '⚔️',
       umpan: '🪱', 
       healtmonster: '💵',
+      emas: '🪅',
       pancingan: '🪝',
        
       common: '📦',
