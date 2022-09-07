@@ -279,6 +279,7 @@ export async function handler(chatUpdate) {
               if (!isNumber(user.lastcodereg)) user.lastcodereg = 0
               if (!isNumber(user.lastcrusade)) user.lastcrusade = 0
               if (!isNumber(user.lastdagang)) user.lastdagang = 0
+	      if (!isNumber(user.lastdiamantes)) user.lastdiamantes = 0    
               if (!isNumber(user.lastduel)) user.lastduel = 0
               if (!isNumber(user.lastdungeon)) user.lastdungeon = 0
               if (!isNumber(user.lasteasy)) user.lasteasy = 0
@@ -683,6 +684,7 @@ export async function handler(chatUpdate) {
                     lastcrusade: 0,
                     lastdaang: 0,
                     lastdagang: 0,
+		    lastdiamantes: 0,
                     lastduel: 0,
                     lastdungeon: 0,
                     lasteasy: 0,
