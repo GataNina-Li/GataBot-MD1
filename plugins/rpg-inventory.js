@@ -1072,9 +1072,9 @@ const fkontak = {
 
 *╭──━• MISIONES*
 *╭──━• MISSIONS*
-*│ ⛏️⚡ Minar EXP » ${(new Date - user.lastmiming > 0) ? '❌' : '✅'}*
-*│ ⛏️🐱 Minar GataCoins » ${(new Date - user.lastcoins > 0) ? '❌' : '✅'}*
-*│ ⛏️💎 Minar Diamantes » ${(new Date - user.lastdiamantes > 0) ? '❌' : '✅'}*
+*│ ⛏️⚡ Minar EXP » ${user.lastmiming > 0 ? '❌' : '✅'}*
+*│ ⛏️🐱 Minar GataCoins » ${user.lastcoins > 0 ? '❌' : '✅'}*
+*│ ⛏️💎 Minar Diamantes » ${user.lastdiamantes > 0 ? '❌' : '✅'}*
 *│ ⚗️ Cofre : Coffer »* ${user.lastcofre > 0 ? '❌' : '✅'}
 *│ 🏹 Caza : Berburu »* ${user.lastberburu > 0 ? '❌' : '✅'}
 *│ ⛰️ Aventura : Adventure : »* ${user.lastadventure > 0 ? '❌' : '✅'}
