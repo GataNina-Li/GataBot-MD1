@@ -3,7 +3,7 @@ import { format } from 'util'
 import { fileURLToPath } from 'url'
 import path, { join } from 'path'
 import { unwatchFile, watchFile } from 'fs'
-import chalk from 'chalk' 
+import chalk from 'chalk'  
 
 /**
  * @type {import('@adiwajshing/baileys')}  
@@ -45,9 +45,7 @@ export async function handler(chatUpdate) {
                 if (!isNumber(user.exp)) user.exp = 0
 		if (!('premium' in user)) user.premium = false
 		if (!isNumber(user.joincount)) user.joincount = 1    
-                if (!isNumber(user.limit)) user.limit = 20    	    
-                if (!isNumber(user.lastclaim)) user.lastclaim = 0
-		if (!isNumber(user.lastcofre)) user.lastcofre = 0    
+                if (!isNumber(user.limit)) user.limit = 20    	       
                 if (!('registered' in user)) user.registered = false
                     
             if (!user.registered) {
@@ -272,12 +270,14 @@ export async function handler(chatUpdate) {
               if (!isNumber(user.lastberkebon)) user.lastberkebon = 0
               if (!isNumber(user.lastbunga)) user.lastbunga = 0
               if (!isNumber(user.lastbunuhi)) user.lastbunuhi = 0
+	      if (!isNumber(user.lastcoins)) user.lastcoins = 0    
               if (!isNumber(user.lastclaim)) user.lastclaim = 0
               if (!isNumber(user.lastcode)) user.lastcode = 0
 	      if (!isNumber(user.lastcofre)) user.lastcofre = 0
               if (!isNumber(user.lastcodereg)) user.lastcodereg = 0
               if (!isNumber(user.lastcrusade)) user.lastcrusade = 0
               if (!isNumber(user.lastdagang)) user.lastdagang = 0
+	      if (!isNumber(user.lastdiamantes)) user.lastdiamantes = 0    
               if (!isNumber(user.lastduel)) user.lastduel = 0
               if (!isNumber(user.lastdungeon)) user.lastdungeon = 0
               if (!isNumber(user.lasteasy)) user.lasteasy = 0
@@ -527,7 +527,7 @@ export async function handler(chatUpdate) {
                     bawal: 0,
                     bawalbakar: 0,
                     bayam: 0,
-                    berlian: 100000000,
+                    berlian: 10,
                     bibitanggur: 0,
                     bibitapel: 0,
                     bibitjeruk: 0,
@@ -675,12 +675,14 @@ export async function handler(chatUpdate) {
                     lastberkebon: 0,
                     lastbunga: 0,
                     lastbunuhi: 0,
+		    lastcoins: 0,
                     lastclaim: 0,
                     lastcode: 0,
 		    lastcofre: 0,
                     lastcrusade: 0,
                     lastdaang: 0,
                     lastdagang: 0,
+		    lastdiamantes: 0,
                     lastduel: 0,
                     lastdungeon: 0,
                     lasteasy: 0,
