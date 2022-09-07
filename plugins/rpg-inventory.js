@@ -1039,7 +1039,8 @@ const fkontak = {
 } else if (args[0] == '4') { // Inventario 4
 
  // let name = m.fromMe ? conn.user : conn.contacts[m.sender]
-let { lastdiamantes, lastcoins, lastmiming, registered, age, lastrampok, lastdagang, lastcofre, lastcodereg, lastberkebon, lasthourly, lastberburu, lastbansos, lastadventure, lastfishing, lastwar, lastduel, lastmining, lastdungeon, lastclaim, lastweekly, lastmonthly } = global.db.data.users[m.sender]
+//let { lastdiamantes, lastcoins, lastmiming, registered, age, lastrampok, lastdagang, lastcofre, lastcodereg, lastberkebon, lasthourly, lastberburu, lastbansos, lastadventure, lastfishing, lastwar, lastduel, lastmining, lastdungeon, lastclaim, lastweekly, lastmonthly } = global.db.data.users[m.sender]
+    let user = global.db.data.users[m.sender]
     let name = m.sender
     let sortedmoney = Object.entries(global.db.data.users).sort((a, b) => b[1].money - a[1].money)
     let sortedlevel = Object.entries(global.db.data.users).sort((a, b) => b[1].level - a[1].level)
@@ -1071,26 +1072,26 @@ let { lastdiamantes, lastcoins, lastmiming, registered, age, lastrampok, lastdag
 
 *╭──━• MISIONES*
 *╭──━• MISSIONS*
-*│ ⛏️⚡ Minar EXP » ${lastmiming == 0 ? '❌' : '✅'}*
-*│ ⛏️🐱 Minar GataCoins » ${lastcoins == 0 ? '❌' : '✅'}*
-*│ ⛏️💎 Minar Diamantes » ${lastdiamantes == 0 ? '❌' : '✅'}*
-*│ ⚗️ Cofre : Coffer »* ${lastcofre == 0 ? '❌' : '✅'}
-*│ 🏹 Caza : Berburu »* ${lastberburu == 0 ? '❌' : '✅'}
-*│ ⛰️ Aventura : Adventure : »* ${lastadventure == 0 ? '❌' : '✅'}
-*│ 🕐 Cada hora : Hourly : »* ${lasthourly == 0 ? '❌' : '✅'}
-*│ 📦 Reclamar : Claim »* ${lastclaim == 0 ? '❌' : '✅'}
-*│ 🎁 Semanalmente : Weekly* ${lastweekly == 0 ? '❌' : '✅'}
-*│ 📮 Mensual : Monthly »* ${lastmonthly == 0 ? '❌' : '✅'}
+*│ ⛏️⚡ Minar EXP » ${user.lastmiming == 0 ? '❌' : '✅'}*
+*│ ⛏️🐱 Minar GataCoins » ${user.lastcoins == 0 ? '❌' : '✅'}*
+*│ ⛏️💎 Minar Diamantes » ${user.lastdiamantes == 0 ? '❌' : '✅'}*
+*│ ⚗️ Cofre : Coffer »* ${user.lastcofre == 0 ? '❌' : '✅'}
+*│ 🏹 Caza : Berburu »* ${user.lastberburu == 0 ? '❌' : '✅'}
+*│ ⛰️ Aventura : Adventure : »* ${user.lastadventure == 0 ? '❌' : '✅'}
+*│ 🕐 Cada hora : Hourly : »* ${user.lasthourly == 0 ? '❌' : '✅'}
+*│ 📦 Reclamar : Claim »* ${user.lastclaim == 0 ? '❌' : '✅'}
+*│ 🎁 Semanalmente : Weekly* ${user.lastweekly == 0 ? '❌' : '✅'}
+*│ 📮 Mensual : Monthly »* ${user.lastmonthly == 0 ? '❌' : '✅'}
 *│*
 *│ PROXIMAMENTE* ⬇️
 *│*
-*│ ⚔️ Duelo : Duel :* ${lastduel > 0 ? '❌' : '✅'}
-*│ 🛡️ Guerra : War :* ${lastwar > 0 ? '❌'  : '✅'}
-*│ 🎃 Mazmorras : Dungeon :* ${lastdungeon > 0 ? '❌' : '✅'}
-*│ 💱 Comercio : Berdagang :* ${lastdagang > 0 ? '❌'  : '✅'}
-*│ 🧺 Jardinería : Berkebun :* ${lastberkebon > 0 ? '❌'  : '✅'}
-*│ 🎣 Pezca : Fishing :* ${lastfishing > 0 ? '❌'  : '✅'}
-*│ 💰 Asistencia social : Bansos :* ${lastbansos > 0 ? '❌' : '✅'}
+*│ ⚔️ Duelo : Duel :* ${user.lastduel > 0 ? '❌' : '✅'}
+*│ 🛡️ Guerra : War :* ${user.lastwar > 0 ? '❌'  : '✅'}
+*│ 🎃 Mazmorras : Dungeon :* ${user.lastdungeon > 0 ? '❌' : '✅'}
+*│ 💱 Comercio : Berdagang :* ${user.lastdagang > 0 ? '❌'  : '✅'}
+*│ 🧺 Jardinería : Berkebun :* ${user.lastberkebon > 0 ? '❌'  : '✅'}
+*│ 🎣 Pezca : Fishing :* ${user.lastfishing > 0 ? '❌'  : '✅'}
+*│ 💰 Asistencia social : Bansos :* ${user.lastbansos > 0 ? '❌' : '✅'}
 *│*
 *╰─⋆─⋆─⋆─⋆─⋆─⋆─⋆─⋆─┄⸙*
 
