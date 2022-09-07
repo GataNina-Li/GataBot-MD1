@@ -223,6 +223,7 @@ let money = member.money
 let exp = member.exp
 let token = member.joincount
 let dia = member.limit
+let tiketm = member.healtmonster
 
     /*
     let pickaxe = member.pickaxe
@@ -326,12 +327,13 @@ let str = `
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
 ┃ ${rpg.emoticon('health')} » ${healt}* 
 ┃ ${rpgg.emoticon('level')} *Nivel : Level » ${level}*
-┃ ${rpgg.emoticon('role')} *Rango : Role »* ${rol}
-┃ ${rpgg.emoticon('premium')} ${member.premium ? "✅ VIP : Premium": "Limitado : Free"}*
+┃ ${rpgg.emoticon('role')} *Rango : Role* 
+┃ *» ${rol}*
+┃ *${rpgg.emoticon('premium')} ${member.premium ? "✅ VIP : Premium": "Limitado : Free"}*
 ┃ 🏦 *Banco : Bank » ${member.bank}*
-┃ *Pareja : Pasangan »* ${pasangan ? `@${pasangan.split("@")[0]}` : `❌`}
-┃ *Advertencia : Warn » ${warn}*
-┃ *Baneado(a) : Banned » No*
+┃ 💞 *Pareja : Pasangan »* ${pasangan ? `@${pasangan.split("@")[0]}` : `❌`}
+┃ ⚠️ *Advertencia : Warn » ${warn}*
+┃ 🚷 *Baneado(a) : Banned » No*
 ┃
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸╮
 ┃ 𝗣𝗥𝗢𝗗𝗨𝗖𝗧𝗢𝗦 𝗩𝗔𝗟𝗜𝗢𝗦𝗢𝗦
@@ -349,7 +351,6 @@ let str = `
 ┃ *${rpgshop.emoticon('gold')} » ${member.gold}*
 ┃ 🎟️ *Cupón : Coupon » ${member.cupon}*
 ┃ 📉 *Gastos : Expg » ${member.expg}*
-┃ 💵 *Billetes : Fare » ${member.tiketm}*
 ┃
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸╮
 ┃ 𝗦𝗨𝗣𝗘𝗥𝗩𝗜𝗩𝗘𝗡𝗖𝗜𝗔
@@ -370,6 +371,7 @@ let str = `
 ┃
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸╮
 ┃ 𝗢𝗕𝗝𝗘𝗧𝗢𝗦 𝗠𝗜𝗦𝗧𝗘𝗥𝗜𝗢𝗦𝗢𝗦
+┃ 𝗠𝗬𝗦𝗧𝗘𝗥𝗜𝗢𝗨𝗦 𝗢𝗕𝗝𝗘𝗖𝗧𝗦
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸╯
 ┃ *${rpgshop.emoticon('eleksirb')} » ${member.eleksirb}*
 ┃ *${rpgshop.emoticon('emasbatang')} » ${member.emasbatang}*
@@ -405,9 +407,9 @@ _13.Top Caja poco Común_ *${usersuncoommon.indexOf(m.sender) + 1}* _de_ *${user
 _14.Top Caja Mítica_ *${usersmythic.indexOf(m.sender) + 1}* _de_ *${usersmythic.length}*
 _15.Top Caja Legendaria_ *${userslegendary.indexOf(m.sender) + 1}* _de_ *${userslegendary.length}*
 _16.Top Caja para Mascota_ *${userspet.indexOf(m.sender) + 1}* _de_ *${userspet.length}*
-\n\n
-⚠️ Advertido(a) : Warn » *${warn}*
-🚫 Baneado(a) : Banned » ${member.banned ? '✅' : '❌'}`.trim()
+\n
+*⚠️ Advertido(a) : Warn » ${warn}*
+*🚫 Baneado(a) : Banned » ${member.banned ? '✅' : '❌'}*\n`.trim()
 
 const fkontak = {
 	"key": {
@@ -424,7 +426,7 @@ const fkontak = {
 	"participant": "0@s.whatsapp.net"
 }
 //conn.reply(m.chat, str, m)
-await conn.sendButton(m.chat, str, `𝗣𝗥𝗘𝗠𝗜𝗨𝗠 ${member.premium ? "✅": "❌"}*\n${wm}`, imgr + `Inventario : Inventory`, [
+await conn.sendButton(m.chat, str, `*𝗣𝗥𝗘𝗠𝗜𝗨𝗠 ${member.premium ? "✅": "❌"}*\n${wm}`, imgr + `Inventario : Inventory`, [
 [`𝘼𝙫𝙚𝙣𝙩𝙪𝙧𝙖𝙧 | 𝙑𝙚𝙣𝙩𝙪𝙧𝙚 🏕️`, `${usedPrefix}adventure`],
 ['𝙈𝙚𝙣𝙪 𝘼𝙫𝙚𝙣𝙩𝙪𝙧𝙖 | 𝙍𝙋𝙂 💗', '.rpgmenu']], fkontak, m, { mentions: conn.parseMention(str) })
 	
@@ -475,6 +477,8 @@ let _griffin = global.db.data.users[m.sender].anakgriffin
 
 let serigala = global.db.data.users[m.sender].serigala
 let _serigala = global.db.data.users[m.sender].anakserigala
+
+let { min, max } = xpRange(level, global.multiplier)
 
 
 
