@@ -1039,7 +1039,7 @@ const fkontak = {
 } else if (args[0] == '4') { // Inventario 4
 
  // let name = m.fromMe ? conn.user : conn.contacts[m.sender]
-let { registered, age, lastrampok, lastdagang, lastcofre, lastcodereg, lastberkebon, lasthourly, lastberburu, lastbansos, lastadventure, lastfishing, lastwar, lastduel, lastmining, lastdungeon, lastclaim, lastweekly, lastmonthly } = global.db.data.users[m.sender]
+let { lastdiamantes, lastcoins, lastmiming, registered, age, lastrampok, lastdagang, lastcofre, lastcodereg, lastberkebon, lasthourly, lastberburu, lastbansos, lastadventure, lastfishing, lastwar, lastduel, lastmining, lastdungeon, lastclaim, lastweekly, lastmonthly } = global.db.data.users[m.sender]
     let name = m.sender
     let sortedmoney = Object.entries(global.db.data.users).sort((a, b) => b[1].money - a[1].money)
     let sortedlevel = Object.entries(global.db.data.users).sort((a, b) => b[1].level - a[1].level)
@@ -1067,22 +1067,27 @@ let { registered, age, lastrampok, lastdagang, lastcofre, lastcodereg, lastberke
     let str = `
 *╭──━• MISIONES DIARIAS*
 *╭────━• DAILY MISSIONS*
+*│ ⛏️⚡ Minar EXP ${lastmiming > 0 ? '❌' : '✅'}*
+*│ ⛏️🐱 Minar GataCoins ${lastcoins > 0 ? '❌' : '✅'}*
+*│ ⛏️💎 Minar Diamantes ${lastdiamantes > 0 ? '❌' : '✅'}*
+*│ ⚗️ Cofre : Coffer* ${lastcofre > 0 ? '❌' : '✅'}
 *│ 🏹 Caza : Berburu :* ${lastberburu > 0 ? '❌' : '✅'}
 *│ ⛰️ Aventura : Adventure :* ${lastadventure > 0 ? '❌' : '✅'}
+*│ 🕐 Cada hora : Hourly :* ${lasthourly > 0 ? '❌' : '✅'}
+*│ 📦 Reclamar : laim :* ${lastclaim > 0 ? '❌' : '✅'}
+*│ 🎁 Semanalmente :* ${lastweekly > 0 ? '❌' : '✅'}
+*│ 📮 Mensual :* ${lastmonthly > 0 ? '❌' : '✅'}
+*│*
+*│ PROXIMAMENTE* ⬇️
+*│*
 *│ ⚔️ Duelo : Duel :* ${lastduel > 0 ? '❌' : '✅'}
 *│ 🛡️ Guerra : War :* ${lastwar > 0 ? '❌'  : '✅'}
 *│ 🎃 Mazmorras : Dungeon :* ${lastdungeon > 0 ? '❌' : '✅'}
 *│ 💱 Comercio : Berdagang :* ${lastdagang > 0 ? '❌'  : '✅'}
 *│ 🧺 Jardinería : Berkebun :* ${lastberkebon > 0 ? '❌'  : '✅'}
-*│ ⛏️ Minería : Mining :* ${lastmining > 0 ? '❌' : '✅'}
 *│ 🎣 Pezca : Fishing :* ${lastfishing > 0 ? '❌'  : '✅'}
 *│ 💰 Asistencia social : Bansos :* ${lastbansos > 0 ? '❌' : '✅'}
 *│*
-*│ 🕐 Cada hora : Hourly :* ${lasthourly > 0 ? '❌' : '✅'}
-*│ 📦 Reclamar : laim :* ${lastclaim > 0 ? '❌' : '✅'}
-*│ 🎁 Semanalmente :* ${lastweekly > 0 ? '❌' : '✅'}
-*│ 📮 Mensual :* ${lastmonthly > 0 ? '❌' : '✅'}
-*│ ⚗️ Cofre : Coffer* ${lastcofre > 0 ? '❌' : '✅'}
 *╰─⋆─⋆─⋆─⋆─⋆─⋆─⋆─⋆─┄⸙*
 
 *╭────━• TOPS*
@@ -1097,18 +1102,7 @@ let { registered, age, lastrampok, lastdagang, lastcofre, lastcodereg, lastberke
 *│🗳️ Top Mythic: ${usersmythic.indexOf(m.sender) + 1} / ${usersmythic.length}*
 *│🎁 Top Legendary: ${userslegendary.indexOf(m.sender) + 1} / ${userslegendary.length}*
 *│🗑️ Top Trash: ${userssampah.indexOf(m.sender) + 1} / ${userssampah.length}*
-*╰─⋆─⋆─⋆──⊱ 𓃠 ⊰─⋆─⋆─⋆─┄⸙*
-
-*Achievement*
-1.Top level *${userslevel.indexOf(m.sender) + 1}* dari *${userslevel.length}*
-2.Top Money *${usersmoney.indexOf(m.sender) + 1}* dari *${usersmoney.length}*
-3.Top Diamond *${usersdiamond.indexOf(m.sender) + 1}* dari *${usersdiamond.length}*
-4.Top Potion *${userspotion.indexOf(m.sender) + 1}* dari *${userspotion.length}*
-5.Top Common *${userscommon.indexOf(m.sender) + 1}* dari *${userscommon.length}*
-6.Top Uncommon *${usersuncoommon.indexOf(m.sender) + 1}* dari *${usersuncoommon.length}*
-7.Top Mythic *${usersmythic.indexOf(m.sender) + 1}* dari *${usersmythic.length}*
-8.Top Legendary *${userslegendary.indexOf(m.sender) + 1}* dari *${userslegendary.length}*
-9.Top Sampah *${userssampah.indexOf(m.sender) + 1}* dari *${userssampah.length}*`.trim()
+*╰─⋆─⋆─⋆──⊱ 𓃠 ⊰─⋆─⋆─⋆─┄⸙*`.trim()
 /*
 *Hero*
 My Hero: *${hero == 0 ? 'Tidak Punya' : '' || hero == 1 ? 'Level 1' : '' || hero == 2 ? 'Level 2' : '' || hero == 3 ? 'Level 3' : '' || hero == 4 ? 'Level 4' : '' || hero == 5 ? 'Level 5' : '' || hero == 6 ? 'Level 6' : '' || hero == 7 ? 'Level 7' : '' || hero == 8 ? 'Level 8' : '' || hero == 9 ? 'Level 9' : '' || hero == 10 ? 'Level 10' : '' || hero == 11 ? 'Level 11' : '' || hero == 12 ? 'Level 12' : '' || hero == 13 ? 'Level 13' : '' || hero == 14 ? 'Level 14' : '' || hero == 15 ? 'Level 15' : '' || hero == 16 ? 'Level 16' : '' || hero == 17 ? 'Level 17' : '' || hero == 18 ? 'Level 18' : '' || hero == 19 ? 'Level 19' : '' || hero == 20 ? 'Level 20' : '' || hero == 21 ? 'Level 21' : '' || hero == 22 ? 'Level 22' : '' || hero == 23 ? 'Level 23' : '' || hero == 24 ? 'Level 24' : '' || hero == 25 ? 'Level 25' : '' || hero == 26 ? 'Level 26' : '' || hero == 27 ? 'Level 27' : '' || hero == 28 ? 'Level 28' : '' || hero == 29 ? 'Level 29' : '' || hero == 30 ? 'Level 30' : '' || hero == 31 ? 'Level 31' : '' || hero == 32 ? 'Level 32' : '' || hero == 33 ? 'Level 33' : '' || hero == 34 ? 'Level 34' : '' || hero == 35 ? 'Level 35' : '' || hero == 36 ? 'Level 36' : '' || hero == 37 ? 'Level 37'  : '' || hero == 38 ? 'Level 38' : '' || hero == 39 ? 'Level 39' : '' || hero == 40 ? 'Level MAX' : ''}*
