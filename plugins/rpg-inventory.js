@@ -463,22 +463,22 @@ let fdurability = user.fishingroddurability
 let bow = user.bow
 let bdurability = user.bowdurability
 
-let naga = global.db.data.users[m.sender].naga
-let _naga = global.db.data.users[m.sender].anaknaga
+let naga = user.naga
+let _naga = user.anaknaga
 
-let phonix = global.db.data.users[m.sender].phonix
-let _phonix = global.db.data.users[m.sender].anakphonix
+let phonix = user.phonix
+let _phonix = user.anakphonix
 
-let centaur = global.db.data.users[m.sender].centaur
-let _centaur = global.db.data.users[m.sender].anakcentaur
+let centaur = user.centaur
+let _centaur = user.anakcentaur
 
-let griffin = global.db.data.users[m.sender].griffin
-let _griffin = global.db.data.users[m.sender].anakgriffin
+let griffin = user.griffin
+let _griffin = user.anakgriffin
 
-let serigala = global.db.data.users[m.sender].serigala
-let _serigala = global.db.data.users[m.sender].anakserigala
+let serigala = user.serigala
+let _serigala = user.anakserigala
 
-let level = member.level
+let level = user.level
 let { min, max } = xpRange(level, global.multiplier)
 
 
