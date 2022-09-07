@@ -1066,7 +1066,7 @@ const fkontak = {
     let usersgold = sortedgold.map(v => v[0])
     let usersarlok = sortedarlok.map(v => v[0])
     let str = `
-👤» *${name}* ( @${who.split("@")[0]} )\n
+👤» *${user}* ( @${who.split("@")[0]} )\n
 *✅ » MISIÓN DISPONIBLE : MISSION AVAILABLE* 
 *❌ » MISIÓN NO DISPONIBLE : MISSION NOT AVAILABLE*
 
@@ -1074,7 +1074,8 @@ const fkontak = {
 *╭──━• MISSIONS*
 *│ ⛏️⚡ Minar EXP » ${user.lastmiming > 0 ? '❌' : '✅'}*
 ${(new Date - user.lastmiming)}
-${clockString (user.lastmiming - new Date() * 1)}
+${clockString (user.lastmiming - new Date()) > 0 ? `${clockString(user.lastmiming - new Date())}` : ✅}
+
 *│ ⛏️🐱 Minar GataCoins » ${user.lastcoins > 0 ? '❌' : '✅'}*
 *│ ⛏️💎 Minar Diamantes » ${user.lastdiamantes > 0 ? '❌' : '✅'}*
 *│ ⚗️ Cofre : Coffer »* ${user.lastcofre > 0 ? '❌' : '✅'}
