@@ -478,6 +478,7 @@ let _griffin = global.db.data.users[m.sender].anakgriffin
 let serigala = global.db.data.users[m.sender].serigala
 let _serigala = global.db.data.users[m.sender].anakserigala
 
+let level = member.level
 let { min, max } = xpRange(level, global.multiplier)
 
 
