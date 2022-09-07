@@ -1073,10 +1073,10 @@ const fkontak = {
 
 *╭──━• MISIONES*
 *╭──━• MISSIONS*
-*│ ⛏️⚡ Minar EXP » ${user.lastmiming < 600000 ? '❌' : '✅'}*
+*│ ⛏️⚡ Minar EXP » ${user.lastmiming > 0 ? '❌' : '✅'}*
 ${new Date - user.lastmiming < 600000 ? `${clockString(user.lastmiming + 600000 - new Date())}` : '*│* ✅'}
 *│┈┈┈┈┈┈┈┈┈┈┈┈*
-*│ ⛏️🐱 Minar GataCoins » ${user.lastcoins < 600000 ? '❌' : '✅'}*
+*│ ⛏️🐱 Minar GataCoins » ${user.lastcoins > 0 ? '❌' : '✅'}*
 ${new Date - user.lastcoins < 600000 ? `${clockString(user.lastcoins + 600000 - new Date())}` : '*│* ✅'}
 *│┈┈┈┈┈┈┈┈┈┈┈┈*
 *│ ⛏️💎 Minar Diamantes » ${user.lastdiamantes < 900000 ? '❌' : '✅'}* 
@@ -1391,5 +1391,5 @@ function clockString(ms) {
   let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000) % 24
   let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
   let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
-  return ['│ ', ye, ' 𝗡𝗨𝗘𝗩𝗔 𝗠𝗜𝗦𝗜𝗢𝗡 𝗘𝗡 : 𝗡𝗘𝗪 𝗠𝗜𝗦𝗦𝗜𝗢𝗡 𝗜𝗡\n│ *🗓️ Años : Year*\n', '│ ', mo, ' *⛅ Mes : Month*\n', '│ ', d, ' *☀️ Días : Days*\n', '│ ', h, ' *⏰ Horas : Hours*\n', '│ ', m, ' *🕐 Minutos : Minutes*\n', '│ ', s, ' *⏱️ Segundos : Seconds*\n│\n'].map(v => v.toString().padStart(2, 0)).join('')
+  return ['*│ 𝗡𝗨𝗘𝗩𝗔 𝗠𝗜𝗦𝗜𝗢𝗡 𝗘𝗡 : 𝗠𝗜𝗦𝗦𝗜𝗢𝗡* ', ye, ' *│ 🗓️ Años : Year*\n', '│ ', mo, ' *⛅ Mes : Month*\n', '│ ', d, ' *☀️ Días : Days*\n', '│ ', h, ' *⏰ Horas : Hours*\n', '│ ', m, ' *🕐 Minutos : Minutes*\n', '│ ', s, ' *⏱️ Segundos : Seconds*\n*│*'].map(v => v.toString().padStart(2, 0)).join('')
 }
