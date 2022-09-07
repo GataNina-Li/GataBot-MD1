@@ -1074,8 +1074,7 @@ const fkontak = {
 *╭──━• MISSIONS*
 *│ ⛏️⚡ Minar EXP » ${user.lastmiming > 0 ? '❌' : '✅'}*
 ${(new Date - user.lastmiming)}
-${clockString (user.lastmiming - new Date()) > 0 ? `${clockString(user.lastmiming - new Date())}` : ✅}
-
+${new Date - user.lastmiming < 600000 ? `${clockString(user.lastmiming + 600000 - new Date())}` : '✅'}
 *│ ⛏️🐱 Minar GataCoins » ${user.lastcoins > 0 ? '❌' : '✅'}*
 *│ ⛏️💎 Minar Diamantes » ${user.lastdiamantes > 0 ? '❌' : '✅'}*
 *│ ⚗️ Cofre : Coffer »* ${user.lastcofre > 0 ? '❌' : '✅'}
