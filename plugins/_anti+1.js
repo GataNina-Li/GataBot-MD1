@@ -9,6 +9,7 @@ export default handler */
 
 
 export async function before(m, { conn, isAdmin, isBotAdmin }) {
+let user = global.db.data.users[m.sender]
    if (m.sender.startsWith('1' || '1')) {
    	global.db.data.users[m.sender].banned = true
 conn.reply(htki + ' Número prohibido ' + htka)
