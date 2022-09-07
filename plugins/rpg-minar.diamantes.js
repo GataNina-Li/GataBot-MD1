@@ -5,8 +5,8 @@ let minar = `${pickRandom(['Que pro 😎 has minado','🌟✨ Genial!! Obtienes'
 let d = Math.floor(Math.random() * 10)
 global.db.data.users[m.sender].limit += d * 1  
 //let hasil = Math.floor(Math.random() * 2000)
-let time = global.db.data.users[m.sender].lastdiamantes + 600000
-if (new Date - global.db.data.users[m.sender].lastdiamantes < 600000) throw `*💟 Vuelva en ${msToTime(time - new Date())} para continuar minando ⛏️*`  
+let time = global.db.data.users[m.sender].lastdiamantes + 900000
+if (new Date - global.db.data.users[m.sender].lastdiamantes < 900000) throw `*💟 Vuelva en ${msToTime(time - new Date())} para continuar minando ⛏️*`  
 
 conn.sendHydrated(m.chat, `*${minar} ${d} 𝘿𝙞𝙖𝙢𝙖𝙣𝙩𝙚𝙨*`, wm, null, md, '𝙵𝚞𝚝𝚊𝚋𝚞𝙱𝚘𝚝-𝙼𝙳', null, null, [
 ['𝙈𝙞𝙣𝙖𝙧 𝙀𝙓𝙋 ⚡', `.minar`],

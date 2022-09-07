@@ -1,6 +1,6 @@
 import fetch from 'node-fetch'
 
-const cooldown = 300000 //3 minutos
+const cooldown = 1500000 //25 minutos
 let handler = async (m, { usedPrefix, conn }) => {
 const fkontak = {
 	"key": {

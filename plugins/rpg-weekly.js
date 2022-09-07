@@ -3,7 +3,7 @@ const rewards = {
   money: 35999,
   potion: 9,
 }
-const cooldown = 604800000
+const cooldown = 259200000 //3 dias
 let handler = async (m) => {
   let user = global.db.data.users[m.sender]
   if (new Date - user.lastweekly < cooldown) throw `You have already claimed this daily claim!, wait for *${((user.lastweekly + cooldown) - new Date()).toTimeString()}*`
