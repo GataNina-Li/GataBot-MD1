@@ -442,7 +442,7 @@ global.rpgshop = { //Tienda
       kayu: '🛷 Super Madera : Super Wood',
       sword: '⚔️ Espada : Sword',
       umpan: '🪱 Carnada : Bait', 
-      healtmonster: '👺 Salud Maligna : Evil Health',
+      healtmonster: '💵 Billetes : Fare',
       pancingan: '🪝 Gancho : Hook',
        
       common: '📦 Caja Común : Common Box',
@@ -527,7 +527,7 @@ global.rpgshopp = { //Tienda
       kayu: '🛷',
       sword: '⚔️',
       umpan: '🪱', 
-      healtmonster: '👺',
+      healtmonster: '💵',
       pancingan: '🪝',
        
       common: '📦',
