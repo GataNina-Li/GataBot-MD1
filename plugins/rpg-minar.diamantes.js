@@ -5,8 +5,8 @@ let pp = 'https://us.123rf.com/450wm/emojiimage/emojiimage1802/emojiimage1802003
 let d = Math.floor(Math.random() * 10)
 global.db.data.users[m.sender].limit += d * 1  
 //let hasil = Math.floor(Math.random() * 2000)
-let time = global.db.data.users[m.sender].lastdiamantes + 600000
-if (new Date - global.db.data.users[m.sender].lastdiamantes < 600000) throw `*💟 Vuelva en ${msToTime(time - new Date())} para continuar minando ⛏️*`  
+let time = global.db.data.users[m.sender].lastdiamantes + 900000
+if (new Date - global.db.data.users[m.sender].lastdiamantes < 900000) throw `*💟 Vuelva en ${msToTime(time - new Date())} para continuar minando ⛏️*`  
 
 conn.sendHydrated(m.chat, `*${minar} ${d} 𝘿𝙞𝙖𝙢𝙖𝙣𝙩𝙚𝙨*`, wm, pp, md, '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
 ['𝙈𝙞𝙣𝙖𝙧 𝙀𝙓𝙋 ⚡', `.minar`],
