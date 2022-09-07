@@ -26,8 +26,10 @@ if (isBotAdmin) {
 		
 if (m.sender.startsWith('504' || '504')) {
 global.db.data.users[m.sender].banned = true
-await conn.reply(htki + ' Número prohibido ' + htka)
-await conn.reply(htki + ' Expulsar al usuario ' + htka)
-conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
-}}}
+await m.reply(' Número prohibido ')
+await m.reply(' Expulsar al usuario ')
+await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
+}
+}
+}
 export default handler
