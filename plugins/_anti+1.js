@@ -5,4 +5,3 @@ export async function (m) {
    	global.db.data.users[m.sender].banned = true
    }
    
-export default handler
