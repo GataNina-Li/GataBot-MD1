@@ -1065,18 +1065,22 @@ let { lastdiamantes, lastcoins, lastmiming, registered, age, lastrampok, lastdag
     let usersgold = sortedgold.map(v => v[0])
     let usersarlok = sortedarlok.map(v => v[0])
     let str = `
-*╭──━• MISIONES DIARIAS*
-*╭────━• DAILY MISSIONS*
-*│ ⛏️⚡ Minar EXP ${lastmiming > 0 ? '❌' : '✅'}*
-*│ ⛏️🐱 Minar GataCoins ${lastcoins > 0 ? '❌' : '✅'}*
-*│ ⛏️💎 Minar Diamantes ${lastdiamantes > 0 ? '❌' : '✅'}*
-*│ ⚗️ Cofre : Coffer* ${lastcofre > 0 ? '❌' : '✅'}
-*│ 🏹 Caza : Berburu :* ${lastberburu > 0 ? '❌' : '✅'}
-*│ ⛰️ Aventura : Adventure :* ${lastadventure > 0 ? '❌' : '✅'}
-*│ 🕐 Cada hora : Hourly :* ${lasthourly > 0 ? '❌' : '✅'}
-*│ 📦 Reclamar : laim :* ${lastclaim > 0 ? '❌' : '✅'}
-*│ 🎁 Semanalmente :* ${lastweekly > 0 ? '❌' : '✅'}
-*│ 📮 Mensual :* ${lastmonthly > 0 ? '❌' : '✅'}
+👤» *${name}* ( @${who.split("@")[0]} )\n
+*✅ » MISIÓN DISPONIBLE : MISSION AVAILABLE* 
+*❌ » MISIÓN NO DISPONIBLE : MISSION NOT AVAILABLE*
+
+*╭──━• MISIONES*
+*╭──━• MISSIONS*
+*│ ⛏️⚡ Minar EXP » ${lastmiming == 0 ? '❌' : '✅'}*
+*│ ⛏️🐱 Minar GataCoins » ${lastcoins == 0 ? '❌' : '✅'}*
+*│ ⛏️💎 Minar Diamantes » ${lastdiamantes == 0 ? '❌' : '✅'}*
+*│ ⚗️ Cofre : Coffer »* ${lastcofre == 0 ? '❌' : '✅'}
+*│ 🏹 Caza : Berburu »* ${lastberburu == 0 ? '❌' : '✅'}
+*│ ⛰️ Aventura : Adventure : »* ${lastadventure == 0 ? '❌' : '✅'}
+*│ 🕐 Cada hora : Hourly : »* ${lasthourly == 0 ? '❌' : '✅'}
+*│ 📦 Reclamar : Claim »* ${lastclaim == 0 ? '❌' : '✅'}
+*│ 🎁 Semanalmente : Weekly* ${lastweekly == 0 ? '❌' : '✅'}
+*│ 📮 Mensual : Monthly »* ${lastmonthly == 0 ? '❌' : '✅'}
 *│*
 *│ PROXIMAMENTE* ⬇️
 *│*
