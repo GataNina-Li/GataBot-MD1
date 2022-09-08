@@ -39,7 +39,7 @@ let fakeig = {
 						mediaUrl: ig,
 						mediaType: 'VIDEO',
 						description: 'Follow: ' + ig,
-						title: '👋 ' + sap.getRandom() + ' Kak :> ' + name,
+						title: '👋 ' + sap.getRandom() + ' Kak :> ' + wm,
 						body: botdate,
 						thumbnailUrl: pp,
 						sourceUrl: sgc
