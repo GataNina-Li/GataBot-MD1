@@ -99,6 +99,9 @@ let menu = `
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃🪅 _${usedPrefix}botemporal *enlace* *cantidad*_
 ┃🪅 _${usedPrefix}addbot *enlace* *cantidad*_
+┃⚗️➺ _${usedPrefix}pase premium_
+┃⚗️➺ _${usedPrefix}pass premium_
+┃⚗️➺ _${usedPrefix}listapremium | listprem_
 ┃⚗️➺ _${usedPrefix}transfer *tipo cantidad @tag*_
 ┃⚗️➺ _${usedPrefix}dar *tipo cantidad @tag*_
 ┃⚗️➺ _${usedPrefix}enviar *tipo cantidad @tag*_
@@ -111,7 +114,8 @@ let menu = `
 ┃⚗️➺ _${usedPrefix}inventario | inventory_
 ┃⚗️➺ _${usedPrefix}aventura | adventure_
 ┃⚗️➺ _${usedPrefix}caza | cazar | hunt_
-┃⚗️➺ _${usedPrefix}animales | animals_
+┃⚗️➺ _${usedPrefix}animales_
+┃⚗️➺ _${usedPrefix}alimentos_
 ┃⚗️➺ _${usedPrefix}curar | heal_
 ┃⚗️➺ _${usedPrefix}minardiamantes | minargemas_
 ┃⚗️➺ _${usedPrefix}minargatacoins | minarcoins_
