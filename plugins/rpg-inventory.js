@@ -1036,7 +1036,7 @@ _16.Top Caja para Mascota_ *${userspet.indexOf(m.sender) + 1}* _de_ *${userspet.
 *╰┫${rpg.emoticon('wolf')}*\n${serigala == 0 ? '*╰┫❌' : '' || serigala > 0 && serigala < 5 ? `*╰┫ Nivel : Level » *${serigala}* ➠ ${serigala + 1}*\n*╭┫ ExpPet » ${_serigala} -> ${serigala *100}` : '' || serigala == 5 ? 'Nivel | Level ✦ ǁ MAX' : ''}*
 *╰────────────┄⸙*
 
-🤺 *${name}* ( @${who.split("@")[0]} )\n
+🤺 *${usuario}* ( @${who.split("@")[0]} )\n
 *✅ » MISIÓN DISPONIBLE : MISSION AVAILABLE*
 
 *❌ » MISIÓN NO DISPONIBLE : MISSION NOT AVAILABLE*
@@ -1141,7 +1141,7 @@ _16.Top Caja para Mascota_ *${userspet.indexOf(m.sender) + 1}* _de_ *${userspet.
 *DATOS DEL GANCHO : HOOK DATA*
 *╭────────────────*
 *│🪝 Gancho : Hook » ${pancingan == 0 ? 'No tengo | I do not have' : '' || pancingan == 1 ? 'Nivel | Level ✦ 1' : '' || pancingan == 2 ? 'Nivel | Level ✦ 2' : '' || pancingan == 3 ? 'Nivel | Level ✦ 3' : '' || pancingan == 4 ? 'Nivel | Level ✦ 4' : '' || pancingan == 5 ? 'Nivel | Level ✦ 5 ǁ MAX' : ''}*
-*│ Poder del Gancho » ${pancingan == 0 ? 'No tengo | I do not have' : '' || pancingan > 0 && pancingan < 5 ? `Nivel : Level » ${pancingan} a Nivel ${pancingan + 1}\n*│Exp » ${_pancingan} -> ${pancingan *10000}*` : '' || pancingan == 5 ? 'Nivel | Level ✦ 5 ǁ MAX' : ''}*
+*│ Poder del Gancho*\n*│ ${pancingan == 0 ? 'No tengo | I do not have' : '' || pancingan > 0 && pancingan < 5 ? `Nivel : Level » ${pancingan} a Nivel ${pancingan + 1}*\n*│Exp » ${_pancingan} -> ${pancingan *10000}*` : '' || pancingan == 5 ? 'Nivel | Level ✦ 5 ǁ MAX' : ''}*
 *╰────────────────*
 
 ╭━━━━━━━━━⬣
@@ -1156,7 +1156,7 @@ _16.Top Caja para Mascota_ *${userspet.indexOf(m.sender) + 1}* _de_ *${userspet.
 ┃💐 *Caja de Jardinería : Garden boxs » ${user.gardenboxs}*
 ╰━━━━━━━━━⬣
 
-👤» *${usuario}* ( @${who.split("@")[0]} )\n
+👤» *${name}* ( @${who.split("@")[0]} )\n
 *✅ » MISIÓN DISPONIBLE : MISSION AVAILABLE*
 
 *❌ » MISIÓN NO DISPONIBLE : MISSION NOT AVAILABLE*
@@ -1212,7 +1212,7 @@ ${new Date - user.lastmonthly < 432000000 ? `${clockString(user.lastmonthly + 43
 
 🏆 *RESUMEN EN LOS TOPS* 🏆 
 🚀 *SUMMARY IN THE TOPS* 🚀
-👤» *${usuario}* ( @${who.split("@")[0]} )\n
+👤» *${name}* ( @${who.split("@")[0]} )\n
 _1.Top Nivel_ *${userslevel.indexOf(m.sender) + 1}* _de_ *${userslevel.length}*
 _2.Top GataCoins_ *${usersmoney.indexOf(m.sender) + 1}* _de_ *${usersmoney.length}*
 _3.Top Diamantes+_ *${usersdiamond.indexOf(m.sender) + 1}* _de_ *${usersdiamond.length}*
@@ -1246,7 +1246,7 @@ const fkontak = {
 	"participant": "0@s.whatsapp.net"
 }
 // let ftroli = { key: {participant : '0@s.whatsapp.net'}, message: { orderMessage: { itemCount: 2022, status: 1, surface: 1, message: bottime, orderTitle: wm, sellerJid: '0@s.whatsapp.net' } } }   
-await conn.sendButton(m.chat, str, wm, imgr + 'Inventario : Inventory', [
+await conn.sendButton(m.chat, str, `*𝗣𝗥𝗘𝗠𝗜𝗨𝗠 ${user.premium ? "✅": "❌"}*\n${wm}`, imgr + 'Inventario : Inventory', [
 [`${healt < 40 ? '❤️ 𝘾𝙐𝙍𝘼𝙍𝙈𝙀 | 𝙃𝙀𝘼𝙇 𝙈𝙀' : '𝘼𝙫𝙚𝙣𝙩𝙪𝙧𝙖𝙧 | 𝙑𝙚𝙣𝙩𝙪𝙧𝙚 🏕️'}`, `${healt < 40 ? '.heal' : '.adventure'}`],
 ['🏪 𝙏𝙞𝙚𝙣𝙙𝙖 𝙥𝙖𝙧𝙖 𝘾𝙤𝙢𝙥𝙧𝙖𝙧 | 𝘽𝙪𝙮', '.buy'],
 ['🏪 𝙏𝙞𝙚𝙣𝙙𝙖 𝙥𝙖𝙧𝙖 𝙑𝙚𝙣𝙙𝙚𝙧 | 𝙎𝙚𝙡𝙡', '.sell']], m, {quoted: fkontak})
