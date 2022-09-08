@@ -82,14 +82,14 @@ const fkontak = {
 let user = global.db.data.users[m.sender]
 let premium = user.premium
 
-let exp = `${pickRandom(['500', '600', '700', '800', '900', '999', '1000', '1300', '1500', '1800'])}`
-let exppremium = `${pickRandom(['1000', '1500', '1800', '2100', '2500', '2900', '3300', '3600', '4000', '4500'])}`
+let exp = `${pickRandom([500, 600, 700, 800, 900, 999, 1000, 1300, 1500, 1800])}` * 1
+let exppremium = `${pickRandom([1000, 1500, 1800, 2100, 2500, 2900, 3300, 3600, 4000, 4500])}` * 1
 	
-let money = `${pickRandom(['300', '500', '700', '900', '500', '800', '900', '1100', '1350', '1500'])}`
-let moneypremium = `${pickRandom(['800', '1300', '1600', '1900', '2200', '2500', '2700', '3000', '3300', '3500'])}`
+let money = `${pickRandom([300, 500, 700, 900, 500, 800, 900, 1100, 1350, 1500])}` * 1
+let moneypremium = `${pickRandom([800, 1300, 1600, 1900, 2200, 2500, 2700, 3000, 3300, 3500])}` * 1
 
-let potion = `${pickRandom(['1', '2', '3', '4', '5'])}`
-let potionpremium = `${pickRandom(['2', '4', '6', '9', '12'])}`
+let potion = `${pickRandom([1, 2, 3, 4, 5])}` * 1
+let potionpremium = `${pickRandom([2, 4, 6, 9, 12])}` * 1
 
 const recompensas = {
   exp: premium ? exppremium : exp,
@@ -99,11 +99,11 @@ const recompensas = {
 
 let time = user.lastclaim + 120000 //2 Horas 7200000
 if (new Date - user.lastclaim < 120000) throw `𝙔𝘼 𝙍𝙀𝘾𝙇𝘼𝙈𝘼𝙎𝙏𝙀 𝙏𝙐 𝙍𝙀𝙂𝘼𝙇𝙊 🎁\n𝙑𝙐𝙀𝙇𝙑𝙀 𝙀𝙉 *${msToTime(time - new Date())}* 𝙋𝘼𝙍𝘼 𝙑𝙊𝙇𝙑𝙀𝙍 𝘼 𝙍𝙀𝘾𝙇𝘼𝙈𝘼𝙍\n\n𝙔𝙊𝙐 𝘼𝙇𝙍𝙀𝘼𝘿𝙔 𝘾𝙇𝘼𝙄𝙈𝙀𝘿 𝙔𝙊𝙐𝙍 𝙂𝙄𝙁𝙏 🎁\n𝘾𝙊𝙈𝙀 𝘽𝘼𝘾𝙆 𝙄𝙉 *${msToTime(time - new Date())}* 𝙏𝙊 𝘾𝙇𝘼𝙄𝙈 𝘼𝙂𝘼𝙄𝙉`
-
+let texto = ''
 for (let reward of Object.keys(recompensas)) {
     if (!(reward in user)) continue
     user[reward] += recompensas[reward]
-let texto = `*+${recompensas[reward]}* ${global.rpgshop.emoticon(reward)}\n`
+texto += `*+${recompensas[reward]}* ${global.rpgshop.emoticon(reward)}\n`
 let text = `
 ╭━━🎁━🎁━🎁━━⬣
 ┃ ✨ 𝙊𝘽𝙏𝙄𝙀𝙉𝙀𝙎 𝙐𝙉 𝙍𝙀𝙂𝘼𝙇𝙊!!
