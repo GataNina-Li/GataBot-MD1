@@ -74,8 +74,8 @@ let ftroli = {
 			}
 		}
 
-//await conn.reply(m.chat, `*Prueba*`, fpoll,  m)
-conn.sendButton(m.chat, `*Prueba*`, wm, pp, [[' Menu', '/menu']], m, ftroli)
+await conn.reply(m.chat, `*Prueba*`, ftroli,  m)
+//conn.sendButton(m.chat, `*Prueba*`, wm, pp, [[' Menu', '/menu']], m, ftroli)
 }
 
 handler.command = /^(fake)$/i
