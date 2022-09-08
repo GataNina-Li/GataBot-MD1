@@ -94,7 +94,7 @@ let potionpremium = `${pickRandom(['2', '4', '6', '9', '12'])}`
 const recompensas = {
   exp: `${premium ? exppremium : exp}`,
   money: `${premium ? moneypremium : money}`,
-  potion: `${premium ? potionpremium : potion}`,
+  potion: `${premium ? potionpremium : potion}`
 }
 
 let time = user.lastclaim + 7200000 //2 Horas 
