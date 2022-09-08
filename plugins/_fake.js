@@ -47,7 +47,7 @@ let pp = await conn.profilePictureUrl(who).catch(_ => gata)
 				}
 			}*/
 
-let fpoll = {
+/*let fpoll = {
 			key: {
 				participant: '0@s.whatsapp.net'
 			},
@@ -56,10 +56,26 @@ let fpoll = {
 					name: '👋 Hay Kak :> ' + name
 				}
 			}
+		}*/
+
+let ftroli = {
+			key: {
+				participant: '0@s.whatsapp.net'
+			},
+			message: {
+				orderMessage: {
+					itemCount: fsizedoc,
+					status: 1,
+					surface: 1,
+					message: botdate,
+					orderTitle: author,
+					sellerJid: '0@s.whatsapp.net'
+				}
+			}
 		}
 
 //await conn.reply(m.chat, `*Prueba*`, fpoll,  m)
-conn.sendButton(m.chat, `*Prueba*`, wm, null, [[' Menu', '/menu']] fpoll, m)
+conn.sendButton(m.chat, `*Prueba*`, wm, pp, [[' Menu', '/menu']] ftroli, m)
 }
 
 handler.command = /^(fake)$/i
