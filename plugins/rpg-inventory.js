@@ -166,8 +166,8 @@ if (!args[0]) {
 },{
 	title: comienzo + ' ❖ 𝗔𝗟𝗜𝗠𝗘𝗡𝗧𝗢𝗦 𝗬 𝗔𝗡𝗜𝗠𝗔𝗟𝗘𝗦 ❖ ' + fin,
 	rows: [
-{title: "ღ 𝘐𝘕𝘝𝘌𝘕𝘛𝘈𝘙𝘐𝘖 - 𝘈𝘓𝘐𝘔𝘌𝘕𝘛𝘖𝘚 𝘠 𝘈𝘕𝘐𝘔𝘈𝘓𝘌𝘚 : 𝘍𝘖𝘖𝘋", rowId: usedPrefix + command + ' alimentos'},
-{title: "ღ 𝘐𝘕𝘝𝘌𝘕𝘛𝘈𝘙𝘐𝘖 - 𝘈𝘕𝘐𝘔𝘈𝘓𝘌𝘚 𝘈𝘛𝘙𝘈𝘗𝘈𝘋𝘖𝘚 : HUNT", rowId: usedPrefix + ' animales'}
+{title: "ღ 𝘐𝘕𝘝𝘌𝘕𝘛𝘈𝘙𝘐𝘖 - 𝘈𝘓𝘐𝘔𝘌𝘕𝘛𝘖𝘚 𝘠 𝘈𝘕𝘐𝘔𝘈𝘓𝘌𝘚 : 𝘍𝘖𝘖𝘋", rowId: usedPrefix + 'alimentos'},
+{title: "ღ 𝘐𝘕𝘝𝘌𝘕𝘛𝘈𝘙𝘐𝘖 - 𝘈𝘕𝘐𝘔𝘈𝘓𝘌𝘚 𝘈𝘛𝘙𝘈𝘗𝘈𝘋𝘖𝘚 : HUNT", rowId: usedPrefix + 'animales'}
 ]}
 ]
 
