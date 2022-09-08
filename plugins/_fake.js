@@ -5,7 +5,7 @@ import moment from 'moment-timezone'
 let handler = async (m, { conn, args }) => {
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? this.user.jid : m.sender
 let fsizedoc = '1'.repeat(10)
-let ucapan = ucapan()
+//let ucapan = ucapan()
 let sap = ['Hai', 'Ohayo', 'Kyaa', 'Halo', 'Nyann']
 let name = await this.getName(who)
 let sgh = md
@@ -19,7 +19,7 @@ let adReply = {
 				forwardingScore: fsizedoc,
 				externalAdReply: {
 					showAdAttribution: true,
-					title: ucapan,
+					title: ucapan(),
 					body: '👋 ' + sap.getRandom() + ' Kak :> ' + name,
 					mediaUrl: sgc,
 					description: botdate,
