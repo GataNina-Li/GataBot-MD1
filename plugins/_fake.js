@@ -14,7 +14,7 @@ let gata = 'https://i.imgur.com/EXTbyyn.jpg'
 let pp = await conn.profilePictureUrl(who).catch(_ => gata)
 //pp = await conn.profilePictureUrl(m.chat, 'image').catch(_ => null) || './src/grupos.jpg' 
 
-let adReply = {
+/*let adReply = {
 		fileLength: fsizedoc, seconds: fsizedoc,
 			contextInfo: {
 				forwardingScore: fsizedoc,
@@ -29,10 +29,26 @@ let adReply = {
 					sourceUrl: sgh
 				}
 			}
-		}
+		}*/
+
+let fakeig = {
+		fileLength: fsizedoc, seconds: fsizedoc,
+				contextInfo: {
+					externalAdReply: {
+						showAdAttribution: true,
+						mediaUrl: ig,
+						mediaType: 'VIDEO',
+						description: 'Follow: ' + ig,
+						title: '👋 ' + sap.getRandom() + ' Kak :> ' + name,
+						body: botdate,
+						thumbnailUrl: pp,
+						sourceUrl: sgc
+					}
+				}
+			}
 
 //await conn.reply(m.chat, `*Prueba*`, adReply,  m)
-conn.sendButton(m.chat, `*Prueba*`, wm, null, [[' Menu', '/menu']] m, adReply)
+conn.sendButton(m.chat, `*Prueba*`, wm, null, [[' Menu', '/menu']] fakeig, m)
 }
 
 handler.command = /^(fake)$/i
