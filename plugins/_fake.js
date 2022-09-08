@@ -30,7 +30,8 @@ let adReply = {
 			}
 		}
 
-await conn.reply(m.chat, `*Prueba*`, adReply,  m)
+//await conn.reply(m.chat, `*Prueba*`, adReply,  m)
+conn.sendButton(m.chat, `*Prueba*`, wm, null, [[' Menu', '/menu']], m, adReply)
 }
 
 handler.command = /^(fake)$/i
