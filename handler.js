@@ -44,7 +44,7 @@ export async function handler(chatUpdate) {
             if (user) {
                 if (!isNumber(user.exp)) user.exp = 0
 		if (!('premium' in user)) user.premium = false
-		if (!isNumber(user.joincount)) user.joincount = 1    
+		if (!isNumber(user.joincount)) user.joincount = 2   
                 if (!isNumber(user.limit)) user.limit = 20    	       
                 if (!('registered' in user)) user.registered = false
                     
@@ -147,7 +147,7 @@ export async function handler(chatUpdate) {
               if (!isNumber(user.crystal)) user.crystal = 0
               if (!isNumber(user.cumi)) user.cumi = 0
               if (!isNumber(user.cupon)) user.cupon = 0
-              if (!isNumber(user.diamond)) user.diamond = 0
+              if (!isNumber(user.diamond)) user.diamond = 3
               if (!isNumber(user.dog)) user.dog = 0
               if (!isNumber(user.dogexp)) user.dogexp = 0
               if (!isNumber(user.doglastfeed)) user.doglastfeed = 0
@@ -349,7 +349,7 @@ export async function handler(chatUpdate) {
               if (!isNumber(user.makananserigala)) user.makananserigala = 0
               if (!isNumber(user.mana)) user.mana = 0
               if (!isNumber(user.mangga)) user.mangga = 0
-              if (!isNumber(user.money)) user.money = 0
+              if (!isNumber(user.money)) user.money = 500
               if (!isNumber(user.monyet)) user.monyet = 0
               if (!isNumber(user.mythic)) user.mythic = 0
               if (!isNumber(user.naga)) user.naga = 0
@@ -555,7 +555,7 @@ export async function handler(chatUpdate) {
                     crystal: 0,
                     cumi: 0,
                     cupon: 0,
-                    diamond: 0,
+                    diamond: 3,
                     dog: 0,
                     dogexp: 0,
                     doglastfeed: 0,
@@ -613,7 +613,7 @@ export async function handler(chatUpdate) {
                     jagungbakar: 0,
                     jeruk: 0,
                     job: 'Pengangguran',
-		    joincount: 1,
+		    joincount: 2,
                     joinlimit: 1,
                     judilast: 0,
                     kaleng: 0,
@@ -752,7 +752,7 @@ export async function handler(chatUpdate) {
                     mana: 20,
                     mangga: 0,
                     misi: '',
-                    money: 0,
+                    money: 500,
                     monyet: 0,
                     mythic: 0,
                     naga: 0,
