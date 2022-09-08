@@ -24,7 +24,7 @@ const items = {
         kaleng: { potion: 2 },
         kardus: { trash: 20 },
         
-        eleksirb: { healtmonster: 8 },
+        eleksirb: { healtmonster: 2},
         emasbatang: { kayu: 4},
         emasbiasa: { diamond: 30 },
         rubah: { berlian: 45 },
@@ -32,7 +32,7 @@ const items = {
         serigala: { kaleng: 150 },
         kayu: { wood: 40 },
         sword: { gold: 2 },
-        umpan: { string: 4 },
+        umpan: { string: 2 },
         healtmonster: { kyubi: 35 },
         pancingan: { iron: 4 },
         
