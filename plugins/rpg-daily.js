@@ -91,10 +91,27 @@ let moneypremium = `${pickRandom([800, 1300, 1600, 1900, 2200, 2500, 2700, 3000,
 let potion = `${pickRandom([1, 2, 3, 4, 5])}` * 1
 let potionpremium = `${pickRandom([2, 4, 6, 9, 12])}` * 1
 
-const recompensas = {
+let tiketcoin = `${pickRandom([1, 0, 0, 2, 0])}` * 1
+let tiketcoinpremium = `${pickRandom([2, 1, 1, 3, 4])}` * 1
+
+let eleksirb = `${pickRandom([1, 1, 1, 3, 1, 2, 2, 1, 5, 8])}` * 1
+let eleksirbpremium = `${pickRandom([3, 3, 5, 3, 8, 3, 4, 4, 10, 7])}` * 1
+
+let umpan = `${pickRandom([10, 20, 30, 40, 50, 60, 70, 80, 90, 100])}` * 1
+let umpanpremium = `${pickRandom([30, 60, 90, 120, 150, 180, 210, 240, 270, 300])}` * 1
+
+let cajas = `${pickRandom(['common:', 'uncoommon:', 'mythic:'])}`
+let cajasfree = `${pickRandom([0, 0, 0, 1, 1, 1, 2, 2, 0, 0])}` * 1
+let cajaspremium = `${pickRandom([2, 3, 2, 2, 3, 3, 1, 1, 2, 0])}` * 1
+
+const recompensas = {	
   exp: premium ? exppremium : exp,
   money: premium ? moneypremium : money,
   potion: premium ? potionpremium : potion,
+  tiketcoin: premium ? tiketcoinpremium : tiketcoin,	
+  eleksirb: premium ? eleksirbpremium : eleksirb,
+  umpan: premium ? umpanpremium : umpan,
+  [cajas] premium ? cajaspremium : cajasfree,
 }
 
 let time = user.lastclaim + 120000 //2 Horas 7200000
