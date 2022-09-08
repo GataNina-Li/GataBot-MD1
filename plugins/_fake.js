@@ -31,7 +31,7 @@ let pp = await conn.profilePictureUrl(who).catch(_ => gata)
 			}
 		}*/
 
-let fakeig = {
+/*let fakeig = {
 		fileLength: fsizedoc, seconds: fsizedoc,
 				contextInfo: {
 					externalAdReply: {
@@ -45,9 +45,20 @@ let fakeig = {
 						sourceUrl: sgc
 					}
 				}
-			}
+			}*/
 
-await conn.reply(m.chat, `*Prueba*`, fakeig,  m)
+let fpoll = {
+			key: {
+				participant: '0@s.whatsapp.net'
+			},
+			message: {
+				pollCreationMessage: {
+					name: '👋 Hay Kak :> ' + name
+				}
+			}
+		}
+
+await conn.reply(m.chat, `*Prueba*`, fpoll,  m)
 //conn.sendButton(m.chat, `*Prueba*`, wm, null, [[' Menu', '/menu']] fakeig, m)
 }
 
