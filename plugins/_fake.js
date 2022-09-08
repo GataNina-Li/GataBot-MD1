@@ -11,7 +11,8 @@ let name = await conn.getName(who)
 let sgh = md
 let sgc = nnn
 let gata = 'https://i.imgur.com/EXTbyyn.jpg'
-let pp = await this.profilePictureUrl(who).catch(_ => gata.getRandom())
+let pp = await this.profilePictureUrl(who).catch(_ => gata)
+//pp = await conn.profilePictureUrl(m.chat, 'image').catch(_ => null) || './src/grupos.jpg' 
 
 let adReply = {
 		fileLength: fsizedoc, seconds: fsizedoc,
