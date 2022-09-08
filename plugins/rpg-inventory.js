@@ -635,7 +635,7 @@ let user = global.db.data.users[m.sender]
 let usuario = global.db.data.users[m.sender]
 
 let healt = member.health
-let level = member.level
+//let level = member.level
 let rol = member.role
 let pasangan = member.pasangan
 let warn = member.warn
