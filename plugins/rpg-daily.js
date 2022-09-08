@@ -92,9 +92,9 @@ let potion = `${pickRandom(['1', '2', '3', '4', '5'])}`
 let potionpremium = `${pickRandom(['2', '4', '6', '9', '12'])}`
 
 const recompensas = {
-  exp: premium ? exppremium : exp,
-  money: premium ? moneypremium : money,
-  potion: premium ? potionpremium : potion,
+  exp: `${premium ? exppremium : exp}`,
+  money: `${premium ? moneypremium : money}`,
+  potion: `${premium ? potionpremium : potion}`,
 }
 
 let time = user.lastclaim + 7200000 //2 Horas 
@@ -112,7 +112,7 @@ let text = `
 ╰━━🎁━🎁━🎁━━⬣`
 let img = 'https://img.freepik.com/vector-gratis/gente-diminuta-enormes-cajas-regalo-ilustracion-vectorial-plana-personas-que-celebran-cumpleanos-envian-o-reciben-regalos-lealtad-o-ideas-brillantes-recompensa-bonificacion-concepto-fiesta_74855-25016.jpg?w=2000'
 
-await conn.sendButton(m.chat, text, texto, img, [['⛰️ 𝘼𝘽𝙍𝙄𝙍 𝘾𝙊𝙁𝙍𝙀 | 𝘾𝙊𝙁𝙁𝙀𝙍 ⛰️', '/cofre'], ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', '/menu'] ], fkontak, m)  
+await conn.sendButton(m.chat, text, texto.trim(), img, [['⛰️ 𝘼𝘽𝙍𝙄𝙍 𝘾𝙊𝙁𝙍𝙀 | 𝘾𝙊𝙁𝙁𝙀𝙍 ⛰️', '/cofre'], ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', '/menu'] ], fkontak, m)  
 user.lastclaim = new Date * 1
 }
 handler.help = ['daily']
