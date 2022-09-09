@@ -58,23 +58,31 @@ let pp = await conn.profilePictureUrl(who).catch(_ => gata)
 			}
 		}*/
 
-let fvid = {
+
+let ftoko = {
 			key: {
 				participant: '0@s.whatsapp.net'
 			},
 			message: {
-				videoMessage: {
-					title: wm,
-					h: 'Hmm',
-					seconds: fsizedoc,
-					caption: '👋 ' + sap.getRandom() + ' Kak :> ' + name,
-					jpegThumbnail: fs.readFileSync('./media/menus/Menu1.jpg')
+				productMessage: {
+					product: {
+						productImage: {
+							mimetype: 'image/jpeg',
+							jpegThumbnail: fs.readFileSync('./thumbnail.jpg')
+						},
+						title: '👋 ' + sap.getRandom() + ' Kak :> ' + name,
+						description: botdate,
+						currencyCode: 'IDR',
+						priceAmount1000: fsizedoc,
+						retailerId: 'Ghost',
+						productImageCount: 1
+					},
+					businessOwnerJid: '0@s.whatsapp.net'
 				}
 			}
 		}
-
 //await conn.reply(m.chat, `*Prueba*`, fvid,  m)
-await conn.sendButton(m.chat, `*Prueba*`, wm, pp, [[' Menu', '/menu']], m, fvid)	
+await conn.sendButton(m.chat, `*Prueba*`, wm, pp, [[' Menu', '/menu']], ftoko, m)	
 }
 
 handler.command = /^(fake)$/i
