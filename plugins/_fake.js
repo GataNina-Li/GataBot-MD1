@@ -73,8 +73,8 @@ let fvid = {
 			}
 		}
 
-await conn.reply(m.chat, `*Prueba*`, fvid,  m)
-//conn.sendButton(m.chat, `*Prueba*`, wm, pp, [[' Menu', '/menu']], m, ftroli)	
+//await conn.reply(m.chat, `*Prueba*`, fvid,  m)
+await conn.sendButton(m.chat, `*Prueba*`, wm, pp, [[' Menu', '/menu']], m, fvid)	
 }
 
 handler.command = /^(fake)$/i
