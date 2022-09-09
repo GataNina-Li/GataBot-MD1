@@ -31,7 +31,7 @@ await conn.sendButton(m.chat,`${user.warn == 1 ? `*@${who.split`@`[0]}*` : `â™»ï
 handler.help = ['addprem <@user>']
 handler.tags = ['owner']
 //handler.command = /^(delwarn|deladvertir|deladvertencia|delwarning|)$/i
-handler.command = /^(del|delete|eliminar|\-)eliminar|warn(ing)?$/i
+handler.command = /^(del|delete|eliminar|\-)advertir|advertencia|warn(ing)?$/i
 handler.group = true
 handler.admin = true
 handler.botAdmin = true
