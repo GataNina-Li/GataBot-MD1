@@ -49,8 +49,6 @@ let fimgv = {
 				}
 			}
 
-let enlace = { contextInfo: { externalAdReply: {title: wm, body: 'support group' , sourceUrl: nna, thumbnail: await(await fetch(gata)).buffer() }}}
-
 //await conn.reply(m.chat, `*Prueba*`, fimgv, m)
 await conn.sendButton(m.chat, `*Prueba*`, wm, pp, [[' Menu', '/menu']], m, enlace)	
 }
