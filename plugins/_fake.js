@@ -14,50 +14,6 @@ let gata = 'https://i.imgur.com/EXTbyyn.jpg'
 let pp = await conn.profilePictureUrl(who).catch(_ => gata)
 //pp = await conn.profilePictureUrl(m.chat, 'image').catch(_ => null) || './src/grupos.jpg' 
 
-/*let adReply = {
-		fileLength: fsizedoc, seconds: fsizedoc,
-			contextInfo: {
-				forwardingScore: fsizedoc,
-				externalAdReply: {
-					showAdAttribution: true,
-					title: ucapan(),
-					body: '👋 ' + sap.getRandom() + ' Kak :> ' + name,
-					mediaUrl: sgc,
-					description: botdate,
-					previewType: 'PHOTO',
-					thumbnail: await(await fetch(pp)).buffer(),
-					sourceUrl: sgh
-				}
-			}
-		}*/
-
-/*let fakeig = {
-		fileLength: fsizedoc, seconds: fsizedoc,
-				contextInfo: {
-					externalAdReply: {
-						showAdAttribution: true,
-						mediaUrl: ig,
-						mediaType: 'VIDEO',
-						description: 'Follow: ' + ig,
-						title: '👋 ' + sap.getRandom() + ' Kak :> ' + wm,
-						body: botdate,
-						thumbnailUrl: pp,
-						sourceUrl: sgc
-					}
-				}
-			}*/
-
-/*let fpoll = {
-			key: {
-				participant: '0@s.whatsapp.net'
-			},
-			message: {
-				pollCreationMessage: {
-					name: '👋 Hay Kak :> ' + name
-				}
-			}
-		}*/
-
 /*let ftroli = {
 			key: {
 				participant: '0@s.whatsapp.net'
@@ -74,7 +30,7 @@ let pp = await conn.profilePictureUrl(who).catch(_ => gata)
 			}
 		}si*/ 
 
-let fkontak = {
+/*let fkontak = {
 			key: {
 				participant: '0@s.whatsapp.net'
 			},
@@ -87,9 +43,22 @@ let fkontak = {
 					sendEphemeral: true
 				}
 			}
+		}*/
+
+let fvn = {
+			key: {
+				participant: '0@s.whatsapp.net'
+			},
+			message: {
+				audioMessage: {
+					mimetype: 'audio/ogg; codecs=opus',
+					seconds: fsizedoc,
+					ptt: true
+				}
+			}
 		}
 
-await conn.reply(m.chat, `*Prueba*`, fkontak,  m)
+await conn.reply(m.chat, `*Prueba*`, fvn,  m)
 //conn.sendButton(m.chat, `*Prueba*`, wm, pp, [[' Menu', '/menu']], m, ftroli)
 }
 
