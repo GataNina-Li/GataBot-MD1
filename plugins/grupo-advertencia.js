@@ -31,7 +31,7 @@ if (user.warn >= 4) {
 user.warn = 0
 await m.reply(`𝙏𝙀 𝙇𝙊 𝘼𝘿𝙑𝙀𝙍𝙏𝙄𝘿 𝙑𝘼𝙍𝙄𝘼𝙎 𝙑𝙀𝘾𝙀𝙎!!\n*@${who.split`@`[0]}* 𝙎𝙐𝙋𝙀𝙍𝘼𝙎𝙏𝙀 𝙇𝘼𝙎 *4* 𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼𝙎 𝘼𝙃𝙊𝙍𝘼 𝙎𝙀𝙍𝘼𝙎 𝙀𝙇𝙄𝙈𝙄𝙉𝘼𝘿𝙊(𝘼) 🙄\n\n𝙔𝙊𝙐 𝙋𝘼𝙎𝙎𝙀𝘿 𝘼𝙇𝙇 *4* 𝙒𝘼𝙍𝙉𝙄𝙉𝙂𝙎 𝙉𝙊𝙒 𝙔𝙊𝙐 𝙒𝙄𝙇𝙇 𝘽𝙀 𝙀𝙇𝙄𝙈𝙄𝙉𝘼𝙏𝙀𝘿 😐`, false, { mentions: [who] })
 user.banned = true
-await this.groupParticipantsUpdate(m.chat, [who], 'remove') //@${m.sender.split`@`[0]}
+await conn.groupParticipantsUpdate(m.chat, [who], 'remove') //@${m.sender.split`@`[0]}
 //await this.updateBlockStatus(m.sender, 'block')
 }
 return !1
