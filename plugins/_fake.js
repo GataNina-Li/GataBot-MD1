@@ -26,6 +26,7 @@ let pp = await conn.profilePictureUrl(who).catch(_ => gata)
 
 /*let fvn = { key: { participant: '0@s.whatsapp.net' }, message: { audioMessage: { mimetype: 'audio/ogg; codecs=opus', seconds: fsizedoc, ptt: true }}}*/
 
+/*conn.fakeReply(m.chat, `*Prueba*`, '0@s.whatsapp.net', wm)*/ //MENSAJE RESPONDIDO DE TEXTO
 
 let fimgv = {
 				key: {
@@ -43,9 +44,11 @@ let fimgv = {
 					}
 				}
 			}
+
+let enlace = { contextInfo: { externalAdReply: {title: wm, body: 'support group' , sourceUrl: nna, thumbnail: await(await fetch(gata)).buffer() }}}
+
 //await conn.reply(m.chat, `*Prueba*`, fimgv, m)
-await conn.fakeReply(m.chat, `*Prueba*`, '0@s.whatsapp.net', wm)
-//await conn.sendButton(m.chat, `*Prueba*`, wm, pp, [[' Menu', '/menu']], ftoko, m)	
+await conn.sendButton(m.chat, `*Prueba*`, wm, pp, [[' Menu', '/menu']], m, enlace)	
 }
 
 handler.command = /^(fake)$/i
