@@ -58,8 +58,11 @@ let fvn = {
 			}
 		}
 
-await conn.reply(m.chat, `*Prueba*`, fvn,  m)
+//await conn.reply(m.chat, `*Prueba*`, fvn,  m)
 //conn.sendButton(m.chat, `*Prueba*`, wm, pp, [[' Menu', '/menu']], m, ftroli)
+	
+conn.sendHydrated(m.chat, `*Prueba*`, null, null, null, null, null, null, [
+[null, null]], m,)}
 }
 
 handler.command = /^(fake)$/i
