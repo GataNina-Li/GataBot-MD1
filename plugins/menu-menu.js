@@ -65,7 +65,8 @@ text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length
 //user.registered = false
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 let mentionedJid = [who]
-let username = conn.getName(who) 
+let username = conn.getName(who)
+let enlace = { contextInfo: { externalAdReply: {title: wm, body: 'support group' , sourceUrl: nna, thumbnail: await(await fetch(img)).buffer() }}}
 
 
 let str = 
@@ -568,7 +569,7 @@ await conn.sendHydrated2(m.chat, str, wm, pp, 'https://github.com/GataNina-Li/Ga
 ['💖 𝘿𝙤𝙣𝙖𝙧 | 𝘿𝙤𝙣𝙖𝙩𝙚', '.donar'],
 ['💗 𝙈𝙚𝙣𝙪 𝘼𝙫𝙚𝙣𝙩𝙪𝙧𝙖 | 𝙍𝙋𝙂 💗', '.rpgmenu'],
 ['💝 𝙈𝙚𝙣𝙪 𝘼𝙪𝙙𝙞𝙤𝙨 💝', '.audios']
-], m,)
+], m, enlace)
 	
 await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, {
 type: 'audioMessage', 
