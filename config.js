@@ -193,7 +193,7 @@ global.cmenut = '❖––––––『'
 global.cmenub = '┊✦ '
 global.cmenuf = '╰━═┅═━––––––๑\n'
 global.cmenua = '\n⌕ ❙❘❙❙❘❙❚❙❘❙❙❚❙❘❙❘❙❚❙❘❙❙❚❙❘❙❙❘❙❚❙❘ ⌕\n     '
-
+ 
 global.dmenut = '*❖─┅──┅〈*'
 global.dmenub = '*┊»*'
 global.dmenub2 = '*┊*'
