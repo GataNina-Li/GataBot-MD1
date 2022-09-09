@@ -1,25 +1,3 @@
-/*let handler = async (m, { conn, isPrems}) => { //lastmiming
-let minar = `${pickRandom(['Que pro 😎 has minado','🌟✨ Genial!! Obtienes','WOW!! eres un(a) gran Minero(a) ⛏️ Obtienes','Felicidades!! Ahora tienes','⛏️⛏️⛏️ Obtienes'])}`
-let pp = 'https://us.123rf.com/450wm/emojiimage/emojiimage1802/emojiimage180200332/95468325-mont%C3%B3n-de-piedras-preciosas-diamantes-azules-brillantes-concepto-de-joyas-caras-s%C3%ADmbolo-de-riqueza-d.jpg?ver=6'
-
-let d = Math.floor(Math.random() * 10)
-global.db.data.users[m.sender].limit += d * 1  
-//let hasil = Math.floor(Math.random() * 2000)
-let time = global.db.data.users[m.sender].lastdiamantes + 900000
-if (new Date - global.db.data.users[m.sender].lastdiamantes < 900000) throw `*💟 Vuelva en ${msToTime(time - new Date())} para continuar minando ⛏️*`  
-
-conn.sendHydrated(m.chat, `*${minar} ${d} 𝘿𝙞𝙖𝙢𝙖𝙣𝙩𝙚𝙨*`, wm, pp, md, '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
-['𝙈𝙞𝙣𝙖𝙧 𝙀𝙓𝙋 ⚡', `.minar`],
-['𝙈𝙞𝙣𝙖𝙧 𝙂𝙖𝙩𝙖𝘾𝙤𝙞𝙣𝙨 🐈', `.minar2`],
-['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', `.menu`]
-], m,)
-global.db.data.users[m.sender].lastdiamantes = new Date * 1  
-  
-
-//m.reply(`*${minar} *${hasil} 𝙓𝙋*`)
-
-}*/
-
 let handler = async (m, { conn, isPrems}) => { //lastmiming
 const fkontak = {
         "key": {
@@ -76,7 +54,7 @@ let limitpremium = `${pickRandom([4, 7, 8, 9, 11, 13, 16, 17, 19, 22, 24, 26, 28
 
 let time = user.lastdiamantes + 900000 //15 min
 if (new Date - user.lastdiamantes < 900000) return await conn.reply(m.chat, `*⏱️ 𝙑𝙪𝙚𝙡𝙫𝙖 𝙚𝙣 ${msToTime(time - new Date())} 𝙥𝙖𝙧𝙖 𝙘𝙤𝙣𝙩𝙞𝙣𝙪𝙖𝙧 𝙢𝙞𝙣𝙖𝙣𝙙𝙤 ${global.rpgshopp.emoticon('limit')}⛏️*\n\n*𝙂𝙚𝙩 𝙗𝙖𝙘𝙠 𝙞𝙣 ${msToTime(time - new Date())} 𝙩𝙤 𝙢𝙞𝙣𝙚 ${global.rpgshopp.emoticon('limit')}⛏️*`, fkontak,  m)
-user.limit += premium ? moneypremium : money  
+user.limit += premium ? limitpremium : limit  
 let texto = ''
 for (let reward of Object.keys(recompensas)) {
     if (!(reward in user)) continue
