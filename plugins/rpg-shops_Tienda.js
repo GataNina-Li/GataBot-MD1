@@ -2,7 +2,7 @@ const items = {
    buy: {
         exp: { eleksirb: 2 }, 
         limit: { money: 300 },
-        diamond: { berlian: 1 },
+        diamond: { berlian: 3 },
         joincount: { limit: 15 },
         emerald: { emasbatang: 5 },
         berlian: { kyubi: 10 },
