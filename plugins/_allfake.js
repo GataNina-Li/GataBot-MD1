@@ -33,7 +33,7 @@ global.ftroli = { key: { participant: '0@s.whatsapp.net' }, message: { orderMess
 
 	
 global.fvn = { key: { participant: '0@s.whatsapp.net' }, message: { audioMessage: { mimetype: 'audio/ogg; codecs=opus', seconds: fsizedoc, ptt: true }}}
-	
+//MENSAJE SIMULADOR DE AUDIO	
 	
 
 
@@ -57,7 +57,7 @@ let fimgv = {
 			}
 
 //await conn.reply(m.chat, `*Prueba*`, fimgv, m)
-await conn.sendButton(m.chat, `*Prueba*`, wm, pp, [[' Menu', '/menu']], m, fvn, enlace2)	
+await conn.sendButton(m.chat, `*Prueba*`, wm, pp, [[' Menu', '/menu']], m, fkontak2)	
 }
 
 handler.command = /^(fake)$/i
