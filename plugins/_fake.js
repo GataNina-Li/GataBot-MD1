@@ -68,7 +68,7 @@ let ftoko = {
 					product: {
 						productImage: {
 							mimetype: 'image/jpeg',
-							jpegThumbnail: fs.readFileSync('./thumbnail.jpg')
+							jpegThumbnail: fs.readFileSync('./media/menus/Menu1.jpg')
 						},
 						title: '👋 ' + sap.getRandom() + ' Kak :> ' + name,
 						description: botdate,
