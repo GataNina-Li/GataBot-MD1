@@ -260,6 +260,7 @@ case 'antinternational':
 case 'antifake':
 case 'antifalsos':
 case 'antivirtuales':
+case 'antiextranjeros':		
 if (m.isGroup) {
 if (!(isAdmin || isOwner)) {
 global.dfail('admin', m, conn)
