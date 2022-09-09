@@ -9,7 +9,7 @@ return !1
   let user = global.db.data.users[m.sender]
   let chat = global.db.data.chats[m.chat]
   let bot = global.db.data.settings[this.user.jid] || {}
-  let img = 'https://i.imgur.com/mtqCy2V.jpg'
+  let img = 'https://i.imgur.com/5Q1MqGD.jpg'
  const isToxic = toxicRegex.exec(m.text)
     
 if (isToxic && chat.antitoxic && !isOwner && !isAdmin) {
