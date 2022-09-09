@@ -21,7 +21,7 @@ let minar = `${pickRandom(['Que pro 😎 has minado',
 'WOW!! eres un(a) gran Minero(a) ⛏️ Obtienes',
 'Has Minado!!',
 '😲 Lograste Minar la cantidad de',
-'Tus Ingresos subira gracias a que minaste',
+'Tus Ingresos subiran gracias a que minaste',
 '⛏️⛏️⛏️⛏️⛏️ Minando',
 '🤩 SII!!! AHORA TIENES',
 'La minaria esta de tu lado, por ello obtienes',
@@ -54,7 +54,7 @@ let exppremium = `${pickRandom([500, 600, 700, 800, 900, 1000, 1050, 1150, 1200,
 
 let time = user.lastmiming + 600000 //10 min
 if (new Date - user.lastmiming < 600000) return await conn.reply(m.chat, `*⏱️ 𝙑𝙪𝙚𝙡𝙫𝙖 𝙚𝙣 ${msToTime(time - new Date())} 𝙥𝙖𝙧𝙖 𝙘𝙤𝙣𝙩𝙞𝙣𝙪𝙖𝙧 𝙢𝙞𝙣𝙖𝙣𝙙𝙤 ${global.rpgshopp.emoticon('exp')}⛏️*\n\n*𝙂𝙚𝙩 𝙗𝙖𝙘𝙠 𝙞𝙣 ${msToTime(time - new Date())} 𝙩𝙤 𝙘𝙤𝙣𝙩𝙞𝙣𝙪𝙚 𝙢𝙞𝙣𝙞𝙣𝙜 ${global.rpgshopp.emoticon('exp')}⛏️*`, fkontak,  m)
-user.exp += premium ? exppremium : xp * 1 
+user.exp += premium ? exppremium : xp  
 let texto = ''
 for (let reward of Object.keys(recompensas)) {
     if (!(reward in user)) continue
