@@ -62,6 +62,7 @@ rows: [
 ]}, ]
  
 let name = await conn.getName(m.sender)
+let enlace = { contextInfo: { externalAdReply: {title: wm, body: 'support group' , sourceUrl: nna, thumbnail: await(await fetch(img)).buffer() }}}
 //let name = conn.getName(m.sender)
 const listMessage = {
 text: `╭───────────────────❀\n│${ucapan()}\n│💝¸.• *${name}* •.¸💝\n╰───────────────────❀
@@ -109,7 +110,7 @@ const fkontak = {
 	"participant": "0@s.whatsapp.net"
 }
 
-await conn.sendMessage(m.chat, listMessage)
+await conn.sendMessage(m.chat, listMessage, enlace)
 //await conn.relayMessage(m.chat, { text: listMessage, mentions: [m.sender] }, { quoted: fkontak, m })
 //await conn.sendMessage(m.chat, { text: listMessage, mentions: [m.sender] }, { quoted: fkontak, m })
 }
