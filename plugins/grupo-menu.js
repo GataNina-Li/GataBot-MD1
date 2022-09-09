@@ -103,6 +103,9 @@ let menu = `
 ┃🌐➺ _${usedPrefix}configuracion_
 ┃🌐➺ _${usedPrefix}settings_
 ┃🌐➺ _${usedPrefix}vergrupo_
+┃🌐➺ _${usedPrefix}advertencia *@tag*_
+┃🌐➺ _${usedPrefix}deladvertencia *@tag*_
+┃🌐➺ _${usedPrefix}delwarn *@tag*_
 ┃🌐➺ _${usedPrefix}crearvoto | startvoto *texto*_
 ┃🌐➺ _${usedPrefix}sivotar | upvote_
 ┃🌐➺ _${usedPrefix}novotar | devote_
