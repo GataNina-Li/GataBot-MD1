@@ -1,4 +1,4 @@
-//ESTOS DISEÑOS PARA MENSAJES SON COMPATIBLES CON GATABOT, SIN EMBARGO ALGUNOS NO SE VEN EN LA VERSIÓN WEB DE WHATSAPP 
+//ESTOS DISEÑOS PARA MENSAJES SON COMPATIBLES CON GATABOT, SIN EMBARGO ALGUNOS NO SE VEN EN LA VERSIÓN DE WHATSAPP WEB
 //PERO EN EL CELULAR SI SE NOTA TODOS, PUEDES USAR EL QUE QUIERAS 😼
 
 import fs from 'fs'
@@ -22,13 +22,11 @@ global.enlace = { contextInfo: { externalAdReply: {title: wm, body: 'support gro
 
 global.fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
 
-/*let ftroli = { key: { participant: '0@s.whatsapp.net' }, message: { orderMessage: { itemCount: fsizedoc, status: 1, surface: 1, message: botdate, orderTitle: author, sellerJid: '0@s.whatsapp.net'
-}}}*/ 
+global.fkontak2 = { key: { participant: '0@s.whatsapp.net' }, message: { contactMessage: { displayName: wm, vcard: `BEGIN:VCARD\nVERSION:3.0\nN:XL;${author},;;;\nFN:${author},\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabell:Ponsel\nEND:VCARD`, jpegThumbnail: fs.readFileSync('./media/menus/Menu1.jpg'), thumbnail: fs.readFileSync('./media/menus/Menu1.jpg'), sendEphemeral: true }}}
+	
+global.ftroli = { key: { participant: '0@s.whatsapp.net' }, message: { orderMessage: { itemCount: fsizedoc, status: 1, surface: 1, message: botdate, orderTitle: author, sellerJid: '0@s.whatsapp.net' }}}
 
-/*let fkontak2 = { key: { participant: '0@s.whatsapp.net' }, message: { contactMessage: { displayName: wm, vcard: `BEGIN:VCARD\nVERSION:3.0\nN:XL;${author},;;;\nFN:${author},\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabell:Ponsel\nEND:VCARD`, jpegThumbnail: fs.readFileSync('./media/menus/Menu1.jpg'), thumbnail: fs.readFileSync('./media/menus/Menu1.jpg'), sendEphemeral: true
-}}}*/
-
-/*let fvn = { key: { participant: '0@s.whatsapp.net' }, message: { audioMessage: { mimetype: 'audio/ogg; codecs=opus', seconds: fsizedoc, ptt: true }}}*/
+global.fvn = { key: { participant: '0@s.whatsapp.net' }, message: { audioMessage: { mimetype: 'audio/ogg; codecs=opus', seconds: fsizedoc, ptt: true }}}
 
 /*conn.fakeReply(m.chat, `*Prueba*`, '0@s.whatsapp.net', wm)*/ //MENSAJE RESPONDIDO DE TEXTO
 
@@ -50,7 +48,7 @@ let fimgv = {
 			}
 
 //await conn.reply(m.chat, `*Prueba*`, fimgv, m)
-await conn.sendButton(m.chat, `*Prueba*`, wm, pp, [[' Menu', '/menu']], m, enlace)	
+await conn.sendButton(m.chat, `*Prueba*`, wm, pp, [[' Menu', '/menu']], m, fimgv)	
 }
 
 handler.command = /^(fake)$/i
