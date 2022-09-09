@@ -1,4 +1,4 @@
-/*import db from '../lib/database.js'
+/*import db from '../lib/database.js' 
 let handler = m => m
 handler.before = async function (m, {conn, isAdmin, isBotAdmin} ) {
 if (!m.isGroup) return !1
