@@ -16,8 +16,8 @@ const fkontak = {
 	
 let template = (args[0] || '').toLowerCase() 
 if (/comprar|prem1/i.test(command)) {
-var tiempoPremium = 3 * text //tiempo total 
-var tiempoDecretado = 3 * 1 //tiempo decretado 
+var tiempoPremium = 5 * text //tiempo total 
+var tiempoDecretado = 5 * 1 //tiempo decretado 
 const gata = 15
 let user = global.db.data.users[m.sender]
     
