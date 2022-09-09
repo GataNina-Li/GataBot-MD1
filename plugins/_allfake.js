@@ -57,7 +57,7 @@ let fimgv = {
 			}
 
 //await conn.reply(m.chat, `*Prueba*`, fimgv, m)
-await conn.sendButton(m.chat, `*Prueba*`, wm, pp, [[' Menu', '/menu']], m, fkontak, enlace2)	
+await conn.sendButton(m.chat, `*Prueba*`, wm, pp, [[' Menu', '/menu']], m, fvn, enlace2)	
 }
 
 handler.command = /^(fake)$/i
