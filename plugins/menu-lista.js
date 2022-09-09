@@ -113,7 +113,7 @@ const fkontak = {
 }
 
 //await conn.sendMessage(m.chat, listMessage)
-await conn.relayMessage(m.chat, { text: listMessage, mentions: [m.sender] }, { quoted: m, enlace })
+await conn.sendMessage(m.chat, { text: listMessage, mentions: [m.sender] }, { quoted: m, enlace })
 //await conn.relayMessage(m.chat, { text: listMessage, mentions: [m.sender] }, { quoted: fkontak, m })
 //await conn.sendMessage(m.chat, { text: listMessage, mentions: [m.sender] }, { quoted: fkontak, m })
 }
