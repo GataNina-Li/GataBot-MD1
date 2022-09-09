@@ -14,6 +14,7 @@ let name = await conn.getName(who)
 let sgh = md
 let sgc = nnn
 let gata = 'https://i.imgur.com/EXTbyyn.jpg'
+let logo = 'https://i.pinimg.com/564x/f7/d2/e4/f7d2e48fd59a8c01cd396bfc70b0a2d1.jpg'
 let pp = await conn.profilePictureUrl(who).catch(_ => gata)
 //pp = await conn.profilePictureUrl(m.chat, 'image').catch(_ => null) || './src/grupos.jpg' 
 
@@ -32,7 +33,7 @@ let fimgv = {
 				},
 				message: {
 					imageMessage: {
-						url: gata,
+						url: logo,
 						mimetype: 'image/jpeg',
 						fileLength: fsizedoc,
 						height: 306,
@@ -42,7 +43,8 @@ let fimgv = {
 					}
 				}
 			}
-await conn.reply(m.chat, `*Prueba*`, fimgv, m)
+//await conn.reply(m.chat, `*Prueba*`, fimgv, m)
+await conn.fakeReply(m.chat, `*Prueba*`, '0@s.whatsapp.net', wm)
 //await conn.sendButton(m.chat, `*Prueba*`, wm, pp, [[' Menu', '/menu']], ftoko, m)	
 }
 
