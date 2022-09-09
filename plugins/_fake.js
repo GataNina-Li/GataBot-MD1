@@ -45,7 +45,7 @@ let pp = await conn.profilePictureUrl(who).catch(_ => gata)
 			}
 		}*/
 
-let fvn = {
+/*let fvn = {
 			key: {
 				participant: '0@s.whatsapp.net'
 			},
@@ -56,9 +56,24 @@ let fvn = {
 					ptt: true
 				}
 			}
+		}*/
+
+let fvid = {
+			key: {
+				participant: '0@s.whatsapp.net'
+			},
+			message: {
+				videoMessage: {
+					title: wm,
+					h: 'Hmm',
+					seconds: fsizedoc,
+					caption: '👋 ' + sap.getRandom() + ' Kak :> ' + name,
+					jpegThumbnail: fs.readFileSync('./media/menus/Menu1.jpg')
+				}
+			}
 		}
 
-await conn.reply(m.chat, `*Prueba*`, fvn,  m)
+await conn.reply(m.chat, `*Prueba*`, fvid,  m)
 //conn.sendButton(m.chat, `*Prueba*`, wm, pp, [[' Menu', '/menu']], m, ftroli)	
 }
 
