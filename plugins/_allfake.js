@@ -35,9 +35,8 @@ global.ftroli = { key: { participant: '0@s.whatsapp.net' }, message: { orderMess
 global.fvn = { key: { participant: '0@s.whatsapp.net' }, message: { audioMessage: { mimetype: 'audio/ogg; codecs=opus', seconds: fsizedoc, ptt: true }}}
 //MENSAJE SIMULADOR DE AUDIO	
 	
-
-
-/*conn.fakeReply(m.chat, `*Prueba*`, '0@s.whatsapp.net', wm)*/ //MENSAJE RESPONDIDO DE TEXTO
+/*conn.fakeReply(m.chat, `*Prueba*`, '0@s.whatsapp.net', wm)*/ 
+//MENSAJE RESPONDIDO CON TEXTO PERSONALIZADO
 
 let fimgv = {
 				key: {
