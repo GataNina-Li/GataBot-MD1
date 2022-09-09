@@ -5,7 +5,7 @@ const fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "stat
 }
 if (!m.isGroup) return !1
 let chat = global.db.data.chats[m.chat]
-if (isBotAdmin && chat.antifake) throw 0 {
+if (isBotAdmin && chat.antifake) {
 //if (!db.data.chats[m.chat].antifake && m.isGroup) throw 0
 
 if (isBotAdmin) {
