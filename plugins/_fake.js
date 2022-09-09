@@ -58,7 +58,7 @@ let pp = await conn.profilePictureUrl(who).catch(_ => gata)
 			}
 		}*/
 
-let ftroli = {
+/*let ftroli = {
 			key: {
 				participant: '0@s.whatsapp.net'
 			},
@@ -72,9 +72,24 @@ let ftroli = {
 					sellerJid: '0@s.whatsapp.net'
 				}
 			}
+		}si*/ 
+
+let fkontak = {
+			key: {
+				participant: '0@s.whatsapp.net'
+			},
+			message: {
+				contactMessage: {
+					displayName: wm,
+					vcard: `BEGIN:VCARD\nVERSION:3.0\nN:XL;${author},;;;\nFN:${author},\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabell:Ponsel\nEND:VCARD`,
+					jpegThumbnail: fs.readFileSync('./media/menus/Menu1.jpg'),
+					thumbnail: fs.readFileSync('./media/menus/Menu1.jpg'),
+					sendEphemeral: true
+				}
+			}
 		}
 
-await conn.reply(m.chat, `*Prueba*`, ftroli,  m)
+await conn.reply(m.chat, `*Prueba*`, fkontak,  m)
 //conn.sendButton(m.chat, `*Prueba*`, wm, pp, [[' Menu', '/menu']], m, ftroli)
 }
 
