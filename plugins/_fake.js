@@ -1,3 +1,6 @@
+//ESTOS DISEÑOS PARA MENSAJES SON COMPATIBLES CON GATABOT, SIN EMBARGO ALGUNOS NO SE VEN EN LA VERSIÓN WEB DE WHATSAPP 
+//PERO EN EL CELULAR SI SE NOTA TODOS, PUEDES USAR EL QUE QUIERAS 😼
+
 import fs from 'fs'
 import fetch from 'node-fetch'
 import moment from 'moment-timezone'
@@ -14,74 +17,32 @@ let gata = 'https://i.imgur.com/EXTbyyn.jpg'
 let pp = await conn.profilePictureUrl(who).catch(_ => gata)
 //pp = await conn.profilePictureUrl(m.chat, 'image').catch(_ => null) || './src/grupos.jpg' 
 
-/*let ftroli = {
-			key: {
-				participant: '0@s.whatsapp.net'
-			},
-			message: {
-				orderMessage: {
-					itemCount: fsizedoc,
-					status: 1,
-					surface: 1,
-					message: botdate,
-					orderTitle: author,
-					sellerJid: '0@s.whatsapp.net'
-				}
-			}
-		}si*/ 
+/*let ftroli = { key: { participant: '0@s.whatsapp.net' }, message: { orderMessage: { itemCount: fsizedoc, status: 1, surface: 1, message: botdate, orderTitle: author, sellerJid: '0@s.whatsapp.net'
+}}}*/ 
 
-/*let fkontak = {
-			key: {
-				participant: '0@s.whatsapp.net'
-			},
-			message: {
-				contactMessage: {
-					displayName: wm,
-					vcard: `BEGIN:VCARD\nVERSION:3.0\nN:XL;${author},;;;\nFN:${author},\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabell:Ponsel\nEND:VCARD`,
-					jpegThumbnail: fs.readFileSync('./media/menus/Menu1.jpg'),
-					thumbnail: fs.readFileSync('./media/menus/Menu1.jpg'),
-					sendEphemeral: true
-				}
-			}
-		}*/
+/*let fkontak = { key: { participant: '0@s.whatsapp.net' }, message: { contactMessage: { displayName: wm, vcard: `BEGIN:VCARD\nVERSION:3.0\nN:XL;${author},;;;\nFN:${author},\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabell:Ponsel\nEND:VCARD`, jpegThumbnail: fs.readFileSync('./media/menus/Menu1.jpg'), thumbnail: fs.readFileSync('./media/menus/Menu1.jpg'), sendEphemeral: true
+}}}*/
 
-/*let fvn = {
-			key: {
-				participant: '0@s.whatsapp.net'
-			},
-			message: {
-				audioMessage: {
-					mimetype: 'audio/ogg; codecs=opus',
-					seconds: fsizedoc,
-					ptt: true
-				}
-			}
-		}*/
+/*let fvn = { key: { participant: '0@s.whatsapp.net' }, message: { audioMessage: { mimetype: 'audio/ogg; codecs=opus', seconds: fsizedoc, ptt: true }}}*/
 
 
-let ftoko = {
-			key: {
-				participant: '0@s.whatsapp.net'
-			},
-			message: {
-				productMessage: {
-					product: {
-						productImage: {
-							mimetype: 'image/jpeg',
-							jpegThumbnail: fs.readFileSync('./media/menus/Menu1.jpg')
-						},
-						title: '👋 ' + sap.getRandom() + ' Kak :> ' + name,
-						description: botdate,
-						currencyCode: 'IDR',
-						priceAmount1000: fsizedoc,
-						retailerId: 'Ghost',
-						productImageCount: 1
-					},
-					businessOwnerJid: '0@s.whatsapp.net'
+let fimgv = {
+				key: {
+					participant: '0@s.whatsapp.net'
+				},
+				message: {
+					imageMessage: {
+						url: gata,
+						mimetype: 'image/jpeg',
+						fileLength: fsizedoc,
+						height: 306,
+						width: 366,
+						jpegThumbnail: fs.readFileSync('./media/menus/Menu1.jpg'),
+						viewOnce: true
+					}
 				}
 			}
-		}
-await conn.reply(m.chat, `*Prueba*`, ftoko, m)
+await conn.reply(m.chat, `*Prueba*`, fimgv, m)
 //await conn.sendButton(m.chat, `*Prueba*`, wm, pp, [[' Menu', '/menu']], ftoko, m)	
 }
 
