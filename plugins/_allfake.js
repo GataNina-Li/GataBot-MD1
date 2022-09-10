@@ -43,38 +43,11 @@ global.twa = {key: {participant: "0@s.whatsapp.net", "remoteJid": "0@s.whatsapp.
 
 /*conn.fakeReply(m.chat, `*Prueba*`, '0@s.whatsapp.net', wm)*/ 
 //MENSAJE RESPONDIDO CON TEXTO PERSONALIZADO
-	
-global.fpayment = {
-				key: {
-					remoteJid: '0@s.whatsapp.net',
-					fromMe: false,
-					id: 'BAE595C600522C9C',
-					participant: '0@s.whatsapp.net'
-				},
-				message: {
-					requestPaymentMessage: {
-						currencyCodeIso4217: b,
-						amount1000: fsizedoc,
-						requestFrom: '0@s.whatsapp.net',
-						noteMessage: {
-							extendedTextMessage: {
-								text: '👋 Hay Kak :> '
-							}
-						},
-						expiryTimestamp: fsizedoc,
-						amount: {
-							value: fsizedoc,
-							offset: fsizedoc,
-							currencyCode: b
-						}
-					}
-				}
-			}
 
 
 //await conn.reply(m.chat, `*Prueba*`, ftroli, m)
 //await conn.sendButton(m.chat, `*Prueba*`, wm, pp, [[' Menu', '/menu']], m, fpayment)	
-await conn.sendButtonImg(m.chat, pp, wm, author, 'M E N U', '.menu', fpayment)
+//await conn.sendButtonImg(m.chat, pp, wm, author, 'M E N U', '.menu', fpayment)
 }
 
 handler.command = /^(fake)$/i
