@@ -6,6 +6,7 @@ const isLinkTik = /tiktok.com/i
 //const isLinkIg = /instagram.com/i 
 
 export async function before(m, { conn, args, usedPrefix, command, isAdmin, isBotAdmin }) {
+let enlace = { contextInfo: { externalAdReply: {title: wm, body: 'support group' , sourceUrl: nna, thumbnail: await(await fetch(img)).buffer() }}}
 if (m.isBaileys && m.fromMe)
 return !0
 if (!m.isGroup) return !1
