@@ -1,3 +1,4 @@
+import fetch from 'node-fetch'
 let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isROwner, text }) => { 
 const fkontak = {
 	"key": {
@@ -417,9 +418,59 @@ default:
 if (!/[01]/.test(command)) return conn.sendMessage(m.chat, listMessage, {quoted: fkontak})		
 throw false
 }
-await conn.sendButton(m.chat, `${rg}ღ *_COMANDO_* *|* ${type} 
+//conn.sendButton
+let fsizedoc = '1'.repeat(10)
+let sap = ['Hai', 'Ohayo', 'Kyaa', 'Halo', 'Nyann']
+let sgh = md
+let sgc = nnn
+let a = ['AED','AFN','ALL','AMD','ANG','AOA','ARS','AUD','AWG','AZN','BAM','BBD','BDT','BGN','BHD','BIF','BMD','BND','BOB','BOV','BRL','BSD','BTN','BWP','BYR','BZD','CAD','CDF','CHE','CHF','CHW','CLF','CLP','CNY','COP','COU','CRC','CUC','CUP','CVE','CZK','DJF','DKK','DOP','DZD','EGP','ERN','ETB','EUR','FJD','FKP','GBP','GEL','GHS','GIP','GMD','GNF','GTQ','GYD','HKD','HNL','HRK','HTG','HUF','IDR','ILS','INR','IQD','IRR','ISK','JMD','JOD','JPY','KES','KGS','KHR','KMF','KPW','KRW','KWD','KYD','KZT','LAK','LBP','LKR','LRD','LSL','LTL','LVL','LYD','MAD','MDL','MGA','MKD','MMK','MNT','MOP','MRO','MUR','MVR','MWK','MXN','MXV','MYR','MZN','NAD','NGN','NIO','NOK','NPR','NZD','OMR','PAB','PEN','PGK','PHP','PKR','PLN','PYG','QAR','RON','RSD','RUB','RWF','SAR','SBD','SCR','SDG','SEK','SGD','SHP','SLL','SOS','SRD','SSP','STD','SYP','SZL','THB','TJS','TMT','TND','TOP','TRY','TTD','TWD','TZS','UAH','UGX','USD','USN','USS','UYI','UYU','UZS','VEF','VND','VUV','WST','XAF','XAG','XAU','XBA','XBB','XBC','XBD','XCD','XDR','XFU','XOF','XPD','XPF','XPT','XTS','XXX','YER','ZAR','ZMW']
+let b = a[Math.floor(Math.random() * a.length)]
+let gata = 'https://i.imgur.com/EXTbyyn.jpg'
+let pp = await conn.profilePictureUrl(m.sender).catch(_ => gata)
+
+let adReply = {
+		fileLength: fsizedoc, seconds: fsizedoc,
+			contextInfo: {
+				forwardingScore: fsizedoc,
+				externalAdReply: {
+					showAdAttribution: true,
+					title: ucapan,
+					body: '👋 ' + sap.getRandom() + ' Kak :> ' + name,
+					mediaUrl: sgc,
+					description: botdate,
+					previewType: 'PHOTO',
+					thumbnail: await(await fetch(pp)).buffer(),
+					sourceUrl: sgh
+}}}
+	
+let fpayment = {
+				key: {
+					remoteJid: '0@s.whatsapp.net',
+					fromMe: false,
+					id: 'BAE595C600522C9C',
+					participant: '0@s.whatsapp.net'
+				},
+				message: {
+					requestPaymentMessage: {
+						currencyCodeIso4217: b,
+						amount1000: fsizedoc,
+						requestFrom: '0@s.whatsapp.net',
+						noteMessage: {
+							extendedTextMessage: {
+								text: '👋 Hay Kak :> ' + name
+							}
+						},
+						expiryTimestamp: fsizedoc,
+						amount: {
+							value: fsizedoc,
+							offset: fsizedoc,
+							currencyCode: b
+}}}}
+	
+	
+await conn.send2ButtonDoc(m.chat, `${rg}ღ *_COMANDO_* *|* ${type} 
 ღ *_ACTUALMENTE_* *|* ${isEnable ? 'ACTIVADO' : 'DESACTIVADO'} 
-ღ *_EN ESTE_* *|* ${isAll ? 'BOT' : isUser ? '' : 'CHAT'}`, wm, null, [[`${isEnable ? '🔕 DESACTIVAR' : '🔔 ACTIVAR'}`, `${isEnable ? `.off ${type}` : `.on ${type}`}`], ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 🍀', '.menu']], fkontak, m)}
+ღ *_EN ESTE_* *|* ${isAll ? 'BOT' : isUser ? '' : 'CHAT'}`, wm, null, [[`${isEnable ? '🔕 DESACTIVAR' : '🔔 ACTIVAR'}`, `${isEnable ? `.off ${type}` : `.on ${type}`}`], ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 🍀', '.menu']], fpayment, adReply)}
 //await conn.sendButton(m.chat, null, ajuste, null, [['🌟 𝙄𝙉𝙁𝙊𝙍𝙈𝘼𝘾𝙄𝙊𝙉 | 𝙄𝙉𝙁𝙊 𝙈𝙀𝙉𝙐 🌟', `/infomenu`], ['⚙️ 𝘾𝙀𝙉𝙏𝙍𝙊 𝘿𝙀 𝘾𝙊𝙉𝙁𝙄𝙂𝙐𝙍𝘼𝘾𝙄𝙊𝙉 ⚙️', `/on`]], fkontak, m)
 handler.help = ['en', 'dis'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
@@ -428,3 +479,21 @@ export default handler
 
 const more = String.fromCharCode(8206)
 const readMore = more.repeat(4001)
+
+function ucapan() {
+  const time = moment.tz('America/Los_Angeles').format('HH')  //America/Los_Angeles  Asia/Jakarta   America/Toronto
+  let res = "👋 *BIENVENIDO(A) | WELCOME* 👋"
+  if (time >= 4) {
+    res = "🌇 *Buenos Días | Good Morning* ⛅"
+  }
+  if (time >= 11) {
+    res = "🏙️ *Buenas Tardes | Good Afternoon* 🌤️"
+  }
+  if (time >= 15) {
+    res = "🌆 *Buenas tardes | Good Afternoon* 🌥️"
+  }
+  if (time >= 17) {
+    res = "🌃 *Buenas noches | Good Evening* 💫"
+  }
+  return res
+} 
