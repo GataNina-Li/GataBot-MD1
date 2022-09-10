@@ -483,21 +483,21 @@ let fpayment = {
 							currencyCode: b
 }}}}
 
-let fliveLoc = {
-			key: {
-				participant: '0@s.whatsapp.net'
-			},
-			message: {
-				liveLocationMessage: {
-					caption: '👋 ' + sap.getRandom() + ' Kak :> ' + name,
-					h: botdate,
-					jpegThumbnail: fs.readFileSync('./media/menus/Menu3.jpg')
-	
-}}}
+let fakeegc = {
+         contextInfo: { externalAdReply: { showAdAttribution: true,
+            mediaUrl: md,
+            mediaType: "PHOTO",
+            description: ig, 
+            title: packname,
+            body: wm,
+            thumbnail: './media/menus/Menu3.jpg',
+            sourceUrl: sgc
+    }
+    } }
 
 await conn.send2ButtonDoc(m.chat, `${rg}ღ *_COMANDO_* *|* ${type} 
 ღ *_ACTUALMENTE_* *|* ${isEnable ? 'ACTIVADO' : 'DESACTIVADO'} 
-ღ *_EN ESTE_* *|* ${isAll ? 'BOT' : isUser ? '' : 'CHAT'}`, wm, null, [[`${isEnable ? '🔕 DESACTIVAR' : '🔔 ACTIVAR'}`, `${isEnable ? `.off ${type}` : `.on ${type}`}`], ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 🍀', '.menu']], fliveLoc)}
+ღ *_EN ESTE_* *|* ${isAll ? 'BOT' : isUser ? '' : 'CHAT'}`, wm, null, [[`${isEnable ? '🔕 DESACTIVAR' : '🔔 ACTIVAR'}`, `${isEnable ? `.off ${type}` : `.on ${type}`}`], ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 🍀', '.menu']], m, fakeegc)}
 //await conn.sendButton(m.chat, null, ajuste, null, [['🌟 𝙄𝙉𝙁𝙊𝙍𝙈𝘼𝘾𝙄𝙊𝙉 | 𝙄𝙉𝙁𝙊 𝙈𝙀𝙉𝙐 🌟', `/infomenu`], ['⚙️ 𝘾𝙀𝙉𝙏𝙍𝙊 𝘿𝙀 𝘾𝙊𝙉𝙁𝙄𝙂𝙐𝙍𝘼𝘾𝙄𝙊𝙉 ⚙️', `/on`]], fkontak, m)
 handler.help = ['en', 'dis'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
