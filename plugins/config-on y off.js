@@ -163,12 +163,62 @@ chat.antiLink2 = isEnable
 break
 		
 case 'antitiktok':
+case 'antitk':
+case 'antitik':
 if (m.isGroup) {
 if (!(isAdmin || isOwner)) {
 global.dfail('admin', m, conn)
 throw false
 }}
 chat.antiTiktok = isEnable 
+break
+		
+case 'antiyoutube':
+case 'antiyt':
+if (m.isGroup) {
+if (!(isAdmin || isOwner)) {
+global.dfail('admin', m, conn)
+throw false
+}}
+chat.antiYoutube = isEnable 
+break
+		
+case 'antitelegram':
+case 'antitl':
+case 'antitele':
+case 'antitg':
+case 'antitel':
+if (m.isGroup) {
+if (!(isAdmin || isOwner)) {
+global.dfail('admin', m, conn)
+throw false
+}}
+chat.antiTelegram = isEnable 
+break
+		
+case 'antifacebook':
+case 'antifb':
+case 'antifbook':
+if (m.isGroup) {
+if (!(isAdmin || isOwner)) {
+global.dfail('admin', m, conn)
+throw false
+}}
+chat.antiFacebook = isEnable 
+break
+		
+case 'antiinstagram':
+case 'antinstagram':
+case 'antiig':
+case 'antig':
+case 'antiinsta':
+case 'antinsta':
+if (m.isGroup) {
+if (!(isAdmin || isOwner)) {
+global.dfail('admin', m, conn)
+throw false
+}}
+chat.antiInstagram = isEnable 
 break
     
 case 'modohorny':
