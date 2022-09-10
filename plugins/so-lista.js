@@ -62,7 +62,7 @@ let vn = './media/Eres Fuerte.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
     
-if (chat.audios && m.text.match(/(Zzzz|zzz|😴|💩|👽|🎃)/gi)) {    
+if (chat.audios && m.text.match(/(Zzzz|zzz|😴|💩|👽)/gi)) {    
 let vn = './media/Esta Zzzz.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
