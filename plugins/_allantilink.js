@@ -14,10 +14,9 @@ let chat = global.db.data.chats[m.chat]
 let bot = global.db.data.settings[this.user.jid] || {}
     
     
-    
+    const isAntiLinkTik = isLinkTik.exec(m.text)
     if (chat.antiTiktok && isAntiLinkTik && !isAdmin) {
     if (isBotAdmin) {
-    const isAntiLinkTik = isLinkTik.exec(m.text)
     if (m.text.includes(isAntiLinkTik)) return !0 
     }   
     
