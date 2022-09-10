@@ -14,7 +14,7 @@ let chat = global.db.data.chats[m.chat]
 let bot = global.db.data.settings[this.user.jid] || {}
     
     
-    const isAntiLinkTik = isLinkTik.exec(m.text)
+    
     //if (chat.antiTiktok && isAntiLinkTik && !isAdmin) {
     //if (isBotAdmin) {
     
@@ -30,6 +30,7 @@ let bot = global.db.data.settings[this.user.jid] || {}
     //if (isAdmin && chat.antiTiktok) return m.reply(`${eg}𝘾𝙊𝙈𝙊 𝙀𝙍𝙀𝙎 𝘼𝘿𝙈𝙄𝙉 𝙀𝙉 𝙀𝙇 𝙂𝙍𝙐𝙋𝙊 𝙉𝙊 𝙎𝙀𝙍𝘼𝙎 𝙀𝙇𝙄𝙈𝙄𝙉𝘼𝘿𝙊(𝘼)\n\n𝘼𝙎 𝙔𝙊𝙐 𝘼𝙍𝙀 𝘼𝘿𝙈𝙄𝙉 𝙄𝙉 𝙏𝙃𝙀 𝙂𝙍𝙊𝙐𝙋 𝙔𝙊𝙐 𝙒𝙄𝙇𝙇 𝙉𝙊𝙏 𝘽𝙀 𝙍𝙀𝙈𝙊𝙑𝙀𝘿`)
     if (chat.antiTiktok && isAntiLinkTik && !isAdmin) {
     if (isBotAdmin) {
+    const isAntiLinkTik = isLinkTik.exec(m.text)
     if (m.text.includes(isAntiLinkTik)) return !0 
     }
     await conn.sendButton(m.chat, `${ag}𝙎𝙀 𝘿𝙀𝙏𝙀𝘾𝙏𝙊 𝙐𝙉 𝙀𝙉𝙇𝘼𝘾𝙀 𝙋𝙍𝙊𝙃𝙄𝘽𝙄𝘿𝙊 𝘿𝙀 𝙒𝙃𝘼𝙏𝙎𝘼𝙋𝙋 𝙀𝙉 𝙀𝙎𝙏𝙀 𝙂𝙍𝙐𝙋𝙊\n\n𝘼 𝙁𝙊𝙍𝘽𝙄𝘿𝘿𝙀𝙉 𝙒𝙃𝘼𝙏𝙎𝘼𝙋𝙋 𝙇𝙄𝙉𝙆 𝙒𝘼𝙎 𝘿𝙀𝙏𝙀𝘾𝙏𝙀𝘿 𝙄𝙉 𝙏𝙃𝙄𝙎 𝙂𝙍𝙊𝙐𝙋\n\n𝙋𝙍𝙊𝘾𝙀𝘿𝙊 𝘼 𝙀𝙇𝙄𝙈𝙄𝙉𝘼𝙍𝙏𝙀 ${await this.getName(m.sender)} ${isBotAdmin ? '' : `\n\n${fg}𝘿𝙀𝘽𝙊 𝘿𝙀 𝙎𝙀𝙍 𝘼𝘿𝙈𝙄𝙉 𝙋𝘼𝙍𝘼 𝙋𝙊𝘿𝙀𝙍 𝙀𝙇𝙄𝙈𝙄𝙉𝘼𝙍 𝘼 𝙄𝙉𝙏𝙍𝙐𝙎𝙊𝙎(𝘼𝙎)\n\n𝙄 𝙈𝙐𝙎𝙏 𝘽𝙀 𝘼𝘿𝙈𝙄𝙉 𝙏𝙊 𝘽𝙀 𝘼𝘽𝙇𝙀 𝙏𝙊 𝙍𝙀𝙈𝙊𝙑𝙀 𝙄𝙉𝙏𝙍𝙐𝘿𝙀𝙍𝙎`}`, wm, img5, [['❎ 𝘿𝙀𝙎𝘼𝘾𝙏𝙄𝙑𝘼𝙍', '/off antitiktok']], m)
