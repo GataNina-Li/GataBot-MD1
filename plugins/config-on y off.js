@@ -428,6 +428,7 @@ let b = a[Math.floor(Math.random() * a.length)]
 let gata = 'https://i.imgur.com/EXTbyyn.jpg'
 let pp = await conn.profilePictureUrl(m.sender).catch(_ => gata)
 global.doc = pdoc.getRandom()
+global.ucapan = ucapan()
 	
 let adReply = {
 		fileLength: fsizedoc, seconds: fsizedoc,
@@ -435,7 +436,7 @@ let adReply = {
 				forwardingScore: fsizedoc,
 				externalAdReply: {
 					showAdAttribution: true,
-					title: ucapan,
+					title: global.ucapan,
 					body: '👋 ' + sap.getRandom() + ' Kak :> ' + name,
 					mediaUrl: sgc,
 					description: botdate,
