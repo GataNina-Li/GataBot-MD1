@@ -105,12 +105,19 @@ const row = Object.keys(namop, desop, idop).map((v, index) => ({
 		footerText: wm
 	}
 	
+const row = Object.keys(namop, desop, idop).map((v, index) => ({
+		title: `${htki} ${command} ${namop[v]} ${htka}`,
+		description: `\nNo.${1 + index}\n${htjava}${desop[v]}\n${dmenuf}`,
+		rowId: usedPrefix + command + ' ' + idop[v]
+	}))
+	
 const sections = [
 {
 title: `𝙇𝙄𝙎𝙏𝘼 𝘿𝙀 𝘾𝙊𝙉𝙁𝙄𝙂𝙐𝙍𝘼𝘾𝙄𝙊𝙉`,
 rows: [
-Object.keys(namop, desop, idop).map((v, index) => ({title: `${htki} ${command} ${namop[v]} ${htka}`, description: `\nNo.${1 + index}\n${htjava}${desop[v]}\n${dmenuf}`, rowId: usedPrefix + command + ' ' + idop[v]})),
+row
 ]}, ]
+
 const listMessage = {
 text: '*~ CENTRO DE CONFIGURACIÓN*',
 footer: `╭━━━[ *𝘼𝙅𝙐𝙎𝙏𝙀𝙎 𝙂𝘼𝙏𝘼𝘽𝙊𝙏* ]━━━⬣
@@ -119,6 +126,7 @@ ${wm}`,
 title: null,
 buttonText: "𝘾𝙊𝙉𝙁𝙄𝙂𝙐𝙍𝘼𝙍",
 sections }
+//Object.keys(namop, desop, idop).map((v, index) => ({title: `${htki} ${command} ${namop[v]} ${htka}`, description: `\nNo.${1 + index}\n${htjava}${desop[v]}\n${dmenuf}`, rowId: usedPrefix + command + ' ' + idop[v]})),
 
 let isEnable = /true|enable|(turn)?on|1/i.test(command)
 let chat = global.db.data.chats[m.chat]
