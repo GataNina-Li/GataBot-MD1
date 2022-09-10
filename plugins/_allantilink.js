@@ -8,7 +8,6 @@ export async function before(m, { conn, args, usedPrefix, command, isAdmin, isBo
     if (m.isBaileys && m.fromMe)
         return !0
     if (!m.isGroup) return !1
-    if (!m.isBotAdmin) return !1
     let chat = global.db.data.chats[m.chat]
     let bot = global.db.data.settings[this.user.jid] || {}
     const isAntiLinkTik = isLinkTik.exec(m.text)
