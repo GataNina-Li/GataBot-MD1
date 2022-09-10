@@ -94,7 +94,7 @@ let desop = [
 "Descripción 3"]
 
 let name = await conn.getName(m.sender)
-let row = Object.keys(namop, desop, idop).map((v, index) => ({
+const row = Object.keys(namop, desop, idop).map((v, index) => ({
 		title: `${htki} ${command} ${namop[v]} ${htka}`,
 		description: `\nNo.${1 + index}\n${htjava}${desop[v]}\n${dmenuf}`,
 		rowId: usedPrefix + command + ' ' + idop[v]
@@ -104,6 +104,21 @@ let row = Object.keys(namop, desop, idop).map((v, index) => ({
 		description: `⚡ Hola ${name}, Por favor elige ${command} Opciones en el botón de abajo...\n*Textos:* ${text}\n\nVuelva a escribir *${usedPrefix + command}* su texto para cambiar el texto de nuevo`,
 		footerText: wm
 	}
+	
+const sections = [
+{
+title: `𝙇𝙄𝙎𝙏𝘼 𝘿𝙀 𝘾𝙊𝙉𝙁𝙄𝙂𝙐𝙍𝘼𝘾𝙄𝙊𝙉`,
+rows: [
+Object.keys(namop, desop, idop).map((v, index) => ({title: `${htki} ${command} ${namop[v]} ${htka}`, description: `\nNo.${1 + index}\n${htjava}${desop[v]}\n${dmenuf}`, rowId: usedPrefix + command + ' ' + idop[v]}, ))
+]}, ]
+const listMessage = {
+text: '*~ CENTRO DE CONFIGURACIÓN*',
+footer: `╭━━━[ *𝘼𝙅𝙐𝙎𝙏𝙀𝙎 𝙂𝘼𝙏𝘼𝘽𝙊𝙏* ]━━━⬣
+╰━━━━━━━━━━━━━⬣
+${wm}`,
+title: null,
+buttonText: "𝘾𝙊𝙉𝙁𝙄𝙂𝙐𝙍𝘼𝙍",
+sections }
 
 let isEnable = /true|enable|(turn)?on|1/i.test(command)
 let chat = global.db.data.chats[m.chat]
@@ -440,8 +455,8 @@ throw false
 global.opts['swonly'] = isEnable
 break
 default:
-//if (!/[01]/.test(command)) return await conn.sendMessage(m.chat, listMessage)  
-if (!/[01]/.test(command)) return conn.sendMessage(m.chat, button)
+if (!/[01]/.test(command)) return await conn.sendMessage(m.chat, listMessage)  
+//if (!/[01]/.test(command)) return conn.sendMessage(m.chat, button)
 throw false
 }
 await conn.sendButton(m.chat, `${rg}ღ *_COMANDO_* *|* ${type} 
