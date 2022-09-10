@@ -109,7 +109,7 @@ const sections = [
 {
 title: `𝙇𝙄𝙎𝙏𝘼 𝘿𝙀 𝘾𝙊𝙉𝙁𝙄𝙂𝙐𝙍𝘼𝘾𝙄𝙊𝙉`,
 rows: [
-Object.keys(namop, desop, idop).map((v, index) => ({title: `${htki} ${command} ${namop[v]} ${htka}`, description: `\nNo.${1 + index}\n${htjava}${desop[v]}\n${dmenuf}`, rowId: usedPrefix + command + ' ' + idop[v]}, ))
+Object.keys(namop, desop, idop).map((v, index) => ({title: `${htki} ${command} ${namop[v]} ${htka}`, description: `\nNo.${1 + index}\n${htjava}${desop[v]}\n${dmenuf}`, rowId: usedPrefix + command + ' ' + idop[v]})),
 ]}, ]
 const listMessage = {
 text: '*~ CENTRO DE CONFIGURACIÓN*',
