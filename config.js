@@ -121,6 +121,8 @@ global.nnngrupo = nnnt //Grupo 3
 global.paypal = 'https://paypal.me/OficialGD'
 global.donar = paypal
 
+//global.gbrandom = [nna, nn, nnn, nnnt]  gbrandom.getRandom()
+
 //global.gataimg = fs.readFileSync('./media/menus/Menu3.jpg')
 
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
