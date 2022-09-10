@@ -253,6 +253,21 @@ throw false
 }}
 chat.antiver = isEnable 
 break
+		
+case 'antiinternacional':
+case 'antinternacional':
+case 'antinternational':
+case 'antifake':
+case 'antifalsos':
+case 'antivirtuales':
+case 'antiextranjeros':		
+if (m.isGroup) {
+if (!(isAdmin || isOwner)) {
+global.dfail('admin', m, conn)
+throw false
+}}
+chat.antifake = isEnable          
+break
     
 case 'restrict':
 case 'restringir':

@@ -1,3 +1,5 @@
+import fs from 'fs'
+import fetch from 'node-fetch'
 import { xpRange } from '../lib/levelling.js'
 const { levelling } = '../lib/levelling.js'
 import PhoneNumber from 'awesome-phonenumber'
@@ -64,7 +66,8 @@ text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length
 //user.registered = false
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 let mentionedJid = [who]
-let username = conn.getName(who) 
+let username = conn.getName(who)
+let enlace = { contextInfo: { externalAdReply: {title: wm, body: 'support group' , sourceUrl: nna, thumbnail: await(await fetch(img)).buffer() }}}
 
 
 let str = 
@@ -265,6 +268,14 @@ ${readMore}
 ┃🌐➺ _${usedPrefix}configuracion_
 ┃🌐➺ _${usedPrefix}settings_
 ┃🌐➺ _${usedPrefix}vergrupo_
+┃🌐➺ _${usedPrefix}advertencia *@tag*_
+┃🌐➺ _${usedPrefix}deladvertencia *@tag*_
+┃🌐➺ _${usedPrefix}delwarn *@tag*_
+┃🌐➺ _${usedPrefix}crearvoto | startvoto *texto*_
+┃🌐➺ _${usedPrefix}sivotar | upvote_
+┃🌐➺ _${usedPrefix}novotar | devote_
+┃🌐➺ _${usedPrefix}vervotos | cekvoto_
+┃🌐➺ _${usedPrefix}delvoto | deletevoto_
 ┃🌐➺ _${usedPrefix}enlace | link_
 ┃🌐➺ _${usedPrefix}newnombre | setname *texto*_
 ┃🌐➺ _${usedPrefix}newdesc | setdesc *texto*_

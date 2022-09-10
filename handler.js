@@ -894,6 +894,7 @@ export async function handler(chatUpdate) {
 		if (!('antiver' in chat)) chat.antiver = true                    
                 if (!('antiLink' in chat)) chat.antiLink = false                    
                 if (!('antiLink2' in chat)) chat.antiLink2 = false
+		if (!('antifake' in chat)) chat.antifake = false
 		if (!('reaction' in chat)) chat.reaction = true    
                 if (!('viewonce' in chat)) chat.viewonce = false                    
                 if (!('antitoxic' in chat)) chat.antitoxic = true                    
@@ -916,6 +917,7 @@ export async function handler(chatUpdate) {
 		    antiver: true,
                     antiLink: false,
                     antiLink2: false,
+		    antifake: false,
 		    reaction: true,
                     viewonce: false,
                     antitoxic: true,

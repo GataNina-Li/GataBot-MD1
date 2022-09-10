@@ -173,6 +173,13 @@ global.lolkeysapi = ['85faf717d0545d14074659ad']
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 
 
+//━━━━━━━━━━━━━━ img ━━━━━━━━━
+
+global.img = 'https://i.imgur.com/IXlUwTW.jpg'
+
+//━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
+
+
 //⊱ ━━━━━.⋅ RPG ⋅.━━━━ ⊰
 
 global.flaaa = [
@@ -186,7 +193,7 @@ global.cmenut = '❖––––––『'
 global.cmenub = '┊✦ '
 global.cmenuf = '╰━═┅═━––––––๑\n'
 global.cmenua = '\n⌕ ❙❘❙❙❘❙❚❙❘❙❙❚❙❘❙❘❙❚❙❘❙❙❚❙❘❙❙❘❙❚❙❘ ⌕\n     '
-
+ 
 global.dmenut = '*❖─┅──┅〈*'
 global.dmenub = '*┊»*'
 global.dmenub2 = '*┊*'

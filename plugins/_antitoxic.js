@@ -1,5 +1,6 @@
 const toxicRegex = /cp|earfuck|scat/i
 
+
 export async function before(m, { conn, isAdmin, isBotAdmin, isOwner }) {
  
 if (m.isBaileys && m.fromMe)
