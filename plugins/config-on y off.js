@@ -161,6 +161,15 @@ throw false
 }}
 chat.antiLink2 = isEnable 
 break
+		
+case 'antitiktok':
+if (m.isGroup) {
+if (!(isAdmin || isOwner)) {
+global.dfail('admin', m, conn)
+throw false
+}}
+chat.antiTiktok = isEnable 
+break
     
 case 'modohorny':
 case 'modocaliente':
