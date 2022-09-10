@@ -1,3 +1,4 @@
+import fetch from 'node-fetch'
 let handler = async (m, { conn, participants, groupMetadata }) => {
 let grupos = [nna, nn, nnn, nnnt]
 let enlace = { contextInfo: { externalAdReply: {title: wm, body: 'support group' , sourceUrl: grupos.getRandom(), thumbnail: await(await fetch(img)).buffer() }}}
