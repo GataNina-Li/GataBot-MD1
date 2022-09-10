@@ -1,4 +1,4 @@
-let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isROwner }) => { 
+let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isROwner, text }) => { 
 const fkontak = {
 	"key": {
     "participants":"0@s.whatsapp.net",
@@ -14,7 +14,7 @@ const fkontak = {
 	"participant": "0@s.whatsapp.net"
 }
 
-const sections = [
+/*const sections = [
 {
 title: `𝙇𝙄𝙎𝙏𝘼 𝘿𝙀 𝘾𝙊𝙉𝙁𝙄𝙂𝙐𝙍𝘼𝘾𝙄𝙊𝙉`,
 rows: [
@@ -76,7 +76,34 @@ footer: `╭━━━[ *𝘼𝙅𝙐𝙎𝙏𝙀𝙎 𝙂𝘼𝙏𝘼𝘽𝙊�
 ${wm}`,
 title: null,
 buttonText: "𝘾𝙊𝙉𝙁𝙄𝙂𝙐𝙍𝘼𝙍",
-sections }
+sections }*/
+
+let namop = [
+"Título 1",
+"Título 2",
+"Título 3"]
+
+let idop = [
+"Comando 1",
+"Comando 2",
+"Comando 3"]
+
+let desop = [
+"Descripción 1",
+"Descripción 2",
+"Descripción 3"]
+
+let name = await conn.getName(m.sender)
+let row = Object.keys(namop, desop, idop).map((v, index) => ({
+		title: `${htki} ${command} ${namop[v]} ${htka}`,
+		description: `\nNo.${1 + index}\n${htjava}${desop[v]}\n${dmenuf}`,
+		rowId: usedPrefix + command + ' ' + idop[v]
+	}))
+	let button = {
+		buttonText: `☂️ ${command} Opciones aquí ☂️`,
+		description: `⚡ Hola ${name}, Por favor elige ${command} Opciones en el botón de abajo...\n*Textos:* ${text}\n\nVuelva a escribir *${usedPrefix + command}* su texto para cambiar el texto de nuevo`,
+		footerText: wm
+	}
 
 let isEnable = /true|enable|(turn)?on|1/i.test(command)
 let chat = global.db.data.chats[m.chat]
@@ -413,7 +440,8 @@ throw false
 global.opts['swonly'] = isEnable
 break
 default:
-if (!/[01]/.test(command)) return await conn.sendMessage(m.chat, listMessage)   
+//if (!/[01]/.test(command)) return await conn.sendMessage(m.chat, listMessage)  
+if (!/[01]/.test(command)) return conn.sendListM(m.chat, button, row, fakes)
 throw false
 }
 await conn.sendButton(m.chat, `${rg}ღ *_COMANDO_* *|* ${type} 
