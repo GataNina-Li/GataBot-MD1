@@ -4,7 +4,7 @@ const isLinkYt = /youtube.com|youtu.be/i
 const isLinkTel = /telegram.com|t.me/i 
 const isLinkFb = /facebook.com|fb.me/i 
 const isLinkIg = /instagram.com/i 
-const isLinkTw = /twitter.com|/i 
+const isLinkTw = /twitter.com/i 
 
 export async function before(m, { conn, args, usedPrefix, command, isAdmin, isBotAdmin }) {
 let enlace = { contextInfo: { externalAdReply: {title: wm, body: 'support group' , sourceUrl: nna, thumbnail: await(await fetch(img)).buffer() }}}
