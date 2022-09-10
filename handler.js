@@ -899,6 +899,7 @@ export async function handler(chatUpdate) {
 		if (!('antiTelegram' in chat)) chat.antiTelegram = false
 		if (!('antiFacebook' in chat)) chat.antiFacebook = false
 		if (!('antiInstagram' in chat)) chat.antiInstagram = false
+		if (!('antiTwitter' in chat)) chat.antiInstagram = false
 		if (!('antifake' in chat)) chat.antifake = false
 		if (!('reaction' in chat)) chat.reaction = true    
                 if (!('viewonce' in chat)) chat.viewonce = false                    
@@ -927,6 +928,7 @@ export async function handler(chatUpdate) {
 		    antiTelegram: false,
 		    antiFacebook: false,
 		    antiInstagram: false,
+		    antiTwitter: false,
 		    antifake: false,
 		    reaction: true,
                     viewonce: false,
