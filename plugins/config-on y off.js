@@ -427,7 +427,6 @@ let a = ['AED','AFN','ALL','AMD','ANG','AOA','ARS','AUD','AWG','AZN','BAM','BBD'
 let b = a[Math.floor(Math.random() * a.length)]
 let gata = 'https://i.imgur.com/EXTbyyn.jpg'
 let pp = await conn.profilePictureUrl(m.sender).catch(_ => gata)
-let nomorown = '6282195322106'
 
 let adReply = {
 		fileLength: fsizedoc, seconds: fsizedoc,
