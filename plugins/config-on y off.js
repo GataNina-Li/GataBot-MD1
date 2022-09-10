@@ -102,8 +102,9 @@ let name = await conn.getName(m.sender)
 	
 const row = Object.keys(namop, desop, idop).map((v, index) => ({
 		title: `${htki} ${command} ${namop[v]} ${htka}`,
-		description: `\nNo.${1 + index}\n${htjava}${desop[v]}\n${dmenuf}`,
-		rowId: usedPrefix + command + ' ' + idop[v]
+	        rowId: usedPrefix + command + ' ' + idop[v],
+		description: `\nNo.${1 + index}\n${htjava}${desop[v]}\n${dmenuf}`
+		
 	}))
 	
 const sections = [
@@ -458,7 +459,8 @@ throw false
 global.opts['swonly'] = isEnable
 break
 default:
-if (!/[01]/.test(command)) return await conn.sendMessage(m.chat, listMessage)  
+//if (!/[01]/.test(command)) return await conn.sendMessage(m.chat, listMessage)  
+if (!/[01]/.test(command)) return conn.sendMessage(m.chat, listMessage, {quoted: m})		
 //if (!/[01]/.test(command)) return conn.sendMessage(m.chat, button)
 throw false
 }
