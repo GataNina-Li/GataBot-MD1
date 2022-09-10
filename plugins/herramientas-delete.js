@@ -1,3 +1,4 @@
+import fetch from 'node-fetch'
 let handler = async (m, { conn, usedPrefix, command }) => {
 let grupos = [nna, nn, nnn, nnnt]
 let gata = [img5, img6, img7, img8, img9]
