@@ -94,11 +94,6 @@ let desop = [
 "Descripción 3"]
 
 let name = await conn.getName(m.sender)
-const row = Object.keys(namop, desop, idop).map((v, index) => ({
-		title: `${htki} ${command} ${namop[v]} ${htka}`,
-		description: `\nNo.${1 + index}\n${htjava}${desop[v]}\n${dmenuf}`,
-		rowId: usedPrefix + command + ' ' + idop[v]
-	}))
 	let button = {
 		buttonText: `☂️ ${command} Opciones aquí ☂️`,
 		description: `⚡ Hola ${name}, Por favor elige ${command} Opciones en el botón de abajo...\n*Textos:* ${text}\n\nVuelva a escribir *${usedPrefix + command}* su texto para cambiar el texto de nuevo`,
