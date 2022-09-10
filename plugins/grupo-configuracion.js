@@ -43,6 +43,6 @@ await conn.sendButton(m.chat, wm, text, img5, [['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖�
 }
 handler.help = ['infogrup']
 handler.tags = ['group']
-handler.command = /^(configuración|settings|setting|confugurar|configuracion|vergrupo|gruporesumen|resumen|)$/i
+handler.command = /^(configuración|settings|setting|confugurar|configuracion|vergrupo|gruporesumen|resumen)$/i
 handler.group = true
 export default handler
