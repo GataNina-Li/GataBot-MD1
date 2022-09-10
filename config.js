@@ -177,8 +177,9 @@ global.lolkeysapi = ['85faf717d0545d14074659ad']
 
 global.img = 'https://i.imgur.com/IXlUwTW.jpg'
 global.img2 = 'https://i.imgur.com/EXTbyyn.jpg'
-global.img3 = 'https://i.imgur.com/oUAGYc2.jpg'
-global.img4 = 'https://i.imgur.com/i0pccuo.jpg'
+global.img3 = 'https://i.imgur.com/oUAGYc2.jpg' //prem
+global.img4 = 'https://i.imgur.com/i0pccuo.jpg' //prem
+global.img5 = 'https://i.imgur.com/SmW39DM.jpeg'
 
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 
