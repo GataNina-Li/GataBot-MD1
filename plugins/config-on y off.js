@@ -430,6 +430,7 @@ let gata = 'https://i.imgur.com/EXTbyyn.jpg'
 let pp = await conn.profilePictureUrl(m.sender).catch(_ => gata)
 global.doc = pdoc.getRandom()
 global.ucapan = ucapan()
+global.fsizedoc = '1'.repeat(10)
 	
 let adReply = {
 		fileLength: fsizedoc, seconds: fsizedoc,
