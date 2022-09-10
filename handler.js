@@ -894,6 +894,11 @@ export async function handler(chatUpdate) {
 		if (!('antiver' in chat)) chat.antiver = true                    
                 if (!('antiLink' in chat)) chat.antiLink = false                    
                 if (!('antiLink2' in chat)) chat.antiLink2 = false
+		if (!('antiTiktok' in chat)) chat.antiTiktok = false
+		if (!('antiYoutube' in chat)) chat.antiYoutube = false
+		if (!('antiTelegram' in chat)) chat.antiTelegram = false
+		if (!('antiFacebook' in chat)) chat.antiFacebook = false
+		if (!('antiInstagram' in chat)) chat.antiInstagram = false
 		if (!('antifake' in chat)) chat.antifake = false
 		if (!('reaction' in chat)) chat.reaction = true    
                 if (!('viewonce' in chat)) chat.viewonce = false                    
@@ -917,6 +922,11 @@ export async function handler(chatUpdate) {
 		    antiver: true,
                     antiLink: false,
                     antiLink2: false,
+		    antiTiktok: false,
+		    antiYoutube: false,
+		    antiTelegram: false,
+		    antiFacebook: false,
+		    antiInstagram: false,
 		    antifake: false,
 		    reaction: true,
                     viewonce: false,
