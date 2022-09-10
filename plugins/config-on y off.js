@@ -441,7 +441,7 @@ global.opts['swonly'] = isEnable
 break
 default:
 //if (!/[01]/.test(command)) return await conn.sendMessage(m.chat, listMessage)  
-if (!/[01]/.test(command)) return conn.sendListM(m.chat, button, row)
+if (!/[01]/.test(command)) return conn.sendMessage(m.chat, button, row)
 throw false
 }
 await conn.sendButton(m.chat, `${rg}ღ *_COMANDO_* *|* ${type} 
