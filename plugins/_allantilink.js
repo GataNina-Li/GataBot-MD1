@@ -1,5 +1,5 @@
+import fetch from 'node-fetch'
 const isLinkTik = /tiktok.com/i 
-
 //const isLinkYt = /youtube.com|youtu.be/i 
 //const isLinkTel = /t.me/i 
 //const isLinkFb = /facebook.com|fb.me/i 
