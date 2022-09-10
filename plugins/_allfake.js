@@ -36,28 +36,14 @@ global.ftroli = { key: { participant: '0@s.whatsapp.net' }, message: { orderMess
 global.fvn = { key: { participant: '0@s.whatsapp.net' }, message: { audioMessage: { mimetype: 'audio/ogg; codecs=opus', seconds: fsizedoc, ptt: true }}}
 //MENSAJE SIMULADOR DE AUDIO	
 	
+global.test = {key: {participant: "0@s.whatsapp.net", "remoteJid": "0@s.whatsapp.net"}, "message": {"groupInviteMessage": {"groupJid": "51995386439-1616969743@g.us", "inviteCode": "m", "groupName": "P", "caption": wm, 'jpegThumbnail': fs.readFileSync('./media/menus/Menu1.jpg')}}}
+	
 /*conn.fakeReply(m.chat, `*Prueba*`, '0@s.whatsapp.net', wm)*/ 
 //MENSAJE RESPONDIDO CON TEXTO PERSONALIZADO
 
-let fimgv = {
-				key: {
-					participant: '0@s.whatsapp.net'
-				},
-				message: {
-					imageMessage: {
-						url: logo,
-						mimetype: 'image/jpeg',
-						fileLength: fsizedoc,
-						height: 306,
-						width: 366,
-						jpegThumbnail: fs.readFileSync('./media/menus/Menu1.jpg'),
-						viewOnce: true
-					}
-				}
-			}
 
 //await conn.reply(m.chat, `*Prueba*`, ftroli, m)
-await conn.sendButton(m.chat, `*Prueba*`, wm, pp, [[' Menu', '/menu']], fimgv, m)	
+await conn.sendButton(m.chat, `*Prueba*`, wm, pp, [[' Menu', '/menu']], m, test)	
 }
 
 handler.command = /^(fake)$/i
