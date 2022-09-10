@@ -176,6 +176,7 @@ global.lolkeysapi = ['85faf717d0545d14074659ad']
 //━━━━━━━━━━━━━━ img ━━━━━━━━━
 
 global.img = 'https://i.imgur.com/IXlUwTW.jpg'
+global.img2 = 'https://i.imgur.com/EXTbyyn.jpg'
 
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 
