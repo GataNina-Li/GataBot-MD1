@@ -220,6 +220,20 @@ throw false
 }}
 chat.antiInstagram = isEnable 
 break
+		
+case 'antitwitter':
+case 'antitw':
+case 'antitwit':
+case 'antitwter':
+case 'antitwiter':
+case 'antiTwr':
+if (m.isGroup) {
+if (!(isAdmin || isOwner)) {
+global.dfail('admin', m, conn)
+throw false
+}}
+chat.antiTwitter = isEnable 
+break
     
 case 'modohorny':
 case 'modocaliente':
