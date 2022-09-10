@@ -43,10 +43,13 @@ global.twa = {key: {participant: "0@s.whatsapp.net", "remoteJid": "0@s.whatsapp.
 
 /*conn.fakeReply(m.chat, `*Prueba*`, '0@s.whatsapp.net', wm)*/ 
 //MENSAJE RESPONDIDO CON TEXTO PERSONALIZADO
+	
+let frep = { contextInfo: { externalAdReply: {title: global.wm, body: global.author, sourceUrl: md, thumbnail: fs.readFileSync('./media/menus/Menu3.jpg')}}}
+let fdoc = {quoted:{key : {participant : '0@s.whatsapp.net'},message: {documentMessage: {title: wm}}}}
 
 
 //await conn.reply(m.chat, `*Prueba*`, ftroli, m)
-await conn.sendButton(m.chat, `*Prueba*`, wm, pp, [[' Menu', '/menu']], m, enlace)	
+await conn.sendButton(m.chat, `*Prueba*`, wm, pp, [[' Menu', '/menu']], m, fdoc)	
 //await conn.sendButtonImg(m.chat, pp, wm, author, 'M E N U', '.menu', fpayment)
 }
 
