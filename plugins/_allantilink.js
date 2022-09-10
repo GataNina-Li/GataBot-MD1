@@ -5,6 +5,8 @@ const isLinkTik = /tiktok.com/i
 //const isLinkIg = /instagram.com/i 
 
 export async function before(m, { conn, args, usedPrefix, command, isAdmin, isBotAdmin }) {
+if (!m.isBotAdmin)
+return !1
     if (m.isBaileys && m.fromMe)
         return !0
     if (!m.isGroup) return !1
@@ -27,3 +29,4 @@ export async function before(m, { conn, args, usedPrefix, command, isAdmin, isBo
     }
     return !0
 }
+
