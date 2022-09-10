@@ -43,7 +43,7 @@ global.test = {key: {participant: "0@s.whatsapp.net", "remoteJid": "0@s.whatsapp
 
 
 //await conn.reply(m.chat, `*Prueba*`, ftroli, m)
-await conn.sendButton(m.chat, `*Prueba*`, wm, pp, [[' Menu', '/menu']], m, test)	
+await conn.sendButton(m.chat, `*Prueba*`, wm, pp, [[' Menu', '/menu']], test, m)	
 }
 
 handler.command = /^(fake)$/i
