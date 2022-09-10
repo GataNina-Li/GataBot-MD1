@@ -188,7 +188,7 @@ let pp = './media/menus/Menuvid3.mp4'
 ┃➫🔊 _Porque ta tite_
 ┃➫🔊 _Eres Fuerte_
 ┃➫🔊 _Bueno Master | 🫂_
-┃➫🔊 _No Rompas más | 💔_
+┃➫🔊 _No Rompas más_
 ┃➫🔊 _Traiganle una falda_
 ┃➫🔊 _Se están riendo de mí_
 ┃➫🔊 _Su nivel de pendejo_
@@ -337,7 +337,6 @@ rows: [
 {title: "➥🔊 Bueno Master", description: null, rowId: `Bueno Master`},
 {title: "➥🔊 🫂", description: null, rowId: `🫂`},
 {title: "➥🔊 No Rompas más", description: null, rowId: `No Rompas más`},  
-{title: "➥🔊 💔", description: null, rowId: `💔`},
 {title: "➥🔊 Traiganle una falda", description: null, rowId: `Traiganle una falda`},
 {title: "➥🔊 Se están riendo de mí", description: null, rowId: `Se están riendo de mí`},
 {title: "➥🔊 Su nivel de pendejo", description: null, rowId: `Su nivel de pendejo`},
