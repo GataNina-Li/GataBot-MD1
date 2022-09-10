@@ -15,10 +15,10 @@ let bot = global.db.data.settings[this.user.jid] || {}
     
     
     const isAntiLinkTik = isLinkTik.exec(m.text)
-    if (chat.antiTiktok && isAntiLinkTik && !isAdmin) {
-    if (isBotAdmin) {
-    if (m.text.includes(isAntiLinkTik)) return !0 
-    }   
+    //if (chat.antiTiktok && isAntiLinkTik && !isAdmin) {
+    //if (isBotAdmin) {
+    //if (m.text.includes(isAntiLinkTik)) return !0 
+    //}   
     
     //const isAntiLinkYt = isLinkYt.exec(m.text)
     //const isAntiLinkTel = isLinkTel.exec(m.text)
@@ -35,7 +35,7 @@ let bot = global.db.data.settings[this.user.jid] || {}
     if (isBotAdmin && bot.restrict) {
     await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
     } else if (!bot.restrict) return await conn.sendButton(m.chat, `𝙀𝙇/𝙇𝘼 𝙋𝙍𝙊𝙋𝙄𝙀𝙏𝘼𝙍𝙄𝙊(𝘼) 𝘿𝙀𝘽𝙀 𝘼𝘾𝙏𝙄𝙑𝘼𝙍 𝙀𝙎𝙏𝘼 𝙁𝙐𝙉𝘾𝙄𝙊𝙉\n\n𝙊𝙒𝙉𝙀𝙍 𝙈𝙐𝙎𝙏 𝘼𝘾𝙏𝙄𝙑𝘼𝙏𝙀 𝙏𝙃𝙀 𝘾𝙊𝙈𝙈𝘼𝙉𝘿\n*#on restrict | #off restrict*`, wm, img5, [['❎ 𝘿𝙀𝙎𝘼𝘾𝙏𝙄𝙑𝘼𝙍', '/on restrict']], m, enlace)
-    }}
+    }
     return !0
 }
 
