@@ -15,9 +15,9 @@ let b = a[Math.floor(Math.random() * a.length)]
 let sap = ['Hai', 'Ohayo', 'Kyaa', 'Halo', 'Nyann']
 let sgh = md
 let sgc = nnn
-//let gata = 'https://i.imgur.com/EXTbyyn.jpg'
+let gata = 'https://i.imgur.com/EXTbyyn.jpg'
 //let logo = 'https://i.pinimg.com/564x/f7/d2/e4/f7d2e48fd59a8c01cd396bfc70b0a2d1.jpg'
-//let pp = await conn.profilePictureUrl(who).catch(_ => gata)
+let pp = await conn.profilePictureUrl(who).catch(_ => gata)
 //pp = await conn.profilePictureUrl(m.chat, 'image').catch(_ => null) || './src/grupos.jpg' 
 
 global.enlace = { contextInfo: { externalAdReply: {title: wm, body: 'support group' , sourceUrl: nna, thumbnail: await(await fetch(img)).buffer() }}}
