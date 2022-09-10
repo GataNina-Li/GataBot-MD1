@@ -77,7 +77,7 @@ let vn = './media/Me anda buscando anonymous.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
     
-if (chat.audios && m.text.match(/(Momento equisde|momento equisde|Momento|fuera|🥴|😨|🤘|👄|🕴️|💃|🕺)/gi)) {    
+if (chat.audios && m.text.match(/(Momento equisde|momento equisde|Momento|fuera|🥴|🤘|👄|🕴️|💃|🕺)/gi)) {    
 let vn = './media/Momento equisde.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
