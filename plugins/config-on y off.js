@@ -431,6 +431,7 @@ let pp = await conn.profilePictureUrl(m.sender).catch(_ => gata)
 global.doc = pdoc.getRandom()
 global.ucapan = ucapan()
 global.fsizedoc = '1'.repeat(10)
+global.fpagedoc = '1'.repeat(10)
 	
 let adReply = {
 		fileLength: fsizedoc, seconds: fsizedoc,
