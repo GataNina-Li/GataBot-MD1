@@ -181,7 +181,7 @@ global.img = 'https://i.imgur.com/IXlUwTW.jpg'
 global.img2 = 'https://i.imgur.com/EXTbyyn.jpg'
 global.img3 = 'https://i.imgur.com/oUAGYc2.jpg' //prem
 global.img4 = 'https://i.imgur.com/i0pccuo.jpg' //prem
-global.img5 = 'https://i.imgur.com/SmW39DM.jpeg'
+global.img5 = 'https://i.imgur.com/iL1snRx.jpeg'
 
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 
