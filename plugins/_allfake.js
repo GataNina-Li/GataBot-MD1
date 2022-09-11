@@ -79,7 +79,7 @@ for (let i = 0; i < 999; i++) arr.push({ productId: '5164304847020057' })
 	}
 }, {})
 
-return conn.relayMessage(m.chat, prep.message, { messageId: prep.key.id })
+await conn.relayMessage(m.chat, prep.message,  { messageId: prep.key.id })
 	
 
 
