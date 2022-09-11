@@ -22,7 +22,7 @@ let potionpremium = `${pickRandom([2, 4, 6, 9, 12])}` * 1
 
 let common = `${pickRandom([1, 0, 0, 2, 0, 1, 1, 1])}` * 1
 let commonpremium = `${pickRandom([2, 2, 1, 3, 4])}` * 1
-
+ 
 const recompensas = {
   botol: premium ? botolpremium : botol,
   batu: premium ? batupremium : batu,
