@@ -79,6 +79,7 @@ footer: `╭━━━[ *𝘼𝙅𝙐𝙎𝙏𝙀𝙎 𝙂𝘼𝙏𝘼𝘽𝙊�
 ┃⚙️ _${usedPrefix}on *:* off *antitoxicos | antitoxic*_
 ┃⚙️ _${usedPrefix}on *:* off *antiver | antiviewonce*_
 ┃⚙️ _${usedPrefix}on *:* off *antieliminar | antidelete*_
+┃⚙️ _${usedPrefix}on *:* off *antinternacional | antifake*_
 ┃⚙️ _${usedPrefix}on *:* off *antienlace | antilink*_
 ┃⚙️ _${usedPrefix}on *:* off *antienlace2 | antilink2*_
 ┃⚙️ _${usedPrefix}on *:* off *antitiktok | antitk*_
