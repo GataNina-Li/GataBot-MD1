@@ -1,6 +1,6 @@
 //ESTOS DISEÑOS PARA MENSAJES SON COMPATIBLES CON GATABOT, SIN EMBARGO ALGUNOS NO SE VEN EN LA VERSIÓN DE WHATSAPP WEB
 //PERO EN EL CELULAR SI SE NOTA TODOS, PUEDES USAR EL QUE QUIERAS 😼
-
+import { generateWAMessageFromContent } from "@adiwajshing/baileys"
 import fs from 'fs'
 import fetch from 'node-fetch'
 import moment from 'moment-timezone'
@@ -50,14 +50,38 @@ global.frep = { contextInfo: { externalAdReply: {title: wm, body: author, source
 /*conn.fakeReply(m.chat, `*Prueba*`, '0@s.whatsapp.net', wm)*/ 
 //MENSAJE RESPONDIDO CON TEXTO PERSONALIZADO
 
- await conn.relayMessage(m.chat, { requestPaymentMessage: {
+ /*await conn.relayMessage(m.chat, { requestPaymentMessage: {
   noteMessage: { extendedTextMessage: { text: wm,
   currencyCodeIso4217: 'USD',
   requestFrom: '0@s.whatsapp.net',
   expiryTimestamp: 8600,
   amount: 10000,
-  background: 'https://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c325.png'
-}}}}, {})
+  background: './media/menus/Menu3.jpg'
+}}}}, {})*/
+	
+	
+let arr = []
+for (let i = 0; i < 999; i++) arr.push({ productId: '5164304847020057' }) 
+  
+  let prep = generateWAMessageFromContent(m.chat, {
+	listMessage: {
+		title: 'Hello World!', description: conn.user.name,
+		buttonText: 'iyh', listType: 2,
+		sections: [], productListInfo: {
+			productSections: [{ title: 'github: Rlxfly', products: arr }],
+			headerImage: {
+				productId: '5164304847020057', jpegThumbnail: './media/menus/Menu3.jpg'
+			},
+			businessOwnerJid: '6287845646738@s.whatsapp.net'
+		},
+		footerText: wm,
+		contextInfo: null 
+	}
+}, {})
+
+return conn.relayMessage(m.chat, prep.message, { messageId: prep.key.id })
+	
+
 
 
 //await conn.reply(m.chat, `*Prueba*`, ftroli, m)
