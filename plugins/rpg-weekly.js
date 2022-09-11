@@ -60,6 +60,7 @@ await conn.sendButton(m.chat, text, texto + `\n\n🎟️ 𝗣 𝗥 𝗘 𝗠 �
 user.lastweekly = new Date * 1
 }
 handler.command = ['weekly', 'semana', 'semanal', 'semanas', 'entregasemanal'] 
+handler.level = 7
 export default handler
 
 function pickRandom(list) {
