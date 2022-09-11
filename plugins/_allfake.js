@@ -64,7 +64,7 @@ let kal = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { 
 
 
 //await conn.reply(m.chat, `*Prueba*`, ftroli, m)
-await conn.sendButton(m.chat, `*Prueba*`, wm, pp, [[' Menu', '/menu']], m, kal)	
+await conn.sendButton(m.chat, `*Prueba*`, wm, pp, [[' Menu', '/menu']], kal, m)	
 //await conn.sendButtonImg(m.chat, pp, wm, author, 'M E N U', '.menu', fpayment)
 }
 
