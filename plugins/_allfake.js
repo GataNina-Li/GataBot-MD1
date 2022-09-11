@@ -56,7 +56,7 @@ global.frep = { contextInfo: { externalAdReply: {title: wm, body: author, source
   requestFrom: '0@s.whatsapp.net',
   expiryTimestamp: 8600,
   amount: 10000,
-  background: './media/menus/Menu3.jpg'
+  background: 'https://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c325.png'
 }}}}, {})
 
 
