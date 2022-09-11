@@ -452,7 +452,7 @@ let botones = [{
                                 }
                             }]
 let giflogo = 'https://telegra.ph/file/a46ab7fa39338b1f54d5a.mp4'
-conn.sendButtonGif(m.chat, 'Texto', wm, { url: giflogo }, botones, img5)} //"knights-canvas": "^1.2.7",
+conn.sendButtonGif(m.chat, 'Texto', wm, { url: giflogo }, botones, null)} //"knights-canvas": "^1.2.7",
 	
 	
 //await conn.send2ButtonDoc(m.chat, `${rg}ღ *_COMANDO_* *|* ${type} 
