@@ -39,7 +39,7 @@ const recompensas = {
   sampah: premium ? sampahpremium : sampah,
   sword: premium ? swordpremium : sword,
   uncoommon: premium ? uncoommonpremium : uncoommon,
-  mythic: premium ? mythic : mythicpremium,
+  mythic: premium ? mythicpremium : mythic,
 }
 
 let time = user.lastweekly + 259200000 //259200000 3 dias
