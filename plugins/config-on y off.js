@@ -1,6 +1,8 @@
 import fetch from 'node-fetch'
 import fs from 'fs'
 import moment from 'moment-timezone'
+import knights from 'knights-canvas'
+
 let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isROwner, text }) => { 
 const fkontak = {
 	"key": {
@@ -421,83 +423,41 @@ if (!/[01]/.test(command)) return conn.sendMessage(m.chat, listMessage, {quoted:
 throw false
 }
 //conn.sendButton
-let fsizedoc = '1'.repeat(10)
-let sap = ['Hai', 'Ohayo', 'Kyaa', 'Halo', 'Nyann']
-let sgh = md
-let sgc = nnn
-let a = ['AED','AFN','ALL','AMD','ANG','AOA','ARS','AUD','AWG','AZN','BAM','BBD','BDT','BGN','BHD','BIF','BMD','BND','BOB','BOV','BRL','BSD','BTN','BWP','BYR','BZD','CAD','CDF','CHE','CHF','CHW','CLF','CLP','CNY','COP','COU','CRC','CUC','CUP','CVE','CZK','DJF','DKK','DOP','DZD','EGP','ERN','ETB','EUR','FJD','FKP','GBP','GEL','GHS','GIP','GMD','GNF','GTQ','GYD','HKD','HNL','HRK','HTG','HUF','IDR','ILS','INR','IQD','IRR','ISK','JMD','JOD','JPY','KES','KGS','KHR','KMF','KPW','KRW','KWD','KYD','KZT','LAK','LBP','LKR','LRD','LSL','LTL','LVL','LYD','MAD','MDL','MGA','MKD','MMK','MNT','MOP','MRO','MUR','MVR','MWK','MXN','MXV','MYR','MZN','NAD','NGN','NIO','NOK','NPR','NZD','OMR','PAB','PEN','PGK','PHP','PKR','PLN','PYG','QAR','RON','RSD','RUB','RWF','SAR','SBD','SCR','SDG','SEK','SGD','SHP','SLL','SOS','SRD','SSP','STD','SYP','SZL','THB','TJS','TMT','TND','TOP','TRY','TTD','TWD','TZS','UAH','UGX','USD','USN','USS','UYI','UYU','UZS','VEF','VND','VUV','WST','XAF','XAG','XAU','XBA','XBB','XBC','XBD','XCD','XDR','XFU','XOF','XPD','XPF','XPT','XTS','XXX','YER','ZAR','ZMW']
-let b = a[Math.floor(Math.random() * a.length)]
 let gata = 'https://i.imgur.com/EXTbyyn.jpg'
 let pp = await conn.profilePictureUrl(m.sender).catch(_ => gata)
-global.doc = pdoc.getRandom()
-global.ucapan = ucapan()
-global.fsizedoc = '1'.repeat(10)
-global.fpagedoc = '1'.repeat(10)
-global.situm = await conn.resize(global.thumbnailUrl, 300, 150)
-global.tumhiho = global.situm
-global.thumbnailUrl = 'https://telegra.ph/file/81260a8b9e8cff26d2b48.jpg'
-//global.thumbnailUrl = [
-//'https://telegra.ph/file/81260a8b9e8cff26d2b48.jpg','https://telegra.ph/file/ac4928f0824a2a0492737.jpg',
-///'https://telegra.ph/file/6359b013bc7e52c3b346f.jpg','https://telegra.ph/file/d43c89a5d2da72875ec05.jpg',
-//'https://telegra.ph/file/7d6c0e35f9c8f52715541.jpg','https://telegra.ph/file/ef4b742d47e6a9115e2ff.jpg',
-//'https://telegra.ph/file/55e5af5f33fbd57104187.jpg','https://telegra.ph/file/af236598456b95884bd15.jpg',
-//'https://telegra.ph/file/de92ed4a729887ffc974c.jpg','https://telegra.ph/file/00ce42a193b1dbbf907d4.jpg']
-
+let imagea = await new knights.Jo().setImage(pp).toBuild();
+		let dataa = imagea.toBuffer();
+		let imageb = await new knights.Patrick().setAvatar(pp).toAttachment();
+		let datab = imageb.toBuffer();
+		let imagec = await new knights.Bonk().setAvatar1(pp).setAvatar2(pp).toBuild();
+		let datac = imagec.toBuffer();
+		let imaged = await new knights.Burn().setAvatar(pp).toAttachment();
+		let datad = imaged.toBuffer();
+		let kn = [dataa, datab, datac, datad]
+let knimg = kn.getRandom()		
+let botones = [{
+                                urlButton: {
+                                    displayText: 'Source Code',
+                                    url: md
+                                }
+                            }, {
+                                callButton: {
+                                    displayText: 'Number Phone Owner',
+                                    phoneNumber: nomorow
+                                }
+                            }, {
+                                quickReplyButton: {
+                                    displayText: 'To Sticker',
+                                    id: '.menu'
+                                }
+                            }]
+let giflogo = 'https://telegra.ph/file/a46ab7fa39338b1f54d5a.mp4'
+conn.sendButtonGif(m.chat, 'Texto', wm, { url: giflogo }, botones, knimg) //"knights-canvas": "^1.2.7",
 	
-let adReply = {
-		fileLength: fsizedoc, seconds: fsizedoc,
-			contextInfo: {
-				forwardingScore: fsizedoc,
-				externalAdReply: {
-					showAdAttribution: true,
-					title: global.ucapan,
-					body: '👋 ' + sap.getRandom() + ' Kak :> ' + name,
-					mediaUrl: sgc,
-					description: botdate,
-					previewType: 'PHOTO',
-					thumbnail: await(await fetch(pp)).buffer(),
-					sourceUrl: sgh
-}}}
 	
-let fpayment = {
-				key: {
-					remoteJid: '0@s.whatsapp.net',
-					fromMe: false,
-					id: 'BAE595C600522C9C',
-					participant: '0@s.whatsapp.net'
-				},
-				message: {
-					requestPaymentMessage: {
-						currencyCodeIso4217: b,
-						amount1000: fsizedoc,
-						requestFrom: '0@s.whatsapp.net',
-						noteMessage: {
-							extendedTextMessage: {
-								text: '👋 Hay Kak :> ' + name
-							}
-						},
-						expiryTimestamp: fsizedoc,
-						amount: {
-							value: fsizedoc,
-							offset: fsizedoc,
-							currencyCode: b
-}}}}
-
-let fakeegc = {
-         contextInfo: { externalAdReply: { showAdAttribution: true,
-            mediaUrl: md,
-            mediaType: "PHOTO",
-            description: ig, 
-            title: packname,
-            body: wm,
-            thumbnail: './media/menus/Menu3.jpg',
-            sourceUrl: sgc
-    }
-    } }
-
-await conn.send2ButtonDoc(m.chat, `${rg}ღ *_COMANDO_* *|* ${type} 
-ღ *_ACTUALMENTE_* *|* ${isEnable ? 'ACTIVADO' : 'DESACTIVADO'} 
-ღ *_EN ESTE_* *|* ${isAll ? 'BOT' : isUser ? '' : 'CHAT'}`, wm, null, [[`${isEnable ? '🔕 DESACTIVAR' : '🔔 ACTIVAR'}`, `${isEnable ? `.off ${type}` : `.on ${type}`}`], ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 🍀', '.menu']], m, fakeegc)}
+//await conn.send2ButtonDoc(m.chat, `${rg}ღ *_COMANDO_* *|* ${type} 
+///ღ *_ACTUALMENTE_* *|* ${isEnable ? 'ACTIVADO' : 'DESACTIVADO'} 
+//ღ *_EN ESTE_* *|* ${isAll ? 'BOT' : isUser ? '' : 'CHAT'}`, wm, null, [[`${isEnable ? '🔕 DESACTIVAR' : '🔔 ACTIVAR'}`, `${isEnable ? `.off ${type}` : `.on ${type}`}`], ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 🍀', '.menu']], m, fakeegc)}
 //await conn.sendButton(m.chat, null, ajuste, null, [['🌟 𝙄𝙉𝙁𝙊𝙍𝙈𝘼𝘾𝙄𝙊𝙉 | 𝙄𝙉𝙁𝙊 𝙈𝙀𝙉𝙐 🌟', `/infomenu`], ['⚙️ 𝘾𝙀𝙉𝙏𝙍𝙊 𝘿𝙀 𝘾𝙊𝙉𝙁𝙄𝙂𝙐𝙍𝘼𝘾𝙄𝙊𝙉 ⚙️', `/on`]], fkontak, m)
 handler.help = ['en', 'dis'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
