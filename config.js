@@ -17,7 +17,7 @@ global.owner = [
 global.mods = [] 
 global.prems = ['528451003894'], 
 
-global.APIs = { // API Prefix.
+global.APIs = { // API Prefix. 
   
 //⊱ ━━━━━.⋅ name: 'https://website' ⋅.━━━━ ⊰
   amel: 'https://melcanz.com',
