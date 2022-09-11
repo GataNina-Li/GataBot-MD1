@@ -425,7 +425,7 @@ throw false
 //conn.sendButton
 let gata = 'https://i.imgur.com/EXTbyyn.jpg'
 let pp = await conn.profilePictureUrl(m.sender).catch(_ => gata)
-let imagea = await new knights.Jo().setImage(pp).toBuild();
+//let imagea = await new knights.Jo().setImage(pp).toBuild();
 		let dataa = imagea.toBuffer();
 		let imageb = await new knights.Patrick().setAvatar(pp).toAttachment();
 		let datab = imageb.toBuffer();
@@ -452,7 +452,7 @@ let botones = [{
                                 }
                             }]
 let giflogo = 'https://telegra.ph/file/a46ab7fa39338b1f54d5a.mp4'
-conn.sendButtonGif(m.chat, 'Texto', wm, { url: giflogo }, botones, knimg)} //"knights-canvas": "^1.2.7",
+conn.sendButtonGif(m.chat, 'Texto', wm, { url: giflogo }, botones, img5)} //"knights-canvas": "^1.2.7",
 	
 	
 //await conn.send2ButtonDoc(m.chat, `${rg}ღ *_COMANDO_* *|* ${type} 
