@@ -1,6 +1,5 @@
 import fetch from 'node-fetch'
 import fs from 'fs'
-import moment from 'moment-timezone'
 import knights from 'knights-canvas'
 
 let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isROwner, text }) => { 
@@ -418,46 +417,14 @@ throw false
 global.opts['swonly'] = isEnable
 break
 default:
-//if (!/[01]/.test(command)) return await conn.sendMessage(m.chat, listMessage)  
 if (!/[01]/.test(command)) return conn.sendMessage(m.chat, listMessage, {quoted: fkontak})		
 throw false
 }
 //conn.sendButton
-let gata = 'https://i.imgur.com/EXTbyyn.jpg'
-let pp = await conn.profilePictureUrl(m.sender).catch(_ => gata)
-//let imagea = await new knights.Jo().setImage(pp).toBuild();
-		let dataa = imagea.toBuffer();
-		let imageb = await new knights.Patrick().setAvatar(pp).toAttachment();
-		let datab = imageb.toBuffer();
-		let imagec = await new knights.Bonk().setAvatar1(pp).setAvatar2(pp).toBuild();
-		let datac = imagec.toBuffer();
-		let imaged = await new knights.Burn().setAvatar(pp).toAttachment();
-		let datad = imaged.toBuffer();
-		let kn = [dataa, datab, datac, datad]
-let knimg = kn.getRandom()		
-let botones = [{
-                                urlButton: {
-                                    displayText: 'Source Code',
-                                    url: md
-                                }
-                            }, {
-                                callButton: {
-                                    displayText: 'Number Phone Owner',
-                                    phoneNumber: nomorow
-                                }
-                            }, {
-                                quickReplyButton: {
-                                    displayText: 'To Sticker',
-                                    id: '.menu'
-                                }
-                            }]
-let giflogo = 'https://telegra.ph/file/a46ab7fa39338b1f54d5a.mp4'
-conn.sendButtonGif(m.chat, 'Texto', wm, { url: giflogo }, botones, null)} //"knights-canvas": "^1.2.7",
 	
-	
-//await conn.send2ButtonDoc(m.chat, `${rg}ღ *_COMANDO_* *|* ${type} 
-///ღ *_ACTUALMENTE_* *|* ${isEnable ? 'ACTIVADO' : 'DESACTIVADO'} 
-//ღ *_EN ESTE_* *|* ${isAll ? 'BOT' : isUser ? '' : 'CHAT'}`, wm, null, [[`${isEnable ? '🔕 DESACTIVAR' : '🔔 ACTIVAR'}`, `${isEnable ? `.off ${type}` : `.on ${type}`}`], ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 🍀', '.menu']], m, fakeegc)}
+await conn.sendButton(m.chat, `${rg}ღ *_COMANDO_* *|* ${type} 
+ღ *_ACTUALMENTE_* *|* ${isEnable ? 'ACTIVADO' : 'DESACTIVADO'} 
+ღ *_EN ESTE_* *|* ${isAll ? 'BOT' : isUser ? '' : 'CHAT'}`, wm, null, [[`${isEnable ? '🔕 DESACTIVAR' : '🔔 ACTIVAR'}`, `${isEnable ? `.off ${type}` : `.on ${type}`}`], ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 🍀', '.menu']], fkontak, m)}
 //await conn.sendButton(m.chat, null, ajuste, null, [['🌟 𝙄𝙉𝙁𝙊𝙍𝙈𝘼𝘾𝙄𝙊𝙉 | 𝙄𝙉𝙁𝙊 𝙈𝙀𝙉𝙐 🌟', `/infomenu`], ['⚙️ 𝘾𝙀𝙉𝙏𝙍𝙊 𝘿𝙀 𝘾𝙊𝙉𝙁𝙄𝙂𝙐𝙍𝘼𝘾𝙄𝙊𝙉 ⚙️', `/on`]], fkontak, m)
 handler.help = ['en', 'dis'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
@@ -466,21 +433,3 @@ export default handler
 
 const more = String.fromCharCode(8206)
 const readMore = more.repeat(4001)
-
-function ucapan() {
-  const time = moment.tz('America/Los_Angeles').format('HH')  //America/Los_Angeles  Asia/Jakarta   America/Toronto
-  let res = "👋 *BIENVENIDO(A) | WELCOME* 👋"
-  if (time >= 4) {
-    res = "🌇 *Buenos Días | Good Morning* ⛅"
-  }
-  if (time >= 11) {
-    res = "🏙️ *Buenas Tardes | Good Afternoon* 🌤️"
-  }
-  if (time >= 15) {
-    res = "🌆 *Buenas tardes | Good Afternoon* 🌥️"
-  }
-  if (time >= 17) {
-    res = "🌃 *Buenas noches | Good Evening* 💫"
-  }
-  return res
-} 
