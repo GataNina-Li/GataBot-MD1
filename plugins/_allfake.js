@@ -49,22 +49,19 @@ global.frep = { contextInfo: { externalAdReply: {title: wm, body: author, source
 
 /*conn.fakeReply(m.chat, `*Prueba*`, '0@s.whatsapp.net', wm)*/ 
 //MENSAJE RESPONDIDO CON TEXTO PERSONALIZADO
-let from = m.key.remoteJid	
-let kal = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "@s.whatsapp.net" } : {}) },
-	"message": {
-		"extendedTextMessage": {
-			"text": wm,
-			"previewType": "NONE",
-			"contextInfo": {
-				"stanzaId": "3EB0382EDBB2",
-				"participant": "@s.whatsapp.net"
-			}
-		}
-	}}
+
+ await conn.relayMessage(m.chat, { requestPaymentMessage: {
+  noteMessage: { extendedTextMessage: { text: wm,
+  currencyCodeIso4217: 'USD',
+  requestFrom: '0@s.whatsapp.net',
+  expiryTimestamp: 8600,
+  amount: 10000,
+  background: './media/menus/Menu3.jpg'
+}}}}, {})
 
 
 //await conn.reply(m.chat, `*Prueba*`, ftroli, m)
-await conn.sendButton(m.chat, `*Prueba*`, wm, pp, [[' Menu', '/menu']], kal, m)	
+//await conn.sendButton(m.chat, `*Prueba*`, wm, pp, [[' Menu', '/menu']], kal, m)	
 //await conn.sendButtonImg(m.chat, pp, wm, author, 'M E N U', '.menu', fpayment)
 }
 
