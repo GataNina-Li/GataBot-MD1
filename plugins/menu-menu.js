@@ -180,25 +180,32 @@ ${readMore}
 ┃ *Admin!!*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃⚙️ _${usedPrefix}on *:* off *bienvenida | welcome*_
-┃⚙️ _${usedPrefix}on *:* off *publico | public*_
-┃⚙️ _${usedPrefix}on *:* off *modocaliente | modohorny*_
-┃⚙️ _${usedPrefix}on *:* off *antienlace | antilink*_
-┃⚙️ _${usedPrefix}on *:* off *antienlace2 | antilink2*_
 ┃⚙️ _${usedPrefix}on *:* off *avisos | detect*_
 ┃⚙️ _${usedPrefix}on *:* off *autonivel | autolevelup*_
 ┃⚙️ _${usedPrefix}on *:* off *restringir | restrict*_
+┃⚙️ _${usedPrefix}on *:* off *antillamar | anticall*_
+┃⚙️ _${usedPrefix}on *:* off *publico | public*_
+┃⚙️ _${usedPrefix}on *:* off *autovisto | autoread*_
+┃⚙️ _${usedPrefix}on *:* off *temporal*_
+┃⚙️ _${usedPrefix}on *:* off *stickers*_
+┃⚙️ _${usedPrefix}on *:* off *autosticker*_
+┃⚙️ _${usedPrefix}on *:* off *reacciones | reaction*_
+┃⚙️ _${usedPrefix}on *:* off *audios*_
+┃⚙️ _${usedPrefix}on *:* off *modocaliente | modohorny*_
+┃⚙️ _${usedPrefix}on *:* off *antitoxicos | antitoxic*_
+┃⚙️ _${usedPrefix}on *:* off *antiver | antiviewonce*_
+┃⚙️ _${usedPrefix}on *:* off *antieliminar | antidelete*_
+┃⚙️ _${usedPrefix}on *:* off *antinternacional | antifake*_
+┃⚙️ _${usedPrefix}on *:* off *antienlace | antilink*_
+┃⚙️ _${usedPrefix}on *:* off *antienlace2 | antilink2*_
+┃⚙️ _${usedPrefix}on *:* off *antitiktok | antitk*_
+┃⚙️ _${usedPrefix}on *:* off *antiyoutube | antiyt*_
+┃⚙️ _${usedPrefix}on *:* off *antitelegram | antitel*_
+┃⚙️ _${usedPrefix}on *:* off *antifacebook | antifb*_
+┃⚙️ _${usedPrefix}on *:* off *antinstagram | antig*_
+┃⚙️ _${usedPrefix}on *:* off *antitwitter | antitw*_
 ┃⚙️ _${usedPrefix}on *:* off *soloprivados | pconly*_
 ┃⚙️ _${usedPrefix}on *:* off *sologrupos | gconly*_
-┃⚙️ _${usedPrefix}on *:* off *autovisto | autoread*_
-┃⚙️ _${usedPrefix}on *:* off *reaccion | reaction*_
-┃⚙️ _${usedPrefix}on *:* off *antiver | antiviewonce*_
-┃⚙️ _${usedPrefix}on *:* off *antitoxicos | antitoxic*_
-┃⚙️ _${usedPrefix}on *:* off *antillamar | anticall*_
-┃⚙️ _${usedPrefix}on *:* off *antieliminar | antidelete*_
-┃⚙️ _${usedPrefix}on *:* off *stickers*_
-┃⚙️ _${usedPrefix}on *:* off *temporal*_
-┃⚙️ _${usedPrefix}on *:* off *autosticker*_
-┃⚙️ _${usedPrefix}on *:* off *audios*_
 *╰━━━━━━━━━━━━⬣*
 
 *╭━〔 GRUPO - RESUMEN 〕━⬣*
