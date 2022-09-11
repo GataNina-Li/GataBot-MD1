@@ -57,32 +57,8 @@ global.frep = { contextInfo: { externalAdReply: {title: wm, body: author, source
   expiryTimestamp: 8600,
   amount: 10000,
   background: './media/menus/Menu3.jpg'
-}}}}, {})*/
+}}}}, {})*/ //MENSAJE DE PAGO
 	
-	
-let arr = []
-for (let i = 0; i < 999; i++) arr.push({ productId: '5164304847020057' }) 
-  
-  let prep = generateWAMessageFromContent(m.chat, {
-	listMessage: {
-		title: 'Hello World!', description: conn.user.name,
-		buttonText: 'iyh', listType: 2,
-		sections: [], productListInfo: {
-			productSections: [{ title: 'github: Rlxfly', products: arr }],
-			headerImage: {
-				productId: '5164304847020057', jpegThumbnail: './media/menus/Menu3.jpg'
-			},
-			businessOwnerJid: '6287845646738@s.whatsapp.net'
-		},
-		footerText: wm,
-		contextInfo: null 
-	}
-}, {})
-
-await conn.relayMessage(m.chat, prep.message,  { messageId: prep.key.id })
-	
-
-
 
 //await conn.reply(m.chat, `*Prueba*`, ftroli, m)
 //await conn.sendButton(m.chat, `*Prueba*`, wm, pp, [[' Menu', '/menu']], kal, m)	
