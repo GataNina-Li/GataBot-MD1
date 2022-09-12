@@ -222,6 +222,7 @@ ${Object.keys(listItems).map((v) => {
 )
 const item = (args[0] || '').toLowerCase()
 const total = Math.floor(isNumber(args[1]) ? Math.min(Math.max(parseInt(args[1]), 1), Number.MAX_SAFE_INTEGER) : 1) * 1
+let premium = user.premium
 
 if (!listItems[item]) return conn.sendButton(m.chat, text, footer, image, buttons, m)
 if (command.toLowerCase() == 'buy') {
