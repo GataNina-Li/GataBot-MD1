@@ -74,7 +74,7 @@ const items = {
         makananphonix: { tiketcoin: 16 }
     },
     sell: {
-        exp: { trash: `${pickRandom([0, 1])}` * 1 },
+        exp: { trash: `${pickRandom([0, 1, 2])}` },
         limit: { eleksirb: 4 },
         diamond: { tiketcoin: 2 },
         joincount: { emasbatang: 2, },
