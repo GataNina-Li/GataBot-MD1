@@ -1,6 +1,6 @@
 {
     "name": "GataBot-MD",
-    "version": "1.2.27",
+    "version": "1.2.29",
     "description": "Super Bot WhatsApp",
     "main": "index.js",
     "type": "module",
@@ -68,6 +68,7 @@
         "translate-google-api": "^1.0.4",
         "url-regex-safe": "^3.0.0",
         "wa-sticker-formatter": "^4.3.2",
+        "knights-canvas": "github:hardiantojek93/knights-canvas",
         "fg-ig": "^0.0.1",
         "yargs": "^17.3.1",
         "yt-search": "^2.10.3"

@@ -17,7 +17,7 @@ global.owner = [
 global.mods = [] 
 global.prems = ['5492604050270'], 
 
-global.APIs = { // API Prefix.
+global.APIs = { // API Prefix. 
   
 //⊱ ━━━━━.⋅ name: 'https://website' ⋅.━━━━ ⊰
   amel: 'https://melcanz.com',
@@ -91,7 +91,7 @@ global.author = '𝙲𝚘𝚕𝚊𝚙𝚜𝚞𝚜 | 𝙱𝚎𝚗𝚓𝚊'
 
 //⊱ ━━━━━.⋅ Versión | Nombre | cuentas ⋅.━━━━ ⊰
 
-global.vs = '1.2.27'
+global.vs = '1.2.29'
 global.version = vs
 
 global.gt = '𝙵𝚞𝚝𝚊𝚋𝚞𝙱𝚘𝚝-𝙼𝙳'
@@ -120,6 +120,8 @@ global.nnngrupo = nnnt //Grupo 3
 
 global.paypal = 'https://paypal.me/OficialGD'
 global.donar = paypal
+
+//global.gbrandom = [nna, nn, nnn, nnnt]  gbrandom.getRandom()
 
 //global.gataimg = fs.readFileSync('./media/menus/Menu3.jpg')
 
@@ -160,6 +162,8 @@ global.wait = '*⌛ _Cargando | Charging..._ ▬▭▭▭▭▭▭*'
 global.waitt = '*⌛ _Cargando | Charging..._ ▬▬▭▭▭*'
 global.waittt = '*⌛ _Cargando | Charging..._ ▬▬▬▬▭▭*'
 global.waitttt = '*⌛ _Cargando | Charging..._ ▬▬▬▬▬▬▭*'
+global.nomorown = '593993684821'
+global.pdoc = ['application/vnd.openxmlformats-officedocument.presentationml.presentation', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'application/vnd.ms-excel', 'application/msword', 'application/pdf', 'text/rtf']
 
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 
@@ -176,6 +180,20 @@ global.lolkeysapi = ['85faf717d0545d14074659ad']
 //━━━━━━━━━━━━━━ img ━━━━━━━━━
 
 global.img = 'https://i.imgur.com/IXlUwTW.jpg'
+global.img2 = 'https://i.imgur.com/EXTbyyn.jpg'
+
+global.img3 = 'https://i.imgur.com/oUAGYc2.jpg' //prem
+global.img4 = 'https://i.imgur.com/i0pccuo.jpg' //prem
+
+global.img5 = 'https://i.imgur.com/iL1snRx.jpeg'
+global.img6 = 'https://i.imgur.com/cYFgSKv.jpeg'
+global.img7 = 'https://i.imgur.com/JqL3h2V.jpeg'
+global.img8 = 'https://i.imgur.com/PCujt1s.jpeg'
+global.img9 = 'https://i.imgur.com/xfUEdDb.jpeg'
+
+global.img10 = 'https://i.imgur.com/DvHoMc3.jpg'
+global.img11 = 'https://i.imgur.com/5Q1MqGD.jpg'
+global.img12 = 'https://i.imgur.com/vWnsjh8.jpg'
 
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 

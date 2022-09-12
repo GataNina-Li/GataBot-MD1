@@ -894,6 +894,12 @@ export async function handler(chatUpdate) {
 		if (!('antiver' in chat)) chat.antiver = true                    
                 if (!('antiLink' in chat)) chat.antiLink = false                    
                 if (!('antiLink2' in chat)) chat.antiLink2 = false
+		if (!('antiTiktok' in chat)) chat.antiTiktok = false
+		if (!('antiYoutube' in chat)) chat.antiYoutube = false
+		if (!('antiTelegram' in chat)) chat.antiTelegram = false
+		if (!('antiFacebook' in chat)) chat.antiFacebook = false
+		if (!('antiInstagram' in chat)) chat.antiInstagram = false
+		if (!('antiTwitter' in chat)) chat.antiInstagram = false
 		if (!('antifake' in chat)) chat.antifake = false
 		if (!('reaction' in chat)) chat.reaction = true    
                 if (!('viewonce' in chat)) chat.viewonce = false                    
@@ -917,6 +923,12 @@ export async function handler(chatUpdate) {
 		    antiver: true,
                     antiLink: false,
                     antiLink2: false,
+		    antiTiktok: false,
+		    antiYoutube: false,
+		    antiTelegram: false,
+		    antiFacebook: false,
+		    antiInstagram: false,
+		    antiTwitter: false,
 		    antifake: false,
 		    reaction: true,
                     viewonce: false,
@@ -1255,7 +1267,7 @@ export async function handler(chatUpdate) {
 	    
         if (!db.data.chats[m.chat].reaction && m.isGroup) throw 0
         if (!m.fromMem && m.text.match(/(has|ato|ido|ura|des|able|sub|izo|ita|con|.-.|._.|:)|:(|:v|v:|o.o|;v|v;|v':|:'v)/gi)) {
-        let emot = pickRandom(["😺", "😸", "😹", "😻", "😼", "😽", "🙀", "😿", "😾", "🤩", "🥰", "😘", "😊", "🥳", "😏", "😳", "🥵", "🤯", "😱", "😨", "🤫", "🥴", "🤧", "🤑", "🤠", "🤖", "👾", "🎃", "👻", "🤡", "🤝", "💪", "👑", "😚", "🐱", "🐈", "🐆", "🐅", "💫", "⭐️", "🌟", "✨", "⚡️", "🌈", "☃️", "⛄️", "🌝", "🌛", "🌜", "🍓", "🍎", "🍭", "🍩", "🍫", "🍧", "🚀", "🚅", "🚄", "🎈", "🪄", "❤️", "🧡", "💛", "💚", "💙", "💜", "🖤", "🤍", "🤎", "💔", "❣️", "💕", "💞", "💓", "💗", "💖", "💘", "💝", "💟", "🌝", "😎", "👻", "🔥", "🖕", "🐦"])
+        let emot = pickRandom(["😺", "😸", "😹", "😻", "😼", "😽", "🙀", "😿", "😾", "🤩", "🥰", "😘", "😊", "🥳", "😏", "😳", "🥵", "🤯", "😱", "😨", "🤫", "🥴", "🤧", "🤑", "🤠", "🤖", "👾", "🎃", "👻", "🤡", "🤝", "💪", "👑", "😚", "🐱", "🐈", "🐆", "🐅", "💫", "⭐️", "🌟", "✨", "⚡️", "🌈", "☃️", "⛄️", "🌝", "🌛", "🌜", "🍓", "🍎", "🍭", "🍩", "🍫", "🍧", "🚀", "🚅", "🚄", "🎈", "🪄", "❤️", "🧡", "💛", "💚", "💙", "💜", "🖤", "🤍", "🤎", "❣️", "💕", "💞", "💓", "💗", "💖", "💘", "💝", "💟", "🌝", "😎", "🔥", "🖕", "🐦"])
         this.sendMessage(m.chat, { react: { text: emot, key: m.key }})}
         function pickRandom(list) { return list[Math.floor(Math.random() * list.length)]}
 		
