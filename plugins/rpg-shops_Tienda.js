@@ -1,3 +1,6 @@
+
+
+let handler = async (m, { command, conn, usedPrefix, args }) => {
 const items = {
    buy: {
         exp: { eleksirb: 3 }, 
@@ -73,8 +76,9 @@ const items = {
         makananpet: { tiketcoin: 14 },
         makananphonix: { tiketcoin: 16 }
     },
+   
     sell: {
-        exp: { trash: `${pickRandom([0, 1, 2])}` },
+        exp: { trash: pickRandom([0, 1, 2]) },
         limit: { eleksirb: 4 },
         diamond: { tiketcoin: 2 },
         joincount: { emasbatang: 2, },
@@ -147,9 +151,8 @@ const items = {
         makananpet: { diamond: 5 },
         makananphonix: { diamond: 5 },
     }
-}
-
-let handler = async (m, { command, conn, usedPrefix, args }) => {
+}   
+   
 let imgr = flaaa.getRandom()
     let user = global.db.data.users[m.sender]
     const listItems = Object.fromEntries(Object.entries(items[command.toLowerCase()]).filter(([v]) => v && v in user))
