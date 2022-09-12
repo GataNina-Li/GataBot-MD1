@@ -211,26 +211,26 @@ ${Object.keys(listItems).map((v) => {
 [`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊 | 𝙄𝙉𝙑𝙀𝙉𝙏𝙊𝙍𝙔`, `${usedPrefix}inventory`]
 ])
 )
-    const item = (args[0] || '').toLowerCase()
-    const total = Math.floor(isNumber(args[1]) ? Math.min(Math.max(parseInt(args[1]), 1), Number.MAX_SAFE_INTEGER) : 1) * 1
-    if (!listItems[item]) return conn.sendButton(m.chat, text, footer, image, buttons, m)
-    if (command.toLowerCase() == 'buy') {
-        let paymentMethod = Object.keys(listItems[item]).find(v => v in user)
-        if (user[paymentMethod] < listItems[item][paymentMethod] * total) return conn.sendButton(m.chat,
-`*–--『 𝙄𝙉𝙎𝙐𝙁𝙄𝘾𝙄𝙀𝙉𝙏𝙀𝙎 𝙍𝙀𝘾𝙐𝙍𝙎𝙊𝙎 』--–*`, 
-`Necesitas *${(listItems[item][paymentMethod] * total) - user[paymentMethod]}* ${global.rpgshop.emoticon(paymentMethod)} Para Comprar *${total}* ${global.rpgshop.emoticon(item)}.
+const item = (args[0] || '').toLowerCase()
+const total = Math.floor(isNumber(args[1]) ? Math.min(Math.max(parseInt(args[1]), 1), Number.MAX_SAFE_INTEGER) : 1) * 1
 
-Tienes *${user[paymentMethod]}* ${global.rpg.emoticon(paymentMethod)}.
-–––––––––––––––––––––––––
-ᴛɪᴩ :
-ᴏᴩᴇɴ ᴄʀᴀᴛᴇs & ᴄᴏʟʟᴇᴄᴛ ʀᴇᴡᴀʀᴅs.
-⮕ ᴛᴏ ᴏᴩᴇɴ ᴄʀᴀᴛᴇs:
-.open crate
-⮕ ᴛᴏ ᴄᴏʟʟᴇᴄᴛ ʀᴇᴡᴀʀᴅs:
-.adventure | .daily | .monthly
-`.trim(), imgr + 'RECURSOS BAJOS : LOW RESOURCES', [
-[`Comprar ${(listItems[item][paymentMethod] * total) - user[paymentMethod]} ${global.rpgshopp.emoticon(paymentMethod)}`, `${usedPrefix}sell ${paymentMethod} ${(listItems[item][paymentMethod] * total) - user[paymentMethod]}`],
-[`𝙋𝙚𝙙𝙞𝙧 𝘼𝙮𝙪𝙙𝙖 | 𝘼𝙨𝙠 𝙛𝙤𝙧 𝙝𝙚𝙡𝙥 ☘️`, `${usedPrefix}pedirayuda *Por Favor alguien ayudeme con *${(listItems[item][paymentMethod] * total) - user[paymentMethod]}* ${global.rpg.emoticon(paymentMethod)}${paymentMethod}.
+if (!listItems[item]) return conn.sendButton(m.chat, text, footer, image, buttons, m)
+if (command.toLowerCase() == 'buy') {
+let paymentMethod = Object.keys(listItems[item]).find(v => v in user)
+if (user[paymentMethod] < listItems[item][paymentMethod] * total) return conn.sendButton(m.chat,
+`*–--『 𝙄𝙉𝙎𝙐𝙁𝙄𝘾𝙄𝙀𝙉𝙏𝙀𝙎 𝙍𝙀𝘾𝙐𝙍𝙎𝙊𝙎 』--–*`, 
+`*Necesitas ${(listItems[item][paymentMethod] * total) - user[paymentMethod]} ${global.rpgshop.emoticon(paymentMethod)} Para Comprar ${total} ${global.rpgshop.emoticon(item)}.*
+
+*Solo tienes ${user[paymentMethod]} ${global.rpg.emoticon(paymentMethod)}.*
+*–––––––––––––––––––––––––*
+*Misiones para Obtener Recursos*
+*Quests to Obtain Resources*
+*⛰️ Aventura : Adventure : » ${new Date - user.lastadventure < 1500000 ? '❌' : `✅ _${usedPrefix}inventario_`}*
+*♻️ Cada hora : Hourly » ${new Date - user.lasthourly < 3600000 ? '❌' : `✅ _${usedPrefix}cadahora_`}*
+*💫 Semanalmente : Weekly ${new Date - user.lastweekly < 259200000 ? '❌' : `✅ _${usedPrefix}cadasemana_`}*
+*🏅 Mensual : Monthly ${new Date - user.lastmonthly < 432000000 ? '❌' : `✅ _${usedPrefix}cadames_`}*`.trim(), imgr + 'RECURSOS BAJOS : LOW RESOURCES', [
+[`𝗖𝗼𝗺𝗽𝗿𝗮𝗿 : 𝗕𝘂𝘆 ${(listItems[item][paymentMethod] * total) - user[paymentMethod]} ${global.rpgshopp.emoticon(paymentMethod)}`, `${usedPrefix}sell ${paymentMethod} ${(listItems[item][paymentMethod] * total) - user[paymentMethod]}`],
+[`𝙋𝙚𝙙𝙞𝙧 𝘼𝙮𝙪𝙙𝙖 | 𝘼𝙨𝙠 𝙛𝙤𝙧 𝙝𝙚𝙡𝙥 ☘️`, `${usedPrefix}pedirayuda *Por Favor alguien ayudeme con *${(listItems[item][paymentMethod] * total) - user[paymentMethod]}* ${global.rpg.emoticon(paymentMethod)}.
 *» AYUDA TRANSFIRIENDO:*
 *${usedPrefix}transfer ${paymentMethod} ${(listItems[item][paymentMethod] * total) - user[paymentMethod]} @${conn.getName(m.sender)}`]], m)
        
