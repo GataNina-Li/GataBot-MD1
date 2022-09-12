@@ -1,4 +1,12 @@
 let handler = async (m, { command, conn, usedPrefix, args }) => {
+let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" 
+}
+let grupos = [nna, nn, nnn, nnnt]
+let gata = [img5, img6, img7, img8, img9]
+let enlace = { contextInfo: { externalAdReply: {title: wm + ' 🐈', body: 'support group' , sourceUrl: grupos.getRandom(), thumbnail: await(await fetch(gata.getRandom())).buffer() }}}
+let enlace2 = { contextInfo: { externalAdReply: { showAdAttribution: true, mediaUrl: yt, mediaType: 'VIDEO', description: '', title: wm, body: '😻 𝗦𝘂𝗽𝗲𝗿 𝗚𝗮𝘁𝗮𝗕𝗼𝘁-𝗠𝗗 - 𝗪𝗵𝗮𝘁𝘀𝗔𝗽𝗽 ', thumbnailUrl: await(await fetch(global.img)).buffer(), sourceUrl: yt }}}
+let dos = [enlace, enlace2]
+
 const items = {
    buy: {
         exp: { eleksirb: 3 }, 
@@ -230,12 +238,12 @@ if (user[paymentMethod] < listItems[item][paymentMethod] * total) return conn.se
 *💫 Semanalmente : Weekly ${new Date - user.lastweekly < 259200000 ? '❌' : `✅ _${usedPrefix}cadasemana_`}*
 *🏅 Mensual : Monthly ${new Date - user.lastmonthly < 432000000 ? '❌' : `✅ _${usedPrefix}cadames_`}*`.trim(), imgr + 'RECURSOS BAJOS : LOW RESOURCES', [
 [`𝗖𝗼𝗺𝗽𝗿𝗮𝗿 : 𝗕𝘂𝘆 ${(listItems[item][paymentMethod] * total) - user[paymentMethod]} ${global.rpgshopp.emoticon(paymentMethod)}`, `${usedPrefix}sell ${paymentMethod} ${(listItems[item][paymentMethod] * total) - user[paymentMethod]}`],
-[`𝙋𝙚𝙙𝙞𝙧 𝘼𝙮𝙪𝙙𝙖 | 𝘼𝙨𝙠 𝙛𝙤𝙧 𝙝𝙚𝙡𝙥 ☘️`, `${usedPrefix}pedirayuda *Por Favor alguien ayudeme con *${(listItems[item][paymentMethod] * total) - user[paymentMethod]}* ${global.rpg.emoticon(paymentMethod)}.
+[`𝙋𝙚𝙙𝙞𝙧 𝘼𝙮𝙪𝙙𝙖 | 𝘼𝙨𝙠 𝙛𝙤𝙧 𝙝𝙚𝙡𝙥 ☘️`, `${usedPrefix}pedirayuda *Por Favor alguien ayudeme con *${(listItems[item][paymentMethod] * total) - user[paymentMethod]} ${global.rpg.emoticon(paymentMethod)}.*
 *» AYUDA TRANSFIRIENDO:*
-*${usedPrefix}transfer ${paymentMethod} ${(listItems[item][paymentMethod] * total) - user[paymentMethod]} @${conn.getName(m.sender)}`]], m)
-       
-        user[paymentMethod] -= listItems[item][paymentMethod] * total
-        user[item] += total
+*${usedPrefix}transfer ${paymentMethod} ${(listItems[item][paymentMethod] * total) - user[paymentMethod]} @${conn.getName(m.sender)}*`]], m)
+user[paymentMethod] -= listItems[item][paymentMethod] * total
+user[item] += total
+   
 return conn.sendButton(m.chat,
 `*––『 COMPRADO | BOUGHT 』––*`,
 `${conn.getName(m.sender)} 
@@ -248,11 +256,11 @@ return conn.sendButton(m.chat,
 [`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊 | 𝙄𝙉𝙑𝙀𝙉𝙏𝙊𝙍𝙔`, `${usedPrefix}inventory`]
 ], m)
 } else {
-        if (user[item] < total) return m.reply(`No tienes suficiente *${global.rpg.emoticon(item)}${item}* para vender solo tienes ${user[item]} Recursos\n\nYou don't have enough *${global.rpg.emoticon(item)}${item}* to sell, you only have ${user[item]}`)
+if (user[item] < total) return conn.sendButton(m.chat, `🎟️ 𝗣 𝗥 𝗘 𝗠 𝗜 𝗨 𝗠 ⇢ ${premium ? '✅' : '❌'}\n${wm}`, `*No tienes suficiente ${global.rpgshop.emoticon(item)} para vender solo tienes ${user[item]} ${global.rpgshopp.emoticon(item)}*\n\n*You don't have enough ${global.rpgshop.emoticon(item)} to sell, you only have ${user[item]} ${global.rpgshopp.emoticon(item)}*`, gata.getRandom(), [[`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊 | 𝙄𝙉𝙑𝙀𝙉𝙏𝙊𝙍𝙔`, `${usedPrefix}inventory`], ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', '/menu']], m, enlace)
        
-      let paymentMethod = Object.keys(listItems[item]).find(v => v in user)
-        user[item] -= total
-        user[paymentMethod] += listItems[item][paymentMethod] * total
+let paymentMethod = Object.keys(listItems[item]).find(v => v in user)
+user[item] -= total
+user[paymentMethod] += listItems[item][paymentMethod] * total
     
 return conn.sendButton(m.chat,
 `*––『 VENDIDO | SOLD 』––*`,
@@ -266,11 +274,9 @@ return conn.sendButton(m.chat,
 [`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊 | 𝙄𝙉𝙑𝙀𝙉𝙏𝙊𝙍𝙔`, `${usedPrefix}inventory`]
 ], m)
 }}
-
 handler.help = ['buy', 'sell'].map(v => v + ' [item] [count]')
 handler.tags = ['rpg']
 handler.command = /^(buy|sell)$/i
-
 handler.disabled = false
 
 export default handler
