@@ -1,4 +1,4 @@
-/*import { areJidsSameUser } from '@adiwajshing/baileys'
+import { areJidsSameUser } from '@adiwajshing/baileys'
 let toM = a => '@' + a.split('@')[0]
 let handler = async (m, { conn, usedPrefix, text, participants, groupMetadata}) => {
 if(!text) {
@@ -69,8 +69,7 @@ export default handler
 
 
 let ktnmbk = [
-
-"Hay momentos en los que no me gusta estar solo. Pero tampoco quiero que todos me acompañen, solo te quiero a ti".
+"Hay momentos en los que no me gusta estar solo. Pero tampoco quiero que todos me acompañen, solo te quiero a ti",
 "¡Me acabo de dar cuenta de que has sido rico todo este tiempo! Como lo que he estado buscando todo este tiempo. ¿Quieres ser mi novia?",
 "Agradezco a mis ojos, porque estos ojos me llevaron a encontrarte",
 "¿Puedo enviarte un CV o no? Porque quiero postularme para ser novia".,
@@ -109,4 +108,4 @@ let ktnmbk = [
 "Mi amor por ti es como un número del 5 al 10. No hay segundo. Quiero que seas la única mujer en mi corazón",
 "Qué chico se atreve a lastimarte. Aquí te trataré, mientras quieras ser mi novia",
 "Oye, ¿qué estás haciendo? Sal de la casa y mira la luna esta noche. La luz es hermosa y encantadora, pero sería aún más hermosa si yo estuviera a tu lado. ¿Qué tal si estamos juntos?"
-]*/
+]
