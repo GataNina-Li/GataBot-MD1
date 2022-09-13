@@ -18,7 +18,7 @@ var user = conn.getName(m.quoted.sender)
 var user = number + '@s.whatsapp.net'
 }  
 } catch (e) {
-} finally {*/
+} finally {
 	
 let users = m.isGroup ? participants.find(v => areJidsSameUser(v.jid == user)) : {}
 let yo = conn.getName(m.sender)
