@@ -1,6 +1,6 @@
 import fetch from 'node-fetch'
 import fs from 'fs'
-import knights from 'knights-canvas'
+//import knights from 'knights-canvas'
 
 let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isROwner, text }) => { 
 const fkontak = {
