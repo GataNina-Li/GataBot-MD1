@@ -1,12 +1,8 @@
 import fetch from 'node-fetch'
 import fs from 'fs'
 let handler = async (m, { conn, args, participants, usedPrefix }) => {
-let gata = [img6, img7, img8, img9]
-let grupos = [nna, nn, nnn, nnnt]
-let enlace = { contextInfo: { externalAdReply: {title: wm + ' 🐈', body: 'support group' , sourceUrl: grupos.getRandom(), thumbnail: await(await fetch(gata.getRandom())).buffer() }}}
-  
-  let users = Object.entries(global.db.data.users).map(([key, value]) => { 
-    return {...value, jid: key}
+let users = Object.entries(global.db.data.users).map(([key, value]) => { 
+return {...value, jid: key}
   })
   let sortedExp = users.map(toNumber('exp')).sort(sort('exp'))
    let sortedLim = users.map(toNumber('limit')).sort(sort('limit'))
@@ -25,9 +21,9 @@ let enlace = { contextInfo: { externalAdReply: {title: wm + ' 🐈', body: 'supp
            let usersJoincount = sortedJoincount.map(enumGetKey)
             let usersPremium = sortedPremium.map(enumGetKey)
            
-  console.log(participants)
-  let len = args[0] && args[0].length > 0 ? Math.min(100, Math.max(parseInt(args[0]), 10)) : Math.min(10, sortedExp.length)
-  let text = `
+console.log(participants)
+let len = args[0] && args[0].length > 0 ? Math.min(100, Math.max(parseInt(args[0]), 10)) : Math.min(10, sortedExp.length)
+let text = `
        🏆 *TABLA DE CLASIFICACION*
     
 💠 *TOP ${len} XP ⚡* 
@@ -40,7 +36,7 @@ Tú : *${usersLevel.indexOf(m.sender) + 1}* de *${usersLevel.length} Usuarios*
 
 ${sortedLevel.slice(0, len).map(({ jid, level }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *${level} 🔅*`).join`\n`}
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-💠 *TOP ${len} ROL|RANGO 💪* 
+💠 *TOP ${len} ROL | RANGO 💪* 
 Tú : *${usersLevel.indexOf(m.sender) + 1}* de *${usersLevel.length} Usuarios*
 
 ${sortedLevel.slice(0, len).map(({ jid, role, level }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} ${role}`).join`\n`}
@@ -66,10 +62,10 @@ Tú : *${usersMoney.indexOf(m.sender) + 1}* de *${usersMoney.length} Usuarios*
 ${sortedMoney.slice(0, len).map(({ jid, money }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *${money} 🐈*`).join`\n`}
 `.trim()
  //await m.reply(text, null, { mentions: conn.parseMention(text) })
-await conn.sendButton(m.chat, wm, text, img5, [
+await conn.sendButton(m.chat, wm, text, null, [
 ['𝙈𝙚𝙣𝙪 𝙅𝙪𝙚𝙜𝙤𝙨 | 𝙂𝙖𝙢𝙚𝙨 𝙈𝙚𝙣𝙪 🎡', '#juegosmenu'], 
 ['𝙍𝙖𝙣𝙜𝙤𝙨 | 𝙍𝙤𝙡 🚹', '#rol'],
-['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', '/menu']], m, enlace, { mentions: conn.parseMention(text) })   
+['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', '/menu']], m, { mentions: conn.parseMention(text) })   
 }
 handler.help = ['top']
 handler.tags = ['xp']
