@@ -1,11 +1,7 @@
 let handler = async (m, { conn, args, participants, usedPrefix }) => {
-let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" 
-}
+let gata = [img6, img7, img8, img9]
 let grupos = [nna, nn, nnn, nnnt]
-let gata = [img5, img6, img7, img8, img9]
-let enlace = { contextInfo: { externalAdReply: {title: wm + ' 🐈', body: 'support group' , sourceUrl: grupos.getRandom(), thumbnail: await(await fetch(gata.getRandom())).buffer() }}}
-let enlace2 = { contextInfo: { externalAdReply: { showAdAttribution: true, mediaUrl: yt, mediaType: 'VIDEO', description: '', title: wm, body: '😻 𝗦𝘂𝗽𝗲𝗿 𝗚𝗮𝘁𝗮𝗕𝗼𝘁-𝗠𝗗 - 𝗪𝗵𝗮𝘁𝘀𝗔𝗽𝗽 ', thumbnailUrl: await(await fetch(global.img)).buffer(), sourceUrl: yt }}}
-let dos = [enlace, enlace2]
+let frep = { contextInfo: { externalAdReply: {title: wm, body: author, sourceUrl: grupos.getRandom(), thumbnail: await(await fetch(gata.getRandom())).buffer()}}}
   
   let users = Object.entries(global.db.data.users).map(([key, value]) => { 
     return {...value, jid: key}
@@ -71,7 +67,7 @@ ${sortedMoney.slice(0, len).map(({ jid, money }, i) => `${i + 1}. ${participants
 await conn.sendButton(m.chat, wm, text, img5, [
 ['𝙈𝙚𝙣𝙪 𝙅𝙪𝙚𝙜𝙤𝙨 | 𝙂𝙖𝙢𝙚𝙨 𝙈𝙚𝙣𝙪 🎡', '#juegosmenu'], 
 ['𝙍𝙖𝙣𝙜𝙤𝙨 | 𝙍𝙤𝙡 🚹', '#rol'],
-['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', '/menu']], m, { mentions: conn.parseMention(text) }, enlace2)   
+['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', '/menu']], m, { mentions: conn.parseMention(text) }, frep)   
 }
 handler.help = ['top']
 handler.tags = ['xp']
