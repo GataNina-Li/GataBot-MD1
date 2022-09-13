@@ -29,10 +29,10 @@ if(user === m.sender) return conn.reply(m.chat, `*NO PUEDE SER PAREJA USTED MISM
 if(user === conn.user.jid) return conn.reply(m.chat, `*YO NO PUEDO SER SU PAREJA JAJAJ*`, m)
     
 if(global.db.data.users[user].pasangan != m.sender){
-conn.reply(m.chat, `*NO PUEDES ACEPTAR SI NADIE SE HA DECLARADO, DECLARATE CON $tu} PARA QUE DIGA SI TE ACEPTA O TE RECHAZA*`, m, { contextInfo: { mentionedJid: [user]}})
+conn.reply(m.chat, `*NO PUEDES ACEPTAR SI NADIE SE HA DECLARADO, DECLARATE CON ${tu} PARA QUE DIGA SI TE ACEPTA O TE RECHAZA*`, m, { contextInfo: { mentionedJid: [user]}})
 }else{
 global.db.data.users[m.sender].pasangan = user
-conn.reply(m.chat, `*FELICITACIONES!!! 🥳😻 {tu}*\n*✅ DE MANERA OFICIAL ESTAN EN UNA RELACION*\n\n*QUE DURE POR SIEMPRE SU AMOR Y FELICIDAD 💖😁\n💟 ${tu} 💞 ${yo}*`,m, { contextInfo: { mentionedJid: [user, tu, yo]}})
+conn.reply(m.chat, `*FELICITACIONES!!! 🥳😻 ${tu}*\n*✅ DE MANERA OFICIAL ESTAN EN UNA RELACION*\n\n*QUE DURE POR SIEMPRE SU AMOR Y FELICIDAD 💖😁\n💟 ${tu} 💞 ${yo}*`,m, { contextInfo: { mentionedJid: [user, tu, yo]}})
 }}}
 handler.command = /^(aceptar|acepto)$/i
 handler.group = true
