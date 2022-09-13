@@ -257,7 +257,7 @@ let tiketm = member.healtmonster
     let userspet = sortedpet.map(v => v[0])
     
     let { min, max } = xpRange(level, global.multiplier)    
-
+//${pasangan.split("@")[0]
 let str = `
 🏷️ *INVENTARIO | INVENTORY* 
 👤» *${name}* ( @${who.split("@")[0]} )\n
@@ -271,7 +271,7 @@ let str = `
 ┃ *»* ${rol}
 ┃ *${rpgg.emoticon('premium')} ${member.premium ? "✅ VIP : Premium": "Limitado : Free"}*
 ┃ 🏦 *Banco : Bank » ${member.bank}*
-┃ 💞 *Pareja : Pasangan »* ${pasangan ? `@${pasangan.split("@")[0]}` : `❌`}
+┃ 💞 *Pareja : Pasangan »* ${pasangan ? `${member.pasangan}` : `❌`}
 ┃ ⚠️ *Advertencia : Warn » ${warn}*
 ┃ 🚷 *Baneado(a) : Banned » No*
 ┃
