@@ -72,7 +72,7 @@ let ktnmbk = [
 "Hay momentos en los que no me gusta estar solo. Pero tampoco quiero que todos me acompañen, solo te quiero a ti",
 "¡Me acabo de dar cuenta de que has sido rico todo este tiempo! Como lo que he estado buscando todo este tiempo. ¿Quieres ser mi novia?",
 "Agradezco a mis ojos, porque estos ojos me llevaron a encontrarte",
-"¿Puedo enviarte un CV o no? Porque quiero postularme para ser novia".,
+"¿Puedo enviarte un CV o no? Porque quiero postularme para ser novia",
 "No soy el más grande, pero estoy seguro que si puedo hacerte feliz con amor y cariño, ¿me quieres verdad?",
 "Solo soy una persona común que tiene muchos defectos y puede que no merezca tu amor, pero si estás dispuesto a aceptarme como amante, prometo hacer lo que sea mejor para ti. ¿Aceptarás mi amor?",
 "Quiero decir algo. Me gusta desde hace mucho tiempo, pero no me atrevo a decirlo. Entonces, decidí solo WA. Quiero que seas mi novia",
