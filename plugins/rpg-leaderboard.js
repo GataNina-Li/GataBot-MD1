@@ -3,7 +3,7 @@ import fs from 'fs'
 let handler = async (m, { conn, args, participants, usedPrefix }) => {
 let gata = [img6, img7, img8, img9]
 let grupos = [nna, nn, nnn, nnnt]
-let frep = { contextInfo: { externalAdReply: {title: wm, body: author, sourceUrl: grupos.getRandom(), thumbnail: fs.readFileSync('./media/menus/Menu3.jpg')}}}
+let enlace = { contextInfo: { externalAdReply: {title: wm + ' 🐈', body: 'support group' , sourceUrl: grupos.getRandom(), thumbnail: await(await fetch(gata.getRandom())).buffer() }}}
   
   let users = Object.entries(global.db.data.users).map(([key, value]) => { 
     return {...value, jid: key}
@@ -66,10 +66,10 @@ Tú : *${usersMoney.indexOf(m.sender) + 1}* de *${usersMoney.length} Usuarios*
 ${sortedMoney.slice(0, len).map(({ jid, money }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *${money} 🐈*`).join`\n`}
 `.trim()
  //await m.reply(text, null, { mentions: conn.parseMention(text) })
-await conn.sendButton(m.chat, wm, text, null, [
+await conn.sendButton(m.chat, wm, text, img5, [
 ['𝙈𝙚𝙣𝙪 𝙅𝙪𝙚𝙜𝙤𝙨 | 𝙂𝙖𝙢𝙚𝙨 𝙈𝙚𝙣𝙪 🎡', '#juegosmenu'], 
 ['𝙍𝙖𝙣𝙜𝙤𝙨 | 𝙍𝙤𝙡 🚹', '#rol'],
-['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', '/menu']], frep, m, { mentions: conn.parseMention(text) })   
+['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', '/menu']], m, { mentions: conn.parseMention(text) }, enlace)   
 }
 handler.help = ['top']
 handler.tags = ['xp']
