@@ -261,7 +261,7 @@ let tiketm = member.healtmonster
     
 //let urs = Object.entries(global.db.data.users).map(([key, value]) => { 
 //return {...value, jid: key}
-let urs = Object.entries(global.db.data.users).filter(uus => uus[1].pasangan)
+//let urs = Object.entries(global.db.data.users).filter(uus => uus[1].pasangan)
 	
 let str = `
 🏷️ *INVENTARIO | INVENTORY* 
@@ -276,7 +276,7 @@ let str = `
 ┃ *»* ${rol}
 ┃ *${rpgg.emoticon('premium')} ${member.premium ? "✅ VIP : Premium": "Limitado : Free"}*
 ┃ 🏦 *Banco : Bank » ${member.bank}*
-┃ 💞 *Pareja : Pasangan »* ${urs ? `${conn.getName(jid)}` : `❌`}
+┃ 💞 *Pareja : Pasangan »* ${pasangan ? `${conn.getName(jid)}` : `❌`}
 ┃ ⚠️ *Advertencia : Warn » ${warn}*
 ┃ 🚷 *Baneado(a) : Banned » No*
 ┃
