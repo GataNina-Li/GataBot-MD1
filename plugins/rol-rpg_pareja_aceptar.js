@@ -2,16 +2,12 @@ import { areJidsSameUser } from '@adiwajshing/baileys'
 let handler = async (m, { conn, text, participants, groupMetadata }) => {
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 let mentionedJid = [who]
-
-if(isNaN(text)) {
 var number = text.split`@`[1]
-} else if(!isNaN(text)) {
-var number = text
-}
 
 if(!text && !m.quoted) return conn.reply(m.chat, `*ETIQUETE O RESPONDA AL MENSAJE DE LA PERSONA QUE QUIERE QUE SEA SU PAREJA*`, m) 
-if(isNaN(number)) return conn.reply(m.chat, `*DEBE SOLO DE ETIQUETAR O RESPONDER AL MENSAJE DE LA PERSONA QUE QUIERE QUE SEA SU PAREJA*`, m)
-if(number.length > 2) return conn.reply(m.chat, `*DEBE SOLO DE ETIQUETAR O RESPONDER AL MENSAJE DE LA PERSONA QUE QUIERE QUE SEA SU PAREJA*`, m)
+//if(isNaN(number)) return conn.reply(m.chat, `*DEBE SOLO DE ETIQUETAR O RESPONDER AL MENSAJE DE LA PERSONA QUE QUIERE QUE SEA SU PAREJA*`, m)
+//if (isNaN(text)) return conn.reply(m.chat, `*DEBE SOLO DE ETIQUETAR O RESPONDER AL MENSAJE DE LA PERSONA QUE QUIERE QUE SEA SU PAREJA*`, m)
+//if(number.length) return conn.reply(m.chat, `*DEBE SOLO DE ETIQUETAR O RESPONDER AL MENSAJE DE LA PERSONA QUE QUIERE QUE SEA SU PAREJA*`, m)
 	
 try {
 if(text) {
@@ -22,7 +18,7 @@ var user = conn.getName(m.quoted.sender)
 var user = number + '@s.whatsapp.net'
 }  
 } catch (e) {
-} finally {
+} finally {*/
 	
 let users = m.isGroup ? participants.find(v => areJidsSameUser(v.jid == user)) : {}
 let yo = conn.getName(m.sender)
