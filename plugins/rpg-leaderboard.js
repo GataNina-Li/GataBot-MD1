@@ -1,8 +1,9 @@
 import fetch from 'node-fetch'
+import fs from 'fs'
 let handler = async (m, { conn, args, participants, usedPrefix }) => {
 let gata = [img6, img7, img8, img9]
 let grupos = [nna, nn, nnn, nnnt]
-let frep = { contextInfo: { externalAdReply: {title: wm, body: author, sourceUrl: grupos.getRandom(), thumbnail: await(await fetch(gata.getRandom())).buffer()}}}
+let frep = { contextInfo: { externalAdReply: {title: wm, body: author, sourceUrl: grupos.getRandom(), thumbnail: fs.readFileSync('./media/menus/Menu3.jpg')}}}
   
   let users = Object.entries(global.db.data.users).map(([key, value]) => { 
     return {...value, jid: key}
