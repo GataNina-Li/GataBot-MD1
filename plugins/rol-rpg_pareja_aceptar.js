@@ -34,10 +34,10 @@ let yo = conn.getName(m.sender)
     
 
     if(global.db.data.users[user].pasangan != m.sender){
-      conn.reply(m.chat, `LA SOLICITUD DE @${conn.getName(m.sender)} PARA QUE SEAS SU PAREJA HA CADUCADO`, m, { contextInfo: { mentionedJid: [user]}})
+      conn.reply(m.chat, `LA SOLICITUD DE ${user.split('@')[0]} PARA QUE SEAS SU PAREJA HA CADUCADO`, m, { contextInfo: { mentionedJid: [user]}})
     }else{
       global.db.data.users[m.sender].pasangan = user
-      conn.reply(m.chat, `Felicitaciones, oficialmente están saliendo. @${conn.getName(m.sender)}\n\nQue dure para siempre y siempre sea feliz @${conn.getName(m.sender)} 💓 ${yo} 🥳🥳🥳`,m, { contextInfo: { mentionedJid: [user, yo]}})
+      conn.reply(m.chat, `Felicitaciones, oficialmente están saliendo. ${user.split('@')[0]}\n\nQue dure para siempre y siempre sea feliz ${user.split('@')[0]} 💓 ${yo} 🥳🥳🥳`,m, { contextInfo: { mentionedJid: [user, yo]}})
     }
 	}	
 }
