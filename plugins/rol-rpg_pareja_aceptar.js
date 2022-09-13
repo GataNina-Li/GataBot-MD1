@@ -38,7 +38,7 @@ if(global.db.data.users[user].pasangan != m.sender){
 conn.reply(m.chat, `*NO PUEDES ACEPTAR SI NADIE SE HA DECLARADO, DECLARATE CON ${ number ? @user.split('@')[0] : tu} PARA DIGA SI TE ACEPTA O TE RECHAZA*`, m, { contextInfo: { mentionedJid: [user]}})
 }else{
 global.db.data.users[m.sender].pasangan = user
-conn.reply(m.chat, `*Felicitaciones, oficialmente están saliendo. ${ number ? @user.split('@')[0] : tu}*\n\n*Que dure para siempre y siempre sea feliz ${ number ? @user.split('@')[0] : tu} 💓 ${ number ? @me.split('@')[0] : tu} 🥳🥳🥳*`,m, { contextInfo: { mentionedJid: [user, tu, yo]}})
+conn.reply(m.chat, `*Felicitaciones, oficialmente están saliendo. ${ number ? @user.split('@')[0] : tu}*\n\n*Que dure para siempre y siempre sea feliz ${ number ? @user.split('@')[0] : yo} 💓 ${ number ? @me.split('@')[0] : tu} 🥳🥳🥳*`,m, { contextInfo: { mentionedJid: [user, tu, yo]}})
 }}	
 }
 handler.command = /^(aceptar|acepto)$/i
