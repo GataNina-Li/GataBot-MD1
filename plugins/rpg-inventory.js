@@ -261,7 +261,8 @@ let tiketm = member.healtmonster
     
 //let urs = Object.entries(global.db.data.users).map(([key, value]) => { 
 //return {...value, jid: key}
-//let urs = Object.entries(global.db.data.users).filter(uus => uus[1].pasangan)
+//let urs = Object.entries(global.db.data.pasangan)
+//💞 *Pareja : Pasangan »* ${pasangan ? `${conn.getName(jid)}` : `❌`}
 	
 let str = `
 🏷️ *INVENTARIO | INVENTORY* 
