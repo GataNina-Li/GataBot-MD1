@@ -4,11 +4,7 @@ let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? c
 let mentionedJid = [who]
 var number = text.split`@`[1]
 
-if(!text && !m.quoted) return conn.reply(m.chat, `*ETIQUETE O RESPONDA AL MENSAJE DE LA PERSONA QUE QUIERE QUE SEA SU PAREJA*`, m) 
-//if(isNaN(number)) return conn.reply(m.chat, `*DEBE SOLO DE ETIQUETAR O RESPONDER AL MENSAJE DE LA PERSONA QUE QUIERE QUE SEA SU PAREJA*`, m)
-//if (isNaN(text)) return conn.reply(m.chat, `*DEBE SOLO DE ETIQUETAR O RESPONDER AL MENSAJE DE LA PERSONA QUE QUIERE QUE SEA SU PAREJA*`, m)
-//if(number.length) return conn.reply(m.chat, `*DEBE SOLO DE ETIQUETAR O RESPONDER AL MENSAJE DE LA PERSONA QUE QUIERE QUE SEA SU PAREJA*`, m)
-	
+if(!text && !m.quoted) return conn.reply(m.chat, `*ETIQUETE O RESPONDA AL MENSAJE DE LA PERSONA QUE QUIERE QUE SEA SU PAREJA*`, m) 	
 try {
 if(text) {
 var user = number + '@s.whatsapp.net'
@@ -32,7 +28,7 @@ if(global.db.data.users[user].pasangan != m.sender){
 conn.reply(m.chat, `*NO PUEDES ACEPTAR SI NADIE SE HA DECLARADO, DECLARATE CON ${tu} PARA QUE DIGA SI TE ACEPTA O TE RECHAZA*`, m, { contextInfo: { mentionedJid: [user]}})
 }else{
 global.db.data.users[m.sender].pasangan = user
-conn.reply(m.chat, `*FELICITACIONES!!! 🥳😻 ${tu}*\n*✅ DE MANERA OFICIAL ESTAN EN UNA RELACION*\n\n*QUE DURE POR SIEMPRE SU AMOR Y FELICIDAD 💖😁\n💟 ${tu} 💞 ${yo}*`,m, { contextInfo: { mentionedJid: [user, tu, yo]}})
+conn.reply(m.chat, `*FELICITACIONES!!! 🥳😻 ${tu}*\n*✅ DE MANERA OFICIAL ESTAN EN UNA RELACION*\n\n*QUE DURE POR SIEMPRE SU AMOR Y FELICIDAD 💖😁*\n*${tu} 💞 ${yo}*`,m, { contextInfo: { mentionedJid: [user, tu, yo]}})
 }}}
 handler.command = /^(aceptar|acepto)$/i
 handler.group = true
