@@ -41,11 +41,14 @@ if(user === conn.user.jid) return await conn.sendButton(m.chat, `${fg}𝙔𝙊 �
     
 if(global.db.data.users[user].pasangan != m.sender){ 
 return await conn.sendButton(m.chat, `𝙉𝙊 𝙋𝙐𝙀𝘿𝙀𝙎 𝘼𝘾𝙀𝙋𝙏𝘼𝙍 𝙎𝙄 𝙉𝘼𝘿𝙄𝙀 𝙎𝙀 𝙃𝘼 𝘿𝙀𝘾𝙇𝘼𝙍𝘼𝘿𝙊, 𝘿𝙀𝘾𝙇𝘼𝙍𝘼𝙏𝙀 𝘾𝙊𝙉 *${tu}* 𝙋𝘼𝙍𝘼 𝙌𝙐𝙀 𝘿𝙄𝙂𝘼 𝙎𝙄 𝙏𝙀 𝘼𝘾𝙀𝙋𝙏𝘼 𝙊 𝙏𝙀 𝙍𝙀𝘾𝙃𝘼𝙕𝘼\n\n𝙔𝙊𝙐 𝘾𝘼𝙉𝙉𝙊𝙏 𝘼𝘾𝘾𝙀𝙋𝙏 𝙄𝙁 𝙉𝙊𝘽𝙊𝘿𝙔 𝙃𝘼𝙎 𝘿𝙀𝘾𝙇𝘼𝙍𝙀𝘿, 𝘿𝙀𝘾𝙇𝘼𝙍𝙀 𝙒𝙄𝙏𝙃 *${tu}* 𝙏𝙊 𝙎𝘼𝙔 𝙄𝙁 𝙔𝙊𝙐 𝘼𝘾𝘾𝙀𝙋𝙏 𝙊𝙍 𝙍𝙀𝙅𝙀𝘾𝙏 𝙔𝙊𝙐`, wm, null, [
-['𝗠 𝗘 𝗡 𝗨 ☘️', '/menu']], m, { contextInfo: { mentionedJid: [user, tu]}})						    
+['𝗠 𝗘 𝗡 𝗨 ☘️', '/menu']], fkontak, m, { contextInfo: { mentionedJid: [user, tu]}})	
+	
 }else{
 global.db.data.users[m.sender].pasangan = user
-conn.reply(m.chat, `*FELICITACIONES!!! 🥳😻 ${tu}*\n*✅ DE MANERA OFICIAL ESTAN EN UNA RELACION*\n\n*QUE DURE POR SIEMPRE SU AMOR Y FELICIDAD 💖😁*\n*${tu} 💞 ${yo}*`,m, { contextInfo: { mentionedJid: [user, tu, yo]}})
+return await conn.sendButton(m.chat, `🥳😻 𝙁𝙀𝙇𝙄𝘾𝙄𝙏𝘼𝘾𝙄𝙊𝙉𝙀𝙎!!! *${tu}*\n✅ 𝘿𝙀 𝙈𝘼𝙉𝙀𝙍𝘼 𝙊𝙁𝙄𝘾𝙄𝘼𝙇 𝙀𝙎𝙏𝘼𝙉 𝙀𝙉 𝙐𝙉𝘼 𝙍𝙀𝙇𝘼𝘾𝙄𝙊𝙉\n\n𝙌𝙐𝙀 𝘿𝙐𝙍𝙀 𝙋𝙊𝙍 𝙎𝙄𝙀𝙈𝙋𝙍𝙀 𝙎𝙐 𝘼𝙈𝙊𝙍 𝙔 𝙁𝙀𝙇𝙄𝘾𝙄𝘿𝘼𝘿 💖😁\n\n💝 𝙊𝙁𝙁𝙄𝘾𝙄𝘼𝙇𝙇𝙔 𝙏𝙃𝙀𝙔 𝘼𝙍𝙀 𝙄𝙉 𝘼 𝙍𝙀𝙇𝘼𝙏𝙄𝙊𝙉𝙎𝙃𝙄𝙋`, `*${tu} 💞 ${yo}*\n` + wm, img5, [
+['𝗠 𝗘 𝗡 𝗨 ☘️', '/menu']], m, dos.getRandom(), { contextInfo: { mentionedJid: [user, tu, yo]}})	
 }}}
+
 handler.command = /^(aceptar|acepto)$/i
 handler.group = true
 export default handler
