@@ -11,14 +11,14 @@ let persona = global.db.data.users[who].pasangan
     return conn.reply(m.chat,`No tienes pareja.`,m)
   }
   if (typeof beb == "undefined"){
-    conn.reply(m.chat,`rompió con éxito con @${persona.split("@")[0]}`,m,{contextInfo: {
+    conn.reply(m.chat,`rompió con éxito con @${global.db.data.users[m.sender].pasangan}`,m,{contextInfo: {
       mentionedJid: [persona, global.db.data.users[m.sender].pasangan]
     }})
     ayg.pasangan = ""
   }
 
   if (m.sender == beb.pasangan){
-    conn.reply(m.chat,`rompió con éxito con @${persona.split("@")[0]} ${conn.getName(m.beb)}`,m,{contextInfo: {
+    conn.reply(m.chat,`rompió con éxito con @${global.db.data.users[m.sender].pasangan}`,m,{contextInfo: {
       mentionedJid: [persona, global.db.data.users[m.sender].pasangan]
     }})
     ayg.pasangan = ""
