@@ -17,7 +17,7 @@ while (b === a)
 if (command == 'buscarpareja') {    
 let caption = `*Mensaje de amor...*\n${toM(who)} ❤️ ${toM(b)}\n${await ktnmbk.getRandom()}`
 await conn.sendButton(m.chat, caption, wm, null, [
-['Ser su Pareja', `${usedPrefix}pareja ${b.split`@`[1]}`],
+['Ser su Pareja', `${usedPrefix}pareja ${toM(b)}`],
 ['Otra Persona', `${usedPrefix}buscarpareja`],
 ['Rechazar', `${usedPrefix}ok`]], m, { mentions: conn.parseMention(caption) })
 }}
