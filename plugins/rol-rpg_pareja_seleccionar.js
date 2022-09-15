@@ -1,67 +1,76 @@
 import { areJidsSameUser } from '@adiwajshing/baileys'
 let toM = a => '@' + a.split('@')[0]
 let handler = async (m, { conn, usedPrefix, text, participants, groupMetadata}) => {
+let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
+let name = await conn.getName(m.sender)
 if(!text) {
 let ps = groupMetadata.participants.map(v => v.id)
-    let a = ps.getRandom()
-    let b
-    do b = ps.getRandom()
-    while (b === a)
+let a = ps.getRandom()
+let b
+do b = ps.getRandom()
+while (b === a)
     
     //m.reply(`*Ciee...* ${toM(a)} ❤️ ${toM(b)}`, null, {
         //mentions: [a, b]
     //})
     
-    let caption = `*Mensaje de amor...* ${toM(a)} ❤️ ${toM(b)}\n${await ktnmbk.getRandom()}`
-    await conn.sendButton(m.chat, caption, wm, null, [['jodohnya', `${usedPrefix}jodohnya`],['jodohku', `${usedPrefix}jodohku`]], m, { mentions: conn.parseMention(caption) })
-    }
-	if(isNaN(text)) {
-  	var number = text.split`@`[1]
-  } else if(!isNaN(text)) {
-  	var number = text
-  }
-
-  if(!text && !m.quoted) return conn.reply(m.chat, `ingrese el número, la etiqueta de destino o responda al mensaje de destino`, m)
-  
-  if(isNaN(number)) return conn.reply(m.chat, `_*Número invalido.*_`, m)
-  if(number.length > 15) return conn.reply(m.chat, `*_Formato inválido.*_`, m)
-  try {
-		if(text) {
-			var user = number + '@s.whatsapp.net'
-		} else if(m.quoted.sender) {
-			var user = m.quoted.sender
-		} else if(m.mentionedJid) {
-  		  var user = number + '@s.whatsapp.net'
-			}  
-		} catch (e) {
-  } finally {
-    let users = m.isGroup ? participants.find(v => areJidsSameUser(v.jid == user)) : {}
-    if(!users) return conn.reply(m.chat, `*_Objetivo o Número no encontrado, puede haber dejado o no ser miembro de este grupo.*_`, m)
-    if(user === m.sender) return conn.reply(m.chat, `_*no puedo salir conmigo mismo.*_`, m)
-    if(user === conn.user.jid) return conn.reply(m.chat, `_*no puedo salir conmigo. :')*_`, m)
-
-    if (typeof global.db.data.users[user] == "undefined") return m.reply("_*La persona que etiquetaste no está registrada en la base de datos.*_")
-    var pacar = global.db.data.users[user].pasangan
-    var spac = global.db.data.users[m.sender].pasangan
-    if(global.db.data.users[m.sender].pasangan != "" && global.db.data.users[global.db.data.users[m.sender].pasangan].pasangan == m.sender && global.db.data.users[m.sender].pasangan != user){
-      conn.reply(m.chat, `Ya estas saliendo @${global.db.data.users[m.sender].pasangan.split('@')[0]}\n\npor favor rompe (escriba .disconnect para desconectar) para disparar @${user.split('@')[0]}\n\nPor cierto que son muy leales!`, m , { contextInfo: { mentionedJid: [user, global.db.data.users[m.sender].pasangan]}})
-    }else if(global.db.data.users[user].pasangan != ""){
-      if (pacar){
-        if (m.sender == pacar && global.db.data.users[m.sender].pasangan == user) return conn.reply(m.chat, `ya estas saliendo ${spac.split('@')[0]}`, m , { contextInfo: { mentionedJid: [spac]}})
-        conn.reply(m.chat, `Lo siento, @${user.split('@')[0]} ya saliendo @${pacar.split('@')[0]}\nPor favor busque otro socio!`, m , { contextInfo: { mentionedJid: [user, pacar]}})
-      }else{
-        global.db.data.users[m.sender].pasangan = user
-        conn.reply(m.chat, `${await ktnmbk.getRandom()}\n\nacabas de invitar @${user.split('@')[0]} Fechado\n\nPor favor espere su respuesta!\n\nEscribe *${usedPrefix}terima @user* por aceptar\n*${usedPrefix}tolak @user Rechazar*`, m , { contextInfo: { mentionedJid: [user]}})
-      }
-    }else if (global.db.data.users[user].pasangan == m.sender){
-      global.db.data.users[m.sender].pasangan = user
-      conn.reply(m.chat, `Felicitaciones, oficialmente están saliendo. @${user.split('@')[0]}\n\nQue dure para siempre y siempre sea feliz 🥳🥳🥳`, m , { contextInfo: { mentionedJid: [user]}})
-    }else {
-      global.db.data.users[m.sender].pasangan = user
-      conn.reply(m.chat, `${await ktnmbk.getRandom()}\n\nacabas de invitar @${user.split('@')[0]} Fechado\n\nPor favor espere su respuesta!\n\nEscriba *${usedPrefix}terima @user* untuk menerima\n*${usedPrefix}tolak @user untuk menolak*`, m , { contextInfo: { mentionedJid: [user]}})
-    }
-	}	
+let caption = `*Mensaje de amor...*\n${toM(a)} ❤️ ${toM(b)}\n${await ktnmbk.getRandom()}`
+await conn.sendButton(m.chat, caption, wm, null, [['jodohnya', `${usedPrefix}jodohnya`],['jodohku', `${usedPrefix}jodohku`]], m, { mentions: conn.parseMention(caption) })
 }
+if(isNaN(text)) {
+var number = text.split`@`[1]
+} else if(!isNaN(text)) {
+var number = text
+}
+
+if(!text && !m.quoted) return await conn.sendButton(m.chat, `${mg}𝙀𝙏𝙄𝙌𝙐𝙀𝙏𝙀 𝙊 𝙍𝙀𝙎𝙋𝙊𝙉𝘿𝙀 𝘼𝙇 𝙈𝙀𝙉𝙎𝘼𝙅𝙀 𝘿𝙀 𝙇𝘼 𝙋𝙀𝙍𝙎𝙊𝙉𝘼 𝙌𝙐𝙀 𝙌𝙐𝙄𝙀𝙍𝙀 𝙌𝙐𝙀 𝙎𝙀𝘼 𝙎𝙐 𝙋𝘼𝙍𝙀𝙅𝘼\n\n𝙏𝘼𝙂 𝙊𝙍 𝙍𝙀𝙋𝙇𝙔 𝙏𝙊 𝙏𝙃𝙀 𝙈𝙀𝙎𝙎𝘼𝙂𝙀 𝙁𝙍𝙊𝙈 𝙏𝙃𝙀 𝙋𝙀𝙍𝙎𝙊𝙉 𝙔𝙊𝙐 𝙒𝘼𝙉𝙏 𝙏𝙊 𝘽𝙀 𝙔𝙊𝙐𝙍 𝙋𝘼𝙍𝙏𝙉𝙀𝙍`, wm, null, [
+['𝗠 𝗘 𝗡 𝗨 ☘️', '/menu']], fkontak, m)
+	
+try {
+if(text) {
+var user = number + '@s.whatsapp.net'
+} else if(m.quoted.sender) {
+var user = m.quoted.sender
+} else if(m.mentionedJid) {
+var user = number + '@s.whatsapp.net'
+}  
+} catch (e) {
+} finally {
+let users = m.isGroup ? participants.find(v => areJidsSameUser(v.jid == user)) : {}
+	
+if(!users) return await conn.sendButton(m.chat, `${fg}𝙉𝙊 𝙎𝙀 𝙀𝙉𝘾𝙊𝙉𝙏𝙍𝙊 𝘼 𝙇𝘼 𝙋𝙀𝙍𝙎𝙊𝙉𝘼, 𝘿𝙀𝘽𝙀 𝘿𝙀 𝙀𝙎𝙏𝘼𝙍 𝙀𝙉 𝙀𝙎𝙏𝙀 𝙂𝙍𝙐𝙋𝙊\n\n𝙏𝙃𝙀 𝙋𝙀𝙍𝙎𝙊𝙉 𝙒𝘼𝙎 𝙉𝙊𝙏 𝙁𝙊𝙐𝙉𝘿, 𝙏𝙃𝙀𝙔 𝙈𝙐𝙎𝙏 𝘽𝙀 𝙄𝙉 𝙏𝙃𝙄𝙎 𝙂𝙍𝙊𝙐𝙋`, wm, null, [
+['𝗠 𝗘 𝗡 𝗨 ☘️', '/menu']], fkontak, m)
+	
+if(user === m.sender) return await conn.sendButton(m.chat, `${fg}𝙐𝙎𝙏𝙀𝘿 𝙈𝙄𝙎𝙈𝙊 𝙉𝙊 𝙋𝙐𝙀𝘿𝙀 𝙎𝙀𝙍 𝙋𝘼𝙍𝙀𝙅𝘼\n\n𝙔𝙊𝙐 𝙔𝙊𝙐𝙍𝙎𝙀𝙇𝙁 𝘾𝘼𝙉𝙉𝙊𝙏 𝘽𝙀 𝘼 𝙋𝘼𝙍𝙏𝙉𝙀𝙍`, wm, null, [
+['𝗠 𝗘 𝗡 𝗨 ☘️', '/menu']], fkontak, m)
+	
+if(user === conn.user.jid) return await conn.sendButton(m.chat, `${fg}𝙔𝙊 𝙉𝙊 𝙋𝙐𝙀𝘿𝙊 𝙎𝙀𝙍 𝙎𝙐 𝙋𝘼𝙍𝙀𝙅𝘼 😹\n\n𝙒𝙄𝙏𝙃 𝙈𝙀 𝙔𝙊𝙐 𝘾𝘼𝙉𝙉𝙊𝙏 𝘽𝙀 𝘼 𝘾𝙊𝙐𝙋𝙇𝙀`, wm, null, [
+['𝗠 𝗘 𝗡 𝗨 ☘️', '/menu']], fkontak, m)
+
+//if (typeof global.db.data.users[user] == "undefined") return m.reply(`_*LA PERSONA QUE ETIQUETO NO ESTA EN MI BASE DE DATOS*_`)
+	
+var pacar = global.db.data.users[user].pasangan
+var spac = global.db.data.users[m.sender].pasangan
+
+if(global.db.data.users[m.sender].pasangan != "" && global.db.data.users[global.db.data.users[m.sender].pasangan].pasangan == m.sender && global.db.data.users[m.sender].pasangan != user){
+conn.reply(m.chat, `Ya estas saliendo @${global.db.data.users[m.sender].pasangan.split('@')[0]}\n\npor favor rompe (escriba .disconnect para desconectar) para disparar @${user.split('@')[0]}\n\nPor cierto que son muy leales!`, m , { contextInfo: { mentionedJid: [user, global.db.data.users[m.sender].pasangan]}})
+
+}else if(global.db.data.users[user].pasangan != ""){
+if (pacar){
+if (m.sender == pacar && global.db.data.users[m.sender].pasangan == user) return conn.reply(m.chat, `ya estas saliendo ${spac.split('@')[0]}`, m , { contextInfo: { mentionedJid: [spac]}})
+conn.reply(m.chat, `Lo siento, @${user.split('@')[0]} ya saliendo @${pacar.split('@')[0]}\nPor favor busque otro socio!`, m , { contextInfo: { mentionedJid: [user, pacar]}})
+}else{
+global.db.data.users[m.sender].pasangan = user
+conn.reply(m.chat, `${await ktnmbk.getRandom()}\n\nacabas de invitar @${user.split('@')[0]} Fechado\n\nPor favor espere su respuesta!\n\nEscribe *${usedPrefix}terima @user* por aceptar\n*${usedPrefix}tolak @user Rechazar*`, m , { contextInfo: { mentionedJid: [user]}})
+}
+}else if (global.db.data.users[user].pasangan == m.sender){
+global.db.data.users[m.sender].pasangan = user
+conn.reply(m.chat, `Felicitaciones, oficialmente están saliendo. @${user.split('@')[0]}\n\nQue dure para siempre y siempre sea feliz 🥳🥳🥳`, m , { contextInfo: { mentionedJid: [user]}})
+}else {
+global.db.data.users[m.sender].pasangan = user
+conn.reply(m.chat, `${await ktnmbk.getRandom()}\n\nacabas de invitar @${user.split('@')[0]} Fechado\n\nPor favor espere su respuesta!\n\nEscriba *${usedPrefix}terima @user* untuk menerima\n*${usedPrefix}tolak @user untuk menolak*`, m , { contextInfo: { mentionedJid: [user]}})
+}}}
+
 handler.command = /^(mensaje)$/i
 handler.group = true
 
