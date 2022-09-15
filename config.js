@@ -109,14 +109,20 @@ global.gatabot = md
 global.nna = 'https://chat.whatsapp.com/I4pF9XijY6CLsf3rrNXApw'
 global.nnagrupo = nna //UPDATE GATABOT
 
-global.nn = 'https://chat.whatsapp.com/CunoFmEfBW75APfI0ZO5DJ'
+global.nn = 'https://chat.whatsapp.com/FMxCZqMhrNiBjfFlcCRRUt'
 global.nngrupo = nn //Grupo 1
 
-global.nnn = 'https://chat.whatsapp.com/EuDCIPGyenPKDDyRfO5jD3'
+global.nnn = 'https://chat.whatsapp.com/ELVWddEES6N7WGryPAXtcj'
 global.nnngrupo = nnn //Grupo 2
 
-global.nnnt = 'https://chat.whatsapp.com/Kuyj36S1yCc0vVzI87UI5k'
-global.nnngrupo = nnnt //Grupo 3
+global.nnnt = 'https://chat.whatsapp.com/JrS2t52lXfLI2Gkhh37Rgd'
+global.nnntgrupo = nnnt //Grupo 3
+
+global.nnntt = 'https://chat.whatsapp.com/EuDCIPGyenPKDDyRfO5jD3'
+global.nnnttgrupo = nnntt //Grupo 4
+
+global.nnnttt = 'https://chat.whatsapp.com/Dy4HtikgceOBgVNiUKHduN'
+global.nnntttgrupo = nnnttt //Grupo 5
 
 global.paypal = 'https://paypal.me/OficialGD'
 global.donar = paypal
