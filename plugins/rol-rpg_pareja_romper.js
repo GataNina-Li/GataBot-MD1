@@ -6,21 +6,20 @@ let name = await conn.getName(m.sender)
       
 var ayg = global.db.data.users[m.sender]
 var beb = global.db.data.users[global.db.data.users[m.sender].pasangan]
-var persona = global.db.data.users[m.sender].pasangan
 
 if(ayg.pasangan == ""){
 return await conn.sendButton(m.chat, `𝙐𝙎𝙏𝙀𝘿 *${name}* 𝙉𝙊 𝙏𝙄𝙀𝙉𝙀 𝙋𝘼𝙍𝙀𝙅𝘼\n\n𝘿𝙊𝙀𝙎 𝙉𝙊𝙏 𝙃𝘼𝙑𝙀 𝘼 𝙋𝘼𝙍𝙏𝙉𝙀𝙍`, wm, null, [
 ['𝗠 𝗘 𝗡 𝗨 ☘️', '/menu']], fkontak, m)}
       
 if (typeof beb == "undefined"){
-return await conn.sendButton(m.chat, `*${name}* 💔 𝙍𝙊𝙈𝙋𝙄𝙊 𝘿𝙀𝙁𝙄𝙉𝙄𝙏𝙄𝙑𝘼𝙈𝙀𝙉𝙏𝙀 𝘾𝙊𝙉 @${persona.split('@')[0]}\n\n𝙏𝙃𝙄𝙎 𝙍𝙀𝙇𝘼𝙏𝙄𝙊𝙉𝙎𝙃𝙄𝙋 𝙃𝘼𝙎 𝙀𝙉𝘿𝙀𝘿`, `*Wa.me/${persona.split('@')[0]}*\n\n` + wm, null, [
-['𝗠 𝗘 𝗡 𝗨 ☘️', '/menu']], fkontak, m, { contextInfo: { mentionedJid: [ persona ] }})
+return await conn.sendButton(m.chat, `*${name}* 💔 𝙍𝙊𝙈𝙋𝙄𝙊 𝘿𝙀𝙁𝙄𝙉𝙄𝙏𝙄𝙑𝘼𝙈𝙀𝙉𝙏𝙀 𝘾𝙊𝙉 *@${global.db.data.users[m.sender].pasangan.split('@')[0]}*\n\n𝙏𝙃𝙄𝙎 𝙍𝙀𝙇𝘼𝙏𝙄𝙊𝙉𝙎𝙃𝙄𝙋 𝙃𝘼𝙎 𝙀𝙉𝘿𝙀𝘿`, `*✩ Wa.me/${persona.split('@')[0]}*\n\n` + wm, null, [
+['𝗠 𝗘 𝗡 𝗨 ☘️', '/menu']], fkontak, m, { contextInfo: { mentionedJid: [ global.db.data.users[m.sender].pasangan ] }})
 ayg.pasangan = ""
 }
 
 if (m.sender == beb.pasangan){
-return await conn.sendButton(m.chat, `*${name}* 💔 𝙍𝙊𝙈𝙋𝙄𝙊 𝘿𝙀𝙁𝙄𝙉𝙄𝙏𝙄𝙑𝘼𝙈𝙀𝙉𝙏𝙀 𝘾𝙊𝙉 @${persona.split('@')[0]}\n\n𝙏𝙃𝙄𝙎 𝙍𝙀𝙇𝘼𝙏𝙄𝙊𝙉𝙎𝙃𝙄𝙋 𝙃𝘼𝙎 𝙀𝙉𝘿𝙀𝘿`, `*Wa.me/${persona.split('@')[0]}*\n\n` + wm, null, [
-['𝗠 𝗘 𝗡 𝗨 ☘️', '/menu']], fkontak, m, { contextInfo: { mentionedJid: [ persona ] }})
+return await conn.sendButton(m.chat, `*${name}* 💔 𝙍𝙊𝙈𝙋𝙄𝙊 𝘿𝙀𝙁𝙄𝙉𝙄𝙏𝙄𝙑𝘼𝙈𝙀𝙉𝙏𝙀 𝘾𝙊𝙉 *@${global.db.data.users[m.sender].pasangan.split('@')[0]}*\n\n𝙏𝙃𝙄𝙎 𝙍𝙀𝙇𝘼𝙏𝙄𝙊𝙉𝙎𝙃𝙄𝙋 𝙃𝘼𝙎 𝙀𝙉𝘿𝙀𝘿`, `*✩ Wa.me/${persona.split('@')[0]}*\n\n` + wm, null, [
+['𝗠 𝗘 𝗡 𝗨 ☘️', '/menu']], fkontak, m, { contextInfo: { mentionedJid: [ global.db.data.users[m.sender].pasangan ] }})
 ayg.pasangan = ""
 beb.pasangan = ""
 }else {
