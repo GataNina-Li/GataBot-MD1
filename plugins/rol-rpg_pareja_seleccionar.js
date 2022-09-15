@@ -78,7 +78,7 @@ global.db.data.users[m.sender].pasangan = user
 conn.reply(m.chat, `${await ktnmbk.getRandom()}\n\nacabas de invitar @${user.split('@')[0]} Fechado\n\nPor favor espere su respuesta!\n\nEscriba *${usedPrefix}terima @user* untuk menerima\n*${usedPrefix}tolak @user untuk menolak*`, m , { contextInfo: { mentionedJid: [user]}})
 }}}
 
-handler.command = /^(buscarpareja|pareja|elegir|elegirpareja)$/i
+handler.command = /^(buscarpareja|pareja|elegirpareja)$/i
 handler.group = true
 
 export default handler
