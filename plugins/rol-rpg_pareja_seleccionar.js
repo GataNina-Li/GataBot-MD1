@@ -56,8 +56,8 @@ if (typeof global.db.data.users[user] == "undefined") return m.reply(`_*LA PERSO
 	
 var pacar = global.db.data.users[user].pasangan
 var spac = global.db.data.users[m.sender].pasangan
-let tu = conn.getName(who.pacar)
-let yo = conn.getName(m.spac)
+let yo = conn.getName(m.sender)
+let tu = conn.getName(who)
 
 
 if(global.db.data.users[m.sender].pasangan != "" && global.db.data.users[global.db.data.users[m.sender].pasangan].pasangan == m.sender && global.db.data.users[m.sender].pasangan != user){
@@ -66,7 +66,7 @@ conn.reply(m.chat, `ERES INFIEL 🙀 PERO SI YA ESTAS EN UNA RELACION CON @${glo
 	
 if (pacar){
 if (m.sender == pacar && global.db.data.users[m.sender].pasangan == user) return conn.reply(m.chat, `ya estas saliendo ${spac.split('@')[0]}`, m , { contextInfo: { mentionedJid: [spac]}})
-conn.reply(m.chat, `NO PUEDES PORQUE *${tu}* Y @${pacar.split('@')[0]} ESTAN EN UNA RELACION\nBUSQUE OTRA PERSONA QUE QUIERA SER SU PAREJA`, m , { contextInfo: { mentionedJid: [user, pacar]}})
+conn.reply(m.chat, `NO PUEDES PORQUE *${tu}* Y ${conn.getName(user)} ESTAN EN UNA RELACION\nBUSQUE OTRA PERSONA QUE QUIERA SER SU PAREJA`, m , { contextInfo: { mentionedJid: [user, pacar, yo, tu]}})
 }else{
 	
 global.db.data.users[m.sender].pasangan = user
