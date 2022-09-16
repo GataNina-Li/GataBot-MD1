@@ -1,4 +1,4 @@
-/*process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '0'; //SI QUIERES TEXTO SIMPLIFICADO EN LA CONSOLA USA ESTE CÓDIGO 
+process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '0'; //SI QUIERES TEXTO SIMPLIFICADO EN LA CONSOLA USA ESTE CÓDIGO 
 import './config.js';
 import { createRequire } from "module"; 
 import path, { join } from 'path'
@@ -235,9 +235,9 @@ console.log(chalk.cyanBright(`\n𓃠 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈�
 }, 180000)
 _quickTest()
 .then(() => conn.logger.info(`😸 𝘾𝘼𝙍𝙂𝘼𝙉𝘿𝙊.. : 𝘾𝙃𝘼𝙍𝙂𝙄𝙉𝙂.. \n`))
-.catch(console.error)*/
+.catch(console.error)
 
-process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '0'; //SI QUIERES MAS DATOS COMPLETOS EN LA CONSOLA USA ESTE CÓDIGO 
+/*process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '0'; //SI QUIERES MAS DATOS COMPLETOS EN LA CONSOLA USA ESTE CÓDIGO 
 import './config.js';
 import { createRequire } from "module";
 import path, { join } from 'path'
@@ -519,4 +519,4 @@ console.log(conn.logger.info(`\n𓃠 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈�
 
 _quickTest()
   .then(() => conn.logger.info('Prueba rápida realizada | Quick Test Done'))
-  .catch(console.error)
+  .catch(console.error)*/
