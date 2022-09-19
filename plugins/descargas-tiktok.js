@@ -58,7 +58,7 @@ const { author: { nickname }, video, description } = await tiktokdl(args[0]).cat
 const url = video.no_watermark_raw || video.no_watermark || video.no_watermark_hd || video.with_watermark
 await conn.relayMessage(m.chat, prep.message, { messageId: prep.key.id, mentions: [m.sender] })
 let buttons = [{ buttonText: { displayText: '🎧 𝗔𝗨𝗗𝗜𝗢' }, buttonId: `${usedPrefix}tomp3` }]
-conn.sendMessage(m.chat, { video: { url: url}, caption: wm, footer: await shortUrl(url), buttons }, { quoted: m })
+conn.sendMessage(m.chat, { video: { url: url}, caption: wm + `\n\n⛱️ *Nickname:* ${nickname} ${description ? `\n⛱️ *Descripción:* ${description}` : ''}\n${wm}`, footer: await shortUrl(url), buttons }, { quoted: m })
 } catch {  
   
 try {
