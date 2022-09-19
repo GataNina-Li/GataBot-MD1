@@ -40,7 +40,8 @@ let res = await (await fetch(`https://www.tiktok.com/node/share/video/${id[3]}/$
 return res?.seoProps?.metaParams}
 async function shortUrl(url) {
 return await (await fetch(`https://tinyurl.com/api-create.php?url=${url}`)).text()}*/
-
+import fetch from 'node-fetch'
+import { generateWAMessageFromContent } from '@adiwajshing/baileys'
 import { tiktokdl, tiktokdlv2, tiktokdlv3 } from '@bochilteam/scraper'
 let handler = async (m, { conn, args, usedPrefix, command }) => {
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
