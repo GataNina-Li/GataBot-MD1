@@ -64,6 +64,8 @@ conn.sendMessage(m.chat, { video: { url: url}, caption: wm, footer: await shortU
   
 try {
 const { author: { nickname }, video, description } = await tiktokdl(args[0])
+.catch(async _ => await tiktokdlv2(args[0]))
+.catch(async _ => await tiktokdlv3(args[0]))
 const url = video.no_watermark2 || video.no_watermark || 'https://tikcdn.net' + video.no_watermark_raw || video.no_watermark_hd
 if (!url) return conn.reply(m.chat, `${fg}𝙀𝙍𝙍𝙊𝙍 𝘼𝙇 𝙄𝙉𝙏𝙀𝙉𝙏𝘼𝙍 𝘿𝙀𝙎𝘾𝘼𝙍𝙂𝘼𝙍 𝙀𝙇 𝙏𝙄𝙆 𝙏𝙊𝙆, 𝙑𝙐𝙀𝙇𝙑𝘼 𝘼 𝙄𝙉𝙏𝙀𝙉𝙏𝘼𝙍 𝙋𝙊𝙍 𝙁𝘼𝙑𝙊𝙍\n\n𝙀𝙍𝙍𝙊𝙍 𝙏𝙍𝙔𝙄𝙉𝙂 𝙏𝙊 𝘿𝙊𝙒𝙉𝙇𝙊𝘼𝘿 𝙏𝙄𝙆𝙏𝙊𝙆, 𝙏𝙍𝙔 𝘼𝙂𝘼𝙄𝙉 𝙋𝙇𝙀𝘼𝙎𝙀`, fkontak,  m)
 await conn.reply(m.chat, `${eg}𝙋𝙍𝙊𝙉𝙏𝙊 𝙏𝙀𝙉𝘿𝙍𝘼 𝙀𝙇 𝙑𝙄𝘿𝙀𝙊 𝘿𝙀 𝙏𝙄𝙆𝙏𝙊𝙆 😸\n𝙎𝙊𝙊𝙉 𝙒𝙄𝙇𝙇 𝙃𝘼𝙑𝙀 𝙏𝙃𝙀 𝙏𝙄𝙆𝙏𝙊𝙆 𝙑𝙄𝘿𝙀𝙊 🥳`, fkontak,  m)    
