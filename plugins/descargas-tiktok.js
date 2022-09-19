@@ -20,4 +20,5 @@ await conn.reply(m.chat, `${fg}𝙀𝙍𝙍𝙊𝙍 𝘼𝙇 𝙄𝙉𝙏𝙀�
 handler.help = ['tiktok']
 handler.tags = ['dl']
 handler.command = /^(tt|tiktok)(dl|nowm)?$/i
+handler.limit = 2
 export default handler
