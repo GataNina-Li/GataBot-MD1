@@ -11,15 +11,12 @@ let b
 do b = ps.getRandom()
 while (b === a)
     
-    //m.reply(`*Ciee...* ${toM(a)} ❤️ ${toM(b)}`, null, {
-        //mentions: [a, b]
-    //})
-if (command == 'buscarpareja') {    
-let caption = `*Mensaje de amor...*\n${toM(who)} ❤️ ${toM(b)}\n${await ktnmbk.getRandom()}`
-await conn.sendButton(m.chat, caption, wm, null, [
-['Ser su Pareja', `${usedPrefix}pareja ${toM(b)}`],
-['Otra Persona', `${usedPrefix}buscarpareja`],
-['Rechazar', `${usedPrefix}ok`]], m, { mentions: conn.parseMention(caption) })
+if (command == 'futurapareja') {    
+let caption = `💗 𝗙𝗨𝗧𝗨𝗥𝗔 𝗣𝗔𝗥𝗘𝗝𝗔 💗\n${toM(a)} 💞 ${toM(b)}\n\n💌 𝗠𝗘𝗡𝗦𝗔𝗝𝗘 𝗗𝗘 𝗔𝗠𝗢𝗥\n*_${await ktnmbk.getRandom()}_*`
+await conn.sendButton(m.chat, caption, `*_Si quiere tener una pareja use el comando ${usedPrefix}pareja etiquetando a tu futura Pareja._*\n\n` + wm, null, [
+['🤭 𝙌𝙐𝙀 𝙎𝙀 𝘿𝙀𝘾𝙇𝘼𝙍𝙀𝙉', `amor`],
+['🧐 𝙊𝙏𝙍𝘼 𝙋𝘼𝙍𝙀𝙅𝘼', `${usedPrefix}futurapareja`],
+['😆 𝙀𝙎 𝙐𝙉𝘼 𝙋𝘼𝙍𝙀𝙅𝘼 𝙍𝘼𝙉𝘿𝙊𝙈', `risa`]], m, { mentions: conn.parseMention(caption) })
 }}
 	
 if(isNaN(text)) {
@@ -70,12 +67,12 @@ conn.reply(m.chat, `𝙉𝙊 𝙋𝙐𝙀𝘿𝙀𝙎 𝙋𝙊𝙍𝙌𝙐𝙀 *
 }else{
 	
 global.db.data.users[m.sender].pasangan = user
-conn.reply(m.chat, `${await ktnmbk.getRandom()}\n\nAnda baru saja mengajak @${user.split('@')[0]} berpacaran\n\nSilahkan menunggu jawaban darinya!\n\nKetik *${usedPrefix}terima @user* untuk menerima\n*${usedPrefix}tolak @user untuk menolak*`, m , { contextInfo: { mentionedJid: [user]}})
+conn.reply(m.chat, `${await ktnmbk.getRandom()}\n\nAcabas de invitar @${user.split('@')[0]}\n\n¡Por favor espere una respuesta!`, m , { contextInfo: { mentionedJid: [user]}})
 }	
 	
 }else if (global.db.data.users[user].pasangan == m.sender){
 global.db.data.users[m.sender].pasangan = user
-conn.reply(m.chat, `Selamat anda resmi berpacaran dengan @${user.split('@')[0]}\n\nSemoga langgeng dan bahagia selalu 🥳🥳🥳`, m , { contextInfo: { mentionedJid: [user]}})
+conn.reply(m.chat, `Felicitaciones, oficialmente están saliendo @${user.split('@')[0]}\n\nQue dure para siempre y siempre sea feliz 🥳🥳🥳`, m , { contextInfo: { mentionedJid: [user]}})
 }else {
 	
 global.db.data.users[m.sender].pasangan = user
@@ -83,7 +80,7 @@ await conn.sendButton(m.chat, `*_${await ktnmbk.getRandom()}_*\n\n*${await conn.
 ['🥳 𝙑𝘼𝙈𝙊𝙎 𝘼𝘾𝙀𝙋𝙏𝘼', `Amor`]], m, { contextInfo: { mentionedJid: [ who, m.sender, user ]}})
 }}}
 
-handler.command = /^(buscarpareja|pareja|elegirpareja)$/i
+handler.command = /^(futurapareja|pareja|elegirpareja|serpareja|sersupareja|couple)$/i
 handler.group = true
 
 export default handler
