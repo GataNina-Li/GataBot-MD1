@@ -67,13 +67,12 @@ conn.reply(m.chat, `ERES INFIEL 🙀 PERO SI YA ESTAS EN UNA RELACION CON @${glo
 if (pacar){
 if (m.sender == pacar && global.db.data.users[m.sender].pasangan == user) return conn.reply(m.chat, `ya estas saliendo ${spac.split('@')[0]}`, m , { contextInfo: { mentionedJid: [spac]}})
 conn.reply(m.chat, `NO PUEDES PORQUE *${await conn.getName(user)}* Y ${await conn.getName(pacar)} ESTAN EN UNA RELACION\nBUSQUE OTRA PERSONA QUE QUIERA SER SU PAREJA`, m , { contextInfo: { mentionedJid: [m.sender, global.db.data.users[m.sender].pasangan]}})
-}else if (global.db.data.users[global.db.data.users[m.sender].pasangan].pasangan == m.sender) {
+}else if (global.db.data.users[m.sender].pasangan = "") {
 conn.reply(m.chat, `PARECE QUE @${global.db.data.users[m.sender].pasangan.split('@')[0]} NO HA ACEPTADO NI RECHAZADO TU PROPUESTA DE ESTAR AMBOS EN UNA RELACION`, m, {contextInfo: {
 mentionedJid: [global.db.data.users[m.sender].pasangan] }})
 	
 //global.db.data.users[m.sender].pasangan = user
 //conn.reply(m.chat, `${await ktnmbk.getRandom()}\n\nacabas de invitar @${user.split('@')[0]} Fechado\n\nPor favor espere su respuesta!\n\nEscribe *${usedPrefix}terima @user* por aceptar\n*${usedPrefix}tolak @user Rechazar*`, m , { contextInfo: { mentionedJid: [user]}})
-}
 	
 }else if (global.db.data.users[user].pasangan == m.sender){
 global.db.data.users[m.sender].pasangan = user
