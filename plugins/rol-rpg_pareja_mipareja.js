@@ -14,6 +14,6 @@ conn.sendButton(m.chat, `🤨 𝙋𝘼𝙍𝙀𝘾𝙀 𝙌𝙐𝙀 *${await con
 ['𝗠 𝗘 𝗡 𝗨 ☘️', '/menu']], fkontak, m, {contextInfo: { mentionedJid: [ persona, m.sender ] }})
 global.db.data.users[m.sender].pasangan = ""
 }
-handler.command = /^(sinceridad|mipareja|miamor|minovio|minovia)$/i
+handler.command = /^(sinceridad|mipareja|miamor|minovio|minovia|mylove)$/i
 handler.group = true
 export default handler
