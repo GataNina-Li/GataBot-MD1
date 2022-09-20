@@ -3,7 +3,7 @@ let chats = Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned
     
 let caption = `*╭•·––| 💬 𝘾𝙃𝘼𝙏𝙎 𝘽𝘼𝙉𝙀𝘼𝘿𝙊𝙎 : 𝘽𝘼𝙉𝙉𝙀𝘿 |––·•*
 │ *Total: ${chats.length} Chats* ${chats ? '\n' + chats.map(([jid, chat], i) => jid.endsWith('@g.us')`
-│ ${i + 1}. ${await conn.getName(jid)}
+│ ${i + 1}. ${conn.getName(jid) == undefined ? 'Unknown' : conn.getName(jid)}
 │ ${jid}\n│ - - - - - - - - -`.trim()).join('\n') : ''}
 *╰•·–––––––––––––––––––·•*`
 await conn.sendButton(m.chat, caption, wm, null, [ 
