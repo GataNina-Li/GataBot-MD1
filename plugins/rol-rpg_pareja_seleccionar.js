@@ -79,10 +79,10 @@ global.db.data.users[m.sender].pasangan = user
 await conn.sendButton(m.chat, `Felicitaciones, oficialmente están saliendo. @${user.split('@')[0]}\n\nQue dure para siempre y siempre sea feliz 🥳🥳🥳`, m , { contextInfo: { mentionedJid: [user]}})
 }else {
 	
-global.db.data.users[m.sender].pasangan = m.sender
+global.db.data.users[m.sender].pasangan = user
 await conn.sendButton(m.chat, `${await ktnmbk.getRandom()}\n\n*${conn.getName(m.sender)}* acabas de invitar a *${conn.getName(who)}* Fechado\n\nPor favor espere la respuesta!\n\nEscriba *${usedPrefix}terima @user* untuk menerima\n*${usedPrefix}tolak @user untuk menolak*`, wm, null, [
-['Aceptar', `/aceptar @${who}`],
-['Rechazar', `/rechazar @${who}`]], m, { contextInfo: { mentionedJid: [ who, m.sender ]}})
+['Aceptar', `/aceptar` user],
+['Rechazar', `/rechazar` user]], m, { contextInfo: { mentionedJid: [ who, m.sender ]}})
 }}}
 
 handler.command = /^(buscarpareja|pareja|elegirpareja)$/i
