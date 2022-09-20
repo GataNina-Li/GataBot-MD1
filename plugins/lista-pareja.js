@@ -6,7 +6,7 @@ let pareja = global.db.data.users[m.sender].pasangan
 let relacion = Object.entries(global.db.data.users).filter(user => user[1].pasangan)
 let caption = `💝 𝗟𝗜𝗦𝗧𝗔 𝗗𝗘 𝗣𝗔𝗥𝗘𝗝𝗔𝗦 : 𝙍𝙀𝙇𝘼𝙏𝙄𝙊𝙉𝙎𝙃𝙄𝙋
 *╭•·–––––––––––––––––––·•*
-│ *Total : ${relacion.length} Usuarios* ${relacion ? '\n' + relacion.map(([jid, parejas, who], i) => `
+│ *Total : ${relacion.length} Usuarios* ${relacion ? '\n' + relacion.map(([jid], i) => `
 │ *${i + 1}.* ${conn.getName(jid) == undefined ? 'Sin Pareja' : conn.getName(jid)}
 │ ${isOwner ? '@' + jid.split`@`[0] + ` 💞 ${conn.getName(who)}` : jid + ` 💞 ${conn.getName(who)}`}\n│ - - - - - - - - -`.trim()).join('\n') : ''}
 *╰•·–––––––––––––––––––·•*`
