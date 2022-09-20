@@ -13,6 +13,6 @@ let caption = `💝 𝗟𝗜𝗦𝗧𝗔 𝗗𝗘 𝗣𝗔𝗥𝗘𝗝𝗔𝗦 :
 await conn.sendButton(m.chat, caption, `💟 𝗠𝗜 𝗣𝗔𝗥𝗘𝗝𝗔 ⇢ ${pareja ? `*${user} 💞 ${conn.getName(pareja)}*` : `❌ *No tiene Pareja*`}\n${wm}`, null, [ 
 [`${pareja ? '✦ 𝘿𝙄𝙎𝙁𝙍𝙐𝙏𝘼𝙍 𝙋𝙍𝙀𝙈𝙄𝙐𝙈 ✦': '✦ 𝘾𝙊𝙈𝙋𝙍𝘼𝙍 𝙋𝘼𝙎𝙀 𝙋𝙍𝙀𝙈𝙄𝙐𝙈 ✦'}`, `${pareja ? '.allmenu': '.pase premium'}`]], m, { mentions: await conn.parseMention(caption) })
 }
-handler.command = /^(listapremium)$/i
+handler.command = /^(listaparejas)$/i
 
 export default handler
