@@ -73,7 +73,7 @@ mentionedJid: [global.db.data.users[m.sender].pasangan] }})
 	
 //global.db.data.users[m.sender].pasangan = user
 //conn.reply(m.chat, `${await ktnmbk.getRandom()}\n\nacabas de invitar @${user.split('@')[0]} Fechado\n\nPor favor espere su respuesta!\n\nEscribe *${usedPrefix}terima @user* por aceptar\n*${usedPrefix}tolak @user Rechazar*`, m , { contextInfo: { mentionedJid: [user]}})
-}}	
+}	
 }else if (global.db.data.users[user].pasangan == m.sender){
 global.db.data.users[m.sender].pasangan = user
 conn.reply(m.chat, `Felicitaciones, oficialmente están saliendo. @${user.split('@')[0]}\n\nQue dure para siempre y siempre sea feliz 🥳🥳🥳`, m , { contextInfo: { mentionedJid: [user]}})
