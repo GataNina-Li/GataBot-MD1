@@ -76,11 +76,13 @@ mentionedJid: [global.db.data.users[m.sender].pasangan] }})
 }	
 }else if (global.db.data.users[user].pasangan == m.sender){
 global.db.data.users[m.sender].pasangan = user
-conn.reply(m.chat, `Felicitaciones, oficialmente están saliendo. @${user.split('@')[0]}\n\nQue dure para siempre y siempre sea feliz 🥳🥳🥳`, m , { contextInfo: { mentionedJid: [user]}})
+await conn.sendButton(m.chat, `Felicitaciones, oficialmente están saliendo. @${user.split('@')[0]}\n\nQue dure para siempre y siempre sea feliz 🥳🥳🥳`, m , { contextInfo: { mentionedJid: [user]}})
 }else {
 	
 global.db.data.users[m.sender].pasangan = user
-conn.reply(m.chat, `${await ktnmbk.getRandom()}\n\nacabas de invitar @${user.split('@')[0]} Fechado\n\nPor favor espere su respuesta!\n\nEscriba *${usedPrefix}terima @user* untuk menerima\n*${usedPrefix}tolak @user untuk menolak*`, m , { contextInfo: { mentionedJid: [user]}})
+conn.reply(m.chat, `${await ktnmbk.getRandom()}\n\n*${conn.getName(who)}* acabas de invitar a *${conn.getName(m.sender)}* Fechado\n\nPor favor espere la respuesta!\n\nEscriba *${usedPrefix}terima @user* untuk menerima\n*${usedPrefix}tolak @user untuk menolak*`, wm, null, [
+['Aceptar', `/aceptar ${conn.getName(m.sender)}`],
+['Rechazar', `/rechazar ${conn.getName(m.sender)}`]], m, null, { contextInfo: { mentionedJid: [user, who, m.sender]}})
 }}}
 
 handler.command = /^(buscarpareja|pareja|elegirpareja)$/i
