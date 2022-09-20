@@ -82,7 +82,7 @@ await conn.sendButton(m.chat, `*_${await ktnmbk.getRandom()}_*\n\n*${await conn.
 ['🥳 𝙑𝘼𝙈𝙊𝙎 𝘼𝘾𝙀𝙋𝙏𝘼', `Amor`]], m, { contextInfo: { mentionedJid: [ who, m.sender, user ]}})
 }}}
 
-handler.command = /^(futurarelacion|pareja|elegirpareja|serpareja|sersupareja|couple)$/i
+handler.command = /^(futurarelacion|pareja|elegirpareja|serpareja|sersupareja|couple|elegirpareja)$/i
 handler.group = true
 
 export default handler
