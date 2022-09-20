@@ -256,7 +256,8 @@ let tiketm = member.healtmonster
     let userslegendary = sortedlegendary.map(v => v[0])
     let userspet = sortedpet.map(v => v[0])
     
-    let { min, max } = xpRange(level, global.multiplier)    
+    let { min, max } = xpRange(level, global.multiplier)
+    let pareja = global.db.data.users[m.sender].pasangan
 //${pasangan.split("@")[0]
     
 //let urs = Object.entries(global.db.data.users).map(([key, value]) => { 
@@ -277,8 +278,8 @@ let str = `
 ┃ *»* ${rol}
 ┃ *${rpgg.emoticon('premium')} ${member.premium ? "✅ VIP : Premium": "Limitado : Free"}*
 ┃ 🏦 *Banco : Bank » ${member.bank}*
-┃ 💞 *Pareja : Pasangan »* ${pasangan ? `*${pasangan.split("@")[0]}*` : `❌`}
-┃ ⚠️ *Advertencia : Warn » ${warn}*
+┃ 💞 *Pareja : Pasangan »* ${pasangan ? `*${name} 💝 ${conn.getName(pareja)}*` : `❌`}
+┃ ⚠️ *Advertencia : Warn » ${warn}/4*
 ┃ 🚷 *Baneado(a) : Banned » No*
 ┃
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸╮
