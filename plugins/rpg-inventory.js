@@ -258,12 +258,6 @@ let tiketm = member.healtmonster
     
     let { min, max } = xpRange(level, global.multiplier)
     let pareja = global.db.data.users[m.sender].pasangan
-//${pasangan.split("@")[0]
-    
-//let urs = Object.entries(global.db.data.users).map(([key, value]) => { 
-//return {...value, jid: key}
-//let urs = Object.entries(global.db.data.pasangan)
-//💞 *Pareja : Pasangan »* ${pasangan ? `${conn.getName(jid)}` : `❌`}
 	
 let str = `
 🏷️ *INVENTARIO | INVENTORY* 
@@ -278,7 +272,8 @@ let str = `
 ┃ *»* ${rol}
 ┃ *${rpgg.emoticon('premium')} ${member.premium ? "✅ VIP : Premium": "Limitado : Free"}*
 ┃ 🏦 *Banco : Bank » ${member.bank}*
-┃ 💞 *Pareja : Pasangan »* ${pasangan ? `*${name} 💝 ${conn.getName(pareja)}*` : `❌`}
+┃ 💞 *Pareja : Pasangan * 
+┃ *» ${pasangan ? `${name} 💝 ${conn.getName(pareja)}` : `❌`}*
 ┃ ⚠️ *Advertencia : Warn » ${warn}/4*
 ┃ 🚷 *Baneado(a) : Banned » No*
 ┃
