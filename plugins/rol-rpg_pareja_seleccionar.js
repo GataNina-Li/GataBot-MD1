@@ -67,8 +67,8 @@ conn.reply(m.chat, `ERES INFIEL 🙀 PERO SI YA ESTAS EN UNA RELACION CON @${glo
 if (pacar){
 if (m.sender == pacar && global.db.data.users[m.sender].pasangan == user) return conn.reply(m.chat, `ya estas saliendo ${spac.split('@')[0]}`, m , { contextInfo: { mentionedJid: [spac]}})
 conn.reply(m.chat, `𝙉𝙊 𝙋𝙐𝙀𝘿𝙀𝙎 𝙋𝙊𝙍𝙌𝙐𝙀 *${await conn.getName(user)}* 𝙔 ${await conn.getName(pacar)} 𝙀𝙎𝙏𝘼𝙉 𝙀𝙉 𝙐𝙉𝘼 𝙍𝙀𝙇𝘼𝘾𝙄𝙊𝙉\n𝘽𝙐𝙎𝙌𝙐𝙀 𝙊𝙏𝙍𝘼 𝙋𝙀𝙍𝙎𝙊𝙉𝘼 𝙌𝙐𝙀 𝙌𝙐𝙄𝙀𝙍𝘼 𝙎𝙀𝙍 𝙎𝙐 𝙋𝘼𝙍𝙀𝙅𝘼`, m , { contextInfo: { mentionedJid: [m.sender, global.db.data.users[m.sender].pasangan]}})
-}else {
-if (global.db.data.users[global.db.data.users[m.sender].pasangan].pasangan == m.sender) return conn.reply(m.chat, `PARECE QUE @${global.db.data.users[m.sender].pasangan.split('@')[0]} NO HA ACEPTADO NI RECHAZADO TU PROPUESTA DE ESTAR AMBOS EN UNA RELACION`, m, {contextInfo: {
+}else if (global.db.data.users[global.db.data.users[m.sender].pasangan].pasangan == m.sender) { 
+return conn.reply(m.chat, `PARECE QUE @${global.db.data.users[m.sender].pasangan.split('@')[0]} NO HA ACEPTADO NI RECHAZADO TU PROPUESTA DE ESTAR AMBOS EN UNA RELACION`, m, {contextInfo: {
 mentionedJid: [global.db.data.users[m.sender].pasangan] }})
 	
 //global.db.data.users[m.sender].pasangan = user
