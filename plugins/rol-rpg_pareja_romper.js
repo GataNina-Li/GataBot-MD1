@@ -28,7 +28,7 @@ await conn.sendButton(m.chat, `𝙐𝙎𝙏𝙀𝘿 *${name}* 𝙉𝙊 𝙏𝙄�
 ['𝗠 𝗘 𝗡 𝗨 ☘️', '/menu']], fkontak, m)
 }}
 
-handler.command = /^(cortar|romper|finish)$/i
+handler.command = /^(cortar|romper|finish|terminar)$/i
 handler.group = true
 
 export default handler
