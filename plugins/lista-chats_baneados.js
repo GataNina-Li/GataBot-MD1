@@ -6,7 +6,7 @@ let caption = `
 │ *Total: ${chats.length} Chats* ${chats ? '\n' + chats.map(([jid], i) => `
 │ *${i + 1}.* ${conn.getName(jid) == undefined ? 'Sin Chats Baneados' : conn.getName(jid)}
 │ ${isOwner ? '@' + jid.split`@`[0] : jid}\n│ - - - - - - - - -`.trim()).join('\n') : ''}
-*╰•·–––––––––––––––––––·•*`.trim()
+*╰•·–––––––––––––––––––·•*`
 await conn.sendButton(m.chat, caption, wm, null, [ 
 ['𝗠 𝗘 𝗡 𝗨 ☘️', '/menu']], m, { mentions: await conn.parseMention(caption) })}
 }
