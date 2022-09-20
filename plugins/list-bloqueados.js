@@ -1,3 +1,4 @@
+import fetch from 'node-fetch' 
 let handler = async (m, { conn }) => {
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
 let grupos = [nna, nn, nnn, nnnt, nnntt, nnnttt]
@@ -21,6 +22,6 @@ return conn.sendButton(m.chat, `${rg}𝙉𝘼𝘿𝙄𝙀 𝙃𝘼 𝙎𝙄𝘿�
 
 handler.help = ['blocklist']
 handler.tags = ['main']
-handler.command = ['blocklist', 'listblock', 'listabloqueados'] 
+handler.command = ['bloqueados', 'bloqueadoslista', 'listablock', 'blocklist', 'listblock', 'listabloqueados'] 
 
 export default handler
