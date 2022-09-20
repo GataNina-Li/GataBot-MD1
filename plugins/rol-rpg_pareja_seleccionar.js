@@ -11,7 +11,7 @@ let b
 do b = ps.getRandom()
 while (b === a)
     
-if (command == 'futurapareja') {    
+if (command == 'futurarelacion') {    
 let caption = `💗 𝗙𝗨𝗧𝗨𝗥𝗔 𝗣𝗔𝗥𝗘𝗝𝗔 💗\n${toM(a)} 💞 ${toM(b)}\n\n💌 𝗠𝗘𝗡𝗦𝗔𝗝𝗘 𝗗𝗘 𝗔𝗠𝗢𝗥\n*_${await ktnmbk.getRandom()}_*`
 await conn.sendButton(m.chat, caption, `*_Si quiere tener una pareja use el comando ${usedPrefix}pareja etiquetando a tu futura Pareja._*\n\n` + wm, null, [
 ['🤭 𝙌𝙐𝙀 𝙎𝙀 𝘿𝙀𝘾𝙇𝘼𝙍𝙀𝙉', `amor`],
@@ -80,7 +80,7 @@ await conn.sendButton(m.chat, `*_${await ktnmbk.getRandom()}_*\n\n*${await conn.
 ['🥳 𝙑𝘼𝙈𝙊𝙎 𝘼𝘾𝙀𝙋𝙏𝘼', `Amor`]], m, { contextInfo: { mentionedJid: [ who, m.sender, user ]}})
 }}}
 
-handler.command = /^(futurapareja|pareja|elegirpareja|serpareja|sersupareja|couple)$/i
+handler.command = /^(futurarelacion|pareja|elegirpareja|serpareja|sersupareja|couple)$/i
 handler.group = true
 
 export default handler
