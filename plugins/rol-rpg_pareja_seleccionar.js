@@ -62,12 +62,12 @@ let tu = conn.getName(who)
 
 if(global.db.data.users[m.sender].pasangan != "" && global.db.data.users[global.db.data.users[m.sender].pasangan].pasangan == m.sender && global.db.data.users[m.sender].pasangan != user){
 conn.reply(m.chat, `ERES INFIEL 🙀 PERO SI YA ESTAS EN UNA RELACION CON @${global.db.data.users[m.sender].pasangan.split('@')[0]}\nACASO QUIERES TERMINAR LA RELACION?\nDE SEAR ASI, ESCRIBA ${usedPrefix}terminar @tag PARA QUE PUEDA TENER UNA RELACION CON @${user.split('@')[0]}`, m , { contextInfo: { mentionedJid: [user, global.db.data.users[m.sender].pasangan]}})
-}else if(global.db.data.users[user].pasangan != ""){
+}else if (global.db.data.users[user].pasangan != ""){
 	
 if (pacar){
 if (m.sender == pacar && global.db.data.users[m.sender].pasangan == user) return conn.reply(m.chat, `ya estas saliendo ${spac.split('@')[0]}`, m , { contextInfo: { mentionedJid: [spac]}})
 conn.reply(m.chat, `NO PUEDES PORQUE *${await conn.getName(user)}* Y ${await conn.getName(pacar)} ESTAN EN UNA RELACION\nBUSQUE OTRA PERSONA QUE QUIERA SER SU PAREJA`, m , { contextInfo: { mentionedJid: [m.sender, global.db.data.users[m.sender].pasangan]}})
-}else{ if (global.db.data.users[global.db.data.users[m.sender].pasangan].pasangan == m.sender) {
+}else if (global.db.data.users[global.db.data.users[m.sender].pasangan].pasangan == m.sender) {
 conn.reply(m.chat, `PARECE QUE @${global.db.data.users[m.sender].pasangan.split('@')[0]} NO HA ACEPTADO NI RECHAZADO TU PROPUESTA DE ESTAR AMBOS EN UNA RELACION`, m, {contextInfo: {
 mentionedJid: [global.db.data.users[m.sender].pasangan] }})
 	
