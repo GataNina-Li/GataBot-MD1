@@ -19,8 +19,6 @@ return conn.sendButton(m.chat, `${rg}𝙉𝘼𝘿𝙄𝙀 𝙃𝘼 𝙎𝙄𝘿�
 ['𝗠 𝗘 𝗡 𝗨 ☘️', '/menu']], m, dos.getRandom())
 })}
 
-handler.help = ['blocklist']
-handler.tags = ['main']
 handler.command = ['bloqueados', 'bloqueadoslista', 'listablock', 'blocklist', 'listblock', 'listabloqueados'] 
 
 export default handler
