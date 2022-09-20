@@ -80,9 +80,8 @@ await conn.sendButton(m.chat, `Felicitaciones, oficialmente están saliendo. @${
 }else {
 	
 global.db.data.users[m.sender].pasangan = user
-await conn.sendButton(m.chat, `${await ktnmbk.getRandom()}\n\n*${conn.getName(m.sender)}* acabas de invitar a *${conn.getName(who)}* Fechado\n\nPor favor espere la respuesta!\n\nEscriba *${usedPrefix}terima @user* untuk menerima\n*${usedPrefix}tolak @user untuk menolak*`, wm, null, [
-['Aceptar', `/aceptar ${user}`],
-['Rechazar', `/rechazar ${user}`]], m, { contextInfo: { mentionedJid: [ who, m.sender ]}})
+await conn.sendButton(m.chat, `*_${await ktnmbk.getRandom()}_*\n\n*${conn.getName(m.sender)}* 𝙎𝙀 𝙀𝙎𝙏𝘼 𝘿𝙀𝘾𝙇𝘼𝙍𝘼𝙉𝘿𝙊!!! 😳\n𝙋𝙊𝙍 𝙁𝘼𝙑𝙊𝙍 *${conn.getName(who)}* 𝙍𝙀𝙎𝙋𝙊𝙉𝘿𝙀 𝘼 𝙇𝘼 𝘿𝙀𝘾𝙇𝘼𝙍𝘼𝘾𝙄𝙊𝙉 🙀`, `*_Si quieres una Relacion escriba:_*\n*➠ ${usedPrefix}aceptar @${conn.getName(m.sender)}*\n\n*_De no querer una Relacion escriba:_*\n*➠ ${usedPrefix}rechazar @${conn.getName(m.sender)}*\n\n` + wm, null, [
+['🥳 𝙑𝘼𝙈𝙊𝙎 𝘼𝘾𝙀𝙋𝙏𝘼', `Amor`]], m, { contextInfo: { mentionedJid: [ who, m.sender, user ]}})
 }}}
 
 handler.command = /^(buscarpareja|pareja|elegirpareja)$/i
