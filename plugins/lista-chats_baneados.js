@@ -1,4 +1,4 @@
-/*let handler = async (m, { conn, isOwner }) => {
+let handler = async (m, { conn, isOwner }) => {
 let chats = Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned)
     
 let caption = `
@@ -12,4 +12,4 @@ await conn.sendButton(m.chat, caption, wm, null, [
 
 handler.command = /^chat(s)?baneado(s)?|list(a)?chat(s)?|list(a)?ban(chat(s)?)?$/i
 
-export default handler*/
+export default handler
