@@ -272,7 +272,7 @@ let str = `
 ┃ *»* ${rol}
 ┃ *${rpgg.emoticon('premium')} ${member.premium ? "✅ VIP : Premium": "Limitado : Free"}*
 ┃ 🏦 *Banco : Bank » ${member.bank}*
-┃ 💞 *Pareja : Pasangan * 
+┃ 💞 *Pareja : MyLove* 
 ┃ *» ${pasangan ? `${name} 💝 ${conn.getName(pareja)}` : `❌`}*
 ┃ ⚠️ *Advertencia : Warn » ${warn}/4*
 ┃ 🚷 *Baneado(a) : Banned » No*
