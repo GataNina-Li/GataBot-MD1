@@ -11,6 +11,6 @@ await conn.sendButton(m.chat, caption, `*Estos usuarios no puedes Usar a GataBot
 ['𝗠 𝗘 𝗡 𝗨 ☘️', '/menu']], m, { mentions: await conn.parseMention(caption) })}
 }
 
-handler.command = /^listabanuser|banuserlista|listausuarios|listbanuser|listabaneados|listban|banlist$/i
+handler.command = /^listabanuser|listausuarios|listbanuser|listabaneados|listban$/i
 
 export default handler
