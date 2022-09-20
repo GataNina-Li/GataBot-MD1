@@ -17,8 +17,7 @@ return conn.sendButton(m.chat, txt, `*Por favor no llame para evitar ser Bloquea
 console.log(err);
 return conn.sendButton(m.chat, `${rg}𝙉𝘼𝘿𝙄𝙀 𝙃𝘼 𝙎𝙄𝘿𝙊 𝘽𝙇𝙊𝙌𝙐𝙀𝘼𝘿𝙊\n\n𝙉𝙊 𝙊𝙉𝙀 𝙃𝘼𝙎 𝘽𝙀𝙀𝙉 𝘽𝙇𝙊𝘾𝙆𝙀𝘿`, wm, gata, [
 ['𝗠 𝗘 𝗡 𝗨 ☘️', '/menu']], m, dos.getRandom())
-})}
-
+})} 
 handler.command = ['bloqueados', 'bloqueadoslista', 'listablock', 'blocklist', 'listblock', 'listabloqueados'] 
 
 export default handler
