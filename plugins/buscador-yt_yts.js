@@ -54,7 +54,7 @@ listSections.push([`${index}┃ ${v.title}`, [
 ['𝗩 𝗜 𝗗 𝗘 𝗢', `${usedPrefix}ytmp4 ${v.url} yes`, `𝘿𝙐𝙍𝘼𝘾𝙄𝙊𝙉 ${v.durationH}\n𝙋𝙐𝘽𝙇𝙄𝘾𝘼𝘿𝙊 ${v.publishedTime}\n`]
 ]])
 })
-return conn.sendList(m.chat, `Busqueda sobre ${text}`, `\n🎧 • *Lista de resultados encontrados* :\n ► *${text}*`, botname, `Click Aquí`, listSections, m)
+return conn.sendList(m.chat, `Busqueda sobre ${text}`, `\n🎧 • *Lista de resultados encontrados* :\n ► *${text}*`, wm, `Click Aquí`, listSections, m)
 }
 handler.help = ['', 'earch'].map(v => 'yts' + v + ' <pencarian>')
 handler.tags = ['tools']
