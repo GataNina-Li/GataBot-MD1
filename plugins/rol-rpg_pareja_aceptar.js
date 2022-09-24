@@ -49,6 +49,6 @@ return await conn.sendButton(m.chat, `🥳😻 𝙁𝙀𝙇𝙄𝘾𝙄𝙏𝘼�
 ['𝗠 𝗘 𝗡 𝗨 ☘️', '/menu']], m, dos.getRandom(), { contextInfo: { mentionedJid: [user, tu, yo]}})	
 }}}
 
-handler.command = /^(aceptar|acepto)$/i
+handler.command = /^(aceptar|acepto|accept)$/i
 handler.group = true
 export default handler
