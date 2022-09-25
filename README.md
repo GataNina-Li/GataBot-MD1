@@ -66,9 +66,9 @@ https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git
 ```bash
 https://github.com/clhuang/heroku-buildpack-webp-binaries.git
 ```
-------------------
+-----
 - [x] Resultado <details><summary>Buildpack</summary><img src="https://i.imgur.com/t3Xzgnh.jpeg"></details>
-------------------
+-----
 
 ### ✅ BOXMINEHOST
 > ACTIVA GATABOT 24/7 EN LA PLATAFORMA BOXMINEHOST
@@ -84,7 +84,10 @@ https://github.com/clhuang/heroku-buildpack-webp-binaries.git
 ------------------
 - [x] Resultado <details><summary>Ajustes del Servidor - GataBot-MD</summary><img src="https://i.imgur.com/N0SwvbY.jpeg"></details>
 ------------------
-
+### ⚡ REPLIT - GATABOT
+[![Deploy](https://img.shields.io/badge/replit_gatabot-667881?style=for-the-badge&logo=replit&logoColor=white)](https://replit.com/github/GataNina-Li/GataBot-MD)
+<a href="https://replit.com/github/GataNina-Li/GataBot-MD"> <img src="https://media0.giphy.com/media/lMwu8EJAnv9kmn51KQ/giphy.gif" height="29px"></a>
+------------------
 ### POR EL MOMENTO NO ACTIVAR POR TERMUX  <img src="https://c.tenor.com/HLrXIleGBToAAAAC/transparent-cat.gif" height="30px">
 > ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 
