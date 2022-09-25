@@ -134,13 +134,13 @@ ${readMore}
 ┃🎡➺ _${usedPrefix}deltictactoe | delttt_
 ┃🎡➺ _${usedPrefix}topgays_
 ┃🎡➺ _${usedPrefix}topotakus_
+┃🎡➺ _${usedPrefix}toppajer@s_
+┃🎡➺ _${usedPrefix}topput@s_
 ┃🎡➺ _${usedPrefix}topintegrantes | topintegrante_
 ┃🎡➺ _${usedPrefix}toplagrasa | topgrasa_
 ┃🎡➺ _${usedPrefix}toppanafrescos | toppanafresco_
 ┃🎡➺ _${usedPrefix}topshiposters | topshipost_
-┃🎡➺ _${usedPrefix}toppajeros | toppajer@s_
 ┃🎡➺ _${usedPrefix}toplindos | toplind@s_
-┃🎡➺ _${usedPrefix}topput@s_
 ┃🎡➺ _${usedPrefix}topfamosos | topfamos@s_
 ┃🎡➺ _${usedPrefix}topparejas | top5parejas_
 ┃🎡➺ _${usedPrefix}gay | gay *@tag*_
