@@ -113,9 +113,6 @@ const fkontak = {
 	"participant": "0@s.whatsapp.net"
 }
 await conn.sendMessage(m.chat, listMessage, {quoted: fkontak})
-//await conn.sendMessage(m.chat, listMessage)
-//await conn.sendMessage(m.chat, { text: listMessage, mentions: [m.sender] }, { quoted: m, enlace })
-//await conn.sendMessage(m.chat, { text: listMessage, mentions: [m.sender] }, { quoted: fkontak, m })
 }
 handler.help = ['en', 'dis'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
