@@ -90,7 +90,7 @@ text: `╭───────────────────❀\n│${uca
 ┃   ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃✪ *Usuario(s) Prohibido(s) | Denied Users*
 ┃➺ ${Object.entries(global.db.data.users).filter(user => user[1].banned).length}
-╰━━━━━━━━━━━━━━━━━━⬣`, footer: `*𝗣𝗮𝗿𝗲𝗷𝗮 ➺ *${pareja ? `${name} 💞 ${conn.getName(pareja)}` : `😺 Sin Pareja`}*`, //${name} ${ucapan()}
+╰━━━━━━━━━━━━━━━━━━⬣`, footer: `*𝗣𝗮𝗿𝗲𝗷𝗮 ➺ ${pareja ? `${name} 💞 ${conn.getName(pareja)}` : `😺 Sin Pareja`}*`, //${name} ${ucapan()}
 title: null,
 buttonText: "𝙇𝙄𝙎𝙏𝘼 𝘿𝙀 𝙈𝙀𝙉𝙐 : 𝙇𝙄𝙎𝙏 𝙈𝙀𝙉𝙐", 
 sections }
