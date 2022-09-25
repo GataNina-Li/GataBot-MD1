@@ -293,6 +293,18 @@ ${readMore}
 ┃🌐➺ _${usedPrefix}off_
 *╰━━━━━━━━━━━━⬣*
 
+*╭━━━[ PAREJAS 💞 ]━━⬣*
+┃ *Declarate con alguien*
+┃ *para que sean Parejas!!*
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃❤️➺ _${usedPrefix}listaparejas | listship_
+┃❤️➺ _${usedPrefix}mipareja | mylove_
+┃❤️➺ _${usedPrefix}pareja | couple *@tag*_
+┃❤️➺ _${usedPrefix}aceptar | accept *@tag*_
+┃❤️➺ _${usedPrefix}rechazar | decline *@tag*_
+┃❤️➺ _${usedPrefix}terminar | finish *@tag*_
+*╰━━━━━━━━━━━━⬣*
+
 *╭━[ VOTACIONES EN GRUPOS 📧 ]━⬣*
 ┃ *Ahora puedes hacer*
 ┃ *Votaciones en Grupos!!*
