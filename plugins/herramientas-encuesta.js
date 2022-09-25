@@ -4,6 +4,7 @@ if (!text.includes('|')) throw  `⚠️️ Separe las encuestas con *|* \n\n📌
 let a = []
 let b = text.split('|')
 for (let c = 0; c < b.length; c++) { a.push([b[c]]) }
-return conn.sendPoll(m.chat, `📊 *Encuesta para:*\n\n${text}`, a, m)}
+let texto = `📊 𝙀𝙉𝘾𝙐𝙀𝙎𝙏𝘼 𝘾𝙍𝙀𝘼𝘿𝘼 𝙋𝙊𝙍 *${conn.getName(m.sender)}*`
+return conn.sendPoll(m.chat, texto, a, m, {mentions: await conn.parseMention(texto)})}
 handler.command = ['poll', 'encuesta', 'crearencuesta', 'startpoll', 'encuestas', 'polls'] 
 export default handler
