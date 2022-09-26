@@ -1,6 +1,6 @@
 {
     "name": "GataBot-MD",
-    "version": "1.2.29",
+    "version": "1.3.0",
     "description": "Super Bot WhatsApp",
     "main": "index.js",
     "type": "module",
@@ -43,8 +43,10 @@
         "fluent-ffmpeg": "^2.1.2",
         "fs": "^0.0.1-security",
         "formdata-node": "^4.3.2",
+        "fg-ig": "^0.0.1",
         "glob-fs": "^0.1.7",
         "human-readable": "^0.2.1",
+        "hispamemes": "^1.0.7",
         "hxz-api": "^1.0.1",
         "jsdom": "^19.0.0",
         "link-preview-js": "^2.1.13",
@@ -68,8 +70,6 @@
         "translate-google-api": "^1.0.4",
         "url-regex-safe": "^3.0.0",
         "wa-sticker-formatter": "^4.3.2",
-        "knights-canvas": "github:hardiantojek93/knights-canvas",
-        "fg-ig": "^0.0.1",
         "yargs": "^17.3.1",
         "yt-search": "^2.10.3"
     }

@@ -127,7 +127,7 @@ const inventory = {
     }
   }
 }
-let handler = async (m, { conn, args, command, text, usedPrefix }) => {
+let handler = async (m, { conn, args, command, jid, text, usedPrefix }) => {
 	
 let imgr = flaaa.getRandom()
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
@@ -256,8 +256,9 @@ let tiketm = member.healtmonster
     let userslegendary = sortedlegendary.map(v => v[0])
     let userspet = sortedpet.map(v => v[0])
     
-    let { min, max } = xpRange(level, global.multiplier)    
-
+    let { min, max } = xpRange(level, global.multiplier)
+    let pareja = global.db.data.users[m.sender].pasangan
+	
 let str = `
 🏷️ *INVENTARIO | INVENTORY* 
 👤» *${name}* ( @${who.split("@")[0]} )\n
@@ -271,8 +272,9 @@ let str = `
 ┃ *»* ${rol}
 ┃ *${rpgg.emoticon('premium')} ${member.premium ? "✅ VIP : Premium": "Limitado : Free"}*
 ┃ 🏦 *Banco : Bank » ${member.bank}*
-┃ 💞 *Pareja : Pasangan »* ${pasangan ? `@${pasangan.split("@")[0]}` : `❌`}
-┃ ⚠️ *Advertencia : Warn » ${warn}*
+┃ 💞 *Pareja : MyLove* 
+┃ *» ${pasangan ? `${name} 💝 ${conn.getName(pareja)}` : `❌`}*
+┃ ⚠️ *Advertencia : Warn » ${warn}/4*
 ┃ 🚷 *Baneado(a) : Banned » No*
 ┃
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸╮

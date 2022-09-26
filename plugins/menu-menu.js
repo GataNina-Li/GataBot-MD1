@@ -133,13 +133,13 @@ ${readMore}
 ┃🎡➺ _${usedPrefix}deltictactoe | delttt_
 ┃🎡➺ _${usedPrefix}topgays_
 ┃🎡➺ _${usedPrefix}topotakus_
+┃🎡➺ _${usedPrefix}toppajer@s_
+┃🎡➺ _${usedPrefix}topput@s_
 ┃🎡➺ _${usedPrefix}topintegrantes | topintegrante_
 ┃🎡➺ _${usedPrefix}toplagrasa | topgrasa_
 ┃🎡➺ _${usedPrefix}toppanafrescos | toppanafresco_
 ┃🎡➺ _${usedPrefix}topshiposters | topshipost_
-┃🎡➺ _${usedPrefix}toppajeros | toppajer@s_
 ┃🎡➺ _${usedPrefix}toplindos | toplind@s_
-┃🎡➺ _${usedPrefix}topput@s_
 ┃🎡➺ _${usedPrefix}topfamosos | topfamos@s_
 ┃🎡➺ _${usedPrefix}topparejas | top5parejas_
 ┃🎡➺ _${usedPrefix}gay | gay *@tag*_
@@ -225,6 +225,8 @@ ${readMore}
 ┃🚀➺ _${usedPrefix}play.2 *texto o link*_ 
 ┃🚀➺ _${usedPrefix}ytmp3 | yta *link*_
 ┃🚀➺ _${usedPrefix}ytmp4 | ytv *link*_
+┃🚀➺ _${usedPrefix}pdocaudio | ytadoc *link*_
+┃🚀➺ _${usedPrefix}pdocvieo | ytvdoc *link*_
 ┃🚀➺ _${usedPrefix}tw |twdl | twitter *link*_
 ┃🚀➺ _${usedPrefix}facebook | fb *link*_
 ┃🚀➺ _${usedPrefix}instagram *link video o imagen*_
@@ -292,6 +294,18 @@ ${readMore}
 ┃🌐➺ _${usedPrefix}off_
 *╰━━━━━━━━━━━━⬣*
 
+*╭━━━[ PAREJAS 💞 ]━━⬣*
+┃ *Declarate con alguien*
+┃ *para que sean Parejas!!*
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃❤️➺ _${usedPrefix}listaparejas | listship_
+┃❤️➺ _${usedPrefix}mipareja | mylove_
+┃❤️➺ _${usedPrefix}pareja | couple *@tag*_
+┃❤️➺ _${usedPrefix}aceptar | accept *@tag*_
+┃❤️➺ _${usedPrefix}rechazar | decline *@tag*_
+┃❤️➺ _${usedPrefix}terminar | finish *@tag*_
+*╰━━━━━━━━━━━━⬣*
+
 *╭━[ VOTACIONES EN GRUPOS 📧 ]━⬣*
 ┃ *Ahora puedes hacer*
 ┃ *Votaciones en Grupos!!*
@@ -347,6 +361,7 @@ ${readMore}
 ┃🧩 _${usedPrefix}cristianoronaldo_
 ┃🧩 _${usedPrefix}messi_
 ┃🧩 _${usedPrefix}meme_
+┃🧩 _${usedPrefix}meme2_
 ┃🧩 _${usedPrefix}itzy_
 ┃🧩 _${usedPrefix}blackpink_
 ┃🧩 _${usedPrefix}kpop *blackpink : exo : bts*_

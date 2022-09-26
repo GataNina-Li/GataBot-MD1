@@ -98,6 +98,12 @@ let menu = `
 ┃⚗️➺ _${usedPrefix}nivel | level | lvl_
 ┃⚗️➺ _${usedPrefix}rol | rango_
 ┃⚗️➺ _${usedPrefix}inventario | inventory_
+┃⚗️➺ _${usedPrefix}listaparejas | listship_
+┃⚗️➺ _${usedPrefix}mipareja | mylove_
+┃⚗️➺ _${usedPrefix}pareja | couple *@tag*_
+┃⚗️➺ _${usedPrefix}aceptar | accept *@tag*_
+┃⚗️➺ _${usedPrefix}rechazar | decline *@tag*_
+┃⚗️➺ _${usedPrefix}terminar | finish *@tag*_
 ┃⚗️➺ _${usedPrefix}aventura | adventure_
 ┃⚗️➺ _${usedPrefix}caza | cazar | hunt_
 ┃⚗️➺ _${usedPrefix}animales_

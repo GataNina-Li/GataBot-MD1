@@ -1,4 +1,4 @@
-> #### 🚀 Versión actual: 1.2.29
+> #### 🚀 Versión actual: 1.3.0
 
 <p align="center"> 
   <a href="https://github.com/GataNina-Li"><img src="http://readme-typing-svg.herokuapp.com?font=mono&size=17&duration=4000&color=F7B11B&center=falso&vCenter=falso&lines=GataBot-MD++%F0%9F%90%88;Gracias+por+visitar+este+repositorio.+%F0%9F%92%96" height="90px"
@@ -34,16 +34,22 @@
 </p> 
 
 [![blog](https://img.shields.io/badge/GataBot-Update-25D366?style=for-the-badge&logo=whatsapp&logoColor=white 
-)](https://chat.whatsapp.com/I4pF9XijY6CLsf3rrNXApw)  <a href="https://chat.whatsapp.com/Hahc7UwSouH9jIDStkT5QW"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/1200px-WhatsApp_logo-color-vertical.svg.png" height="29px"></a>
+)](https://chat.whatsapp.com/LyetuaoLH2JEzTru6GWcs7)  <a href="https://chat.whatsapp.com/Hahc7UwSouH9jIDStkT5QW"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/1200px-WhatsApp_logo-color-vertical.svg.png" height="29px"></a>
   
 [![blog](https://img.shields.io/badge/Grupo-GataBot-25D366?style=for-the-badge&logo=whatsapp&logoColor=white 
-)](https://chat.whatsapp.com/CunoFmEfBW75APfI0ZO5DJ)  <a href="https://chat.whatsapp.com/Hahc7UwSouH9jIDStkT5QW"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/1200px-WhatsApp_logo-color-vertical.svg.png" height="29px"></a>
+)](https://chat.whatsapp.com/CozkKQaGmgVEghtHBsT4ye)  <a href="https://chat.whatsapp.com/Hahc7UwSouH9jIDStkT5QW"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/1200px-WhatsApp_logo-color-vertical.svg.png" height="29px"></a>
 
 [![blog](https://img.shields.io/badge/Grupo2-GataBot-25D366?style=for-the-badge&logo=whatsapp&logoColor=white 
-)](https://chat.whatsapp.com/EuDCIPGyenPKDDyRfO5jD3) <a href="https://chat.whatsapp.com/JFTOYLdpiTBCluFJvikBxN"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/1200px-WhatsApp_logo-color-vertical.svg.png" height="29px"></a>
+)](https://chat.whatsapp.com/GvhBPOhkkk98oUCZEkCBXa) <a href="https://chat.whatsapp.com/JFTOYLdpiTBCluFJvikBxN"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/1200px-WhatsApp_logo-color-vertical.svg.png" height="29px"></a>
 
 [![blog](https://img.shields.io/badge/Grupo3-GataBot-25D366?style=for-the-badge&logo=whatsapp&logoColor=white 
-)](https://chat.whatsapp.com/Kuyj36S1yCc0vVzI87UI5k)  <a href="https://chat.whatsapp.com/Hahc7UwSouH9jIDStkT5QW"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/1200px-WhatsApp_logo-color-vertical.svg.png" height="29px"></a>
+)](https://chat.whatsapp.com/LRpEeGSGjIZKCtK1N331SU) <a href="https://chat.whatsapp.com/Hahc7UwSouH9jIDStkT5QW"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/1200px-WhatsApp_logo-color-vertical.svg.png" height="29px"></a>
+
+[![blog](https://img.shields.io/badge/Grupo4-GataBot-25D366?style=for-the-badge&logo=whatsapp&logoColor=white 
+)](https://chat.whatsapp.com/JhjEAp89pZ7FZmPuRK5R4y)  <a href="https://chat.whatsapp.com/Hahc7UwSouH9jIDStkT5QW"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/1200px-WhatsApp_logo-color-vertical.svg.png" height="29px"></a>
+
+[![blog](https://img.shields.io/badge/Grupo5-GataBot-25D366?style=for-the-badge&logo=whatsapp&logoColor=white 
+)](https://chat.whatsapp.com/LtcSk6DQysJ3mANKLDiur2)  <a href="https://chat.whatsapp.com/Hahc7UwSouH9jIDStkT5QW"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/1200px-WhatsApp_logo-color-vertical.svg.png" height="29px"></a>
 -----
 ### 💖 ```DONAR``` [`Aquí`](https://paypal.me/OficialGD)
 ### 🟣 ACTIVAR EN HEROKU 
@@ -60,9 +66,9 @@ https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git
 ```bash
 https://github.com/clhuang/heroku-buildpack-webp-binaries.git
 ```
-------------------
+-----
 - [x] Resultado <details><summary>Buildpack</summary><img src="https://i.imgur.com/t3Xzgnh.jpeg"></details>
-------------------
+-----
 
 ### ✅ BOXMINEHOST
 > ACTIVA GATABOT 24/7 EN LA PLATAFORMA BOXMINEHOST
@@ -75,10 +81,15 @@ https://github.com/clhuang/heroku-buildpack-webp-binaries.git
 - Dashboard: [`https://dash.boxmineworld.com`](https://dash.boxmineworld.com)
 - Panel: [`https://panel.boxmineworld.com`](https://panel.boxmineworld.com)
 - Dudas UNICAMENTE SOBRE EL HOST: [`https://discord.gg/84qsr4v`](https://discord.gg/84qsr4v) (Preguntar por Vicemi)
-------------------
+
 - [x] Resultado <details><summary>Ajustes del Servidor - GataBot-MD</summary><img src="https://i.imgur.com/N0SwvbY.jpeg"></details>
 ------------------
-
+### ⚡ REPLIT - GATABOT
+[![Deploy](https://img.shields.io/badge/replit_gatabot-667881?style=for-the-badge&logo=replit&logoColor=white)](https://replit.com/github/GataNina-Li/GataBot-MD)
+<a href="https://replit.com/github/GataNina-Li/GataBot-MD"> <img src="https://media0.giphy.com/media/lMwu8EJAnv9kmn51KQ/giphy.gif" height="29px"></a>
+------------------
+- [x] Resultado <details><summary>Importar Repositorio - GataBot-MD</summary><img src="https://i.imgur.com/GQyRnMf.jpg"></details>
+------------------
 ### POR EL MOMENTO NO ACTIVAR POR TERMUX  <img src="https://c.tenor.com/HLrXIleGBToAAAAC/transparent-cat.gif" height="30px">
 > ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 

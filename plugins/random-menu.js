@@ -89,6 +89,7 @@ let menu = `
 ┃🧩 _${usedPrefix}cristianoronaldo_
 ┃🧩 _${usedPrefix}messi_
 ┃🧩 _${usedPrefix}meme_
+┃🧩 _${usedPrefix}meme2_
 ┃🧩 _${usedPrefix}itzy_
 ┃🧩 _${usedPrefix}blackpink_
 ┃🧩 _${usedPrefix}kpop *blackpink : exo : bts*_

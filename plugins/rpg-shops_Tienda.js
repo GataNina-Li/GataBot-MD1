@@ -1,3 +1,13 @@
+import fetch from 'node-fetch'
+let handler = async (m, { command, conn, usedPrefix, args }) => {
+let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" 
+}
+let grupos = [nna, nn, nnn, nnnt]
+let gata = [img5, img6, img7, img8, img9]
+let enlace = { contextInfo: { externalAdReply: {title: wm + ' 🐈', body: 'support group' , sourceUrl: grupos.getRandom(), thumbnail: await(await fetch(gata.getRandom())).buffer() }}}
+let enlace2 = { contextInfo: { externalAdReply: { showAdAttribution: true, mediaUrl: yt, mediaType: 'VIDEO', description: '', title: wm, body: '😻 𝗦𝘂𝗽𝗲𝗿 𝗚𝗮𝘁𝗮𝗕𝗼𝘁-𝗠𝗗 - 𝗪𝗵𝗮𝘁𝘀𝗔𝗽𝗽 ', thumbnailUrl: await(await fetch(global.img)).buffer(), sourceUrl: yt }}}
+let dos = [enlace, enlace2]
+
 const items = {
    buy: {
         exp: { eleksirb: 3 }, 
@@ -73,83 +83,83 @@ const items = {
         makananpet: { tiketcoin: 14 },
         makananphonix: { tiketcoin: 16 }
     },
+   
     sell: {
-        exp: { trash: 1 },
-        limit: { eleksirb: 4 },
-        diamond: { tiketcoin: 2 },
-        joincount: { emasbatang: 2, },
-        emerald: { money: 500 },
-        berlian: { sword: 3 },
-        kyubi: { aqua: 3 },
-        gold: { exp: 1000 },
-        money: { aqua: 2 },
-        tiketcoin: { kyubi: 2 },
+        exp: { trash: pickRandom([0, 1, 2]) },
+        limit: { eleksirb: pickRandom([0, 4, 1]) },
+        diamond: { tiketcoin: pickRandom([0, 1, 2]) },
+        joincount: { emasbatang: pickRandom([0, 1, 2]) },
+        emerald: { money: pickRandom([10, 500, 1]) },
+        berlian: { sword: pickRandom([1, 1, 2]) },
+        kyubi: { aqua: pickRandom([1, 1, 2]) },
+        gold: { exp: pickRandom([0, 20, 800, 1]) },
+        money: { aqua: pickRandom([0, 1, 2]) },
+        tiketcoin: { kyubi: pickRandom([0, 1, 2]) },
         
-        potion: { botol: 3 },
-        aqua: { kaleng: 2 },
-        trash: { umpan: 2 },
-        wood: { coal: 2 },
-        rock: { string: 2 },
-        batu: { joincount: 1 },
-        string: { kardus: 2 },
-        iron: { healtmonster: 3 },
-        coal: { money: 30 },
-        botol: { aqua: 2 },
-        kaleng: { batu: 1 },
-        kardus: { pancingan: 2 },
+        potion: { botol: pickRandom([0, 1, 3]) },
+        aqua: { kaleng: pickRandom([0, 1, 2]) },
+        trash: { umpan: pickRandom([0, 1, 2]) },
+        wood: { coal: pickRandom([0, 1, 2]) },
+        rock: { string: pickRandom([0, 1, 2]) },
+        batu: { joincount: pickRandom([0, 1, 2]) },
+        string: { kardus: pickRandom([0, 1, 2]) },
+        iron: { healtmonster: pickRandom([0, 1, 3]) },
+        coal: { money: pickRandom([0, 3, 30]) },
+        botol: { aqua: pickRandom([0, 1, 2]) },
+        kaleng: { batu: pickRandom([0, 1, 2]) },
+        kardus: { pancingan: pickRandom([0, 1, 2]) },
         
-        eleksirb: { rubah: 2 },
-        emasbatang: { emasbiasa: 3 },
-        emasbiasa: { potion: 1 },
-        rubah: { petFood: 4 },
-        sampah: { trash: 20 },
-        serigala: { petFood: 22 },
-        kayu: { wood: 5 },
-        sword: { berlian: 1 },
-        umpan: { exp: 40 },
-        healtmonster: { diamond: 2 },
-        pancingan: { money: 30 },
-        emas: { berlian: 3 },
+        eleksirb: { rubah: pickRandom([0, 1, 2]) },
+        emasbatang: { emasbiasa: pickRandom([0, 1, 3]) },
+        emasbiasa: { potion: pickRandom([0, 1, 2]) },
+        rubah: { petFood: pickRandom([0, 1, 4]) },
+        sampah: { trash: pickRandom([0, 2, 20]) },
+        serigala: { petFood: pickRandom([0, 2, 22]) },
+        kayu: { wood: pickRandom([0, 3, 5]) },
+        sword: { berlian: pickRandom([0, 1, 2]) },
+        umpan: { exp: pickRandom([0, 5, 40, 0]) },
+        healtmonster: { diamond: pickRandom([0, 1, 2]) },
+        pancingan: { money: pickRandom([0, 10, 30]) },
+        emas: { berlian: pickRandom([0, 1, 3]) },
         
-        common: { limit: 10 },
-        uncoommon: { diamond: 15 },
-        mythic: { berlian: 13 },
-        pet: { money: 1500 },
-        gardenboxs: { gold: 3 },
-        legendary: { emerald: 20 },
+        common: { limit: pickRandom([0, 3, 10]) },
+        uncoommon: { diamond: pickRandom([0, 4, 15]) },
+        mythic: { berlian: pickRandom([0, 3, 13]) },
+        pet: { money: pickRandom([0, 500, 1500]) },
+        gardenboxs: { gold: pickRandom([0, 1, 3]) },
+        legendary: { emerald: pickRandom([0, 4, 20]) },
         
-        anggur: { joincount: 2 },
-        apel: { tiketcoin: 2 },
-        jeruk: { berlian: 2 },
-        mangga: { gold: 2 },
-        pisang: { diamond: 2 },
+        anggur: { joincount: pickRandom([0, 1, 2]) },
+        apel: { tiketcoin: pickRandom([0, 1, 2]) },
+        jeruk: { berlian: pickRandom([0, 1, 2]) },
+        mangga: { gold: pickRandom([0, 1, 2]) },
+        pisang: { diamond: pickRandom([0, 1, 2]) },
         
-        bibitanggur: { potion: 2 },
-        bibitapel: { umpan: 3 },
-        bibitjeruk: { healtmonster: 1 },
-        bibitmangga: { pancingan: 3 },
-        bibitpisang: { wood: 4 },
+        bibitanggur: { potion: pickRandom([0, 1, 2]) },
+        bibitapel: { umpan: pickRandom([0, 1, 3]) },
+        bibitjeruk: { healtmonster: pickRandom([0, 1, 2]) },
+        bibitmangga: { pancingan: pickRandom([0, 1, 3]) },
+        bibitpisang: { wood: pickRandom([0, 2, 4]) },
         
-        centaur: { anggur: 5 },
-        griffin: { apel: 4 },
-        kucing: { jeruk: 6 },
-        naga: { mangga: 8 },
-        fox: { pisang: 9 },
-        kuda: { anggur: 10 },
-        phonix: { apel: 12 },
-        wolf: { jeruk: 15 },
+        centaur: { anggur: pickRandom([0, 3, 5]) },
+        griffin: { apel: pickRandom([0, 2, 4]) },
+        kucing: { jeruk: pickRandom([0, 3, 6]) },
+        naga: { mangga: pickRandom([0, 4, 8]) },
+        fox: { pisang: pickRandom([0, 5, 9]) },
+        kuda: { anggur: pickRandom([0, 6, 10]) },
+        phonix: { apel: pickRandom([0, 7, 12]) },
+        wolf: { jeruk: pickRandom([0, 8, 15]) },
         
-        petFood: { money: 1400 },
-        makanancentaur: { diamond: 2  },
-        makanangriffin: { diamond: 3 },
-        makanankyubi: { diamond: 4 },
-        makanannaga: { diamond: 4 },
-        makananpet: { diamond: 5 },
-        makananphonix: { diamond: 5 },
+        petFood: { money: pickRandom([0, 400, 1400]) },
+        makanancentaur: { diamond: pickRandom([0, 1, 2]) },
+        makanangriffin: { diamond: pickRandom([0, 1, 3]) },
+        makanankyubi: { diamond: pickRandom([0, 2, 4]) },
+        makanannaga: { diamond: pickRandom([0, 2, 4]) },
+        makananpet: { diamond: pickRandom([0, 3, 5]) },
+        makananphonix: { diamond: pickRandom([0, 3, 5]) },
     }
-}
-
-let handler = async (m, { command, conn, usedPrefix, args }) => {
+}   
+   
 let imgr = flaaa.getRandom()
     let user = global.db.data.users[m.sender]
     const listItems = Object.fromEntries(Object.entries(items[command.toLowerCase()]).filter(([v]) => v && v in user))
@@ -210,29 +220,32 @@ ${Object.keys(listItems).map((v) => {
 [`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊 | 𝙄𝙉𝙑𝙀𝙉𝙏𝙊𝙍𝙔`, `${usedPrefix}inventory`]
 ])
 )
-    const item = (args[0] || '').toLowerCase()
-    const total = Math.floor(isNumber(args[1]) ? Math.min(Math.max(parseInt(args[1]), 1), Number.MAX_SAFE_INTEGER) : 1) * 1
-    if (!listItems[item]) return conn.sendButton(m.chat, text, footer, image, buttons, m)
-    if (command.toLowerCase() == 'buy') {
-        let paymentMethod = Object.keys(listItems[item]).find(v => v in user)
-        if (user[paymentMethod] < listItems[item][paymentMethod] * total) return conn.sendButton(m.chat,
-`*–『 INSUFFICIENT CREDIT 』–*`, 
-`Necesitas *${(listItems[item][paymentMethod] * total) - user[paymentMethod]}* ${global.rpg.emoticon(paymentMethod)}${paymentMethod} Compra *${total}* ${global.rpg.emoticon(item)}${item}.
-Tienes *${user[paymentMethod]}* ${global.rpg.emoticon(paymentMethod)}${paymentMethod} en túinventario.
-–––––––––––––––––––––––––
-ᴛɪᴩ :
-ᴏᴩᴇɴ ᴄʀᴀᴛᴇs & ᴄᴏʟʟᴇᴄᴛ ʀᴇᴡᴀʀᴅs.
-⮕ ᴛᴏ ᴏᴩᴇɴ ᴄʀᴀᴛᴇs:
-.open crate
-⮕ ᴛᴏ ᴄᴏʟʟᴇᴄᴛ ʀᴇᴡᴀʀᴅs:
-.adventure | .daily | .monthly
-`.trim(), imgr + 'RECURSOS BAJOS : LOW RESOURCES', [
-[`𝙋𝙚𝙙𝙞𝙧 𝘼𝙮𝙪𝙙𝙖 | 𝘼𝙨𝙠 𝙛𝙤𝙧 𝙝𝙚𝙡𝙥 ☘️`, `${usedPrefix}pedirayuda *Por Favor alguien ayudeme con *${(listItems[item][paymentMethod] * total) - user[paymentMethod]}* ${global.rpg.emoticon(paymentMethod)}${paymentMethod}.
+const item = (args[0] || '').toLowerCase()
+const total = Math.floor(isNumber(args[1]) ? Math.min(Math.max(parseInt(args[1]), 1), Number.MAX_SAFE_INTEGER) : 1) * 1
+let premium = user.premium
+
+if (!listItems[item]) return conn.sendButton(m.chat, text, footer, image, buttons, m)
+if (command.toLowerCase() == 'buy') {
+let paymentMethod = Object.keys(listItems[item]).find(v => v in user)
+if (user[paymentMethod] < listItems[item][paymentMethod] * total) return conn.sendButton(m.chat,
+`*–--『 𝙄𝙉𝙎𝙐𝙁𝙄𝘾𝙄𝙀𝙉𝙏𝙀𝙎 𝙍𝙀𝘾𝙐𝙍𝙎𝙊𝙎 』--–*`, 
+`*Necesitas ${(listItems[item][paymentMethod] * total) - user[paymentMethod]} ${global.rpgshop.emoticon(paymentMethod)} Para Comprar ${total} ${global.rpgshop.emoticon(item)}.*
+
+*Solo tienes ${user[paymentMethod]} ${global.rpg.emoticon(paymentMethod)}.*
+*–––––––––––––––––––––––––*
+*Misiones para Obtener Recursos*
+*Quests to Obtain Resources*
+*⛰️ Aventura : Adventure : » ${new Date - user.lastadventure < 1500000 ? '❌' : `✅ _${usedPrefix}aventura_`}*
+*♻️ Cada hora : Hourly » ${new Date - user.lasthourly < 3600000 ? '❌' : `✅ _${usedPrefix}cadahora_`}*
+*💫 Semanalmente : Weekly ${new Date - user.lastweekly < 259200000 ? '❌' : `✅ _${usedPrefix}cadasemana_`}*
+*🏅 Mensual : Monthly ${new Date - user.lastmonthly < 432000000 ? '❌' : `✅ _${usedPrefix}cadames_`}*`.trim(), imgr + 'RECURSOS BAJOS : LOW RESOURCES', [
+[`𝗖𝗼𝗺𝗽𝗿𝗮𝗿 : 𝗕𝘂𝘆 ${(listItems[item][paymentMethod] * total) - user[paymentMethod]} ${global.rpgshopp.emoticon(paymentMethod)}`, `${usedPrefix}sell ${paymentMethod} ${(listItems[item][paymentMethod] * total) - user[paymentMethod]}`],
+[`𝙋𝙚𝙙𝙞𝙧 𝘼𝙮𝙪𝙙𝙖 | 𝘼𝙨𝙠 𝙛𝙤𝙧 𝙝𝙚𝙡𝙥 ☘️`, `${usedPrefix}pedirayuda *Por Favor alguien ayudeme con *${(listItems[item][paymentMethod] * total) - user[paymentMethod]} ${global.rpg.emoticon(paymentMethod)}.*
 *» AYUDA TRANSFIRIENDO:*
-*${usedPrefix}transfer ${paymentMethod} ${(listItems[item][paymentMethod] * total) - user[paymentMethod]} @${conn.getName(m.sender)}`]], m)
-       
-        user[paymentMethod] -= listItems[item][paymentMethod] * total
-        user[item] += total
+*${usedPrefix}transfer ${paymentMethod} ${(listItems[item][paymentMethod] * total) - user[paymentMethod]} @${conn.getName(m.sender)}*`]], m)
+user[paymentMethod] -= listItems[item][paymentMethod] * total
+user[item] += total
+   
 return conn.sendButton(m.chat,
 `*––『 COMPRADO | BOUGHT 』––*`,
 `${conn.getName(m.sender)} 
@@ -243,13 +256,13 @@ return conn.sendButton(m.chat,
 `.trim(), imgr + 'COMPRA EXITOSA : DONE', [
 [`👝 𝘾𝘼𝙍𝙏𝙀𝙍𝘼 | 𝙒𝘼𝙇𝙇𝙀𝙏`, `${usedPrefix}cartera`],
 [`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊 | 𝙄𝙉𝙑𝙀𝙉𝙏𝙊𝙍𝙔`, `${usedPrefix}inventory`]
-], m)
+], fkontak, m)
 } else {
-        if (user[item] < total) return m.reply(`No tienes suficiente *${global.rpg.emoticon(item)}${item}* para vender solo tienes ${user[item]} Recursos\n\nYou don't have enough *${global.rpg.emoticon(item)}${item}* to sell, you only have ${user[item]}`)
+if (user[item] < total) return conn.sendButton(m.chat, `🎟️ 𝗣 𝗥 𝗘 𝗠 𝗜 𝗨 𝗠 ⇢ ${premium ? '✅' : '❌'}\n${wm}`, `*No tienes suficiente ${global.rpgshop.emoticon(item)} para vender solo tienes ${user[item]} ${global.rpgshopp.emoticon(item)}*\n\n*You don't have enough ${global.rpgshop.emoticon(item)} to sell, you only have ${user[item]} ${global.rpgshopp.emoticon(item)}*`, gata.getRandom(), [[`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊 | 𝙄𝙉𝙑𝙀𝙉𝙏𝙊𝙍𝙔`, `${usedPrefix}inventory`], ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', '/menu']], m, enlace)
        
-      let paymentMethod = Object.keys(listItems[item]).find(v => v in user)
-        user[item] -= total
-        user[paymentMethod] += listItems[item][paymentMethod] * total
+let paymentMethod = Object.keys(listItems[item]).find(v => v in user)
+user[item] -= total
+user[paymentMethod] += listItems[item][paymentMethod] * total
     
 return conn.sendButton(m.chat,
 `*––『 VENDIDO | SOLD 』––*`,
@@ -261,16 +274,18 @@ return conn.sendButton(m.chat,
 `.trim(), imgr + 'VENTA EXITOSA : DONE', [
 [`👝 𝘾𝘼𝙍𝙏𝙀𝙍𝘼 | 𝙒𝘼𝙇𝙇𝙀𝙏`, `${usedPrefix}cartera`],
 [`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊 | 𝙄𝙉𝙑𝙀𝙉𝙏𝙊𝙍𝙔`, `${usedPrefix}inventory`]
-], m)
+], fkontak, m)
 }}
-
 handler.help = ['buy', 'sell'].map(v => v + ' [item] [count]')
 handler.tags = ['rpg']
 handler.command = /^(buy|sell)$/i
-
 handler.disabled = false
 
 export default handler
+
+function pickRandom(list) {
+    return list[Math.floor(Math.random() * list.length)]
+}
 
 function isNumber(number) {
     if (!number) return number
