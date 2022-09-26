@@ -91,7 +91,7 @@ global.author = '𝙲𝚘𝚕𝚊𝚙𝚜𝚞𝚜 | 𝙱𝚎𝚗𝚓𝚊'
 
 //⊱ ━━━━━.⋅ Versión | Nombre | cuentas ⋅.━━━━ ⊰
 
-global.vs = '1.2.29'
+global.vs = '1.2.30'
 global.version = vs
 
 global.gt = '𝙵𝚞𝚝𝚊𝚋𝚞𝙱𝚘𝚝-𝙼𝙳'
