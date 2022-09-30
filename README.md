@@ -60,6 +60,23 @@
 * 𝗚𝗮𝘁𝗮𝗕𝗼𝘁 : 𝗛𝗲𝗿𝗼𝗸𝘂 💜
 > SI QUIERE INSTAR POR HEROKU USE [`GataBotMD-Heroku`](https://github.com/GataNina-Li/GataBotMD-Heroku)
 -----
+### 🟣 ACTIVAR EN HEROKU 
+#### ☂️ PARA USUARIOS DE HEROKU 
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/GataNina-Li/GataBotMD-Heroku) <img src="https://c.tenor.com/OIc0cAei3dwAAAAd/gato-baile.gif" height="32px">
+### Añada lo siguente al Buildpack: <img src="https://cdn-0.emojis.wiki/emoji-pics/microsoft/backhand-index-pointing-down-microsoft.png" height="32px">
+```bash
+heroku/nodejs
+```
+```bash
+https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git
+```
+```bash
+https://github.com/clhuang/heroku-buildpack-webp-binaries.git
+```
+-----
+- [x] Resultado <details><summary>Buildpack</summary><img src="https://i.imgur.com/t3Xzgnh.jpeg"></details>
+-----
 
 ### ✅ BOXMINEHOST
 > ACTIVA GATABOT 24/7 EN LA PLATAFORMA BOXMINEHOST
@@ -76,8 +93,8 @@
 - [x] Resultado <details><summary>Ajustes del Servidor - GataBot-MD</summary><img src="https://i.imgur.com/N0SwvbY.jpeg"></details>
 ------------------
 ### ⚡ REPLIT - GATABOT
-[![Deploy](https://img.shields.io/badge/replit_gatabot-667881?style=for-the-badge&logo=replit&logoColor=white)](https://replit.com/github/GataNina-Li/GataBot-MD)
-<a href="https://replit.com/github/GataNina-Li/GataBot-MD"> <img src="https://media0.giphy.com/media/lMwu8EJAnv9kmn51KQ/giphy.gif" height="29px"></a>
+[![Deploy](https://img.shields.io/badge/replit_gatabot-667881?style=for-the-badge&logo=replit&logoColor=white)](https://replit.com/github/GataNina-Li/GataBotMD-Heroku)
+<a href="https://replit.com/github/GataNina-Li/GataBotMD-Heroku"> <img src="https://media0.giphy.com/media/lMwu8EJAnv9kmn51KQ/giphy.gif" height="29px"></a>
 ------------------
 - [x] Resultado <details><summary>Importar Repositorio - GataBot-MD</summary><img src="https://i.imgur.com/GQyRnMf.jpg"></details>
 ------------------
@@ -85,7 +102,81 @@
 - CLONAR EL REPOSITORIO [`Aquí`](https://github.com/GataNina-Li/GataBot-MD/fork)
 - CAMBIAR NÚMERO DEL OWNER [`Aquí`](https://github.com/GataNina-Li/GataBot-MD/blob/master/config.js)
 ----  
-  
+-----
+### ACTIVAR POR TERMUX  <img src="https://c.tenor.com/HLrXIleGBToAAAAC/transparent-cat.gif" height="30px">
+> ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
+
+```bash
+termux-setup-storage
+apt update 
+pkg upgrade 
+pkg install git -y
+pkg install nodejs -y
+pkg install ffmpeg -y
+pkg install imagemagick -y
+pkg install yarn
+git clone https://github.com/GataNina-Li/GataBotMD-Termux
+cd GataBotMD-Termux
+yarn install 
+npm install
+npm update
+npm start
+```
+----
+## 💻 PARA USUARIOS DE WINDOWS/VPS/RDP (Opcional)
+
+* Descargar e instala Git [`Aquí`](https://git-scm.com/downloads)
+* Descargar e instala NodeJS [`Aquí`](https://nodejs.org/en/download)
+* Descargar e instala FFmpeg [`Aquí`](https://ffmpeg.org/download.html) (**No olvide agregar FFmpeg a la variable de entorno PATH**)
+* Descargar e instala ImageMagick [`Aquí`](https://imagemagick.org/script/download.php)
+* Descargar e instala Yarn [`Aquí`](https://classic.yarnpkg.com/en/docs/install#windows-stable)
+
+```bash
+git clone https://github.com/GataNina-Li/GataBotMD-Termux
+cd GataBotMD-Termux
+npm install
+npm update
+node .
+```
+
+## 💻 Instalación de FFmpeg para Windows 
+* Descarga cualquiera de las versiones de FFmpeg disponibles haciendo clic en [FFmpeg](https://www.gyan.dev/ffmpeg/builds/).
+* Extraer archivos a `C:\` path.
+* Cambie el nombre de la carpeta extraída a `ffmpeg`.
+* Ejecute el símbolo del sistema como administrador.
+* Ejecute el siguiente comando:
+```cmd
+> setx /m PATH "C:\ffmpeg\bin;%PATH%"
+```
+Si tiene éxito, le dará un mensaje como: `SUCCESS: specified value was saved`.
+* Ahora que tiene FFmpeg instalado, verifique que funcionó ejecutando este comando para ver la versión:
+```cmd
+> ffmpeg -version
+```
+----    
+###  AJUSTE <img src="https://i.pinimg.com/originals/98/1b/e2/981be28d3ec7b85bfb797a5f9e6a01c2.png" height="32px">
+- CLONAR EL REPOSITORIO [`Aquí`](https://github.com/GataNina-Li/GataBotMD-Termux/fork)
+- CAMBIAR NÚMERO DEL OWNER [`Aquí`](https://github.com/GataNina-Li/GataBotMD-Termux/blob/master/config.js)
+----  
+### GataBot-MD - Preguntas
+
+* Cómo detengo el Bot en Termux?
+> Use CTRL + z para apagar el Bot
+
+* Cómo enciendo el Bot en termux?
+> En caso que vuelva a iniciar en termux use este comando ```cd GataBotMD-Termux & npm start```
+En caso que este Apagado el Bot sin salir de la carpeta del Bot, use este comando ```npm start```
+
+* Que hago si quiero volver a clonar el Bot?
+> En caso que quiera eliminar la carpeta del Bot y volver a clonar use este comando ```rm -rf GataBotMD-Termux && git clone https://github.com/GataNina-Li/GataBotMD-Termux && cd GataBotMD-Termux && yarn install && npm install && npm start``` Esta acción también sirve en caso que quiera Actualizar a la última versión (Si usa el Repositorio Oficial es probable que no sea Owner)
+
+* Cómo puedo borrar la Session?
+> Ejecute este comando en Termux ```rm -rf GataBotSession```
+En caso que no tenga nada en el terminar puede usar este comando ```cd GataBotMD-Termux && rm -rf GataBotSession``` Y después solo debe de escanear el Código QR
+
+* Cómo puedo hacer el Bot Owner?
+> Debe de ingresar al archivo `config.js` o también [`Aquí`](https://github.com/GataNina-Li/GataBotMD-Termux/blob/master/config.js) luego añadir su número en donde diga `global.owner` Recuerde que requiere de hacer una Bifurcación, puede hacerla [`Aquí`](https://github.com/GataNina-Li/GataBotMD-Termux/fork)
+----
 ### SOBRE GATABOT <img src="https://i.pinimg.com/originals/0e/c9/89/0ec989dde8b5fc0deef4e5b09292b605.gif" height="30px">
 ```bash
 > SOLO AQUÍ SE HACE LAS ACTUALIZACIONES OFICIALES DE GATABOT-MD
