@@ -98,11 +98,6 @@ https://github.com/clhuang/heroku-buildpack-webp-binaries.git
 ------------------
 - [x] Resultado <details><summary>Importar Repositorio - GataBot-MD</summary><img src="https://i.imgur.com/GQyRnMf.jpg"></details>
 ------------------
-###  AJUSTE <img src="https://i.pinimg.com/originals/98/1b/e2/981be28d3ec7b85bfb797a5f9e6a01c2.png" height="32px">
-- CLONAR EL REPOSITORIO [`Aquí`](https://github.com/GataNina-Li/GataBot-MD/fork)
-- CAMBIAR NÚMERO DEL OWNER [`Aquí`](https://github.com/GataNina-Li/GataBot-MD/blob/master/config.js)
-----  
------
 ### ACTIVAR POR TERMUX  <img src="https://c.tenor.com/HLrXIleGBToAAAAC/transparent-cat.gif" height="30px">
 > ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 
