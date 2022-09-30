@@ -65,22 +65,14 @@ global.db.chain = chain(global.db.data)
 }
 loadDatabase()
 
-/*global.authFile = `GataBotSession`
+global.authFile = `GataBotSession`
 const { state, saveState, saveCreds } = await useMultiFileAuthState(global.authFile)
 
 const connectionOptions = {
 printQRInTerminal: true,
 auth: state,
 logger: P({ level: 'silent'}),
-browser: ['GataBot-MD','Edge','1.0.0']*/
-
-global.authFile = `${opts._[0] || 'session'}.data.json` //Nombre del archivo de la sesión 
-const { state, saveState, saveCreds } = store.useSingleFileAuthState(global.authFile)
-const connectionOptions = {
-  printQRInTerminal: true,
-  auth: state,
-  //logger: pino({ level: 'trace' })
-  browser: ['GataBot-MD','Edge','1.0.0'] //Nombre de la sesión 
+browser: ['GataBot-MD','Edge','1.0.0']
 }
 
 global.conn = makeWASocket(connectionOptions)
