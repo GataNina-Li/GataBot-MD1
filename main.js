@@ -65,14 +65,22 @@ global.db.chain = chain(global.db.data)
 }
 loadDatabase()
 
-global.authFile = `${opts._[0] || 'session'}.data.json` //global.authFile = `GataBotSession`
-const { state, saveState } = store.useSingleFileAuthState(global.authFile) //const { state, saveState, saveCreds } = await useMultiFileAuthState(global.authFile)
+/*global.authFile = `GataBotSession`
+const { state, saveState, saveCreds } = await useMultiFileAuthState(global.authFile)
 
 const connectionOptions = {
 printQRInTerminal: true,
 auth: state,
 logger: P({ level: 'silent'}),
-browser: ['GataBot-MD','Edge','1.0.0']
+browser: ['GataBot-MD','Edge','1.0.0']*/
+
+global.authFile = `${opts._[0] || 'session'}.data.json` //Nombre del archivo de la sesión 
+const { state, saveState, saveCreds } = store.useSingleFileAuthState(global.authFile)
+const connectionOptions = {
+  printQRInTerminal: true,
+  auth: state,
+  //logger: pino({ level: 'trace' })
+  browser: ['GataBot-MD','Edge','1.0.0'] //Nombre de la sesión 
 }
 
 global.conn = makeWASocket(connectionOptions)
@@ -153,7 +161,7 @@ conn.groupsUpdate = handler.groupsUpdate.bind(global.conn)
 conn.onDelete = handler.deleteUpdate.bind(global.conn)
 conn.onCall = handler.callUpdate.bind(global.conn)
 conn.connectionUpdate = connectionUpdate.bind(global.conn)
-//conn.credsUpdate = saveCreds.bind(global.conn, true)
+conn.credsUpdate = saveCreds.bind(global.conn, true)
 
 conn.ev.on('messages.upsert', conn.handler)
 conn.ev.on('group-participants.update', conn.participantsUpdate)
