@@ -39,11 +39,11 @@
 </a>
 
 ### ❇️ GRUPOS OFICIALES
-<a href="https://chat.whatsapp.com/CozkKQaGmgVEghtHBsT4ye" target="blank"><img src="https://img.shields.io/badge/1️⃣_COMUNIDAD_GATADOT-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
-<a href="https://chat.whatsapp.com/GvhBPOhkkk98oUCZEkCBXa" target="blank"><img src="https://img.shields.io/badge/2️⃣_COMUNIDAD_GATADOT-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
-<a href="https://chat.whatsapp.com/LRpEeGSGjIZKCtK1N331SU" target="blank"><img src="https://img.shields.io/badge/3️⃣_COMUNIDAD_GATADOT-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
-<a href="https://chat.whatsapp.com/JhjEAp89pZ7FZmPuRK5R4y" target="blank"><img src="https://img.shields.io/badge/4️⃣_COMUNIDAD_GATADOT-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
-<a href="https://chat.whatsapp.com/LtcSk6DQysJ3mANKLDiur2" target="blank"><img src="https://img.shields.io/badge/5️⃣_COMUNIDAD_GATADOT-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+<a href="https://chat.whatsapp.com/CozkKQaGmgVEghtHBsT4ye" target="blank"><img src="https://img.shields.io/badge/1️⃣_COMUNIDAD_GATADOT_🐈-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+<a href="https://chat.whatsapp.com/GvhBPOhkkk98oUCZEkCBXa" target="blank"><img src="https://img.shields.io/badge/2️⃣_COMUNIDAD_GATADOT_🐈-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+<a href="https://chat.whatsapp.com/LRpEeGSGjIZKCtK1N331SU" target="blank"><img src="https://img.shields.io/badge/3️⃣_COMUNIDAD_GATADOT_🐈-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+<a href="https://chat.whatsapp.com/JhjEAp89pZ7FZmPuRK5R4y" target="blank"><img src="https://img.shields.io/badge/4️⃣_COMUNIDAD_GATADOT_🐈-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+<a href="https://chat.whatsapp.com/LtcSk6DQysJ3mANKLDiur2" target="blank"><img src="https://img.shields.io/badge/5️⃣_COMUNIDAD_GATADOT_🐈-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 </a>
 
 ### 💖 ```DONAR``` [`Aquí`](https://paypal.me/OficialGD)
