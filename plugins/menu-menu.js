@@ -456,6 +456,8 @@ ${readMore}
 ┃🛠️ _${usedPrefix}traducir *texto*_
 ┃🛠️➺ _${usedPrefix}morse codificar *texto*_
 ┃🛠️➺ _${usedPrefix}morse decodificar *morse*_
+┃🛠️➺ _${usedPrefix}encuesta | poll *Motivo*_
+┃🛠️➺ _${usedPrefix}horario_
 *╰━━━━━━━━━━━━⬣*
 
 *╭━━━[ FUNCIÓN RPG ]━━⬣*
