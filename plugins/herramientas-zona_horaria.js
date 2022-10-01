@@ -22,7 +22,7 @@ const fechaasi = moment().tz('Asia/Jakarta').format('DD/MM HH:mm')
 const fechabra = moment().tz('America/Sao_Paulo').format('DD/MM HH:mm')
 const fechaafri = moment().tz('Africa/Malabo').format('DD/MM HH:mm')
 await conn.sendMessage(m.chat, { text: `\`\`\`
-「 ZONA-HORARIA ⏰ 」
+「 ZONA-HORARIA 🗺️ 」
 ⏱️Peru       : ${fechaper}
 ⏱️Mexico     : ${fechamex}
 ⏱️Bolivia    : ${fechabol}
