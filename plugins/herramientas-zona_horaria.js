@@ -1,11 +1,6 @@
 import moment from 'moment-timezone'
 
-let handler = async (m, { conn }) => {
-var usuario = `${m.sender.split('@')[0]}` 
-const países = [['Peru', 51], ['Mexico', 52], ['Bolivia', 591], ['Chile', 56], ['Argentina', 54], ['Colombia', 57], ['Ecuador', 593], ['Costa Rica', 506], ['Cuba', 53]
-, ['Guatemala', 502], ['Honduras', 504], ['Nicaragua', 505], ['Panama', 507], ['Uruguay', 598], ['Venezuela', 58], ['Paraguay', 595], ['Indonesia', 62], ['Brasil', 55]]
-let prueba = m.sender.startsWith
-  
+let handler = async (m, { conn }) => {  
 const fechaper = moment().tz('America/Lima').format('DD/MM HH:mm')
 const fechamex = moment().tz('America/Mexico_City').format('DD/MM HH:mm')
 const fechabol = moment().tz('America/La_Paz').format('DD/MM HH:mm')
@@ -27,8 +22,6 @@ const fechaasi = moment().tz('Asia/Jakarta').format('DD/MM HH:mm')
 const fechabra = moment().tz('America/Sao_Paulo').format('DD/MM HH:mm')
 const fechaafri = moment().tz('Africa/Malabo').format('DD/MM HH:mm')
 await conn.sendMessage(m.chat, { text: `\`\`\`
-${usuario[0]}${usuario[1]}
-${prueba}
 「 ZONA-HORARIA ⏰ 」
 ⏱️Peru       : ${fechaper}
 ⏱️Mexico     : ${fechamex}
@@ -47,7 +40,7 @@ ${prueba}
 ⏱️Venezuela  : ${fechaven}
 ⏱️Paraguay   : ${fechapar}
 ⏱️New York   : ${fechanew}
-⏱️Indonesia       : ${fechaasi}
+⏱️Indonesia  : ${fechaasi}
 ⏱️Brasil     : ${fechabra}
 ⏱️G.N.Q      : ${fechaafri}
 \`\`\`
