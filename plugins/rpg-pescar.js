@@ -11,11 +11,11 @@ let pancingan = global.db.data.users[m.sender].pancingan
 let nivelPescar = pancing == 0 ? 'No tengo | I do not have' : '' || pancing == 1 ? 'Nivel | Level ✦ 1' : '' || pancing == 2 ? 'Nivel | Level ✦ 2' : '' || pancing == 3 ? 'Nivel | Level ✦ 3' : '' || pancing == 4 ? 'Nivel | Level ✦ 4' : '' || pancing >= 5 ? 'Nivel | Level ✦ 5 ǁ MAX' : ''
 let nivelGancho = pancingan == 0 ? 'No tengo | I do not have' : '' || pancingan == 1 ? 'Nivel | Level ✦ 1' : '' || pancingan == 2 ? 'Nivel | Level ✦ 2' : '' || pancingan == 3 ? 'Nivel | Level ✦ 3' : '' || pancingan == 4 ? 'Nivel | Level ✦ 4' : '' || pancingan >= 5 ? 'Nivel | Level ✦ 5 ǁ MAX' : ''
 
-const energia = ['10', '20', '40', '60', '90']
-const carnada = ['40', '20', '40', '60', '90']
-const nivelCanaDePescar = ['1', '2', '3', '4', '5']
-const nivelDelGancho = ['1', '2', '3', '4', '5']
-const nivelUser = ['2', '4', '5', '7', '10']
+var energia = ['10', '20', '40', '60', '90']
+var carnada = ['40', '20', '40', '60', '90']
+var nivelCanaDePescar = ['1', '2', '3', '4', '5']
+var nivelDelGancho = ['1', '2', '3', '4', '5']
+var nivelUser = ['2', '4', '5', '7', '10']
   
 const sections = [
 {
