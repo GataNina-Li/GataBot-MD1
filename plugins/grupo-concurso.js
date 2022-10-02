@@ -3,7 +3,7 @@ let handler = async (m, { conn, command }) => {
 let str = `
 🎃 Concurso de Halloween [FUTANARI] 🎃
 
-¿De que va esto?: Bien pues esto va para el grupo necesitamos que los integrantes del grupo FutabuaClub aporten imagenes Futanari de Halloween que tenga las misma dimensiónes para la foto del grupo.
+¿De que va esto?: Bien pues esto va para el grupo necesitamos que los integrantes del grupo FutabuClub aporten imagenes Futanari de Halloween que tenga las misma dimensiónes para la foto del grupo.
 
 ¿Cual es el tamaño de la imagen?: El tamaño es de 640 x 640
 
