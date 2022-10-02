@@ -109,7 +109,7 @@ user.kepiting += kepiting * 1
 user.lastfishing += new Date * 1
   
 } else m.reply(`Ya estás pescando, espera hasta ${totalTiempo}`)
-} else return await conn.sendButton(m.chat, `*No tienes Gancho 🪝 ni carnada 🪱*`, wm, [[`Comprar un Gancho`, '.buy pancingan 1'], [`Comprar 100 Carnadas`, '.buy umpan 100']], m)
+} else return conn.sendButton(m.chat, `*No tienes Gancho 🪝 ni carnada 🪱*`, wm, [[`Comprar un Gancho`, '.buy pancingan 1'], [`Comprar 100 Carnadas`, '.buy umpan 100']], m)
 break
            
 case 'easy':
@@ -395,19 +395,19 @@ user.tiketcoin += 1
 
 
 setTimeout(() => {
-conn.sendHydrated(m.chat, `${pescarUsuario} Vamos a pescar manía de nivel fácil otra vez`, botdate, null, null, null, null, null, [
+await conn.sendHydrated(m.chat, `${pescarUsuario} Vamos a pescar manía de nivel fácil otra vez`, botdate, null, null, null, null, null, [
 [null, null]], null)}, 28800000) 
   
 setTimeout(() => {
-conn.sendHydrated(m.chat, pescar4, botdate, null, null, null, null, null, [
+await conn.sendHydrated(m.chat, pescar4, botdate, null, null, null, null, null, [
 [null, null]], null)}, 12000) 
                                 
 setTimeout(() => {
-conn.sendHydrated(m.chat, `${pescarUsuario} Espere`, botdate, null, null, null, null, null, [
+await conn.sendHydrated(m.chat, `${pescarUsuario} Espere`, botdate, null, null, null, null, null, [
 [null, null]], null)}, 6000) 
                                  
 setTimeout(() => {
-conn.sendHydrated(m.chat, `${pescarUsuario} Pescando...`, botdate, null, null, null, null, null, [
+await conn.sendHydrated(m.chat, `${pescarUsuario} Pescando...`, botdate, null, null, null, null, null, [
 [null, null]], null)}, 0) 
 user.lastmancingeasy = new Date * 1
                                     
