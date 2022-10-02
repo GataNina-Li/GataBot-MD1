@@ -27,7 +27,7 @@ const listMessage = {
   buttonText: `☂️ haga clic aquí ☂️`,
   sections }
 try {
-if (/fishing|mancing/i.test(command)) {
+if (/fishing|mancing|pescar/i.test(command)) {
 switch (type) {
           
 case 'emosi':
