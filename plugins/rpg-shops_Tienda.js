@@ -1,5 +1,6 @@
 import fetch from 'node-fetch'
 let handler = async (m, { command, conn, usedPrefix, args }) => {
+let user = global.db.data.users[m.sender]
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" 
 }
 let grupos = [nna, nn, nnn, nnnt]
@@ -46,6 +47,7 @@ const items = {
         healtmonster: { kyubi: 19 },
         pancingan: { trash: 2 },
         emas: { berlian: 20 },
+        pancing: { tiketcoin: user.pancing == 0 ? 1 : '' || user.pancing == 1 ? 3 : '' || user.pancing == 3 ? 4 : '' || user.pancing == 4 ? 6 : '' || user.pancing >= 6 ? 9 : '' },
         
         common: { aqua: 40 },
         uncoommon: { kyubi: 55 },
@@ -161,7 +163,6 @@ const items = {
 }   
    
 let imgr = flaaa.getRandom()
-    let user = global.db.data.users[m.sender]
     const listItems = Object.fromEntries(Object.entries(items[command.toLowerCase()]).filter(([v]) => v && v in user))
     
     let text = ''
