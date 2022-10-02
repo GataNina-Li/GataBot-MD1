@@ -119,7 +119,7 @@ let tiempoTotal2 = clockString(coinesa)
 if (user.level <= 3) return 'Necesitas tener el Nivel 4'        
 if (user.stamina < 20) return m.reply(`Tu Energía ✨ no es suficiente, Necitas tener al menos 20% de energía\npor favor llena tu Energía con *${usedPrefix}eat8`)
 user.stamina -= 20 * 1    
-if (gancho == 0 || carnada == 0) return await conn.sendButton(m.chat, `*No tienes Gancho 🪝 ni carnada 🪱*`, wm, [[`Comprar un Gancho`, '.buy pancingan 1'], [`Comprar 100 Carnadas`, '.buy umpan 100']], m)
+if (gancho == 0 || carnada == 0) return conn.sendButton(m.chat, `*No tienes Gancho 🪝 ni carnada 🪱*`, wm, [[`Comprar un Gancho`, '.buy pancingan 1'], [`Comprar 100 Carnadas`, '.buy umpan 100']], m)
 if (new Date - user.lastmancingeasy > 28800000) {
 if (user.pancing > 1) {
 if (user.umpan > 99) {
@@ -209,9 +209,9 @@ await conn.sendHydrated(m.chat, `${pescarUsuario} Pescando...`, botdate, null, n
 [null, null]], null)}, 0) 
 user.lastmancingeasy = new Date * 1
   
-} else await conn.reply(m.chat, 'Tu Carnada mínimo *100* para pescas de nivel fácil', m)
-} else await conn.reply(m.chat, 'Su caña de pescar mínima es *Nivel 2* para una pesca de nivel fácil', m)
-} else await conn.reply(m.chat, `*Parece que estás cansado*\n*Por favor, descanse un rato* ${tiempoTotal2}\n*Para poder seguir pescando de nuevo*`, m)
+} else conn.reply(m.chat, 'Tu Carnada mínimo *100* para pescas de nivel fácil', m)
+} else conn.reply(m.chat, 'Su caña de pescar mínima es *Nivel 2* para una pesca de nivel fácil', m)
+} else conn.reply(m.chat, `*Parece que estás cansado*\n*Por favor, descanse un rato* ${tiempoTotal2}\n*Para poder seguir pescando de nuevo*`, m)
 break
 case 'normal':
 let __temporizador3 = (new Date - pengguna.lastmancingeasy)
@@ -220,7 +220,7 @@ let totalTiempo3 = clockString(_temporizador3)
 if (user.level <= 4) return 'Necesitas tener el Nivel 5'      
 if (user.stamina < 40) return m.reply(`Tu Energía ✨ no es suficiente, Necitas tener al menos 40% de energía\npor favor llena tu Energía con *${usedPrefix}eat8`)
 user.stamina -= 40 * 1        
-if (gancho == 0 || carnada == 0) return await conn.sendButton(m.chat, `*No tienes Gancho 🪝 ni carnada 🪱*`, wm, [[`Comprar un Gancho`, '.buy pancingan 1'], [`Comprar 100 Carnadas`, '.buy umpan 100']], m)
+if (gancho == 0 || carnada == 0) return conn.sendButton(m.chat, `*No tienes Gancho 🪝 ni carnada 🪱*`, wm, [[`Comprar un Gancho`, '.buy pancingan 1'], [`Comprar 100 Carnadas`, '.buy umpan 100']], m)
 if (new Date - user.lastmancingeasy > 28800000) {
 if (user.pancingan > 3) {
 if (user.umpan > 149) {
@@ -313,7 +313,6 @@ user.lastmancingeasy = new Date * 1
 } else await conn.reply(m.chat, 'Su caña de pescar mínima es *Nivel 3* para una pesca de nivel fácil', m)
 } else await conn.reply(m.chat, `*Parece que estás cansado*\n*Por favor, descanse un rato* ${totalTiempo3}\n*Para poder seguir pescando de nuevo*`, m)
 break
-break 
 case 'hard':
 let __temporizador4 = (new Date - user.lastmancingeasy)
 let _temporizador4 = (28800000 - __temporizador4)
@@ -414,7 +413,6 @@ user.lastmancingeasy = new Date * 1
 } else await conn.reply(m.chat, 'Tu Carnada mínimo *200* para pescas de nivel Normal', m)
 } else await conn.reply(m.chat, 'Su caña de pescar mínima es *Nivel 4* para una pesca de nivel fácil', m)
 } else await conn.reply(m.chat, `*Parece que estás cansado*\n*Por favor, descanse un rato* ${tiempoTotal4}\n*Para poder seguir pescando de nuevo*`, m)
-break
 break
 case 'extreme':
 
