@@ -47,7 +47,7 @@ const items = {
         healtmonster: { kyubi: 19 },
         pancingan: { trash: 2 },
         emas: { berlian: 20 },
-        pancing: { tiketcoin: user.pancing == 0 ? 1 : '' || user.pancing == 1 ? 3 : '' || user.pancing == 3 ? 4 : '' || user.pancing == 4 ? 6 : '' || user.pancing >= 6 ? 9 : '' },
+        pancing: { tiketcoin: user.pancing == 0 ? 1 : '' || user.pancing == 1 ? 2 : '' || user.pancing == 2 ? 3 : '' || user.pancing == 3 ? 4 : '' || user.pancing >= 4 ? 7 : '' },
         
         common: { aqua: 40 },
         uncoommon: { kyubi: 55 },
