@@ -2,8 +2,9 @@ let handler  = async (m, { conn, command, args, usedPrefix }) => {
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
 
 let user = global.db.data.users[m.sender]
-let gancho = user.pancingan
 let pescarUsuario = await conn.getName(m.sender)
+let gancho = user.pancingan
+let canaDePescar = user.pancing
 let carnadaUser = user.umpan
 let type = (args[0] || '').toLowerCase()
 let pancing = global.db.data.users[m.sender].pancing
@@ -13,6 +14,7 @@ let nivelGancho = pancingan == 0 ? 'No tengo | I do not have' : '' || pancingan 
 
 var mensajePesca = [`𝙋𝙍𝙀𝙋𝘼𝙍𝘼𝙉𝘿𝙊 𝙇𝘼 ${rpgg.emoticon('fishingrod')} 𝘾𝘼Ñ𝘼 𝘿𝙀 𝙋𝙀𝙎𝘾𝘼𝙍...`, `🪣 𝘼𝙇𝙄𝙎𝙏𝘼𝙉𝘿𝙊 𝙄𝙈𝙋𝙇𝙀𝙈𝙀𝙉𝙏𝙊𝙎 𝘿𝙀 𝙋𝙀𝙎𝘾𝘼...`, `📡 𝘽𝙐𝙎𝘾𝘼𝙉𝘿𝙊 𝙇𝙐𝙂𝘼𝙍 𝘿𝙀 𝙋𝙀𝙎𝘾𝘼...`, `𝙀𝙉 𝙃𝙊𝙍𝘼 𝘽𝙐𝙀𝙉𝘼!! 𝙃𝙊𝙔 𝙎𝙀𝙍𝘼 𝙐𝙉𝘼 𝙂𝙍𝘼𝙉 𝙋𝙀𝙎𝘾𝘼 🌤️`, `𝙋𝙍𝙀𝙋𝘼𝙍𝘼𝙉𝘿𝙊 ${rpgshopp.emoticon('pancingan')} 𝙂𝘼𝙉𝘾𝙃𝙊 𝘿𝙀 𝙋𝙀𝙎𝘾𝘼`, `🌊 𝙀𝙉 𝘽𝙍𝙀𝙑𝙀 𝙀𝙈𝙋𝙀𝙕𝘼𝙍𝘼 𝙇𝘼 𝙋𝙀𝙎𝘾𝘼!!`].getRandom()
 var mensajePesca2 = [`𝙋𝙍𝙀𝙋𝘼𝙍𝘼𝙉𝘿𝙊 𝙇𝘼 𝘾𝘼𝙍𝙉𝘼𝘿𝘼 ${rpgshopp.emoticon('umpan')}`, `💥 𝙋𝘼𝙍𝙀𝘾𝙀 𝙌𝙐𝙀 𝙊𝘽𝙏𝙀𝙉𝘿𝙍𝘼𝙎 𝙈𝙐𝘾𝙃𝙊𝙎 𝙋𝙀𝘾𝙀𝙎`, `𝙏𝙄𝙀𝙉𝙀𝙎 𝙈𝙐𝘾𝙃𝘼 𝙀𝙉𝙀𝙍𝙂𝙄𝘼 ✨ 𝙋𝘼𝙍𝘼 𝙐𝙉𝘼 𝙂𝙍𝘼𝙉 𝙋𝙀𝙎𝘾𝘼`, `𝙏𝙐 𝙉𝙄𝙑𝙀𝙇 𝘿𝙀 ${rpgg.emoticon('fishingrod')} 𝙔 ${rpgshopp.emoticon('pancingan')} 𝙀𝙎𝙏𝘼𝙉  𝘼𝘾𝙏𝙊𝙎 𝙋𝘼𝙍𝘼 𝙀𝙎𝙏𝘼 𝙂𝙍𝘼𝙉 𝙋𝙀𝙎𝘾𝘼!!`, `🍀 𝙇𝘼 𝙎𝙐𝙀𝙍𝙏𝙀 𝙏𝙀 𝘽𝙍𝙄𝙉𝘿𝘼𝙍𝘼 𝙐𝙉𝘼 𝙀𝙓𝙀𝙇𝙀𝙉𝙏𝙀 𝙋𝙀𝙎𝘾𝘼`, `🌊 𝙀𝙇 𝙉𝙄𝙑𝙀𝙇 𝘿𝙀𝙇 𝘼𝙂𝙐𝘼 𝙀𝙎 𝙀𝙎𝙏𝘼𝘽𝙇𝙀 𝙋𝘼𝙍𝘼 𝘾𝙊𝙈𝙀𝙉𝙕𝘼𝙍 𝘼 𝙋𝙀𝙎𝘾𝘼𝙍`].getRandom()
+var mensajePesca3 = [`𝙋𝘼𝙍𝙀𝘾𝙀 𝙌𝙐𝙀 𝘼𝙏𝙍𝘼𝙋𝙊!! 🦀🦞🦐`, `𝙋𝘼𝙍𝙀𝘾𝙀 𝙌𝙐𝙀 𝘼𝙏𝙍𝘼𝙋𝙊!! 🦑🐙🐡`, `𝙋𝘼𝙍𝙀𝘾𝙀 𝙌𝙐𝙀 𝘼𝙏𝙍𝘼𝙋𝙊!! 🐠🐟🐬`, `𝙋𝘼𝙍𝙀𝘾𝙀 𝙌𝙐𝙀 𝘼𝙏𝙍𝘼𝙋𝙊!! 🐳🦈🐋`].getRandom()
 var energia = ['10', '20', '40', '60', '90']
 var carnada = ['40', '20', '40', '60', '90']
 var nivelCanaDePescar = ['1', '2', '3', '4', '5']
@@ -97,7 +99,7 @@ user.psenjata += psenjata * 1
 conn.sendButton( m.chat, `🥳 𝘼𝘾𝘼𝘽𝘼𝙎 𝘿𝙀 𝙊𝘽𝙏𝙀𝙉𝙀𝙍 *${psenjata}* 𝙏𝙍𝘼𝙅𝙀 𝙀𝙋𝙄𝘾𝙊!! 🥷`, wm, [[`${rpgg.emoticon('fishingrod')} 𝙋𝙀𝙎𝘾𝘼𝙍 𝙊𝙏𝙍𝘼 𝙑𝙀𝙕`, `.pescar`], [`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊 : 𝙄𝙉𝙑𝙀𝙉𝙏𝙊𝙍𝙔`, `.inventario`]], m)}}, 38000)
 
 setTimeout(() => {
- conn.sendHydrated(m.chat, `${pescarUsuario} 𝙋𝘼𝙍𝙀𝘾𝙀 𝙌𝙐𝙀 𝘼𝙏𝙍𝘼𝙋𝙊...`, wm, null, null, null, null, null, [
+ conn.sendHydrated(m.chat, `${pescarUsuario} ${mensajePesca3}`, wm, null, null, null, null, null, [
 [null, null]], null)}, 28000)
        
 setTimeout(() => {
@@ -127,10 +129,12 @@ case 'easy':
 let _coinesa = (new Date - user.lastmancingeasy)
 let coinesa = (28800000 - _coinesa)
 let tiempoTotal2 = clockString(coinesa) 
-if (user.level <= 3) return 'Necesitas tener el Nivel 4'        
-if (user.stamina < 20) return m.reply(`Tu Energía ✨ no es suficiente, Necitas tener al menos 20% de energía\npor favor llena tu Energía con *${usedPrefix}eat8`)
+if (user.level <= 3) return conn.sendButton( m.chat, `${fg}𝙉𝙀𝘾𝙀𝙎𝙄𝙏𝘼 𝙏𝙀𝙉𝙀𝙍 𝙀𝙇 𝙉𝙄𝙑𝙀𝙇 *${nivelUser[1]}*`, `𝙉𝙄𝙑𝙀𝙇 𝘼𝘾𝙏𝙐𝘼𝙇: *${user.level}*\n` + wm, [[`𝘼𝘾𝙏𝙐𝘼𝙇𝙄𝙕𝘼𝙍 𝙈𝙄 𝙉𝙄𝙑𝙀𝙇 ${rpgg.emoticon('level')}`, `.nivel`]], m)   
+if (user.stamina < 20) return conn.sendButton( m.chat, `${ag}𝙉𝙊 𝙏𝙄𝙀𝙉𝙀𝙎 𝙎𝙐𝙁𝙄𝙀𝙉𝙏𝙀 𝙀𝙉𝙀𝙍𝙂𝙄𝘼. 𝙈𝙄𝙉𝙄𝙈𝙊 𝙉𝙀𝘾𝙀𝙎𝙄𝙏𝘼𝙎 𝙐𝙉 *${energia[1]}%* 𝘿𝙀 𝙀𝙉𝙀𝙍𝙂𝙄𝘼 ✨`, wm, [[`𝗠 𝗘 𝗡 𝗨 ☘️`, `.menu`]], m)  
 user.stamina -= 20 * 1    
-if (gancho == 0 || carnadaUser == 0) return conn.sendButton(m.chat, `*No tienes Gancho 🪝 ni carnada 🪱*`, wm, [[`Comprar un Gancho`, '.buy pancingan 1'], [`Comprar 100 Carnadas`, '.buy umpan 100']], m)
+if (gancho == 0) return conn.sendButton( m.chat, `𝙉𝙊 𝙏𝙄𝙀𝙉𝙀 *${rpgshop.emoticon('umpan')}* 𝙋𝘼𝙍𝘼 𝙋𝙀𝙎𝘾𝘼𝙍`, wm, [[`𝘾𝙊𝙈𝙋𝙍𝘼𝙍 10 𝘾𝘼𝙍𝙉𝘼𝘿𝘼 ${rpgshopp.emoticon('umpan')}`, '.buy umpan 10'], [`𝘾𝙊𝙈𝙋𝙍𝘼𝙍 50 𝘾𝘼𝙍𝙉𝘼𝘿𝘼 ${rpgshopp.emoticon('umpan')}`, '.buy umpan 50']], m)
+if (canaDePescar == 0) return conn.sendButton( m.chat, `𝙉𝙊 𝙏𝙄𝙀𝙉𝙀 *${rpgshop.emoticon('umpan')}* 𝙋𝘼𝙍𝘼 𝙋𝙀𝙎𝘾𝘼𝙍`, wm, [[`𝘾𝙊𝙈𝙋𝙍𝘼𝙍 10 𝘾𝘼𝙍𝙉𝘼𝘿𝘼 ${rpgshopp.emoticon('umpan')}`, '.buy umpan 10'], [`𝘾𝙊𝙈𝙋𝙍𝘼𝙍 50 𝘾𝘼𝙍𝙉𝘼𝘿𝘼 ${rpgshopp.emoticon('umpan')}`, '.buy umpan 50']], m)
+if (carnadaUser == 0) return conn.sendButton(m.chat, `𝙉𝙊 𝙏𝙄𝙀𝙉𝙀 *${rpgshop.emoticon('pancingan')}* 𝙋𝘼𝙍𝘼 𝙋𝙀𝙎𝘾𝘼𝙍`, wm, [[`𝘾𝙊𝙈𝙋𝙍𝘼𝙍 𝙐𝙉 𝙂𝘼𝙉𝘾𝙃𝙊 ${rpgshopp.emoticon('pancingan')}`, '.buy pancingan 1'], [`𝘾𝙊𝙈𝙋𝙍𝘼𝙍 2 𝙂𝘼𝙉𝘾𝙃𝙊 ${rpgshopp.emoticon('pancingan')}`, '.buy pancingan 2']], m)
 if (new Date - user.lastmancingeasy > 28800000) {
 if (user.pancing > 1) {
 if (user.pancingan > 1) {
@@ -213,15 +217,19 @@ conn.sendHydrated(m.chat, pesca2, botdate, null, null, null, null, null, [
 [null, null]], null)}, 12000) 
                                 
 setTimeout(() => {
-conn.sendHydrated(m.chat, `${pescarUsuario} Espere`, botdate, null, null, null, null, null, [
-[null, null]], null)}, 6000) 
-                                 
+ conn.sendHydrated(m.chat, `${pescarUsuario} ${mensajePesca3}`, wm, null, null, null, null, null, [
+[null, null]], null)}, 28000)
+       
 setTimeout(() => {
-conn.sendHydrated(m.chat, `${pescarUsuario} Pescando...`, botdate, null, null, null, null, null, [
-[null, null]], null)}, 0) 
+conn.sendHydrated(m.chat, `${pescarUsuario} ${mensajePesca2}`, wm, null, null, null, null, null, [
+[null, null]], null)}, 8000)
+  
+setTimeout(() => {
+conn.sendHydrated(m.chat, `${pescarUsuario} ${mensajePesca}`, wm, null, null, null, null, null, [
+[null, null]], null)}, 0)
 user.lastmancingeasy = new Date * 1
   
-} else conn.sendButton( m.chat, `𝙈Í𝙉𝙄𝙈𝙊 *${carnada[0]}* 𝘿𝙀 *${rpgshop.emoticon('umpan')}* 𝙋𝘼𝙍𝘼 𝙋𝙀𝙎𝘾𝘼𝙍`, wm, [[`𝘾𝙊𝙈𝙋𝙍𝘼𝙍 ${carnada[0]} ${rpgshopp.emoticon('umpan')}`, '.buy umpan 40'], [`𝘾𝙊𝙈𝙋𝙍𝘼𝙍 100 ${rpgshopp.emoticon('umpan')}`, '.buy umpan 100']], m)
+} else conn.sendButton( m.chat, `𝙈𝙄𝙉𝙄𝙈𝙊 *${carnada[0]}* 𝘿𝙀 *${rpgshop.emoticon('umpan')}* 𝙋𝘼𝙍𝘼 𝙋𝙀𝙎𝘾𝘼𝙍`, wm, [[`𝘾𝙊𝙈𝙋𝙍𝘼𝙍 ${carnada[0]} ${rpgshopp.emoticon('umpan')}`, '.buy umpan 40'], [`𝘾𝙊𝙈𝙋𝙍𝘼𝙍 100 ${rpgshopp.emoticon('umpan')}`, '.buy umpan 100']], m)
 } else conn.sendButton( m.chat, `𝙎𝙐 *${rpgshop.emoticon('pancingan')}* 𝙉𝙀𝘾𝙀𝙎𝙄𝙏𝘼 𝙀𝙇 𝙉𝙄𝙑𝙀𝙇 *${nivelDelGancho[1]}* 𝙋𝘼𝙍𝘼 𝙋𝙀𝙎𝘾𝘼𝙍`, wm, [[`𝘾𝙊𝙈𝙋𝙍𝘼𝙍 ${nivelCanaDePescar[1]} ${rpgshopp.emoticon('pancingan')}`, '.buy pancingan 2'], [`𝘾𝙊𝙈𝙋𝙍𝘼𝙍 ${nivelCanaDePescar[2]} ${rpgshopp.emoticon('pancingan')}`, '.buy pancingan 3']], m)
 } else conn.sendButton( m.chat, `𝙎𝙐 *${rpg.emoticon('fishingrod')}* 𝙉𝙀𝘾𝙀𝙎𝙄𝙏𝘼 𝙀𝙇 𝙉𝙄𝙑𝙀𝙇 *${nivelCanaDePescar[1]}* 𝙋𝘼𝙍𝘼 𝙋𝙀𝙎𝘾𝘼𝙍`, wm, [[`𝘾𝙊𝙈𝙋𝙍𝘼𝙍 ${nivelCanaDePescar[1]} ${rpgg.emoticon('fishingrod')}`, '.buy pancing 2'], [`𝘾𝙊𝙈𝙋𝙍𝘼𝙍 ${nivelCanaDePescar[2]} ${rpgg.emoticon('fishingrod')}`, '.buy pancing 3']], m)
 } else conn.sendButton( m.chat, `𝙔𝘼 𝙁𝙐𝙀 𝘿𝙀 𝙋𝙀𝙎𝘾𝘼 𝙋𝙊𝙍 𝙁𝘼𝙑𝙊𝙍 𝘿𝙀𝙎𝘾𝘼𝙉𝙎𝙀`, `𝙏𝙄𝙀𝙈𝙋𝙊 𝘿𝙀𝙇 𝘿𝙀𝙎𝘾𝘼𝙉𝙎𝙊:\n${tiempoTotal2}\n\n` + wm, [[`𝗠 𝗘 𝗡 𝗨 ☘️`, `.menu`]], m) 
@@ -316,12 +324,16 @@ conn.sendHydrated(m.chat, pesca3, botdate, null, null, null, null, null, [
 [null, null]], null)}, 12000) 
                                 
 setTimeout(() => {
-conn.sendHydrated(m.chat, `${pescarUsuario} Espere`, botdate, null, null, null, null, null, [
-[null, null]], null)}, 6000) 
-                                 
+ conn.sendHydrated(m.chat, `${pescarUsuario} ${mensajePesca3}`, wm, null, null, null, null, null, [
+[null, null]], null)}, 28000)
+       
 setTimeout(() => {
-conn.sendHydrated(m.chat, `${pescarUsuario} Pescando...`, botdate, null, null, null, null, null, [
-[null, null]], null)}, 0) 
+conn.sendHydrated(m.chat, `${pescarUsuario} ${mensajePesca2}`, wm, null, null, null, null, null, [
+[null, null]], null)}, 8000)
+  
+setTimeout(() => {
+conn.sendHydrated(m.chat, `${pescarUsuario} ${mensajePesca}`, wm, null, null, null, null, null, [
+[null, null]], null)}, 0)
 user.lastmancingeasy = new Date * 1
   
 } else conn.reply(m.chat, 'MÍNIMO  80 DE CARNADA PARA PESCAR', m)
@@ -419,12 +431,16 @@ conn.sendHydrated(m.chat, pescar4, botdate, null, null, null, null, null, [
 [null, null]], null)}, 12000) 
                                 
 setTimeout(() => {
-conn.sendHydrated(m.chat, `${pescarUsuario} Espere`, botdate, null, null, null, null, null, [
-[null, null]], null)}, 6000) 
-                                 
+ conn.sendHydrated(m.chat, `${pescarUsuario} ${mensajePesca3}`, wm, null, null, null, null, null, [
+[null, null]], null)}, 28000)
+       
 setTimeout(() => {
-conn.sendHydrated(m.chat, `${pescarUsuario} Pescando...`, botdate, null, null, null, null, null, [
-[null, null]], null)}, 0) 
+conn.sendHydrated(m.chat, `${pescarUsuario} ${mensajePesca2}`, wm, null, null, null, null, null, [
+[null, null]], null)}, 8000)
+  
+setTimeout(() => {
+conn.sendHydrated(m.chat, `${pescarUsuario} ${mensajePesca}`, wm, null, null, null, null, null, [
+[null, null]], null)}, 0)
 user.lastmancingeasy = new Date * 1
                                     
 } else conn.reply(m.chat, 'Tu Carnada mínimo *200* para pescas de nivel Normal', m)
@@ -521,12 +537,16 @@ conn.sendHydrated(m.chat, pescar5, botdate, null, null, null, null, null, [
 [null, null]], null)}, 12000) 
                                 
 setTimeout(() => {
-conn.sendHydrated(m.chat, `${pescarUsuario} Espere`, botdate, null, null, null, null, null, [
-[null, null]], null)}, 6000) 
-                                 
+ conn.sendHydrated(m.chat, `${pescarUsuario} ${mensajePesca3}`, wm, null, null, null, null, null, [
+[null, null]], null)}, 28000)
+       
 setTimeout(() => {
-conn.sendHydrated(m.chat, `${pescarUsuario} Pescando...`, botdate, null, null, null, null, null, [
-[null, null]], null)}, 0) 
+conn.sendHydrated(m.chat, `${pescarUsuario} ${mensajePesca2}`, wm, null, null, null, null, null, [
+[null, null]], null)}, 8000)
+  
+setTimeout(() => {
+conn.sendHydrated(m.chat, `${pescarUsuario} ${mensajePesca}`, wm, null, null, null, null, null, [
+[null, null]], null)}, 0)
 user.lastmancingeasy = new Date * 1
                                     
 } else conn.reply(m.chat, 'Tu Carnada mínimo *250* para pescas de nivel Normal', m)
