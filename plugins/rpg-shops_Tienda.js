@@ -232,7 +232,7 @@ if (user[paymentMethod] < listItems[item][paymentMethod] * total) return conn.se
 `*–--『 𝙄𝙉𝙎𝙐𝙁𝙄𝘾𝙄𝙀𝙉𝙏𝙀𝙎 𝙍𝙀𝘾𝙐𝙍𝙎𝙊𝙎 』--–*`, 
 `*Necesitas ${(listItems[item][paymentMethod] * total) - user[paymentMethod]} ${global.rpgshop.emoticon(paymentMethod)} Para Comprar ${total} ${global.rpgshop.emoticon(item)}.*
 
-*Solo tienes ${user[paymentMethod]} ${global.rpg.emoticon(paymentMethod)}.*
+*Solo tienes ${user[paymentMethod]} ${global.rpgshop.emoticon(paymentMethod)}.*
 *–––––––––––––––––––––––––*
 *Misiones para Obtener Recursos*
 *Quests to Obtain Resources*
@@ -240,7 +240,7 @@ if (user[paymentMethod] < listItems[item][paymentMethod] * total) return conn.se
 *♻️ Cada hora : Hourly » ${new Date - user.lasthourly < 3600000 ? '❌' : `✅ _${usedPrefix}cadahora_`}*
 *💫 Semanalmente : Weekly ${new Date - user.lastweekly < 259200000 ? '❌' : `✅ _${usedPrefix}cadasemana_`}*
 *🏅 Mensual : Monthly ${new Date - user.lastmonthly < 432000000 ? '❌' : `✅ _${usedPrefix}cadames_`}*`.trim(), imgr + 'RECURSOS BAJOS : LOW RESOURCES', [
-[`𝗖𝗼𝗺𝗽𝗿𝗮𝗿 : 𝗕𝘂𝘆 ${(listItems[item][paymentMethod] * total) - user[paymentMethod]} ${global.rpgshopp.emoticon(paymentMethod)}`, `${usedPrefix}sell ${paymentMethod} ${(listItems[item][paymentMethod] * total) - user[paymentMethod]}`],
+[`𝗖𝗼𝗺𝗽𝗿𝗮𝗿 : 𝗕𝘂𝘆 ${(listItems[item][paymentMethod] * total) - user[paymentMethod]} ${global.rpgshopp.emoticon(paymentMethod)}`, `${usedPrefix}buy ${paymentMethod} ${(listItems[item][paymentMethod] * total) - user[paymentMethod]}`],
 [`𝙋𝙚𝙙𝙞𝙧 𝘼𝙮𝙪𝙙𝙖 | 𝘼𝙨𝙠 𝙛𝙤𝙧 𝙝𝙚𝙡𝙥 ☘️`, `${usedPrefix}pedirayuda *Por Favor alguien ayudeme con *${(listItems[item][paymentMethod] * total) - user[paymentMethod]} ${global.rpg.emoticon(paymentMethod)}.*
 *» AYUDA TRANSFIRIENDO:*
 *${usedPrefix}transfer ${paymentMethod} ${(listItems[item][paymentMethod] * total) - user[paymentMethod]} @${conn.getName(m.sender)}*`]], m)
