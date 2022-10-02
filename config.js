@@ -480,6 +480,7 @@ global.rpgshop = { //Tienda
       healtmonster: '💵 Billetes : Fare',
       emas: '🪅 Piñata : Doll',
       pancingan: '🪝 Gancho : Hook',
+      pancing: '🎣 Caña de Pescar : Fishing Rod',
        
       common: '📦 Caja Común : Common Box',
       uncoommon: '🥡 Caja Poco Común : Uncommon',
@@ -566,6 +567,7 @@ global.rpgshopp = { //Tienda
       healtmonster: '💵',
       emas: '🪅',
       pancingan: '🪝',
+      pancing: '🎣',
        
       common: '📦',
       uncoommon: '🥡',
