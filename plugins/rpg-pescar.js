@@ -32,8 +32,8 @@ switch (type) {
           
 case 'emosi':
 let __temporizador1 = (new Date - user.lastfishing)
-let _temporizador = (240000 - __temporizador1) 
-let totalTiempo = clockString(_temporizador)
+let _temporizador1 = (240000 - __temporizador1) 
+let totalTiempo = clockString(_temporizador1)
 let usuario = conn.getName(m.sender)
 
 if (user.level <= 1) return 'Necesitas tener el Nivel 2'        
@@ -214,8 +214,8 @@ user.lastmancingeasy = new Date * 1
 break
 case 'normal':
 let __temporizador3 = (new Date - pengguna.lastmancingeasy)
-let _temporizador = (28800000 - __temporizador3)
-let totalTiempo = clockString(_temporizador) 
+let _temporizador3 = (28800000 - __temporizador3)
+let totalTiempo = clockString(_temporizador3) 
 if (user.level <= 4) return 'Necesitas tener el Nivel 5'      
 if (user.stamina < 40) return m.reply(`Tu Energía ✨ no es suficiente, Necitas tener al menos 40% de energía\npor favor llena tu Energía con *${usedPrefix}eat8`)
 user.stamina -= 40 * 1        
@@ -315,8 +315,8 @@ break
 break 
 case 'hard':
 let __temporizador4 = (new Date - user.lastmancingeasy)
-let _temporizador = (28800000 - __temporizador4)
-let tiempoTotal = clockString(_temporizador) 
+let _temporizador4 = (28800000 - __temporizador4)
+let tiempoTotal = clockString(_temporizador4) 
 if (user.level <= 6) return 'Necesitas tener el Nivel 7'   
 if (user.stamina < 60) return m.reply(`Tu Energía ✨ no es suficiente, Necitas tener al menos 60% de energía\npor favor llena tu Energía con *${usedPrefix}eat8`)
 user.stamina -= 60 * 1  
@@ -418,8 +418,8 @@ break
 case 'extreme':
 
 let __temporizador5 = (new Date - user.lastmancingeasy)
-let _temporizador = (28800000 - __temporizador5)
-let tiempoTotal = clockString(_temporizador) 
+let _temporizador5 = (28800000 - __temporizador5)
+let tiempoTotal = clockString(_temporizador5) 
 if (user.level <= 9) return 'Necesitas tener el Nivel 10'    
 if (user.stamina < 90) return m.reply(`Tu Energía ✨ no es suficiente, Necitas tener al menos 90% de energía\npor favor llena tu Energía con *${usedPrefix}eat8`)
 user.stamina -= 90 * 1  
