@@ -33,15 +33,15 @@ switch (type) {
 case 'emosi':
 let __temporizador1 = (new Date - user.lastfishing)
 let _temporizador1 = (240000 - __temporizador1) 
-let totalTiempo = clockString(_temporizador1)
+let totalTiempo1 = clockString(_temporizador1)
 let usuario = conn.getName(m.sender)
 
 if (user.level <= 1) return 'Necesitas tener el Nivel 2'        
 if (user.stamina < 10) return m.reply(`Tu Energía ✨ no es suficiente, Necitas tener al menos 10% de energía\npor favor llena tu Energía con *${usedPrefix}eat8`)
 user.stamina -= 10 * 1
        
-if (user.lastfishing > 10800000) return m.reply(`Todavía estás cansado\nPor favor espera *${totalTiempo}*`)
-if (user.fishingrod > 0 ) {
+if (user.lastfishing > 10800000) return m.reply(`Todavía estás cansado\nPor favor espera *${totalTiempo1}*`)
+if (user.pancing > 0 ) {
 if (new Date - user.lastfishing > 240000) {
         	        
 let ikan = `${Math.floor(Math.random() * 30)}`.trim()
@@ -115,7 +115,7 @@ break
 case 'easy':
 let _coinesa = (new Date - user.lastmancingeasy)
 let coinesa = (28800000 - _coinesa)
-let tiempoTotal = clockString(coinesa) 
+let tiempoTotal2 = clockString(coinesa) 
 if (user.level <= 3) return 'Necesitas tener el Nivel 4'        
 if (user.stamina < 20) return m.reply(`Tu Energía ✨ no es suficiente, Necitas tener al menos 20% de energía\npor favor llena tu Energía con *${usedPrefix}eat8`)
 user.stamina -= 20 * 1    
@@ -123,6 +123,7 @@ if (gancho == 0 || carnada == 0) return conn.sendButton(m.chat, `*No tienes Ganc
 if (new Date - user.lastmancingeasy > 28800000) {
 if (user.pancing > 1) {
 if (user.umpan > 99) {
+  
 let resultado1 = `${Math.floor(Math.random() * 10)}`
 let resultado2 = `${Math.floor(Math.random() * 10)}`
 let resultado3 = `${Math.floor(Math.random() * 10)}`
@@ -210,12 +211,12 @@ user.lastmancingeasy = new Date * 1
   
 } else conn.reply(m.chat, 'Tu Carnada mínimo *100* para pescas de nivel fácil', m)
 } else conn.reply(m.chat, 'Su caña de pescar mínima es *Nivel 2* para una pesca de nivel fácil', m)
-} else conn.reply(m.chat, `*Parece que estás cansado*\n*Por favor, descanse un rato* ${tiempoTotal}\n*Para poder seguir pescando de nuevo*`, m)
+} else conn.reply(m.chat, `*Parece que estás cansado*\n*Por favor, descanse un rato* ${tiempoTotal2}\n*Para poder seguir pescando de nuevo*`, m)
 break
 case 'normal':
 let __temporizador3 = (new Date - pengguna.lastmancingeasy)
 let _temporizador3 = (28800000 - __temporizador3)
-let totalTiempo = clockString(_temporizador3) 
+let totalTiempo3 = clockString(_temporizador3) 
 if (user.level <= 4) return 'Necesitas tener el Nivel 5'      
 if (user.stamina < 40) return m.reply(`Tu Energía ✨ no es suficiente, Necitas tener al menos 40% de energía\npor favor llena tu Energía con *${usedPrefix}eat8`)
 user.stamina -= 40 * 1        
@@ -310,13 +311,13 @@ user.lastmancingeasy = new Date * 1
   
 } else conn.reply(m.chat, 'Tu Carnada mínimo *150* para pescas de nivel Normal', m)
 } else conn.reply(m.chat, 'Su caña de pescar mínima es *Nivel 3* para una pesca de nivel fácil', m)
-} else conn.reply(m.chat, `*Parece que estás cansado*\n*Por favor, descanse un rato* ${totalTiempo}\n*Para poder seguir pescando de nuevo*`, m)
+} else conn.reply(m.chat, `*Parece que estás cansado*\n*Por favor, descanse un rato* ${totalTiempo3}\n*Para poder seguir pescando de nuevo*`, m)
 break
 break 
 case 'hard':
 let __temporizador4 = (new Date - user.lastmancingeasy)
 let _temporizador4 = (28800000 - __temporizador4)
-let tiempoTotal = clockString(_temporizador4) 
+let tiempoTotal4 = clockString(_temporizador4) 
 if (user.level <= 6) return 'Necesitas tener el Nivel 7'   
 if (user.stamina < 60) return m.reply(`Tu Energía ✨ no es suficiente, Necitas tener al menos 60% de energía\npor favor llena tu Energía con *${usedPrefix}eat8`)
 user.stamina -= 60 * 1  
@@ -412,14 +413,14 @@ user.lastmancingeasy = new Date * 1
                                     
 } else conn.reply(m.chat, 'Tu Carnada mínimo *200* para pescas de nivel Normal', m)
 } else conn.reply(m.chat, 'Su caña de pescar mínima es *Nivel 4* para una pesca de nivel fácil', m)
-} else conn.reply(m.chat, `*Parece que estás cansado*\n*Por favor, descanse un rato* ${totalTiempo}\n*Para poder seguir pescando de nuevo*`, m)
+} else conn.reply(m.chat, `*Parece que estás cansado*\n*Por favor, descanse un rato* ${tiempoTotal4}\n*Para poder seguir pescando de nuevo*`, m)
 break
 break
 case 'extreme':
 
 let __temporizador5 = (new Date - user.lastmancingeasy)
 let _temporizador5 = (28800000 - __temporizador5)
-let tiempoTotal = clockString(_temporizador5) 
+let tiempoTotal5 = clockString(_temporizador5) 
 if (user.level <= 9) return 'Necesitas tener el Nivel 10'    
 if (user.stamina < 90) return m.reply(`Tu Energía ✨ no es suficiente, Necitas tener al menos 90% de energía\npor favor llena tu Energía con *${usedPrefix}eat8`)
 user.stamina -= 90 * 1  
@@ -514,7 +515,7 @@ user.lastmancingeasy = new Date * 1
                                     
 } else conn.reply(m.chat, 'Tu Carnada mínimo *250* para pescas de nivel Normal', m)
 } else conn.reply(m.chat, 'Su caña de pescar mínima es *Nivel 5* para una pesca de nivel fácil', m)
-} else conn.reply(m.chat, `*Parece que estás cansado*\n*Por favor, descanse un rato* ${totalTiempo}\n*Para poder seguir pescando de nuevo*`, m)
+} else conn.reply(m.chat, `*Parece que estás cansado*\n*Por favor, descanse un rato* ${tiempoTotal5}\n*Para poder seguir pescando de nuevo*`, m)
 break
 default:
 return conn.sendMessage(m.chat, listMessage, {quoted: fkontak})}}
