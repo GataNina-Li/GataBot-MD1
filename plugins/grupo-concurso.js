@@ -24,7 +24,7 @@ let str = `
 ¿Donde se hará el evento?: En el grupo FutabuClub!
 `.trim()
   
-conn.sendHydrated(m.chat, str, wm, null, null, null, [
+conn.sendHydrated(m.chat, str, wm, null, null, null, null, [
 ], m,)}
 
 handler.command = /^concurso|concursofutabuclub$/i
