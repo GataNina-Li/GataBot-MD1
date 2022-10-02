@@ -31,8 +31,8 @@ if (/fishing|mancing/i.test(command)) {
 switch (type) {
           
 case 'emosi':
-let __temporizador = (new Date - user.lastfishing)
-let _temporizador = (240000 - __temporizador) 
+let __temporizador1 = (new Date - user.lastfishing)
+let _temporizador = (240000 - __temporizador1) 
 let totalTiempo = clockString(_temporizador)
 let usuario = conn.getName(m.sender)
 
@@ -213,8 +213,8 @@ user.lastmancingeasy = new Date * 1
 } else conn.reply(m.chat, `*Parece que estás cansado*\n*Por favor, descanse un rato* ${tiempoTotal}\n*Para poder seguir pescando de nuevo*`, m)
 break
 case 'normal':
-let __temporizador = (new Date - pengguna.lastmancingeasy)
-let _temporizador = (28800000 - __temporizador)
+let __temporizador3 = (new Date - pengguna.lastmancingeasy)
+let _temporizador = (28800000 - __temporizador3)
 let totalTiempo = clockString(_temporizador) 
 if (user.level <= 4) return 'Necesitas tener el Nivel 5'      
 if (user.stamina < 40) return m.reply(`Tu Energía ✨ no es suficiente, Necitas tener al menos 40% de energía\npor favor llena tu Energía con *${usedPrefix}eat8`)
@@ -314,8 +314,8 @@ user.lastmancingeasy = new Date * 1
 break
 break 
 case 'hard':
-let __temporizador = (new Date - user.lastmancingeasy)
-let _temporizador = (28800000 - __temporizador)
+let __temporizador4 = (new Date - user.lastmancingeasy)
+let _temporizador = (28800000 - __temporizador4)
 let tiempoTotal = clockString(_temporizador) 
 if (user.level <= 6) return 'Necesitas tener el Nivel 7'   
 if (user.stamina < 60) return m.reply(`Tu Energía ✨ no es suficiente, Necitas tener al menos 60% de energía\npor favor llena tu Energía con *${usedPrefix}eat8`)
@@ -417,8 +417,8 @@ break
 break
 case 'extreme':
 
-let __temporizador = (new Date - user.lastmancingeasy)
-let _temporizador = (28800000 - __temporizador)
+let __temporizador5 = (new Date - user.lastmancingeasy)
+let _temporizador = (28800000 - __temporizador5)
 let tiempoTotal = clockString(_temporizador) 
 if (user.level <= 9) return 'Necesitas tener el Nivel 10'    
 if (user.stamina < 90) return m.reply(`Tu Energía ✨ no es suficiente, Necitas tener al menos 90% de energía\npor favor llena tu Energía con *${usedPrefix}eat8`)
