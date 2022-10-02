@@ -80,22 +80,22 @@ conn.sendHydrated(m.chat, pesca1, botdate, null, null, null, null, null, [
   
 if (psepick > 0 ) {
 user.psepick += psepick * 1
-await conn.sendButton( m.chat, `Usted obtiene 🎁 Traje Épico 🧥 ${psepick}`, wm, [[`Otra vez`, `.pescar`]], m)} 
+conn.sendButton( m.chat, `Usted obtiene 🎁 Traje Épico 🧥 ${psepick}`, wm, [[`Otra vez`, `.pescar`]], m)} 
         
 if  (psenjata > 0 ) {
 user.psenjata += psenjata * 1
-await conn.sendButton( m.chat, `Usted obtiene 🎁 Traje Legendario 🥷 ${psenjata}`, wm, [[`Otra vez`, `.pescar`]], m)}}, 38000)
+conn.sendButton( m.chat, `Usted obtiene 🎁 Traje Legendario 🥷 ${psenjata}`, wm, [[`Otra vez`, `.pescar`]], m)}}, 38000)
 
 setTimeout(() => {
-await conn.sendHydrated(m.chat, `${pescarUsuario} Parece algo...`, botdate, null, null, null, null, null, [
+ conn.sendHydrated(m.chat, `${pescarUsuario} Parece algo...`, botdate, null, null, null, null, null, [
 [null, null]], null)}, 28000)
        
 setTimeout(() => {
-await conn.sendHydrated(m.chat, `${pescarUsuario} Espere`, botdate, null, null, null, null, null, [
+conn.sendHydrated(m.chat, `${pescarUsuario} Espere`, botdate, null, null, null, null, null, [
 [null, null]], null)}, 8000)
   
 setTimeout(() => {
-await conn.sendHydrated(m.chat, `${pescarUsuario} Pescando...`, botdate, null, null, null, null, null, [
+conn.sendHydrated(m.chat, `${pescarUsuario} Pescando...`, botdate, null, null, null, null, null, [
 [null, null]], null)}, 0)
                       
 user.ikan += ikan * 1
@@ -193,19 +193,19 @@ user.tiketcoin += 1
 
 
 setTimeout(() => {
-await conn.sendHydrated(m.chat, `${pescarUsuario} Vamos a pescar manía de nivel fácil otra vez`, botdate, null, null, null, null, null, [
+conn.sendHydrated(m.chat, `${pescarUsuario} Vamos a pescar manía de nivel fácil otra vez`, botdate, null, null, null, null, null, [
 [null, null]], null)}, 28800000) 
   
 setTimeout(() => {
-await conn.sendHydrated(m.chat, pesca2, botdate, null, null, null, null, null, [
+conn.sendHydrated(m.chat, pesca2, botdate, null, null, null, null, null, [
 [null, null]], null)}, 12000) 
                                 
 setTimeout(() => {
-await conn.sendHydrated(m.chat, `${pescarUsuario} Espere`, botdate, null, null, null, null, null, [
+conn.sendHydrated(m.chat, `${pescarUsuario} Espere`, botdate, null, null, null, null, null, [
 [null, null]], null)}, 6000) 
                                  
 setTimeout(() => {
-await conn.sendHydrated(m.chat, `${pescarUsuario} Pescando...`, botdate, null, null, null, null, null, [
+conn.sendHydrated(m.chat, `${pescarUsuario} Pescando...`, botdate, null, null, null, null, null, [
 [null, null]], null)}, 0) 
 user.lastmancingeasy = new Date * 1
   
@@ -293,25 +293,25 @@ user.umpan -= total13
 user.tiketcoin += 1  
   
 setTimeout(() => {
-await conn.sendHydrated(m.chat, `${pescarUsuario} Vamos a pescar manía de nivel fácil otra vez`, botdate, null, null, null, null, null, [
+conn.sendHydrated(m.chat, `${pescarUsuario} Vamos a pescar manía de nivel fácil otra vez`, botdate, null, null, null, null, null, [
 [null, null]], null)}, 28800000) 
   
 setTimeout(() => {
-await conn.sendHydrated(m.chat, pesca3, botdate, null, null, null, null, null, [
+conn.sendHydrated(m.chat, pesca3, botdate, null, null, null, null, null, [
 [null, null]], null)}, 12000) 
                                 
 setTimeout(() => {
-await conn.sendHydrated(m.chat, `${pescarUsuario} Espere`, botdate, null, null, null, null, null, [
+conn.sendHydrated(m.chat, `${pescarUsuario} Espere`, botdate, null, null, null, null, null, [
 [null, null]], null)}, 6000) 
                                  
 setTimeout(() => {
-await conn.sendHydrated(m.chat, `${pescarUsuario} Pescando...`, botdate, null, null, null, null, null, [
+conn.sendHydrated(m.chat, `${pescarUsuario} Pescando...`, botdate, null, null, null, null, null, [
 [null, null]], null)}, 0) 
 user.lastmancingeasy = new Date * 1
   
-} else await conn.reply(m.chat, 'Tu Carnada mínimo *150* para pescas de nivel Normal', m)
-} else await conn.reply(m.chat, 'Su caña de pescar mínima es *Nivel 3* para una pesca de nivel fácil', m)
-} else await conn.reply(m.chat, `*Parece que estás cansado*\n*Por favor, descanse un rato* ${totalTiempo3}\n*Para poder seguir pescando de nuevo*`, m)
+} else conn.reply(m.chat, 'Tu Carnada mínimo *150* para pescas de nivel Normal', m)
+} else conn.reply(m.chat, 'Su caña de pescar mínima es *Nivel 3* para una pesca de nivel fácil', m)
+} else conn.reply(m.chat, `*Parece que estás cansado*\n*Por favor, descanse un rato* ${totalTiempo3}\n*Para poder seguir pescando de nuevo*`, m)
 break
 case 'hard':
 let __temporizador4 = (new Date - user.lastmancingeasy)
@@ -320,7 +320,7 @@ let tiempoTotal4 = clockString(_temporizador4)
 if (user.level <= 6) return 'Necesitas tener el Nivel 7'   
 if (user.stamina < 60) return m.reply(`Tu Energía ✨ no es suficiente, Necitas tener al menos 60% de energía\npor favor llena tu Energía con *${usedPrefix}eat8`)
 user.stamina -= 60 * 1  
-if (gancho == 0 || carnada == 0) return await conn.sendButton(m.chat, `*No tienes Gancho 🪝 ni carnada 🪱*`, wm, [[`Comprar un Gancho`, '.buy pancingan 1'], [`Comprar 100 Carnadas`, '.buy umpan 100']], m)
+if (gancho == 0 || carnada == 0) return conn.sendButton(m.chat, `*No tienes Gancho 🪝 ni carnada 🪱*`, wm, [[`Comprar un Gancho`, '.buy pancingan 1'], [`Comprar 100 Carnadas`, '.buy umpan 100']], m)
 if (new Date - user.lastmancingeasy > 28800000) {
 if (user.pancingan > 4) {
 if (user.umpan > 199) {
@@ -394,25 +394,25 @@ user.tiketcoin += 1
 
 
 setTimeout(() => {
-await conn.sendHydrated(m.chat, `${pescarUsuario} Vamos a pescar manía de nivel fácil otra vez`, botdate, null, null, null, null, null, [
+conn.sendHydrated(m.chat, `${pescarUsuario} Vamos a pescar manía de nivel fácil otra vez`, botdate, null, null, null, null, null, [
 [null, null]], null)}, 28800000) 
   
 setTimeout(() => {
-await conn.sendHydrated(m.chat, pescar4, botdate, null, null, null, null, null, [
+conn.sendHydrated(m.chat, pescar4, botdate, null, null, null, null, null, [
 [null, null]], null)}, 12000) 
                                 
 setTimeout(() => {
-await conn.sendHydrated(m.chat, `${pescarUsuario} Espere`, botdate, null, null, null, null, null, [
+conn.sendHydrated(m.chat, `${pescarUsuario} Espere`, botdate, null, null, null, null, null, [
 [null, null]], null)}, 6000) 
                                  
 setTimeout(() => {
-await conn.sendHydrated(m.chat, `${pescarUsuario} Pescando...`, botdate, null, null, null, null, null, [
+conn.sendHydrated(m.chat, `${pescarUsuario} Pescando...`, botdate, null, null, null, null, null, [
 [null, null]], null)}, 0) 
 user.lastmancingeasy = new Date * 1
                                     
-} else await conn.reply(m.chat, 'Tu Carnada mínimo *200* para pescas de nivel Normal', m)
-} else await conn.reply(m.chat, 'Su caña de pescar mínima es *Nivel 4* para una pesca de nivel fácil', m)
-} else await conn.reply(m.chat, `*Parece que estás cansado*\n*Por favor, descanse un rato* ${tiempoTotal4}\n*Para poder seguir pescando de nuevo*`, m)
+} else conn.reply(m.chat, 'Tu Carnada mínimo *200* para pescas de nivel Normal', m)
+} else conn.reply(m.chat, 'Su caña de pescar mínima es *Nivel 4* para una pesca de nivel fácil', m)
+} else conn.reply(m.chat, `*Parece que estás cansado*\n*Por favor, descanse un rato* ${tiempoTotal4}\n*Para poder seguir pescando de nuevo*`, m)
 break
 case 'extreme':
 
@@ -422,7 +422,7 @@ let tiempoTotal5 = clockString(_temporizador5)
 if (user.level <= 9) return 'Necesitas tener el Nivel 10'    
 if (user.stamina < 90) return m.reply(`Tu Energía ✨ no es suficiente, Necitas tener al menos 90% de energía\npor favor llena tu Energía con *${usedPrefix}eat8`)
 user.stamina -= 90 * 1  
-if (gancho == 0 || carnada == 0) return await conn.sendButton(m.chat, `*No tienes Gancho 🪝 ni carnada 🪱*`, wm, [[`Comprar un Gancho`, '.buy pancingan 1'], [`Comprar 100 Carnadas`, '.buy umpan 100']], m)
+if (gancho == 0 || carnada == 0) return conn.sendButton(m.chat, `*No tienes Gancho 🪝 ni carnada 🪱*`, wm, [[`Comprar un Gancho`, '.buy pancingan 1'], [`Comprar 100 Carnadas`, '.buy umpan 100']], m)
 if (new Date - user.lastmancingeasy > 28800000) {
 if (user.pancingan > 5) {
 if (user.umpan > 249) {   
@@ -495,25 +495,25 @@ user.umpan -= total13
 user.tiketcoin += 1  
 
 setTimeout(() => {
-await conn.sendHydrated(m.chat, `${pescarUsuario} Vamos a pescar manía de nivel fácil otra vez`, botdate, null, null, null, null, null, [
+conn.sendHydrated(m.chat, `${pescarUsuario} Vamos a pescar manía de nivel fácil otra vez`, botdate, null, null, null, null, null, [
 [null, null]], null)}, 28800000) 
   
 setTimeout(() => {
-await conn.sendHydrated(m.chat, pescar5, botdate, null, null, null, null, null, [
+conn.sendHydrated(m.chat, pescar5, botdate, null, null, null, null, null, [
 [null, null]], null)}, 12000) 
                                 
 setTimeout(() => {
-await conn.sendHydrated(m.chat, `${pescarUsuario} Espere`, botdate, null, null, null, null, null, [
+conn.sendHydrated(m.chat, `${pescarUsuario} Espere`, botdate, null, null, null, null, null, [
 [null, null]], null)}, 6000) 
                                  
 setTimeout(() => {
-await conn.sendHydrated(m.chat, `${pescarUsuario} Pescando...`, botdate, null, null, null, null, null, [
+conn.sendHydrated(m.chat, `${pescarUsuario} Pescando...`, botdate, null, null, null, null, null, [
 [null, null]], null)}, 0) 
 user.lastmancingeasy = new Date * 1
                                     
-} else await conn.reply(m.chat, 'Tu Carnada mínimo *250* para pescas de nivel Normal', m)
-} else await conn.reply(m.chat, 'Su caña de pescar mínima es *Nivel 5* para una pesca de nivel fácil', m)
-} else await conn.reply(m.chat, `*Parece que estás cansado*\n*Por favor, descanse un rato* ${tiempoTotal5}\n*Para poder seguir pescando de nuevo*`, m)
+} else conn.reply(m.chat, 'Tu Carnada mínimo *250* para pescas de nivel Normal', m)
+} else conn.reply(m.chat, 'Su caña de pescar mínima es *Nivel 5* para una pesca de nivel fácil', m)
+} else conn.reply(m.chat, `*Parece que estás cansado*\n*Por favor, descanse un rato* ${tiempoTotal5}\n*Para poder seguir pescando de nuevo*`, m)
 break
 default:
 return await conn.sendMessage(m.chat, listMessage, {quoted: fkontak})}}
