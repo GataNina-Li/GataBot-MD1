@@ -454,6 +454,7 @@ global.rpgshop = { //Tienda
       gold: '👑 Oro : Gold',
       money: '🐱 GataCoins : CatCoins',
       tiketcoin: '🎫 Gata Tickers',
+      stamina: '✨ Energía : Energy',
             
       potion: '🥤 Poción : Potion',
       aqua: '💧 Agua : Water',
@@ -541,6 +542,7 @@ global.rpgshopp = { //Tienda
       gold: '👑',
       money: '🐱',
       tiketcoin: '🎫',
+      stamina: '✨',
             
       potion: '🥤',
       aqua: '💧',
