@@ -565,7 +565,7 @@ user.lastmancingeasy = new Date * 1
 break
   
 default:
-return await conn.sendMessage(m.chat, listMessage, {quoted: fkontak} )}
+return await conn.sendMessage(m.chat, listMessage, {quoted: fkontak} )}}
 } catch (e) {
 await conn.reply(m.chat, 'Error', m)
 console.log(e)
