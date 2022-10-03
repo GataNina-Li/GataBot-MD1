@@ -238,7 +238,7 @@ user.lastmancingeasy = new Date * 1
 break
     
 case 'normal':
-let __temporizador3 = (new Date - pengguna.lastmancingeasy)
+let __temporizador3 = (new Date - user.lastmancingeasy)
 let _temporizador3 = (28800000 - __temporizador3)
 let tiempoTotal3 = clockString(_temporizador3) 
 if (user.level <= 4) return conn.sendButton( m.chat, `${fg}𝙉𝙀𝘾𝙀𝙎𝙄𝙏𝘼 𝙏𝙀𝙉𝙀𝙍 𝙀𝙇 𝙉𝙄𝙑𝙀𝙇 *${nivelUser[2]}*`, `𝙉𝙄𝙑𝙀𝙇 𝘼𝘾𝙏𝙐𝘼𝙇: *${user.level}*\n` + wm, [[`𝘼𝘾𝙏𝙐𝘼𝙇𝙄𝙕𝘼𝙍 𝙈𝙄 𝙉𝙄𝙑𝙀𝙇 ${rpgg.emoticon('level')}`, `.nivel`]], m)
@@ -565,7 +565,7 @@ user.lastmancingeasy = new Date * 1
 break
   
 default:
-return await conn.sendMessage(m.chat, listMessage, {quoted: fkontak} )}}
+return await conn.sendMessage(m.chat, listMessage, {quoted: fkontak} )}
 } catch (e) {
 await conn.reply(m.chat, 'Error', m)
 console.log(e)
