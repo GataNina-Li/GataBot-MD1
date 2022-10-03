@@ -307,6 +307,7 @@ export async function handler(chatUpdate) {
               if (!isNumber(user.lastngojek)) user.lastngojek = 0
               if (!isNumber(user.lastopen)) user.lastopen = 0
               if (!isNumber(user.lastpekerjaan)) user.lastpekerjaan = 0
+	      if (!isNumber(user.lastpago)) user.lastpago = 0 
               if (!isNumber(user.lastpotionclaim)) user.lastpotionclaim = 0
               if (!isNumber(user.lastrampok)) user.lastrampok = 0
               if (!isNumber(user.lastramuanclaim)) user.lastramuanclaim = 0
@@ -710,6 +711,7 @@ export async function handler(chatUpdate) {
                     lastngojek: 0,
                     lastopen: 0,
                     lastpekerjaan: 0,
+		    lastpago: 0,
                     lastpotionclaim: 0,
                     lastramuanclaim: 0,
                     lastrob: 0,
