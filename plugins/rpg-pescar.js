@@ -55,7 +55,7 @@ if (/fishing|mancing|pescar/i.test(command)) {
 switch (type) {
           
 case '1':
-let __temporizador1 = (new Date - user.lastmancingeasy)
+let __temporizador1 = (new Date - user.lastfishing)
 let _temporizador1 = (1200000 - __temporizador1)  // 2 Horas  
 let totalTiempo1 = clockString(_temporizador1)
 let usuario = conn.getName(m.sender)
