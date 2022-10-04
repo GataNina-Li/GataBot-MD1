@@ -56,7 +56,7 @@ switch (type) {
           
 case '1':
 let __temporizador1 = (new Date - user.lastfishing)
-let _temporizador1 = (120 - __temporizador1)  // 2 Horas  
+let _temporizador1 = (240000 - __temporizador1)  // 2 Horas  
 let totalTiempo1 = clockString(_temporizador1)
 let usuario = conn.getName(m.sender)
 
@@ -66,7 +66,7 @@ if (user.stamina < 9) return conn.sendButton( m.chat, `${ag}𝙉𝙊 𝙏𝙄�
 if (user.pancingan > 0 ) {  
 if (user.pancing > 0 ) {
 //if (user.umpan > 0 ) {
-if (new Date - user.lastfishing > 120000) {
+if (new Date - user.lastfishing > 240000) {
         	        
 let ikan = `${Math.floor(Math.random() * 30)}`.trim()
 let lele = `${Math.floor(Math.random() * 15)}`.trim() 
@@ -134,8 +134,8 @@ user.buntal += buntal * 1
 user.udang += udang * 1
 user.paus += paus * 1
 user.kepiting += kepiting * 1
-//user.lastfishing += new Date * 1
-user.lastfishing = new Date * 1
+user.lastfishing += new Date * 1
+//user.lastfishing = new Date * 1
 //user.umpan -= 1
 user.stamina -= 2 * 1
   
