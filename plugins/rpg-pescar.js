@@ -56,8 +56,7 @@ switch (type) {
           
 case '1':
 let __temporizador1 = (new Date - user.lastmancingeasy)
-let _temporizador1 = (user.lastmonthly - __temporizador1)  // 2 Horas  
-let coinesa = (1200000 - _temporizador1)
+let _temporizador1 = (1200000 - __temporizador1)  // 2 Horas  
 let totalTiempo1 = clockString(_temporizador1)
 let usuario = conn.getName(m.sender)
 
