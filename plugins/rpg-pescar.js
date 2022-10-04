@@ -55,9 +55,10 @@ if (/fishing|mancing|pescar/i.test(command)) {
 switch (type) {
           
 case '1':
-let __temporizador1 = (new Date - user.lastfishing)
-let _temporizador1 = (7200 - __temporizador1) 
-let totalTiempo1 = clockString(_temporizador1)
+//let __temporizador1 = (new Date - user.lastfishing)
+//let _temporizador1 = (7200 - __temporizador1) 
+let _temporizador1 = user.lastmonthly + 7200000    
+let totalTiempo1 = clockString(_temporizador1 - new Date() * 1)
 let usuario = conn.getName(m.sender)
 
 if (user.level <= 1) return conn.sendButton( m.chat, `${fg}𝙉𝙀𝘾𝙀𝙎𝙄𝙏𝘼 𝙏𝙀𝙉𝙀𝙍 𝙀𝙇 𝙉𝙄𝙑𝙀𝙇 *${nivelUser[0]}*`, `𝙉𝙄𝙑𝙀𝙇 𝘼𝘾𝙏𝙐𝘼𝙇: *${user.level}*\n` + wm, [[`𝘼𝘾𝙏𝙐𝘼𝙇𝙄𝙕𝘼𝙍 𝙈𝙄 𝙉𝙄𝙑𝙀𝙇 ${rpgg.emoticon('level')}`, `.nivel`]], m)   
@@ -66,7 +67,7 @@ if (user.stamina < 9) return conn.sendButton( m.chat, `${ag}𝙉𝙊 𝙏𝙄�
 if (user.pancingan > 0 ) {  
 if (user.pancing > 0 ) {
 //if (user.umpan > 0 ) {
-if (new Date - user.lastfishing > 7200) {
+if (new Date - user.lastfishing > 7200000) {
         	        
 let ikan = `${Math.floor(Math.random() * 30)}`.trim()
 let lele = `${Math.floor(Math.random() * 15)}`.trim() 
