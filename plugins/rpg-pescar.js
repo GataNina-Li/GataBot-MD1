@@ -55,10 +55,8 @@ if (/fishing|mancing|pescar/i.test(command)) {
 switch (type) {
           
 case '1':
-let __temporizador1 = user.lastfishing + 7200000 //2 h
+let __temporizador1 = user.lastmancingeasy + 120000 //7200000 //2 h lastfishing
 let totalTiempo1 = clockString(__temporizador1 - new Date() * 1)
-let __temporizador2 = user.lastmancingeasy + 7200000 
-let tiempoTotal2 = clockString(__temporizador2 - new Date() * 1)
 let usuario = conn.getName(m.sender)
 
 if (user.level <= 1) return conn.sendButton( m.chat, `${fg}𝙉𝙀𝘾𝙀𝙎𝙄𝙏𝘼 𝙏𝙀𝙉𝙀𝙍 𝙀𝙇 𝙉𝙄𝙑𝙀𝙇 *${nivelUser[0]}*`, `𝙉𝙄𝙑𝙀𝙇 𝘼𝘾𝙏𝙐𝘼𝙇: *${user.level}*\n` + wm, [[`𝘼𝘾𝙏𝙐𝘼𝙇𝙄𝙕𝘼𝙍 𝙈𝙄 𝙉𝙄𝙑𝙀𝙇 ${rpgg.emoticon('level')}`, `.nivel`]], m)   
@@ -66,7 +64,7 @@ if (user.stamina < 9) return conn.sendButton( m.chat, `${ag}𝙉𝙊 𝙏𝙄�
 if (user.pancingan > 0 ) {  
 if (user.pancing > 0 ) {
 if (user.umpan > 0 ) {
-if (new Date - user.lastfishing > 7200000) {
+if (new Date - user.lastmancingeasy > 120000) {
         	        
 let ikan = `${Math.floor(Math.random() * 30)}`.trim()
 let lele = `${Math.floor(Math.random() * 15)}`.trim() 
@@ -100,7 +98,7 @@ ${usedPrefix}cook`
 
 setTimeout(() => {
 conn.sendHydrated(m.chat, `${pescarUsuario} 𝙃𝙀𝙔 𝙅𝙐𝙀𝙂𝘼 𝘿𝙀 𝙉𝙐𝙀𝙑𝙊 𝘼 𝙋𝙀𝙎𝘾𝘼𝙍 𝙀𝙉 ${rpgg.emoticon('fishingrod')} ${mensajeLugar[0]}`, wm, null, null, null, null, null, [
-[`${rpgg.emoticon('fishingrod')} 𝙋𝙀𝙎𝘾𝘼𝙍 𝘿𝙀 𝙉𝙐𝙀𝙑𝙊`, '.pescar 1']], null)}, 7200000) 
+[`${rpgg.emoticon('fishingrod')} 𝙋𝙀𝙎𝘾𝘼𝙍 𝘿𝙀 𝙉𝙐𝙀𝙑𝙊`, '.pescar 1']], null)}, 120000) 
 
 setTimeout(() => {
 conn.sendHydrated(m.chat, botdate, pesca1, null, null, null, null, null, [
@@ -125,7 +123,8 @@ conn.sendHydrated(m.chat, `${pescarUsuario} ${mensajePesca2}`, wm, null, null, n
 setTimeout(() => {
 conn.sendHydrated(m.chat, `${pescarUsuario} ${mensajePesca}`, wm, null, null, null, null, null, [
 [null, null]], null)}, 0)
-                      
+
+user.lastmancingeasy = new Date * 1
 user.ikan += ikan * 1
 user.lele += lele * 1
 user.nila += nila * 1
@@ -134,8 +133,6 @@ user.buntal += buntal * 1
 user.udang += udang * 1
 user.paus += paus * 1
 user.kepiting += kepiting * 1
-//user.lastfishing += new Date * 1
-user.lastfishing = new Date * 1
 //user.umpan -= 1
 user.stamina -= 2 * 1
   
