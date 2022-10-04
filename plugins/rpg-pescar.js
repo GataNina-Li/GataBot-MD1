@@ -201,12 +201,12 @@ let zero12 = `${total12}`
 
 let pesca2 = `
 ${htjava} 𝙍𝙀𝙎𝙐𝙇𝙏𝘼𝘿𝙊 𝘿𝙀 𝙎𝙐 𝙋𝙀𝙎𝘾𝘼 ${pescarUsuario} ${htjava}
- 🌊🦀🌊 = ${zero2}		 🌊🐠🌊 = ${zero6}
- 🌊🦞🌊 = ${zero8}			 🌊🐟🌊 = ${zero11}
+ 🌊🦀🌊 = ${zero2}		   🌊🐠🌊 = ${zero6}
+  🌊🦞🌊 = ${zero8}			  🌊🐟🌊 = ${zero11}
  🌊🦐🌊 = ${zero10}			 🌊🐬🌊 = ${zero7}
- 🌊🦑🌊 = ${zero4}			 🌊🐳🌊 = ${zero12}
+  🌊🦑🌊 = ${zero4}			  🌊🐳🌊 = ${zero12}
  🌊🐙🌊 = ${zero3}			 🌊🦈🌊 = ${zero9}
-  🌊🐡🌊 = ${zero5}			🌊🐋🌊 = ${zero1} 
+  🌊🐡🌊 = ${zero5}			  🌊🐋🌊 = ${zero1} 
   
 𝘽𝙊𝙉𝙊: +1 ${rpgshop.emoticon('tiketcoin')}
 `.trim()
