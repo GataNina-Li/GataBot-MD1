@@ -217,11 +217,12 @@ conn.sendHydrated(m.chat, `${pescarUsuario} 𝙃𝙀𝙔 𝙅𝙐𝙀𝙂𝘼 �
 [`${rpgg.emoticon('fishingrod')} 𝙋𝙀𝙎𝘾𝘼𝙍 𝘿𝙀 𝙉𝙐𝙀𝙑𝙊`, '.pescar 2']], null)}, 120000) 
   
 setTimeout(() => {
-conn.sendHydrated(m.chat, wm, pesca2, imgs[1], null, null, null, null, [
-[`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊 : 𝙄𝙉𝙑𝙀𝙉𝙏𝙊𝙍𝙔`, `.inventario`]], null)}, 35000) 
+conn.sendButton( m.chat, wm, pesca2, imgs[1], [[`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊 : 𝙄𝙉𝙑𝙀𝙉𝙏𝙊𝙍𝙔`, `.inventario`]], null)}, 35000) 
+//conn.sendHydrated(m.chat, wm, pesca2, imgs[1], null, null, null, null, [
+//[`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊 : 𝙄𝙉𝙑𝙀𝙉𝙏𝙊𝙍𝙔`, `.inventario`]], null)}, 35000) 
                                 
 setTimeout(() => {
- conn.sendHydrated(m.chat, `${pescarUsuario} ${mensajePesca3}`, wm, null, null, null, null, null, [
+conn.sendHydrated(m.chat, `${pescarUsuario} ${mensajePesca3}`, wm, null, null, null, null, null, [
 [null, null]], null)}, 15000)
        
 setTimeout(() => {
