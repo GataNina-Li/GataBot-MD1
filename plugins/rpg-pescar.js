@@ -34,16 +34,16 @@ rows: [
 
 const listMessage = {
 text: `🦦 𝙀𝙇𝙄𝙅𝘼 𝙀𝙉 𝙌𝙐𝙀 𝙇𝙐𝙂𝘼𝙍 𝙌𝙐𝙄𝙀𝙍𝙀 𝙋𝙀𝙎𝘾𝘼𝙍!!`,
-footer: `*- - - - - - - - -*
+footer: `*- - - - - - - - - - - - - - - - - -*
 *⊹ ${rpgshop.emoticon('stamina')}*
 ➥ *${user.stamina}%* ${rpgshopp.emoticon('stamina')}
 *⊹ ${rpgshop.emoticon('umpan')}*
 ➥ *${user.umpan}* ${rpgshopp.emoticon('umpan')}
 *⊹ ${rpgshop.emoticon('pancing')}*
-➥ *${pancing}* ${rpgshopp.emoticon('pancing')}
+➥ *${nivelPescar}* ${rpgshopp.emoticon('pancing')}
 *⊹ ${rpgshop.emoticon('pancingan')}*
-➥ *${pancingan}* ${rpgshopp.emoticon('pancingan')}
-*- - - - - - - - -*
+➥ *${nivelGancho}* ${rpgshopp.emoticon('pancingan')}
+*- - - - - - - - - - - - - - - - - -*
 ${wm}`,
 title: `*⎔───ꕤ 𝙋𝙀𝙎𝘾𝘼 : 𝙁𝙄𝙎𝙃𝙄𝙉𝙂 ꕤ───⎔*`,
 buttonText: `${rpgshopp.emoticon('pancing')} 𝙋𝙀𝙎𝘾𝘼𝙍 ${rpgshopp.emoticon('pancing')}`,
