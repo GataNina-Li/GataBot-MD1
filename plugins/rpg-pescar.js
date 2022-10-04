@@ -55,9 +55,11 @@ if (/fishing|mancing|pescar/i.test(command)) {
 switch (type) {
           
 case '1':
-let __temporizador1 = (new Date - user.lastfishing)
-let _temporizador1 = (240000 - __temporizador1)  // 2 Horas  
-let totalTiempo1 = clockString(_temporizador1)
+let __temporizador1 = user.lastmonthly + 432000000
+let totalTiempo1 clockString(__temporizador1 - new Date() * 1)
+//let __temporizador1 = (new Date - user.lastfishing)
+//let _temporizador1 = (240000 - 240000)  // 2 Horas  
+//let totalTiempo1 = clockString(_temporizador1)
 let usuario = conn.getName(m.sender)
 
 if (user.level <= 1) return conn.sendButton( m.chat, `${fg}𝙉𝙀𝘾𝙀𝙎𝙄𝙏𝘼 𝙏𝙀𝙉𝙀𝙍 𝙀𝙇 𝙉𝙄𝙑𝙀𝙇 *${nivelUser[0]}*`, `𝙉𝙄𝙑𝙀𝙇 𝘼𝘾𝙏𝙐𝘼𝙇: *${user.level}*\n` + wm, [[`𝘼𝘾𝙏𝙐𝘼𝙇𝙄𝙕𝘼𝙍 𝙈𝙄 𝙉𝙄𝙑𝙀𝙇 ${rpgg.emoticon('level')}`, `.nivel`]], m)   
