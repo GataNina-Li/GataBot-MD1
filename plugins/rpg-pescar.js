@@ -29,7 +29,7 @@ rows: [
 {title: "🎣 𝙇𝘼𝙂𝙐𝙉𝘼 𝙏𝘼𝙉𝙂𝘼𝙉𝙄𝘾𝘼", rowId: usedPrefix + command + ' easy'},//, description: `Atrevete a pescar en la Laguna más diversa del Mundo!!\n`}, 
 {title: "🎣 𝙇𝘼𝙂𝙊 𝘽𝘼𝙄𝙆𝘼𝙇", rowId: usedPrefix + command + ' normal'},//, description: `Considerada la Madre de los Lagos, aquí tal vez esten los Calamares!!\n`},
 {title: "🎣 𝙈𝘼𝙍 𝘾𝘼𝙎𝙋𝙄𝙊", rowId: usedPrefix + command + ' hard'},//, description: `Un lago tan grande que es probable que abunde muchas especies marinas!!\n`},
-{title: "🎣 𝙊𝘾𝙀𝘼𝙉𝙊 𝙋𝘼𝘾𝙄𝙁𝙄𝘾𝙊", rowId: usedPrefix + command + ' extreme'},//, description: `Un Mar tan grande y Profundo Perfecto para Pescar!!\n`}
+{title: "🎣 𝙊𝘾𝙀𝘼𝙉𝙊 𝙋𝘼𝘾𝙄𝙁𝙄𝘾𝙊", rowId: usedPrefix + command + ' extreme'}//, description: `Un Mar tan grande y Profundo Perfecto para Pescar!!\n`}
 ]}]
 
 const listMessage = {
@@ -138,7 +138,7 @@ user.stamina -= 2 * 1
 } else conn.sendButton(m.chat, `𝙉𝙊 𝙏𝙄𝙀𝙉𝙀 *${rpgshop.emoticon('pancing')}* 𝙋𝘼𝙍𝘼 𝙋𝙀𝙎𝘾𝘼𝙍`, wm, [[`𝘾𝙊𝙈𝙋𝙍𝘼𝙍 𝘾𝘼Ñ𝘼 𝘿𝙀 𝙋𝙀𝙎𝘾𝘼𝙍 ${rpgshopp.emoticon('pancing')}`, '.buy pancing 1'], [`𝘾𝙊𝙈𝙋𝙍𝘼𝙍 2 𝘾𝘼Ñ𝘼 𝘿𝙀 𝙋𝙀𝙎𝘾𝘼𝙍 ${rpgshopp.emoticon('pancingan')}`, '.buy pancing 2']], m)
 } else return conn.sendButton(m.chat, `𝙉𝙊 𝙏𝙄𝙀𝙉𝙀 *${rpgshop.emoticon('pancingan')}* 𝙋𝘼𝙍𝘼 𝙋𝙀𝙎𝘾𝘼𝙍`, wm, [[`𝘾𝙊𝙈𝙋𝙍𝘼𝙍 𝙐𝙉 𝙂𝘼𝙉𝘾𝙃𝙊 ${rpgshopp.emoticon('pancingan')}`, '.buy pancingan 1'], [`𝘾𝙊𝙈𝙋𝙍𝘼𝙍 2 𝙂𝘼𝙉𝘾𝙃𝙊 ${rpgshopp.emoticon('pancingan')}`, '.buy pancingan 2']], m)
 break
-          
+/*         
 case 'easy':
 let _coinesa = (new Date - user.lastmancingeasy)
 let coinesa = (28800000 - _coinesa)
@@ -571,7 +571,7 @@ user.stamina -= 10 * 1
 } else conn.sendButton( m.chat, `𝙎𝙐 *${rpg.emoticon('fishingrod')}* 𝙉𝙀𝘾𝙀𝙎𝙄𝙏𝘼 𝙀𝙇 𝙉𝙄𝙑𝙀𝙇 *${nivelCanaDePescar[4]}* 𝙋𝘼𝙍𝘼 𝙋𝙀𝙎𝘾𝘼𝙍`, wm, [[`𝙎𝙐𝘽𝙄𝙍 𝘼𝙇 𝙉𝙄𝙑𝙀𝙇 ${nivelCanaDePescar[4]} ${rpgg.emoticon('fishingrod')}`, '.buy pancing 5'], [`𝙎𝙐𝘽𝙄𝙍 𝘼𝙇 𝙉𝙄𝙑𝙀𝙇 ${nivelCanaDePescar[5]} ${rpgg.emoticon('fishingrod')}`, '.buy pancing 6']], m)
 } else return conn.sendButton( m.chat, `𝙔𝘼 𝙁𝙐𝙀 𝘿𝙀 𝙋𝙀𝙎𝘾𝘼 𝙋𝙊𝙍 𝙁𝘼𝙑𝙊𝙍 𝘿𝙀𝙎𝘾𝘼𝙉𝙎𝙀`, `𝙏𝙄𝙀𝙈𝙋𝙊 𝘿𝙀𝙇 𝘿𝙀𝙎𝘾𝘼𝙉𝙎𝙊:\n${tiempoTotal5}\n\n` + wm, [[`𝗠 𝗘 𝗡 𝗨 ☘️`, `.menu`]], m) 
 break
- 
+*/ 
 default:
 return await conn.sendMessage(m.chat, listMessage, {quoted: fkontak} )}}
 } catch (e) {
