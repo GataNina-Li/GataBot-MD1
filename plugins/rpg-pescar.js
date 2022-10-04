@@ -148,7 +148,7 @@ user.stamina -= 2 * 1
 break
        
 case '2':
-let __temporizador2 = user.lastfishing + 120000
+let __temporizador2 = user.lastmancingeasy + 120000
 let tiempoTotal2 = clockString(__temporizador2 - new Date() * 1)
 //let _coinesa = (new Date - user.lastmancingeasy)
 //let coinesa = (28800000 - _coinesa)
