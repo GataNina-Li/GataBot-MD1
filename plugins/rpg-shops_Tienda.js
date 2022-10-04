@@ -11,7 +11,7 @@ let dos = [enlace, enlace2]
 
 const items = {
    buy: {
-        exp: { eleksirb: 3 }, 
+        exp: { eleksirb: 3 },
         limit: { money: 400 },
         diamond: { berlian: 5 },
         joincount: { limit: 15 },
@@ -21,6 +21,7 @@ const items = {
         gold: {  diamond: 35 },
         money: { kaleng: 2 },
         tiketcoin: { joincount: 3 },
+        stamina: { potion: 2 },
         
         potion: { money: 550 },
         aqua: { botol: 2 },
@@ -45,7 +46,7 @@ const items = {
         sword: { gold: 2 },
         umpan: { aqua: 2 },
         healtmonster: { kyubi: 19 },
-        pancingan: { trash: 2 },
+        pancingan: { trash: user.pancingan == 0 ? 5 : '' || user.pancingan == 1 ? 10 : '' || user.pancingan == 2 ? 15 : '' || user.pancingan == 3 ? 20 : '' || user.pancingan >= 4 ? 25 : '' },
         emas: { berlian: 20 },
         pancing: { tiketcoin: user.pancing == 0 ? 1 : '' || user.pancing == 1 ? 2 : '' || user.pancing == 2 ? 3 : '' || user.pancing == 3 ? 4 : '' || user.pancing >= 4 ? 7 : '' },
         
