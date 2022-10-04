@@ -136,8 +136,8 @@ user.buntal += buntal * 1
 user.udang += udang * 1
 user.paus += paus * 1
 user.kepiting += kepiting * 1
-user.lastfishing += new Date * 1
-//user.lastfishing = new Date * 1
+//user.lastfishing += new Date * 1
+user.lastfishing = new Date * 1
 //user.umpan -= 1
 user.stamina -= 2 * 1
   
