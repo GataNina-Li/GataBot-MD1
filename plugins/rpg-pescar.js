@@ -25,11 +25,11 @@ const sections = [
 {
 title: htjava + ' 🛥️ 𝙇𝙐𝙂𝘼𝙍𝙀𝙎 𝙋𝘼𝙍𝘼 𝙋𝙀𝙎𝘾𝘼𝙍 ' + htjava,
 rows: [
-{title: "🎣 𝙋𝙄𝙎𝘾𝙄𝙉𝘼 𝙈𝘼𝙍𝙄𝙉𝘼 𝘿𝙀 𝙎𝙄𝙉𝙂𝘼𝙋𝙐𝙍", rowId: usedPrefix + command + ' emosi', description: `Una piscina panorámica con varies especies marinas!!\n`},
-{title: "🎣 𝙇𝘼𝙂𝙐𝙉𝘼 𝙏𝘼𝙉𝙂𝘼𝙉𝙄𝘾𝘼", rowId: usedPrefix + command + ' easy', description: `Atrevete a pescar en la Laguna más diversa del Mundo!!\n`}, 
-{title: "🎣 𝙇𝘼𝙂𝙊 𝘽𝘼𝙄𝙆𝘼𝙇", rowId: usedPrefix + command + ' normal', description: `Considerada la Madre de los Lagos, aquí tal vez esten los Calamares!!\n`},
-{title: "🎣 𝙈𝘼𝙍 𝘾𝘼𝙎𝙋𝙄𝙊", rowId: usedPrefix + command + ' hard', description: `Un lago tan grande que es probable que abunde muchas especies marinas!!\n`},
-{title: "🎣 𝙊𝘾𝙀𝘼𝙉𝙊 𝙋𝘼𝘾𝙄𝙁𝙄𝘾𝙊", rowId: usedPrefix + command + ' extreme', description: `Un Mar tan grande y Profundo Perfecto para Pescar!!\n`}
+{title: "🎣 𝙋𝙄𝙎𝘾𝙄𝙉𝘼 𝙈𝘼𝙍𝙄𝙉𝘼 𝘿𝙀 𝙎𝙄𝙉𝙂𝘼𝙋𝙐𝙍", rowId: usedPrefix + command + ' emosi'},//, description: `Una piscina panorámica con varies especies marinas!!\n`},
+{title: "🎣 𝙇𝘼𝙂𝙐𝙉𝘼 𝙏𝘼𝙉𝙂𝘼𝙉𝙄𝘾𝘼", rowId: usedPrefix + command + ' easy'},//, description: `Atrevete a pescar en la Laguna más diversa del Mundo!!\n`}, 
+{title: "🎣 𝙇𝘼𝙂𝙊 𝘽𝘼𝙄𝙆𝘼𝙇", rowId: usedPrefix + command + ' normal'},//, description: `Considerada la Madre de los Lagos, aquí tal vez esten los Calamares!!\n`},
+{title: "🎣 𝙈𝘼𝙍 𝘾𝘼𝙎𝙋𝙄𝙊", rowId: usedPrefix + command + ' hard'},//, description: `Un lago tan grande que es probable que abunde muchas especies marinas!!\n`},
+{title: "🎣 𝙊𝘾𝙀𝘼𝙉𝙊 𝙋𝘼𝘾𝙄𝙁𝙄𝘾𝙊", rowId: usedPrefix + command + ' extreme'}//, description: `Un Mar tan grande y Profundo Perfecto para Pescar!!\n`}
 ]}]
 
 const listMessage = {
