@@ -12,16 +12,17 @@ let pancingan = user.pancingan
 let nivelPescar = pancing == 0 ? 'No tengo | I do not have' : '' || pancing == 1 ? 'Nivel | Level ✦ 1' : '' || pancing == 2 ? 'Nivel | Level ✦ 2' : '' || pancing == 3 ? 'Nivel | Level ✦ 3' : '' || pancing == 4 ? 'Nivel | Level ✦ 4' : '' || pancing >= 5 ? 'Nivel | Level ✦ 5 ǁ MAX' : ''
 let nivelGancho = pancingan == 0 ? 'No tengo | I do not have' : '' || pancingan == 1 ? 'Nivel | Level ✦ 1' : '' || pancingan == 2 ? 'Nivel | Level ✦ 2' : '' || pancingan == 3 ? 'Nivel | Level ✦ 3' : '' || pancingan == 4 ? 'Nivel | Level ✦ 4' : '' || pancingan >= 5 ? 'Nivel | Level ✦ 5 ǁ MAX' : ''
 
-var imgs = [['','','','',''], ['https://i.ytimg.com/vi/eonYdzU1MIA/maxresdefault.jpg','https://fb36e89981.cbaul-cdnwnd.com/1c7fd8909117357b511677a932235d4e/200000528-c615dc70fe/700/lago%20tanganika%20africa.jpg?ph=fb36e89981','http://www.nsf.gov/od/lpa/news/03/images/tanganyika_mahale.jpg','https://www.goafrique.it/wp-content/uploads/sites/118/2018/02/lake-tanganyika-1024x597.jpg','https://media.istockphoto.com/photos/lake-tanganyika-picture-id183316304?k=20&m=183316304&s=612x612&w=0&h=PGk1q2U-9foXY-QVorJwJF6Lrjl-uupu4iRC5st_2qo='], ['','','','',''], ['','','','',''], ['','','','','']].getRandom()
-var img1 = ['https://i.ytimg.com/vi/eonYdzU1MIA/maxresdefault.jpg','https://fb36e89981.cbaul-cdnwnd.com/1c7fd8909117357b511677a932235d4e/200000528-c615dc70fe/700/lago%20tanganika%20africa.jpg?ph=fb36e89981','http://www.nsf.gov/od/lpa/news/03/images/tanganyika_mahale.jpg','https://www.goafrique.it/wp-content/uploads/sites/118/2018/02/lake-tanganyika-1024x597.jpg','https://media.istockphoto.com/photos/lake-tanganyika-picture-id183316304?k=20&m=183316304&s=612x612&w=0&h=PGk1q2U-9foXY-QVorJwJF6Lrjl-uupu4iRC5st_2qo='].getRandom()
-var img2 = ['','','','',''].getRandom()
-var img3 = ['','','','',''].getRandom()
-var img4 = ['','','','',''].getRandom()
-var img5 = ['','','','',''].getRandom()
+var img1 = ['https://www.lavanguardia.com/files/og_thumbnail/files/fp/uploads/2021/05/05/6092b70b84a7c.r_d.618-390-0.jpeg','https://i.blogs.es/874833/dubai1/1366_2000.jpg','https://www.orangesmile.com/extreme/img/main/marina-bay-sands-pool_2.jpg','https://factum-info.net/es/images/3_Interesnoe/4_puteshestvie/78_2_Marina-Bay-Sands-4.jpg','https://www.infoviajera.com/wp-content/uploads/2019/08/La_Piscina_Infinita_Mas_Grande_del_Mundo_Singapur_Marina_Bay-infinity-pool-4-d.jpg'].getRandom()
+var img2 = ['https://i.ytimg.com/vi/eonYdzU1MIA/maxresdefault.jpg','https://fb36e89981.cbaul-cdnwnd.com/1c7fd8909117357b511677a932235d4e/200000528-c615dc70fe/700/lago%20tanganika%20africa.jpg?ph=fb36e89981','http://www.nsf.gov/od/lpa/news/03/images/tanganyika_mahale.jpg','https://www.goafrique.it/wp-content/uploads/sites/118/2018/02/lake-tanganyika-1024x597.jpg','https://media.istockphoto.com/photos/lake-tanganyika-picture-id183316304?k=20&m=183316304&s=612x612&w=0&h=PGk1q2U-9foXY-QVorJwJF6Lrjl-uupu4iRC5st_2qo='].getRandom()
+var img3 = ['https://viajes.nationalgeographic.com.es/medio/2020/05/25/agujero-azul-belice_1377ebaf_1280x720.jpg','https://www.fundacionaquae.org/wp-content/uploads/2019/08/baikal5.jpg','http://www.capital.com.pa/wp-content/uploads/2011/05/CraterLakeAerial.jpg','https://ihow.pro/assets/images/media/eyJidWNrZXQiOiJjb250ZW50Lmhzd3N0YXRpYy5jb20iLCJrZXkiOiJnaWZcL2xha2UtYmFpa2FsLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6ODI4fX19','https://guia.viajobien.com/wp-content/uploads/2017/06/7554289674_28b922f42c_h.jpg'].getRandom()
+var img4 = ['https://pinake.files.wordpress.com/2020/09/mar-caspio.jpg','https://www.meteorologiaenred.com/wp-content/uploads/2020/03/Formaci%C3%B3n-del-mar-Caspio.jpg','https://www.gaceta.unam.mx/wp-content/uploads/2021/01/caspdes.jpg','https://viajes.chavetas.es/wp-content/uploads/albums/uzbekistan16/d11-05.jpg','https://www.caracteristicas.co/wp-content/uploads/2017/03/mares-4-e1565805117646.jpg'].getRandom()
+var img5 = ['https://www.caracteristicas.co/wp-content/uploads/2018/11/oceano-pacifico-2-e1583028795824.jpg','https://www.caracteristicas.co/wp-content/uploads/2018/10/oceano-pacifico-arrefice-e1540842615839.jpg','https://ecologismos.com/wp-content/2017/12/reservas-marinas.jpg','https://www.nationalgeographic.com.es/medio/2021/06/07/atun-rojo_d35c81ef_1280x853.jpg','https://elsumario.com/wp-content/uploads/2018/09/tiburon-1.jpg'].getRandom()
+
 var mensajePesca = [`𝙋𝙍𝙀𝙋𝘼𝙍𝘼𝙉𝘿𝙊 𝙇𝘼 ${rpgg.emoticon('fishingrod')} 𝘾𝘼Ñ𝘼 𝘿𝙀 𝙋𝙀𝙎𝘾𝘼𝙍...`, `🪣 𝘼𝙇𝙄𝙎𝙏𝘼𝙉𝘿𝙊 𝙄𝙈𝙋𝙇𝙀𝙈𝙀𝙉𝙏𝙊𝙎 𝘿𝙀 𝙋𝙀𝙎𝘾𝘼...`, `📡 𝘽𝙐𝙎𝘾𝘼𝙉𝘿𝙊 𝙇𝙐𝙂𝘼𝙍 𝘿𝙀 𝙋𝙀𝙎𝘾𝘼...`, `𝙀𝙉 𝙃𝙊𝙍𝘼 𝘽𝙐𝙀𝙉𝘼!! 𝙃𝙊𝙔 𝙎𝙀𝙍𝘼 𝙐𝙉𝘼 𝙂𝙍𝘼𝙉 𝙋𝙀𝙎𝘾𝘼 🌤️`, `𝙋𝙍𝙀𝙋𝘼𝙍𝘼𝙉𝘿𝙊 ${rpgshopp.emoticon('pancingan')} 𝙂𝘼𝙉𝘾𝙃𝙊 𝘿𝙀 𝙋𝙀𝙎𝘾𝘼`, `🌊 𝙀𝙉 𝘽𝙍𝙀𝙑𝙀 𝙀𝙈𝙋𝙀𝙕𝘼𝙍𝘼 𝙇𝘼 𝙋𝙀𝙎𝘾𝘼!!`].getRandom()
 var mensajePesca2 = [`𝙋𝙍𝙀𝙋𝘼𝙍𝘼𝙉𝘿𝙊 𝙇𝘼 𝘾𝘼𝙍𝙉𝘼𝘿𝘼 ${rpgshopp.emoticon('umpan')}`, `💥 𝙋𝘼𝙍𝙀𝘾𝙀 𝙌𝙐𝙀 𝙊𝘽𝙏𝙀𝙉𝘿𝙍𝘼𝙎 𝙈𝙐𝘾𝙃𝙊𝙎 𝙋𝙀𝘾𝙀𝙎`, `𝙏𝙄𝙀𝙉𝙀𝙎 𝙈𝙐𝘾𝙃𝘼 𝙀𝙉𝙀𝙍𝙂𝙄𝘼 ✨ 𝙋𝘼𝙍𝘼 𝙐𝙉𝘼 𝙂𝙍𝘼𝙉 𝙋𝙀𝙎𝘾𝘼`, `𝙏𝙐 𝙉𝙄𝙑𝙀𝙇 𝘿𝙀 ${rpgg.emoticon('fishingrod')} 𝙔 ${rpgshopp.emoticon('pancingan')} 𝙀𝙎𝙏𝘼𝙉  𝘼𝘾𝙏𝙊𝙎 𝙋𝘼𝙍𝘼 𝙀𝙎𝙏𝘼 𝙂𝙍𝘼𝙉 𝙋𝙀𝙎𝘾𝘼!!`, `🍀 𝙇𝘼 𝙎𝙐𝙀𝙍𝙏𝙀 𝙏𝙀 𝘽𝙍𝙄𝙉𝘿𝘼𝙍𝘼 𝙐𝙉𝘼 𝙀𝙓𝙀𝙇𝙀𝙉𝙏𝙀 𝙋𝙀𝙎𝘾𝘼`, `🌊 𝙀𝙇 𝙉𝙄𝙑𝙀𝙇 𝘿𝙀𝙇 𝘼𝙂𝙐𝘼 𝙀𝙎 𝙀𝙎𝙏𝘼𝘽𝙇𝙀 𝙋𝘼𝙍𝘼 𝘾𝙊𝙈𝙀𝙉𝙕𝘼𝙍 𝘼 𝙋𝙀𝙎𝘾𝘼𝙍`].getRandom()
 var mensajePesca3 = [`𝙏𝘼𝙇 𝙑𝙀𝙕  𝘼𝙏𝙍𝘼𝙋𝙊!! 🦀🦞🦐`, `𝙏𝘼𝙇 𝙑𝙀𝙕  𝘼𝙏𝙍𝘼𝙋𝙊!! 🦑🐙🐡`, `𝙏𝘼𝙇 𝙑𝙀𝙕  𝘼𝙏𝙍𝘼𝙋𝙊!! 🐠🐟🐬`, `𝙏𝘼𝙇 𝙑𝙀𝙕  𝘼𝙏𝙍𝘼𝙋𝙊!! 🐳🦈🐋`].getRandom()
 var mensajeLugar = [`𝙋𝙄𝙎𝘾𝙄𝙉𝘼 𝙈𝘼𝙍𝙄𝙉𝘼 𝘿𝙀 𝙎𝙄𝙉𝙂𝘼𝙋𝙐𝙍`, `𝙇𝘼𝙂𝙐𝙉𝘼 𝙏𝘼𝙉𝙂𝘼𝙉𝙄𝘾𝘼`, `𝙇𝘼𝙂𝙊 𝘽𝘼𝙄𝙆𝘼𝙇`, `𝙈𝘼𝙍 𝘾𝘼𝙎𝙋𝙄𝙊`, `𝙊𝘾𝙀𝘼𝙉𝙊 𝙋𝘼𝘾𝙄𝙁𝙄𝘾𝙊`]
+
 var energia = ['10', '20', '40', '60', '90']
 var carnada = ['0', '40', '80', '150', '200']
 var nivelCanaDePescar = ['1', '2', '3', '4', '5', '6']
@@ -32,11 +33,11 @@ const sections = [
 {
 title: htjava + ' 🛥️ 𝙇𝙐𝙂𝘼𝙍𝙀𝙎 𝙋𝘼𝙍𝘼 𝙋𝙀𝙎𝘾𝘼𝙍 ' + htjava,
 rows: [
-{title: "🎣 𝙋𝙄𝙎𝘾𝙄𝙉𝘼 𝙈𝘼𝙍𝙄𝙉𝘼 𝘿𝙀 𝙎𝙄𝙉𝙂𝘼𝙋𝙐𝙍", rowId: usedPrefix + command + ' 1', description: `Una piscina panorámica con varias especies marinas!!\n`},
-{title: "🎣 𝙇𝘼𝙂𝙐𝙉𝘼 𝙏𝘼𝙉𝙂𝘼𝙉𝙄𝘾𝘼", rowId: usedPrefix + command + ' 2', description: `Atrevete a pescar en la Laguna más diversa del Mundo!!\n`}, 
-{title: "🎣 𝙇𝘼𝙂𝙊 𝘽𝘼𝙄𝙆𝘼𝙇", rowId: usedPrefix + command + ' 3', description: `Considerada la Madre de los Lagos, aquí tal vez esten los Calamares!!\n`},
-{title: "🎣 𝙈𝘼𝙍 𝘾𝘼𝙎𝙋𝙄𝙊", rowId: usedPrefix + command + ' 4', description: `Un lago tan grande que es probable que abunde muchas especies marinas!!\n`},
-{title: "🎣 𝙊𝘾𝙀𝘼𝙉𝙊 𝙋𝘼𝘾𝙄𝙁𝙄𝘾𝙊", rowId: usedPrefix + command + ' 5', description: `Un Mar tan grande y Profundo Perfecto para Pescar!!\n`}
+{title: "🎣 " + mensajeLugar[0], rowId: usedPrefix + command + ' 1', description: `Una piscina panorámica con varias especies marinas!!\n`},
+{title: "🎣 " + mensajeLugar[1], rowId: usedPrefix + command + ' 2', description: `Atrevete a pescar en la Laguna más diversa del Mundo!!\n`}, 
+{title: "🎣 " + mensajeLugar[2], rowId: usedPrefix + command + ' 3', description: `Considerada la Madre de los Lagos, aquí tal vez esten los Calamares!!\n`},
+{title: "🎣 " + mensajeLugar[3], rowId: usedPrefix + command + ' 4', description: `Un lago tan grande que es probable que abunde muchas especies marinas!!\n`},
+{title: "🎣 " + mensajeLugar[4], rowId: usedPrefix + command + ' 5', description: `Un Mar tan grande y Profundo Perfecto para Pescar!!\n`}
 ]}]
 
 const listMessage = {
@@ -108,7 +109,7 @@ conn.sendHydrated(m.chat, `${pescarUsuario} 𝙃𝙀𝙔 𝙅𝙐𝙀𝙂𝘼 �
 [`${rpgg.emoticon('fishingrod')} 𝙋𝙀𝙎𝘾𝘼𝙍 𝘿𝙀 𝙉𝙐𝙀𝙑𝙊`, '.pescar 1']], null)}, 120000) 
 
 setTimeout(() => {
-conn.sendButton( m.chat, `${rpgg.emoticon('fishingrod')} ${mensajeLugar[0]}\n` + wm, pesca2, imgs[0], [[`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊 : 𝙄𝙉𝙑𝙀𝙉𝙏𝙊𝙍𝙔`, `.inventario`]], null)}, 35000)
+conn.sendButton( m.chat, `${rpgg.emoticon('fishingrod')} ${mensajeLugar[0]}\n` + wm, pesca1, img1, [[`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊 : 𝙄𝙉𝙑𝙀𝙉𝙏𝙊𝙍𝙔`, `.inventario`]], null)}, 35000)
 
 setTimeout(() => {
 if (psepick > 0 ) {
@@ -221,7 +222,7 @@ conn.sendHydrated(m.chat, `${pescarUsuario} 𝙃𝙀𝙔 𝙅𝙐𝙀𝙂𝘼 �
 [`${rpgg.emoticon('fishingrod')} 𝙋𝙀𝙎𝘾𝘼𝙍 𝘿𝙀 𝙉𝙐𝙀𝙑𝙊`, '.pescar 2']], null)}, 120000) 
   
 setTimeout(() => {
-conn.sendButton( m.chat, `${rpgg.emoticon('fishingrod')} ${mensajeLugar[1]}\n` + wm, pesca2, img1, [[`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊 : 𝙄𝙉𝙑𝙀𝙉𝙏𝙊𝙍𝙔`, `.inventario`]], null)}, 35000) 
+conn.sendButton( m.chat, `${rpgg.emoticon('fishingrod')} ${mensajeLugar[1]}\n` + wm, pesca2, img2, [[`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊 : 𝙄𝙉𝙑𝙀𝙉𝙏𝙊𝙍𝙔`, `.inventario`]], null)}, 35000) 
                                 
 setTimeout(() => {
 conn.sendHydrated(m.chat, `${pescarUsuario} ${mensajePesca3}`, wm, null, null, null, null, null, [
@@ -326,7 +327,7 @@ conn.sendHydrated(m.chat, `${pescarUsuario} 𝙃𝙀𝙔 𝙅𝙐𝙀𝙂𝘼 �
 [`${rpgg.emoticon('fishingrod')} 𝙋𝙀𝙎𝘾𝘼𝙍 𝘿𝙀 𝙉𝙐𝙀𝙑𝙊`, '.pescar 3']], null)}, 7200000) 
   
 setTimeout(() => {
-conn.sendButton( m.chat, `${rpgg.emoticon('fishingrod')} ${mensajeLugar[2]}\n` + wm, pescar3, imgs[2], [[`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊 : 𝙄𝙉𝙑𝙀𝙉𝙏𝙊𝙍𝙔`, `.inventario`]], null)}, 35000)
+conn.sendButton( m.chat, `${rpgg.emoticon('fishingrod')} ${mensajeLugar[2]}\n` + wm, pescar3, img3, [[`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊 : 𝙄𝙉𝙑𝙀𝙉𝙏𝙊𝙍𝙔`, `.inventario`]], null)}, 35000)
                                 
 setTimeout(() => {
  conn.sendHydrated(m.chat, `${pescarUsuario} ${mensajePesca3}`, wm, null, null, null, null, null, [
@@ -432,7 +433,7 @@ conn.sendHydrated(m.chat, `${pescarUsuario} 𝙃𝙀𝙔 𝙅𝙐𝙀𝙂𝘼 �
 [`${rpgg.emoticon('fishingrod')} 𝙋𝙀𝙎𝘾𝘼𝙍 𝘿𝙀 𝙉𝙐𝙀𝙑𝙊`, '.pescar 3']], null)}, 7200000) 
   
 setTimeout(() => {
-conn.sendButton( m.chat, `${rpgg.emoticon('fishingrod')} ${mensajeLugar[3]}\n` + wm, pescar4, imgs[3], [[`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊 : 𝙄𝙉𝙑𝙀𝙉𝙏𝙊𝙍𝙔`, `.inventario`]], null)}, 35000)
+conn.sendButton( m.chat, `${rpgg.emoticon('fishingrod')} ${mensajeLugar[3]}\n` + wm, pescar4, img4, [[`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊 : 𝙄𝙉𝙑𝙀𝙉𝙏𝙊𝙍𝙔`, `.inventario`]], null)}, 35000)
                                 
 setTimeout(() => {
  conn.sendHydrated(m.chat, `${pescarUsuario} ${mensajePesca3}`, wm, null, null, null, null, null, [
@@ -538,7 +539,7 @@ conn.sendHydrated(m.chat, `${pescarUsuario} 𝙃𝙀𝙔 𝙅𝙐𝙀𝙂𝘼 �
 [`${rpgg.emoticon('fishingrod')} 𝙋𝙀𝙎𝘾𝘼𝙍 𝘿𝙀 𝙉𝙐𝙀𝙑𝙊`, '.pescar 3']], null)}, 7200000) 
   
 setTimeout(() => {
-conn.sendButton( m.chat, `${rpgg.emoticon('fishingrod')} ${mensajeLugar[4]}\n` + wm, pescar5, imgs[4], [[`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊 : 𝙄𝙉𝙑𝙀𝙉𝙏𝙊𝙍𝙔`, `.inventario`]], null)}, 35000)
+conn.sendButton( m.chat, `${rpgg.emoticon('fishingrod')} ${mensajeLugar[4]}\n` + wm, pescar5, img5, [[`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊 : 𝙄𝙉𝙑𝙀𝙉𝙏𝙊𝙍𝙔`, `.inventario`]], null)}, 35000)
                                 
 setTimeout(() => {
  conn.sendHydrated(m.chat, `${pescarUsuario} ${mensajePesca3}`, wm, null, null, null, null, null, [
