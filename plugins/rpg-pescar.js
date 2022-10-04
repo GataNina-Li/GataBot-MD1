@@ -55,9 +55,7 @@ if (/fishing|mancing|pescar/i.test(command)) {
 switch (type) {
           
 case '1':
-//let __temporizador1 = (new Date - user.lastfishing)
-//let _temporizador1 = (7200 - __temporizador1) 
-let _temporizador1 = user.lastmonthly + 7200000    
+let _temporizador1 = user.lastmonthly + 120000  // 2 Horas  
 let totalTiempo1 = clockString(_temporizador1 - new Date() * 1)
 let usuario = conn.getName(m.sender)
 
@@ -67,7 +65,7 @@ if (user.stamina < 9) return conn.sendButton( m.chat, `${ag}𝙉𝙊 𝙏𝙄�
 if (user.pancingan > 0 ) {  
 if (user.pancing > 0 ) {
 //if (user.umpan > 0 ) {
-if (new Date - user.lastfishing > 7200000) {
+if (new Date - user.lastfishing > 120000) {
         	        
 let ikan = `${Math.floor(Math.random() * 30)}`.trim()
 let lele = `${Math.floor(Math.random() * 15)}`.trim() 
@@ -595,9 +593,8 @@ function pickRandom(list) {
     return list[Math.floor(Math.random() * list.length)]
 }
 function clockString(ms) {
-  let d = isNaN(ms) ? '--' : Math.floor(ms / 86400000)
   let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000) % 24
   let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
   let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
-  return ['\n' + d, ' *Days ☀️*\n ', h, ' *Hours 🕐*\n ', m, ' *Minute ⏰*\n ', s, ' *Second ⏱️* '].map(v => v.toString().padStart(2, 0)).join('')
+  return ['\n┃⇢ ', h, ' *⏰ Horas : Hours*\n ', '┃⇢ ', m, ' *🕐 Minutos : Minutes*\n ', '┃⇢ ', s, ' *⏱️ Segundos : Seconds*'].map(v => v.toString().padStart(2, 0)).join('')
 }
