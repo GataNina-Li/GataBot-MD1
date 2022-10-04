@@ -593,8 +593,9 @@ function pickRandom(list) {
     return list[Math.floor(Math.random() * list.length)]
 }
 function clockString(ms) {
+  let d = isNaN(ms) ? '--' : Math.floor(ms / 86400000) % 30
   let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000) % 24
   let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
   let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
-  return ['\n┃⇢ ', h, ' *⏰ Horas : Hours*\n ', '┃⇢ ', m, ' *🕐 Minutos : Minutes*\n ', '┃⇢ ', s, ' *⏱️ Segundos : Seconds*'].map(v => v.toString().padStart(2, 0)).join('')
+  return ['┃⇢ ', d, ' *☀️ Días : Days*\n', '┃⇢ ', h, ' *⏰ Horas : Hours*\n', '┃⇢ ', m, ' *🕐 Minutos : Minutes*\n', '┃⇢ ', s, ' *⏱️ Segundos : Seconds*'].map(v => v.toString().padStart(2, 0)).join('')
 }
