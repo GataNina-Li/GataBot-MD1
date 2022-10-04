@@ -76,9 +76,9 @@ let udang = `${Math.floor(Math.random() * 39)}`.trim()
 let paus = `${Math.floor(Math.random() * 2)}`.trim() 
 let kepiting = `${Math.floor(Math.random() * 27)}`.trim()
         
-let _psepick= `${pickRandom([1, 0, 1, 1])}`
+let _psepick= `${pickRandom([1, 0, 0, 1])}`
 let psepick = (_psepick * 1)
-let _psenjata = `${pickRandom([1, 1, 1, 0])}`
+let _psenjata = `${pickRandom([1, 0, 0, 0])}`
 let psenjata = (_psenjata * 1)
            
 let pesca1 = `
@@ -105,13 +105,13 @@ setTimeout(() => {
 conn.sendHydrated(m.chat, botdate, pesca1, null, null, null, null, null, [
 [null, null]], null)}, 35000)
 
-setTimeout(() => {
 if (psepick > 0 ) {
+setTimeout(() => {
 user.psepick += psepick * 1
 conn.sendButton( m.chat, `🥳 𝘼𝘾𝘼𝘽𝘼𝙎 𝘿𝙀 𝙊𝘽𝙏𝙀𝙉𝙀𝙍 *${psepick}* 𝙏𝙍𝘼𝙅𝙀 𝘾𝙊𝙈𝙐𝙉!! 🧥`, wm, [[`${rpgg.emoticon('fishingrod')} 𝙋𝙀𝙎𝘾𝘼𝙍 𝙊𝙏𝙍𝘼 𝙑𝙀𝙕`, `.pescar`], [`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊 : 𝙄𝙉𝙑𝙀𝙉𝙏𝙊𝙍𝙔`, `.inventario`]], m)}}, 33000)
 
-setTimeout(() => {
 if  (psenjata > 0 ) {
+setTimeout(() => {
 user.psenjata += psenjata * 1
 conn.sendButton( m.chat, `🥳 𝘼𝘾𝘼𝘽𝘼𝙎 𝘿𝙀 𝙊𝘽𝙏𝙀𝙉𝙀𝙍 *${psenjata}* 𝙏𝙍𝘼𝙅𝙀 𝙀𝙋𝙄𝘾𝙊!! 🥷`, wm, [[`${rpgg.emoticon('fishingrod')} 𝙋𝙀𝙎𝘾𝘼𝙍 𝙊𝙏𝙍𝘼 𝙑𝙀𝙕`, `.pescar`], [`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊 : 𝙄𝙉𝙑𝙀𝙉𝙏𝙊𝙍𝙔`, `.inventario`]], m)}}, 30000)
 
