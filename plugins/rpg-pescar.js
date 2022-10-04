@@ -55,7 +55,7 @@ if (/fishing|mancing|pescar/i.test(command)) {
 switch (type) {
           
 case '1':
-let __temporizador1 = user.lastmonthly + 432000000
+let __temporizador1 = user.lastfishing + 120000
 let totalTiempo1 clockString(__temporizador1 - new Date() * 1)
 //let __temporizador1 = (new Date - user.lastfishing)
 //let _temporizador1 = (240000 - 240000)  // 2 Horas  
@@ -68,7 +68,7 @@ if (user.stamina < 9) return conn.sendButton( m.chat, `${ag}𝙉𝙊 𝙏𝙄�
 if (user.pancingan > 0 ) {  
 if (user.pancing > 0 ) {
 //if (user.umpan > 0 ) {
-if (new Date - user.lastfishing > 240000) {
+if (new Date - user.lastfishing > 120000) {
         	        
 let ikan = `${Math.floor(Math.random() * 30)}`.trim()
 let lele = `${Math.floor(Math.random() * 15)}`.trim() 
