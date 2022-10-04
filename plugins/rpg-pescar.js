@@ -55,20 +55,18 @@ if (/fishing|mancing|pescar/i.test(command)) {
 switch (type) {
           
 case '1':
-let __temporizador1 = user.lastfishing + 120000
+let __temporizador1 = user.lastfishing + 7200000 //2 h
 let totalTiempo1 = clockString(__temporizador1 - new Date() * 1)
-//let __temporizador1 = (new Date - user.lastfishing)
-//let _temporizador1 = (240000 - 240000)  // 2 Horas  
-//let totalTiempo1 = clockString(_temporizador1)
+let __temporizador2 = user.lastmancingeasy + 7200000 
+let tiempoTotal2 = clockString(__temporizador2 - new Date() * 1)
 let usuario = conn.getName(m.sender)
 
 if (user.level <= 1) return conn.sendButton( m.chat, `${fg}𝙉𝙀𝘾𝙀𝙎𝙄𝙏𝘼 𝙏𝙀𝙉𝙀𝙍 𝙀𝙇 𝙉𝙄𝙑𝙀𝙇 *${nivelUser[0]}*`, `𝙉𝙄𝙑𝙀𝙇 𝘼𝘾𝙏𝙐𝘼𝙇: *${user.level}*\n` + wm, [[`𝘼𝘾𝙏𝙐𝘼𝙇𝙄𝙕𝘼𝙍 𝙈𝙄 𝙉𝙄𝙑𝙀𝙇 ${rpgg.emoticon('level')}`, `.nivel`]], m)   
-if (user.stamina < 9) return conn.sendButton( m.chat, `${ag}𝙉𝙊 𝙏𝙄𝙀𝙉𝙀𝙎 𝙎𝙐𝙁𝙄𝙀𝙉𝙏𝙀 𝙀𝙉𝙀𝙍𝙂𝙄𝘼. 𝙈𝙄𝙉𝙄𝙈𝙊 𝙉𝙀𝘾𝙀𝙎𝙄𝙏𝘼𝙎 𝙐𝙉 *${energia[0]}%* 𝘿𝙀 𝙀𝙉𝙀𝙍𝙂𝙄𝘼 ✨`, `𝙀𝙉𝙀𝙍𝙂𝙄𝘼 𝘼𝘾𝙏𝙐𝘼𝙇: ${rpgg.emoticon('stamina')} *${user.stamina}%*\n` + wm, [[`𝘾𝙊𝙈𝙋𝙍𝘼𝙍 ${energia[0]}% ${rpgg.emoticon('stamina')}`, '.buy stamina 10'], [`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊 : 𝙄𝙉𝙑𝙀𝙉𝙏𝙊𝙍𝙔`, `.inventario`], [`𝗠 𝗘 𝗡 𝗨 ☘️`, `.menu`]], m)   
-//if (user.lastfishing > 10800000) return conn.sendButton( m.chat, `𝙔𝘼 𝙁𝙐𝙀 𝘿𝙀 𝙋𝙀𝙎𝘾𝘼 𝙋𝙊𝙍 𝙁𝘼𝙑𝙊𝙍 𝘿𝙀𝙎𝘾𝘼𝙉𝙎𝙀`, `𝙏𝙄𝙀𝙈𝙋𝙊 𝘿𝙀𝙇 𝘿𝙀𝙎𝘾𝘼𝙉𝙎𝙊:\n${totalTiempo1}\n\n` + wm, [[`𝗠 𝗘 𝗡 𝗨 ☘️`, `.menu`]], m)   
+if (user.stamina < 9) return conn.sendButton( m.chat, `${ag}𝙉𝙊 𝙏𝙄𝙀𝙉𝙀𝙎 𝙎𝙐𝙁𝙄𝙀𝙉𝙏𝙀 𝙀𝙉𝙀𝙍𝙂𝙄𝘼. 𝙈𝙄𝙉𝙄𝙈𝙊 𝙉𝙀𝘾𝙀𝙎𝙄𝙏𝘼𝙎 𝙐𝙉 *${energia[0]}%* 𝘿𝙀 𝙀𝙉𝙀𝙍𝙂𝙄𝘼 ✨`, `𝙀𝙉𝙀𝙍𝙂𝙄𝘼 𝘼𝘾𝙏𝙐𝘼𝙇: ${rpgg.emoticon('stamina')} *${user.stamina}%*\n` + wm, [[`𝘾𝙊𝙈𝙋𝙍𝘼𝙍 ${energia[0]}% ${rpgg.emoticon('stamina')}`, '.buy stamina 10'], [`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊 : 𝙄𝙉𝙑𝙀𝙉𝙏𝙊𝙍𝙔`, `.inventario`], [`𝗠 𝗘 𝗡 𝗨 ☘️`, `.menu`]], m)     
 if (user.pancingan > 0 ) {  
 if (user.pancing > 0 ) {
-//if (user.umpan > 0 ) {
-if (new Date - user.lastfishing > 120000) {
+if (user.umpan > 0 ) {
+if (new Date - user.lastfishing > 7200000) {
         	        
 let ikan = `${Math.floor(Math.random() * 30)}`.trim()
 let lele = `${Math.floor(Math.random() * 15)}`.trim() 
@@ -101,8 +99,8 @@ Ejemplo:
 ${usedPrefix}cook` 
 
 setTimeout(() => {
-conn.sendHydrated(m.chat, `${pescarUsuario} 𝙃𝙀𝙔 𝙅𝙐𝙀𝙂𝘼 𝘿𝙀 𝙉𝙐𝙀𝙑𝙊 𝘼 𝙋𝙀𝙎𝘾𝘼𝙍 𝙀𝙉 ${rpgg.emoticon('fishingrod')} ${mensajeLugar}`, wm, null, null, null, null, null, [
-[`${rpgg.emoticon('fishingrod')} 𝙋𝙀𝙎𝘾𝘼𝙍 𝘿𝙀 𝙉𝙐𝙀𝙑𝙊`, '.pescar']], null)}, 28800000) 
+conn.sendHydrated(m.chat, `${pescarUsuario} 𝙃𝙀𝙔 𝙅𝙐𝙀𝙂𝘼 𝘿𝙀 𝙉𝙐𝙀𝙑𝙊 𝘼 𝙋𝙀𝙎𝘾𝘼𝙍 𝙀𝙉 ${rpgg.emoticon('fishingrod')} ${mensajeLugar[0]}`, wm, null, null, null, null, null, [
+[`${rpgg.emoticon('fishingrod')} 𝙋𝙀𝙎𝘾𝘼𝙍 𝘿𝙀 𝙉𝙐𝙀𝙑𝙊`, '.pescar 1']], null)}, 7200000) 
 
 setTimeout(() => {
 conn.sendHydrated(m.chat, botdate, pesca1, null, null, null, null, null, [
@@ -217,8 +215,8 @@ let pesca2 = `
 `.trim()
 
 setTimeout(() => {
-conn.sendHydrated(m.chat, `${pescarUsuario} 𝙃𝙀𝙔 𝙅𝙐𝙀𝙂𝘼 𝘿𝙀 𝙉𝙐𝙀𝙑𝙊 𝘼 𝙋𝙀𝙎𝘾𝘼𝙍!! ${rpgg.emoticon('fishingrod')}`, botdate, null, null, null, null, null, [
-[`${rpgg.emoticon('fishingrod')} 𝙋𝙀𝙎𝘾𝘼𝙍 𝘿𝙀 𝙉𝙐𝙀𝙑𝙊`, '.pescar']], null)}, 120000) 
+conn.sendHydrated(m.chat, `${pescarUsuario} 𝙃𝙀𝙔 𝙅𝙐𝙀𝙂𝘼 𝘿𝙀 𝙉𝙐𝙀𝙑𝙊 𝘼 𝙋𝙀𝙎𝘾𝘼𝙍 𝙀𝙉 ${rpgg.emoticon('fishingrod')} ${mensajeLugar[1]}`, wm, null, null, null, null, null, [
+[`${rpgg.emoticon('fishingrod')} 𝙋𝙀𝙎𝘾𝘼𝙍 𝘿𝙀 𝙉𝙐𝙀𝙑𝙊`, '.pescar 2']], null)}, 120000) 
   
 setTimeout(() => {
 conn.sendHydrated(m.chat, pesca2, botdate, null, null, null, null, null, [
