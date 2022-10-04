@@ -50,6 +50,7 @@ ${wm}`,
 title: `*⎔───ꕤ 𝙋𝙀𝙎𝘾𝘼 : 𝙁𝙄𝙎𝙃𝙄𝙉𝙂 ꕤ───⎔*`,
 buttonText: `${rpgshopp.emoticon('pancing')} 𝙋𝙀𝙎𝘾𝘼𝙍 ${rpgshopp.emoticon('pancing')}`,
 sections }
+
 try {
 if (/fishing|mancing|pescar/i.test(command)) {
 switch (type) {
@@ -63,7 +64,7 @@ if (user.level <= 1) return conn.sendButton( m.chat, `${fg}𝙉𝙀𝘾𝙀𝙎�
 if (user.stamina < 9) return conn.sendButton( m.chat, `${ag}𝙉𝙊 𝙏𝙄𝙀𝙉𝙀𝙎 𝙎𝙐𝙁𝙄𝙀𝙉𝙏𝙀 𝙀𝙉𝙀𝙍𝙂𝙄𝘼. 𝙈𝙄𝙉𝙄𝙈𝙊 𝙉𝙀𝘾𝙀𝙎𝙄𝙏𝘼𝙎 𝙐𝙉 *${energia[0]}%* 𝘿𝙀 𝙀𝙉𝙀𝙍𝙂𝙄𝘼 ✨`, `𝙀𝙉𝙀𝙍𝙂𝙄𝘼 𝘼𝘾𝙏𝙐𝘼𝙇: ${rpgg.emoticon('stamina')} *${user.stamina}%*\n` + wm, [[`𝘾𝙊𝙈𝙋𝙍𝘼𝙍 ${energia[0]}% ${rpgg.emoticon('stamina')}`, '.buy stamina 10'], [`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊 : 𝙄𝙉𝙑𝙀𝙉𝙏𝙊𝙍𝙔`, `.inventario`], [`𝗠 𝗘 𝗡 𝗨 ☘️`, `.menu`]], m)     
 if (user.pancingan > 0 ) {  
 if (user.pancing > 0 ) {
-if (user.umpan > 0 ) {
+//if (user.umpan > 0 ) {
 if (new Date - user.lastmancingeasy > 120000) {
         	        
 let ikan = `${Math.floor(Math.random() * 30)}`.trim()
