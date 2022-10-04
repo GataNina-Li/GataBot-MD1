@@ -33,11 +33,11 @@ const sections = [
 {
 title: htjava + ' 🛥️ 𝙇𝙐𝙂𝘼𝙍𝙀𝙎 𝙋𝘼𝙍𝘼 𝙋𝙀𝙎𝘾𝘼𝙍 ' + htjava,
 rows: [
-{title: "🎣 " + mensajeLugar[0], rowId: usedPrefix + command + ' 1', description: `Una piscina panorámica con varias especies marinas!!\n`},
-{title: "🎣 " + mensajeLugar[1], rowId: usedPrefix + command + ' 2', description: `Atrevete a pescar en la Laguna más diversa del Mundo!!\n`}, 
-{title: "🎣 " + mensajeLugar[2], rowId: usedPrefix + command + ' 3', description: `Considerada la Madre de los Lagos, aquí tal vez esten los Calamares!!\n`},
-{title: "🎣 " + mensajeLugar[3], rowId: usedPrefix + command + ' 4', description: `Un lago tan grande que es probable que abunde muchas especies marinas!!\n`},
-{title: "🎣 " + mensajeLugar[4], rowId: usedPrefix + command + ' 5', description: `Un Mar tan grande y Profundo Perfecto para Pescar!!\n`}
+{title: "🎣 " + mensajeLugar[0], rowId: usedPrefix + command + ' 1', description: `𝑼𝒏𝒂 𝒑𝒊𝒔𝒄𝒊𝒏𝒂 𝒑𝒂𝒏𝒐𝒓á𝒎𝒊𝒄𝒂 𝒄𝒐𝒏 𝒗𝒂𝒓𝒊𝒂𝒔 𝒆𝒔𝒑𝒆𝒄𝒊𝒆𝒔 𝒎𝒂𝒓𝒊𝒏𝒂𝒔!!\n`},
+{title: "🎣 " + mensajeLugar[1], rowId: usedPrefix + command + ' 2', description: `𝑨𝒕𝒓𝒆𝒗𝒆𝒕𝒆 𝒂 𝒑𝒆𝒔𝒄𝒂𝒓 𝒆𝒏 𝒍𝒂 𝑳𝒂𝒈𝒖𝒏𝒂 𝒎á𝒔 𝒅𝒊𝒗𝒆𝒓𝒔𝒂 𝒅𝒆𝒍 𝑴𝒖𝒏𝒅𝒐!!\n`}, 
+{title: "🎣 " + mensajeLugar[2], rowId: usedPrefix + command + ' 3', description: `𝘾𝙤𝙣𝙨𝙞𝙙𝙚𝙧𝙖𝙙𝙖 𝙡𝙖 𝙈𝙖𝙙𝙧𝙚 𝙙𝙚 𝙡𝙤𝙨 𝙇𝙖𝙜𝙤𝙨, 𝙖𝙦𝙪í 𝙩𝙖𝙡 𝙫𝙚𝙯 𝙚𝙨𝙩𝙚𝙣 𝙡𝙤𝙨 𝘾𝙖𝙡𝙖𝙢𝙖𝙧𝙚𝙨!!\n`},
+{title: "🎣 " + mensajeLugar[3], rowId: usedPrefix + command + ' 4', description: `𝑼𝒏 𝒍𝒂𝒈𝒐 𝒕𝒂𝒏 𝒈𝒓𝒂𝒏𝒅𝒆 𝒒𝒖𝒆 𝒆𝒔 𝒑𝒓𝒐𝒃𝒂𝒃𝒍𝒆 𝒒𝒖𝒆 𝒂𝒃𝒖𝒏𝒅𝒆 𝒎𝒖𝒄𝒉𝒂𝒔 𝒆𝒔𝒑𝒆𝒄𝒊𝒆𝒔 𝒎𝒂𝒓𝒊𝒏𝒂𝒔!!\n`},
+{title: "🎣 " + mensajeLugar[4], rowId: usedPrefix + command + ' 5', description: `𝑼𝒏 𝑴𝒂𝒓 𝒕𝒂𝒏 𝒈𝒓𝒂𝒏𝒅𝒆 𝒚 𝑷𝒓𝒐𝒇𝒖𝒏𝒅𝒐 𝑷𝒆𝒓𝒇𝒆𝒄𝒕𝒐 𝒑𝒂𝒓𝒂 𝑷𝒆𝒔𝒄𝒂𝒓!!\n`}
 ]}]
 
 const listMessage = {
