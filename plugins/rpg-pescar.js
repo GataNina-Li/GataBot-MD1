@@ -56,7 +56,7 @@ switch (type) {
           
 case '1':
 let __temporizador1 = user.lastfishing + 120000
-let totalTiempo1 clockString(__temporizador1 - new Date() * 1)
+let totalTiempo1 = clockString(__temporizador1 - new Date() * 1)
 //let __temporizador1 = (new Date - user.lastfishing)
 //let _temporizador1 = (240000 - 240000)  // 2 Horas  
 //let totalTiempo1 = clockString(_temporizador1)
