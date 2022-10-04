@@ -73,7 +73,7 @@ export async function handler(chatUpdate) {
 	        }
 		                    		    
           if (!isNumber(user.afk)) user.afk = -1
-	      if (!('autolevelup' in user))  user.autolevelup = false
+	      if (!('autolevelup' in user))  user.autolevelup = true
 	      if (!('role' in user)) user.role = 'Novato'
               if (!isNumber(user.agility)) user.agility = 0
               if (!isNumber(user.anakanjing)) user.anakanjing = 0
@@ -507,7 +507,7 @@ export async function handler(chatUpdate) {
                     armormonster: 0,
                     as: 0,
                     atm: 0,
-                    autolevelup: false,
+                    autolevelup: true,
                     axe: 0,
                     axedurability: 0,
                     ayam: 0,
