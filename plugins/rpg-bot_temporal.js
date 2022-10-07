@@ -20,8 +20,8 @@ if (user.joincount <= 1) throw `${ag}*¡YA NO TIENES TOKENS! 🪙*\n\n*COMPRA TO
 if (!args[1]) throw `${mg}*USE EL COMANDO COMO ESTE EJEMPLO*\n*${usedPrefix + command} enlace y Número de Token(s)*\n\n*EJEMPLO*\n*${usedPrefix + command} ${nn} 3*\n\n*3 TOKEN 🪙 = 30 MINUTOS*`
 if (!linkRegex.test(args[0])) throw `${fg}𝙀𝙉𝙇𝘼𝘾𝙀 𝙉𝙊 𝙑𝘼𝙇𝙄𝘿𝙊.` //Aquí 
 if (isNaN(args[1])) throw `${mg}*SOLO INGRESE EL NÚMERO DE TOKEN(S)*`
-if (args[1] <= 2) throw `${fg}*MÁXIMO 3 TOKEN(S) PARA PODER INVITAR A GATABOT*`
-if (args[1] >= 31) throw `${fg}*MÍNIMO 30 TOKEN(S) PARA PODER INVITAR A GATABOT*`
+if (args[1] >= 2) throw `${fg}*MÁXIMO 3 TOKEN(S) PARA PODER INVITAR A GATABOT*`
+if (args[1] <= 31) throw `${fg}*MÍNIMO 30 TOKEN(S) PARA PODER INVITAR A GATABOT*`
  //if (args[1] < 3) throw `${fg}*MÁXIMO 3 TOKEN(S) PARA PODER INVITAR A GATABOT*`
 // if (args[1] > 3) throw `${fg}*MÍNIMO 3 TOKEN(S) PARA PODER INVITAR A GATABOT*` //Solo ingresará si tiene 3 Token(s)
  
