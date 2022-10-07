@@ -48,7 +48,7 @@ user.lasthourly = new Date * 1
 }
 handler.help = ['hourly']
 handler.tags = ['xp']
-handler.command = ['hourly', 'entega', 'cadahora', 'recibirentrega'] 
+handler.command = ['hourly', 'hora', 'entega', 'cadahora', 'recibirentrega'] 
 handler.level = 4 
 export default handler
 
