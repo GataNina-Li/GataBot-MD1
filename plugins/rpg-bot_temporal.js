@@ -2,26 +2,26 @@ let linkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i
 import fetch from 'node-fetch';
 
 let handler = async (m, { conn, args, usedPrefix, command, isPrems, isOwner, isROwner}) => {
-  if (!global.db.data.settings[conn.user.jid].temporal) throw `${ag}𝙈𝙄 𝘾𝙍𝙀𝘼𝘿𝙊𝙍𝘼 𝙃𝘼 𝙍𝙀𝙎𝙏𝙍𝙄𝙉𝙂𝙄𝘿𝙊 𝙀𝙎𝙏𝘼 𝙁𝙐𝙉𝘾𝙄𝙊𝙉 𝘿𝙀 𝙄𝙉𝙂𝙍𝙀𝙎𝘼𝙍 𝙀𝙇 𝘽𝙊𝙏 𝙏𝙀𝙈𝙋𝙊𝙍𝘼𝙇𝙈𝙀𝙉𝙏𝙀 𝘼 𝙂𝙍𝙐𝙋𝙊𝙎 𝙑𝙐𝙀𝙇𝙑𝘼 𝙈Á𝙎 𝙏𝘼𝙍𝘿𝙀 𝙊 𝙎𝙄 𝙀𝙎 𝙊𝙒𝙉𝙀𝙍 𝘿𝙀𝙇 𝘽𝙊𝙏 𝙐𝙎𝙀 *#on temporal* 𝙋𝘼𝙍𝘼 𝘼𝘾𝙏𝙄𝙑𝘼𝙍\n\n𝙈𝙔 𝘾𝙍𝙀𝘼𝙏𝙊𝙍 𝙃𝘼𝙎 𝙍𝙀𝙎𝙏𝙍𝙄𝘾𝙏𝙀𝘿 𝙏𝙃𝙄𝙎 𝙁𝙐𝙉𝘾𝙏𝙄𝙊𝙉 𝙊𝙁 𝙀𝙉𝙏𝙀𝙍𝙄𝙉𝙂 𝙏𝙃𝙀 𝘽𝙊𝙏 𝙏𝙀𝙈𝙋𝙊𝙍𝘼𝙍𝙄𝙇𝙔 𝙏𝙊 𝙂𝙍𝙊𝙐𝙋𝙎 𝘾𝙊𝙈𝙀 𝘽𝘼𝘾𝙆 𝙇𝘼𝙏𝙀𝙍 𝙊𝙍 𝙄𝙁 𝙔𝙊𝙐 𝘼𝙍𝙀 𝙏𝙃𝙀 𝙊𝙒𝙉𝙀𝙍 𝙊𝙁 𝙏𝙃𝙀 𝘽𝙊𝙏 𝙐𝙎𝙀 *#on temporal* 𝙁𝙊𝙍 𝘼𝘾𝙏𝙄𝙑𝘼𝙏𝙀`
+if (!global.db.data.settings[conn.user.jid].temporal) throw `${ag}𝙈𝙄 𝘾𝙍𝙀𝘼𝘿𝙊𝙍𝘼 𝙃𝘼 𝙍𝙀𝙎𝙏𝙍𝙄𝙉𝙂𝙄𝘿𝙊 𝙀𝙎𝙏𝘼 𝙁𝙐𝙉𝘾𝙄𝙊𝙉 𝘿𝙀 𝙄𝙉𝙂𝙍𝙀𝙎𝘼𝙍 𝙀𝙇 𝘽𝙊𝙏 𝙏𝙀𝙈𝙋𝙊𝙍𝘼𝙇𝙈𝙀𝙉𝙏𝙀 𝘼 𝙂𝙍𝙐𝙋𝙊𝙎 𝙑𝙐𝙀𝙇𝙑𝘼 𝙈Á𝙎 𝙏𝘼𝙍𝘿𝙀 𝙊 𝙎𝙄 𝙀𝙎 𝙊𝙒𝙉𝙀𝙍 𝘿𝙀𝙇 𝘽𝙊𝙏 𝙐𝙎𝙀 *#on temporal* 𝙋𝘼𝙍𝘼 𝘼𝘾𝙏𝙄𝙑𝘼𝙍\n\n𝙈𝙔 𝘾𝙍𝙀𝘼𝙏𝙊𝙍 𝙃𝘼𝙎 𝙍𝙀𝙎𝙏𝙍𝙄𝘾𝙏𝙀𝘿 𝙏𝙃𝙄𝙎 𝙁𝙐𝙉𝘾𝙏𝙄𝙊𝙉 𝙊𝙁 𝙀𝙉𝙏𝙀𝙍𝙄𝙉𝙂 𝙏𝙃𝙀 𝘽𝙊𝙏 𝙏𝙀𝙈𝙋𝙊𝙍𝘼𝙍𝙄𝙇𝙔 𝙏𝙊 𝙂𝙍𝙊𝙐𝙋𝙎 𝘾𝙊𝙈𝙀 𝘽𝘼𝘾𝙆 𝙇𝘼𝙏𝙀𝙍 𝙊𝙍 𝙄𝙁 𝙔𝙊𝙐 𝘼𝙍𝙀 𝙏𝙃𝙀 𝙊𝙒𝙉𝙀𝙍 𝙊𝙁 𝙏𝙃𝙀 𝘽𝙊𝙏 𝙐𝙎𝙀 *#on temporal* 𝙁𝙊𝙍 𝘼𝘾𝙏𝙄𝙑𝘼𝙏𝙀`
   
-  if (!args[0]) throw `${mg}*USE EL COMANDO COMO ESTE EJEMPLO*\n*${usedPrefix + command} enlace Número de Token(s)*\n\n*EJEMPLO*\n*${usedPrefix + command} ${nn} 3*\n\n*3 TOKEN 🪙 = 30 MINUTOS*`
+if (!args[0]) throw `${mg}*USE EL COMANDO COMO ESTE EJEMPLO*\n*${usedPrefix + command} enlace Número de Token(s)*\n\n*EJEMPLO*\n*${usedPrefix + command} ${nn} 3*\n\n*3 TOKEN 🪙 = 30 MINUTOS*`
 let [_, code] = args[0].match(linkRegex) || [] 
 if (!linkRegex.test(args[0])) throw `${fg}𝙀𝙉𝙇𝘼𝘾𝙀 𝙉𝙊 𝙑𝘼𝙇𝙄𝘿𝙊.` //Aquí 
-
-    
-  //if (!code) throw `${fg}*ENLACE INCORRECTO, VERIFIQUE QUE EL ENLACE SEA DE UN GRUPO DE WHATSAPP Y QUE NO ESTE CADUCADO*`
+ 
 let user = db.data.users[m.sender]
 
-  if (!(isPrems || isOwner || isROwner)) { //Para Usuarios
+if (!(isPrems || isOwner || isROwner)) { //Para Usuarios
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 let mentionedJid = [who]
 let username = conn.getName(who)
 let img = 'https://i.imgur.com/8fK4h6F.jpg'
-if (user.joincount < 1) throw `${ag}*¡YA NO TIENES TOKENS! 🪙*\n\n*COMPRA TOKENS PARA PODER INVITAR A GATABOT A TÚ GRUPO CON EL COMANDO ${usedPrefix}buy joincount 3 o ${usedPrefix}buy Para ver la Tienda*`
+//if (user.joincount < 1) throw `${ag}*¡YA NO TIENES TOKENS! 🪙*\n\n*COMPRA TOKENS PARA PODER INVITAR A GATABOT A TÚ GRUPO CON EL COMANDO ${usedPrefix}buy joincount 3 o ${usedPrefix}buy Para ver la Tienda*`
+if (user.joincount <= 1) throw `${ag}*¡YA NO TIENES TOKENS! 🪙*\n\n*COMPRA TOKENS PARA PODER INVITAR A GATABOT A TÚ GRUPO CON EL COMANDO ${usedPrefix}buy joincount 3 o ${usedPrefix}buy Para ver la Tienda*`
  //if (user.joincount === 0 ) throw `${ag}*¡YA NO TIENES TOKENS! 🪙*\n\n*COMPRA TOKENS PARA PODER INVITAR A GATABOT A TÚ GRUPO CON EL COMANDO ${usedPrefix}buy3* *cantidad*`  
  if (!args[1]) throw `${mg}*USE EL COMANDO COMO ESTE EJEMPLO*\n*${usedPrefix + command} enlace y Número de Token(s)*\n\n*EJEMPLO*\n*${usedPrefix + command} ${nn} 3*\n\n*3 TOKEN 🪙 = 30 MINUTOS*`
  if (!linkRegex.test(args[0])) throw `${fg}𝙀𝙉𝙇𝘼𝘾𝙀 𝙉𝙊 𝙑𝘼𝙇𝙄𝘿𝙊.` //Aquí 
  if (isNaN(args[1])) throw `${mg}*SOLO INGRESE EL NÚMERO DE TOKEN(S)*`
+ //if (args[1] <= 0) 
  if (args[1] < 3) throw `${fg}*MÁXIMO 3 TOKEN(S) PARA PODER INVITAR A GATABOT*`
  if (args[1] > 3) throw `${fg}*MÍNIMO 3 TOKEN(S) PARA PODER INVITAR A GATABOT*` //Solo ingresará si tiene 3 Token(s)
  
