@@ -6,7 +6,7 @@ if (!global.db.data.settings[conn.user.jid].temporal) throw `${ag}𝙈𝙄 𝘾�
   
 if (!args[0]) throw `${mg}*USE EL COMANDO COMO ESTE EJEMPLO*\n*${usedPrefix + command} enlace Número de Token(s)*\n\n*EJEMPLO*\n*${usedPrefix + command} ${nn} 3*\n\n*3 TOKEN 🪙 = 30 MINUTOS*`
 let [_, code] = args[0].match(linkRegex) || [] 
-if (!linkRegex.test(args[0])) throw `${fg}𝙀𝙉𝙇𝘼𝘾𝙀 𝙉𝙊 𝙑𝘼𝙇𝙄𝘿𝙊.` //Aquí 
+if (!linkRegex.test(args[0])) throw `${fg}𝙀𝙉𝙇𝘼𝘾𝙀 𝙉𝙊 𝙑𝘼𝙇𝙄𝘿𝙊.`
  
 let user = db.data.users[m.sender]
 
@@ -20,10 +20,12 @@ if (user.joincount <= 1) throw `${ag}*¡YA NO TIENES TOKENS! 🪙*\n\n*COMPRA TO
 if (!args[1]) throw `${mg}*USE EL COMANDO COMO ESTE EJEMPLO*\n*${usedPrefix + command} enlace y Número de Token(s)*\n\n*EJEMPLO*\n*${usedPrefix + command} ${nn} 3*\n\n*3 TOKEN 🪙 = 30 MINUTOS*`
 if (!linkRegex.test(args[0])) throw `${fg}𝙀𝙉𝙇𝘼𝘾𝙀 𝙉𝙊 𝙑𝘼𝙇𝙄𝘿𝙊.` //Aquí 
 if (isNaN(args[1])) throw `${mg}*SOLO INGRESE EL NÚMERO DE TOKEN(S)*`
-if (args[1] < 3) throw `${fg}*MÍNIMO 3 TOKEN(S) PARA PODER INVITAR A GATABOT*`
-if (args[1] > 30) throw `${fg}*MÁXIMO 30 TOKEN(S) PARA PODER INVITAR A GATABOT*`
- //if (args[1] < 3) throw `${fg}*MÁXIMO 3 TOKEN(S) PARA PODER INVITAR A GATABOT*`
-// if (args[1] > 3) throw `${fg}*MÍNIMO 3 TOKEN(S) PARA PODER INVITAR A GATABOT*` //Solo ingresará si tiene 3 Token(s)
+if (user.joincount - 4 <= 1) throw `${fg}*MÁXIMO 30 TOKEN(S) PARA PODER INVITAR A GATABOT*`
+//if (args[1] < 3) throw `${fg}*MÍNIMO 3 TOKEN(S) PARA PODER INVITAR A GATABOT*`
+//if (args[1] > 30) throw `${fg}*MÁXIMO 30 TOKEN(S) PARA PODER INVITAR A GATABOT*`
+
+if (args[1] < 3) throw `${fg}*MÁXIMO 3 TOKEN(S) PARA PODER INVITAR A GATABOT*`
+if (args[1] > 3) throw `${fg}*MÍNIMO 3 TOKEN(S) PARA PODER INVITAR A GATABOT*` //Solo ingresará si tiene 3 Token(s)
  
 let res = await conn.groupAcceptInvite(code) 
 conn.reply(m.chat, `${eg}😻 *SE HA UNIDO GATABOT AL GRUPO!!!*`, m).then(async() => { 
@@ -71,23 +73,20 @@ let data = (await conn.onWhatsApp(jid))[0] || {}
     conn.reply(m.chat, `@${m.sender.split`@`[0]} adicional ${conn.user.name} a ${await conn.getName(res)}\njid: ${res}, el bot se apagará a tiempo: ${msToDate(global.db.data.chats[res].expired - now)}`, data.jid, m)
                 
 } conn.sendButton(m.chat, '', wm, null, [['Creadora', `/creadora`], ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', '/menu']], m, res) })}
-    
 }
 
 handler.help = ['temporal', 'tiempo']
-handler.command = ['bottemporal', 'botemporal', 'addbot', 'botadd'] ///^(temporal|tiempo)$/i
+handler.command = ['bottemporal', 'botemporal', 'addbot', 'botadd']
 export default handler
 
 function msToDate(ms) {
-    let temp = ms
-    let days = Math.floor(ms / (24 * 60 * 60 * 1000));
-    let daysms = ms % (24 * 60 * 60 * 1000);
-    let hours = Math.floor((daysms) / (60 * 60 * 1000));
-    let hoursms = ms % (60 * 60 * 1000);
-    let minutes = Math.floor((hoursms) / (60 * 1000));
-    let minutesms = ms % (60 * 1000);
-    let sec = Math.floor((minutesms) / (1000));
-    return days + " *Día(s)* ☀️\n" + hours + " *Hora(s)* ⏳\n" + minutes + " *Minuto(s)* ⏰\n" + sec + " *Segundo(s)* 🕐\n";
-    //return days + " Hari " + hours + " Jam " + minutes + " Menit";
-    // +minutes+":"+sec;
+let temp = ms
+let days = Math.floor(ms / (24 * 60 * 60 * 1000));
+let daysms = ms % (24 * 60 * 60 * 1000);
+let hours = Math.floor((daysms) / (60 * 60 * 1000));
+let hoursms = ms % (60 * 60 * 1000);
+let minutes = Math.floor((hoursms) / (60 * 1000));
+let minutesms = ms % (60 * 1000);
+let sec = Math.floor((minutesms) / (1000));
+return days + " *Día(s)* ☀️\n" + hours + " *Hora(s)* ⏳\n" + minutes + " *Minuto(s)* ⏰\n" + sec + " *Segundo(s)* 🕐\n";
 }
