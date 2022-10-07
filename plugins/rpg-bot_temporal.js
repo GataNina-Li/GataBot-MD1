@@ -9,9 +9,6 @@ let enlace = { contextInfo: { externalAdReply: {title: wm + ' 🐈', body: 'supp
 let enlace2 = { contextInfo: { externalAdReply: { showAdAttribution: true, mediaUrl: yt, mediaType: 'VIDEO', description: '', title: wm, body: '😻 𝗦𝘂𝗽𝗲𝗿 𝗚𝗮𝘁𝗮𝗕𝗼𝘁-𝗠𝗗 - 𝗪𝗵𝗮𝘁𝘀𝗔𝗽𝗽 ', thumbnailUrl: await(await fetch(img)).buffer(), sourceUrl: yt }}}
 let dos = [enlace, enlace2]  
 
-let [_, code] = args[0].match(linkRegex) || []
-let res = await conn.groupAcceptInvite(code) 
-
 let texto0 = `${ag}𝙈𝙄 𝘾𝙍𝙀𝘼𝘿𝙊𝙍(𝘼) 𝙃𝘼 𝙍𝙀𝙎𝙏𝙍𝙄𝙉𝙂𝙄𝘿𝙊 𝙀𝙎𝙏𝘼 𝙁𝙐𝙉𝘾𝙄𝙊𝙉 𝘿𝙀 𝙄𝙉𝙂𝙍𝙀𝙎𝘼𝙍 𝙀𝙇 𝘽𝙊𝙏 𝙏𝙀𝙈𝙋𝙊𝙍𝘼𝙇𝙈𝙀𝙉𝙏𝙀 𝘼 𝙂𝙍𝙐𝙋𝙊𝙎 𝙑𝙐𝙀𝙇𝙑𝘼 𝙈Á𝙎 𝙏𝘼𝙍𝘿𝙀 𝙊 𝙎𝙄 𝙀𝙎 𝙊𝙒𝙉𝙀𝙍 𝘿𝙀𝙇 𝘽𝙊𝙏 𝙐𝙎𝙀 *#on temporal* 𝙋𝘼𝙍𝘼 𝘼𝘾𝙏𝙄𝙑𝘼𝙍\n\n𝙈𝙔 𝘾𝙍𝙀𝘼𝙏𝙊𝙍 𝙃𝘼𝙎 𝙍𝙀𝙎𝙏𝙍𝙄𝘾𝙏𝙀𝘿 𝙏𝙃𝙄𝙎 𝙁𝙐𝙉𝘾𝙏𝙄𝙊𝙉 𝙊𝙁 𝙀𝙉𝙏𝙀𝙍𝙄𝙉𝙂 𝙏𝙃𝙀 𝘽𝙊𝙏 𝙏𝙀𝙈𝙋𝙊𝙍𝘼𝙍𝙄𝙇𝙔 𝙏𝙊 𝙂𝙍𝙊𝙐𝙋𝙎 𝘾𝙊𝙈𝙀 𝘽𝘼𝘾𝙆 𝙇𝘼𝙏𝙀𝙍 𝙊𝙍 𝙄𝙁 𝙔𝙊𝙐 𝘼𝙍𝙀 𝙏𝙃𝙀 𝙊𝙒𝙉𝙀𝙍 𝙊𝙁 𝙏𝙃𝙀 𝘽𝙊𝙏 𝙐𝙎𝙀 *#on temporal* 𝙁𝙊𝙍 𝘼𝘾𝙏𝙄𝙑𝘼𝙏𝙀`
 let texto1 = `${mg}𝙐𝙎𝙀 𝙀𝙇 𝘾𝙊𝙈𝘼𝙉𝘿𝙊 𝘾𝙊𝙈𝙊 𝙀𝙎𝙏𝙀 𝙀𝙅𝙀𝙈𝙋𝙇𝙊\n*${usedPrefix + command} enlace de Grupo y Número de Token(s)*\n*${usedPrefix + command} ${grupos.getRandom()} 3*\n\n*3* 𝙏𝙊𝙆𝙀𝙉 🪙 = *30* 𝙈𝙄𝙉𝙐𝙏𝙊𝙎\n\n𝙐𝙎𝙀 𝙏𝙃𝙀 𝘾𝙊𝙈𝙈𝘼𝙉𝘿 𝙇𝙄𝙆𝙀 𝙏𝙃𝙄𝙎 𝙀𝙓𝘼𝙈𝙋𝙇𝙀\n*${usedPrefix + command} ${grupos.getRandom()} 3*\n\n*3* 𝙏𝙊𝙆𝙀𝙉𝙎 🪙 = *30* 𝙈𝙄𝙉𝙐𝙏𝙀𝙎`
 let texto2 = `${ag}¡𝙔𝘼 𝙉𝙊 𝙏𝙄𝙀𝙉𝙀𝙎 𝙏𝙊𝙆𝙀𝙉𝙎! 🪙\n\n𝘾𝙊𝙈𝙋𝙍𝘼 𝙏𝙊𝙆𝙀𝙉𝙎 𝙋𝘼𝙍𝘼 𝙋𝙊𝘿𝙀𝙍 𝙐𝙉𝙄𝙍 𝙂𝘼𝙏𝘼𝘽𝙊𝙏 𝘼 𝙏𝙐 𝙂𝙍𝙐𝙋𝙊 𝘾𝙊𝙉 𝙀𝙇 𝘾𝙊𝙈𝘼𝙉𝘿𝙊:\n*${usedPrefix}buy joincount 3*\n\n𝙔𝙊𝙐 𝙉𝙊 𝙇𝙊𝙉𝙂𝙀𝙍 𝙃𝘼𝙑𝙀 𝙏𝙊𝙆𝙀𝙉𝙎! 🪙\n\n𝘽𝙐𝙔 𝙏𝙊𝙆𝙀𝙉𝙎 𝙏𝙊 𝘽𝙀 𝘼𝘽𝙇𝙀 𝙏𝙊 𝙄𝙉𝙑𝙄𝙏𝙀 𝙂𝘼𝙏𝘼𝘽𝙊𝙏 𝙏𝙊 𝙔𝙊𝙐𝙍 𝙂𝙍𝙊𝙐𝙋 𝙒𝙄𝙏𝙃 𝙏𝙃𝙀 𝘾𝙊𝙈𝙈𝘼𝙉𝘿 *${usedPrefix}buy joincount 3*`
@@ -25,7 +22,10 @@ let img1 = 'https://img.freepik.com/vector-premium/animacion-monedas-pixeles-ima
 let img2 ='https://img.freepik.com/premium-vector/set-8bit-pixel-graphics-icons-game-art-coins-gold-animation_534389-12.jpg?w=2000'
 
 if (!global.db.data.settings[conn.user.jid].temporal) return conn.sendButton( m.chat, wm, texto0, null, [[`🙌 𝙎𝙊𝙇𝙄𝘾𝙄𝙏𝘼𝙍 𝘾𝙊𝙈𝘼𝙉𝘿𝙊`, `.reporte Quiero unir a GataBot en mí Grupo. Por favor Active la función #botemporal`], [`🍀 𝙈 𝙀 𝙉 𝙐`, `.menu`]], fkontak, m) 
+
 if (!args[0]) return conn.sendButton( m.chat, wm, texto1, null, [[`🍀 𝙈 𝙀 𝙉 𝙐`, `.menu`]], fkontak, m)
+let [_, code] = args[0].match(linkRegex) || []
+let res = await conn.groupAcceptInvite(code) 
 
 if (!linkRegex.test(args[0])) return conn.sendButton( m.chat, wm, texto3, null, [[`🍀 𝙈 𝙀 𝙉 𝙐`, `.menu`]], fkontak, m)
 let user = db.data.users[m.sender]
