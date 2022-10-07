@@ -21,7 +21,7 @@ let texto7 = `${eg}😻 𝙎𝙀 𝙃𝘼 𝙐𝙉𝙄𝘿𝙊 𝙂𝘼𝙏𝘼�
 let img1 = 'https://img.freepik.com/vector-premium/animacion-monedas-pixeles-imagenes-animacion-moneda-oro-ilustracion-vectorial_350225-3.jpg?w=2000'
 let img2 ='https://img.freepik.com/premium-vector/set-8bit-pixel-graphics-icons-game-art-coins-gold-animation_534389-12.jpg?w=2000'
 
-if (!global.db.data.settings[conn.user.jid].temporal) return conn.sendButton( m.chat, wm, texto0, null, [[`🙌 𝙎𝙊𝙇𝙄𝘾𝙄𝙏𝘼𝙍 𝘾𝙊𝙈𝘼𝙉𝘿𝙊`, `.reporte Quiero unir a GataBot en mí Grupo. Por favor Active la función #botemporal`], [`🍀 𝙈 𝙀 𝙉 𝙐`, `.menu`]], fkontak, m) 
+if (!global.db.data.settings[conn.user.jid].temporal) return conn.sendButton( m.chat, wm, texto0, null, [[`🙌 𝙎𝙊𝙇𝙄𝘾𝙄𝙏𝘼𝙍 𝘾𝙊𝙈𝘼𝙉𝘿𝙊`, `.reporte *Quiero unir a GataBot en mí Grupo. Por favor Active la función #botemporal*`], [`🍀 𝙈 𝙀 𝙉 𝙐`, `.menu`]], fkontak, m) 
 
 if (!args[0]) return conn.sendButton( m.chat, wm, texto1, null, [[`🍀 𝙈 𝙀 𝙉 𝙐`, `.menu`]], fkontak, m)
 let [_, code] = args[0].match(linkRegex) || []
