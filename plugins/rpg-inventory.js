@@ -291,6 +291,7 @@ let str = `
 ┃ *${rpgshop.emoticon('kyubi')} » ${member.kyubi}*
 ┃ *${rpgshop.emoticon('diamond')} » ${member.diamond}*
 ┃ *${rpgshop.emoticon('gold')} » ${member.gold}*
+┃ *${rpgshop.emoticon('stamina')} » ${member.stamina}%*
 ┃ 🎟️ *Cupón : Coupon » ${member.cupon}*
 ┃ 📉 *Gastos : Expg » ${member.expg}*
 ┃
@@ -817,6 +818,7 @@ ${readMore}
 ┃ *${rpgshop.emoticon('kyubi')} » ${member.kyubi}*
 ┃ *${rpgshop.emoticon('diamond')} » ${member.diamond}*
 ┃ *${rpgshop.emoticon('gold')} » ${member.gold}*
+┃ *${rpgshop.emoticon('stamina')} » ${member.stamina}%*
 ┃ 🎟️ *Cupón : Coupon » ${member.cupon}*
 ┃ 📉 *Gastos : Expg » ${member.expg}*
 ┃

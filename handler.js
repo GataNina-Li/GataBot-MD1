@@ -73,7 +73,7 @@ export async function handler(chatUpdate) {
 	        }
 		                    		    
           if (!isNumber(user.afk)) user.afk = -1
-	      if (!('autolevelup' in user))  user.autolevelup = false
+	      if (!('autolevelup' in user))  user.autolevelup = true
 	      if (!('role' in user)) user.role = 'Novato'
               if (!isNumber(user.agility)) user.agility = 0
               if (!isNumber(user.anakanjing)) user.anakanjing = 0
@@ -307,6 +307,7 @@ export async function handler(chatUpdate) {
               if (!isNumber(user.lastngojek)) user.lastngojek = 0
               if (!isNumber(user.lastopen)) user.lastopen = 0
               if (!isNumber(user.lastpekerjaan)) user.lastpekerjaan = 0
+	      if (!isNumber(user.lastpago)) user.lastpago = 0 
               if (!isNumber(user.lastpotionclaim)) user.lastpotionclaim = 0
               if (!isNumber(user.lastrampok)) user.lastrampok = 0
               if (!isNumber(user.lastramuanclaim)) user.lastramuanclaim = 0
@@ -506,7 +507,7 @@ export async function handler(chatUpdate) {
                     armormonster: 0,
                     as: 0,
                     atm: 0,
-                    autolevelup: false,
+                    autolevelup: true,
                     axe: 0,
                     axedurability: 0,
                     ayam: 0,
@@ -710,6 +711,7 @@ export async function handler(chatUpdate) {
                     lastngojek: 0,
                     lastopen: 0,
                     lastpekerjaan: 0,
+		    lastpago: 0,
                     lastpotionclaim: 0,
                     lastramuanclaim: 0,
                     lastrob: 0,

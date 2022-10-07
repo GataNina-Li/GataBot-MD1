@@ -230,8 +230,8 @@ global.htka = '*☪ ••••̩̩͙⊰•⭑*'
 global.comienzo = '• • ◕◕════'
 global.fin = '════◕◕ • •'
 
-global.botdate = `⫹⫺ Date :  ${moment.tz('Asia/Jakarta').format('DD/MM/YY')}`
-global.bottime = `𝗧 𝗜 𝗠 𝗘 : ${moment.tz('Asia/Jakarta').format('HH:mm:ss')}`//America/Los_Angeles
+global.botdate = `⫹⫺ Date :  ${moment.tz('America/Los_Angeles').format('DD/MM/YY')}` //Asia/Jakarta
+global.bottime = `𝗧 𝗜 𝗠 𝗘 : ${moment.tz('America/Los_Angeles').format('HH:mm:ss')}`//America/Los_Angeles
 global.fgif = {
             key: {
                  participant : '0@s.whatsapp.net'},
@@ -452,6 +452,7 @@ global.rpgshop = { //Tienda
       gold: '👑 Oro : Gold',
       money: '🐱 GataCoins : CatCoins',
       tiketcoin: '🎫 Gata Tickers',
+      stamina: '✨ Energía : Energy',
             
       potion: '🥤 Poción : Potion',
       aqua: '💧 Agua : Water',
@@ -478,6 +479,7 @@ global.rpgshop = { //Tienda
       healtmonster: '💵 Billetes : Fare',
       emas: '🪅 Piñata : Doll',
       pancingan: '🪝 Gancho : Hook',
+      pancing: '🎣 Caña de Pescar : Fishing Rod',
        
       common: '📦 Caja Común : Common Box',
       uncoommon: '🥡 Caja Poco Común : Uncommon',
@@ -538,6 +540,7 @@ global.rpgshopp = { //Tienda
       gold: '👑',
       money: '🐱',
       tiketcoin: '🎫',
+      stamina: '✨',
             
       potion: '🥤',
       aqua: '💧',
@@ -564,6 +567,7 @@ global.rpgshopp = { //Tienda
       healtmonster: '💵',
       emas: '🪅',
       pancingan: '🪝',
+      pancing: '🎣',
        
       common: '📦',
       uncoommon: '🥡',

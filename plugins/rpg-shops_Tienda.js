@@ -1,5 +1,6 @@
 import fetch from 'node-fetch'
 let handler = async (m, { command, conn, usedPrefix, args }) => {
+let user = global.db.data.users[m.sender]
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" 
 }
 let grupos = [nna, nn, nnn, nnnt]
@@ -10,7 +11,7 @@ let dos = [enlace, enlace2]
 
 const items = {
    buy: {
-        exp: { eleksirb: 3 }, 
+        exp: { eleksirb: 3 },
         limit: { money: 400 },
         diamond: { berlian: 5 },
         joincount: { limit: 15 },
@@ -20,6 +21,7 @@ const items = {
         gold: {  diamond: 35 },
         money: { kaleng: 2 },
         tiketcoin: { joincount: 3 },
+        stamina: { potion: 2 },
         
         potion: { money: 550 },
         aqua: { botol: 2 },
@@ -44,8 +46,9 @@ const items = {
         sword: { gold: 2 },
         umpan: { aqua: 2 },
         healtmonster: { kyubi: 19 },
-        pancingan: { trash: 2 },
+        pancingan: { trash: user.pancingan == 0 ? 5 : '' || user.pancingan == 1 ? 10 : '' || user.pancingan == 2 ? 15 : '' || user.pancingan == 3 ? 20 : '' || user.pancingan >= 4 ? 25 : '' },
         emas: { berlian: 20 },
+        pancing: { tiketcoin: user.pancing == 0 ? 1 : '' || user.pancing == 1 ? 2 : '' || user.pancing == 2 ? 3 : '' || user.pancing == 3 ? 4 : '' || user.pancing >= 4 ? 7 : '' },
         
         common: { aqua: 40 },
         uncoommon: { kyubi: 55 },
@@ -161,7 +164,6 @@ const items = {
 }   
    
 let imgr = flaaa.getRandom()
-    let user = global.db.data.users[m.sender]
     const listItems = Object.fromEntries(Object.entries(items[command.toLowerCase()]).filter(([v]) => v && v in user))
     
     let text = ''
@@ -231,7 +233,7 @@ if (user[paymentMethod] < listItems[item][paymentMethod] * total) return conn.se
 `*–--『 𝙄𝙉𝙎𝙐𝙁𝙄𝘾𝙄𝙀𝙉𝙏𝙀𝙎 𝙍𝙀𝘾𝙐𝙍𝙎𝙊𝙎 』--–*`, 
 `*Necesitas ${(listItems[item][paymentMethod] * total) - user[paymentMethod]} ${global.rpgshop.emoticon(paymentMethod)} Para Comprar ${total} ${global.rpgshop.emoticon(item)}.*
 
-*Solo tienes ${user[paymentMethod]} ${global.rpg.emoticon(paymentMethod)}.*
+*Solo tienes ${user[paymentMethod]} ${global.rpgshop.emoticon(paymentMethod)}.*
 *–––––––––––––––––––––––––*
 *Misiones para Obtener Recursos*
 *Quests to Obtain Resources*
@@ -239,7 +241,7 @@ if (user[paymentMethod] < listItems[item][paymentMethod] * total) return conn.se
 *♻️ Cada hora : Hourly » ${new Date - user.lasthourly < 3600000 ? '❌' : `✅ _${usedPrefix}cadahora_`}*
 *💫 Semanalmente : Weekly ${new Date - user.lastweekly < 259200000 ? '❌' : `✅ _${usedPrefix}cadasemana_`}*
 *🏅 Mensual : Monthly ${new Date - user.lastmonthly < 432000000 ? '❌' : `✅ _${usedPrefix}cadames_`}*`.trim(), imgr + 'RECURSOS BAJOS : LOW RESOURCES', [
-[`𝗖𝗼𝗺𝗽𝗿𝗮𝗿 : 𝗕𝘂𝘆 ${(listItems[item][paymentMethod] * total) - user[paymentMethod]} ${global.rpgshopp.emoticon(paymentMethod)}`, `${usedPrefix}sell ${paymentMethod} ${(listItems[item][paymentMethod] * total) - user[paymentMethod]}`],
+[`𝗖𝗼𝗺𝗽𝗿𝗮𝗿 : 𝗕𝘂𝘆 ${(listItems[item][paymentMethod] * total) - user[paymentMethod]} ${global.rpgshopp.emoticon(paymentMethod)}`, `${usedPrefix}buy ${paymentMethod} ${(listItems[item][paymentMethod] * total) - user[paymentMethod]}`],
 [`𝙋𝙚𝙙𝙞𝙧 𝘼𝙮𝙪𝙙𝙖 | 𝘼𝙨𝙠 𝙛𝙤𝙧 𝙝𝙚𝙡𝙥 ☘️`, `${usedPrefix}pedirayuda *Por Favor alguien ayudeme con *${(listItems[item][paymentMethod] * total) - user[paymentMethod]} ${global.rpg.emoticon(paymentMethod)}.*
 *» AYUDA TRANSFIRIENDO:*
 *${usedPrefix}transfer ${paymentMethod} ${(listItems[item][paymentMethod] * total) - user[paymentMethod]} @${conn.getName(m.sender)}*`]], m)
