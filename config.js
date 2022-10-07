@@ -129,14 +129,11 @@ global.nnntttgrupo = nnnttt //Grupo 5
 global.paypal = 'https://paypal.me/OficialGD'
 global.donar = paypal
 
-//global.gbrandom = [nna, nn, nnn, nnnt]  gbrandom.getRandom()
-
-//global.gataimg = fs.readFileSync('./media/menus/Menu3.jpg')
-
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 
 
 //⊱ ━━━━━━━━━━━━━.⋅ Datos ⋅.━━━━━━━━━━━━━━ ⊰
+
 global.rg = '╰⊱✅⊱ *𝙍𝙀𝙎𝙐𝙇𝙏𝘼𝘿𝙊 | 𝙍𝙀𝙎𝙐𝙇𝙏* ⊱✅⊱╮\n\n'
 global.resultado = rg
 
@@ -615,7 +612,6 @@ global.rpgshopp = { //Tienda
     else return emotttt[results[0][0]]
   }
 }
-
 
 let file = fileURLToPath(import.meta.url)
 watchFile(file, () => {
