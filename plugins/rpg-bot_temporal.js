@@ -84,13 +84,13 @@ let data = (await conn.onWhatsApp(jid))[0] || {}
                 
 } conn.sendButton(m.chat, '', wm, null, [['Creadora', `/creadora`], ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', '/menu']], m, res) })}
 } catch (e) {
-await conn.sendButton( m.chat, fg, `\`\`\`POSIBLES CAUSAS
+await conn.reply(m.chat, `${fg}\`\`\`POSIBLES CAUSAS
 - El enlace esta incorrecto o caducado.
 
 - No me puedo unir si previamente me han eliminado del Grupo.
 
 - El Grupo esta Lleno, por ende no puedo unirme.
-\`\`\``, null, [[`🐈 𝙈 𝙀 𝙉 𝙐`, `.menu`]], m)
+\`\`\``, m)
 console.log(e)}
 }
 handler.help = ['temporal', 'tiempo']
