@@ -1,5 +1,5 @@
 const items = [
-    'limit', 'exp', 'money', 'potion', 'trash', 'wood',
+    'limit', 'exp', 'joincount', 'money', 'potion', 'trash', 'wood',
     'rock', 'string', 'petFood', 'emerald',
     'diamond', 'gold', 'iron', 'common',
     'uncoommon', 'mythic', 'legendary', 'pet',
