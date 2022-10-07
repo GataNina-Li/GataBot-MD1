@@ -90,7 +90,7 @@ await conn.sendButton( m.chat, fg, `\`\`\`POSIBLES CAUSAS
 - No me puedo unir si previamente me han eliminado del Grupo.
 
 - El Grupo esta Lleno, por ende no puedo unirme.
-\`\`\``, img1, [[`🐈 𝙈 𝙀 𝙉 𝙐`, `.menu`]], m)
+\`\`\``, null, [[`🐈 𝙈 𝙀 𝙉 𝙐`, `.menu`]], m)
 console.log(e)}
 }
 handler.help = ['temporal', 'tiempo']
