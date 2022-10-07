@@ -14,7 +14,7 @@ global.owner = [
 ]
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 
-global.mods = [] 
+global.mods = ['5492604050270', '5493772406612'], 
 global.prems = ['5492604050270'], 
 
 global.APIs = { // API Prefix. 
@@ -250,7 +250,7 @@ global.fgif = {
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 
 
-global.multiplier = 60 // Cuanto más alto, más difícil subir de nivel | The higher, The harder levelup 
+global.multiplier = 35 // Cuanto más alto, más difícil subir de nivel | The higher, The harder levelup 
 
 //Emojis RPG
 global.rpg = {
