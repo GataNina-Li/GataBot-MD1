@@ -24,6 +24,7 @@ count: 0,
 lastspam: 0
 }}}*/
 
+import db from '../lib/database.js'
 //export async function all(m) {
 let handler = m => m
 handler.before = async function (m, {conn, isAdmin, isBotAdmin} ) {
