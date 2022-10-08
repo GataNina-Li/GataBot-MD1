@@ -406,12 +406,12 @@ break
 case 'antispam':
 case 'antiflood':
 case 'antisaturacion':
-isAll = true
-if (!isROwner) {
-global.dfail('rowner', m, conn)
+if (m.isGroup) {
+if (!(isAdmin || isOwner)) {
+global.dfail('admin', m, conn)
 throw false
 }
-bot.antiSpam = isEnable
+chat.antiSpam = isEnable
 break
     
 case 'pconly':
