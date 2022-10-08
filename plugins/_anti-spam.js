@@ -66,7 +66,7 @@ handler.before = async function (m, { conn } ) {
     this.spam = this.spam ? this.spam : {}
     if (m.sender in this.spam) {
         this.spam[m.sender].count++
-        if (m.messageTimestamp.toNumber() - this.spam[m.sender].lastspam > 3) {
+        if (m.messageTimestamp.toNumber() - this.spam[m.sender].lastspam > 4000) {
             if (this.spam[m.sender].count > 3) {
                 global.db.data.users[m.sender].banned = true
                 await this.sendButton(m.chat, `Te banearon por spam! ${m.isGroup ? `\n\nAdministradores del grupo pueden usar el comando *.unbanuser @${m.sender.split`@`[0]}*` : ''}`, wm, [['MENU', '.menu']], m, { contextInfo: { mentionedJid: [m.sender] } })
