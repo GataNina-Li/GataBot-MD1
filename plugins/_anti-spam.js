@@ -1,4 +1,4 @@
-/*export async function all(m) {
+export async function all(m) {
 if (!m.message)
 return
 this.spam = this.spam ? this.spam : {}
@@ -24,7 +24,7 @@ count: 0,
 lastspam: 0
 }}}
 
-
+/*
 import db from '../lib/database.js'
 //export async function all(m) {
 let handler = m => m
@@ -53,7 +53,7 @@ jid: m.sender,
 antispam: 0,
 lastspam: 0
 }}}
-export default handler*/
+export default handler
 
 let handler = m => m
 handler.before = async function (m, { conn } ) {
@@ -83,3 +83,4 @@ handler.before = async function (m, { conn } ) {
 }
 
 export default handler
+*/
