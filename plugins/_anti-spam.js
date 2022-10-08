@@ -56,8 +56,6 @@ lastspam: 0
 export default handler*/
 
 let handler = m => m
-
-let handler = m => m
 handler.before = async function (m, { conn } ) {
     //if (!global.db.data.settings[this.user.jid].antispam) return // antispam aktif?
     if (m.isBaileys && m.fromMe) return
