@@ -25,6 +25,7 @@ lastspam: 0
 }}}*/
 
 //export async function all(m) {
+let handler = m => m
 handler.before = async function (m, {conn, isAdmin, isBotAdmin} ) {
 if (!m.message)
 return
