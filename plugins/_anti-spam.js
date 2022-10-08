@@ -8,7 +8,7 @@ if (chat.antiSpam) {
 if (global.owner.includes(m.sender)) throw 'Sin limites !'
 if (m.sender in this.spam) {
 this.spam[m.sender].count++
-if (m.messageTimestamp.toNumber() - this.spam[m.sender].lastspam > 5) {
+if (m.messageTimestamp.toNumber() - this.spam[m.sender].lastspam > 4000) {
 if (this.spam[m.sender].count > 5) {
 user.banned = true
 let caption = `👋 Prohibido *@${m.sender.split("@")[0]}* no spam!`
@@ -38,7 +38,7 @@ if (chat.antiSpam) {
 if (global.owner.includes(m.sender)) throw 'Sin limites!'
 if (m.sender in this.spam) {
 this.spam[m.sender].antispam++
-if (m.messageTimestamp.toNumber() - this.spam[m.sender].lastspam > 5) {
+if (m.messageTimestamp.toNumber() - this.spam[m.sender].lastspam > 4000) {
 if (this.spam[m.sender].antispam > 5) {
 user.banned = true
 let caption = `👋 Prohibido *@${m.sender.split("@")[0]}* no spam!`
