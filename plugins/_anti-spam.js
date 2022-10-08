@@ -55,25 +55,29 @@ lastspam: 0
 }}}
 export default handler*/
 
+let handler = m => m
+
 export async function all(m) {
-    if (!m.message)
-        return
-    this.spam = this.spam ? this.spam : {}
-    if (m.sender in this.spam) {
-        this.spam[m.sender].count++
-        if (m.messageTimestamp.toNumber() - this.spam[m.sender].lastspam > 5) {
-            if (this.spam[m.sender].count > 5) {
-                //global.db.data.users[m.sender].banned = true
-                m.reply('*No hagas spam!!*')
-            }
-            this.spam[m.sender].count = 0
-            this.spam[m.sender].lastspam = m.messageTimestamp.toNumber()
-        }
-    }
-    else
-        this.spam[m.sender] = {
-            jid: m.sender,
-            count: 0,
-            lastspam: 0
-        }
+this.spam = this.spam ? this.spam : {}
+if (!(m.sender in this.spam)) {
+let spaming = {
+jid: await m.sender, 
+spam: 0,
+lastspam: 0
 }
+this.spam[spaming.jid] = spaming
+} else try {
+this.spam[m.sender].spam += 1
+if (new Date - this.spam[m.sender].lastspam > 4000) {
+if (this.spam[m.sender].spam > 6) {
+this.spam[m.sender].spam = 0
+this.spam[m.sender].lastspam = new Date * 1
+  
+m.reply('*Jangan Spam!!*')
+} else {
+this.spam[m.sender].spam = 0
+this.spam[m.sender].lastspam = new Date * 1
+}}
+} catch (e) {
+console.log(e)
+}}
