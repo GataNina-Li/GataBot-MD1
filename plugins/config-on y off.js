@@ -402,6 +402,17 @@ throw false
 }
 bot.antiCall = isEnable
 break
+		
+case 'antispam':
+case 'antiflood':
+case 'antisaturacion':
+isAll = true
+if (!isROwner) {
+global.dfail('rowner', m, conn)
+throw false
+}
+bot.antiSpam = isEnable
+break
     
 case 'pconly':
 case 'privateonly':
