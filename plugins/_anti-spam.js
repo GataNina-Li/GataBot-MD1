@@ -55,26 +55,33 @@ lastspam: 0
 }}}
 export default handler*/
 
-export async function all(m) {
-    if (!m.message)
-        return
+let handler = m => m
+
+let handler = m => m
+handler.before = async function (m, { conn } ) {
+    //if (!global.db.data.settings[this.user.jid].antispam) return // antispam aktif?
+    if (m.isBaileys && m.fromMe) return
+    if (!m.message) return
+    if (!m.isCommand) return
+    if (global.db.data.users[m.sender].banned) return
+    if (global.db.data.chats[m.chat].isBanned) return
     this.spam = this.spam ? this.spam : {}
     if (m.sender in this.spam) {
         this.spam[m.sender].count++
         if (m.messageTimestamp.toNumber() - this.spam[m.sender].lastspam > 10) {
             if (this.spam[m.sender].count > 10) {
-                //global.db.data.users[m.sender].banned = true
-                m.reply('*No Spam!!*')
+                global.db.data.users[m.sender].banned = true
+                await this.sendButton(m.chat, `Te banearon por spam! ${m.isGroup ? `\n\nAdministradores del grupo pueden usar el comando *.unbanuser @${m.sender.split`@`[0]}*` : ''}`, wm, [['MENU', '.menu']], m, { contextInfo: { mentionedJid: [m.sender] } })
             }
             this.spam[m.sender].count = 0
             this.spam[m.sender].lastspam = m.messageTimestamp.toNumber()
         }
     }
-    else
-        this.spam[m.sender] = {
-            jid: m.sender,
-            count: 0,
-            lastspam: 0
-        }
+    else this.spam[m.sender] = {
+        jid: m.sender,
+        count: 0,
+        lastspam: 0
+    }
 }
 
+export default handler
