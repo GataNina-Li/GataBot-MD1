@@ -1,4 +1,4 @@
-/*export async function all(m) {
+export async function all(m) {
 if (!m.message)
 return
 this.spam = this.spam ? this.spam : {}
@@ -24,7 +24,7 @@ count: 0,
 lastspam: 0
 }}}
 
-
+/*
 import db from '../lib/database.js'
 //export async function all(m) {
 let handler = m => m
@@ -55,29 +55,3 @@ lastspam: 0
 }}}
 export default handler*/
 
-let handler = m => m
-
-export async function all(m) {
-this.spam = this.spam ? this.spam : {}
-if (!(m.sender in this.spam)) {
-let spaming = {
-jid: await m.sender, 
-spam: 0,
-lastspam: 0
-}
-this.spam[spaming.jid] = spaming
-} else try {
-this.spam[m.sender].spam += 1
-if (new Date - this.spam[m.sender].lastspam > 4000) {
-if (this.spam[m.sender].spam > 6) {
-this.spam[m.sender].spam = 0
-this.spam[m.sender].lastspam = new Date * 1
-  
-m.reply('*Jangan Spam!!*')
-} else {
-this.spam[m.sender].spam = 0
-this.spam[m.sender].lastspam = new Date * 1
-}}
-} catch (e) {
-console.log(e)
-}}
