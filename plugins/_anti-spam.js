@@ -1,4 +1,4 @@
-export async function all(m) {
+/*export async function all(m) {
 if (!m.message)
 return
 this.spam = this.spam ? this.spam : {}
@@ -24,7 +24,7 @@ count: 0,
 lastspam: 0
 }}}
 
-/*
+
 import db from '../lib/database.js'
 //export async function all(m) {
 let handler = m => m
@@ -54,4 +54,27 @@ antispam: 0,
 lastspam: 0
 }}}
 export default handler*/
+
+export async function all(m) {
+    if (!m.message)
+        return
+    this.spam = this.spam ? this.spam : {}
+    if (m.sender in this.spam) {
+        this.spam[m.sender].count++
+        if (m.messageTimestamp.toNumber() - this.spam[m.sender].lastspam > 10) {
+            if (this.spam[m.sender].count > 10) {
+                //global.db.data.users[m.sender].banned = true
+                m.reply('*No Spam!!*')
+            }
+            this.spam[m.sender].count = 0
+            this.spam[m.sender].lastspam = m.messageTimestamp.toNumber()
+        }
+    }
+    else
+        this.spam[m.sender] = {
+            jid: m.sender,
+            count: 0,
+            lastspam: 0
+        }
+}
 
