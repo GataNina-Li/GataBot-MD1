@@ -906,7 +906,6 @@ export async function handler(chatUpdate) {
 		if (!('reaction' in chat)) chat.reaction = true    
                 if (!('viewonce' in chat)) chat.viewonce = false                    
                 if (!('antitoxic' in chat)) chat.antitoxic = true  
-		if (!('antiSpam' in chat)) chat.antiSpam = true
                 if (!isNumber(chat.expired)) chat.expired = 0
                     
             } else
@@ -936,7 +935,6 @@ export async function handler(chatUpdate) {
 		    reaction: true,
                     viewonce: false,
                     antitoxic: true,
-		    antiSpam: true,
                     expired: 0,
                 }
             let settings = global.db.data.settings[this.user.jid]
@@ -945,14 +943,16 @@ export async function handler(chatUpdate) {
                 if (!('self' in settings)) settings.self = false
                 if (!('autoread' in settings)) settings.autoread = false
                 if (!('restrict' in settings)) settings.restrict = false
-		if (!('temporal' in settings)) settings.temporal = false
-		if (!('antiCall' in settings)) settings.antiCall = false
+		if (!('temporal' in settings)) settings.temporal = true
+		if (!('antiCall' in settings)) settings.antiCall = true
+		if (!('antiSpam' in settings)) settings.antiSpam = true
             } else global.db.data.settings[this.user.jid] = {
                 self: false,
                 autoread: false,
                 restrict: false,
-		temporal: false,
-		antiCall: false
+		temporal: true,
+		antiCall: true,
+		antiSpam: true
             }
         } catch (e) {
             console.error(e)
