@@ -316,6 +316,7 @@ export async function handler(chatUpdate) {
               if (!isNumber(user.lastsda)) user.lastsda = 0
               if (!isNumber(user.lastseen)) user.lastseen = 0
               if (!isNumber(user.lastSetStatus)) user.lastSetStatus = 0
+	      if (!isNumber(user.lastspam)) user.lastspam = 0
               if (!isNumber(user.lastsironclaim)) user.lastsironclaim = 0
               if (!isNumber(user.lastsmancingclaim)) user.lastsmancingclaim = 0
               if (!isNumber(user.laststringclaim)) user.laststringclaim = 0
@@ -714,6 +715,7 @@ export async function handler(chatUpdate) {
 		    lastpago: 0,
                     lastpotionclaim: 0,
                     lastramuanclaim: 0,
+	            lastspam: 0,
                     lastrob: 0,
                     lastroket: 0,
                     lastseen: 0,
