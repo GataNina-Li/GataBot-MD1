@@ -35,20 +35,20 @@ let user = global.db.data.users[m.sender]
 if (chat.antiSpam) {
 if (global.owner.includes(m.sender)) throw 'Sin limites!'
 if (m.sender in conn.spam) {
-conn.spam[m.sender].count++
+conn.spam[m.sender].antispam++
 if (m.messageTimestamp.toNumber() - conn.spam[m.sender].lastspam > 5) {
-if (conn.spam[m.sender].count > 5) {
+if (conn.spam[m.sender].antispam > 5) {
 user.banned = true
 let caption = `👋 Prohibido *@${m.sender.split("@")[0]}* no spam!`
 conn.sendButton(m.chat, caption, wm, null, [['Desactivar Anti Spam', '/off antispam']], m, { mentions: conn.parseMention(caption) })
 }
-conn.spam[m.sender].count = 0
+conn.spam[m.sender].antispam = 0
 conn.spam[m.sender].lastspam = m.messageTimestamp.toNumber()
 }}
 else
 conn.spam[m.sender] = {
 jid: m.sender,
-count: 0,
+antispam: 0,
 lastspam: 0
 }}}
 export default handler
