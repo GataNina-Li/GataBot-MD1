@@ -340,7 +340,7 @@ global.rpg = {
       wolf: '🐺 Lobo : Wolf',
       tiger: '🐅 Tigre : Tiger',
       
-      ramuan: '🧪 Ingredientes : Ingredients',
+      ramuan: '🧪 Ingrediente NOVA : Ingredients',
       knife: '🔪 Cuchillo : Knife'
     }
     let results = Object.keys(emot).map(v => [v, new RegExp(v, 'gi')]).filter(v => v[1].test(string))
