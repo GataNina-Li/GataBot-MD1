@@ -18,6 +18,7 @@ abundancia: 'Medianamente poca'
 },
 }
 m.reply(categorias.exp.categoria)
+m.reply(categorias{0}{0})  
 }
 handler.command = /^(colección|coleccion|inforpg|set|collection)$/i
 
