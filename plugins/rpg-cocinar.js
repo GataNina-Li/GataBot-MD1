@@ -9,20 +9,20 @@ let cocinar = `
 *${rpgshop.emoticon('coal')} →* _${user.coal}/1_
 *${rpg.emoticon('ramuan')} →* _${user.ramuan}/1_
 ${user.ayam >= 3 && user.coal >= 1 && user.ramuan >= 1 ? '*🫕 PUEDE COCINAR 🫕*' : ''.concat(`*FALTA →* ` + `${user.ayam < 3 ? `❗${rpgg.emoticon('ayam')} ` : ''}`, `${user.coal < 1 ? `❗${rpgshopp.emoticon('coal')} ` : ''}`, `${user.ramuan < 1 ? `❗${rpgg.emoticon('ramuan')}` : ''}`)} 
-- - - - - - - - - - - - -
+- - - - - - - - - - - - - - - - - - - - - - - - - -
 *◈ Pollo frito 🍗*
 *${rpg.emoticon('ayam')} →* _${user.ayam}/2_
 *${rpgshop.emoticon('coal')} →* _${user.coal}/1_
 *${rpg.emoticon('ramuan')} →* _${user.ramuan}/1_
 ${user.ayam >= 2 && user.coal >= 1 && user.ramuan >= 1 ? '*🫕 PUEDE COCINAR 🫕*' : ''.concat(`*FALTA →* ` + `${user.ayam < 2 ? `❗${rpgg.emoticon('ayam')} ` : ''}`, `${user.coal < 1 ? `❗${rpgshopp.emoticon('coal')} ` : ''}`, `${user.ramuan < 1 ? `❗${rpgg.emoticon('ramuan')}` : ''}`)} 
-- - - - - - - - - - - - -
+- - - - - - - - - - - - - - - - - - - - - - - - - -
 *◈ Fideos con crema de leche y pollo 🍜*
 *${rpg.emoticon('ayam')} →* _${user.ayam}/1_
 *${rpgshop.emoticon('aqua')} →* _${user.aqua}/5_
 *${rpg.emoticon('fideos')} →* _${user.fideos}/3_
 *${rpg.emoticon('ramuan')} →* _${user.ramuan}/2_
-${user.ayam >= 1 && user.aqua >= 5 && user.fideos >= 3 && user.ramuan >= 2 ? '*🫕 PUEDE COCINAR 🫕*' : ''.concat(`*FALTA →* ` + user.ayam < 1 ? `❗${rpgg.emoticon('ayam')} ` : '', user.aqua < 5 ? `❗${rpgshopp.emoticon('aqua')} ` : '', user.fideos < 3 ? `❗${rpgg.emoticon('fideos')} ` : '', user.ramuan < 2 ? `❗${rpgg.emoticon('ramuan')}` : '')} 
-- - - - - - - - - - - - -
+${user.ayam >= 1 && user.aqua >= 5 && user.fideos >= 3 && user.ramuan >= 2 ? '*🫕 PUEDE COCINAR 🫕*' : ''.concat(`*FALTA →* `, user.ayam < 1 ? `❗${rpgg.emoticon('ayam')} ` : '', user.aqua < 5 ? `❗${rpgshopp.emoticon('aqua')} ` : '', user.fideos < 3 ? `❗${rpgg.emoticon('fideos')} ` : '', user.ramuan < 2 ? `❗${rpgg.emoticon('ramuan')}` : '')} 
+- - - - - - - - - - - - - - - - - - - - - - - - - -
 ▧ steak 🥩
 〉Need 2 sapi 🐮 & 1 Coal 🕳️
 ▧ rendang 🥘
