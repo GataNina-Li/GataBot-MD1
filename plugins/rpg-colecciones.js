@@ -1,6 +1,5 @@
 let handler = async (m, { command, usedPrefix, DevMode, args, conn }) => {
 const categorias = {
-estrategia: {
 exp: {
 categoria: 'Categoria 1',
 descripcion: 'Experiencia',
@@ -17,8 +16,8 @@ defensa: '',
 utilidad: 'Medianamente alta',
 abundancia: 'Medianamente poca' 
 },
-}}
-m.reply(categorias.estrategia.exp[0])
+}
+m.reply(categorias.exp[0])
 }
 handler.command = /^(colección|coleccion|inforpg|set|collection)$/i
 
