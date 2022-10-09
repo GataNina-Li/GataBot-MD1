@@ -17,7 +17,7 @@ ataque: '',
 defensa: '',
 utilidad: 'Medianamente alta',
 abundancia: 'Medianamente poca' 
-},
+}
 }
 m.reply(categorias.exp.utilidad)
 }
