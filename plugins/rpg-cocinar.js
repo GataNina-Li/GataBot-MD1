@@ -53,7 +53,7 @@ ${user.babi >= user.premium ? 2 : 3 && user.coal >= user.premium ? 3 : 4 && user
 *${rpg.emoticon('ikan')} →* ${user.premium ? `_${user.ikan}/2_` : `_${user.ikan}/4_`}
 *${rpgshop.emoticon('coal')} →* ${user.premium ? `_${user.coal}/3_` : `_${user.coal}/6_`}
 *${rpg.emoticon('ramuan')} →* ${user.premium ? `_${user.ramuan}/1_` : `_${user.ramuan}/2_`}
-${user.ikan >= `${user.premium ? 2 : 4}` && user.coal >= `${user.premium ? 3 : 6}` && user.ramuan >= `${user.premium ? 1 : 2}` ? '*🫕 PUEDE COCINAR 🫕*' : ''.concat(`*FALTA →* `, user.ikan < user.premium ? 2 : 4 ? `❗${rpgg.emoticon('ikan')} ` : '', user.coal < user.premium ? 3 : 6 ? `❗${rpgshopp.emoticon('coal')} ` : '', user.ramuan < user.premium ? 1 : 2 ? `❗${rpgg.emoticon('ramuan')}` : '')} 
+${user.ikan >= `${user.premium ? 2 : 4}` && user.coal >= `${user.premium ? 3 : 6}` && user.ramuan >= `${user.premium ? 1 : 2}` ? '*🫕 PUEDE COCINAR 🫕*' : ''.concat(`*FALTA →* `, user.ikan < `${user.premium ? 2 : 4}` ? `❗${rpgg.emoticon('ikan')} ` : '', user.coal < `${user.premium ? 3 : 6}` ? `❗${rpgshopp.emoticon('coal')} ` : '', user.ramuan < `${user.premium ? 1 : 2}` ? `❗${rpgg.emoticon('ramuan')}` : '')} 
 - - - - - - - - - - - - - - - - - - - - - - - - - -
 ▧ lele bakar 🐟
 〉Need 2 lele 🐟 & 1 Coal 🕳️
