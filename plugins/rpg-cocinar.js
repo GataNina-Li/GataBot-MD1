@@ -39,7 +39,7 @@ ${user.sapi >= `${user.premium ? 1 : 2}` && user.coal >= `${user.premium ? 3 : 6
 ${user.cumi >= `${user.premium ? 1 : 2}` && user.aqua >= `${user.premium ? 3 : 6}` && user.udang >= `${user.premium ? 4 : 8}` && user.ramuan >= `${user.premium ? 2 : 3}` ? '*🫕 PUEDE COCINAR 🫕*' : ''.concat(`*FALTA →* `, user.cumi < `${user.premium ? 1 : 2}` ? `❗${rpgg.emoticon('cumi')} ` : '', user.aqua < `${user.premium ? 3 : 6}` ? `❗${rpgshopp.emoticon('aqua')} ` : '', user.udang < `${user.premium ? 4 : 8}` ? `❗${rpgshopp.emoticon('udang')} ` : '', user.ramuan < `${user.premium ? 2 : 3}` ? `❗${rpgg.emoticon('ramuan')}` : '')} 
 - - - - - - - - - - - - - - - - - - - - - - - - - -
 *${listaComida[5]}*
-*${rpg.emoticon('ayam')} →* c
+*${rpg.emoticon('ayam')} →* ${user.premium ? `_${user.ayam}/2_` : `_${user.ayam}/4_`}
 *${rpgshop.emoticon('aqua')} →* ${user.premium ? `_${user.aqua}/7_` : `_${user.aqua}/10_`}
 *${rpgshop.emoticon('coal')} →* ${user.premium ? `_${user.coal}/2_` : `_${user.coal}/4_`}
 *${rpg.emoticon('ramuan')} →* ${user.premium ? `_${user.ramuan}/1_` : `_${user.ramuan}/2_`}
