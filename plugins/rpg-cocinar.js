@@ -3,53 +3,55 @@ let type = (args[0] || '').toLowerCase()
 let msk = (args[0] || '').toLowerCase()
 let user = global.db.data.users[m.sender]
 
+const ListaComida = ['◈ Pollo a la parrilla 🍖','◈ Pollo frito 🍗','◈ Fideos con crema de leche y pollo 🍜','◈ Filete de Vaca 🥩','◈ Paella 🥘','◈ Curry de pollo 🍲','Cerdo asado 🥠','◈ Pescado asado 🐟','']
+
 let cocinar = `
-*◈ Pollo a la parrilla 🍖*
+*${ListaComida[0]}*
 *${rpg.emoticon('ayam')} →* ${user.premium ? `_${user.ayam}/2_` : `_${user.ayam}/3_`}
 *${rpgshop.emoticon('coal')} →* ${user.premium ? `_${user.coal}/1_` : `_${user.coal}/1_`}
 *${rpg.emoticon('ramuan')} →* ${user.premium ? `_${user.ramuan}/1__` : `_${user.ramuan}/1_`} 
 ${user.ayam >= `${user.premium ? 2 : 3}` && user.coal >= `${user.premium ? 1 : 1}` && user.ramuan >= `${user.premium ? 1 : 1}` ? '*🫕 PUEDE COCINAR 🫕*' : ''.concat(`*FALTA →* `, user.ayam < `${user.premium ? 2 : 3}` ? `❗${rpgg.emoticon('ayam')} ` : '', user.coal < `${user.premium ? 1 : 1}` ? `❗${rpgshopp.emoticon('coal')} ` : '', user.ramuan < `${user.premium ? 1 : 1}` ? `❗${rpgg.emoticon('ramuan')}` : '')} 
 - - - - - - - - - - - - - - - - - - - - - - - - - -
-*◈ Pollo frito 🍗*
+*${ListaComida[1]}*
 *${rpg.emoticon('ayam')} →* ${user.premium ? `_${user.ayam}/1_` : `_${user.ayam}/2_`}
 *${rpgshop.emoticon('coal')} →* ${user.premium ? `_${user.coal}/1_` : `_${user.coal}/2_`}
 *${rpg.emoticon('ramuan')} →* ${user.premium ? `_${user.ramuan}/1_` : `_${user.ramuan}/1_`}
 ${user.ayam >= `${user.premium ? 1 : 2}` && user.coal >= `${user.premium ? 1 : 2}` && user.ramuan >= `${user.premium ? 1 : 1}` ? '*🫕 PUEDE COCINAR 🫕*' : ''.concat(`*FALTA →* `, user.ayam < `${user.premium ? 1 : 2}` ? `❗${rpgg.emoticon('ayam')} ` : '', user.coal < `${user.premium ? 1 : 2}` ? `❗${rpgshopp.emoticon('coal')} ` : '', user.ramuan < `${user.premium ? 1 : 1}` ? `❗${rpgg.emoticon('ramuan')}` : '')} 
 - - - - - - - - - - - - - - - - - - - - - - - - - -
-*◈ Fideos con crema de leche y pollo 🍜*
+*${ListaComida[2]}*
 *${rpg.emoticon('ayam')} →* ${user.premium ? `_${user.ayam}/1_` : `_${user.ayam}/1_`}
 *${rpgshop.emoticon('aqua')} →* ${user.premium ? `_${user.aqua}/3_` : `_${user.aqua}/5_`}
 *${rpg.emoticon('fideos')} →* ${user.premium ? `_${user.fideos}/2_` : `_${user.fideos}/3_`}
 *${rpg.emoticon('ramuan')} →* ${user.premium ? `_${user.ramuan}/1_` : `_${user.ramuan}/2_`}
 ${user.ayam >= `${user.premium ? 1 : 1}` && user.aqua >= `${user.premium ? 3 : 5}` && user.fideos >= `${user.premium ? 2 : 3}` && user.ramuan >= `${user.premium ? 1 : 2}` ? '*🫕 PUEDE COCINAR 🫕*' : ''.concat(`*FALTA →* `, user.ayam < `${user.premium ? 1 : 1}` ? `❗${rpgg.emoticon('ayam')} ` : '', user.aqua < `${user.premium ? 3 : 5}` ? `❗${rpgshopp.emoticon('aqua')} ` : '', user.fideos < `${user.premium ? 2 : 3}` ? `❗${rpgg.emoticon('fideos')} ` : '', user.ramuan < `${user.premium ? 1 : 2}` ? `❗${rpgg.emoticon('ramuan')}` : '')} 
 - - - - - - - - - - - - - - - - - - - - - - - - - -
-*◈ Filete de Vaca 🥩*
+*${ListaComida[3]}*
 *${rpg.emoticon('cow')} →* ${user.premium ? `_${user.sapi}/1_` : `_${user.sapi}/2_`}
 *${rpgshop.emoticon('coal')} →* ${user.premium ? `_${user.coal}/3_` : `_${user.coal}/6_`}
 *${rpg.emoticon('ramuan')} →* ${user.premium ? `_${user.ramuan}/1_` : `_${user.ramuan}/2_`}
 ${user.sapi >= `${user.premium ? 1 : 2}` && user.coal >= `${user.premium ? 3 : 6}` && user.ramuan >= `${user.premium ? 1 : 2}` ? '*🫕 PUEDE COCINAR 🫕*' : ''.concat(`*FALTA →* `, user.sapi < `${user.premium ? 1 : 2}` ? `❗${rpgg.emoticon('cow')} ` : '', user.coal < `${user.premium ? 3 : 6}` ? `❗${rpgshopp.emoticon('coal')} ` : '', user.ramuan < `${user.premium ? 1 : 2}` ? `❗${rpgg.emoticon('ramuan')}` : '')} 
 - - - - - - - - - - - - - - - - - - - - - - - - - -
-*◈ Paella 🥘*
+*${ListaComida[4]}*
 *${rpg.emoticon('cumi')} →* ${user.premium ? `_${user.cumi}/1_` : `_${user.cumi}/2_`}
 *${rpgshop.emoticon('aqua')} →* ${user.premium ? `_${user.aqua}/3_` : `_${user.aqua}/6_`}
 *${rpg.emoticon('udang')} →* ${user.premium ? `_${user.udang}/4_` : `_${user.udang}/8_`}
 *${rpg.emoticon('ramuan')} →* ${user.premium ? `_${user.ramuan}/2_` : `_${user.ramuan}/3_`}
 ${user.cumi >= `${user.premium ? 1 : 2}` && user.aqua >= `${user.premium ? 3 : 6}` && user.udang >= `${user.premium ? 4 : 8}` && user.ramuan >= `${user.premium ? 2 : 3}` ? '*🫕 PUEDE COCINAR 🫕*' : ''.concat(`*FALTA →* `, user.cumi < `${user.premium ? 1 : 2}` ? `❗${rpgg.emoticon('cumi')} ` : '', user.aqua < `${user.premium ? 3 : 6}` ? `❗${rpgshopp.emoticon('aqua')} ` : '', user.udang < `${user.premium ? 4 : 8}` ? `❗${rpgshopp.emoticon('udang')} ` : '', user.ramuan < `${user.premium ? 2 : 3}` ? `❗${rpgg.emoticon('ramuan')}` : '')} 
 - - - - - - - - - - - - - - - - - - - - - - - - - -
-*◈ Curry de pollo 🍲*
+*${ListaComida[5]}*
 *${rpg.emoticon('ayam')} →* c
 *${rpgshop.emoticon('aqua')} →* ${user.premium ? `_${user.aqua}/7_` : `_${user.aqua}/10_`}
 *${rpgshop.emoticon('coal')} →* ${user.premium ? `_${user.coal}/2_` : `_${user.coal}/4_`}
 *${rpg.emoticon('ramuan')} →* ${user.premium ? `_${user.ramuan}/1_` : `_${user.ramuan}/2_`}
 ${user.ayam >= `${user.premium ? 2 : 4}` && user.aqua >= `${user.premium ? 7 : 10}` && user.coal >= `${user.premium ? 2 : 4}` && user.ramuan >= `${user.premium ? 1 : 2}` ? '*🫕 PUEDE COCINAR 🫕*' : ''.concat(`*FALTA →* `, user.ayam < `${user.premium ? 2 : 4}` ? `❗${rpgg.emoticon('ayam')} ` : '', user.aqua < `${user.premium ? 7 : 10}` ? `❗${rpgshopp.emoticon('aqua')} ` : '', user.coal < `${user.premium ? 2 : 4}` ? `❗${rpgshopp.emoticon('coal')} ` : '', user.ramuan < `${user.premium ? 1 : 2}` ? `❗${rpgg.emoticon('ramuan')}` : '')} 
 - - - - - - - - - - - - - - - - - - - - - - - - - -
-*◈ Cerdo asado 🥠*
+*${ListaComida[6]}*
 *${rpg.emoticon('babi')} →* ${user.premium ? `_${user.babi}/2_` : `_${user.babi}/3_`}
 *${rpgshop.emoticon('coal')} →* ${user.premium ? `_${user.coal}/3_` : `_${user.coal}/4_`}
 *${rpg.emoticon('ramuan')} →* ${user.premium ? `_${user.ramuan}/1_` : `_${user.ramuan}/2_`}
 ${user.babi >= `${user.premium ? 2 : 3}` && user.coal >= `${user.premium ? 3 : 4}` && user.ramuan >= `${user.premium ? 1 : 2}` ? '*🫕 PUEDE COCINAR 🫕*' : ''.concat(`*FALTA →* `, user.babi < `${user.premium ? 2 : 3}` ? `❗${rpgg.emoticon('babi')} ` : '', user.coal < `${user.premium ? 3 : 4}` ? `❗${rpgshopp.emoticon('coal')} ` : '', user.ramuan < `${user.premium ? 1 : 2}` ? `❗${rpgg.emoticon('ramuan')}` : '')} 
 - - - - - - - - - - - - - - - - - - - - - - - - - -
-*◈ Pescado asado 🐟*
+*${ListaComida[7]}*
 *${rpg.emoticon('ikan')} →* ${user.premium ? `_${user.ikan}/2_` : `_${user.ikan}/4_`}
 *${rpgshop.emoticon('coal')} →* ${user.premium ? `_${user.coal}/3_` : `_${user.coal}/6_`}
 *${rpg.emoticon('ramuan')} →* ${user.premium ? `_${user.ramuan}/1_` : `_${user.ramuan}/2_`}
