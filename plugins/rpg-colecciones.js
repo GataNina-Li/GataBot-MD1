@@ -1,5 +1,5 @@
 let handler = async (m, { command, usedPrefix, DevMode, args, conn }) => {
-const valoracion = [['Muy Alta ', '80% - 100%'], ['Alta ', '60% - 79%'], ['Media ', '40% - 59%'], ['Baja ', '20% - 39%'], ['Muy Baja ', '0% - 19%']]
+const valoracion = { valorar1: 'Muy Alta 80% - 100%', valorar2: 'Alta 60% - 79%', valorar3: 'Media 40% - 59%', valorar4: 'Baja 20% - 39%', valorar5: 'Muy Baja 0% - 19%' }
 
 const categorias = {
 exp: {
@@ -7,7 +7,7 @@ categoria: 'Categoria 1',
 descripcion: 'Experiencia',
 ataque: '',
 defensa: '',
-utilidad: valoracion[0],
+utilidad: valoracion.valorar1,
 abundancia: valoracion[0]
 },
 stamina: {
