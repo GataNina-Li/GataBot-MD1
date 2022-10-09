@@ -1,12 +1,14 @@
 let handler = async (m, { command, usedPrefix, DevMode, args, conn }) => {
+const valoracion = [['Muy Alta ', '80% - 100%'], ['Alta ', '60% - 79%'], ['Media ', '40% - 59%'], ['Baja ', '20% - 39%'], ['Muy Baja ', '0% - 19%']]
+
 const categorias = {
 exp: {
 categoria: 'Categoria 1',
 descripcion: 'Experiencia',
 ataque: '',
 defensa: '',
-utilidad: 'Muy alta',
-abundancia: 'Muy alta'
+utilidad: valoracion[0],
+abundancia: valoracion[0]
 },
 stamina: {
 categoria: 'Categoria 2',
@@ -17,8 +19,7 @@ utilidad: 'Medianamente alta',
 abundancia: 'Medianamente poca' 
 },
 }
-m.reply(categorias.exp.categoria)
-m.reply(categorias[0][0])  
+m.reply(categorias.exp.utilidad)
 }
 handler.command = /^(colección|coleccion|inforpg|set|collection)$/i
 
