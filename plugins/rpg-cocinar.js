@@ -49,8 +49,7 @@ ${user.ayam >= 4 && user.aqua >= 10 && user.coal >= 4 && user.ramuan >= 2 ? '*�
 *${rpg.emoticon('ramuan')} →* _${user.ramuan}/2_
 ${user.babi >= 3 && user.coal >= 4 && user.ramuan >= 2 ? '*🫕 PUEDE COCINAR 🫕*' : ''.concat(`*FALTA →* `, user.babi < 3 ? `❗${rpgg.emoticon('babi')} ` : '', user.coal < 4 ? `❗${rpgshopp.emoticon('coal')} ` : '', user.ramuan < 2 ? `❗${rpgg.emoticon('ramuan')}` : '')} 
 - - - - - - - - - - - - - - - - - - - - - - - - - -
-▧ Pescado asado 🐟
-〉Need 2 ikan 🐟 & 1 Coal 🕳️
+*◈ Pescado asado 🐟*
 *${rpg.emoticon('ikan')} →* _${user.babi}/4_
 *${rpgshop.emoticon('coal')} →* _${user.coal}/6_
 *${rpg.emoticon('ramuan')} →* _${user.ramuan}/2_
