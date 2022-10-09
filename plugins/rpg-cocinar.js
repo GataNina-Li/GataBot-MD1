@@ -1,4 +1,4 @@
-let handler = async (m, { command, usedPrefix, DevMode, args }) => {
+let handler = async (m, { command, usedPrefix, DevMode, args, conn }) => {
 let type = (args[0] || '').toLowerCase()
 let msk = (args[0] || '').toLowerCase()
 let user = global.db.data.users[m.sender]
@@ -170,8 +170,8 @@ try {
 					break
                 default:
                 await conn.sendMessage(m.chat, {
-				text: cok,
-				footer: author,
+				text: cocinar,
+				footer: wm,
 				title: '「 *C O O K I N G* 」',
 				buttonText: "C O O K I N G",
 				sections: [{
