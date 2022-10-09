@@ -8,7 +8,7 @@ let cocinar = `
 *${rpg.emoticon('ayam')} →* _${user.ayam}/2_
 *${rpgshop.emoticon('coal')} →* _${user.coal}/1_
 *${rpg.emoticon('ramuan')} →* _${user.ramuan}/1_
-*${user.ayam == 2 || user.coal == 1 || user.ramuan == 1 ? '👩‍🍳 *PUEDE COCINAR* 🧑‍🍳' : `${user.ayam !== 2 ? `❗${rpg.emoticon('ayam')} ` : `` && `${user.coal !== 1 ? `❗${rpg.emoticon('coal')} ` : `` && `${user.ayam !== 1 ? `❗${rpg.emoticon('ramuan')}`}`}*
+*${user.ayam == 2 || user.coal == 1 || user.ramuan == 1 ? '👩‍🍳 *PUEDE COCINAR* 🧑‍🍳' : `${user.ayam !== 2 ? `❗${rpg.emoticon('ayam')} ` : `` && `${user.coal !== 1 ? `❗${rpg.emoticon('coal')} ` : `` && `${user.ayam !== 1 ? `❗${rpg.emoticon('ramuan')} : `` `}`}*
 - - - - - - - - - - - - -
 ▧ ayamgoreng 🍗
 〉Need 2 ayam 🐓 & 1 Coal 🕳️
