@@ -340,6 +340,7 @@ global.rpg = {
       wolf: '🐺 Lobo : Wolf',
       tiger: '🐅 Tigre : Tiger',
       cumi: '🦑 Calamar : Squid',
+      udang: '🦐 Camarón : Shrimp',
       
       fideos: '🍝 Fideos : Noodles',
       ramuan: '🧪 Ingrediente NOVA : Ingredients',
@@ -439,6 +440,7 @@ global.rpgg = { //Solo emojis
       wolf: '🐺',
       tiger: '🐅',
       cumi: '🦑',
+      udang: '🦐',
       
       fideos: '🍝',
       ramuan: '🧪',
