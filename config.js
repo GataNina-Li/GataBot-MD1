@@ -339,6 +339,7 @@ global.rpg = {
       rhinoceros: '🦏 Rinoceronte : Rhinoceros',
       wolf: '🐺 Lobo : Wolf',
       tiger: '🐅 Tigre : Tiger',
+      cumi: '🦑 Calamar : Squid',
       
       fideos: '🍝 Fideos : Noodles',
       ramuan: '🧪 Ingrediente NOVA : Ingredients',
@@ -437,6 +438,7 @@ global.rpgg = { //Solo emojis
       rhinoceros: '🦏',
       wolf: '🐺',
       tiger: '🐅',
+      cumi: '🦑',
       
       fideos: '🍝',
       ramuan: '🧪',
