@@ -24,20 +24,38 @@ ${user.ayam >= 2 && user.coal >= 1 && user.ramuan >= 1 ? '*🫕 PUEDE COCINAR �
 ${user.ayam >= 1 && user.aqua >= 5 && user.fideos >= 3 && user.ramuan >= 2 ? '*🫕 PUEDE COCINAR 🫕*' : ''.concat(`*FALTA →* `, user.ayam < 1 ? `❗${rpgg.emoticon('ayam')} ` : '', user.aqua < 5 ? `❗${rpgshopp.emoticon('aqua')} ` : '', user.fideos < 3 ? `❗${rpgg.emoticon('fideos')} ` : '', user.ramuan < 2 ? `❗${rpgg.emoticon('ramuan')}` : '')} 
 - - - - - - - - - - - - - - - - - - - - - - - - - -
 *◈ Filete de Vaca 🥩*
-〉Need 2 sapi 🐮 & 1 Coal 🕳️
 *${rpg.emoticon('cow')} →* _${user.sapi}/2_
 *${rpgshop.emoticon('coal')} →* _${user.coal}/6_
 *${rpg.emoticon('ramuan')} →* _${user.ramuan}/2_
 ${user.sapi >= 2 && user.coal >= 6 && user.ramuan >= 2 ? '*🫕 PUEDE COCINAR 🫕*' : ''.concat(`*FALTA →* `, user.sapi < 2 ? `❗${rpgg.emoticon('cow')} ` : '', user.coal < 6 ? `❗${rpgshopp.emoticon('coal')} ` : '', user.ramuan < 2 ? `❗${rpgg.emoticon('ramuan')}` : '')} 
 - - - - - - - - - - - - - - - - - - - - - - - - - -
-▧ rendang 🥘
-〉Need 2 sapi 🐮 & 1 Coal 🕳️
-▧ gulaiayam 🍲
-〉Need 2 ayam 🐓 & 1 Coal 🕳️
-▧ babipanggang 🥠
-〉Need 2 babi 🐖 & 1 Coal 🕳️
-▧ ikan bakar 🐟
+*◈ Paella 🥘*
+*${rpg.emoticon('cumi')} →* _${user.cumi}/2_
+*${rpgshop.emoticon('aqua')} →* _${user.aqua}/6_
+*${rpg.emoticon('udang')} →* _${user.udang}/8_
+*${rpg.emoticon('ramuan')} →* _${user.ramuan}/3_
+${user.cumi >= 2 && user.aqua >= 6 && user.udang >= 8 && user.ramuan >= 3 ? '*🫕 PUEDE COCINAR 🫕*' : ''.concat(`*FALTA →* `, user.cumi < 2 ? `❗${rpgg.emoticon('cumi')} ` : '', user.aqua < 6 ? `❗${rpgshopp.emoticon('aqua')} ` : '', user.udang < 8 ? `❗${rpgshopp.emoticon('udang')} ` : '', user.ramuan < 3 ? `❗${rpgg.emoticon('ramuan')}` : '')} 
+- - - - - - - - - - - - - - - - - - - - - - - - - -
+*◈ Curry de pollo 🍲*
+*${rpg.emoticon('ayam')} →* _${user.ayam}/4_
+*${rpgshop.emoticon('aqua')} →* _${user.aqua}/10_
+*${rpgshop.emoticon('coal')} →* _${user.coal}/4_
+*${rpg.emoticon('ramuan')} →* _${user.ramuan}/2_
+${user.ayam >= 4 && user.aqua >= 10 && user.coal >= 4 && user.ramuan >= 2 ? '*🫕 PUEDE COCINAR 🫕*' : ''.concat(`*FALTA →* `, user.ayam < 4 ? `❗${rpgg.emoticon('ayam')} ` : '', user.aqua < 10 ? `❗${rpgshopp.emoticon('aqua')} ` : '', user.coal < 4 ? `❗${rpgshopp.emoticon('coal')} ` : '', user.ramuan < 2 ? `❗${rpgg.emoticon('ramuan')}` : '')} 
+- - - - - - - - - - - - - - - - - - - - - - - - - -
+*◈ Cerdo asado 🥠*
+*${rpg.emoticon('babi')} →* _${user.babi}/3_
+*${rpgshop.emoticon('coal')} →* _${user.coal}/4_
+*${rpg.emoticon('ramuan')} →* _${user.ramuan}/2_
+${user.babi >= 3 && user.coal >= 4 && user.ramuan >= 2 ? '*🫕 PUEDE COCINAR 🫕*' : ''.concat(`*FALTA →* `, user.babi < 3 ? `❗${rpgg.emoticon('babi')} ` : '', user.coal < 4 ? `❗${rpgshopp.emoticon('coal')} ` : '', user.ramuan < 2 ? `❗${rpgg.emoticon('ramuan')}` : '')} 
+- - - - - - - - - - - - - - - - - - - - - - - - - -
+▧ Pescado asado 🐟
 〉Need 2 ikan 🐟 & 1 Coal 🕳️
+*${rpg.emoticon('ikan')} →* _${user.babi}/4_
+*${rpgshop.emoticon('coal')} →* _${user.coal}/6_
+*${rpg.emoticon('ramuan')} →* _${user.ramuan}/2_
+${user.ikan >= 4 && user.coal >= 6 && user.ramuan >= 2 ? '*🫕 PUEDE COCINAR 🫕*' : ''.concat(`*FALTA →* `, user.ikan < 4 ? `❗${rpgg.emoticon('ikan')} ` : '', user.coal < 6 ? `❗${rpgshopp.emoticon('coal')} ` : '', user.ramuan < 2 ? `❗${rpgg.emoticon('ramuan')}` : '')} 
+- - - - - - - - - - - - - - - - - - - - - - - - - -
 ▧ lele bakar 🐟
 〉Need 2 lele 🐟 & 1 Coal 🕳️
 ▧ nila bakar 🐟
