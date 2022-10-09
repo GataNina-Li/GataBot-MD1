@@ -18,7 +18,7 @@ utilidad: 'Medianamente alta',
 abundancia: 'Medianamente poca' 
 },
 }}
-m.reply(categorias.estrategia.categoria)
+m.reply(categorias.estrategia.exp[0])
 }
 handler.command = /^(colección|coleccion|inforpg|set|collection)$/i
 
