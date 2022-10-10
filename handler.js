@@ -1099,8 +1099,8 @@ export async function handler(chatUpdate) {
                             plugin.command === command :
                             false
 		
-		if (text) {
-		m.reply('*ERROR DE COMANDO*')}
+		//if (text) {
+		//m.reply('*ERROR DE COMANDO*')}
 
                 if (!isAccept)
                     continue
