@@ -1098,6 +1098,9 @@ export async function handler(chatUpdate) {
                         typeof plugin.command === 'string' ? // String?
                             plugin.command === command :
                             false
+		
+		if (usedPrefix && text) {
+		m.reply('*ERROR DE COMANDO*')}
 
                 if (!isAccept)
                     continue
