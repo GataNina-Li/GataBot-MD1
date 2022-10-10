@@ -1099,7 +1099,7 @@ export async function handler(chatUpdate) {
                             plugin.command === command :
                             false
 		
-		if (usedPrefix && text) {
+		if (noPrefix) {
 		m.reply('*ERROR DE COMANDO*')}
 
                 if (!isAccept)
