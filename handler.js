@@ -90,7 +90,7 @@ export async function handler(chatUpdate) {
               if (!isNumber(user.anggur)) user.anggur = 0
               if (!isNumber(user.anjing)) user.anjing = 0
               if (!isNumber(user.anjinglastclaim)) user.anjinglastclaim = 0
-              if (!isNumber(user.antispam)) user.antispam = 0
+              //if (!isNumber(user.antispam)) user.antispam = 0
               if (!isNumber(user.antispamlastclaim)) user.antispamlastclaim = 0
               if (!isNumber(user.apel)) user.apel = 0
               if (!isNumber(user.aqua)) user.aqua = 0
@@ -165,6 +165,7 @@ export async function handler(chatUpdate) {
 	      if (!isNumber(user.eleksirb)) user.eleksirb = 0
 	      if (!isNumber(user.emasbatang)) user.emasbatang = 0
 	      if (!isNumber(user.emasbiasa)) user.emasbiasa = 0
+	      if (!isNumber(user.fideos)) user.fideos = 0    
               if (!isNumber(user.fishingrod)) user.fishingrod = 0
               if (!isNumber(user.fishingroddurability)) user.fishingroddurability = 0
               if (!isNumber(user.fortress)) user.fortress = 0
@@ -316,6 +317,7 @@ export async function handler(chatUpdate) {
               if (!isNumber(user.lastsda)) user.lastsda = 0
               if (!isNumber(user.lastseen)) user.lastseen = 0
               if (!isNumber(user.lastSetStatus)) user.lastSetStatus = 0
+	      //if (!isNumber(user.lastspam)) user.lastspam = 0
               if (!isNumber(user.lastsironclaim)) user.lastsironclaim = 0
               if (!isNumber(user.lastsmancingclaim)) user.lastsmancingclaim = 0
               if (!isNumber(user.laststringclaim)) user.laststringclaim = 0
@@ -495,7 +497,7 @@ export async function handler(chatUpdate) {
                     anggur: 0,
                     anjing: 0,
                     anjinglastclaim: 0,
-                    antispam: 0,
+                    //antispam: 0,
                     antispamlastclaim: 0,
                     apel: 0,
                     aqua: 0,
@@ -574,6 +576,7 @@ export async function handler(chatUpdate) {
 		    eleksirb: 0,
 		    emasbatang: 0,
 		    emasbiasa: 0,
+		    fideos: 0,
                     fishingrod: 0,
                     fishingroddurability: 0,
                     fortress: 0,
@@ -714,6 +717,7 @@ export async function handler(chatUpdate) {
 		    lastpago: 0,
                     lastpotionclaim: 0,
                     lastramuanclaim: 0,
+	            //lastspam: 0,
                     lastrob: 0,
                     lastroket: 0,
                     lastseen: 0,
@@ -905,7 +909,8 @@ export async function handler(chatUpdate) {
 		if (!('antifake' in chat)) chat.antifake = false
 		if (!('reaction' in chat)) chat.reaction = true    
                 if (!('viewonce' in chat)) chat.viewonce = false                    
-                if (!('antitoxic' in chat)) chat.antitoxic = true                    
+                if (!('antitoxic' in chat)) chat.antitoxic = true  
+		if (!('antiSpam' in chat)) chat.antiSpam = true  
                 if (!isNumber(chat.expired)) chat.expired = 0
                     
             } else
@@ -935,6 +940,7 @@ export async function handler(chatUpdate) {
 		    reaction: true,
                     viewonce: false,
                     antitoxic: true,
+		    antiSpam: true,
                     expired: 0,
                 }
             let settings = global.db.data.settings[this.user.jid]
@@ -943,14 +949,16 @@ export async function handler(chatUpdate) {
                 if (!('self' in settings)) settings.self = false
                 if (!('autoread' in settings)) settings.autoread = false
                 if (!('restrict' in settings)) settings.restrict = false
-		if (!('temporal' in settings)) settings.temporal = false
-		if (!('antiCall' in settings)) settings.antiCall = false
+		if (!('temporal' in settings)) settings.temporal = true
+		if (!('antiCall' in settings)) settings.antiCall = true
+		//if (!('antiSpam' in settings)) settings.antiSpam = true
             } else global.db.data.settings[this.user.jid] = {
                 self: false,
                 autoread: false,
                 restrict: false,
-		temporal: false,
-		antiCall: false
+		temporal: true,
+		antiCall: true
+		//antiSpam: true
             }
         } catch (e) {
             console.error(e)
@@ -1090,6 +1098,9 @@ export async function handler(chatUpdate) {
                         typeof plugin.command === 'string' ? // String?
                             plugin.command === command :
                             false
+		
+		//if (text) {
+		//m.reply('*ERROR DE COMANDO*')}
 
                 if (!isAccept)
                     continue
@@ -1193,7 +1204,7 @@ export async function handler(chatUpdate) {
                             for (let [jid] of global.owner.filter(([number, _, isDeveloper]) => isDeveloper && number)) {
                                 let data = (await conn.onWhatsApp(jid))[0] || {}
                                 if (data.exists)
-                                    m.reply(`*[ ⚠️ 𝚁𝙴𝙿𝙾𝚁𝚃𝙴 𝙳𝙴 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 𝙲𝙾𝙽 𝙵𝙰𝙻𝙻𝙾𝚂 ⚠️ ]*\n\n*—◉ 𝙿𝙻𝚄𝙶𝙸𝙽:* ${m.plugin}\n*—◉ 𝚄𝚂𝚄𝙰𝚁𝙸𝙾:* ${m.sender}\n*—◉ 𝙲𝙾𝙼𝙰𝙽𝙳𝙾:* ${usedPrefix}${command} ${args.join(' ')}\n\n\`\`\`${text}\`\`\`\n\n*[❗] 𝚁𝙴𝙿𝙾𝚁𝚃𝙴𝙻𝙾 𝙰𝙻 𝙲𝚁𝙴𝙰𝙳𝙾𝚁 𝙳𝙴𝙻 𝙱𝙾𝚃 𝙿𝙰𝚁𝙰 𝙳𝙰𝚁𝙻𝙴 𝚄𝙽𝙰 𝚂𝙾𝙻𝚄𝙲𝙸𝙾𝙽, 𝙿𝚄𝙴𝙳𝙴 𝚄𝚂𝙰𝚁 𝙴𝙻 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 #reporte*`.trim(), data.jid)
+                                    m.reply(`*⚙️ 𝗖𝗢𝗠𝗔𝗡𝗗𝗢 𝗙𝗔𝗟𝗟𝗔𝗡𝗗𝗢 : 𝗖𝗢𝗠𝗠𝗔𝗡𝗗 𝗘𝗥𝗥𝗢𝗥 ⚙️*\n\n*⚠️ 𝗣𝗟𝗨𝗚𝗜𝗡*\n*_${name}_*\n\n*⚠️ 𝗨𝗦𝗨𝗔𝗥𝗜𝗢 : 𝗨𝗦𝗘𝗥𝗡𝗔𝗠𝗘*\n*_${m.sender}_*\n\n*⚠️ 𝗖𝗢𝗠𝗔𝗡𝗗𝗢 : 𝗖𝗢𝗠𝗠𝗔𝗡𝗗*\n*_${m.text}_*\n\n*𝗘𝗥𝗥𝗢𝗥*\n\`\`\`${format(e)}\`\`\`\n\n*❗ 𝗥𝗘𝗣𝗢𝗥𝗧𝗘 𝗘𝗦𝗧𝗘 𝗠𝗘𝗡𝗦𝗔𝗝𝗘 𝗨𝗦𝗔𝗡𝗗𝗢 𝗘𝗟 𝗖𝗢𝗠𝗔𝗡𝗗𝗢 #reporte 𝗣𝗔𝗥𝗔 𝗦𝗢𝗟𝗨𝗖𝗜𝗢𝗡𝗔𝗥𝗟𝗢*`.trim(), data.jid)
                             }
                         m.reply(text)
                     }
