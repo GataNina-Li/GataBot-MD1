@@ -34,16 +34,16 @@
 </p> 
 
 [![blog](https://img.shields.io/badge/GataBot-Update-25D366?style=for-the-badge&logo=whatsapp&logoColor=white 
-)](https://chat.whatsapp.com/GuRmp8NRWblCNWPYVs5Mja) <a href="https://chat.whatsapp.com/Hahc7UwSouH9jIDStkT5QW"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/1200px-WhatsApp_logo-color-vertical.svg.png" height="29px">
+)](https://chat.whatsapp.com/K7dhE0Li8l8GmyrHviAhF7) <a href="https://chat.whatsapp.com/Hahc7UwSouH9jIDStkT5QW"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/1200px-WhatsApp_logo-color-vertical.svg.png" height="29px">
 [![Typing SVG](http://readme-typing-svg.herokuapp.com?font=Fira+Code&size=10&duration=3000&pause=1000&color=34F6F7&center=falso&vCenter=falso&width=435&lines=%C3%9Anete+y+Conoce+las+%C3%9Altimas+Novedades!!)](https://git.io/typing-svg)
 </a>
 
 ### ❇️ GRUPOS OFICIALES
-<a href="https://chat.whatsapp.com/IIoB1z5GaFzIyOTqShvQVH" target="blank"><img src="https://img.shields.io/badge/1️⃣_COMUNIDAD_GATADOT_🐈-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
-<a href="https://chat.whatsapp.com/JwDRzY0tauFGlZZk6gHS5O" target="blank"><img src="https://img.shields.io/badge/2️⃣_COMUNIDAD_GATADOT_🐈-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
-<a href="https://chat.whatsapp.com/LNmOvNhmBrsBg6L8dBYuBD" target="blank"><img src="https://img.shields.io/badge/3️⃣_COMUNIDAD_GATADOT_🐈-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
-<a href="https://chat.whatsapp.com/KwvR7sLAhQj9G20hmTWbVg" target="blank"><img src="https://img.shields.io/badge/4️⃣_COMUNIDAD_GATADOT_🐈-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
-<a href="https://chat.whatsapp.com/G0SrKHhwYdJBSTxZaklx3W" target="blank"><img src="https://img.shields.io/badge/5️⃣_COMUNIDAD_GATADOT_🐈-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+<a href="https://chat.whatsapp.com/DrZ8pWS8Z3GLuWKmZTp9Ng" target="blank"><img src="https://img.shields.io/badge/1️⃣_COMUNIDAD_GATADOT_🐈-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+<a href="https://chat.whatsapp.com/IJAYiyVOiBuEXXEDHNMEBX" target="blank"><img src="https://img.shields.io/badge/2️⃣_COMUNIDAD_GATADOT_🐈-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+<a href="https://chat.whatsapp.com/IFECIyRjlZ6BDqz7axXtJF" target="blank"><img src="https://img.shields.io/badge/3️⃣_COMUNIDAD_GATADOT_🐈-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+<a href="https://chat.whatsapp.com/EqVTcmfg2lH8d6BN5KTiBs" target="blank"><img src="https://img.shields.io/badge/4️⃣_COMUNIDAD_GATADOT_🐈-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+<a href="https://chat.whatsapp.com/LHyO4m4XavNFILhuf4cgag" target="blank"><img src="https://img.shields.io/badge/5️⃣_COMUNIDAD_GATADOT_🐈-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 </a>
 
 ### 💖 ```DONAR``` [`Aquí`](https://paypal.me/OficialGD)

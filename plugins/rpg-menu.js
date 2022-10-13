@@ -120,7 +120,7 @@ let menu = `
 ┃⚗️➺ _${usedPrefix}minarexperiencia | minarexp_
 ┃⚗️➺ _${usedPrefix}minar *:* minar2 *:* minar3_
 ┃⚗️➺ _${usedPrefix}reclamar | regalo | claim_
-┃⚗️➺ _${usedPrefix}cadahora | hora | hourly_
+┃⚗️➺ _${usedPrefix}cadahora | hourly_
 ┃⚗️➺ _${usedPrefix}cadasemana | semanal | weekly_
 ┃⚗️➺ _${usedPrefix}cadames | mes | monthly_
 ┃⚗️➺ _${usedPrefix}cofre | abrircofre | coffer_
