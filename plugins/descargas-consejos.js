@@ -4,7 +4,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 try {
 if (command == 'consejo') {
 let letra = 'https://mysuenos.com/wp-content/uploads/2019/10/trebol.jpg'
-let res = await fetch("https://supra-api.herokuapp.com/api/conselho?apikey=supraz")
+let res = await fetch("https://bx-hunter.herokuapp.com/api/motivasi?apikey=bx")//("https://supra-api.herokuapp.com/api/conselho?apikey=supraz") 
 
 let json = await res.json()
 let { frase } = json
@@ -134,7 +134,7 @@ conn.sendHydrated(m.chat, texto, wm, letra, 'https://github.com/GataNina-Li/Gata
 ['⚡ 𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪', '#menu']
 ], m,)}
 } catch (e) {
-await conn.reply(m.chat, `\`\`\`${fg}PARECE QUE ALGO NO FUNCIONA\nREPORTE ESTE COMANDO ${usedPrefix + command} CON EL COMANDO #REPORTE\`\`\``, m)
+await conn.reply(m.chat, `${fg}\`\`\`PARECE QUE ALGO NO FUNCIONA\nREPORTE ESTE COMANDO ${usedPrefix + command} CON EL COMANDO #REPORTE\`\`\``, m)
 console.log(e)
 }  
 }
