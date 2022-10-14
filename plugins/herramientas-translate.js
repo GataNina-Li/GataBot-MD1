@@ -142,7 +142,17 @@ rows: [
 {title: "🪄 " + idiomas[121][0], rowId: `${usedPrefix + command} ${idiomas[121][1]} ${text}`, description: `𝑰𝒅𝒊𝒐𝒎𝒂: ${idiomas[121][0]} | ${idiomas[121][1]}`},
 {title: "🪄 " + idiomas[122][0], rowId: `${usedPrefix + command} ${idiomas[122][1]} ${text}`, description: `𝑰𝒅𝒊𝒐𝒎𝒂: ${idiomas[122][0]} | ${idiomas[122][1]}`},
 {title: "🪄 " + idiomas[123][0], rowId: `${usedPrefix + command} ${idiomas[123][1]} ${text}`, description: `𝑰𝒅𝒊𝒐𝒎𝒂: ${idiomas[123][0]} | ${idiomas[123][1]}`},
-{title: "🪄 " + idiomas[124][0], rowId: `${usedPrefix + command} ${idiomas[124][1]} ${text}`, description: `𝑰𝒅𝒊𝒐𝒎𝒂: ${idiomas[124][0]} | ${idiomas[124][1]}`}
+{title: "🪄 " + idiomas[124][0], rowId: `${usedPrefix + command} ${idiomas[124][1]} ${text}`, description: `𝑰𝒅𝒊𝒐𝒎𝒂: ${idiomas[124][0]} | ${idiomas[124][1]}`},
+{title: "🪄 " + idiomas[125][0], rowId: `${usedPrefix + command} ${idiomas[125][1]} ${text}`, description: `𝑰𝒅𝒊𝒐𝒎𝒂: ${idiomas[125][0]} | ${idiomas[125][1]}`},
+{title: "🪄 " + idiomas[126][0], rowId: `${usedPrefix + command} ${idiomas[126][1]} ${text}`, description: `𝑰𝒅𝒊𝒐𝒎𝒂: ${idiomas[126][0]} | ${idiomas[126][1]}`},
+{title: "🪄 " + idiomas[127][0], rowId: `${usedPrefix + command} ${idiomas[127][1]} ${text}`, description: `𝑰𝒅𝒊𝒐𝒎𝒂: ${idiomas[127][0]} | ${idiomas[127][1]}`},
+{title: "🪄 " + idiomas[128][0], rowId: `${usedPrefix + command} ${idiomas[128][1]} ${text}`, description: `𝑰𝒅𝒊𝒐𝒎𝒂: ${idiomas[128][0]} | ${idiomas[128][1]}`},
+{title: "🪄 " + idiomas[129][0], rowId: `${usedPrefix + command} ${idiomas[129][1]} ${text}`, description: `𝑰𝒅𝒊𝒐𝒎𝒂: ${idiomas[129][0]} | ${idiomas[129][1]}`},
+{title: "🪄 " + idiomas[130][0], rowId: `${usedPrefix + command} ${idiomas[130][1]} ${text}`, description: `𝑰𝒅𝒊𝒐𝒎𝒂: ${idiomas[130][0]} | ${idiomas[130][1]}`},
+{title: "🪄 " + idiomas[131][0], rowId: `${usedPrefix + command} ${idiomas[131][1]} ${text}`, description: `𝑰𝒅𝒊𝒐𝒎𝒂: ${idiomas[131][0]} | ${idiomas[131][1]}`},
+{title: "🪄 " + idiomas[132][0], rowId: `${usedPrefix + command} ${idiomas[132][1]} ${text}`, description: `𝑰𝒅𝒊𝒐𝒎𝒂: ${idiomas[132][0]} | ${idiomas[132][1]}`},
+{title: "🪄 " + idiomas[133][0], rowId: `${usedPrefix + command} ${idiomas[133][1]} ${text}`, description: `𝑰𝒅𝒊𝒐𝒎𝒂: ${idiomas[133][0]} | ${idiomas[133][1]}`},
+{title: "🪄 " + idiomas[134][0], rowId: `${usedPrefix + command} ${idiomas[134][1]} ${text}`, description: `𝑰𝒅𝒊𝒐𝒎𝒂: ${idiomas[134][0]} | ${idiomas[134][1]}`}
 ]}]	
 try {      
 let result = await translate(`${text}`, { tld, to: lang, })
