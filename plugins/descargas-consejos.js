@@ -1,15 +1,16 @@
 import translate from 'translate-google-api'
 import fetch from 'node-fetch'
 let handler = async (m, { conn, usedPrefix, command }) => {
+
 try {
 if (command == 'consejo') {
 let letra = 'https://mysuenos.com/wp-content/uploads/2019/10/trebol.jpg'
 let res = await fetch("https://bx-hunter.herokuapp.com/api/motivasi?apikey=bx")//("https://supra-api.herokuapp.com/api/conselho?apikey=supraz") 
 
 let json = await res.json()
-let { frase } = json
+let { message } = json
 const tld = 'cn'
-let frase1 = await translate(`${frase}`, { tld, to: 'es' })
+let frase1 = await translate(`${message}`, { tld, to: 'es' })
 let texto = `
 *╭━━・☘️・━━━━・☘️・━━⬣*
 
