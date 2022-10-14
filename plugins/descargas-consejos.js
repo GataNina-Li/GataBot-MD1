@@ -6,7 +6,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 if (command == 'consejo') {
 let letra = 'https://mysuenos.com/wp-content/uploads/2019/10/trebol.jpg'
 let res = await fetch("https://bx-hunter.herokuapp.com/api/motivasi?apikey=Ikyy69")//("https://supra-api.herokuapp.com/api/conselho?apikey=supraz") 
-try {
+//try {
 let json = await res.json()
 let { consejo } = json
 const tld = 'cn'
@@ -23,10 +23,10 @@ conn.sendHydrated(m.chat, texto, wm, letra, 'https://github.com/GataNina-Li/Gata
 ['🌟 𝙀𝙣𝙜𝙡𝙞𝙨𝙝 𝙫𝙚𝙧𝙨𝙞𝙤𝙣', '.consejo2'],
 ['⚡ 𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪', '#menu']
 ], m,)}
-} catch (e) {
-await conn.reply(m.chat, `${fg}\`\`\`PARECE QUE ALGO NO FUNCIONA\nREPORTE ESTE COMANDO ${usedPrefix + command} CON EL COMANDO #REPORTE\`\`\``, m)
-console.log(e)
-}  
+//} catch (e) {
+//await conn.reply(m.chat, `${fg}\`\`\`PARECE QUE ALGO NO FUNCIONA\nREPORTE ESTE COMANDO ${usedPrefix + command} CON EL COMANDO #REPORTE\`\`\``, m)
+//console.log(e)
+//}  
   
 if (command == 'consejo2') {
 let letra = 'https://mysuenos.com/wp-content/uploads/2019/10/trebol.jpg'
