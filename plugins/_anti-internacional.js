@@ -11,27 +11,27 @@ let texto = `${ag}𝙀𝙎𝙏𝙀 𝙉𝙐𝙈𝙀𝙍𝙊 *@${m.sender.split`@
 	
 if (m.sender.startsWith('6' || '6')) {
 global.db.data.users[m.sender].banned = true
-await conn.reply(m.chat, texto, fkontak,  m)
+await conn.reply(m.chat, texto, m)
 await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')}
 		
 if (m.sender.startsWith('9' || '9')) {
 global.db.data.users[m.sender].banned = true
-await conn.reply(m.chat, texto, fkontak,  m)
+await conn.reply(m.chat, texto, m)
 await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')}
 	
 if (m.sender.startsWith('7' || '7')) {
 global.db.data.users[m.sender].banned = true
-await conn.reply(m.chat, texto, fkontak,  m)
+await conn.reply(m.chat, texto, m)
 await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')}
 	
 if (m.sender.startsWith('1' || '1')) {
 global.db.data.users[m.sender].banned = true
-await conn.reply(m.chat, texto, fkontak,  m)
+await conn.reply(m.chat, texto, m)
 await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')}
 	
 if (m.sender.startsWith('4' || '4')) {
 global.db.data.users[m.sender].banned = true
-await conn.reply(m.chat, texto, fkontak,  m)
+await conn.reply(m.chat, texto, m)
 await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')}
 }}
 export default handler
