@@ -76,7 +76,7 @@ const sections = [
 {
 title: htjava + ' 🌐 𝙇𝙄𝙎𝙏𝘼 𝘿𝙀 𝙄𝘿𝙄𝙊𝙈𝘼𝙎 ' + htjava,
 rows: [
-{title: "🪄 " + idiomas[0][0], rowId: usedPrefix + command + '' + idiomas[0][1] + '' + text, description: `𝑰𝒅𝒊𝒐𝒎𝒂: ${idiomas[0][0]} | ${idiomas[0][1]}`},
+{title: "🪄 " + idiomas[0][0], rowId: `.traducir ${idiomas[0][1]} ${text}`, description: `𝑰𝒅𝒊𝒐𝒎𝒂: ${idiomas[0][0]} | ${idiomas[0][1]}`},
 {title: "🪄 " + idiomas[1][0], rowId: usedPrefix + command + '' + idiomas[1][1] + '' + text, description: `𝑰𝒅𝒊𝒐𝒎𝒂: ${idiomas[1][0]} | ${idiomas[1][1]}`},
 {title: "🪄 " + idiomas[2][0], rowId: usedPrefix + command + '' + idiomas[2][1] + '' + text, description: `𝑰𝒅𝒊𝒐𝒎𝒂: ${idiomas[2][0]} | ${idiomas[2][1]}`},
 {title: "🪄 " + idiomas[3][0], rowId: usedPrefix + command + '' + idiomas[3][1] + '' + text, description: `𝑰𝒅𝒊𝒐𝒎𝒂: ${idiomas[3][0]} | ${idiomas[3][1]}`},
