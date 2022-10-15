@@ -1,13 +1,12 @@
 import translate from 'translate-google-api'
 import fetch from 'node-fetch'
-import axios from "axios" 
 let handler = async (m, { conn, usedPrefix, command }) => {
 
 
 if (command == 'consejo') {
 try {  
-/*let letra = 'https://mysuenos.com/wp-content/uploads/2019/10/trebol.jpg'
-let res = await fetch("https://bx-hunter.herokuapp.com/api/bijak?apikey=wrBPnfdGrGX7qWe9B3NGkbQir")//("https://supra-api.herokuapp.com/api/conselho?apikey=supraz") 
+let letra = 'https://mysuenos.com/wp-content/uploads/2019/10/trebol.jpg'
+let res = await fetch("https://bx-hunter.herokuapp.com/api/fakta?apikey=wrBPnfdGrGX7qWe9B3NGkbQir")//("https://supra-api.herokuapp.com/api/conselho?apikey=supraz") 
 let json = await res.data.result
 let { consejo } = json
 const tld = 'cn'
@@ -23,11 +22,7 @@ conn.sendHydrated(m.chat, texto, wm, letra, 'https://github.com/GataNina-Li/Gata
 ['🍃 𝙉𝙪𝙚𝙫𝙤 𝘾𝙤𝙣𝙨𝙚𝙟𝙤 | 𝙉𝙚𝙬 𝘾𝙤𝙪𝙣𝙘𝙞𝙡', `${usedPrefix + command}`],
 ['🌟 𝙀𝙣𝙜𝙡𝙞𝙨𝙝 𝙫𝙚𝙧𝙨𝙞𝙤𝙣', '.consejo2'],
 ['⚡ 𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪', '#menu']
-], m,)*/
-axios.get(`https://ariarestapii.herokuapp.com/api/bijak?apikey=aria`).then ((res) => {
-let hasil = `${res.data.result}`
-
-conn.reply(m.chat, hasil, m)})
+], m,)
 } catch (e) {
 conn.reply(m.chat, `${fg}\`\`\`PARECE QUE ALGO NO FUNCIONA\nREPORTE ESTE COMANDO ${usedPrefix + command} CON EL COMANDO #REPORTE\`\`\``, m)}}  
   
