@@ -32,7 +32,7 @@ let contenido = `✅ 𝙑𝙄𝘿𝙀𝙊 𝘿𝙀 𝙁𝘼𝘾𝙀𝘽𝙊𝙊�
 
 switch (command) { 
 
-/*case "facebook": case "fb": case "facebookdl": case "fbdl":                
+case "facebook": case "fb": case "facebookdl": case "fbdl":                
 await conn.sendMessage(m.chat, listMessage, {quoted: fkontak} )
 break      
 
@@ -40,7 +40,8 @@ case "facebook1": case "fb1": case "facebookdl1": case "fbdl1":
 let res = await fbDownloader(args[0])
 for (let result of res.download) {
 let ur = result.url
-await conn.sendMessage(m.chat, { video: { ur }, caption: contenido }, { quoted: m })}
+//await conn.sendMessage(m.chat, { video: { ur }, caption: contenido }, { quoted: m })}
+await conn.sendFile(m.chat, ur, `error.mp4`, contenido, m)}
 break   
     
 case "facebook2": case "fb2": case "facebookdl2": case "fbdl2":                  
@@ -66,24 +67,6 @@ let vio = await fetch(`https://api.violetics.pw/api/downloader/facebook?apikey=b
 let vioo = await vio.json()
 let videovio = `${vioo.result.hd.url || vioo.result.sd.url}`
 await conn.sendFile(m.chat, videovio, `error.mp4`, contenido, m)
-break*/
-
-case "facebook": case "fb": case "facebookdl": case "fbdl":                
-await conn.sendMessage(m.chat, listMessage, {quoted: fkontak} )
-break
-    
-case "facebook1": case "fb1": case "facebookdl1": case "fbdl1":
-let res = await fetch(`https://api.lolhuman.xyz/api/facebook?apikey=85faf717d0545d14074659ad&url=${text}`)
-let json = await res.json()
-let { result } = json
-await conn.sendFile(m.chat, result, 'error.mp4', contenido, m)
-break
-
-case "facebook2": case "fb2": case "facebookdl2": case "fbdl2":
-let res = await axios('https://violetics.pw/api/downloader/facebook?apikey=beta&url=' + args[0])
-let json = res.data
-let dapet = json.result.url
-await conn.sendFile(m.chat, dapet, 'error.mp4', contenido, m)
 break
         
 }} catch {
