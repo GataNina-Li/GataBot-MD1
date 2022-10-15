@@ -6,7 +6,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 if (command == 'consejo') {
 try {  
 let letra = 'https://mysuenos.com/wp-content/uploads/2019/10/trebol.jpg'
-let res = await fetch("https://bx-hunter.herokuapp.com/api/fakta?apikey=wrBPnfdGrGX7qWe9B3NGkbQir")//("https://supra-api.herokuapp.com/api/conselho?apikey=supraz") 
+let res = await fetch("https://bx-hunter.herokuapp.com/api/fakta?apikey=bx")//("https://supra-api.herokuapp.com/api/conselho?apikey=supraz") 
 let json = await res.json()
 let { consejo } = json
 const tld = 'cn'
