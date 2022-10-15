@@ -65,17 +65,12 @@ case "facebook3": case "fb3": case "facebookdl3": case "fbdl3":
 break    
     
 case "facebook4": case "fb4": case "facebookdl4": case "fbdl4":   
-let res1 = await fetch(`https://api.lolhuman.xyz/api/facebook?apikey=85faf717d0545d14074659ad&url=${args[0]}`)
-let json1 = await res1.json()
-let { result1 } = json1
-conn.sendFile(m.chat, result1, 'error.mp4', `*Aquí tiene su video de Facebook. ฅ^•ﻌ•^ฅ⚘*`, m) 
+
 break   
     
 case "facebook5": case "fb5": case "facebookdl5": case "fbdl5":
-let res2 = await fetch(`https://api.lolhuman.xyz/api/facebook2?apikey=85faf717d0545d14074659ad&url=${args[0]}`)
-let json2 = await res2.json()
-let { result2 } = json2
-conn.sendFile(m.chat, result2, 'error.mp4', `*Aquí tiene su video de Facebook. ฅ^•ﻌ•^ฅ⚘*`, m)
+let resfb = await fetchJson(`https://latam-api.vercel.app/api/facebookdl?apikey=nekosmic&q=${args[0]}`)
+conn.sendMessage(m.chat, { video: { url: resfb.video }, fileName: `fbsd.mp4`, mimetype: 'video/mp4' }, { quoted: m })
 break
         
 }} catch {
