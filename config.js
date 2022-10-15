@@ -22,6 +22,7 @@ global.prems = ['528451003894'],
 global.APIs = { // API Prefix. 
   
 //⊱ ━━━━━.⋅ name: 'https://website' ⋅.━━━━ ⊰
+  aria: 'https://ariarestapii.herokuapp.com',
   amel: 'https://melcanz.com',
   bx: 'https://bx-hunter.herokuapp.com',
   nrtm: 'https://nurutomo.herokuapp.com',
@@ -54,6 +55,7 @@ global.APIs = { // API Prefix.
   
 global.APIKeys = { // APIKey Here
   //⊱ ━━━━━.⋅ 'https://website': 'apikey' ⋅.━━━━ ⊰
+  'https://ariarestapii.herokuapp.com': 'aria',
   'https://api-alc.herokuapp.com': 'ConfuMods',
   'https://api.reysekha.xyz': 'apirey',
   'https://melcanz.com': 'F3bOrWzY',
