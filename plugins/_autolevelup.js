@@ -23,18 +23,16 @@ while (canLevelUp(user.level, user.exp, global.multiplier)) user.level++
 *_Cuanto más interactúes con GataBot-MD, mayor será tu nivel!!_*
 `.trim())*/
 	 
-conn.sendButton(m.chat, wm, `
-*╭━━━[ 𝙉𝙄𝙑𝙀𝙇 | 𝙇𝙀𝙑𝙀𝙇 ]━━━━⬣*
+conn.sendButton(m.chat, '🐈 ' + wm, `*╭━━━[ 𝙉𝙄𝙑𝙀𝙇 | 𝙇𝙀𝙑𝙀𝙇 ]━━━⬣*
 *┃ NIVEL ANTERIOR: ${before}*
-*┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈*
+*┃┈┈┈┈┈┈┈┈┈┈┈┈┈*
 *┃ NIVEL ACTUAL: ${user.level}*
-*┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈*
+*┃┈┈┈┈┈┈┈┈┈┈┈┈┈*
 *┃ RANGO:* ${user.role}
-*┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈*
+*┃┈┈┈┈┈┈┈┈┈┈┈┈┈*
 *┃ FECHA: ${new Date().toLocaleString('id-ID')}*
-*╰━━━〔 𓃠 ${vs} 〕━━━━━⬣*
+*╰━━━〔 𓃠 ${vs} 〕━━━━⬣*
 
-*_Cuanto más interactúes conmigo, mayor será tu nivel!!_*`, null, [['🍀 𝐌 𝐄 𝐍 𝐔', `/menu`]], m)
-}
-}		
+*_Cuanto más interactúes conmigo, mayor será tu nivel!!_*`, null, [['🍀 𝗠 𝗘 𝗡 𝗨', `/menu`]], m)
+}}		
 //export const disabled = false 
