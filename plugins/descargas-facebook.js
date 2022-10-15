@@ -73,8 +73,10 @@ await conn.sendMessage(m.chat, listMessage, {quoted: fkontak} )
 break
     
 case "facebook1": case "fb1": case "facebookdl1": case "fbdl1":
-const { result } = await facebookdl(args[0]).catch(async _ => await facebookdlv2(args[0]))
-for (const { url, isVideo } of result.reverse()) conn.sendFile(m.chat, url, `facebook.${!isVideo ? 'bin' : 'mp4'}`, contenido, m)
+let res = await fetch(`https://api.lolhuman.xyz/api/facebook?apikey=85faf717d0545d14074659ad&url=${text}`)
+let json = await res.json()
+let { result } = json
+await conn.sendFile(m.chat, result, 'error.mp4', contenido, m)
 break
 
 case "facebook2": case "fb2": case "facebookdl2": case "fbdl2":
