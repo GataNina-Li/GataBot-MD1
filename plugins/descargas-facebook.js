@@ -27,7 +27,7 @@ buttonText: `🛰️ 𝙀𝙡𝙚𝙜𝙞𝙧 𝘿𝙚𝙨𝙘𝙖𝙧𝙜𝙖 �
 sections }  
 
 try {
-let red = `${eg}𝙀𝙎𝙋𝙀𝙍𝙀 𝙐𝙉 𝙈𝙊𝙈𝙀𝙉𝙏𝙊, 𝙎𝙀 𝙀𝙎𝙏𝘼 𝘿𝙀𝙎𝘾𝘼𝙍𝙂𝘼𝙉𝘿𝙊 𝙎𝙐 𝙑𝙄𝘿𝙀𝙊 𝘿𝙀 𝙁𝘼𝘾𝙀𝘽𝙊𝙊𝙆\n\n𝙒𝘼𝙄𝙏 𝘼 𝙈𝙊𝙈𝙀𝙉𝙏, 𝙔𝙊𝙐𝙍 𝙑𝙄𝘿𝙀𝙊 𝙄𝙎 𝘿𝙊𝙒𝙉𝙇𝙊𝘼𝘿𝙄𝙉𝙂`
+await conn.reply(m.chat, `${eg}𝙀𝙎𝙋𝙀𝙍𝙀 𝙐𝙉 𝙈𝙊𝙈𝙀𝙉𝙏𝙊, 𝙎𝙀 𝙀𝙎𝙏𝘼 𝘿𝙀𝙎𝘾𝘼𝙍𝙂𝘼𝙉𝘿𝙊 𝙎𝙐 𝙑𝙄𝘿𝙀𝙊 𝘿𝙀 𝙁𝘼𝘾𝙀𝘽𝙊𝙊𝙆\n\n𝙒𝘼𝙄𝙏 𝘼 𝙈𝙊𝙈𝙀𝙉𝙏, 𝙔𝙊𝙐𝙍 𝙑𝙄𝘿𝙀𝙊 𝙄𝙎 𝘿𝙊𝙒𝙉𝙇𝙊𝘼𝘿𝙄𝙉𝙂`, fkontak, m)
 let contenido = `✅ 𝙑𝙄𝘿𝙀𝙊 𝘿𝙀 𝙁𝘼𝘾𝙀𝘽𝙊𝙊𝙆\n${wm}`
 
 switch (command) {    
@@ -39,14 +39,12 @@ case "facebook1": case "fb1": case "facebookdl1": case "fbdl1":
 let res = await fbDownloader(args[0])
 for (let result of res.download) {
 let ur = result.url
-await conn.reply(m.chat, red, fkontak, m)
 await conn.sendMessage(m.chat, { video: { ur }, caption: contenido }, { quoted: m })}
 break   
     
 case "facebook2": case "fb2": case "facebookdl2": case "fbdl2":                  
 let ress = await facebookDl(args[0]).catch(async _ => await savefrom(args[0])).catch(_ => null)
 let urll = ress?.url?.[0]?.url || ress?.url?.[1]?.url || ress?.['720p'] || ress?.['360p']
-await conn.reply(m.chat, red, fkontak, m)
 await conn.sendMessage(m.chat, { video: { urll }, caption: contenido }, { quoted: m })    
 break
     
@@ -54,22 +52,18 @@ case "facebook3": case "fb3": case "facebookdl3": case "fbdl3":
 let res3 = await fetch(`https://latam-api.vercel.app/api/facebookdl?apikey=brunosobrino&q=${args[0]}`)  
 let json = await res3.json()
 let url3 = json.video
-await conn.reply(m.chat, red, fkontak, m)
 await conn.sendMessage(m.chat, { video: { url3 }, caption: contenido }, { quoted: m })    
 break    
     
 case "facebook4": case "fb4": case "facebookdl4": case "fbdl4":   
 const { result } = await facebookdl(args[0]).catch(async _ => await facebookdlv2(args[0]))
-for (const { url, isVideo } of result.reverse()) 
-await conn.reply(m.chat, red, fkontak, m)
-await conn.sendMessage(m.chat, { video: { url }, fileName: `error.mp4`, mimetype: 'video/mp4' , caption: contenido }, { quoted: m })    
+for (const { url, isVideo } of result.reverse()) await conn.sendMessage(m.chat, { video: { url }, fileName: `error.mp4`, mimetype: 'video/mp4' , caption: contenido }, { quoted: m })    
 break   
     
 case "facebook5": case "fb5": case "facebookdl5": case "fbdl5":
 let vio = await fetch(`https://api.violetics.pw/api/downloader/facebook?apikey=beta&url=${args[0]}`)  
 let vioo = await vio.json()
 let videovio = `${vioo.result.hd.url || vioo.result.sd.url}`
-await conn.reply(m.chat, red, fkontak, m)
 await conn.sendFile(m.chat, videovio, `error.mp4`, contenido, m)
 break
     
