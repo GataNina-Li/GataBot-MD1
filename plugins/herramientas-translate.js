@@ -182,5 +182,5 @@ await m.reply(result2)
 } catch { 
 await m.reply(`${fg}\`\`\`NO SE LOGRÓ TRADUCIR SU TEXTO, REPORTE ESTE COMANDO CON EL COMANDO #reporte\`\`\``)    
 }}}
-handler.command = /^(tr(anslate)|traducir?)$/i
+handler.command = /^(tr(anslate)|traductor|traducir?)$/i
 export default handler
