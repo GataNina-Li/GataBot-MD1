@@ -14,9 +14,9 @@ title: htjava + ' 📡 𝙇𝙄𝙎𝙏𝘼 𝘿𝙀 𝘿𝙀𝙎𝘾𝘼𝙍�
 rows: [
 {title: "📡 𝙁𝘼𝘾𝙀𝘽𝙊𝙊𝙆 (𝙤𝙥𝙘𝙞𝙤𝙣 1) ", rowId: `${usedPrefix}fb1 ${args[0]}`},
 {title: "📡 𝙁𝘼𝘾𝙀𝘽𝙊𝙊𝙆 (𝙤𝙥𝙘𝙞𝙤𝙣 2) ", rowId: `${usedPrefix}fb2 ${args[0]}`},
-{title: "📡 𝙁𝘼𝘾𝙀𝘽𝙊𝙊𝙆 (𝙤𝙥𝙘𝙞𝙤𝙣 3) ", rowId: `${usedPrefix}fb3 ${args[0]}`},
-{title: "📡 𝙁𝘼𝘾𝙀𝘽𝙊𝙊𝙆 (𝙤𝙥𝙘𝙞𝙤𝙣 4) ", rowId: `${usedPrefix}fb4 ${args[0]}`},
-{title: "📡 𝙁𝘼𝘾𝙀𝘽𝙊𝙊𝙆 (𝙤𝙥𝙘𝙞𝙤𝙣 5) ", rowId: `${usedPrefix}fb5 ${args[0]}`}
+//{title: "📡 𝙁𝘼𝘾𝙀𝘽𝙊𝙊𝙆 (𝙤𝙥𝙘𝙞𝙤𝙣 3) ", rowId: `${usedPrefix}fb3 ${args[0]}`},
+//{title: "📡 𝙁𝘼𝘾𝙀𝘽𝙊𝙊𝙆 (𝙤𝙥𝙘𝙞𝙤𝙣 4) ", rowId: `${usedPrefix}fb4 ${args[0]}`},
+//{title: "📡 𝙁𝘼𝘾𝙀𝘽𝙊𝙊𝙆 (𝙤𝙥𝙘𝙞𝙤𝙣 5) ", rowId: `${usedPrefix}fb5 ${args[0]}`}
 ]}]	
 
 const listMessage = {
@@ -27,9 +27,7 @@ buttonText: `🛰️ 𝙀𝙡𝙚𝙜𝙞𝙧 𝘿𝙚𝙨𝙘𝙖𝙧𝙜𝙖 �
 sections }  
 
 try {
-await conn.reply(m.chat, `${eg}𝙀𝙎𝙋𝙀𝙍𝙀 𝙐𝙉 𝙈𝙊𝙈𝙀𝙉𝙏𝙊, 𝙎𝙀 𝙀𝙎𝙏𝘼 𝘿𝙀𝙎𝘾𝘼𝙍𝙂𝘼𝙉𝘿𝙊 𝙎𝙐 𝙑𝙄𝘿𝙀𝙊 𝘿𝙀 𝙁𝘼𝘾𝙀𝘽𝙊𝙊𝙆\n\n𝙒𝘼𝙄𝙏 𝘼 𝙈𝙊𝙈𝙀𝙉𝙏, 𝙔𝙊𝙐𝙍 𝙑𝙄𝘿𝙀𝙊 𝙄𝙎 𝘿𝙊𝙒𝙉𝙇𝙊𝘼𝘿𝙄𝙉𝙂`, fkontak, m)
 let contenido = `✅ 𝙑𝙄𝘿𝙀𝙊 𝘿𝙀 𝙁𝘼𝘾𝙀𝘽𝙊𝙊𝙆\n${wm}`
-
 switch (command) { 
 
 case "facebook": case "fb": case "facebookdl": case "fbdl":                
@@ -40,6 +38,7 @@ case "facebook1": case "fb1": case "facebookdl1": case "fbdl1":
 let vio = await fetch(`https://api.violetics.pw/api/downloader/facebook?apikey=beta&url=${args[0]}`)  
 let vioo = await vio.json()
 let videovio = `${vioo.result.hd.url || vioo.result.sd.url}`
+await conn.reply(m.chat, `${eg}𝙀𝙎𝙋𝙀𝙍𝙀 𝙐𝙉 𝙈𝙊𝙈𝙀𝙉𝙏𝙊, 𝙎𝙀 𝙀𝙎𝙏𝘼 𝘿𝙀𝙎𝘾𝘼𝙍𝙂𝘼𝙉𝘿𝙊 𝙎𝙐 𝙑𝙄𝘿𝙀𝙊 𝘿𝙀 𝙁𝘼𝘾𝙀𝘽𝙊𝙊𝙆\n\n𝙒𝘼𝙄𝙏 𝘼 𝙈𝙊𝙈𝙀𝙉𝙏, 𝙔𝙊𝙐𝙍 𝙑𝙄𝘿𝙀𝙊 𝙄𝙎 𝘿𝙊𝙒𝙉𝙇𝙊𝘼𝘿𝙄𝙉𝙂`, fkontak, m)
 await conn.sendFile(m.chat, videovio, `error.mp4`, contenido, m)
 break
 //let res = await fbDownloader(args[0])
@@ -49,32 +48,16 @@ break
    
     
 case "facebook2": case "fb2": case "facebookdl2": case "fbdl2":   
+await conn.reply(m.chat, `${eg}𝙀𝙎𝙋𝙀𝙍𝙀 𝙐𝙉 𝙈𝙊𝙈𝙀𝙉𝙏𝙊, 𝙎𝙀 𝙀𝙎𝙏𝘼 𝘿𝙀𝙎𝘾𝘼𝙍𝙂𝘼𝙉𝘿𝙊 𝙎𝙐 𝙑𝙄𝘿𝙀𝙊 𝘿𝙀 𝙁𝘼𝘾𝙀𝘽𝙊𝙊𝙆\n\n𝙒𝘼𝙄𝙏 𝘼 𝙈𝙊𝙈𝙀𝙉𝙏, 𝙔𝙊𝙐𝙍 𝙑𝙄𝘿𝙀𝙊 𝙄𝙎 𝘿𝙊𝙒𝙉𝙇𝙊𝘼𝘿𝙄𝙉𝙂`, fkontak, m)
 const { result } = await facebookdl(args[0]).catch(async _ => await facebookdlv2(args[0]))
 for (const { url, isVideo } of result.reverse()) await conn.sendMessage(m.chat, { video: { url }, fileName: `error.mp4`, mimetype: 'video/mp4' , caption: contenido }, { quoted: m })   
 break
 //let ress = await facebookDl(args[0]).catch(async _ => await savefrom(args[0])).catch(_ => null)
 //let urll = ress?.url?.[0]?.url || ress?.url?.[1]?.url || ress?.['720p'] || ress?.['360p']
 //await conn.sendMessage(m.chat, { video: { urll }, caption: contenido }, { quoted: m })  
-
-    
-case "facebook3": case "fb3": case "facebookdl3": case "fbdl3":   
-//let res3 = await fetch(`https://latam-api.vercel.app/api/facebookdl?apikey=brunosobrino&q=${args[0]}`)  
-//let json = await res3.json()
-//let url3 = json.video
-//await conn.sendMessage(m.chat, { video: { url3 }, caption: contenido }, { quoted: m })         
-break    
-    
-case "facebook4": case "fb4": case "facebookdl4": case "fbdl4":   
-
-break   
-    
-case "facebook5": case "fb5": case "facebookdl5": case "fbdl5":
-let resfb = await fetchJson(`https://latam-api.vercel.app/api/facebookdl?apikey=nekosmic&q=${args[0]}`)
-conn.sendMessage(m.chat, { video: { url: resfb.video }, fileName: `fbsd.mp4`, mimetype: 'video/mp4' }, { quoted: m })
-break
         
 }} catch {
 await m.reply(`${fg}𝘼𝙇𝙂𝙊 𝙎𝘼𝙇𝙄𝙊 𝙈𝘼𝙇, 𝙍𝙀𝘾𝙐𝙀𝙍𝘿𝙀 𝙐𝙎𝘼𝙍 𝙐𝙉 𝙀𝙉𝙇𝘼𝘾𝙀 𝙑𝘼𝙇𝙄𝘿𝙊 𝘿𝙀 𝙁𝘼𝘾𝙀𝘽𝙊𝙊𝙆`)
 }}
-handler.command = /^(facebook|fb|facebookdl|fbdl|facebook1|fb1|facebookdl1|fbdl1|facebook2|fb2|facebookdl2|fbdl2|facebook3|fb3|facebookdl3|fbdl3|facebook4|fb4|facebookdl4|fbdl4|facebook5|fb5|facebookdl5|fbdl5)$/i
+handler.command = /^(facebook|fb|facebookdl|fbdl|facebook1|fb1|facebookdl1|fbdl1|facebook2|fb2|facebookdl2|fbdl2)$/i
 export default handler   
