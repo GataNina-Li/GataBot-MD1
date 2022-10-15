@@ -30,8 +30,9 @@ try {
 await conn.reply(m.chat, `${eg}𝙀𝙎𝙋𝙀𝙍𝙀 𝙐𝙉 𝙈𝙊𝙈𝙀𝙉𝙏𝙊, 𝙎𝙀 𝙀𝙎𝙏𝘼 𝘿𝙀𝙎𝘾𝘼𝙍𝙂𝘼𝙉𝘿𝙊 𝙎𝙐 𝙑𝙄𝘿𝙀𝙊 𝘿𝙀 𝙁𝘼𝘾𝙀𝘽𝙊𝙊𝙆\n\n𝙒𝘼𝙄𝙏 𝘼 𝙈𝙊𝙈𝙀𝙉𝙏, 𝙔𝙊𝙐𝙍 𝙑𝙄𝘿𝙀𝙊 𝙄𝙎 𝘿𝙊𝙒𝙉𝙇𝙊𝘼𝘿𝙄𝙉𝙂`, fkontak, m)
 let contenido = `✅ 𝙑𝙄𝘿𝙀𝙊 𝘿𝙀 𝙁𝘼𝘾𝙀𝘽𝙊𝙊𝙆\n${wm}`
 
-switch (command) {    
-case "facebook": case "fb": case "facebookdl": case "fbdl":                
+switch (command) { 
+
+/*case "facebook": case "fb": case "facebookdl": case "fbdl":                
 await conn.sendMessage(m.chat, listMessage, {quoted: fkontak} )
 break      
 
@@ -65,8 +66,27 @@ let vio = await fetch(`https://api.violetics.pw/api/downloader/facebook?apikey=b
 let vioo = await vio.json()
 let videovio = `${vioo.result.hd.url || vioo.result.sd.url}`
 await conn.sendFile(m.chat, videovio, `error.mp4`, contenido, m)
+break*/
+
+case "facebook": case "fb": case "facebookdl": case "fbdl":                
+await conn.sendMessage(m.chat, listMessage, {quoted: fkontak} )
 break
     
+case "facebook1": case "fb1": case "facebookdl1": case "fbdl1":
+await conn.sendMessage(m.chat, listMessage, {quoted: fkontak} )
+let res = await fetch(`https://api.lolhuman.xyz/api/facebook?apikey=85faf717d0545d14074659ad&url=${text}`)
+let json = await res.json()
+let { result } = json
+await conn.sendFile(m.chat, result, 'error.mp4', contenido, m)
+break
+
+case "facebook2": case "fb2": case "facebookdl2": case "fbdl2":
+await conn.sendMessage(m.chat, listMessage, {quoted: fkontak} )
+let res = await fetch(`https://api.lolhuman.xyz/api/facebook2?apikey=85faf717d0545d14074659ad&url=${text}`)
+let json = await res.json()
+let { result } = json
+await conn.sendFile(m.chat, result, 'error.mp4', contenido, m)
+break
 }} catch {
 await m.reply(`${fg}𝘼𝙇𝙂𝙊 𝙎𝘼𝙇𝙄𝙊 𝙈𝘼𝙇, 𝙍𝙀𝘾𝙐𝙀𝙍𝘿𝙀 𝙐𝙎𝘼𝙍 𝙐𝙉 𝙀𝙉𝙇𝘼𝘾𝙀 𝙑𝘼𝙇𝙄𝘿𝙊 𝘿𝙀 𝙁𝘼𝘾𝙀𝘽𝙊𝙊𝙆`)
 }}
