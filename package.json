@@ -41,6 +41,7 @@
         "express": "^4.17.3",
         "file-type": "^17.1.1",
         "fluent-ffmpeg": "^2.1.2",
+        "fb-downloader-scrapper": "^1.0.1", 
         "fs": "^0.0.1-security",
         "formdata-node": "^4.3.2",
         "fg-ig": "^0.0.1",
