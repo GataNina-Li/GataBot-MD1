@@ -74,16 +74,16 @@ break
     
 case "facebook1": case "fb1": case "facebookdl1": case "fbdl1":
 await conn.sendMessage(m.chat, listMessage, {quoted: fkontak} )
-let res = await fetch(`https://api.lolhuman.xyz/api/facebook?apikey=85faf717d0545d14074659ad&url=${text}`)
-let json = await res.json()
+let res1 = await fetch(`https://api.lolhuman.xyz/api/facebook?apikey=85faf717d0545d14074659ad&url=${text}`)
+let json = await res1.json()
 let { result } = json
 await conn.sendFile(m.chat, result, 'error.mp4', contenido, m)
 break
 
 case "facebook2": case "fb2": case "facebookdl2": case "fbdl2":
 await conn.sendMessage(m.chat, listMessage, {quoted: fkontak} )
-let res = await fetch(`https://api.lolhuman.xyz/api/facebook2?apikey=85faf717d0545d14074659ad&url=${text}`)
-let json = await res.json()
+let res2 = await fetch(`https://api.lolhuman.xyz/api/facebook2?apikey=85faf717d0545d14074659ad&url=${text}`)
+let json = await res2.json()
 let { result } = json
 await conn.sendFile(m.chat, result, 'error.mp4', contenido, m)
 break
