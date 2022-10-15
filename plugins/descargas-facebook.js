@@ -75,17 +75,17 @@ break
 case "facebook1": case "fb1": case "facebookdl1": case "fbdl1":
 await conn.sendMessage(m.chat, listMessage, {quoted: fkontak} )
 let res1 = await fetch(`https://api.lolhuman.xyz/api/facebook?apikey=85faf717d0545d14074659ad&url=${text}`)
-let json = await res1.json()
-let { result } = json
-await conn.sendFile(m.chat, result, 'error.mp4', contenido, m)
+let json1 = await res1.json()
+let { result1 } = json1
+await conn.sendFile(m.chat, result1, 'error.mp4', contenido, m)
 break
 
 case "facebook2": case "fb2": case "facebookdl2": case "fbdl2":
 await conn.sendMessage(m.chat, listMessage, {quoted: fkontak} )
 let res2 = await fetch(`https://api.lolhuman.xyz/api/facebook2?apikey=85faf717d0545d14074659ad&url=${text}`)
-let json = await res2.json()
-let { result } = json
-await conn.sendFile(m.chat, result, 'error.mp4', contenido, m)
+let json2 = await res2.json()
+let { result2 } = json2
+await conn.sendFile(m.chat, result2, 'error.mp4', contenido, m)
 break
 }} catch {
 await m.reply(`${fg}𝘼𝙇𝙂𝙊 𝙎𝘼𝙇𝙄𝙊 𝙈𝘼𝙇, 𝙍𝙀𝘾𝙐𝙀𝙍𝘿𝙀 𝙐𝙎𝘼𝙍 𝙐𝙉 𝙀𝙉𝙇𝘼𝘾𝙀 𝙑𝘼𝙇𝙄𝘿𝙊 𝘿𝙀 𝙁𝘼𝘾𝙀𝘽𝙊𝙊𝙆`)
