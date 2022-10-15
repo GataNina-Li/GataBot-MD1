@@ -78,7 +78,7 @@ for (const { url, isVideo } of result.reverse()) conn.sendFile(m.chat, url, `fac
 break
 
 case "facebook2": case "fb2": case "facebookdl2": case "fbdl2":
-let res2 = await fetch(`https://api.lolhuman.xyz/api/facebook2?apikey=85faf717d0545d14074659ad&url=${text}`)
+let res2 = await fetch(`https://api.lolhuman.xyz/api/facebook2?apikey=85faf717d0545d14074659ad&url=${args[0]}`)
 let json2 = await res2.json()
 let { result2 } = json2
 await conn.sendFile(m.chat, result2, 'error.mp4', contenido, m)
