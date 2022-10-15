@@ -40,14 +40,14 @@ case "facebook1": case "fb1": case "facebookdl1": case "fbdl1":
 let res = await fbDownloader(args[0])
 for (let result of res.download) {
 let ur = result.url
-//await conn.sendMessage(m.chat, { video: { ur }, caption: contenido }, { quoted: m })}
-await conn.sendFile(m.chat, ur, `error.mp4`, contenido, m)}
+await conn.sendMessage(m.chat, { video: { ur }, caption: contenido }, { quoted: m })}
 break   
     
 case "facebook2": case "fb2": case "facebookdl2": case "fbdl2":                  
 let ress = await facebookDl(args[0]).catch(async _ => await savefrom(args[0])).catch(_ => null)
 let urll = ress?.url?.[0]?.url || ress?.url?.[1]?.url || ress?.['720p'] || ress?.['360p']
-await conn.sendMessage(m.chat, { video: { urll }, caption: contenido }, { quoted: m })    
+//await conn.sendMessage(m.chat, { video: { urll }, caption: contenido }, { quoted: m })  
+await conn.sendFile(m.chat, urll, `error.mp4`, contenido, m)
 break
     
 case "facebook3": case "fb3": case "facebookdl3": case "fbdl3":   
