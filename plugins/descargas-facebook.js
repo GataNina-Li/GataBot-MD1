@@ -65,16 +65,16 @@ case "facebook3": case "fb3": case "facebookdl3": case "fbdl3":
 break    
     
 case "facebook4": case "fb4": case "facebookdl4": case "fbdl4":   
-let res = await fetch(`https://api.lolhuman.xyz/api/facebook?apikey=85faf717d0545d14074659ad&url=${args[0]}`)
-let json = await res.json()
-let { result } = json
-conn.sendFile(m.chat, result, 'error.mp4', `*Aquí tiene su video de Facebook. ฅ^•ﻌ•^ฅ⚘*`, m) 
+let res1 = await fetch(`https://api.lolhuman.xyz/api/facebook?apikey=85faf717d0545d14074659ad&url=${args[0]}`)
+let json1 = await res1.json()
+let { result } = json1
+conn.sendFile(m.chat, result1, 'error.mp4', `*Aquí tiene su video de Facebook. ฅ^•ﻌ•^ฅ⚘*`, m) 
 break   
     
 case "facebook5": case "fb5": case "facebookdl5": case "fbdl5":
-let res = await fetch(`https://api.lolhuman.xyz/api/facebook2?apikey=85faf717d0545d14074659ad&url=${args[0]}`)
-let json = await res.json()
-let { result } = json
+let res2 = await fetch(`https://api.lolhuman.xyz/api/facebook2?apikey=85faf717d0545d14074659ad&url=${args[0]}`)
+let json2 = await res2.json()
+let { result } = json2
 conn.sendFile(m.chat, result, 'error.mp4', `*Aquí tiene su video de Facebook. ฅ^•ﻌ•^ฅ⚘*`, m)
 break
         
