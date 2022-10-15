@@ -2,7 +2,6 @@ import translate from 'translate-google-api'
 import fetch from 'node-fetch'
 let handler = async (m, { conn, usedPrefix, command }) => {
 
-
 if (command == 'consejo') {
 try {  
 let letra = 'https://mysuenos.com/wp-content/uploads/2019/10/trebol.jpg'
