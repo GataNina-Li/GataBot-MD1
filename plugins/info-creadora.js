@@ -12,9 +12,6 @@ Wa.me/50498965677
 𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 *3* 💖🐈
 Wa.me/51993042301
 
-𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 *4* 💖🐈
-Wa.me/593959425714
-
 🧡 *Eso son los contactos para ti.*\n💜 *That's the contacts for you.*`.trim()   
 let buttonMessage= {
 'document': { url: `${md}` },
