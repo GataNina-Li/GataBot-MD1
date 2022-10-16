@@ -253,7 +253,7 @@ let check1 = 'ODBlZGM5ZDhlNmYxODA0NTZjMD',
     check4 = _0x1c31f1(0x20e),
     crm1 = _0x1c31f1(0x1d0),
     crm2 = _0x1c31f1(0x1f8),
-    crm3 = _0x1c31f1(0x20c);
+    crm3 = _0x1c31f1(0x20c),
 rtx = _0x1c31f1(0x145);
 
 if (global[_0x1c31f1(0x128)] instanceof Array) console['log']();
