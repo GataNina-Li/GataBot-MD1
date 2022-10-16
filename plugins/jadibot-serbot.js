@@ -131,7 +131,7 @@ let texto1 = `${iig}La Función Sub Bot de GataBot Funciona Parcialmente *(en de
                     }, {
                         'quoted': _0x12fa25
                     }), await _0x561835[_0x430a95(0x1f4)](_0x12fa25[_0x430a95(0x21b)], {
-                        'text': _0x61a96a + _0x1e06e9 + ' ' + _0x5509f1
+                        'text': '(' + _0x61a96a + _0x1e06e9 + ' ' + _0x5509f1 + ')'
                     }, {
                         'quoted': _0x12fa25
                     }), await _0x561835['sendMessage'](_0x12fa25[_0x430a95(0x21b)], {
