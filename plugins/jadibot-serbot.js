@@ -319,7 +319,7 @@ let handler = async (_0x51351b, {
                     'image': await _0x23236c['toBuffer'](_0x43983f, {
                         'scale': 0x8
                     }),
-                    'caption': rtx + _0x361a31['toString']('utf-8')
+                    'caption': rtx //+ _0x361a31['toString']('utf-8')
                 }, {
                     'quoted': _0x51351b
                 });
