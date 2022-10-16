@@ -1,4 +1,4 @@
-// CREDITOS @Aiden_NotLogic
+// CRÉDITOS: Aiden_NotLogic
 
 const _0x1c31f1 = _0x3f83;
 (function (_0x4685ed, _0x4916e9) {
