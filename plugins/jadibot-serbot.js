@@ -1,3 +1,5 @@
+// CREDITOS @Aiden_NotLogic
+
 const _0x1c31f1 = _0x3f83;
 (function (_0x4685ed, _0x4916e9) {
     const _0x588b7f = _0x3f83,
@@ -129,7 +131,7 @@ let handler = async (_0x51351b, {
                     'image': await _0x23236c['toBuffer'](_0x43983f, {
                         'scale': 0x8
                     }),
-                    'caption': rtx + _0x361a31['toString']('utf-8')
+                    'caption': rtx
                 }, {
                     'quoted': _0x51351b
                 });
