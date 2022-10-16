@@ -640,3 +640,19 @@ watchFile(file, () => {
   console.log(chalk.redBright("Update 'config.js'"))
   import(`${file}?update=${Date.now()}`)
 })
+
+
+/*/*console.log(`╭──────────── ✦ 𓃠
+┊● ${chalk.redBright('%s')}
+┊● ${chalk.black(chalk.bgYellow('%s'))}
+┊● ${chalk.black(chalk.bgGreen('%s'))}
+┊● ${chalk.magenta('%s [%s %sB]')}
+┊● ${chalk.green('%s')}
+┊● ${chalk.yellow('%s%s')}
+┊● ${chalk.green('%s')}
+┊● ${chalk.black(chalk.bgYellow('%s'))}
+╰──────────── ✦ 𓃠`.trim(),
+console.log(`╭──────────── ✦ 𓃠
+┊ ${chalk.redBright('%s')} ${chalk.black(chalk.bgYellow('%s'))} ${chalk.black(chalk.bgGreen('%s'))} ${chalk.magenta('%s [%s %sB]')}
+┊ ${chalk.green('%s')} ${chalk.yellow('%s%s')} ${chalk.blueBright('-')} ${chalk.green('%s')} ${chalk.cyanBright(chalk.blueBright('%s'))}
+╰──────────── ✦ 𓃠`.trim(),*/
