@@ -34,7 +34,7 @@ rows: [
       {title: "💖 𝘾𝙍𝙀𝘼𝘿𝙊𝙍𝘼 : 𝘾𝙍𝙀𝘼𝙏𝙊𝙍 💖", description: null, rowId: `${usedPrefix}creadora`},
       {title: "💖 𝘿𝙊𝙉𝘼𝙍 : 𝘿𝙊𝙉𝘼𝙏𝙀 💖", description: null, rowId: `${usedPrefix}donar`},
       {title: "🐈 𝙄𝙉𝙎𝙏𝘼𝙇𝘼𝙍 𝙂𝘼𝙏𝘼 𝘽𝙊𝙏 : 𝙄𝙉𝙎𝙏𝘼𝙇𝙇 𝘾𝘼𝙏 𝘽𝙊𝙏 🐈", description: null, rowId: `${usedPrefix}instalarbot`},
-      {title: "🤖 𝙎𝙀𝙍 𝙎𝙐𝘽𝘽𝙊𝙏 : 𝙅𝘼𝘿𝙄𝘽𝙊𝙏 🤖", description: null, rowId: `${usedPrefix}jadibot`},
+      {title: "🤖 𝙎𝙀𝙍 𝙎𝙐𝘽𝘽𝙊𝙏 : 𝗕𝗘 𝗦𝗨𝗕 𝗕𝗢𝗧 🤖", description: null, rowId: `${usedPrefix}jadibot`},
       {title: "🚀 𝙑𝙀𝙇𝙊𝘾𝙄𝘿𝘼𝘿 : 𝙎𝙋𝙀𝙀𝘿 🚀", description: null, rowId: `${usedPrefix}ping`},
       {title: "🌀 𝙈𝙀𝙉𝙐 𝘾𝙊𝙈𝙋𝙇𝙀𝙏𝙊 : 𝙁𝙐𝙇𝙇 𝙈𝙀𝙉𝙐 🌀", description: null, rowId: `${usedPrefix}allmenu`},
       {title: "🌟 𝙄𝙉𝙁𝙊𝙍𝙈𝘼𝘾𝙄𝙊𝙉 : 𝙄𝙉𝙁𝙊 𝙈𝙀𝙉𝙐 🌟", description: null, rowId: `${usedPrefix}infomenu`},
