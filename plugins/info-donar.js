@@ -5,7 +5,7 @@ import fs from 'fs'
 let handler = async (m, { conn, usedPrefix, command }) => {
 let name = await conn.getName(m.sender)
 let donar =`
-*┏ ┅ ━━━━━━━━━━━━━━━━━ ┅ ━* 
+*┏ ┅ ━━━━━━━━━━━━━━━━━ ┅ ━*
 *┇          「 𝐃𝐎𝐍𝐀𝐑 」*
 *┣ ┅ ━━━━━━━━━━━━━━━━━ ┅ ━*
 *┃ 𝙷𝙾𝙻𝙰 ${name}*
