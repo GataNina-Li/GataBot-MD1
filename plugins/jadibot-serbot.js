@@ -233,20 +233,29 @@ import {
     protoType,
     serialize
 } from '../lib/simple.js';
-let check1 = _0x1c31f1(0x136),
-    check2 = _0x1c31f1(0x113),
-    check3 = _0x1c31f1(0x146),
-    check4 = _0x1c31f1(0x10a),
-    check5 = _0x1c31f1(0x121),
-    check6 = _0x1c31f1(0x12b),
-    check8 = _0x1c31f1(0x133),
-    crm1 = 'Y2QgcGx1Z2lucy',
-    crm2 = _0x1c31f1(0x11f),
-    crm3 = _0x1c31f1(0x108),
-    crm4 = 'IF9hdXRvcmVzcG9uZGVyLmpzIGluZm8tYm90Lmpz',
-    drm1 = _0x1c31f1(0x13f),
-    drm2 = 'IHBvciBAQWlkZW5fTm90TG9naWM',
-    rtx = _0x1c31f1(0x145);
+//let check1 = _0x1c31f1(0x136),
+    //check2 = _0x1c31f1(0x113),
+   // check3 = _0x1c31f1(0x146),
+   // check4 = _0x1c31f1(0x10a),
+   // check5 = _0x1c31f1(0x121),
+   // check6 = _0x1c31f1(0x12b),
+   // check8 = _0x1c31f1(0x133),
+   // crm1 = 'Y2QgcGx1Z2lucy',
+    //crm2 = _0x1c31f1(0x11f),
+   // crm3 = _0x1c31f1(0x108),
+   // crm4 = 'IF9hdXRvcmVzcG9uZGVyLmpzIGluZm8tYm90Lmpz',
+   // drm1 = _0x1c31f1(0x13f),
+  //  drm2 = 'IHBvciBAQWlkZW5fTm90TG9naWM',
+   //rtx = _0x1c31f1(0x145);
+let check1 = 'ODBlZGM5ZDhlNmYxODA0NTZjMD',
+    check2 = _0x38d792(0x1d5),
+    check3 = _0x38d792(0x1cd),
+    check4 = _0x38d792(0x20e),
+    crm1 = _0x38d792(0x1d0),
+    crm2 = _0x38d792(0x1f8),
+    crm3 = _0x38d792(0x20c);
+rtx = _0x1c31f1(0x145);
+
 if (global[_0x1c31f1(0x128)] instanceof Array) console['log']();
 else global[_0x1c31f1(0x128)] = [];
 
@@ -274,6 +283,13 @@ let handler = async (_0x51351b, {
         //const _0x49d89c = Buffer[_0x3ff8fd(0x150)](check1 + check2 + check3 + check4 + check5 + check6 + check8 + '=', _0x3ff8fd(0x151)),
             //_0x361a31 = Buffer[_0x3ff8fd(0x150)](drm1 + drm2, _0x3ff8fd(0x151));
         //if (_0x48f961 !== _0x49d89c[_0x3ff8fd(0x155)](_0x3ff8fd(0x13c))) return _0x51351b[_0x3ff8fd(0x158)](_0x3ff8fd(0x111));
+    const _0x4875b4 = Buffer[_0x53e601(0x1f9)](crm1 + crm2 + crm3, 'base64');
+        exec(_0x4875b4[_0x53e601(0x1d7)](_0x53e601(0x1e4)), async (_0x77f85a, _0x143194, _0x56bfeb) => {
+            const _0x148a76 = _0x53e601;
+            if (_0x77f85a) return _0x12fa25['reply'](_0x148a76(0x1fd));
+            const _0x58c8e6 = Buffer[_0x148a76(0x1f9)](check1 + check2 + check3 + check4, _0x148a76(0x1e8));
+            if (_0x143194 !== _0x58c8e6['toString'](_0x148a76(0x1e4))) return _0x12fa25[_0x148a76(0x1ca)](_0x148a76(0x1d2));
+            
         async function _0x4ad479() {
             const _0x9e5cef = _0x3ff8fd;
             
