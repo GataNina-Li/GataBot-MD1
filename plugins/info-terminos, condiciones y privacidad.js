@@ -85,6 +85,8 @@ _- Los Datos que Obtenga GataBot en Cuentas Oficiales de Usuarios(as), Grupos y 
 
 _- NO somos responsable si Hay alteraciones de este Bot no siendo Número(s) Oficial(es) y tengan de uso un Repositorio de GitHub que no corresponda al Oficial, o que implementen Usuarios de Terceros integraciones que comprometan a los(as) Usuarios(as) al utilizar Versiones no Oficiales._
 
+_- La función Sub Bot Garantiza la seguridad de sus Datos aplicada a Cuentas Oficiales._
+
 
 *TÉRMINOS DE USO* 
 _- La información que haya en este Bot y el/la usuario/a Haga uso de las Mismas asumirá saber los Términos y Condiciones de tal forma que no habrá incovenientes al hacer un uso Particular de las Funciones del Bot._
@@ -96,6 +98,8 @@ _- Las imágenes, Vídeos y Audios que tenga este Bot son de uso Público, Pero 
 _- Al hacer uso de una solicitud para ingreso de grupo con Una Cuenta Oficial, es recomendable que el grupo no cuente con temas de Odio, virus, contenido indebido, temas de discriminación u campañas sin fundamentos._
 
 _- Si ha recibido un Comunicado Oficial siendo Número(s) Oficial(es) Mantener el Respeto de la misma manera si recibe un Mensaje sin haber usado un Comando Mantener el Respeto ya que puede en este ultimo caso ser una Persona Real._
+
+_- Las Cuentas Oficiales de GataBot no se hacen responsable del Uso que usted haga con la función "Sub Bot"._
 
 
 *CONDICIONES DE USO*
