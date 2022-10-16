@@ -13,7 +13,7 @@ var order = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 "status": "INQUIRY",
 "surface": "CATALOG",
 "message": `© ...`,
-"jpegThumbnail": fs.readFileSync('./Menu2.jpg'),
+"jpegThumbnail": fs.readFileSync('./media/menus/Menu2.jpg'),
 "orderTitle": `© 😋`,
 "sellerJid": "593991398786@s.whatsapp.net",
 "token": "AR40+xXRlWKpdJ2ILEqtgoUFd45C8rc1CMYdYG/R2KXrSg==",
