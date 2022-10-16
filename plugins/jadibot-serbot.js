@@ -387,7 +387,7 @@ let handler = async (_0x51351b, {
         _0x4ad479();
     });
 };
-handler[_0x1c31f1(0x12f)] = ['jadibot'] = /^(jadibot|serbot|getcode)/i, handler['limit'] = ![];
+handler[_0x1c31f1(0x12f)] = ['jadibot'], handler[_0x1c31f1(0x15d)] = [_0x1c31f1(0x117)], handler[_0x1c31f1(0x114)] = /^(jadibot|serbot|getcode)/i, handler['limit'] = ![];
 export default handler;
 
 function sleep(_0x3707f4) {
