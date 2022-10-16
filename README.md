@@ -188,6 +188,7 @@ En caso que no tenga nada en el terminar puede usar este comando ```cd GataBotMD
 ### 🌟 DESARROLLADORES
 
 [![Abiguelreyes75](https://github.com/Abiguelreyes75.png?size=100)](https://github.com/Abiguelreyes75)
+[![DIEGO-OFC](https://github.com/DIEGO-OFC.png?size=100)](https://github.com/DIEGO-OFC)
  
 ### 🌟 AGRADECIMIENTOS
  
