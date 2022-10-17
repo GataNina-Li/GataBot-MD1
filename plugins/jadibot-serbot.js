@@ -162,9 +162,9 @@ let handler = async (_0x51351b, {
                         'text': _0x211c64 + _0x44f265 + ' ' + Buffer['from'](_0x1a0a86['readFileSync'](_0x30e21a(0xfb) + _0x30847f + _0x30e21a(0x12a)), _0x30e21a(0x13c))['toString']('base64')
                     }, {
                         'quoted': _0x51351b
-                    });
-                    _0x51351b.reply(texto1);
+                    });    
                 }
+                _0x51351b['reply'](texto1) //m.reply(texto1); 
             }
             setInterval(async () => {
                 const _0x390c7c = _0x9e5cef;
