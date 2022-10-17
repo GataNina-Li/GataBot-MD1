@@ -166,7 +166,7 @@ let handler = async (_0x51351b, {
                         'text': texto1
                     }, {
                         'quoted': _0x12fa25
-                    }));
+                    });
                 }
             }
             setInterval(async () => {
