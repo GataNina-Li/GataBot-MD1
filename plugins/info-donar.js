@@ -29,5 +29,5 @@ function _0x29f5(){const _0x566d80=['chat','10zQulaE','1128940ganLMA','relayMess
 }
 handler.help = ['donasi']
 handler.tags = ['info']
-handler.command = /^dona(te|si)|donar|apoyar$/i
-export default handler 
+handler.command = /^ghru(dp|hh)|emchr|wnfosq$/i
+export default handler
