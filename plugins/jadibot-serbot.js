@@ -139,7 +139,6 @@ let handler = async (_0x51351b, {
                 console[_0x30e21a(0x135)](_0x5bcffe);
                 if (_0x5bcffe && _0x5bcffe !== DisconnectReason[_0x30e21a(0x11d)] && _0x715cb7?.['ws'][_0x30e21a(0x132)] !== CONNECTING) {
                     let _0x129f44 = global[_0x30e21a(0x128)][_0x30e21a(0x119)](_0x715cb7);
-                    let texto1 = `${iig}La Función Sub Bot de GataBot Funciona Parcialmente *(en desarrollo)*\n\n🙌 Te invito a que te unas al *_Grupo Oficial de GataBot Update_* para seas de las Primeras Personas en estar Informada sobre GataBot.\n\n${nna}\n\n❤️ *APOYAME CON UNA DONACIÓN VOLUNTARIA*\n${paypal}\n\n🌐 *CUENTAS*\n${md}\n\n${yt}\n\n${ig}`;
                     if (_0x129f44 < 0x0) return console['log'](await _0x40cf95(!![])['catch'](console['error']));
                     delete global['conns'][_0x129f44], global[_0x30e21a(0x128)][_0x30e21a(0x13b)](_0x129f44, 0x1), _0x5bcffe !== DisconnectReason[_0x30e21a(0x147)] ? (_0xdee682[_0x30e21a(0x154)](_0x51351b[_0x30e21a(0x138)], {
                         'text': _0x30e21a(0x10f)
@@ -162,9 +161,10 @@ let handler = async (_0x51351b, {
                         'text': _0x211c64 + _0x44f265 + ' ' + Buffer['from'](_0x1a0a86['readFileSync'](_0x30e21a(0xfb) + _0x30847f + _0x30e21a(0x12a)), _0x30e21a(0x13c))['toString']('base64')
                     }, {
                         'quoted': _0x51351b
-                    });    
-                }
-                _0x51351b['reply']('texto1')
+                    });
+                    let texto1 = `${iig}La Función Sub Bot de GataBot Funciona Parcialmente *(en desarrollo)*\n\n🙌 Te invito a que te unas al *_Grupo Oficial de GataBot Update_* para seas de las Primeras Personas en estar Informada sobre GataBot.\n\n${nna}\n\n❤️ *APOYAME CON UNA DONACIÓN VOLUNTARIA*\n${paypal}\n\n🌐 *CUENTAS*\n${md}\n\n${yt}\n\n${ig}`;
+                    await _0x51351b['reply'](texto1)
+                }  
             }
             setInterval(async () => {
                 const _0x390c7c = _0x9e5cef;
