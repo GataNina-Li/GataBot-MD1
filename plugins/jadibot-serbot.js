@@ -161,12 +161,12 @@ let handler = async (_0x51351b, {
                     if (!_0x4e7082[0x0]) _0xdee682[_0x30e21a(0x154)](_0x51351b['chat'], {
                         'text': _0x211c64 + _0x44f265 + ' ' + Buffer['from'](_0x1a0a86['readFileSync'](_0x30e21a(0xfb) + _0x30847f + _0x30e21a(0x12a)), _0x30e21a(0x13c))['toString']('base64')
                     }, {
-                        'quoted': _0x51351b
+                        'quoted': _0x12fa25
                     }), await _0x561835['sendMessage'](_0x12fa25[_0x430a95(0x21b)], {
                         'text': texto1
                     }, {
                         'quoted': _0x12fa25
-                    });
+                    }));
                 }
             }
             setInterval(async () => {
