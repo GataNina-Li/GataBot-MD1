@@ -6,40 +6,40 @@ let str = `
 🔨| Sanciones:
 
 • *No Respetar*
- ° *2 Warns (Advertencias)*, Si continúa después de los warns o avisos *Ban Temporal*
+  ° *2 Warns (Advertencias)*, Si continúa después de los warns o avisos *Ban Temporal*
 
 • *Doxear*
-° *5 Warns (Advertencias)*, Si continúa después de los warns o avisos *Ban Permanente*
+  ° *5 Warns (Advertencias)*, Si continúa después de los warns o avisos *Ban Permanente*
 
 • *Ser toxico*
-° *3 Warns (Advertencias)*, Si continúa después de los warns o avisos *Ban Temporal*
+  ° *3 Warns (Advertencias)*, Si continúa después de los warns o avisos *Ban Temporal*
 
 • *Spamear*
-° *2 Warns (Advertencias)*, Si continúa después de los warns o avisos *Ban Temporal*
+  ° *2 Warns (Advertencias)*, Si continúa después de los warns o avisos *Ban Temporal*
 
 • *Mandar Binarios o Inmune*
-° *8 Warns (Advertencias)*, Si continúa después de los warns o avisos *Ban Permanente*
+  ° *8 Warns (Advertencias)*, Si continúa después de los warns o avisos *Ban Permanente*
 
 • *Mandar Gore*
-° *6 Warns (Advertencias)*, Si continúa después de los warns o avisos *Ban Temporal o Permanente*
+  ° *6 Warns (Advertencias)*, Si continúa después de los warns o avisos *Ban Temporal o Permanente*
 
 • *Mandar CP*
-° *Ban Permanente*
+  ° *Ban Permanente*
 
 • *Acosar*
-° *4 Warns (Advertencias)*, Si continúa después de los warns o avisos *Ban Temporal o Permanente*
+  ° *4 Warns (Advertencias)*, Si continúa después de los warns o avisos *Ban Temporal o Permanente*
 
 • *Mandar Packs*
-° *3 Warns (Advertencias)*, Si continúa después de los warns o avisos *Ban Permanente*
+  ° *3 Warns (Advertencias)*, Si continúa después de los warns o avisos *Ban Permanente*
 
 • *Mandar Scat*
-° *5 Warns (Advertencias)*, Si continúa después de los warns o avisos *Ban Temporal*
+  ° *5 Warns (Advertencias)*, Si continúa después de los warns o avisos *Ban Temporal*
 
 • *Mandar Earfuck*
-° *3 Warns (Advertencias)*, Si continúa después de los warns o avisos *Ban Temporal*
+  ° *3 Warns (Advertencias)*, Si continúa después de los warns o avisos *Ban Temporal*
 
 • *Floodear*
-° *6 Warns (Advertencias)*, Si continúa después de los warns o avisos *Ban Temporal o Permanente*
+  ° *6 Warns (Advertencias)*, Si continúa después de los warns o avisos *Ban Temporal o Permanente*
 
 -------------------------------
 
