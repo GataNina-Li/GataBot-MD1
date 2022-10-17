@@ -123,10 +123,10 @@ global.nnngrupo = nnn //Grupo 2
 global.nnnt = 'https://chat.whatsapp.com/EIpepNDkU9rL8hMgQOy13y'
 global.nnntgrupo = nnnt //Grupo 3
 
-global.nnntt = 'https://chat.whatsapp.com/EqVTcmfg2lH8d6BN5KTiBs'
+global.nnntt = 'https://chat.whatsapp.com/JUVI9cHrLM9JgED3TcM0Ny'
 global.nnnttgrupo = nnntt //Grupo 4
 
-global.nnnttt = 'https://chat.whatsapp.com/JUVI9cHrLM9JgED3TcM0Ny'
+global.nnnttt = 'https://chat.whatsapp.com/KgvRe8dmUEwJMBCSjZkKVN'
 global.nnntttgrupo = nnnttt //Grupo 5
 
 global.paypal = 'https://paypal.me/OficialGD'
