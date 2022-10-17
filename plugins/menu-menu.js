@@ -103,6 +103,16 @@ ${readMore}
 ┃💫➺ _términos y condiciones_
 *╰━━━━━━━━━━━━⬣*
 
+*╭━〔 FUNCIÓN SUB BOT 〕━⬣*
+┃ *Ya puedes convertir tú*
+┃ *Número en GataBot!!*
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃💻 _${usedPrefix}serbot | jadibot_
+┃💻 _${usedPrefix}bots | listjadibots_
+┃💻 _${usedPrefix}detener | stop_
+┃💻 _${usedPrefix}bcbot_
+*╰━━━━━━━━━━━━⬣*
+
 *╭━〔 REPORTAR COMANDO 〕━⬣*
 ┃ *Reporta con este comando de haber*
 ┃ *Fallas para poder Solucionar!!*
