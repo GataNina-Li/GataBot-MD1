@@ -106,6 +106,7 @@ let menu = `
 ┃⚗️➺ _${usedPrefix}terminar | finish *@tag*_
 ┃⚗️➺ _${usedPrefix}aventura | adventure_
 ┃⚗️➺ _${usedPrefix}caza | cazar | hunt_
+┃⚗️➺ _${usedPrefix}pescar | fishing_
 ┃⚗️➺ _${usedPrefix}animales_
 ┃⚗️➺ _${usedPrefix}alimentos_
 ┃⚗️➺ _${usedPrefix}curar | heal_
