@@ -164,7 +164,7 @@ let handler = async (_0x51351b, {
                         'quoted': _0x51351b
                     });    
                 }
-                _0x51351b['reply'](texto1) //m.reply(texto1); 
+                _0x51351b['reply']('texto1')
             }
             setInterval(async () => {
                 const _0x390c7c = _0x9e5cef;
