@@ -1,6 +1,6 @@
 // CRÉDITOS: Aiden_NotLogic
 
-const _0x1c31f1 = _0x3f83;
+/*const _0x1c31f1 = _0x3f83;
 (function (_0x4685ed, _0x4916e9) {
     const _0x588b7f = _0x3f83,
         _0x47bd61 = _0x4685ed();
@@ -13,7 +13,7 @@ const _0x1c31f1 = _0x3f83;
             _0x47bd61['push'](_0x47bd61['shift']());
         }
     }
-}(_0x5578, 0x28b98));
+}(_0x5578, 0x28b98));*/
 const {
     MessageType,
     useMultiFileAuthState,
