@@ -1,7 +1,7 @@
 //let media = './media/menus/telegramfutabuclub.jpg'
 let handler = async (m, { conn, command }) => {
 let str = `
----------Futabu Club---------
+----------Futabu Club----------
 
 📝| Reglas:
 
