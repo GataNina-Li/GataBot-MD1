@@ -30,5 +30,5 @@ sourceUrl: `${yt}`}}})
   
   //await conn.sendButton(m.chat, `Infórmate sobre las Novedades y recuerda tener la última versión.\nFind out about what's new and remember to have the latest version.`, author, url, [['🔄 𝚂𝙸𝙶𝚄𝙸𝙴𝙽𝚃𝙴 🔄', /${command}], ['🔄 𝚂𝙸𝙶𝚄𝙸𝙴𝙽𝚃𝙴 2 🔄', /${command}]], m)
 }
-handler.command = /^(jadibot|serbot|bots|subbots|getcode)/i
+handler.command = /^(yafunka:3)/i
 export default handler

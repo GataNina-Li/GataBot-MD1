@@ -93,7 +93,7 @@ global.author = '𝙲𝚘𝚕𝚊𝚙𝚜𝚞𝚜 | 𝙱𝚎𝚗𝚓𝚊'
 
 //⊱ ━━━━━.⋅ Versión | Nombre | cuentas ⋅.━━━━ ⊰
 
-global.vs = '1.3.1'
+global.vs = '1.3.3'
 global.version = vs
 
 global.gt = '𝙵𝚞𝚝𝚊𝚋𝚞𝙱𝚘𝚝-𝙼𝙳'
@@ -108,22 +108,22 @@ global.gatadiosig = ig
 global.md = 'https://github.com/GataNina-Li/GataBot-MD'
 global.gatabot = md
 
-global.nna = 'https://chat.whatsapp.com/K7dhE0Li8l8GmyrHviAhF7'
+global.nna = 'https://chat.whatsapp.com/F0gXWzOzQd985W4lT1OFg3'
 global.nnagrupo = nna //UPDATE GATABOT
 
-global.nn = 'https://chat.whatsapp.com/DrZ8pWS8Z3GLuWKmZTp9Ng'
+global.nn = 'https://chat.whatsapp.com/DOIfEoroMCQ76hEZyZbJEn'
 global.nngrupo = nn //Grupo 1
 
-global.nnn = 'https://chat.whatsapp.com/IJAYiyVOiBuEXXEDHNMEBX'
+global.nnn = 'https://chat.whatsapp.com/HvADoPQIYLW0s5iFa82b0E'
 global.nnngrupo = nnn //Grupo 2
 
-global.nnnt = 'https://chat.whatsapp.com/IFECIyRjlZ6BDqz7axXtJF'
+global.nnnt = 'https://chat.whatsapp.com/EIpepNDkU9rL8hMgQOy13y'
 global.nnntgrupo = nnnt //Grupo 3
 
-global.nnntt = 'https://chat.whatsapp.com/EqVTcmfg2lH8d6BN5KTiBs'
+global.nnntt = 'https://chat.whatsapp.com/JUVI9cHrLM9JgED3TcM0Ny'
 global.nnnttgrupo = nnntt //Grupo 4
 
-global.nnnttt = 'https://chat.whatsapp.com/LHyO4m4XavNFILhuf4cgag'
+global.nnnttt = 'https://chat.whatsapp.com/KgvRe8dmUEwJMBCSjZkKVN'
 global.nnntttgrupo = nnnttt //Grupo 5
 
 global.paypal = 'https://paypal.me/OficialGD'
@@ -140,7 +140,7 @@ global.resultado = rg
 global.ag = '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼 | 𝙒𝘼𝙍𝙉𝙄𝙉𝙂* ⊱⚠️⊱╮\n\n'
 global.advertencia = ag
 
-global.iig = '╰⊱❕⊱ *𝙄𝙉𝙁𝙊𝙍𝙈𝘼𝘾𝙄𝙊́𝙉 | 𝙄𝙉𝙁𝙊𝙍𝙈𝘼𝙏𝙄𝙊𝙉* ⊱❕⊱╮\n\n'
+global.iig = '╰⊱❕⊱ *𝙄𝙉𝙁𝙊𝙍𝙈𝘼𝘾𝙄𝙊́𝙉 | 𝙄𝙉𝙁𝙊𝙍𝙈𝘼𝙏𝙄𝙊𝙉* ⊱⊱╮\n\n'
 global.informacion = iig
 
 global.fg = '╰⊱❌⊱ *𝙁𝘼𝙇𝙇𝙊́ | 𝙀𝙍𝙍𝙊𝙍* ⊱❌⊱╮\n\n'
@@ -637,3 +637,19 @@ watchFile(file, () => {
   console.log(chalk.redBright("Update 'config.js'"))
   import(`${file}?update=${Date.now()}`)
 })
+
+
+/*/*console.log(`╭──────────── ✦ 𓃠
+┊● ${chalk.redBright('%s')}
+┊● ${chalk.black(chalk.bgYellow('%s'))}
+┊● ${chalk.black(chalk.bgGreen('%s'))}
+┊● ${chalk.magenta('%s [%s %sB]')}
+┊● ${chalk.green('%s')}
+┊● ${chalk.yellow('%s%s')}
+┊● ${chalk.green('%s')}
+┊● ${chalk.black(chalk.bgYellow('%s'))}
+╰──────────── ✦ 𓃠`.trim(),
+console.log(`╭──────────── ✦ 𓃠
+┊ ${chalk.redBright('%s')} ${chalk.black(chalk.bgYellow('%s'))} ${chalk.black(chalk.bgGreen('%s'))} ${chalk.magenta('%s [%s %sB]')}
+┊ ${chalk.green('%s')} ${chalk.yellow('%s%s')} ${chalk.blueBright('-')} ${chalk.green('%s')} ${chalk.cyanBright(chalk.blueBright('%s'))}
+╰──────────── ✦ 𓃠`.trim(),*/

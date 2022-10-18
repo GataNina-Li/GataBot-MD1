@@ -1,6 +1,5 @@
 const toxicRegex = /cp|zepe|zp|cepe|sepe/i
 
-
 export async function before(m, { conn, isAdmin, isBotAdmin, isOwner }) {
  
 if (m.isBaileys && m.fromMe)
