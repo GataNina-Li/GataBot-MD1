@@ -13,11 +13,6 @@ let time = d.toLocaleTimeString(locale, {
       minute: 'numeric',
       second: 'numeric'
     })
-//let _uptime = process.uptime() * 1000
-//let _muptime
-//if (process.send) {
-//process.send('uptime')
-//let uptime = clockString(_uptime)
 
 let _uptime = process.uptime() * 1000
 let uptime = clockString(_uptime) 
@@ -25,14 +20,13 @@ wm = global.wm
 vs = global.vs
 let { exp, limit, level, role } = global.db.data.users[m.sender]
 let { min, xp, max } = xpRange(level, global.multiplier)
+let enlace = { contextInfo: { externalAdReply: {title: wm, body: 'support group' , sourceUrl: nna, thumbnail: await(await fetch(img)).buffer() }}}
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
+let ftroli = { key: { fromMe: false, "participant":"0@s.whatsapp.net", "remoteJid": "6289523258649-1604595598@g.us" }, "message": { orderMessage: { itemCount: 6546464643, status: 200, thumbnail: imagen, surface: 200, message: wm, orderTitle: wm, sellerJid: '0@s.whatsapp.net' }}, contextInfo: { "forwardingScore": 999, "isForwarded": true}, sendEphemeral: true}  
 //let name = await conn.getName(m.sender)
 let name = await conn.getName(m.sender)
-let pareja = global.db.data.users[m.sender].pasangan 
-let enlace = { contextInfo: { externalAdReply: {title: wm, body: 'support group' , sourceUrl: nna, thumbnail: await(await fetch(img)).buffer() }}}
 let imagen = './media/menus/Menu3.jpg'
-let ftroli = { key: { fromMe: false, "participant":"0@s.whatsapp.net", "remoteJid": "6289523258649-1604595598@g.us" }, "message": { orderMessage: { itemCount: 6546464643, status: 200, thumbnail: imagen, surface: 200, message: wm, orderTitle: wm, sellerJid: '0@s.whatsapp.net' }}, contextInfo: { "forwardingScore": 999, "isForwarded": true}, sendEphemeral: true}  
-//let name = conn.getName(m.sender)
+let pareja = global.db.data.users[m.sender].pasangan 
 
 const sections = [{
 title: comienzo + ' 🌟 𝙄𝙉𝙁𝙊 𝙂𝘼𝙏𝘼𝘽𝙊𝙏 🌟 ' + fin,
@@ -110,8 +104,7 @@ title: null,
 buttonText: "𝙇𝙄𝙎𝙏𝘼 𝘿𝙀 𝙈𝙀𝙉𝙐 : 𝙇𝙄𝙎𝙏 𝙈𝙀𝙉𝙐", 
 sections }
 
-await conn.sendMessage(m.chat, listMessage, {quoted: fkontak})
-	
+await conn.sendMessage(m.chat, listMessage, {quoted: fkontak})	
 }
 handler.help = ['en', 'dis'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
