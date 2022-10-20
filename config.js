@@ -133,6 +133,8 @@ global.nnntttgrupo = nnnttt //Grupo 5
 global.paypal = 'https://paypal.me/OficialGD'
 global.donar = paypal
 
+global.asistencia = 'Wa.me/18059196237' //Dudas? escríbeme...
+
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 
 
