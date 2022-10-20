@@ -4,13 +4,16 @@ var doc = ['pdf','zip','vnd.openxmlformats-officedocument.presentationml.present
 var document = doc[Math.floor(Math.random() * doc.length)]    
 let text = `
 𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 💖🐈
-Wa.me/593993684821
+*Wa.me/593993684821*
 
 𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 *2* 💖🐈
-Wa.me/50498965677
+*Wa.me/50498965677*
 
 𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 *3* 💖🐈
-Wa.me/51993042301
+*Wa.me/51993042301*
+
+𝙂𝘼𝙏𝘼 𝘿𝙄𝙊𝙎 - 𝘼𝙎𝙄𝙎𝙏𝙀𝙉𝘾𝙄𝘼
+*${asistencia}*
 
 🧡 *Eso son los contactos para ti.*\n💜 *That's the contacts for you.*`.trim()   
 let buttonMessage= {
