@@ -11,7 +11,8 @@ decimalPlaces: 2,
 keepTrailingZeroes: false,
 render: (literal, symbol) => `${literal} ${symbol}B`,
 })
-let handler = async (m, { conn, usedPrefix, isRowner}) => {
+let handler = async (m, { conn, usedPrefix, command, isRowner}) => {
+try {
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
 let grupos = [nna, nn, nnn, nnnt, nnntt, nnnttt]
 let gata = [img5, img6, img7, img8, img9]
@@ -82,7 +83,6 @@ ${readMore}
 *💻 Plataforma :* \`\`\`${os.platform()}\`\`\`
 *📡 Servidor :* _${os.hostname()}_
 ${readMore}
-
 *NodeJS Uso de memoria : Memory Usage*
 ${'```' + Object.keys(used).map((key, _, arr) => `${key.padEnd(Math.max(...arr.map(v => v.length)), ' ')}: ${format(used[key])}`).join('\n') + '```'}
 
@@ -93,8 +93,10 @@ ${cpus[0].model.trim()} (${cpu.speed} MHZ)\n${Object.keys(cpu.times).map(type =>
 ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Object.keys(cpu.times).map(type => `- *${(type + '*').padEnd(6)}: ${(100 * cpu.times[type] / cpu.total).toFixed(2)}%`).join('\n')}`).join('\n\n')}` : ''}
 `
 
-await conn.sendButton(m.chat, rg, caption, gata, [['𝗠 𝗘 𝗡 𝗨 ☘️', '/menu']], m, dos.getRandom())
-}
+await conn.sendButton(m.chat, caption, wm, gata, [['𝗠 𝗘 𝗡 𝗨 ☘️', '/menu']], m, dos.getRandom())
+} catch (e) {
+await conn.reply(m.chat, `${fg}*ALGO SALIÓ MAL. ERRORS FOUND.*\n\n\`\`\`REPORTE ESTE COMANDO ${usedPrefix + command} CON EL COMANDO ${usedPrefix}reporte\`\`\``, m)
+}}
 handler.help = ['ping', 'speed']
 handler.tags = ['info', 'tools']
 
