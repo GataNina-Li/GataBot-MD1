@@ -63,8 +63,9 @@ await conn.sendButton(m.chat, wm, `${eg}🚀 𝙋𝙍𝙐𝙀𝘽𝘼 𝘿𝙀 �
 let neww = performance.now()
 let speed = neww - old
 let caption = `*${htki} 𝙑𝙀𝙇𝙊𝘾𝙄𝘿𝘼𝘿 : 𝙎𝙋𝙀𝙀𝘿 ${htka}*
-*${Math.round(neww - old)}* ms
-*${speed}* ms
+
+🚄 *${Math.round(neww - old)}* ms
+🚄 *${speed}* ms
 
 *${htjava}* 𝙏𝙄𝙀𝙈𝙋𝙊 𝘿𝙀 𝙀𝙅𝙀𝘾𝙐𝘾𝙄𝙊𝙉 : 𝙍𝙐𝙉𝙏𝙄𝙈𝙀 
 ${muptime}
@@ -78,7 +79,7 @@ ${readMore}
 
 *${htjava} S E R V I D O R : S E R V E R*
 *🟢 RAM:* ${format(totalmem() - freemem())} / ${format(totalmem())}
-*🟡 RAM Libre:* ${format(freemem())}
+*🔵 RAM Libre:* ${format(freemem())}
 
 *💻 Plataforma :* \`\`\`${os.platform()}\`\`\`
 *📡 Servidor :* _${os.hostname()}_
@@ -111,5 +112,5 @@ function clockString(ms) {
   let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000) % 24
   let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
   let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
-  return ['\n ' + d, ' *Días : Days ☀️*\n ', h, ' *Horas : Hours 🕐*\n ', m, ' *Minuto : Minute ⏰*\n ', s, ' *Segundo : Second ⏱️* '].map(v => v.toString().padStart(2, 0)).join('')
+  return [' ' + d, ' *Días : Days ☀️*\n ', h, ' *Horas : Hours 🕐*\n ', m, ' *Minuto : Minute ⏰*\n ', s, ' *Segundo : Second ⏱️* '].map(v => v.toString().padStart(2, 0)).join('')
 }
