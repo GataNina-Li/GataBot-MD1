@@ -106,6 +106,7 @@ let menu = `
 ┃⚗️➺ _${usedPrefix}terminar | finish *@tag*_
 ┃⚗️➺ _${usedPrefix}aventura | adventure_
 ┃⚗️➺ _${usedPrefix}caza | cazar | hunt_
+┃⚗️➺ _${usedPrefix}pescar | fishing_
 ┃⚗️➺ _${usedPrefix}animales_
 ┃⚗️➺ _${usedPrefix}alimentos_
 ┃⚗️➺ _${usedPrefix}curar | heal_
@@ -120,7 +121,7 @@ let menu = `
 ┃⚗️➺ _${usedPrefix}minarexperiencia | minarexp_
 ┃⚗️➺ _${usedPrefix}minar *:* minar2 *:* minar3_
 ┃⚗️➺ _${usedPrefix}reclamar | regalo | claim_
-┃⚗️➺ _${usedPrefix}cadahora | hora | hourly_
+┃⚗️➺ _${usedPrefix}cadahora | hourly_
 ┃⚗️➺ _${usedPrefix}cadasemana | semanal | weekly_
 ┃⚗️➺ _${usedPrefix}cadames | mes | monthly_
 ┃⚗️➺ _${usedPrefix}cofre | abrircofre | coffer_

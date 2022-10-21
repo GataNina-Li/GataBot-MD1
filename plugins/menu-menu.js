@@ -102,6 +102,16 @@ ${readMore}
 ┃💫➺ _términos y condiciones_
 *╰━━━━━━━━━━━━⬣*
 
+*╭━〔 FUNCIÓN SUB BOT 〕━⬣*
+┃ *Ya puedes convertir tú*
+┃ *Número en GataBot!!*
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃💻 _${usedPrefix}serbot | jadibot_
+┃💻 _${usedPrefix}bots | listjadibots_
+┃💻 _${usedPrefix}detener | stop_
+┃💻 _${usedPrefix}bcbot_
+*╰━━━━━━━━━━━━⬣*
+
 *╭━〔 REPORTAR COMANDO 〕━⬣*
 ┃ *Reporta con este comando de haber*
 ┃ *Fallas para poder Solucionar!!*
@@ -481,6 +491,7 @@ ${readMore}
 ┃⚗️➺ _${usedPrefix}inventario | inventory_
 ┃⚗️➺ _${usedPrefix}aventura | adventure_
 ┃⚗️➺ _${usedPrefix}caza | cazar | hunt_
+┃⚗️➺ _${usedPrefix}pescar | fishing_
 ┃⚗️➺ _${usedPrefix}animales_
 ┃⚗️➺ _${usedPrefix}alimentos_
 ┃⚗️➺ _${usedPrefix}curar | heal_
@@ -495,7 +506,7 @@ ${readMore}
 ┃⚗️➺ _${usedPrefix}minarexperiencia | minarexp_
 ┃⚗️➺ _${usedPrefix}minar *:* minar2 *:* minar3_
 ┃⚗️➺ _${usedPrefix}reclamar | regalo | claim_
-┃⚗️➺ _${usedPrefix}cadahora | hora | hourly_
+┃⚗️➺ _${usedPrefix}cadahora | hourly_
 ┃⚗️➺ _${usedPrefix}cadasemana | semanal | weekly_
 ┃⚗️➺ _${usedPrefix}cadames | mes | monthly_
 ┃⚗️➺ _${usedPrefix}cofre | abrircofre | coffer_
