@@ -55,7 +55,7 @@ await conn.sendButton( m.chat, botdate, `${igfg} 𝙀𝙎 𝙐𝙉 𝘽𝙊𝙏 
 //let data = (await conn.onWhatsApp(jid))[0] || {}
   //if (data.exists) 
     //conn.reply(m.chat, `@${m.sender.split`@`[0]} adicional ${conn.user.name} a ${await conn.getName(res)}\njid: ${res}, el bot se apagará a tiempo: ${msToDate(global.db.data.chats[res].expired - now)}`, data.jid, m) 
-//}})
+})
 
        
 } else if ((isOwner || !isPrems || isROwner)) { //Para Owner
