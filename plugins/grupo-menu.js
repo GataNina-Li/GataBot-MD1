@@ -102,6 +102,8 @@ let menu = `
 ┃🌐➺ _${usedPrefix}infogrupo | infogroup_
 ┃🌐➺ _${usedPrefix}configuracion_
 ┃🌐➺ _${usedPrefix}settings_
+┃🌐➺ _${usedPrefix}reglas_
+┃🌐➺ _${usedPrefix}sanciones_
 ┃🌐➺ _${usedPrefix}vergrupo_
 ┃🌐➺ _${usedPrefix}advertencia *@tag*_
 ┃🌐➺ _${usedPrefix}deladvertencia *@tag*_
