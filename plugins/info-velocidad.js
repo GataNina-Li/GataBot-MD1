@@ -100,8 +100,7 @@ await conn.reply(m.chat, `${fg}*ALGO SALIÓ MAL. ERRORS FOUND.*\n\n\`\`\`REPORTE
 }}
 handler.help = ['ping', 'speed']
 handler.tags = ['info', 'tools']
-
-handler.command = /^(ping2)$/i
+handler.command = /^(ping|speed|velocidad|rapidez|velocity)$/i
 export default handler
 
 const more = String.fromCharCode(8206)
