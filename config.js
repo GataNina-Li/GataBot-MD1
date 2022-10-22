@@ -112,22 +112,22 @@ global.gatadiosig = ig
 global.md = 'https://github.com/GataNina-Li/GataBot-MD'
 global.gatabot = md
 
-global.nna = 'https://chat.whatsapp.com/EzLCL8DU4NtDa1gPScN11M'
+global.nna = 'https://chat.whatsapp.com/DikSizlU3wVE3ArLFBthOD'
 global.nnagrupo = nna //UPDATE GATABOT
 
-global.nn = 'https://chat.whatsapp.com/CrSfTA8r6o5FyC6ymmkLi2'
+global.nn = 'https://chat.whatsapp.com/DhfA0vL1XkADngY4Ebp1gT'
 global.nngrupo = nn //Grupo 1
 
-global.nnn = 'https://chat.whatsapp.com/LK9sgW6LhxOLflkwHZndtT'
+global.nnn = 'https://chat.whatsapp.com/LlSNEOLx2LzBZmeK72YCTH'
 global.nnngrupo = nnn //Grupo 2
 
-global.nnnt = 'https://chat.whatsapp.com/BQq6Val8KKABkOmfoA50r1'
+global.nnnt = 'https://chat.whatsapp.com/LetQPuXJ2QF34FBIhWbsWv'
 global.nnntgrupo = nnnt //Grupo 3
 
-global.nnntt = 'https://chat.whatsapp.com/Lk1E9Hdf3JKBroJheDzDfJ'
+global.nnntt = 'https://chat.whatsapp.com/IkQIUTXyoeuG5Yn4CrD8xV'
 global.nnnttgrupo = nnntt //Grupo 4
 
-global.nnnttt = 'https://chat.whatsapp.com/BqPnmDG0QqCKN3KnfrSX9x'
+global.nnnttt = 'https://chat.whatsapp.com/IuvucFNo6Ax286HGUFFCJa'
 global.nnntttgrupo = nnnttt //Grupo 5
 
 global.paypal = 'https://paypal.me/OficialGD'
