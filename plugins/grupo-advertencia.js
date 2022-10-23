@@ -10,14 +10,14 @@ let user = global.db.data.users[who]
 if (!who) throw `${mg}𝙀𝙏𝙄𝙌𝙐𝙀𝙏𝙀 𝘼 𝙇𝘼 𝙋𝙀𝙍𝙎𝙊𝙉𝘼 𝙌𝙐𝙀 𝙑𝘼 𝙍𝙀𝘾𝙄𝘽𝙄𝙍 𝙇𝘼 𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼 ⚠️\n\n𝙏𝘼𝙂 𝙏𝙃𝙀 𝙋𝙀𝙍𝙎𝙊𝙉 𝙒𝙃𝙊 𝙒𝙄𝙇𝙇 𝙍𝙀𝘾𝙀𝙄𝙑𝙀 𝙏𝙃𝙀 𝙒𝘼𝙍𝙉𝙄𝙉𝙂⚠️\n\n𝙀𝙅𝙀𝙈𝙋𝙇𝙊 | 𝙀𝙓𝘼𝙈𝙋𝙇𝙀\n*${usedPrefix + command} @tag Motivo*`
 let txt = text.replace('@' + who.split`@`[0], '').trim()
 if (!txt) throw `${mg}𝘿𝙀𝘽𝙀 𝘿𝙀 𝙀𝙎𝘾𝙍𝙄𝘽𝙄𝙍 𝙐𝙉 𝙈𝙊𝙏𝙄𝙑𝙊 𝙋𝘼𝙍𝘼 𝘼𝘿𝙑𝙀𝙍𝙏𝙄𝙍\n\n𝙔𝙊𝙐 𝙈𝙐𝙎𝙏 𝙒𝙍𝙄𝙏𝙀 𝘼 𝙍𝙀𝘼𝙎𝙊𝙉 𝙏𝙊 𝙉𝙊𝙏𝙄𝘾𝙀\n\n𝙀𝙅𝙀𝙈𝙋𝙇𝙊 | 𝙀𝙓𝘼𝙈𝙋𝙇𝙀\n*${usedPrefix + command} @tag Motivo*`
-//let advertencias = txt.split' '
-//let cantidad = advertencias[0]
-//if (!advertencias) throw `Falta el numero de advertencias`
+let advertencias = txt.split' '
+let cantidad = advertencias[0]
+if (!advertencias) throw `Falta el numero de advertencias`
 
 try {
-user.warn += 1//cantidad * 1
+user.warn += cantidad * 1
 
-await conn.sendButton(m.chat,`${user.warn == 1 ? `*@${who.split`@`[0]}*` : `*@${who.split`@`[0]}*`} 𝙍𝙀𝘾𝙄𝘽𝙄𝙊 cantidad * 1 𝘼𝘿𝙑𝙀𝙉𝙏𝙀𝙉𝘾𝙄𝘼 𝙀𝙉 𝙀𝙎𝙏𝙀 𝙂𝙍𝙐𝙋𝙊!!\n\n𝙄 𝙍𝙀𝘾𝙀𝙄𝙑𝙀𝘿 𝘼 𝙒𝘼𝙍𝙉𝙄𝙉𝙂 𝙄𝙉 𝙏𝙃𝙄𝙎 𝙂𝙍𝙊𝙐𝙋!!\n\n🫵 *${text}*`, `*ADVERTENCIA : WARNING*\n⚠️ *${user.warn}/10*\n\n${wm}`, null, [
+await conn.sendButton(m.chat,`${user.warn == 1 ? `*@${who.split`@`[0]}*` : `*@${who.split`@`[0]}*`} 𝙍𝙀𝘾𝙄𝘽𝙄𝙊 ${cantidad * 1} 𝘼𝘿𝙑𝙀𝙉𝙏𝙀𝙉𝘾𝙄𝘼 𝙀𝙉 𝙀𝙎𝙏𝙀 𝙂𝙍𝙐𝙋𝙊!!\n\n𝙄 𝙍𝙀𝘾𝙀𝙄𝙑𝙀𝘿 𝘼 𝙒𝘼𝙍𝙉𝙄𝙉𝙂 𝙄𝙉 𝙏𝙃𝙄𝙎 𝙂𝙍𝙊𝙐𝙋!!\n\n🫵 *${text}*`, `*ADVERTENCIA : WARNING*\n⚠️ *${user.warn}/10*\n\n${wm}`, null, [
 [`😭 𝙇𝙊 𝙎𝙄𝙀𝙉𝙏𝙊 | 𝙄'𝙈 𝙎𝙊𝙍𝙍𝙔`, '.ok'],
 ['🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊 | 𝙄𝙉𝙑𝙀𝙉𝙏𝙊𝙍𝙔', '.inventario'],
 ['☘️ 𝙈𝙀𝙉𝙐', '/menu']], false, { mentions: [who] }) //[m.sender]
