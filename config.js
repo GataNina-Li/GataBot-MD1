@@ -24,11 +24,16 @@ global.prems = ['528451003894'],
   
   
 //⊱ ━━━━━.⋅ IDIOMA : LENGUAJE ⋅.━━━━ ⊰
+//Agrega el Idioma que quieres que tenga GataBot-MD
+//Add the language you want GataBot-MD to have
+//  es = Español 
+//  en = English 
   
 global.lenguajeGB = es //Idioma de GataBot
 
 //━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
-  
+
+
 global.APIs = { // API Prefix. 
   
 //⊱ ━━━━━.⋅ name: 'https://website' ⋅.━━━━ ⊰
