@@ -1396,7 +1396,7 @@ this.copyNForward(msg.chat, msg).catch(e => console.log(e, msg))
 console.error(e)
 }}
 
-global.dfail = (type, m, conn) => {
+global.dfail = (type, m, conn, usedPrefix) => {
 let msg = {
         rowner: lenguajeGB['smsRowner'](),
         owner: lenguajeGB['smsOwner'](),
