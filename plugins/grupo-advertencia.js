@@ -12,7 +12,7 @@ let txt = text.replace('@' + who.split`@`[0], '').trim()
 if (!txt) throw `${mg}𝘿𝙀𝘽𝙀 𝘿𝙀 𝙀𝙎𝘾𝙍𝙄𝘽𝙄𝙍 𝙐𝙉 𝙈𝙊𝙏𝙄𝙑𝙊 𝙋𝘼𝙍𝘼 𝘼𝘿𝙑𝙀𝙍𝙏𝙄𝙍\n\n𝙔𝙊𝙐 𝙈𝙐𝙎𝙏 𝙒𝙍𝙄𝙏𝙀 𝘼 𝙍𝙀𝘼𝙎𝙊𝙉 𝙏𝙊 𝙉𝙊𝙏𝙄𝘾𝙀\n\n𝙀𝙅𝙀𝙈𝙋𝙇𝙊 | 𝙀𝙓𝘼𝙈𝙋𝙇𝙀\n*${usedPrefix + command} @tag Motivo*`
 //let advertencias = txt.split' '
 //let cantidad = advertencias[0]
-//(!advertencias) throw `Falta el numero de advertencias`
+//if (!advertencias) throw `Falta el numero de advertencias`
 
 try {
 user.warn += 1//cantidad * 1
