@@ -3,6 +3,7 @@ import chalk from 'chalk'
 import { fileURLToPath } from 'url'
 import moment from 'moment-timezone' 
 import fs from 'fs' 
+import { en, es } from './lib/idiomas/total-idiomas.js'
 
 //⊱ ━━━━━.⋅ Añada los numeros a ser Propietario/a | Add the numbers to be Owner ⋅.━━━━ ⊰ 
 global.owner = [
@@ -20,7 +21,14 @@ global.owner = [
 
 global.mods = [] 
 global.prems = ['528451003894'], 
+  
+  
+//⊱ ━━━━━.⋅ IDIOMA : LENGUAJE ⋅.━━━━ ⊰
+  
+global.lenguajeGB = es //Idioma de GataBot
 
+//━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
+  
 global.APIs = { // API Prefix. 
   
 //⊱ ━━━━━.⋅ name: 'https://website' ⋅.━━━━ ⊰
