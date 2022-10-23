@@ -15,7 +15,7 @@ if (!txt) throw `${mg}𝘿𝙀𝘽𝙀 𝘿𝙀 𝙀𝙎𝘾𝙍𝙄𝘽𝙄𝙍
 //(!advertencias) throw `Falta el numero de advertencias`
 
 try {
-user.warn += cantidad * 1
+user.warn += 1//cantidad * 1
 
 await conn.sendButton(m.chat,`${user.warn == 1 ? `*@${who.split`@`[0]}*` : `*@${who.split`@`[0]}*`} 𝙍𝙀𝘾𝙄𝘽𝙄𝙊 cantidad * 1 𝘼𝘿𝙑𝙀𝙉𝙏𝙀𝙉𝘾𝙄𝘼 𝙀𝙉 𝙀𝙎𝙏𝙀 𝙂𝙍𝙐𝙋𝙊!!\n\n𝙄 𝙍𝙀𝘾𝙀𝙄𝙑𝙀𝘿 𝘼 𝙒𝘼𝙍𝙉𝙄𝙉𝙂 𝙄𝙉 𝙏𝙃𝙄𝙎 𝙂𝙍𝙊𝙐𝙋!!\n\n🫵 *${text}*`, `*ADVERTENCIA : WARNING*\n⚠️ *${user.warn}/10*\n\n${wm}`, null, [
 [`😭 𝙇𝙊 𝙎𝙄𝙀𝙉𝙏𝙊 | 𝙄'𝙈 𝙎𝙊𝙍𝙍𝙔`, '.ok'],
