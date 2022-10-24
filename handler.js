@@ -1002,7 +1002,7 @@ export async function handler(chatUpdate) {
             return
         m.exp += Math.ceil(Math.random() * 10)
 
-        global.usedPrefix
+        let usedPrefix
         let _user = global.db.data && global.db.data.users && global.db.data.users[m.sender]
 
         const groupMetadata = (m.isGroup ? ((conn.chats[m.chat] || {}).metadata || await this.groupMetadata(m.chat).catch(_ => null)) : {}) || {}
