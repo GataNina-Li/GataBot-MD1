@@ -7,7 +7,7 @@ if (!m.isGroup) return !1
 let chat = global.db.data.chats[m.chat]
 if (isBotAdmin && chat.antifake) {
 //if (!db.data.chats[m.chat].antifake && m.isGroup) throw 0
-let texto = `${ag}𝙀𝙎𝙏𝙀 𝙉𝙐𝙈𝙀𝙍𝙊 *@${m.sender.split`@`[0]}* 𝙉𝙊 𝙀𝙎𝙏𝘼 𝙋𝙀𝙍𝙈𝙄𝙏𝙄𝘿𝙊 𝙀𝙉 𝙀𝙎𝙏𝙀 𝙂𝙍𝙐𝙋𝙊!!\n\n𝙏𝙃𝙄𝙎 𝙉𝙐𝙈𝘽𝙀𝙍 𝙄𝙎 𝙉𝙊𝙏 𝘼𝙇𝙇𝙊𝙒𝙀𝘿 𝙄𝙉 𝙏𝙃𝙄𝙎 𝙂𝙍𝙊𝙐𝙋`
+let texto = `${lenguajeGB['smsAvisoAG']()}𝙀𝙎𝙏𝙀 𝙉𝙐𝙈𝙀𝙍𝙊 *@${m.sender.split`@`[0]}* 𝙉𝙊 𝙀𝙎𝙏𝘼 𝙋𝙀𝙍𝙈𝙄𝙏𝙄𝘿𝙊 𝙀𝙉 𝙀𝙎𝙏𝙀 𝙂𝙍𝙐𝙋𝙊!!\n\n𝙏𝙃𝙄𝙎 𝙉𝙐𝙈𝘽𝙀𝙍 𝙄𝙎 𝙉𝙊𝙏 𝘼𝙇𝙇𝙊𝙒𝙀𝘿 𝙄𝙉 𝙏𝙃𝙄𝙎 𝙂𝙍𝙊𝙐𝙋`
 	
 if (m.sender.startsWith('6' || '6')) {
 global.db.data.users[m.sender].banned = true
