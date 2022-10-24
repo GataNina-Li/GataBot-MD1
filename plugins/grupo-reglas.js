@@ -23,9 +23,9 @@ let str = `
 
 • *No Acoso* (Nada de estar acosando a los miembros/admins por privado)
 
-• *No Mandar Packs* (No se permite mandar packs de alguien o propios, como lo puede ser packs de tetas o pene [Eso si packs de transexuales si se permite pero no propios])
+• *No Mandar Packs* (No se permite mandar packs de alguien o propios, como lo puede ser packs de tetas o pene) [Eso si packs de transexuales si se permite pero no propios]
 
-• *No Scat* (Esta totalmente prohibido el pasar contenido Scat, en pocas palabras es porno de 💩 [Literalmente])
+• *No Scat* (Esta totalmente prohibido el pasar contenido Scat, en pocas palabras es porno de 💩) [Literalmente]
 
 • *No Earfuck* (No se permite esto ya que a muchos no le llegan a gustar, es que le meten el pene por la oreja y se lo follan eso es Earfuck)
 
