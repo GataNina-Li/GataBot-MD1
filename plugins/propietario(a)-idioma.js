@@ -35,7 +35,7 @@ await conn.sendButton(m.chat, lenguajeGB['smsAvisoEG']() + idioma.text + '\n' + 
 }else{
   
 const sections = [{
-title: comienzo + ' ✨ IDIOMAS DISPONIBLES : AVAILABLE LANGUAGES ✨ ' + fin,
+title: '✨ IDIOMAS DISPONIBLES : AVAILABLE LANGUAGES ✨',
 rows: [
 {title: "🌟 Español", rowId: `${usedPrefix + command} es`},
 {title: "🌟 English", rowId: `${usedPrefix + command} en`},
@@ -44,7 +44,7 @@ rows: [
 {title: "🌟 Português", rowId: `${usedPrefix + command} pt`}]}]
 
 const listMessage = {
-text: idioma2 + '\n\n' + idioma3,
+text: idioma2.text + '\n\n' + idioma3.text,
 footer: `✦ Español = ${usedPrefix + command} es
 ✦ English = ${usedPrefix + command} en
 ✦ Bahasa Indonesia = ${usedPrefix + command} id
