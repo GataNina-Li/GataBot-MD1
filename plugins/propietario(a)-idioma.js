@@ -1,31 +1,31 @@
 import translate from '@vitalets/google-translate-api'
 import * as fs from 'fs'
-import { en, es } from '../lib/idiomas/total-idiomas.js'
+import { es, en, id, ar, pt } from '../lib/idiomas/total-idiomas.js'
 
 let handler = async (m, { conn, args, usedPrefix, command }) => {
-let texto = `EXITO!! Idioma de GataBot cambiado Correctamente: `
+let texto = `*Idioma de GataBot cambiado Correctamente:* `
 let idioma = await translate(`${texto}`, { to: args[0], autoCorrect: true })
 
 try {  
 if (args[0] == 'es'){
 global.lenguajeGB = es
-m.reply(idioma.text + ' Español')
+m.reply(lenguajeGB['smsAvisoEG']() + idioma.text + '/n' + 'დ ```Español```')
   
 }else if (args[0] == 'en'){
 global.lenguajeGB = en
-m.reply(idioma.text + ' English')
+m.reply(lenguajeGB['smsAvisoEG']() + idioma.text + '/n' + 'დ ```English```')
   
 }else if (args[0] == 'id'){
 global.lenguajeGB = id
-m.reply(idioma.text + ' Bahasa Indonesia')
+m.reply(lenguajeGB['smsAvisoEG']() + idioma.text + '/n' + 'დ ```Bahasa Indonesia```')
   
 }else if (args[0] == 'ar'){
 global.lenguajeGB = ar
-m.reply(idioma.text + ' عرب')
+m.reply(lenguajeGB['smsAvisoEG']() + idioma.text + '/n' + 'დ ```عرب```')
   
 }else if (args[0] == 'pt'){
 global.lenguajeGB = pt
-m.reply(idioma.text + ' Português')
+m.reply(lenguajeGB['smsAvisoEG']() + idioma.text + '/n' + 'დ ```Português```')
   
 }else{
  
