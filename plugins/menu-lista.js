@@ -77,7 +77,7 @@ rows: [
 
 
 const listMessage = {
-text: `╭───────────────────❀\n│${ucapan()}\n│💝¸.• *${name}* •.¸💝\n╰───────────────────❀
+text: `╭───────────────────❀\n│ *${ucapan()}*\n│💝¸.• *${name}* •.¸💝\n╰───────────────────❀
 ╭━━〔 *${wm}* 〕━━⬣
 ┃✪ *${lenguajeGB['smsTime']()}*	    
 ┃➺ ${time}   
@@ -122,18 +122,18 @@ function clockString(ms) {
 
 function ucapan() {
   const time = moment.tz('America/Los_Angeles').format('HH')  //America/Los_Angeles  Asia/Jakarta   America/Toronto
-  let res = `*${lenguajeGB['smsSaludo']()}*`
+  let res = `${lenguajeGB['smsSaludo']()}`
   if (time >= 4) {
-    res = `*${lenguajeGB['smsDia']()}*`
+    res = `${lenguajeGB['smsDia']()}`
   }
   if (time >= 11) {
-    res = `*${lenguajeGB['smsTarde']()}*`
+    res = `${lenguajeGB['smsTarde']()}`
   }
   if (time >= 15) {
-    res = `*${lenguajeGB['smsTarde2']()}*`
+    res = `${lenguajeGB['smsTarde2']()}`
   }
   if (time >= 17) {
-    res = `*${lenguajeGB['smsNoche']()}*`
+    res = `${lenguajeGB['smsNoche']()}`
   }
   return res
 } 
