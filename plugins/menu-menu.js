@@ -604,7 +604,7 @@ const fkontak = {
 	"participant": "0@s.whatsapp.net"
 }
 
-await conn.sendHydrated2(m.chat, str, wm, pp, 'https://api.whatsapp.com/send/?phone=18059196237&text&type=phone_number&app_absent=0', '𝘼𝙨𝙞𝙨𝙩𝙚𝙣𝙘𝙞𝙖 - 𝙂𝙖𝙩𝙖 𝘿𝙞𝙤𝙨', ig, '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢', [
+await conn.sendHydrated2(m.chat, str, wm, null, 'https://api.whatsapp.com/send/?phone=18059196237&text&type=phone_number&app_absent=0', '𝘼𝙨𝙞𝙨𝙩𝙚𝙣𝙘𝙞𝙖 - 𝙂𝙖𝙩𝙖 𝘿𝙞𝙤𝙨', ig, '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢', [
 ['💖 𝘿𝙤𝙣𝙖𝙧 | 𝘿𝙤𝙣𝙖𝙩𝙚', '.donar'],
 ['💗 𝙈𝙚𝙣𝙪 𝘼𝙫𝙚𝙣𝙩𝙪𝙧𝙖 | 𝙍𝙋𝙂 💗', '.rpgmenu'],
 ['💝 𝙈𝙚𝙣𝙪 𝘼𝙪𝙙𝙞𝙤𝙨 💝', '.audios']
