@@ -8,6 +8,9 @@ let str = `
 • *No Respetar*
   ° *2 Warns (Advertencias)*, Si continúa después de los warns o avisos *Ban Temporal*
 
+• *Peleas o Discusiones*
+  ° *4 Warns (Advertencias)*, Si continúa después de los warns o avisos *Ban Temporal*
+
 • *Doxear*
   ° *5 Warns (Advertencias)*, Si continúa después de los warns o avisos *Ban Permanente*
 
