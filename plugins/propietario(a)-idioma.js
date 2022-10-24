@@ -8,9 +8,9 @@ let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status
 let texto = `*Idioma de GataBot cambiado Correctamente:* `
 let texto2 = `*Seleccione el idioma para GataBot*`
 let texto3 = `*Los Comandos no cambiaran de Idioma, solo el contenido del Mensaje*`
-let idioma = await translate(`${texto}`, { to: `'` + lenguajeGB + `'`, autoCorrect: true })
-let idioma2 = await translate(`${texto2}`, { to: `'` + lenguajeGB + `'`, autoCorrect: true })
-let idioma3 = await translate(`${texto3}`, { to: `'` + lenguajeGB + `'`, autoCorrect: true })
+let idioma = await translate(`${texto}`, { to: lenguajeGB.toString(), autoCorrect: true })
+let idioma2 = await translate(`${texto2}`, { to: lenguajeGB.toString(), autoCorrect: true })
+let idioma3 = await translate(`${texto3}`, { to: lenguajeGB.toString(), autoCorrect: true })
 
 try {  
 if (args[0] == 'es'){
