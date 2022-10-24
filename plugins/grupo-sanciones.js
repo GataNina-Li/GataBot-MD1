@@ -35,6 +35,9 @@ let str = `
 • *Mandar Packs*
   ° *3 Warns (Advertencias)*, Si continúa después de los warns o avisos *Ban Permanente*
 
+• *Uso mal de comandos +18 del bot o romper limites*
+  ° *5 Warns (Advertencias)*, Si continúa después de los warns o avisos *Ban Temporal*
+
 • *Mandar Scat*
   ° *5 Warns (Advertencias)*, Si continúa después de los warns o avisos *Ban Temporal*
 
