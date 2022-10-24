@@ -32,7 +32,7 @@ await conn.sendButton(m.chat, lenguajeGB['smsAvisoEG']() + idioma.text + '\n' + 
   
 }else{
 const sections = [{
-title: comienzo + ' ✨ IDIOMAS DISPONIBLES : AVAILABLE LANGUAGES ✨' + fin,
+title: comienzo + ' ✨ IDIOMAS DISPONIBLES : AVAILABLE LANGUAGES ✨ ' + fin,
 rows: [
 {title: "🌟 Español", rowId: `${usedPrefix + command} es`},
 {title: "🌟 English", rowId: `${usedPrefix + command} en`},
@@ -46,7 +46,7 @@ footer: `✦ Español = ${usedPrefix + command} es
 ✦ English = ${usedPrefix + command} en
 ✦ Bahasa Indonesia = ${usedPrefix + command} id
 ✦ عرب = ${usedPrefix + command} ar
-✦ Português = ${usedPrefix + command} pt` + wm,
+✦ Português = ${usedPrefix + command} pt\n\n` + wm,
 title: `${htki} Idioma : Language 🌎`,
 buttonText: `Seleccionar : Select`,
 sections }
@@ -57,7 +57,7 @@ await m.reply(`${fg}\`\`\`NO SE LOGRÓ CAMBIAR DE IDIOMA, REPORTE ESTE COMANDO $
 console.log(e) 
 }}
 
-handler.command = /^(idioma)$/i
+handler.command = /^(idioma|languaje|idiomas|languajes|languages)$/i
 handler.owner = true
 
 export default handler
