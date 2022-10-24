@@ -4,13 +4,14 @@ import { es, en, id, ar, pt } from '../lib/idiomas/total-idiomas.js'
 
 let handler = async (m, { conn, args, usedPrefix, command }) => {
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
-
+var nativo;
+nativo = `${global.lenguajeGB}`;
 let texto = `*Idioma de GataBot cambiado Correctamente:* `
 let texto2 = `*Seleccione el idioma para GataBot*`
 let texto3 = `*Los Comandos no cambiaran de Idioma, solo el contenido del Mensaje*`
-let idioma = await translate(`${texto}`, { to: lenguajeGB.join(''), autoCorrect: true })
-let idioma2 = await translate(`${texto2}`, { to: lenguajeGB.join(''), autoCorrect: true })
-let idioma3 = await translate(`${texto3}`, { to: lenguajeGB.join(''), autoCorrect: true })
+let idioma = await translate(`${texto}`, { to: nativo, autoCorrect: true })
+let idioma2 = await translate(`${texto2}`, { to: nativo, autoCorrect: true })
+let idioma3 = await translate(`${texto3}`, { to: nativo, autoCorrect: true })
 
 try {  
 if (args[0] == 'es'){
