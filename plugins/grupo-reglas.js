@@ -25,6 +25,8 @@ let str = `
 
 • *No Mandar Packs* (No se permite mandar packs de alguien o propios, como lo puede ser packs de tetas o pene) [Eso si packs de transexuales si se permite pero no propios]
 
+• *Uso de comandos +18 del Bot* (Se permite el uso de comandos +18 del bot solo que algunos tiene limites de uso en el caso de booty, pechos, randomxxx y tetas, tiene un total de uso de 10 veces, pero para uso de trapido o futanari tiene uso infinito, mientras no sea molesto para los miembros o admins todo bien)
+
 • *No Scat* (Esta totalmente prohibido el pasar contenido Scat, en pocas palabras es porno de 💩) [Literalmente]
 
 • *No Earfuck* (No se permite esto ya que a muchos no le llegan a gustar, es que le meten el pene por la oreja y se lo follan eso es Earfuck)
