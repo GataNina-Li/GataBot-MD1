@@ -1,13 +1,16 @@
-import translate from 'translate-google-api'
+//import translate from 'translate-google-api'
+import translate from '@vitalets/google-translate-api'
 import * as fs from 'fs'
 import { en, es } from '../lib/idiomas/total-idiomas.js'
 
 let handler = async (m, { conn, args, usedPrefix, command }) => {
 let texto = `EXITO!! Idioma de GataBot cambiado Correctamente: `
-try {  
-const tld = 'cn'
-let idioma = await translate(`${texto}`, { tld, to: args[0] })
 
+//const tld = 'cn'
+//let idioma = await translate(`${texto}`, { tld, to: args[0] })
+let result = await translate(`${texto}`, { to: args[0], autoCorrect: true })
+
+try {  
 if (args[0] == 'es'){
 global.lenguajeGB = es
 m.reply(idioma + 'Español')
