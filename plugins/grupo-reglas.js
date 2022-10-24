@@ -5,7 +5,9 @@ let str = `
 
 📝| Reglas:
 
-• *Respeto* (Respeta a toda la comunidad y a los admins)
+• *Respeto* (Respeta a toda la comunidad y a los admins, Si son insultos argentinos como hablamos acá no pasa nada, pero si estas insultando a gente de otros países que no son de argentina no lo hagas muchos no entienden nuestros insultos)
+
+• *No Peleas o Discusiones* (Esta totalmente prohibido las peleas o discusiones entre los miembros o admins, si llegan a pelear o a discutir que sea en privado no metan al grupo en sus asuntos de discusion o pelea)
 
 • *No Doxeo* (Prohibido compartir información privada de alguien, como dirección, dni o datos personales, etc)
 
