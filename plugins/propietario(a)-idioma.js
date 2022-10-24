@@ -8,7 +8,7 @@ let texto = `EXITO!! Idioma de GataBot cambiado Correctamente: `
 
 //const tld = 'cn'
 //let idioma = await translate(`${texto}`, { tld, to: args[0] })
-let result = await translate(`${texto}`, { to: args[0], autoCorrect: true })
+let idioma = await translate(`${texto}`, { to: args[0], autoCorrect: true })
 
 try {  
 if (args[0] == 'es'){
