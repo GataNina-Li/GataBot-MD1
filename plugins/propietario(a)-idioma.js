@@ -9,8 +9,8 @@ let texto = `*Idioma de GataBot cambiado Correctamente:* `
 let texto2 = `*Seleccione el idioma para GataBot*`
 let texto3 = `*Los Comandos no cambiaran de Idioma, solo el contenido del Mensaje*`
 let idioma = await translate(`${texto}`, { to: global.lenguajeGB, autoCorrect: true })
-let idioma = await translate(`${texto2}`, { to: global.lenguajeGB, autoCorrect: true })
-let idioma = await translate(`${texto3}`, { to: global.lenguajeGB, autoCorrect: true })
+let idioma2 = await translate(`${texto2}`, { to: global.lenguajeGB, autoCorrect: true })
+let idioma3 = await translate(`${texto3}`, { to: global.lenguajeGB, autoCorrect: true })
 
 try {  
 if (args[0] == 'es'){
@@ -44,7 +44,7 @@ rows: [
 {title: "🌟 Português", rowId: `${usedPrefix + command} pt`}]}]
 
 const listMessage = {
-text: texto2 + '\n\n' + texto3,
+text: idioma2 + '\n\n' + idioma3,
 footer: `✦ Español = ${usedPrefix + command} es
 ✦ English = ${usedPrefix + command} en
 ✦ Bahasa Indonesia = ${usedPrefix + command} id
