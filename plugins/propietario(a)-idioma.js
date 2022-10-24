@@ -13,23 +13,23 @@ let idioma = await translate(`${texto}`, { to: args[0], autoCorrect: true })
 try {  
 if (args[0] == 'es'){
 global.lenguajeGB = es
-m.reply(idioma + 'Español')
+m.reply(idioma.text + 'Español')
   
 }else if (args[0] == 'en'){
 global.lenguajeGB = en
-m.reply(idioma + 'English')
+m.reply(idioma.text + 'English')
   
 }else if (args[0] == 'id'){
 global.lenguajeGB = id
-m.reply(idioma + 'Bahasa Indonesia')
+m.reply(idioma.text + 'Bahasa Indonesia')
   
 }else if (args[0] == 'ar'){
 global.lenguajeGB = ar
-m.reply(idioma + 'عرب')
+m.reply(idioma.text + 'عرب')
   
 }else if (args[0] == 'pt'){
 global.lenguajeGB = pt
-m.reply(idioma + 'Português')
+m.reply(idioma.text + 'Português')
   
 }else {
  
