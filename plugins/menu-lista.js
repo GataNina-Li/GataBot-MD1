@@ -75,31 +75,31 @@ rows: [
 {title: "💎 𝙈𝙀𝙉𝙐 𝙋𝙍𝙊𝙋𝙄𝙀𝙏𝘼𝙍𝙄𝙊(𝘼) : 𝙈𝙀𝙉𝙐 𝙊𝙒𝙉𝙀𝙍 💎", rowId: `${usedPrefix}ownermenu`}
 ]}]
 
-/*`╭───────────────────❀\n│${ucapan()}\n│💝¸.• *${name}* •.¸💝\n╰───────────────────❀
+
+const listMessage = {
+text: `╭───────────────────❀\n│${ucapan()}\n│💝¸.• *${name}* •.¸💝\n╰───────────────────❀
 ╭━━〔 *${wm}* 〕━━⬣
-┃✪ *Tiempo Actual | Current Time*	    
+┃✪ *${lenguajeGB['smsTime']()}*	    
 ┃➺ ${time}   
 ┃   ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃✪ *Activa durante | Active during* 
+┃✪ *${lenguajeGB['smsUptime']()}* 
 ┃➺ ${uptime}
 ┃   ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃✪ *Versión de GataBot-MD 𓃠*
+┃✪ *${lenguajeGB['smsVersion']()}* 𓃠
 ┃➺ ${vs}
 ┃   ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃✪ *Usuario(s) | Users*
+┃✪ *${lenguajeGB['smsTotalUsers']()}*
 ┃➺ ${Object.keys(global.db.data.users).length} 
 ┃   ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃✪ *Modo | Mode*
-┃➺ ${global.opts['self'] ? '𝙋𝙍𝙄𝙑𝘼𝘿𝙊 - 𝙋𝙍𝙄𝙑𝘼𝙏𝙀' : '𝙋𝙐𝘽𝙇𝙄𝘾𝙊 - 𝙋𝙐𝘽𝙇𝙄𝘾'}
+┃✪ *${lenguajeGB['smsMode']()}*
+┃➺ ${global.opts['self'] ? `*${lenguajeGB['smsModePrivate']()}*` : `*${lenguajeGB['smsModePublic']()}*`}
 ┃   ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃✪ *Chat(s) Prohibido(s) | Chats Denied*
+┃✪ *${lenguajeGB['smsBanChats']()}*
 ┃➺ ${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length} 
 ┃   ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃✪ *Usuario(s) Prohibido(s) | Denied Users*
+┃✪ *${lenguajeGB['smsBanUsers']()}*
 ┃➺ ${Object.entries(global.db.data.users).filter(user => user[1].banned).length}
-╰━━━━━━━━━━━━━━━━━━⬣`*/
-const listMessage = {
-text: lenguajeGB['smsMenu'](), footer: `*𝗣𝗮𝗿𝗲𝗷𝗮 ➺ ${pareja ? `${name} 💞 ${conn.getName(pareja)}` : `😺 Sin Pareja`}*`, //${name} ${ucapan()}
+╰━━━━━━━━━━━━━━━━━━⬣`, footer: `*${lenguajeGB['smsPareja']()} ➺ ${pareja ? `${name} 💞 ${conn.getName(pareja)}` : `😺 ${lenguajeGB['smsResultPareja']()}`}*`, //${name} ${ucapan()} //lenguajeGB['smsMenu']()
 title: null,
 buttonText: "𝙇𝙄𝙎𝙏𝘼 𝘿𝙀 𝙈𝙀𝙉𝙐 : 𝙇𝙄𝙎𝙏 𝙈𝙀𝙉𝙐", 
 sections }
@@ -122,18 +122,18 @@ function clockString(ms) {
 
 function ucapan() {
   const time = moment.tz('America/Los_Angeles').format('HH')  //America/Los_Angeles  Asia/Jakarta   America/Toronto
-  let res = "👋 *BIENVENIDO(A) | WELCOME* 👋"
+  let res = `*${lenguajeGB['smsSaludo']()}*`
   if (time >= 4) {
-    res = "🌇 *Buenos Días | Good Morning* ⛅"
+    res = `*${lenguajeGB['smsDia']()}*`
   }
   if (time >= 11) {
-    res = "🏙️ *Buenas Tardes | Good Afternoon* 🌤️"
+    res = `*${lenguajeGB['smsTarde']()}*`
   }
   if (time >= 15) {
-    res = "🌆 *Buenas tardes | Good Afternoon* 🌥️"
+    res = `*${lenguajeGB['smsTarde2']()}*`
   }
   if (time >= 17) {
-    res = "🌃 *Buenas noches | Good Evening* 💫"
+    res = `*${lenguajeGB['smsNoche']()}*`
   }
   return res
 } 
