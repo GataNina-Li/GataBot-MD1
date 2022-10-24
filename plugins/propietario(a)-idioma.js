@@ -5,6 +5,7 @@ import { en, es } from '../lib/idiomas/total-idiomas.js'
 let handler = async (m, { conn, args, usedPrefix, command }) => {
 let texto = `EXITO!! Idioma de GataBot cambiado Correctamente: `
 try {  
+const tld = 'cn'
 let idioma = await translate(`${texto}`, { tld, to: args[0] })
 
 if (args[0] == 'es'){
