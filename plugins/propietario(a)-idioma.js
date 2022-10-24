@@ -7,7 +7,10 @@ let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status
 
 let texto = `*Idioma de GataBot cambiado Correctamente:* `
 let texto2 = `*Seleccione el idioma para GataBot*`
-let idioma = await translate(`${texto}`, { to: args[0], autoCorrect: true })
+let texto3 = `*Los Comandos no cambiaran de Idioma, solo el contenido del Mensaje*`
+let idioma = await translate(`${texto}`, { to: global.lenguajeGB, autoCorrect: true })
+let idioma = await translate(`${texto2}`, { to: global.lenguajeGB, autoCorrect: true })
+let idioma = await translate(`${texto3}`, { to: global.lenguajeGB, autoCorrect: true })
 
 try {  
 if (args[0] == 'es'){
@@ -29,8 +32,8 @@ await conn.sendButton(m.chat, lenguajeGB['smsAvisoEG']() + idioma.text + '\n' + 
 }else if (args[0] == 'pt'){
 global.lenguajeGB = pt
 await conn.sendButton(m.chat, lenguajeGB['smsAvisoEG']() + idioma.text + '\n' + 'დ ```Português```', wm, null, [[`☘️ 𝗠 𝗘 𝗡 𝗨`, `${usedPrefix}menu`]], fkontak, m)
-  
 }else{
+  
 const sections = [{
 title: comienzo + ' ✨ IDIOMAS DISPONIBLES : AVAILABLE LANGUAGES ✨ ' + fin,
 rows: [
@@ -41,7 +44,7 @@ rows: [
 {title: "🌟 Português", rowId: `${usedPrefix + command} pt`}]}]
 
 const listMessage = {
-text: texto2,
+text: texto2 + '\n\n' + texto3,
 footer: `✦ Español = ${usedPrefix + command} es
 ✦ English = ${usedPrefix + command} en
 ✦ Bahasa Indonesia = ${usedPrefix + command} id
