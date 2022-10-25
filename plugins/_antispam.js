@@ -26,15 +26,15 @@ let user = global.db.data.users[m.sender]
 
 this.spam[m.sender].lastspam = new Date * 1
 let tiempo = 60000 * 1
-let time = user.desbloquear + tiempo * 1
+let time = user.antispam + tiempo * 1
 let texto = `*@${m.sender.split("@")[0]} 🤨 NO HAGAS SPAM, BLOQUEADO POR ${tiempo / 1000 - 59} MINUTO*\n${wm}`
 
-if (new Date - user.desbloquear < tiempo * 1) return
+if (new Date - user.antispam < tiempo * 1) return
 await conn.reply(m.chat, texto,  m, { mentions: this.parseMention(texto) })
 user.banned = true
   
 await conn.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: false, id: bang, participant: delet }})
-user.desbloquear = new Date * 1  
+user.antispam = new Date * 1  
   
 } else {
 this.spam[m.sender].spam = 0
