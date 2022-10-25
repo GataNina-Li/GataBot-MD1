@@ -1,4 +1,4 @@
-import translate from '@vitalets/google-translate-api'
+/*import translate from '@vitalets/google-translate-api'
 import fetch from 'node-fetch'
 let handler = async (m, { conn, usedPrefix, command }) => {
 
@@ -150,4 +150,4 @@ conn.reply(m.chat, `${lenguajeGB['smsAvisoFG']()}\`\`\`PARECE QUE ALGO NO FUNCIO
 }
 handler.tags = ['frases']
 handler.command = handler.help = ['consejo', 'consejo2', 'fraseromantica', 'fraseromantica2', 'historia', 'historia2']
-export default handler
+export default handler*/
