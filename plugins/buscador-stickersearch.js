@@ -1,4 +1,4 @@
-import fs from 'fs'
+/*import fs from 'fs'
 import fetch from 'node-fetch'
 import { googleImage } from '@bochilteam/scraper'
 let handler = async (m, {text, usedPrefix, command, conn}) => {
@@ -14,4 +14,4 @@ await conn.sendFile(m.chat, sfoto, 'error.jpg', res, m)
 } catch {
 await m.reply('*${fg}\n𝙀𝙍𝙍𝙊𝙍 𝙋𝙊𝙍 𝙁𝘼𝙑𝙊𝙍 𝙄𝙉𝙏𝙀𝙉𝙏𝙀 𝘿𝙀 𝙉𝙐𝙀𝙑𝙊*')}}
 handler.command = ['stickersearch', 'searchsticker', 'stickerssearch', 'searchstickers']
-export default handler
+export default handler*/
