@@ -1,5 +1,4 @@
-import { es, en, id, ar, pt } from '../lib/idiomas/total-idiomas.js'
-console.log(lenguajeGB.smsIni())
+console.log('𝙄𝙉𝙄𝘾𝙄𝘼𝙉𝘿𝙊 : 𝙎𝙏𝘼𝙍𝙏𝙄𝙉𝙂 🚀')
 import { join, dirname } from 'path'
 import { createRequire } from "module";
 import { fileURLToPath } from 'url'
