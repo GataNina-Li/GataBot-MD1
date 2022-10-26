@@ -1,4 +1,4 @@
-console.log(`${lenguajeGB.smsIni()}`)
+console.log(lenguajeGB.smsIni())
 import { join, dirname } from 'path'
 import { createRequire } from "module";
 import { fileURLToPath } from 'url'
@@ -32,7 +32,7 @@ if (isRunning) return
 isRunning = true
 let args = [join(__dirname, file), ...process.argv.slice(2)]
 
-say(`${lenguajeGB.smsCod()}`, {
+say(lenguajeGB.smsCod(), {
 font: 'console',
 align: 'center',
 gradient: ['red', 'magenta']})
@@ -54,7 +54,7 @@ p.send(process.uptime())
 break }})
 p.on('exit', (_, code) => {
 isRunning = false
-console.error(`${lenguajeGB.smsIndexError()}`, code)
+console.error(lenguajeGB.smsIndexError(), code)
   
 p.process.kill()
 isRunning = false
