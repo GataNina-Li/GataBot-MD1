@@ -17,6 +17,9 @@ let str = `
 • *Ser toxico*
   ° *3 Warns (Advertencias)*, Si continúa después de los warns o avisos *Ban Temporal*
 
+• *Usar comandos RPG*
+  ° *2 Warns (Advertencias), Si continúa después de los warns o avisos *4 Warns o Ban Temporal*
+
 • *Spamear*
   ° *2 Warns (Advertencias)*, Si continúa después de los warns o avisos *Ban Temporal*
 
