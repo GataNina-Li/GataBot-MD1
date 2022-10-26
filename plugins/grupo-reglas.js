@@ -13,6 +13,8 @@ let str = `
 
 • *No Toxicidad* (Nada de insultos o humor muy negro hacia esa X persona si el/ella no le gusta ese comportamiento)
 
+• *No Uso de Comandos RPG* (No usar los comandos RPG del bot, Solo se permite los siguientes comandos .work, .level, .balance y todo lo que sea de transferir está permitido en el grupo lo otro todo al Privado)
+
 • *No Spam* (No spam de links, stickers o redes sociales, almenos que un admin te dio su permiso)
 
 • *No Binarios o Inmune* (Nada de binarios o inmune que llegara a crashear WhatsApp por un archivo multimedia)
