@@ -90,7 +90,7 @@ export async function handler(chatUpdate) {
               if (!isNumber(user.anggur)) user.anggur = 0
               if (!isNumber(user.anjing)) user.anjing = 0
               if (!isNumber(user.anjinglastclaim)) user.anjinglastclaim = 0
-              //if (!isNumber(user.antispam)) user.antispam = 0
+              if (!isNumber(user.antispam)) user.antispam = 0
               if (!isNumber(user.antispamlastclaim)) user.antispamlastclaim = 0
               if (!isNumber(user.apel)) user.apel = 0
               if (!isNumber(user.aqua)) user.aqua = 0
@@ -317,7 +317,6 @@ export async function handler(chatUpdate) {
               if (!isNumber(user.lastsda)) user.lastsda = 0
               if (!isNumber(user.lastseen)) user.lastseen = 0
               if (!isNumber(user.lastSetStatus)) user.lastSetStatus = 0
-	      //if (!isNumber(user.lastspam)) user.lastspam = 0
               if (!isNumber(user.lastsironclaim)) user.lastsironclaim = 0
               if (!isNumber(user.lastsmancingclaim)) user.lastsmancingclaim = 0
               if (!isNumber(user.laststringclaim)) user.laststringclaim = 0
@@ -497,7 +496,7 @@ export async function handler(chatUpdate) {
                     anggur: 0,
                     anjing: 0,
                     anjinglastclaim: 0,
-                    //antispam: 0,
+                    antispam: 0,
                     antispamlastclaim: 0,
                     apel: 0,
                     aqua: 0,
@@ -717,7 +716,6 @@ export async function handler(chatUpdate) {
 		    lastpago: 0,
                     lastpotionclaim: 0,
                     lastramuanclaim: 0,
-	            //lastspam: 0,
                     lastrob: 0,
                     lastroket: 0,
                     lastseen: 0,
@@ -910,7 +908,6 @@ export async function handler(chatUpdate) {
 		if (!('reaction' in chat)) chat.reaction = true    
                 if (!('viewonce' in chat)) chat.viewonce = false                    
                 if (!('antitoxic' in chat)) chat.antitoxic = true  
-		if (!('antiSpam' in chat)) chat.antiSpam = true  
                 if (!isNumber(chat.expired)) chat.expired = 0
                     
             } else
@@ -940,7 +937,6 @@ export async function handler(chatUpdate) {
 		    reaction: true,
                     viewonce: false,
                     antitoxic: true,
-		    antiSpam: true,
                     expired: 0,
                 }
             let settings = global.db.data.settings[this.user.jid]
@@ -951,14 +947,12 @@ export async function handler(chatUpdate) {
                 if (!('restrict' in settings)) settings.restrict = false
 		if (!('temporal' in settings)) settings.temporal = true
 		if (!('antiCall' in settings)) settings.antiCall = true
-		//if (!('antiSpam' in settings)) settings.antiSpam = true
             } else global.db.data.settings[this.user.jid] = {
                 self: false,
                 autoread: false,
                 restrict: false,
 		temporal: true,
 		antiCall: true
-		//antiSpam: true
             }
         } catch (e) {
             console.error(e)

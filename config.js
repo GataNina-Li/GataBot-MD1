@@ -3,7 +3,7 @@ import chalk from 'chalk'
 import { fileURLToPath } from 'url'
 import moment from 'moment-timezone' 
 import fs from 'fs' 
-import { en, es } from './lib/idiomas/total-idiomas.js'
+import { en, es, id, ar, pt } from './lib/idiomas/total-idiomas.js'
 
 //⊱ ━━━━━.⋅ Añada los numeros a ser Propietario/a | Add the numbers to be Owner ⋅.━━━━ ⊰ 
 global.owner = [
@@ -24,10 +24,11 @@ global.prems = ['5492604050270', '5493772406612'],
 //⊱ ━━━━━.⋅ IDIOMA : LENGUAJE ⋅.━━━━ ⊰
 //Agrega el Idioma que quieres que tenga GataBot-MD
 //Add the language you want GataBot-MD to have
-//  es = Español 
-//  en = English 
-  
-global.lenguajeGB = es //Idioma de GataBot
+//  es = Español       //  id = Bahasa Indonesia
+//  en = English       //  pt = Português 
+//  ar = عرب  
+
+global.lenguajeGB = es //Idioma de GataBot Ejemplo: es | en | pt ....
 
 //━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 

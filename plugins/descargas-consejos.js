@@ -1,11 +1,11 @@
-import translate from 'translate-google-api'
+/*import translate from '@vitalets/google-translate-api'
 import fetch from 'node-fetch'
 let handler = async (m, { conn, usedPrefix, command }) => {
 
 if (command == 'consejo') {
 try {  
 let letra = 'https://mysuenos.com/wp-content/uploads/2019/10/trebol.jpg'
-let res = await fetch("https://bx-hunter.herokuapp.com/api/fakta?apikey=bx")//("https://supra-api.herokuapp.com/api/conselho?apikey=supraz") 
+let res = await fetch("https://zenzapis.xyz/randomtext/motivasi?apikey=hdiiofficial")//("https://supra-api.herokuapp.com/api/conselho?apikey=supraz") 
 let json = await res.json()
 let { consejo } = json
 const tld = 'cn'
@@ -28,7 +28,7 @@ conn.reply(m.chat, `${lenguajeGB['smsAvisoFG']()}\`\`\`PARECE QUE ALGO NO FUNCIO
 if (command == 'consejo2') {
 try {  
 let letra = 'https://mysuenos.com/wp-content/uploads/2019/10/trebol.jpg'
-let res = await fetch("https://supra-api.herokuapp.com/api/conselho?apikey=supraz")
+let res = await fetch("https://zenzapis.xyz/randomtext/motivasi?apikey=hdiiofficial")
 let json = await res.json()
 let { frase } = json
 const tld = 'cn'
@@ -150,4 +150,4 @@ conn.reply(m.chat, `${lenguajeGB['smsAvisoFG']()}\`\`\`PARECE QUE ALGO NO FUNCIO
 }
 handler.tags = ['frases']
 handler.command = handler.help = ['consejo', 'consejo2', 'fraseromantica', 'fraseromantica2', 'historia', 'historia2']
-export default handler
+export default handler*/

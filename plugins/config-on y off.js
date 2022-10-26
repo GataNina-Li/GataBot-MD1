@@ -402,17 +402,6 @@ throw false
 }
 bot.antiCall = isEnable
 break
-		
-case 'antispam':
-case 'antiflood':
-case 'antisaturacion':
-if (m.isGroup) {
-if (!(isAdmin || isOwner)) {
-global.dfail('admin', m, conn)
-throw false
-}}
-chat.antiSpam = isEnable
-break
     
 case 'pconly':
 case 'privateonly':

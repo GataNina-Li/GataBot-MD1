@@ -568,6 +568,7 @@ ${readMore}
 ┃💎➺ _${usedPrefix}dardiamantes *cantidad*_
 ┃💎➺ _${usedPrefix}darxp *cantidad*_
 ┃💎➺ _${usedPrefix}dargatacoins *cantidad*_
+┃💎➺ _${usedPrefix}idioma | language_
 ┃💎➺ _${usedPrefix}cajafuerte_
 ┃💎➺ _${usedPrefix}comunicar | broadcastall | bc *texto*_
 ┃💎➺ _${usedPrefix}broadcastchats | bcc *texto*_
