@@ -31,7 +31,7 @@ await conn.reply(m.chat, `${lenguajeGB['smsAvisoFG']()}*ALGO SALIÓ MAL. ERRORS 
 }}
 handler.help = ['addprem <@user>']
 handler.tags = ['owner']
-handler.command = /^(advertir|advertencia|warn|warning)$/i
+handler.command = /^(advertir|advertencia|warn|warning|poñoñoin)$/i
 handler.group = true
 handler.admin = true
 handler.botAdmin = true
