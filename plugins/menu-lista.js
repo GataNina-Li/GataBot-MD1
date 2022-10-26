@@ -28,51 +28,51 @@ let imagen = './media/menus/Menu3.jpg'
 let pareja = global.db.data.users[m.sender].pasangan 
 
 const sections = [{
-title: comienzo + ' 🌟 𝙄𝙉𝙁𝙊 𝙂𝘼𝙏𝘼𝘽𝙊𝙏 🌟 ' + fin,
+title: comienzo + ' ' + lenguajeGB['smsLista1']() + ' ' + fin,
 rows: [
-{title: "💖 𝘾𝙍𝙀𝘼𝘿𝙊𝙍𝘼 : 𝘾𝙍𝙀𝘼𝙏𝙊𝙍 💖", rowId: `${usedPrefix}creadora`},
-{title: "🎁 𝘿𝙊𝙉𝘼𝙍 : 𝘿𝙊𝙉𝘼𝙏𝙀 🎁", rowId: `${usedPrefix}donar`},
-{title: "🚀 𝙑𝙀𝙇𝙊𝘾𝙄𝘿𝘼𝘿 : 𝙎𝙋𝙀𝙀𝘿 🚀", rowId: `${usedPrefix}ping`},
-{title: "💡 𝙄𝙉𝙁𝙊𝙍𝙈𝘼𝘾𝙄𝙊𝙉 : 𝙄𝙉𝙁𝙊 𝙈𝙀𝙉𝙐 💡", rowId: `${usedPrefix}infomenu`},
-{title: "🌀 𝙈𝙀𝙉𝙐 𝘾𝙊𝙈𝙋𝙇𝙀𝙏𝙊 : 𝙁𝙐𝙇𝙇 𝙈𝙀𝙉𝙐 🌀", rowId: `${usedPrefix}allmenu`},
-{title: "🐈 𝙄𝙉𝙎𝙏𝘼𝙇𝘼𝙍 𝙂𝘼𝙏𝘼 𝘽𝙊𝙏 : 𝙄𝙉𝙎𝙏𝘼𝙇𝙇 𝘾𝘼𝙏 𝘽𝙊𝙏 🐈", rowId: `${usedPrefix}instalarbot`},
-{title: "😻 𝙎𝙀𝙍 𝙎𝙐𝘽 𝘽𝙊𝙏 : 𝘽𝙀 𝙎𝙐𝘽 𝘽𝙊𝙏 😻", rowId: `${usedPrefix}serbot`},
-{title: "📄 𝙏𝙀𝙍𝙈𝙄𝙉𝙊𝙎, 𝘾𝙊𝙉𝘿𝙄𝘾𝙄𝙊𝙉𝙀𝙎 𝙔 𝙋𝙍𝙄𝙑𝘼𝘾𝙄𝘿𝘼𝘿 📄", rowId: `${usedPrefix}términos`, description: '\n'}
+{title: lenguajeGB['smsLista2'](), rowId: `${usedPrefix}creadora`},
+{title: lenguajeGB['smsLista3'](), rowId: `${usedPrefix}donar`},
+{title: lenguajeGB['smsLista4'](), rowId: `${usedPrefix}ping`},
+{title: lenguajeGB['smsLista5'](), rowId: `${usedPrefix}infomenu`},
+{title: lenguajeGB['smsLista6'](), rowId: `${usedPrefix}allmenu`},
+{title: lenguajeGB['smsLista7'](), rowId: `${usedPrefix}instalarbot`},
+{title: lenguajeGB['smsLista8'](), rowId: `${usedPrefix}serbot`},
+{title: lenguajeGB['smsLista9'](), rowId: `${usedPrefix}términos`, description: '\n'}
 ]},{
-title: comienzo + ' 🌟 𝘼𝙑𝙀𝙉𝙏𝙐𝙍𝘼 𝙔 𝙏𝙊𝙋 🌟 ' + fin,
+title: comienzo + ' ' + lenguajeGB['smsLista10']() + ' ' + fin,
 rows: [
-{title: "🏆 𝙏𝙊𝙋 𝙈𝙐𝙉𝘿𝙄𝘼𝙇 𝘾𝙇𝘼𝙎𝙄𝙁𝙄𝘾𝘼𝙏𝙊𝙍𝙄𝘼 🏆", rowId: `${usedPrefix}top`},
-{title: "🏅 𝙐𝙎𝙐𝘼𝙍𝙄𝙊𝙎 𝙋𝙍𝙀𝙈𝙄𝙐𝙈 : 𝙋𝙍𝙀𝙈𝙄𝙐𝙈 𝙐𝙎𝙀𝙍𝙎 🏅", rowId: `${usedPrefix}listprem`},
-{title: "🎟️ 𝙎𝙀𝙍 𝙋𝙍𝙀𝙈𝙄𝙐𝙈 : 𝘽𝙀 𝙋𝙍𝙀𝙈𝙄𝙐𝙈 🎟️", rowId: `${usedPrefix}pase premium`},
-{title: "🛣️ 𝙈𝙄𝙎𝙄𝙊𝙉𝙀𝙎 : 𝙈𝙄𝙎𝙎𝙄𝙊𝙉𝙎 🛣️", rowId: `${usedPrefix}inventario 3`},
-{title: "⚗️ 𝙈𝙀𝙉𝙐 𝙍𝙋𝙂 ⚗️", rowId: `${usedPrefix}rpgmenu`},
-{title: "🏪 𝙏𝙄𝙀𝙉𝘿𝘼 𝙋𝘼𝙍𝘼 𝘾𝙊𝙈𝙋𝙍𝘼𝙍 🏪", rowId: `${usedPrefix}buy`},
-{title: "🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊 : 𝙄𝙉𝙑𝙀𝙉𝙏𝙊𝙍𝙔 🎒", rowId: `${usedPrefix}inventory`},
-{title: "⛩️ 𝙍𝘼𝙉𝘿𝙊𝙈 𝙈𝙀𝙈𝙀 : 𝘼𝙉𝙄𝙈𝙀 ⛩️\n", rowId: `${usedPrefix}randommenu`, description: '\n'}
+{title: lenguajeGB['smsLista11'](), rowId: `${usedPrefix}top`},
+{title: lenguajeGB['smsLista12'](), rowId: `${usedPrefix}listprem`},
+{title: lenguajeGB['smsLista13'](), rowId: `${usedPrefix}pase premium`},
+{title: lenguajeGB['smsLista14'](), rowId: `${usedPrefix}inventario 3`},
+{title: lenguajeGB['smsLista15'](), rowId: `${usedPrefix}rpgmenu`},
+{title: lenguajeGB['smsLista16'](), rowId: `${usedPrefix}buy`},
+{title: lenguajeGB['smsLista17'](), rowId: `${usedPrefix}inventory`},
+{title: lenguajeGB['smsLista18'](), rowId: `${usedPrefix}randommenu`, description: '\n'}
 ]},{	
-title: comienzo + ' 🌟 𝙈𝙐𝙇𝙏𝙄𝙈𝙀𝘿𝙄𝘼 🌟 ' + fin,
+title: comienzo + ' ' + lenguajeGB['smsLista19']() + ' ' + fin,
 rows: [
-{title: "📲 𝙈𝙀𝙉𝙐 𝘿𝙀 𝘿𝙀𝙎𝘾𝘼𝙍𝙂𝘼𝙎 : 𝘿𝙊𝙒𝙉𝙇𝙊𝘼𝘿 𝙈𝙀𝙉𝙐 📲", rowId: `${usedPrefix}descargasmenu`},
-{title: "🔍 𝙈𝙀𝙉𝙐 𝘿𝙀 𝘽𝙐𝙎𝙌𝙐𝙀𝘿𝘼𝙎 : 𝙎𝙀𝘼𝙍𝘾𝙃 𝙈𝙀𝙉𝙐 🔍", rowId: `${usedPrefix}buscarmenu`},
-{title: "🛰️ 𝙈𝙀𝙉𝙐 𝘾𝙊𝙉𝙑𝙀𝙍𝙏𝙄𝘿𝙊𝙍 : 𝘾𝙊𝙉𝙑𝙀𝙍𝙏𝙀𝙍 🛰️", rowId: `${usedPrefix}convertidormenu`},
-{title: "🧰 𝙈𝙀𝙉𝙐 𝙈𝙊𝘿𝙄𝙁𝙄𝘾𝘼𝘿𝙊𝙍 𝘿𝙀 𝘼𝙐𝘿𝙄𝙊 🧰\n", rowId: `${usedPrefix}audioefectomenu`, description: '\n'}
+{title: lenguajeGB['smsLista20'](), rowId: `${usedPrefix}descargasmenu`},
+{title: lenguajeGB['smsLista21'](), rowId: `${usedPrefix}buscarmenu`},
+{title: lenguajeGB['smsLista22'](), rowId: `${usedPrefix}convertidormenu`},
+{title: lenguajeGB['smsLista23'](), rowId: `${usedPrefix}audioefectomenu`, description: '\n'}
 ]},{
-title: comienzo + ' 🌟 𝘿𝙄𝙑𝙀𝙍𝙎𝙄𝙊𝙉 : 𝙁𝙐𝙉 🌟 ' + fin,
+title: comienzo + ' ' + lenguajeGB['smsLista1']() + ' ' + fin,
 rows: [
-{title: "🎡 𝙅𝙐𝙀𝙂𝙊𝙎 𝘿𝙄𝙉𝘼𝙈𝙄𝘾𝙊𝙎 : 𝙂𝘼𝙈𝙀𝙎 🎡", rowId: `${usedPrefix}juegosmenu`},
-{title: "🔊 𝙈𝙀𝙉𝙐 𝘿𝙀 𝘼𝙐𝘿𝙄𝙊𝙎 : 𝘼𝙐𝘿𝙄𝙊𝙎 🔊", rowId: `${usedPrefix}audios`},
-{title: "🎈 𝙈𝙀𝙉𝙐 𝙎𝙏𝙄𝘾𝙆𝙀𝙍 𝙔 𝙁𝙄𝙇𝙏𝙍𝙊𝙎 🎈", rowId: `${usedPrefix}stickermenu`},
-{title: "✨ 𝙈𝙀𝙉𝙐 𝙀𝙁𝙀𝘾𝙏𝙊𝙎 𝙔 𝙇𝙊𝙂𝙊𝙎 ✨", rowId: `${usedPrefix}makermenu`},
-{title: "🌅 𝙈𝙀𝙉𝙐 𝙇𝙊𝙂𝙊 2 🌅", rowId: `${usedPrefix}menulogos2`},
-{title: "⛩️ 𝙍𝘼𝙉𝘿𝙊𝙈 𝙈𝙀𝙈𝙀 : 𝘼𝙉𝙄𝙈𝙀 ⛩️", rowId: `${usedPrefix}randommenu`},
-{title: "🔞 𝙈𝙀𝙉𝙐 𝘾𝙊𝙈𝘼𝙉𝘿𝙊𝙎 +18 : 𝘾𝙊𝙈𝙈𝘼𝙉𝘿𝙎 +18 🔞\n", rowId: `${usedPrefix}hornymenu`, description: '\n'}
+{title: lenguajeGB['smsLista24'](), rowId: `${usedPrefix}juegosmenu`},
+{title: lenguajeGB['smsLista25'](), rowId: `${usedPrefix}audios`},
+{title: lenguajeGB['smsLista26'](), rowId: `${usedPrefix}stickermenu`},
+{title: lenguajeGB['smsLista27'](), rowId: `${usedPrefix}makermenu`},
+{title: lenguajeGB['smsLista28'](), rowId: `${usedPrefix}menulogos2`},
+{title: lenguajeGB['smsLista29'](), rowId: `${usedPrefix}randommenu`},
+{title: lenguajeGB['smsLista30'](), rowId: `${usedPrefix}hornymenu`, description: '\n'}
 ]},{	
-title: comienzo + ' 🌟 𝘼𝙅𝙐𝙎𝙏𝙀𝙎 : 𝙎𝙀𝙏𝙏𝙄𝙉𝙂𝙎 🌟 ' + fin,
+title: comienzo + ' ' + lenguajeGB['smsLista31']() + ' ' + fin,
 rows: [
-{title: "🔰 𝙈𝙀𝙉𝙐 𝘿𝙀 𝙂𝙍𝙐𝙋𝙊 : 𝙂𝙍𝙊𝙐𝙋 🔰", rowId: `${usedPrefix}grupomenu`},
-{title: "📑 𝙏𝙄𝙋𝙊𝙎 𝘿𝙀 𝙇𝙄𝙎𝙏𝘼𝙎 : 𝙏𝙔𝙋𝙀𝙎 𝙊𝙁 𝙇𝙄𝙎𝙏𝙎 📑", rowId: `${usedPrefix}listas`},
-{title: "⚙️ 𝘾𝙀𝙉𝙏𝙍𝙊 𝘿𝙀 𝘾𝙊𝙉𝙁𝙄𝙂𝙐𝙍𝘼𝘾𝙄𝙊𝙉 ⚙️", rowId: `${usedPrefix}on`},
-{title: "💎 𝙈𝙀𝙉𝙐 𝙋𝙍𝙊𝙋𝙄𝙀𝙏𝘼𝙍𝙄𝙊(𝘼) : 𝙈𝙀𝙉𝙐 𝙊𝙒𝙉𝙀𝙍 💎", rowId: `${usedPrefix}ownermenu`}
+{title: lenguajeGB['smsLista32'](), rowId: `${usedPrefix}grupomenu`},
+{title: lenguajeGB['smsLista33'](), rowId: `${usedPrefix}listas`},
+{title: lenguajeGB['smsLista34'](), rowId: `${usedPrefix}on`},
+{title: lenguajeGB['smsLista35'](), rowId: `${usedPrefix}ownermenu`}
 ]}]
 
 
@@ -101,7 +101,7 @@ text: `╭───────────────────❀\n│ *${u
 ┃➺ ${Object.entries(global.db.data.users).filter(user => user[1].banned).length}
 ╰━━━━━━━━━━━━━━━━━━⬣`, footer: `*${lenguajeGB['smsPareja']()} ➺ ${pareja ? `${name} 💞 ${conn.getName(pareja)}` : `😺 ${lenguajeGB['smsResultPareja']()}`}*`, //${name} ${ucapan()} //lenguajeGB['smsMenu']()
 title: null,
-buttonText: "𝙇𝙄𝙎𝙏𝘼 𝘿𝙀 𝙈𝙀𝙉𝙐 : 𝙇𝙄𝙎𝙏 𝙈𝙀𝙉𝙐", 
+buttonText: `${lenguajeGB['smsListaMenu']()}`, 
 sections }
 
 await conn.sendMessage(m.chat, listMessage, {quoted: fkontak})	
