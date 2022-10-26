@@ -1,3 +1,4 @@
+import { es, en, id, ar, pt } from '../lib/idiomas/total-idiomas.js'
 console.log(lenguajeGB.smsIni())
 import { join, dirname } from 'path'
 import { createRequire } from "module";
