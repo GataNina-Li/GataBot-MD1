@@ -12,7 +12,7 @@ let tiempo = 60000 * 1
 setTimeout(() => {
 //this.updateBlockStatus(m.chat, 'unblock') No me gustó jjjjj
 user.banned = false
-texto = `*@${m.sender.split("@")[0]} FUE BANEADO DESPUÉS DE ${tiempo / 1000 - 59} MINUTO, POR FAVOR NO HAGA SPAM!!*\n${wm}`
+texto = `*@${m.sender.split("@")[0]} FUE BANEADO DESPUÉS DE ${tiempo / 1000 - 59} MINUTO, POR FAVOR NO HAGA SPAM!!*`
 this.sendButton(m.chat, texto, wm, null, [['☘️ 𝗠 𝗘 𝗡 𝗨', '/menu']], m, { mentions: this.parseMention(texto) })}, tiempo)        
 user.antispam = null
 }}
