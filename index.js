@@ -1,4 +1,4 @@
-console.log('𝙄𝙉𝙄𝘾𝙄𝘼𝙉𝘿𝙊 : 𝙎𝙏𝘼𝙍𝙏𝙄𝙉𝙂 🚀')
+console.log(lenguajeGB['smsIni']())
 import { join, dirname } from 'path'
 import { createRequire } from "module";
 import { fileURLToPath } from 'url'
@@ -32,7 +32,7 @@ if (isRunning) return
 isRunning = true
 let args = [join(__dirname, file), ...process.argv.slice(2)]
 
-say('✅ 𝙔𝘼 𝙋𝙐𝙀𝘿𝙀 𝙀𝙎𝘾𝘼𝙉𝙀𝘼𝙍 𝙀𝙇 𝘾𝙊𝘿𝙄𝙂𝙊 𝙌𝙍\n𝙔𝙊𝙐 𝘾𝘼𝙉 𝙉𝙊𝙒 𝙎𝘾𝘼𝙉 𝙏𝙃𝙀 𝙌𝙍 𝘾𝙊𝘿𝙀', {
+say(lenguajeGB['smsCod'](), {
 font: 'console',
 align: 'center',
 gradient: ['red', 'magenta']})
@@ -54,7 +54,7 @@ p.send(process.uptime())
 break }})
 p.on('exit', (_, code) => {
 isRunning = false
-console.error('⚠️ Error Inesperado : Unexpected Error', code)
+console.error(lenguajeGB['smsIndexError'](), code)
   
 p.process.kill()
 isRunning = false
