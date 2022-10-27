@@ -1,6 +1,6 @@
 //CRÉDITOS: https://github.com/Abiguelreyes75
 
-let handler = m => m
+/*let handler = m => m
 handler.all = async function (m) {
   
 let chat = global.db.data.chats[m.chat]
@@ -60,4 +60,4 @@ minutes = (minutes < 10) ? "0" + minutes : minutes
 seconds = (seconds < 10) ? "0" + seconds : seconds
 
 return minutes + " m y " + seconds + " s " 
-}
+}*/
