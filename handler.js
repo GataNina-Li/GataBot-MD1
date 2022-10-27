@@ -1212,7 +1212,7 @@ export async function handler(chatUpdate) {
                         }
                     }
                     if (m.limit)
-                        m.reply(+m.limit + lenguajeGB.smsCont7())
+                        m.reply(+m.limit + lenguajeGB.smsCont8())
                 }
                 break
             }
