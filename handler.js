@@ -1146,19 +1146,17 @@ export async function handler(chatUpdate) {
                     continue
                 }
                 m.isCommand = true
-                let xp = 'exp' in plugin ? parseInt(plugin.exp) : 17 // XP Earning per command
+                let xp = 'exp' in plugin ? parseInt(plugin.exp) : 12 // XP Earning per command
                 if (xp > 2000)
-                    m.reply('Ngecit -_-') // Hehehe
+                    m.reply('Exp limit') // Hehehe
                 else
                     m.exp += xp
                 if (!isPrems && plugin.limit && global.db.data.users[m.sender].limit < plugin.limit * 1) {
-                    //this.reply(m.chat, `${lenguajeGB['smsAvisoAG']()} *${usedPrefix}buy*`, m)
-		this.sendButton(m.chat, `${lenguajeGB['smsCont7']()} *${usedPrefix}buy*`, wm, null, [['💖 TIENDA', `#buy`]], m)
+                    this.reply(m.chat, `${lenguajeGB['smsAvisoAG']()} *${usedPrefix}buy*`, m)
                     continue // Limit habis
                 }
                 if (plugin.level > _user.level) {
-                    //this.reply(m.chat, `${lenguajeGB['smsCont9']()} *${plugin.level}* ${lenguajeGB['smsCont10']()} *${_user.level}* ${lenguajeGB['smsCont11']()} *${usedPrefix}nivel*`, m)
-                    this.sendButton(m.chat, `${lenguajeGB['smsCont9']()} *${plugin.level}* ${lenguajeGB['smsCont10']()} *${_user.level}* ${lenguajeGB['smsCont11']()} *${usedPrefix}nivel*`, wm, null, [['💖 ACTUALIZAR MI NIVEL', `#level`]], m)
+                    this.reply(m.chat, `${lenguajeGB['smsCont9']()} *${plugin.level}* ${lenguajeGB['smsCont10']()} *${_user.level}* ${lenguajeGB['smsCont11']()} *${usedPrefix}nivel*`, m)
 		    continue // If the level has not been reached
                 }
                 let extra = {
