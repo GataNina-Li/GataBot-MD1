@@ -89,7 +89,7 @@ let str =
 *┆🎟️ PREMIUM ➟* ${user.premiumTime > 0 ? '✅' : '❌'}
 *╰*┅┅┅┅┅┅┅┅┅┅┅┅┅ *✧*
 ${readMore}
-*╭━〔 INFORMACIÓN DE GATABOT 〕⬣*
+*╭━〔 🕯️ INFORMACIÓN DE GATABOT 〕⬣*
 ┃💫➺ _${usedPrefix}cuentasgatabot | cuentasgb_
 ┃💫➺ _${usedPrefix}gruposgb | grupos | groupgb_
 ┃💫➺ _${usedPrefix}donar | donate_
@@ -103,7 +103,7 @@ ${readMore}
 ┃💫➺ _términos y condiciones_
 *╰━━━━━━━━━━━━⬣*
 
-*╭━〔 FUNCIÓN SUB BOT 〕━⬣*
+*╭━〔 👻 FUNCIÓN SUB BOT 〕━⬣*
 ┃ *Ya puedes convertir tú*
 ┃ *Número en GataBot!!*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
@@ -113,7 +113,7 @@ ${readMore}
 ┃💻 _${usedPrefix}bcbot_
 *╰━━━━━━━━━━━━⬣*
 
-*╭━〔 REPORTAR COMANDO 〕━⬣*
+*╭━〔 🍬 REPORTAR COMANDO 〕━⬣*
 ┃ *Reporta con este comando de haber*
 ┃ *Fallas para poder Solucionar!!*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
@@ -121,14 +121,14 @@ ${readMore}
 ┃ 💌 _${usedPrefix}report *texto*_
 *╰━━━━━━━━━━━━⬣*
 
-*╭━〔 ÚNETE AL GRUPO 〕━⬣*
+*╭━〔 🏰 ÚNETE AL GRUPO 〕━⬣*
 ┃ *Une a GataBot en Grupos!!*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃🪅 _${usedPrefix}botemporal *enlace* *cantidad*_
 ┃🪅 _${usedPrefix}addbot *enlace* *cantidad*_
 *╰━━━━━━━━━━━━⬣*
 
-*╭━〔 SER PREMIUM 〕━⬣*
+*╭━〔 🎃 SER PREMIUM 〕━⬣*
 ┃ *Convierte en un(a)*
 ┃ *Usuario(a) Premium!!*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
@@ -137,7 +137,7 @@ ${readMore}
 ┃🎟️ _${usedPrefix}pass premium_
 *╰━━━━━━━━━━━━⬣*
 
-*╭━〔 JUEGOS - MULTI JUEGOS 〕━⬣*
+*╭━〔 🔮 JUEGOS - MULTI JUEGOS 〕━⬣*
 ┃🎡➺ _${usedPrefix}mates | matemáticas | math_
 ┃🎡➺ _${usedPrefix}ppt *piedra : papel : tijera*_
 ┃🎡➺ _${usedPrefix}tictactoe | ttt *sala*_
@@ -176,7 +176,7 @@ ${readMore}
 ┃🎡➺ _${usedPrefix}juegos_
 *╰━━━━━━━━━━━━⬣*
 
-*╭━〔 IA 〕━⬣*
+*╭━〔 🍫 IA 〕━⬣*
 ┃ *Tienes la Ocasión de*
 ┃ *Conversar con GataBot!!*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
@@ -185,7 +185,7 @@ ${readMore}
 ┃🪄➺ _${usedPrefix}simsimi | bixby *texto*_
 *╰━━━━━━━━━━━━⬣*
 
-*╭━━━[ AJUSTES - CHATS ]━━━⬣*
+*╭━━━[ ⛓️ AJUSTES - CHATS ]━━━⬣*
 ┃ *Configura si eres Propietario(a) y/o*
 ┃ *Admin!!*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
@@ -218,7 +218,7 @@ ${readMore}
 ┃⚙️ _${usedPrefix}on *:* off *sologrupos | gconly*_
 *╰━━━━━━━━━━━━⬣*
 
-*╭━〔 GRUPO - RESUMEN 〕━⬣*
+*╭━〔 🕸️ GRUPO - RESUMEN 〕━⬣*
 ┃ *Ahora puedes ver el resumen*
 ┃ *de configuracion de Grupos!!*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
@@ -227,7 +227,7 @@ ${readMore}
 ┃🧾➺ _${usedPrefix}vergrupo_
 *╰━━━━━━━━━━━━⬣*
 
-*╭━[ DESCARGAS | DOWNLOADS ]━⬣*
+*╭━[ 🤡 DESCARGAS | DOWNLOADS ]━⬣*
 ┃🚀➺ _${usedPrefix}imagen | image *texto*_
 ┃🚀➺ _${usedPrefix}pinterest | dlpinterest *texto*_
 ┃🚀➺ _${usedPrefix}wallpaper|wp *texto*_
@@ -256,7 +256,7 @@ ${readMore}
 ┃🚀➺ _${usedPrefix}historia_
 *╰━━━━━━━━━━━━⬣*
 
-*╭━[ CHAT ANONIMO ]━⬣*
+*╭━[ 🏚️ CHAT ANONIMO ]━⬣*
 ┃ *¡Escribe con Alguien* 
 ┃ *de forma Anónima!* 
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
@@ -267,7 +267,7 @@ ${readMore}
 ┃👤➺ _${usedPrefix}leave_
 *╰━━━━━━━━━━━━⬣*
 
-*╭━[ CONFIGURACIÓN - GRUPOS ]━⬣*
+*╭━[ 🌕 CONFIGURACIÓN - GRUPOS ]━⬣*
 ┃ *Mejora tú Grupo con GataBot!!*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃🌐➺ _${usedPrefix}add *numero*_
@@ -305,7 +305,7 @@ ${readMore}
 ┃🌐➺ _${usedPrefix}off_
 *╰━━━━━━━━━━━━⬣*
 
-*╭━━━[ PAREJAS 💞 ]━━⬣*
+*╭━━━[ 🕷️♀️ PAREJAS 💞 ]━━⬣*
 ┃ *Declarate con alguien*
 ┃ *para que sean Parejas!!*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
@@ -317,7 +317,7 @@ ${readMore}
 ┃❤️➺ _${usedPrefix}terminar | finish *@tag*_
 *╰━━━━━━━━━━━━⬣*
 
-*╭━[ VOTACIONES EN GRUPOS 📧 ]━⬣*
+*╭━[ 🧟‍♀️ VOTACIONES EN GRUPOS 📧 ]━⬣*
 ┃ *Ahora puedes hacer*
 ┃ *Votaciones en Grupos!!*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
@@ -328,14 +328,14 @@ ${readMore}
 ┃📧➺ _${usedPrefix}delvoto | deletevoto_
 *╰━━━━━━━━━━━━⬣*
 
-*╭━━━[ CONTENIDO 🔞 ]━━⬣*
+*╭━━━[ 🕯️ CONTENIDO 🔞 ]━━⬣*
 ┃ *Visita el Menú de Comandos*
 ┃ *Para Adultos!!*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃🔞➺ _${usedPrefix}hornymenu_
 *╰━━━━━━━━━━━━⬣*
 
-*╭━[ CONVERTIDORES 🛰️ ]━⬣*
+*╭━[ 🧛‍♀️ CONVERTIDORES 🛰️ ]━⬣*
 ┃ *Convierte sticker en imagen!!*
 ┃ *Crea enlace de archivos!!*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
@@ -348,7 +348,7 @@ ${readMore}
 ┃🛰️➺ _${usedPrefix}tts es *texto*_
 *╰━━━━━━━━━━━━⬣*
 
-*╭━━━[ LOGOS 🔆 ]━━⬣*
+*╭━━━[ 🧛 LOGOS 🔆 ]━━⬣*
 ┃ *Crea Logos o personaliza*
 ┃ *la información del Logo!!*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
@@ -356,7 +356,7 @@ ${readMore}
 ┃🌅 _${usedPrefix}menulogos2_
 *╰━━━━━━━━━━━━⬣*
 
-*╭━━━[ EFECTOS ⛺ ]━━⬣*
+*╭━━━[ 🧟‍♂️ EFECTOS ⛺ ]━━⬣*
 ┃⛺ _${usedPrefix}simpcard *@tag*_
 ┃⛺ _${usedPrefix}hornycard *@tag*_
 ┃⛺ _${usedPrefix}lolice *@tag*_
@@ -366,7 +366,7 @@ ${readMore}
 ┃⛺ _${usedPrefix}blur_
 *╰━━━━━━━━━━━━⬣*
 
-*╭━[ RANDOM | ANIME 🧩 ]━⬣*
+*╭━[ ⚱️ RANDOM | ANIME 🧩 ]━⬣*
 ┃🧩 _${usedPrefix}chica_
 ┃🧩 _${usedPrefix}chico_
 ┃🧩 _${usedPrefix}cristianoronaldo_
@@ -419,7 +419,7 @@ ${readMore}
 ┃🧩 _${usedPrefix}cosplay_
 *╰━━━━━━━━━━━━⬣*
 
-*╭━[ MODIFICAR AUDIO 🧰 ]━⬣*
+*╭━[ 🛸 MODIFICAR AUDIO 🧰 ]━⬣*
 ┃ *Realiza Modificaciones*
 ┃ *al Audio o Nota de Voz!!*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
@@ -437,7 +437,7 @@ ${readMore}
 ┃🧰 _${usedPrefix}tupai_
 *╰━━━━━━━━━━━━⬣*
 
-*╭━━[ BÚSQUEDAS 🔍 ]━━⬣*
+*╭━━[ 👽 BÚSQUEDAS 🔍 ]━━⬣*
 ┃ *Busca lo que quieres con GataBot!!*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃🔍➺ _${usedPrefix}animeinfo *texto*_
@@ -448,14 +448,14 @@ ${readMore}
 ┃🔍➺ _${usedPrefix}wiki | wikipedia *texto*_
 *╰━━━━━━━━━━━━⬣*
 
-*╭━━━[ AUDIOS 🔊 ]━━⬣*
+*╭━━━[ 👾 AUDIOS 🔊 ]━━⬣*
 ┃ *Visita el Menú de Audios!!*
 ┃ *Disfruta de una Gran Variedad*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃➫🔊 _${usedPrefix}audios_
 *╰━━━━━━━━━━━━⬣*
 
-*╭━━[ HERRAMIENTAS 🛠️ ]━━⬣*
+*╭━━[ 🧸 HERRAMIENTAS 🛠️ ]━━⬣*
 ┃🛠️ _${usedPrefix}afk *motivo*_
 ┃🛠️ _${usedPrefix}acortar *url*_
 ┃🛠️ _${usedPrefix}calc *operacion math*_
@@ -471,7 +471,7 @@ ${readMore}
 ┃🛠️➺ _${usedPrefix}horario_
 *╰━━━━━━━━━━━━⬣*
 
-*╭━━━[ FUNCIÓN RPG ]━━⬣*
+*╭━━━[ 🍭 FUNCIÓN RPG ]━━⬣*
 ┃ *Compra, Adquiere Recuersos*
 ┃ *Mejora Tú Nivel y Rango!!*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
@@ -514,13 +514,13 @@ ${readMore}
 ┃⚗️➺ _${usedPrefix}trabajar | work_
 *╰━━━━━━━━━━━━⬣*
 
-*╭━━━[ TOP EN GATABOT ]━━⬣*
+*╭━━━[ 🪐 TOP EN GATABOT ]━━⬣*
 ┃ *Averigua en que Top te encuentras!!*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃🏆➺ _${usedPrefix}top | lb | leaderboard_
 *╰━━━━━━━━━━━━⬣*
 
-*╭━[ STICKERS Y FILTROS ]━⬣*
+*╭━[ 🦇 STICKERS Y FILTROS ]━⬣*
 ┃ *Realiza stickers o crea*
 ┃ *stickers con filtros!!*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
@@ -543,14 +543,14 @@ ${readMore}
 ┃🎐 _${usedPrefix}cs *:* cs2_
 *╰━━━━━━━━━━━━⬣*
 
-*╭━[ MODIFICAR STICKERS ]━⬣*
+*╭━[ 🦄 MODIFICAR STICKERS ]━⬣*
 ┃ *Personaliza la información del Sticker!!*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃💡 _${usedPrefix}wm *packname|author*_
 ┃💡 _${usedPrefix}wm *texto1|texto2*_
 *╰━━━━━━━━━━━━⬣*
 
-*╭━[ STICKERS DINÁMICOS ]━⬣*
+*╭━[ 🫐 STICKERS DINÁMICOS ]━⬣*
 ┃ *Realiza acciones con Stickers*
 ┃ *Etiquetando a alguien!!*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
@@ -561,7 +561,7 @@ ${readMore}
 ┃⛱️ _${usedPrefix}alimentar | food *@tag*_
 *╰━━━━━━━━━━━━⬣*
 
-*╭━[ MENU PARA PROPIETARIO/A ]━⬣*
+*╭━[ 🧙‍♀️ MENU PARA PROPIETARIO/A ]━⬣*
 ┃ *Comandos solo para Propietario/a!!*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃💎 _${usedPrefix}join *enlace*_
