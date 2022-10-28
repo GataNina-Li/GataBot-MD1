@@ -288,6 +288,7 @@ export async function handler(chatUpdate) {
               if (!isNumber(user.lastgojek)) user.lastgojek = 0
               if (!isNumber(user.lastgrab)) user.lastgrab = 0
               if (!isNumber(user.lasthourly)) user.lasthourly = 0
+	      if (!isNumber(user.halloween)) user.halloween = 0
               if (!isNumber(user.lasthunt)) user.lasthunt = 0
               if (!isNumber(user.lastIstigfar)) user.lastIstigfar = 0
               if (!isNumber(user.lastjb)) user.lastjb = 0
@@ -597,6 +598,7 @@ export async function handler(chatUpdate) {
                     griffinlastfeed: 0,
                     gulai: 0,
                     gurita: 0,
+		    halloween: 0,
                     harimau: 0,
                     haus: 100,
                     healt: 100,
