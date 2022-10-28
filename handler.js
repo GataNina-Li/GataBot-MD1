@@ -1028,7 +1028,7 @@ export async function handler(chatUpdate) {
                     for (let [jid] of global.owner.filter(([number, _, isDeveloper]) => isDeveloper && number)) {
                         let data = (await conn.onWhatsApp(jid))[0] || {}
                         if (data.exists)
-                            m.reply(`*⚙️ 𝗖𝗢𝗠𝗔𝗡𝗗𝗢 𝗙𝗔𝗟𝗟𝗔𝗡𝗗𝗢 ⚙️*\n\n*⚠️ 𝗣𝗟𝗨𝗚𝗜𝗡*\n*_${name}_*\n\n*⚠️ 𝗨𝗦𝗨𝗔𝗥𝗜𝗢 : 𝗨𝗦𝗘𝗥𝗡𝗔𝗠𝗘*\n*_${m.sender}_*\n\n*⚠️ 𝗖𝗢𝗠𝗔𝗡𝗗𝗢 : 𝗖𝗢𝗠𝗠𝗔𝗡𝗗*\n*_${m.text}_*\n\n*ERROR*\n\`\`\`${format(e)}\`\`\`\n\n*❗ 𝗥𝗘𝗣𝗢𝗥𝗧𝗘 𝗘𝗦𝗧𝗘 𝗠𝗘𝗡𝗦𝗔𝗝𝗘 𝗨𝗦𝗔𝗡𝗗𝗢 𝗘𝗟 𝗖𝗢𝗠𝗔𝗡𝗗𝗢 #reporte 𝗣𝗔𝗥𝗔 𝗦𝗢𝗟𝗨𝗖𝗜𝗢𝗡𝗔𝗥𝗟𝗢*`.trim(), data.jid)
+                            m.reply(`${lenguajeGB['smsCont1']()}\n\n${lenguajeGB['smsCont2']()}\n*_${name}_*\n\n${lenguajeGB['smsCont3']()}\n*_${m.sender}_*\n\n${lenguajeGB['smsCont4']()}\n*_${m.text}_*\n\n${lenguajeGB['smsCont5']()}\n\`\`\`${format(e)}\`\`\`\n\n${lenguajeGB['smsCont6']()}`.trim(), data.jid)
                     }
                 }
             }
@@ -1146,18 +1146,18 @@ export async function handler(chatUpdate) {
                     continue
                 }
                 m.isCommand = true
-                let xp = 'exp' in plugin ? parseInt(plugin.exp) : 17 // XP Earning per command
+                let xp = 'exp' in plugin ? parseInt(plugin.exp) : 12 // XP Earning per command
                 if (xp > 2000)
-                    m.reply('Ngecit -_-') // Hehehe
+                    m.reply('Exp limit') // Hehehe
                 else
                     m.exp += xp
                 if (!isPrems && plugin.limit && global.db.data.users[m.sender].limit < plugin.limit * 1) {
-                    this.reply(m.chat, `${ag}𝙉𝙊 𝙏𝙄𝙀𝙉𝙀 𝘿𝙄𝘼𝙈𝘼𝙉𝙏𝙀𝙎. 💎 𝙋𝙐𝙀𝘿𝙀 𝘾𝙊𝙈𝙋𝙍𝘼𝙍 𝘾𝙊𝙉 𝙀𝙇 𝘾𝙊𝙈𝘼𝙉𝘿𝙊 *${usedPrefix}buy*\n\n𝙄𝙏 𝙃𝘼𝙎 𝙉𝙊 𝘿𝙄𝘼𝙈𝙊𝙉𝘿𝙎. 💎 𝙔𝙊𝙐 𝘾𝘼𝙉 𝘽𝙐𝙔 𝙒𝙄𝙏𝙃 𝙏𝙃𝙀 𝘾𝙊𝙈𝙈𝘼𝙉𝘿 *${usedPrefix}buy*`, m)
+                    this.reply(m.chat, `${lenguajeGB['smsCont7']()} *${usedPrefix}buy*`, m)
                     continue // Limit habis
                 }
                 if (plugin.level > _user.level) {
-                    this.reply(m.chat, `𝙉𝙀𝘾𝙀𝙎𝙄𝙏𝘼 𝙀𝙇 𝙉𝙄𝙑𝙀𝙇 ➡️ *${plugin.level}* 𝙋𝘼𝙍𝘼 𝙋𝙊𝘿𝙀𝙍 𝙐𝙎𝘼𝙍 𝙀𝙎𝙏𝙀 𝘾𝙊𝙈𝘼𝙉𝘿𝙊. 𝙏𝙐 𝙉𝙄𝙑𝙀𝙇 𝙀𝙎 ➡️ *${_user.level}* 𝘼𝘾𝙏𝙐𝘼𝙇𝙄𝙕𝘼 𝙏𝙐 𝙉𝙄𝙑𝙀𝙇 𝘾𝙊𝙉 𝙀𝙇 𝘾𝙊𝙈𝘼𝙉𝘿𝙊 *${usedPrefix}nivel*\n\n𝙈𝙐𝙎𝙏 𝙍𝙀𝘼𝘾𝙃 𝙏𝙃𝙀 𝙇𝙀𝙑𝙀𝙇 #️⃣ *${plugin.level}* 𝙏𝙊 𝘽𝙀 𝘼𝘽𝙇𝙀 𝙏𝙊 𝙐𝙎𝙀 𝙏𝙃𝙄𝙎 𝘾𝙊𝙈𝙈𝘼𝙉𝘿. 𝙔𝙊𝙐𝙍 𝙇𝙀𝙑𝙀𝙇 𝙄𝙎 #️⃣ *${_user.level}* 𝙐𝙋𝘿𝘼𝙏𝙀 𝙒𝙄𝙏𝙃 𝘾𝙊𝙈𝙈𝘼𝙉𝘿 *${usedPrefix}level*`, m)
-                    continue // If the level has not been reached
+                    this.reply(m.chat, `${lenguajeGB['smsCont9']()} *${plugin.level}* ${lenguajeGB['smsCont10']()} *${_user.level}* ${lenguajeGB['smsCont11']()} *${usedPrefix}nivel*`, m)
+		    continue // If the level has not been reached
                 }
                 let extra = {
                     match,
@@ -1198,7 +1198,7 @@ export async function handler(chatUpdate) {
                             for (let [jid] of global.owner.filter(([number, _, isDeveloper]) => isDeveloper && number)) {
                                 let data = (await conn.onWhatsApp(jid))[0] || {}
                                 if (data.exists)
-                                    m.reply(`*🔴 𝗖𝗢𝗠𝗔𝗡𝗗𝗢 𝗙𝗔𝗟𝗟𝗔𝗡𝗗𝗢 : 𝗘𝗥𝗥𝗢𝗥 🔴*\n\n*⚠️ 𝗣𝗟𝗨𝗚𝗜𝗡*\n*_${name}_*\n\n*⚠️ 𝗨𝗦𝗨𝗔𝗥𝗜𝗢 : 𝗨𝗦𝗘𝗥𝗡𝗔𝗠𝗘*\n*_${m.sender}_*\n\n*⚠️ 𝗖𝗢𝗠𝗔𝗡𝗗𝗢 : 𝗖𝗢𝗠𝗠𝗔𝗡𝗗*\n*_${m.text}_*\n\n⚠️ *𝗘𝗥𝗥𝗢𝗥*\n\`\`\`${format(e)}\`\`\`\n\n*❗ 𝗥𝗘𝗣𝗢𝗥𝗧𝗘 𝗘𝗦𝗧𝗘 𝗠𝗘𝗡𝗦𝗔𝗝𝗘 𝗨𝗦𝗔𝗡𝗗𝗢 𝗘𝗟 𝗖𝗢𝗠𝗔𝗡𝗗𝗢 #reporte 𝗣𝗔𝗥𝗔 𝗦𝗢𝗟𝗨𝗖𝗜𝗢𝗡𝗔𝗥𝗟𝗢*`.trim(), data.jid)
+                                    m.reply(`${lenguajeGB['smsCont1']()}\n\n${lenguajeGB['smsCont2']()}\n*_${name}_*\n\n${lenguajeGB['smsCont3']()}\n*_${m.sender}_*\n\n${lenguajeGB['smsCont4']()}\n*_${m.text}_*\n\n${lenguajeGB['smsCont5']()}\n\`\`\`${format(e)}\`\`\`\n\n${lenguajeGB['smsCont6']()}`.trim(), data.jid)
                             }
                         m.reply(text)
                     }
@@ -1212,7 +1212,7 @@ export async function handler(chatUpdate) {
                         }
                     }
                     if (m.limit)
-                        m.reply(+m.limit + ' 𝘿𝙄𝘼𝙈𝘼𝙉𝙏𝙀(𝙎) 💎 𝙐𝙎𝘼𝘿𝙊(𝙎)')
+                        m.reply(+m.limit + lenguajeGB.smsCont8())
                 }
                 break
             }
@@ -1274,7 +1274,7 @@ export async function handler(chatUpdate) {
 	    
         if (!db.data.chats[m.chat].reaction && m.isGroup) throw 0
         if (!m.fromMem && m.text.match(/(has|ato|ido|ura|des|able|sub|izo|ita|con|.-.|._.|:)|:(|:v|v:|o.o|;v|v;|v':|:'v)/gi)) {
-        let emot = pickRandom(["😺", "😸", "😹", "😻", "😼", "😽", "🙀", "😿", "😾", "🤩", "🥰", "😘", "😊", "🥳", "😏", "😳", "🥵", "🤯", "😱", "😨", "🤫", "🥴", "🤧", "🤑", "🤠", "🤖", "👾", "🎃", "👻", "🤡", "🤝", "💪", "👑", "😚", "🐱", "🐈", "🐆", "🐅", "💫", "⭐️", "🌟", "✨", "⚡️", "🌈", "☃️", "⛄️", "🌝", "🌛", "🌜", "🍓", "🍎", "🍭", "🍩", "🍫", "🍧", "🚀", "🚅", "🚄", "🎈", "🪄", "❤️", "🧡", "💛", "💚", "💙", "💜", "🖤", "🤍", "🤎", "❣️", "💕", "💞", "💓", "💗", "💖", "💘", "💝", "💟", "🌝", "😎", "🔥", "🖕", "🐦"])
+        let emot = pickRandom(["😺", "😸", "😹", "😻", "😼", "😽", "🙀", "😿", "😾", "🤩", "😏", "😳", "🥵", "🤯", "😱", "😨", "🤫", "🥴", "🤧", "🤑", "🤠", "🤖", "🤝", "💪", "👑", "😚", "🐱", "🐈", "🐆", "🐅", "⚡️", "🌈", "☃️", "⛄️", "🌝", "🌛", "🌜", "🍓", "🍎", "🎈", "🪄", "❤️", "🧡", "💛", "💚", "💙", "💜", "🖤", "🤍", "💘", "💝", "💟", "🌝", "😎", "🔥", "🖕", "🐦"])
         this.sendMessage(m.chat, { react: { text: emot, key: m.key }})}
         function pickRandom(list) { return list[Math.floor(Math.random() * list.length)]}
 		
@@ -1306,31 +1306,30 @@ export async function participantsUpdate({ id, participants, action }) {
                         //pp = await this.profilePictureUrl(user, 'image')
                     } catch (e) {
                     } finally {
-                        text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || '*𝙂𝙧𝙪𝙥𝙤 𝙂𝙚𝙣𝙞𝙖𝙡 | 𝘾𝙤𝙤𝙡 𝙂𝙧𝙤𝙪𝙥 😼*') :
+                        text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || lenguajeGB.smsCont12()) :
                             (chat.sBye || this.bye || conn.bye || 'Bye, @user!')).replace('@user', await this.getName(user)) //.replace('@user', '@' + user.split('@')[0])
-                            //let apii = await this.getFile(pp)
-                            this.sendHydrated(id, text, groupMetadata.subject, null, 'https://github.com/GataNina-Li/GataBot-MD', '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [   
-                            ['💖 𝙄𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪 | 𝙂𝙤 𝙈𝙚𝙣𝙪', '/menu']
-                            ], '', { mentions: [user]})
-                           }
-                }
-            }
-            break
-        case 'promote':
-        case 'daradmin':
-        case 'darpoder':
-            text = (chat.sPromote || this.spromote || conn.spromote || '@user ```is now Admin```')
-        case 'demote':
-        case 'quitarpoder':
-        case 'quitaradmin':
-            if (!text)
-                text = (chat.sDemote || this.sdemote || conn.sdemote || '@user ```is no longer Admin```')
-            text = text.replace('@user', '@' + participants[0].split('@')[0])
-            if (chat.detect)
-                this.sendMessage(id, { text, mentions: this.parseMention(text) })
-            break
-    }
-}
+
+                            let apii = await this.getFile(pp)
+this.sendButton(id, wm, text, apii.data, [[(action == 'add' ? lenguajeGB.smsCont13() : lenguajeGB.smsCont14()), (action == 'add' ? '.s' : '.s')], ['💖 𝙄𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪 | 𝙂𝙤 𝙈𝙚𝙣𝙪', `.menu`]], null, {mentions: this.parseMention(text)})
+//this.sendHydrated(id, text, groupMetadata.subject, apii.data, 'https://github.com/GataNina-Li/GataBot-MD', '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
+//[(action == 'add' ? '𝙎𝙚 𝙪𝙣𝙞𝙤 🥳 | 𝙃𝙞!!' : '𝙎𝙚 𝙛𝙪𝙚 𝙪𝙣 𝙍𝙖𝙣𝙙𝙤𝙢 🧐 | 𝘽𝙮𝙚'), '.s'], ['💖 𝙄𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪 | 𝙂𝙤 𝙈𝙚𝙣𝙪', '/menu']], '', { mentions: [user]})
+}}}
+		    
+break
+case 'promote':
+case 'daradmin':
+case 'darpoder':
+text = (chat.sPromote || this.spromote || conn.spromote || '@user ```is now Admin```')
+case 'demote':
+case 'quitarpoder':
+case 'quitaradmin':
+if (!text)
+text = (chat.sDemote || this.sdemote || conn.sdemote || '@user ```is no longer Admin```')
+text = text.replace('@user', '@' + participants[0].split('@')[0])
+if (chat.detect)
+this.sendMessage(id, { text, mentions: this.parseMention(text) })
+break
+}}
 
 /**
  * Handle groups update
@@ -1359,7 +1358,7 @@ export async function callUpdate(callUpdate) {
     for (let nk of callUpdate) { 
     if (nk.isGroup == false) {
     if (nk.status == "offer") {
-    let callmsg = await this.reply(nk.from, `𝙃𝙊𝙇𝘼 *@${nk.from.split('@')[0]}*, 𝙇𝘼𝙎 ${nk.isVideo ? '📲 𝙑𝙄𝘿𝙀𝙊𝙇𝙇𝘼𝙈𝘼𝘿𝘼𝙎' : '📞 𝙇𝙇𝘼𝙈𝘼𝘿𝘼𝙎'} 𝙉𝙊 𝙀𝙎𝙏𝘼𝙉 𝘼𝙐𝙏𝙊𝙍𝙄𝙕𝘼𝘿𝘼𝙎 𝙋𝙊𝙍 𝙇𝙊 𝙌𝙐𝙀 𝙏𝙀𝙉𝘿𝙍𝙀 𝙌𝙐𝙀 𝘽𝙇𝙊𝙌𝙐𝙀𝘼𝙍𝙏𝙀\n\n𝙎𝙄 𝙇𝙇𝘼𝙈𝘼𝙎𝙏𝙀 𝙋𝙊𝙍 𝘼𝘾𝘾𝙄𝘿𝙀𝙉𝙏𝙀 𝘾𝙊𝙈𝙐𝙉𝙄𝘾𝘼𝙏𝙀 𝘾𝙊𝙉 𝙇𝘼 𝙋𝙀𝙍𝙎𝙊𝙉𝘼 𝙋𝙍𝙊𝙋𝙄𝙀𝙏𝘼𝙍𝙄𝙊/𝘼 𝘿𝙀 𝙀𝙎𝙏𝙀 𝘽𝙊𝙏\n𝙎𝙄 𝙀𝙎 𝙐𝙉𝘼 𝘾𝙐𝙀𝙉𝙏𝘼 𝙊𝙁𝙄𝘾𝙄𝘼𝙇 𝘿𝙀 𝙂𝘼𝙏𝘼𝘽𝙊𝙏 𝘿𝙄𝙍𝙄𝙂𝙀𝙏𝙀 𝘼 𝙇𝘼 𝘼𝙎𝙄𝙎𝙏𝙀𝙉𝘾𝙄𝘼 𝙋𝙊𝙍 𝙄𝙉𝙎𝙏𝘼𝙂𝙍𝘼𝙈 𝙋𝘼𝙍𝘼 𝙏𝙍𝘼𝙏𝘼𝙍 𝙎𝙐 𝘾𝘼𝙎𝙊\n*${ig}*\n\n𝙔𝙊𝙐 𝙃𝘼𝙑𝙀 ${nk.isVideo ? '📲 𝙈𝘼𝘿𝙀 𝙑𝙄𝘿𝙀𝙊 𝘾𝘼𝙇𝙇' : '📞 𝘾𝘼𝙇𝙇𝙀𝘿'} 𝙉𝙊𝙏 𝘼𝙇𝙇𝙊𝙒𝙀𝘿, 𝙎𝙊 𝙄'𝙈 𝙂𝙊𝙄𝙉𝙂 𝙏𝙊 𝘽𝙇𝙊𝘾𝙆 𝙄𝙏\n\n𝙄𝙁 𝙔𝙊𝙐 𝘾𝘼𝙇𝙇𝙀𝘿 𝘽𝙀𝘾𝘼𝙐𝙎𝙀 𝙊𝙁 𝘼𝙉 𝘼𝘾𝘾𝙄𝘿𝙀𝙉𝙏, 𝘾𝙊𝙉𝙏𝘼𝘾𝙏 𝙏𝙃𝙀 𝙋𝙀𝙍𝙎𝙊𝙉 𝙒𝙃𝙊 𝙈𝘼𝙉𝘼𝙂𝙀𝙎 𝙏𝙃𝙀 𝘽𝙊𝙏\n𝙄𝙁 𝙄𝙏 𝙄𝙎 𝘼𝙉 𝙊𝙁𝙁𝙄𝘾𝙄𝘼𝙇 𝙂𝘼𝙏𝘼𝘽𝙊𝙏 𝘼𝘾𝘾𝙊𝙐𝙉𝙏, 𝘾𝙊𝙉𝙏𝘼𝘾𝙏 𝙐𝙎 𝙊𝙉 𝙄𝙉𝙎𝙏𝘼𝙂𝙍𝘼𝙈\n*${ig}*`, false, { mentions: [nk.from] })
+    let callmsg = await this.reply(nk.from, `${lenguajeGB['smsCont15']()} *@${nk.from.split('@')[0]}*, ${nk.isVideo ? lenguajeGB.smsCont16() : lenguajeGB.smsCont17()} ${lenguajeGB['smsCont18']()}`, false, { mentions: [nk.from] })
     //let data = global.owner.filter(([id, isCreator]) => id && isCreator)
     //await this.sendContact(nk.from, data.map(([id, name]) => [id, name]), false, { quoted: callmsg })
     await this.updateBlockStatus(nk.from, 'block')
@@ -1377,11 +1376,10 @@ let chat = global.db.data.chats[msg.chat] || {}
 if (chat.delete)
 return 
 await this.reply(msg.chat, `
-*╭━━⬣  𝘼𝙉𝙏𝙄 𝙀𝙇𝙄𝙈𝙄𝙉𝘼𝙍  ⬣━━ 𓃠*
-*┃✤ Nombre:* @${participant.split`@`[0]}
-*┃✤ Enviando el mensaje eliminado...*
-*┃✤ Sending the deleted message...*
-*╰━━━⬣  𝘼𝙉𝙏𝙄 𝘿𝙀𝙇𝙀𝙏𝙀  ⬣━━━━╯*
+*╭━━⬣ ${lenguajeGB['smsCont19']()} ⬣━━ 𓃠*
+${lenguajeGB['smsCont20']()} @${participant.split`@`[0]}
+${lenguajeGB['smsCont21']()}
+*╰━━━⬣ ${lenguajeGB['smsCont19']()} ⬣━━╯*
 `.trim(), msg, { mentions: [participant] })
 	    
 this.copyNForward(msg.chat, msg).catch(e => console.log(e, msg))
