@@ -408,7 +408,7 @@ isAll = true
 if (!(isAdmin || isOwner)) {
 global.dfail('admin', m, conn)
 throw false
-}}
+}
 chat.antiSpam = isEnable          
 break
     
