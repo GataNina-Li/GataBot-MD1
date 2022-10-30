@@ -408,7 +408,7 @@ isAll = true
 if (!(isROwner || isOwner)) {
 global.dfail('owner', m, conn)
 throw false
-}}
+}
 bot.antiSpam = isEnable          
 break
     
