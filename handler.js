@@ -907,7 +907,6 @@ export async function handler(chatUpdate) {
 		if (!('antiInstagram' in chat)) chat.antiInstagram = false
 		if (!('antiTwitter' in chat)) chat.antiInstagram = false
 		if (!('antifake' in chat)) chat.antifake = false
-		if (!('antiSpam' in chat)) chat.antiSpam = true
 		if (!('reaction' in chat)) chat.reaction = true    
                 if (!('viewonce' in chat)) chat.viewonce = false                    
                 if (!('antitoxic' in chat)) chat.antitoxic = true  
@@ -937,7 +936,6 @@ export async function handler(chatUpdate) {
 		    antiInstagram: false,
 		    antiTwitter: false,
 		    antifake: false,
-		    antiSpam: true,
 		    reaction: true,
                     viewonce: false,
                     antitoxic: true,
@@ -951,12 +949,14 @@ export async function handler(chatUpdate) {
                 if (!('restrict' in settings)) settings.restrict = false
 		if (!('temporal' in settings)) settings.temporal = true
 		if (!('antiCall' in settings)) settings.antiCall = true
+		if (!('antiSpam' in settings)) settings.antiSpam = true
             } else global.db.data.settings[this.user.jid] = {
                 self: false,
                 autoread: false,
                 restrict: false,
 		temporal: true,
-		antiCall: true
+		antiCall: true,
+		antiSpam: true
             }
         } catch (e) {
             console.error(e)
