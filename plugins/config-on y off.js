@@ -404,12 +404,12 @@ bot.antiCall = isEnable
 break
 		
 case 'antispam':
-if (m.isGroup) {
-if (!(isAdmin || isOwner)) {
-global.dfail('admin', m, conn)
+isAll = true
+if (!(isROwner || isOwner)) {
+global.dfail('owner', m, conn)
 throw false
 }}
-chat.antiSpam = isEnable          
+bot.antiSpam = isEnable          
 break
     
 case 'pconly':
