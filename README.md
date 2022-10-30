@@ -46,6 +46,11 @@
 <a href="https://chat.whatsapp.com/JHTDXPLoW29I1rxGYnLmmH" target="blank"><img src="https://img.shields.io/badge/5️⃣_COMUNIDAD_GATADOT_🐈-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 </a>
 
+### ✅ GATABOT OFICIAL
+<a href="http://wa.me/593993684821?text=.menu" target="blank"><img src="https://img.shields.io/badge/1️⃣_𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+<a href="http://wa.me/50498965677?text=.menu" target="blank"><img src="https://img.shields.io/badge/2️⃣_𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+</a>
+
 ### 💖 ```DONAR``` [`Aquí`](https://paypal.me/OficialGD)
 -----
 * 𝗚𝗮𝘁𝗮𝗕𝗼𝘁 : 𝗕𝗼𝘅𝗠𝗶𝗻𝗲 & 𝗥𝗲𝗽𝗹𝗶𝘁 💛
