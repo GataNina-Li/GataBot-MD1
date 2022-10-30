@@ -4,14 +4,11 @@
 //handler.all = async function (m) {
 let handler = async (m, { conn, usedPrefix, command, isAdmin, isBotAdmin, isOwner }) => { 
 let chat = global.db.data.chats[m.chat]
-
-if (m.isBaileys && m.fromMe) return !0
-if (!m.isGroup) return !1
-if (chat.antiSpam && isAdmin && isOwner) {
+let bot = global.db.data.settings[this.user.jid] || {}
+if (bot.antiSpam) {
   
 let delet = m.key.participant
 let bang = m.key.id
-let bot = global.db.data.settings[this.user.jid] || {}
 let user = global.db.data.users[m.sender]
 
 this.spam = this.spam ? this.spam : {}
