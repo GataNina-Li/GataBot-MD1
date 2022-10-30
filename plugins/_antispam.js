@@ -2,11 +2,11 @@
 
 //let handler = m => m
 //handler.all = async function (m) {
-let handler = async (m, { conn, usedPrefix, command, isAdmin, isBotAdmin }) => { 
+let handler = async (m, { conn, usedPrefix, command, isAdmin, isBotAdmin, isOwner }) => { 
 let chat = global.db.data.chats[m.chat]
 
-//if (!m.isGroup) return !1
-if (chat.antiSpam) {
+if (!m.isGroup) return !0
+if (chat.antiSpam && isAdmin && isOwner) {
   
 let delet = m.key.participant
 let bang = m.key.id
