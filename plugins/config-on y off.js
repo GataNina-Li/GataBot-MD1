@@ -404,7 +404,7 @@ bot.antiCall = isEnable
 break
 		
 case 'antispam':
-isAll = true
+isUser = true
 if (!(isAdmin || isOwner)) {
 global.dfail('admin', m, conn)
 throw false
