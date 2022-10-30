@@ -5,7 +5,7 @@
 let handler = async (m, { conn, usedPrefix, command, isAdmin, isBotAdmin }) => { 
 let chat = global.db.data.chats[m.chat]
 
-//if (!m.isGroup) return !1
+if (!m.isGroup) return !1
 if (chat.antiSpam) {
   
 let delet = m.key.participant
