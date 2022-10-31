@@ -39,11 +39,16 @@
 </a>
 
 ### ❇️ GRUPOS OFICIALES
-<a href="https://chat.whatsapp.com/DhfA0vL1XkADngY4Ebp1gT" target="blank"><img src="https://img.shields.io/badge/1️⃣_COMUNIDAD_GATADOT_🐈-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
-<a href="https://chat.whatsapp.com/LlSNEOLx2LzBZmeK72YCTH" target="blank"><img src="https://img.shields.io/badge/2️⃣_COMUNIDAD_GATADOT_🐈-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
-<a href="https://chat.whatsapp.com/LetQPuXJ2QF34FBIhWbsWv" target="blank"><img src="https://img.shields.io/badge/3️⃣_COMUNIDAD_GATADOT_🐈-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
-<a href="https://chat.whatsapp.com/IkQIUTXyoeuG5Yn4CrD8xV" target="blank"><img src="https://img.shields.io/badge/4️⃣_COMUNIDAD_GATADOT_🐈-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
-<a href="https://chat.whatsapp.com/IuvucFNo6Ax286HGUFFCJa" target="blank"><img src="https://img.shields.io/badge/5️⃣_COMUNIDAD_GATADOT_🐈-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+<a href="https://chat.whatsapp.com/CnsAvjHUhMw1D8y0OcfkIY" target="blank"><img src="https://img.shields.io/badge/1️⃣_COMUNIDAD_GATADOT_🐈-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+<a href="https://chat.whatsapp.com/CdiITbXO2kdGLWBVAdqfCS" target="blank"><img src="https://img.shields.io/badge/2️⃣_COMUNIDAD_GATADOT_🐈-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+<a href="https://chat.whatsapp.com/Fd1wp2c3KCG7bHybanoXbR" target="blank"><img src="https://img.shields.io/badge/3️⃣_COMUNIDAD_GATADOT_🐈-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+<a href="https://chat.whatsapp.com/G0A7GMhlyAZ2b7JVEoz1Zy" target="blank"><img src="https://img.shields.io/badge/4️⃣_COMUNIDAD_GATADOT_🐈-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+<a href="https://chat.whatsapp.com/JHTDXPLoW29I1rxGYnLmmH" target="blank"><img src="https://img.shields.io/badge/5️⃣_COMUNIDAD_GATADOT_🐈-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+</a>
+
+### ✅ GATABOT OFICIAL
+<a href="http://wa.me/593993684821?text=.menu" target="blank"><img src="https://img.shields.io/badge/1️⃣_𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+<a href="http://wa.me/50498965677?text=.menu" target="blank"><img src="https://img.shields.io/badge/2️⃣_𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 </a>
 
 ### 💖 ```DONAR``` [`Aquí`](https://paypal.me/OficialGD)
