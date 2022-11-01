@@ -5,7 +5,9 @@
 let handler = async (m, { conn, usedPrefix, command, isAdmin, isBotAdmin, isOwner }) => { 
 let chat = global.db.data.chats[m.chat]
 let bot = global.db.data.settings[this.user.jid] || {}
-if (bot.antiSpam) {
+if (!chat.antiSpam)
+return !0
+//if (bot.antiSpam) {
   
 let delet = m.key.participant
 let bang = m.key.id
@@ -48,7 +50,7 @@ this.spam[m.sender].lastspam = new Date * 1
 } catch (e) {
 console.log(e)
 m.reply(`${lenguajeGB['smsAvisoFG']()}*OCURRIÓ UN ERROR INESPERADO*`)
-}}}
+}}//}
 export default handler
 
 function msToTime(duration) {
