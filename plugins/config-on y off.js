@@ -271,15 +271,6 @@ throw false
 }}
 chat.stickers = isEnable          
 break
-		
-//case 'temporal':
-//if (m.isGroup) {
-//if (!(isAdmin || isOwner)) {
-//global.dfail('admin', m, conn)
-//throw false
-//}}
-//chat.temporal = isEnable          
-//break
     
 case 'temporal':
 isAll = true
@@ -413,12 +404,12 @@ bot.antiCall = isEnable
 break
 		
 case 'antispam':
-isAll = true
-if (!(isROwner || isOwner)) {
-global.dfail('owner', m, conn)
+if (m.isGroup) {
+if (!(isAdmin || isOwner)) {
+global.dfail('admin', m, conn)
 throw false
-}
-bot.antiSpam = isEnable          
+}}
+chat.antiSpam = isEnable          
 break
     
 case 'pconly':
