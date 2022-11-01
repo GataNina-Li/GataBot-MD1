@@ -290,10 +290,19 @@ throw false
 bot.temporal = isEnable
 break
     
+//case 'autolevelup':
+//case 'autonivel':
+//isUser = true
+//user.autolevelup = isEnable
+//break
+		
 case 'autolevelup':
-case 'autonivel':
-isUser = true
-user.autolevelup = isEnable
+if (m.isGroup) {
+if (!(isAdmin || isOwner)) {
+global.dfail('admin', m, conn)
+throw false
+}}
+chat.autolevelup = isEnable          
 break
     
 case 'autosticker':
