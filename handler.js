@@ -911,6 +911,7 @@ export async function handler(chatUpdate) {
                 if (!('viewonce' in chat)) chat.viewonce = false                    
                 if (!('antitoxic' in chat)) chat.antitoxic = true 
 		if (!('autolevelup' in chat))  chat.autolevelup = true
+		if (!('antiSpam' in chat))  chat.antiSpam = true    
                 if (!isNumber(chat.expired)) chat.expired = 0
                     
             } else
@@ -941,6 +942,7 @@ export async function handler(chatUpdate) {
                     viewonce: false,
                     antitoxic: true,
 	            autolevelup: true,
+	            antiSpam: true,
                     expired: 0,
                 }
             let settings = global.db.data.settings[this.user.jid]
