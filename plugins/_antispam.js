@@ -1,13 +1,11 @@
 //CRÉDITOS: https://github.com/Abiguelreyes75
 
-//let handler = m => m
-//handler.all = async function (m) {
 let handler = async (m, { conn, usedPrefix, command, isAdmin, isBotAdmin, isOwner }) => { 
 let chat = global.db.data.chats[m.chat]
 let bot = global.db.data.settings[this.user.jid] || {}
-if (!chat.antiSpam) {
-//return !0
-//if (bot.antiSpam) {
+
+if (!chat.antiSpam) return !0
+//if (m.isGroup) return !1
   
 let delet = m.key.participant
 let bang = m.key.id
@@ -37,9 +35,8 @@ let texto = `*@${m.sender.split("@")[0]} 🤨 NO HAGAS SPAM, NO PODRÁ USAR A ${
 if (new Date - user.antispam < tiempo * 1) return
 await conn.reply(m.chat, texto,  m, { mentions: this.parseMention(texto) })
 user.banned = true
-//await conn.updateBlockStatus(m.chat, 'block') ⚠⚠⚠
-  
-await conn.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: false, id: bang, participant: delet }})
+//await conn.updateBlockStatus(m.chat, 'block') ⚠⚠⚠ 
+//await conn.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: false, id: bang, participant: delet }})
 user.antispam = new Date * 1  
   
 } else {
@@ -50,7 +47,7 @@ this.spam[m.sender].lastspam = new Date * 1
 } catch (e) {
 console.log(e)
 m.reply(`${lenguajeGB['smsAvisoFG']()}*OCURRIÓ UN ERROR INESPERADO*`)
-}}}
+}}
 export default handler
 
 function msToTime(duration) {
