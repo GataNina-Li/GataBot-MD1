@@ -1,6 +1,6 @@
 //CRÉDITOS: https://github.com/Abiguelreyes75
 
-let handler = async (m, { conn, usedPrefix, command, isAdmin, isBotAdmin, isOwner }) => { 
+let handler = async (m, { conn, usedPrefix }) => { 
 let chat = global.db.data.chats[m.chat]
 let bot = global.db.data.settings[this.user.jid] || {}
 
