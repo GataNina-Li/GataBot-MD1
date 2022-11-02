@@ -9,6 +9,7 @@ let bang = m.key.id
 let bot = global.db.data.settings[this.user.jid] || {}
 let user = global.db.data.users[m.sender]
 
+if (chat.antiSpam) {
 this.spam = this.spam ? this.spam : {}
 if (!(m.sender in this.spam)) {
 let spaming = {
@@ -45,7 +46,7 @@ this.spam[m.sender].lastspam = new Date * 1
 } catch (e) {
 console.log(e)
 m.reply(`${lenguajeGB['smsAvisoFG']()}*OCURRIÓ UN ERROR INESPERADO*`)
-}}
+}}}
 export default handler
 
 function msToTime(duration) {
