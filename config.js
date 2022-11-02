@@ -481,17 +481,17 @@ global.rpgshop = { //Tienda
   emoticon(string) {
     string = string.toLowerCase()
     let emottt = {
-      exp: '⚡ Experiencia : Exp',
-      limit: lenguajeGB.ContDiamante(),//'💎 Diamante : Diamond',
-      diamond: '💎+ Diamante+ : Diamond+',
-      joincount: '🪙 Token',
-      emerald: '💚 Esmeralda : Emerald',
-      berlian: '♦️ Joya : Ruby',
-      kyubi: '🌀 Magia : Magic',
-      gold: '👑 Oro : Gold',
-      money: '🐱 GataCoins : CatCoins',
-      tiketcoin: '🎫 Gata Tickers',
-      stamina: '✨ Energía : Energy',
+      exp: lenguajeGB.eExp(),//'⚡ Experiencia : Exp',
+      limit: lenguajeGB.eDiamante(),//'💎 Diamante : Diamond',
+      diamond: lenguajeGB.eDiamantePlus(),//'💎+ Diamante+ : Diamond+',
+      joincount: lenguajeGB.eToken(),//'🪙 Token',
+      emerald: lenguajeGB.eEsmeralda(),//'💚 Esmeralda : Emerald',
+      berlian: lenguajeGB.eJoya(),//'♦️ Joya : Ruby',
+      kyubi: lenguajeGB.eMagia(),//'🌀 Magia : Magic',
+      gold: lenguajeGB.eOro(),//'👑 Oro : Gold',
+      money: lenguajeGB.eGataCoins(),//'🐱 GataCoins : CatCoins',
+      tiketcoin: lenguajeGB.eGataTickers(),//'🎫 Gata Tickers',
+      stamina: lenguajeGB.eEnergia(),//'✨ Energía : Energy',
             
       potion: '🥤 Poción : Potion',
       aqua: '💧 Agua : Water',
