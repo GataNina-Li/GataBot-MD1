@@ -953,14 +953,12 @@ export async function handler(chatUpdate) {
                 if (!('restrict' in settings)) settings.restrict = false
 		if (!('temporal' in settings)) settings.temporal = true
 		if (!('antiCall' in settings)) settings.antiCall = true
-		if (!('antiSpam' in settings)) settings.antiSpam = true
             } else global.db.data.settings[this.user.jid] = {
                 self: false,
                 autoread: false,
                 restrict: false,
 		temporal: true,
-		antiCall: true,
-		antiSpam: true
+		antiCall: true
             }
         } catch (e) {
             console.error(e)
