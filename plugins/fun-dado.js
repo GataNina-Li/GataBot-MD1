@@ -1,11 +1,29 @@
-let handler = async(m, { conn, text, args, usedPrefix, command }) => {
+const dir = [
+  'https://tinyurl.com/dados01',
+  'https://tinyurl.com/dados02',
+  'https://tinyurl.com/dados03',
+  'https://tinyurl.com/dados04',
+  'https://tinyurl.com/dados05',
+  'https://tinyurl.com/dados06'
+];
+let handler = async (m, { conn }) => {
+  conn.sendFile(m.chat, dir[Math.floor(Math.random() * dir.length)], 'dado.webp', '', m)
+}
+handler.help = ['dado']
+handler.tags = ['game']
+handler.command = ['dado', 'dados'] 
+
+export default handler
+
+
+/*let handler = async(m, { conn, text, args, usedPrefix, command }) => {
 await conn.reply(m.chat, `${lenguajeGB['smsAvisoEG']()}𝙋𝙊𝙍 𝙁𝘼𝙑𝙊𝙍 𝙀𝙎𝙋𝙀𝙍𝙀, 𝙎𝙐 𝘿𝘼𝘿𝙊 𝙎𝙀 𝙀𝙎𝙏𝘼 𝘾𝙍𝙀𝘼𝙉𝘿𝙊\n\n𝙋𝙇𝙀𝘼𝙎𝙀 𝙒𝘼𝙄𝙏, 𝙔𝙊𝙐𝙍 𝘿𝙄𝘾𝙀 𝙄𝙎 𝘽𝙀𝙄𝙉𝙂 𝘾𝙍𝙀𝘼𝙏𝙀𝘿`, m)
 await conn.sendFile(m.chat, `https://violetics.pw/api/random/dadu?apikey=${Key360}`, 'sticker.webp', '', m, { asSticker: true })}
 handler.help = ['dado']
 handler.tags = ['game'] 
 handler.command = /^(dado|dados)/
 handler.exp = 50
-export default handler
+export default handler*/
 
  /*import { sticker } from '../lib/sticker.js'
 let handler = async(m, { conn }) => {

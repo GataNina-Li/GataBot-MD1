@@ -49,6 +49,8 @@
 ### ✅ GATABOT OFICIAL
 <a href="http://wa.me/593993684821?text=.menu" target="blank"><img src="https://img.shields.io/badge/1️⃣_𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 <a href="http://wa.me/50498965677?text=.menu" target="blank"><img src="https://img.shields.io/badge/2️⃣_𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+<a href="http://wa.me/50495086382?text=.menu" target="blank"><img src="https://img.shields.io/badge/3️⃣_𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+<a href="http://wa.me/5492914469417?text=.menu" target="blank"><img src="https://img.shields.io/badge/4️⃣_𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 </a>
 
 ### 💖 ```DONAR``` [`Aquí`](https://paypal.me/OficialGD)
@@ -150,8 +152,9 @@ Si tiene éxito, le dará un mensaje como: `SUCCESS: specified value was saved`.
 ```
 ----    
 ###  AJUSTE <img src="https://i.pinimg.com/originals/98/1b/e2/981be28d3ec7b85bfb797a5f9e6a01c2.png" height="32px">
-- CLONAR EL REPOSITORIO [`Aquí`](https://github.com/GataNina-Li/GataBotMD-Termux/fork)
-- CAMBIAR NÚMERO DEL OWNER [`Aquí`](https://github.com/GataNina-Li/GataBotMD-Termux/blob/master/config.js)
+- CLONAR EL REPOSITORIO [`Aquí`](https://github.com/GataNina-Li/GataBot-MD/fork)
+- CAMBIAR NÚMERO DEL OWNER [`Aquí`](https://github.com/GataNina-Li/GataBot-MD/blob/master/config.js)
+- SELECCIONAR IDIOMA [`Aquí`](https://github.com/GataNina-Li/GataBot-MD/blob/master/config.js) 
 ----  
 ### GataBot-MD - Preguntas
 
@@ -184,6 +187,14 @@ En caso que no tenga nada en el terminar puede usar este comando ```cd GataBotMD
 > USAR EL COMANDO /ADD O /SACAR PUEDE HACER QUE EL NÚMERO VAYA AL SOPORTE
 > PUEDE ESTAR HASTA 50 GRUPOS, SI EL NÚMERO ES MAYOR, PUEDE HABER SATURACIÓN 
 ```
+----
+### 💠 [`IDIOMAS DISPONIBLES PARA GATABOT`](https://github.com/GataNina-Li/GataBot-MD/blob/master/config.js) 
+### 🌐 Español 
+### 🌐 Inglés (English)
+### 🌐 Portugués (Português)
+### 🌐 Indonesio (Bahasa Indonesia)
+### 🌐 Árabe (عرب)
+- [x] Ejemplo <details><summary>Idioma</summary><img src="https://i.imgur.com/RMWFgZo.jpeg"></details>
 ----
 
 ### 🌟 CREADORA 

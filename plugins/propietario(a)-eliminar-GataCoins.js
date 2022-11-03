@@ -1,5 +1,5 @@
 import MessageType from '@adiwajshing/baileys'
-let pajak = 0
+let pajak = 0 
 let handler = async (m, { conn, text }) => {
 let who
 if (m.isGroup) who = m.mentionedJid[0]
@@ -24,6 +24,5 @@ handler.help = ['addgb <@user>']
 handler.tags = ['gatacoins']
 handler.command = ['eliminargatacoins', 'eliminargata', 'eliminarcoins', 'quitargatacoins', 'quitargata', 'quitarcoins', 'delgatacoins', 'delgata', 'delcoins'] 
 handler.group = true
-handler.botAdmin = true
 handler.rowner = true
 export default handler 

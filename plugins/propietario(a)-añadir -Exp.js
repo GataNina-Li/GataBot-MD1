@@ -24,6 +24,5 @@ handler.help = ['addxp <@user>']
 handler.tags = ['xp']
 handler.command = ['añadirxp', 'añadirexp', 'añadirexperiencia', 'darexperiencia', 'darxp', 'darexp'] 
 handler.group = true
-handler.botAdmin = true
 handler.rowner = true
 export default handler

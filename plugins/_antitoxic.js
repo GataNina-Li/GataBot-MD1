@@ -14,14 +14,14 @@ return !1
     
 if (isToxic && chat.antitoxic && !isOwner && !isAdmin) {
 user.warn += 1
-if (!(user.warn >= 10)) await conn.sendButton(m.chat,`${user.warn == 1 ? `𝙉𝙊𝙊!!! *@${m.sender.split`@`[0]}*` : `*@${m.sender.split`@`[0]}*`}, 𝘿𝙀𝘾𝙄𝙍 𝙀𝙎𝙏𝘼 𝙋𝘼𝙇𝘼𝘽𝙍𝘼 *(${isToxic})* 𝙀𝙎𝙏𝘼 𝙋𝙍𝙊𝙃𝙄𝘽𝙄𝘿𝘼 𝙉𝙊 𝙇𝘼 𝙑𝙐𝙀𝙇𝙑𝘼𝙎 𝘼 𝙐𝙎𝘼𝙍\n\n🤬 𝙏𝙃𝘼𝙏'𝙎 𝙉𝙊𝙏 𝘼𝙇𝙇𝙊𝙒𝙀𝘿 𝘿𝙊 𝙉𝙊𝙏 𝙐𝙎𝙀 𝙄𝙏 𝘼𝙂𝘼𝙄𝙉!!`, `*ADVERTENCIA : WARNING*\n⚠️ *${user.warn}/10*\n\n${wm}`, null, [
-[`😭 𝙇𝙊 𝙎𝙄𝙀𝙉𝙏𝙊 | 𝙄'𝙈 𝙎𝙊𝙍𝙍𝙔`, '.ok'],
-['☢️ 𝘿𝙀𝙎𝘼𝘾𝙏𝙄𝙑𝘼𝙍 𝘼𝙉𝙏𝙄𝙏𝙊𝙓𝙄𝘾', '.off antitoxic'],
-['☘️ 𝙈𝙀𝙉𝙐', '/menu']], false, { mentions: [m.sender] })}
+if (!(user.warn >= 10)) await conn.sendButton(m.chat,`${user.warn == 1 ? `*@${m.sender.split`@`[0]}*` : `*@${m.sender.split`@`[0]}*`} *${lenguajeGB['smsToxic1']()} (${isToxic}) ${lenguajeGB['smsToxic2']()}*`, `${lenguajeGB['smsToxic3']()} *${user.warn}/4*\n\n${wm}`, img, [
+[lenguajeGB.smsToxic4(), 'ok'],
+[lenguajeGB.smsToxic5(), '.off antitoxic'],
+[lenguajeGB.smsConMenu(), '/menu']], false, { mentions: [m.sender] })}
 
 if (user.warn >= 10) {
 user.warn = 0
-await m.reply(`𝙏𝙀 𝙇𝙊 𝘼𝘿𝙑𝙀𝙍𝙏𝙄𝘿 𝙑𝘼𝙍𝙄𝘼𝙎 𝙑𝙀𝘾𝙀𝙎!!\n*@${m.sender.split`@`[0]}* 𝙎𝙐𝙋𝙀𝙍𝘼𝙎𝙏𝙀 𝙇𝘼𝙎 *10* 𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼𝙎 𝘼𝙃𝙊𝙍𝘼 𝙎𝙀𝙍𝘼𝙎 𝙀𝙇𝙄𝙈𝙄𝙉𝘼𝘿𝙊(𝘼) 🙄\n\n𝙔𝙊𝙐 𝙋𝘼𝙎𝙎𝙀𝘿 𝘼𝙇𝙇 *10* 𝙒𝘼𝙍𝙉𝙄𝙉𝙂𝙎 𝙉𝙊𝙒 𝙔𝙊𝙐 𝙒𝙄𝙇𝙇 𝘽𝙀 𝙀𝙇𝙄𝙈𝙄𝙉𝘼𝙏𝙀𝘿 😐`, false, { mentions: [m.sender] })
+await m.reply(`*${lenguajeGB['smsToxic6']()}*\n*@${m.sender.split`@`[0]} ${lenguajeGB['smsToxic7']()}*`, false, { mentions: [m.sender] })
 user.banned = true
 await this.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
 //await this.updateBlockStatus(m.sender, 'block')

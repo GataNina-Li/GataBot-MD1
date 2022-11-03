@@ -24,6 +24,5 @@ handler.help = ['adddi <@user>']
 handler.tags = ['xp']
 handler.command = ['añadirtokens', 'dartokens', 'dartoken'] 
 handler.group = true
-handler.botAdmin = true
 handler.owner = true
 export default handler
