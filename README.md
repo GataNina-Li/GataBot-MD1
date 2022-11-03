@@ -189,11 +189,12 @@ En caso que no tenga nada en el terminar puede usar este comando ```cd GataBotMD
 ```
 ----
 ### 💠 [`IDIOMAS DISPONIBLES PARA GATABOT`](https://github.com/GataNina-Li/GataBot-MD/blob/master/config.js) 
-🌐 Español 
-🌐 Inglés (English)
-🌐 Portugués (Português)
-🌐 Indonesio (Bahasa Indonesia)
-🌐 Árabe (عرب)
+### 🌐 Español 
+### 🌐 Inglés (English)
+### 🌐 Portugués (Português)
+### 🌐 Indonesio (Bahasa Indonesia)
+### 🌐 Árabe (عرب)
+- [x] Ejemplo <details><summary>Idioma</summary><img src="https://i.imgur.com/RMWFgZo.jpeg"></details>
 ----
 
 ### 🌟 CREADORA 
