@@ -152,9 +152,9 @@ Si tiene éxito, le dará un mensaje como: `SUCCESS: specified value was saved`.
 ```
 ----    
 ###  AJUSTE <img src="https://i.pinimg.com/originals/98/1b/e2/981be28d3ec7b85bfb797a5f9e6a01c2.png" height="32px">
-- CLONAR EL REPOSITORIO [`Aquí`](https://github.com/GataNina-Li/GataBotMD-Termux/fork)
-- CAMBIAR NÚMERO DEL OWNER [`Aquí`](https://github.com/GataNina-Li/GataBotMD-Termux/blob/master/config.js)
-- SELECCIONAR IDIOMA [`Aquí`](https://github.com/GataNina-Li/GataBotMD-Termux/blob/master/config.js) 
+- CLONAR EL REPOSITORIO [`Aquí`](https://github.com/GataNina-Li/GataBot-MD/fork)
+- CAMBIAR NÚMERO DEL OWNER [`Aquí`](https://github.com/GataNina-Li/GataBot-MD/blob/master/config.js)
+- SELECCIONAR IDIOMA [`Aquí`](https://github.com/GataNina-Li/GataBot-MD/blob/master/config.js) 
 ----  
 ### GataBot-MD - Preguntas
 
