@@ -4,7 +4,7 @@ import fs from 'fs'
 let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isROwner, text }) => { 
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
 
-const sections = [
+/*const sections = [
 {
 title: `𝙇𝙄𝙎𝙏𝘼 𝘿𝙀 𝘾𝙊𝙉𝙁𝙄𝙂𝙐𝙍𝘼𝘾𝙄𝙊𝙉`,
 rows: [
@@ -81,7 +81,33 @@ footer: `╭━━━[ *𝘼𝙅𝙐𝙎𝙏𝙀𝙎 𝙂𝘼𝙏𝘼𝘽𝙊�
 ${wm}`,
 title: null,
 buttonText: "𝘾𝙊𝙉𝙁𝙄𝙂𝙐𝙍𝘼𝙍",
-sections }
+sections }*/
+
+let nombre = ["Prueba1",
+"Prueba2",
+"Prueba3",
+"Prueba4"]
+
+let comando = ["prueba1",
+"prueba2",
+"prueba3",
+"prueba4"]
+
+let descripción = ["Esto es prueba1",
+"Esto es prueba2",
+"Esto es prueba3",
+"Esto es prueba4"]
+
+let row = Object.keys(nombre, descripción, comando).map((v, index) => ({
+title: `${htki} ${command} ${nombre[v]} ${htka}`,
+description: `\nNo.${1 + index}\n${htjava}${descripción[v]}\n${dmenuf}`,
+rowId: usedPrefix + command + ' ' + comando[v] }))
+
+let button = {
+buttonText: `🍭 ${command} Prueba 🍭`,
+description: `Elije ${command} Bien\n Ejemplo ${text} *${usedPrefix + command}* `,
+footerText: wm
+}
 
 let isEnable = /true|enable|(turn)?on|1/i.test(command)
 let chat = global.db.data.chats[m.chat]
@@ -440,7 +466,8 @@ throw false
 global.opts['swonly'] = isEnable
 break
 default:
-if (!/[01]/.test(command)) return conn.sendMessage(m.chat, listMessage, {quoted: fkontak})		
+//if (!/[01]/.test(command)) return conn.sendMessage(m.chat, listMessage, {quoted: fkontak})	
+if (!/[01]/.test(command)) return conn.sendListM(m.chat, button, row, fkontak)
 throw false
 }
 //conn.sendButton
