@@ -83,6 +83,11 @@ title: null,
 buttonText: "𝘾𝙊𝙉𝙁𝙄𝙂𝙐𝙍𝘼𝙍",
 sections }*/
 
+let titulo = ["Grupo1",
+"Grupo3",
+"Grupo2",
+"Grupo4"]
+
 let nombre = ["Prueba1",
 "Prueba2",
 "Prueba3",
@@ -109,11 +114,11 @@ description: `Elije ${command} Bien\n Ejemplo ${text} *${usedPrefix + command}* 
 footerText: wm
 }*/
 
-let sections = Object.keys(nombre, descripción, comando).map((v, index) => ({
-title: `𝙇𝙄𝙎𝙏𝘼 𝘿𝙀 𝘾𝙊𝙉𝙁𝙄𝙂𝙐𝙍𝘼𝘾𝙄𝙊𝙉`,
+let sections = Object.keys(nombre, descripción, comando, titulo).map((v, index) => ({
+title: `${titulo}`,
 rows: [{
-title: `${htki} ${command} ${nombre[v]} ${htka}`,	
-description: `\nNo.${1 + index}\n${htjava}${descripción[v]}\n${dmenuf}`,
+title: `${htki}   ${command} ${nombre[v]}   ${htka}`,	
+description: `No.${1 + index} ${htjava}${descripción[v]}`,
 rowId: usedPrefix + command + ' ' + comando[v],
 }], }))
 
