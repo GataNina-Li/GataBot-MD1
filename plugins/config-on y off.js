@@ -17,7 +17,7 @@ let comando = [ "welcome", "detect", "autolevelup", "restrict", "anticall", "pub
 "antinstagram", "antitwitter", "pconly", "gconly"]
 
 let sections = Object.keys(titulo, nombre, descripción, comando).map((v, index) => ({
-title: `${titulo[v]}`,
+title: `${titulo[v]} ${comando[v] == 'public' ? global.opts['self'] ? 'Privado' : 'Publico' : '' }`,
 rows: [{
 title: `${nombre[v]} : ${command} ${comando[v]}`, description: `${1 + index}. ${descripción[v]}`, rowId: usedPrefix + command + ' ' + comando[v],
 }], }))
