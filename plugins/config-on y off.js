@@ -114,7 +114,7 @@ title: `${htki} ${command} ${nombre[v]} ${htka}`,
 description: `\nNo.${1 + index}\n${htjava}${descripción[v]}\n${dmenuf}`,
 rowId: usedPrefix + command + ' ' + comando[v]
 }))	
-
+let name = await conn.getName(m.sender)
 const listMessage = {
 text: '*~ CENTRO DE CONFIGURACIÓN*',
 footer: `╭━━━[ *𝘼𝙅𝙐𝙎𝙏𝙀𝙎 𝙂𝘼𝙏𝘼𝘽𝙊𝙏* ]━━━⬣
