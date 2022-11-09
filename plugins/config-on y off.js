@@ -115,7 +115,7 @@ footerText: wm
 }*/
 
 let sections = Object.keys(nombre, descripción, comando, titulo).map((v, index) => ({
-title: `${titulo}`,
+title: `${titulo[v]}`,
 rows: [{
 title: `${htki}   ${command} ${nombre[v]}   ${htka}`,	
 description: `No.${1 + index} ${htjava}${descripción[v]}`,
