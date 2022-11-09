@@ -908,7 +908,8 @@ export async function handler(chatUpdate) {
 		if (!('antiTwitter' in chat)) chat.antiInstagram = false
 		if (!('antifake' in chat)) chat.antifake = false
 		if (!('reaction' in chat)) chat.reaction = true    
-                if (!('viewonce' in chat)) chat.viewonce = false                    
+                if (!('viewonce' in chat)) chat.viewonce = false         
+                if (!('modoadmin' in chat)) chat.modoadmin = false           
                 if (!('antitoxic' in chat)) chat.antitoxic = true 
 		if (!('autolevelup' in chat))  chat.autolevelup = true
 		//if (!('antiSpam' in chat))  chat.antiSpam = true    
@@ -940,6 +941,7 @@ export async function handler(chatUpdate) {
 		    antifake: false,
 		    reaction: true,
                     viewonce: false,
+                    modoadmin: false,
                     antitoxic: true,
 	            autolevelup: true,
 	            //antiSpam: true,
