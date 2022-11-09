@@ -3,8 +3,11 @@ import fs from 'fs'
 
 let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isROwner, text }) => { 
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
+let chat = global.db.data.chats[m.chat]
+let user = global.db.data.users[m.sender]
+let bot = global.db.data.settings[conn.user.jid] || {}
 
-let titulo = [ lenguajeGB.smsParaAdmins(), lenguajeGB.smsParaAdmins(), lenguajeGB.smsParaAdYOw(), lenguajeGB.smsParaOw(), lenguajeGB.smsParaOw(), lenguajeGB.smsParaOw(), lenguajeGB.smsParaAdmins(), lenguajeGB.smsParaOw(), lenguajeGB.smsParaOw(), lenguajeGB.smsParaAdmins(), lenguajeGB.smsParaAdmins(), lenguajeGB.smsParaAdYOw(), lenguajeGB.smsParaAdYOw(), lenguajeGB.smsParaAdYOw(), lenguajeGB.smsParaAdmins(), lenguajeGB.smsParaAdYOw(), lenguajeGB.smsParaAdYOw(), lenguajeGB.smsParaAdmins(), lenguajeGB.smsParaAdmins(), lenguajeGB.smsParaAdmins(), lenguajeGB.smsParaAdmins(), lenguajeGB.smsParaAdmins(), lenguajeGB.smsParaAdmins(), lenguajeGB.smsParaAdmins(),
+let titulo = [ lenguajeGB.smsParaAdmins() + chat.welcome ? '✅' : '❌', lenguajeGB.smsParaAdmins(), lenguajeGB.smsParaAdYOw(), lenguajeGB.smsParaOw(), lenguajeGB.smsParaOw(), lenguajeGB.smsParaOw(), lenguajeGB.smsParaAdmins(), lenguajeGB.smsParaOw(), lenguajeGB.smsParaOw(), lenguajeGB.smsParaAdmins(), lenguajeGB.smsParaAdmins(), lenguajeGB.smsParaAdYOw(), lenguajeGB.smsParaAdYOw(), lenguajeGB.smsParaAdYOw(), lenguajeGB.smsParaAdmins(), lenguajeGB.smsParaAdYOw(), lenguajeGB.smsParaAdYOw(), lenguajeGB.smsParaAdmins(), lenguajeGB.smsParaAdmins(), lenguajeGB.smsParaAdmins(), lenguajeGB.smsParaAdmins(), lenguajeGB.smsParaAdmins(), lenguajeGB.smsParaAdmins(), lenguajeGB.smsParaAdmins(),
 lenguajeGB.smsParaAdmins(), lenguajeGB.smsParaAdmins(), lenguajeGB.smsParaOw(), lenguajeGB.smsParaOw()]
 
 let nombre = [ lenguajeGB.smsWel1(), lenguajeGB.smsDete1(), lenguajeGB.smsANivel1(), lenguajeGB.smsRestri1(), lenguajeGB.smsLlamar1(), lenguajeGB.smsModP1(), lenguajeGB.smsModAd1(), lenguajeGB.smsLect1(), lenguajeGB.smsTempo1(), lenguajeGB.smsStik1(), lenguajeGB.smsStickA1(), lenguajeGB.smsReacc1(), lenguajeGB.smsAudi1(), lenguajeGB.smsModHor1(), lenguajeGB.smsAntitoc1(), lenguajeGB.smsModOb1(), lenguajeGB.smsAntiEli1(), lenguajeGB.smsAntiInt1(), lenguajeGB.smsAntiE1(), lenguajeGB.smsAntiEE1(), lenguajeGB.smsAntiTT1(), lenguajeGB.smsAntiYT1(), lenguajeGB.smsAntiTEL1(), lenguajeGB.smsAntiFB1(),
@@ -17,7 +20,7 @@ let comando = [ "welcome", "detect", "autolevelup", "restrict", "anticall", "pub
 "antinstagram", "antitwitter", "pconly", "gconly"]
 
 let sections = Object.keys(titulo, nombre, descripción, comando).map((v, index) => ({
-title: `${titulo[v]} ${comando[v] == 'public' ? global.opts['self'] ? 'Privado' : 'Publico' : '' }`,
+title: `${titulo[v]}`,
 rows: [{
 title: `${nombre[v]} : ${command} ${comando[v]}`, description: `${1 + index}. ${descripción[v]}`, rowId: usedPrefix + command + ' ' + comando[v],
 }], }))
@@ -42,9 +45,7 @@ buttonText: "𝘾𝙊𝙉𝙁𝙄𝙂𝙐𝙍𝘼𝙍",
 sections }
 
 let isEnable = /true|enable|(turn)?on|1/i.test(command)
-let chat = global.db.data.chats[m.chat]
-let user = global.db.data.users[m.sender]
-let bot = global.db.data.settings[conn.user.jid] || {}
+
 let type = (args[0] || '').toLowerCase()
 let isAll = false, isUser = false
 switch (type) {
