@@ -1117,7 +1117,7 @@ export async function handler(chatUpdate) {
                let hl = _prefix 
                 let adminMode = global.db.data.chats[m.chat].modoadmin
                 let gata = `${plugins.botAdmin || plugins.admin || plugins.group || plugins || noPrefix || hl ||  m.text.slice(0, 1) == hl || plugins.command}`
-                if (adminMode && !isOwner && !isROwner && m.isGroup && !isAdmin && mystica) return   
+                if (adminMode && !isOwner && !isROwner && m.isGroup && !isAdmin && gata) return   
 
                if (plugin.rowner && plugin.owner && !(isROwner || isOwner)) { // Both Owner
                     fail('owner', m, this)
