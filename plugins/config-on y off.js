@@ -84,37 +84,34 @@ buttonText: "𝘾𝙊𝙉𝙁𝙄𝙂𝙐𝙍𝘼𝙍",
 sections }*/
 
 let titulo = [
-"Grupo1",
+lenguajeGB.smsParaAdmins(),
 "Grupo3",
 "Grupo2",
 "Grupo4"]
 
 let nombre = [
-"Prueba1",
+lenguajeGB.smsWel1(),
 "Prueba2",
 "Prueba3",
 "Prueba4"]
 
-let comando = [
-"prueba1",
-"prueba2",
-"prueba3",
-"prueba4"]
-
 let descripción = [
-"Esto es prueba1",
+lenguajeGB.smsWel2(),
 "Esto es prueba2",
 "Esto es prueba3",
 "Esto es prueba4"]
 
+let comando = [
+"welcome",
+"prueba2",
+"prueba3",
+"prueba4"]
+
 let sections = Object.keys(nombre, descripción, comando, titulo).map((v, index) => ({
 title: `${titulo[v]}`,
 rows: [{
-title: `${htki}   ${command} ${nombre[v]}   ${htka}`,	
-description: `No.${1 + index} ${htjava}${descripción[v]}`,
-rowId: usedPrefix + command + ' ' + comando[v],
+title: `${nombre[v]} : ${command} ${comando[v]}`, description: `No.${1 + index} ${descripción[v]}`, rowId: usedPrefix + command + ' ' + comando[v],
 }], }))
-
 
 let name = await conn.getName(m.sender)
 const listMessage = {
