@@ -98,7 +98,7 @@ let descripción = ["Esto es prueba1",
 "Esto es prueba3",
 "Esto es prueba4"]
 
-let row = Object.keys(nombre, descripción, comando).map((v, index) => ({
+/*let row = Object.keys(nombre, descripción, comando).map((v, index) => ({
 title: `${htki} ${command} ${nombre[v]} ${htka}`,
 description: `\nNo.${1 + index}\n${htjava}${descripción[v]}\n${dmenuf}`,
 rowId: usedPrefix + command + ' ' + comando[v] }))
@@ -107,7 +107,64 @@ let button = {
 buttonText: `🍭 ${command} Prueba 🍭`,
 description: `Elije ${command} Bien\n Ejemplo ${text} *${usedPrefix + command}* `,
 footerText: wm
-}
+}*/
+
+let sections = Object.keys(nombre, descripción, comando).map((v, index) => ({
+title: `${htki} ${command} ${nombre[v]} ${htka}`,	
+description: `\nNo.${1 + index}\n${htjava}${descripción[v]}\n${dmenuf}`,
+rowId: usedPrefix + command + ' ' + comando[v]
+}))	
+
+const listMessage = {
+text: '*~ CENTRO DE CONFIGURACIÓN*',
+footer: `╭━━━[ *𝘼𝙅𝙐𝙎𝙏𝙀𝙎 𝙂𝘼𝙏𝘼𝘽𝙊𝙏* ]━━━⬣
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃🌟 *¡Hola | Hi!* ${name}
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+╰━━━━━━━❰ *${vs}* ❱━━━━━━⬣
+╭━━━━━━━━━━━━━⬣
+┃ *𝙋𝙍𝙀𝙎𝙄𝙊𝙉𝙀 𝙀𝙎𝙏𝙀 𝙈𝙀𝙉𝙎𝘼𝙅𝙀 𝙊 𝙐𝙎𝙀*
+┃ *𝙇𝙊𝙎 𝘾𝙊𝙈𝘼𝙉𝘿𝙊𝙎 𝘿𝙀 𝙀𝙎𝙏𝙀 𝙈𝙀𝙉𝙎𝘼𝙅𝙀*
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃⚙️ _${usedPrefix}on *:* off *bienvenida | welcome*_
+┃⚙️ _${usedPrefix}on *:* off *avisos | detect*_
+┃⚙️ _${usedPrefix}on *:* off *autonivel | autolevelup*_
+┃⚙️ _${usedPrefix}on *:* off *restringir | restrict*_
+┃⚙️ _${usedPrefix}on *:* off *antillamar | anticall*_
+┃⚙️ _${usedPrefix}on *:* off *publico | public*_
+┃⚙️ _${usedPrefix}on *:* off *autovisto | autoread*_
+┃⚙️ _${usedPrefix}on *:* off *temporal*_
+┃⚙️ _${usedPrefix}on *:* off *stickers*_
+┃⚙️ _${usedPrefix}on *:* off *autosticker*_
+┃⚙️ _${usedPrefix}on *:* off *reacciones | reaction*_
+┃⚙️ _${usedPrefix}on *:* off *audios*_
+┃⚙️ _${usedPrefix}on *:* off *modocaliente | modohorny*_
+┃⚙️ _${usedPrefix}on *:* off *antitoxicos | antitoxic*_
+┃⚙️ _${usedPrefix}on *:* off *antiver | antiviewonce*_
+┃⚙️ _${usedPrefix}on *:* off *antieliminar | antidelete*_
+┃⚙️ _${usedPrefix}on *:* off *antinternacional | antifake*_
+┃⚙️ _${usedPrefix}on *:* off *antienlace | antilink*_
+┃⚙️ _${usedPrefix}on *:* off *antienlace2 | antilink2*_
+┃⚙️ _${usedPrefix}on *:* off *antitiktok | antitk*_
+┃⚙️ _${usedPrefix}on *:* off *antiyoutube | antiyt*_
+┃⚙️ _${usedPrefix}on *:* off *antitelegram | antitel*_
+┃⚙️ _${usedPrefix}on *:* off *antifacebook | antifb*_
+┃⚙️ _${usedPrefix}on *:* off *antinstagram | antig*_
+┃⚙️ _${usedPrefix}on *:* off *antitwitter | antitw*_
+┃⚙️ _${usedPrefix}on *:* off *soloprivados | pconly*_
+┃⚙️ _${usedPrefix}on *:* off *sologrupos | gconly*_
+╰━━━━━━━━━━━━━⬣
+${wm}`,
+title: null,
+buttonText: "𝘾𝙊𝙉𝙁𝙄𝙂𝙐𝙍𝘼𝙍",
+sections }
+
+//const sections = [
+//{
+//title: `𝙇𝙄𝙎𝙏𝘼 𝘿𝙀 𝘾𝙊𝙉𝙁𝙄𝙂𝙐𝙍𝘼𝘾𝙄𝙊𝙉`,
+//rows: [
+//{title: "🔔 𝘿𝙀𝙏𝙀𝘾𝙏𝘼𝙍 | 𝘿𝙀𝘾𝙏𝙀𝘾𝙏", description: "𝙉𝙤𝙩𝙞𝙛𝙞𝙘𝙖𝙘𝙞𝙤𝙣𝙚𝙨 𝙙𝙚 𝙂𝙧𝙪𝙥𝙤\n𝙂𝙧𝙤𝙪𝙥 𝙉𝙤𝙩𝙞𝙛𝙞𝙘𝙖𝙩𝙞𝙤𝙣𝙨", rowId: `${usedPrefix + command} detect`},
+//]}, ]
 
 let isEnable = /true|enable|(turn)?on|1/i.test(command)
 let chat = global.db.data.chats[m.chat]
@@ -466,8 +523,8 @@ throw false
 global.opts['swonly'] = isEnable
 break
 default:
-//if (!/[01]/.test(command)) return conn.sendMessage(m.chat, listMessage, {quoted: fkontak})	
-if (!/[01]/.test(command)) return conn.sendListM(m.chat, button, row, fkontak)
+if (!/[01]/.test(command)) return conn.sendMessage(m.chat, listMessage, {quoted: fkontak})	
+//if (!/[01]/.test(command)) return conn.sendListM(m.chat, button, row, fkontak)
 throw false
 }
 //conn.sendButton
