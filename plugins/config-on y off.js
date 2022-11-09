@@ -110,10 +110,20 @@ footerText: wm
 }*/
 
 let sections = Object.keys(nombre, descripción, comando).map((v, index) => ({
+title: `𝙇𝙄𝙎𝙏𝘼 𝘿𝙀 𝘾𝙊𝙉𝙁𝙄𝙂𝙐𝙍𝘼𝘾𝙄𝙊𝙉`,
+rows: [{
 title: `${htki} ${command} ${nombre[v]} ${htka}`,	
 description: `\nNo.${1 + index}\n${htjava}${descripción[v]}\n${dmenuf}`,
-rowId: usedPrefix + command + ' ' + comando[v]
-}))	
+rowId: usedPrefix + command + ' ' + comando[v],
+}], }))
+
+//const sections = [
+//{
+//title: `𝙇𝙄𝙎𝙏𝘼 𝘿𝙀 𝘾𝙊𝙉𝙁𝙄𝙂𝙐𝙍𝘼𝘾𝙄𝙊𝙉`,
+//rows: [
+//{title: "🔔 𝘿𝙀𝙏𝙀𝘾𝙏𝘼𝙍 | 𝘿𝙀𝘾𝙏𝙀𝘾𝙏", description: "𝙉𝙤𝙩𝙞𝙛𝙞𝙘𝙖𝙘𝙞𝙤𝙣𝙚𝙨 𝙙𝙚 𝙂𝙧𝙪𝙥𝙤\n𝙂𝙧𝙤𝙪𝙥 𝙉𝙤𝙩𝙞𝙛𝙞𝙘𝙖𝙩𝙞𝙤𝙣𝙨", rowId: `${usedPrefix + command} detect`},
+//]}, ]
+
 let name = await conn.getName(m.sender)
 const listMessage = {
 text: '*~ CENTRO DE CONFIGURACIÓN*',
@@ -158,13 +168,6 @@ ${wm}`,
 title: null,
 buttonText: "𝘾𝙊𝙉𝙁𝙄𝙂𝙐𝙍𝘼𝙍",
 sections }
-
-//const sections = [
-//{
-//title: `𝙇𝙄𝙎𝙏𝘼 𝘿𝙀 𝘾𝙊𝙉𝙁𝙄𝙂𝙐𝙍𝘼𝘾𝙄𝙊𝙉`,
-//rows: [
-//{title: "🔔 𝘿𝙀𝙏𝙀𝘾𝙏𝘼𝙍 | 𝘿𝙀𝘾𝙏𝙀𝘾𝙏", description: "𝙉𝙤𝙩𝙞𝙛𝙞𝙘𝙖𝙘𝙞𝙤𝙣𝙚𝙨 𝙙𝙚 𝙂𝙧𝙪𝙥𝙤\n𝙂𝙧𝙤𝙪𝙥 𝙉𝙤𝙩𝙞𝙛𝙞𝙘𝙖𝙩𝙞𝙤𝙣𝙨", rowId: `${usedPrefix + command} detect`},
-//]}, ]
 
 let isEnable = /true|enable|(turn)?on|1/i.test(command)
 let chat = global.db.data.chats[m.chat]
