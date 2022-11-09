@@ -83,34 +83,34 @@ title: null,
 buttonText: "𝘾𝙊𝙉𝙁𝙄𝙂𝙐𝙍𝘼𝙍",
 sections }*/
 
-/*let titulo = [
-lenguajeGB.smsParaAdmins(),
-"Grupo3",
-"Grupo2",
-"Grupo4"]
+let titulo = [ lenguajeGB.smsParaAdmins(), lenguajeGB.smsParaAdmins(), lenguajeGB.smsParaAdYOw(), lenguajeGB.smsParaOw(), lenguajeGB.smsParaOw(), lenguajeGB.smsParaOw(),
+lenguajeGB.smsParaAdmins(), lenguajeGB.smsParaOw(), lenguajeGB.smsParaOw(), lenguajeGB.smsParaAdmins(), lenguajeGB.smsParaAdmins(), lenguajeGB.smsParaAdYOw(),
+lenguajeGB.smsParaAdYOw(), lenguajeGB.smsParaAdYOw(), lenguajeGB.smsParaAdmins(), lenguajeGB.smsParaAdYOw(), lenguajeGB.smsParaAdYOw(), lenguajeGB.smsParaAdmins(),
+lenguajeGB.smsParaAdmins(), lenguajeGB.smsParaAdmins(), lenguajeGB.smsParaAdmins(), lenguajeGB.smsParaAdmins(), lenguajeGB.smsParaAdmins(), lenguajeGB.smsParaAdmins(),
+lenguajeGB.smsParaAdmins(), lenguajeGB.smsParaAdmins(), lenguajeGB.smsParaOw(), lenguajeGB.smsParaOw()]
 
-let nombre = [
-lenguajeGB.smsWel1(),
-"Prueba2",
-"Prueba3",
-"Prueba4"]
+let nombre = [ lenguajeGB.smsWel1(), lenguajeGB.smsDete1(), lenguajeGB.smsANivel1(), lenguajeGB.smsRestri1(), lenguajeGB.smsLlamar1(), lenguajeGB.smsModP1(),
+lenguajeGB.smsModAd1(), lenguajeGB.smsLect1(), lenguajeGB.smsTempo1(), lenguajeGB.smsStik1(), lenguajeGB.smsStickA1(), lenguajeGB.smsReacc1(),
+lenguajeGB.smsAudi1(), lenguajeGB.smsModHor1(), lenguajeGB.smsAntitoc1(), lenguajeGB.smsModOb1(), lenguajeGB.smsAntiEli1(), lenguajeGB.smsAntiInt1(),
+lenguajeGB.smsAntiE1(), lenguajeGB.smsAntiEE2(), lenguajeGB.smsAntiTT1(), lenguajeGB.smsAntiYT1(), lenguajeGB.smsAntiTEL1(), lenguajeGB.smsAntiFB1(),
+lenguajeGB.smsAntiIG1(), lenguajeGB.smsAntiTW1(), lenguajeGB.smsSOLOP1(), lenguajeGB.smsSOLOG1()]
 
-let descripción = [
-lenguajeGB.smsWel2(),
-"Esto es prueba2",
-"Esto es prueba3",
-"Esto es prueba4"]
+let descripción = [ lenguajeGB.smsWel2(), lenguajeGB.smsDete2(), lenguajeGB.smsANivel2(), lenguajeGB.smsRestri2(), lenguajeGB.smsLlamar2(), lenguajeGB.smsModP2(),
+lenguajeGB.smsModAd2(), lenguajeGB.smsLect2(), lenguajeGB.smsTempo2(), lenguajeGB.smsStik2(), lenguajeGB.smsStickA2(), lenguajeGB.smsReacc2(),
+lenguajeGB.smsAudi2(), lenguajeGB.smsModHor2(), lenguajeGB.smsAntitoc2(), lenguajeGB.smsModOb2(), lenguajeGB.smsAntiEli2(), lenguajeGB.smsAntiInt2(),
+lenguajeGB.smsAntiE2(), lenguajeGB.smsAntiEE2(), lenguajeGB.smsAntiTT2(), lenguajeGB.smsAntiYT2(), lenguajeGB.smsAntiTEL2(), lenguajeGB.smsAntiFB2(),
+lenguajeGB.smsAntiIG2(), lenguajeGB.smsAntiTW2(), lenguajeGB.smsSOLOP2(), lenguajeGB.smsSOLOG2()]
 
-let comando = [
-"welcome",
-"prueba2",
-"prueba3",
-"prueba4"]*/
+let comando = [ "welcome", "detect", "autolevelup", "restrict", "anticall", "public",
+"modoadmin", "autoread", "temporal", "stickers", "autosticker", "reaction", 
+"audios", "modohorny", "antitoxic", "antiviewonce", "antidelete", "antifake",
+"antilink", "antilink2", "antitiktok", "antiyoutube", "antitelegram", "antifacebook",
+"antinstagram", "antitwitter", "pconly", "gconly"]
 
-let sections = Object.keys(lenguajeGB.smsTitulo, lenguajeGB.smsNombre, lenguajeGB.smsDescripcion, lenguajeGB.smsComando).map((v, index) => ({
-title: `${lenguajeGB.smsTitulo()[v]}`,
+let sections = Object.keys(titulo, nombre, descripción, comando).map((v, index) => ({
+title: `${titulo[v]}`,
 rows: [{
-title: `${lenguajeGB.smsNombre()[v]} : ${command} ${lenguajeGB.smsComando()[v]}`, description: `No.${1 + index} ${lenguajeGB.smsDescripcion()[v]}`, rowId: usedPrefix + command + ' ' + lenguajeGB.smsComando()[v],
+title: `${nombre[v]} : ${command} ${comando[v]}`, description: `${1 + index}. ${descripción[v]}`, rowId: usedPrefix + command + ' ' + comando[v],
 }], }))
 
 let name = await conn.getName(m.sender)
@@ -166,7 +166,9 @@ throw false
 }
 chat.detect = isEnable
 break
-    
+		
+case 'antidelete': 
+case 'antieliminar':
 case 'delete':
 if (m.isGroup) {
 if (!(isAdmin || isOwner)) {
@@ -174,16 +176,6 @@ global.dfail('admin', m, conn)
 throw false
 }}
 chat.delete = isEnable
-break
-		
-case 'antidelete': 
-case 'antieliminar':
-if (m.isGroup) {
-if (!(isAdmin || isOwner)) {
-global.dfail('admin', m, conn)
-throw false
-}}
-chat.delete = !isEnable
 break
     
 case 'public':
@@ -324,6 +316,8 @@ break
 //break
 		
 case 'autolevelup':
+case 'autonivel':
+case 'nivelautomatico':
 if (m.isGroup) {
 if (!(isAdmin || isOwner)) {
 global.dfail('admin', m, conn)
@@ -376,6 +370,9 @@ chat.audios = isEnable
 break
     
 case 'antiver':
+case 'modover':
+case 'modoobservar':
+case 'modobservar':
 case 'antiviewonce':
 if (m.isGroup) {
 if (!(isAdmin || isOwner)) {
@@ -449,6 +446,7 @@ chat.antiSpam = isEnable
 break
  
 case 'modoadmin':
+case 'soloadmin':
 if (m.isGroup) {
 if (!(isAdmin || isOwner)) {
 global.dfail('admin', m, conn)
