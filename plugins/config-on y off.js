@@ -412,7 +412,16 @@ throw false
 }}
 chat.antiSpam = isEnable          
 break
-    
+ 
+case 'modoadmin':
+if (m.isGroup) {
+if (!(isAdmin || isOwner)) {
+global.dfail('admin', m, conn)
+throw false
+}}
+chat.modoadmin = isEnable          
+break    
+   
 case 'pconly':
 case 'privateonly':
 case 'soloprivados':
