@@ -50,7 +50,7 @@ let comando = [ "welcome", "detect", "autolevelup", "restrict", "anticall", "pub
 let sections = Object.keys(titulo, nombre, descripción, comando).map((v, index) => ({ title: `${titulo[v]}`,
 rows: [{ title: `${nombre[v]} : ${command} ${comando[v]}`, description: `${1 + index}. ${descripción[v]}`, rowId: usedPrefix + command + ' ' + comando[v], }], }))
 
-let namem = await conn.getName(m.sender)
+let name = await conn.getName(m.sender)
 const listMessage = {
 text: `${lenguajeGB.smsConfi10()}`,
 footer: `╭━━━✦ *${lenguajeGB.smsConfi1()}* ✦━━━━⬣
