@@ -55,7 +55,7 @@ title: `${nombre[v]} : ${command} ${comando[v]}`, description: `${1 + index}. ${
 let name = await conn.getName(m.sender)
 const listMessage = {
 text: `${lenguajeGB.smsConfi10()}`,
-footer: `╭━━━━✦ *${lenguajeGB.smsConfi1()}* ✦━━━━⬣
+footer: `╭━━━✦ *${lenguajeGB.smsConfi1()}* ✦━━━━⬣
 ┃
 ┃🌟 ${lenguajeGB.smsConfi2()} *${name}*
 ┃
