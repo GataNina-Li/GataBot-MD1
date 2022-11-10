@@ -377,8 +377,8 @@ await conn.sendButton(m.chat, `${lenguajeGB['smsAvisoRG']()}ღ *_${lenguajeGB['
 ღ *_${lenguajeGB['smsMens2']()}_* *|* ${isEnable ? lenguajeGB.smsApagar() : lenguajeGB.smsEncender()} 
 ღ *_${lenguajeGB['smsMens3']()}_* *|* ${isAll ? lenguajeGB.smsMens4() : isUser ? '' : lenguajeGB.smsMens5()}`, wm, null, [[`${isEnable ? lenguajeGB.smsApagar() : lenguajeGB.smsEncender()}`, `${isEnable ? `.off ${type}` : `.on ${type}`}`], [lenguajeGB.smsConMenu(), '.menu']], fkontak, m)
 } catch (e) {
-await conn.sendButton(m.chat, `${lenguajeGB['smsMalError3']()} ${usedPrefix + command}`, wm, null, [['Reportar Comando', `#reporte Este comando ${usedPrefix + command} esta presentado fallos.`]], m)
-//await conn.reply(m.chat, `${lenguajeGB['smsMalError3']()} ${usedPrefix + command}`, m)
+await conn.reply(m.chat, `${lenguajeGB['smsMalError3']()} ${usedPrefix + command}`, m)
+await conn.sendButton(m.chat, `\n${wm}`, lenguajeGB['smsMalError3']() + usedPrefix + command, null, [['Reportar Comando', `#reporte Este comando ${usedPrefix + command} esta presentado fallos.`]], m)
 console.log(e)
 }}
 handler.help = ['en', 'dis'].map(v => v + 'able <option>')
