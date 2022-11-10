@@ -24,10 +24,10 @@ conn.sendButton(m.chat, '🐈 ' + wm, `*╭━━━[ ${lenguajeGB.smsAutoLv1()}
 
 *_${lenguajeGB.smsAutoLv6()}_*`, null, [[lenguajeGB.smsConMenu(), `/menu`]], m)
 
-let especial = ['limit', 'diamond', 'joincount' 'emerald', 'berlian', 'kyubi', 'gold', 'money', 'tiketcoin', 'stamina'].getRandom()
+let especial = ['limit', 'diamond', 'joincount', 'emerald', 'berlian', 'kyubi', 'gold', 'money', 'tiketcoin', 'stamina'].getRandom()
 let especialCant = [5, 3, 3, 3, 5, 5, 6, 7, 8, 9, 10, 3].getRandom() 
 
-let normal = ['potion', 'aqua', 'trash' 'wood', 'rock', 'batu', 'string', 'iron', 'coal', 'botol', 'kaleng', 'kardus'].getRandom()
+let normal = ['potion', 'aqua', 'trash', 'wood', 'rock', 'batu', 'string', 'iron', 'coal', 'botol', 'kaleng', 'kardus'].getRandom()
 let normalCant = [1, 2, 3, 3, 1, 1, 2, 2, 4, 4, 3, 1].getRandom() 
 
 if (user.level == 5){
