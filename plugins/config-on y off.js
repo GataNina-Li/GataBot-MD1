@@ -54,21 +54,23 @@ title: `${nombre[v]} : ${command} ${comando[v]}`, description: `${1 + index}. ${
 
 let name = await conn.getName(m.sender)
 const listMessage = {
-text: '*~ CENTRO DE CONFIGURACIÓN*',
-footer: `╭━━━[ *𝘼𝙅𝙐𝙎𝙏𝙀𝙎 𝙂𝘼𝙏𝘼𝘽𝙊𝙏* ]━━━⬣
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃🌟 *¡Hola | Hi!* ${name}
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+text: lenguajeGB.smsConfi10(),
+footer: `╭━━━[ *${lenguajeGB.smsConfi1()}* ]━━━⬣
+┃
+┃🌟 ${lenguajeGB.smsConfi1()} *${name}*
+┃
+${lenguajeGB.smsConfi3()}
+${lenguajeGB.smsConfi4()}
+┃
+${lenguajeGB.smsConfi5()}
+${lenguajeGB.smsConfi6()}
+${lenguajeGB.smsConfi7()}
+${lenguajeGB.smsConfi8()}
+${m.isGroup ? `┃` : `┃\n${lenguajeGB.smsConfi9()}`}
 ╰━━━━━━━❰ *${vs}* ❱━━━━━━⬣
-╭━━━━━━━━━━━━━⬣
-┃ *𝙋𝙍𝙀𝙎𝙄𝙊𝙉𝙀 𝙀𝙎𝙏𝙀 𝙈𝙀𝙉𝙎𝘼𝙅𝙀 𝙊 𝙐𝙎𝙀*
-┃ *𝙇𝙊𝙎 𝘾𝙊𝙈𝘼𝙉𝘿𝙊𝙎 𝘿𝙀 𝙀𝙎𝙏𝙀 𝙈𝙀𝙉𝙎𝘼𝙅𝙀*
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ En Mantnimiento...
-╰━━━━━━━━━━━━━⬣
 ${wm}`,
 title: null,
-buttonText: "𝘾𝙊𝙉𝙁𝙄𝙂𝙐𝙍𝘼𝙍",
+buttonText: `⚙️ ${lenguajeGB.smsConfi1()} ⚙️`
 sections }
 
 let isEnable = /true|enable|(turn)?on|1/i.test(command)
