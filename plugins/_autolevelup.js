@@ -46,7 +46,7 @@ let normalCant = [1, 2, 3, 3, 1, 1, 2, 2, 4, 4, 3, 1].getRandom()
 
 if (user.level == 5){
 m.reply(`*${lenguajeGB.smsAutoLv7()} 10!!* 🏆\n*${especialCant * 1} ${global.rpgshop.emoticon(especial)}*`)
-Object.keys(especial, elemento).map(v => user[elemento] += especialCant * 1 )
+Object.keys(especial, elemento).map(v => user[elemento.especial] += especialCant * 1 )
 //Object.keys(especial1, especialCant1).map((v, index) => {
 //m.reply(`*${lenguajeGB.smsAutoLv7()} 5!!* 🏆
 //*${especialCant1[v]} » ${user[especial1[v]]} ${global.rpgshop.emoticon(v)}*`)
@@ -56,27 +56,27 @@ Object.keys(especial, elemento).map(v => user[elemento] += especialCant * 1 )
   
 }else if (user.level == 10){
 m.reply(`*${lenguajeGB.smsAutoLv7()} 10!!* 🏆\n*${especialCant * 2} ${global.rpgshop.emoticon(especial)}*`)
-Object.keys(especial).map(v => user[elemento] += especialCant * 2 )
+Object.keys(especial).map(v => user[elemento.especial] += especialCant * 2 )
 //for (let reward of Object.keys(especial)) { if (!(reward in user)) continue user[reward] += especialCant * 2
   
 }else if (user.level == 15){
 m.reply(`*${lenguajeGB.smsAutoLv7()} 15!!* 🏆\n*${especialCant * 3} ${global.rpgshop.emoticon(especial)}*`)
-Object.keys(especial).map(v => user[elemento] += especialCant * 3 )
+Object.keys(especial).map(v => user[elemento.especial] += especialCant * 3 )
 //for (let reward of Object.keys(especial)) { if (!(reward in user)) continue user[reward] += especialCant * 3
   
 }else if (user.level == 20){
 m.reply(`*${lenguajeGB.smsAutoLv7()} 20!!* 🏆\n*${especialCant * 4} ${global.rpgshop.emoticon(especial)}*`)
-Object.keys(especial).map(v => user[elemento] += especialCant * 4 )
+Object.keys(especial).map(v => user[elemento.especial] += especialCant * 4 )
 //for (let reward of Object.keys(especial)) { if (!(reward in user)) continue user[reward] += especialCant * 4
   
 }else if (user.level == 25){
 m.reply(`*${lenguajeGB.smsAutoLv7()} 25!!* 🏆\n*${especialCant * 5} ${global.rpgshop.emoticon(especial)}*`)
-Object.keys(especial).map(v => user[elemento] += especialCant * 5 )
+Object.keys(especial).map(v => user[elemento.especial] += especialCant * 5 )
 //for (let reward of Object.keys(especial)) { if (!(reward in user)) continue user[reward] += especialCant * 5
 	
 }else{	
 m.reply(`*${lenguajeGB.smsAutoLv7()} ${user.level}!!* 🎉\n*${normalCant} ${global.rpgshop.emoticon(normal)}*`)
-Object.keys(normal).map(v => user[elemento] += normalCant * 1 )
+Object.keys(normal).map(v => user[elemento.especial] += normalCant * 1 )
 //for (let reward of Object.keys(normal)) { if (!(reward in user)) continue user[reward] += normalCant * 1
 }
 	 
