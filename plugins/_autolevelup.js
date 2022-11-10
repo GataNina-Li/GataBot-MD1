@@ -1,6 +1,6 @@
 import { canLevelUp, xpRange } from '../lib/levelling.js'
 import { levelup } from '../lib/canvas.js'
-export function before(m, { conn, args }) {
+export function before(m, { conn }) {
 //if (!db.data.chats[m.chat].autonivel && m.isGroup) throw 
 	
 let user = global.db.data.users[m.sender]
@@ -23,8 +23,6 @@ conn.sendButton(m.chat, '🐈 ' + wm, `*╭━[ ${lenguajeGB.smsAutoLv1()} ]━�
 *╰━━━⊰ 𓃠 ${vs} ⊱━━━━დ*
 
 *_${lenguajeGB.smsAutoLv6()}_*`, null, [[lenguajeGB.smsConMenu(), `/menu`]], m)
-
-const elemento = (args[0] || '').toLowerCase()
 
 //let especial1 = ['limit', 'diamond']
 //let especial2 = ['joincount', 'emerald']
