@@ -12,7 +12,7 @@ let before = user.level * 1
 while (canLevelUp(user.level, user.exp, global.multiplier)) user.level++
  if (before !== user.level) {
 	  	 
-conn.sendButton(m.chat, '🐈 ' + wm, `*╭━━━[ ${lenguajeGB.smsAutoLv1()} ]━━━☪*
+conn.sendButton(m.chat, '🐈 ' + wm, `*╭━[ ${lenguajeGB.smsAutoLv1()} ]━დ*
 *┃ ${lenguajeGB.smsAutoLv2()} ${before}*
 *┃ ┈ ┈ ┈ ┈ ┈ ┈ ┈*
 *┃ ${lenguajeGB.smsAutoLv3()} ${user.level}*
@@ -20,7 +20,7 @@ conn.sendButton(m.chat, '🐈 ' + wm, `*╭━━━[ ${lenguajeGB.smsAutoLv1()}
 *┃ ${lenguajeGB.smsAutoLv4()}* ${user.role}
 *┃ ┈ ┈ ┈ ┈ ┈ ┈ ┈*
 *┃ ${lenguajeGB.smsAutoLv5()} ${new Date().toLocaleString('id-ID')}*
-*╰━━━⊰ 𓃠 ${vs} ⊱━━━━☪*
+*╰━━━⊰ 𓃠 ${vs} ⊱━━━━დ*
 
 *_${lenguajeGB.smsAutoLv6()}_*`, null, [[lenguajeGB.smsConMenu(), `/menu`]], m)
 
