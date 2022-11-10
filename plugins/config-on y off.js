@@ -46,11 +46,8 @@ lenguajeGB.smsAntiIG2(), lenguajeGB.smsAntiTW2(), lenguajeGB.smsSOLOP2(), lengua
 let comando = [ "welcome", "detect", "autolevelup", "restrict", "anticall", "public", "modoadmin", "autoread", "temporal", "stickers", "autosticker", "reaction", "audios", "modohorny", "antitoxic", "antiviewonce", "antidelete", "antifake", "antilink", "antilink2", "antitiktok", "antiyoutube", "antitelegram", "antifacebook",
 "antinstagram", "antitwitter", "pconly", "gconly"]
 
-let sections = Object.keys(titulo, nombre, descripción, comando).map((v, index) => ({
-title: `${titulo[v]}`,
-rows: [{
-title: `${nombre[v]} : ${command} ${comando[v]}`, description: `${1 + index}. ${descripción[v]}`, rowId: usedPrefix + command + ' ' + comando[v],
-}], }))
+let sections = Object.keys(titulo, nombre, descripción, comando).map((v, index) => ({ title: `${titulo[v]}`,
+rows: [{ title: `${nombre[v]} : ${command} ${comando[v]}`, description: `${1 + index}. ${descripción[v]}`, rowId: usedPrefix + command + ' ' + comando[v], }], }))
 
 let name = await conn.getName(m.sender)
 const listMessage = {
@@ -72,7 +69,7 @@ ${wm}`,
 title: null,
 buttonText: `⚙️ ${lenguajeGB.smsConfi1()} ⚙️`,
 sections }
-//
+
 let isEnable = /true|enable|(turn)?on|1/i.test(command)
 
 let type = (args[0] || '').toLowerCase()
