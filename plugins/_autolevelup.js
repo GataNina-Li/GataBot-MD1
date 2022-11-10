@@ -33,7 +33,9 @@ let normalCant = [1, 2, 3, 3, 1, 1, 2, 2, 4, 4, 3, 1].getRandom()
 if (user.level == 5){
 m.reply(`*${lenguajeGB.smsAutoLv7()} 5!!* 🏆\n*${especialCant * 1} ${global.rpgshop.emoticon(especial)}*`)
 //Object.keys(especial).map((v, index) => ({ user[especial] += especialCant * 1 }))
-for (let reward of Object.keys(especial)) { if (!(reward in user)) continue user[reward] += especialCant * 1
+for (let reward of Object.keys(especial)) { 
+if (!(reward in user)) continue 
+user[reward] += especialCant * 1
   
 }else if (user.level == 10){
 m.reply(`*${lenguajeGB.smsAutoLv7()} 10!!* 🏆\n*${especialCant * 2} ${global.rpgshop.emoticon(especial)}*`)
