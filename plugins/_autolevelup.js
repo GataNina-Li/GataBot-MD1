@@ -24,7 +24,7 @@ conn.sendButton(m.chat, '🐈 ' + wm, `*╭━━━[ ${lenguajeGB.smsAutoLv1()}
 
 *_${lenguajeGB.smsAutoLv6()}_*`, null, [[lenguajeGB.smsConMenu(), `/menu`]], m)
 
-let especial = ['limit', 'diamond', 'joincount', 'emerald', 'berlian', 'kyubi', 'gold', 'money', 'tiketcoin', 'stamina']
+let especial = ['limit', 'diamond', 'joincount', 'emerald', 'berlian', 'kyubi', 'gold', 'money', 'tiketcoin', 'stamina'].getRandom()
 let especialCant = [5, 3, 3, 3, 5, 5, 6, 7, 8, 9, 10, 3].getRandom()
 
 let normal = ['potion', 'aqua', 'trash', 'wood', 'rock', 'batu', 'string', 'iron', 'coal', 'botol', 'kaleng', 'kardus']
@@ -32,7 +32,10 @@ let normalCant = [1, 2, 3, 3, 1, 1, 2, 2, 4, 4, 3, 1].getRandom()
 
 if (user.level == 5){
 m.reply(`*${lenguajeGB.smsAutoLv7()} 5!!* 🏆\n*${especialCant * 1} ${global.rpgshop.emoticon(especial)}*`)
-user[especial].getRandom() += especialCant * 1
+for (let reward of Object.keys(especial)) {
+if (!(reward in user)) continue
+user[reward] += especial[reward] }
+//user[especial].getRandom() += especialCant * 1
   
 }else if (user.level == 10){
 m.reply(`*${lenguajeGB.smsAutoLv7()} 10!!* 🏆\n*${especialCant * 2} ${global.rpgshop.emoticon(especial)}*`)
