@@ -32,29 +32,27 @@ let normalCant = [1, 2, 3, 3, 1, 1, 2, 2, 4, 4, 3, 1].getRandom()
 
 if (user.level == 5){
 m.reply(`*${lenguajeGB.smsAutoLv7()} 5!!* 🏆\n*${especialCant * 1} ${global.rpgshop.emoticon(especial)}*`)
-Object.keys(especial).map(v =>
-user[especial] += especialCant * 1 )
-//user[especial].getRandom() += especialCant * 1
+Object.keys(especial).map(v => user[especial] += especialCant * 1 )
   
 }else if (user.level == 10){
 m.reply(`*${lenguajeGB.smsAutoLv7()} 10!!* 🏆\n*${especialCant * 2} ${global.rpgshop.emoticon(especial)}*`)
-user.[especial] += especialCant * 2
+Object.keys(especial).map(v => user[especial] += especialCant * 2 )
   
 }else if (user.level == 15){
 m.reply(`*${lenguajeGB.smsAutoLv7()} 15!!* 🏆\n*${especialCant * 3} ${global.rpgshop.emoticon(especial)}*`)
-user.[especial] += especialCant * 3
+Object.keys(especial).map(v => user[especial] += especialCant * 3 )
   
 }else if (user.level == 20){
 m.reply(`*${lenguajeGB.smsAutoLv7()} 20!!* 🏆\n*${especialCant * 4} ${global.rpgshop.emoticon(especial)}*`)
-user.[especial] += especialCant * 4
+Object.keys(especial).map(v => user[especial] += especialCant * 4 )
   
 }else if (user.level == 25){
 m.reply(`*${lenguajeGB.smsAutoLv7()} 25!!* 🏆\n*${especialCant * 5} ${global.rpgshop.emoticon(especial)}*`)
-user.[especial] += especialCant * 5
+Object.keys(especial).map(v => user[especial] += especialCant * 5 )
 	
 }else{	
 m.reply(`*${lenguajeGB.smsAutoLv7()} ${user.level}!!* 🎉\n*${normalCant} ${global.rpgshop.emoticon(normal)}*`)
-user.[normal] += normalCant * 1	
+Object.keys(normal).map(v => user[especial] += normalCant * 1 )
 }
 	 
 }}		
