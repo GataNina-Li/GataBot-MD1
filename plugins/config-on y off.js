@@ -66,13 +66,13 @@ ${lenguajeGB.smsConfi5()}
 ${lenguajeGB.smsConfi6()}
 ${lenguajeGB.smsConfi7()}
 ${lenguajeGB.smsConfi8()}
-
+${m.isGroup ? `┃` : `┃\n${lenguajeGB.smsConfi9()}`}
 ╰━━━━━━━❰ *${vs}* ❱━━━━━━⬣
 ${wm}`,
 title: null,
-buttonText: `⚙️ ${lenguajeGB.smsConfi1()} ⚙️`
+buttonText: `⚙️ ${lenguajeGB.smsConfi1()} ⚙️`,
 sections }
-//${m.isGroup ? `┃` : `┃\n${lenguajeGB.smsConfi9()}`}
+//
 let isEnable = /true|enable|(turn)?on|1/i.test(command)
 
 let type = (args[0] || '').toLowerCase()
