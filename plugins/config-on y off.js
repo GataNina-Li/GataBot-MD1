@@ -2,6 +2,7 @@ import fetch from 'node-fetch'
 import fs from 'fs' 
 
 let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isROwner, text }) => { 
+
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
 let chat = global.db.data.chats[m.chat]
 let user = global.db.data.users[m.sender]
@@ -49,7 +50,7 @@ let comando = [ "welcome", "detect", "autolevelup", "restrict", "anticall", "pub
 let sections = Object.keys(titulo, nombre, descripción, comando).map((v, index) => ({ title: `${titulo[v]}`,
 rows: [{ title: `${nombre[v]} : ${command} ${comando[v]}`, description: `${1 + index}. ${descripción[v]}`, rowId: usedPrefix + command + ' ' + comando[v], }], }))
 
-let name = await conn.getName(m.sender)
+let namem = await conn.getName(m.sender)
 const listMessage = {
 text: `${lenguajeGB.smsConfi10()}`,
 footer: `╭━━━✦ *${lenguajeGB.smsConfi1()}* ✦━━━━⬣
@@ -69,11 +70,11 @@ ${wm}`,
 title: null,
 buttonText: `⚙️ ${lenguajeGB.smsConfi1()} ⚙️`,
 sections }
-
+try{
 let isEnable = /true|enable|(turn)?on|1/i.test(command)
-
 let type = (args[0] || '').toLowerCase()
 let isAll = false, isUser = false
+
 switch (type) {
 case 'welcome': case 'bienvenida':
 if (!m.isGroup) {
@@ -372,10 +373,14 @@ if (!/[01]/.test(command)) return conn.sendMessage(m.chat, listMessage, {quoted:
 throw false
 }
 	
-await conn.sendButton(m.chat, `${lenguajeGB['smsAvisoRG']()}ღ *_COMANDO_* *|* ${type} 
-ღ *_ACTUALMENTE_* *|* ${isEnable ? 'ACTIVADO' : 'DESACTIVADO'} 
-ღ *_EN ESTE_* *|* ${isAll ? 'BOT' : isUser ? '' : 'CHAT'}`, wm, null, [[`${isEnable ? '🔕 DESACTIVAR' : '🔔 ACTIVAR'}`, `${isEnable ? `.off ${type}` : `.on ${type}`}`], ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 🍀', '.menu']], fkontak, m)}
-
+await conn.sendButton(m.chat, `${lenguajeGB['smsAvisoRG']()}ღ *_${lenguajeGB['smsMens1']()}_* *|* ${type} 
+ღ *_${lenguajeGB['smsMens2']()}_* *|* ${isEnable ? lenguajeGB.smsApagar() : lenguajeGB.smsEncender()} 
+ღ *_${lenguajeGB['smsMens3']()}_* *|* ${isAll ? lenguajeGB.smsMens4() : isUser ? '' : lenguajeGB.smsMens5()}`, wm, null, [[`${isEnable ? lenguajeGB.smsApagar() : lenguajeGB.smsEncender()}`, `${isEnable ? `.off ${type}` : `.on ${type}`}`], [lenguajeGB.smsConMenu(), '.menu']], fkontak, m)
+} catch (e) {
+await conn.sendButton(m.chat, `${lenguajeGB['smsMalError3']()} ${usedPrefix + command}`, wm, null, [['Reportar Comando', `#reporte ${usedPrefix + command}`]], fkontak, m)
+//await conn.reply(m.chat, `${lenguajeGB['smsMalError3']()} ${usedPrefix + command}`, m)
+console.log(e)
+}}
 handler.help = ['en', 'dis'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
 handler.command = /^((en|dis)able|(tru|fals)e|(turn)?o(n|ff)|[01])$/i
