@@ -9,7 +9,7 @@ let bang = m.key.id
 let bot = global.db.data.settings[this.user.jid] || {}
 let user = global.db.data.users[m.sender]
 
-if (chat.antiSpam) {
+if (bot.antiSpam) {
 this.spam = this.spam ? this.spam : {}
 if (!(m.sender in this.spam)) {
 let spaming = {
