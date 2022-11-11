@@ -912,7 +912,6 @@ export async function handler(chatUpdate) {
                 if (!('modoadmin' in chat)) chat.modoadmin = false           
                 if (!('antitoxic' in chat)) chat.antitoxic = true 
 		if (!('autolevelup' in chat))  chat.autolevelup = true
-		//if (!('antiSpam' in chat))  chat.antiSpam = true    
                 if (!isNumber(chat.expired)) chat.expired = 0
                     
             } else
@@ -944,7 +943,6 @@ export async function handler(chatUpdate) {
                     modoadmin: false,
                     antitoxic: true,
 	            autolevelup: true,
-	            //antiSpam: true,
                     expired: 0,
                 }
             let settings = global.db.data.settings[this.user.jid]
@@ -955,12 +953,14 @@ export async function handler(chatUpdate) {
                 if (!('restrict' in settings)) settings.restrict = false
 		if (!('temporal' in settings)) settings.temporal = true
 		if (!('antiCall' in settings)) settings.antiCall = true
+		if (!('antiSpam' in settings)) settings.antiSpam = true
             } else global.db.data.settings[this.user.jid] = {
                 self: false,
                 autoread: false,
                 restrict: false,
 		temporal: true,
-		antiCall: true
+		antiCall: true,
+		antiSpam: true
             }
         } catch (e) {
             console.error(e)
