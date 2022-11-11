@@ -324,13 +324,22 @@ throw false
 bot.antiCall = isEnable
 break
 		
-case 'antispam':
+/*case 'antispam':
 if (m.isGroup) {
 if (!(isAdmin || isOwner)) {
 global.dfail('admin', m, conn)
 throw false
 }}
 chat.antiSpam = isEnable          
+break*/
+		
+case 'antispam':
+isAll = true
+if (!isOwner) {
+global.dfail('owner', m, conn)
+throw false
+}
+bot.antiSpam = isEnable
 break
  
 case 'modoadmin': case 'soloadmin':
