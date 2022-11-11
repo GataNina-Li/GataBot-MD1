@@ -1587,7 +1587,7 @@ let aineh = `
 *DATOS DEL GANCHO : HOOK DATA*
 *╭────────────────*
 *│🪝 Gancho : Hook » ${pancingan == 0 ? 'No tengo | I do not have' : '' || pancingan == 1 ? 'Nivel | Level ✦ 1' : '' || pancingan == 2 ? 'Nivel | Level ✦ 2' : '' || pancingan == 3 ? 'Nivel | Level ✦ 3' : '' || pancingan == 4 ? 'Nivel | Level ✦ 4' : '' || pancingan == 5 ? 'Nivel | Level ✦ 5 ǁ MAX' : ''}*
-*│ Poder del Gancho » ${pancingan == 0 ? 'No tengo | I do not have' : '' || pancingan > 0 && pancingan < 5 ? `Nivel : Level » ${pancingan} a Nivel ${pancingan + 1}\n*│ Exp » ${_pancingan} -> ${pancingan *10000}*` : '' || pancingan == 5 ? 'Nivel | Level ✦ 5 ǁ MAX' : ''}*
+*│ Poder del Gancho » ${pancingan == 0 ? 'No tengo | I do not have' : '' || pancingan > 0 && pancingan < 5 ? `Nivel : Level » ${pancingan} a Nivel ${pancingan + 1}*\n*│ Exp » ${_pancingan} -> ${pancingan *10000}*` : '' || pancingan == 5 ? 'Nivel | Level ✦ 5 ǁ MAX' : ''}
 *╰────────────────*
 
 ╭━━━━━━━━━⬣
