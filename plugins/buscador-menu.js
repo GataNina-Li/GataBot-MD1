@@ -84,7 +84,7 @@ let menuB = `╭┄〔 *${wm}* 〕┄⊱
 ∘ _${usedPrefix}wiki | wikipedia *texto*_
 `.trim()
 
-await conn.sendButton(m.chat, menuA, menuB, pp, [
+await conn.sendButton(m.chat, menuA, menuB, null, [
 [lenguajeGB.smsMensError1(), '.menu'], [lenguajeGB.smsMensError2(), '/allmenu'], [lenguajeGB.smsMensError3(), '#inventario']], fkontak, m) 
   
 } catch (e) {
