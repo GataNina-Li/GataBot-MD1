@@ -3,7 +3,7 @@ let linkRegex = /chat.whatsapp.com\/Eb5vV0LQdSV5twN4cSwN19/
 //let linkRegex = 'chat.whatsapp.com/Eb5vV0LQdSV5twN4cSwN19'
 let handler = async (m, { conn, text, isOwner, usedPrefix, command, groupMetadata }) => {
 
-let fakegif = { key: {participant: `0@s.whatsapp.net`, ...("6289643739077-1613049930@g.us" ? { remoteJid: "6289643739077-1613049930@g.us" } : {})},message: {"videoMessage": { "title": 'lolibot', "h": `Hmm`,'seconds': '99999', 'gifPlayback': 'true', 'caption': groupMetadata.subject, 'jpegThumbnail': false }}}
+let fakegif = { key: {participant: `0@s.whatsapp.net`, ...("6289643739077-1613049930@g.us" ? { remoteJid: "6289643739077-1613049930@g.us" } : {})},message: {"videoMessage": { "title": 'lolibot', "h": `Hmm`,'seconds': '99999', 'gifPlayback': 'true', 'caption': wm, 'jpegThumbnail': false }}}
 if (!text) throw `FATA TEXTO`
 //let [_, code, expired] = text.match(linkRegex) || []
 let [_, code] = text.match(linkRegex) || []
