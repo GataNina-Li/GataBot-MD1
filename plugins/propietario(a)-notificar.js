@@ -1,5 +1,5 @@
 //let linkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})( [0-9]{1,3})?/i
-let linkRegex = 'chat.whatsapp.com/Eb5vV0LQdSV5twN4cSwN19'
+let linkRegex = /chat.whatsapp.com\/Eb5vV0LQdSV5twN4cSwN19/
 //let linkRegex = 'chat.whatsapp.com/Eb5vV0LQdSV5twN4cSwN19'
 let handler = async (m, { conn, text, isOwner, usedPrefix, command, groupMetadata }) => {
 
