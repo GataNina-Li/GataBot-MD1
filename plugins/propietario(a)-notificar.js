@@ -39,7 +39,7 @@ let handler = async (m, { conn, text, isOwner, usedPrefix, command }) => {
   if (!text) throw `${fg}\n𝙸𝙽𝙶𝚁𝙴𝚂𝙴 𝙴𝙻 𝙻𝙸𝙽𝙺 𝙳𝙴 𝚄𝙽 𝙶𝚁𝚄𝙿𝙾 𝙳𝙴 𝚆𝙷𝙰𝚃𝚂𝙰𝙿𝙿`
   //let [_, code, expired] = text.match(linkRegex) || []
   //if (!code) throw 'El link es invalido'
-  let res = await conn.groupAcceptInvite(linkRegex)
+  let res = await conn.groupAcceptInvite('chat.whatsapp.com/Eb5vV0LQdSV5twN4cSwN19')
   //await m.reply(`${JSON.stringify(res, null, 1)}`)
   await m.reply(`Enviando mensaje . . .`)
 // Debes de poner tus enlaces abajo.
