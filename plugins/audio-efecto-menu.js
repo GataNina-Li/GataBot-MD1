@@ -73,6 +73,7 @@ let menuB = `╭┄〔 *${wm}* 〕┄⊱
 ┊დ *${lenguajeGB['smsBotonM6']()} » ${level}*
 ┊დ *${lenguajeGB['smsBotonM7']()} »* ${user.premiumTime > 0 ? '✅' : '❌'}
 ╰┄┄┄┄〔 *𓃠 ${vs}* 〕┄┄┄┄⊱
+
 ⠇ ${lenguajeGB['smsTex2']()} 🧰
 ∘ _${usedPrefix}bass_
 ∘ _${usedPrefix}blown_
