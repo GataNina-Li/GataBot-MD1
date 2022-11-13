@@ -47,7 +47,7 @@ rows: [
 {title: lenguajeGB['smsLista14'](), rowId: `${usedPrefix}inventario 3`},
 {title: lenguajeGB['smsLista15'](), rowId: `${usedPrefix}rpgmenu`},
 {title: lenguajeGB['smsLista16'](), rowId: `${usedPrefix}buy`},
-{title: lenguajeGB['smsLista17'](), rowId: `${usedPrefix}inventory`}, description: '\n'}
+{title: lenguajeGB['smsLista17'](), rowId: `${usedPrefix}inventory`, description: '\n'}
 ]},{	
 title: comienzo + ' ' + lenguajeGB['smsLista18']() + ' ' + fin,
 rows: [
