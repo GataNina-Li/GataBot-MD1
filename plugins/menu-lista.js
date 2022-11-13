@@ -3,7 +3,6 @@ import fetch from 'node-fetch'
 import { xpRange } from '../lib/levelling.js'
 const { levelling } = '../lib/levelling.js'
 import moment from 'moment-timezone'
-import fetch from 'node-fetch'
 
 let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isROwner }) => {
 //let userr = global.db.data.users[m.sender]
