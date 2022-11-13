@@ -79,7 +79,7 @@ let menuB = `╭┄〔 *${wm}* 〕┄⊱
 ┊დ *${lenguajeGB['smsBotonM7']()} »* ${user.premiumTime > 0 ? '✅' : '❌'}
 ╰┄┄┄┄〔 *𓃠 ${vs}* 〕┄┄┄┄⊱
 
-⠇ ${lenguajeGB['smsTex2']()} 🎡
+⠇ ${lenguajeGB['smsTex10']()} 🎡
 ∘ _${usedPrefix}mates | matemáticas | math_
 ∘ _${usedPrefix}ppt *piedra : papel : tijera*_
 ∘ _${usedPrefix}tictactoe | ttt *sala*_
