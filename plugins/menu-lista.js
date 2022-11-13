@@ -3,6 +3,8 @@ import fetch from 'node-fetch'
 import { xpRange } from '../lib/levelling.js'
 const { levelling } = '../lib/levelling.js'
 import moment from 'moment-timezone'
+import fetch from 'node-fetch'
+
 let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isROwner }) => {
 //let userr = global.db.data.users[m.sender]
 //userr.registered = false
@@ -18,13 +20,14 @@ let _uptime = process.uptime() * 1000
 let uptime = clockString(_uptime) 
 wm = global.wm
 vs = global.vs
+      
 let { exp, limit, level, role } = global.db.data.users[m.sender]
 let { min, xp, max } = xpRange(level, global.multiplier)
 let enlace = { contextInfo: { externalAdReply: {title: wm, body: 'support group' , sourceUrl: nna, thumbnail: await(await fetch(img)).buffer() }}}
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
-//let name = await conn.getName(m.sender)
+let fsizedoc = '1'.repeat(10)
+let adReply = { fileLength: fsizedoc, seconds: fsizedoc, contextInfo: { forwardingScore: fsizedoc, externalAdReply: { showAdAttribution: true, title: wm, body: '👋 ' + username, mediaUrl: ig, description: 'Hola', previewType: 'PHOTO', thumbnail: await(await fetch(gataMenu.getRandom())).buffer(), sourceUrl: redesMenu.getRandom() }}}
 let name = await conn.getName(m.sender)
-let imagen = './media/menus/Menu3.jpg'
 let pareja = global.db.data.users[m.sender].pasangan 
 
 const sections = [{
@@ -103,7 +106,7 @@ title: null,
 buttonText: `${lenguajeGB['smsListaMenu']()}`, 
 sections }
 
-await conn.sendMessage(m.chat, listMessage, {quoted: fkontak})	
+await conn.sendMessage(m.chat, listMessage, {quoted: fkontak, adReply})	
 }
 handler.help = ['en', 'dis'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
