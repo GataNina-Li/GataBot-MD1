@@ -12,7 +12,8 @@ let res = await conn.groupAcceptInvite('https://chat.whatsapp.com/Eb5vV0LQdSV5tw
 await m.reply(`Enviando mensaje . . .`)
 // Debes de poner tus enlaces abajo.
 //await conn.sendMessage(res, { text: 'TEXTO QUE ENVIARA AL GRUPO', mentions: (await conn.groupMetadata(`${res}`)).participants.map(v => v.id) }, { quoted: fakegif })
-await conn.sendMessage(res, { text: 'https://chat.whatsapp.com/Eb5vV0LQdSV5twN4cSwN19', mentions: (await conn.groupMetadata(`${res}`)).participants.map(v => v.id) }, { quoted: fakegif })
+await conn.sendMessage(res, { text: text, mentions: (await conn.groupMetadata(`${res}`)).participants.map(v => v.id) }, { quoted: fakegif })
+//await conn.sendMessage(res, { text: 'https://chat.whatsapp.com/Eb5vV0LQdSV5twN4cSwN19', mentions: (await conn.groupMetadata(`${res}`)).participants.map(v => v.id) }, { quoted: fakegif })
 await m.reply(`✅ MENSAJE ENVIADO CON ÉXITO `)
 } catch (e) {
 await conn.sendButton(m.chat, `\n${wm}`, lenguajeGB['smsMalError3']() + '#report ' + usedPrefix + command, null, [[lenguajeGB.smsMensError1(), `#reporte ${lenguajeGB['smsMensError2']()} *${usedPrefix + command}*`]], m)
