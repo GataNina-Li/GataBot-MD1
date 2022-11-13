@@ -58,52 +58,17 @@ global.frep = { contextInfo: { externalAdReply: {title: wm, body: author, source
   amount: 10000,
   background: './media/menus/Menu3.jpg'
 }}}}, {})*/ //MENSAJE DE PAGO
-	
 
-//await conn.reply(m.chat, `*Prueba*`, ftroli, m)
-//await conn.sendButton(m.chat, `*Prueba*`, wm, pp, [[' Menu', '/menu']], kal, m)	
-//await conn.sendButtonImg(m.chat, pp, wm, author, 'M E N U', '.menu', fpayment)
-	
-	
-//let res = await (await fetch('https://raw.githubusercontent.com/Luigmntng/RESTAPI/master/data/cosplayloli.json')).json()
-//let cosser = res[Math.floor(Math.random() * res.length)]
-//await conn.sendButtonImg(m.chat, cosser, 'Texto1', 'Texto2', 'Boton', `.boton`, m, false)
-	
 //let vid = 'https://blogscvc.cervantes.es/martes-neologico/wp-content/uploads/sites/2/2021/08/gif_350.gif'
-let vid = './media/menus/Menuvid1.mp4'
+//let vid = './media/menus/Menuvid1.mp4'
 	
-let adReply = {
-		fileLength: fsizedoc, seconds: fsizedoc,
-			contextInfo: {
-				forwardingScore: fsizedoc,
-				externalAdReply: {
-					showAdAttribution: true,
-					title: wm,
-					body: '👋 ' + name,
-					mediaUrl: sgc,
-					description: botdate,
-					previewType: 'PHOTO',
-					thumbnail: await(await fetch(pp)).buffer(),
-					sourceUrl: sgh
-				}
-			}
-		}
-	
+/*let adReply = { fileLength: fsizedoc, seconds: fsizedoc, contextInfo: { forwardingScore: fsizedoc, externalAdReply: { showAdAttribution: true, title: wm, body: '👋 ' + username, mediaUrl: ig, description: 'Hola', previewType: 'PHOTO', thumbnail: await(await fetch(gataMenu.getRandom())).buffer(), sourceUrl: redesMenu.getRandom() }}}	
 let sipp = await conn.resize(pp, 150, 150)
-let fakes = {
-			key: {
-				participant: '0@s.whatsapp.net', remoteJid: 'status@broadcast'
-			},
-			message: {
-				documentMessage: {
-					title: wm,
-					jpegThumbnail: sipp
-				}
-			}
-		}
-conn.sendButtonVid(m.chat, vid, `*Texto1*`, wm, 'Boton', '.tomp3', 'Boton2', '.tomp3', 'Boton3', '.tomp3', fkontak, adReply)//, fakes, adReply)
-}
+let fakes = { key: { participant: '0@s.whatsapp.net', remoteJid: 'status@broadcast' }, message: { documentMessage: { title: wm, jpegThumbnail: sipp}}}*/
+//LA FUNCIÓN DE fakes Y adReply CREA UN DINÁMICO DE DOBLE DISEÑO PARA sendButton Y sendButtonVid
 
+//conn.sendButtonVid(m.chat, vid, `*Texto1*`, wm, 'Boton', '.tomp3', 'Boton2', '.tomp3', 'Boton3', '.tomp3', fkontak, adReply)//, fakes, adReply)
+}
 handler.command = /^(fake)$/i
 export default handler
 
