@@ -101,7 +101,7 @@ let fakes = {
 				}
 			}
 		}
-conn.sendButtonVid(m.chat, vid, `*Texto1*`, wm, 'Boton', '.tomp3', fakes, adReply)
+conn.sendButtonVid(m.chat, vid, `*Texto1*`, wm, 'Boton', '.tomp3')//, fakes, adReply)
 }
 
 handler.command = /^(fake)$/i
