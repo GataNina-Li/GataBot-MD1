@@ -63,6 +63,11 @@ global.frep = { contextInfo: { externalAdReply: {title: wm, body: author, source
 //await conn.reply(m.chat, `*Prueba*`, ftroli, m)
 //await conn.sendButton(m.chat, `*Prueba*`, wm, pp, [[' Menu', '/menu']], kal, m)	
 //await conn.sendButtonImg(m.chat, pp, wm, author, 'M E N U', '.menu', fpayment)
+	
+	
+let res = await (await fetch('https://raw.githubusercontent.com/Luigmntng/RESTAPI/master/data/cosplayloli.json')).json()
+let cosser = res[Math.floor(Math.random() * res.length)]
+await conn.sendButtonImg(m.chat, cosser, 'Texto1', 'Texto2', 'Boton', `.boton`, m, false)	
 }
 
 handler.command = /^(fake)$/i
