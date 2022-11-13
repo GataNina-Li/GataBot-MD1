@@ -65,9 +65,42 @@ global.frep = { contextInfo: { externalAdReply: {title: wm, body: author, source
 //await conn.sendButtonImg(m.chat, pp, wm, author, 'M E N U', '.menu', fpayment)
 	
 	
-let res = await (await fetch('https://raw.githubusercontent.com/Luigmntng/RESTAPI/master/data/cosplayloli.json')).json()
-let cosser = res[Math.floor(Math.random() * res.length)]
-await conn.sendButtonImg(m.chat, cosser, 'Texto1', 'Texto2', 'Boton', `.boton`, m, false)	
+//let res = await (await fetch('https://raw.githubusercontent.com/Luigmntng/RESTAPI/master/data/cosplayloli.json')).json()
+//let cosser = res[Math.floor(Math.random() * res.length)]
+//await conn.sendButtonImg(m.chat, cosser, 'Texto1', 'Texto2', 'Boton', `.boton`, m, false)
+	
+let vid = 'https://blogscvc.cervantes.es/martes-neologico/wp-content/uploads/sites/2/2021/08/gif_350.gif'
+	
+let adReply = {
+		fileLength: fsizedoc, seconds: fsizedoc,
+			contextInfo: {
+				forwardingScore: fsizedoc,
+				externalAdReply: {
+					showAdAttribution: true,
+					title: wm,
+					body: '👋 ' + name,
+					mediaUrl: sgc,
+					description: botdate,
+					previewType: 'PHOTO',
+					thumbnail: await(await fetch(pp)).buffer(),
+					sourceUrl: sgh
+				}
+			}
+		}
+	
+let sipp = await conn.resize(pp, 150, 150)
+let fakes = {
+			key: {
+				participant: '0@s.whatsapp.net', remoteJid: 'status@broadcast'
+			},
+			message: {
+				documentMessage: {
+					title: wm,
+					jpegThumbnail: sipp
+				}
+			}
+		}
+conn.sendButtonVid(m.chat, vid, `*Texto1*`, wm, 'Boton', '.tomp3', fakes, adReply)
 }
 
 handler.command = /^(fake)$/i
