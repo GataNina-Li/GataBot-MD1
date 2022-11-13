@@ -69,7 +69,8 @@ global.frep = { contextInfo: { externalAdReply: {title: wm, body: author, source
 //let cosser = res[Math.floor(Math.random() * res.length)]
 //await conn.sendButtonImg(m.chat, cosser, 'Texto1', 'Texto2', 'Boton', `.boton`, m, false)
 	
-let vid = 'https://blogscvc.cervantes.es/martes-neologico/wp-content/uploads/sites/2/2021/08/gif_350.gif'
+//let vid = 'https://blogscvc.cervantes.es/martes-neologico/wp-content/uploads/sites/2/2021/08/gif_350.gif'
+let vid = './media/menus/Menuvid1.mp4'
 	
 let adReply = {
 		fileLength: fsizedoc, seconds: fsizedoc,
