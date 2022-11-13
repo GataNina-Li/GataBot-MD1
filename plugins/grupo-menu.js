@@ -2,12 +2,11 @@ import { xpRange } from '../lib/levelling.js'
 import PhoneNumber from 'awesome-phonenumber'
 import { promises } from 'fs'
 import { join } from 'path'
-let handler = async (m, { conn, usedPrefix, command, args, usedPrefix: _p, __dirname, isOwner, text, isAdmin, isROwner }) => {
-  
-  
-const { levelling } = '../lib/levelling.js'
-//let handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text }) => {
+import fetch from 'node-fetch'
 
+let handler = async (m, { conn, usedPrefix, command, args, usedPrefix: _p, __dirname, isOwner, text, isAdmin, isROwner }) => {
+try{
+const { levelling } = '../lib/levelling.js'
 let { exp, limit, level, role } = global.db.data.users[m.sender]
 let { min, xp, max } = xpRange(level, global.multiplier)
 
@@ -59,78 +58,75 @@ readmore: readMore
 }
 text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
   
-//let name = await conn.getName(m.sender)
-let pp = './media/menus/Menuvid1.mp4'
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 let mentionedJid = [who]
 let username = conn.getName(who)
-//let user = global.db.data.users[m.sender]
+let user = global.db.data.users[m.sender]
 //user.registered = false
 
+let pp = gataVidMenu.getRandom()
+let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
+let fsizedoc = '1'.repeat(10)
+let adReply = { fileLength: fsizedoc, seconds: fsizedoc, contextInfo: { forwardingScore: fsizedoc, externalAdReply: { showAdAttribution: true, title: wm, body: '👋 ' + username, mediaUrl: ig, description: 'Hola', previewType: 'PHOTO', thumbnail: await(await fetch(gataMenu.getRandom())).buffer(), sourceUrl: redesMenu.getRandom() }}}
 
-let menu = `
-💗 *¡HOLA | HI!* ${username}
-╭━〔 *${wm}* 〕━⬣
-┃🔰🔰🔰🔰🔰🔰🔰🔰🔰 
-┃✪ *EXPERIENCIA | EXP ➺ ${exp}*
-┃✪ *NIVEL | LEVEL ➺ ${level}*
-┃✪ *ROL ➺* ${role}
-┃✪ *GATACOINS ➺ $ ${money}*
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃✪ *FECHA*
-┃➺ *${week}, ${date}*
-┃✪ *USUARIOS | USERS ➺ ${Object.keys(global.db.data.users).length}* 
-┃🔰🔰🔰🔰🔰🔰🔰🔰🔰
-╰━━━━〔 𓃠 *${vs}* 〕━━━━⬣
+let menuA = `🔰 ${lenguajeGB['smsConfi2']()} *${username}*`.trim()
+let menuB = `╭┄〔 *${wm}* 〕┄⊱
+┊დ *${week}, ${date}*
+┊დ *${lenguajeGB['smsBotonM4']()} » ${Object.keys(global.db.data.users).length}* 
+┊
+┊დ *${lenguajeGB['smsBotonM5']()} »* ${role}
+┊დ *${lenguajeGB['smsBotonM6']()} » ${level}*
+┊დ *${lenguajeGB['smsBotonM7']()} »* ${user.premiumTime > 0 ? '✅' : '❌'}
+╰┄┄┄┄〔 *𓃠 ${vs}* 〕┄┄┄┄⊱
 
-╭━〔 𝙈𝙀𝙉𝙐 𝘿𝙀 𝙂𝙍𝙐𝙋𝙊 | 𝙂𝙍𝙊𝙐𝙋 〕━⬣
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃🌐➺ _${usedPrefix}add *numero*_
-┃🌐➺ _${usedPrefix}sacar | ban | kick  *@tag*_
-┃🌐➺ _${usedPrefix}grupo *abrir : cerrar*_
-┃🌐➺ _${usedPrefix}group *open : close*_
-┃🌐➺ _${usedPrefix}daradmin | promote *@tag*_
-┃🌐➺ _${usedPrefix}quitar | demote *@tag*_
-┃🌐➺ _${usedPrefix}banchat_
-┃🌐➺ _${usedPrefix}unbanchat_
-┃🌐➺ _${usedPrefix}banuser *@tag*_
-┃🌐➺ _${usedPrefix}unbanuser *@tag*_
-┃🌐➺ _${usedPrefix}admins *texto*_
-┃🌐➺ _${usedPrefix}invocar *texto*_
-┃🌐➺ _${usedPrefix}tagall *texto*_
-┃🌐➺ _${usedPrefix}hidetag *texto*_
-┃🌐➺ _${usedPrefix}infogrupo | infogroup_
-┃🌐➺ _${usedPrefix}configuracion_
-┃🌐➺ _${usedPrefix}settings_
-┃🌐➺ _${usedPrefix}vergrupo_
-┃🌐➺ _${usedPrefix}advertencia *@tag*_
-┃🌐➺ _${usedPrefix}deladvertencia *@tag*_
-┃🌐➺ _${usedPrefix}delwarn *@tag*_
-┃🌐➺ _${usedPrefix}crearvoto | startvoto *texto*_
-┃🌐➺ _${usedPrefix}sivotar | upvote_
-┃🌐➺ _${usedPrefix}novotar | devote_
-┃🌐➺ _${usedPrefix}vervotos | cekvoto_
-┃🌐➺ _${usedPrefix}delvoto | deletevoto_
-┃🌐➺ _${usedPrefix}enlace | link_
-┃🌐➺ _${usedPrefix}newnombre | setname *texto*_
-┃🌐➺ _${usedPrefix}newdesc | setdesc *texto*_
-┃🌐➺ _${usedPrefix}setwelcome *texto*_
-┃🌐➺ _${usedPrefix}setbye *texto*_
-┃🌐➺ _${usedPrefix}on_
-┃🌐➺ _${usedPrefix}off_
-╰━━━━━━━━━━━━━━━━⬣`.trim()
-conn.sendHydrated(m.chat, menu, wm, pp, 'https://github.com/GataNina-Li/GataBot-MD', '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
-['𝙈𝙚𝙣𝙪́ 𝙘𝙤𝙢𝙥𝙡𝙚𝙩𝙤 | 𝙁𝙪𝙡𝙡 𝙈𝙚𝙣𝙪 💫', '.allmenu'],
-['𝙄𝙣𝙫𝙚𝙣𝙩𝙖𝙧𝙞𝙤 | 𝙄𝙣𝙫𝙚𝙣𝙩𝙤𝙧𝙮 🎒', '/inventario'],
-['𝙈𝙚𝙣𝙪 𝙋𝙧𝙞𝙣𝙘𝙞𝙥𝙖𝙡 | 𝙈𝙖𝙞𝙣 𝙢𝙚𝙣𝙪 ⚡', '#menu']
-], m,)
-}
+⠇ ${lenguajeGB['smsTex11']()} 🌐
+∘ _${usedPrefix}add *numero*_
+∘ _${usedPrefix}sacar | ban | kick  *@tag*_
+∘ _${usedPrefix}grupo *abrir : cerrar*_
+∘ _${usedPrefix}group *open : close*_
+∘ _${usedPrefix}daradmin | promote *@tag*_
+∘ _${usedPrefix}quitar | demote *@tag*_
+∘ _${usedPrefix}banchat_
+∘ _${usedPrefix}unbanchat_
+∘ _${usedPrefix}banuser *@tag*_
+∘ _${usedPrefix}unbanuser *@tag*_
+∘ _${usedPrefix}admins *texto*_
+∘ _${usedPrefix}invocar *texto*_
+∘ _${usedPrefix}tagall *texto*_
+∘ _${usedPrefix}hidetag *texto*_
+∘ _${usedPrefix}infogrupo | infogroup_
+∘ _${usedPrefix}configuracion_
+∘ _${usedPrefix}settings_
+∘ _${usedPrefix}vergrupo_
+∘ _${usedPrefix}advertencia *@tag*_
+∘ _${usedPrefix}deladvertencia *@tag*_
+∘ _${usedPrefix}delwarn *@tag*_
+∘ _${usedPrefix}crearvoto | startvoto *texto*_
+∘ _${usedPrefix}sivotar | upvote_
+∘ _${usedPrefix}novotar | devote_
+∘ _${usedPrefix}vervotos | cekvoto_
+∘ _${usedPrefix}delvoto | deletevoto_
+∘ _${usedPrefix}enlace | link_
+∘ _${usedPrefix}newnombre | setname *texto*_
+∘ _${usedPrefix}newdesc | setdesc *texto*_
+∘ _${usedPrefix}setwelcome *texto*_
+∘ _${usedPrefix}setbye *texto*_
+∘ _${usedPrefix}on_
+∘ _${usedPrefix}off_
+`.trim()
+await conn.sendButtonVid(m.chat, pp, menuA, menuB, lenguajeGB.smsBotonM1(), '.menu', lenguajeGB.smsBotonM2(), '/allmenu', lenguajeGB.smsBotonM3(), '#inventario', fkontak, adReply)
+
+} catch (e) {
+await conn.sendButton(m.chat, `\n${wm}`, lenguajeGB['smsMalError3']() + '#report ' + usedPrefix + command, null, [[lenguajeGB.smsMensError1(), `#reporte ${lenguajeGB['smsMensError2']()} *${usedPrefix + command}*`]], m)
+console.log(`❗❗ ${lenguajeGB['smsMensError2']()} ${usedPrefix + command} ❗❗`)
+console.log(e)	
+}}
 
 handler.help = ['infomenu'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
 handler.command = /^(grupomenu)$/i
 //handler.register = true
-handler.exp = 70
+handler.exp = 50
 export default handler
 
 const more = String.fromCharCode(8206)
