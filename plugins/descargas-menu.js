@@ -2,12 +2,11 @@ import { xpRange } from '../lib/levelling.js'
 import PhoneNumber from 'awesome-phonenumber'
 import { promises } from 'fs'
 import { join } from 'path'
-let handler = async (m, { conn, usedPrefix, command, args, usedPrefix: _p, __dirname, isOwner, text, isAdmin, isROwner }) => {
-  
-  
-const { levelling } = '../lib/levelling.js'
-//let handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text }) => {
+import fetch from 'node-fetch'
 
+let handler = async (m, { conn, usedPrefix, command, args, usedPrefix: _p, __dirname, isOwner, text, isAdmin, isROwner }) => {
+try{ 
+const { levelling } = '../lib/levelling.js'
 let { exp, limit, level, role } = global.db.data.users[m.sender]
 let { min, xp, max } = xpRange(level, global.multiplier)
 
@@ -58,89 +57,63 @@ level, limit, weton, week, date, dateIslamic, time, totalreg, rtotalreg, role,
 readmore: readMore
 }
 text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-  
 
-/*const sections = [
-{
-title: `𝙇𝙄𝙎𝙏𝘼 𝘿𝙀𝙎𝙋𝙇𝙀𝙂𝘼𝘽𝙇𝙀 | 𝘿𝙍𝙊𝙋-𝘿𝙊𝙒𝙉 𝙇𝙄𝙎𝙏`,
-rows: [
-{title: "❇️ 𝙈𝙚𝙣𝙪 𝙋𝙧𝙞𝙣𝙘𝙞𝙥𝙖𝙡 |  𝘿𝙖𝙨𝙝𝙗𝙤𝙖𝙧𝙙 ❇️", description: null, rowId: `${usedPrefix}menu`},
-{title: "✳️ 𝙈𝙚𝙣𝙪 𝘾𝙤𝙢𝙥𝙡𝙚𝙩𝙤 | 𝙁𝙪𝙡𝙡 𝙈𝙚𝙣𝙪 ✳️", description: null, rowId: `${usedPrefix}allmenu`},
-{title: "✅ 𝘾𝙪𝙚𝙣𝙩𝙖𝙨 𝙊𝙛𝙞𝙘𝙞𝙖𝙡𝙚𝙨 | 𝘼𝙘𝙘𝙤𝙪𝙣𝙩𝙨 ✅", description: null, rowId: `${usedPrefix}cuentasgatabot`},
-{title: "🚀 𝙄𝙢𝙖𝙜𝙚𝙣 𝙙𝙚 𝙂𝙤𝙤𝙜𝙡𝙚 | 𝙂𝙤𝙤𝙜𝙡𝙚 𝙄𝙢𝙖𝙜𝙚 🚀", description: "𝘿𝙀𝙎𝘾𝘼𝙍𝙂𝘼𝙍 𝙄𝙈𝘼𝙂𝙀𝙉 𝘿𝙀 𝙂𝙊𝙊𝙂𝙇𝙀\n𝘿𝙊𝙒𝙉𝙇𝙊𝘼𝘿 𝙄𝙈𝘼𝙂𝙀 𝙁𝙍𝙊𝙈 𝙂𝙊𝙊𝙂𝙇𝙀", rowId: `${usedPrefix}imagen`},
-{title: "🚀 𝙄𝙢𝙖𝙜𝙚𝙣 𝙙𝙚 𝙋𝙞𝙣𝙩𝙚𝙧𝙚𝙨𝙩 | 𝙄𝙢𝙖𝙜𝙚 𝙛𝙧𝙤𝙢 𝙋𝙞𝙣𝙩𝙚𝙧𝙚𝙨𝙩 🚀", description: "𝙋𝙐𝙀𝘿𝙀𝙎 𝘿𝙀𝙎𝘾𝘼𝙍𝙂𝘼𝙍 𝙄𝙈𝘼𝙂𝙀𝙉𝙀𝙎 𝘿𝙀 𝙋𝙄𝙉𝙏𝙀𝙍𝙀𝙎𝙏\n𝙔𝙊𝙐 𝘾𝘼𝙉 𝘿𝙊𝙒𝙉𝙇𝙊𝘼𝘿 𝙄𝙈𝘼𝙂𝙀𝙎 𝙁𝙍𝙊𝙈 𝙋𝙄𝙉𝙏𝙀𝙍𝙀𝙎𝙏", rowId: `${usedPrefix}pinterest`},
-{title: "🚀 𝙄𝙢𝙖𝙜𝙚𝙣𝙚𝙨 𝙙𝙚 𝙁𝙤𝙣𝙙𝙤 | 𝙒𝙖𝙡𝙡𝙥𝙖𝙥𝙚𝙧 🚀", description: "𝘿𝙀𝙎𝘾𝘼𝙍𝙂𝘼 𝙄𝙈𝘼𝙂𝙀𝙎 𝘿𝙀 𝙁𝙊𝙉𝘿𝙊\n𝘿𝙊𝙒𝙉𝙇𝙊𝘼𝘿 𝘽𝘼𝘾𝙆𝙂𝙍𝙊𝙐𝙉𝘿 𝙄𝙈𝘼𝙂𝙀𝙎", rowId: `${usedPrefix}wallpaper`},
-{title: "🚀 𝘿𝙚𝙨𝙘𝙖𝙧𝙜𝙖𝙨 𝙙𝙚 𝙔𝙤𝙪𝙏𝙪𝙗𝙚 | 𝙋𝙡𝙖𝙮𝙨 🚀", description: "𝘿𝙀𝙎𝘾𝘼𝙍𝙂𝘼 𝙑𝙄𝘿𝙀𝙊𝙎 𝙊 𝘼𝙐𝘿𝙄𝙊𝙎 𝙐𝙎𝘼𝙉𝘿𝙊 𝙀𝙇 𝙉𝙊𝙈𝘽𝙍𝙀 𝙊 𝙀𝙉𝙇𝘼𝘾𝙀 \n𝘿𝙊𝙒𝙉𝙇𝙊𝘼𝘿 𝙑𝙄𝘿𝙀𝙊𝙎 𝙊𝙍 𝘼𝙐𝘿𝙄𝙊𝙎 𝙉𝘼𝙈𝙀 𝙊𝙍 𝙇𝙄𝙉𝙆", rowId: `${usedPrefix}play`},
-{title: "🚀 𝘼𝙪𝙙𝙞𝙤𝙨 𝙙𝙚 𝙔𝙤𝙪𝙏𝙪𝙗𝙚 | 𝙋𝙡𝙖𝙮 𝘼𝙪𝙙𝙞𝙤 🚀", description: "𝘿𝙀𝙎𝘾𝘼𝙍𝙂𝘼 𝘼𝙐𝘿𝙄𝙊𝙎 𝙐𝙎𝘼𝙉𝘿𝙊 𝙐𝙉 𝙀𝙉𝙇𝘼𝘾𝙀\n𝘿𝙊𝙒𝙉𝙇𝙊𝘼𝘿 𝘼𝙐𝘿𝙄𝙊𝙎 𝙐𝙎𝙄𝙉𝙂 𝘼 𝙇𝙄𝙉𝙆", rowId: `${usedPrefix}yta`},
-{title: "🚀 𝙑𝙞𝙙𝙚𝙤𝙨 𝙙𝙚 𝙔𝙤𝙪𝙏𝙪𝙗𝙚 | 𝙋𝙡𝙖𝙮 𝙑𝙞𝙙𝙚𝙤 🚀", description: "𝘿𝙀𝙎𝘾𝘼𝙍𝙂𝘼 𝙑𝙄𝘿𝙀𝙊𝙎 𝙐𝙎𝘼𝙉𝘿𝙊 𝙐𝙉 𝙀𝙉𝙇𝘼𝘾𝙀\n𝘿𝙊𝙒𝙉𝙇𝙊𝘼𝘿 𝙑𝙄𝘿𝙀𝙊𝙎 𝙐𝙎𝙄𝙉𝙂 𝘼 𝙇𝙄𝙉𝙆", rowId: `${usedPrefix}ytv`},
-{title: "🚀 𝙑𝙞𝙙𝙚𝙤𝙨 𝙙𝙚 𝙁𝙖𝙘𝙚𝙗𝙤𝙤𝙠 | 𝙁𝙖𝙘𝙚𝙗𝙤𝙤𝙠 𝙑𝙞𝙙𝙚𝙤 🚀", description: "𝘿𝙀𝙎𝘾𝘼𝙍𝙂𝘼 𝙑𝙄𝘿𝙀𝙊𝙎 𝘿𝙀 𝙁𝘼𝘾𝙀𝘽𝙊𝙊𝙆 𝘾𝙊𝙉 𝙐𝙉 𝙀𝙉𝙇𝘼𝘾𝙀\n𝘿𝙊𝙒𝙉𝙇𝙊𝘼𝘿 𝙑𝙄𝘿𝙀𝙊𝙎 𝙁𝙍𝙊𝙈 𝙁𝘼𝘾𝙀𝘽𝙊𝙊𝙆 𝙒𝙄𝙏𝙃 𝘼 𝙇𝙄𝙉𝙆", rowId: `${usedPrefix}facebook`},
-{title: "🚀 𝘿𝙚𝙨𝙘𝙖𝙧𝙜𝙖𝙨 𝙙𝙚 𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢 | 𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢 𝘿𝙤𝙬𝙣𝙡𝙤𝙖𝙙𝙨 🚀", description: "𝘿𝙀𝙎𝘾𝘼𝙍𝙂𝘼 𝙑𝙄𝘿𝙀𝙊𝙎 𝙊 𝙄𝙈𝘼𝙂𝙀𝙉𝙀𝙎 𝘿𝙀 𝙄𝙉𝙎𝙏𝘼𝙂𝙍𝘼𝙈 𝘾𝙊𝙉 𝙐𝙉 𝙀𝙉𝙇𝘼𝘾𝙀\n𝘿𝙊𝙒𝙉𝙇𝙊𝘼𝘿 𝙑𝙄𝘿𝙀𝙊𝙎 𝙊𝙍 𝙄𝙈𝘼𝙂𝙀𝙎 𝙁𝙍𝙊𝙈 𝙄𝙉𝙎𝙏𝘼𝙂𝙍𝘼𝙈 𝙇𝙄𝙉𝙆", rowId: `${usedPrefix}instagram`},
-{title: "🚀 𝙐𝙨𝙪𝙖𝙧𝙞𝙤 𝙙𝙚 𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢 | 𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢 𝙐𝙨𝙚𝙧 🚀", description: "𝙑𝙄𝙎𝙐𝘼𝙇𝙄𝙕𝘼𝙍 𝙐𝙎𝙐𝘼𝙍𝙄𝙊 𝘿𝙀 𝙄𝙉𝙎𝙏𝘼𝙂𝙍𝘼𝙈\n𝙑𝙄𝙀𝙒 𝙄𝙉𝙎𝙏𝘼𝙂𝙍𝘼𝙈 𝙐𝙎𝙀𝙍", rowId: `${usedPrefix}igstalk`},
-{title: "🚀 𝙃𝙞𝙨𝙩𝙤𝙧𝙞𝙖𝙨 𝙙𝙚 𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢 | 𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢 𝙎𝙩𝙤𝙧𝙞𝙚𝙨 🚀", description: "𝘿𝙀𝙎𝘾𝘼𝙍𝙂𝘼𝙍 𝙇𝘼𝙎 𝙃𝙄𝙎𝙏𝙊𝙍𝙄𝘼𝙎\n𝘿𝙊𝙒𝙉𝙇𝙊𝘼𝘿 𝙏𝙃𝙀 𝙎𝙏𝙊𝙍𝙄𝙀𝙎", rowId: `${usedPrefix}igstory`},   
-{title: "🚀 𝘿𝙚𝙨𝙘𝙖𝙧𝙜𝙖𝙨 𝙙𝙚 𝙏𝙞𝙠𝙏𝙤𝙠 | 𝙏𝙞𝙠𝙏𝙤𝙠 𝘿𝙤𝙬𝙣𝙡𝙤𝙖𝙙𝙨 🚀", description: "𝘿𝙀𝙎𝘾𝘼𝙍𝙂𝘼 𝙑𝙄𝘿𝙀𝙊𝙎 𝘿𝙀 𝙏𝙄𝙆𝙏𝙊𝙆 𝘾𝙊𝙉 𝙐𝙉 𝙀𝙉𝙇𝘼𝘾𝙀\n𝘿𝙊𝙒𝙉𝙇𝙊𝘼𝘿 𝙏𝙄𝙆𝙏𝙊𝙆 𝙑𝙄𝘿𝙀𝙊𝙎 𝙒𝙄𝙏𝙃 𝘼 𝙇𝙄𝙉𝙆", rowId: `${usedPrefix}tiktok`},    
-{title: "🚀 𝙁𝙤𝙩𝙤 𝙙𝙚 𝙐𝙨𝙪𝙖𝙧𝙞𝙤 𝙙𝙚 𝙏𝙞𝙠𝙏𝙤𝙠 | 𝙏𝙞𝙠𝙏𝙤𝙠 𝙐𝙨𝙚𝙧 𝙋𝙝𝙤𝙩𝙤 🚀", description: "𝘿𝙀𝙎𝘾𝘼𝙍𝙂𝘼 𝙇𝘼 𝙁𝙊𝙏𝙊 𝙐𝙎𝘼𝙉𝘿𝙊 𝙀𝙇 𝙐𝙎𝙐𝘼𝙍𝙄𝙊 𝘿𝙀 𝙏𝙄𝙆𝙏𝙊𝙆\n𝘿𝙊𝙒𝙉𝙇𝙊𝘼𝘿 𝙏𝙃𝙀 𝙋𝙃𝙊𝙏𝙊 𝙐𝙎𝙄𝙉𝙂 𝙏𝙄𝙆𝙏𝙊𝙆 𝙐𝙎𝙀𝙍𝙉𝘼𝙈𝙀", rowId: `${usedPrefix}tiktokfoto`},      
-{title: "🚀 𝘿𝙚𝙩𝙖𝙡𝙡𝙚𝙨 𝙙𝙚 𝙐𝙨𝙪𝙖𝙧𝙞𝙤 𝙙𝙚 𝙏𝙞𝙠𝙏𝙤𝙠 | 𝙏𝙞𝙠𝙏𝙤𝙠 𝙐𝙨𝙚𝙧 𝘿𝙚𝙩𝙖𝙞𝙡𝙨 🚀", description: "𝘾𝙊𝙉𝙊𝘾𝙀 𝙈𝘼𝙎 𝙐𝙎𝘼𝙉𝘿𝙊 𝙀𝙇 𝙐𝙎𝙐𝘼𝙍𝙄𝙊 𝘿𝙀 𝙏𝙄𝙆𝙏𝙊𝙆\n𝙇𝙀𝘼𝙍𝙉 𝙈𝙊𝙍𝙀 𝙐𝙎𝙄𝙉𝙂 𝙏𝙃𝙀 𝙏𝙄𝙆𝙏𝙊𝙆 𝙐𝙎𝙀𝙍𝙉𝘼𝙈𝙀", rowId: `${usedPrefix}vertiktok`},    
-{title: "🚀 𝘿𝙚𝙨𝙘𝙖𝙜𝙖𝙧 𝙘𝙤𝙣 𝙈𝙚𝙙𝙞𝙖𝙁𝙞𝙧𝙚 | 𝘿𝙤𝙬𝙣𝙡𝙤𝙖𝙙 𝙈𝙚𝙙𝙞𝙖𝙁𝙞𝙧𝙚 🚀", description: "𝙐𝙎𝘼 𝙐𝙉 𝙀𝙉𝙇𝘼𝘾𝙀 𝙑𝘼𝙇𝙄𝘿𝙊 𝘿𝙀 𝙈𝙀𝘿𝙄𝘼𝙁𝙄𝙍𝙀\n𝙐𝙎𝙀 𝘼 𝙑𝘼𝙇𝙄𝘿 𝙈𝙀𝘿𝙄𝘼𝙁𝙄𝙍𝙀 𝙇𝙄𝙉𝙆", rowId: `${usedPrefix}mediafire`},
-{title: "🚀 𝘿𝙚𝙨𝙘𝙖𝙧𝙜𝙖𝙧 𝙍𝙚𝙥𝙤𝙨𝙞𝙩𝙤𝙧𝙞𝙤 | 𝘿𝙤𝙬𝙣𝙡𝙤𝙖𝙙 𝙍𝙚𝙥𝙤𝙨𝙞𝙩𝙤𝙧𝙮 🚀", description: "𝙐𝙎𝘼 𝙐𝙉 𝙀𝙉𝙇𝘼𝘾𝙀 𝘿𝙀 𝙍𝙀𝙋𝙊𝙎𝙄𝙏𝙊𝙍𝙄𝙊 𝘿𝙀 𝙂𝙄𝙏𝙃𝙐𝘽\n𝙐𝙎𝙀 𝘼 𝙂𝙄𝙏𝙃𝙐𝘽 𝙍𝙀𝙋𝙊𝙎𝙄𝙏𝙊𝙍𝙔 𝙇𝙄𝙉𝙆", rowId: `${usedPrefix}gitclone`},
-]}, ] */
-//let name = await conn.getName(m.sender)
-let pp = './media/menus/Menuvid1.mp4'  
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 let mentionedJid = [who]
 let username = conn.getName(who)
-//let user = global.db.data.users[m.sender]
+let user = global.db.data.users[m.sender]
 //user.registered = false
+  
+let pp = gataVidMenu.getRandom()
+let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
+let fsizedoc = '1'.repeat(10)
+let adReply = { fileLength: fsizedoc, seconds: fsizedoc, contextInfo: { forwardingScore: fsizedoc, externalAdReply: { showAdAttribution: true, title: wm, body: '👋 ' + username, mediaUrl: ig, description: 'Hola', previewType: 'PHOTO', thumbnail: await(await fetch(gataMenu.getRandom())).buffer(), sourceUrl: redesMenu.getRandom() }}}
 
-let menu = `
-💗 *¡HOLA | HI!* ${username}
-╭━〔 *${wm}* 〕━⬣
-┃🪄🪄🪄🪄🪄🪄🪄🪄🪄
-┃✪ *EXPERIENCIA | EXP ➺ ${exp}*
-┃✪ *NIVEL | LEVEL ➺ ${level}*
-┃✪ *ROL ➺* ${role}
-┃✪ *GATACOINS ➺ $ ${money}*
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃✪ *FECHA*
-┃➺ *${week}, ${date}*
-┃✪ *USUARIOS | USERS ➺ ${Object.keys(global.db.data.users).length}* 
-┃🪄🪄🪄🪄🪄🪄🪄🪄🪄
-╰━━━━〔 𓃠 *${vs}* 〕━━━━⬣
+let menuA = `🪄 ${lenguajeGB['smsConfi2']()} *${username}*`.trim()
+let menuB = `╭┄〔 *${wm}* 〕┄⊱
+┊დ *${week}, ${date}*
+┊დ *${lenguajeGB['smsBotonM4']()} » ${Object.keys(global.db.data.users).length}* 
+┊
+┊დ *${lenguajeGB['smsBotonM5']()} »* ${role}
+┊დ *${lenguajeGB['smsBotonM6']()} » ${level}*
+┊დ *${lenguajeGB['smsBotonM7']()} »* ${user.premiumTime > 0 ? '✅' : '❌'}
+╰┄┄┄┄〔 *𓃠 ${vs}* 〕┄┄┄┄⊱
 
-╭━〔 𝘿𝙀𝙎𝘾𝘼𝙍𝙂𝘼𝙎 | 𝘿𝙊𝙒𝙉𝙇𝙊𝘼𝘿𝙎 〕━⬣
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃🚀➺ _${usedPrefix}imagen | image *texto*_
-┃🚀➺ _${usedPrefix}pinterest | dlpinterest *texto*_
-┃🚀➺ _${usedPrefix}wallpaper|wp *texto*_
-┃🚀➺ _${usedPrefix}play | play2 *texto o link*_
-┃🚀➺ _${usedPrefix}play.1 *texto o link*_
-┃🚀➺ _${usedPrefix}play.2 *texto o link*_ 
-┃🚀➺ _${usedPrefix}ytmp3 | yta *link*_
-┃🚀➺ _${usedPrefix}ytmp4 | ytv *link*_
-┃🚀➺ _${usedPrefix}pdocaudio | ytadoc *link*_
-┃🚀➺ _${usedPrefix}pdocvieo | ytvdoc *link*_
-┃🚀➺ _${usedPrefix}tw |twdl | twitter *link*_
-┃🚀➺ _${usedPrefix}facebook | fb *link*_
-┃🚀➺ _${usedPrefix}instagram *link video o imagen*_
-┃🚀➺ _${usedPrefix}verig | igstalk *usuario(a)*_
-┃🚀➺ _${usedPrefix}ighistoria | igstory *usuario(a)*_
-┃🚀➺ _${usedPrefix}tiktok *link*_
-┃🚀➺ _${usedPrefix}tiktokfoto | tiktokphoto *usuario(a)*_
-┃🚀➺ _${usedPrefix}vertiktok | tiktokstalk *usuario(a)*_
-┃🚀➺ _${usedPrefix}mediafire | dlmediafire *link*_
-┃🚀➺ _${usedPrefix}clonarepo | gitclone *link*_
-┃🚀➺ _${usedPrefix}clima *país ciudad*_
-┃🚀➺ _${usedPrefix}consejo_
-┃🚀➺ _${usedPrefix}morse codificar *texto*_
-┃🚀➺ _${usedPrefix}morse decodificar *morse*_
-┃🚀➺ _${usedPrefix}fraseromantica_
-┃🚀➺ _${usedPrefix}historia_
-╰━━━━━━━━━━━━━━━━⬣`.trim()
-conn.sendHydrated(m.chat, menu, wm, pp, 'https://github.com/GataNina-Li/GataBot-MD', '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
-['𝙈𝙚𝙣𝙪́ 𝙘𝙤𝙢𝙥𝙡𝙚𝙩𝙤 | 𝙁𝙪𝙡𝙡 𝙈𝙚𝙣𝙪 💫', '.allmenu'],
-['𝙄𝙣𝙫𝙚𝙣𝙩𝙖𝙧𝙞𝙤 | 𝙄𝙣𝙫𝙚𝙣𝙩𝙤𝙧𝙮 🎒', '/inventario'],
-['𝙈𝙚𝙣𝙪 𝙋𝙧𝙞𝙣𝙘𝙞𝙥𝙖𝙡 | 𝙈𝙖𝙞𝙣 𝙢𝙚𝙣𝙪 ⚡', '#menu']
-], m,)
-}
+⠇ ${lenguajeGB['smsTex9']()} 🚀
+∘ _${usedPrefix}imagen | image *texto*_
+∘ _${usedPrefix}pinterest | dlpinterest *texto*_
+∘ _${usedPrefix}wallpaper|wp *texto*_
+∘ _${usedPrefix}play | play2 *texto o link*_
+∘ _${usedPrefix}play.1 *texto o link*_
+∘ _${usedPrefix}play.2 *texto o link*_ 
+∘ _${usedPrefix}ytmp3 | yta *link*_
+∘ _${usedPrefix}ytmp4 | ytv *link*_
+∘ _${usedPrefix}pdocaudio | ytadoc *link*_
+∘ _${usedPrefix}pdocvieo | ytvdoc *link*_
+∘ _${usedPrefix}tw |twdl | twitter *link*_
+∘ _${usedPrefix}facebook | fb *link*_
+∘ _${usedPrefix}instagram *link video o imagen*_
+∘ _${usedPrefix}verig | igstalk *usuario(a)*_
+∘ _${usedPrefix}ighistoria | igstory *usuario(a)*_
+∘ _${usedPrefix}tiktok *link*_
+∘ _${usedPrefix}tiktokfoto | tiktokphoto *usuario(a)*_
+∘ _${usedPrefix}vertiktok | tiktokstalk *usuario(a)*_
+∘ _${usedPrefix}mediafire | dlmediafire *link*_
+∘ _${usedPrefix}clonarepo | gitclone *link*_
+∘ _${usedPrefix}clima *país ciudad*_
+∘ _${usedPrefix}consejo_
+∘ _${usedPrefix}morse codificar *texto*_
+∘ _${usedPrefix}morse decodificar *morse*_
+∘ _${usedPrefix}fraseromantica_
+∘ _${usedPrefix}historia_
+`.trim()
+await conn.sendButtonVid(m.chat, pp, menuA, menuB, lenguajeGB.smsBotonM1(), '.menu', lenguajeGB.smsBotonM2(), '/allmenu', lenguajeGB.smsBotonM3(), '#inventario', fkontak, adReply)
+
+} catch (e) {
+await conn.sendButton(m.chat, `\n${wm}`, lenguajeGB['smsMalError3']() + '#report ' + usedPrefix + command, null, [[lenguajeGB.smsMensError1(), `#reporte ${lenguajeGB['smsMensError2']()} *${usedPrefix + command}*`]], m)
+console.log(`❗❗ ${lenguajeGB['smsMensError2']()} ${usedPrefix + command} ❗❗`)
+console.log(e)	
+}}
 
 handler.help = ['infomenu'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
