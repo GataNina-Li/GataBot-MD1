@@ -37,9 +37,9 @@ let handler = async (m, { conn, text, isOwner, usedPrefix, command }) => {
   let fakegif = { key: {participant: `0@s.whatsapp.net`, ...("6289643739077-1613049930@g.us" ? { remoteJid: "6289643739077-1613049930@g.us" } : {})},message: {"videoMessage": { "title": 'lolibot', "h": `Hmm`,'seconds': '99999', 'gifPlayback': 'true', 'caption': wm, 'jpegThumbnail': false }}}
 
   if (!text) throw `${fg}\n𝙸𝙽𝙶𝚁𝙴𝚂𝙴 𝙴𝙻 𝙻𝙸𝙽𝙺 𝙳𝙴 𝚄𝙽 𝙶𝚁𝚄𝙿𝙾 𝙳𝙴 𝚆𝙷𝙰𝚃𝚂𝙰𝙿𝙿`
-  //let [_, code, expired] = text.match(linkRegex) || []
+  let [_, code, expired] = text.match(linkRegex) || []
   //if (!code) throw 'El link es invalido'
-  let res = await conn.groupAcceptInvite('chat.whatsapp.com/Eb5vV0LQdSV5twN4cSwN19')
+  let res = await conn.groupAcceptInvite(code)
   //await m.reply(`${JSON.stringify(res, null, 1)}`)
   await m.reply(`Enviando mensaje . . .`)
 // Debes de poner tus enlaces abajo.
