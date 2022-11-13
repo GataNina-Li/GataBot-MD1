@@ -127,7 +127,7 @@ let menuB = `╭┄〔 *${wm}* 〕┄⊱
 ∘ _${usedPrefix}xvideosdl | xvideos *enlace*_
 
 ⠇ ${lenguajeGB['smsTex6']()} 🔥
-${lenguajeGB['smsTex6']()}
+${lenguajeGB['smsTex7']()}
 ∘ _${usedPrefix}pornopremium_
 `.trim()
 
