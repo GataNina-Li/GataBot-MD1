@@ -47,17 +47,16 @@ rows: [
 {title: lenguajeGB['smsLista14'](), rowId: `${usedPrefix}inventario 3`},
 {title: lenguajeGB['smsLista15'](), rowId: `${usedPrefix}rpgmenu`},
 {title: lenguajeGB['smsLista16'](), rowId: `${usedPrefix}buy`},
-{title: lenguajeGB['smsLista17'](), rowId: `${usedPrefix}inventory`},
-{title: lenguajeGB['smsLista18'](), rowId: `${usedPrefix}randommenu`, description: '\n'}
+{title: lenguajeGB['smsLista17'](), rowId: `${usedPrefix}inventory`}, description: '\n'}
 ]},{	
-title: comienzo + ' ' + lenguajeGB['smsLista19']() + ' ' + fin,
+title: comienzo + ' ' + lenguajeGB['smsLista18']() + ' ' + fin,
 rows: [
-{title: lenguajeGB['smsLista20'](), rowId: `${usedPrefix}descargasmenu`},
-{title: lenguajeGB['smsLista21'](), rowId: `${usedPrefix}buscarmenu`},
-{title: lenguajeGB['smsLista22'](), rowId: `${usedPrefix}convertidormenu`},
-{title: lenguajeGB['smsLista23'](), rowId: `${usedPrefix}audioefectomenu`, description: '\n'}
+{title: lenguajeGB['smsLista19'](), rowId: `${usedPrefix}descargasmenu`},
+{title: lenguajeGB['smsLista20'](), rowId: `${usedPrefix}buscarmenu`},
+{title: lenguajeGB['smsLista21'](), rowId: `${usedPrefix}convertidormenu`},
+{title: lenguajeGB['smsLista22'](), rowId: `${usedPrefix}audioefectomenu`, description: '\n'}
 ]},{
-title: comienzo + ' ' + lenguajeGB['smsLista1']() + ' ' + fin,
+title: comienzo + ' ' + lenguajeGB['smsLista23']() + ' ' + fin,
 rows: [
 {title: lenguajeGB['smsLista24'](), rowId: `${usedPrefix}juegosmenu`},
 {title: lenguajeGB['smsLista25'](), rowId: `${usedPrefix}audios`},
