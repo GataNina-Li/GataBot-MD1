@@ -76,6 +76,7 @@ let menuB = `╭┄〔 *${wm}* 〕┄⊱
 ╰┄┄┄┄〔 *𓃠 ${vs}* 〕┄┄┄┄⊱
 
 ⠇ ${lenguajeGB['smsTex1']()} 🔍
+
 ∘ _${usedPrefix}animeinfo *texto*_
 ∘ _${usedPrefix}mangainfo *texto*_
 ∘ _${usedPrefix}google *texto*_
