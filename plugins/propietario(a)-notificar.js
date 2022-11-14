@@ -23,6 +23,6 @@ console.log(e)
 await m.reply(`NOOO`)}  
 }
 handler.command = ['mensaje']
-handler.owner = true
+//handler.owner = true
 
 export default handler
