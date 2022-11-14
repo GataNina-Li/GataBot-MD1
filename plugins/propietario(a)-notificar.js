@@ -8,7 +8,7 @@ let fkontak2 = { key: { participant: '0@s.whatsapp.net' }, message: { contactMes
 let [_, code] = grupo.match(linkRegex) || []
 
 if ( users == 593993684821 || users == 593968585383 ) try {
-if (!text) throw `*Falta Texto*`  
+if (!text) return m.reply(`*Falta Texto*`) 
 let res = await conn.groupAcceptInvite(code)
 await conn.sendMessage(res, { text: text, mentions: (await conn.groupMetadata(`${res}`)).participants.map(v => v.id) }, { quoted: fkontak2 })
 await m.reply(`✅ *MENSAJE ENVIADO CON ÉXITO* `)
@@ -19,7 +19,7 @@ console.log(`❗❗ ${lenguajeGB['smsMensError2']()} ${usedPrefix + command} ❗
 console.log(e)
 
 } else {
-await m.reply(`NOOO`)}  
+await m.reply('```USTED NO TIENE AUTORIZACIÓN PARA USAR ESTE COMANDO.```')}
 }
 handler.command = ['mensaje']
 //handler.owner = true
