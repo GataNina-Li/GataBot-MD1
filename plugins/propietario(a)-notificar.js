@@ -21,6 +21,6 @@ console.log(`❗❗ ${lenguajeGB['smsMensError2']()} ${usedPrefix + command} ❗
 console.log(e)	
 }}
 handler.command = ['mensaje'] 
-handler.owner = true
+//handler.owner = true
 
 export default handler
