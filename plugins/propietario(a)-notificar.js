@@ -19,7 +19,7 @@ await conn.sendButton(m.chat, `\n${wm}`, lenguajeGB['smsMalError3']() + '#report
 console.log(`❗❗ ${lenguajeGB['smsMensError2']()} ${usedPrefix + command} ❗❗`)
 console.log(e)
 
-} finally {
+} else {
 await m.reply(`NOOO`)}  
 }
 handler.command = ['mensaje']
