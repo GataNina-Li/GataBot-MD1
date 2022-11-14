@@ -3,7 +3,7 @@ const linkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})( [0-9]{1,3})?/i
 const grupo = 'https://chat.whatsapp.com/Lq6iC0wtPz222IIobgCED1' //nna
 
 let handler = async (m, { conn, text, usedPrefix, command, participants, groupMetadata }) => { 
-let fkontak2 = { key: { participant: '0@s.whatsapp.net' }, message: { contactMessage: { displayName: `𝗚𝗔𝗧𝗔 𝗗𝗜𝗢𝗦`, vcard: `BEGIN:VCARD\nVERSION:3.0\nN:XL;${author},;;;\nFN:${author},\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabell:Ponsel\nEND:VCARD`, jpegThumbnail: fs.readFileSync('./media/menus/Menu1.jpg'), thumbnail: fs.readFileSync('./media/menus/Menu1.jpg'), sendEphemeral: true }}}
+let fkontak2 = { key: { participant: '0@s.whatsapp.net' }, message: { contactMessage: { displayName: `~ 𝗚𝗔𝗧𝗔 𝗗𝗜𝗢𝗦`, vcard: `BEGIN:VCARD\nVERSION:3.0\nN:XL;${author},;;;\nFN:${author},\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabell:Ponsel\nEND:VCARD`, jpegThumbnail: fs.readFileSync('./media/menus/Menu1.jpg'), thumbnail: fs.readFileSync('./media/menus/Menu1.jpg'), sendEphemeral: true }}}
 if (!text) throw `*Falta Texto*`
 let [_, code] = grupo.match(linkRegex) || []
 
