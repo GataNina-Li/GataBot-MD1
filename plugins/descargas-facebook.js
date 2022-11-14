@@ -12,7 +12,7 @@ const sections = [
 {
 title: htjava + ' 📡 𝙇𝙄𝙎𝙏𝘼 𝘿𝙀 𝘿𝙀𝙎𝘾𝘼𝙍𝙂𝘼𝙎 ' + htjava,
 rows: [
-{title: "📡 𝙁𝘼𝘾𝙀𝘽𝙊𝙊𝙆 (𝙤𝙥𝙘𝙞𝙤𝙣 1) ", rowId: `${usedPrefix}fb1 ${args[0]}`},
+{title: "📡 𝙁𝘼𝘾𝙀𝘽𝙊𝙊𝙆 (𝙤𝙥𝙘𝙞𝙤𝙣 1) ", rowId: `${usedPrefix}fb ${args[0]}`},
 {title: "📡 𝙁𝘼𝘾𝙀𝘽𝙊𝙊𝙆 (𝙤𝙥𝙘𝙞𝙤𝙣 2) ", rowId: `${usedPrefix}fb2 ${args[0]}`},
 {title: "📡 𝙁𝘼𝘾𝙀𝘽𝙊𝙊𝙆 (𝙤𝙥𝙘𝙞𝙤𝙣 3) ", rowId: `${usedPrefix}fb3 ${args[0]}`},
 {title: "📡 𝙁𝘼𝘾𝙀𝘽𝙊𝙊𝙆 (𝙤𝙥𝙘𝙞𝙤𝙣 4) ", rowId: `${usedPrefix}fb4 ${args[0]}`},
