@@ -30,35 +30,17 @@ try {
 let contenido = `✅ 𝙑𝙄𝘿𝙀𝙊 𝘿𝙀 𝙁𝘼𝘾𝙀𝘽𝙊𝙊𝙆\n${wm}`
 switch (command) { 
 
-case "facebook": case "fb": case "facebookdl": case "fbdl":                
-await conn.sendMessage(m.chat, listMessage, {quoted: fkontak} )
-break      
-
-case "facebook1": case "fb1": case "facebookdl1": case "fbdl1": 
-let vio = await fetch(`https://api.violetics.pw/api/downloader/facebook?apikey=beta&url=${args[0]}`)  
-let vioo = await vio.json()
-let videovio = `${vioo.result.hd.url || vioo.result.sd.url}`
-await conn.reply(m.chat, `${lenguajeGB['smsAvisoEG']()}𝙀𝙎𝙋𝙀𝙍𝙀 𝙐𝙉 𝙈𝙊𝙈𝙀𝙉𝙏𝙊, 𝙎𝙀 𝙀𝙎𝙏𝘼 𝘿𝙀𝙎𝘾𝘼𝙍𝙂𝘼𝙉𝘿𝙊 𝙎𝙐 𝙑𝙄𝘿𝙀𝙊 𝘿𝙀 𝙁𝘼𝘾𝙀𝘽𝙊𝙊𝙆\n\n𝙒𝘼𝙄𝙏 𝘼 𝙈𝙊𝙈𝙀𝙉𝙏, 𝙔𝙊𝙐𝙍 𝙑𝙄𝘿𝙀𝙊 𝙄𝙎 𝘿𝙊𝙒𝙉𝙇𝙊𝘼𝘿𝙄𝙉𝙂`, fkontak, m)
-await conn.sendFile(m.chat, videovio, `error.mp4`, contenido, m)
-break
-//let res = await fbDownloader(args[0])
-//for (let result of res.download) {
-//let ur = result.url
-//await conn.sendMessage(m.chat, { video: { ur }, caption: contenido }, { quoted: m })}
-   
-    
-case "facebook2": case "fb2": case "facebookdl2": case "fbdl2":   
-await conn.reply(m.chat, `${lenguajeGB['smsAvisoEG']()}𝙀𝙎𝙋𝙀𝙍𝙀 𝙐𝙉 𝙈𝙊𝙈𝙀𝙉𝙏𝙊, 𝙎𝙀 𝙀𝙎𝙏𝘼 𝘿𝙀𝙎𝘾𝘼𝙍𝙂𝘼𝙉𝘿𝙊 𝙎𝙐 𝙑𝙄𝘿𝙀𝙊 𝘿𝙀 𝙁𝘼𝘾𝙀𝘽𝙊𝙊𝙆\n\n𝙒𝘼𝙄𝙏 𝘼 𝙈𝙊𝙈𝙀𝙉𝙏, 𝙔𝙊𝙐𝙍 𝙑𝙄𝘿𝙀𝙊 𝙄𝙎 𝘿𝙊𝙒𝙉𝙇𝙊𝘼𝘿𝙄𝙉𝙂`, fkontak, m)
-const { result } = await facebookdl(args[0]).catch(async _ => await facebookdlv2(args[0]))
-for (const { url, isVideo } of result.reverse()) await conn.sendMessage(m.chat, { video: { url }, fileName: `error.mp4`, mimetype: 'video/mp4' , caption: contenido }, { quoted: m })   
-break
-//let ress = await facebookDl(args[0]).catch(async _ => await savefrom(args[0])).catch(_ => null)
-//let urll = ress?.url?.[0]?.url || ress?.url?.[1]?.url || ress?.['720p'] || ress?.['360p']
-//await conn.sendMessage(m.chat, { video: { urll }, caption: contenido }, { quoted: m })  
-        
-}} catch {
-await m.reply(`${lenguajeGB['smsAvisoFG']()}𝘼𝙇𝙂𝙊 𝙎𝘼𝙇𝙄𝙊 𝙈𝘼𝙇, 𝙍𝙀𝘾𝙐𝙀𝙍𝘿𝙀 𝙐𝙎𝘼𝙍 𝙐𝙉 𝙀𝙉𝙇𝘼𝘾𝙀 𝙑𝘼𝙇𝙄𝘿𝙊 𝘿𝙀 𝙁𝘼𝘾𝙀𝘽𝙊𝙊𝙆`)
-}}
+case "facebook": case "fb": case "facebookdl": case "fbdl":                                  
+let res = await fbDownloader(args[0])
+for (let result of res.download) {
+let ur = result.url    
+await conn.sendFile(m.chat, ur, 'error.mp4', '*𝙰𝚀𝚄𝙸 𝙴𝚂𝚃𝙰 𝚂𝚄 𝚅𝙸𝙳𝙴𝙾*', m)}
+break           
+case "facebook2": case "fb2": case "facebookdl2": case "fbdl2":           
+//let ress = await fg.fbdl(args[0])
+//let urll = await ress.data[0].url    
+//await conn.sendFile(m.chat, urll, 'error.mp4', '*𝙰𝚀𝚄𝙸 𝙴𝚂𝚃𝙰 𝚂𝚄 𝚅𝙸𝙳𝙴𝙾*', m) 
+await await m.reply(`*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝚁𝚁𝙾𝚁, 𝙿𝙾𝚁 𝙵𝙰𝚅𝙾𝚁 𝚅𝚄𝙴𝙻𝚅𝙰 𝙰 𝙸𝙽𝚃𝙴𝙽𝚃𝙰𝚁𝙻𝙾, 𝚂𝙸 𝙴𝙻 𝙴𝚁𝚁𝙾𝚁 𝚂𝙸𝙶𝚄𝙴, 𝙿𝚁𝚄𝙴𝙱𝙴 𝙲𝙾𝙽 𝙾𝚃𝚁𝙰 𝙾𝙿𝙲𝙸𝙾𝙽 (${usedPrefix}fb, ${usedPrefix}fb2, ${usedPrefix}fb3, ${usedPrefix}fb4, ${usedPrefix}fb5)*`)       
 break
 case "facebook3": case "fb3": case "facebookdl3": case "fbdl3":        
 let vio = await fetch(`https://api.violetics.pw/api/downloader/facebook?apikey=beta&url=${args[0]}`)  
@@ -76,9 +58,8 @@ let json = await res3.json()
 let url3 = await json.video
 await conn.sendFile(m.chat, url3, 'error.mp4', '*𝙰𝚀𝚄𝙸 𝙴𝚂𝚃𝙰 𝚂𝚄 𝚅𝙸𝙳𝙴𝙾*', m)     
 break    
- catch {
+}} catch {
 await await m.reply(`*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝚁𝚁𝙾𝚁, 𝙿𝙾𝚁 𝙵𝙰𝚅𝙾𝚁 𝚅𝚄𝙴𝙻𝚅𝙰 𝙰 𝙸𝙽𝚃𝙴𝙽𝚃𝙰𝚁𝙻𝙾, 𝚂𝙸 𝙴𝙻 𝙴𝚁𝚁𝙾𝚁 𝚂𝙸𝙶𝚄𝙴, 𝙿𝚁𝚄𝙴𝙱𝙴 𝙲𝙾𝙽 𝙾𝚃𝚁𝙰 𝙾𝙿𝙲𝙸𝙾𝙽 (${usedPrefix}fb, ${usedPrefix}fb2, ${usedPrefix}fb3, ${usedPrefix}fb4, ${usedPrefix}fb5)*`)
 }}
-handler.command = /^(facebook|fb|facebookdl|fbdl|facebook1|fb1|facebookdl1|fbdl1|facebook2|fb2|facebookdl2|fbdl2)$/i
-handler.limit = 3
-export default handler   
+handler.command = /^(facebook|fb|facebookdl|fbdl|facebook2|fb2|facebookdl2|fbdl2|facebook3|fb3|facebookdl3|fbdl3|facebook4|fb4|facebookdl4|fbdl4|facebook5|fb5|facebookdl5|fbdl5)$/i
+export default handler
