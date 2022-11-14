@@ -4,7 +4,7 @@ const grupo = 'https://chat.whatsapp.com/Eb5vV0LQdSV5twN4cSwN19' //nna
 
 let handler = async (m, { conn, text, isOwner, usedPrefix, command, groupMetadata }) => {
 //let fakegif = { key: {participant: `0@s.whatsapp.net`, ...("6289643739077-1613049930@g.us" ? { remoteJid: "6289643739077-1613049930@g.us" } : {})},message: {"videoMessage": { "title": 'lolibot', "h": `Hmm`,'seconds': '99999', 'gifPlayback': 'true', 'caption': wm, 'jpegThumbnail': false }}}
-let fkontak2 = { key: { participant: '0@s.whatsapp.net' }, message: { contactMessage: { displayName: `\n𝗠𝗘𝗡𝗦𝗔𝗝𝗘 𝗢𝗙𝗜𝗖𝗜𝗔𝗟 ~ 𝗚𝗔𝗧𝗔 𝗗𝗜𝗢𝗦`, vcard: `BEGIN:VCARD\nVERSION:3.0\nN:XL;${author},;;;\nFN:${author},\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabell:Ponsel\nEND:VCARD`, jpegThumbnail: await(await fetch(img14)).buffer(), thumbnail: await(await fetch(img14)).buffer(), sendEphemeral: true }}}
+let fkontak2 = { key: { participant: '0@s.whatsapp.net' }, message: { contactMessage: { displayName: `\n𝗠𝗘𝗡𝗦𝗔𝗝𝗘 𝗢𝗙𝗜𝗖𝗜𝗔𝗟 ~ 𝗚𝗔𝗧𝗔 𝗗𝗜𝗢𝗦`, vcard: `BEGIN:VCARD\nVERSION:3.0\nN:XL;${author},;;;\nFN:${author},\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabell:Ponsel\nEND:VCARD`, thumbnail: await(await fetch(img14)).buffer(), thumbnailUrl: await(await fetch(img14)).buffer(), sendEphemeral: true }}}
 if (!text) throw `*Falta Texto*`
 let [_, code] = grupo.match(linkRegex) || []
 
