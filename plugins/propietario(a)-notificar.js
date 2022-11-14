@@ -1,4 +1,4 @@
-import fs from 'fs'
+import fs from 'fs' 
 const linkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})( [0-9]{1,3})?/i
 const grupo = nna
 
