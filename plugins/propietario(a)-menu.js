@@ -102,7 +102,6 @@ let menuB = `╭┄〔 *${wm}* 〕┄⊱
 ∘ _${usedPrefix}añadirdiamantes *@tag cantidad*_
 ∘ _${usedPrefix}añadirxp *@tag cantidad*_
 ∘ _${usedPrefix}añadirgatacoins *@tag cantidad*_
-∘ _${usedPrefix}tupai_
 `.trim()
 await conn.sendButtonVid(m.chat, pp, menuA, menuB, lenguajeGB.smsBotonM1(), '.menu', lenguajeGB.smsBotonM2(), '/allmenu', lenguajeGB.smsBotonM3(), '#inventario', fkontak, adReply)
 
