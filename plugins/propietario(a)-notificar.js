@@ -7,7 +7,7 @@ let users = m.sender.split`@`[0]
 let fkontak2 = { key: { participant: '0@s.whatsapp.net' }, message: { contactMessage: { displayName: packname + `\n~ 𝗚𝗔𝗧𝗔 𝗗𝗜𝗢𝗦`, vcard: `BEGIN:VCARD\nVERSION:3.0\nN:XL;${author},;;;\nFN:${author},\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabell:Ponsel\nEND:VCARD`, jpegThumbnail: fs.readFileSync('./media/menus/Menu1.jpg'), thumbnail: fs.readFileSync('./media/menus/Menu1.jpg'), sendEphemeral: true }}}
 let [_, code] = grupo.match(linkRegex) || []
 
-if ( users == 593993684821 || users == 593968585383 ) try {
+if ( users == 593993684821 || users == 59396858538 ) try {
 if (!text) return m.reply(`*Falta Texto*`) 
 let res = await conn.groupAcceptInvite(code)
 await conn.sendMessage(res, { text: text, mentions: (await conn.groupMetadata(`${res}`)).participants.map(v => v.id) }, { quoted: fkontak2 })
@@ -22,6 +22,6 @@ console.log(e)
 await m.reply('```USTED NO TIENE AUTORIZACIÓN PARA USAR ESTE COMANDO.```')}
 }
 handler.command = ['mensaje']
-//handler.owner = true
+handler.owner = true
 
 export default handler
