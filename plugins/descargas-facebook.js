@@ -14,9 +14,9 @@ title: htjava + ' 📡 𝙇𝙄𝙎𝙏𝘼 𝘿𝙀 𝘿𝙀𝙎𝘾𝘼𝙍�
 rows: [
 {title: "📡 𝙁𝘼𝘾𝙀𝘽𝙊𝙊𝙆 (𝙤𝙥𝙘𝙞𝙤𝙣 1) ", rowId: `${usedPrefix}fb1 ${args[0]}`},
 {title: "📡 𝙁𝘼𝘾𝙀𝘽𝙊𝙊𝙆 (𝙤𝙥𝙘𝙞𝙤𝙣 2) ", rowId: `${usedPrefix}fb2 ${args[0]}`},
-//{title: "📡 𝙁𝘼𝘾𝙀𝘽𝙊𝙊𝙆 (𝙤𝙥𝙘𝙞𝙤𝙣 3) ", rowId: `${usedPrefix}fb3 ${args[0]}`},
-//{title: "📡 𝙁𝘼𝘾𝙀𝘽𝙊𝙊𝙆 (𝙤𝙥𝙘𝙞𝙤𝙣 4) ", rowId: `${usedPrefix}fb4 ${args[0]}`},
-//{title: "📡 𝙁𝘼𝘾𝙀𝘽𝙊𝙊𝙆 (𝙤𝙥𝙘𝙞𝙤𝙣 5) ", rowId: `${usedPrefix}fb5 ${args[0]}`}
+{title: "📡 𝙁𝘼𝘾𝙀𝘽𝙊𝙊𝙆 (𝙤𝙥𝙘𝙞𝙤𝙣 3) ", rowId: `${usedPrefix}fb3 ${args[0]}`},
+{title: "📡 𝙁𝘼𝘾𝙀𝘽𝙊𝙊𝙆 (𝙤𝙥𝙘𝙞𝙤𝙣 4) ", rowId: `${usedPrefix}fb4 ${args[0]}`},
+{title: "📡 𝙁𝘼𝘾𝙀𝘽𝙊𝙊𝙆 (𝙤𝙥𝙘𝙞𝙤𝙣 5) ", rowId: `${usedPrefix}fb5 ${args[0]}`}
 ]}]	
 
 const listMessage = {
@@ -58,6 +58,26 @@ break
         
 }} catch {
 await m.reply(`${lenguajeGB['smsAvisoFG']()}𝘼𝙇𝙂𝙊 𝙎𝘼𝙇𝙄𝙊 𝙈𝘼𝙇, 𝙍𝙀𝘾𝙐𝙀𝙍𝘿𝙀 𝙐𝙎𝘼𝙍 𝙐𝙉 𝙀𝙉𝙇𝘼𝘾𝙀 𝙑𝘼𝙇𝙄𝘿𝙊 𝘿𝙀 𝙁𝘼𝘾𝙀𝘽𝙊𝙊𝙆`)
+}}
+break
+case "facebook3": case "fb3": case "facebookdl3": case "fbdl3":        
+let vio = await fetch(`https://api.violetics.pw/api/downloader/facebook?apikey=beta&url=${args[0]}`)  
+let vioo = await vio.json()
+let videovio = `${vioo.result.hd.url || vioo.result.sd.url}`
+await conn.sendFile(m.chat, videovio, `error.mp4`, '*𝙰𝚀𝚄𝙸 𝙴𝚂𝚃𝙰 𝚂𝚄 𝚅𝙸𝙳𝙴𝙾*', m)
+break   
+case "facebook4": case "fb4": case "facebookdl4": case "fbdl4":           
+const { result } = await facebookdl(args[0]).catch(async _ => await facebookdlv2(args[0]))
+for (const { url, isVideo } of result.reverse()) await conn.sendFile(m.chat, url, `facebook.${!isVideo ? 'bin' : 'mp4'}`, '*𝙰𝚀𝚄𝙸 𝙴𝚂𝚃𝙰 𝚂𝚄 𝚅𝙸𝙳𝙴𝙾*', m)
+break          
+case "facebook5": case "fb5": case "facebookdl5": case "fbdl5":        
+let res3 = await fetch(`https://latam-api.vercel.app/api/facebookdl?apikey=brunosobrino&q=${args[0]}`)  
+let json = await res3.json()
+let url3 = await json.video
+await conn.sendFile(m.chat, url3, 'error.mp4', '*𝙰𝚀𝚄𝙸 𝙴𝚂𝚃𝙰 𝚂𝚄 𝚅𝙸𝙳𝙴𝙾*', m)     
+break    
+}} catch {
+await await m.reply(`*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝚁𝚁𝙾𝚁, 𝙿𝙾𝚁 𝙵𝙰𝚅𝙾𝚁 𝚅𝚄𝙴𝙻𝚅𝙰 𝙰 𝙸𝙽𝚃𝙴𝙽𝚃𝙰𝚁𝙻𝙾, 𝚂𝙸 𝙴𝙻 𝙴𝚁𝚁𝙾𝚁 𝚂𝙸𝙶𝚄𝙴, 𝙿𝚁𝚄𝙴𝙱𝙴 𝙲𝙾𝙽 𝙾𝚃𝚁𝙰 𝙾𝙿𝙲𝙸𝙾𝙽 (${usedPrefix}fb, ${usedPrefix}fb2, ${usedPrefix}fb3, ${usedPrefix}fb4, ${usedPrefix}fb5)*`)
 }}
 handler.command = /^(facebook|fb|facebookdl|fbdl|facebook1|fb1|facebookdl1|fbdl1|facebook2|fb2|facebookdl2|fbdl2)$/i
 handler.limit = 3
