@@ -28,6 +28,11 @@ global.db.data.users[m.sender].banned = true
 await conn.reply(m.chat, texto, m)
 await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')}
 	
+if (m.sender.startsWith('2' || '2')) {
+global.db.data.users[m.sender].banned = true
+await conn.reply(m.chat, texto, m)
+await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')}
+	
 if (m.sender.startsWith('4' || '4')) {
 global.db.data.users[m.sender].banned = true
 await conn.reply(m.chat, texto, m)
