@@ -97,8 +97,8 @@ https://github.com/clhuang/heroku-buildpack-webp-binaries.git
 - [x] Resultado <details><summary>Ajustes del Servidor - GataBot-MD</summary><img src="https://i.imgur.com/N0SwvbY.jpeg"></details>
 ------------------
 ### ⚡ REPLIT - GATABOT
-[![Deploy](https://img.shields.io/badge/replit_gatabot-667881?style=for-the-badge&logo=replit&logoColor=white)](https://replit.com/github/GataNina-Li/GataBotMD-Heroku)
-<a href="https://replit.com/github/GataNina-Li/GataBotMD-Heroku"> <img src="https://media0.giphy.com/media/lMwu8EJAnv9kmn51KQ/giphy.gif" height="29px"></a>
+[![Deploy](https://img.shields.io/badge/replit_gatabot-667881?style=for-the-badge&logo=replit&logoColor=white)](https://replit.com/github/GataNina-Li/GataBot-MD)
+<a href="https://replit.com/github/GataNina-Li/GataBot-MD"> <img src="https://media0.giphy.com/media/lMwu8EJAnv9kmn51KQ/giphy.gif" height="29px"></a>
 ------------------
 - [x] Resultado <details><summary>Importar Repositorio - GataBot-MD</summary><img src="https://i.imgur.com/GQyRnMf.jpg"></details>
 ------------------
