@@ -2,12 +2,11 @@ import { xpRange } from '../lib/levelling.js'
 import PhoneNumber from 'awesome-phonenumber'
 import { promises } from 'fs'
 import { join } from 'path'
-let handler = async (m, { conn, usedPrefix, command, args, usedPrefix: _p, __dirname, isOwner, text, isAdmin, isROwner }) => {
-  
-  
-const { levelling } = '../lib/levelling.js'
-//let handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text }) => {
+import fetch from 'node-fetch'
 
+let handler = async (m, { conn, usedPrefix, command, args, usedPrefix: _p, __dirname, isOwner, text, isAdmin, isROwner }) => {
+try{ 
+const { levelling } = '../lib/levelling.js'
 let { exp, limit, level, role } = global.db.data.users[m.sender]
 let { min, xp, max } = xpRange(level, global.multiplier)
 
@@ -58,197 +57,198 @@ level, limit, weton, week, date, dateIslamic, time, totalreg, rtotalreg, role,
 readmore: readMore
 }
 text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
- let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
+ 
+let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 let mentionedJid = [who]
 let username = conn.getName(who)
-//let pp = './media/menus/Menuvid3.mp4'
-//let user = global.db.data.users[m.sender]
+let user = global.db.data.users[m.sender]
 //user.registered = false
+
+//let pp = gataVidMenu.getRandom()
+let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
+let fsizedoc = '1'.repeat(10)
+let adReply = { fileLength: fsizedoc, seconds: fsizedoc, contextInfo: { forwardingScore: fsizedoc, externalAdReply: { showAdAttribution: true, title: wm, body: '👋 ' + username, mediaUrl: ig, description: 'Hola', previewType: 'PHOTO', thumbnail: await(await fetch(gataMenu.getRandom())).buffer(), sourceUrl: redesMenu.getRandom() }}}
+
+let menuA = `🎶 ${lenguajeGB['smsConfi2']()} *${username}*`.trim()
+let menuB = `
+╭┄〔 *${wm}* 〕┄⊱
+┊დ *${week}, ${date}*
+┊დ *${lenguajeGB['smsBotonM4']()} » ${Object.keys(global.db.data.users).length}* 
+┊
+┊დ *${lenguajeGB['smsBotonM5']()} »* ${role}
+┊დ *${lenguajeGB['smsBotonM6']()} » ${level}*
+┊დ *${lenguajeGB['smsBotonM7']()} »* ${user.premiumTime > 0 ? '✅' : '❌'}
+╰┄┄┄┄〔 *𓃠 ${vs}* 〕┄┄┄┄⊱
+
+⠇ *${lenguajeGB['smsTex16']()}* 🔊
+⠇ ${lenguajeGB['smsTex17']()}
+∘ _A-_
+∘ _Aaa es demasiado sexo_
+∘ _Alabado sea el sexooo_
+∘ _Anashe | 😏🍔_
+∘ _🚨_
+∘ _Atencion grupo_
+∘ _Audio hentai_
+∘ _A nadie le importa_
+∘ _Ara ara_
+∘ _Among us_
+∘ _Abduzcan_
+∘ _Buenos dias_
+∘ _Baneado_
+∘ _Bañate_
+∘ _Bot puto_
+∘ _Bv_
+∘ _Basado_
+∘ _Basada_
+∘ _Bien pensado Woody_
+∘ _Bueno si_
+∘ _Buenas noches_
+∘ _Bueno Master | 🫂_
+∘ _Bienvenido/a | 🤗_
+∘ _Buen día grupo | 🙌_
+∘ _Blackpink in your area_
+∘ _Chichotas asi de grandes peter_
+∘ _Corte corte_
+∘ _Calla Fan de BTS_
+∘ _Cambiate a Movistar_
+∘ _Contexto_
+∘ _Callate | 🤫_
+∘ _Chau | 👋_
+∘ _DIVINO | 💋_
+∘ _Depresion_
+∘ _Diablos Señorita | 😈_
+∘ _En caso de una investigación_
+∘ _Elmo sabe donde vives_
+∘ _Eres Fuerte_
+∘ _El rap de Fernanfloo_
+∘ _Está Zzzz_
+∘ _El tóxico_
+∘ _Esto va para ti_
+∘ _El pepe_
+∘ _Esto va ser épico papus_
+∘ _Entrada épica_ 
+∘ _Estoy triste_
+∘ _Enojada_
+∘ _Enojado_
+∘ _Es puto_
+∘ _Fino señores_
+∘ _Feliz cumpleaños | 🥳 | 🎉_
+∘ _Feliz navidad_
+∘ _Fiesta del admin_
+∘ _Fiesta del admin 2_
+∘ _Fiesta del administrador_
+∘ _Hasta la proxima_
+∘ _Hablar primos_
+∘ _Hmm rico_
+∘ _Hablame_
+∘ _Hentai_
+∘ _Hey_
+∘ _Homero chino_
+∘ _Hola_
+∘ _Ingresa épicamente_
+∘ _Jaja el pendejo | 🤣_
+∘ _Jijija | 😂_
+∘ _Joder esas tetas no dejan de mirarme_
+∘ _Jesucristo_
+∘ _Los que se pelean se aman_
+∘ _Leche | 🥛_
+∘ _La roca | 🤨_
+∘ _Las reglas del grupo_
+∘ _La voz de hombre_
+∘ _La biblia_
+∘ _LESS GO_
+∘ _Motivación_
+∘ _Muchachos_
+∘ _Moshi moshi_
+∘ _Momento equisde | Momento XD_
+∘ _Me anda buscando anonymous_
+∘ _Ma ma masivo_
+∘ _Miedo_
+∘ _Masivo_
+∘ _Me voy_
+∘ _Me pican los cocos_
+∘ _Murio el grupo_
+∘ _Marica quien_
+∘ _Me olvidé_
+∘ _Nya | 🐱_
+∘ _Noche de paz_
+∘ _Noche de paz_
+∘ _No Rompas más | 💔_
+∘ _Nico nico_
+∘ _No me hagas usar esto_
+∘ _No chu_
+∘ _No me hables_
+∘ _Nadie te preguntó_
+∘ _Niconico_
+∘ _No digas eso papu_
+∘ _Nyanpasu_
+∘ _Orale_
+∘ _🚬🐛_
+∘ _Omaiga_
+∘ _Ohayo_
+∘ _Oh me vengo_
+∘ _Onichan_
+∘ _Porque me excita tanto | 🥵_
+∘ _Porque ta tite_
+∘ _Potaxio | 🥑_
+∘ _Pasen furras_
+∘ _Pokémon_
+∘ _Pikachu_
+∘ _Pero esto_
+∘ _Pasa pack Bot_
+∘ _Puta que rico | 🍑_
+∘ _Que ricas tetas_
+∘ _Que linda que estas hija de puta_
+∘ _Que dice? | 😐_
+∘ _Que tal grupo_
+∘ _Que sucede_
+∘ _Quien es tu sempai botsito 7w7_
+∘ _Rawr_
+∘ _🕺_
+∘ _Salimo en caravana_
+∘ _Si o no pendejo_
+∘ _Sexo_
+∘ _Su nivel de pendejo_
+∘ _Se están riendo de mí_
+∘ _Siuuu_
+∘ _Troleado_
+∘ _Toy Chica_
+∘ _Turi ip ip ip | 🐶_
+∘ _Traiganle una falda_
+∘ _Tal vez_
+∘ _Te gusta el Pepino | 🥒_
+∘ _Todo bien_
+∘ _Tengo los calzones del admin_
+∘ _Triste_
+∘ _Te diagnostico con gay_
+∘ _Te amo_
+∘ _Tunometecabrasaramambiche_
+∘ _UwU_
+∘ _Un pato_
+∘ _Una pregunta_
+∘ _Usted está detenido_
+∘ _Viernes_
+∘ _Viernes de la jungla_
+∘ _Vete a la vrg_
+∘ _Verdad que te engañe_
+∘ _Vivan los novios_
+∘ _Wenomechainsama | 🐹_
+∘ _Wtf_
+∘ _Wtf y este random?_
+∘ _Yumbi yumbi | 🤠_
+∘ _Y Digo Wo_
+∘ _Yamete_
+∘ _Yoshi_
+∘ _Yokese_
+∘ _Ya antojaron_
+∘ _Y este quien es_
+∘ _:c_`.trim()
   
- let str = `
-╭━━〔 🐈⚡️🐈⚡️🐈⚡️🐈 〙━━⬣   
-┃ 💖 ¡Hola! ${username} 💖
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ *𝙈𝙀𝙉𝙐 𝘿𝙀 𝘼𝙐𝘿𝙄𝙊𝙎*
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ *No es necesario el prefijo*
-┃ *Puede solo escribir la*
-┃ *Palabra o Frase.*
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-⎪➫🔊 _A-_
-⎪➫🔊 _Aaa es demasiado sexo_
-⎪➫🔊 _Alabado sea el sexooo_
-⎪➫🔊 _Anashe | 😏🍔_
-⎪➫🔊 _🚨_
-⎪➫🔊 _Atencion grupo_
-⎪➫🔊 _Audio hentai_
-⎪➫🔊 _A nadie le importa_
-⎪➫🔊 _Ara ara_
-⎪➫🔊 _Among us_
-⎪➫🔊 _Abduzcan_
-⎪➫🔊 _Buenos dias_
-⎪➫🔊 _Baneado_
-⎪➫🔊 _Bañate_
-⎪➫🔊 _Bot puto_
-⎪➫🔊 _Bv_
-⎪➫🔊 _Basado_
-⎪➫🔊 _Basada_
-⎪➫🔊 _Bien pensado Woody_
-⎪➫🔊 _Bueno si_
-⎪➫🔊 _Buenas noches_
-⎪➫🔊 _Bueno Master | 🫂_
-⎪➫🔊 _Bienvenido/a | 🤗_
-⎪➫🔊 _Buen día grupo | 🙌_
-⎪➫🔊 _Blackpink in your area_
-⎪➫🔊 _Chichotas asi de grandes peter_
-⎪➫🔊 _Corte corte_
-⎪➫🔊 _Calla Fan de BTS_
-⎪➫🔊 _Cambiate a Movistar_
-⎪➫🔊 _Contexto_
-⎪➫🔊 _Callate | 🤫_
-⎪➫🔊 _Chau | 👋_
-⎪➫🔊 _DIVINO | 💋_
-⎪➫🔊 _Depresion_
-⎪➫🔊 _Diablos Señorita | 😈_
-⎪➫🔊 _En caso de una investigación_
-⎪➫🔊 _Elmo sabe donde vives_
-⎪➫🔊 _Eres Fuerte_
-⎪➫🔊 _El rap de Fernanfloo_
-⎪➫🔊 _Está Zzzz_
-⎪➫🔊 _El tóxico_
-⎪➫🔊 _Esto va para ti_
-⎪➫🔊 _El pepe_
-⎪➫🔊 _Esto va ser épico papus_
-⎪➫🔊 _Entrada épica_ 
-⎪➫🔊 _Estoy triste_
-⎪➫🔊 _Enojada_
-⎪➫🔊 _Enojado_
-⎪➫🔊 _Es puto_
-⎪➫🔊 _Fino señores_
-⎪➫🔊 _Feliz cumpleaños | 🥳 | 🎉_
-⎪➫🔊 _Feliz navidad_
-⎪➫🔊 _Fiesta del admin_
-⎪➫🔊 _Fiesta del admin 2_
-⎪➫🔊 _Fiesta del administrador_
-⎪➫🔊 _Hasta la proxima_
-⎪➫🔊 _Hablar primos_
-⎪➫🔊 _Hmm rico_
-⎪➫🔊 _Hablame_
-⎪➫🔊 _Hentai_
-⎪➫🔊 _Hey_
-⎪➫🔊 _Homero chino_
-⎪➫🔊 _Hola_
-⎪➫🔊 _Ingresa épicamente_
-⎪➫🔊 _Jaja el pendejo | 🤣_
-⎪➫🔊 _Jijija | 😂_
-⎪➫🔊 _Joder esas tetas no dejan de mirarme_
-⎪➫🔊 _Jesucristo_
-⎪➫🔊 _Los que se pelean se aman_
-⎪➫🔊 _Leche | 🥛_
-⎪➫🔊 _La roca | 🤨_
-⎪➫🔊 _Las reglas del grupo_
-⎪➫🔊 _La voz de hombre_
-⎪➫🔊 _La biblia_
-⎪➫🔊 _LESS GO_
-⎪➫🔊 _Motivación_
-⎪➫🔊 _Muchachos_
-⎪➫🔊 _Moshi moshi_
-⎪➫🔊 _Momento equisde | Momento XD_
-⎪➫🔊 _Me anda buscando anonymous_
-⎪➫🔊 _Ma ma masivo_
-⎪➫🔊 _Miedo_
-⎪➫🔊 _Masivo_
-⎪➫🔊 _Me voy_
-⎪➫🔊 _Me pican los cocos_
-⎪➫🔊 _Murio el grupo_
-⎪➫🔊 _Marica quien_
-⎪➫🔊 _Me olvidé_
-⎪➫🔊 _Nya | 🐱_
-⎪➫🔊 _Noche de paz_
-⎪➫🔊 _Noche de paz_
-⎪➫🔊 _No Rompas más | 💔_
-⎪➫🔊 _Nico nico_
-⎪➫🔊 _No me hagas usar esto_
-⎪➫🔊 _No chu_
-⎪➫🔊 _No me hables_
-⎪➫🔊 _Nadie te preguntó_
-⎪➫🔊 _Niconico_
-⎪➫🔊 _No digas eso papu_
-⎪➫🔊 _Nyanpasu_
-⎪➫🔊 _Orale_
-⎪➫🔊 _🚬🐛_
-⎪➫🔊 _Omaiga_
-⎪➫🔊 _Ohayo_
-⎪➫🔊 _Oh me vengo_
-⎪➫🔊 _Onichan_
-⎪➫🔊 _Porque me excita tanto | 🥵_
-⎪➫🔊 _Porque ta tite_
-⎪➫🔊 _Potaxio | 🥑_
-⎪➫🔊 _Pasen furras_
-⎪➫🔊 _Pokémon_
-⎪➫🔊 _Pikachu_
-⎪➫🔊 _Pero esto_
-⎪➫🔊 _Pasa pack Bot_
-⎪➫🔊 _Puta que rico | 🍑_
-⎪➫🔊 _Que ricas tetas_
-⎪➫🔊 _Que linda que estas hija de puta_
-⎪➫🔊 _Que dice? | 😐_
-⎪➫🔊 _Que tal grupo_
-⎪➫🔊 _Que sucede_
-⎪➫🔊 _Quien es tu sempai botsito 7w7_
-⎪➫🔊 _Rawr_
-⎪➫🔊 _🕺_
-⎪➫🔊 _Salimo en caravana_
-⎪➫🔊 _Si o no pendejo_
-⎪➫🔊 _Sexo_
-⎪➫🔊 _Su nivel de pendejo_
-⎪➫🔊 _Se están riendo de mí_
-⎪➫🔊 _Siuuu_
-⎪➫🔊 _Troleado_
-⎪➫🔊 _Toy Chica_
-⎪➫🔊 _Turi ip ip ip | 🐶_
-⎪➫🔊 _Traiganle una falda_
-⎪➫🔊 _Tal vez_
-⎪➫🔊 _Te gusta el Pepino | 🥒_
-⎪➫🔊 _Todo bien_
-⎪➫🔊 _Tengo los calzones del admin_
-⎪➫🔊 _Triste_
-⎪➫🔊 _Te diagnostico con gay_
-⎪➫🔊 _Te amo_
-⎪➫🔊 _Tunometecabrasaramambiche_
-⎪➫🔊 _UwU_
-⎪➫🔊 _Un pato_
-⎪➫🔊 _Una pregunta_
-⎪➫🔊 _Usted está detenido_
-⎪➫🔊 _Viernes_
-⎪➫🔊 _Viernes de la jungla_
-⎪➫🔊 _Vete a la vrg_
-⎪➫🔊 _Verdad que te engañe_
-⎪➫🔊 _Vivan los novios_
-⎪➫🔊 _Wenomechainsama | 🐹_
-⎪➫🔊 _Wtf_
-⎪➫🔊 _Wtf y este random?_
-⎪➫🔊 _Yumbi yumbi | 🤠_
-⎪➫🔊 _Y Digo Wo_
-⎪➫🔊 _Yamete_
-⎪➫🔊 _Yoshi_
-⎪➫🔊 _Yokese_
-⎪➫🔊 _Ya antojaron_
-⎪➫🔊 _Y este quien es_
-⎪➫🔊 _:c_
-╰━━━━━━〔 *𓃠 ${vs}* 〕━━━━━━⬣
-`.trim()
-await conn.sendHydrated(m.chat, str, wm, null, md, '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
-['𝙈𝙚𝙣𝙪́ 𝙘𝙤𝙢𝙥𝙡𝙚𝙩𝙤 | 𝙁𝙪𝙡𝙡 𝙈𝙚𝙣𝙪 💫', '.allmenu'],
-['𝙈𝙚𝙣𝙪 𝙙𝙚𝙨𝙥𝙡𝙚𝙜𝙖𝙗𝙡𝙚 | 𝙈𝙚𝙣𝙪 𝙇𝙞𝙨𝙩 🌟', '/menulista'],
-['𝙈𝙚𝙣𝙪 𝙋𝙧𝙞𝙣𝙘𝙞𝙥𝙖𝙡 | 𝙈𝙖𝙞𝙣 𝙢𝙚𝙣𝙪 ⚡', '#menu']
-], m)  
-  
-  
+await conn.sendButtonVid(m.chat, null, menuA, menuB, lenguajeGB.smsBotonM1(), '.menu', lenguajeGB.smsBotonM2(), '/allmenu', lenguajeGB.smsBotonM3(), '#inventario', fkontak, adReply)
 
 const sections = [
 {
-title: `𝙇𝙄𝙎𝙏𝘼 𝘿𝙀𝙎𝙋𝙇𝙀𝙂𝘼𝘽𝙇𝙀 | 𝘿𝙍𝙊𝙋-𝘿𝙊𝙒𝙉 𝙇𝙄𝙎𝙏`,
+title: `${lenguajeGB.smsTex18()}`,
 rows: [
 {title: "➥🔊 A-", description: null, rowId: `A-`},
 {title: "➥🔊 Aaa es demasiado sexo", description: null, rowId: `Aaa es demasiado sexo`},
@@ -410,26 +410,25 @@ rows: [
 {title: "➥🔊 Y este quien es", description: null, rowId: `Y este quien es`},
 {title: "➥🔊 :c", description: null, rowId: `:c`},
 
-{title: "❇️ 𝙈𝙚𝙣𝙪 𝙋𝙧𝙞𝙣𝙘𝙞𝙥𝙖𝙡 |  𝘿𝙖𝙨𝙝𝙗𝙤𝙖𝙧𝙙 ❇️", description: null, rowId: `${usedPrefix}menu`},
-{title: "✳️ 𝙈𝙚𝙣𝙪 𝘾𝙤𝙢𝙥𝙡𝙚𝙩𝙤 | 𝙁𝙪𝙡𝙡 𝙈𝙚𝙣𝙪 ✳️", description: null, rowId: `${usedPrefix}allmenu`},
-{title: "✅ 𝘾𝙪𝙚𝙣𝙩𝙖𝙨 𝙊𝙛𝙞𝙘𝙞𝙖𝙡𝙚𝙨 | 𝘼𝙘𝙘𝙤𝙪𝙣𝙩𝙨 ✅", description: null, rowId: `${usedPrefix}cuentasgatabot`},
+{title: lenguajeGB['smsLista2'](), description: null, rowId: `${usedPrefix}creadora`},
+{title: lenguajeGB['smsLista5'](), description: null, rowId: `${usedPrefix}infomenu`},
+{title: lenguajeGB['smsLista6'](), description: null, rowId: `${usedPrefix}allmenu`},  
 ]}, ]
-//let name = await conn.getName(m.sender)
 
 const listMessage = {
-text: `𝙂𝘼𝙏𝘼𝘽𝙊𝙏-𝙈𝘿 | 𝘼𝙐𝘿𝙄𝙊𝙎`,
-footer: `*╭━━━〔 𝙈𝙀𝙉𝙐 𝘿𝙄𝙉𝘼𝙈𝙄𝘾𝙊 〕━━━⬣*
-*┃ 𝙃𝙚𝙮! 𝙖𝙦𝙪𝙞 𝙥𝙪𝙚𝙙𝙚 𝙚𝙡𝙚𝙜𝙞𝙧*
-*┃ 𝙚𝙡 𝘼𝙪𝙙𝙞𝙤 𝙖 𝙨𝙚𝙧 𝙪𝙩𝙞𝙡𝙞𝙯𝙖𝙙𝙤.*
-*╰━━━━━━━━━━━━━━━━━⬣*
-${wm}`,
+text: `${wm}`,
+footer: `*${lenguajeGB['smsTex16']()}*
+${lenguajeGB['smsTex19']()}`,
 title: null,
-buttonText: "𝙎𝙀𝙇𝙀𝘾𝘾𝙄𝙊𝙉𝘼𝙍 𝘼𝙐𝘿𝙄𝙊", 
+buttonText: `🔊 ${lenguajeGB['smsTex16']()} 🔊`, 
 sections }
+await conn.sendMessage(m.chat, listMessage, {quoted: fkontak})	
 
- conn.sendMessage(m.chat, listMessage)
-
-}
+} catch (e) {
+await conn.sendButton(m.chat, `\n${wm}`, lenguajeGB['smsMalError3']() + '#report ' + usedPrefix + command, null, [[lenguajeGB.smsMensError1(), `#reporte ${lenguajeGB['smsMensError2']()} *${usedPrefix + command}*`]], m)
+console.log(`❗❗ ${lenguajeGB['smsMensError2']()} ${usedPrefix + command} ❗❗`)
+console.log(e)	
+}}
 
 handler.help = ['infomenu'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
