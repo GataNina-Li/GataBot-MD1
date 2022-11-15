@@ -7,18 +7,22 @@ import { en, es, id, ar, pt } from './lib/idiomas/total-idiomas.js'
 
 //⊱ ━━━━━.⋅ Añada los numeros a ser Propietario/a | Add the numbers to be Owner ⋅.━━━━ ⊰ 
 global.owner = [
-  ['5492604050270', '5492604050270', true],
-  ['5492604631960', '5492604631960', true],	  
-  ['5492604631960', '5492604631960', true],
-  ['5493772406612', '5493772406612', true],	  
-  ['5493772406612', '5493772406612', true],
-  ['5493772406612'],
-  ['5492604050270']
+  ['593993684821', '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 💖🐈', true],
+  ['50495086382', '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 2 💖🐈', true],
+  ['51993042301', '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 3 💖🐈', true],
+  ['5492914469417', '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 4 💖🐈', true],
+  ['573238484181', '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 5 💖🐈', true],
+  ['593959425714', '𝘿𝙄𝙀𝙂𝙊-𝙊𝙁𝘾 | 𝙀𝙍𝙍𝙊𝙍𝙀𝙎 💖🐈', true],
+  ['50495086382'],
+  ['584166662765'],
+  ['584163647116'],
+  ['18059196237'],
+  ['593968585383'] 
 ]
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 
-global.mods = ['5492604050270', '5493772406612'], 
-global.prems = ['5492604050270', '5493772406612'], 
+global.mods = [] 
+global.prems = ['528451003894'], 
   
   
 //⊱ ━━━━━.⋅ IDIOMA : LENGUAJE ⋅.━━━━ ⊰ 
@@ -101,18 +105,18 @@ global.keysxxx = keysZens[Math.floor(keysZens.length * Math.random())]
 
 //⊱ ━━━━━.⋅ Sticker WM ⋅.━━━━ ⊰
 
-global.packname = '💎 𝙵𝙱𝙼𝙳'
-global.author = '𝙲𝚘𝚕𝚊𝚙𝚜𝚞𝚜 | 𝙱𝚎𝚗𝚓𝚊'
+global.packname = '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 🐈'
+global.author = '𝙂𝙖𝙩𝙖 𝘿𝙞𝙤𝙨'
 
 //━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 
 
 //⊱ ━━━━━.⋅ Versión | Nombre | cuentas ⋅.━━━━ ⊰
 
-global.vs = '1.3.5'
+global.vs = '1.3.7'
 global.version = vs
 
-global.gt = '𝙵𝚞𝚝𝚊𝚋𝚞𝙱𝚘𝚝-𝙼𝙳'
+global.gt = '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿'
 global.gatabot = gt
 
 global.yt = 'https://youtube.com/channel/UCpNU4eY7eiI0ve05CssjdbA'
@@ -179,8 +183,8 @@ global.exito = eg
 
 //⊱ ━━━━━.⋅ Información | Information ⋅.━━━━ ⊰
 
-global.wm = '𝙵𝚞𝚝𝚊𝚋𝚞𝙱𝚘𝚝-𝙼𝙳 | 𝙲𝚘𝚕𝚊𝚙𝚜𝚞𝚜/𝙱𝚎𝚗𝚓𝚊'
-global.igfg = '𝙵𝚞𝚝𝚊𝚋𝚞𝙱𝚘𝚝-𝙼𝙳'
+global.wm = '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 : 𝙂𝙖𝙩𝙖 𝘿𝙞𝙤𝙨'
+global.igfg = '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿'
 global.wait = '*⌛ _Cargando | Charging..._ ▬▭▭▭▭▭▭*'
 global.waitt = '*⌛ _Cargando | Charging..._ ▬▬▭▭▭*'
 global.waittt = '*⌛ _Cargando | Charging..._ ▬▬▬▬▭▭*'
@@ -217,6 +221,13 @@ global.img9 = 'https://i.imgur.com/xfUEdDb.jpeg'
 global.img10 = 'https://i.imgur.com/DvHoMc3.jpg'
 global.img11 = 'https://i.imgur.com/5Q1MqGD.jpg'
 global.img12 = 'https://i.imgur.com/vWnsjh8.jpg'
+global.img13 = 'https://i.imgur.com/pCfFOgw.jpeg'
+global.img14 = 'https://i.imgur.com/knBDWRA.jpeg'
+global.img15 = 'https://i.imgur.com/QrkkKx7.jpeg'
+
+global.redesMenu = [nna, nn, nnn, nnnt, nnntt, nnnttt, md, ig, paypal, yt]
+global.gataMenu = [img, img2, img6, img7, img8, img9, img13, img14, img15]
+global.gataVidMenu = ['./media/menus/Menuvid1.mp4', './media/menus/Menuvid2.mp4', './media/menus/Menuvid3.mp4']
 
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 
@@ -267,7 +278,7 @@ global.fgif = {
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 
 
-global.multiplier = 40 // Cuanto más alto, más difícil subir de nivel | The higher, The harder levelup 
+global.multiplier = 60 // Cuanto más alto, más difícil subir de nivel | The higher, The harder levelup 
 
 //Emojis RPG - Referencias
 global.rpg = {

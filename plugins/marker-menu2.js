@@ -1,11 +1,11 @@
 import { xpRange } from '../lib/levelling.js'
 import PhoneNumber from 'awesome-phonenumber'
 import { promises } from 'fs'
-import { join } from 'path'
+import { join } from 'path' 
 import fetch from 'node-fetch'
 
 let handler = async (m, { conn, usedPrefix, command, args, usedPrefix: _p, __dirname, isOwner, text, isAdmin, isROwner }) => {
-try{  
+try{
 const { levelling } = '../lib/levelling.js'
 let { exp, limit, level, role } = global.db.data.users[m.sender]
 let { min, xp, max } = xpRange(level, global.multiplier)
@@ -57,18 +57,19 @@ level, limit, weton, week, date, dateIslamic, time, totalreg, rtotalreg, role,
 readmore: readMore
 }
 text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
- 
+  
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 let mentionedJid = [who]
 let username = conn.getName(who)
 let user = global.db.data.users[m.sender]
+//user.registered = false
 
 let pp = gataVidMenu.getRandom()
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
 let fsizedoc = '1'.repeat(10)
 let adReply = { fileLength: fsizedoc, seconds: fsizedoc, contextInfo: { forwardingScore: fsizedoc, externalAdReply: { showAdAttribution: true, title: wm, body: '👋 ' + username, mediaUrl: ig, description: 'Hola', previewType: 'PHOTO', thumbnail: await(await fetch(gataMenu.getRandom())).buffer(), sourceUrl: redesMenu.getRandom() }}}
 
-let menuA = `🧸 ${lenguajeGB['smsConfi2']()} *${username}*`.trim()
+let menuA = `⛲ ${lenguajeGB['smsConfi2']()} *${username}*`.trim()
 let menuB = `╭┄〔 *${wm}* 〕┄⊱
 ┊დ *${week}, ${date}*
 ┊დ *${lenguajeGB['smsBotonM4']()} » ${Object.keys(global.db.data.users).length}* 
@@ -78,30 +79,32 @@ let menuB = `╭┄〔 *${wm}* 〕┄⊱
 ┊დ *${lenguajeGB['smsBotonM7']()} »* ${user.premiumTime > 0 ? '✅' : '❌'}
 ╰┄┄┄┄〔 *𓃠 ${vs}* 〕┄┄┄┄⊱
 
-⠇ ${lenguajeGB['smsTex22']()} 🎐
-∘ _${usedPrefix}sticker | s *imagen o video*_
-∘ _${usedPrefix}sticker | s *url de tipo jpg*_
-∘ _${usedPrefix}emojimix *😺+😆*_
-∘ _${usedPrefix}scircle | círculo *imagen*_
-∘ _${usedPrefix}semoji | emoji *tipo emoji*_
-∘ _${usedPrefix}attp *texto*_
-∘ _${usedPrefix}attp2 *texto*_
-∘ _${usedPrefix}ttp *texto*_
-∘ _${usedPrefix}ttp2 *texto*_
-∘ _${usedPrefix}ttp3 *texto*_
-∘ _${usedPrefix}ttp4 *texto*_
-∘ _${usedPrefix}ttp5 *texto*_
-∘ _${usedPrefix}ttp6 *texto*_
-∘ _${usedPrefix}palmaditas | pat *@tag*_
-∘ _${usedPrefix}bofetada | slap *@tag*_
-∘ _${usedPrefix}besar | kiss *@tag*_
-∘ _${usedPrefix}alimentar | food *@tag*_
-∘ _${usedPrefix}dado_
-∘ _${usedPrefix}wm *packname|author*_
-∘ _${usedPrefix}wm *texto1|texto2*_
-∘ _${usedPrefix}stickermarker *efecto : responder a imagen*_
-∘ _${usedPrefix}stickerfilter *efecto : responder a imagen*_
-∘ _${usedPrefix}cs *:* cs2_
+⠇ ${lenguajeGB['smsTex15']()} 🌅
+∘ ${usedPrefix}logocorazon *Texto*
+∘ ${usedPrefix}3dtext *Texto*
+∘ ${usedPrefix}angels *Texto*
+∘ ${usedPrefix}batshalloween *Texto*
+∘ ${usedPrefix}bear2 *Texto*
+∘ ${usedPrefix}boom *Texto*
+∘ ${usedPrefix}graffiticartoon *Texto*
+∘ ${usedPrefix}girlgamer *Texto*
+∘ ${usedPrefix}firework *Texto*
+∘ ${usedPrefix}gold *Texto*
+∘ ${usedPrefix}handlove *Texto*
+∘ ${usedPrefix}heartcup *Texto*
+∘ ${usedPrefix}heartflashlight *Texto*
+∘ ${usedPrefix}birthdaycake *Texto*
+∘ ${usedPrefix}birthdaycake2 *Texto*
+∘ ${usedPrefix}birthdaycake3 *Texto*
+∘ ${usedPrefix}facebooksilverplay *Texto*
+∘ ${usedPrefix}facebooksilverplay2 *Texto*
+∘ ${usedPrefix}neonsantin *Texto*
+∘ ${usedPrefix}womenday *Texto*
+∘ ${usedPrefix}summerysand *Texto*
+∘ ${usedPrefix}wetglass *Texto*
+∘ ${usedPrefix}mylove *Texto*
+∘ ${usedPrefix}pikachu *Texto*
+∘ ${usedPrefix}logochristmas *Texto*
 `.trim()
 await conn.sendButtonVid(m.chat, pp, menuA, menuB, lenguajeGB.smsBotonM1(), '.menu', lenguajeGB.smsBotonM2(), '/allmenu', lenguajeGB.smsBotonM3(), '#inventario', fkontak, adReply)
 
@@ -113,7 +116,7 @@ console.log(e)
 
 handler.help = ['infomenu'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
-handler.command = /^(stickermenu)$/i
+handler.command = /^(menulogos2)$/i
 //handler.register = true
 handler.exp = 50
 export default handler

@@ -2,12 +2,11 @@ import { xpRange } from '../lib/levelling.js'
 import PhoneNumber from 'awesome-phonenumber'
 import { promises } from 'fs'
 import { join } from 'path'
-let handler = async (m, { conn, usedPrefix, command, args, usedPrefix: _p, __dirname, isOwner, text, isAdmin, isROwner }) => {
-  
-  
-const { levelling } = '../lib/levelling.js'
-//let handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text }) => {
+import fetch from 'node-fetch'
 
+let handler = async (m, { conn, usedPrefix, command, args, usedPrefix: _p, __dirname, isOwner, text, isAdmin, isROwner }) => {
+try{
+const { levelling } = '../lib/levelling.js'
 let { exp, limit, level, role } = global.db.data.users[m.sender]
 let { min, xp, max } = xpRange(level, global.multiplier)
 
@@ -59,77 +58,58 @@ readmore: readMore
 }
 text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
   
-/*
-const sections = [
-{
-title: `𝙇𝙄𝙎𝙏𝘼 𝘿𝙀𝙎𝙋𝙇𝙀𝙂𝘼𝘽𝙇𝙀 | 𝘿𝙍𝙊𝙋-𝘿𝙊𝙒𝙉 𝙇𝙄𝙎𝙏`,
-rows: [
-{title: "❇️ 𝙈𝙚𝙣𝙪 𝙋𝙧𝙞𝙣𝙘𝙞𝙥𝙖𝙡 |  𝘿𝙖𝙨𝙝𝙗𝙤𝙖𝙧𝙙 ❇️", description: null, rowId: `${usedPrefix}menu`},
-{title: "✳️ 𝙈𝙚𝙣𝙪 𝘾𝙤𝙢𝙥𝙡𝙚𝙩𝙤 | 𝙁𝙪𝙡𝙡 𝙈𝙚𝙣𝙪 ✳️", description: null, rowId: `${usedPrefix}allmenu`},
-{title: "🚀 𝙑𝙚𝙡𝙤𝙘𝙞𝙙𝙖𝙙 | 𝙋𝙞𝙣𝙜 🚀", description: null, rowId: `${usedPrefix}ping`}, 
-{title: "💎 𝘼𝙘𝙩𝙪𝙖𝙡𝙞𝙯𝙖𝙧 | 𝙐𝙥𝙙𝙖𝙩𝙚 💎", description: "𝘼𝘾𝙏𝙐𝘼𝙇𝙄𝙕𝘼𝙍 𝘼 𝙇𝘼 𝙐𝙇𝙏𝙄𝙈𝘼 𝙑𝙀𝙍𝙎𝙄𝙊𝙉\n𝙐𝙋𝘿𝘼𝙏𝙀 𝙏𝙊 𝙏𝙃𝙀 𝙇𝘼𝙏𝙀𝙎𝙏 𝙑𝙀𝙍𝙎𝙄𝙊𝙉", rowId: `${usedPrefix}update`},
-{title: "💎 𝙍𝙚𝙞𝙣𝙞𝙘𝙞𝙖𝙧 | 𝙍𝙚𝙨𝙩𝙖𝙧𝙩 💎", description: "𝙍𝙀𝙄𝙉𝙄𝘾𝙄𝘼𝙍 𝙇𝘼 𝙏𝙀𝙍𝙈𝙄𝙉𝘼𝙇\n𝙍𝙀𝙎𝙏𝘼𝙍𝙏 𝙏𝙃𝙀 𝙏𝙀𝙍𝙈𝙄𝙉𝘼𝙇", rowId: `${usedPrefix}reiniciar`},
-{title: "💎 𝘽𝙤𝙧𝙧𝙖𝙧𝙩𝙢𝙥 | 𝘾𝙡𝙚𝙖𝙧𝙩𝙢𝙥 💎", description: "𝘽𝙊𝙍𝙍𝘼𝙍 𝘼𝙍𝘾𝙃𝙄𝙑𝙊𝙎 𝘿𝙀 𝘾𝙊𝙉𝙎𝙐𝙈𝙊\n𝘿𝙀𝙇𝙀𝙏𝙀 𝘾𝙊𝙉𝙎𝙐𝙈𝙋𝙏𝙄𝙊𝙉 𝙁𝙄𝙇𝙀𝙎", rowId: `${usedPrefix}clear`},
-{title: "💎 𝘽𝙖𝙣𝙚𝙖𝙧 𝘾𝙝𝙖𝙩 | 𝘽𝙖𝙣 𝘾𝙝𝙖𝙩 💎", description: "𝙊𝙈𝙄𝙏𝙄𝙍 𝙐𝙎𝙊 𝘿𝙀 𝙂𝘼𝙏𝘼𝘽𝙊𝙏-𝙈𝘿 𝙀𝙉 𝘾𝙃𝘼𝙏𝙎\n𝘽𝙔𝙋𝘼𝙎𝙎 𝙐𝙎𝙄𝙉𝙂 𝙂𝘼𝙏𝘼𝘽𝙊𝙏-𝙈𝘿 𝙄𝙉 𝘾𝙃𝘼𝙏𝙎", rowId: `${usedPrefix}ban1`},   
-{title: "💎 𝘿𝙚𝙨𝙗𝙖𝙣𝙚𝙖𝙧 𝘾𝙝𝙖𝙩 | 𝙐𝙣𝙗𝙖𝙣 𝘾𝙝𝙖𝙩 💎", description: "𝙍𝙀𝘼𝙉𝙐𝘿𝘼𝙍 𝙐𝙎𝙊 𝘿𝙀 𝙂𝘼𝙏𝘼𝘽𝙊𝙏-𝙈𝘿 𝙀𝙉 𝘾𝙃𝘼𝙏\n𝙍𝙀𝙎𝙐𝙈𝙀 𝙐𝙎𝙀 𝙊𝙁 𝙂𝘼𝙏𝘼𝘽𝙊𝙏-𝙈𝘿 𝙄𝙉 𝘾𝙃𝘼𝙏", rowId: `${usedPrefix}}desban1`},    
-{title: "💎 𝘾𝙤𝙢𝙪𝙣𝙞𝙘𝙖𝙙𝙤 𝙂𝙚𝙣𝙚𝙧𝙖𝙡 | 𝘽𝙧𝙤𝙖𝙙𝙘𝙖𝙨𝙩 𝘼𝙡𝙡 💎", description: "𝙀𝙉𝙑𝙄𝘼𝙍 𝙐𝙉 𝘼𝙉𝙐𝙉𝘾𝙄𝙊 𝘼 𝙏𝙊𝘿𝙊𝙎\n𝙎𝙀𝙉𝘿 𝘼𝙉 𝘼𝘿 𝙏𝙊 𝙀𝙑𝙀𝙍𝙔𝙊𝙉𝙀", rowId: `${usedPrefix}bc`}, 
-{title: "💎 𝘾𝙤𝙢𝙪𝙣𝙞𝙘𝙖𝙙𝙤 𝙖 𝙋𝙧𝙞𝙫𝙖𝙙𝙤 | 𝘽𝙧𝙤𝙖𝙙𝙘𝙖𝙨𝙩 𝙋𝙧𝙞𝙫𝙖𝙩𝙚 💎", description: "𝙀𝙉𝙑𝙄𝘼𝙍 𝙐𝙉 𝘼𝙉𝙐𝙉𝘾𝙄𝙊 𝘼𝙇 𝙋𝙍𝙄𝙑𝘼𝘿𝙊\n𝙎𝙀𝙉𝘿 𝘼𝙉 𝘼𝘿 𝙏𝙊 𝙋𝙍𝙄𝙑𝘼𝙏𝙀 𝘾𝙃𝘼𝙏𝙎", rowId: `${usedPrefix}comunicarpv`},  
-{title: "💎 𝘾𝙤𝙢𝙪𝙣𝙞𝙘𝙖𝙙𝙤 𝙖 𝙂𝙧𝙪𝙥𝙤𝙨 | 𝘽𝙧𝙤𝙖𝙙𝙘𝙖𝙨𝙩 𝙂𝙧𝙤𝙪𝙥𝙨 💎", description: "𝙀𝙉𝙑𝙄𝘼𝙍 𝙐𝙉 𝘼𝙉𝙐𝙉𝘾𝙄𝙊 𝘼 𝙂𝙍𝙐𝙋𝙊𝙎\n𝙎𝙀𝙉𝘿 𝘼𝙉 𝘼𝘿 𝙏𝙊 𝙂𝙍𝙊𝙐𝙋𝙎", rowId: `${usedPrefix}bcgc`},  
-]}, ] */
-//let name = await conn.getName(m.sender)
-//let pp = './media/menus/Menuvid1.mp4'  
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 let mentionedJid = [who]
 let username = conn.getName(who)
-//let user = global.db.data.users[m.sender]
+let user = global.db.data.users[m.sender]
 //user.registered = false
 
-let menu = `
-💗 *¡HOLA | HI!* ${username}
-╭━〔 *${wm}* 〕━⬣
-┃⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️
-┃✪ *EXPERIENCIA | EXP ➺ ${exp}*
-┃✪ *NIVEL | LEVEL ➺* ${level}
-┃✪ *ROL ➺ ${role}*
-┃✪ *GATACOINS ➺ $ ${money}*
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃✪ *FECHA*
-┃➺ *${week}, ${date}*
-┃✪ *USUARIOS | USERS ➺ ${Object.keys(global.db.data.users).length}* 
-┃⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️
-╰━━━━〔 𓃠 *${vs}* 〕━━━━⬣
+let pp = gataVidMenu.getRandom()
+let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
+let fsizedoc = '1'.repeat(10)
+let adReply = { fileLength: fsizedoc, seconds: fsizedoc, contextInfo: { forwardingScore: fsizedoc, externalAdReply: { showAdAttribution: true, title: wm, body: '👋 ' + username, mediaUrl: ig, description: 'Hola', previewType: 'PHOTO', thumbnail: await(await fetch(gataMenu.getRandom())).buffer(), sourceUrl: redesMenu.getRandom() }}}
 
-╭━〔 𝙈𝙀𝙉𝙐 𝙋𝘼𝙍𝘼 𝙋𝙍𝙊𝙋𝙄𝙀𝙏𝘼𝙍𝙄𝙊/𝘼 〕━⬣
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃💎➺ _${usedPrefix}dardiamantes *cantidad*_
-┃💎➺ _${usedPrefix}darxp *cantidad*_
-┃💎➺ _${usedPrefix}dargatacoins *cantidad*_
-┃💎➺ _${usedPrefix}idioma | language_
-┃💎➺ _${usedPrefix}cajafuerte_
-┃💎➺ _${usedPrefix}comunicar | broadcastall | bc *texto*_
-┃💎➺ _${usedPrefix}broadcastchats | bcc *texto*_
-┃💎➺ _${usedPrefix}comunicarpv *texto*_
-┃💎➺ _${usedPrefix}broadcastgc *texto*_
-┃💎➺ _${usedPrefix}comunicargrupos *texto*_
-┃💎➺ _${usedPrefix}borrartmp | cleartmp_
-┃💎➺ _${usedPrefix}delexp *@tag*_
-┃💎➺ _${usedPrefix}delgatacoins *@tag*_
-┃💎➺ _${usedPrefix}deldiamantes *@tag*_
-┃💎➺ _${usedPrefix}reiniciar | restart_
-┃💎➺ _${usedPrefix}ctualizar | update_
-┃💎➺ _${usedPrefix}addprem | +prem *@tag*_
-┃💎➺ _${usedPrefix}delprem | -prem *@tag*_
-┃💎➺ _${usedPrefix}listapremium | listprem_
-┃💎➺ _${usedPrefix}añadirdiamantes *@tag cantidad*_
-┃💎➺ _${usedPrefix}añadirxp *@tag cantidad*_
-┃💎➺ _${usedPrefix}añadirgatacoins *@tag cantidad*_
-╰━━━━━━━━━━━━━━━━━⬣`.trim()
-conn.sendHydrated(m.chat, menu, wm, null, 'https://github.com/GataNina-Li/GataBot-MD', '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
-['𝙈𝙚𝙣𝙪́ 𝙘𝙤𝙢𝙥𝙡𝙚𝙩𝙤 | 𝙁𝙪𝙡𝙡 𝙈𝙚𝙣𝙪 💫', '.allmenu'],
-['𝙄𝙣𝙫𝙚𝙣𝙩𝙖𝙧𝙞𝙤 | 𝙄𝙣𝙫𝙚𝙣𝙩𝙤𝙧𝙮 🎒', '/inventario'],
-['𝙈𝙚𝙣𝙪 𝙋𝙧𝙞𝙣𝙘𝙞𝙥𝙖𝙡 | 𝙈𝙖𝙞𝙣 𝙢𝙚𝙣𝙪 ⚡', '#menu']
-], m,)
-}
+let menuA = `🛂 ${lenguajeGB['smsConfi2']()} *${username}*`.trim()
+let menuB = `╭┄〔 *${wm}* 〕┄⊱
+┊დ *${week}, ${date}*
+┊დ *${lenguajeGB['smsBotonM4']()} » ${Object.keys(global.db.data.users).length}* 
+┊
+┊დ *${lenguajeGB['smsBotonM5']()} »* ${role}
+┊დ *${lenguajeGB['smsBotonM6']()} » ${level}*
+┊დ *${lenguajeGB['smsBotonM7']()} »* ${user.premiumTime > 0 ? '✅' : '❌'}
+╰┄┄┄┄〔 *𓃠 ${vs}* 〕┄┄┄┄⊱
+
+⠇ ${lenguajeGB['smsTex20']()} 💎
+∘ _${usedPrefix}dardiamantes *cantidad*_
+∘ _${usedPrefix}darxp *cantidad*_
+∘ _${usedPrefix}dargatacoins *cantidad*_
+∘ _${usedPrefix}idioma | language *código*_
+∘ _${usedPrefix}cajafuerte_
+∘ _${usedPrefix}comunicar | broadcastall | bc *texto*_
+∘ _${usedPrefix}broadcastchats | bcc *texto*_
+∘ _${usedPrefix}comunicarpv *texto*_
+∘ _${usedPrefix}broadcastgc *texto*_
+∘ _${usedPrefix}comunicargrupos *texto*_
+∘ _${usedPrefix}borrartmp | cleartmp_
+∘ _${usedPrefix}delexp *@tag*_
+∘ _${usedPrefix}delgatacoins *@tag*_
+∘ _${usedPrefix}deldiamantes *@tag*_
+∘ _${usedPrefix}reiniciar | restart_
+∘ _${usedPrefix}ctualizar | update_
+∘ _${usedPrefix}addprem | +prem *@tag*_
+∘ _${usedPrefix}delprem | -prem *@tag*_
+∘ _${usedPrefix}listapremium | listprem_
+∘ _${usedPrefix}añadirdiamantes *@tag cantidad*_
+∘ _${usedPrefix}añadirxp *@tag cantidad*_
+∘ _${usedPrefix}añadirgatacoins *@tag cantidad*_
+`.trim()
+await conn.sendButtonVid(m.chat, pp, menuA, menuB, lenguajeGB.smsBotonM1(), '.menu', lenguajeGB.smsBotonM2(), '/allmenu', lenguajeGB.smsBotonM3(), '#inventario', fkontak, adReply)
+
+} catch (e) {
+await conn.sendButton(m.chat, `\n${wm}`, lenguajeGB['smsMalError3']() + '#report ' + usedPrefix + command, null, [[lenguajeGB.smsMensError1(), `#reporte ${lenguajeGB['smsMensError2']()} *${usedPrefix + command}*`]], m)
+console.log(`❗❗ ${lenguajeGB['smsMensError2']()} ${usedPrefix + command} ❗❗`)
+console.log(e)	
+}}
 
 handler.help = ['infomenu'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']

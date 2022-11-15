@@ -5,22 +5,22 @@ var document = doc[Math.floor(Math.random() * doc.length)]
 let text = `
 𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 💖🐈
 *Wa.me/593993684821*
+
 𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 *2* 💖🐈
-*Wa.me/50498965677*
-𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 *3* 💖🐈
 *Wa.me/50495086382*
 
-𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 *4* 💖🐈
+𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 *3* 💖🐈
 *Wa.me/51993042301*
 
-𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 *5* 💖🐈
+𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 *4* 💖🐈
 *Wa.me/5492914469417*
 
-𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 *6* 💖🐈
+𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 *5* 💖🐈
 *Wa.me/573238484181*
 
 𝙂𝘼𝙏𝘼 𝘿𝙄𝙊𝙎 - 𝘼𝙎𝙄𝙎𝙏𝙀𝙉𝘾𝙄𝘼
 *${asistencia}*
+
 🧡 *Eso son los contactos para ti.*\n💜 *That's the contacts for you.*`.trim()   
 let buttonMessage= {
 'document': { url: `${md}` },
@@ -52,11 +52,11 @@ await conn.sendMessage(m.chat, buttonMessage, { quoted: m })
 const data = global.owner.filter(([id, isCreator]) => id && isCreator)
 await conn.sendContact(m.chat, data.map(([id, name]) => [id, name]), m)
   
-//let pp = './media/menus/Menu2.jpg'
+let pp = './media/menus/Menu2.jpg'
 let str = `${wm}`
 let oficial = 'Comunícate con Mí Creadora por Instagram!!, Solo por ese medio puede ayudarte sobre Temas de GataBot\n\nCommunicate with My Creator on Instagram!!, Only by that means can help you on GataBot Themes'
 
-await conn.sendHydrated2(m.chat, str, oficial, null, 'https://github.com/GataNina-Li/GataBot-MD', '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', 'https://www.instagram.com/gata_dios', '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢', [
+await conn.sendHydrated2(m.chat, str, oficial, pp, 'https://github.com/GataNina-Li/GataBot-MD', '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', 'https://www.instagram.com/gata_dios', '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢', [
 ['☘ 𝙄𝙧 𝙖𝙡 𝙞𝙣𝙞𝙘𝙞𝙤 | 𝙂𝙤 𝙩𝙤 𝙨𝙩𝙖𝙧𝙩', '/menu'],
 ], m,)
 }

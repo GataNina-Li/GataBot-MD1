@@ -3,9 +3,9 @@ import fetch from 'node-fetch'
 import { xpRange } from '../lib/levelling.js'
 const { levelling } = '../lib/levelling.js'
 import moment from 'moment-timezone'
+
 let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isROwner }) => {
-//let userr = global.db.data.users[m.sender]
-//userr.registered = false
+try{
 let locale = 'es'
 let d = new Date(new Date + 3600000)
 let time = d.toLocaleTimeString(locale, {
@@ -18,14 +18,12 @@ let _uptime = process.uptime() * 1000
 let uptime = clockString(_uptime) 
 wm = global.wm
 vs = global.vs
+      
 let { exp, limit, level, role } = global.db.data.users[m.sender]
 let { min, xp, max } = xpRange(level, global.multiplier)
-let enlace = { contextInfo: { externalAdReply: {title: wm, body: 'support group' , sourceUrl: nna, thumbnail: await(await fetch(img)).buffer() }}}
-let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
-//let name = await conn.getName(m.sender)
 let name = await conn.getName(m.sender)
-let imagen = './media/menus/Menu3.jpg'
 let pareja = global.db.data.users[m.sender].pasangan 
+let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
 
 const sections = [{
 title: comienzo + ' ' + lenguajeGB['smsLista1']() + ' ' + fin,
@@ -47,17 +45,16 @@ rows: [
 {title: lenguajeGB['smsLista14'](), rowId: `${usedPrefix}inventario 3`},
 {title: lenguajeGB['smsLista15'](), rowId: `${usedPrefix}rpgmenu`},
 {title: lenguajeGB['smsLista16'](), rowId: `${usedPrefix}buy`},
-{title: lenguajeGB['smsLista17'](), rowId: `${usedPrefix}inventory`},
-{title: lenguajeGB['smsLista18'](), rowId: `${usedPrefix}randommenu`, description: '\n'}
+{title: lenguajeGB['smsLista17'](), rowId: `${usedPrefix}inventory`, description: '\n'}
 ]},{	
-title: comienzo + ' ' + lenguajeGB['smsLista19']() + ' ' + fin,
+title: comienzo + ' ' + lenguajeGB['smsLista18']() + ' ' + fin,
 rows: [
-{title: lenguajeGB['smsLista20'](), rowId: `${usedPrefix}descargasmenu`},
-{title: lenguajeGB['smsLista21'](), rowId: `${usedPrefix}buscarmenu`},
-{title: lenguajeGB['smsLista22'](), rowId: `${usedPrefix}convertidormenu`},
-{title: lenguajeGB['smsLista23'](), rowId: `${usedPrefix}audioefectomenu`, description: '\n'}
+{title: lenguajeGB['smsLista19'](), rowId: `${usedPrefix}descargasmenu`},
+{title: lenguajeGB['smsLista20'](), rowId: `${usedPrefix}buscarmenu`},
+{title: lenguajeGB['smsLista21'](), rowId: `${usedPrefix}convertidormenu`},
+{title: lenguajeGB['smsLista22'](), rowId: `${usedPrefix}audioefectomenu`, description: '\n'}
 ]},{
-title: comienzo + ' ' + lenguajeGB['smsLista1']() + ' ' + fin,
+title: comienzo + ' ' + lenguajeGB['smsLista23']() + ' ' + fin,
 rows: [
 {title: lenguajeGB['smsLista24'](), rowId: `${usedPrefix}juegosmenu`},
 {title: lenguajeGB['smsLista25'](), rowId: `${usedPrefix}audios`},
@@ -103,9 +100,13 @@ text: `╭───────────────────❀\n│ *${u
 title: null,
 buttonText: `${lenguajeGB['smsListaMenu']()}`, 
 sections }
-
 await conn.sendMessage(m.chat, listMessage, {quoted: fkontak})	
-}
+      
+} catch (e) {
+await conn.sendButton(m.chat, `\n${wm}`, lenguajeGB['smsMalError3']() + '#report ' + usedPrefix + command, null, [[lenguajeGB.smsMensError1(), `#reporte ${lenguajeGB['smsMensError2']()} *${usedPrefix + command}*`]], m)
+console.log(`❗❗ ${lenguajeGB['smsMensError2']()} ${usedPrefix + command} ❗❗`)
+console.log(e)	
+}}
 handler.help = ['en', 'dis'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
 handler.command = /^(menu|menú|memu|memú|help|info|comandos|2help|menu1.2|ayuda|commands|commandos|m|\?)$/i

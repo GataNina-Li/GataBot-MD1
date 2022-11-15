@@ -2,12 +2,11 @@ import { xpRange } from '../lib/levelling.js'
 import PhoneNumber from 'awesome-phonenumber'
 import { promises } from 'fs'
 import { join } from 'path'
-let handler = async (m, { conn, usedPrefix, command, args, usedPrefix: _p, __dirname, isOwner, text, isAdmin, isROwner }) => {
-  
-  
-const { levelling } = '../lib/levelling.js'
-//let handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text }) => {
+import fetch from 'node-fetch'
 
+let handler = async (m, { conn, usedPrefix, command, args, usedPrefix: _p, __dirname, isOwner, text, isAdmin, isROwner }) => {
+try{
+const { levelling } = '../lib/levelling.js'
 let { exp, limit, level, role } = global.db.data.users[m.sender]
 let { min, xp, max } = xpRange(level, global.multiplier)
 
@@ -59,94 +58,91 @@ readmore: readMore
 }
 text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
   
-//let name = await conn.getName(m.sender)
-//let pp = './media/menus/Menuvid1.mp4'
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 let mentionedJid = [who]
 let username = conn.getName(who)
-//let user = global.db.data.users[m.sender]
-//user.registered = false
+let user = global.db.data.users[m.sender]
 
-let menu = `
-💗 *¡HOLA | HI!* ${username}
-╭━〔 *${wm}* 〕━⬣
-┃⛩️⛩️⛩️⛩️⛩️⛩️⛩️⛩️⛩️
-┃✪ *EXPERIENCIA | EXP ➺ ${exp}*
-┃✪ *NIVEL | LEVEL ➺ ${level}*
-┃✪ *ROL ➺* ${role}
-┃✪ *GATACOINS ➺ $ ${money}*
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃✪ *FECHA*
-┃➺ *${week}, ${date}*
-┃✪ *USUARIOS | USERS ➺ ${Object.keys(global.db.data.users).length}* 
-┃⛩️⛩️⛩️⛩️⛩️⛩️⛩️⛩️⛩️
-╰━━━━〔 𓃠 *${vs}* 〕━━━━⬣
+let pp = gataVidMenu.getRandom()
+let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
+let fsizedoc = '1'.repeat(10)
+let adReply = { fileLength: fsizedoc, seconds: fsizedoc, contextInfo: { forwardingScore: fsizedoc, externalAdReply: { showAdAttribution: true, title: wm, body: '👋 ' + username, mediaUrl: ig, description: 'Hola', previewType: 'PHOTO', thumbnail: await(await fetch(gataMenu.getRandom())).buffer(), sourceUrl: redesMenu.getRandom() }}}
 
-╭━〔 𝙍𝘼𝙉𝘿𝙊𝙈 𝙈𝙀𝙈𝙀 | 𝘼𝙉𝙄𝙈𝙀 〕━⬣
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃🧩 _${usedPrefix}chica_
-┃🧩 _${usedPrefix}chico_
-┃🧩 _${usedPrefix}cristianoronaldo_
-┃🧩 _${usedPrefix}messi_
-┃🧩 _${usedPrefix}meme_
-┃🧩 _${usedPrefix}meme2_
-┃🧩 _${usedPrefix}itzy_
-┃🧩 _${usedPrefix}blackpink_
-┃🧩 _${usedPrefix}kpop *blackpink : exo : bts*_
-┃🧩 _${usedPrefix}lolivid_
-┃🧩 _${usedPrefix}loli_
-┃🧩 _${usedPrefix}navidad_
-┃🧩 _${usedPrefix}ppcouple_
-┃🧩 _${usedPrefix}neko_
-┃🧩 _${usedPrefix}waifu_
-┃🧩 _${usedPrefix}akira_
-┃🧩 _${usedPrefix}akiyama_
-┃🧩 _${usedPrefix}anna_
-┃🧩 _${usedPrefix}asuna_
-┃🧩 _${usedPrefix}ayuzawa_
-┃🧩 _${usedPrefix}boruto_
-┃🧩 _${usedPrefix}chiho_
-┃🧩 _${usedPrefix}chitoge_
-┃🧩 _${usedPrefix}deidara_
-┃🧩 _${usedPrefix}erza_
-┃🧩 _${usedPrefix}elaina_
-┃🧩 _${usedPrefix}eba_
-┃🧩 _${usedPrefix}emilia_
-┃🧩 _${usedPrefix}hestia_
-┃🧩 _${usedPrefix}hinata_
-┃🧩 _${usedPrefix}inori_
-┃🧩 _${usedPrefix}isuzu_
-┃🧩 _${usedPrefix}itachi_
-┃🧩 _${usedPrefix}itori_
-┃🧩 _${usedPrefix}kaga_
-┃🧩 _${usedPrefix}kagura_
-┃🧩 _${usedPrefix}kaori_
-┃🧩 _${usedPrefix}keneki_
-┃🧩 _${usedPrefix}kotori_
-┃🧩 _${usedPrefix}kurumi_
-┃🧩 _${usedPrefix}madara_
-┃🧩 _${usedPrefix}mikasa_
-┃🧩 _${usedPrefix}miku_
-┃🧩 _${usedPrefix}minato_
-┃🧩 _${usedPrefix}naruto_
-┃🧩 _${usedPrefix}nezuko_
-┃🧩 _${usedPrefix}sagiri_
-┃🧩 _${usedPrefix}sasuke_
-┃🧩 _${usedPrefix}sakura_
-┃🧩 _${usedPrefix}cosplay_
-╰━━━━━━━━━━━━━━━━⬣`.trim()
-conn.sendHydrated(m.chat, menu, wm, null, 'https://github.com/GataNina-Li/GataBot-MD', '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
-['𝙈𝙚𝙣𝙪́ 𝙘𝙤𝙢𝙥𝙡𝙚𝙩𝙤 | 𝙁𝙪𝙡𝙡 𝙈𝙚𝙣𝙪 💫', '.allmenu'],
-['𝙄𝙣𝙫𝙚𝙣𝙩𝙖𝙧𝙞𝙤 | 𝙄𝙣𝙫𝙚𝙣𝙩𝙤𝙧𝙮 🎒', '/inventario'],
-['𝙈𝙚𝙣𝙪 𝙋𝙧𝙞𝙣𝙘𝙞𝙥𝙖𝙡 | 𝙈𝙖𝙞𝙣 𝙢𝙚𝙣𝙪 ⚡', '#menu']
-], m,)
-}
+let menuA = `⛩️ ${lenguajeGB['smsConfi2']()} *${username}*`.trim()
+let menuB = `╭┄〔 *${wm}* 〕┄⊱
+┊დ *${week}, ${date}*
+┊დ *${lenguajeGB['smsBotonM4']()} » ${Object.keys(global.db.data.users).length}* 
+┊
+┊დ *${lenguajeGB['smsBotonM5']()} »* ${role}
+┊დ *${lenguajeGB['smsBotonM6']()} » ${level}*
+┊დ *${lenguajeGB['smsBotonM7']()} »* ${user.premiumTime > 0 ? '✅' : '❌'}
+╰┄┄┄┄〔 *𓃠 ${vs}* 〕┄┄┄┄⊱
+
+⠇ ${lenguajeGB['smsTex23']()} 🧩
+∘ _${usedPrefix}chica_
+∘ _${usedPrefix}chico_
+∘ _${usedPrefix}cristianoronaldo_
+∘ _${usedPrefix}messi_
+∘ _${usedPrefix}meme_
+∘ _${usedPrefix}meme2_
+∘ _${usedPrefix}itzy_
+∘ _${usedPrefix}blackpink_
+∘ _${usedPrefix}kpop *blackpink : exo : bts*_
+∘ _${usedPrefix}lolivid_
+∘ _${usedPrefix}loli_
+∘ _${usedPrefix}navidad_
+∘ _${usedPrefix}ppcouple_
+∘ _${usedPrefix}neko_
+∘ _${usedPrefix}waifu_
+∘ _${usedPrefix}akira_
+∘ _${usedPrefix}akiyama_
+∘ _${usedPrefix}anna_
+∘ _${usedPrefix}asuna_
+∘ _${usedPrefix}ayuzawa_
+∘ _${usedPrefix}boruto_
+∘ _${usedPrefix}chiho_
+∘ _${usedPrefix}chitoge_
+∘ _${usedPrefix}deidara_
+∘ _${usedPrefix}erza_
+∘ _${usedPrefix}elaina_
+∘ _${usedPrefix}eba_
+∘ _${usedPrefix}emilia_
+∘ _${usedPrefix}hestia_
+∘ _${usedPrefix}hinata_
+∘ _${usedPrefix}inori_
+∘ _${usedPrefix}isuzu_
+∘ _${usedPrefix}itachi_
+∘ _${usedPrefix}itori_
+∘ _${usedPrefix}kaga_
+∘ _${usedPrefix}kagura_
+∘ _${usedPrefix}kaori_
+∘ _${usedPrefix}keneki_
+∘ _${usedPrefix}kotori_
+∘ _${usedPrefix}kurumi_
+∘ _${usedPrefix}madara_
+∘ _${usedPrefix}mikasa_
+∘ _${usedPrefix}miku_
+∘ _${usedPrefix}minato_
+∘ _${usedPrefix}naruto_
+∘ _${usedPrefix}nezuko_
+∘ _${usedPrefix}sagiri_
+∘ _${usedPrefix}sasuke_
+∘ _${usedPrefix}sakura_
+∘ _${usedPrefix}cosplay_
+`.trim()
+await conn.sendButtonVid(m.chat, pp, menuA, menuB, lenguajeGB.smsBotonM1(), '.menu', lenguajeGB.smsBotonM2(), '/allmenu', lenguajeGB.smsBotonM3(), '#inventario', fkontak, adReply)
+
+} catch (e) {
+await conn.sendButton(m.chat, `\n${wm}`, lenguajeGB['smsMalError3']() + '#report ' + usedPrefix + command, null, [[lenguajeGB.smsMensError1(), `#reporte ${lenguajeGB['smsMensError2']()} *${usedPrefix + command}*`]], m)
+console.log(`❗❗ ${lenguajeGB['smsMensError2']()} ${usedPrefix + command} ❗❗`)
+console.log(e)	
+}}
 
 handler.help = ['infomenu'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
 handler.command = /^(randommenu)$/i
 //handler.register = true
-handler.exp = 70
+handler.exp = 50
 export default handler
 
 const more = String.fromCharCode(8206)
