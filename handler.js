@@ -911,6 +911,7 @@ export async function handler(chatUpdate) {
                 if (!('viewonce' in chat)) chat.viewonce = false         
                 if (!('modoadmin' in chat)) chat.modoadmin = false           
                 if (!('antitoxic' in chat)) chat.antitoxic = true 
+                if (!('simi' in chat)) chat.simi = false
 		if (!('autolevelup' in chat))  chat.autolevelup = true
                 if (!isNumber(chat.expired)) chat.expired = 0
                     
@@ -942,6 +943,7 @@ export async function handler(chatUpdate) {
                     viewonce: false,
                     modoadmin: false,
                     antitoxic: true,
+                    simi: false,
 	            autolevelup: true,
                     expired: 0,
                 }
