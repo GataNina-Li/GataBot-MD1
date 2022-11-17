@@ -25,9 +25,9 @@ if (isClose === undefined) {
 let caption = `${lenguajeGB['smsAvisoMG']()}
 ${lenguajeGB['smsMalused']()}
 ${lenguajeGB['smsGrupoTime1']()}
-*${usedPrefix + command} ${lenguajeGB.lenguaje() == 'en' || 'id' || 'ar' || 'pt' ? 'open' : 'abrir'} 1*
+*${usedPrefix + command} ${lenguajeGB.lenguaje() === 'en' || 'id' || 'ar' || 'pt' ? 'open' : 'abrir'} 1*
 ${lenguajeGB['smsGrupoTime2']()}
-*${usedPrefix + command} ${lenguajeGB.lenguaje() == 'en' || 'id' || 'ar' || 'pt' ? 'close' : 'cerrar'} 1*`
+*${usedPrefix + command} ${lenguajeGB.lenguaje() === 'en' || 'id' || 'ar' || 'pt' ? 'close' : 'cerrar'} 1*`
 
 m.reply(caption)
 throw false
