@@ -95,6 +95,7 @@ let menuB = `╭┄〔 *${wm}* 〕┄⊱
 ∘ _${usedPrefix}tagall *texto*_
 ∘ _${usedPrefix}hidetag *texto*_
 ∘ _${usedPrefix}infogrupo | infogroup_
+∘ _${usedPrefix}grupotiempo | grouptime *Cantidad*_
 ∘ _${usedPrefix}configuracion_
 ∘ _${usedPrefix}settings_
 ∘ _${usedPrefix}vergrupo_
