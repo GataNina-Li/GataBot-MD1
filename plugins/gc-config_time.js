@@ -118,7 +118,7 @@ sections }
 await conn.sendMessage(m.chat, listMessage, {quoted: fkontak})
 throw false
 }
-let timeoutset = 180000 * args[1] // 24 //Una Hora 86400000
+let timeoutset = 86400000 * args[1] / 24 //Una Hora 86400000
 await conn.groupSettingUpdate(m.chat, isClose).then(async _=> {
 m.reply(`${lenguajeGB['smsAvisoRG']()}${lenguajeGB['smsGrupoTime3']()} ${isClose == 'announcement' ? lenguajeGB.smsGrupoTime4() : lenguajeGB.smsGrupoTime5()} ${args[1] ? `${lenguajeGB['smsGrupoTime6']()} ${clockString(timeoutset)}*` : ''}`)
 })
@@ -129,7 +129,7 @@ conn.reply(m.chat, `${isClose == 'not_announcement' ? lenguajeGB.smsGrupoTime7()
 })
 }, timeoutset)}}
 
-handler.command = /^(grouptime|gctime)$/i
+handler.command = /^(grouptime|gctime|grupotiempo)$/i
 handler.botAdmin = true
 handler.group = true 
 handler.admin = true
