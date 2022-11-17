@@ -1,4 +1,3 @@
-//import { en, es, id, ar, pt } from './lib/idiomas/total-idiomas.js' 
 import fetch from 'node-fetch'
 let handler = m => m
 
