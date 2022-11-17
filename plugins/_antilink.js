@@ -14,7 +14,7 @@ const linkThisGroup = `https://chat.whatsapp.com/${await this.groupInviteCode(m.
 if (m.text.includes(linkThisGroup)) return !0
 }    
 await conn.sendButton(m.chat, `${lenguajeGB['smsEnlaceWat']()} ${await this.getName(m.sender)} ${isBotAdmin ? '' : `\n\n${lenguajeGB['smsAllAdmin']()}`}`, wm, [`${lenguajeGB['smsApagar']()}`, '/disable antilink'], m)    
-if (isBotAdmin && bot.restrict) {
+if (isBotAdmin) {
 await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
 } else if (!bot.restrict) return m.reply(`${lenguajeGB['smsSoloOwner']()}`)
 }
