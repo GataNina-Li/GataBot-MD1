@@ -370,6 +370,16 @@ throw false
 global.opts['gconly'] = isEnable
 break
 
+case 'antitrabas':
+case 'antitraba':
+if (m.isGroup) {
+if (!(isAdmin || isOwner)) {
+global.dfail('admin', m, conn)
+throw false
+}}
+chat.antiTraba = isEnable
+break
+
 case 'simi':
 if (m.isGroup) {
 if (!(isAdmin || isOwner)) {
