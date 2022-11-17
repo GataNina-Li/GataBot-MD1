@@ -57,31 +57,31 @@ lenguajeGB.smsGrupoTime10() + '24' + lenguajeGB.smsGrupoTime11()]
 
 let descripción = [ 
 lenguajeGB.smsGrupoTime12() + '1' + lenguajeGB.smsGrupoTime11(), 
-lenguajeGB.smsGrupoTime13() + '1' + lenguajeGB.smsGrupoTime11(), 
+lenguajeGB.smsGrupoTime13() + '1' + lenguajeGB.smsGrupoTime11() + '\n', 
 	
 lenguajeGB.smsGrupoTime12() + '2' + lenguajeGB.smsGrupoTime11(), 
-lenguajeGB.smsGrupoTime13() + '2' + lenguajeGB.smsGrupoTime11(), 
+lenguajeGB.smsGrupoTime13() + '2' + lenguajeGB.smsGrupoTime11() + '\n', 
 	
 lenguajeGB.smsGrupoTime12() + '3' + lenguajeGB.smsGrupoTime11(), 
-lenguajeGB.smsGrupoTime13() + '3' + lenguajeGB.smsGrupoTime11(), 
+lenguajeGB.smsGrupoTime13() + '3' + lenguajeGB.smsGrupoTime11() + '\n',  
 	
 lenguajeGB.smsGrupoTime12() + '4' + lenguajeGB.smsGrupoTime11(), 
-lenguajeGB.smsGrupoTime13() + '4' + lenguajeGB.smsGrupoTime11(), 
+lenguajeGB.smsGrupoTime13() + '4' + lenguajeGB.smsGrupoTime11() + '\n', 
 	
 lenguajeGB.smsGrupoTime12() + '5' + lenguajeGB.smsGrupoTime11(), 
-lenguajeGB.smsGrupoTime13() + '5' + lenguajeGB.smsGrupoTime11(), 
+lenguajeGB.smsGrupoTime13() + '5' + lenguajeGB.smsGrupoTime11() + '\n', 
 	
 lenguajeGB.smsGrupoTime12() + '6' + lenguajeGB.smsGrupoTime11(), 
-lenguajeGB.smsGrupoTime13() + '6' + lenguajeGB.smsGrupoTime11(), 
+lenguajeGB.smsGrupoTime13() + '6' + lenguajeGB.smsGrupoTime11() + '\n', 
 	
 lenguajeGB.smsGrupoTime12() + '7' + lenguajeGB.smsGrupoTime11(), 
-lenguajeGB.smsGrupoTime13() + '7' + lenguajeGB.smsGrupoTime11(), 
+lenguajeGB.smsGrupoTime13() + '7' + lenguajeGB.smsGrupoTime11() + '\n', 
 	
 lenguajeGB.smsGrupoTime12() + '10' + lenguajeGB.smsGrupoTime11(),
-lenguajeGB.smsGrupoTime13() + '10' + lenguajeGB.smsGrupoTime11(),
+lenguajeGB.smsGrupoTime13() + '10' + lenguajeGB.smsGrupoTime11() + '\n', 
 
 lenguajeGB.smsGrupoTime12() + '12' + lenguajeGB.smsGrupoTime11(),
-lenguajeGB.smsGrupoTime13() + '12' + lenguajeGB.smsGrupoTime11(),
+lenguajeGB.smsGrupoTime13() + '12' + lenguajeGB.smsGrupoTime11() + '\n', 
 
 lenguajeGB.smsGrupoTime12() + '24' + lenguajeGB.smsGrupoTime11(),
 lenguajeGB.smsGrupoTime13() + '24' + lenguajeGB.smsGrupoTime11()]
@@ -116,8 +116,6 @@ buttonText: `⚙️ ${lenguajeGB.smsConfi1()} ⚙️`,
 sections }
 
 await conn.sendMessage(m.chat, listMessage, {quoted: fkontak})
-	
-//m.reply(caption)
 throw false
 }
 let timeoutset = 180000 * args[1] // 24 //Una Hora 86400000
