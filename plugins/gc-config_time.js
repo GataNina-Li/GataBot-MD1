@@ -25,66 +25,66 @@ let isClose = {
 if (isClose === undefined) {
 	
 let nombre = [ 
-lenguajeGB.smsDete9() + '1' + lenguajeGB.smsDete11(), 
-lenguajeGB.smsDete10() + '1' + lenguajeGB.smsDete11(), 
+lenguajeGB.smsGrupoTime9() + '1' + lenguajeGB.smsGrupoTime11(), 
+lenguajeGB.smsGrupoTime10() + '1' + lenguajeGB.smsGrupoTime11(), 
 	
-lenguajeGB.smsDete9() + '2' + lenguajeGB.smsDete11(), 
-lenguajeGB.smsDete10() + '2' + lenguajeGB.smsDete11(), 
+lenguajeGB.smsGrupoTime9() + '2' + lenguajeGB.smsGrupoTime11(), 
+lenguajeGB.smsGrupoTime10() + '2' + lenguajeGB.smsGrupoTime11(), 
 	
-lenguajeGB.smsDete9() + '3' + lenguajeGB.smsDete11(), 
-lenguajeGB.smsDete10() + '3' + lenguajeGB.smsDete11(), 
+lenguajeGB.smsGrupoTime9() + '3' + lenguajeGB.smsGrupoTime11(), 
+lenguajeGB.smsGrupoTime10() + '3' + lenguajeGB.smsGrupoTime11(), 
 	
-lenguajeGB.smsDete9() + '4' + lenguajeGB.smsDete11(), 
-lenguajeGB.smsDete10() + '4' + lenguajeGB.smsDete11(), 
+lenguajeGB.smsGrupoTime9() + '4' + lenguajeGB.smsGrupoTime11(), 
+lenguajeGB.smsGrupoTime10() + '4' + lenguajeGB.smsGrupoTime11(), 
 	
-lenguajeGB.smsDete9() + '5' + lenguajeGB.smsDete11(), 
-lenguajeGB.smsDete10() + '5' + lenguajeGB.smsDete11(), 
+lenguajeGB.smsGrupoTime9() + '5' + lenguajeGB.smsGrupoTime11(), 
+lenguajeGB.smsGrupoTime10() + '5' + lenguajeGB.smsGrupoTime11(), 
 	
-lenguajeGB.smsDete9() + '6' + lenguajeGB.smsDete11(), 
-lenguajeGB.smsDete10() + '6' + lenguajeGB.smsDete11(), 
+lenguajeGB.smsGrupoTime9() + '6' + lenguajeGB.smsGrupoTime11(), 
+lenguajeGB.smsGrupoTime10() + '6' + lenguajeGB.smsGrupoTime11(), 
 	
-lenguajeGB.smsDete9() + '7' + lenguajeGB.smsDete11(), 
-lenguajeGB.smsDete10() + '7' + lenguajeGB.smsDete11(), 
+lenguajeGB.smsGrupoTime9() + '7' + lenguajeGB.smsGrupoTime11(), 
+lenguajeGB.smsGrupoTime10() + '7' + lenguajeGB.smsGrupoTime11(), 
 	
-lenguajeGB.smsDete9() + '10' + lenguajeGB.smsDete11(),
-lenguajeGB.smsDete10() + '10' + lenguajeGB.smsDete11(),
+lenguajeGB.smsGrupoTime9() + '10' + lenguajeGB.smsGrupoTime11(),
+lenguajeGB.smsGrupoTime10() + '10' + lenguajeGB.smsGrupoTime11(),
 
-lenguajeGB.smsDete9() + '12' + lenguajeGB.smsDete11(),
-lenguajeGB.smsDete10() + '12' + lenguajeGB.smsDete11(),
+lenguajeGB.smsGrupoTime9() + '12' + lenguajeGB.smsGrupoTime11(),
+lenguajeGB.smsGrupoTime10() + '12' + lenguajeGB.smsGrupoTime11(),
 
-lenguajeGB.smsDete9() + '24' + lenguajeGB.smsDete11(),
-lenguajeGB.smsDete10() + '24' + lenguajeGB.smsDete11()]
+lenguajeGB.smsGrupoTime9() + '24' + lenguajeGB.smsGrupoTime11(),
+lenguajeGB.smsGrupoTime10() + '24' + lenguajeGB.smsGrupoTime11()]
 
 let descripción = [ 
-lenguajeGB.smsDete12() + '1' + lenguajeGB.smsDete11(), 
-lenguajeGB.smsDete13() + '1' + lenguajeGB.smsDete11(), 
+lenguajeGB.smsGrupoTime12() + '1' + lenguajeGB.smsGrupoTime11(), 
+lenguajeGB.smsGrupoTime13() + '1' + lenguajeGB.smsGrupoTime11(), 
 	
-lenguajeGB.smsDete12() + '2' + lenguajeGB.smsDete11(), 
-lenguajeGB.smsDete13() + '2' + lenguajeGB.smsDete11(), 
+lenguajeGB.smsGrupoTime12() + '2' + lenguajeGB.smsGrupoTime11(), 
+lenguajeGB.smsGrupoTime13() + '2' + lenguajeGB.smsGrupoTime11(), 
 	
-lenguajeGB.smsDete12() + '3' + lenguajeGB.smsDete11(), 
-lenguajeGB.smsDete13() + '3' + lenguajeGB.smsDete11(), 
+lenguajeGB.smsGrupoTime12() + '3' + lenguajeGB.smsGrupoTime11(), 
+lenguajeGB.smsGrupoTime13() + '3' + lenguajeGB.smsGrupoTime11(), 
 	
-lenguajeGB.smsDete12() + '4' + lenguajeGB.smsDete11(), 
-lenguajeGB.smsDete13() + '4' + lenguajeGB.smsDete11(), 
+lenguajeGB.smsGrupoTime12() + '4' + lenguajeGB.smsGrupoTime11(), 
+lenguajeGB.smsGrupoTime13() + '4' + lenguajeGB.smsGrupoTime11(), 
 	
-lenguajeGB.smsDete12() + '5' + lenguajeGB.smsDete11(), 
-lenguajeGB.smsDete13() + '5' + lenguajeGB.smsDete11(), 
+lenguajeGB.smsGrupoTime12() + '5' + lenguajeGB.smsGrupoTime11(), 
+lenguajeGB.smsGrupoTime13() + '5' + lenguajeGB.smsGrupoTime11(), 
 	
-lenguajeGB.smsDete12() + '6' + lenguajeGB.smsDete11(), 
-lenguajeGB.smsDete13() + '6' + lenguajeGB.smsDete11(), 
+lenguajeGB.smsGrupoTime12() + '6' + lenguajeGB.smsGrupoTime11(), 
+lenguajeGB.smsGrupoTime13() + '6' + lenguajeGB.smsGrupoTime11(), 
 	
-lenguajeGB.smsDete12() + '7' + lenguajeGB.smsDete11(), 
-lenguajeGB.smsDete13() + '7' + lenguajeGB.smsDete11(), 
+lenguajeGB.smsGrupoTime12() + '7' + lenguajeGB.smsGrupoTime11(), 
+lenguajeGB.smsGrupoTime13() + '7' + lenguajeGB.smsGrupoTime11(), 
 	
-lenguajeGB.smsDete12() + '10' + lenguajeGB.smsDete11(),
-lenguajeGB.smsDete13() + '10' + lenguajeGB.smsDete11(),
+lenguajeGB.smsGrupoTime12() + '10' + lenguajeGB.smsGrupoTime11(),
+lenguajeGB.smsGrupoTime13() + '10' + lenguajeGB.smsGrupoTime11(),
 
-lenguajeGB.smsDete12() + '12' + lenguajeGB.smsDete11(),
-lenguajeGB.smsDete13() + '12' + lenguajeGB.smsDete11(),
+lenguajeGB.smsGrupoTime12() + '12' + lenguajeGB.smsGrupoTime11(),
+lenguajeGB.smsGrupoTime13() + '12' + lenguajeGB.smsGrupoTime11(),
 
-lenguajeGB.smsDete12() + '24' + lenguajeGB.smsDete11(),
-lenguajeGB.smsDete13() + '24' + lenguajeGB.smsDete11()]
+lenguajeGB.smsGrupoTime12() + '24' + lenguajeGB.smsGrupoTime11(),
+lenguajeGB.smsGrupoTime13() + '24' + lenguajeGB.smsGrupoTime11()]
 
 let comando = [ 
 "open 1", "cerrar 1", 
