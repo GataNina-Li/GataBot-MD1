@@ -14,7 +14,7 @@ return !1
     
 if (isToxic && chat.antitoxic && !isOwner && !isAdmin) {
 user.warn += 1
-if (!(user.warn >= 10)) await conn.sendButton(m.chat,`${user.warn == 1 ? `*@${m.sender.split`@`[0]}*` : `*@${m.sender.split`@`[0]}*`} *${lenguajeGB['smsToxic1']()} (${isToxic}) ${lenguajeGB['smsToxic2']()}*`, `${lenguajeGB['smsToxic3']()} *${user.warn}/4*\n\n${wm}`, img, [
+if (!(user.warn >= 10)) await conn.sendButton(m.chat,`${user.warn == 1 ? `*@${m.sender.split`@`[0]}*` : `*@${m.sender.split`@`[0]}*`} *${lenguajeGB['smsToxic1']()} (${isToxic}) ${lenguajeGB['smsToxic2']()}*`, `${lenguajeGB['smsToxic3']()} *${user.warn}/10*\n\n${wm}`, null, [
 [lenguajeGB.smsToxic4(), 'ok'],
 [lenguajeGB.smsToxic5(), '.off antitoxic'],
 [lenguajeGB.smsConMenu(), '/menu']], false, { mentions: [m.sender] })}
