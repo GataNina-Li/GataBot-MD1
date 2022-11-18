@@ -760,7 +760,7 @@ export async function handler(chatUpdate) {
                     mana: 20,
                     mangga: 0,
                     misi: '',
-                    money: 500,
+                    money: 0,
                     monyet: 0,
                     mythic: 0,
                     naga: 0,
