@@ -1171,8 +1171,7 @@ export async function handler(chatUpdate) {
                 let xp = 'exp' in plugin ? parseInt(plugin.exp) : 12 // XP Earning per command
                 if (xp > 2000)
                     m.reply('Exp limit') // Hehehe
-                else
-                m.exp += xp
+                else               
                 if (!isPrems && plugin.money && global.db.data.users[m.sender].money < plugin.money * 1) {
                     this.reply(m.chat, `🐈𝙉𝙊 𝙏𝙄𝙀𝙉𝙀 𝙂𝘼𝙏𝘼𝘾𝙊𝙄𝙉𝙎`, m)
                     continue               
