@@ -35,6 +35,7 @@ export async function handler(chatUpdate) {
             return
         m.exp = 0
         m.limit = false
+        m.money = false
         try {
             // TODO: use loop to insert data instead of this
             let user = global.db.data.users[m.sender]
