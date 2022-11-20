@@ -69,5 +69,5 @@ handler.help = ['play', 'play2'].map(v => v + ' <pencarian>')
 handler.tags = ['downloader']
 handler.command = /^play2?$/i
 handler.exp = 20
-handler.money = 1
+handler.money = 200
 export default handler
