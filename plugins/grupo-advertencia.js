@@ -10,9 +10,9 @@ if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted
 else who = m.chat
 	
 let user = global.db.data.users[who]
-if (!who) return conn.reply(m.chat, lenguajeGB.smsMalused2() + `*${usedPrefix + command} ${@name} ${lenguajeGB['smsAdveu2']()}*`, fkontak, m) 
+if (!who) return conn.reply(m.chat, lenguajeGB.smsMalused2() + `*${usedPrefix + command} @${name} ${lenguajeGB['smsAdveu2']()}*`, fkontak, m) 
 let txt = text.replace('@' + who.split`@`[0], '').trim()
-if (!txt) return conn.reply(m.chat, lenguajeGB.smsAdveu3() + `*${usedPrefix + command} ${@name} ${lenguajeGB['smsAdveu2']()}*`, fkontak, m)  	
+if (!txt) return conn.reply(m.chat, lenguajeGB.smsAdveu3() + `*${usedPrefix + command} @${name} ${lenguajeGB['smsAdveu2']()}*`, fkontak, m)  	
 try {
 user.warn += 1
 
@@ -24,9 +24,9 @@ if (user.warn >= 4) {
 user.warn = 0
 await m.reply(`${lenguajeGB['smsAdveu7']()}\n*@${who.split`@`[0]}* ${lenguajeGB['smsAdveu8']()}`, false, { mentions: [who] })
 user.banned = true
-await conn.groupParticipantsUpdate(m.chat, [who], 'remove')} //@${m.sender.split`@`[0]}
+await conn.groupParticipantsUpdate(m.chat, [who], 'remove') //@${m.sender.split`@`[0]}
 //await this.updateBlockStatus(m.sender, 'block')
-	
+}	
 return !1
 } catch (e) {
 await conn.sendButton(m.chat, `\n${wm}`, lenguajeGB['smsMalError3']() + '#report ' + usedPrefix + command, null, [[lenguajeGB.smsMensError1(), `#reporte ${lenguajeGB['smsMensError2']()} *${usedPrefix + command}*`]], m)
