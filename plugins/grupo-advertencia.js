@@ -10,7 +10,7 @@ if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted
 else who = m.chat
 	
 let user = global.db.data.users[who]
-if (!who) return conn.reply(m.chat, lenguajeGB.smsMalused2() + `*${usedPrefix + command} @${name} ${lenguajeGB['smsAdveu2']()}*`, fkontak, false, { mentions: [name] }) 
+if (!who) return conn.reply(m.chat, lenguajeGB.smsMalused2() + `*${usedPrefix + command} @${name} ${lenguajeGB['smsAdveu2']()}*`, false, { mentions: [name] }) 
 let txt = text.replace('@' + who.split`@`[0], '').trim()
 if (!txt) return conn.reply(m.chat, lenguajeGB.smsAdveu3() + `*${usedPrefix + command} @${name} ${lenguajeGB['smsAdveu2']()}*`, fkontak, m)  	
 try {
