@@ -3,15 +3,14 @@ let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status
 let lenGB = lenguajeGB.lenguaje() == 'en' ? usedPrefix + 'on antitoxic' : usedPrefix + 'on antitoxicos';
 if (!db.data.chats[m.chat].antitoxic && m.isGroup) return conn.sendButton(m.chat, wm, lenguajeGB.smsAdveu1() + lenGB, null, [[lenguajeGB.smsEncender(), lenGB]], fkontak, m)
 
-let name = await conn.getName(m.sender)
 let who 
 let img = 'https://i.imgur.com/DvHoMc3.jpg'
 if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text
 else who = m.chat
+let name = await conn.getName(who)	
 	
 let user = global.db.data.users[who]
-//if (!who) return conn.reply(m.chat, lenguajeGB.smsMalused2() + `*${usedPrefix + command} @${name} ${lenguajeGB['smsAdveu2']()}*`, false, { mentions: [name] }) 
-if (!who) return conn.reply(m.chat, lenguajeGB.smsMalused2() + `*${usedPrefix + command} @${name} ${lenguajeGB['smsAdveu2']()}*`, { mentions: conn.parseMention(name)}) 
+if (!who) return conn.reply(m.chat, lenguajeGB.smsMalused2() + `*${usedPrefix + command} @${name} ${lenguajeGB['smsAdveu2']()}*`, false, { mentions: [name] }) 
 let txt = text.replace('@' + who.split`@`[0], '').trim()
 if (!txt) return conn.reply(m.chat, lenguajeGB.smsAdveu3() + `*${usedPrefix + command} @${name} ${lenguajeGB['smsAdveu2']()}*`, fkontak, m)  	
 try {
