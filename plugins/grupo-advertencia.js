@@ -25,7 +25,7 @@ user.warn = 0
 await m.reply(`${lenguajeGB['smsAdveu7']()}\n*@${who.split`@`[0]}* ${lenguajeGB['smsAdveu8']()}`, false, { mentions: [who] })
 user.banned = true
 await conn.groupParticipantsUpdate(m.chat, [who], 'remove') //@${m.sender.split`@`[0]}
-//await this.updateBlockStatus(m.sender, 'block')
+//await this.updateBlockStatus(m.sender, 'block') 
 }	
 return !1
 } catch (e) {
