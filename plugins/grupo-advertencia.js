@@ -10,7 +10,8 @@ else who = m.chat
 let name = await conn.getName(who)	
 	
 let user = global.db.data.users[who]
-if (!who) return conn.reply(m.chat, lenguajeGB.smsMalused2() + `*${usedPrefix + command} @${name} ${lenguajeGB['smsAdveu2']()}*`, false, { mentions: [who] }) 
+//if (!who) return conn.reply(m.chat, lenguajeGB.smsMalused2() + `*${usedPrefix + command} @${name} ${lenguajeGB['smsAdveu2']()}*`, false, { mentions: [who] }) 
+if (!who) return conn.reply(m.chat, lenguajeGB.smsMalused2() + `*${usedPrefix + command} @${who.split`@`[0]} ${lenguajeGB['smsAdveu2']()}*`, false, { mentions: [who] }) 
 let txt = text.replace('@' + who.split`@`[0], '').trim()
 if (!txt) return conn.reply(m.chat, lenguajeGB.smsAdveu3() + `*${usedPrefix + command} @${name} ${lenguajeGB['smsAdveu2']()}*`, fkontak, m)  	
 try {
