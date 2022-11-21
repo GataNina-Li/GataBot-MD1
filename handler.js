@@ -35,6 +35,7 @@ export async function handler(chatUpdate) {
             return
         m.exp = 0
         m.limit = false
+        m.money = false
         try {
             // TODO: use loop to insert data instead of this
             let user = global.db.data.users[m.sender]
@@ -44,7 +45,8 @@ export async function handler(chatUpdate) {
             if (user) {
                 if (!isNumber(user.exp)) user.exp = 0
 		if (!('premium' in user)) user.premium = false
-		if (!isNumber(user.joincount)) user.joincount = 2   
+		if (!isNumber(user.joincount)) user.joincount = 2 
+                if (!isNumber(user.money)) user.money = 500
                 if (!isNumber(user.limit)) user.limit = 20    	       
                 if (!('registered' in user)) user.registered = false
                     
@@ -1164,11 +1166,17 @@ export async function handler(chatUpdate) {
                     fail('unreg', m, this)
                     continue
                 }
+
                 m.isCommand = true
                 let xp = 'exp' in plugin ? parseInt(plugin.exp) : 12 // XP Earning per command
                 if (xp > 2000)
                     m.reply('Exp limit') // Hehehe
-                else
+                else               
+                if (!isPrems && plugin.money && global.db.data.users[m.sender].money < plugin.money * 1) {
+                    this.reply(m.chat, `🐈 𝙉𝙊 𝙏𝙄𝙀𝙉𝙀 𝙂𝘼𝙏𝘼𝘾𝙊𝙄𝙉𝙎`, m)
+                    continue     
+		}
+			
                     m.exp += xp
                 if (!isPrems && plugin.limit && global.db.data.users[m.sender].limit < plugin.limit * 1) {
                     this.reply(m.chat, `${lenguajeGB['smsCont7']()} *${usedPrefix}buy*`, m)
@@ -1205,6 +1213,7 @@ export async function handler(chatUpdate) {
                     await plugin.call(this, m, extra)
                     if (!isPrems)
                         m.limit = m.limit || plugin.limit || false
+                        m.money = m.money || plugin.money || false
                 } catch (e) {
                     // Error occured
                     m.error = e
@@ -1233,6 +1242,9 @@ export async function handler(chatUpdate) {
                     if (m.limit)
                         m.reply(+m.limit + lenguajeGB.smsCont8())
                 }
+                 if (m.money)
+                        m.reply(+m.money + ' 𝙂𝘼𝙏𝘼𝘾𝙊𝙄𝙉𝙎 🐱 𝙐𝙎𝘼𝘿𝙊(𝙎)')
+              
                 break
             }
         }
@@ -1250,6 +1262,7 @@ export async function handler(chatUpdate) {
             if (m.sender && (user = global.db.data.users[m.sender])) {
                 user.exp += m.exp
                 user.limit -= m.limit * 1
+                user.money -= m.money * 1
             }
 
             let stat
