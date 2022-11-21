@@ -7,7 +7,7 @@ let who
 let img = 'https://i.imgur.com/DvHoMc3.jpg'
 if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text
 else who = m.chat
-let name = await conn.getName(who)	
+let name = await conn.getName(m.sender)	
 	
 let user = global.db.data.users[who]
 if (!who) return conn.reply(m.chat, lenguajeGB.smsMalused2() + `*${usedPrefix + command} @${name} ${lenguajeGB['smsAdveu2']()}*`, fkontak, m)  	
