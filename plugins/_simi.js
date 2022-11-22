@@ -1,9 +1,9 @@
 import fetch from 'node-fetch'
-let handler = m => m
+//let handler = m => m
 
 //handler.before = async (m) => {
 let handler = async (m, { conn, isAdmin, usedPrefix, text }) => {
-//let chat = global.db.data.chats[m.chat]
+let chat = global.db.data.chats[m.chat]
 if (chat.simi) {
 if (/^.*false|disnable|(turn)?off|0/i.test(m.text)) return
 if (!m.text) return
