@@ -1,4 +1,4 @@
-const toxicRegex = /cp|zepe|zp|cepe|sepe/i
+const toxicRegex = /cp|zp/i
 
 export async function before(m, { conn, isAdmin, isBotAdmin, isOwner }) {
  
