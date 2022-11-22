@@ -11,7 +11,6 @@ let data = await ressimi.json();
 if (data.success == 'No s\u00e9 lo qu\u00e9 est\u00e1s diciendo. Por favor ense\u00f1ame.') return 0
 //await m.reply("😵‍💫")
 await m.reply(data.success)
-continue
 return !0
 }
 return true
