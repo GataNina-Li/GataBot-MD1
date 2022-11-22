@@ -13,5 +13,5 @@ await m.reply(data.success)
 return !0
 }
 return true
-}
+} 
 export default handler
