@@ -6,28 +6,28 @@ let str = `
 🔨| Sanciones:
 
 • *No Respetar*
-  ° *2 Warns (Advertencias)*, Si continúa después de los warns o avisos *Ban Temporal*
+  ° *1 Warns (Advertencias)*, Si continúa después de los warns o avisos *Ban Temporal*
 
 • *Peleas o Discusiones*
-  ° *4 Warns (Advertencias)*, Si continúa después de los warns o avisos *Ban Temporal*
-
-• *Doxear*
-  ° *5 Warns (Advertencias)*, Si continúa después de los warns o avisos *Ban Permanente*
-
-• *Ser toxico*
-  ° *3 Warns (Advertencias)*, Si continúa después de los warns o avisos *Ban Temporal*
-
-• *Usar comandos RPG*
-  ° *2 Warns (Advertencias), Si continúa después de los warns o avisos *4 Warns o Ban Temporal*
-
-• *Spamear*
   ° *2 Warns (Advertencias)*, Si continúa después de los warns o avisos *Ban Temporal*
 
+• *Doxear*
+  ° *Ban Permanente*
+
+• *Ser toxico*
+  ° *2 Warns (Advertencias)*, Si continúa después de los warns o avisos *Ban Temporal*
+
+• *Usar comandos RPG*
+  ° *1 Warns (Advertencias), Si continúa después de los warns o avisos *4 Warns o Ban Temporal*
+
+• *Spamear*
+  ° *1 Warns (Advertencias)*, Si continúa después de los warns o avisos *Ban Temporal*
+
 • *Mandar Binarios o Inmune*
-  ° *8 Warns (Advertencias)*, Si continúa después de los warns o avisos *Ban Permanente*
+  ° *Ban Permanente*
 
 • *Mandar Gore*
-  ° *6 Warns (Advertencias)*, Si continúa después de los warns o avisos *Ban Temporal o Permanente*
+  ° *4 Warns (Advertencias)*, Si continúa después de los warns o avisos *Ban Temporal o Permanente*
 
 • *Mandar CP*
   ° *Ban Permanente*
@@ -36,25 +36,25 @@ let str = `
   ° *4 Warns (Advertencias)*, Si continúa después de los warns o avisos *Ban Temporal o Permanente*
 
 • *Mandar Packs*
-  ° *3 Warns (Advertencias)*, Si continúa después de los warns o avisos *Ban Permanente*
+  ° *5 Warns (Advertencias)*, Si continúa después de los warns o avisos *Ban Permanente*
 
 • *Uso mal de comandos +18 del bot o romper limites*
-  ° *5 Warns (Advertencias)*, Si continúa después de los warns o avisos *Ban Temporal*
-
-• *Mandar Scat*
-  ° *5 Warns (Advertencias)*, Si continúa después de los warns o avisos *Ban Temporal*
-
-• *Mandar Earfuck*
   ° *3 Warns (Advertencias)*, Si continúa después de los warns o avisos *Ban Temporal*
 
+• *Mandar Scat*
+  ° *4 Warns (Advertencias)*, Si continúa después de los warns o avisos *Ban Temporal*
+
+• *Mandar Earfuck*
+  ° *2 Warns (Advertencias)*, Si continúa después de los warns o avisos *Ban Temporal*
+
 • *Floodear*
-  ° *6 Warns (Advertencias)*, Si continúa después de los warns o avisos *Ban Temporal o Permanente*
+  ° *3 Warns (Advertencias)*, Si continúa después de los warns o avisos *Ban Temporal o Permanente*
 
 -------------------------------
 
-¿Como puedo sacar mis Warns? Si después de 5 meses no obtuviste algún warn se irá eliminando de apoco.
+¿Como puedo sacar mis Warns? Si después de 1 meses no obtuviste algún warn se irá eliminando de apoco.
 
-¿Que pasa si llego a las 10 Warns? Quedaras baneado permanente del grupo.
+¿Que pasa si llego a las 15 Warns? Quedaras baneado permanente del grupo.
 
 ¿Hay forma de apelar? Si, pero eso dependera del admin y las cuestiónes que se tomen con los admins supremos y los otros admins.
 `.trim()
