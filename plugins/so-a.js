@@ -1,7 +1,7 @@
 import util from 'util'
 import path from 'path'
 let handler = async (m, { conn }) => {
-if (!db.data.chats[m.chat].audios && m.isGroup) throw 0
+if (!db.data.chats[m.chat].audios && m.isGroup) return 0
 global.db.data.users[m.sender].money += 100 
 global.db.data.users[m.sender].exp += 100
   

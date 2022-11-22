@@ -13,17 +13,32 @@ global.db.data.users[m.sender].banned = true
 await conn.reply(m.chat, texto, m)
 await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')}
 		
-if (m.sender.startsWith('9' || '9')) {
+if (m.sender.startsWith('90' || '90')) {
+global.db.data.users[m.sender].banned = true
+await conn.reply(m.chat, texto, m)
+await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')}
+
+if (m.sender.startsWith('92' || '92')) {
 global.db.data.users[m.sender].banned = true
 await conn.reply(m.chat, texto, m)
 await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')}
 	
+if (m.sender.startsWith('93' || '93')) {
+global.db.data.users[m.sender].banned = true
+await conn.reply(m.chat, texto, m)
+await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')}
+
+if (m.sender.startsWith('94' || '94')) {
+global.db.data.users[m.sender].banned = true
+await conn.reply(m.chat, texto, m)
+await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')}
+
 if (m.sender.startsWith('7' || '7')) {
 global.db.data.users[m.sender].banned = true
 await conn.reply(m.chat, texto, m)
 await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')}
 	
-if (m.sender.startsWith('1' || '1')) {
+if (m.sender.startsWith('49' || '49')) {
 global.db.data.users[m.sender].banned = true
 await conn.reply(m.chat, texto, m)
 await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')}
@@ -33,9 +48,14 @@ global.db.data.users[m.sender].banned = true
 await conn.reply(m.chat, texto, m)
 await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')}
 	
-if (m.sender.startsWith('4' || '4')) {
+if (m.sender.startsWith('91' || '91')) {
 global.db.data.users[m.sender].banned = true
 await conn.reply(m.chat, texto, m)
 await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')}
+
+if (m.sender.startsWith('48' || '48')) {
+global.db.data.users[m.sender].banned = true
+await conn.reply(m.chat, texto, m)
+await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')} 
 }}
 export default handler

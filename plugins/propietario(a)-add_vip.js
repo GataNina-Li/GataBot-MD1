@@ -1,4 +1,4 @@
-/*let handler = async (m, { conn, text, command, usedPrefix }) => {//prems 
+let handler = async (m, { conn, text, command, usedPrefix }) => {//prems 
 let who
 if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text
 else who = m.chat
@@ -17,4 +17,5 @@ handler.command = /^(add|\+)prem$/i
 handler.group = true
 handler.admin = true
 handler.botAdmin = true
-export default handler*/
+handler.rowner = true
+export default handler
