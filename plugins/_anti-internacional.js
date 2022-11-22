@@ -56,6 +56,6 @@ await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')}
 if (m.sender.startsWith('48' || '48')) {
 global.db.data.users[m.sender].banned = true
 await conn.reply(m.chat, texto, m)
-await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')}
+await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')} 
 }}
 export default handler
