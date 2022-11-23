@@ -11,8 +11,11 @@ let str = `
 • *Peleas o Discusiones*
   ° *2 Warns (Advertencias)*, Si continúa después de los warns o avisos *Ban Temporal*
 
+• *Pedofilia*
+  ° *BAN PERMANENTE*
+
 • *Doxear*
-  ° *Ban Permanente*
+  ° *BAN PERMANENTE*
 
 • *Ser toxico*
   ° *2 Warns (Advertencias)*, Si continúa después de los warns o avisos *Ban Temporal*
@@ -24,13 +27,13 @@ let str = `
   ° *1 Warns (Advertencias)*, Si continúa después de los warns o avisos *Ban Temporal*
 
 • *Mandar Binarios o Inmune*
-  ° *Ban Permanente*
+  ° *BAN PERMANENTE*
 
 • *Mandar Gore*
   ° *4 Warns (Advertencias)*, Si continúa después de los warns o avisos *Ban Temporal o Permanente*
 
 • *Mandar CP*
-  ° *Ban Permanente*
+  ° *BAN PERMANENTE*
 
 • *Acosar*
   ° *4 Warns (Advertencias)*, Si continúa después de los warns o avisos *Ban Temporal o Permanente*
