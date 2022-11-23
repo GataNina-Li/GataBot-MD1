@@ -9,6 +9,8 @@ let str = `
 
 • *No Peleas o Discusiones* (Esta totalmente prohibido las peleas o discusiones entre los miembros o admins, si llegan a pelear o a discutir que sea en privado no metan al grupo en sus asuntos de discusion o pelea)
 
+• *No Pedofilia* (Ser pedofilo es acosar a alguien de manera sexual o con intenciones sexuales,como adultos acosando de manera sexual a menores)
+
 • *No Doxeo* (Prohibido compartir información privada de alguien, como dirección, dni o datos personales, etc)
 
 • *No Toxicidad* (Nada de insultos o humor muy negro hacia esa X persona si el/ella no le gusta ese comportamiento)
