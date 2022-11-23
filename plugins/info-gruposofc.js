@@ -27,7 +27,7 @@ let str = `
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 🐈 *${nnnttt}*\n
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-🐈 *https://chat.whatsapp.com/DfuxgK7VyQd7LAZKztRapC*\n
+🐈 *https://chat.whatsapp.com/Lxh3JRS9BQxCjypjSnu1Vu*\n
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 *Por favor, no ingresar con números de Bots, y mantener el respeto.*\n
 *Please, do not enter with Bot numbers, and maintain respect.*
