@@ -84,14 +84,6 @@ if (global.db.data) await global.db.write()
 if (opts['autocleartmp'] && (global.support || {}).find) (tmp = [os.tmpdir(), 'tmp'], tmp.forEach(filename => cp.spawn('find', [filename, '-amin', '3', '-type', 'f', '-delete'])))
 }, 30 * 1000)}
 
-//setInterval(async () => {
-//if ('yes' == global.replitTimes) {
-//console.log(chalk.cyanBright('REINICIO AUTOMÁTICO DEL BOT!!!'))
-//process.send('reset')
-//}else{    
-//console.log(chalk.cyanBright('NO SE EJECUTÓ REINICIO AUTOMÁTICO DEL BOT!!!'))
-//}, 1000 * 60 * 5) // 5 min
-
 if (opts['server']) (await import('./server.js')).default(global.conn, PORT)
 
 function clearTmp() {
