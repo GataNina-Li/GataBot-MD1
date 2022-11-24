@@ -26,7 +26,6 @@ global.owner = [
 
 global.mods = [] 
 global.prems = ['528451003894'], 
-global.replitTimes = 'yes'
   
   
 //⊱ ━━━━━.⋅ IDIOMA : LENGUAJE ⋅.━━━━ ⊰ 
