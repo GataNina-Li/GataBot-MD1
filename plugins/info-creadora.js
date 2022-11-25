@@ -27,8 +27,6 @@ let text = `
 🧡 *Eso son los contactos para ti.*\n💜 *That's the contacts for you.*`.trim()   
 let buttonMessage= {
 'body': wm,
-'thumbnail': fs.readFileSync('./media/menus/Menu3.jpg'),
-'sourceUrl': yt }},
 'caption': text,
 'footer': wm,
 'buttons':[
