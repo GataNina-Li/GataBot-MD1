@@ -1,7 +1,7 @@
 import fs from 'fs'
 let handler = async (m, { conn, usedPrefix }) => {
-//var doc = ['pdf','zip','vnd.openxmlformats-officedocument.presentationml.presentation','vnd.openxmlformats-officedocument.spreadsheetml.sheet','vnd.openxmlformats-officedocument.wordprocessingml.document']
-//var document = doc[Math.floor(Math.random() * doc.length)]    
+var doc = ['pdf','zip','vnd.openxmlformats-officedocument.presentationml.presentation','vnd.openxmlformats-officedocument.spreadsheetml.sheet','vnd.openxmlformats-officedocument.wordprocessingml.document']
+var document = doc[Math.floor(Math.random() * doc.length)]    
 let text = `
 𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 💖🐈
 *Wa.me/593993684821*
@@ -26,7 +26,22 @@ let text = `
 
 🧡 *Eso son los contactos para ti.*\n💜 *That's the contacts for you.*`.trim()   
 let buttonMessage= {
+'document': { url: `${md}` },
+'mimetype': `application/${document}`,
+'fileName': `✦ 𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 ༄`,
+'fileLength': 99999999999999,
+'pageCount': 200,
+'contextInfo': {
+'forwardingScore': 200,
+'isForwarded': true,
+'externalAdReply': {
+'mediaUrl': `${md}`,
+'mediaType': 2,
+'previewType': 'pdf',
+'title': 'Super Bot WhatsApp',
 'body': wm,
+'thumbnail': fs.readFileSync('./media/menus/Menu3.jpg'),
+'sourceUrl': yt }},
 'caption': text,
 'footer': wm,
 'buttons':[
