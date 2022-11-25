@@ -26,17 +26,6 @@ let text = `
 
 🧡 *Eso son los contactos para ti.*\n💜 *That's the contacts for you.*`.trim()   
 let buttonMessage= {
-'fileName': `✦ 𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 ༄`,
-'fileLength': 99999999999999,
-'pageCount': 200,
-'contextInfo': {
-'forwardingScore': 200,
-'isForwarded': true,
-'externalAdReply': {
-'mediaUrl': `${md}`,
-'mediaType': 2,
-'previewType': 'pdf',
-'title': 'Super Bot WhatsApp',
 'body': wm,
 'thumbnail': fs.readFileSync('./media/menus/Menu3.jpg'),
 'sourceUrl': yt }},
