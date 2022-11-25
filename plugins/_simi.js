@@ -12,6 +12,6 @@ if (data.success == 'No s\u00e9 lo qu\u00e9 est\u00e1s diciendo. Por favor ense\
 await m.reply(data.success)
 return !0
 }
-return true
+return 0
 } 
 export default handler
