@@ -425,7 +425,7 @@ ${lenguajeGB['smsTex19']()}`,
 title: null,
 buttonText: `🔊 ${lenguajeGB['smsTex16']()} 🔊`, 
 sections }
-await conn.sendMessage(m.chat, listMessage, {quoted: fkontak})	
+await conn.sendMessage(m.chat, listMessage)	
 
 } catch (e) {
 await conn.sendButton(m.chat, `\n${wm}`, lenguajeGB['smsMalError3']() + '#report ' + usedPrefix + command, null, [[lenguajeGB.smsMensError1(), `#reporte ${lenguajeGB['smsMensError2']()} *${usedPrefix + command}*`]], m)
