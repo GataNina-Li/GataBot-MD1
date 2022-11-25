@@ -178,7 +178,7 @@ const listMessage = {
   buttonText: `🔖 SELECCIONE AQUÍ 🔖`,
   sections
 }
-let bottime = `${name} 𝗧𝗜𝗠𝗘: ${moment.tz('America/Bogota').format('HH:mm:ss')}`//America/Los_Angeles
+let bottime = `${name} 𝗧𝗜𝗠𝗘: ${moment.tz('America/Argentina/Buenos_Aires').format('HH:mm:ss')}`//America/Los_Angeles
 let ftroli = { key: { remoteJid: 'status@broadcast', participant: '0@s.whatsapp.net' }, message: { orderMessage: { itemCount: 99, status: 1, surface: 1, message: wm, orderTitle: wm, sellerJid: '0@s.whatsapp.net' } } }
 let fgif = {
             key: {
