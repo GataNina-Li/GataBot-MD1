@@ -1,4 +1,4 @@
-import fetch from 'node-fetch'
+/*import fetch from 'node-fetch' 
 let handler = async (m, { conn, participants, groupMetadata }) => {
 let grupos = [nna, nn, nnn, nnnt]
 let gata = [img5, img6, img7, img8, img9]
@@ -44,4 +44,4 @@ handler.help = ['infogrup']
 handler.tags = ['group']
 handler.command = /^(configuración|settings|setting|confugurar|configuracion|vergrupo|gruporesumen|resumen)$/i
 handler.group = true
-export default handler
+export default handler*/
