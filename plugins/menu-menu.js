@@ -606,7 +606,7 @@ handler.tags = ['main']
 handler.command = /^(menucompleto|allmenu|allm\?)$/i
 //handler.register = true
 handler.exp = 50
-handler.money = 20
+handler.money = null
 handler.fail = null
 export default handler
 
