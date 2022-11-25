@@ -26,8 +26,6 @@ let text = `
 
 🧡 *Eso son los contactos para ti.*\n💜 *That's the contacts for you.*`.trim()   
 let buttonMessage= {
-'document': { url: `${md}` },
-'mimetype': `application/${document}`,
 'fileName': `✦ 𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 ༄`,
 'fileLength': 99999999999999,
 'pageCount': 200,
