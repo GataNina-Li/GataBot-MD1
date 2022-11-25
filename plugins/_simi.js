@@ -3,7 +3,7 @@ let handler = m => m
 
 //handler.before = async (m) => {
 handler.all = async function (m, { conn, usedPrefix, command}) {
-if (!m.text.includes(usedPrefix && command)) return 0
+if (usedPrefix && command) return 0
 let chat = global.db.data.chats[m.chat]
 if (chat.simi) {
 if (/^.*false|disnable|(turn)?off|0/i.test(m.text)) return
