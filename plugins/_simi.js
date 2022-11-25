@@ -5,7 +5,7 @@ handler.before = async (m) => {
 let chat = global.db.data.chats[m.chat]
 if (chat.simi) {
 if (/^.*false|disnable|(turn)?off|0/i.test(m.text)) return
-if (conn.prefix.test(m.text)) return 0
+if (m.plugin.command.test(m.command)) return 0
 if (!m.text) return
 let ressimi = await fetch(`https://api.simsimi.net/v2/?text=${encodeURIComponent(m.text)}&lc=` + lenguajeGB.lenguaje())
 let data = await ressimi.json();
