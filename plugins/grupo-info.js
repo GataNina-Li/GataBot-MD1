@@ -1,6 +1,5 @@
 let handler = async (m, { conn, participants, groupMetadata }) => {
 const pp = await conn.profilePictureUrl(m.chat, 'image').catch(_ => null) || './src/grupos.jpg' 
-//const { isBanned, welcome, detect, sWelcome, sBye, sPromote, sDemote, antiLink, antiLink2, modohorny, autosticker, audios, delete: del } = global.db.data.chats[m.chat]
 const groupAdmins = participants.filter(p => p.admin) 
 const listAdmin = groupAdmins.map((v, i) => `${i + 1}. @${v.id.split('@')[0]}`).join('\n')
 const owner = groupMetadata.owner || groupAdmins.find(p => p.admin === 'superadmin')?.id || m.chat.split`-`[0] + '@s.whatsapp.net'
@@ -23,12 +22,12 @@ let text =
 ・ @${owner.split('@')[0]}
 
 ⇢ ${lenguajeGB['smsGI9']()}
-・ ${listAdmin}
+${listAdmin}
 
-*《 - - - 𓃠 ${vs} - - - 》*
+*《 - - - - - - 𓃠 ${vs} - - - - - - 》*
 `.trim()
   
-await conn.sendButton(m.chat, wm, text, pp, [[lenguajeGB.smsGI10(), '.on'], [lenguajeGB.smsConMenu(), '/menu']], m, false, { mentions: [...groupAdmins.map(v => v.id), owner] })
+await conn.sendButton(m.chat, wm, text, pp, [[lenguajeGB.smsGI10(), '.on'], [lenguajeGB.smsConMenu(), '/menu']], m, { mentions: [...groupAdmins.map(v => v.id), owner] })
 }
 handler.help = ['infogrup']
 handler.tags = ['group']
