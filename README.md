@@ -108,7 +108,7 @@ https://github.com/clhuang/heroku-buildpack-webp-binaries.git
 ### ACTIVAR POR TERMUX  <img src="https://c.tenor.com/HLrXIleGBToAAAAC/transparent-cat.gif" height="40px">  
 > DESCARGUÉ Y DESCOMPRIMA  
 ### [`GataBot-MD ~ MediaFire`](https://www.mediafire.com/file/zbi0knvnssaipx1/GataBot-MD.zip/file) <a href="https://www.mediafire.com/file/zbi0knvnssaipx1/GataBot-MD.zip/file"> <img src="https://i.pinimg.com/originals/47/77/17/477717205aa460ae58f6b988a4606a02.png" height="30px">
-### ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
+#### ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 ```bash
 termux-setup-storage
 apt update
