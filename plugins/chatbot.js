@@ -7,6 +7,26 @@ if (/^e$/i.test(m.text) ) { //sem prefixo
 
 }
 
+if (/^Que|que$/i.test(m.text) ) { //sem prefixo
+    conn.reply(m.chat, `So`, m) //wm, null, [['Menu', '#menu']], m) botones :V
+
+}
+
+if (/^so|So$/i.test(m.text) ) { //sem prefixo
+    conn.reply(m.chat, `rra`, m) //wm, null, [['Menu', '#menu']], m) botones :V
+
+}
+
+if (/^rra$/i.test(m.text) ) { //sem prefixo
+    conn.reply(m.chat, `eres`, m) //wm, null, [['Menu', '#menu']], m) botones :V
+
+}
+
+if (/^eres$/i.test(m.text) ) { //sem prefixo
+    conn.reply(m.chat, `Tu 😂😂😂`, m) //wm, null, [['Menu', '#menu']], m) botones :V
+
+}
+
 if (/^¿que es un bot?|Que es un bot$/i.test(m.text) ) { //sem prefixo
     conn.reply(m.chat, `*☆::¿𝐐𝐮𝐞́ 𝐞𝐬 𝐮𝐧 𝐁𝐨𝐭 𝐝𝐞 𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩?::☆*
 
