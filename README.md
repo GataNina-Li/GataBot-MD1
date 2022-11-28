@@ -98,30 +98,31 @@ https://github.com/clhuang/heroku-buildpack-webp-binaries.git
 - [x] Resultado <details><summary>Ajustes del Servidor - GataBot-MD</summary><img src="https://i.imgur.com/N0SwvbY.jpeg"></details>
 ------------------
 ### ⚡ REPLIT - GATABOT
+[![blog](https://img.shields.io/badge/GataBotMD-YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)
+](https://youtu.be/pQYkq4xv37o)
 [![Deploy](https://img.shields.io/badge/replit_gatabot-667881?style=for-the-badge&logo=replit&logoColor=white)](https://replit.com/github/GataNina-Li/GataBot-MD)
 <a href="https://replit.com/github/GataNina-Li/GataBot-MD"> <img src="https://media0.giphy.com/media/lMwu8EJAnv9kmn51KQ/giphy.gif" height="29px"></a>
 ------------------
 - [x] Resultado <details><summary>Importar Repositorio - GataBot-MD</summary><img src="https://i.imgur.com/GQyRnMf.jpg"></details>
 ------------------
-### ACTIVAR POR TERMUX  <img src="https://c.tenor.com/HLrXIleGBToAAAAC/transparent-cat.gif" height="30px">
-> ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
-
+### ACTIVAR POR TERMUX  <img src="https://c.tenor.com/HLrXIleGBToAAAAC/transparent-cat.gif" height="40px">  
+> DESCARGUÉ Y DESCOMPRIMA  
+### [`GataBot-MD ~ MediaFire`](https://www.mediafire.com/file/zbi0knvnssaipx1/GataBot-MD.zip/file) <a href="https://www.mediafire.com/file/zbi0knvnssaipx1/GataBot-MD.zip/file"> <img src="https://i.pinimg.com/originals/47/77/17/477717205aa460ae58f6b988a4606a02.png" height="30px">
+### ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 ```bash
 termux-setup-storage
-apt update 
-pkg upgrade 
-pkg install git -y
+apt update
+pkg upgrade
 pkg install nodejs -y
-pkg install ffmpeg -y
+pkg install ffmpeg-y
 pkg install imagemagick -y
-pkg install yarn
-git clone https://github.com/GataNina-Li/GataBotMD-Termux
-cd GataBotMD-Termux
-yarn install 
+cd storage/downloads/GataBot-MD 
 npm install
-npm update
 npm start
 ```
+* #### APLICACIÓN RECOMENDADA PARA [`DESCOMPRIMIR`](https://play.google.com/store/apps/details?id=com.rarlab.rar)
+* #### APLICACIÓN RECOMENDADA PARA EDITAR [`NÚMERO DE OWNER`](https://play.google.com/store/apps/details?id=com.rhmsoft.code)
+> ASEGÚRESEDE GUARDAR LOS ARCHIVOS EN ESTA UBICACIÓN: storage/downloads/GataBot-MD    
 ----
 ## 💻 PARA USUARIOS DE WINDOWS/VPS/RDP (Opcional)
 
