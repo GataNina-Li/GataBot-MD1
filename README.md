@@ -116,7 +116,7 @@ pkg upgrade
 pkg install nodejs -y
 pkg install ffmpeg-y
 pkg install imagemagick -y
-cd storage/downloads/GataBot-MD 
+cd storage/downloads/GataBot-MD/GataBot-MD
 npm install
 npm start
 ```
