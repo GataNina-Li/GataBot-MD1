@@ -81,8 +81,10 @@ https://github.com/clhuang/heroku-buildpack-webp-binaries.git
 - [x] Resultado <details><summary>Buildpack</summary><img src="https://i.imgur.com/t3Xzgnh.jpeg"></details>
 -----
 
-### ✅ BOXMINEHOST
-> ACTIVA GATABOT 24/7 EN LA PLATAFORMA BOXMINEHOST
+### ✅ BOXMINEHOST 
+[![blog](https://img.shields.io/badge/GataBotMD-YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)
+](https://youtu.be/Ko019wvu2Tc)
+> ACTIVA GATABOT 24/7 EN LA PLATAFORMA BOXMINEHOST 
 
 <a href="https://boxmineworld.com"><img src="https://i.imgur.com/allAyd4.png" height="125px"></a>
 ### BoxMine World
@@ -104,8 +106,11 @@ https://github.com/clhuang/heroku-buildpack-webp-binaries.git
 - [x] Resultado <details><summary>Importar Repositorio - GataBot-MD</summary><img src="https://i.imgur.com/GQyRnMf.jpg"></details>
 ------------------
 ### ACTIVAR POR TERMUX  <img src="https://c.tenor.com/HLrXIleGBToAAAAC/transparent-cat.gif" height="40px">  
-> DESCARGUÉ Y DESCOMPRIMA  
+> DESCARGUÉ Y DESCOMPRIMA 
 ### [`GataBot-MD ~ MediaFire`](https://www.mediafire.com/file/zbi0knvnssaipx1/GataBot-MD.zip/file) <a href="https://www.mediafire.com/file/zbi0knvnssaipx1/GataBot-MD.zip/file"> <img src="https://i.pinimg.com/originals/47/77/17/477717205aa460ae58f6b988a4606a02.png" height="30px">
+[![blog](https://img.shields.io/badge/GataBotMD-YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)
+](https://youtu.be/UcWlyQ8u5HE)
+
 #### ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 ```bash
 termux-setup-storage
