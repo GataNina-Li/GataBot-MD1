@@ -58,10 +58,8 @@
 
 ### 💖 ```DONAR``` [`Aquí`](https://paypal.me/OficialGD)
 -----
-* 𝗚𝗮𝘁𝗮𝗕𝗼𝘁 : 𝗕𝗼𝘅𝗠𝗶𝗻𝗲 & 𝗥𝗲𝗽𝗹𝗶𝘁 💛
+* 𝗚𝗮𝘁𝗮𝗕𝗼𝘁 : 𝗕𝗼𝘅𝗠𝗶𝗻𝗲 & 𝗥𝗲𝗽𝗹𝗶𝘁 & 𝗧𝗲𝗿𝗺𝘂𝘅 💛
 > ESTE REPOSITORIO DE GATABOT ES COMPATIBLE CON BOXMINE Y REPLIT.
-* 𝗚𝗮𝘁𝗮𝗕𝗼𝘁 : 𝗧𝗲𝗿𝗺𝘂𝘅 💙
-> SI QUIERE INSTAR POR TERMUX USE [`GataBotMD-Termux`](https://github.com/GataNina-Li/GataBotMD-Termux)
 * 𝗚𝗮𝘁𝗮𝗕𝗼𝘁 : 𝗛𝗲𝗿𝗼𝗸𝘂 💜
 > SI QUIERE INSTAR POR HEROKU USE [`GataBotMD-Heroku`](https://github.com/GataNina-Li/GataBotMD-Heroku)
 -----
