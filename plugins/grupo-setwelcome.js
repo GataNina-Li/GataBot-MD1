@@ -1,4 +1,4 @@
-let handler = async (m, { conn, text, isROwner, isOwner }) => {
+/*let handler = async (m, { conn, text, isROwner, isOwner }) => {
 if (text) {
 global.db.data.chats[m.chat].sWelcome = text
 m.reply('*${lenguajeGB['smsAvisoEG']()} 𝙇𝘼 𝘽𝙄𝙀𝙉𝙑𝙀𝙉𝙄𝘿𝘼 𝘿𝙀𝙇 𝙂𝙍𝙐𝙋𝙊 𝙃𝘼 𝙎𝙄𝘿𝙊 𝘾𝙊𝙉𝙁𝙄𝙂𝙐𝙍𝘼𝘿𝘼*')
@@ -8,4 +8,4 @@ handler.help = ['setwelcome <text>']
 handler.tags = ['group']
 handler.command = ['setwelcome'] 
 handler.admin = true
-export default handler
+export default handler*/
