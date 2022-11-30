@@ -58,10 +58,8 @@
 
 ### 💖 ```DONAR``` [`Aquí`](https://paypal.me/OficialGD)
 -----
-* 𝗚𝗮𝘁𝗮𝗕𝗼𝘁 : 𝗕𝗼𝘅𝗠𝗶𝗻𝗲 & 𝗥𝗲𝗽𝗹𝗶𝘁 💛
-> ESTE REPOSITORIO DE GATABOT ES COMPATIBLE CON BOXMINE Y REPLIT.
-* 𝗚𝗮𝘁𝗮𝗕𝗼𝘁 : 𝗧𝗲𝗿𝗺𝘂𝘅 💙
-> SI QUIERE INSTAR POR TERMUX USE [`GataBotMD-Termux`](https://github.com/GataNina-Li/GataBotMD-Termux)
+* 𝗚𝗮𝘁𝗮𝗕𝗼𝘁 : 𝗕𝗼𝘅𝗠𝗶𝗻𝗲 & 𝗥𝗲𝗽𝗹𝗶𝘁 & 𝗧𝗲𝗿𝗺𝘂𝘅 💛
+> ESTE REPOSITORIO DE GATABOT ES COMPATIBLE CON BOXMINE, REPLIT Y TERMUX.
 * 𝗚𝗮𝘁𝗮𝗕𝗼𝘁 : 𝗛𝗲𝗿𝗼𝗸𝘂 💜
 > SI QUIERE INSTAR POR HEROKU USE [`GataBotMD-Heroku`](https://github.com/GataNina-Li/GataBotMD-Heroku)
 -----
@@ -83,8 +81,10 @@ https://github.com/clhuang/heroku-buildpack-webp-binaries.git
 - [x] Resultado <details><summary>Buildpack</summary><img src="https://i.imgur.com/t3Xzgnh.jpeg"></details>
 -----
 
-### ✅ BOXMINEHOST
-> ACTIVA GATABOT 24/7 EN LA PLATAFORMA BOXMINEHOST
+### ✅ BOXMINEHOST 
+[![blog](https://img.shields.io/badge/GataBotMD-YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)
+](https://youtu.be/Ko019wvu2Tc)
+> ACTIVA GATABOT 24/7 EN LA PLATAFORMA BOXMINEHOST 
 
 <a href="https://boxmineworld.com"><img src="https://i.imgur.com/allAyd4.png" height="125px"></a>
 ### BoxMine World
@@ -106,17 +106,20 @@ https://github.com/clhuang/heroku-buildpack-webp-binaries.git
 - [x] Resultado <details><summary>Importar Repositorio - GataBot-MD</summary><img src="https://i.imgur.com/GQyRnMf.jpg"></details>
 ------------------
 ### ACTIVAR POR TERMUX  <img src="https://c.tenor.com/HLrXIleGBToAAAAC/transparent-cat.gif" height="40px">  
-> DESCARGUÉ Y DESCOMPRIMA  
+> DESCARGUÉ Y DESCOMPRIMA 
 ### [`GataBot-MD ~ MediaFire`](https://www.mediafire.com/file/zbi0knvnssaipx1/GataBot-MD.zip/file) <a href="https://www.mediafire.com/file/zbi0knvnssaipx1/GataBot-MD.zip/file"> <img src="https://i.pinimg.com/originals/47/77/17/477717205aa460ae58f6b988a4606a02.png" height="30px">
+[![blog](https://img.shields.io/badge/GataBotMD-YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)
+](https://youtu.be/UcWlyQ8u5HE)
+
 #### ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 ```bash
 termux-setup-storage
 apt update
 pkg upgrade
 pkg install nodejs -y
-pkg install ffmpeg-y
+pkg install ffmpeg -y
 pkg install imagemagick -y
-cd storage/downloads/GataBot-MD 
+cd storage/downloads/GataBot-MD/GataBot-MD
 npm install
 npm start
 ```
