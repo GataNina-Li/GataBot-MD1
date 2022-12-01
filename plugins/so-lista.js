@@ -27,7 +27,7 @@ let vn = './media/Buen día grupo.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
     
-if (chat.audios && m.text.match(/(Calla Fan de bts|bts|Amo a bts|Chino|Chinos)/gi)) {    
+if (chat.audios && m.text.match(/(bts|Chino)/gi)) {    
 let vn = './media/Calla Fan de BTS.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
