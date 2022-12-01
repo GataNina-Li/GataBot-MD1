@@ -152,7 +152,7 @@ console.log(chalk.yellow(lenguajeGB['smsConexionOFF']()))}
 process.on('uncaughtException', console.error)
 
 let isInit = true;
-let handler = await import('./handler.js')
+let handler = import('./handler.js')
 global.reloadHandler = async function (restatConn) {
 try {
 const Handler = await import(`./handler.js?update=${Date.now()}`).catch(console.error)
