@@ -35,7 +35,7 @@ rows: [
 {title: lenguajeGB['smsLista6'](), rowId: `${usedPrefix}allmenu`},
 {title: lenguajeGB['smsLista7'](), rowId: `${usedPrefix}instalarbot`},
 {title: lenguajeGB['smsLista8'](), rowId: `${usedPrefix}serbot`},
-{title: lenguajeGB['smsLista9'](), rowId: `${usedPrefix}términos`, description: '\n'}
+{title: lenguajeGB['smsLista9'](), rowId: `${usedPrefix}términos`, description: '\n\n'}
 ]},{
 title: comienzo + ' ' + lenguajeGB['smsLista10']() + ' ' + fin,
 rows: [
@@ -45,14 +45,15 @@ rows: [
 {title: lenguajeGB['smsLista14'](), rowId: `${usedPrefix}inventario 3`},
 {title: lenguajeGB['smsLista15'](), rowId: `${usedPrefix}rpgmenu`},
 {title: lenguajeGB['smsLista16'](), rowId: `${usedPrefix}buy`},
-{title: lenguajeGB['smsLista17'](), rowId: `${usedPrefix}inventory`, description: '\n'}
+{title: lenguajeGB['smsLista17'](), rowId: `${usedPrefix}inventory`, description: '\n\n'}
 ]},{	
 title: comienzo + ' ' + lenguajeGB['smsLista18']() + ' ' + fin,
 rows: [
 {title: lenguajeGB['smsLista19'](), rowId: `${usedPrefix}descargasmenu`},
 {title: lenguajeGB['smsLista20'](), rowId: `${usedPrefix}buscarmenu`},
 {title: lenguajeGB['smsLista21'](), rowId: `${usedPrefix}convertidormenu`},
-{title: lenguajeGB['smsLista22'](), rowId: `${usedPrefix}audioefectomenu`, description: '\n'}
+{title: lenguajeGB['smsLista22'](), rowId: `${usedPrefix}audioefectomenu`},
+{title: lenguajeGB['smsLista22_1'](), rowId: `${usedPrefix}herramientasmenu`, description: '\n\n'}
 ]},{
 title: comienzo + ' ' + lenguajeGB['smsLista23']() + ' ' + fin,
 rows: [
@@ -62,7 +63,7 @@ rows: [
 {title: lenguajeGB['smsLista27'](), rowId: `${usedPrefix}makermenu`},
 {title: lenguajeGB['smsLista28'](), rowId: `${usedPrefix}menulogos2`},
 {title: lenguajeGB['smsLista29'](), rowId: `${usedPrefix}randommenu`},
-{title: lenguajeGB['smsLista30'](), rowId: `${usedPrefix}hornymenu`, description: '\n'}
+{title: lenguajeGB['smsLista30'](), rowId: `${usedPrefix}hornymenu`, description: '\n\n'}
 ]},{	
 title: comienzo + ' ' + lenguajeGB['smsLista31']() + ' ' + fin,
 rows: [
