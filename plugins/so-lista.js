@@ -6,7 +6,7 @@ let chat = global.db.data.chats[m.chat]
 global.db.data.users[m.sender].money += 50
 global.db.data.users[m.sender].exp += 50     
 let frep = { contextInfo: { externalAdReply: {title: wm, body: author, sourceUrl: md, thumbnail: fs.readFileSync('./media/menus/Menu3.jpg')}}}
-conn.sendFile(m.chat, audio.data, 'audio.mp3', '', estiloaudio, null, { mimetype: 'audio/mp4' })
+//conn.sendFile(m.chat, audio.data, 'audio.mp3', '', estiloaudio, null, { mimetype: 'audio/mp4' })
     
 if (/^bueno master|bueno máster|🫂$/i.test(m.text) && chat.audios) {  
 if (!db.data.chats[m.chat].audios && m.isGroup) throw 0    
