@@ -206,7 +206,13 @@ let menuB = `
 ∘ _Motivación_
 ∘ _En caso de una investigación_
 ∘ _Buen día grupo | 🙌_
-∘ _Las reglas del grupo_`.trim()
+∘ _Las reglas del grupo_
+∘ _Oye | 🐔_
+∘ _ig de la minita_
+∘ _gaspi frase_
+∘ _Vamos!!_
+∘ _Se pudrio_
+∘ _Gool!_`.trim()
   
 await conn.sendButtonVid(m.chat, pp, menuA, menuB, lenguajeGB.smsBotonM1(), '.menu', lenguajeGB.smsBotonM2(), '/allmenu', lenguajeGB.smsBotonM3(), '#inventario', fkontak, adReply)
 
