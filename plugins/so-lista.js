@@ -527,7 +527,7 @@ let vn = './media/sombare5.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
 
-if (!chat.isBanned && chat.audios && m.text.match(/(goo|temazo|fua temon|temaso)/gi)) {
+if (!chat.isBanned && chat.audios && m.text.match(/(gol|temazo|fua temon|temaso)/gi)) {
 let vn = './media/sombare14.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
