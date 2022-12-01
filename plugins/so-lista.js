@@ -11,7 +11,7 @@ let frep = { contextInfo: { externalAdReply: {title: wm, body: author, sourceUrl
 if (/^bueno master|bueno máster|🫂$/i.test(m.text) && chat.audios) {  
 if (!db.data.chats[m.chat].audios && m.isGroup) throw 0    
 let vn = './media/A bueno adios master.mp3'
-this.sendPresenceUpdate('recording', m.chat)   
+//this.sendPresenceUpdate('recording', m.chat)   
 //this.sendFile(m.chat, vn, 'error.mp3', null, frep, true, {type: 'audioMessage', ptt: true})}   
 this.sendFile(m.chat, vn, 'error.mp3', null, frep, null, { mimetype: 'audio/mp4' })}
 
