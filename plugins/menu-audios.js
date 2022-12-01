@@ -208,11 +208,11 @@ let menuB = `
 ∘ _Buen día grupo | 🙌_
 ∘ _Las reglas del grupo_
 ∘ _Oye | 🐔_
-∘ _ig de la minita_
-∘ _gaspi frase_
+∘ _Ig de la minita_
+∘ _Gaspi frase_
 ∘ _Vamos!!_
 ∘ _Se pudrio_
-∘ _Gool!_`.trim()
+∘ _Gol!_`.trim()
   
 await conn.sendButtonVid(m.chat, pp, menuA, menuB, lenguajeGB.smsBotonM1(), '.menu', lenguajeGB.smsBotonM2(), '/allmenu', lenguajeGB.smsBotonM3(), '#inventario', fkontak, adReply)
 
@@ -356,6 +356,12 @@ rows: [
 {title: "➥🔊 En caso de una investigación", description: null, rowId: `En caso de una investigación`},
 {title: "➥🔊 Buen día grupo", description: null, rowId: `Buen día grupo`},
 {title: "➥🔊 🙌", description: null, rowId: `🙌`},
+{title: "➥🔊 Oye", description: null, rowId: `Oye`},
+{title: "➥🔊 Ig de la minita", description: null, rowId: `Ig de la minita`},
+{title: "➥🔊 Gaspi frase", description: null, rowId: `Gaspi frase`},
+{title: "➥🔊 Vamos!!", description: null, rowId: `Vamos`},
+{title: "➥🔊 Se pudrio", description: null, rowId: `Se pudrio`},
+{title: "➥🔊 Gol!", description: null, rowId: `Gol`},
 {title: "➥🔊 Las reglas del grupo", description: null, rowId: `Las reglas del grupo`},
 ]}, ]
 
