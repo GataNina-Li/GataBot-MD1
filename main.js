@@ -123,13 +123,13 @@ if (stats.isFile() && (Date.now() - stats.mtimeMs >= 1000 * 60 * 3)) return unli
 return false
 })}*/
 
-readdirSync("./GataBotSession").forEach(file => {
+/*readdirSync("./GataBotSession").forEach(file => {
 if (file !== 'creds.json') {
 unlinkSync("./GataBotSession/" + file, { recursive: true, force: true })}})    
 return filename.map(file => {
 const stats = statSync(file)
 if (stats.isFile() && (Date.now() - stats.mtimeMs >= 1000 * 60 * 3)) return unlinkSync(file) // 3 minutes
-return false })}
+return false })}*/
 
 async function connectionUpdate(update) {
 const { connection, lastDisconnect, isNewLogin } = update
