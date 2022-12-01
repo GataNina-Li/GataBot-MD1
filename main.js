@@ -133,7 +133,7 @@ return false })}*/
 
 async function connectionUpdate(update) {
 const { connection, lastDisconnect, isNewLogin } = update
-global.stopped = connection    
+//global.stopped = connection    
 if (isNewLogin) conn.isInit = true
 const code = lastDisconnect?.error?.output?.statusCode || lastDisconnect?.error?.output?.payload?.statusCode
 if (code && code !== DisconnectReason.loggedOut && conn?.ws.readyState !== CONNECTING) {
@@ -270,7 +270,7 @@ let s = global.support = { ffmpeg, ffprobe, ffmpegWebp, convert, magick, gm, fin
 Object.freeze(global.support)
 }
 setInterval(async () => {
-if (global.stopped == 'close') return
+//if (global.stopped == 'close') return
 var a = await clearTmp()    
 console.log(chalk.cyanBright(lenguajeGB['smsClearTmp']()))
 }, 180000)
