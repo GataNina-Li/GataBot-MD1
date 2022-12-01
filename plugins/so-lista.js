@@ -57,12 +57,12 @@ let vn = './media/En caso de una investigación.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
     
-if (chat.audios && m.text.match(/(Eres Fuerte|god|🙌|🤜|🤛|🦾|👊)/gi)) {    
+if (chat.audios && m.text.match(/(Eres Fuerte|🤜|🤛|🦾|👊)/gi)) {    
 let vn = './media/Eres Fuerte.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
     
-if (chat.audios && m.text.match(/(Zzzz|zzz|😴|💩|👽)/gi)) {    
+if (chat.audios && m.text.match(/(zzz|😴|💩|👽)/gi)) {    
 let vn = './media/Esta Zzzz.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
@@ -332,7 +332,7 @@ let vn = './media/la-voz-de-hombre.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
     
-if (chat.audios && m.text.match(/(laoracion|La biblia|La oración|La biblia|La oración|la biblia|La Biblia|oremos|recemos|rezemos|🙌|👏|🙏)/gi)) {    
+if (chat.audios && m.text.match(/(laoracion|La biblia|La oración|La biblia|La oración|la biblia|La Biblia|oremos|recemos|rezemos|👏|🙏)/gi)) {    
 let vn = './media/ora.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
