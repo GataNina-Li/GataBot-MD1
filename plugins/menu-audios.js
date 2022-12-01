@@ -199,7 +199,7 @@ let menuB = `
 ∘ _Traiganle una falda_
 ∘ _Se están riendo de mí_
 ∘ _Su nivel de pendejo_
-∘ _Bienvenido/a 🤗 | 👋_
+∘ _Bienvenido/a 🥳 | 👋_
 ∘ _Elmo sabe donde vives_
 ∘ _tunometecabrasaramambiche_
 ∘ _Y este quien es_
@@ -341,7 +341,7 @@ rows: [
 {title: "➥🔊 Se están riendo de mí", description: null, rowId: `Se están riendo de mí`},
 {title: "➥🔊 Su nivel de pendejo", description: null, rowId: `Su nivel de pendejo`},
 {title: "➥🔊 Bienvenido/a", description: null, rowId: `Bienvenido`},
-{title: "➥🔊 🤗", description: null, rowId: `🤗`},
+{title: "➥🔊 🥳", description: null, rowId: `🥳`},
 {title: "➥🔊 👋", description: null, rowId: `👋`},
 {title: "➥🔊 Elmo sabe donde vives", description: null, rowId: `Elmo sabe donde vives`},
 {title: "➥🔊 tunometecabrasaramambiche", description: null, rowId: `tunometecabrasaramambiche`},
