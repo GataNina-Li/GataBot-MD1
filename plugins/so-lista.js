@@ -5,24 +5,19 @@ handler.all = async function (m) {
 let chat = global.db.data.chats[m.chat]
 global.db.data.users[m.sender].money += 50
 global.db.data.users[m.sender].exp += 50     
-let frep = { contextInfo: { externalAdReply: {title: wm, body: author, sourceUrl: md, thumbnail: fs.readFileSync('./media/menus/Menu3.jpg')}}}
-let fsizedoc = '1'.repeat(10)
-let fvn = { key: { participant: '0@s.whatsapp.net' }, message: { audioMessage: { mimetype: 'audio/ogg; codecs=opus', seconds: fsizedoc, ptt: true }}}
-//conn.sendFile(m.chat, audio.data, 'audio.mp3', '', estiloaudio, null, { mimetype: 'audio/mp4' })
     
 if (/^bueno master|bueno máster|🫂$/i.test(m.text) && chat.audios) {  
 if (!db.data.chats[m.chat].audios && m.isGroup) throw 0    
 let vn = './media/A bueno adios master.mp3'
-//this.sendPresenceUpdate('recording', m.chat)   
-//this.sendFile(m.chat, vn, 'error.mp3', null, frep, true, {type: 'audioMessage', ptt: true})}   
-this.sendFile(m.chat, vn, 'error.mp3', null, fvn, null, { mimetype: 'audio/mp4' })}
+this.sendPresenceUpdate('recording', m.chat)   
+this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}   
 
-if (chat.audios && m.text.match(/(bienveni|🥳|🤗|👋)/gi)) {
+if (chat.audios && m.text.match(/(bienveni|🥳|👋)/gi)) {
 let vn = './media/Bienvenido.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
     
-if (chat.audios && m.text.match(/(Blackpink in your area|blackpink in your area|in your area|In your area)/gi)) {    
+if (chat.audios && m.text.match(/(you are|Blackpink in your area|blackpink in your area|in your area|In your area)/gi)) {    
 let vn = './media/Blackpink in your area.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
