@@ -3,7 +3,7 @@ try{
 let texto = `${lenguajeGB['smskick1']()}${usedPrefix + command} @${global.owner[0][0]}*`
 const fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net"}
 
-if (!global.db.data.settings[conn.user.jid].restrict) return conn.sendButton(m.chat, wm, `${lenguajeGB['smsAvisoAG']()}${lenguajeGB['smsSoloOwner']()}`, null, [[lenguajeGB.smsEncender(), `${usedPrefix}menu`]], fkontak, m)
+if (!global.db.data.settings[conn.user.jid].restrict) return conn.sendButton(m.chat, wm, `${lenguajeGB['smsAvisoAG']()}${lenguajeGB['smsSoloOwner']()}`, null, [[lenguajeGB.smsEncender(), `${usedPrefix}on restringir`]], fkontak, m)
 if (!m.mentionedJid[0] && !m.quoted) return m.reply(texto, m.chat, { mentions: conn.parseMention(texto)}) 
 if (m.message.extendedTextMessage === undefined || m.message.extendedTextMessage === null) return conn.reply(m.chat, texto, fkontak, m) 
 if(m.message.extendedTextMessage.contextInfo.participant !== null && m.message.extendedTextMessage.contextInfo.participant != undefined && m.message.extendedTextMessage.contextInfo.participant !== "") {
