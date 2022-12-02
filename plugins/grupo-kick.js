@@ -45,6 +45,6 @@ handler.command = /^(kick|echar|hechar|sacar|ban)$/i
 handler.admin = true
 handler.group = true
 handler.botAdmin = true
-export default handler
+export default handler*/
 
 
