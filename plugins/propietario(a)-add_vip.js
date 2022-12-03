@@ -17,7 +17,7 @@ var semana1 = 604800000 * txt //1s
 var mes1 = 2629800000 * txt //1m
 var now = new Date() * 1
 
-if (!text && !m.quoted) throw `*Ingrese el número de tiempo premium*`
+if (!txt && !m.quoted) throw `*Ingrese el número de tiempo premium*`
 if (isNaN(txt)) return m.reply(`Solo número!\n\nEjemplo:\n${usedPrefix + command} @${m.sender.split`@`[0]} 1`)
 
 /*let titulo = [ 'PREMIUM 1', 'PREMIUM 2', 'PREMIUM 3', 'PREMIUM 4', 'PREMIUM 5', 'PREMIUM 6']
