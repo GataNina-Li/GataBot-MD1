@@ -7,7 +7,7 @@ else who = m.chat
 //let who = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text ? text.replace(/[^0-9]/g, '') + '@s.whatsapp.net' : false
 //let res = [];
 let user = global.db.data.users[who]
-if (!who) throw `*Menciona a la Persona que será  premium*`
+if (!who) throw `*MENCIONA O REPONDA AL MENSAJE DE LA APERSONA QUE SERÁ PREMIUM*\n\n*${usedPrefix + command} @${m.sender.split`@`[0]} 1*\n*${usedPrefix + command} 1*`
 let txt = text.replace('@' + who.split`@`[0], '').trim()
 let name = await '@' + who.split`@`[0]
 
@@ -17,8 +17,9 @@ var semana1 = 604800000 * txt //1s
 var mes1 = 2629800000 * txt //1m
 var now = new Date() * 1
 
-if (!txt && !m.quoted) throw `*Ingrese el número de tiempo premium*`
-if (isNaN(txt)) return m.reply(`Solo número!\n\nEjemplo:\n${usedPrefix + command} @${m.sender.split`@`[0]} 1`)
+if (!txt && !m.quoted) throw `*FALTA EL TIEMPO PREMIUM*`
+if (!txt == 0 || !txt == null) throw `*DEBE INGRESAR EL TIEMPO PREMIUM*\n\n*${usedPrefix + command} @${m.sender.split`@`[0]} 1*\n*${usedPrefix + command} 1*`
+if (isNaN(txt)) return m.reply(`*SOLO NÚMERO*\n\n*${usedPrefix + command} @${m.sender.split`@`[0]} 1*`)
 
 /*let titulo = [ 'PREMIUM 1', 'PREMIUM 2', 'PREMIUM 3', 'PREMIUM 4', 'PREMIUM 5', 'PREMIUM 6']
 let nombre = [ 'PREMIUM BÁSICO', 'PREMIUM NORMAL', 'PREMIUM ESPECIAL', 'PREMIUM PRO', 'PREMIUM PLUS', 'PREMIUM MAGISTRAL']
