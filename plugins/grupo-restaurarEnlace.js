@@ -4,7 +4,6 @@ const pp = await conn.profilePictureUrl(m.chat, 'image').catch(_ => null) || './
 
 let res = await conn.groupRevokeInvite(m.chat)
 conn.sendButton(m.chat, wm, lenguajeGB.smsRestGp() + '\n*https://chat.whatsapp.com/' + res + '*', pp, [[lenguajeGB.smsConMenu(), `/menu`]], fkontak, m)}
-}
 handler.command = ['nuevolink', 'nuevoenlace', 'revoke', 'resetlink'] 
 handler.group = true
 handler.admin = true
