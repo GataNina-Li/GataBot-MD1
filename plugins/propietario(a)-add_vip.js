@@ -35,11 +35,11 @@ sections }
 let sections = Object.keys(titulo, nombre, descripción, tiempo, comando).map((v, index) => ({ title: `${titulo[v]}`,
 rows: [{ title: `${nombre[v]}`, description: `${1 + index}. ${descripción[v]}`, rowId: usedPrefix + comando[v] + ' ' + txt, }], }))
   
-if (command == 'premium') {
-if (!txt || !text) return
+if (command == 'addprem') {
+//if (!txt || !text) return
 await conn.sendMessage(m.chat, listMessage, {quoted: fkontak})}
   
-  
+ 
 if (command == 'premium1') {
 if (now < user.premiumTime) user.premiumTime += hora1
 else user.premiumTime = now + hora1
@@ -107,7 +107,7 @@ m.reply(`*🎟️ 𝙐𝙎𝙏𝙀𝘿 𝘼𝙃𝙊𝙍𝘼 𝙀𝙎 𝙋𝙍�
 }
 handler.help = ['addprem [@user] <days>']
 handler.tags = ['owner']
-handler.command = ['premium', 'premium1', 'premium2', 'premium3', 'premium4', 'premium5', 'premium6'] 
+handler.command = ['addprem', 'premium1', 'premium2', 'premium3', 'premium4', 'premium5', 'premium6'] 
 handler.group = true
 handler.owner = true
 handler.botAdmin = true
