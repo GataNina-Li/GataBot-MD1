@@ -25,15 +25,15 @@ let descripción = [ 'Premium durante 1 Hora', 'Premium durante 3 Horas', 'Premi
 let tiempo = [ hora1, hora3, hora5, dia1, semana1, mes1]
 let comando = [ command[1], command[2], command[3], command[4], command[5], command[6]]
 
+let sections = Object.keys(titulo, nombre, descripción, tiempo, comando).map((v, index) => ({ title: `${titulo[v]}`,
+rows: [{ title: `${nombre[v]}`, description: `${1 + index}. ${descripción[v]}`, rowId: usedPrefix + comando[v] + ' ' + txt, }], }))
+
 const listMessage = {
 text: `*ELIJA EL TIEMPO PREMIUM*
 ${wm}`,
 title: null,
 buttonText: `TIEMPO AQUÍ `,
 sections }
-
-let sections = Object.keys(titulo, nombre, descripción, tiempo, comando).map((v, index) => ({ title: `${titulo[v]}`,
-rows: [{ title: `${nombre[v]}`, description: `${1 + index}. ${descripción[v]}`, rowId: usedPrefix + comando[v] + ' ' + txt, }], }))
   
 if (command == 'addprem') {
 //if (!txt || !text) return
