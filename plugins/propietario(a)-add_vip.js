@@ -35,7 +35,7 @@ rows: [{ title: `${nombre[v]}`, description: `${1 + index}. ${descripción[v]}`,
 
 const listMessage = {
 text: `*ELIJA EL TIEMPO PREMIUM*
-*${name}*
+*${name2}*
 ${wm}`,
 title: null,
 buttonText: `TIEMPO AQUÍ `,
