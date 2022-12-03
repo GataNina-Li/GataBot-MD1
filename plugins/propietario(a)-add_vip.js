@@ -1,7 +1,7 @@
 let handler = async (m, { conn, text, usedPrefix, command }) => {
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
 let who
-if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : false
+if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text
 else who = m.chat
 
 //let who = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text ? text.replace(/[^0-9]/g, '') + '@s.whatsapp.net' : false
@@ -10,7 +10,6 @@ let user = global.db.data.users[who]
 if (!who) throw `Menciona a la Persona`
 let txt = text.replace('@' + who.split`@`[0], '').trim()
 let name = await who.split`@`[0]
-let name2 = await conn.getName[who]
 
 var hora1 = 3600000 * txt //1h
 var hora3 = 10800000 * txt //3h
@@ -34,7 +33,7 @@ rows: [{ title: `${nombre[v]}`, description: `${1 + index}. ${descripción[v]}`,
 
 const listMessage = {
 text: `*ELIJA EL TIEMPO PREMIUM*
-*${name2}*
+*${name}*
 ${wm}`,
 title: null,
 buttonText: `TIEMPO AQUÍ `,
