@@ -6,7 +6,19 @@ else who = m.chat
 //let userr = m.chat.split`-`[0]
 //let who = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text ? text.replace(/[^0-9]/g, '') + '@s.whatsapp.net' : false
 //let res = [];
-let user = global.db.data.users[who]
+if(isNaN(text)) {
+  	var number = text.split`@`[1]
+  } else if(!isNaN(text)) {
+  	var number = text
+  }
+  if(text) {
+			var user = number + '@s.whatsapp.net'
+		} else if(m.quoted.sender) {
+			var user = m.quoted.sender
+		} else if(m.mentionedJid) {
+  		  var user = number + '@s.whatsapp.net'
+			}  
+let userr = global.db.data.users[who]
 if (!who) throw `Menciona a la Persona`
 let txt = text.replace('@' + who.split`@`[0], '').trim()
 let name = await who.split`@`[0]
@@ -29,7 +41,7 @@ let tiempo = [ hora1, hora3, hora5, dia1, semana1, mes1]
 let comando = [ 'premium1', `${command[2]}`, `${command[3]}`, `${command[4]}`, `${command[5]}`, `${command[6]}`]
 
 let sections = Object.keys(titulo, nombre, descripción, tiempo, comando).map((v, index) => ({ title: `${titulo[v]}`,
-rows: [{ title: `${nombre[v]}`, description: `${1 + index}. ${descripción[v]}`, rowId: usedPrefix + comando[v] + ' ' + [txt] + ' ' + txt, }], }))
+rows: [{ title: `${nombre[v]}`, description: `${1 + index}. ${descripción[v]}`, rowId: usedPrefix + comando[v] + ' ' + [user] + ' ' + txt, }], }))
 
 const listMessage = {
 text: `*ELIJA EL TIEMPO PREMIUM*
