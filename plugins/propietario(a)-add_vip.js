@@ -43,7 +43,7 @@ if (command == 'addprem') {
 await conn.sendMessage(m.chat, listMessage, {quoted: fkontak})}*/
   
  
-if (command == 'addprem1' || command == 'userpremium1') {
+if (command == 'addprem' || command == 'userpremium') {
 if (now < user.premiumTime) user.premiumTime += hora1
 else user.premiumTime = now + hora1
 user.premium = true
@@ -87,7 +87,7 @@ m.reply(`*🎟️ 𝙐𝙎𝙏𝙀𝘿 𝘼𝙃𝙊𝙍𝘼 𝙀𝙎 𝙋𝙍�
 }
 handler.help = ['addprem [@user] <days>']
 handler.tags = ['owner']
-handler.command = ['addprem1', 'userpremium1', 'addprem2', 'userpremium2', 'addprem3', 'userpremium3', 'addprem4', 'userpremium4'] 
+handler.command = ['addprem', 'userpremium', 'addprem2', 'userpremium2', 'addprem3', 'userpremium3', 'addprem4', 'userpremium4'] 
 handler.group = true
 handler.owner = true
 handler.botAdmin = true
