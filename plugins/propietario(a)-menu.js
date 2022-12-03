@@ -80,6 +80,8 @@ let menuB = `╭┄〔 *${wm}* 〕┄⊱
 ╰┄┄┄┄〔 *𓃠 ${vs}* 〕┄┄┄┄⊱
 
 ⠇ ${lenguajeGB['smsTex20']()} 💎
+∘ _${usedPrefix}join *enlace*_
+∘ _${usedPrefix}unete *enlace*_
 ∘ _${usedPrefix}dardiamantes *cantidad*_
 ∘ _${usedPrefix}darxp *cantidad*_
 ∘ _${usedPrefix}dargatacoins *cantidad*_
