@@ -96,7 +96,6 @@ let menuB = `╭┄〔 *${wm}* 〕┄⊱
 ∘ _${usedPrefix}hidetag *texto*_
 ∘ _${usedPrefix}infogrupo | infogroup_
 ∘ _${usedPrefix}grupotiempo | grouptime *Cantidad*_
-∘ _${usedPrefix}vergrupo_
 ∘ _${usedPrefix}advertencia *@tag*_
 ∘ _${usedPrefix}deladvertencia *@tag*_
 ∘ _${usedPrefix}delwarn *@tag*_
@@ -106,10 +105,10 @@ let menuB = `╭┄〔 *${wm}* 〕┄⊱
 ∘ _${usedPrefix}vervotos | cekvoto_
 ∘ _${usedPrefix}delvoto | deletevoto_
 ∘ _${usedPrefix}enlace | link_
-∘ _${usedPrefix}newnombre | setname *texto*_
-∘ _${usedPrefix}newdesc | setdesc *texto*_
-∘ _${usedPrefix}setwelcome *texto*_
-∘ _${usedPrefix}setbye *texto*_
+∘ _${usedPrefix}newnombre | nuevonombre *texto*_
+∘ _${usedPrefix}newdesc | descripcion *texto*_
+∘ _${usedPrefix}setwelcome | bienvenida *texto*_
+∘ _${usedPrefix}setbye | despedida *texto*_
 ∘ _${usedPrefix}on_
 ∘ _${usedPrefix}off_
 `.trim()
