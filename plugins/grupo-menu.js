@@ -109,6 +109,7 @@ let menuB = `╭┄〔 *${wm}* 〕┄⊱
 ∘ _${usedPrefix}newdesc | descripcion *texto*_
 ∘ _${usedPrefix}setwelcome | bienvenida *texto*_
 ∘ _${usedPrefix}setbye | despedida *texto*_
+∘ _${usedPrefix}nuevoenlace | resetlink_
 ∘ _${usedPrefix}on_
 ∘ _${usedPrefix}off_
 `.trim()
