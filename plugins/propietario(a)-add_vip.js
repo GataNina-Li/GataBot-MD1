@@ -5,7 +5,7 @@ let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status
 //else who = m.chat
 //let userr = m.chat.split`-`[0]
 
-let who = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.who : text ? text.replace(/[^0-9]/g, '') + '@s.whatsapp.net' : false
+let who = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text ? text.replace(/[^0-9]/g, '') + '@s.whatsapp.net' : false
 let res = [];
 let user = global.db.data.users[who]
 if (!who) throw `Menciona a la Persona`
