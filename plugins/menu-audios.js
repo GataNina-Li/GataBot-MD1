@@ -241,7 +241,21 @@ let menu = `
 ∘ _Yokese_
 ∘ _Ya antojaron_
 ∘ _Y este quien es_
-∘ _:c_`.trim()
+∘ _:c_
+∘ _Bienvenido/a 🥳 | 👋_
+∘ _Elmo sabe donde vives_
+∘ _tunometecabrasaramambiche_
+∘ _Y este quien es_
+∘ _Motivación_
+∘ _En caso de una investigación_
+∘ _Buen día grupo | 🙌_
+∘ _Las reglas del grupo_
+∘ _Oye | 🐔_
+∘ _Ig de la minita_
+∘ _Gaspi frase_
+∘ _Vamos!!_
+∘ _Se pudrio_
+∘ _Gol!_`.trim()
   
 await conn.sendHydrated(m.chat, menu, wm, null, null, null, null, null, [
 ['𝙈𝙚𝙣𝙪́ 𝙘𝙤𝙢𝙥𝙡𝙚𝙩𝙤 | 𝙁𝙪𝙡𝙡 𝙈𝙚𝙣𝙪 💫', '.allmenu'],
@@ -416,6 +430,23 @@ rows: [
 {title: lenguajeGB['smsLista2'](), description: null, rowId: `${usedPrefix}creadora`},
 {title: lenguajeGB['smsLista5'](), description: null, rowId: `${usedPrefix}infomenu`},
 {title: lenguajeGB['smsLista6'](), description: null, rowId: `${usedPrefix}allmenu`},  
+{title: "➥🔊 Bienvenido/a", description: null, rowId: `Bienvenido`},
+{title: "➥🔊 🥳", description: null, rowId: `🥳`},
+{title: "➥🔊 👋", description: null, rowId: `👋`},
+{title: "➥🔊 Elmo sabe donde vives", description: null, rowId: `Elmo sabe donde vives`},
+{title: "➥🔊 tunometecabrasaramambiche", description: null, rowId: `tunometecabrasaramambiche`},
+{title: "➥🔊 Y este quien es", description: null, rowId: `Y este quien es`},
+{title: "➥🔊 Motivación", description: null, rowId: `Motivación`},
+{title: "➥🔊 En caso de una investigación", description: null, rowId: `En caso de una investigación`},
+{title: "➥🔊 Buen día grupo", description: null, rowId: `Buen día grupo`},
+{title: "➥🔊 🙌", description: null, rowId: `🙌`},
+{title: "➥🔊 Oye", description: null, rowId: `Oye`},
+{title: "➥🔊 Ig de la minita", description: null, rowId: `Ig de la minita`},
+{title: "➥🔊 Gaspi frase", description: null, rowId: `Gaspi frase`},
+{title: "➥🔊 Vamos!!", description: null, rowId: `Vamos`},
+{title: "➥🔊 Se pudrio", description: null, rowId: `Se pudrio`},
+{title: "➥🔊 Gol!", description: null, rowId: `Gol`},
+{title: "➥🔊 Las reglas del grupo", description: null, rowId: `Las reglas del grupo`},
 ]}, ]
 
 const listMessage = {

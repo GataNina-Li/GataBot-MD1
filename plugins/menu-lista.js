@@ -52,7 +52,8 @@ rows: [
 {title: lenguajeGB['smsLista19'](), rowId: `${usedPrefix}descargasmenu`},
 {title: lenguajeGB['smsLista20'](), rowId: `${usedPrefix}buscarmenu`},
 {title: lenguajeGB['smsLista21'](), rowId: `${usedPrefix}convertidormenu`},
-{title: lenguajeGB['smsLista22'](), rowId: `${usedPrefix}audioefectomenu`, description: '\n'}
+{title: lenguajeGB['smsLista22'](), rowId: `${usedPrefix}audioefectomenu`},
+{title: lenguajeGB['smsLista22_1'](), rowId: `${usedPrefix}herramientasmenu`, description: '\n'}
 ]},{
 title: comienzo + ' ' + lenguajeGB['smsLista23']() + ' ' + fin,
 rows: [

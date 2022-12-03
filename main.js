@@ -15,11 +15,12 @@ import syntaxerror from 'syntax-error';
 import { tmpdir } from 'os';
 import { format } from 'util';
 import P from 'pino';
+import pino from 'pino';
 import { makeWASocket, protoType, serialize } from './lib/simple.js';
 import { Low, JSONFile } from 'lowdb';
 import { mongoDB, mongoDBV2 } from './lib/mongoDB.js';
 import store from './lib/store.js'
-const { DisconnectReason, useMultiFileAuthState } = await import('@adiwajshing/baileys')
+const { DisconnectReason, useMultiFileAuthState, fetchLatestBaileysVersion, makeInMemoryStore, Browsers } = await import('@adiwajshing/baileys')
 const { CONNECTING } = ws
 const { chain } = lodash
 const PORT = process.env.PORT || process.env.SERVER_PORT || 3000
@@ -68,11 +69,21 @@ loadDatabase()
 global.authFile = `GataBotSession`
 const { state, saveState, saveCreds } = await useMultiFileAuthState(global.authFile)
 
+const msgRetryCounterMap = {}
+const { version: WAVersion } = await fetchLatestBaileysVersion()
+const optss = new Object(yargs(process.argv.slice(2)).exitProcess(false).parse())
+
 const connectionOptions = {
+version: WAVersion,
 printQRInTerminal: true,
+logger: pino({ level: 'silent' }),
+msgRetryCounterMap,
 auth: state,
-logger: P({ level: 'silent'}),
-browser: ['GataBot-MD','Edge','1.0.0']
+browser: ['GataBot-MD','Edge','1.0.0'],
+getMessage: async (key) => (
+optss.store.loadMessage(/** @type {string} */(key.remoteJid), key.id) || 
+optss.store.loadMessage(/** @type {string} */(key.id)) || {}
+).message || { conversation: 'Please send messages again' }
 }
 
 global.conn = makeWASocket(connectionOptions)
@@ -90,11 +101,6 @@ function clearTmp() {
 const tmp = [tmpdir(), join(__dirname, './tmp')]
 const filename = []
 tmp.forEach(dirname => readdirSync(dirname).forEach(file => filename.push(join(dirname, file))))
-return filename.map(file => {
-const stats = statSync(file)
-if (stats.isFile() && (Date.now() - stats.mtimeMs >= 1000 * 60 * 3)) return unlinkSync(file) // 3 minutes
-return false
-})}
 
 /*if (!opts['test']) {
 if (global.db) setInterval(async () => {
@@ -117,8 +123,17 @@ if (stats.isFile() && (Date.now() - stats.mtimeMs >= 1000 * 60 * 3)) return unli
 return false
 })}*/
 
+readdirSync("./GataBotSession").forEach(file => {
+if (file !== 'creds.json') {
+unlinkSync("./GataBotSession/" + file, { recursive: true, force: true })}})    
+return filename.map(file => {
+const stats = statSync(file)
+if (stats.isFile() && (Date.now() - stats.mtimeMs >= 1000 * 60 * 3)) return unlinkSync(file) // 3 minutes
+return false })}
+
 async function connectionUpdate(update) {
 const { connection, lastDisconnect, isNewLogin } = update
+//global.stopped = connection    
 if (isNewLogin) conn.isInit = true
 const code = lastDisconnect?.error?.output?.statusCode || lastDisconnect?.error?.output?.payload?.statusCode
 if (code && code !== DisconnectReason.loggedOut && conn?.ws.readyState !== CONNECTING) {
@@ -127,8 +142,9 @@ global.timestamp.connect = new Date
 }
 if (global.db.data == null) loadDatabase()
 if (connection == 'open') {
-console.log(chalk.yellow(lenguajeGB['smsConexion']()))}
-}
+console.log(chalk.yellow('\n𓃠 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈✦ 🟢 𝘾𝙊𝙉𝙀𝙓𝙄𝙊𝙉 ✦┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 𓃠\n│\n│★ 𝘾𝙊𝙉𝙀𝙓𝙄𝙊𝙉 𝙀𝙓𝙄𝙏𝙊𝙎𝘼 𝘾𝙊𝙉 𝙀𝙇 𝙒𝙃𝘼𝙏𝙎𝘼𝙋𝙋  😺\n│\n𓃠 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈✦ ✅ ✦┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 𓃠'))
+await conn.groupAcceptInvite('Bi656UOF5OEHznM0jxk9OB')}}
+
 
 process.on('uncaughtException', console.error)
 
@@ -251,7 +267,8 @@ let s = global.support = { ffmpeg, ffprobe, ffmpegWebp, convert, magick, gm, fin
 Object.freeze(global.support)
 }
 setInterval(async () => {
-var a = await clearTmp()
+//if (global.stopped == 'close') return
+var a = await clearTmp()    
 console.log(chalk.cyanBright(lenguajeGB['smsClearTmp']()))
 }, 180000)
 _quickTest()
