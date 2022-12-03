@@ -27,7 +27,7 @@ year: 'numeric'
 let time = d.toLocaleTimeString(locale, {
 hour: 'numeric',
 minute: 'numeric',
-second: 'numeric'
+second: 'numeric' 
 })
 let _uptime = process.uptime() * 1000
 let _muptime
