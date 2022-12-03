@@ -23,7 +23,7 @@ let titulo = [ 'PREMIUM 1', 'PREMIUM 2', 'PREMIUM 3', 'PREMIUM 4', 'PREMIUM 5', 
 let nombre = [ 'PREMIUM BÁSICO', 'PREMIUM NORMAL', 'PREMIUM ESPECIAL', 'PREMIUM PRO', 'PREMIUM PLUS', 'PREMIUM MAGISTRAL']
 let descripción = [ 'Premium durante 1 Hora', 'Premium durante 3 Horas', 'Premium durante 5 Horas', 'Premium durante 1 Día', 'Premium durante 1 Semana', 'Premium durante 1 Mes']
 let tiempo = [ hora1, hora3, hora5, dia1, semana1, mes1]
-let comando = [ command[1], command[2], command[3], command[4], command[5], command[6]]
+let comando = [ `${command[1]}`, `${command[2]}`, `${command[3]}`, `${command[4]}`, `${command[5]}`, `${command[6]}`]
 
 let sections = Object.keys(titulo, nombre, descripción, tiempo, comando).map((v, index) => ({ title: `${titulo[v]}`,
 rows: [{ title: `${nombre[v]}`, description: `${1 + index}. ${descripción[v]}`, rowId: usedPrefix + comando[v] + ' ' + name + ' ' + txt, }], }))
@@ -40,7 +40,7 @@ if (command == 'addprem') {
 await conn.sendMessage(m.chat, listMessage, {quoted: fkontak})}
   
  
-if (command == 'premium1') {
+if (command == command[1]) {
 if (now < user.premiumTime) user.premiumTime += hora1
 else user.premiumTime = now + hora1
 user.premium = true
