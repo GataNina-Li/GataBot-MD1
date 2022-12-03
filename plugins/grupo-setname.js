@@ -10,7 +10,7 @@ if(!args || !args[0]) {
 conn.groupUpdateSubject(m.chat, text)}
 //conn.sendButton(m.chat, wm, lenguajeGB.smsNam1(), pp, [[lenguajeGB.smsConMenu(), `/menu`]], fkontak, m)}
 } catch (e) { 
-if (text.length < 25) return conn.reply(m.chat, lenguajeGB['smsNam3'](), fkontak, m)
+return conn.reply(m.chat, lenguajeGB['smsNam3'](), fkontak, m)
 }}
 handler.command = /^(setname|newnombre|nuevonombre)$/i
 handler.group = true
