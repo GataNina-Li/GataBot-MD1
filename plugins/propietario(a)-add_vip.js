@@ -1,28 +1,26 @@
 let handler = async (m, { conn, text, usedPrefix, command }) => {
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
-//let who
-//if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : false
-//else who = m.chat
+let who
+if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : false
+else who = m.chat
 
-let who = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text ? text.replace(/[^0-9]/g, '') + '@s.whatsapp.net' : false
-let res = [];
+//let who = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text ? text.replace(/[^0-9]/g, '') + '@s.whatsapp.net' : false
+//let res = [];
 let user = global.db.data.users[who]
-if (!who) throw `Menciona a la Persona`
+if (!who) throw `*Menciona a la Persona que será  premium*`
 let txt = text.replace('@' + who.split`@`[0], '').trim()
 let name = await '@' + who.split`@`[0]
 
 var hora1 = 3600000 * txt //1h
-var hora3 = 10800000 * txt //3h
-var hora5 = 18000000 * txt //5h
 var dia1 = 86400000 * txt //1d
 var semana1 = 604800000 * txt //1s
 var mes1 = 2629800000 * txt //1m
 var now = new Date() * 1
 
-if (!txt) throw `*Ingrese el número de tiempo premium*`
+if (!text && !m.quoted) throw `*Ingrese el número de tiempo premium*`
 if (isNaN(txt)) return m.reply(`Solo número!\n\nEjemplo:\n${usedPrefix + command} @${m.sender.split`@`[0]} 1`)
 
-let titulo = [ 'PREMIUM 1', 'PREMIUM 2', 'PREMIUM 3', 'PREMIUM 4', 'PREMIUM 5', 'PREMIUM 6']
+/*let titulo = [ 'PREMIUM 1', 'PREMIUM 2', 'PREMIUM 3', 'PREMIUM 4', 'PREMIUM 5', 'PREMIUM 6']
 let nombre = [ 'PREMIUM BÁSICO', 'PREMIUM NORMAL', 'PREMIUM ESPECIAL', 'PREMIUM PRO', 'PREMIUM PLUS', 'PREMIUM MAGISTRAL']
 let descripción = [ 'Premium durante 1 Hora', 'Premium durante 3 Horas', 'Premium durante 5 Horas', 'Premium durante 1 Día', 'Premium durante 1 Semana', 'Premium durante 1 Mes']
 let tiempo = [ hora1, hora3, hora5, dia1, semana1, mes1]
@@ -41,10 +39,10 @@ sections }
   
 if (command == 'addprem') {
 //if (!txt || !text) return
-await conn.sendMessage(m.chat, listMessage, {quoted: fkontak})}
+await conn.sendMessage(m.chat, listMessage, {quoted: fkontak})}*/
   
  
-if (command == 'premium1') {
+if (command == 'addprem1' || command == 'userpremium1') {
 if (now < user.premiumTime) user.premiumTime += hora1
 else user.premiumTime = now + hora1
 user.premium = true
@@ -53,31 +51,8 @@ m.reply(`*🎟️ 𝙐𝙎𝙏𝙀𝘿 𝘼𝙃𝙊𝙍𝘼 𝙀𝙎 𝙋𝙍�
 *✨ 𝙉𝙊𝙈𝘽𝙍𝙀 : 𝙐𝙎𝙀𝙍 » ${name}*
 *🕐 𝙏𝙄𝙀𝙈𝙋𝙊 : 𝙏𝙄𝙈𝙀 » ${hora1 } hora(s)*
 *📉 𝙏𝙄𝙈𝙀𝙍 » ${user.premiumTime - now} seg*`)}
-
-  
-if (command == 'premium2') {
-if (now < user.premiumTime) user.premiumTime += hora3
-else user.premiumTime = now + hora1
-user.premium = true
-m.reply(`*🎟️ 𝙐𝙎𝙏𝙀𝘿 𝘼𝙃𝙊𝙍𝘼 𝙀𝙎 𝙋𝙍𝙀𝙈𝙄𝙐𝙈!!!*
-
-*✨ 𝙉𝙊𝙈𝘽𝙍𝙀 : 𝙐𝙎𝙀𝙍 » ${name}*
-*🕐 𝙏𝙄𝙀𝙈𝙋𝙊 : 𝙏𝙄𝙈𝙀 » ${hora3} hora(s)*
-*📉 𝙏𝙄𝙈𝙀𝙍 » ${user.premiumTime - now} seg*`)}
-
-  
-if (command == 'premium3') {
-if (now < user.premiumTime) user.premiumTime += hora5
-else user.premiumTime = now + hora5
-user.premium = true
-m.reply(`*🎟️ 𝙐𝙎𝙏𝙀𝘿 𝘼𝙃𝙊𝙍𝘼 𝙀𝙎 𝙋𝙍𝙀𝙈𝙄𝙐𝙈!!!*
-
-*✨ 𝙉𝙊𝙈𝘽𝙍𝙀 : 𝙐𝙎𝙀𝙍 » ${name}*
-*🕐 𝙏𝙄𝙀𝙈𝙋𝙊 : 𝙏𝙄𝙈𝙀 » ${hora5} hora(s)*
-*📉 𝙏𝙄𝙈𝙀𝙍 » ${user.premiumTime - now} seg*`)}
-  
-  
-if (command == 'premium4') {
+    
+if (command == 'addprem2' || command == 'userpremium2') {
 if (now < user.premiumTime) user.premiumTime += dia1
 else user.premiumTime = now + dia1
 user.premium = true
@@ -88,7 +63,7 @@ m.reply(`*🎟️ 𝙐𝙎𝙏𝙀𝘿 𝘼𝙃𝙊𝙍𝘼 𝙀𝙎 𝙋𝙍�
 *📉 𝙏𝙄𝙈𝙀𝙍 » ${user.premiumTime - now} seg*`)}
 
   
-if (command == 'premium5') {
+if (command == 'addprem3' || command == 'userpremium3') {
 if (now < user.premiumTime) user.premiumTime += semana1
 else user.premiumTime = now + semana1
 user.premium = true
@@ -99,7 +74,7 @@ m.reply(`*🎟️ 𝙐𝙎𝙏𝙀𝘿 𝘼𝙃𝙊𝙍𝘼 𝙀𝙎 𝙋𝙍�
 *📉 𝙏𝙄𝙈𝙀𝙍 » ${user.premiumTime - now} seg*`)}
 
   
-if (command == 'premium6') {
+if (command == 'addprem4' || command == 'userpremium4') {
 if (now < user.premiumTime) user.premiumTime += mes1
 else user.premiumTime = now + mes1
 user.premium = true
@@ -111,7 +86,7 @@ m.reply(`*🎟️ 𝙐𝙎𝙏𝙀𝘿 𝘼𝙃𝙊𝙍𝘼 𝙀𝙎 𝙋𝙍�
 }
 handler.help = ['addprem [@user] <days>']
 handler.tags = ['owner']
-handler.command = ['addprem', 'premium1', 'premium2', 'premium3', 'premium4', 'premium5', 'premium6'] 
+handler.command = ['addprem1', 'userpremium1', 'addprem2', 'userpremium2', 'addprem3', 'userpremium3', 'addprem4', 'userpremium4'] 
 handler.group = true
 handler.owner = true
 handler.botAdmin = true
