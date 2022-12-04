@@ -141,10 +141,13 @@ console.log(await global.reloadHandler(true).catch(console.error))
 global.timestamp.connect = new Date
 }
 if (global.db.data == null) loadDatabase()
+if (update.qr != 0 && update.qr != undefined) {
+console.log(chalk.yellow(lenguajeGB['smsCodigoQR']()))}  
 if (connection == 'open') {
-console.log(chalk.yellow('\n𓃠 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈✦ 🟢 𝘾𝙊𝙉𝙀𝙓𝙄𝙊𝙉 ✦┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 𓃠\n│\n│★ 𝘾𝙊𝙉𝙀𝙓𝙄𝙊𝙉 𝙀𝙓𝙄𝙏𝙊𝙎𝘼 𝘾𝙊𝙉 𝙀𝙇 𝙒𝙃𝘼𝙏𝙎𝘼𝙋𝙋  😺\n│\n𓃠 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈✦ ✅ ✦┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 𓃠'))
-await conn.groupAcceptInvite('Bi656UOF5OEHznM0jxk9OB')}}
-
+console.log(chalk.yellow(lenguajeGB['smsConexion']()))
+await conn.groupAcceptInvite(global.nna2)}
+if (connection == 'close') {
+console.log(chalk.yellow(lenguajeGB['smsConexionOFF']()))}}
 
 process.on('uncaughtException', console.error)
 

@@ -104,7 +104,7 @@ global.author = 'ᴀꜱᴀᴋᴜʀᴀ-ᴍᴀᴏ ʙᴏᴛ |【么Ｃｏｌａｐ�
 
 //⊱ ━━━━━.⋅ Versión | Nombre | cuentas ⋅.━━━━ ⊰
 
-global.vs = '1.3.7'
+global.vs = '1.4.0 (Navidad) 🎄'
 global.version = vs
 
 global.gt = 'ᴀꜱᴀᴋᴜʀᴀ-ᴍᴀᴏ ʙᴏᴛ'
@@ -121,6 +121,7 @@ global.gatabot = md
 
 global.nna = 'https://chat.whatsapp.com/Bi656UOF5OEHznM0jxk9OB'
 global.nnagrupo = nna //UPDATE GATABOT
+global.nna2 = 'Bi656UOF5OEHznM0jxk9OB'
 
 global.nn = 'https://chat.whatsapp.com/BszaA3NFekyH7nhm7ZLnu6'
 global.nngrupo = nn //Grupo 1
