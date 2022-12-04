@@ -12,7 +12,7 @@ CBU/CVU: 0000007900204654633937
 Si estas deacuerdo con apoyar porfavor presiona el boton que esta debajo
 `.trim()
   
-conn.sendHydrated(m.chat, str, wm, null, 'null', 'null', null, null, [
+conn.sendHydrated(m.chat, str, wm, null, 'null', null, null, [
 ['✊ APOYO A LA MEJORA!', 'null']
 ], m,)}
 
