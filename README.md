@@ -34,16 +34,16 @@
 </p> 
 
 [![blog](https://img.shields.io/badge/GataBot-Update-25D366?style=for-the-badge&logo=whatsapp&logoColor=white 
-)](https://chat.whatsapp.com/Bi656UOF5OEHznM0jxk9OB) <a href="https://chat.whatsapp.com/Hahc7UwSouH9jIDStkT5QW"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/1200px-WhatsApp_logo-color-vertical.svg.png" height="29px">
+)](https://chat.whatsapp.com/FIbBtY07Ms6Hn8sUlDWBIL) <a href="https://chat.whatsapp.com/FIbBtY07Ms6Hn8sUlDWBIL"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/1200px-WhatsApp_logo-color-vertical.svg.png" height="29px">
 [![Typing SVG](http://readme-typing-svg.herokuapp.com?font=Fira+Code&size=10&duration=3000&pause=1000&color=34F6F7&center=falso&vCenter=falso&width=435&lines=%C3%9Anete+y+Conoce+las+%C3%9Altimas+Novedades!!)](https://git.io/typing-svg)
 </a>
 
 ### ❇️ GRUPOS OFICIALES
-<a href="https://chat.whatsapp.com/BszaA3NFekyH7nhm7ZLnu6" target="blank"><img src="https://img.shields.io/badge/1️⃣_COMUNIDAD_GATADOT_🐈-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
-<a href="https://chat.whatsapp.com/HJbk835UmOM3Aelm0Sqn3o" target="blank"><img src="https://img.shields.io/badge/2️⃣_COMUNIDAD_GATADOT_🐈-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
-<a href="https://chat.whatsapp.com/BV4X36YQa5A0wwgZAShW8D" target="blank"><img src="https://img.shields.io/badge/3️⃣_COMUNIDAD_GATADOT_🐈-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
-<a href="https://chat.whatsapp.com/JWxO7mYh8AdCa9BtRXqERT" target="blank"><img src="https://img.shields.io/badge/4️⃣_COMUNIDAD_GATADOT_🐈-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
-<a href="https://chat.whatsapp.com/IcvAZ26AzhpF72mC7sN1UA" target="blank"><img src="https://img.shields.io/badge/5️⃣_COMUNIDAD_GATADOT_🐈-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+<a href="https://chat.whatsapp.com/GHiR6uflAI2IqJlltnNlCs" target="blank"><img src="https://img.shields.io/badge/1️⃣_COMUNIDAD_GATADOT_🐈-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+<a href="https://chat.whatsapp.com/DNVTIlZBobAK9JrBElOWQc" target="blank"><img src="https://img.shields.io/badge/2️⃣_COMUNIDAD_GATADOT_🐈-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+<a href="https://chat.whatsapp.com/Gfmnk8NkNHNLIaTUl0T4Lh" target="blank"><img src="https://img.shields.io/badge/3️⃣_COMUNIDAD_GATADOT_🐈-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+<a href="https://chat.whatsapp.com/HXdni2XJOdF8l6LzSFPjPH" target="blank"><img src="https://img.shields.io/badge/4️⃣_COMUNIDAD_GATADOT_🐈-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+<a href="https://chat.whatsapp.com/JU6yn5DnwBo2RNApR7YxRV" target="blank"><img src="https://img.shields.io/badge/5️⃣_COMUNIDAD_GATADOT_🐈-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 </a>
 
 ### ✅ GATABOT OFICIAL
@@ -107,7 +107,7 @@ https://github.com/clhuang/heroku-buildpack-webp-binaries.git
 ------------------
 ### ACTIVAR POR TERMUX  <img src="https://c.tenor.com/HLrXIleGBToAAAAC/transparent-cat.gif" height="40px">  
 > DESCARGUÉ Y DESCOMPRIMA 
-### [`GataBot-MD ~ MediaFire`](https://www.mediafire.com/file/9bus5mj6bxrif73/GataBot-MD.zip/file) <a href="https://www.mediafire.com/file/9bus5mj6bxrif73/GataBot-MD.zip/file"> <img src="https://i.pinimg.com/originals/47/77/17/477717205aa460ae58f6b988a4606a02.png" height="30px">
+### [`GataBot-MD ~ MediaFire`](https://www.mediafire.com/file/xfe6xhn6avd8q88/GataBot-MD.zip/file) <a href="https://www.mediafire.com/file/xfe6xhn6avd8q88/GataBot-MD.zip/file"> <img src="https://i.pinimg.com/originals/47/77/17/477717205aa460ae58f6b988a4606a02.png" height="30px">
 [![blog](https://img.shields.io/badge/GataBotMD-YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)
 ](https://youtu.be/UcWlyQ8u5HE)
 
