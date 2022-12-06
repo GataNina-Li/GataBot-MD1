@@ -1,4 +1,4 @@
-import fetch from 'node-fetch'
+/*import fetch from 'node-fetch'
 let handler = async (m, { conn, args, usedPrefix, command }) => {
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 let mentionedJid = [who]
@@ -23,4 +23,4 @@ handler.tags = ['group']
 handler.command = /^enlace|link(gro?up)?$/i
 handler.group = true
 handler.botAdmin = true
-export default handler
+export default handler/*
