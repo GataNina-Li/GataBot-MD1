@@ -110,7 +110,7 @@ https://github.com/clhuang/heroku-buildpack-webp-binaries.git
 ------------------
 ### ACTIVAR POR TERMUX  <img src="https://c.tenor.com/HLrXIleGBToAAAAC/transparent-cat.gif" height="40px">  
 > DESCARGUÉ Y DESCOMPRIMA 
-### [`GataBot-MD ~ MediaFire`](https://www.mediafire.com/file/xfe6xhn6avd8q88/GataBot-MD.zip/file) <a href="https://www.mediafire.com/file/xfe6xhn6avd8q88/GataBot-MD.zip/file"> <img src="https://i.pinimg.com/originals/47/77/17/477717205aa460ae58f6b988a4606a02.png" height="30px">
+### [`GataBot-MD ~ Archivos`](https://mega.nz/file/vvxxHYha#-I6Q64hayupW4_mQ86KWXt0qzy7tAg4sUxAaAKmMahk)
 [![blog](https://img.shields.io/badge/GataBotMD-YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)
 ](https://youtu.be/UcWlyQ8u5HE)
 
@@ -122,7 +122,7 @@ pkg upgrade
 pkg install nodejs -y
 pkg install ffmpeg -y
 pkg install imagemagick -y
-cd storage/downloads/GataBot-MD/GataBot-MD
+cd storage/downloads/GataBot-MD/Folder1/Folder2/GataBot-MD
 npm install
 npm start
 ```
