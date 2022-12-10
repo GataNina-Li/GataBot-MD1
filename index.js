@@ -1,11 +1,3 @@
-/*
-
-
-        Funen a los otakus*/
-
-
-
-
 console.log('𝙄𝙉𝙄𝘾𝙄𝘼𝙉𝘿𝙊 : 𝙎𝙏𝘼𝙍𝙏𝙄𝙉𝙂 🚀')
 import { join, dirname } from 'path'
 import { createRequire } from "module";
