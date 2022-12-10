@@ -220,3 +220,6 @@ En caso que no tenga nada en el terminar puede usar este comando ```cd GataBotMD
 ### 🌟 AGRADECIMIENTOS
  
 [![TheShadowBrokers1](https://github.com/BrunoSobrino.png?size=100)](https://github.com/BrunoSobrino) 
+
+`funen a los otakus y a la lgtb`
+Att: DIEGO-OFC 
