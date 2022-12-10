@@ -223,4 +223,4 @@ En caso que no tenga nada en el terminar puede usar este comando ```cd GataBotMD
 
 `funen a los otakus y a la lgtb`
 
-Att: DIEGO-OFC 
+Att: Gatadios
