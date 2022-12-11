@@ -8,6 +8,7 @@ handler.help = ['pack3']
 handler.tags = ['internet']
 handler.command = /^(pack3)$/i
 handler.level = 3
+handler.money = 100
 export default handler
 
 global.packmen = [
