@@ -145,7 +145,11 @@ npm install
 npm update
 node .
 ```
+### `—◉ 💥 ACTIVAR EN KOYEB 💥`
 
+[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/GataNina-Li/GataBot-MD&branch=master&name=mysticbot)
+
+```
 ## 💻 Instalación de FFmpeg para Windows 
 * Descarga cualquiera de las versiones de FFmpeg disponibles haciendo clic en [FFmpeg](https://www.gyan.dev/ffmpeg/builds/).
 * Extraer archivos a `C:\` path.
