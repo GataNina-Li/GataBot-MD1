@@ -1,3 +1,4 @@
+
 import { youtubeSearch } from '@bochilteam/scraper'
 import fetch from 'node-fetch'
 let handler = async (m, { conn, command, text, usedPrefix }) => {
@@ -11,12 +12,10 @@ var document = doc[Math.floor(Math.random() * doc.length)]
 const buttons = [
 { buttonId: `#ytmp3 ${urll}`, buttonText: { displayText: '🎵 𝐀𝐔𝐃𝐈𝐎 🎵' }, type: 1 },
 { buttonId: `#ytmp4 ${urll}`, buttonText: { displayText: '🎥 𝐕𝐈𝐃𝐄𝐎 🎥' }, type: 1 },
-{ buttonId: `#playlist ${text}`, buttonText: { displayText: '📋 𝐌𝐀𝐒 𝐑𝐄𝐒𝐔𝐋𝐓𝐀𝐃𝐎𝐒 📋' }, type: 1 }, ]    
-let texto1 = `*ও 𝙏𝙄𝙏𝙐𝙇𝙊 | 𝙏𝙄𝙏𝙇𝙀
+{ buttonId: `#playlist ${text}`, buttonText: { displayText: '🐈 𝐌𝐀𝐒 𝐑𝐄𝐒𝐔𝐋𝐓𝐀𝐃𝐎𝐒 🐈' }, type: 1 }, ]    
+let texto1 = `*𓆩 𓃠 𓆪 ✧═══ ${vs} ═══✧ 𓆩 𓃠 𓆪*
+ও 𝙏𝙄𝙏𝙐𝙇𝙊 | 𝙏𝙄𝙏𝙇𝙀
 » ${title}
-﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘
-ও 𝘿𝙀𝙎𝘾𝙍𝙄𝙋𝘾𝙄𝙊𝙉 | 𝘿𝙀𝙎𝘾𝙍𝙄𝙋𝙏𝙄𝙊𝙉
-» ${description}
 ﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘
 ও 𝙋𝙐𝘽𝙇𝙄𝘾𝘼𝘿𝙊 | 𝙋𝙐𝘽𝙇𝙄𝙎𝙃𝙀𝘿
 » ${publishedTime}
@@ -26,22 +25,26 @@ let texto1 = `*ও 𝙏𝙄𝙏𝙐𝙇𝙊 | 𝙏𝙄𝙏𝙇𝙀
 ﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘
 ও 𝙑𝙄𝙎𝙏𝘼𝙎 | 𝙑𝙄𝙀𝙒𝙎
 » ${viewH}
+ ﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘
+ও 𝘿𝙀𝙎𝘾𝙍𝙄𝙋𝘾𝙄𝙊𝙉 | 𝘿𝙀𝙎𝘾𝙍𝙄𝙋𝙏𝙄𝙊𝙉
+» ${description}
 ﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘
 ও 𝙐𝙍𝙇
 » ${urll}
-**𓆩 𓃠 𓆪 ✧═══ ${vs} ═══✧ 𓆩 𓃠 𓆪**`.trim()
+*𓆩 𓃠 𓆪 ✧═══ ${vs} ═══✧ 𓆩 𓃠 𓆪*`.trim()
 let buttonMessage = { "document": { url: "https://wa.me/5219992095479" }, "fileName": '❏ 🌿 ʀᴇᴘʀᴏᴅᴜᴄᴛᴏʀ ᴅᴇ ʏᴏᴜᴛᴜʙᴇ', "mimetype": 'application/vnd.ms-excel', "caption": texto1, "fileLength": '99999999999999', "mentions": [m.sender], "footer": wm, "buttons": buttons, "headerType": 4, contextInfo: { "mentionedJid": [m.sender], "externalAdReply": { "showAdAttribution": true, "title": `${title}`, "mediaType": 2, "previewType": "VIDEO", "thumbnail": await (await fetch(thumbnail)).buffer(), "mediaUrl": `${urll}`, "sourceUrl": `https://github.com/BrunoSobrino/TheMystic-Bot-MD` }}} 
 conn.sendMessage(m.chat, buttonMessage, { quoted: m })
 } catch {
-try {  
-let vid2 = await (await fetch(API('rrul', '/api/yt/yts', { q: text }))).json()
-let { url, title, description, image, seconds, timestamp, ago, views } = await vid2.result[0]
+try {
+let vid2 = await (await fetch(`https://api.lolhuman.xyz/api/ytsearch?apikey=${lolkeysapi}&query=${text}`)).json()
+let { videoId, title, views, published, thumbnail } = await vid2.result[0]
+const url = 'https://www.youtube.com/watch?v=' + videoId
 let ytLink = await fetch(`https://api.lolhuman.xyz/api/ytplay2?apikey=${lolkeysapi}&query=${text}`)
 let jsonn = await ytLink.json()
 let aud = await jsonn.result.audio
-let capt = `ও 𝙏𝙄𝙏𝙐𝙇𝙊 | 𝙏𝙄𝙏𝙇𝙀:* ${title}\nও 𝙋𝙐𝘽𝙇𝙄𝘾𝘼𝘿𝙊 | 𝙋𝙐𝘽𝙇𝙄𝙎𝙃𝙀𝘿:* ${ago}\nও 𝘿𝙐𝙍𝘼𝘾𝙄𝙊𝙉 | 𝘿𝙐𝙍𝘼𝙏𝙄𝙊𝙉:* ${timestamp}\nও 𝙑𝙄𝙎𝙏𝘼𝙎 | 𝙑𝙄𝙀𝙒𝙎:* ${views.toLocaleString()}\nও 𝙐𝙍𝙇:* ${url}`
-const buttons = [{buttonId: `#playlist ${title}`, buttonText: {displayText: '🐈 𝐌𝐀𝐒 𝐑𝐄𝐒𝐔𝐋𝐓𝐀𝐃𝐎𝐒 🐈'}, type: 1}]
-const buttonMessage = { image: {url: image}, caption: capt, footer: '*ᴇɴᴠɪᴀɴᴅᴏ ᴀᴜᴅɪᴏ, ᴀɢᴜᴀʀᴅᴇ ᴜɴ ᴍᴏᴍᴇɴᴛᴏ...*', buttons: buttons, headerType: 4 }
+let capt = `ও 𝙏𝙄𝙏𝙐𝙇𝙊 | 𝙏𝙄𝙏𝙇𝙀:* ${title}\nও 𝙋𝙐𝘽𝙇𝙄𝘾𝘼𝘿𝙊 | 𝙋𝙐𝘽𝙇𝙄𝙎𝙃𝙀𝘿:* ${published}\nও 𝙑𝙄𝙎𝙏𝘼𝙎 | 𝙑𝙄𝙀𝙒𝙎:* ${views}\nও 𝙐𝙍𝙇:* ${url}`
+const buttons = [{buttonId: `#playlist ${title}`, buttonText: {displayText: '⏯️ 𝐌𝐀𝐒 𝐑𝐄𝐒𝐔𝐋𝐓𝐀𝐃𝐎𝐒 ⏯️'}, type: 1}]
+const buttonMessage = { image: {url: thumbnail}, caption: capt, footer: '*ᴇɴᴠɪᴀɴᴅᴏ ᴀᴜᴅɪᴏ, ᴀɢᴜᴀʀᴅᴇ ᴜɴ ᴍᴏᴍᴇɴᴛᴏ...*', buttons: buttons, headerType: 4 }
 let msg = await conn.sendMessage(m.chat, buttonMessage, { quoted: m })
 conn.sendMessage(m.chat, { audio: { url: aud }, mimetype: 'audio/mp4', fileName: `${title}.mp3`}, {quoted: msg})
 } catch {  
@@ -49,6 +52,7 @@ throw '*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝚁𝚁𝙾𝚁, 𝙿𝙾𝚁 𝙵𝙰𝚅
 handler.help = ['play', 'play2'].map(v => v + ' <pencarian>')
 handler.tags = ['downloader']
 handler.command = /^play2?$/i
+handler.exp = 20
 handler.money = 200
 export default handler
 
