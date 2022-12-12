@@ -147,7 +147,7 @@ try { global.conn.ws.close() } catch { }
 conn.ev.removeAllListeners()
 global.conn = makeWASocket(connectionOptions, { chats: oldChats })
 isInit = true
-}}
+}
 if (!isInit) {
 conn.ev.off('messages.upsert', conn.handler)
 conn.ev.off('group-participants.update', conn.participantsUpdate)
@@ -251,7 +251,7 @@ let s = global.support = { ffmpeg, ffprobe, ffmpegWebp, convert, magick, gm, fin
 Object.freeze(global.support)
 }
 setInterval(async () => {
-if (stopped == 'close') return
+//if (stopped == 'close') return
 var a = await clearTmp()    
 console.log(chalk.cyanBright(lenguajeGB['smsClearTmp']()))
 }, 180000)
