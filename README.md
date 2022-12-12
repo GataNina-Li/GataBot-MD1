@@ -108,6 +108,11 @@ https://github.com/clhuang/heroku-buildpack-webp-binaries.git
 ------------------
 - [x] Resultado <details><summary>Importar Repositorio - GataBot-MD</summary><img src="https://i.imgur.com/GQyRnMf.jpg"></details>
 ------------------
+### `—◉ 💥 ACTIVAR EN KOYEB 💥`
+
+[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/GataNina-Li/GataBot-MD&branch=master&name=mysticbot)
+
+------------------
 ### ACTIVAR POR TERMUX  <img src="https://c.tenor.com/HLrXIleGBToAAAAC/transparent-cat.gif" height="40px">  
 > DESCARGUÉ Y DESCOMPRIMA 
 ### [`GataBot-MD ~ Archivos`](https://mega.nz/file/vvxxHYha#-I6Q64hayupW4_mQ86KWXt0qzy7tAg4sUxAaAKmMahk)
@@ -144,11 +149,6 @@ cd GataBotMD-Termux
 npm install
 npm update
 node .
-```
-### `—◉ 💥 ACTIVAR EN KOYEB 💥`
-
-[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/GataNina-Li/GataBot-MD&branch=master&name=mysticbot)
-
 ```
 ## 💻 Instalación de FFmpeg para Windows 
 * Descarga cualquiera de las versiones de FFmpeg disponibles haciendo clic en [FFmpeg](https://www.gyan.dev/ffmpeg/builds/).
