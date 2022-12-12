@@ -112,7 +112,7 @@ let json = res.data
 let url = json.url
 conn.sendButton(m.chat, `_${command}_`.trim(), wm, url, [['🥵 𝙎𝙄𝙂𝙐𝙄𝙀𝙉𝙏𝙀 | 𝙉𝙀𝙓𝙏', `/${command}`]], m)}
 if (command == 'fut4') {
-let res = await axios("https://meme-api.herokuapp.com/gimme/yuri")
+let res = await axios("https://api.rule34.xxx/index.php?page=dapi&s=tag&q=index&tags=futanari&json=1")
 let json = res.data
 let url = json.url
 conn.sendButton(m.chat, `_${command}_`.trim(), wm, url, [['🥵 𝙎𝙄𝙂𝙐𝙄𝙀𝙉𝙏𝙀 | 𝙉𝙀𝙓𝙏', `/${command}`]], m)}
