@@ -147,7 +147,7 @@ try { global.conn.ws.close() } catch { }
 conn.ev.removeAllListeners()
 global.conn = makeWASocket(connectionOptions, { chats: oldChats })
 isInit = true
-}
+}}
 if (!isInit) {
 conn.ev.off('messages.upsert', conn.handler)
 conn.ev.off('group-participants.update', conn.participantsUpdate)
