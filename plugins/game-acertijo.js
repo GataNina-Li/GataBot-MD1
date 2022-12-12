@@ -1,9 +1,7 @@
 import fs from 'fs'
 
-let timeout = 6000
-let poin = 500
-let time = global.db.data.users[m.sender].lastwork + 600000
-if (new Date - global.db.data.users[m.sender].lastwork < 600000) throw `*Ya jugo! espere unos ${msToTime(time - new Date())} para volver a trabajar!!*`
+let timeout = 600
+let poin = 50
 
 let handler = async (m, { conn, usedPrefix }) => {
     conn.tekateki = conn.tekateki ? conn.tekateki : {}
@@ -37,15 +35,3 @@ handler.tags = ['game']
 handler.command = /^(acertijo|acert|pregunta|adivinanza|tekateki)$/i
 
 export default handler
-
-function msToTime(duration) {
-var milliseconds = parseInt((duration % 1000) / 100),
-seconds = Math.floor((duration / 1000) % 60),
-minutes = Math.floor((duration / (1000 * 60)) % 60),
-hours = Math.floor((duration / (1000 * 60 * 60)) % 24)
-hours = (hours < 10) ? "0" + hours : hours
-minutes = (minutes < 10) ? "0" + minutes : minutes
-seconds = (seconds < 10) ? "0" + seconds : seconds
-
-return minutes + " m " + seconds + " s " 
-}
