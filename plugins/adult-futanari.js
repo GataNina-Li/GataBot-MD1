@@ -6,7 +6,7 @@ conn.sendButton(m.chat, `_*ACA TIENES UNA RICA FUTANARI 🔥*_`, author, url, [[
 }
 handler.help = ['futanari']
 handler.tags = ['nsfw']
-handler.command = /^futanari|futa|futasolo|futanarisolo$/i
+handler.command = /^(futanari|futa|futasolo|futanarisolo)$/i
 export default handler
 
 global.futanari = [
