@@ -37,16 +37,16 @@
 </p> 
 
 [![blog](https://img.shields.io/badge/GataBot-Update-25D366?style=for-the-badge&logo=whatsapp&logoColor=white 
-)](https://chat.whatsapp.com/FIbBtY07Ms6Hn8sUlDWBIL) <a href="https://chat.whatsapp.com/FIbBtY07Ms6Hn8sUlDWBIL"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/1200px-WhatsApp_logo-color-vertical.svg.png" height="29px">
+)](https://chat.whatsapp.com/L3UxEZG9HNj3mkULoHC1Ns) <a href="https://chat.whatsapp.com/L3UxEZG9HNj3mkULoHC1Ns"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/1200px-WhatsApp_logo-color-vertical.svg.png" height="29px">
 [![Typing SVG](http://readme-typing-svg.herokuapp.com?font=Fira+Code&size=10&duration=3000&pause=1000&color=34F6F7&center=falso&vCenter=falso&width=435&lines=%C3%9Anete+y+Conoce+las+%C3%9Altimas+Novedades!!)](https://git.io/typing-svg)
 </a>
 
 ### ❇️ GRUPOS OFICIALES
-<a href="https://chat.whatsapp.com/GHiR6uflAI2IqJlltnNlCs" target="blank"><img src="https://img.shields.io/badge/1️⃣_COMUNIDAD_GATADOT_🐈-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
-<a href="https://chat.whatsapp.com/DNVTIlZBobAK9JrBElOWQc" target="blank"><img src="https://img.shields.io/badge/2️⃣_COMUNIDAD_GATADOT_🐈-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
-<a href="https://chat.whatsapp.com/Gfmnk8NkNHNLIaTUl0T4Lh" target="blank"><img src="https://img.shields.io/badge/3️⃣_COMUNIDAD_GATADOT_🐈-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
-<a href="https://chat.whatsapp.com/HXdni2XJOdF8l6LzSFPjPH" target="blank"><img src="https://img.shields.io/badge/4️⃣_COMUNIDAD_GATADOT_🐈-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
-<a href="https://chat.whatsapp.com/JU6yn5DnwBo2RNApR7YxRV" target="blank"><img src="https://img.shields.io/badge/5️⃣_COMUNIDAD_GATADOT_🐈-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+<a href="https://chat.whatsapp.com/E8taQkjkSNYKwAdMzyhy8b" target="blank"><img src="https://img.shields.io/badge/1️⃣_COMUNIDAD_GATADOT_🐈-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+<a href="https://chat.whatsapp.com/BrJ14QmdDIN1g9mJFgEb0z" target="blank"><img src="https://img.shields.io/badge/2️⃣_COMUNIDAD_GATADOT_🐈-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+<a href="https://chat.whatsapp.com/H2IbSdjCJHYE2SnwGhU3T4" target="blank"><img src="https://img.shields.io/badge/3️⃣_COMUNIDAD_GATADOT_🐈-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+<a href="https://chat.whatsapp.com/BKZMsopgdMXEahXSu0c9zl" target="blank"><img src="https://img.shields.io/badge/4️⃣_COMUNIDAD_GATADOT_🐈-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+<a href="https://chat.whatsapp.com/LCmsZ6Zsxuk38zKb9v1MZT" target="blank"><img src="https://img.shields.io/badge/5️⃣_COMUNIDAD_GATADOT_🐈-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 </a>
 
 ### ✅ GATABOT OFICIAL
@@ -56,6 +56,7 @@
 <a href="http://wa.me/573238484181?text=.menu" target="blank"><img src="https://img.shields.io/badge/4️⃣_𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿(rápido)-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 <a href="http://wa.me/573208089136?text=.menu" target="blank"><img src="https://img.shields.io/badge/5️⃣_𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 <a href="http://wa.me/972529277521?text=.menu" target="blank"><img src="https://img.shields.io/badge/6️⃣_𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+<a href="http://wa.me/51922659974?text=.menu" target="blank"><img src="https://img.shields.io/badge/6️⃣_𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 
 </a>
 
@@ -108,6 +109,11 @@ https://github.com/clhuang/heroku-buildpack-webp-binaries.git
 ------------------
 - [x] Resultado <details><summary>Importar Repositorio - GataBot-MD</summary><img src="https://i.imgur.com/GQyRnMf.jpg"></details>
 ------------------
+### `—◉ 💥 ACTIVAR EN KOYEB 💥`
+
+[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/GataNina-Li/GataBot-MD&branch=master&name=gatabot-md)
+
+------------------
 ### ACTIVAR POR TERMUX  <img src="https://c.tenor.com/HLrXIleGBToAAAAC/transparent-cat.gif" height="40px">  
 > DESCARGUÉ Y DESCOMPRIMA 
 ### [`GataBot-MD ~ Archivos`](https://mega.nz/file/vvxxHYha#-I6Q64hayupW4_mQ86KWXt0qzy7tAg4sUxAaAKmMahk)
@@ -145,7 +151,6 @@ npm install
 npm update
 node .
 ```
-
 ## 💻 Instalación de FFmpeg para Windows 
 * Descarga cualquiera de las versiones de FFmpeg disponibles haciendo clic en [FFmpeg](https://www.gyan.dev/ffmpeg/builds/).
 * Extraer archivos a `C:\` path.

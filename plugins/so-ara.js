@@ -7,11 +7,7 @@ global.db.data.users[m.sender].money += 100
 global.db.data.users[m.sender].exp += 100
   
 let vn = './media/Ara.mp3'
-conn.sendFile(m.chat, vn, 'Ara.mp3', null, m, true, {
-type: 'audioMessage', 
-ptt: true 
-})
-}
+conn.sendMessage(m.chat, { audio: { url: vn }, seconds: '1934.4', ptt: true, mimetype: 'audio/mpeg', fileName: `deja de llorar.mp3` }, { quoted: m })}
 handler.customPrefix = /ara ara/i
 handler.command = new RegExp
 handler.fail = null
