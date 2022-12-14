@@ -34,7 +34,7 @@ console.log(e)
 }}
 handler.help = ['addprem <@user>']
 handler.tags = ['owner']
-handler.command = /^(advertir|advertencia|warn|warning|poñoñoin)$/i
+handler.command = /^(advv)$/i ///^(advertir|advertencia|warn|warning|poñoñoin)$/i
 handler.group = true
 handler.admin = true
 handler.botAdmin = true
