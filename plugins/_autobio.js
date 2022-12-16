@@ -12,7 +12,7 @@ let _muptime
       }) * 1000
     }
     let muptime = clockString(_muptime)
-		let bio = `GataBot-MD 🐈 | Activo ✅️:  ${muptime} | usa el comando #estado para saber de mi, y #menu para vez mi lista del comandos! 😸`
+		let bio = `GataBot-MD 🐈 | Activo ✅️:  ${muptime} | usa el comando #estado para saber de mi, y #menu para ver mi lista del comandos! 😸`
 		await this.updateProfileStatus(bio).catch(_ => _)
 		setting.status = new Date() * 1
 
