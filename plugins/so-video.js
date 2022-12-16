@@ -1,7 +1,7 @@
 import fetch from 'node-fetch'
 let handler = async (m, { conn, command }) => {
 if (!db.data.chats[m.chat].modohorny && m.isGroup) throw `[ ⚠️ ] Los comandos +18 estan desactivados en este grupo, si es administrador de este grupo y desea activarlos escriba #enable modohorny para activar`
-let url = pack[Math.floor(Math.random() * pack.length)]
+let url = video[Math.floor(Math.random() * video.length)]
 conn.sendButton(m.chat, `_aqui tiene 😏_`, author, url, [['𝑺𝒊𝒈𝒖𝒊𝒆𝒏𝒕𝒆 😏', `/${command}`]], m)
 }
 handler.help = ['video']
@@ -11,7 +11,7 @@ handler.level = 1
 handler.register = true
 export default handler
 
-global.pack = [
+global.video = [
   "https://telegra.ph/file/7a36eecc38998e8b6952f.mp4",
   "https://telegra.ph/file/ac12ce067a32fa3ed02b8.mp4",
   "https://telegra.ph/file/7ed6a37803430fdd9f776.mp4",
