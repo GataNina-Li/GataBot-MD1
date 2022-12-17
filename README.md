@@ -171,6 +171,9 @@ Si tiene éxito, le dará un mensaje como: `SUCCESS: specified value was saved`.
 ----  
 ### GataBot-MD - Preguntas
 
+* Cómo edito el multilenguaje?
+> Ve a la carpeta lb y selecciona la carpeta idiomas, entras y seleccionas cual vas a editar
+
 * Cómo detengo el Bot en Termux?
 > Use CTRL + z para apagar el Bot
 
