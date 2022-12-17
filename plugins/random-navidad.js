@@ -1,11 +1,8 @@
-import fetch from 'node-fetch'
 import axios from 'axios'
 let handler = async(m, { conn, args, usedPrefix, command }) => {
-let res = await axios("https://meme-api.herokuapp.com/gimme/Christmas")
-let json = res.data
-let gata = json.url
-conn.sendButton(m.chat, `_Navidad 🧑‍🎄_`, wm, gata, [['𝙎𝙄𝙂𝙐𝙄𝙀𝙉𝙏𝙀 | 𝙉𝙀𝙓𝙏 🆕', `/${command}`]], m)
-}
+let res = (await axios.get(`https://raw.githubusercontent.com/BrunoSobrino/TheMystic-Bot-MD/master/src/JSON/navidad.json`)).data  
+let mystic = await res[Math.floor(res.length * Math.random())]
+conn.sendButton(m.chat, `_Navidad 🧑‍🎄_`, author, mystic, [['🔄 𝑺𝒊𝒈𝒖𝒊𝒆𝒏𝒕𝒆 🔄', `${usedPrefix + command}`]], m)}
 handler.help = ['navidad']
 handler.tags = ['internet']
 handler.command = /^(navidad)$/i
