@@ -42,7 +42,7 @@ exec: args[0],
 args: args.slice(1), })
 let p = fork()
 p.on('message', data => {
-console.log('[RECEIVED]', data)
+console.log('╭--------------------------\n┆ ✅ TIEMPO DE ACTIVIDAD ACTUALIZADA\n╰--------------------------', data)
 switch (data) {
 case 'reset':
 p.process.kill()
