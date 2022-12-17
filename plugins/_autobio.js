@@ -4,7 +4,10 @@ let setting = global.db.data.settings[this.user.jid]
 	
 let _muptime
 if (process.send) {
-process.send('uptime')
+	
+setTimeout(() => {  	
+process.send('uptime')}, 50000)
+	
 _muptime = await new Promise(resolve => {
 process.once('message', resolve)
 setTimeout(resolve, 20000)}) //5 min
