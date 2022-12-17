@@ -1,4 +1,4 @@
-/*let handler = m => m
+let handler = m => m
 handler.all = async function (m) {
 let setting = global.db.data.settings[this.user.jid]
 	
@@ -6,8 +6,7 @@ let _muptime
 if (process.send) {
 process.send('uptime')
 _muptime = await new Promise(resolve => {
-setTimeout(() => {
-process.once('message', resolve)}, 300000 * 1000)
+process.once('message', resolve)
 setTimeout(resolve, 300000)}) * 1000 //5 min
 }
 let muptime = clockString(_muptime)
@@ -24,4 +23,4 @@ function clockString(ms) {
   let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
   return [d, ' d ️', h, ' h ', m, ' m'].map(v => v.toString().padStart(2, 0)).join('')
 }
-*/
+
