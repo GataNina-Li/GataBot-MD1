@@ -6,7 +6,9 @@ let _muptime
 if (process.send) {	
 process.send('uptime')
 _muptime = await new Promise(resolve => {
-process.once('message', resolve)
+setTimeout(() => {  
+process.once('message', resolve)}, 50000)
+	
 setTimeout(resolve, 20000)}) * 1000 //5 min
 }
 let muptime = clockString(_muptime)
