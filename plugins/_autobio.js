@@ -4,7 +4,7 @@ let setting = global.db.data.settings[this.user.jid]
 	
 let _muptime
 if (process.send) {	
-//process.send('uptime')
+process.send('uptime')
 _muptime = await new Promise(resolve => { 
 process.once('message', resolve)
 	
