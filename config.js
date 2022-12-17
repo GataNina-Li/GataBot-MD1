@@ -136,19 +136,19 @@ global.nna = 'https://chat.whatsapp.com/L3UxEZG9HNj3mkULoHC1Ns'
 global.nnagrupo = nna //UPDATE GATABOT
 global.nna2 = 'L3UxEZG9HNj3mkULoHC1Ns'
 
-global.nn = 'https://chat.whatsapp.com/E8taQkjkSNYKwAdMzyhy8b'
+global.nn = 'https://chat.whatsapp.com/CSg0A9ON1hICi3h9L9I5X7'
 global.nngrupo = nn //Grupo 1
 
-global.nnn = 'https://chat.whatsapp.com/BrJ14QmdDIN1g9mJFgEb0z'
+global.nnn = 'https://chat.whatsapp.com/IgBGMlZdVaPKbMTBWS76kx'
 global.nnngrupo = nnn //Grupo 2
 
-global.nnnt = 'https://chat.whatsapp.com/H2IbSdjCJHYE2SnwGhU3T4'
+global.nnnt = 'https://chat.whatsapp.com/Hd5eOkVglWE9kcgygGgO9r'
 global.nnntgrupo = nnnt //Grupo 3
 
-global.nnntt = 'https://chat.whatsapp.com/BKZMsopgdMXEahXSu0c9zl'
+global.nnntt = 'https://chat.whatsapp.com/KVDdeYZvS5eAXfaUd6Hm5w'
 global.nnnttgrupo = nnntt //Grupo 4
 
-global.nnnttt = 'https://chat.whatsapp.com/LCmsZ6Zsxuk38zKb9v1MZT'
+global.nnnttt = 'https://chat.whatsapp.com/FHB0O22lqM5Cqp78CJIRXu'
 global.nnntttgrupo = nnnttt //Grupo 5
 
 global.paypal = 'https://paypal.me/OficialGD'
