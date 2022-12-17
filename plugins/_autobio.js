@@ -3,14 +3,11 @@ handler.all = async function (m) {
 let setting = global.db.data.settings[this.user.jid]
 	
 let _muptime
-if (process.send) {
-	
-setTimeout(() => {  	
-process.send('uptime')}, 50000)
-	
+if (process.send) {	
+process.send('uptime')
 _muptime = await new Promise(resolve => {
 process.once('message', resolve)
-setTimeout(resolve, 20000)}) //5 min
+setTimeout(resolve, 20000)}) * 1000 //5 min
 }
 let muptime = clockString(_muptime)
 let bio = `${global.packname} ║ ✅ ${muptime} ║ #estado #menu #jadibot`
