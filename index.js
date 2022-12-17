@@ -43,7 +43,7 @@ args: args.slice(1), })
 let p = fork()
 p.on('message', data => {
 setInterval(() => {  
-console.log('╭--------------------------\n┆ ✅ TIEMPO DE ACTIVIDAD ACTUALIZADA\n╰--------------------------', data)}, 5000000)
+console.log('╭--------------------------\n┆ ✅ TIEMPO DE ACTIVIDAD ACTUALIZADA\n╰--------------------------', data)}, 20000)
 switch (data) {
 case 'reset':
 p.process.kill()
