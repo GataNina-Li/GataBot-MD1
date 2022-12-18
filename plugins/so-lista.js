@@ -502,7 +502,7 @@ let vn = './media/usted esta detenido.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendMessage(m.chat, { audio: { url: vn }, fileName: 'error.mp3', mimetype: 'audio/mp4', ptt: true }, { quoted: m })}
 
-if (chat.audios && m.text.match(/(Una pregunta|una pregunta|WhatsApp|whatsApp|pregunton|preguntona)/gi)) {    
+if (chat.audios && m.text.match(/(una pregunta|pregunton|preguntona)/gi)) {    
 let vn = './media/una-pregunta.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendMessage(m.chat, { audio: { url: vn }, fileName: 'error.mp3', mimetype: 'audio/mp4', ptt: true }, { quoted: m })}
