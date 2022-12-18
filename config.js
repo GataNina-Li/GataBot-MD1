@@ -132,9 +132,9 @@ global.gatadiosig = ig
 global.md = 'https://github.com/GataNina-Li/GataBot-MD'
 global.gatabot = md
 
-global.nna = 'https://chat.whatsapp.com/L3UxEZG9HNj3mkULoHC1Ns'
+global.nna = 'https://chat.whatsapp.com/LXyGNqBFB4T5QXR2DeHGuc'
 global.nnagrupo = nna //UPDATE GATABOT
-global.nna2 = 'L3UxEZG9HNj3mkULoHC1Ns'
+global.nna2 = 'LXyGNqBFB4T5QXR2DeHGuc'
 
 global.nn = 'https://chat.whatsapp.com/CSg0A9ON1hICi3h9L9I5X7'
 global.nngrupo = nn //Grupo 1
@@ -150,6 +150,9 @@ global.nnnttgrupo = nnntt //Grupo 4
 
 global.nnnttt = 'https://chat.whatsapp.com/FHB0O22lqM5Cqp78CJIRXu'
 global.nnntttgrupo = nnnttt //Grupo 5
+
+global.nnnttt2 = 'https://chat.whatsapp.com/JYLVmFqdWtm9NxXb7D92dx'
+global.nnnttt2grupo = nnnttt2 //Grupo 6
 
 global.paypal = 'https://paypal.me/OficialGD'
 global.donar = paypal
