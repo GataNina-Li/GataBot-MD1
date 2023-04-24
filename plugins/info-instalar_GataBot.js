@@ -14,7 +14,7 @@ const fkontak = {
 	"participant": "0@s.whatsapp.net"
 }
 
-let picture = './media/menus/Menu1.jpg'
+//let picture = './media/menus/Menu1.jpg'
 let gata = `𝙄𝙉𝙎𝙏𝘼𝙇𝘼𝘾𝙄𝙊𝙉 𝘿𝙀 𝙂𝘼𝙏𝘼𝘽𝙊𝙏 🐈
 
 *━━━━━━━━━━━━━⬣*
@@ -65,7 +65,7 @@ _https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git_
 _https://github.com/clhuang/heroku-buildpack-webp-binaries.git_
 *━━━━━━━━━━━━━⬣*`
 
-conn.sendButton(m.chat, gata, `Comunícate con Mí Creadora si necesitas ayuda con la Instalación.\n\nContact My Creator if you need help with the Installation.\n\n${ig}\n${wm}`, picture, [
+conn.sendButton(m.chat, gata, `Comunícate con Mí Creadora si necesitas ayuda con la Instalación.\n\nContact My Creator if you need help with the Installation.\n\n${ig}\n${wm}`, null, [
 ['𝘾𝙪𝙚𝙣𝙩𝙖𝙨 𝙊𝙛𝙞𝙘𝙞𝙖𝙡𝙚𝙨 | 𝘼𝙘𝙘𝙤𝙪𝙣𝙩𝙨 ✅', '.cuentasgb'],
 ['🎁 𝘿𝙤𝙣𝙖𝙧 | 𝘿𝙤𝙣𝙖𝙩𝙚', '.donar']], fkontak, m)}
 

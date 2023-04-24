@@ -25,9 +25,8 @@ let text =
 ${listAdmin}
 
 *《 - - - - - - - 𓃠 ${vs} - - - - - - - 》*
-`.trim()
-  
-await conn.sendButton(m.chat, wm, text, pp, [[lenguajeGB.smsGI10(), '.on'], [lenguajeGB.smsConMenu(), '/menu']], m, { mentions: [...groupAdmins.map(v => v.id), owner] })
+`.trim() 
+await conn.sendButton(m.chat, wm, text, null, [[lenguajeGB.smsGI10(), '.on'], [lenguajeGB.smsConMenu(), '/menu']], m, { mentions: [...groupAdmins.map(v => v.id), owner] })
 }
 handler.help = ['infogrup']
 handler.tags = ['group']
