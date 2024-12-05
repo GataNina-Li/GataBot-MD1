@@ -6,8 +6,12 @@ if (!db.data.chats[m.chat].audios && m.isGroup) throw 0
 global.db.data.users[m.sender].money += 100 
 global.db.data.users[m.sender].exp += 100
   
-let vn = './media/joder.mp3'
-conn.sendMessage(m.chat, { audio: { url: vn }, seconds: '1934.4', ptt: true, mimetype: 'audio/mpeg', fileName: `deja de llorar.mp3` }, { quoted: m })}
-handler.customPrefix = /Joder|joder/ 
+let vn = './media/Maau diciendo el pendejo HD 4K.mp3'
+conn.sendFile(m.chat, vn, 'Maau diciendo el pendejo HD 4K.mp3', null, m, true, {
+type: 'audioMessage', 
+ptt: true 
+})
+}
+handler.customPrefix = /Jaja el pendejo|jajaja el pendejo|el pendejo|ja el pendejo|🤣/i 
 handler.command = new RegExp
 export default handler

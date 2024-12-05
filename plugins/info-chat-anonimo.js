@@ -60,7 +60,7 @@ readmore: readMore
 text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
   
 
-let pp = './media/menus/Menu1.jpg'
+//let pp = './media/menus/Menu1.jpg'
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 let mentionedJid = [who]
 let username = conn.getName(who)
@@ -99,7 +99,7 @@ const fkontak = {
 	"participant": "0@s.whatsapp.net"
 }
 
-await conn.sendButton(m.chat, chat, wm, pp, [['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', '/menu'] ], fkontak, m)  
+await conn.sendButton(m.chat, chat, wm, null, [['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', '/menu'] ], fkontak, m)  
 }
 
 handler.command = /^(anonimochat|chatanonimo|AnonimoChat|ChatAnonimo|chatanónimo|anónimochat|anonimoch)$/i

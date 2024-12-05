@@ -1,6 +1,6 @@
 //CRÉDITOS: https://github.com/Abiguelreyes75
 
-export async function all(m, conn) {
+/*export async function all(m, conn) {
 let texto
 let user = global.db.data.users[m.sender]  
 if (!m.message)
@@ -15,4 +15,4 @@ user.banned = false
 texto = `*@${m.sender.split("@")[0]} ${lenguajeGB['smsNoSpam2']()}*`
 this.sendButton(m.chat, texto, wm, null, [[lenguajeGB.smsConMenu(), '/menu']], m, { mentions: this.parseMention(texto) })}, tiempo)        
 user.antispam = null
-}}
+}}*/

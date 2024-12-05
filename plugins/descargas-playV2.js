@@ -46,19 +46,19 @@ if (command == 'play.1') {
 conn.reply(m.chat, `${lenguajeGB['smsAvisoEG']()}𝙀𝙎𝙋𝙀𝙍𝙀 𝙐𝙉 𝙈𝙊𝙈𝙀𝙉𝙏𝙊 𝙀𝙇 𝘼𝙐𝘿𝙄𝙊 𝙋𝙊𝙍 𝙁𝘼𝙑𝙊𝙍\n\n𝙒𝘼𝙄𝙏 𝘼 𝙈𝙊𝙈𝙀𝙉𝙏 𝙁𝙊𝙍 𝙏𝙃𝙀 𝘼𝙐𝘿𝙄𝙊 𝙋𝙇𝙀𝘼𝙎𝙀`, m)  
 let res = await fetch("https://violetics.pw/api/media/youtube-play?apikey=beta&query="+text)
 let json = await res.json()
-conn.sendMessage(m.chat, json.result.dlmp3, 'error.mp3', null, m, false, { mimetype: 'audio/mp4' })}
+conn.sendFile(m.chat, json.result.dlmp3, 'error.mp3', null, m, false, { mimetype: 'audio/mp4' })}
 if (command == 'play.2') {
 conn.reply(m.chat, `${lenguajeGB['smsAvisoEG']()}𝙀𝙎𝙋𝙀𝙍𝙀 𝙐𝙉 𝙈𝙊𝙈𝙀𝙉𝙏𝙊 𝙀𝙇 𝙑𝙄𝘿𝙀𝙊 𝙋𝙊𝙍 𝙁𝘼𝙑𝙊𝙍\n\n𝙒𝘼𝙄𝙏 𝘼 𝙈𝙊𝙈𝙀𝙉𝙏 𝙁𝙊𝙍 𝙏𝙃𝙀 𝙑𝙄𝘿𝙀𝙊 𝙋𝙇𝙀𝘼𝙎𝙀`, m)
 let res = await fetch("https://violetics.pw/api/media/youtube-play?apikey=beta&query="+text)
 let json = await res.json()
-conn.sendMessage(m.chat, json.result.dlmp4, 'error.mp4', `${wm}`, m)}
+conn.sendFile(m.chat, json.result.dlmp4, 'error.mp4', `${wm}`, m)}
 } catch (e) {
 m.reply(`${lenguajeGB['smsAvisoFG']()}𝙄𝙉𝙏𝙀𝙉𝙏𝙀 𝘿𝙀 𝙉𝙐𝙀𝙑𝙊\n𝙏𝙍𝙔 𝘼𝙂𝘼𝙄𝙉`)
 }}
 handler.help = ['play.1' , 'play.2'].map(v => v + ' <texto>')
 handler.tags = ['downloader']
 handler.command = ['play.1', 'play.2']
-handler.level = 2
-handler.money = 100
-//handler.limit = 1
+handler.level = 7
+handler.money = null
+//handler.limit = null
 export default handler
